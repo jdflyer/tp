@@ -2,6 +2,7 @@
 # PYTHON_ARGCOMPLETE_OK
 import argparse
 import sys
+from pathlib import Path, PurePath
 from typing import (
     Any,
     Dict,
@@ -30,6 +31,8 @@ try:
 except ModuleNotFoundError:
     fail("Unable to find diff_settings.py in the same directory.")
 sys.path.pop(0)
+
+from elftools.elf.elffile import ELFFile
 
 # ==== COMMAND-LINE ====
 
@@ -234,6 +237,26 @@ parser.add_argument(
     default=1024,
     help="The maximum length of the diff, in lines.",
 )
+parser.add_argument(
+    "--lhs-name",
+    dest="lhs_name",
+    type=str,
+    metavar="SYMBOL",
+    help="override symbol name on lhs when using -o"
+)
+parser.add_argument(
+    "--select-occurence",
+    dest="select_occurence",
+    type=int,
+    default=0,
+    help="If multiple occurence of the same symbol is found, use this to select the correct ocurrance."
+)
+parser.add_argument(
+    "--source-wslpath",
+    dest="source_wslpath",
+    action="store_true",
+    help="Pass source code path through 'wslpath' before reading it."
+)
 
 # Project-specific flags, e.g. different versions/make arguments.
 add_custom_arguments_fn = getattr(diff_settings, "add_custom_arguments", None)
@@ -287,7 +310,6 @@ makeflags: List[str] = config.get("makeflags", [])
 source_directories: Optional[List[str]] = config.get("source_directories")
 objdump_executable: Optional[str] = config.get("objdump_executable")
 map_format: str = config.get("map_format", "gnu")
-mw_build_dir: str = config.get("mw_build_dir", "build/")
 
 MAX_FUNCTION_SIZE_LINES: int = args.max_lines
 MAX_FUNCTION_SIZE_BYTES: int = MAX_FUNCTION_SIZE_LINES * 4
@@ -308,7 +330,7 @@ BUFFER_CMD: List[str] = ["tail", "-c", str(10 ** 9)]
 LESS_CMD: List[str] = ["less", "-SRic", "-#6"]
 
 DEBOUNCE_DELAY: float = 0.1
-FS_WATCH_EXTENSIONS: List[str] = [".c", ".h"]
+FS_WATCH_EXTENSIONS: List[str] = [".c", ".cpp", ".h", ".s"]
 
 # ==== LOGIC ====
 
@@ -403,7 +425,7 @@ def maybe_get_objdump_source_flags() -> List[str]:
 
     flags = [
         "--source",
-        "--source-comment=│ ",
+        #"--source-comment=│ ",
         "-l",
     ]
 
@@ -428,10 +450,25 @@ base_shift: int = eval_int(
     args.base_shift, "Failed to parse --base-shift (-S) argument as an integer."
 )
 
+def disambiguate_objects(fn_name: str, objfiles: List[str]) -> str:
+    for objfile in objfiles:
+        with open(objfile, 'rb') as f:
+            elffile = ELFFile(f)
+            symtab = elffile.get_section_by_name('.symtab')
+            match = symtab.get_symbol_by_name(fn_name)
+            if match is None:
+                continue
+            if match[0].entry.st_info.type == 'STT_FUNC':
+                return objfile
 
-def search_map_file(fn_name: str) -> Tuple[Optional[str], Optional[int]]:
+    return None
+
+def search_map_file(fn_name: str, mapfile: Optional[str] = None, build_dir: Optional[str] = None) -> Tuple[Optional[str], Optional[int]]:
     if not mapfile:
         fail(f"No map file configured; cannot find function {fn_name}.")
+    
+    if not build_dir:
+        build_dir = config.get('build_dir')
 
     try:
         with open(mapfile) as f:
@@ -474,15 +511,26 @@ def search_map_file(fn_name: str) -> Tuple[Optional[str], Optional[int]]:
         #                                         ram   elf rom                                                       object name
         find = re.findall(re.compile(r'  \S+ \S+ (\S+) (\S+)  . ' + fn_name + r'(?: \(entry of \.(?:init|text)\))? \t(\S+)'), contents)
         if len(find) > 1:
-            fail(f"Found multiple occurrences of function {fn_name} in map file.")
+            if args.select_occurence > 0:
+                find = [find[args.select_occurence - 1]]
+            else:
+                print(f"Found multiple occurrences of function {fn_name} in map file:", file=sys.stderr)
+                for i,location in enumerate(find):
+                    print(f"    {i+1}: {location[0]} {location[1]} {str(location[2]).ljust(40, ' ')}", file=sys.stderr)
+                fail(f"Use --select-occurence to select the right occurrence.")
         if len(find) == 1:
             rom = int(find[0][1],16)
             objname = find[0][2]
             # The metrowerks linker map format does not contain the full object path, so we must complete it manually.
-            objfiles = [os.path.join(dirpath, f) for dirpath, _, filenames in os.walk(mw_build_dir) for f in filenames if f == objname]
+            objfiles = [os.path.join(dirpath, f) for dirpath, _, filenames in os.walk(build_dir) for f in filenames if f == objname]
             if len(objfiles) > 1:
-                all_objects = "\n".join(objfiles)
-                fail(f"Found multiple objects of the same name {objname} in {mw_build_dir}, cannot determine which to diff against: \n{all_objects}")
+                objfile = disambiguate_objects(fn_name, objfiles)
+                if objfile is None:
+                    all_objects = "\n".join(objfiles)
+                    fail(f"Found multiple objects of the same name {objname} in {build_dir}, cannot determine which to diff against: \n{all_objects}")
+
+                return objfile, rom
+
             if len(objfiles) == 1:
                 objfile = objfiles[0]
                 # TODO Currently the ram-rom conversion only works for diffing ELF executables, but it would likely be more convenient to diff DOLs.
@@ -531,7 +579,7 @@ def dump_objfile() -> Tuple[str, ObjdumpCommand, ObjdumpCommand]:
     if args.start.startswith("0"):
         fail("numerical start address not supported with -o; pass a function name")
 
-    objfile, _ = search_map_file(args.start)
+    objfile, _ = search_map_file(args.start, config.get('mapfile'), config.get('build_dir'))
     if not objfile:
         fail("Not able to find .o file for function.")
 
@@ -541,14 +589,14 @@ def dump_objfile() -> Tuple[str, ObjdumpCommand, ObjdumpCommand]:
     if not os.path.isfile(objfile):
         fail(f"Not able to find .o file for function: {objfile} is not a file.")
 
-    refobjfile = objfile
+    refobjfile, _ = search_map_file(args.lhs_name or args.start, config.get('expected_mapfile'), config.get('expected_build_dir'))
     if not os.path.isfile(refobjfile):
         fail(f'Please ensure an OK .o file exists at "{refobjfile}".')
 
     objdump_flags = ["-drz"]
     return (
         objfile,
-        (objdump_flags, refobjfile, args.start),
+        (objdump_flags, refobjfile, args.lhs_name or args.start),
         (objdump_flags + maybe_get_objdump_source_flags(), objfile, args.start),
     )
 
@@ -587,7 +635,6 @@ def ansi_ljust(s: str, width: int) -> str:
         return s + " " * needed
     else:
         return s
-
 
 if arch == "mips":
     re_int = re.compile(r"[0-9]+")
@@ -667,11 +714,12 @@ elif arch == "aarch64":
     instructions_with_address_immediates = branch_instructions.union({"adrp"})
 elif arch == "ppc":
     re_int = re.compile(r"[0-9]+")
-    re_comment = re.compile(r"(<.*?>|//.*$)")
+    re_comment = re.compile(r"(<.*?>$|<.*?>|//.*$)")
     re_reg = re.compile(r"\$?\b([rf][0-9]+)\b")
     re_sprel = re.compile(r"(?<=,)(-?[0-9]+|-?0x[0-9a-f]+)\(r1\)")
     re_large_imm = re.compile(r"-?[1-9][0-9]{2,}|-?0x[0-9a-f]{3,}")
     re_imm = re.compile(r"(\b|-)([0-9]+|0x[0-9a-fA-F]+)\b(?!\(r1)|[^@]*@(ha|h|lo)")
+    re_file_line = re.compile(r"(.*\.cpp)\:([0-9]+)")
     arch_flags = []
     forbidden = set(string.ascii_letters + "_")
     branch_likely_instructions = set()
@@ -885,6 +933,7 @@ def make_difference_normalizer() -> DifferenceNormalizer:
 
 
 def process(lines: List[str]) -> List[Line]:
+    file_cache = dict()
     normalizer = make_difference_normalizer()
     skip_next = False
     source_lines = []
@@ -893,14 +942,12 @@ def process(lines: List[str]) -> List[Line]:
         if lines and not lines[-1]:
             lines.pop()
 
+    last_path = None
+    last_line = None
     output: List[Line] = []
     stop_after_delay_slot = False
     for row in lines:
         if args.diff_obj and (">:" in row or not row):
-            continue
-
-        if args.source and (row and row[0] != " "):
-            source_lines.append(row)
             continue
 
         if "R_AARCH64_" in row:
@@ -918,6 +965,44 @@ def process(lines: List[str]) -> List[Line]:
         if "R_PPC_" in row:
             new_original = process_ppc_reloc(row, output[-1].original)
             output[-1] = output[-1]._replace(original=new_original)
+            continue
+
+        if args.source and (row and row[0] != " "):
+            m_file_line = re.match(re_file_line, row)
+            if m_file_line:
+                path = m_file_line.group(1)
+                line = int(m_file_line.group(2))
+                if args.source_wslpath:
+                    path = subprocess.check_output(["wslpath","-ua", path],universal_newlines=True).strip()
+
+                if path in file_cache:
+                    file_lines = file_cache[path]
+                else:
+                    if not Path(path).is_file():
+                        fail(f"Source file not found: '{path}'")
+                    with open(path) as source_file:
+                        file_lines = source_file.readlines()
+                        file_cache[path] = [x.rstrip() for x in file_lines]
+
+                if path == last_path:
+                    if last_line:
+                        i = last_line
+                        while i + 1 < line:
+                            if i > 0 and i <= len(file_lines):
+                                source_lines.append(file_lines[i - 1])
+                            i += 1
+                else:
+                    source_lines.append(f"// \"{elide_path(Path(path))}\"")
+                    
+                if line > 0 and line <= len(file_lines):
+                    source_lines.append(file_lines[line - 1])
+
+                last_path = path
+                last_line = line
+            else:
+                last_path = None
+                last_line = None
+                source_lines.append(row)
             continue
 
         m_comment = re.search(re_comment, row)
@@ -1217,8 +1302,8 @@ def do_diff(basedump: str, mydump: str) -> List[OutputLine]:
             out1 = ""
             out2 = line2.original
 
-        if args.source and line2 and line2.comment:
-            out2 += f" {line2.comment}"
+        #if args.source and line2 and line2.comment:
+        #    out2 += f" {line2.comment}"
 
         def format_part(
             out: str,
@@ -1288,9 +1373,12 @@ def chunk_diff(diff: List[OutputLine]) -> List[Union[List[OutputLine], OutputLin
     chunks.append(cur_right)
     return chunks
 
+def elide_path(p: Path) -> PurePath:
+    return PurePath(p.parts[0]) / '...' / PurePath(p.parts[-1])
 
 def format_diff(
-    old_diff: List[OutputLine], new_diff: List[OutputLine]
+    old_diff: List[OutputLine], new_diff: List[OutputLine],
+    base_obj_path: Optional[Path] = None, ref_obj_path: Optional[Path] = None
 ) -> Tuple[str, List[str]]:
     old_chunks = chunk_diff(old_diff)
     new_chunks = chunk_diff(new_diff)
@@ -1334,7 +1422,7 @@ def format_diff(
             for (base, old, new) in output
         ]
     else:
-        header_line = ""
+        header_line = f'{elide_path(base_obj_path)}'.ljust(width) + f'  {elide_path(ref_obj_path)}'.ljust(width)
         diff_lines = [
             ansi_ljust(base, width) + new.fmt2
             for (base, old, new) in output
@@ -1426,12 +1514,18 @@ class Display:
     ready_queue: "queue.Queue[None]"
     watch_queue: "queue.Queue[Optional[float]]"
     less_proc: "Optional[subprocess.Popen[bytes]]"
+    base_obj_path: Optional[Path]
+    ref_obj_path: Optional[Path]
 
-    def __init__(self, basedump: str, mydump: str) -> None:
+    def __init__(self, basedump: str, mydump: str,
+                 base_obj_path: Optional[Path] = None,
+                 ref_obj_path: Optional[Path] = None) -> None:
         self.basedump = basedump
         self.mydump = mydump
         self.emsg = None
         self.last_diff_output = None
+        self.base_obj_path = base_obj_path
+        self.ref_obj_path = ref_obj_path
 
     def run_less(self) -> "Tuple[subprocess.Popen[bytes], subprocess.Popen[bytes]]":
         if self.emsg is not None:
@@ -1441,7 +1535,7 @@ class Display:
             last_diff_output = self.last_diff_output or diff_output
             if args.threeway != "base" or not self.last_diff_output:
                 self.last_diff_output = diff_output
-            header, diff_lines = format_diff(last_diff_output, diff_output)
+            header, diff_lines = format_diff(last_diff_output, diff_output, self.base_obj_path, self.ref_obj_path)
             header_lines = [header] if header else []
             output = "\n".join(header_lines + diff_lines[args.skip_lines :])
 
@@ -1547,7 +1641,9 @@ def main() -> None:
 
     mydump = run_objdump(mycmd)
 
-    display = Display(basedump, mydump)
+    base_obj_path = Path(basecmd[1])
+    ref_obj_path = Path(mycmd[1])
+    display = Display(basedump, mydump, base_obj_path, ref_obj_path)
 
     if not args.watch:
         display.run_sync()

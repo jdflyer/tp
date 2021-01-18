@@ -22,7 +22,7 @@
 /* 800F4E4C 000F1D8C  C0 22 92 C0 */ lfs f1, lbl_80452CC0-_SDA2_BASE_(r2)
 /* 800F4E50 000F1D90  C0 5E 05 34 */ lfs f2, 0x534(r30)
 /* 800F4E54 000F1D94  38 80 00 00 */ li r4, 0
-/* 800F4E58 000F1D98  4B FC 69 19 */ bl daAlink_c_NS_setSpecialGravity
+/* 800F4E58 000F1D98  4B FC 69 19 */ bl setSpecialGravity__9daAlink_cFffi
 /* 800F4E5C 000F1D9C  C0 02 92 C0 */ lfs f0, lbl_80452CC0-_SDA2_BASE_(r2)
 /* 800F4E60 000F1DA0  D0 1E 33 98 */ stfs f0, 0x3398(r30)
 /* 800F4E64 000F1DA4  D0 1E 04 FC */ stfs f0, 0x4fc(r30)
@@ -82,7 +82,7 @@ lbl_800F4EEC:
 lbl_800F4F38:
 /* 800F4F38 000F1E78  38 7E 1D 08 */ addi r3, r30, 0x1d08
 /* 800F4F3C 000F1E7C  38 81 00 14 */ addi r4, r1, 0x14
-/* 800F4F40 000F1E80  48 17 2D E9 */ bl cBgS_GndChk_NS_SetPos_X1_
+/* 800F4F40 000F1E80  48 17 2D E9 */ bl SetPos__11cBgS_GndChkFPC4cXyz
 /* 800F4F44 000F1E84  3C 60 80 40 */ lis r3, g_dComIfG_gameInfo@ha
 /* 800F4F48 000F1E88  38 63 61 C0 */ addi r3, r3, g_dComIfG_gameInfo@l
 /* 800F4F4C 000F1E8C  38 63 0F 38 */ addi r3, r3, 0xf38

@@ -3,6 +3,9 @@
 
 #include "dolphin/types.h"
 
+template <typename T>
+class JSUList;
+
 //
 // Link
 //
@@ -34,6 +37,8 @@ public:
     JSULink(T* object) : JSUPtrLink((void*)object) {}
 
     T* getObject() const { return (T*)getObjectPtr(); }
+
+    JSUList<T>* getSupervisor() const { return (JSUList<T>*)this->getList(); }
 
     JSULink<T>* getNext() const { return (JSULink<T>*)this->JSUPtrLink::getNext(); }
 
@@ -100,7 +105,7 @@ public:
 template <typename T>
 class JSUListIterator {
 public:
-    JSUListIterator() : mLink() {}
+    JSUListIterator() : mLink(NULL) {}
     JSUListIterator(JSULink<T>* link) : mLink(link) {}
     JSUListIterator(JSUList<T>* list) : mLink(list->getFirst()) {}
 
@@ -112,11 +117,8 @@ public:
     T* getObject() { return this->mLink->getObject(); }
 
     bool operator==(JSULink<T> const* other) const { return this->mLink == other; }
-
     bool operator!=(JSULink<T> const* other) const { return this->mLink != other; }
-
     bool operator==(JSUListIterator<T> const& other) const { return this->mLink == other.mLink; }
-
     bool operator!=(JSUListIterator<T> const& other) const { return this->mLink != other.other; }
 
     JSUListIterator<T> operator++(int) {
@@ -127,6 +129,17 @@ public:
 
     JSUListIterator<T>& operator++() {
         this->mLink = this->mLink->getNext();
+        return *this;
+    }
+
+    JSUListIterator<T> operator--(int) {
+        JSUListIterator<T> prev = *this;
+        this->mLink = this->mLink->getPrev();
+        return prev;
+    }
+
+    JSUListIterator<T>& operator--() {
+        this->mLink = this->mLink->getPrev();
         return *this;
     }
 
@@ -154,6 +167,7 @@ template <typename T>
 class JSUTree {
 public:
     JSUTree(T* owner) : mList(), mLink(owner) {}
+    ~JSUTree() {}
 
     bool appendChild(JSUTree<T>* child) {
         JSU_TREE_LINK_IF_NOT_NULL(child);

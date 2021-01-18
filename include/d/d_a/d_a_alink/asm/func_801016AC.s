@@ -20,7 +20,7 @@
 /* 801016F8 000FE638  C0 22 92 C0 */ lfs f1, lbl_80452CC0-_SDA2_BASE_(r2)
 /* 801016FC 000FE63C  C0 5E 05 34 */ lfs f2, 0x534(r30)
 /* 80101700 000FE640  38 80 00 00 */ li r4, 0
-/* 80101704 000FE644  4B FB A0 6D */ bl daAlink_c_NS_setSpecialGravity
+/* 80101704 000FE644  4B FB A0 6D */ bl setSpecialGravity__9daAlink_cFffi
 /* 80101708 000FE648  C0 02 92 C0 */ lfs f0, lbl_80452CC0-_SDA2_BASE_(r2)
 /* 8010170C 000FE64C  D0 1E 04 FC */ stfs f0, 0x4fc(r30)
 /* 80101710 000FE650  D0 1E 33 98 */ stfs f0, 0x3398(r30)
@@ -31,7 +31,7 @@
 /* 80101724 000FE664  4B FF FF 19 */ bl daAlink_c_NS_setRoofHangSwitch
 /* 80101728 000FE668  A8 7F 04 E6 */ lha r3, 0x4e6(r31)
 /* 8010172C 000FE66C  A8 9E 04 E6 */ lha r4, 0x4e6(r30)
-/* 80101730 000FE670  48 16 F6 F5 */ bl cLib_distanceAngleS
+/* 80101730 000FE670  48 16 F6 F5 */ bl cLib_distanceAngleS__Fss
 /* 80101734 000FE674  2C 03 40 00 */ cmpwi r3, 0x4000
 /* 80101738 000FE678  40 81 00 18 */ ble lbl_80101750
 /* 8010173C 000FE67C  A8 7F 04 E6 */ lha r3, 0x4e6(r31)

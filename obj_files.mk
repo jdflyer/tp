@@ -13,7 +13,7 @@ TEXT_O_FILES := 						            \
             $(BUILD_DIR)/src/m_Do/m_Do_main.o    \
             $(BUILD_DIR)/asm/m/Do/m_Do_printf.o    \
             $(BUILD_DIR)/asm/m/Do/m_Do_audio.o    \
-            $(BUILD_DIR)/asm/m/Do/controller/m_Do_controller_pad.o    \
+            $(BUILD_DIR)/src/m_Do/m_Do_controller_pad.o    \
             $(BUILD_DIR)/asm/m/Do/m_Do_graphic.o    \
             $(BUILD_DIR)/asm/m/Do/m_Do_machine.o    \
             $(BUILD_DIR)/asm/m/Do/m_Do_mtx.o    \
@@ -80,15 +80,14 @@ TEXT_O_FILES := 						            \
             $(BUILD_DIR)/src/f/f_pc/f_pc_draw.o    \
             $(BUILD_DIR)/src/f/f_pc/f_pc_fstcreate_req.o    \
             $(BUILD_DIR)/src/f/f_pc/f_pc_stdcreate_req.o    \
-            $(BUILD_DIR)/asm/d/d_stage.o    \
+            $(BUILD_DIR)/src/d/d_stage.o    \
             $(BUILD_DIR)/asm/d/d_map.o    \
             $(BUILD_DIR)/src/d/d_com/d_com_inf_game.o  \
-            $(BUILD_DIR)/asm/d/com/inf/d_com_inf_game.o    \
             $(BUILD_DIR)/asm/d/com/d_com_static.o    \
             $(BUILD_DIR)/src/d/d_bomb.o    \
             $(BUILD_DIR)/src/d/d_lib.o    \
             $(BUILD_DIR)/src/d/d_save/d_save.o \
-            $(BUILD_DIR)/asm/d/save/d_save_init.o    \
+            $(BUILD_DIR)/src/d/d_save/d_save_init.o    \
             $(BUILD_DIR)/asm/d/jnt/d_jnt_col.o    \
             $(BUILD_DIR)/asm/d/a/d_a_obj.o    \
             $(BUILD_DIR)/asm/d/a/itembase/d_a_itembase_static.o    \
@@ -155,7 +154,7 @@ TEXT_O_FILES := 						            \
             $(BUILD_DIR)/asm/d/d_insect.o    \
             $(BUILD_DIR)/asm/d/a/obj/ss/d_a_obj_ss_base.o    \
             $(BUILD_DIR)/asm/d/a/d_a_player.o    \
-            $(BUILD_DIR)/asm/d/d_camera.o    \
+            $(BUILD_DIR)/src/d/d_camera.o    \
             $(BUILD_DIR)/asm/d/d_envse.o    \
             $(BUILD_DIR)/asm/d/file/d_file_select.o    \
             $(BUILD_DIR)/asm/d/file/sel/d_file_sel_warning.o    \
@@ -172,7 +171,7 @@ TEXT_O_FILES := 						            \
             $(BUILD_DIR)/asm/d/d_kyeff.o    \
             $(BUILD_DIR)/asm/d/d_kyeff2.o    \
             $(BUILD_DIR)/asm/d/ky/d_ky_thunder.o    \
-            $(BUILD_DIR)/asm/d/kantera/icon/d_kantera_icon_meter.o    \
+            $(BUILD_DIR)/src/d/d_kantera_icon_meter.o    \
             $(BUILD_DIR)/asm/d/menu/d_menu_calibration.o    \
             $(BUILD_DIR)/asm/d/menu/d_menu_collect.o    \
             $(BUILD_DIR)/asm/d/menu/d_menu_dmap.o    \
@@ -191,15 +190,15 @@ TEXT_O_FILES := 						            \
             $(BUILD_DIR)/asm/d/menu/d_menu_skill.o    \
             $(BUILD_DIR)/asm/d/menu/window/d_menu_window_HIO.o    \
             $(BUILD_DIR)/asm/d/menu/d_menu_window.o    \
-            $(BUILD_DIR)/asm/d/meter/d_meter_HIO.o    \
-            $(BUILD_DIR)/asm/d/meter/d_meter_button.o    \
-            $(BUILD_DIR)/asm/d/meter/d_meter_haihai.o    \
-            $(BUILD_DIR)/asm/d/meter/d_meter_hakusha.o    \
-            $(BUILD_DIR)/asm/d/meter/d_meter_map.o    \
-            $(BUILD_DIR)/asm/d/meter/d_meter_string.o    \
-            $(BUILD_DIR)/asm/d/meter2/d_meter2_draw.o    \
-            $(BUILD_DIR)/asm/d/meter2/d_meter2_info.o    \
-            $(BUILD_DIR)/asm/d/d_meter2.o    \
+            $(BUILD_DIR)/src/d/d_meter/d_meter_HIO.o    \
+            $(BUILD_DIR)/src/d/d_meter/d_meter_button.o    \
+            $(BUILD_DIR)/src/d/d_meter/d_meter_haihai.o    \
+            $(BUILD_DIR)/src/d/d_meter/d_meter_hakusha.o    \
+            $(BUILD_DIR)/src/d/d_meter/d_meter_map.o    \
+            $(BUILD_DIR)/src/d/d_meter/d_meter_string.o    \
+            $(BUILD_DIR)/src/d/d_meter2/d_meter2_draw.o    \
+            $(BUILD_DIR)/src/d/d_meter2/d_meter2_info.o    \
+            $(BUILD_DIR)/src/d/d_meter2.o    \
             $(BUILD_DIR)/asm/d/msg/out/d_msg_out_font.o    \
             $(BUILD_DIR)/asm/d/msg/d_msg_class.o    \
             $(BUILD_DIR)/asm/d/msg/d_msg_object.o    \
@@ -239,11 +238,11 @@ TEXT_O_FILES := 						            \
             $(BUILD_DIR)/asm/d/k/d_k_wmark.o    \
             $(BUILD_DIR)/asm/d/k/d_k_wpillar.o    \
             $(BUILD_DIR)/asm/DynamicLink.o    \
-            $(BUILD_DIR)/asm/SComponent/c/c_malloc.o    \
-            $(BUILD_DIR)/asm/SComponent/c/API/controller/c_API_controller_pad.o    \
-            $(BUILD_DIR)/asm/SComponent/c/API/c_API_graphic.o    \
-            $(BUILD_DIR)/asm/SComponent/c/cc/c_cc_d.o    \
-            $(BUILD_DIR)/asm/SComponent/c/cc/c_cc_s.o    \
+            $(BUILD_DIR)/libs/SSystem/SComponent/c_malloc.o    \
+            $(BUILD_DIR)/libs/SSystem/SComponent/c_API_controller_pad.o    \
+            $(BUILD_DIR)/libs/SSystem/SComponent/c_API_graphic.o    \
+            $(BUILD_DIR)/libs/SSystem/SComponent/c_cc_d.o    \
+            $(BUILD_DIR)/libs/SSystem/SComponent/c_cc_s.o    \
             $(BUILD_DIR)/libs/SSystem/SComponent/c_counter.o   \
             $(BUILD_DIR)/libs/SSystem/SComponent/c_list.o   \
             $(BUILD_DIR)/libs/SSystem/SComponent/c_list_iter.o   \
@@ -252,30 +251,30 @@ TEXT_O_FILES := 						            \
             $(BUILD_DIR)/libs/SSystem/SComponent/c_tree.o   \
             $(BUILD_DIR)/libs/SSystem/SComponent/c_tree_iter.o   \
             $(BUILD_DIR)/libs/SSystem/SComponent/c_phase.o   \
-            $(BUILD_DIR)/asm/SComponent/c/c_request.o    \
+            $(BUILD_DIR)/libs/SSystem/SComponent/c_request.o    \
             $(BUILD_DIR)/libs/SSystem/SComponent/c_tag.o   \
             $(BUILD_DIR)/libs/SSystem/SComponent/c_tag_iter.o   \
-            $(BUILD_DIR)/asm/SComponent/c/c_xyz.o    \
-            $(BUILD_DIR)/asm/SComponent/c/c_sxyz.o    \
-            $(BUILD_DIR)/asm/SComponent/c/c_math.o    \
-            $(BUILD_DIR)/asm/SComponent/c/bg/s/c_bg_s_chk.o    \
-            $(BUILD_DIR)/asm/SComponent/c/bg/s/gnd/c_bg_s_gnd_chk.o    \
-            $(BUILD_DIR)/asm/SComponent/c/bg/s/lin/c_bg_s_lin_chk.o    \
-            $(BUILD_DIR)/asm/SComponent/c/bg/s/shdw/c_bg_s_shdw_draw.o    \
-            $(BUILD_DIR)/asm/SComponent/c/bg/s/poly/c_bg_s_poly_info.o    \
+            $(BUILD_DIR)/libs/SSystem/SComponent/c_xyz.o    \
+            $(BUILD_DIR)/libs/SSystem/SComponent/c_sxyz.o    \
+            $(BUILD_DIR)/libs/SSystem/SComponent/c_math.o    \
+            $(BUILD_DIR)/libs/SSystem/SComponent/c_bg_s_chk.o    \
+            $(BUILD_DIR)/libs/SSystem/SComponent/c_bg_s_gnd_chk.o    \
+            $(BUILD_DIR)/libs/SSystem/SComponent/c_bg_s_lin_chk.o    \
+            $(BUILD_DIR)/libs/SSystem/SComponent/c_bg_s_shdw_draw.o    \
+            $(BUILD_DIR)/libs/SSystem/SComponent/c_bg_s_poly_info.o    \
             $(BUILD_DIR)/libs/SSystem/SComponent/c_bg_w.o    \
-            $(BUILD_DIR)/asm/SComponent/c/c_m2d.o    \
-            $(BUILD_DIR)/asm/SComponent/c/c_m3d.o    \
-            $(BUILD_DIR)/asm/SComponent/c/m3d/g/c_m3d_g_aab.o    \
-            $(BUILD_DIR)/asm/SComponent/c/m3d/g/c_m3d_g_cir.o    \
-            $(BUILD_DIR)/asm/SComponent/c/m3d/g/c_m3d_g_cps.o    \
-            $(BUILD_DIR)/asm/SComponent/c/m3d/g/c_m3d_g_cyl.o    \
-            $(BUILD_DIR)/asm/SComponent/c/m3d/g/c_m3d_g_lin.o    \
-            $(BUILD_DIR)/asm/SComponent/c/m3d/g/c_m3d_g_pla.o    \
-            $(BUILD_DIR)/asm/SComponent/c/m3d/g/c_m3d_g_sph.o    \
-            $(BUILD_DIR)/asm/SComponent/c/m3d/g/c_m3d_g_tri.o    \
-            $(BUILD_DIR)/asm/SComponent/c/c_lib.o    \
-            $(BUILD_DIR)/asm/SComponent/c/c_angle.o    \
+            $(BUILD_DIR)/libs/SSystem/SComponent/c_m2d.o    \
+            $(BUILD_DIR)/libs/SSystem/SComponent/c_m3d.o    \
+            $(BUILD_DIR)/libs/SSystem/SComponent/c_m3d_g_aab.o    \
+            $(BUILD_DIR)/libs/SSystem/SComponent/c_m3d_g_cir.o    \
+            $(BUILD_DIR)/libs/SSystem/SComponent/c_m3d_g_cps.o    \
+            $(BUILD_DIR)/libs/SSystem/SComponent/c_m3d_g_cyl.o    \
+            $(BUILD_DIR)/libs/SSystem/SComponent/c_m3d_g_lin.o    \
+            $(BUILD_DIR)/libs/SSystem/SComponent/c_m3d_g_pla.o    \
+            $(BUILD_DIR)/libs/SSystem/SComponent/c_m3d_g_sph.o    \
+            $(BUILD_DIR)/libs/SSystem/SComponent/c_m3d_g_tri.o    \
+            $(BUILD_DIR)/libs/SSystem/SComponent/c_lib.o    \
+            $(BUILD_DIR)/libs/SSystem/SComponent/c_angle.o    \
             $(BUILD_DIR)/asm/SStandard/s/s_basic.o    \
             $(BUILD_DIR)/asm/JFramework/JFWSystem.o    \
             $(BUILD_DIR)/asm/JFramework/JFWDisplay.o    \
@@ -311,7 +310,7 @@ TEXT_O_FILES := 						            \
             $(BUILD_DIR)/asm/JStudio/jstudio-math.o    \
             $(BUILD_DIR)/asm/JStudio/jstudio-object.o    \
             $(BUILD_DIR)/asm/JStudio/object-id.o    \
-            $(BUILD_DIR)/asm/JStudio/stb.o    \
+            $(BUILD_DIR)/libs/JSystem/JStudio/stb.o    \
             $(BUILD_DIR)/asm/JStudio/stb-data-parse.o    \
             $(BUILD_DIR)/asm/JStudio_JStage/control.o    \
             $(BUILD_DIR)/asm/JStudio_JStage/object.o    \
@@ -384,7 +383,7 @@ TEXT_O_FILES := 						            \
             $(BUILD_DIR)/asm/JAudio2/JAUAudioArcLoader.o    \
             $(BUILD_DIR)/asm/JAudio2/JAUAudioMgr.o    \
             $(BUILD_DIR)/asm/JAudio2/JAUBankTable.o    \
-            $(BUILD_DIR)/asm/JAudio2/JAUClusterSound.o    \
+            $(BUILD_DIR)/libs/JSystem/JAudio2/JAUClusterSound.o    \
             $(BUILD_DIR)/asm/JAudio2/JAUInitializer.o    \
             $(BUILD_DIR)/asm/JAudio2/JAUSectionHeap.o    \
             $(BUILD_DIR)/asm/JAudio2/JAUSeqCollection.o    \
@@ -397,34 +396,30 @@ TEXT_O_FILES := 						            \
             $(BUILD_DIR)/asm/JMessage/resource.o    \
             $(BUILD_DIR)/asm/JMessage/locale.o    \
             $(BUILD_DIR)/libs/Z2AudioLib/Z2Calc.o    \
-            $(BUILD_DIR)/asm/Z2AudioLib/Z2AudioArcLoader.o    \
-            $(BUILD_DIR)/asm/Z2AudioLib/Z2SoundMgr.o    \
-            $(BUILD_DIR)/asm/Z2AudioLib/Z2SoundStarter.o    \
-            $(BUILD_DIR)/asm/Z2AudioLib/Z2SoundHandles.o    \
+            $(BUILD_DIR)/libs/Z2AudioLib/Z2AudioArcLoader.o    \
+            $(BUILD_DIR)/libs/Z2AudioLib/Z2SoundMgr.o    \
+            $(BUILD_DIR)/libs/Z2AudioLib/Z2SoundStarter.o    \
+            $(BUILD_DIR)/libs/Z2AudioLib/Z2SoundHandles.o    \
             $(BUILD_DIR)/libs/Z2AudioLib/Z2SeMgr.o    \
             $(BUILD_DIR)/libs/Z2AudioLib/Z2SeqMgr.o    \
-            $(BUILD_DIR)/asm/Z2AudioLib/Z2SeqMgr.o    \
             $(BUILD_DIR)/libs/Z2AudioLib/Z2StatusMgr.o    \
             $(BUILD_DIR)/libs/Z2AudioLib/Z2SceneMgr.o    \
-            $(BUILD_DIR)/asm/Z2AudioLib/Z2SceneMgr.o    \
-            $(BUILD_DIR)/asm/Z2AudioLib/Z2FxLineMgr.o    \
-            $(BUILD_DIR)/asm/Z2AudioLib/Z2SoundInfo.o    \
-            $(BUILD_DIR)/asm/Z2AudioLib/Z2Audience.o    \
-            $(BUILD_DIR)/asm/Z2AudioLib/Z2SoundObject.o    \
-            $(BUILD_DIR)/asm/Z2AudioLib/Z2SoundObjMgr.o    \
-            $(BUILD_DIR)/asm/Z2AudioLib/Z2Creature.o    \
+            $(BUILD_DIR)/libs/Z2AudioLib/Z2FxLineMgr.o    \
+            $(BUILD_DIR)/libs/Z2AudioLib/Z2SoundInfo.o    \
+            $(BUILD_DIR)/libs/Z2AudioLib/Z2Audience.o    \
+            $(BUILD_DIR)/libs/Z2AudioLib/Z2SoundObject.o    \
+            $(BUILD_DIR)/libs/Z2AudioLib/Z2SoundObjMgr.o    \
+            $(BUILD_DIR)/libs/Z2AudioLib/Z2Creature.o    \
             $(BUILD_DIR)/libs/Z2AudioLib/Z2LinkMgr.o \
-            $(BUILD_DIR)/asm/Z2AudioLib/Z2LinkMgr.o    \
-            $(BUILD_DIR)/asm/Z2AudioLib/Z2EnvSeMgr.o    \
-            $(BUILD_DIR)/asm/Z2AudioLib/Z2WolfHowlMgr.o    \
-            $(BUILD_DIR)/asm/Z2AudioLib/Z2SpeechMgr2.o    \
-            $(BUILD_DIR)/asm/Z2AudioLib/Z2AudioMgr.o    \
+            $(BUILD_DIR)/libs/Z2AudioLib/Z2EnvSeMgr.o    \
+            $(BUILD_DIR)/libs/Z2AudioLib/Z2WolfHowlMgr.o    \
+            $(BUILD_DIR)/libs/Z2AudioLib/Z2SpeechMgr2.o    \
+            $(BUILD_DIR)/libs/Z2AudioLib/Z2AudioMgr.o    \
             $(BUILD_DIR)/asm/gf/GFGeometry.o    \
             $(BUILD_DIR)/asm/gf/GFLight.o    \
             $(BUILD_DIR)/asm/gf/GFPixel.o    \
             $(BUILD_DIR)/asm/gf/GFTev.o    \
             $(BUILD_DIR)/libs/JSystem/JKernel/JKRHeap.o    \
-            $(BUILD_DIR)/asm/JKernel/JKRHeap.o    \
             $(BUILD_DIR)/libs/JSystem/JKernel/JKRExpHeap.o    \
             $(BUILD_DIR)/libs/JSystem/JKernel/JKRSolidHeap.o    \
             $(BUILD_DIR)/libs/JSystem/JKernel/JKRAssertHeap.o    \
@@ -445,7 +440,6 @@ TEXT_O_FILES := 						            \
             $(BUILD_DIR)/libs/JSystem/JKernel/JKRFileCache.o    \
             $(BUILD_DIR)/libs/JSystem/JKernel/JKRArchivePub.o    \
             $(BUILD_DIR)/libs/JSystem/JKernel/JKRArchivePri.o    \
-            $(BUILD_DIR)/asm/JKernel/JKRArchivePri.o    \
             $(BUILD_DIR)/libs/JSystem/JKernel/JKRMemArchive.o    \
             $(BUILD_DIR)/libs/JSystem/JKernel/JKRAramArchive.o    \
             $(BUILD_DIR)/asm/JKernel/JKRAramArchive.o    \
@@ -459,12 +453,12 @@ TEXT_O_FILES := 						            \
             $(BUILD_DIR)/libs/JSystem/JKernel/JKRDvdAramRipper.o    \
             $(BUILD_DIR)/asm/JKernel/JKRDvdAramRipper.o    \
             $(BUILD_DIR)/libs/JSystem/JKernel/JKRDecomp.o    \
-            $(BUILD_DIR)/asm/JSupport/JSUList.o    \
             $(BUILD_DIR)/libs/JSystem/JSupport/JSUList.o    \
             $(BUILD_DIR)/asm/JSupport/JSUInputStream.o    \
             $(BUILD_DIR)/asm/JSupport/JSUMemoryStream.o    \
             $(BUILD_DIR)/asm/JSupport/JSUFileStream.o    \
             $(BUILD_DIR)/asm/JGadget/binary.o    \
+            $(BUILD_DIR)/libs/JSystem/JGadget/linklist.o    \
             $(BUILD_DIR)/asm/JGadget/linklist.o    \
             $(BUILD_DIR)/asm/JGadget/std-vector.o    \
             $(BUILD_DIR)/asm/JUtility/JUTCacheFont.o    \
@@ -473,7 +467,6 @@ TEXT_O_FILES := 						            \
             $(BUILD_DIR)/asm/JUtility/JUTPalette.o    \
             $(BUILD_DIR)/asm/JUtility/JUTNameTab.o    \
             $(BUILD_DIR)/asm/JUtility/JUTGraphFifo.o    \
-            $(BUILD_DIR)/asm/JUtility/JUTFont.o    \
             $(BUILD_DIR)/libs/JSystem/JUtility/JUTFont.o    \
             $(BUILD_DIR)/libs/JSystem/JUtility/JUTResFont.o    \
             $(BUILD_DIR)/asm/JUtility/JUTDbPrint.o    \
@@ -540,7 +533,7 @@ TEXT_O_FILES := 						            \
             $(BUILD_DIR)/asm/J3DGraphLoader/J3DShapeFactory.o    \
             $(BUILD_DIR)/asm/J3DGraphLoader/J3DAnmLoader.o    \
             $(BUILD_DIR)/asm/JMath/JMath.o    \
-            $(BUILD_DIR)/asm/JMath/random.o    \
+            $(BUILD_DIR)/libs/JSystem/JMath/random.o    \
             $(BUILD_DIR)/asm/JMath/JMATrigonometric.o    \
             $(BUILD_DIR)/asm/base/PPCArch.o    \
             $(BUILD_DIR)/asm/os/OS.o    \

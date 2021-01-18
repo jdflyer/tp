@@ -21,13 +21,13 @@ lbl_800EB304:
 /* 800EB304 000E8244  38 7F 04 D0 */ addi r3, r31, 0x4d0
 /* 800EB308 000E8248  80 9F 28 58 */ lwz r4, 0x2858(r31)
 /* 800EB30C 000E824C  38 84 04 D0 */ addi r4, r4, 0x4d0
-/* 800EB310 000E8250  48 18 58 F5 */ bl cLib_targetAngleY
+/* 800EB310 000E8250  48 18 58 F5 */ bl cLib_targetAngleY__FPC3VecPC3Vec
 /* 800EB314 000E8254  7C 64 1B 78 */ mr r4, r3
 /* 800EB318 000E8258  38 7F 04 E6 */ addi r3, r31, 0x4e6
 /* 800EB31C 000E825C  38 A0 00 02 */ li r5, 2
 /* 800EB320 000E8260  38 C0 20 00 */ li r6, 0x2000
 /* 800EB324 000E8264  38 E0 08 00 */ li r7, 0x800
-/* 800EB328 000E8268  48 18 52 19 */ bl cLib_addCalcAngleS
+/* 800EB328 000E8268  48 18 52 19 */ bl cLib_addCalcAngleS__FPsssss
 /* 800EB32C 000E826C  88 1F 2F 98 */ lbz r0, 0x2f98(r31)
 /* 800EB330 000E8270  28 00 00 03 */ cmplwi r0, 3
 /* 800EB334 000E8274  40 82 00 14 */ bne lbl_800EB348
@@ -42,7 +42,7 @@ lbl_800EB348:
 lbl_800EB354:
 /* 800EB354 000E8294  A8 7F 2F E2 */ lha r3, 0x2fe2(r31)
 /* 800EB358 000E8298  A8 9F 04 E6 */ lha r4, 0x4e6(r31)
-/* 800EB35C 000E829C  48 18 5A C9 */ bl cLib_distanceAngleS
+/* 800EB35C 000E829C  48 18 5A C9 */ bl cLib_distanceAngleS__Fss
 /* 800EB360 000E82A0  7C 7E 1B 78 */ mr r30, r3
 /* 800EB364 000E82A4  88 1F 05 6A */ lbz r0, 0x56a(r31)
 /* 800EB368 000E82A8  28 00 00 1C */ cmplwi r0, 0x1c
@@ -80,7 +80,7 @@ lbl_800EB3DC:
 /* 800EB3E0 000E8320  4B FF F5 4D */ bl daAlink_c_NS_setSumouPunchStatus
 /* 800EB3E4 000E8324  7F E3 FB 78 */ mr r3, r31
 /* 800EB3E8 000E8328  38 80 00 15 */ li r4, 0x15
-/* 800EB3EC 000E832C  4B FC 7E 7D */ bl daAlink_c_NS_setDoStatusEmphasys
+/* 800EB3EC 000E832C  4B FC 7E 7D */ bl setDoStatusEmphasys__9daAlink_cFUc
 /* 800EB3F0 000E8330  38 00 00 05 */ li r0, 5
 /* 800EB3F4 000E8334  3C 60 80 40 */ lis r3, g_dComIfG_gameInfo@ha
 /* 800EB3F8 000E8338  38 63 61 C0 */ addi r3, r3, g_dComIfG_gameInfo@l
@@ -97,7 +97,7 @@ lbl_800EB3DC:
 /* 800EB424 000E8364  A8 1F 2F E2 */ lha r0, 0x2fe2(r31)
 /* 800EB428 000E8368  7C 03 00 50 */ subf r0, r3, r0
 /* 800EB42C 000E836C  7C 03 07 34 */ extsh r3, r0
-/* 800EB430 000E8370  48 27 9C A1 */ bl func_803650D0
+/* 800EB430 000E8370  48 27 9C A1 */ bl abs
 /* 800EB434 000E8374  2C 03 40 00 */ cmpwi r3, 0x4000
 /* 800EB438 000E8378  40 81 00 44 */ ble lbl_800EB47C
 /* 800EB43C 000E837C  A8 7F 04 DE */ lha r3, 0x4de(r31)

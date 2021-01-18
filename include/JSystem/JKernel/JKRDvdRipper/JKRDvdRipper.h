@@ -1,10 +1,13 @@
 #ifndef __JKRDVDRIPPER_H__
 #define __JKRDVDRIPPER_H__
 
+#include "JSystem/JKernel/JKRDecomp/JKRDecomp.h"
 #include "dolphin/types.h"
 
 enum JKRExpandSwitch {
-
+    EXPAND_SWITCH_UNKNOWN0 = 0,
+    EXPAND_SWITCH_UNKNOWN1 = 1,
+    EXPAND_SWITCH_UNKNOWN2 = 2,
 };
 
 class JKRHeap;
@@ -12,21 +15,28 @@ class JKRDvdFile;
 class JKRDvdRipper {
 public:
     enum EAllocDirection {
-
+        UNKNOWN_EALLOC_DIRECTION = 0,
+        ALLOC_DIRECTION_FORWARD = 1,
+        ALLOC_DIRECTION_BACKWARD = 2,
     };
 
-    void loadToMainRAM(char const*, u8*, JKRExpandSwitch, u32, JKRHeap*, EAllocDirection, u32, int*,
-                       u32*);
-    void loadToMainRAM(long, u8*, JKRExpandSwitch, u32, JKRHeap*, EAllocDirection, u32, int*, u32*);
-    void loadToMainRAM(JKRDvdFile*, u8*, JKRExpandSwitch, u32, JKRHeap*, EAllocDirection, u32, int*,
-                       u32*);
+    static void* loadToMainRAM(char const*, u8*, JKRExpandSwitch, u32, JKRHeap*, EAllocDirection,
+                               u32, JKRCompression*, u32*);
+    static void* loadToMainRAM(long, u8*, JKRExpandSwitch, u32, JKRHeap*, EAllocDirection, u32,
+                               JKRCompression*, u32*);
+    static void* loadToMainRAM(JKRDvdFile*, u8*, JKRExpandSwitch, u32, JKRHeap*, EAllocDirection,
+                               u32, JKRCompression*, u32*);
 
     void isErrorRetry(void);
 };
 
 void JKRDecompressFromDVD(JKRDvdFile*, void*, u32, u32, u32, u32, u32*);
-static void decompSZS_subroutine(u8*, u8*);
-static void firstSrcData(void);
-static void nextSrcData(u8*);
+
+inline void* JKRDvdToMainRam(s32 entryNum, u8* dst, JKRExpandSwitch expandSwitch, u32 dstLength,
+                             JKRHeap* heap, JKRDvdRipper::EAllocDirection allocDirection,
+                             u32 offset, JKRCompression* compression, u32* returnSize) {
+    return JKRDvdRipper::loadToMainRAM(entryNum, dst, expandSwitch, dstLength, heap, allocDirection,
+                                       offset, compression, returnSize);
+}
 
 #endif

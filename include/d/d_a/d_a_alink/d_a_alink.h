@@ -6,6 +6,8 @@
 #include "JSystem/J3DGraphAnimator/J3DModelData.h"
 #include "JSystem/J3DGraphAnimator/J3DModelLoader.h"
 #include "SComponent/c_bg_s_poly_info.h"
+#include "SComponent/c_sxyz.h"
+#include "SComponent/c_xyz.h"
 #include "d/d_a/d_a_player/d_a_player.h"
 #include "d/d_cc/d_cc_d.h"
 #include "d/d_com/d_com_inf_game/d_com_inf_game.h"
@@ -38,15 +40,12 @@ class daAlinkHIO_anm_c;
 class daPy_frameCtrl_c;
 struct cM3dGPla;
 
-struct csXyz {  // move later
-    s16 x, y, z;
-};
-
 class daAlink_c {
 public:
+    // member functions
     u32 getE3Zhint(void);
     const char* getAlinkArcName(void);
-    u32 checkStageName(const char*);
+    bool checkStageName(const char*);
     void tgHitCallback(fopAc_ac_c*, dCcD_GObjInf*, dCcD_GObjInf*);
     void coHitCallback(fopAc_ac_c*, dCcD_GObjInf*);
     void setMatrixWorldAxisRot(float (*)[4], short, short, short, int, const cXyz*);
@@ -196,9 +195,55 @@ public:
     void setPlayerPosAndAngle(float (*)[4]);
     u32 itemTriggerCheck(u8);
     u32 itemButtonCheck(u8);
+    void itemButton(void);
+    void itemTrigger(void);
+    void spActionButton(void);
+    void spActionTrigger(void);
+    u32 midnaTalkTrigger(void) const;
+    void swordSwingTrigger(void);
+    void setItemActionButtonStatus(u8);
+    void itemActionTrigger(void);
+    /*---*/
+    void setRStatus(u8);
+    void setRStatusEmphasys(u8);
+    void setDoStatus(u8);
+    void setDoStatusEmphasys(u8);
+    void setDoStatusContinuation(u8);
+    void setBStatus(u8);
+    int checkRAction(void);
+    BOOL checkMagicArmorHeavy(void) const;
+    BOOL checkBootsOrArmorHeavy(void) const;
+    void setSpecialGravity(float, float, int);
+    int checkMagicArmorWearAbility(void) const;
+    void onFrollCrashFlg(u8, int);
+    void setMidnaTalkStatus(u8);
+    void setShieldChange(void);
 
 private:
-    u8 unk[14268];
+    u8 unk[1328];
+    float unk1328;
+    float unk1332;
+    u8 unk1336[56];
+    u32 unk1392;
+    u32 unk1396;
+    u32 unk1400;
+    u32 unk1404;
+    u8 unk1408[6716];
+    u16 unk8124;
+    u8 unk8126[4047];
+    u8 unk12173;
+    u8 unk12174;
+    u8 unk12175[13];
+    u8 unk12188;
+    u8 unk12199[7];
+    u8 unk12196;
+    u8 unk12197[9];
+    u8 unk12206;
+    u8 unk12207[16];
+    u8 unk12223;
+    u8 unk12224[17];
+    u8 unk12241;
+    u8 unk12242[2026];
 };
 
 class daMidna_c {
@@ -215,6 +260,15 @@ private:
     u32 unk2200;
 };
 
+class daHorse_c {
+public:
+    u32 getZeldaActor(void);
+
+private:
+    u8 unk[0x1254];
+    daPy_actorKeep_c actorKeep;
+};
+
 extern "C" {
 void tgHitCallback__9daAlink_cFP10fopAc_ac_cP12dCcD_GObjInfP12dCcD_GObjInf(fopAc_ac_c*,
                                                                            dCcD_GObjInf*,
@@ -227,10 +281,7 @@ void mDoMtx_ZXYrotM(void);
 void mDoMtx_YrotM(void);
 void daAlink_c_NS_concatMagneBootMtx(void);
 void mDoMtx_stack_c_NS_transS(void);
-void PSMTXQuat(void);
-void PSMTXInverse(void);
 void mDoMtx_stack_c_NS_quatM(void);
-void PSMTXTrans(void);
 void daAlink_c_NS_checkUnderMove0BckNoArc(void);
 void mDoMtx_QuatConcat(void);
 void JMAEulerToQuat(void);
@@ -238,7 +289,7 @@ void daAlink_c_NS_checkBowAnime(void);
 void setMatrixWorldAxisRot__9daAlink_cFPA4_fsssiPC4cXyz(float (*)[4], short, short, short, int,
                                                         const cXyz*);
 void daAlink_c_NS_checkHorseLieAnime(void);
-void csXyz_X1_(void);
+void __ct__5csXyzFsss(void);
 void daAlink_c_NS_checkNoUpperAnime(void);
 void daAlink_c_NS_checkUpperReadyThrowAnime(void);
 void daAlink_c_NS_setDoubleAnimeBlendRatio(void);
@@ -257,29 +308,26 @@ bool headModelCallBack__9daAlink_cFi(int);
 void daAlink_c_NS_changeWolfBlendRate(void);
 void daAlink_c_NS_setWolfFootMatrix(void);
 bool wolfModelCallBack__9daAlink_cFi(int);
-void cLib_addCalcAngleS2(void);
-void PSMTXMultVec(void);
+void cLib_addCalcAngleS2__FPssss(void);
 void daAlink_c_NS_getMoveBGActorName(void);
 void daAlink_c_NS_multVecMagneBootInvMtx(void);
-void cXyz_NS___ml(void);
-void cXyz_NS_atan2sY_XZ(void);
-void cM_atan2s(void);
-void cLib_distanceAngleS(void);
-void cXyz_NS_atan2sX_Z(void);
-void PSMTXMultVecSR(void);
-void cXyz_NS___mi(void);
+void __ml__4cXyzCFf(void);
+void atan2sY_XZ__4cXyzCFv(void);
+void cM_atan2s__Fff(void);
+void cLib_distanceAngleS__Fss(void);
+void atan2sX_Z__4cXyzCFv(void);
+void __mi__4cXyzCFRC3Vec(void);
 void dKyw_get_AllWind_vec(void);
-void PSVECSquareMag(void);
-void cLib_addCalcAngleS(void);
-void cM_rndF(void);
+void cLib_addCalcAngleS__FPsssss(void);
+void cM_rndF__Ff(void);
 void calcHairAngle__9daAlink_cFPs(short*);
 void setHairAngle__9daAlink_cFP4cXyzff(cXyz*, float, float);
-void cLib_targetAngleY(void);
+void cLib_targetAngleY__FPC3VecPC3Vec(void);
 void daAlink_c_NS_checkEnemyGroup(void);
 int checkAttentionPosAngle__9daAlink_cFP4cXyz(cXyz*);
 void daAlink_c_NS_getDemoLookActor(void);
 void daAlink_c_NS_checkDemoMoveMode(void);
-bool isTransformLV__21dSv_player_status_b_cCFi(int);
+BOOL isTransformLV__21dSv_player_status_b_cCFi(int);
 void dKy_darkworld_check(void);
 void daAlink_c_NS_checkAttentionState(void);
 void daAlink_c_NS_checkUnderMove0BckNoArcWolf(void);
@@ -291,7 +339,7 @@ bool checkActorPosAngle__9daAlink_cFP10fopAc_ac_cPP4cXyz(fopAc_ac_c*, cXyz**);
 void dCamera_c_NS_GetForceLockOnActor(void);
 void dCam_getBody(void);
 void dAttention_c_NS_LockonTarget(void);
-void cM_rnd(void);
+void cM_rnd__Fv(void);
 void fopAcIt_Judge(void);
 void dAttList_c_NS_getActor(void);
 void dAttention_c_NS_GetLockonList(void);
@@ -336,6 +384,7 @@ extern float lbl_80453058;
 extern float lbl_80453100;
 extern float lbl_804531F0;
 extern float lbl_804531F4;
+extern u8 lbl_80439A20[65536];  // JMath::JMath::sincosTable_
 
 // daalink sethairangle
 extern float lbl_80452C98;

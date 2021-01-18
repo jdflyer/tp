@@ -86,22 +86,22 @@ asm s32 JKRExpHeap::do_resize(void*, u32) {
 #include "JSystem/JKernel/JKRExpHeap/asm/func_802CF978.s"
 }
 
-asm s32 JKRExpHeap::do_getSize(void*) {
+asm s32 JKRExpHeap::do_getSize(void*) const {
     nofralloc
 #include "JSystem/JKernel/JKRExpHeap/asm/func_802CFB24.s"
 }
 
-asm s32 JKRExpHeap::do_getFreeSize(void) {
+asm s32 JKRExpHeap::do_getFreeSize(void) const {
     nofralloc
 #include "JSystem/JKernel/JKRExpHeap/asm/func_802CFBA4.s"
 }
 
-asm void* JKRExpHeap::do_getMaxFreeBlock(void) {
+asm void* JKRExpHeap::do_getMaxFreeBlock(void) const {
     nofralloc
 #include "JSystem/JKernel/JKRExpHeap/asm/func_802CFC10.s"
 }
 
-asm s32 JKRExpHeap::do_getTotalFreeSize(void) {
+asm s32 JKRExpHeap::do_getTotalFreeSize(void) const {
     nofralloc
 #include "JSystem/JKernel/JKRExpHeap/asm/func_802CFC84.s"
 }
@@ -157,7 +157,7 @@ asm bool JKRExpHeap::dump(void) {
 #include "JSystem/JKernel/JKRExpHeap/asm/func_802D03B8.s"
 }
 
-asm void JKRExpHeap::dump_sort(void) {
+asm bool JKRExpHeap::dump_sort(void) {
     nofralloc
 #include "JSystem/JKernel/JKRExpHeap/asm/func_802D05CC.s"
 }
@@ -200,12 +200,12 @@ asm bool JKRExpHeap::state_compare(JKRHeap::TState const&, JKRHeap::TState const
 #include "JSystem/JKernel/JKRExpHeap/asm/func_802D09E0.s"
 }
 
-asm u32 JKRExpHeap::getHeapType(void) {
+asm u32 JKRExpHeap::getHeapType(void) const {
     nofralloc
 #include "JSystem/JKernel/JKRExpHeap/asm/func_802D0A10.s"
 }
 
-asm u8 JKRExpHeap::do_getCurrentGroupId(void) {
+asm u8 JKRExpHeap::do_getCurrentGroupId(void) const {
     nofralloc
 #include "JSystem/JKernel/JKRExpHeap/asm/func_802D0A1C.s"
 }

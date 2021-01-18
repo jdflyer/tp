@@ -33,9 +33,9 @@
 /* 800CF400 000CC340  90 1A 00 18 */ stw r0, 0x18(r26)
 /* 800CF404 000CC344  38 7F 07 C4 */ addi r3, r31, 0x7c4
 /*.global daPy_actorKeep_c*/
-/* 800CF408 000CC348  3C 80 80 14 */ lis r4, daPy_actorKeep_c@ha
+/* 800CF408 000CC348  3C 80 80 14 */ lis r4, __ct__16daPy_actorKeep_cFv@ha
 /*.global daPy_actorKeep_c*/
-/* 800CF40C 000CC34C  38 84 10 EC */ addi r4, r4, daPy_actorKeep_c@l
+/* 800CF40C 000CC34C  38 84 10 EC */ addi r4, r4, __ct__16daPy_actorKeep_cFv@l
 /* 800CF410 000CC350  38 A0 00 00 */ li r5, 0
 /* 800CF414 000CC354  38 C0 00 08 */ li r6, 8
 /* 800CF418 000CC358  38 E0 00 0A */ li r7, 0xa
@@ -144,7 +144,7 @@
 /* 800CF584 000CC4C4  38 03 72 18 */ addi r0, r3, lbl_803A7218@l
 /* 800CF588 000CC4C8  90 1A 01 1C */ stw r0, 0x11c(r26)
 /* 800CF58C 000CC4CC  38 7A 01 24 */ addi r3, r26, 0x124
-/* 800CF590 000CC4D0  48 19 F9 F9 */ bl cM3dGCps
+/* 800CF590 000CC4D0  48 19 F9 F9 */ bl __ct__8cM3dGCpsFv
 /* 800CF594 000CC4D4  3C 60 80 3C */ lis r3, lbl_803C3608@ha
 /* 800CF598 000CC4D8  38 63 36 08 */ addi r3, r3, lbl_803C3608@l
 /* 800CF59C 000CC4DC  90 7A 01 20 */ stw r3, 0x120(r26)
@@ -248,13 +248,13 @@
 /* 800CF71C 000CC65C  38 7F 1D AC */ addi r3, r31, 0x1dac
 /* 800CF720 000CC660  4B FA 89 11 */ bl dBgS_LinkLinChk
 /* 800CF724 000CC664  38 7F 1E 1C */ addi r3, r31, 0x1e1c
-/* 800CF728 000CC668  48 19 89 4D */ bl cBgS_PolyInfo_NS_ctor
+/* 800CF728 000CC668  48 19 89 4D */ bl __ct__13cBgS_PolyInfoFv
 /* 800CF72C 000CC66C  38 7F 1E 2C */ addi r3, r31, 0x1e2c
-/* 800CF730 000CC670  48 19 89 45 */ bl cBgS_PolyInfo_NS_ctor
+/* 800CF730 000CC670  48 19 89 45 */ bl __ct__13cBgS_PolyInfoFv
 /* 800CF734 000CC674  38 7F 1E 3C */ addi r3, r31, 0x1e3c
-/* 800CF738 000CC678  48 19 89 3D */ bl cBgS_PolyInfo_NS_ctor
+/* 800CF738 000CC678  48 19 89 3D */ bl __ct__13cBgS_PolyInfoFv
 /* 800CF73C 000CC67C  38 7F 1E 4C */ addi r3, r31, 0x1e4c
-/* 800CF740 000CC680  48 19 89 35 */ bl cBgS_PolyInfo_NS_ctor
+/* 800CF740 000CC680  48 19 89 35 */ bl __ct__13cBgS_PolyInfoFv
 /* 800CF744 000CC684  38 7F 1E 5C */ addi r3, r31, 0x1e5c
 /* 800CF748 000CC688  4B FA 88 15 */ bl dBgS_ObjLinChk
 /* 800CF74C 000CC68C  3B 5F 1E CC */ addi r26, r31, 0x1ecc

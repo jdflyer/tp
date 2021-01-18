@@ -17,11 +17,11 @@ lbl_803DBF40:
 .global lbl_803DBF4C
 lbl_803DBF4C:
 	.skip 0x138C
-.global lbl_803DD2D8
-lbl_803DD2D8:
+.global m_gamePad
+m_gamePad:
 	.skip 0x10
-.global lbl_803DD2E8
-lbl_803DD2E8:
+.global m_cpadInfo
+m_cpadInfo:
 	.skip 0x100
 .global lbl_803DD3E8
 lbl_803DD3E8:
@@ -86,8 +86,8 @@ lbl_803F0F50:
 .global lbl_803F1BB0
 lbl_803F1BB0:
 	.skip 0xC
-.global lbl_803F1BBC
-lbl_803F1BBC:
+.global g_HIO
+g_HIO:
 	.skip 0x44
 .global lbl_803F1C00
 lbl_803F1C00:
@@ -809,14 +809,14 @@ lbl_80434274:
 .global lbl_80434280
 lbl_80434280:
 	.skip 0xC
-.global lbl_8043428C
-lbl_8043428C:
+.global sThreadList__9JKRThread
+sThreadList__9JKRThread:
 	.skip 0x44
 .global lbl_804342D0
 lbl_804342D0:
 	.skip 0xC
-.global lbl_804342DC
-lbl_804342DC:
+.global sAramCommandList__7JKRAram
+sAramCommandList__7JKRAram:
 	.skip 0xC
 .global lbl_804342E8
 lbl_804342E8:
@@ -839,14 +839,14 @@ lbl_80434330:
 .global lbl_80434348
 lbl_80434348:
 	.skip 0xC
-.global lbl_80434354
-lbl_80434354:
+.global sVolumeList__13JKRFileLoader
+sVolumeList__13JKRFileLoader:
 	.skip 0xC
 .global lbl_80434360
 lbl_80434360:
 	.skip 0xC
-.global lbl_8043436C
-lbl_8043436C:
+.global sDvdList__10JKRDvdFile
+sDvdList__10JKRDvdFile:
 	.skip 0xC
 .global lbl_80434378
 lbl_80434378:

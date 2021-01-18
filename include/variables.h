@@ -1,22 +1,19 @@
 #include "JSystem/JSupport/JSUList/JSUList.h"
 
 extern float lbl_80451D5C;
-extern u8 lbl_80379234[0x64];
 extern float lbl_80451D58;
-extern u8 lbl_803A7270[24];
+extern u8 i_item_lst[24];
 extern u8 lbl_80430188[16];
 extern u8 lbl_80379235[16];
+extern char lbl_80379234[0x64];
 extern char lbl_803739A0[0x310];
 extern void* lbl_80451368;
-extern u32 lbl_804514E0;
-extern u8 lbl_803C3384;
-struct m_cpadInfo;
-extern m_cpadInfo lbl_803DD2E8;
+extern u32 _sRumbleSupported;
 extern u8 lbl_803A2EF4;
-extern u8 lbl_803A2EE0;
+extern char lbl_803A2EE0[20];
 extern u8 lbl_80450B19;
-extern u8 lbl_80450588;
-extern u8 lbl_804511B8;
+// extern u8 lbl_80450588;
+// extern u8 lbl_804511B8;
 extern u8 lbl_80450B20;
 extern u8 lbl_80451A00;
 extern u8 lbl_80450B1C;
@@ -40,27 +37,27 @@ extern u8 lbl_80450B1C;
 extern u8 lbl_80450B1C;
 extern u8 lbl_80450B24;
 extern u8 lbl_80450B24;
-extern u8 lbl_803F1BBC;
-extern u8 lbl_803F1BBC;
+struct g_HIO_struct;
+extern g_HIO_struct g_HIO;
 extern u8 lbl_80450C2C;
 extern u8 lbl_80450C28;
 extern u8 lbl_80450C34;
 extern u8 lbl_80450B24;
 extern u8 lbl_80450B1C;
-extern u8 lbl_80450580;
-extern u8 lbl_80450B1A;
+extern s8 lbl_80450580[4];
+// extern u8 lbl_80450B1A;
+struct JUTGamePad;
+extern JUTGamePad* m_gamePad[4];
 extern u8 lbl_80450B18;
-extern u8 lbl_803D32E0;
-extern u8 lbl_80450BBC;
+// extern u8 lbl_803D32E0;
 extern u8 lbl_803EAF40[];
 extern u8 lbl_80450B34;
 extern u8 lbl_80450B00;
 extern u8 lbl_80450C80;
 extern u8 LOAD_COPYDATE__FPv;
-extern u8 __ct__12dSv_memory_cFv;
-extern u8 __ct__13dSv_memory2_cFv;
 extern u8 lbl_803D3420;
 extern u8 lbl_80450B0C;
+// struct ResetData;
 extern u8 lbl_80450B08;
 extern u8 lbl_803DB420;
 extern u8 main01__Fv;
@@ -76,6 +73,7 @@ extern u8 lbl_803BB498;
 extern float lbl_804550E8;
 extern float lbl_804550EC;
 extern u8 lbl_80450C90;
+extern u8 J3DLightObj;
 
 #define _SDA_BASE_(dummy) 0
 #define _SDA2_BASE_(dummy) 0
@@ -84,20 +82,19 @@ extern u8 lbl_80450C90;
 extern void* lbl_803CBF70;  // JKRHeap::__vt
 
 class JKRHeap;
-extern JKRHeap* lbl_80451370;  // JKRHeap::sSystemHeap
-extern JKRHeap* lbl_80451378;  // JKRHeap::sRootHeap
-extern JKRHeap* lbl_80451374;  // JKRHeap::sCurrentHeap
-extern void* lbl_8045137C;     // JKRHeap::mErrorHandler
+extern JKRHeap* sSystemHeap__7JKRHeap;   // JKRHeap::sSystemHeap
+extern JKRHeap* sRootHeap__7JKRHeap;     // JKRHeap::sRootHeap
+extern JKRHeap* sCurrentHeap__7JKRHeap;  // JKRHeap::sCurrentHeap
 
 extern bool lbl_804508B0;  // ::*fill*
 extern bool lbl_80451380;  // DAT_80451380
 
 // func_802CE378
-extern void* lbl_80451384;  // JKRHeap::mCodeStart
-extern void* lbl_80451388;  // JKRHeap::mCodeEnd
-extern void* lbl_8045138C;  // JKRHeap::mUserRamStart
-extern void* lbl_80451390;  // JKRHeap::mUserRamEnd
-extern u32 lbl_80451394;    // JKRHeap::mMemorySize
+extern void* mCodeStart__7JKRHeap;     // JKRHeap::mCodeStart
+extern void* mCodeEnd__7JKRHeap;       // JKRHeap::mCodeEnd
+extern void* mUserRamStart__7JKRHeap;  // JKRHeap::mUserRamStart
+extern void* mUserRamEnd__7JKRHeap;    // JKRHeap::mUserRamEnd
+extern u32 mMemorySize__7JKRHeap;      // JKRHeap::mMemorySize
 
 extern u8 lbl_80000000;
 extern u32 lbl_80000028;
@@ -167,16 +164,16 @@ extern u32 lbl_80455D0C;
 extern u32 lbl_80455D18;
 
 // func_802A96F4
-extern u32 lbl_80455828;
-extern float lbl_8045582C;
+// Z2AudioLib::@380, 0.0
+extern f32 lbl_80455828;
+// Z2AudioLib::@381, 1.0
+extern f32 lbl_8045582C;
 
 // func_802A9814
-extern u32 lbl_80455830;
-extern u32 lbl_80455834;
-
-// func_802A98D4
-extern u32 lbl_80451330;
-extern u32 lbl_80451334;
+// Z2AudioLib::@396, 2.0
+extern f32 lbl_80455830;
+// Z2AudioLib::@397, -2.0
+extern f32 lbl_80455834;
 
 // Z2SoundLib SInstance
 struct Z2SceneMgr;
@@ -205,42 +202,41 @@ extern float lbl_80455FC4;   // JKernel::@935 = 1000.0
 extern double lbl_80455FC8;  // JKernel::@937 = 4.503599627370496E15
 
 class JKRDvdFile;
-extern JSUList<JKRDvdFile> lbl_8043436C;  // JKRDvdFile::sDvdList
-extern u8 lbl_803CC438;                   // JKRDvdFile::__vt
-extern u8 lbl_80434360;                   // JKernel::@657 (global destructor chain)
-extern char lbl_8039D260[12];             // "JKRDvdFile.cpp"
-extern u8 lbl_803CC328;                   // JKRFile::__vt
+extern JSUList<JKRDvdFile> sDvdList__10JKRDvdFile;  // JKRDvdFile::sDvdList
+extern u8 lbl_803CC438;                             // JKRDvdFile::__vt
+extern u8 lbl_80434360;                             // JKernel::@657 (global destructor chain)
+extern char lbl_8039D260[12];                       // "JKRDvdFile.cpp"
+extern u8 lbl_803CC328;                             // JKRFile::__vt
 
 class JKRFileLoader;
-extern JKRFileLoader* lbl_80451418;          // JKRFileLoader::sCurrentVolume
-extern u8 lbl_8039D158;                      // "/"
-extern u8 lbl_803CC238;                      // JKRFileCache::__vt
-extern JSUList<JKRFileLoader> lbl_80434354;  // JKRFileLoader::sVolumeList
-extern u8 lbl_803CC218;                      // JKRArcFinder::__vt
-extern u8 lbl_803CC228;                      // JKRFileFinder::__vt
-extern u8 lbl_803CC208;                      // JKRDvdFinder::__vt
-extern u8 lbl_8039D150;                      // "/"
-extern u8 lbl_803CC1C8;                      // JKRFileLoader::__vt
-extern u8 lbl_804508C0;                      // "/" JKernel::rootPath$2498
-extern u8 lbl_80434348;                      // JKernel::@2182 (global destructor chain)
-extern u8 lbl_803D2D18[256];                 // MSL_C.PPCEABI.bare.H::__lower_map
-extern u8 lbl_803CC090;                      // JKRAssertHeap::__vt
-extern u8 lbl_80451398;                      // JKernel::DBfoundSize
-extern u8 lbl_8045139C;                      // JKernel::DBfoundOffset
-extern u8 lbl_804513A0;                      // JKernel::DBfoundBlock
-extern u8 lbl_804513A4;                      // JKernel::DBnewFreeBlock
-extern u8 lbl_804513A8;                      // JKernel::DBnewUsedBlock
-extern float lbl_80455F98;                   // JKernel::@1121 = 100.0
-extern u8 lbl_803CBFD0;                      // JKRExpHeap::__vt
-extern u8 lbl_8039CAF0;                      // ":::cannot alloc memory (0x%x byte).\n"
-extern double lbl_80455FA0;                  // JKernel::@1123 = 4.503599627370496E15
-extern u8 lbl_803CC030;                      // JKRSolidHeap::__vt
-extern double lbl_80455FB8;                  // JKernel::@697 = 4.503599627370496E15
-extern u8 lbl_8039CE50;                      // "allocFromHead: cannot alloc memory (0x%x byte).\n"
-extern double lbl_80455FB0;                  // JKernel::@695 = 4.503601774854144E15
-extern float lbl_80455FA8;                   // JKernel::@693 = 100.0
-extern u8 lbl_80451420;                      // JKRArchive::sCurrentDirID
-extern u8 lbl_803CC288;                      // JKRArchive::__vt
+extern JKRFileLoader* sCurrentVolume__13JKRFileLoader;       // JKRFileLoader::sCurrentVolume
+extern char lbl_8039D158[16];                                // "/"
+extern u8 lbl_803CC238;                                      // JKRFileCache::__vt
+extern JSUList<JKRFileLoader> sVolumeList__13JKRFileLoader;  // JKRFileLoader::sVolumeList
+extern u8 lbl_803CC218;                                      // JKRArcFinder::__vt
+extern u8 lbl_803CC228;                                      // JKRFileFinder::__vt
+extern u8 lbl_803CC208;                                      // JKRDvdFinder::__vt
+extern const char lbl_8039D150[16];                          // "/"
+extern const char lbl_804508C0[16];                          // "/" JKernel::rootPath$2498
+extern u8 lbl_80434348;                  // JKernel::@2182 (global destructor chain)
+extern const char lbl_803D2D18[256];     // MSL_C.PPCEABI.bare.H::__lower_map
+extern u8 lbl_803CC090;                  // JKRAssertHeap::__vt
+extern u8 lbl_80451398;                  // JKernel::DBfoundSize
+extern u8 lbl_8045139C;                  // JKernel::DBfoundOffset
+extern u8 lbl_804513A0;                  // JKernel::DBfoundBlock
+extern u8 lbl_804513A4;                  // JKernel::DBnewFreeBlock
+extern u8 lbl_804513A8;                  // JKernel::DBnewUsedBlock
+extern float lbl_80455F98;               // JKernel::@1121 = 100.0
+extern u8 lbl_803CBFD0;                  // JKRExpHeap::__vt
+extern u8 lbl_8039CAF0;                  // ":::cannot alloc memory (0x%x byte).\n"
+extern double lbl_80455FA0;              // JKernel::@1123 = 4.503599627370496E15
+extern u8 lbl_803CC030;                  // JKRSolidHeap::__vt
+extern double lbl_80455FB8;              // JKernel::@697 = 4.503599627370496E15
+extern const char lbl_8039CE50[16];      // "allocFromHead: cannot alloc memory (0x%x byte).\n"
+extern double lbl_80455FB0;              // JKernel::@695 = 4.503601774854144E15
+extern float lbl_80455FA8;               // JKernel::@693 = 100.0
+extern u32 sCurrentDirID__10JKRArchive;  // JKRArchive::sCurrentDirID
+extern u8 lbl_803CC288;                  // JKRArchive::__vt
 
 // d_item
 extern float lbl_80452BD8;
@@ -248,7 +244,8 @@ extern float lbl_80452BDC;
 extern double lbl_80452BE0;
 extern u8 lbl_80450D64;
 struct unkEvent {  // figure out what this is later
-    u8 unk0[0x235];
+    u16 unk0[0x11A];
+    u8 unk565;
     u16 unk566;
     u8 unk567[0x439];
 };
@@ -256,13 +253,13 @@ extern unkEvent lbl_803A7288;
 extern u8 lbl_8037B0D0[0x8];
 
 class JKRThread;
-extern JSUList<JKRThread> lbl_8043428C;  // JSUList<JKRThread> JKRThread::sThreadList
+extern JSUList<JKRThread> sThreadList__9JKRThread;  // JSUList<JKRThread> JKRThread::sThreadList
 
-extern u8 lbl_803CC398;  // JKRDvdArchive::__vt
-extern u8 lbl_8039D1B0;  // "JKRDvdArchive.cpp"
+extern u8 lbl_803CC398;        // JKRDvdArchive::__vt
+extern char lbl_8039D1B0[16];  // "JKRDvdArchive.cpp"
 
-extern u8 lbl_803CC2D8;  // JKRMemArchive::__vt
-extern u8 lbl_8039D160;  // "JKRMemArchive.cpp"
+extern u8 lbl_803CC2D8;              // JKRMemArchive::__vt
+extern const char lbl_8039D160[16];  // "JKRMemArchive.cpp"
 
 extern u8 lbl_803CC348;  // JKRAramArchive::__vt
 extern u8 lbl_8039D188;  // "JKRAramArchive.cpp"
@@ -270,10 +267,11 @@ extern u8 lbl_8039D188;  // "JKRAramArchive.cpp"
 extern u8 lbl_803CC3E8;  // JKRCompArchive::__vt
 extern u8 lbl_8039D220;  // "JKRCompArchive.cpp"
 
-extern u8 lbl_803CC460[32];          // JKRDecomp::sMessageBuffer
+extern OSMessage lbl_803CC460[8];    // JKRDecomp::sMessageBuffer
 extern OSMessageQueue lbl_803CC480;  // JKRDecomp::sMessageQueue
-extern u8 lbl_804514B0;              // JKRDecomp::sDecompObject
-extern u8 lbl_803CC4A0;              // JKRDecomp::__vt
+class JKRDecomp;
+extern JKRDecomp* lbl_804514B0;  // JKRDecomp::sDecompObject
+extern u8 lbl_803CC4A0;          // JKRDecomp::__vt
 
 extern u8 lbl_80434378;  // JKernel::@491 (global destructor chain)
 extern u8 lbl_80451428;  // JKernel::szpBuf
@@ -304,21 +302,22 @@ extern u8 lbl_803CC168;  // JKRAramHeap::__vt
 extern u8 lbl_80434300;  // JKernel::@297 (global destructor chain)
 class JKRAramBlock;
 extern JSUList<JKRAramBlock> lbl_8043430C;  // JKRAramHeap::sAramList
+class JKRAMCommand;
+extern JSUList<JKRAMCommand> lbl_80434324;  // JKRAramPiece::sAramPieceCommandList
+extern OSMutex lbl_80434330;                // JKRAramPiece::mMutex
+extern char lbl_8039D0B8[];                 // "direction = %x\n"
 
-extern u8 lbl_80434324;  // JKRAramPiece::sAramPieceCommandList
-extern u8 lbl_80434330;  // JKRAramPiece::mMutex
-extern u8 lbl_8039D0B8;  // "direction = %x\n"
 extern u8 lbl_80434318;  // JKernel::@492 (global destructor chain)
-extern u8 lbl_803CC138;  // JKRAram::sMessageQueue
 
-extern u8 lbl_80451408;  // JKRAramStream::sAramStreamObject
-extern u8 lbl_80451414;  // JKRAramStream::transHeap
-extern u8 lbl_8039D120;  // "JKRAramStream.cpp"
-extern u8 lbl_8045140C;  // JKRAramStream::transBuffer
-extern u8 lbl_80451410;  // JKRAramStream::transSize
-extern u8 lbl_803CC1B8;  // JKRAramStream::__vt
-extern u8 lbl_803CC198;  // JKRAramStream::sMessageQueue
-extern u8 lbl_803CC188;  // JKRAramStream::sMessageBuffer
+class JKRAramStream;
+extern JKRAramStream* sAramStreamObject__13JKRAramStream;  // JKRAramStream::sAramStreamObject
+extern u8 transHeap__13JKRAramStream;                      // JKRAramStream::transHeap
+extern char lbl_8039D120[16];                              // "JKRAramStream.cpp"
+extern u8 transBuffer__13JKRAramStream;                    // JKRAramStream::transBuffer
+extern u8 transSize__13JKRAramStream;                      // JKRAramStream::transSize
+extern u8 lbl_803CC1B8;                                    // JKRAramStream::__vt
+extern OSMessageQueue sMessageQueue__13JKRAramStream;      // JKRAramStream::sMessageQueue
+extern OSMessage sMessageBuffer__13JKRAramStream[4];       // JKRAramStream::sMessageBuffer
 
 extern u8 lbl_804508D0;  // DAT_804508d0
 extern u8 lbl_80451468;  // JKernel::szpBuf (static?)
@@ -348,31 +347,25 @@ extern u8 lbl_804343C0;  // JKernel::decompMutex
 extern u8 lbl_803CC518;  // JSUFileInputStream::__vt
 
 class JKRAram;
-extern JKRAram* lbl_804513C8;  // JKRAram::sAramObject
-extern u8 lbl_804513CC;        // JKernel::szpBuf (static?)
-extern u8 lbl_804513D0;        // JKernel::szpEnd (static?)
-extern u8 lbl_804513D4;        // JKernel::refBuf (static?)
-extern u8 lbl_804513D8;        // JKernel::refEnd (static?)
-extern u8 lbl_804513DC;        // JKernel::refCurrent (static?)
-extern u8 lbl_804513E0;        // JKernel::srcOffset (static?)
-extern u8 lbl_804513E4;        // JKernel::transLeft (static?)
-extern u8 lbl_804513E8;        // JKernel::srcLimit (static?)
-extern u8 lbl_804513EC;        // JKernel::srcAddress (static?)
-extern u8 lbl_804513F0;        // JKernel::fileOffset (static?)
-extern u8 lbl_804513F4;        // JKernel::readCount (static?)
-extern u8 lbl_804513F8;        // JKernel::maxDest (static?)
-extern u8 lbl_804513FC;        // DAT_804513fc (init global mutex)
-extern u8 lbl_80451400;        // JKernel::tsPtr (static?)
-extern u8 lbl_80451404;        // JKernel::tsArea (static?)
+extern u8 lbl_803CC158;                         // JKRAram::__vt
+extern char lbl_8039D078[16];                   // "JKRAram.cpp"
+extern JKRAram* sAramObject__7JKRAram;          // JKRAram::sAramObject
+extern OSMessageQueue sMessageQueue__7JKRAram;  // JKRAram::sMessageQueue
+extern bool lbl_804513FC;                       // DAT_804513fc (init global mutex)
+extern OSMutex lbl_804342E8;                    // JKernel::decompMutex (static?)
+extern u8 lbl_804342D0;                         // JKernel::@492 (global destructor chain)
+extern u8 sAramCommandList__7JKRAram;           // JKRAram::sAramCommandList
+extern u8 sSZSBufferSize__7JKRAram;             // JKRAram::sSZSBufferSize
+extern u8 sMessageBuffer__7JKRAram;             // JKRAram::sMessageBuffer
 
-extern u8 lbl_803CC158;  // JKRAram::__vt
-extern u8 lbl_8039D078;  // "JKRAram.cpp"
-extern u8 lbl_804342D0;  // JKernel::@492 (global destructor chain)
-extern u8 lbl_803CC138;  // JKRAram::sMessageQueue
-extern u8 lbl_804342DC;  // JKRAram::sAramCommandList
-extern u8 lbl_804342E8;  // JKernel::decompMutex (static?)
-extern u8 lbl_804508B8;  // JKRAram::sSZSBufferSize
-extern u8 lbl_803CC128;  // JKRAram::sMessageBuffer
+extern bool lbl_80451501;
+
+extern float lbl_80451A20;   // m_Do_controller_pad::@3709 0.06666667
+extern float lbl_80451A24;   // m_Do_controller_pad::@3710 1.0
+extern float lbl_80451A28;   // m_Do_controller_pad::@3711 0.007142857
+extern double lbl_80451A30;  // m_Do_controller_pad::@3713 4.503599627370496E15
+
+extern s32 sAnalogMode;
 
 //// JUTGamePad:
 // func_802E06DC
@@ -531,7 +524,6 @@ extern u8 lbl_80453154;
 extern u8 lbl_8045101C;
 extern u8 lbl_80453320;
 extern u8 lbl_804532E4;
-extern u8 lbl_80451160;
 extern u8 lbl_8038E1E0;
 extern u8 lbl_80453268;
 extern u8 lbl_80452FD0;
@@ -1079,6 +1071,564 @@ extern u8 lbl_804526B0;
 extern u8 lbl_804526B4;
 extern u8 lbl_80424B00;
 
+// additional symbols needed for c_bg_s_chk.cpp
+// autogenerated by split.py v0.3 at 2020-12-31 13:59:04.376186
+extern u8 lbl_803C3F80;
+
+// additional symbols needed for c_bg_s_gnd_chk.cpp
+// autogenerated by split.py v0.3 at 2020-12-31 14:10:48.795807
+extern u8 lbl_803C3F90;
+
+// additional symbols needed for c_bg_s_lin_chk.cpp
+// autogenerated by split.py v0.3 at 2021-01-01 12:56:44.686018
+extern u8 lbl_803A78F8;
+extern u8 lbl_803C3FA8;
+
+// additional symbols needed for c_bg_s_poly_info.cpp
+// autogenerated by split.py v0.3 at 2021-01-01 12:59:59.584225
+extern u8 lbl_803C3FD0;
+
+// additional symbols needed for c_bg_s_shdw_draw.cpp
+// autogenerated by split.py v0.3 at 2021-01-01 13:07:28.433195
+extern u8 lbl_803C3FC0;
+
+// additional symbols needed for c_cc_d.cpp
+// autogenerated by split.py v0.3 at 2021-01-01 13:13:17.720846
+extern u8 lbl_80455020;
+extern u8 lbl_8039A7E8;
+extern u8 lbl_80455030;
+extern u8 lbl_8045501C;
+extern u8 lbl_80430CB4;
+extern u8 lbl_803ABB84;
+extern u8 lbl_80455018;
+extern u8 lbl_80430CA8;
+extern u8 lbl_80455028;
+extern u8 lbl_803C366C;
+
+// additional symbols needed for c_cc_s.cpp
+// autogenerated by split.py v0.3 at 2021-01-01 13:55:15.696568
+extern u8 lbl_80451158;
+extern u8 lbl_80455060;
+extern u8 lbl_80455048;
+extern u8 lbl_80455050;
+extern u8 lbl_803A7200;
+extern u8 lbl_8045503C;
+extern u8 lbl_80430CC0;
+extern u8 lbl_80430CCC;
+extern u8 lbl_80455068;
+extern u8 lbl_80455040;
+extern u8 lbl_80455044;
+extern u8 lbl_80455038;
+extern u8 lbl_803C3748;
+extern u8 lbl_80455058;
+
+// additional symbols needed for c_lib.cpp
+// autogenerated by split.py v0.3 at 2021-01-01 14:12:11.743911
+extern u8 lbl_804551E8;
+extern u8 lbl_80430DB8;
+extern u8 lbl_804551F0;
+extern u8 lbl_80450768;
+extern u8 lbl_804551E0;
+extern u8 lbl_804551F8;
+extern u8 lbl_80439A20[65536];  // JMath::JMath::sincosTable_
+extern u8 lbl_80455200;
+
+// additional symbols needed for c_m2d.cpp
+// autogenerated by split.py v0.3 at 2021-01-01 14:23:08.023070
+extern u8 lbl_80455110;
+extern u8 lbl_80455100;
+extern u8 lbl_80455108;
+extern u8 lbl_804550FC;
+extern u8 lbl_804550F8;
+extern u8 lbl_804550F4;
+extern u8 lbl_804550F0;
+
+// additional symbols needed for c_m3d_g_aab.cpp
+// autogenerated by split.py v0.3 at 2021-01-01 14:25:53.390342
+extern u8 lbl_804551D4;
+extern u8 lbl_804551D0;
+extern u8 lbl_804551D8;
+
+// additional symbols needed for c_m3d_g_cir.cpp
+// autogenerated by split.py v0.3 at 2021-01-01 14:33:18.197884
+extern u8 lbl_803C3FEC;
+extern u8 lbl_803C3FE0;
+
+// additional symbols needed for c_m3d_g_cps.cpp
+// autogenerated by split.py v0.3 at 2021-01-01 14:41:13.414762
+extern u8 lbl_803C3FF8;
+
+// additional symbols needed for c_m3d.cpp
+// autogenerated by split.py v0.3 at 2021-01-01 14:58:45.990799
+extern u8 lbl_80455158;
+extern u8 lbl_8045513C;
+extern u8 lbl_80455180;
+extern u8 lbl_80455128;
+extern u8 lbl_80455190;
+extern u8 lbl_804551BC;
+extern u8 lbl_80455168;
+extern u8 lbl_804551C8;
+extern u8 lbl_804551B8;
+extern u8 lbl_80455148;
+extern u8 lbl_804551C4;
+extern u8 lbl_80455170;
+extern u8 lbl_80455150;
+extern u8 lbl_80455118;
+extern u8 lbl_80455198;
+extern u8 lbl_8045519C;
+extern u8 lbl_8045515C;
+extern u8 lbl_804551A0;
+extern u8 lbl_80455174;
+extern u8 lbl_80455178;
+extern u8 lbl_804551CC;
+extern u8 lbl_80450AEC;
+extern u8 lbl_8045516C;
+extern u8 lbl_80455194;
+extern u8 lbl_804551C0;
+extern u8 lbl_80455188;
+extern u8 lbl_80455164;
+extern u8 lbl_804551AC;
+extern u8 lbl_8045517C;
+extern u8 lbl_80455130;
+extern u8 lbl_804551A4;
+extern u8 lbl_8045514C;
+extern u8 lbl_80455120;
+extern u8 lbl_804551B4;
+extern u8 lbl_804551A8;
+extern u8 lbl_80455138;
+extern u8 lbl_80455184;
+extern u8 lbl_80455144;
+extern u8 lbl_80455140;
+extern u8 lbl_8045518C;
+extern u8 lbl_80455154;
+extern u8 lbl_804551B0;
+extern u8 lbl_80455160;
+
+// additional symbols needed for c_sxyz.cpp
+// autogenerated by split.py v0.3 at 2021-01-01 15:36:38.100807
+extern u8 lbl_804550A0;
+extern u8 lbl_80451164;
+extern u8 lbl_80430DA8;
+
+// additional symbols needed for d_meter2_draw.cpp
+// autogenerated by split.py v0.3 at 2021-01-02 00:12:18.254960
+extern u8 lbl_80454890;
+extern u8 lbl_80454984;
+extern u8 lbl_803BF59C;
+extern u8 lbl_80454894;
+extern u8 lbl_80454928;
+extern u8 lbl_80454990;
+extern u8 lbl_80454980;
+extern u8 lbl_8045492C;
+extern u8 lbl_80454968;
+extern u8 lbl_8045488C;
+extern u8 lbl_80398258;
+extern u8 lbl_80398828;
+extern u8 lbl_80398850;
+extern u8 lbl_804548DC;
+extern u8 lbl_8045491C;
+extern u8 lbl_80454938;
+extern u8 lbl_804548D0;
+extern u8 lbl_80454904;
+extern u8 lbl_80454900;
+extern u8 lbl_804548E4;
+extern u8 lbl_804548B8;
+extern u8 lbl_80454898;
+extern u8 lbl_8043028C;
+extern u8 lbl_803BF5C0;
+extern u8 lbl_80454970;
+extern u8 lbl_804548A0;
+extern u8 lbl_803988D0;
+extern u8 lbl_804548FC;
+extern u8 lbl_8045498C;
+extern u8 lbl_804548D8;
+extern u8 lbl_80454950;
+extern u8 lbl_80454948;
+extern u8 lbl_80454888;
+extern u8 lbl_80454994;
+extern u8 lbl_80398878;
+extern u8 lbl_804548B0;
+extern u8 lbl_804548D4;
+extern u8 lbl_804548C0;
+extern u8 lbl_803988A8;
+extern u8 lbl_803AC5A0;
+extern u8 lbl_80454908;
+extern u8 lbl_803BF578;
+extern u8 lbl_80454964;
+extern u8 lbl_804548CC;
+extern u8 lbl_80454978;
+extern u8 lbl_80454920;
+extern u8 lbl_80454940;
+extern u8 lbl_80454954;
+extern u8 lbl_80454884;
+extern u8 lbl_804548F0;
+extern u8 lbl_80454930;
+extern u8 lbl_8045490C;
+extern u8 lbl_80456B9C;
+extern u8 lbl_80454918;
+extern u8 lbl_803BF350;
+extern u8 lbl_80454910;
+extern u8 lbl_804548F4;
+extern u8 lbl_80454974;
+extern u8 lbl_80456B90;
+extern u8 lbl_80454880;
+extern u8 lbl_80456B94;
+extern u8 lbl_80454958;
+extern u8 lbl_8045496C;
+extern u8 lbl_80398898;
+extern u8 lbl_8045497C;
+extern u8 lbl_80454924;
+extern u8 lbl_80454988;
+extern u8 lbl_8045494C;
+extern u8 lbl_8042EBC8;
+extern u8 lbl_804548E8;
+extern u8 lbl_80456B98;
+extern u8 lbl_80430158;
+extern u8 lbl_80454934;
+extern u8 lbl_8045493C;
+extern u8 lbl_804548AC;
+extern u8 lbl_803BF554;
+extern u8 lbl_803BF328;
+extern u8 lbl_8045495C;
+extern u8 lbl_804548A8;
+extern u8 lbl_804548EC;
+extern u8 lbl_80454914;
+extern u8 lbl_804548F8;
+extern u8 lbl_804548C8;
+extern u8 lbl_80454944;
+extern u8 lbl_804548BC;
+extern u8 lbl_804548E0;
+extern u8 lbl_803BF750;
+extern u8 lbl_804548B4;
+extern u8 lbl_80454960;
+
+// additional symbols needed for d_meter2_info.cpp
+// autogenerated by split.py v0.3 at 2021-01-02 00:19:27.063204
+extern u8 lbl_80399168;
+extern u8 lbl_80430178;
+extern u8 lbl_803BF760;
+extern u8 lbl_804549C0;
+extern u8 lbl_804549B0;
+extern u8 lbl_8045499C;
+extern u8 lbl_803BF81C;
+extern u8 lbl_803BFA1C;
+extern u8 lbl_804549A4;
+extern u8 lbl_80398A78;
+extern u8 lbl_804510BC;
+extern u8 lbl_803BF7F4;
+extern u8 lbl_80454998;
+extern u8 lbl_804549B8;
+extern u8 lbl_804549A8;
+extern u8 lbl_804549A0;
+extern u8 lbl_804510B8;
+extern u8 lbl_804549AC;
+
+// additional symbols needed for d_meter2.cpp
+// autogenerated by split.py v0.3 at 2021-01-02 05:21:57.405999
+extern u8 lbl_80454A00;
+extern u8 lbl_803BFA28;
+extern u8 lbl_8042E86C;
+extern u8 lbl_8042FC60;
+extern u8 lbl_804549C8;
+extern u8 lbl_804549EC;
+extern u8 lbl_80450E38;
+extern u8 lbl_804549E8;
+extern u8 lbl_804549F8;
+extern u8 lbl_80399338;
+extern u8 lbl_80430110;
+extern u8 lbl_804549E0;
+extern u8 lbl_80454A08;
+extern u8 lbl_804549D0;
+extern u8 lbl_804549FC;
+extern u8 lbl_804549F4;
+extern u8 lbl_80454A04;
+extern u8 lbl_804549F0;
+extern u8 lbl_8042FAFC;
+extern u8 lbl_804549CC;
+extern u8 lbl_804549D8;
+
+// additional symbols needed for d_meter_button.cpp
+// autogenerated by split.py v0.3 at 2021-01-02 05:32:46.640422
+extern u8 lbl_80454788;
+extern u8 lbl_8045478C;
+extern u8 lbl_804547A0;
+extern u8 lbl_803BF258;
+extern u8 lbl_80454774;
+extern u8 lbl_8045477C;
+extern u8 lbl_80454784;
+extern u8 lbl_8045475C;
+extern u8 lbl_803980E8;
+extern u8 lbl_8045474C;
+extern u8 lbl_80454790;
+extern u8 lbl_80454748;
+extern u8 lbl_80454798;
+extern u8 lbl_8045479C;
+extern u8 lbl_80454760;
+extern u8 lbl_80454778;
+extern u8 lbl_80454754;
+extern u8 lbl_804547A4;
+extern u8 lbl_80454750;
+extern u8 lbl_80454770;
+extern u8 lbl_803BF1A8;
+extern u8 lbl_80454758;
+extern u8 lbl_80398048;
+extern u8 lbl_80454780;
+extern u8 lbl_803BF200;
+extern u8 lbl_80398098;
+extern u8 lbl_80454794;
+extern u8 lbl_80454768;
+extern u8 lbl_804547A8;
+extern u8 lbl_804547AC;
+
+// additional symbols needed for d_meter_haihai.cpp
+// autogenerated by split.py v0.3 at 2021-01-02 05:38:04.795367
+extern u8 lbl_804547D4;
+extern u8 lbl_804547E8;
+extern u8 lbl_803BF268;
+extern u8 lbl_804547B8;
+extern u8 lbl_804547C8;
+extern u8 lbl_804547D8;
+extern u8 lbl_804547EC;
+extern u8 lbl_804547CC;
+extern u8 lbl_804547C4;
+extern u8 lbl_804547BC;
+extern u8 lbl_804547E0;
+extern u8 lbl_804547C0;
+extern u8 lbl_80398158;
+extern u8 lbl_804547F0;
+extern u8 lbl_804547E4;
+extern u8 lbl_804547D0;
+extern u8 lbl_804547B4;
+extern u8 lbl_804547F8;
+extern u8 lbl_803BB6D4;
+extern u8 lbl_804547B0;
+extern u8 lbl_804547DC;
+
+// additional symbols needed for d_meter_hakusha.cpp
+// autogenerated by split.py v0.3 at 2021-01-02 05:39:40.792760
+extern u8 lbl_8045480C;
+extern u8 lbl_80454810;
+extern u8 lbl_80454800;
+extern u8 lbl_803981B0;
+extern u8 lbl_803BF2B8;
+extern u8 lbl_803BF288;
+extern u8 lbl_80454814;
+extern u8 lbl_80454804;
+extern u8 lbl_80454808;
+extern u8 lbl_80454818;
+
+// additional symbols needed for d_meter_HIO.cpp
+// autogenerated by split.py v0.3 at 2021-01-02 05:41:49.509892
+extern u8 lbl_80454730;
+extern u8 lbl_80454724;
+extern u8 lbl_8045471C;
+extern u8 lbl_80454734;
+extern u8 lbl_803BF190;
+extern u8 lbl_803BF178;
+extern u8 lbl_80454720;
+extern u8 lbl_80454638;
+extern u8 lbl_804546EC;
+extern u8 lbl_80454718;
+extern u8 lbl_8045460C;
+extern u8 lbl_8042EBB0;
+extern u8 lbl_804545F4;
+extern u8 lbl_80454694;
+extern u8 lbl_80454554;
+extern u8 lbl_804545B0;
+extern u8 lbl_804546FC;
+extern u8 lbl_8045455C;
+extern u8 lbl_80454508;
+extern u8 lbl_8045451C;
+extern u8 lbl_8045463C;
+extern u8 lbl_804545F0;
+extern u8 lbl_804546C0;
+extern u8 lbl_80454574;
+extern u8 lbl_804545FC;
+extern u8 lbl_803BF10C;
+extern u8 lbl_804545A0;
+extern u8 lbl_804546A0;
+extern u8 lbl_804546A4;
+extern u8 lbl_8045472C;
+extern u8 lbl_804545E4;
+extern u8 lbl_804544E4;
+extern u8 lbl_80454690;
+extern u8 lbl_804545C8;
+extern u8 lbl_80454578;
+extern u8 lbl_8045461C;
+extern u8 lbl_80454598;
+extern u8 lbl_80454644;
+extern u8 lbl_80454550;
+extern u8 lbl_804545CC;
+extern u8 lbl_80454548;
+extern u8 lbl_803BF100;
+extern u8 lbl_804546AC;
+extern u8 lbl_804546C4;
+extern u8 lbl_80454600;
+extern u8 lbl_804546CC;
+extern u8 lbl_80454528;
+extern u8 lbl_80454704;
+extern u8 lbl_80454634;
+extern u8 lbl_804545BC;
+extern u8 lbl_80454560;
+extern u8 lbl_80454538;
+extern u8 lbl_8045457C;
+extern u8 lbl_8045466C;
+extern u8 lbl_80454654;
+extern u8 lbl_80454500;
+extern u8 lbl_804546E4;
+extern u8 lbl_804545AC;
+extern u8 lbl_8045450C;
+extern u8 lbl_80454588;
+extern u8 lbl_804546B0;
+extern u8 lbl_80454630;
+extern u8 lbl_804545E8;
+extern u8 lbl_80454684;
+extern u8 lbl_80454590;
+extern u8 lbl_80454648;
+extern u8 lbl_80454514;
+extern u8 lbl_803BF184;
+extern u8 lbl_8045454C;
+extern u8 lbl_804545F8;
+extern u8 lbl_80454608;
+extern u8 lbl_80454540;
+extern u8 lbl_804544F4;
+extern u8 lbl_804545D4;
+extern u8 lbl_804546B4;
+extern u8 lbl_8045473C;
+extern u8 lbl_804545B4;
+extern u8 lbl_80454534;
+extern u8 lbl_803BF118;
+extern u8 lbl_80454728;
+extern u8 lbl_80454650;
+extern u8 lbl_804545DC;
+extern u8 lbl_80454584;
+extern u8 lbl_80454580;
+extern u8 lbl_80454570;
+extern u8 lbl_8045465C;
+extern u8 lbl_80454618;
+extern u8 lbl_8045462C;
+extern u8 lbl_80397E50;
+extern u8 lbl_8045453C;
+extern u8 lbl_804545C0;
+extern u8 lbl_804545A4;
+extern u8 lbl_803BF0E8;
+extern u8 lbl_80454708;
+extern u8 lbl_80454518;
+extern u8 lbl_804545B8;
+extern u8 lbl_803BF16C;
+extern u8 lbl_803BF160;
+extern u8 lbl_804546C8;
+extern u8 lbl_803BF19C;
+extern u8 lbl_80454640;
+extern u8 lbl_8045452C;
+extern u8 lbl_804545D0;
+extern u8 lbl_80454740;
+extern u8 lbl_80454738;
+extern u8 lbl_80454628;
+extern u8 lbl_80454620;
+extern u8 lbl_803BF154;
+extern u8 lbl_804546F0;
+extern u8 lbl_80454524;
+extern u8 lbl_804546D4;
+extern u8 lbl_80454520;
+extern u8 lbl_80454710;
+extern u8 lbl_803BF148;
+extern u8 lbl_80454660;
+extern u8 lbl_80454670;
+extern u8 lbl_80454680;
+extern u8 lbl_80454714;
+extern u8 lbl_80454658;
+extern u8 lbl_8045458C;
+extern u8 lbl_80454700;
+extern u8 lbl_80454688;
+extern u8 lbl_803BF0F4;
+extern u8 lbl_804546A8;
+extern u8 lbl_804546F4;
+extern u8 lbl_804544F0;
+extern u8 lbl_80454544;
+extern u8 lbl_804546D0;
+extern u8 lbl_804545D8;
+extern u8 lbl_8045456C;
+extern u8 lbl_803BF130;
+extern u8 lbl_80454604;
+extern u8 lbl_80454558;
+extern u8 lbl_804546B8;
+extern u8 lbl_80454614;
+extern u8 lbl_804544E0;
+extern u8 lbl_80454698;
+extern u8 lbl_804546DC;
+extern u8 lbl_804546BC;
+extern u8 lbl_8045459C;
+extern u8 lbl_80454510;
+extern u8 lbl_804544E8;
+extern u8 lbl_804544F8;
+extern u8 lbl_80454594;
+extern u8 lbl_804545A8;
+extern u8 lbl_80454624;
+extern u8 lbl_804546E8;
+extern u8 lbl_80454504;
+extern u8 lbl_80454610;
+extern u8 lbl_803BF124;
+extern u8 lbl_80454664;
+extern u8 lbl_804544EC;
+extern u8 lbl_803BF13C;
+extern u8 lbl_804546D8;
+extern u8 lbl_80454678;
+extern u8 lbl_8045464C;
+extern u8 lbl_80454674;
+extern u8 lbl_804546E0;
+extern u8 lbl_80454530;
+extern u8 lbl_804545E0;
+extern u8 lbl_8045467C;
+extern u8 lbl_80454564;
+extern u8 lbl_8045470C;
+extern u8 lbl_804545EC;
+extern u8 lbl_80454568;
+extern u8 lbl_8045469C;
+extern u8 lbl_804544FC;
+extern u8 lbl_804545C4;
+extern u8 lbl_8045468C;
+extern u8 lbl_804546F8;
+extern u8 lbl_80454668;
+
+// additional symbols needed for d_meter_map.cpp
+// autogenerated by split.py v0.3 at 2021-01-02 05:45:46.210955
+extern u8 lbl_803BF2F8;
+extern u8 lbl_80454838;
+extern u8 lbl_803BF2D8;
+extern u8 lbl_80454830;
+extern u8 lbl_80454820;
+extern u8 lbl_80454844;
+extern u8 lbl_80398208;
+extern u8 lbl_80454828;
+extern u8 lbl_80454840;
+extern u8 lbl_80454834;
+
+// additional symbols needed for d_meter_string.cpp
+// autogenerated by split.py v0.3 at 2021-01-02 05:50:34.104338
+extern u8 lbl_803BF308;
+extern u8 lbl_80398210;
+extern u8 lbl_80454850;
+extern u8 lbl_80454878;
+extern u8 lbl_8045487C;
+extern u8 lbl_80454848;
+extern u8 lbl_8045484C;
+extern u8 lbl_80454854;
+extern u8 lbl_80454860;
+extern u8 lbl_80454858;
+extern u8 lbl_80454864;
+extern u8 lbl_80454870;
+extern u8 lbl_8045485C;
+extern u8 lbl_80454868;
+
+// additional symbols needed for d_kantera_icon_meter.cpp
+// autogenerated by split.py v0.3 at 2021-01-02 06:29:53.280100
+extern u8 lbl_803BC218;
+extern u8 lbl_80453EF8;
+extern u8 lbl_80453F08;
+extern u8 lbl_80394F50;
+extern u8 lbl_80453F00;
+extern u8 lbl_803BC228;
 // additional symbols needed for d_kankyo_data.cpp
 // autogenerated by split.py v0.3 at 2021-01-01 22:11:10.942870
 extern u8 lbl_803A9918;
@@ -1683,3 +2233,719 @@ extern u8 lbl_80453CC0;
 extern u8 lbl_80453D00;
 extern u8 lbl_80453D8C;
 extern u8 lbl_80453DFC;
+
+// additional symbols needed for d_camera.cpp
+// autogenerated by split.py v0.3 at 2021-01-02 08:13:10.405862
+extern u8 lbl_80453730;
+extern u8 lbl_804538A0;
+extern u8 lbl_8042C9AC;
+extern u8 lbl_803BA4A4;
+extern u8 lbl_80393DC0;
+extern u8 lbl_80453784;
+extern u8 lbl_804537CC;
+extern u8 lbl_80453740;
+extern u8 lbl_804537BC;
+extern u8 lbl_804536F4;
+extern u8 lbl_80453850;
+extern u8 lbl_803A8DF8;
+extern u8 lbl_804536C0;
+extern u8 lbl_803BA378;
+extern u8 lbl_804537E8;
+extern u8 lbl_80453750;
+extern u8 lbl_804537B8;
+extern u8 lbl_80453728;
+extern u8 lbl_804537D4;
+extern u8 lbl_80453810;
+extern u32 lbl_80451018;  // daPy_py_c::m_midnaActor
+extern u8 lbl_80453828;
+extern u8 lbl_80453858;
+extern u8 lbl_80451044;
+extern u8 lbl_803BA6D8;
+extern u8 lbl_80453924;
+extern u8 lbl_80453734;
+extern u8 lbl_804537F4;
+extern u8 lbl_804538B0;
+extern u8 lbl_804538E4;
+extern u8 lbl_80453778;
+extern u8 lbl_80453824;
+extern u8 lbl_8045104A;
+extern u8 lbl_804536D8;
+extern u8 lbl_80453758;
+extern u8 lbl_80453884;
+extern u8 lbl_80453894;
+extern u8 lbl_80453834;
+extern u8 lbl_804536A0;
+extern u8 lbl_80453800;
+extern u8 lbl_8042C9A0;
+extern u8 lbl_803BA39C;
+extern u8 lbl_80453900;
+extern u8 lbl_80451042;
+extern u8 lbl_80453864;
+extern u8 lbl_8045383C;
+extern u8 lbl_80453744;
+extern u8 lbl_804538D4;
+extern u8 lbl_804537D0;
+extern u8 lbl_8045384C;
+extern u8 lbl_804537C8;
+extern u8 lbl_80450CBC;
+extern u8 lbl_804536B8;
+extern u8 lbl_804537F0;
+extern u8 lbl_80451028;
+extern u8 lbl_804536AC;
+extern u8 lbl_8045377C;
+extern u8 lbl_8045370C;
+extern u8 lbl_8045378C;
+extern u8 lbl_80451190;
+extern u8 lbl_804537E4;
+extern u8 lbl_80453830;
+extern u8 lbl_80453904;
+extern u8 lbl_804536D0;
+extern u8 lbl_804537A4;
+extern u8 lbl_80453794;
+extern u8 lbl_80453798;
+extern u8 lbl_8042C9B8;
+extern u8 lbl_80453848;
+extern u8 lbl_804538A8;
+extern u8 lbl_80453710;
+extern u8 lbl_804537EC;
+extern u8 lbl_8045380C;
+extern u8 lbl_804536E0;
+extern u8 lbl_80453804;
+extern u8 lbl_80453704;
+extern u8 lbl_803BA34C;
+extern u8 lbl_80453698;
+extern u8 lbl_8042C8F8;
+extern u8 lbl_8045390C;
+extern u8 lbl_8045102C;
+extern u8 lbl_80453690;
+extern u8 lbl_80453818;
+extern u8 lbl_804537C4;
+extern u8 lbl_80453914;
+extern u8 lbl_803AB6B8;
+extern u8 lbl_80451038;
+extern u8 lbl_803A2FD8;
+extern u8 lbl_8045385C;
+extern u8 lbl_804537B4;
+extern u8 lbl_804536A8;
+extern u8 lbl_80451046;
+extern u8 lbl_80453920;
+extern u8 lbl_804538C4;
+extern u8 lbl_80453788;
+extern u8 lbl_80453870;
+extern u8 lbl_80451188;
+extern u8 lbl_804536C8;
+extern u8 lbl_8045388C;
+extern u8 lbl_80453854;
+extern u8 lbl_80453768;
+extern u8 lbl_8045104C;
+extern u8 lbl_80453878;
+extern u8 lbl_804538F4;
+extern u8 lbl_804536F8;
+extern u8 lbl_80453738;
+extern u8 lbl_80453874;
+extern u8 lbl_804538C8;
+extern u8 lbl_80453718;
+extern u8 lbl_804536F0;
+extern u8 lbl_8045391C;
+extern u8 lbl_80453754;
+extern u8 lbl_803BA798;
+extern u8 lbl_8045374C;
+extern u8 lbl_8045375C;
+extern u8 lbl_804538FC;
+extern u8 lbl_803A78F8;
+extern u8 lbl_80453770;
+extern u8 lbl_804537C0;
+extern u8 lbl_80453898;
+extern u8 lbl_804538E0;
+extern u8 lbl_804538AC;
+extern u8 lbl_80453910;
+extern u8 lbl_804537F8;
+extern u8 lbl_80453808;
+extern u8 lbl_80453880;
+extern u8 lbl_804537DC;
+extern u8 lbl_80453760;
+extern u8 lbl_8045386C;
+extern u8 lbl_804538F0;
+extern u8 lbl_80450BE5;
+extern u8 lbl_804538EC;
+extern u8 lbl_80453840;
+extern u8 lbl_804536FC;
+extern u8 lbl_80451020;
+extern u8 lbl_804537B0;
+extern u8 lbl_80453700;
+extern u8 lbl_803BA25C;
+extern u8 lbl_803BA7EC;
+extern u8 lbl_804536A4;
+extern u8 lbl_80453714;
+extern u8 lbl_80451034;
+extern u8 lbl_80451039;
+extern u8 lbl_804538CC;
+extern u8 lbl_804538A4;
+extern u8 lbl_804537D8;
+extern u8 lbl_8045389C;
+extern u8 lbl_80451040;
+extern u8 lbl_80453844;
+extern u8 lbl_804538E8;
+extern u8 lbl_804537A8;
+extern u8 lbl_80453774;
+extern u8 lbl_80453790;
+extern u8 lbl_80453888;
+extern u8 lbl_80453908;
+extern u8 lbl_804536B4;
+extern u8 lbl_803BA160;
+extern u8 lbl_804536B0;
+extern u8 lbl_804538D8;
+extern u8 lbl_804538C0;
+extern u8 lbl_80453868;
+extern u8 lbl_80451198;
+extern u8 lbl_8045376C;
+extern u8 lbl_804538D0;
+extern u8 lbl_80453918;
+extern u8 lbl_8045387C;
+extern u8 lbl_804536E8;
+extern u8 lbl_80453860;
+extern u8 lbl_804538BC;
+extern u8 lbl_80453748;
+extern u8 lbl_8045379C;
+extern u8 lbl_80453780;
+extern u8 lbl_804536EC;
+extern u8 lbl_80453720;
+extern u8 lbl_804538B8;
+extern u8 lbl_80393F58;
+extern u8 lbl_80453724;
+extern u8 lbl_804538DC;
+extern u8 lbl_80451030;
+extern u8 lbl_80453820;
+extern u8 lbl_8045382C;
+extern u8 lbl_804538F8;
+extern u8 lbl_80451024;
+extern u8 lbl_8045372C;
+extern u8 lbl_8045103E;
+extern u8 lbl_804538B4;
+extern u8 lbl_804536BC;
+extern u8 lbl_80453708;
+extern u8 lbl_804537E0;
+extern u8 lbl_80450BE4;
+extern u8 lbl_8045373C;
+extern u8 lbl_804537FC;
+extern u8 lbl_8045371C;
+extern u8 lbl_804537A0;
+extern u8 lbl_804537AC;
+extern u8 lbl_80453814;
+extern u8 lbl_80453890;
+extern u8 lbl_80393F68;
+extern u8 lbl_8045381C;
+extern u8 lbl_80453838;
+extern u8 lbl_80451048;
+extern u8 lbl_804536E4;
+extern u8 lbl_80450618;
+
+// additional symbols needed for Z2SpeechMgr2.cpp
+// autogenerated by split.py v0.3 at 2021-01-04 22:34:32.652598
+extern u8 lbl_80455F40;
+extern u8 lbl_80455F50;
+extern u8 lbl_80456BA8;
+extern u8 lbl_803CBD08;
+extern u8 lbl_80455F34;
+extern u8 lbl_80455F48;
+extern u8 lbl_803CBED0;
+extern u8 lbl_80455F30;
+extern u8 lbl_80456BAC;
+extern u8 lbl_80455F54;
+extern u8 lbl_8039C98C;
+extern u8 lbl_80455F3C;
+extern u8 lbl_803CBF24;
+extern u8 lbl_80455F38;
+
+// additional symbols needed for Z2Audience.cpp
+// autogenerated by split.py v0.3 at 2021-01-04 22:46:19.849740
+extern u8 lbl_80455AFC;
+extern u8 lbl_804507E8;
+extern u8 lbl_80455AA0;
+extern u8 lbl_80455AB8;
+extern u8 lbl_80455B30;
+extern u8 lbl_804507D8;
+extern u8 lbl_80455B10;
+extern u8 lbl_80455ABC;
+extern u8 lbl_80455AB4;
+extern u8 lbl_80455AF8;
+extern u8 lbl_80455AE8;
+extern u8 lbl_80455B34;
+extern u8 lbl_80455B00;
+extern u8 lbl_803CACB8;
+extern u8 lbl_80451350;
+extern u8 lbl_80455AB0;
+extern u8 lbl_804507EC;
+extern u8 lbl_80455B20;
+extern u8 lbl_80455AF4;
+extern u8 lbl_804507E4;
+extern u8 lbl_804341D8;
+extern u8 lbl_803C9838;
+extern u8 lbl_80455B08;
+extern u8 lbl_80455AE4;
+extern u8 lbl_80455B28;
+extern u8 lbl_80455AEC;
+extern u8 lbl_80455B04;
+extern u8 lbl_80451338;
+extern u8 lbl_80455AA8;
+extern u8 lbl_80455ADC;
+extern u8 lbl_80455B18;
+extern u8 lbl_804341E4;
+extern u8 lbl_80455B1C;
+extern u8 lbl_803C9820;
+extern u8 lbl_80455AA4;
+extern u8 lbl_80455AAC;
+extern u8 lbl_80455B24;
+extern u8 lbl_80455AC4;
+extern u8 lbl_80455B2C;
+extern u8 lbl_804507E0;
+extern u8 lbl_804507DC;
+extern u8 lbl_80455AD8;
+extern u8 lbl_80450B4C;
+extern u8 lbl_8039C220;
+extern u8 lbl_80455AE0;
+extern u8 lbl_803CAC98;
+extern u8 lbl_80455AD0;
+extern u8 lbl_80455AF0;
+extern u8 lbl_80451354;
+extern u8 lbl_804507F0;
+extern u8 lbl_80455AC0;
+extern u8 lbl_80455B0C;
+extern u8 lbl_80450AEC;
+extern u8 lbl_80455B14;
+extern u8 lbl_80455AC8;
+
+// additional symbols needed for Z2EnvSeMgr.cpp
+// autogenerated by split.py v0.3 at 2021-01-04 22:52:26.147928
+extern u8 lbl_80455E20;
+extern u8 lbl_80455D8C;
+extern u8 lbl_80455DF0;
+extern u8 lbl_80455DDC;
+extern u8 lbl_80455E04;
+extern u8 lbl_80455E34;
+extern u8 lbl_80455D80;
+extern u8 lbl_80455E54;
+extern u8 lbl_803CBAD0;
+extern u8 lbl_80455E50;
+extern u8 lbl_80455D6C;
+extern u8 lbl_80455E58;
+extern u8 lbl_80455DA4;
+extern u8 lbl_80455DEC;
+extern u8 lbl_80455D70;
+extern u8 lbl_80455DE8;
+extern u8 lbl_80455820;
+extern u8 lbl_80455DD4;
+extern u8 lbl_80455E30;
+extern u8 lbl_80455E44;
+extern u8 lbl_803CB9C8;
+extern u8 lbl_80455D44;
+extern u8 lbl_80455D58;
+extern u8 lbl_80455D7C;
+extern u8 lbl_80455E10;
+extern u8 lbl_80455DAC;
+extern u8 lbl_80455DD8;
+extern u8 lbl_80455DF4;
+extern u8 lbl_80455E28;
+extern u8 lbl_80455D40;
+extern u8 lbl_80455D9C;
+extern u8 lbl_80455E48;
+extern u8 lbl_803CBC28;
+extern u8 lbl_8039C250;
+extern u8 lbl_80455DBC;
+extern u8 lbl_80455D74;
+extern u8 lbl_80455DE4;
+extern u8 lbl_80455D98;
+extern u8 lbl_80455D60;
+extern u8 lbl_80455E3C;
+extern u8 lbl_803CBB90;
+extern u8 lbl_80455DF8;
+extern u8 lbl_80455D4C;
+extern u8 lbl_80455D88;
+extern u8 lbl_80455E40;
+extern u8 lbl_80455DA0;
+extern u8 lbl_80455E4C;
+extern u8 lbl_80455E38;
+extern u8 lbl_803CBB10;
+extern u8 lbl_80455DA8;
+extern u8 lbl_80455D48;
+extern u8 lbl_80455E2C;
+extern u8 lbl_80455D64;
+extern u8 lbl_80455DE0;
+extern u8 lbl_80455D68;
+extern u8 lbl_80455E0C;
+extern u8 lbl_80455DC8;
+extern u8 lbl_80455DC0;
+extern u8 lbl_80455E00;
+extern u8 lbl_80455824;
+extern u8 lbl_80455DD0;
+extern u8 lbl_80455DB4;
+extern u8 lbl_80455DB8;
+extern u8 lbl_80455E08;
+extern u8 lbl_80455D84;
+extern u8 lbl_803CBBC8;
+extern u8 lbl_8039ABB8;
+extern u8 lbl_80455E5C;
+extern u8 lbl_80455D78;
+extern u8 lbl_80455DCC;
+extern u8 lbl_80455D50;
+extern u8 lbl_80455DB0;
+extern u8 lbl_803CBBF0;
+extern u8 lbl_80455D94;
+extern u8 lbl_80455D90;
+extern u8 lbl_80455E14;
+extern u8 lbl_80455E18;
+extern u8 lbl_80455DC4;
+extern u8 lbl_80455DFC;
+extern u8 lbl_803CB9F8;
+extern u8 lbl_803CBA28;
+
+// additional symbols needed for Z2SoundMgr.cpp
+// autogenerated by split.py v0.3 at 2021-01-04 22:59:50.687043
+extern u8 lbl_803C9D18;
+extern u8 lbl_80455844;
+extern u8 lbl_8045583C;
+extern u8 lbl_80451340;
+extern u8 lbl_80455838;
+extern u8 lbl_8039B9D0;
+extern u8 lbl_80455840;
+extern u8 lbl_80450CC0;
+extern u8 lbl_80451342;
+extern u8 lbl_8039B9C0;
+extern u8 lbl_80455850;
+extern u8 lbl_80455848;
+extern u8 lbl_80451341;
+extern u8 lbl_803C9D70;
+
+// additional symbols needed for Z2AudioMgr.cpp
+// autogenerated by split.py v0.3 at 2021-01-04 23:11:48.308778
+extern u8 lbl_803C9CD0;
+extern u8 lbl_803D29B0;
+extern u8 lbl_80455F60;
+extern u8 lbl_803C9A78;
+extern u8 lbl_80450B50;
+extern u8 lbl_803C9A1C;
+extern u8 lbl_803CBF38;
+extern u8 lbl_80451348;
+extern u8 lbl_80455F58;
+extern u8 lbl_803C9A08;
+extern u8 lbl_804341C4;
+extern u8 lbl_8039CA58;
+extern u8 lbl_80434274;
+extern u8 lbl_80451258;
+extern u8 lbl_80434268;
+extern u8 lbl_80451240;
+extern u8 lbl_803CBF44;
+extern u8 lbl_80455F5C;
+extern u8 lbl_803A2F4C;
+extern u8 lbl_803CBF58;
+extern u8 lbl_803CAC48;
+
+// additional symbols needed for Z2Creature.cpp
+// autogenerated by split.py v0.3 at 2021-01-04 23:26:27.716556
+extern u8 lbl_803CB8C0;
+extern u8 lbl_80455C78;
+extern u8 lbl_80455C84;
+extern u8 lbl_80455C44;
+extern u8 lbl_803CB890;
+// extern u8 lbl_80450B88;
+extern u8 lbl_80455C54;
+extern u8 lbl_80455C08;
+extern u8 lbl_80455C20;
+extern u8 lbl_80455C28;
+extern u8 lbl_803CB6A8;
+extern u8 lbl_80455C6C;
+extern u8 lbl_80455C68;
+extern u8 lbl_80455C30;
+extern u8 lbl_803CACD0;
+extern u8 lbl_803CB7E0;
+extern u8 lbl_80455C10;
+extern u8 lbl_803CB810;
+extern u8 lbl_80455C74;
+extern u8 lbl_80455BE4;
+extern u8 lbl_80455C48;
+// extern u8 lbl_80450B7C;
+extern u8 lbl_80455C5C;
+extern u8 lbl_803CB780;
+extern u8 lbl_80455BF8;
+extern u8 lbl_80455BFC;
+extern u8 lbl_80455C04;
+extern u8 lbl_80455C64;
+extern u8 lbl_803CB230;
+extern u8 lbl_80455C70;
+extern u8 lbl_80455C4C;
+extern u8 lbl_80455C14;
+extern u8 lbl_80455C0C;
+extern u8 lbl_80455C00;
+extern u8 lbl_803CB830;
+extern u8 lbl_80455BE0;
+extern u8 lbl_80455C88;
+extern u8 lbl_80455C3C;
+extern u8 lbl_803CB724;
+extern u8 lbl_80455BE8;
+extern u8 lbl_80451359;
+extern u8 lbl_80455C40;
+extern u8 lbl_80455C7C;
+extern u8 lbl_80455C8C;
+extern u8 lbl_80455C38;
+extern u8 lbl_80455C50;
+extern u8 lbl_80455C18;
+extern u8 lbl_803CB860;
+extern u8 lbl_80455BF0;
+extern u8 lbl_80451358;
+extern u8 lbl_80455C90;
+extern u8 lbl_803CB630;
+extern u8 lbl_80455C58;
+extern u8 lbl_80455BEC;
+extern u8 lbl_80455BDC;
+extern u8 lbl_80455BF4;
+// extern u8 lbl_80450B84;
+extern u8 lbl_80455C60;
+extern u8 lbl_80455BD8;
+extern u8 lbl_80455C34;
+extern u8 lbl_80455C80;
+extern u8 lbl_80455C94;
+extern u8 lbl_80450869;
+extern u8 lbl_80455C1C;
+
+// additional symbols needed for Z2SoundStarter.cpp
+// autogenerated by split.py v0.3 at 2021-01-04 23:38:28.239258
+extern u8 lbl_80455860;
+extern u8 lbl_80455864;
+// extern u8 lbl_80450B3C;
+extern u8 lbl_8045585C;
+extern u8 lbl_80455868;
+extern u8 lbl_80455858;
+
+// additional symbols needed for Z2WolfHowlMgr.cpp
+// autogenerated by split.py v0.3 at 2021-01-04 23:43:51.343982
+extern u8 lbl_80455E70;
+extern u8 lbl_8043421C;
+extern u8 lbl_80455EA8;
+extern u8 lbl_80455E60;
+extern u8 lbl_80455ED0;
+extern u8 lbl_8045089C;
+extern u8 lbl_80450888;
+extern u8 lbl_8045088D;
+extern u8 lbl_8045088E;
+extern u8 lbl_80455EC8;
+extern u8 lbl_80455ED8;
+extern u8 lbl_80455E6C;
+extern u8 lbl_80455EC0;
+extern u8 lbl_8045088C;
+extern u8 lbl_80434240;
+extern u8 lbl_80455E94;
+extern u8 lbl_80450890;
+extern u8 lbl_80455E90;
+extern u8 lbl_80455E7C;
+extern u8 lbl_80455E80;
+extern u8 lbl_80455EB0;
+extern u8 lbl_80450880;
+extern u8 lbl_80455E8C;
+extern u8 lbl_80450895;
+extern u8 lbl_80455EA0;
+extern u8 lbl_80455E88;
+extern u8 lbl_80455EA4;
+extern u8 lbl_80455E78;
+extern u8 lbl_80450898;
+extern u8 lbl_80455E84;
+extern u8 lbl_80455E64;
+extern u8 lbl_80455ECC;
+extern u8 lbl_80455E68;
+extern u8 lbl_80450884;
+extern u8 lbl_80450894;
+extern u8 lbl_804341F8;
+extern u8 lbl_80455EB8;
+extern u8 lbl_803CBCC0;
+extern u8 lbl_80455E98;
+extern u8 lbl_80455EC4;
+extern u8 lbl_80455ED4;
+extern u8 lbl_80455E9C;
+
+// additional symbols needed for Z2SoundObject.cpp
+// autogenerated by split.py v0.3 at 2021-01-04 23:48:52.434158
+extern u8 lbl_80455B58;
+extern u8 lbl_80455B78;
+extern u8 lbl_80455B48;
+extern u8 lbl_80455B7C;
+extern u8 lbl_80455B60;
+extern u8 lbl_8039C230;
+extern u8 lbl_80455B40;
+extern u8 lbl_80455B54;
+extern u8 lbl_80455B70;
+extern u8 lbl_803CACF0;
+extern u8 lbl_80455B68;
+extern u8 lbl_80455B50;
+extern u8 lbl_80455B3C;
+extern u8 lbl_80455B5C;
+extern u8 lbl_803CAD30;
+extern u8 lbl_80455B74;
+extern u8 lbl_80455B38;
+extern u8 lbl_803CAD50;
+
+// additional symbols needed for Z2SoundObjMgr.cpp
+// autogenerated by split.py v0.3 at 2021-01-05 00:01:40.078605
+extern u8 lbl_80455B9C;
+extern u8 lbl_80455B90;
+extern u8 lbl_80455BB0;
+extern u8 lbl_80455BCC;
+extern u8 lbl_80455BAC;
+extern u8 lbl_80455BB4;
+extern u8 lbl_80455B84;
+extern u8 lbl_80455B98;
+extern u8 lbl_80455BC4;
+extern u8 lbl_80455BBC;
+extern u8 lbl_80455BD0;
+extern u8 lbl_80455B88;
+extern u8 lbl_8039C240;
+extern u8 lbl_80455BA8;
+extern u8 lbl_80455BA4;
+extern u8 lbl_80455BB8;
+extern u8 lbl_80455B94;
+extern u8 lbl_803CB170;
+extern u8 lbl_80455BC8;
+extern u8 lbl_80455B8C;
+extern u8 lbl_803CAD70;
+extern u8 lbl_80455BC0;
+extern u8 lbl_80455B80;
+extern u8 lbl_80455BA0;
+
+// additional symbols needed for Z2SoundInfo.cpp
+// autogenerated by split.py v0.3 at 2021-01-05 00:36:00.048060
+extern u8 lbl_80455A68;
+extern u8 lbl_80455A70;
+extern u8 lbl_80455A98;
+extern u8 lbl_80455A94;
+extern u8 lbl_80455A6C;
+extern u8 lbl_80455A78;
+extern u8 lbl_80455A90;
+extern u8 lbl_80455A80;
+extern u8 lbl_80455A74;
+extern u8 lbl_80455A88;
+extern u8 lbl_80455A7C;
+
+extern void* lbl_80450B58;  // JAUSoundTable sInstance
+
+// additional symbols needed for Z2FxLineMgr.cpp
+// autogenerated by split.py v0.3 at 2021-01-05 01:17:25.432000
+extern u8 lbl_803C2DF8;
+extern u8 lbl_803CAB18;
+extern u8 lbl_803CC4F0;
+extern u8 lbl_803CC4D4;
+
+// additional symbols needed for Z2SoundHandles.cpp
+// autogenerated by split.py v0.3 at 2021-01-05 01:21:30.649510
+extern u8 lbl_804341B8;
+extern u8 lbl_80450B5C;
+
+// additional symbols needed for .cpp
+// autogenerated by split.py v0.3 at 2021-01-05 01:30:23.439008
+extern u8 lbl_80455D3C;
+extern u8 lbl_80455D24;
+extern u8 lbl_80455D38;
+extern u8 lbl_80455D1C;
+extern u8 lbl_80455D28;
+extern u8 lbl_803CB924;
+extern u8 lbl_80455D30;
+extern u8 lbl_803CB910;
+extern u8 lbl_803CB8F0;
+extern u8 lbl_80455D2C;
+extern u8 lbl_80455D34;
+extern u8 lbl_80455D20;
+
+// additional symbols needed for _Z2SeqMgr.cpp
+// autogenerated by split.py v0.3 at 2021-01-05 01:50:57.118126
+// extern u8 lbl_8045599C;
+extern u8 lbl_80455A14;
+extern u8 lbl_80450867;
+extern u8 lbl_803CA4B4;
+extern u8 lbl_80450864;
+extern u8 lbl_804559FC;
+extern u8 lbl_80450868;
+extern u8 lbl_80450862;
+extern u8 lbl_803CA3F8;
+extern u8 lbl_80455A00;
+extern u8 lbl_8045086C;
+extern u8 lbl_803CA33C;
+extern u8 lbl_8045086A;
+extern u8 lbl_80450874;
+extern u8 lbl_80450866;
+// extern u8 lbl_804559C8;
+// extern u8 lbl_804559B4;
+extern u8 lbl_80455A08;
+extern u8 lbl_80450865;
+extern u8 lbl_804559F0;
+extern u8 lbl_804559F4;
+extern u8 lbl_80455A0C;
+extern u8 lbl_80450861;
+// extern u8 lbl_80455998;
+// extern u8 lbl_804559A8;
+extern u8 lbl_804559F8;
+extern u8 lbl_80455A10;
+extern u8 lbl_8045133C;
+extern u8 lbl_80455A04;
+extern u8 lbl_80450870;
+extern u8 lbl_8045086B;
+extern u8 lbl_80450878;
+
+// additional symbols needed for d_stage.cpp
+// autogenerated by split.py v0.3 at 2021-01-08 16:07:10.282857
+extern char lbl_80378A50[0x3F8];  // d_stage string literals
+extern u8 lbl_803A3B18;
+extern u8 lbl_803A65CC;
+extern u8 lbl_803A65FC;
+extern u8 lbl_803A6620;
+extern u8 lbl_803A6638;
+extern u8 lbl_803A6644;
+extern u8 lbl_803A6650;
+extern u8 lbl_803A668C;
+extern u8 lbl_803A66BC;
+extern u8 lbl_803A67F4;
+extern u8 lbl_803A689C;
+extern u8 lbl_803A68FC;
+extern u8 lbl_803A6920;
+extern u8 lbl_803A696C;
+extern u8 lbl_803A6AAC;
+extern u8 lbl_803A6D94;
+extern u8 lbl_803F0000;
+extern u8 lbl_803F4E68;
+// extern stage_tgsc_data_class* lbl_803F4E74;
+extern u8 lbl_803F5784;
+extern u8 lbl_804307EC;
+extern u8 lbl_804505F0;
+extern u8 lbl_80450D60;
+extern u8 lbl_80450D65;
+extern u8 lbl_80450D66;
+extern u8 lbl_80450D68;
+extern u8 lbl_80450D6C;
+extern u8 lbl_80450D70;
+extern u8 lbl_80450D74;
+extern u8 lbl_80451C90;
+extern u8 lbl_80451C94;
+extern u8 lbl_80451C98;
+
+// additional symbols needed for d_com_inf_game.cpp
+// autogenerated by split.py v0.3 at 2021-01-10 01:01:02.326268
+extern u8 lbl_80378F38;
+extern u8 lbl_803A6C20;
+extern u8 lbl_803A71B8;
+extern u8 lbl_803A71C4;
+extern u8 lbl_803A71D0;
+extern u8 lbl_803A71F4;
+extern u8 lbl_803A7224;
+extern u8 lbl_803A7230;
+extern u8 lbl_803AB608;
+extern u8 lbl_803AB61C;
+extern u8 lbl_803AB630;
+extern u8 lbl_803AC3E4;
+extern u8 lbl_804061A0;
+extern u8 lbl_804061B4;
+extern u8 lbl_80423FD0;
+extern u8 lbl_80450604;
+extern u8 lbl_80450BC8;
+extern u8 lbl_80451D00;
+extern u8 lbl_80451D04;
+extern u8 lbl_80451D08;
+extern u8 lbl_80451D10;
+extern u8 lbl_80451D18;
+extern u8 lbl_80451D1C;
+extern u8 lbl_80451D20;

@@ -7,13 +7,14 @@
 #include "os/OS.h"
 #include "pad/pad.h"
 
-typedef u32 EPadPort;
 typedef u32 EStickMode;
 typedef u32 EWhichStick;
 
-class JUTGamePad : public JKRDisposer {
+struct JUTGamePad : public JKRDisposer {
 public:
-    JUTGamePad(EPadPort port);
+    // typedef u32 EPadPort;
+    enum EPadPort { Port_1 = 0, Port_2 = 0, Port_3 = 0, Port_4 = 0 };
+    JUTGamePad(JUTGamePad::EPadPort port);
     virtual ~JUTGamePad();
 
     void initList();
@@ -26,7 +27,7 @@ public:
     void stopPatternedRumble() { this->rumble.stopPatternedRumble(this->pad_port); }
     static void checkResetSwitch();
     static void clearForReset();
-    static JUTGamePad* getGamePad(s32 pad_index);
+    static JUTGamePad* getGamePad(int pad_index);
     static bool recalibrate(PADMask pad_mask);
 
     struct CButton {
@@ -35,19 +36,19 @@ public:
         u32 update(PADStatus const*, u32 unk);
         void setRepeat(u32 unk0, u32 unk1, u32 unk2);
 
-        u32 button_flags;
+        u32 mButtonFlags;
 
-        u32 field_0x4;
-        u32 field_0x8;
+        u32 mPressedButtonFlags;
+        u32 mReleasedButtonFlags;
 
-        u8 analog_a;
-        u8 analog_b;
-        u8 trigger_left;
-        u8 trigger_right;
-        f32 analog_left;
-        f32 analog_right;
+        u8 mAnalogARaw;
+        u8 mAnalogBRaw;
+        u8 mTriggerLeftRaw;
+        u8 mTriggerRightRaw;
+        f32 mTriggerLeft;
+        f32 mTriggerRight;
 
-        u32 field_0x18;
+        u32 field_0x18;  // padding?
         u32 field_0x1c;
         u32 field_0x20;
         u32 field_0x24;
@@ -62,10 +63,10 @@ public:
         u32 update(s8 unk0, s8 unk1, EStickMode mode, EWhichStick stick, u32 unk2);
         u32 getButton(u32 unk);
 
-        float stick_x;
-        float stick_y;
-        float length_from_neutral;
-        u16 angle;
+        float mPosX;
+        float mPosY;
+        float mValue;
+        s16 mAngle;
         s8 field_0xe;
         s8 field_0xf;
     };
@@ -91,7 +92,6 @@ public:
         u8* field_0x10;
     };
 
-private:
     CButton buttons;
     CStick control_stick;
     CStick c_stick;
@@ -135,7 +135,7 @@ extern float lbl_80456028;                // JUTGamePad::CStick::clear() init to
 extern bool lbl_804514E4[4];              // JUTGamePad::CRumble::mStatus (static?)
 extern PADMask lbl_804514E8;              // JUTGamePad::CRumble::mEnabled (static?)
 extern PADMask lbl_803CC5F0[4];           // JUTGamePad::CRumble::sChannelMask
-extern s32 lbl_804514DC;                  // JUTGamePad::sAnalogMode
+extern s32 sAnalogMode;                   // JUTGamePad::sAnalogMode
 extern bool lbl_804514D0;                 // JUTGamePad::mIsPadListInitialized
 extern JSUList<JUTGamePad> lbl_804343E4;  // JUTGamePad::mPadList
 // extern JSUPtrList lbl_804343E4; // JUTGamePad::mPadList

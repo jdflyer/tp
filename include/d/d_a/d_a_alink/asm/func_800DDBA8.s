@@ -14,7 +14,7 @@
 /* 800DDBDC 000DAB1C  3C 80 80 39 */ lis r4, lbl_8038D6BC@ha
 /* 800DDBE0 000DAB20  38 84 D6 BC */ addi r4, r4, lbl_8038D6BC@l
 /* 800DDBE4 000DAB24  C0 44 00 38 */ lfs f2, 0x38(r4)
-/* 800DDBE8 000DAB28  48 19 2B 59 */ bl cLib_chaseF
+/* 800DDBE8 000DAB28  48 19 2B 59 */ bl cLib_chaseF__FPfff
 /* 800DDBEC 000DAB2C  7F C3 F3 78 */ mr r3, r30
 /* 800DDBF0 000DAB30  38 80 00 01 */ li r4, 1
 /* 800DDBF4 000DAB34  4B FD 5B 41 */ bl daAlink_c_NS_setShapeAngleToAtnActor
@@ -103,12 +103,12 @@ lbl_800DDD18:
 /* 800DDD2C 000DAC6C  41 82 00 14 */ beq lbl_800DDD40
 /* 800DDD30 000DAC70  7F C3 F3 78 */ mr r3, r30
 /* 800DDD34 000DAC74  38 80 00 77 */ li r4, 0x77
-/* 800DDD38 000DAC78  4B FD 55 31 */ bl daAlink_c_NS_setDoStatusEmphasys
+/* 800DDD38 000DAC78  4B FD 55 31 */ bl setDoStatusEmphasys__9daAlink_cFUc
 /* 800DDD3C 000DAC7C  48 00 00 10 */ b lbl_800DDD4C
 lbl_800DDD40:
 /* 800DDD40 000DAC80  7F C3 F3 78 */ mr r3, r30
 /* 800DDD44 000DAC84  38 80 00 86 */ li r4, 0x86
-/* 800DDD48 000DAC88  4B FD 55 09 */ bl daAlink_c_NS_setDoStatus
+/* 800DDD48 000DAC88  4B FD 55 09 */ bl setDoStatus__9daAlink_cFUc
 lbl_800DDD4C:
 /* 800DDD4C 000DAC8C  7F E3 FB 78 */ mr r3, r31
 /* 800DDD50 000DAC90  48 08 07 7D */ bl daPy_frameCtrl_c_NS_checkAnmEnd

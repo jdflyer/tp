@@ -3,13 +3,36 @@
 
 #define ARRAY_SIZE(o) (sizeof((o)) / sizeof(*(o)))
 
-struct Vec {
-    float x, y, z;
-};
+// Align X to the previous N bytes (N must be power of two)
+#define ALIGN_PREV(X, N) ((X) & ~((N)-1))
+// Align X to the next N bytes (N must be power of two)
+#define ALIGN_NEXT(X, N) ALIGN_PREV(((X) + (N)-1), N)
+#define IS_ALIGNED(X, N) (((X) & ((N)-1)) == 0)
+#define IS_NOT_ALIGNED(X, N) (((X) & ((N)-1)) != 0)
+
+#define JUT_ASSERT(...)
+#define ASSERT(...)
+#define LOGF(FMT, ...)
+#define FLAG_ON(V, F) (((V) & (F)) == 0)
+
+extern float __fabsf(float);
+
+inline double fabsf(double d) {
+    return __fabsf(d);
+}
+
+extern float __fsqrte(float);
+
+inline double sqrt(double d) {
+    return __fsqrte(d);
+}
 
 #include "dolphin/types.h"
 
+#include "ar/AR.h"
+#include "ar/ARQ.h"
 #include "functions.h"
+#include "mwcc.h"
 #include "os/OS.h"
 #include "variables.h"
 

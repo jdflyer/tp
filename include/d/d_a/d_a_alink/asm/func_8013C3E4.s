@@ -72,7 +72,7 @@ lbl_8013C4BC:
 /* 8013C4E8 00139428  C0 24 00 48 */ lfs f1, 0x48(r4)
 /* 8013C4EC 0013942C  C0 5F 05 34 */ lfs f2, 0x534(r31)
 /* 8013C4F0 00139430  38 80 00 00 */ li r4, 0
-/* 8013C4F4 00139434  4B F7 F2 7D */ bl daAlink_c_NS_setSpecialGravity
+/* 8013C4F4 00139434  4B F7 F2 7D */ bl setSpecialGravity__9daAlink_cFffi
 /* 8013C4F8 00139438  48 00 00 28 */ b lbl_8013C520
 lbl_8013C4FC:
 /* 8013C4FC 0013943C  C0 1F 33 98 */ lfs f0, 0x3398(r31)
@@ -83,7 +83,7 @@ lbl_8013C4FC:
 /* 8013C510 00139450  C0 42 94 A8 */ lfs f2, lbl_80452EA8-_SDA2_BASE_(r2)
 /* 8013C514 00139454  C0 62 93 3C */ lfs f3, lbl_80452D3C-_SDA2_BASE_(r2)
 /* 8013C518 00139458  C0 82 92 B8 */ lfs f4, lbl_80452CB8-_SDA2_BASE_(r2)
-/* 8013C51C 0013945C  48 13 34 61 */ bl cLib_addCalc
+/* 8013C51C 0013945C  48 13 34 61 */ bl cLib_addCalc__FPfffff
 lbl_8013C520:
 /* 8013C520 00139460  38 7F 1F D0 */ addi r3, r31, 0x1fd0
 /* 8013C524 00139464  48 02 1F A9 */ bl daPy_frameCtrl_c_NS_checkAnmEnd

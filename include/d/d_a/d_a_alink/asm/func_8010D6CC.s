@@ -9,7 +9,7 @@
 /* 8010D6EC 0010A62C  41 82 00 10 */ beq lbl_8010D6FC
 /* 8010D6F0 0010A630  7F A3 EB 78 */ mr r3, r29
 /* 8010D6F4 0010A634  38 80 00 12 */ li r4, 0x12
-/* 8010D6F8 0010A638  4B FA 5B 59 */ bl daAlink_c_NS_setDoStatus
+/* 8010D6F8 0010A638  4B FA 5B 59 */ bl setDoStatus__9daAlink_cFUc
 lbl_8010D6FC:
 /* 8010D6FC 0010A63C  7F A3 EB 78 */ mr r3, r29
 /* 8010D700 0010A640  4B FF E3 6D */ bl daAlink_c_NS_commonHookshotWallWait
@@ -127,7 +127,7 @@ lbl_8010D850:
 /* 8010D8A4 0010A7E4  38 A0 00 04 */ li r5, 4
 /* 8010D8A8 0010A7E8  38 C0 0C 00 */ li r6, 0xc00
 /* 8010D8AC 0010A7EC  38 E0 01 80 */ li r7, 0x180
-/* 8010D8B0 0010A7F0  48 16 2C 91 */ bl cLib_addCalcAngleS
+/* 8010D8B0 0010A7F0  48 16 2C 91 */ bl cLib_addCalcAngleS__FPsssss
 lbl_8010D8B4:
 /* 8010D8B4 0010A7F4  38 00 00 00 */ li r0, 0
 /* 8010D8B8 0010A7F8  B0 1D 30 0C */ sth r0, 0x300c(r29)

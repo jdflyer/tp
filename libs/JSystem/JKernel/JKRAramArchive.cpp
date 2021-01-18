@@ -18,17 +18,17 @@ asm void JKRAramArchive::open(long) {
 #include "JSystem/JKernel/JKRAramArchive/asm/func_802D72A8.s"
 }
 
-asm void JKRAramArchive::fetchResource(JKRArchive::SDIFileEntry*, u32*) {
+asm void* JKRAramArchive::fetchResource(SDIFileEntry*, u32*) {
     nofralloc
 #include "JSystem/JKernel/JKRAramArchive/asm/func_802D75E0.s"
 }
 
-asm void JKRAramArchive::fetchResource(void*, u32, JKRArchive::SDIFileEntry*, u32*) {
+asm void* JKRAramArchive::fetchResource(void*, u32, SDIFileEntry*, u32*) {
     nofralloc
 #include "JSystem/JKernel/JKRAramArchive/asm/func_802D76F4.s"
 }
 
-asm void JKRAramArchive::getAramAddress_Entry(JKRArchive::SDIFileEntry*) {
+asm void JKRAramArchive::getAramAddress_Entry(SDIFileEntry*) {
     nofralloc
 #include "JSystem/JKernel/JKRAramArchive/asm/func_802D77F8.s"
 }
@@ -48,7 +48,7 @@ asm void JKRAramArchive::fetchResource_subroutine(u32, u32, JKRHeap*, int, u8**)
 #include "JSystem/JKernel/JKRAramArchive/asm/func_802D7914.s"
 }
 
-asm void JKRAramArchive::getExpandedResSize(void const*) const {
+asm u32 JKRAramArchive::getExpandedResSize(void const*) {
     nofralloc
 #include "JSystem/JKernel/JKRAramArchive/asm/func_802D7A64.s"
 }
