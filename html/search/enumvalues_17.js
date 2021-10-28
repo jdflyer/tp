@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['y_95341',['Y',['../namespaceCButton.html#ac7c8508b3452a455f3f30daddcc8fa3bad4dc0ea99d303724f1c86466c2da4423',1,'CButton']]],
-  ['yellow_5frupee_95342',['YELLOW_RUPEE',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a19fd91436cd844f1a68e3021cac4c329',1,'d_save.h']]]
+  ['x_100811',['X',['../namespaceCButton.html#ad5503da749b438e7b8619979cf8589e8a0ed9f6fa7c0d42bdc4c6407ac5177a4d',1,'CButton']]],
+  ['xlu_100812',['XLU',['../structJ3DSys.html#a30cc363d626b82865300b658c387eab9abee97053e4f55e4cb732b73334a9f7cc',1,'J3DSys']]]
 ];

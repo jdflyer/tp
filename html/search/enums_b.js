@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['padmask_94677',['PADMask',['../Pad_8h.html#ab96557969238b9fc6c43629bda3adf1c',1,'Pad.h']]],
-  ['pushpulllabel_94678',['PushPullLabel',['../structdBgW__Base.html#ac7576eb3c56d041a93b302116ab071dc',1,'dBgW_Base']]]
+  ['shields_99637',['Shields',['../d__save_8h.html#a180a6a9bca7044e6ac566db4967500d8',1,'d_save.h']]],
+  ['stage_5fenum_99638',['stage_enum',['../structJ2DPictureEx.html#a1d736e223db9afc3bc5d11cbd439e1f9',1,'J2DPictureEx::stage_enum()'],['../structJ2DTextBoxEx.html#a93354fd8a5687f5f2255acac47368920',1,'J2DTextBoxEx::stage_enum()'],['../structJ2DWindowEx.html#a1b3fa4e400bd0d1e53695103183afdbe',1,'J2DWindowEx::stage_enum()']]],
+  ['swords_99639',['Swords',['../d__save_8h.html#a3c66d6f382ea908fcb6d2f2f82a22b4d',1,'d_save.h']]]
 ];

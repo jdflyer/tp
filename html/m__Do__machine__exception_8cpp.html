@@ -82,170 +82,70 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="m__Do__machine__exception_8h_source.html">m_Do/m_Do_machine_exception.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JFWSystem_8h_source.html">JSystem/JFramework/JFWSystem.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JKRAram_8h_source.html">JSystem/JKernel/JKRAram.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JUTConsole_8h_source.html">JSystem/JUtility/JUTConsole.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="____va__arg_8h_source.html">Runtime.PPCEABI.H/__va_arg.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__com__inf__game_8h_source.html">d/com/d_com_inf_game.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;asm/m_Do/m_Do_machine_exception/print_f__FPCce.s&quot;</code><br />
-<code>#include &quot;asm/m_Do/m_Do_machine_exception/print__FPCc.s&quot;</code><br />
-<code>#include &quot;asm/m_Do/m_Do_machine_exception/dispHeapInfo__Fv.s&quot;</code><br />
-<code>#include &quot;asm/m_Do/m_Do_machine_exception/dispGameInfo__Fv.s&quot;</code><br />
-<code>#include &quot;asm/m_Do/m_Do_machine_exception/dispDateInfo__Fv.s&quot;</code><br />
-<code>#include &quot;asm/m_Do/m_Do_machine_exception/dispConsoleToTerminal__Fv.s&quot;</code><br />
-<code>#include &quot;asm/m_Do/m_Do_machine_exception/exception_addition__FP10JUTConsole.s&quot;</code><br />
+<code>#include &quot;<a class="el" href="m__Do__ext_8h_source.html">m_Do/m_Do_ext.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="m__Do__main_8h_source.html">m_Do/m_Do_main.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for m_Do_machine_exception.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="m__Do__machine__exception_8cpp__incl.svg" width="100%" height="473"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="m__Do__machine__exception_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmDoMain.html">mDoMain</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdRes__control__c.html">dRes_control_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJUTConsole.html">JUTConsole</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRHeap.html">JKRHeap</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRAramHeap.html">JKRAramHeap</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRAram.html">JKRAram</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJFWSystem.html">JFWSystem</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDynamicModuleControlBase.html">DynamicModuleControlBase</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae72f1264215bce2f8d1dbd39423ada4c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#ae72f1264215bce2f8d1dbd39423ada4c">print_f__FPCce</a> ()</td></tr>
-<tr class="separator:ae72f1264215bce2f8d1dbd39423ada4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2404323a924af0234ce9cae56a41e7de"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a2404323a924af0234ce9cae56a41e7de">print__FPCc</a> ()</td></tr>
-<tr class="separator:a2404323a924af0234ce9cae56a41e7de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66f01ecb036a4ca70331bbe8d15a63a0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a66f01ecb036a4ca70331bbe8d15a63a0">dispHeapInfo__Fv</a> ()</td></tr>
-<tr class="separator:a66f01ecb036a4ca70331bbe8d15a63a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45f608a47a6fa66181e8e42878f52d73"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a45f608a47a6fa66181e8e42878f52d73">dispGameInfo__Fv</a> ()</td></tr>
-<tr class="separator:a45f608a47a6fa66181e8e42878f52d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9cdfc6a639e9861d7019d014ec50fdf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#ac9cdfc6a639e9861d7019d014ec50fdf">dispDateInfo__Fv</a> ()</td></tr>
-<tr class="separator:ac9cdfc6a639e9861d7019d014ec50fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27f75c75aa4a27f50204dc1002e4d7a5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a27f75c75aa4a27f50204dc1002e4d7a5">dispConsoleToTerminal__Fv</a> ()</td></tr>
-<tr class="separator:a27f75c75aa4a27f50204dc1002e4d7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cc69b569f6f522ec01eb0150de3ed88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a7cc69b569f6f522ec01eb0150de3ed88">exception_addition__FP10JUTConsole</a> ()</td></tr>
-<tr class="separator:a7cc69b569f6f522ec01eb0150de3ed88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea7bf83d84924733121f2a524aa8785d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#aea7bf83d84924733121f2a524aa8785d">dump__14dRes_control_cFv</a> ()</td></tr>
-<tr class="separator:aea7bf83d84924733121f2a524aa8785d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93ca21b10727d8654670ead77745977d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a93ca21b10727d8654670ead77745977d">dump__24DynamicModuleControlBaseFv</a> ()</td></tr>
 <tr class="separator:a93ca21b10727d8654670ead77745977d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf9460d8c0eec10ea0ec6f82bcc8d029"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#aaf9460d8c0eec10ea0ec6f82bcc8d029">getFreeSize__7JKRHeapFv</a> ()</td></tr>
-<tr class="separator:aaf9460d8c0eec10ea0ec6f82bcc8d029"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b906549d1d2e63a4c8666df4900b7c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a2b906549d1d2e63a4c8666df4900b7c4">getTotalFreeSize__7JKRHeapFv</a> ()</td></tr>
-<tr class="separator:a2b906549d1d2e63a4c8666df4900b7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b7cbf665f399db64817dafb8bfec3d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a8b7cbf665f399db64817dafb8bfec3d3">dump__11JKRAramHeapFv</a> ()</td></tr>
-<tr class="separator:a8b7cbf665f399db64817dafb8bfec3d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c4164798f985815ace3b6e63b54834d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a2c4164798f985815ace3b6e63b54834d">print__10JUTConsoleFPCc</a> ()</td></tr>
-<tr class="separator:a2c4164798f985815ace3b6e63b54834d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86a366afcc3119bae5768f6caa5fe093"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a86a366afcc3119bae5768f6caa5fe093">JUTConsole_print_f_va_</a> ()</td></tr>
-<tr class="separator:a86a366afcc3119bae5768f6caa5fe093"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bf651b9ef3bc3bf51ee825959266fd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a2bf651b9ef3bc3bf51ee825959266fd2">dumpToTerminal__10JUTConsoleFUi</a> ()</td></tr>
-<tr class="separator:a2bf651b9ef3bc3bf51ee825959266fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a010ff7f8de64888213bca39888b1f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a5a010ff7f8de64888213bca39888b1f7">OSTicksToCalendarTime</a> ()</td></tr>
-<tr class="separator:a5a010ff7f8de64888213bca39888b1f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5749e2c74495633f05da725d7b4e38e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a5749e2c74495633f05da725d7b4e38e8">_savegpr_23</a> ()</td></tr>
-<tr class="separator:a5749e2c74495633f05da725d7b4e38e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a778466826efe33e53ffca7d528cfcd23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a778466826efe33e53ffca7d528cfcd23">_restgpr_23</a> ()</td></tr>
-<tr class="separator:a778466826efe33e53ffca7d528cfcd23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad780e574e0ca9a0482632f6dccc95779"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#ad780e574e0ca9a0482632f6dccc95779">print_f</a> (char const *param_0,...)</td></tr>
-<tr class="separator:ad780e574e0ca9a0482632f6dccc95779"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab497056fbd1d27b9195bd7f5b436bb8d"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#ab497056fbd1d27b9195bd7f5b436bb8d">print</a> (char const *param_0)</td></tr>
-<tr class="separator:ab497056fbd1d27b9195bd7f5b436bb8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5a8eabbe169a0043d13e78cc3a3e080"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#af5a8eabbe169a0043d13e78cc3a3e080">dispHeapInfo</a> ()</td></tr>
-<tr class="separator:af5a8eabbe169a0043d13e78cc3a3e080"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a300d0949313f3358dec9a449327199f8"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a300d0949313f3358dec9a449327199f8">dispGameInfo</a> ()</td></tr>
-<tr class="separator:a300d0949313f3358dec9a449327199f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac599ef99fd1f2707dec5f503a7e786c4"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#ac599ef99fd1f2707dec5f503a7e786c4">dispDateInfo</a> ()</td></tr>
-<tr class="separator:ac599ef99fd1f2707dec5f503a7e786c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe4bb6c4eda072257f639671d4b8f89f"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#afe4bb6c4eda072257f639671d4b8f89f">dispConsoleToTerminal</a> ()</td></tr>
-<tr class="separator:afe4bb6c4eda072257f639671d4b8f89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6624d84a1a709826dd5c4c2a8c0f3125"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a6624d84a1a709826dd5c4c2a8c0f3125">exception_addition</a> (<a class="el" href="structJUTConsole.html">JUTConsole</a> *param_0)</td></tr>
-<tr class="separator:a6624d84a1a709826dd5c4c2a8c0f3125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd695d41704754aec1f036b725108064"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#acd695d41704754aec1f036b725108064">print_f</a> (char const *fmt,...)</td></tr>
+<tr class="separator:acd695d41704754aec1f036b725108064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ac9b07d27d4eada7323f657df7d3ec2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a4ac9b07d27d4eada7323f657df7d3ec2">print</a> (char const *string)</td></tr>
+<tr class="separator:a4ac9b07d27d4eada7323f657df7d3ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5be4daac778c5094ee70371197786cb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a5be4daac778c5094ee70371197786cb4">dispHeapInfo</a> ()</td></tr>
+<tr class="separator:a5be4daac778c5094ee70371197786cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a609fb5ad35e53a548b054a6d3c1c78b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a609fb5ad35e53a548b054a6d3c1c78b8">dispGameInfo</a> ()</td></tr>
+<tr class="separator:a609fb5ad35e53a548b054a6d3c1c78b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a688e7497cc5a3ac20b6f5f0f55497d84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a688e7497cc5a3ac20b6f5f0f55497d84">dispDateInfo</a> ()</td></tr>
+<tr class="separator:a688e7497cc5a3ac20b6f5f0f55497d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c2f8437f2116b74f1bc4af027caa59e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a8c2f8437f2116b74f1bc4af027caa59e">dispConsoleToTerminal</a> ()</td></tr>
+<tr class="separator:a8c2f8437f2116b74f1bc4af027caa59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ee199020d25ef57c2a35a1a68a93b39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a2ee199020d25ef57c2a35a1a68a93b39">exception_addition</a> (<a class="el" href="structJUTConsole.html">JUTConsole</a> *pConsole)</td></tr>
+<tr class="separator:a2ee199020d25ef57c2a35a1a68a93b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a99bb57016fd945522c10f0d84d1e0075"><td class="memItemLeft" align="right" valign="top">char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a99bb57016fd945522c10f0d84d1e0075">m_Do_m_Do_machine_exception__stringBase0</a></td></tr>
-<tr class="separator:a99bb57016fd945522c10f0d84d1e0075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97663b9b5d45a581bbaea2ec26c00cad"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structJUTConsole.html">JUTConsole</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a97663b9b5d45a581bbaea2ec26c00cad">sConsole</a></td></tr>
+<tr class="separator:a97663b9b5d45a581bbaea2ec26c00cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d7bbde079b7161ee37bd5260a78196a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a3d7bbde079b7161ee37bd5260a78196a">struct_80450C94</a> [4]</td></tr>
+<tr class="separator:a3d7bbde079b7161ee37bd5260a78196a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a554df824c492c043d4d1c8a66b29d000"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a554df824c492c043d4d1c8a66b29d000">stringBase_80374460</a> = &quot;--------------------------------------\n&quot;</td></tr>
+<tr class="separator:a554df824c492c043d4d1c8a66b29d000"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab90c007ca83feadd64cc70f24e35835d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#ab90c007ca83feadd64cc70f24e35835d">struct_80450C98</a> [4]</td></tr>
 <tr class="separator:ab90c007ca83feadd64cc70f24e35835d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac2865f50aeefcd00432938869a29f1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#aac2865f50aeefcd00432938869a29f1a">struct_80450C9C</a> [4]</td></tr>
 <tr class="separator:aac2865f50aeefcd00432938869a29f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cf00cf935f34edb4c52f108d939f14d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a5cf00cf935f34edb4c52f108d939f14d">COPYDATE_STRING__7mDoMain</a> [18+2]</td></tr>
-<tr class="separator:a5cf00cf935f34edb4c52f108d939f14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50ad47c26bcc2867f2c14d349753f58e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a50ad47c26bcc2867f2c14d349753f58e">g_dComIfG_gameInfo</a> [122384]</td></tr>
-<tr class="separator:a50ad47c26bcc2867f2c14d349753f58e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55bf87ecda55ed54537f60829c2e4d18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a55bf87ecda55ed54537f60829c2e4d18">sPowerOnTime__7mDoMain</a> [4]</td></tr>
-<tr class="separator:a55bf87ecda55ed54537f60829c2e4d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72f62492ab4a77df25199bf0f4df0ba9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a72f62492ab4a77df25199bf0f4df0ba9">data_80450B0C</a> [4]</td></tr>
-<tr class="separator:a72f62492ab4a77df25199bf0f4df0ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afec1d21fd42f2dea094f3899839ef322"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#afec1d21fd42f2dea094f3899839ef322">sHungUpTime__7mDoMain</a> [4]</td></tr>
-<tr class="separator:afec1d21fd42f2dea094f3899839ef322"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad12215a0e2917fa672cef31aca9e4003"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#ad12215a0e2917fa672cef31aca9e4003">data_80450B14</a> [4]</td></tr>
-<tr class="separator:ad12215a0e2917fa672cef31aca9e4003"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6013eab177335a2132184d6eeeb94351"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a6013eab177335a2132184d6eeeb94351">gameHeap</a> [4]</td></tr>
-<tr class="separator:a6013eab177335a2132184d6eeeb94351"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82a3bbf313ab8567bc841bf70cb82fcf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a82a3bbf313ab8567bc841bf70cb82fcf">zeldaHeap</a> [4]</td></tr>
-<tr class="separator:a82a3bbf313ab8567bc841bf70cb82fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24bcb5fc2faea2eaaad9601087fae2aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a24bcb5fc2faea2eaaad9601087fae2aa">archiveHeap</a> [4]</td></tr>
-<tr class="separator:a24bcb5fc2faea2eaaad9601087fae2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2977b0e137bd81f5f6e2a8b7734bdb36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a2977b0e137bd81f5f6e2a8b7734bdb36">systemConsole__9JFWSystem</a> [4]</td></tr>
-<tr class="separator:a2977b0e137bd81f5f6e2a8b7734bdb36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1981e5e29bc6546d77174c6763b98c69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a1981e5e29bc6546d77174c6763b98c69">sAramObject__7JKRAram</a> [4]</td></tr>
-<tr class="separator:a1981e5e29bc6546d77174c6763b98c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add1f76c56b2f9a9851b146e2d6ff7ce3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#add1f76c56b2f9a9851b146e2d6ff7ce3">sConsole</a> [4+4]</td></tr>
-<tr class="separator:add1f76c56b2f9a9851b146e2d6ff7ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbeec9cf8c5c89f2781db31b11381bfa"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#adbeec9cf8c5c89f2781db31b11381bfa">stringBase_80374460</a></td></tr>
-<tr class="separator:adbeec9cf8c5c89f2781db31b11381bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a4126ad2d9de1b201ea208901bf8a3b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a6a4126ad2d9de1b201ea208901bf8a3b">stringBase_80374488</a> = &quot;-- Heap Free / TotalFree (KB) --\n&quot;</td></tr>
-<tr class="separator:a6a4126ad2d9de1b201ea208901bf8a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bca8477a4009ea85af9136e3412931b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a2bca8477a4009ea85af9136e3412931b">stringBase_803744AA</a> = &quot; Zelda %5d / %5d\n&quot;</td></tr>
-<tr class="separator:a2bca8477a4009ea85af9136e3412931b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a517c202ef5250563f165ccd8c950bc1a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a517c202ef5250563f165ccd8c950bc1a">stringBase_803744BD</a> = &quot; Game %5d / %5d\n&quot;</td></tr>
-<tr class="separator:a517c202ef5250563f165ccd8c950bc1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa2eadd1fe8ce896436ddee864d02cb0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#afa2eadd1fe8ce896436ddee864d02cb0">stringBase_803744D0</a> = &quot;Archive %5d / %5d\n&quot;</td></tr>
-<tr class="separator:afa2eadd1fe8ce896436ddee864d02cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a929603720c6b55905cd2037088c86983"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a929603720c6b55905cd2037088c86983">stringBase_803744E3</a> = &quot;--------------------------------\n&quot;</td></tr>
-<tr class="separator:a929603720c6b55905cd2037088c86983"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8685d65d85505ba0a4401e04397b4c2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#ac8685d65d85505ba0a4401e04397b4c2">stringBase_80374505</a> = &quot;Start StageName:RoomNo [%s:%d]\n&quot;</td></tr>
-<tr class="separator:ac8685d65d85505ba0a4401e04397b4c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a7ed9be5dcf30f45467c45fed6c97be"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a1a7ed9be5dcf30f45467c45fed6c97be">stringBase_80374525</a></td></tr>
-<tr class="separator:a1a7ed9be5dcf30f45467c45fed6c97be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6a37b53b13d15386df0d5f7e20c73e2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#ae6a37b53b13d15386df0d5f7e20c73e2">stringBase_8037454E</a> = &quot; FINAL VERSION\n&quot;</td></tr>
-<tr class="separator:ae6a37b53b13d15386df0d5f7e20c73e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a941970fbd2a49b245705d5bd25c7e9a5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a941970fbd2a49b245705d5bd25c7e9a5">stringBase_8037455E</a> = &quot;COMPILE USER: FINAL\n&quot;</td></tr>
-<tr class="separator:a941970fbd2a49b245705d5bd25c7e9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d3ce24e455699b724d2d6114ba8bc69"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a3d3ce24e455699b724d2d6114ba8bc69">stringBase_80374573</a> = &quot;COPYDATE : %17s\n&quot;</td></tr>
-<tr class="separator:a3d3ce24e455699b724d2d6114ba8bc69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43d1ff1ac8a6fd2500a0b0febfb8af8a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a43d1ff1ac8a6fd2500a0b0febfb8af8a">stringBase_80374586</a></td></tr>
-<tr class="separator:a43d1ff1ac8a6fd2500a0b0febfb8af8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2faf4474335a673fac3cce14793406c5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a2faf4474335a673fac3cce14793406c5">stringBase_803745B7</a></td></tr>
-<tr class="separator:a2faf4474335a673fac3cce14793406c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a617fdeb05a94bd4dede753c87bd4bc9c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a617fdeb05a94bd4dede753c87bd4bc9c">stringBase_803745E8</a></td></tr>
-<tr class="separator:a617fdeb05a94bd4dede753c87bd4bc9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69a78f63a59390be8387a79c10f52bbe"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a69a78f63a59390be8387a79c10f52bbe">stringBase_80374616</a></td></tr>
-<tr class="separator:a69a78f63a59390be8387a79c10f52bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee38386de88eb740ba49e561055987df"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#aee38386de88eb740ba49e561055987df">pad_8037463F</a> = &quot;&quot;</td></tr>
-<tr class="separator:aee38386de88eb740ba49e561055987df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a778466826efe33e53ffca7d528cfcd23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a778466826efe33e53ffca7d528cfcd23">&#9670;&nbsp;</a></span>_restgpr_23()</h2>
+<a id="a8c2f8437f2116b74f1bc4af027caa59e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c2f8437f2116b74f1bc4af027caa59e">&#9670;&nbsp;</a></span>dispConsoleToTerminal()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void _restgpr_23 </td>
+          <td class="memname">void dispConsoleToTerminal </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -255,14 +155,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5749e2c74495633f05da725d7b4e38e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5749e2c74495633f05da725d7b4e38e8">&#9670;&nbsp;</a></span>_savegpr_23()</h2>
+<a id="a688e7497cc5a3ac20b6f5f0f55497d84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a688e7497cc5a3ac20b6f5f0f55497d84">&#9670;&nbsp;</a></span>dispDateInfo()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void _savegpr_23 </td>
+          <td class="memname">void dispDateInfo </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -272,214 +172,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="afe4bb6c4eda072257f639671d4b8f89f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe4bb6c4eda072257f639671d4b8f89f">&#9670;&nbsp;</a></span>dispConsoleToTerminal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static asm void dispConsoleToTerminal </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a27f75c75aa4a27f50204dc1002e4d7a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27f75c75aa4a27f50204dc1002e4d7a5">&#9670;&nbsp;</a></span>dispConsoleToTerminal__Fv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void dispConsoleToTerminal__Fv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac599ef99fd1f2707dec5f503a7e786c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac599ef99fd1f2707dec5f503a7e786c4">&#9670;&nbsp;</a></span>dispDateInfo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static asm void dispDateInfo </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac9cdfc6a639e9861d7019d014ec50fdf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9cdfc6a639e9861d7019d014ec50fdf">&#9670;&nbsp;</a></span>dispDateInfo__Fv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void dispDateInfo__Fv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a300d0949313f3358dec9a449327199f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a300d0949313f3358dec9a449327199f8">&#9670;&nbsp;</a></span>dispGameInfo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static asm void dispGameInfo </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a45f608a47a6fa66181e8e42878f52d73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45f608a47a6fa66181e8e42878f52d73">&#9670;&nbsp;</a></span>dispGameInfo__Fv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void dispGameInfo__Fv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af5a8eabbe169a0043d13e78cc3a3e080"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5a8eabbe169a0043d13e78cc3a3e080">&#9670;&nbsp;</a></span>dispHeapInfo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static asm void dispHeapInfo </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a66f01ecb036a4ca70331bbe8d15a63a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66f01ecb036a4ca70331bbe8d15a63a0">&#9670;&nbsp;</a></span>dispHeapInfo__Fv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void dispHeapInfo__Fv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8b7cbf665f399db64817dafb8bfec3d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b7cbf665f399db64817dafb8bfec3d3">&#9670;&nbsp;</a></span>dump__11JKRAramHeapFv()</h2>
+<a id="a609fb5ad35e53a548b054a6d3c1c78b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a609fb5ad35e53a548b054a6d3c1c78b8">&#9670;&nbsp;</a></span>dispGameInfo()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void dump__11JKRAramHeapFv </td>
+          <td class="memname">void dispGameInfo </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -489,14 +189,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aea7bf83d84924733121f2a524aa8785d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea7bf83d84924733121f2a524aa8785d">&#9670;&nbsp;</a></span>dump__14dRes_control_cFv()</h2>
+<a id="a5be4daac778c5094ee70371197786cb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5be4daac778c5094ee70371197786cb4">&#9670;&nbsp;</a></span>dispHeapInfo()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void dump__14dRes_control_cFv </td>
+          <td class="memname">void dispHeapInfo </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -523,34 +223,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a2bf651b9ef3bc3bf51ee825959266fd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bf651b9ef3bc3bf51ee825959266fd2">&#9670;&nbsp;</a></span>dumpToTerminal__10JUTConsoleFUi()</h2>
+<a id="a2ee199020d25ef57c2a35a1a68a93b39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ee199020d25ef57c2a35a1a68a93b39">&#9670;&nbsp;</a></span>exception_addition()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void dumpToTerminal__10JUTConsoleFUi </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6624d84a1a709826dd5c4c2a8c0f3125"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6624d84a1a709826dd5c4c2a8c0f3125">&#9670;&nbsp;</a></span>exception_addition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void exception_addition </td>
+          <td class="memname">void exception_addition </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJUTConsole.html">JUTConsole</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em></td><td>)</td>
+          <td class="paramname"><em>pConsole</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -558,127 +241,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a7cc69b569f6f522ec01eb0150de3ed88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cc69b569f6f522ec01eb0150de3ed88">&#9670;&nbsp;</a></span>exception_addition__FP10JUTConsole()</h2>
+<a id="a4ac9b07d27d4eada7323f657df7d3ec2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ac9b07d27d4eada7323f657df7d3ec2">&#9670;&nbsp;</a></span>print()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void exception_addition__FP10JUTConsole </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aaf9460d8c0eec10ea0ec6f82bcc8d029"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf9460d8c0eec10ea0ec6f82bcc8d029">&#9670;&nbsp;</a></span>getFreeSize__7JKRHeapFv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void getFreeSize__7JKRHeapFv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2b906549d1d2e63a4c8666df4900b7c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b906549d1d2e63a4c8666df4900b7c4">&#9670;&nbsp;</a></span>getTotalFreeSize__7JKRHeapFv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void getTotalFreeSize__7JKRHeapFv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a86a366afcc3119bae5768f6caa5fe093"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86a366afcc3119bae5768f6caa5fe093">&#9670;&nbsp;</a></span>JUTConsole_print_f_va_()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void JUTConsole_print_f_va_ </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5a010ff7f8de64888213bca39888b1f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a010ff7f8de64888213bca39888b1f7">&#9670;&nbsp;</a></span>OSTicksToCalendarTime()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSTicksToCalendarTime </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab497056fbd1d27b9195bd7f5b436bb8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab497056fbd1d27b9195bd7f5b436bb8d">&#9670;&nbsp;</a></span>print()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static asm void print </td>
+          <td class="memname">void print </td>
           <td>(</td>
           <td class="paramtype">char const *&#160;</td>
-          <td class="paramname"><em>param_0</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2c4164798f985815ace3b6e63b54834d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c4164798f985815ace3b6e63b54834d">&#9670;&nbsp;</a></span>print__10JUTConsoleFPCc()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void print__10JUTConsoleFPCc </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -686,45 +259,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a2404323a924af0234ce9cae56a41e7de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2404323a924af0234ce9cae56a41e7de">&#9670;&nbsp;</a></span>print__FPCc()</h2>
+<a id="acd695d41704754aec1f036b725108064"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd695d41704754aec1f036b725108064">&#9670;&nbsp;</a></span>print_f()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void print__FPCc </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad780e574e0ca9a0482632f6dccc95779"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad780e574e0ca9a0482632f6dccc95779">&#9670;&nbsp;</a></span>print_f()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static asm void print_f </td>
+          <td class="memname">void print_f </td>
           <td>(</td>
           <td class="paramtype">char const *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname"><em>fmt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -738,43 +283,13 @@ Variables</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae72f1264215bce2f8d1dbd39423ada4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae72f1264215bce2f8d1dbd39423ada4c">&#9670;&nbsp;</a></span>print_f__FPCce()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void print_f__FPCce </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a24bcb5fc2faea2eaaad9601087fae2aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24bcb5fc2faea2eaaad9601087fae2aa">&#9670;&nbsp;</a></span>archiveHeap</h2>
+<a id="a97663b9b5d45a581bbaea2ec26c00cad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97663b9b5d45a581bbaea2ec26c00cad">&#9670;&nbsp;</a></span>sConsole</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -783,153 +298,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> archiveHeap[4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5cf00cf935f34edb4c52f108d939f14d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5cf00cf935f34edb4c52f108d939f14d">&#9670;&nbsp;</a></span>COPYDATE_STRING__7mDoMain</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> COPYDATE_STRING__7mDoMain[18+2]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a72f62492ab4a77df25199bf0f4df0ba9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72f62492ab4a77df25199bf0f4df0ba9">&#9670;&nbsp;</a></span>data_80450B0C</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_80450B0C</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad12215a0e2917fa672cef31aca9e4003"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad12215a0e2917fa672cef31aca9e4003">&#9670;&nbsp;</a></span>data_80450B14</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_80450B14[4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a50ad47c26bcc2867f2c14d349753f58e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50ad47c26bcc2867f2c14d349753f58e">&#9670;&nbsp;</a></span>g_dComIfG_gameInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> g_dComIfG_gameInfo[122384]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6013eab177335a2132184d6eeeb94351"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6013eab177335a2132184d6eeeb94351">&#9670;&nbsp;</a></span>gameHeap</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> gameHeap[4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a99bb57016fd945522c10f0d84d1e0075"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99bb57016fd945522c10f0d84d1e0075">&#9670;&nbsp;</a></span>m_Do_m_Do_machine_exception__stringBase0</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">char const* const m_Do_m_Do_machine_exception__stringBase0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aee38386de88eb740ba49e561055987df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee38386de88eb740ba49e561055987df">&#9670;&nbsp;</a></span>pad_8037463F</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const pad_8037463F = &quot;&quot;</td>
+          <td class="memname"><a class="el" href="structJUTConsole.html">JUTConsole</a>* sConsole</td>
         </tr>
       </table>
   </td>
@@ -941,410 +310,32 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a1981e5e29bc6546d77174c6763b98c69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1981e5e29bc6546d77174c6763b98c69">&#9670;&nbsp;</a></span>sAramObject__7JKRAram</h2>
+<a id="a554df824c492c043d4d1c8a66b29d000"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a554df824c492c043d4d1c8a66b29d000">&#9670;&nbsp;</a></span>stringBase_80374460</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> sAramObject__7JKRAram[4]</td>
+          <td class="memname">const char* stringBase_80374460 = &quot;--------------------------------------\n&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="add1f76c56b2f9a9851b146e2d6ff7ce3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add1f76c56b2f9a9851b146e2d6ff7ce3">&#9670;&nbsp;</a></span>sConsole</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> sConsole[4+4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afec1d21fd42f2dea094f3899839ef322"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afec1d21fd42f2dea094f3899839ef322">&#9670;&nbsp;</a></span>sHungUpTime__7mDoMain</h2>
+<a id="a3d7bbde079b7161ee37bd5260a78196a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d7bbde079b7161ee37bd5260a78196a">&#9670;&nbsp;</a></span>struct_80450C94</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> sHungUpTime__7mDoMain[4]</td>
+          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> struct_80450C94[4]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a55bf87ecda55ed54537f60829c2e4d18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55bf87ecda55ed54537f60829c2e4d18">&#9670;&nbsp;</a></span>sPowerOnTime__7mDoMain</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> sPowerOnTime__7mDoMain[4]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="adbeec9cf8c5c89f2781db31b11381bfa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbeec9cf8c5c89f2781db31b11381bfa">&#9670;&nbsp;</a></span>stringBase_80374460</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_80374460</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">    <span class="stringliteral">&quot;--------------------------------------\n&quot;</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a6a4126ad2d9de1b201ea208901bf8a3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a4126ad2d9de1b201ea208901bf8a3b">&#9670;&nbsp;</a></span>stringBase_80374488</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_80374488 = &quot;-- Heap Free / TotalFree (KB) --\n&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2bca8477a4009ea85af9136e3412931b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bca8477a4009ea85af9136e3412931b">&#9670;&nbsp;</a></span>stringBase_803744AA</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_803744AA = &quot; Zelda %5d / %5d\n&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a517c202ef5250563f165ccd8c950bc1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a517c202ef5250563f165ccd8c950bc1a">&#9670;&nbsp;</a></span>stringBase_803744BD</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_803744BD = &quot; Game %5d / %5d\n&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afa2eadd1fe8ce896436ddee864d02cb0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa2eadd1fe8ce896436ddee864d02cb0">&#9670;&nbsp;</a></span>stringBase_803744D0</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_803744D0 = &quot;Archive %5d / %5d\n&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a929603720c6b55905cd2037088c86983"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a929603720c6b55905cd2037088c86983">&#9670;&nbsp;</a></span>stringBase_803744E3</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_803744E3 = &quot;--------------------------------\n&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac8685d65d85505ba0a4401e04397b4c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8685d65d85505ba0a4401e04397b4c2">&#9670;&nbsp;</a></span>stringBase_80374505</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_80374505 = &quot;Start StageName:RoomNo [%s:%d]\n&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1a7ed9be5dcf30f45467c45fed6c97be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a7ed9be5dcf30f45467c45fed6c97be">&#9670;&nbsp;</a></span>stringBase_80374525</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_80374525</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">    <span class="stringliteral">&quot;------------- Date Infomation ---------\n&quot;</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ae6a37b53b13d15386df0d5f7e20c73e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6a37b53b13d15386df0d5f7e20c73e2">&#9670;&nbsp;</a></span>stringBase_8037454E</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_8037454E = &quot; FINAL VERSION\n&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a941970fbd2a49b245705d5bd25c7e9a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a941970fbd2a49b245705d5bd25c7e9a5">&#9670;&nbsp;</a></span>stringBase_8037455E</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_8037455E = &quot;COMPILE USER: FINAL\n&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3d3ce24e455699b724d2d6114ba8bc69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d3ce24e455699b724d2d6114ba8bc69">&#9670;&nbsp;</a></span>stringBase_80374573</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_80374573 = &quot;COPYDATE : %17s\n&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a43d1ff1ac8a6fd2500a0b0febfb8af8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43d1ff1ac8a6fd2500a0b0febfb8af8a">&#9670;&nbsp;</a></span>stringBase_80374586</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_80374586</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">    <span class="stringliteral">&quot;PowerOnTime: %04d/%2d/%2d %2d:%2d:%2d`%03d\&quot;%03d\n&quot;</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a2faf4474335a673fac3cce14793406c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2faf4474335a673fac3cce14793406c5">&#9670;&nbsp;</a></span>stringBase_803745B7</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_803745B7</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">    <span class="stringliteral">&quot;HungUpTime : %04d/%2d/%2d %2d:%2d:%2d`%03d\&quot;%03d\n&quot;</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a617fdeb05a94bd4dede753c87bd4bc9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a617fdeb05a94bd4dede753c87bd4bc9c">&#9670;&nbsp;</a></span>stringBase_803745E8</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_803745E8</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">    <span class="stringliteral">&quot;PlayTime   : %4d days, %2d:%2d:%2d`%03d\&quot;%03d\n&quot;</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a69a78f63a59390be8387a79c10f52bbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69a78f63a59390be8387a79c10f52bbe">&#9670;&nbsp;</a></span>stringBase_80374616</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_80374616</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">    <span class="stringliteral">&quot;---------------------------------------\n&quot;</span></div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="ab90c007ca83feadd64cc70f24e35835d"></a>
@@ -1371,42 +362,6 @@ Variables</h2></td></tr>
           <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> struct_80450C9C</td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2977b0e137bd81f5f6e2a8b7734bdb36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2977b0e137bd81f5f6e2a8b7734bdb36">&#9670;&nbsp;</a></span>systemConsole__9JFWSystem</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> systemConsole__9JFWSystem[4]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a82a3bbf313ab8567bc841bf70cb82fcf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82a3bbf313ab8567bc841bf70cb82fcf">&#9670;&nbsp;</a></span>zeldaHeap</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> zeldaHeap[4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>

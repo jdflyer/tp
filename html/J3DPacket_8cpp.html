@@ -83,28 +83,17 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="J3DPacket_8h_source.html">JSystem/J3DGraphBase/J3DPacket.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="JKRHeap_8h_source.html">JSystem/JKernel/JKRHeap.h</a>&quot;</code><br />
+<code>#include &quot;MSL_C.PPCEABI.bare.H/MSL_Common/src/string.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GX_8h_source.html">dolphin/gx/GX.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OSCache_8h_source.html">dolphin/os/OSCache.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="global_8h_source.html">global.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="msl__c_2string_8h_source.html">msl_c/string.h</a>&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DPacket/beginDL__17J3DDisplayListObjFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DPacket/endDL__17J3DDisplayListObjFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DPacket/beginPatch__17J3DDisplayListObjFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DPacket/endPatch__17J3DDisplayListObjFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DPacket/__ct__13J3DDrawPacketFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DPacket/__dt__13J3DDrawPacketFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DPacket/newDisplayList__13J3DDrawPacketFUl.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DPacket/newSingleDisplayList__13J3DDrawPacketFUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DPacket/__ct__12J3DMatPacketFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DPacket/__dt__12J3DMatPacketFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DPacket/isSame__12J3DMatPacketCFP12J3DMatPacket.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DPacket/draw__12J3DMatPacketFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DPacket/__ct__14J3DShapePacketFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DPacket/__dt__14J3DShapePacketFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DPacket/calcDifferedBufferSize__14J3DShapePacketFUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DPacket/newDifferedDisplayList__14J3DShapePacketFUl.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DPacket/prepareDraw__14J3DShapePacketCFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DPacket/draw__14J3DShapePacketFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DPacket/drawFast__14J3DShapePacketFv.s&quot;</code><br />
@@ -120,9 +109,9 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DVertexBuffer.html">J3DVertexBuffer</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DVertexBuffer.html">J3DVertexBuffer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DShape.html">J3DShape</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DShape.html">J3DShape</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DDrawBuffer.html">J3DDrawBuffer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,8 +202,6 @@ Functions</h2></td></tr>
 <tr class="separator:aa15f3c69c59467ec26e46c5ccda6422c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c978a71ff67ff950fce57d8b1f940a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DPacket_8cpp.html#a8c978a71ff67ff950fce57d8b1f940a2">syncJ3DSysFlags__12J3DModelDataCFv</a> ()</td></tr>
 <tr class="separator:a8c978a71ff67ff950fce57d8b1f940a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75da4d84917c9274a4ec32a84f10d8b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DPacket_8cpp.html#a75da4d84917c9274a4ec32a84f10d8b8">GDInitGDLObj</a> ()</td></tr>
-<tr class="separator:a75da4d84917c9274a4ec32a84f10d8b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb7dcd627764b5725c549d223e25fa2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DPacket_8cpp.html#adb7dcd627764b5725c549d223e25fa2b">GDFlushCurrToMem</a> ()</td></tr>
 <tr class="separator:adb7dcd627764b5725c549d223e25fa2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace22934fbcea7c5213aaafab29235e5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DPacket_8cpp.html#ace22934fbcea7c5213aaafab29235e5a">GDPadCurr32</a> ()</td></tr>
@@ -242,12 +229,10 @@ Variables</h2></td></tr>
 <tr class="separator:aac44660d37a9e77abbe99c6e91147686"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6373c27207d560ebc802d37ccb42965b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DPacket_8cpp.html#a6373c27207d560ebc802d37ccb42965b">sOldVcdVatCmd__8J3DShape</a> [4]</td></tr>
 <tr class="separator:a6373c27207d560ebc802d37ccb42965b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a656111290f8611fc6cea5822a56abef2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DPacket_8cpp.html#a656111290f8611fc6cea5822a56abef2">__GDCurrentDL</a> [4]</td></tr>
-<tr class="separator:a656111290f8611fc6cea5822a56abef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4746d4994194156766efbd21a1c2222f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DPacket_8cpp.html#a4746d4994194156766efbd21a1c2222f">sDifferedRegister</a> [32]</td></tr>
-<tr class="separator:a4746d4994194156766efbd21a1c2222f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af06c0d47d36fca8326e0c748dc6d765e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DPacket_8cpp.html#af06c0d47d36fca8326e0c748dc6d765e">sSizeOfDiffered</a> [32]</td></tr>
-<tr class="separator:af06c0d47d36fca8326e0c748dc6d765e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad34c56bd474315695aed6a0ab913bc0b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DPacket_8cpp.html#ad34c56bd474315695aed6a0ab913bc0b">sDifferedRegister</a> [8]</td></tr>
+<tr class="separator:ad34c56bd474315695aed6a0ab913bc0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb3cadab4b8c453a5175631fb0f22182"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DPacket_8cpp.html#aeb3cadab4b8c453a5175631fb0f22182">sSizeOfDiffered</a> [8] = {13, 13, 21, 120, 55, 15, 19, 45}</td></tr>
+<tr class="separator:aeb3cadab4b8c453a5175631fb0f22182"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a310ca0712b1a8f5495812ffbdf47cd5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DPacket_8cpp.html#a310ca0712b1a8f5495812ffbdf47cd5c">__vt__14J3DShapePacket</a> [5]</td></tr>
 <tr class="separator:a310ca0712b1a8f5495812ffbdf47cd5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a255f04c00e8068c5caf5c5d9b3c0e26f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DPacket_8cpp.html#a255f04c00e8068c5caf5c5d9b3c0e26f">__vt__12J3DMatPacket</a> [5]</td></tr>
@@ -785,23 +770,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a75da4d84917c9274a4ec32a84f10d8b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75da4d84917c9274a4ec32a84f10d8b8">&#9670;&nbsp;</a></span>GDInitGDLObj()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GDInitGDLObj </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ace22934fbcea7c5213aaafab29235e5a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ace22934fbcea7c5213aaafab29235e5a">&#9670;&nbsp;</a></span>GDPadCurr32()</h2>
 
@@ -1041,28 +1009,6 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a656111290f8611fc6cea5822a56abef2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a656111290f8611fc6cea5822a56abef2">&#9670;&nbsp;</a></span>__GDCurrentDL</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> __GDCurrentDL[4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a255f04c00e8068c5caf5c5d9b3c0e26f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a255f04c00e8068c5caf5c5d9b3c0e26f">&#9670;&nbsp;</a></span>__vt__12J3DMatPacket</h2>
 
@@ -1092,7 +1038,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="aJ3DPacket_8cpp_html_a69ea4da8d382b57fa7b5ead763418ac1"><div class="ttname"><a href="J3DPacket_8cpp.html#a69ea4da8d382b57fa7b5ead763418ac1">draw__12J3DMatPacketFv</a></div><div class="ttdeci">void draw__12J3DMatPacketFv()</div></div>
 <div class="ttc" id="aJ3DPacket_8cpp_html_a76b67c64667d930a64cd8c787b826801"><div class="ttname"><a href="J3DPacket_8cpp.html#a76b67c64667d930a64cd8c787b826801">entry__12J3DMatPacketFP13J3DDrawBuffer</a></div><div class="ttdeci">void entry__12J3DMatPacketFP13J3DDrawBuffer()</div></div>
 <div class="ttc" id="aJ3DPacket_8cpp_html_ad7e561bccc01a1a37d801de8f787ef2c"><div class="ttname"><a href="J3DPacket_8cpp.html#ad7e561bccc01a1a37d801de8f787ef2c">__dt__12J3DMatPacketFv</a></div><div class="ttdeci">void __dt__12J3DMatPacketFv()</div></div>
-<div class="ttc" id="atypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> types.h:32</div></div>
+<div class="ttc" id="atypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> types.h:34</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1190,8 +1136,8 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a4746d4994194156766efbd21a1c2222f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4746d4994194156766efbd21a1c2222f">&#9670;&nbsp;</a></span>sDifferedRegister</h2>
+<a id="ad34c56bd474315695aed6a0ab913bc0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad34c56bd474315695aed6a0ab913bc0b">&#9670;&nbsp;</a></span>sDifferedRegister</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1200,7 +1146,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> sDifferedRegister[32]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> sDifferedRegister[8]</td>
         </tr>
       </table>
   </td>
@@ -1209,10 +1155,8 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x00, 0x00, 0x00, 0x04, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x02, 0x01, 0x00, 0x00, 0x00,</div>
-<div class="line">    0x10, 0x00, 0x00, 0x00, 0x20, 0x00, 0x00, 0x00, 0x02, 0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00,</div>
-<div class="line">}</div>
+<b>Initial value:</b><div class="fragment"><div class="line">= {0x00000004, 0x00000001, 0x00000002, 0x01000000,</div>
+<div class="line">                                                0x10000000, 0x20000000, 0x02000000, 0x08000000}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1272,8 +1216,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="af06c0d47d36fca8326e0c748dc6d765e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af06c0d47d36fca8326e0c748dc6d765e">&#9670;&nbsp;</a></span>sSizeOfDiffered</h2>
+<a id="aeb3cadab4b8c453a5175631fb0f22182"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb3cadab4b8c453a5175631fb0f22182">&#9670;&nbsp;</a></span>sSizeOfDiffered</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1282,7 +1226,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> sSizeOfDiffered[32]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> sSizeOfDiffered[8] = {13, 13, 21, 120, 55, 15, 19, 45}</td>
         </tr>
       </table>
   </td>
@@ -1291,11 +1235,7 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x00, 0x00, 0x00, 0x0D, 0x00, 0x00, 0x00, 0x0D, 0x00, 0x00, 0x00, 0x15, 0x00, 0x00, 0x00, 0x78,</div>
-<div class="line">    0x00, 0x00, 0x00, 0x37, 0x00, 0x00, 0x00, 0x0F, 0x00, 0x00, 0x00, 0x13, 0x00, 0x00, 0x00, 0x2D,</div>
-<div class="line">}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="af4247e747bc0e2be11a5979e58686ec9"></a>

@@ -83,32 +83,24 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="JASAudioReseter_8h_source.html">JSystem/JAudio2/JASAudioReseter.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASAudioReseter/__ct__15JASAudioReseterFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASAudioReseter/__dt__15JASAudioReseterFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JASAudioReseter/start__15JASAudioReseterFUlb.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASAudioReseter/resume__15JASAudioReseterFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASAudioReseter/checkDone__15JASAudioReseterCFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JASAudioReseter/calc__15JASAudioReseterFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASAudioReseter/callback__15JASAudioReseterFPv.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for JASAudioReseter.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="JASAudioReseter_8cpp__incl.svg" width="100%" height="473"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="JASAudioReseter_8cpp__incl.svg" width="100%" height="540"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASDriver.html">JASDriver</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASDSPChannel.html">JASDSPChannel</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASAudioThread.html">JASAudioThread</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASAudioReseter.html">JASAudioReseter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -141,10 +133,6 @@ Functions</h2></td></tr>
 <tr class="separator:a312c04a7f091a8daafaaaea098ae0df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a498e6440d5c316e2672169ee4ed92309"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAudioReseter_8cpp.html#a498e6440d5c316e2672169ee4ed92309">__dl__FPv</a> ()</td></tr>
 <tr class="separator:a498e6440d5c316e2672169ee4ed92309"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65b7dd4c9756f26d16dcf8f0dedb07bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAudioReseter_8cpp.html#a65b7dd4c9756f26d16dcf8f0dedb07bf">OSDisableInterrupts</a> ()</td></tr>
-<tr class="separator:a65b7dd4c9756f26d16dcf8f0dedb07bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14b5cc2befa83d8710fba14f4de14fd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAudioReseter_8cpp.html#a14b5cc2befa83d8710fba14f4de14fd9">OSRestoreInterrupts</a> ()</td></tr>
-<tr class="separator:a14b5cc2befa83d8710fba14f4de14fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -298,40 +286,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void getHandle__13JASDSPChannelFUl </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a65b7dd4c9756f26d16dcf8f0dedb07bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65b7dd4c9756f26d16dcf8f0dedb07bf">&#9670;&nbsp;</a></span>OSDisableInterrupts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSDisableInterrupts </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a14b5cc2befa83d8710fba14f4de14fd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14b5cc2befa83d8710fba14f4de14fd9">&#9670;&nbsp;</a></span>OSRestoreInterrupts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSRestoreInterrupts </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>

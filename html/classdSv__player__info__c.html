@@ -82,10 +82,16 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac351b70329fa1b59c51554909fd084b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdSv__player__info__c.html#ac351b70329fa1b59c51554909fd084b3">init</a> (void)</td></tr>
-<tr class="separator:ac351b70329fa1b59c51554909fd084b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d46ea02368c9c416c2edb0a26706ee8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdSv__player__info__c.html#a8d46ea02368c9c416c2edb0a26706ee8">init</a> ()</td></tr>
+<tr class="separator:a8d46ea02368c9c416c2edb0a26706ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada713705511cc83e8b810d22edb737f9"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdSv__player__info__c.html#ada713705511cc83e8b810d22edb737f9">getLinkName</a> ()</td></tr>
 <tr class="separator:ada713705511cc83e8b810d22edb737f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9b964a1028e529319fa904e88f7008e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdSv__player__info__c.html#ac9b964a1028e529319fa904e88f7008e">setPlayerName</a> (const char *name)</td></tr>
+<tr class="separator:ac9b964a1028e529319fa904e88f7008e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a760c988f773c70e3b407d4d98f334219"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdSv__player__info__c.html#a760c988f773c70e3b407d4d98f334219">setHorseName</a> (const char *name)</td></tr>
+<tr class="separator:a760c988f773c70e3b407d4d98f334219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b5bfac8899a048b85de81e3c0b7bb35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdSv__player__info__c.html#a7b5bfac8899a048b85de81e3c0b7bb35">setTotalTime</a> (<a class="el" href="types_8h.html#a4258bfb2c3a440d06c4aaa3c2b450dde">s64</a> <a class="el" href="GXInit_8cpp.html#a34e459429f04027e70dfa35aaa4fe268">time</a>)</td></tr>
+<tr class="separator:a7b5bfac8899a048b85de81e3c0b7bb35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -111,8 +117,6 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a42946e64972bd7f6fce6bac0bdf8475f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9e96d0a0cb5757ac6ecce93b9c584fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdSv__player__info__c.html#ae9e96d0a0cb5757ac6ecce93b9c584fb">unk55</a> [5]</td></tr>
 <tr class="separator:ae9e96d0a0cb5757ac6ecce93b9c584fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50df79cdd83fb39cc2bdd06a9a6c3570"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdSv__player__info__c.html#a50df79cdd83fb39cc2bdd06a9a6c3570">padding</a> [4]</td></tr>
-<tr class="separator:a50df79cdd83fb39cc2bdd06a9a6c3570"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ada713705511cc83e8b810d22edb737f9"></a>
@@ -140,20 +144,98 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ac351b70329fa1b59c51554909fd084b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac351b70329fa1b59c51554909fd084b3">&#9670;&nbsp;</a></span>init()</h2>
+<a id="a8d46ea02368c9c416c2edb0a26706ee8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d46ea02368c9c416c2edb0a26706ee8">&#9670;&nbsp;</a></span>init()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void dSv_player_info_c::init </td>
+          <td class="memname">void dSv_player_info_c::init </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a760c988f773c70e3b407d4d98f334219"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a760c988f773c70e3b407d4d98f334219">&#9670;&nbsp;</a></span>setHorseName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dSv_player_info_c::setHorseName </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac9b964a1028e529319fa904e88f7008e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9b964a1028e529319fa904e88f7008e">&#9670;&nbsp;</a></span>setPlayerName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dSv_player_info_c::setPlayerName </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b5bfac8899a048b85de81e3c0b7bb35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b5bfac8899a048b85de81e3c0b7bb35">&#9670;&nbsp;</a></span>setTotalTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dSv_player_info_c::setTotalTime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a4258bfb2c3a440d06c4aaa3c2b450dde">s64</a>&#160;</td>
+          <td class="paramname"><em>time</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -258,28 +340,6 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> dSv_player_info_c::mTotalTime</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a50df79cdd83fb39cc2bdd06a9a6c3570"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50df79cdd83fb39cc2bdd06a9a6c3570">&#9670;&nbsp;</a></span>padding</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> dSv_player_info_c::padding[4]</td>
         </tr>
       </table>
   </td>

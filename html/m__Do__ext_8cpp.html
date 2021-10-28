@@ -82,6 +82,8 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="m__Do__ext_8h_source.html">m_Do/m_Do_ext.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J3DMaterialAnm_8h_source.html">JSystem/J3DGraphAnimator/J3DMaterialAnm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J3DTevs_8h_source.html">JSystem/J3DGraphBase/J3DTevs.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="JKRArchive_8h_source.html">JSystem/JKernel/JKRArchive.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="JKRAssertHeap_8h_source.html">JSystem/JKernel/JKRAssertHeap.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="JKRExpHeap_8h_source.html">JSystem/JKernel/JKRExpHeap.h</a>&quot;</code><br />
@@ -230,8 +232,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmDoExt__btpAnm.html">mDoExt_btpAnm</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DAnmCluster.html">J3DAnmCluster</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmDoExt__blkAnm.html">mDoExt_blkAnm</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmDoExt__MtxCalcOldFrame.html">mDoExt_MtxCalcOldFrame</a></td></tr>
@@ -239,8 +239,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmDoExt__MtxCalcAnmBlendTblOld.html">mDoExt_MtxCalcAnmBlendTblOld</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmDoExt__MtxCalcAnmBlendTbl.html">mDoExt_MtxCalcAnmBlendTbl</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DTransformInfo.html">J3DTransformInfo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmDoExt__McaMorfCallBack2__c.html">mDoExt_McaMorfCallBack2_c</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -256,11 +254,7 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmDoExt__3DlineMat__c.html">mDoExt_3DlineMat_c</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmDoExt__3DlineMatSortPacket.html">mDoExt_3DlineMatSortPacket</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structResTIMG.html">ResTIMG</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__GXColor.html">_GXColor</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmDoExt__3DlineMatSortPacket.html">mDoExt_3DlineMatSortPacket</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdKy__tevstr__c.html">dKy_tevstr_c</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -268,21 +262,11 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmDoExt__3DlineMat0__c.html">mDoExt_3DlineMat0_c</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DPacket.html">J3DPacket</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DDrawBuffer.html">J3DDrawBuffer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdDlst__list__c.html">dDlst_list_c</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__GXLogicOp.html">_GXLogicOp</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__GXCompare.html">_GXCompare</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__GXBlendMode.html">_GXBlendMode</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__GXBlendFactor.html">_GXBlendFactor</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISoundID.html">JAISoundID</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISoundID.html">JAISoundID</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structZ2SoundHandlePool.html">Z2SoundHandlePool</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -296,55 +280,11 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJUtility_1_1TColor.html">JUtility::TColor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJUTResFont.html">JUTResFont</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJUTNameTab.html">JUTNameTab</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJUTResFont.html">JUTResFont</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJUTFont.html">JUTFont</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJUTCacheFont.html">JUTCacheFont</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DZMode.html">J3DZMode</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DVertexBuffer.html">J3DVertexBuffer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DTexMtxAnm.html">J3DTexMtxAnm</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DTexCoord.html">J3DTexCoord</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DTexGenBlock.html">J3DTexGenBlock</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DTevSwapModeTable.html">J3DTevSwapModeTable</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DTevStageInfo.html">J3DTevStageInfo</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DTevStage.html">J3DTevStage</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DTevOrder.html">J3DTevOrder</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DTevKColorAnm.html">J3DTevKColorAnm</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DTevColorAnm.html">J3DTevColorAnm</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DGXColorS10.html">J3DGXColorS10</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DIndTevStage.html">J3DIndTevStage</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DGXColor.html">J3DGXColor</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DTevBlock.html">J3DTevBlock</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DSys.html">J3DSys</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DShapePacket.html">J3DShapePacket</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DShape.html">J3DShape</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DAlphaComp.html">J3DAlphaComp</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DBlend.html">J3DBlend</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DPEBlock.html">J3DPEBlock</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DMtxCalcNoAnmBase.html">J3DMtxCalcNoAnmBase</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -352,35 +292,13 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DMtxCalcNoAnm____template0.html">J3DMtxCalcNoAnm__template0</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DMtxCalcJ3DSysInitMaya.html">J3DMtxCalcJ3DSysInitMaya</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DMtxCalcCalcTransformMaya.html">J3DMtxCalcCalcTransformMaya</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DMtxCalcAnmBase.html">J3DMtxCalcAnmBase</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DMtxCalcAnimation.html">J3DMtxCalcAnimation&lt; A0, B0 &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DMtxCalcAnimation____template0.html">J3DMtxCalcAnimation__template0</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DMtxCalc.html">J3DMtxCalc</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DMaterialAnm.html">J3DMaterialAnm</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DIndTexOrder.html">J3DIndTexOrder</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DIndTexMtxInfo.html">J3DIndTexMtxInfo</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DIndTexMtx.html">J3DIndTexMtx</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DIndTexCoordScale.html">J3DIndTexCoordScale</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DIndBlock.html">J3DIndBlock</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DDisplayListObj.html">J3DDisplayListObj</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DColorChan.html">J3DColorChan</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DColorBlock.html">J3DColorBlock</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -871,8 +789,8 @@ Functions</h2></td></tr>
 <tr class="separator:a1342e04d9331d8c222b5d7f8b0d3339f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d58928a0bcd6fe005457cc126a277af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#a9d58928a0bcd6fe005457cc126a277af">__ct__15Z2SoundObjAnimeFv</a> ()</td></tr>
 <tr class="separator:a9d58928a0bcd6fe005457cc126a277af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2887808043f14a45d174e8cee114066e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#a2887808043f14a45d174e8cee114066e">init__15Z2SoundObjAnimeFP3VecUc</a> ()</td></tr>
-<tr class="separator:a2887808043f14a45d174e8cee114066e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64aa25e1312fb1350bf8580e6faddea9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#a64aa25e1312fb1350bf8580e6faddea9">init__15Z2SoundObjAnimeFP3VecUc</a> ()</td></tr>
+<tr class="separator:a64aa25e1312fb1350bf8580e6faddea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2915442075686cf0ea29379d42a0a968"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#a2915442075686cf0ea29379d42a0a968">initAnime__15Z2SoundObjAnimeFPvbff</a> ()</td></tr>
 <tr class="separator:a2915442075686cf0ea29379d42a0a968"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1e71c80c372d2cce637677bac055631"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#ac1e71c80c372d2cce637677bac055631">updateAnime__15Z2SoundObjAnimeFff</a> ()</td></tr>
@@ -987,40 +905,18 @@ Functions</h2></td></tr>
 <tr class="separator:a335fa4ae0c50ddeb92466252d917fa62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad447114b3d91ab5c0a9dc74c6da0b71c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#ad447114b3d91ab5c0a9dc74c6da0b71c">DCStoreRangeNoSync</a> ()</td></tr>
 <tr class="separator:ad447114b3d91ab5c0a9dc74c6da0b71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9576f658455e973120b0a3f040636de1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#a9576f658455e973120b0a3f040636de1">GXSetVtxDesc</a> ()</td></tr>
-<tr class="separator:a9576f658455e973120b0a3f040636de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeda9a890b80f99bde25c07b6adbbb08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#adeda9a890b80f99bde25c07b6adbbb08">GXClearVtxDesc</a> ()</td></tr>
 <tr class="separator:adeda9a890b80f99bde25c07b6adbbb08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7c52e0b82172a5ccebc9be8362536a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#af7c52e0b82172a5ccebc9be8362536a4">GXSetVtxAttrFmt</a> ()</td></tr>
-<tr class="separator:af7c52e0b82172a5ccebc9be8362536a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fa35943586f0a2cb8b50d0d7311d119"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#a2fa35943586f0a2cb8b50d0d7311d119">GXSetArray</a> ()</td></tr>
 <tr class="separator:a2fa35943586f0a2cb8b50d0d7311d119"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a92bf1eb421f3db86637c20d35c9cfd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#a8a92bf1eb421f3db86637c20d35c9cfd">GXBegin</a> ()</td></tr>
-<tr class="separator:a8a92bf1eb421f3db86637c20d35c9cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07cf1e48ef7cadb6d8947b8cdac07923"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#a07cf1e48ef7cadb6d8947b8cdac07923">GXInitTexObj</a> ()</td></tr>
-<tr class="separator:a07cf1e48ef7cadb6d8947b8cdac07923"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4f49896e49baa771ab9742d3bb9b545"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#ac4f49896e49baa771ab9742d3bb9b545">GXInitTexObjLOD</a> ()</td></tr>
-<tr class="separator:ac4f49896e49baa771ab9742d3bb9b545"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a007989682f16b4b2ed52453abf56c688"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#a007989682f16b4b2ed52453abf56c688">GXGetTexObjWidth</a> ()</td></tr>
 <tr class="separator:a007989682f16b4b2ed52453abf56c688"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a870376886522a01b7f63ed4580be34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#a5a870376886522a01b7f63ed4580be34">GXGetTexObjHeight</a> ()</td></tr>
 <tr class="separator:a5a870376886522a01b7f63ed4580be34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3befb440b15a0c7273454dee2e10b9e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#a3befb440b15a0c7273454dee2e10b9e1">GXLoadTexObj</a> ()</td></tr>
-<tr class="separator:a3befb440b15a0c7273454dee2e10b9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac71f0d24f4ee009fc8625674a08fe5ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#ac71f0d24f4ee009fc8625674a08fe5ee">GXSetTexCoordScaleManually</a> ()</td></tr>
 <tr class="separator:ac71f0d24f4ee009fc8625674a08fe5ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab157ef48c99e74b862b53dc0d8daf38e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#ab157ef48c99e74b862b53dc0d8daf38e">GXSetNumIndStages</a> ()</td></tr>
-<tr class="separator:ab157ef48c99e74b862b53dc0d8daf38e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8906f3fb0a2cec593bd84d3ea691ff2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#a8906f3fb0a2cec593bd84d3ea691ff2e">GXSetTevColor</a> ()</td></tr>
-<tr class="separator:a8906f3fb0a2cec593bd84d3ea691ff2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a205c3e8c47bf4d3722ed1ab5bb56761c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#a205c3e8c47bf4d3722ed1ab5bb56761c">GXCallDisplayList</a> ()</td></tr>
-<tr class="separator:a205c3e8c47bf4d3722ed1ab5bb56761c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8226c27572620e09e0df105f257e843d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#a8226c27572620e09e0df105f257e843d">GXLoadPosMtxImm</a> ()</td></tr>
-<tr class="separator:a8226c27572620e09e0df105f257e843d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8af9ffac197b951d6accaeb5460a361"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#ab8af9ffac197b951d6accaeb5460a361">GXLoadNrmMtxImm</a> ()</td></tr>
 <tr class="separator:ab8af9ffac197b951d6accaeb5460a361"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabc345b684c64dcd1792f2be9847d23d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#aabc345b684c64dcd1792f2be9847d23d">GDInitGDLObj</a> ()</td></tr>
-<tr class="separator:aabc345b684c64dcd1792f2be9847d23d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a323591f74ddf6092f175dfa7e270e6fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#a323591f74ddf6092f175dfa7e270e6fb">__construct_new_array</a> ()</td></tr>
 <tr class="separator:a323591f74ddf6092f175dfa7e270e6fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca60f93bd9a2ec0c791faf146c3476b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#aca60f93bd9a2ec0c791faf146c3476b0">_savegpr_15</a> ()</td></tr>
@@ -1099,8 +995,8 @@ Functions</h2></td></tr>
 <tr class="separator:a7b5f4c5fb5b6a31e33187b31bd21b21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa70dcbe85057f7addca04791f6fb4236"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJKRExpHeap.html">JKRExpHeap</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#aa70dcbe85057f7addca04791f6fb4236">mDoExt_createGameHeap</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> param_0, <a class="el" href="structJKRHeap.html">JKRHeap</a> *param_1)</td></tr>
 <tr class="separator:aa70dcbe85057f7addca04791f6fb4236"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a877da90d7e28f5d6749a053892a8b2ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJKRHeap.html">JKRHeap</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#a877da90d7e28f5d6749a053892a8b2ae">mDoExt_getGameHeap</a> ()</td></tr>
-<tr class="separator:a877da90d7e28f5d6749a053892a8b2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1580c3c5dae6073272de54ad5cad2e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJKRExpHeap.html">JKRExpHeap</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#ac1580c3c5dae6073272de54ad5cad2e9">mDoExt_getGameHeap</a> ()</td></tr>
+<tr class="separator:ac1580c3c5dae6073272de54ad5cad2e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91e91b3d0e7baa0b79408e24937e7b35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJKRExpHeap.html">JKRExpHeap</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#a91e91b3d0e7baa0b79408e24937e7b35">mDoExt_createZeldaHeap</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> param_0, <a class="el" href="structJKRHeap.html">JKRHeap</a> *param_1)</td></tr>
 <tr class="separator:a91e91b3d0e7baa0b79408e24937e7b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e3245b885ad592f754bf57230d4c101"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJKRExpHeap.html">JKRExpHeap</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#a9e3245b885ad592f754bf57230d4c101">mDoExt_getZeldaHeap</a> ()</td></tr>
@@ -1127,8 +1023,8 @@ Functions</h2></td></tr>
 <tr class="separator:a922fadf49742bafac879d0df6883d7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77cba40d4330889387b18c597b148a2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJKRSolidHeap.html">JKRSolidHeap</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#a77cba40d4330889387b18c597b148a2a">mDoExt_createSolidHeapFromSystem</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> pSize, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> pAlignment)</td></tr>
 <tr class="separator:a77cba40d4330889387b18c597b148a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b68968d26aec07c0d722fe7380dd76f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structJKRSolidHeap.html">JKRSolidHeap</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#a9b68968d26aec07c0d722fe7380dd76f">mDoExt_createSolidHeapToCurrent</a> (<a class="el" href="structJKRHeap.html">JKRHeap</a> **pOutHeap, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> pSize, <a class="el" href="structJKRHeap.html">JKRHeap</a> *pParentHeap, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> pAlignment)</td></tr>
-<tr class="separator:a9b68968d26aec07c0d722fe7380dd76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3427d96164f8fb8c94c5cc0cc434c8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJKRSolidHeap.html">JKRSolidHeap</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#ac3427d96164f8fb8c94c5cc0cc434c8b">mDoExt_createSolidHeapToCurrent</a> (<a class="el" href="structJKRHeap.html">JKRHeap</a> **pOutHeap, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> pSize, <a class="el" href="structJKRHeap.html">JKRHeap</a> *pParentHeap, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> pAlignment)</td></tr>
+<tr class="separator:ac3427d96164f8fb8c94c5cc0cc434c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae321a4ade27953db1dcd664913d078cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJKRSolidHeap.html">JKRSolidHeap</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#ae321a4ade27953db1dcd664913d078cf">mDoExt_createSolidHeapToCurrent</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> pSize, <a class="el" href="structJKRHeap.html">JKRHeap</a> *pParentHeap, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> pAlignment)</td></tr>
 <tr class="separator:ae321a4ade27953db1dcd664913d078cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca3a8cc22888245dfab0fd8826a5b523"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJKRSolidHeap.html">JKRSolidHeap</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#aca3a8cc22888245dfab0fd8826a5b523">mDoExt_createSolidHeapFromGameToCurrent</a> (<a class="el" href="structJKRHeap.html">JKRHeap</a> **pOutHeap, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> pSize, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> pAlignment)</td></tr>
@@ -1202,8 +1098,6 @@ Variables</h2></td></tr>
 <tr class="separator:a3f022aace166eaaa4d1a981d48de02ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50ad47c26bcc2867f2c14d349753f58e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#a50ad47c26bcc2867f2c14d349753f58e">g_dComIfG_gameInfo</a> [122384]</td></tr>
 <tr class="separator:a50ad47c26bcc2867f2c14d349753f58e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae72d2e91667c54fa66f49a18c8aaa30b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#ae72d2e91667c54fa66f49a18c8aaa30b">j3dSys</a> [284]</td></tr>
-<tr class="separator:ae72d2e91667c54fa66f49a18c8aaa30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78056ab3a5d817d3aceff202c22d5518"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#a78056ab3a5d817d3aceff202c22d5518">mCurrentMtx__6J3DSys</a> [48]</td></tr>
 <tr class="separator:a78056ab3a5d817d3aceff202c22d5518"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab960aef2eef3d230610d528848ae89ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#ab960aef2eef3d230610d528848ae89ce">mParentS__6J3DSys</a> [3]</td></tr>
@@ -1220,8 +1114,6 @@ Variables</h2></td></tr>
 <tr class="separator:a6373c27207d560ebc802d37ccb42965b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4266e7303d16eb7f54508eb6e1299f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#ac4266e7303d16eb7f54508eb6e1299f1">mJoint__10J3DMtxCalc</a> [4]</td></tr>
 <tr class="separator:ac4266e7303d16eb7f54508eb6e1299f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95fee6fab220ef778e096e868cae3edc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#a95fee6fab220ef778e096e868cae3edc">__GDCurrentDL</a> [4]</td></tr>
-<tr class="separator:a95fee6fab220ef778e096e868cae3edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ead0b7de6c42f0ec10825a122f19a5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#a5ead0b7de6c42f0ec10825a122f19a5f">j3dDefaultTevOrderInfoNull</a> = 0xFFFFFF00</td></tr>
 <tr class="separator:a5ead0b7de6c42f0ec10825a122f19a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad0f915fa269efdabb1fdbec15acab56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__ext_8cpp.html#aad0f915fa269efdabb1fdbec15acab56">j3dDefaultIndTexOrderNull</a> = 0xFFFF0000</td></tr>
@@ -3701,23 +3593,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aabc345b684c64dcd1792f2be9847d23d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabc345b684c64dcd1792f2be9847d23d">&#9670;&nbsp;</a></span>GDInitGDLObj()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void GDInitGDLObj </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="af7e8a5b62a74226367c2d40041473b9d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af7e8a5b62a74226367c2d40041473b9d">&#9670;&nbsp;</a></span>getAlphaComp__10J3DPEBlockFv()</h2>
 
@@ -4398,40 +4273,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a8a92bf1eb421f3db86637c20d35c9cfd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a92bf1eb421f3db86637c20d35c9cfd">&#9670;&nbsp;</a></span>GXBegin()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXBegin </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a205c3e8c47bf4d3722ed1ab5bb56761c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a205c3e8c47bf4d3722ed1ab5bb56761c">&#9670;&nbsp;</a></span>GXCallDisplayList()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXCallDisplayList </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="adeda9a890b80f99bde25c07b6adbbb08"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adeda9a890b80f99bde25c07b6adbbb08">&#9670;&nbsp;</a></span>GXClearVtxDesc()</h2>
 
@@ -4483,40 +4324,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a07cf1e48ef7cadb6d8947b8cdac07923"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07cf1e48ef7cadb6d8947b8cdac07923">&#9670;&nbsp;</a></span>GXInitTexObj()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXInitTexObj </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac4f49896e49baa771ab9742d3bb9b545"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4f49896e49baa771ab9742d3bb9b545">&#9670;&nbsp;</a></span>GXInitTexObjLOD()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXInitTexObjLOD </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ab8af9ffac197b951d6accaeb5460a361"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab8af9ffac197b951d6accaeb5460a361">&#9670;&nbsp;</a></span>GXLoadNrmMtxImm()</h2>
 
@@ -4525,40 +4332,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void GXLoadNrmMtxImm </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8226c27572620e09e0df105f257e843d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8226c27572620e09e0df105f257e843d">&#9670;&nbsp;</a></span>GXLoadPosMtxImm()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXLoadPosMtxImm </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3befb440b15a0c7273454dee2e10b9e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3befb440b15a0c7273454dee2e10b9e1">&#9670;&nbsp;</a></span>GXLoadTexObj()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXLoadTexObj </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -4585,40 +4358,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ab157ef48c99e74b862b53dc0d8daf38e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab157ef48c99e74b862b53dc0d8daf38e">&#9670;&nbsp;</a></span>GXSetNumIndStages()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXSetNumIndStages </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8906f3fb0a2cec593bd84d3ea691ff2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8906f3fb0a2cec593bd84d3ea691ff2e">&#9670;&nbsp;</a></span>GXSetTevColor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXSetTevColor </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ac71f0d24f4ee009fc8625674a08fe5ee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac71f0d24f4ee009fc8625674a08fe5ee">&#9670;&nbsp;</a></span>GXSetTexCoordScaleManually()</h2>
 
@@ -4627,40 +4366,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">asm void GXSetTexCoordScaleManually </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af7c52e0b82172a5ccebc9be8362536a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7c52e0b82172a5ccebc9be8362536a4">&#9670;&nbsp;</a></span>GXSetVtxAttrFmt()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXSetVtxAttrFmt </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9576f658455e973120b0a3f040636de1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9576f658455e973120b0a3f040636de1">&#9670;&nbsp;</a></span>GXSetVtxDesc()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXSetVtxDesc </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -4823,14 +4528,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a2887808043f14a45d174e8cee114066e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2887808043f14a45d174e8cee114066e">&#9670;&nbsp;</a></span>init__15Z2SoundObjAnimeFP3VecUc()</h2>
+<a id="a64aa25e1312fb1350bf8580e6faddea9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64aa25e1312fb1350bf8580e6faddea9">&#9670;&nbsp;</a></span>init__15Z2SoundObjAnimeFP3VecUc()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void init__15Z2SoundObjAnimeFP3VecUc </td>
+          <td class="memname">asm void init__15Z2SoundObjAnimeFP3VecUc </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -5748,17 +5453,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a9b68968d26aec07c0d722fe7380dd76f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b68968d26aec07c0d722fe7380dd76f">&#9670;&nbsp;</a></span>mDoExt_createSolidHeapToCurrent() <span class="overload">[1/2]</span></h2>
+<a id="ac3427d96164f8fb8c94c5cc0cc434c8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3427d96164f8fb8c94c5cc0cc434c8b">&#9670;&nbsp;</a></span>mDoExt_createSolidHeapToCurrent() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="structJKRSolidHeap.html">JKRSolidHeap</a>* mDoExt_createSolidHeapToCurrent </td>
+          <td class="memname"><a class="el" href="structJKRSolidHeap.html">JKRSolidHeap</a>* mDoExt_createSolidHeapToCurrent </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJKRHeap.html">JKRHeap</a> **&#160;</td>
           <td class="paramname"><em>pOutHeap</em>, </td>
@@ -5787,11 +5489,6 @@ Variables</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -6225,14 +5922,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a877da90d7e28f5d6749a053892a8b2ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a877da90d7e28f5d6749a053892a8b2ae">&#9670;&nbsp;</a></span>mDoExt_getGameHeap()</h2>
+<a id="ac1580c3c5dae6073272de54ad5cad2e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1580c3c5dae6073272de54ad5cad2e9">&#9670;&nbsp;</a></span>mDoExt_getGameHeap()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structJKRHeap.html">JKRHeap</a>* mDoExt_getGameHeap </td>
+          <td class="memname"><a class="el" href="structJKRExpHeap.html">JKRExpHeap</a>* mDoExt_getGameHeap </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -8665,28 +8362,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a95fee6fab220ef778e096e868cae3edc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95fee6fab220ef778e096e868cae3edc">&#9670;&nbsp;</a></span>__GDCurrentDL</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> __GDCurrentDL</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a1974e9a26608ef2e4a50f592bd385cf6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1974e9a26608ef2e4a50f592bd385cf6">&#9670;&nbsp;</a></span>__vt__10J3DMtxCalc</h2>
 
@@ -8728,7 +8403,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="am__Do__ext_8cpp_html_a90885a0ced28087eec776cf0f9e108b2"><div class="ttname"><a href="m__Do__ext_8cpp.html#a90885a0ced28087eec776cf0f9e108b2">setAnmTransform__10J3DMtxCalcFUcP15J3DAnmTransform</a></div><div class="ttdeci">void setAnmTransform__10J3DMtxCalcFUcP15J3DAnmTransform()</div></div>
 <div class="ttc" id="am__Do__ext_8cpp_html_aa60229444ac35b0c00483027bd0c97d2"><div class="ttname"><a href="m__Do__ext_8cpp.html#aa60229444ac35b0c00483027bd0c97d2">getAnmTransform__10J3DMtxCalcFv</a></div><div class="ttdeci">bool getAnmTransform__10J3DMtxCalcFv()</div></div>
 <div class="ttc" id="am__Do__ext_8cpp_html_ac77b9f09cdea07a1aeac680c25d96810"><div class="ttname"><a href="m__Do__ext_8cpp.html#ac77b9f09cdea07a1aeac680c25d96810">__dt__10J3DMtxCalcFv</a></div><div class="ttdeci">void __dt__10J3DMtxCalcFv()</div></div>
-<div class="ttc" id="atypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> types.h:32</div></div>
+<div class="ttc" id="atypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> types.h:34</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -8756,7 +8431,7 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="m__Do__ext_8cpp.html#ab11ba51b819bb8871597baa3217d4993">__dt__12J3DFrameCtrlFv</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="am__Do__ext_8cpp_html_ab11ba51b819bb8871597baa3217d4993"><div class="ttname"><a href="m__Do__ext_8cpp.html#ab11ba51b819bb8871597baa3217d4993">__dt__12J3DFrameCtrlFv</a></div><div class="ttdeci">void __dt__12J3DFrameCtrlFv()</div><div class="ttdef"><b>Definition:</b> m_Do_ext.cpp:2718</div></div>
+<div class="ttc" id="am__Do__ext_8cpp_html_ab11ba51b819bb8871597baa3217d4993"><div class="ttname"><a href="m__Do__ext_8cpp.html#ab11ba51b819bb8871597baa3217d4993">__dt__12J3DFrameCtrlFv</a></div><div class="ttdeci">void __dt__12J3DFrameCtrlFv()</div><div class="ttdef"><b>Definition:</b> m_Do_ext.cpp:2501</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -8792,9 +8467,9 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="m__Do__ext_8cpp.html#afa48d506beee7f30f87ceb2dd0826929">func_8001505C</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="m__Do__ext_8cpp.html#a026914b29096e3f7aaa8f9fb5164d850">func_80015084</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="am__Do__ext_8cpp_html_a026914b29096e3f7aaa8f9fb5164d850"><div class="ttname"><a href="m__Do__ext_8cpp.html#a026914b29096e3f7aaa8f9fb5164d850">func_80015084</a></div><div class="ttdeci">void func_80015084(void *_this)</div><div class="ttdef"><b>Definition:</b> m_Do_ext.cpp:3724</div></div>
+<div class="ttc" id="am__Do__ext_8cpp_html_a026914b29096e3f7aaa8f9fb5164d850"><div class="ttname"><a href="m__Do__ext_8cpp.html#a026914b29096e3f7aaa8f9fb5164d850">func_80015084</a></div><div class="ttdeci">void func_80015084(void *_this)</div><div class="ttdef"><b>Definition:</b> m_Do_ext.cpp:3507</div></div>
 <div class="ttc" id="am__Do__ext_8cpp_html_a64ddaca3ad465008205b98db352d754c"><div class="ttname"><a href="m__Do__ext_8cpp.html#a64ddaca3ad465008205b98db352d754c">__dt__13mDoExt_morf_cFv</a></div><div class="ttdeci">void __dt__13mDoExt_morf_cFv()</div></div>
-<div class="ttc" id="am__Do__ext_8cpp_html_afa48d506beee7f30f87ceb2dd0826929"><div class="ttname"><a href="m__Do__ext_8cpp.html#afa48d506beee7f30f87ceb2dd0826929">func_8001505C</a></div><div class="ttdeci">void func_8001505C(void *_this, Vec const &amp;, f32 const (&amp;)[3][4])</div><div class="ttdef"><b>Definition:</b> m_Do_ext.cpp:3713</div></div>
+<div class="ttc" id="am__Do__ext_8cpp_html_afa48d506beee7f30f87ceb2dd0826929"><div class="ttname"><a href="m__Do__ext_8cpp.html#afa48d506beee7f30f87ceb2dd0826929">func_8001505C</a></div><div class="ttdeci">void func_8001505C(void *_this, Vec const &amp;, f32 const (&amp;)[3][4])</div><div class="ttdef"><b>Definition:</b> m_Do_ext.cpp:3496</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -8897,14 +8572,14 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="m__Do__ext_8cpp.html#a180d28b1671f2fdde1d66d7274ed0086">framework__14Z2SoundObjBaseFUlSc</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="m__Do__ext_8cpp.html#a95a0bac8353e9db00e784c88db13a216">dispose__14Z2SoundObjBaseFv</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="m__Do__ext_8cpp.html#afeee1b9ddca4130124e797e00df17727">stopOK__14Z2SoundObjBaseFR17Z2SoundHandlePool</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="m__Do__ext_8cpp.html#a2887808043f14a45d174e8cee114066e">init__15Z2SoundObjAnimeFP3VecUc</a>,</div>
+<div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="m__Do__ext_8cpp.html#a64aa25e1312fb1350bf8580e6faddea9">init__15Z2SoundObjAnimeFP3VecUc</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="m__Do__ext_8cpp.html#a5286999c16c50276d274b93e080d3704">startSound__14Z2SoundObjBaseF10JAISoundIDUlSc</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="m__Do__ext_8cpp.html#a1342e04d9331d8c222b5d7f8b0d3339f">startLevelSound__14Z2SoundObjBaseF10JAISoundIDUlSc</a>,</div>
 <div class="line">}</div>
 <div class="ttc" id="am__Do__ext_8cpp_html_a1342e04d9331d8c222b5d7f8b0d3339f"><div class="ttname"><a href="m__Do__ext_8cpp.html#a1342e04d9331d8c222b5d7f8b0d3339f">startLevelSound__14Z2SoundObjBaseF10JAISoundIDUlSc</a></div><div class="ttdeci">void startLevelSound__14Z2SoundObjBaseF10JAISoundIDUlSc()</div></div>
 <div class="ttc" id="am__Do__ext_8cpp_html_a180d28b1671f2fdde1d66d7274ed0086"><div class="ttname"><a href="m__Do__ext_8cpp.html#a180d28b1671f2fdde1d66d7274ed0086">framework__14Z2SoundObjBaseFUlSc</a></div><div class="ttdeci">void framework__14Z2SoundObjBaseFUlSc()</div></div>
-<div class="ttc" id="am__Do__ext_8cpp_html_a2887808043f14a45d174e8cee114066e"><div class="ttname"><a href="m__Do__ext_8cpp.html#a2887808043f14a45d174e8cee114066e">init__15Z2SoundObjAnimeFP3VecUc</a></div><div class="ttdeci">void init__15Z2SoundObjAnimeFP3VecUc()</div></div>
 <div class="ttc" id="am__Do__ext_8cpp_html_a5286999c16c50276d274b93e080d3704"><div class="ttname"><a href="m__Do__ext_8cpp.html#a5286999c16c50276d274b93e080d3704">startSound__14Z2SoundObjBaseF10JAISoundIDUlSc</a></div><div class="ttdeci">void startSound__14Z2SoundObjBaseF10JAISoundIDUlSc()</div></div>
+<div class="ttc" id="am__Do__ext_8cpp_html_a64aa25e1312fb1350bf8580e6faddea9"><div class="ttname"><a href="m__Do__ext_8cpp.html#a64aa25e1312fb1350bf8580e6faddea9">init__15Z2SoundObjAnimeFP3VecUc</a></div><div class="ttdeci">void init__15Z2SoundObjAnimeFP3VecUc()</div><div class="ttdef"><b>Definition:</b> Z2SoundObject.cpp:522</div></div>
 <div class="ttc" id="am__Do__ext_8cpp_html_a95a0bac8353e9db00e784c88db13a216"><div class="ttname"><a href="m__Do__ext_8cpp.html#a95a0bac8353e9db00e784c88db13a216">dispose__14Z2SoundObjBaseFv</a></div><div class="ttdeci">void dispose__14Z2SoundObjBaseFv()</div></div>
 <div class="ttc" id="am__Do__ext_8cpp_html_afeee1b9ddca4130124e797e00df17727"><div class="ttname"><a href="m__Do__ext_8cpp.html#afeee1b9ddca4130124e797e00df17727">stopOK__14Z2SoundObjBaseFR17Z2SoundHandlePool</a></div><div class="ttdeci">void stopOK__14Z2SoundObjBaseFR17Z2SoundHandlePool()</div></div>
 </div><!-- fragment -->
@@ -9415,7 +9090,7 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="m__Do__ext_8cpp.html#afa48d506beee7f30f87ceb2dd0826929">func_8001505C</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="m__Do__ext_8cpp.html#a026914b29096e3f7aaa8f9fb5164d850">func_80015084</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="am__Do__ext_8cpp_html_aa62fd7046a3078bcf5b044bfd7184b7d"><div class="ttname"><a href="m__Do__ext_8cpp.html#aa62fd7046a3078bcf5b044bfd7184b7d">func_8000FA20</a></div><div class="ttdeci">void func_8000FA20(void *_this)</div><div class="ttdef"><b>Definition:</b> m_Do_ext.cpp:2729</div></div>
+<div class="ttc" id="am__Do__ext_8cpp_html_aa62fd7046a3078bcf5b044bfd7184b7d"><div class="ttname"><a href="m__Do__ext_8cpp.html#aa62fd7046a3078bcf5b044bfd7184b7d">func_8000FA20</a></div><div class="ttdeci">void func_8000FA20(void *_this)</div><div class="ttdef"><b>Definition:</b> m_Do_ext.cpp:2512</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -9451,10 +9126,10 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="m__Do__ext_8cpp.html#ab44b98b59254d33f2436ed7a259c616b">func_80015034</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="m__Do__ext_8cpp.html#ac01d09e4bd8799d0b4fad25497e8f764">func_800150AC</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="am__Do__ext_8cpp_html_a7f38923b71782364f1b2d07b1255830f"><div class="ttname"><a href="m__Do__ext_8cpp.html#a7f38923b71782364f1b2d07b1255830f">func_8000D8E4</a></div><div class="ttdeci">void func_8000D8E4(void *_this, J3DAnmTransform *)</div><div class="ttdef"><b>Definition:</b> m_Do_ext.cpp:1714</div></div>
-<div class="ttc" id="am__Do__ext_8cpp_html_ab44b98b59254d33f2436ed7a259c616b"><div class="ttname"><a href="m__Do__ext_8cpp.html#ab44b98b59254d33f2436ed7a259c616b">func_80015034</a></div><div class="ttdeci">void func_80015034(void *_this, Vec const &amp;, f32 const (&amp;)[3][4])</div><div class="ttdef"><b>Definition:</b> m_Do_ext.cpp:3701</div></div>
-<div class="ttc" id="am__Do__ext_8cpp_html_ac01d09e4bd8799d0b4fad25497e8f764"><div class="ttname"><a href="m__Do__ext_8cpp.html#ac01d09e4bd8799d0b4fad25497e8f764">func_800150AC</a></div><div class="ttdeci">void func_800150AC(void *_this)</div><div class="ttdef"><b>Definition:</b> m_Do_ext.cpp:3736</div></div>
-<div class="ttc" id="am__Do__ext_8cpp_html_ae27dd0b332c3c89cc813f53a1fa9b11e"><div class="ttname"><a href="m__Do__ext_8cpp.html#ae27dd0b332c3c89cc813f53a1fa9b11e">func_80014FC8</a></div><div class="ttdeci">void func_80014FC8(void *_this)</div><div class="ttdef"><b>Definition:</b> m_Do_ext.cpp:3689</div></div>
+<div class="ttc" id="am__Do__ext_8cpp_html_a7f38923b71782364f1b2d07b1255830f"><div class="ttname"><a href="m__Do__ext_8cpp.html#a7f38923b71782364f1b2d07b1255830f">func_8000D8E4</a></div><div class="ttdeci">void func_8000D8E4(void *_this, J3DAnmTransform *)</div><div class="ttdef"><b>Definition:</b> m_Do_ext.cpp:1497</div></div>
+<div class="ttc" id="am__Do__ext_8cpp_html_ab44b98b59254d33f2436ed7a259c616b"><div class="ttname"><a href="m__Do__ext_8cpp.html#ab44b98b59254d33f2436ed7a259c616b">func_80015034</a></div><div class="ttdeci">void func_80015034(void *_this, Vec const &amp;, f32 const (&amp;)[3][4])</div><div class="ttdef"><b>Definition:</b> m_Do_ext.cpp:3484</div></div>
+<div class="ttc" id="am__Do__ext_8cpp_html_ac01d09e4bd8799d0b4fad25497e8f764"><div class="ttname"><a href="m__Do__ext_8cpp.html#ac01d09e4bd8799d0b4fad25497e8f764">func_800150AC</a></div><div class="ttdeci">void func_800150AC(void *_this)</div><div class="ttdef"><b>Definition:</b> m_Do_ext.cpp:3519</div></div>
+<div class="ttc" id="am__Do__ext_8cpp_html_ae27dd0b332c3c89cc813f53a1fa9b11e"><div class="ttname"><a href="m__Do__ext_8cpp.html#ae27dd0b332c3c89cc813f53a1fa9b11e">func_80014FC8</a></div><div class="ttdeci">void func_80014FC8(void *_this)</div><div class="ttdef"><b>Definition:</b> m_Do_ext.cpp:3472</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -9919,28 +9594,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const j3dDefaultTexCoordInfo[32]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae72d2e91667c54fa66f49a18c8aaa30b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae72d2e91667c54fa66f49a18c8aaa30b">&#9670;&nbsp;</a></span>j3dSys</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> j3dSys[284]</td>
         </tr>
       </table>
   </td>

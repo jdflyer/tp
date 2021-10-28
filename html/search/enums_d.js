@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['type_94681',['Type',['../structJKRAramStreamCommand.html#a584a0f0d44d10e7db7ae9487b83a3486',1,'JKRAramStreamCommand']]]
+  ['upper_5fanm_99641',['UPPER_ANM',['../structdaAlink__c.html#ad08eb53f8f5fbabc7333e097688c5542',1,'daAlink_c']]]
 ];

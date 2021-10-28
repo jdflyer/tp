@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['base_5fprocess_5fclass_94514',['base_process_class',['../f__pc__base_8h.html#a37a6142583ac987e2d0c8306517383db',1,'f_pc_base.h']]],
-  ['bool_94515',['BOOL',['../types_8h.html#a050c65e107f0c828f856a231f4b4e788',1,'types.h']]]
+  ['arqcallback_99339',['ARQCallback',['../arq_8h.html#a5d574a7644e6cde2dc9e8895fa983a6a',1,'arq.h']]],
+  ['asynccallback_99340',['AsyncCallback',['../classJKRAMCommand.html#a79b229cc0211d57835160b2dec7bbcbf',1,'JKRAMCommand::AsyncCallback()'],['../classJKRDecompCommand.html#a4d19c197a8374effdb4711d0a214eae6',1,'JKRDecompCommand::AsyncCallback()']]]
 ];

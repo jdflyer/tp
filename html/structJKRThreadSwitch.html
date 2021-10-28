@@ -72,8 +72,9 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="structJKRThreadSwitch-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">JKRThreadSwitch Class Reference</div>  </div>
@@ -92,69 +93,76 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa427f0c5656046541721d7d446aaaac4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#aa427f0c5656046541721d7d446aaaac4">createManager</a> (<a class="el" href="structJKRHeap.html">JKRHeap</a> *)</td></tr>
-<tr class="separator:aa427f0c5656046541721d7d446aaaac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15845c39390ae1b6e26d6c73b03efa98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#a15845c39390ae1b6e26d6c73b03efa98">enter</a> (<a class="el" href="structJKRThread.html">JKRThread</a> *, int)</td></tr>
-<tr class="separator:a15845c39390ae1b6e26d6c73b03efa98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55158deadf8376a9379a55ba64719a54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#a55158deadf8376a9379a55ba64719a54">JKRThreadSwitch</a> (<a class="el" href="structJKRHeap.html">JKRHeap</a> *)</td></tr>
-<tr class="separator:a55158deadf8376a9379a55ba64719a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a38d1008bb0229d59716bd24abf674a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#a8a38d1008bb0229d59716bd24abf674a">draw</a> (JKRThreadName_ *param_1, <a class="el" href="structJUTConsole.html">JUTConsole</a> *param_2)</td></tr>
-<tr class="separator:a8a38d1008bb0229d59716bd24abf674a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3859b53cf2db0178156af97ddeb461a3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#a3859b53cf2db0178156af97ddeb461a3">draw</a> (JKRThreadName_ *param_1)</td></tr>
-<tr class="separator:a3859b53cf2db0178156af97ddeb461a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b28263f769b7a91b26b52c6cdef4288"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#a6b28263f769b7a91b26b52c6cdef4288">~JKRThreadSwitch</a> ()</td></tr>
-<tr class="separator:a6b28263f769b7a91b26b52c6cdef4288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5598250e86335f3f4803e1bca4d309a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#ad5598250e86335f3f4803e1bca4d309a">enter</a> (<a class="el" href="structJKRThread.html">JKRThread</a> *, int)</td></tr>
+<tr class="separator:ad5598250e86335f3f4803e1bca4d309a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cc854ac9b77efdf8398600e9a2148bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#a2cc854ac9b77efdf8398600e9a2148bb">JKRThreadSwitch</a> (<a class="el" href="structJKRHeap.html">JKRHeap</a> *)</td></tr>
+<tr class="separator:a2cc854ac9b77efdf8398600e9a2148bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e6431833f4d52cf7455e6677e730db6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#a8e6431833f4d52cf7455e6677e730db6">draw</a> (<a class="el" href="structJKRThreadName__.html">JKRThreadName_</a> *param_1, <a class="el" href="structJUTConsole.html">JUTConsole</a> *param_2)</td></tr>
+<tr class="separator:a8e6431833f4d52cf7455e6677e730db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91658788912708608e60ce560e2c1965"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#a91658788912708608e60ce560e2c1965">draw</a> (<a class="el" href="structJKRThreadName__.html">JKRThreadName_</a> *param_1)</td></tr>
+<tr class="separator:a91658788912708608e60ce560e2c1965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5887841dee5c2487a911d7963c2a0bb2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#a5887841dee5c2487a911d7963c2a0bb2">~JKRThreadSwitch</a> ()</td></tr>
+<tr class="separator:a5887841dee5c2487a911d7963c2a0bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41957832d8f26723d40497d37f217a39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJKRThread.html">JKRThread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#a41957832d8f26723d40497d37f217a39">enter</a> (<a class="el" href="structJKRThread.html">JKRThread</a> *param_1, int param_2)</td></tr>
 <tr class="separator:a41957832d8f26723d40497d37f217a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a39d128709f2fb9bd19e36b3db0896910"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structJKRThreadSwitch.html">JKRThreadSwitch</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#a39d128709f2fb9bd19e36b3db0896910">createManager</a> (<a class="el" href="structJKRHeap.html">JKRHeap</a> *<a class="el" href="structJKRThreadSwitch.html#a10861e5a286337d96449a56be0581cdf">heap</a>)</td></tr>
-<tr class="separator:a39d128709f2fb9bd19e36b3db0896910"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f4e8568a230b9694e667cd3bb786a50"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#a2f4e8568a230b9694e667cd3bb786a50">callback</a> (<a class="el" href="structOSThread.html">OSThread</a> *param_1, <a class="el" href="structOSThread.html">OSThread</a> *param_2)</td></tr>
-<tr class="separator:a2f4e8568a230b9694e667cd3bb786a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1e44f01a261d2a1fe2a53630b26e0f6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structJKRThreadSwitch.html">JKRThreadSwitch</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#ad1e44f01a261d2a1fe2a53630b26e0f6">createManager</a> (<a class="el" href="structJKRHeap.html">JKRHeap</a> *heap)</td></tr>
+<tr class="separator:ad1e44f01a261d2a1fe2a53630b26e0f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc0f9bc4d70a401ee7adbbd3bdbd756a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#acc0f9bc4d70a401ee7adbbd3bdbd756a">callback</a> (<a class="el" href="structOSThread.html">OSThread</a> *param_1, <a class="el" href="structOSThread.html">OSThread</a> *param_2)</td></tr>
+<tr class="separator:acc0f9bc4d70a401ee7adbbd3bdbd756a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad866c881c764a36609e2e6d4a52df8b8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#ad866c881c764a36609e2e6d4a52df8b8">getTotalCount</a> ()</td></tr>
+<tr class="separator:ad866c881c764a36609e2e6d4a52df8b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a10861e5a286337d96449a56be0581cdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJKRHeap.html">JKRHeap</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#a10861e5a286337d96449a56be0581cdf">heap</a></td></tr>
-<tr class="separator:a10861e5a286337d96449a56be0581cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5d1cae4a5dd31a2dc91787792c96b3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#ae5d1cae4a5dd31a2dc91787792c96b3d">field_0x8</a> [4]</td></tr>
-<tr class="separator:ae5d1cae4a5dd31a2dc91787792c96b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73b300d560a27dd838ffe48243a1c095"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#a73b300d560a27dd838ffe48243a1c095">field_0xC</a> [2]</td></tr>
-<tr class="separator:a73b300d560a27dd838ffe48243a1c095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a4d14faedf76622f0b831ec783a6587c3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#a4d14faedf76622f0b831ec783a6587c3">sManager</a> [4]</td></tr>
+<tr class="separator:a4d14faedf76622f0b831ec783a6587c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ae2b986b7c02a76f623412691b4cef59b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJKRHeap.html">JKRHeap</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#ae2b986b7c02a76f623412691b4cef59b">mHeap</a></td></tr>
+<tr class="separator:ae2b986b7c02a76f623412691b4cef59b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e29382b1a3390e2498cb507bd8e022e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#a7e29382b1a3390e2498cb507bd8e022e">mSetNextHeap</a></td></tr>
+<tr class="separator:a7e29382b1a3390e2498cb507bd8e022e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ec84bc484c3ea40caaaa525e5892cc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#a4ec84bc484c3ea40caaaa525e5892cc0">field_0x9</a> [3]</td></tr>
+<tr class="separator:a4ec84bc484c3ea40caaaa525e5892cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5660acde0e7fe915029379aa1b659f0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#a5660acde0e7fe915029379aa1b659f0c">field_0xC</a></td></tr>
+<tr class="separator:a5660acde0e7fe915029379aa1b659f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7e5a7bbd9cabedbcbc5894a82bc62d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#ab7e5a7bbd9cabedbcbc5894a82bc62d4">field_0x10</a></td></tr>
+<tr class="separator:ab7e5a7bbd9cabedbcbc5894a82bc62d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd28b5cb8eb3d9e02675abc9f79deffe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#abd28b5cb8eb3d9e02675abc9f79deffe">field_0x14</a> [4]</td></tr>
 <tr class="separator:abd28b5cb8eb3d9e02675abc9f79deffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4033b09aec8683861529f744dc713083"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#a4033b09aec8683861529f744dc713083">field_0x18</a></td></tr>
-<tr class="separator:a4033b09aec8683861529f744dc713083"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2168ec0469fcc551f65c8c8495263064"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#a2168ec0469fcc551f65c8c8495263064">field_0x1C</a></td></tr>
-<tr class="separator:a2168ec0469fcc551f65c8c8495263064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5602b03d7d7974cbbb3d9ad905300bc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a4258bfb2c3a440d06c4aaa3c2b450dde">s64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#a5602b03d7d7974cbbb3d9ad905300bc8">field_0x18</a></td></tr>
+<tr class="separator:a5602b03d7d7974cbbb3d9ad905300bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7627bea7c1ac779579ce689d304596fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#a7627bea7c1ac779579ce689d304596fd">field_0x20</a></td></tr>
 <tr class="separator:a7627bea7c1ac779579ce689d304596fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdaed1551018f3e84ff76aea02d3a587"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#abdaed1551018f3e84ff76aea02d3a587">field_0x24</a></td></tr>
 <tr class="separator:abdaed1551018f3e84ff76aea02d3a587"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a89f1773f92a9657f82970555b9e54a0e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#a89f1773f92a9657f82970555b9e54a0e">sManager</a> [4]</td></tr>
-<tr class="separator:a89f1773f92a9657f82970555b9e54a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa29cd8fd8acc8c2e55f7a769ca185dc6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#aa29cd8fd8acc8c2e55f7a769ca185dc6">sTotalCount</a> [4]</td></tr>
-<tr class="separator:aa29cd8fd8acc8c2e55f7a769ca185dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64e37f2808f160696eb44e3e9adce5cc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#a64e37f2808f160696eb44e3e9adce5cc">sTotalStart</a> [4]</td></tr>
-<tr class="separator:a64e37f2808f160696eb44e3e9adce5cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a804eac8117e40162712cc12c65920229"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#a804eac8117e40162712cc12c65920229">mUserPreCallback</a> [4]</td></tr>
-<tr class="separator:a804eac8117e40162712cc12c65920229"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c83f06c143fcc6fe77f15d00a4c51db"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#a6c83f06c143fcc6fe77f15d00a4c51db">mUserPostCallback</a> [4]</td></tr>
-<tr class="separator:a6c83f06c143fcc6fe77f15d00a4c51db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a6dd975c899f385c71f3e842fbeda8217"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structJKRThreadSwitch.html">JKRThreadSwitch</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#a6dd975c899f385c71f3e842fbeda8217">sManager</a></td></tr>
+<tr class="separator:a6dd975c899f385c71f3e842fbeda8217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed83239abcba0ca05bd70a5d075a5e04"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#aed83239abcba0ca05bd70a5d075a5e04">sTotalCount</a></td></tr>
+<tr class="separator:aed83239abcba0ca05bd70a5d075a5e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc359083821dab6b94d4b7fddfabec1a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#abc359083821dab6b94d4b7fddfabec1a">sTotalStart</a></td></tr>
+<tr class="separator:abc359083821dab6b94d4b7fddfabec1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9358bb3db6d7d90e7e7a10049eb85fc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="JKRThread_8h.html#a669b15c0970fe61f4be44b7aa4c4e3ed">JKRThreadSwitch_PreCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#af9358bb3db6d7d90e7e7a10049eb85fc">mUserPreCallback</a></td></tr>
+<tr class="separator:af9358bb3db6d7d90e7e7a10049eb85fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5afe7b1b79fb297ea57f885f2c02eb4c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="JKRThread_8h.html#ac5230ee3ba8e86d75210e2af3855e550">JKRThreadSwitch_PostCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThreadSwitch.html#a5afe7b1b79fb297ea57f885f2c02eb4c">mUserPostCallback</a></td></tr>
+<tr class="separator:a5afe7b1b79fb297ea57f885f2c02eb4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a55158deadf8376a9379a55ba64719a54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55158deadf8376a9379a55ba64719a54">&#9670;&nbsp;</a></span>JKRThreadSwitch()</h2>
+<a id="a2cc854ac9b77efdf8398600e9a2148bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cc854ac9b77efdf8398600e9a2148bb">&#9670;&nbsp;</a></span>JKRThreadSwitch()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm JKRThreadSwitch::JKRThreadSwitch </td>
+          <td class="memname">JKRThreadSwitch::JKRThreadSwitch </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJKRHeap.html">JKRHeap</a> *&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -165,8 +173,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a6b28263f769b7a91b26b52c6cdef4288"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b28263f769b7a91b26b52c6cdef4288">&#9670;&nbsp;</a></span>~JKRThreadSwitch()</h2>
+<a id="a5887841dee5c2487a911d7963c2a0bb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5887841dee5c2487a911d7963c2a0bb2">&#9670;&nbsp;</a></span>~JKRThreadSwitch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -175,7 +183,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">asm JKRThreadSwitch::~JKRThreadSwitch </td>
+          <td class="memname">JKRThreadSwitch::~JKRThreadSwitch </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -191,8 +199,8 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2f4e8568a230b9694e667cd3bb786a50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f4e8568a230b9694e667cd3bb786a50">&#9670;&nbsp;</a></span>callback()</h2>
+<a id="acc0f9bc4d70a401ee7adbbd3bdbd756a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc0f9bc4d70a401ee7adbbd3bdbd756a">&#9670;&nbsp;</a></span>callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -201,7 +209,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">asm void JKRThreadSwitch::callback </td>
+          <td class="memname">void JKRThreadSwitch::callback </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structOSThread.html">OSThread</a> *&#160;</td>
           <td class="paramname"><em>param_1</em>, </td>
@@ -227,26 +235,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aa427f0c5656046541721d7d446aaaac4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa427f0c5656046541721d7d446aaaac4">&#9670;&nbsp;</a></span>createManager() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm <a class="el" href="structJKRThreadSwitch.html">JKRThreadSwitch</a> * JKRThreadSwitch::createManager </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structJKRHeap.html">JKRHeap</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a39d128709f2fb9bd19e36b3db0896910"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39d128709f2fb9bd19e36b3db0896910">&#9670;&nbsp;</a></span>createManager() <span class="overload">[2/2]</span></h2>
+<a id="ad1e44f01a261d2a1fe2a53630b26e0f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1e44f01a261d2a1fe2a53630b26e0f6">&#9670;&nbsp;</a></span>createManager()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -255,7 +245,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="structJKRThreadSwitch.html">JKRThreadSwitch</a>* JKRThreadSwitch::createManager </td>
+          <td class="memname"><a class="el" href="structJKRThreadSwitch.html">JKRThreadSwitch</a> * JKRThreadSwitch::createManager </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJKRHeap.html">JKRHeap</a> *&#160;</td>
           <td class="paramname"><em>heap</em></td><td>)</td>
@@ -271,8 +261,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a3859b53cf2db0178156af97ddeb461a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3859b53cf2db0178156af97ddeb461a3">&#9670;&nbsp;</a></span>draw() <span class="overload">[1/2]</span></h2>
+<a id="a91658788912708608e60ce560e2c1965"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91658788912708608e60ce560e2c1965">&#9670;&nbsp;</a></span>draw() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -281,9 +271,9 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">asm void JKRThreadSwitch::draw </td>
+          <td class="memname">void JKRThreadSwitch::draw </td>
           <td>(</td>
-          <td class="paramtype">JKRThreadName_ *&#160;</td>
+          <td class="paramtype"><a class="el" href="structJKRThreadName__.html">JKRThreadName_</a> *&#160;</td>
           <td class="paramname"><em>param_1</em></td><td>)</td>
           <td></td>
         </tr>
@@ -297,8 +287,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a8a38d1008bb0229d59716bd24abf674a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a38d1008bb0229d59716bd24abf674a">&#9670;&nbsp;</a></span>draw() <span class="overload">[2/2]</span></h2>
+<a id="a8e6431833f4d52cf7455e6677e730db6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e6431833f4d52cf7455e6677e730db6">&#9670;&nbsp;</a></span>draw() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -307,9 +297,9 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">asm void JKRThreadSwitch::draw </td>
+          <td class="memname">void JKRThreadSwitch::draw </td>
           <td>(</td>
-          <td class="paramtype">JKRThreadName_ *&#160;</td>
+          <td class="paramtype"><a class="el" href="structJKRThreadName__.html">JKRThreadName_</a> *&#160;</td>
           <td class="paramname"><em>param_1</em>, </td>
         </tr>
         <tr>
@@ -333,23 +323,23 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a15845c39390ae1b6e26d6c73b03efa98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15845c39390ae1b6e26d6c73b03efa98">&#9670;&nbsp;</a></span>enter() <span class="overload">[1/2]</span></h2>
+<a id="ad5598250e86335f3f4803e1bca4d309a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5598250e86335f3f4803e1bca4d309a">&#9670;&nbsp;</a></span>enter() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="structJKRThread.html">JKRThread</a> * JKRThreadSwitch::enter </td>
+          <td class="memname"><a class="el" href="structJKRThread.html">JKRThread</a> * JKRThreadSwitch::enter </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJKRThread.html">JKRThread</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname"><em>thread</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname"><em>thread_id</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -389,45 +379,94 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ad866c881c764a36609e2e6d4a52df8b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad866c881c764a36609e2e6d4a52df8b8">&#9670;&nbsp;</a></span>getTotalCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> JKRThreadSwitch::getTotalCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab7e5a7bbd9cabedbcbc5894a82bc62d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7e5a7bbd9cabedbcbc5894a82bc62d4">&#9670;&nbsp;</a></span>field_0x10</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> JKRThreadSwitch::field_0x10</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="abd28b5cb8eb3d9e02675abc9f79deffe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abd28b5cb8eb3d9e02675abc9f79deffe">&#9670;&nbsp;</a></span>field_0x14</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> JKRThreadSwitch::field_0x14[4]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a4033b09aec8683861529f744dc713083"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4033b09aec8683861529f744dc713083">&#9670;&nbsp;</a></span>field_0x18</h2>
+<a id="a5602b03d7d7974cbbb3d9ad905300bc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5602b03d7d7974cbbb3d9ad905300bc8">&#9670;&nbsp;</a></span>field_0x18</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> JKRThreadSwitch::field_0x18</td>
+          <td class="memname"><a class="el" href="types_8h.html#a4258bfb2c3a440d06c4aaa3c2b450dde">s64</a> JKRThreadSwitch::field_0x18</td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2168ec0469fcc551f65c8c8495263064"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2168ec0469fcc551f65c8c8495263064">&#9670;&nbsp;</a></span>field_0x1C</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> JKRThreadSwitch::field_0x1C</td>
-        </tr>
-      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -437,11 +476,19 @@ Static Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> JKRThreadSwitch::field_0x20</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -451,59 +498,25 @@ Static Public Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> JKRThreadSwitch::field_0x24</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ae5d1cae4a5dd31a2dc91787792c96b3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5d1cae4a5dd31a2dc91787792c96b3d">&#9670;&nbsp;</a></span>field_0x8</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> JKRThreadSwitch::field_0x8[4]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a73b300d560a27dd838ffe48243a1c095"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73b300d560a27dd838ffe48243a1c095">&#9670;&nbsp;</a></span>field_0xC</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> JKRThreadSwitch::field_0xC[2]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a10861e5a286337d96449a56be0581cdf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10861e5a286337d96449a56be0581cdf">&#9670;&nbsp;</a></span>heap</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structJKRHeap.html">JKRHeap</a>* JKRThreadSwitch::heap</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6c83f06c143fcc6fe77f15d00a4c51db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c83f06c143fcc6fe77f15d00a4c51db">&#9670;&nbsp;</a></span>mUserPostCallback</h2>
+<a id="a4ec84bc484c3ea40caaaa525e5892cc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ec84bc484c3ea40caaaa525e5892cc0">&#9670;&nbsp;</a></span>field_0x9</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -512,7 +525,161 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> JKRThreadSwitch::mUserPostCallback</td>
+          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> JKRThreadSwitch::field_0x9[3]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5660acde0e7fe915029379aa1b659f0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5660acde0e7fe915029379aa1b659f0c">&#9670;&nbsp;</a></span>field_0xC</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> JKRThreadSwitch::field_0xC</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae2b986b7c02a76f623412691b4cef59b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2b986b7c02a76f623412691b4cef59b">&#9670;&nbsp;</a></span>mHeap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structJKRHeap.html">JKRHeap</a>* JKRThreadSwitch::mHeap</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7e29382b1a3390e2498cb507bd8e022e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e29382b1a3390e2498cb507bd8e022e">&#9670;&nbsp;</a></span>mSetNextHeap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool JKRThreadSwitch::mSetNextHeap</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5afe7b1b79fb297ea57f885f2c02eb4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5afe7b1b79fb297ea57f885f2c02eb4c">&#9670;&nbsp;</a></span>mUserPostCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="JKRThread_8h.html#ac5230ee3ba8e86d75210e2af3855e550">JKRThreadSwitch_PostCallback</a> JKRThreadSwitch::mUserPostCallback</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9358bb3db6d7d90e7e7a10049eb85fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9358bb3db6d7d90e7e7a10049eb85fc">&#9670;&nbsp;</a></span>mUserPreCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="JKRThread_8h.html#a669b15c0970fe61f4be44b7aa4c4e3ed">JKRThreadSwitch_PreCallback</a> JKRThreadSwitch::mUserPreCallback</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6dd975c899f385c71f3e842fbeda8217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dd975c899f385c71f3e842fbeda8217">&#9670;&nbsp;</a></span>sManager <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structJKRThreadSwitch.html">JKRThreadSwitch</a>* JKRThreadSwitch::sManager</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d14faedf76622f0b831ec783a6587c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d14faedf76622f0b831ec783a6587c3">&#9670;&nbsp;</a></span>sManager <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structJKRThreadSwitch.html">JKRThreadSwitch</a> * JKRThreadSwitch::sManager</td>
         </tr>
       </table>
   </td>
@@ -524,8 +691,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a804eac8117e40162712cc12c65920229"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a804eac8117e40162712cc12c65920229">&#9670;&nbsp;</a></span>mUserPreCallback</h2>
+<a id="aed83239abcba0ca05bd70a5d075a5e04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed83239abcba0ca05bd70a5d075a5e04">&#9670;&nbsp;</a></span>sTotalCount</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -534,20 +701,20 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> JKRThreadSwitch::mUserPreCallback</td>
+          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> JKRThreadSwitch::sTotalCount</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a89f1773f92a9657f82970555b9e54a0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89f1773f92a9657f82970555b9e54a0e">&#9670;&nbsp;</a></span>sManager</h2>
+<a id="abc359083821dab6b94d4b7fddfabec1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc359083821dab6b94d4b7fddfabec1a">&#9670;&nbsp;</a></span>sTotalStart</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -556,56 +723,12 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> JKRThreadSwitch::sManager</td>
+          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> JKRThreadSwitch::sTotalStart</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa29cd8fd8acc8c2e55f7a769ca185dc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa29cd8fd8acc8c2e55f7a769ca185dc6">&#9670;&nbsp;</a></span>sTotalCount</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> JKRThreadSwitch::sTotalCount</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a64e37f2808f160696eb44e3e9adce5cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64e37f2808f160696eb44e3e9adce5cc">&#9670;&nbsp;</a></span>sTotalStart</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> JKRThreadSwitch::sTotalStart</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -613,7 +736,6 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>src/m_Do/<a class="el" href="m__Do__machine_8cpp.html">m_Do_machine.cpp</a></li>
 <li>libs/JSystem/JAudio2/<a class="el" href="JAUInitializer_8cpp.html">JAUInitializer.cpp</a></li>
 <li>include/JSystem/JKernel/<a class="el" href="JKRThread_8h_source.html">JKRThread.h</a></li>
 <li>libs/JSystem/JKernel/<a class="el" href="JKRThread_8cpp.html">JKRThread.cpp</a></li>

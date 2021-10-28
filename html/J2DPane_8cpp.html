@@ -84,8 +84,6 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="J2DPane_8h_source.html">JSystem/J2DGraph/J2DPane.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DPane/__ct__7J2DPaneFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DPane/initiate__7J2DPaneFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DPane/func_802F5D40.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DPane/func_802F5DD0.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DPane/func_802F5E88.s&quot;</code><br />
@@ -94,103 +92,39 @@ $(function() {
 <code>#include &quot;asm/JSystem/J2DGraph/J2DPane/makePaneStream__7J2DPaneFP7J2DPaneP20JSURandomInputStream.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DPane/changeUseTrans__7J2DPaneFP7J2DPane.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DPane/__dt__7J2DPaneFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DPane/appendChild__7J2DPaneFP7J2DPane.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DPane/insertChild__7J2DPaneFP7J2DPaneP7J2DPane.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DPane/draw__7J2DPaneFffPC14J2DGrafContextbb.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DPane/func_802F6D18.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DPane/move__7J2DPaneFff.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DPane/add__7J2DPaneFff.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DPane/resize__7J2DPaneFff.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DPane/getBounds__7J2DPaneFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DPane/rotate__7J2DPaneFff13J2DRotateAxisf.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DPane/rotate__7J2DPaneFf.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DPane/func_802F7264.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DPane/search__7J2DPaneFUx.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DPane/searchUserInfo__7J2DPaneFUx.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DPane/isUsed__7J2DPaneFPC7ResTIMG.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DPane/isUsed__7J2DPaneFPC7ResFONT.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DPane/makeMatrix__7J2DPaneFffff.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DPane/setCullBack__7J2DPaneF11_GXCullMode.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DPane/setBasePosition__7J2DPaneF15J2DBasePosition.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DPane/setInfluencedAlpha__7J2DPaneFbb.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DPane/getGlbVtx__7J2DPaneCFUc.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DPane/getFirstChildPane__7J2DPaneFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DPane/getNextChildPane__7J2DPaneFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DPane/getParentPane__7J2DPaneFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DPane/makePaneExStream__7J2DPaneFP7J2DPaneP20JSURandomInputStream.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DPane/J2DCast_F32_to_S16__7J2DPaneFfUc.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DPane/getPointer__7J2DPaneFP20JSURandomInputStreamUlP10JKRArchive.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DPane/setAnimation__7J2DPaneFP10J2DAnmBase.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DPane/animationTransform__7J2DPaneFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DPane/clearAnmTransform__7J2DPaneFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DPane/animationTransform__7J2DPaneFPC15J2DAnmTransform.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DPane/setVisibileAnimation__7J2DPaneFP20J2DAnmVisibilityFull.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DPane/setVtxColorAnimation__7J2DPaneFP14J2DAnmVtxColor.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DPane/animationPane__7J2DPaneFPC15J2DAnmTransform.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DPane/updateTransform__7J2DPaneFPC15J2DAnmTransform.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DPane/setAnimationVF__7J2DPaneFP20J2DAnmVisibilityFull.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DPane/setAnimationVC__7J2DPaneFP14J2DAnmVtxColor.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DPane/setCullBack__7J2DPaneFb.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DPane/setConnectParent__7J2DPaneFb.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DPane/__sinit_J2DPane_cpp.s&quot;</code><br />
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for J2DPane.cpp:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="J2DPane_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__GXCullMode.html">_GXCullMode</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structResTIMG.html">ResTIMG</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structResFONT.html">ResFONT</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSUInputStream.html">JSUInputStream</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRArchive.html">JKRArchive</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJUTResReference.html">JUTResReference</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSUStreamSeekFrom.html">JSUStreamSeekFrom</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DOrthoGraph.html">J2DOrthoGraph</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSURandomInputStream.html">JSURandomInputStream</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSUPtrLink.html">JSUPtrLink</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSUPtrList.html">JSUPtrList</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJGeometry.html">JGeometry</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJGeometry_1_1TBox2.html">JGeometry::TBox2&lt; A1 &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJGeometry_1_1TBox2____template0.html">JGeometry::TBox2__template0</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DScreen.html">J2DScreen</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DRotateAxis.html">J2DRotateAxis</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DAnmVisibilityFull.html">J2DAnmVisibilityFull</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DAnmBase.html">J2DAnmBase</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DAnmTexPattern.html">J2DAnmTexPattern</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DAnmColor.html">J2DAnmColor</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DAnmTevRegKey.html">J2DAnmTevRegKey</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DGrafContext.html">J2DGrafContext</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DBasePosition.html">J2DBasePosition</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DAnmTextureSRTKey.html">J2DAnmTextureSRTKey</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DAnmVtxColor.html">J2DAnmVtxColor</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DAnmTransform.html">J2DAnmTransform</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DPane.html">J2DPane</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DOrthoGraph.html">J2DOrthoGraph</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DDataManage.html">J2DDataManage</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DDataManage.html">J2DDataManage</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -213,8 +147,8 @@ Functions</h2></td></tr>
 <tr class="separator:aa62525c546cd5d4eb0aba8ff8768951a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf0eef1e0426ca4b0873cef0a7fd9c52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DPane_8cpp.html#adf0eef1e0426ca4b0873cef0a7fd9c52">changeUseTrans__7J2DPaneFP7J2DPane</a> ()</td></tr>
 <tr class="separator:adf0eef1e0426ca4b0873cef0a7fd9c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c961fad7bfe2cf16bd5f4701282ed1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DPane_8cpp.html#a7c961fad7bfe2cf16bd5f4701282ed1d">__dt__7J2DPaneFv</a> ()</td></tr>
-<tr class="separator:a7c961fad7bfe2cf16bd5f4701282ed1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac74659b231d69cda08b09e503fd9dbf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DPane_8cpp.html#ac74659b231d69cda08b09e503fd9dbf9">__dt__7J2DPaneFv</a> ()</td></tr>
+<tr class="separator:ac74659b231d69cda08b09e503fd9dbf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae592a7b862f0bd565d9918d477dfaf21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DPane_8cpp.html#ae592a7b862f0bd565d9918d477dfaf21">appendChild__7J2DPaneFP7J2DPane</a> ()</td></tr>
 <tr class="separator:ae592a7b862f0bd565d9918d477dfaf21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0794e8203a8bf41e3623853176d0e9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DPane_8cpp.html#ac0794e8203a8bf41e3623853176d0e9c">insertChild__7J2DPaneFP7J2DPaneP7J2DPane</a> ()</td></tr>
@@ -355,20 +289,6 @@ Functions</h2></td></tr>
 <tr class="separator:ae941a4c1f8a4266078748ddb5d57d331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a733c8dcb81ceca1d5ab9c2ebe2aeb803"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DPane_8cpp.html#a733c8dcb81ceca1d5ab9c2ebe2aeb803">get__13J2DDataManageFP14JSUInputStream</a> ()</td></tr>
 <tr class="separator:a733c8dcb81ceca1d5ab9c2ebe2aeb803"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ec00f755b69eb1ecdd833e3148126dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DPane_8cpp.html#a9ec00f755b69eb1ecdd833e3148126dc">PSMTXCopy</a> ()</td></tr>
-<tr class="separator:a9ec00f755b69eb1ecdd833e3148126dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93df645b0f4cbe24ff486f44e7490d6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DPane_8cpp.html#a93df645b0f4cbe24ff486f44e7490d6c">PSMTXConcat</a> ()</td></tr>
-<tr class="separator:a93df645b0f4cbe24ff486f44e7490d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecf3ba14a8667d82e0dd5578160c16c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DPane_8cpp.html#aecf3ba14a8667d82e0dd5578160c16c9">PSMTXRotRad</a> ()</td></tr>
-<tr class="separator:aecf3ba14a8667d82e0dd5578160c16c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71457f4c801a39c1b90e6c06e11d5550"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DPane_8cpp.html#a71457f4c801a39c1b90e6c06e11d5550">PSMTXTrans</a> ()</td></tr>
-<tr class="separator:a71457f4c801a39c1b90e6c06e11d5550"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e9fbaf43c70881c74a523999b95f51c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DPane_8cpp.html#a3e9fbaf43c70881c74a523999b95f51c">PSMTXTransApply</a> ()</td></tr>
-<tr class="separator:a3e9fbaf43c70881c74a523999b95f51c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace14bca9a5b548197d79c7efddfbfa0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DPane_8cpp.html#ace14bca9a5b548197d79c7efddfbfa0c">PSMTXScaleApply</a> ()</td></tr>
-<tr class="separator:ace14bca9a5b548197d79c7efddfbfa0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4c7863341db824da15289fa1d2a3789"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DPane_8cpp.html#ad4c7863341db824da15289fa1d2a3789">GXSetCullMode</a> ()</td></tr>
-<tr class="separator:ad4c7863341db824da15289fa1d2a3789"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58fb5b02bb14a176b115397be03bbe99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DPane_8cpp.html#a58fb5b02bb14a176b115397be03bbe99">_savegpr_25</a> ()</td></tr>
 <tr class="separator:a58fb5b02bb14a176b115397be03bbe99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8b2b992407cf48ba98905b417420685"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DPane_8cpp.html#aa8b2b992407cf48ba98905b417420685">_savegpr_27</a> ()</td></tr>
@@ -522,14 +442,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a7c961fad7bfe2cf16bd5f4701282ed1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c961fad7bfe2cf16bd5f4701282ed1d">&#9670;&nbsp;</a></span>__dt__7J2DPaneFv()</h2>
+<a id="ac74659b231d69cda08b09e503fd9dbf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac74659b231d69cda08b09e503fd9dbf9">&#9670;&nbsp;</a></span>__dt__7J2DPaneFv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void __dt__7J2DPaneFv </td>
+          <td class="memname">asm void __dt__7J2DPaneFv </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1202,23 +1122,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad4c7863341db824da15289fa1d2a3789"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4c7863341db824da15289fa1d2a3789">&#9670;&nbsp;</a></span>GXSetCullMode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXSetCullMode </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a59a33915af65a90059928e122f720e44"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a59a33915af65a90059928e122f720e44">&#9670;&nbsp;</a></span>initiate__10JSUPtrListFv()</h2>
 
@@ -1431,108 +1334,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void peek__20JSURandomInputStreamFPvl </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a93df645b0f4cbe24ff486f44e7490d6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93df645b0f4cbe24ff486f44e7490d6c">&#9670;&nbsp;</a></span>PSMTXConcat()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PSMTXConcat </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9ec00f755b69eb1ecdd833e3148126dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ec00f755b69eb1ecdd833e3148126dc">&#9670;&nbsp;</a></span>PSMTXCopy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PSMTXCopy </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aecf3ba14a8667d82e0dd5578160c16c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aecf3ba14a8667d82e0dd5578160c16c9">&#9670;&nbsp;</a></span>PSMTXRotRad()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PSMTXRotRad </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ace14bca9a5b548197d79c7efddfbfa0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace14bca9a5b548197d79c7efddfbfa0c">&#9670;&nbsp;</a></span>PSMTXScaleApply()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PSMTXScaleApply </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a71457f4c801a39c1b90e6c06e11d5550"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71457f4c801a39c1b90e6c06e11d5550">&#9670;&nbsp;</a></span>PSMTXTrans()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PSMTXTrans </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3e9fbaf43c70881c74a523999b95f51c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e9fbaf43c70881c74a523999b95f51c">&#9670;&nbsp;</a></span>PSMTXTransApply()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PSMTXTransApply </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>

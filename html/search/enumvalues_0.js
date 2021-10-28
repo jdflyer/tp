@@ -1,24 +1,5 @@
 var searchData=
 [
-  ['a_94686',['A',['../namespaceCButton.html#ac7c8508b3452a455f3f30daddcc8fa3babd3ccbc6157f08e65f37ef22759d039f',1,'CButton']]],
-  ['air_5fletter_94687',['AIR_LETTER',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2ae67f13ae0a85c10dff024236aed0c8cc',1,'d_save.h']]],
-  ['alloc_5fdirection_5fbackward_94688',['ALLOC_DIRECTION_BACKWARD',['../structJKRDvdRipper.html#add5351d092f559b4c2bef0b3e2199161a535be3df38d7ebe6ceb3f1d09e0c7937',1,'JKRDvdRipper']]],
-  ['alloc_5fdirection_5fforward_94689',['ALLOC_DIRECTION_FORWARD',['../structJKRDvdRipper.html#add5351d092f559b4c2bef0b3e2199161aa99cb1d1fbf7978a7f64954615e785fe',1,'JKRDvdRipper']]],
-  ['ancient_5fdocument_94690',['ANCIENT_DOCUMENT',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a0207b621535f772bbe5d9754748505a8',1,'d_save.h']]],
-  ['ancient_5fdocument2_94691',['ANCIENT_DOCUMENT2',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2acdbd5f24cc5f7f0d15989e038b93f566',1,'d_save.h']]],
-  ['anm_5fhuman_5fchain_5fgrab_94692',['ANM_HUMAN_CHAIN_GRAB',['../structdaAlink__c.html#ad08eb53f8f5fbabc7333e097688c5542a762151779f2fe59eda91224e7be2e94a',1,'daAlink_c']]],
-  ['anm_5fsmall_5fguard_94693',['ANM_SMALL_GUARD',['../structdaAlink__c.html#ad08eb53f8f5fbabc7333e097688c5542a356cb8fcc11b70fca1991afb2849baf9',1,'daAlink_c']]],
-  ['anm_5fwolf_5fchain_5fgrab_94694',['ANM_WOLF_CHAIN_GRAB',['../structdaAlink__c.html#ad08eb53f8f5fbabc7333e097688c5542a5762d8ee7185f287c2827a5a2a49f986',1,'daAlink_c']]],
-  ['anm_5fwolf_5fenemy_5fthrow_5fleft_94695',['ANM_WOLF_ENEMY_THROW_LEFT',['../structdaAlink__c.html#ad08eb53f8f5fbabc7333e097688c5542ab2a47cf667bee8c24d7edf81bdc8ad3b',1,'daAlink_c']]],
-  ['anm_5fwolf_5fenemy_5fthrow_5fright_94696',['ANM_WOLF_ENEMY_THROW_RIGHT',['../structdaAlink__c.html#ad08eb53f8f5fbabc7333e097688c5542a95a1dd8eb1556b4f530c18902d3ad51f',1,'daAlink_c']]],
-  ['armor_94697',['ARMOR',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a59b97dc166e3d6edc4ffeb4a543dc0f6',1,'d_save.h']]],
-  ['arrow_5f1_94698',['ARROW_1',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2af5a839a23a84c6961022c46881b9afc7',1,'d_save.h']]],
-  ['arrow_5f10_94699',['ARROW_10',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a4f0287c9203f8cee5936179152c0b220',1,'d_save.h']]],
-  ['arrow_5f20_94700',['ARROW_20',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2aa9dc929556cf582f587dd9269610a0fc',1,'d_save.h']]],
-  ['arrow_5f30_94701',['ARROW_30',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a11e7ac67bf9e605cdea6afdefc796b9a',1,'d_save.h']]],
-  ['arrow_5flv1_94702',['ARROW_LV1',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a1fe87f6d0c862ba143c8e55b684b18b5',1,'d_save.h']]],
-  ['arrow_5flv2_94703',['ARROW_LV2',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a76c7824d35e03a3cfbb98f3cd0db904e',1,'d_save.h']]],
-  ['arrow_5flv3_94704',['ARROW_LV3',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a69a6772d9151e43cf6e34bad72a41e4e',1,'d_save.h']]],
-  ['arrow_5fmax_94705',['ARROW_MAX',['../d__save_8h.html#ac85105b4d4fc7197addac0797f0cc984a2aab64b42265e094b461533264c1e240',1,'d_save.h']]],
-  ['ashs_5fscribbling_94706',['ASHS_SCRIBBLING',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a563ebe5647ceaf3a7b4bd684684b451f',1,'d_save.h']]]
+  ['_5fgx_5ftf_5fctf_99645',['_GX_TF_CTF',['../GX_8h.html#a8e5846adc997e74805dda52ef6f3c711ac2f49f53a3c18b72c94e14ccbea047ee',1,'GX.h']]],
+  ['_5fgx_5ftf_5fztf_99646',['_GX_TF_ZTF',['../GX_8h.html#a8e5846adc997e74805dda52ef6f3c711a9d94090bee75f1e3848e5d6ecc5a701f',1,'GX.h']]]
 ];

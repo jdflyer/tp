@@ -80,13 +80,14 @@ $(function() {
 <div class="title">vi.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="GX_8h_source.html">dolphin/gx/GX.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for vi.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="vi_8h__incl.svg" width="158" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="vi_8h__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -94,7 +95,7 @@ $(function() {
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="vi_8h__dep__incl.svg" width="507" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="vi_8h__dep__incl.svg" width="100%" height="529"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div>
@@ -109,6 +110,26 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a74418db88ff39a960404059e3d5b93a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vi_8h.html#a74418db88ff39a960404059e3d5b93a0">VIWaitForRetrace</a> (void)</td></tr>
 <tr class="separator:a74418db88ff39a960404059e3d5b93a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb5aeec1ac449e1c3426a1fbd3d14ccc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vi_8h.html#adb5aeec1ac449e1c3426a1fbd3d14ccc">VISetNextFrameBuffer</a> (void *)</td></tr>
+<tr class="separator:adb5aeec1ac449e1c3426a1fbd3d14ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7680e981e96e870dd6da7f615bb2eb4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vi_8h.html#ad56e725d6c069973a6943492eab84fd0">VIRetraceCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vi_8h.html#a7680e981e96e870dd6da7f615bb2eb4b">VISetPreRetraceCallback</a> (<a class="el" href="vi_8h.html#ad56e725d6c069973a6943492eab84fd0">VIRetraceCallback</a>)</td></tr>
+<tr class="separator:a7680e981e96e870dd6da7f615bb2eb4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2be3f63b3c20b498c0a56af85a26f333"><td class="memItemLeft" align="right" valign="top"><a class="el" href="vi_8h.html#ad56e725d6c069973a6943492eab84fd0">VIRetraceCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vi_8h.html#a2be3f63b3c20b498c0a56af85a26f333">VISetPostRetraceCallback</a> (<a class="el" href="vi_8h.html#ad56e725d6c069973a6943492eab84fd0">VIRetraceCallback</a>)</td></tr>
+<tr class="separator:a2be3f63b3c20b498c0a56af85a26f333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add040ebf74d129a616b5dc6ee864af08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vi_8h.html#add040ebf74d129a616b5dc6ee864af08">VIInit</a> ()</td></tr>
+<tr class="separator:add040ebf74d129a616b5dc6ee864af08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af84d98275e3d1ba725a19b759b39fb69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vi_8h.html#af84d98275e3d1ba725a19b759b39fb69">VIConfigure</a> (<a class="el" href="GX_8h.html#a1e9a66640aae9a5e9fc045dac21369a4">GXRenderModeObj</a> *)</td></tr>
+<tr class="separator:af84d98275e3d1ba725a19b759b39fb69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e6c3cd1fbde41e7a7118a69df5e45a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vi_8h.html#a1e6c3cd1fbde41e7a7118a69df5e45a0">VIFlush</a> ()</td></tr>
+<tr class="separator:a1e6c3cd1fbde41e7a7118a69df5e45a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d8b545ba73d2722767b48c31d4e2232"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vi_8h.html#a3d8b545ba73d2722767b48c31d4e2232">VIGetNextFrameBuffer</a> ()</td></tr>
+<tr class="separator:a3d8b545ba73d2722767b48c31d4e2232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae73bfe3aa4475492c4ed62f818ba2d39"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vi_8h.html#ae73bfe3aa4475492c4ed62f818ba2d39">VIGetCurrentFrameBuffer</a> ()</td></tr>
+<tr class="separator:ae73bfe3aa4475492c4ed62f818ba2d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8c008d13fa05c794d77f2a718a2a482"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vi_8h.html#ad8c008d13fa05c794d77f2a718a2a482">VISetBlack</a> (<a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>)</td></tr>
+<tr class="separator:ad8c008d13fa05c794d77f2a718a2a482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacf60e3156aec493c62bddac6b87e5bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vi_8h.html#aacf60e3156aec493c62bddac6b87e5bf">VIGetRetraceCount</a> ()</td></tr>
+<tr class="separator:aacf60e3156aec493c62bddac6b87e5bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ad56e725d6c069973a6943492eab84fd0"></a>
@@ -126,6 +147,181 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="af84d98275e3d1ba725a19b759b39fb69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af84d98275e3d1ba725a19b759b39fb69">&#9670;&nbsp;</a></span>VIConfigure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VIConfigure </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="GX_8h.html#a1e9a66640aae9a5e9fc045dac21369a4">GXRenderModeObj</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e6c3cd1fbde41e7a7118a69df5e45a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e6c3cd1fbde41e7a7118a69df5e45a0">&#9670;&nbsp;</a></span>VIFlush()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VIFlush </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae73bfe3aa4475492c4ed62f818ba2d39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae73bfe3aa4475492c4ed62f818ba2d39">&#9670;&nbsp;</a></span>VIGetCurrentFrameBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* VIGetCurrentFrameBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d8b545ba73d2722767b48c31d4e2232"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d8b545ba73d2722767b48c31d4e2232">&#9670;&nbsp;</a></span>VIGetNextFrameBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* VIGetNextFrameBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aacf60e3156aec493c62bddac6b87e5bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacf60e3156aec493c62bddac6b87e5bf">&#9670;&nbsp;</a></span>VIGetRetraceCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> VIGetRetraceCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add040ebf74d129a616b5dc6ee864af08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add040ebf74d129a616b5dc6ee864af08">&#9670;&nbsp;</a></span>VIInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VIInit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8c008d13fa05c794d77f2a718a2a482"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8c008d13fa05c794d77f2a718a2a482">&#9670;&nbsp;</a></span>VISetBlack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VISetBlack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb5aeec1ac449e1c3426a1fbd3d14ccc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb5aeec1ac449e1c3426a1fbd3d14ccc">&#9670;&nbsp;</a></span>VISetNextFrameBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VISetNextFrameBuffer </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2be3f63b3c20b498c0a56af85a26f333"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2be3f63b3c20b498c0a56af85a26f333">&#9670;&nbsp;</a></span>VISetPostRetraceCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vi_8h.html#ad56e725d6c069973a6943492eab84fd0">VIRetraceCallback</a> VISetPostRetraceCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vi_8h.html#ad56e725d6c069973a6943492eab84fd0">VIRetraceCallback</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7680e981e96e870dd6da7f615bb2eb4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7680e981e96e870dd6da7f615bb2eb4b">&#9670;&nbsp;</a></span>VISetPreRetraceCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="vi_8h.html#ad56e725d6c069973a6943492eab84fd0">VIRetraceCallback</a> VISetPreRetraceCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="vi_8h.html#ad56e725d6c069973a6943492eab84fd0">VIRetraceCallback</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a74418db88ff39a960404059e3d5b93a0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74418db88ff39a960404059e3d5b93a0">&#9670;&nbsp;</a></span>VIWaitForRetrace()</h2>
 

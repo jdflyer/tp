@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['shields_94679',['Shields',['../d__save_8h.html#a180a6a9bca7044e6ac566db4967500d8',1,'d_save.h']]],
-  ['swords_94680',['Swords',['../d__save_8h.html#a3c66d6f382ea908fcb6d2f2f82a22b4d',1,'d_save.h']]]
+  ['type_99640',['Type',['../classdMeter__drawInsectHIO__c.html#a9ecff3b01f861212e86e1496e0e1d49b',1,'dMeter_drawInsectHIO_c::Type()'],['../structJKRAramStreamCommand.html#a584a0f0d44d10e7db7ae9487b83a3486',1,'JKRAramStreamCommand::Type()']]]
 ];

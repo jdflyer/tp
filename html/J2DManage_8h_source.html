@@ -80,10 +80,31 @@ $(function() {
 <a href="J2DManage_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef J2DMANAGE_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define J2DMANAGE_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="types_8h.html">dolphin/types.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* J2DMANAGE_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="JSUInputStream_8h.html">JSystem/JSupport/JSUInputStream.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="types_8h.html">dolphin/types.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">struct </span><a class="code" href="structJ2DResReference.html">J2DResReference</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="structJ2DResReference.html#aa4ad9d8d32c35f9fd54d2e17853bd4ab">    8</a></span>&#160;    <span class="comment">/* 8030CF10 */</span> <span class="keywordtype">void</span> <a class="code" href="structJ2DResReference.html#aa4ad9d8d32c35f9fd54d2e17853bd4ab">getResReference</a>(<a class="code" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="structJ2DResReference.html#a3c88ea9c767eebea19833c83346cb728">    9</a></span>&#160;    <span class="comment">/* 8030CF44 */</span> <span class="keywordtype">void</span> <a class="code" href="structJ2DResReference.html#a3c88ea9c767eebea19833c83346cb728">getName</a>(<a class="code" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;};</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="code" href="structJ2DDataManage.html">J2DDataManage</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structJ2DDataManage.html#ae5c87f42370a0786d0dd0bbcf3eda505">   14</a></span>&#160;    <span class="comment">/* 8030CE18 */</span> <span class="keywordtype">void</span> <a class="code" href="structJ2DDataManage.html#ae5c87f42370a0786d0dd0bbcf3eda505">get</a>(<span class="keywordtype">char</span> <span class="keyword">const</span>*);</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structJ2DDataManage.html#a6b66b65036c3a7eea88d8000c9e8530b">   15</a></span>&#160;    <span class="comment">/* 8030CE7C */</span> <span class="keywordtype">void</span> <a class="code" href="structJ2DDataManage.html#a6b66b65036c3a7eea88d8000c9e8530b">get</a>(<a class="code" href="structJSUInputStream.html">JSUInputStream</a>*);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;};</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* J2DMANAGE_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aJSUInputStream_8h_html"><div class="ttname"><a href="JSUInputStream_8h.html">JSUInputStream.h</a></div></div>
+<div class="ttc" id="astructJ2DDataManage_html"><div class="ttname"><a href="structJ2DDataManage.html">J2DDataManage</a></div><div class="ttdef"><b>Definition:</b> J2DAnimation.cpp:35</div></div>
+<div class="ttc" id="astructJ2DDataManage_html_a6b66b65036c3a7eea88d8000c9e8530b"><div class="ttname"><a href="structJ2DDataManage.html#a6b66b65036c3a7eea88d8000c9e8530b">J2DDataManage::get</a></div><div class="ttdeci">void get(JSUInputStream *)</div></div>
+<div class="ttc" id="astructJ2DDataManage_html_ae5c87f42370a0786d0dd0bbcf3eda505"><div class="ttname"><a href="structJ2DDataManage.html#ae5c87f42370a0786d0dd0bbcf3eda505">J2DDataManage::get</a></div><div class="ttdeci">void get(char const *)</div></div>
+<div class="ttc" id="astructJ2DResReference_html"><div class="ttname"><a href="structJ2DResReference.html">J2DResReference</a></div><div class="ttdef"><b>Definition:</b> J2DAnimation.cpp:30</div></div>
+<div class="ttc" id="astructJ2DResReference_html_a3c88ea9c767eebea19833c83346cb728"><div class="ttname"><a href="structJ2DResReference.html#a3c88ea9c767eebea19833c83346cb728">J2DResReference::getName</a></div><div class="ttdeci">void getName(u16) const</div></div>
+<div class="ttc" id="astructJ2DResReference_html_aa4ad9d8d32c35f9fd54d2e17853bd4ab"><div class="ttname"><a href="structJ2DResReference.html#aa4ad9d8d32c35f9fd54d2e17853bd4ab">J2DResReference::getResReference</a></div><div class="ttdeci">void getResReference(u16) const</div></div>
+<div class="ttc" id="astructJSUInputStream_html"><div class="ttname"><a href="structJSUInputStream.html">JSUInputStream</a></div><div class="ttdef"><b>Definition:</b> JKRDvdAramRipper.cpp:33</div></div>
 <div class="ttc" id="atypes_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div></div>
+<div class="ttc" id="atypes_8h_html_a9e6c91d77e24643b888dbd1a1a590054"><div class="ttname"><a href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a></div><div class="ttdeci">unsigned short u16</div><div class="ttdef"><b>Definition:</b> types.h:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

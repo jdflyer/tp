@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['gxtexfilter8_94665',['GXTexFilter8',['../GX_8h.html#a0d356aa6edc8e7db81af86d4c31671b7',1,'GX.h']]],
-  ['gxtexfmt8_94666',['GXTexFmt8',['../GX_8h.html#a379ebef75327b0f5e176ee10bb5f6c2f',1,'GX.h']]],
-  ['gxtexwrapmode8_94667',['GXTexWrapMode8',['../GX_8h.html#a0edd939774ab25e3c5bc6acde7ce7386',1,'GX.h']]]
+  ['itemmax_99615',['ItemMax',['../d__save_8h.html#ac85105b4d4fc7197addac0797f0cc984',1,'d_save.h']]],
+  ['itemslots_99616',['ItemSlots',['../d__save_8h.html#a9d3885001fb8bb3097ddc87d7fd1c69f',1,'d_save.h']]],
+  ['itemtable_99617',['ItemTable',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2',1,'d_save.h']]]
 ];

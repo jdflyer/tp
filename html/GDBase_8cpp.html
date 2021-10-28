@@ -98,8 +98,6 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a75da4d84917c9274a4ec32a84f10d8b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GDBase_8cpp.html#a75da4d84917c9274a4ec32a84f10d8b8">GDInitGDLObj</a> ()</td></tr>
-<tr class="separator:a75da4d84917c9274a4ec32a84f10d8b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a306bf3e3c4895c5a56897eed76a74657"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GDBase_8cpp.html#a306bf3e3c4895c5a56897eed76a74657">GDFlushCurrToMem</a> ()</td></tr>
 <tr class="separator:a306bf3e3c4895c5a56897eed76a74657"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4803a4491a43be1fd8a31c8a74910244"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GDBase_8cpp.html#a4803a4491a43be1fd8a31c8a74910244">GDPadCurr32</a> ()</td></tr>
@@ -108,11 +106,13 @@ Functions</h2></td></tr>
 <tr class="separator:a4625a293972ead0eace4a9014b6f9220"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f2e75fcba58c9a779201edd6a372f6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GDBase_8cpp.html#a9f2e75fcba58c9a779201edd6a372f6c">DCFlushRange</a> ()</td></tr>
 <tr class="separator:a9f2e75fcba58c9a779201edd6a372f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7372c6839d8ba0f673e3255709feb50"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GDBase_8cpp.html#ad7372c6839d8ba0f673e3255709feb50">GDInitGDLObj</a> (<a class="el" href="structGDLObj.html">GDLObj</a> *obj, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *start, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> len)</td></tr>
+<tr class="separator:ad7372c6839d8ba0f673e3255709feb50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a656111290f8611fc6cea5822a56abef2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GDBase_8cpp.html#a656111290f8611fc6cea5822a56abef2">__GDCurrentDL</a> [4]</td></tr>
-<tr class="separator:a656111290f8611fc6cea5822a56abef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a248192a4766dacbece595d8673ba91c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structGDLObj.html">GDLObj</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GDBase_8cpp.html#a248192a4766dacbece595d8673ba91c2">__GDCurrentDL</a></td></tr>
+<tr class="separator:a248192a4766dacbece595d8673ba91c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94584356d99950d88d9955a625aab31e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GDBase_8cpp.html#a94584356d99950d88d9955a625aab31e">overflowcb</a> [4]</td></tr>
 <tr class="separator:a94584356d99950d88d9955a625aab31e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -151,17 +151,34 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a75da4d84917c9274a4ec32a84f10d8b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75da4d84917c9274a4ec32a84f10d8b8">&#9670;&nbsp;</a></span>GDInitGDLObj()</h2>
+<a id="ad7372c6839d8ba0f673e3255709feb50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7372c6839d8ba0f673e3255709feb50">&#9670;&nbsp;</a></span>GDInitGDLObj()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void GDInitGDLObj </td>
+          <td class="memname">asm void GDInitGDLObj </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structGDLObj.html">GDLObj</a> *&#160;</td>
+          <td class="paramname"><em>obj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -203,14 +220,14 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a656111290f8611fc6cea5822a56abef2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a656111290f8611fc6cea5822a56abef2">&#9670;&nbsp;</a></span>__GDCurrentDL</h2>
+<a id="a248192a4766dacbece595d8673ba91c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a248192a4766dacbece595d8673ba91c2">&#9670;&nbsp;</a></span>__GDCurrentDL</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> __GDCurrentDL[4]</td>
+          <td class="memname"><a class="el" href="structGDLObj.html">GDLObj</a>* __GDCurrentDL</td>
         </tr>
       </table>
 </div><div class="memdoc">

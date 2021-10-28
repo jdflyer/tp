@@ -73,6 +73,11 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">__va_arg.h File Reference</div>  </div>
 </div><!--header-->
@@ -91,11 +96,249 @@ $(function() {
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="____va__arg_8h__dep__incl.svg" width="190" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="____va__arg_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div>
 <p><a href="____va__arg_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____va__list__struct.html">__va_list_struct</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a399539f9e2cf2151895417298ee0c10b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="____va__arg_8h.html#a399539f9e2cf2151895417298ee0c10b">__va_start</a>(list,  fmt)&#160;&#160;&#160;__builtin_va_info(&amp;list)</td></tr>
+<tr class="separator:a399539f9e2cf2151895417298ee0c10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a60fc4ca22a2634889c2c9f24a55d87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="____va__arg_8h.html#a6a60fc4ca22a2634889c2c9f24a55d87">__va_arg</a>(list,  type)&#160;&#160;&#160;(*((type*)__va_arg(ap, _var_arg_typeof(type))))</td></tr>
+<tr class="separator:a6a60fc4ca22a2634889c2c9f24a55d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4689fee617f24306933fd79ce206fcc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="____va__arg_8h.html#ac4689fee617f24306933fd79ce206fcc">va_start</a>&#160;&#160;&#160;<a class="el" href="____va__arg_8h.html#a399539f9e2cf2151895417298ee0c10b">__va_start</a></td></tr>
+<tr class="separator:ac4689fee617f24306933fd79ce206fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c295ecce41e71a2ba213e32e7a5c346"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="____va__arg_8h.html#a1c295ecce41e71a2ba213e32e7a5c346">va_arg</a>&#160;&#160;&#160;<a class="el" href="____va__arg_8h.html#a7d4dd560669459aed73d0a0f543f29ba">__va_arg</a></td></tr>
+<tr class="separator:a1c295ecce41e71a2ba213e32e7a5c346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1763b4d5c9d8e5a9bed197b316e3586a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="____va__arg_8h.html#a1763b4d5c9d8e5a9bed197b316e3586a">va_end</a>&#160;&#160;&#160;<a class="el" href="____va__arg_8h.html#a63cd833ec66080984cc90381073bf735">__va_end</a></td></tr>
+<tr class="separator:a1763b4d5c9d8e5a9bed197b316e3586a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e6fde95f2a221e9bcd58fa102bd90ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="____va__arg_8h.html#a6e6fde95f2a221e9bcd58fa102bd90ff">va_list</a>&#160;&#160;&#160;<a class="el" href="____va__arg_8h.html#a0aa15f43c20a68b999fa2e0a8c132e27">__va_list</a></td></tr>
+<tr class="separator:a6e6fde95f2a221e9bcd58fa102bd90ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63cd833ec66080984cc90381073bf735"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="____va__arg_8h.html#a63cd833ec66080984cc90381073bf735">__va_end</a>(list)&#160;&#160;&#160;((void)0)</td></tr>
+<tr class="separator:a63cd833ec66080984cc90381073bf735"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0015bca7c6eba824fdf8f0e3eda0e703"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="____va__arg_8h.html#a0015bca7c6eba824fdf8f0e3eda0e703">__va_copy</a>(a,  b)&#160;&#160;&#160;(*(a) = *(b))</td></tr>
+<tr class="separator:a0015bca7c6eba824fdf8f0e3eda0e703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a0aa15f43c20a68b999fa2e0a8c132e27"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct____va__list__struct.html">__va_list_struct</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="____va__arg_8h.html#a0aa15f43c20a68b999fa2e0a8c132e27">__va_list</a>[1]</td></tr>
+<tr class="separator:a0aa15f43c20a68b999fa2e0a8c132e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a7d4dd560669459aed73d0a0f543f29ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="____va__arg_8h.html#a7d4dd560669459aed73d0a0f543f29ba">__va_arg</a> (void *, int)</td></tr>
+<tr class="separator:a7d4dd560669459aed73d0a0f543f29ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a6a60fc4ca22a2634889c2c9f24a55d87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a60fc4ca22a2634889c2c9f24a55d87">&#9670;&nbsp;</a></span>__va_arg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __va_arg</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">list, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(*((type*)__va_arg(ap, _var_arg_typeof(type))))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0015bca7c6eba824fdf8f0e3eda0e703"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0015bca7c6eba824fdf8f0e3eda0e703">&#9670;&nbsp;</a></span>__va_copy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __va_copy</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(*(a) = *(b))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a63cd833ec66080984cc90381073bf735"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63cd833ec66080984cc90381073bf735">&#9670;&nbsp;</a></span>__va_end</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __va_end</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">list</td><td>)</td>
+          <td>&#160;&#160;&#160;((void)0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a399539f9e2cf2151895417298ee0c10b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a399539f9e2cf2151895417298ee0c10b">&#9670;&nbsp;</a></span>__va_start</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __va_start</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">list, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fmt&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;__builtin_va_info(&amp;list)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c295ecce41e71a2ba213e32e7a5c346"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c295ecce41e71a2ba213e32e7a5c346">&#9670;&nbsp;</a></span>va_arg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define va_arg&#160;&#160;&#160;<a class="el" href="____va__arg_8h.html#a7d4dd560669459aed73d0a0f543f29ba">__va_arg</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1763b4d5c9d8e5a9bed197b316e3586a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1763b4d5c9d8e5a9bed197b316e3586a">&#9670;&nbsp;</a></span>va_end</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define va_end&#160;&#160;&#160;<a class="el" href="____va__arg_8h.html#a63cd833ec66080984cc90381073bf735">__va_end</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e6fde95f2a221e9bcd58fa102bd90ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e6fde95f2a221e9bcd58fa102bd90ff">&#9670;&nbsp;</a></span>va_list</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define va_list&#160;&#160;&#160;<a class="el" href="____va__arg_8h.html#a0aa15f43c20a68b999fa2e0a8c132e27">__va_list</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac4689fee617f24306933fd79ce206fcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4689fee617f24306933fd79ce206fcc">&#9670;&nbsp;</a></span>va_start</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define va_start&#160;&#160;&#160;<a class="el" href="____va__arg_8h.html#a399539f9e2cf2151895417298ee0c10b">__va_start</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a0aa15f43c20a68b999fa2e0a8c132e27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0aa15f43c20a68b999fa2e0a8c132e27">&#9670;&nbsp;</a></span>__va_list</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct____va__list__struct.html">__va_list_struct</a> __va_list[1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a7d4dd560669459aed73d0a0f543f29ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d4dd560669459aed73d0a0f543f29ba">&#9670;&nbsp;</a></span>__va_arg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void __va_arg </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

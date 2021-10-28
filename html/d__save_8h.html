@@ -82,14 +82,16 @@ $(function() {
 <div class="title">d_save.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="c__xyz_8h_source.html">SSystem/SComponent/c_xyz.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;MSL_C.PPCEABI.bare.H/MSL_Common/src/printf.h&quot;</code><br />
+<code>#include &quot;MSL_C.PPCEABI.bare.H/MSL_Common/src/string.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="c__xyz_8h_source.html">SSystem/SComponent/c_xyz.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for d_save.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="d__save_8h__incl.svg" width="286" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="d__save_8h__incl.svg" width="604" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -171,6 +173,10 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdSv__info__c.html">dSv_info_c</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdSv__event__flag__c.html">dSv_event_flag_c</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdSv__event__tmp__flag__c.html">dSv_event_tmp_flag_c</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -196,6 +202,16 @@ Macros</h2></td></tr>
 <tr class="separator:a64c057020835ff228b7e29600beac303"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7b5fb97f10ea213fa338b09bcbe7a39"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__save_8h.html#ac7b5fb97f10ea213fa338b09bcbe7a39">DSV_MEMBIT_ENUM_MAX</a>&#160;&#160;&#160;8</td></tr>
 <tr class="separator:ac7b5fb97f10ea213fa338b09bcbe7a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31c33a92a1febe1f6c6ba6dc6db58657"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__save_8h.html#a31c33a92a1febe1f6c6ba6dc6db58657">ITEM_MAX_DAN</a>&#160;&#160;&#160;128</td></tr>
+<tr class="separator:a31c33a92a1febe1f6c6ba6dc6db58657"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfa7e509e088d22ea5a5ea0f13fca514"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__save_8h.html#adfa7e509e088d22ea5a5ea0f13fca514">SWITCH_ZONE_MAX</a>&#160;&#160;&#160;0x20</td></tr>
+<tr class="separator:adfa7e509e088d22ea5a5ea0f13fca514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fe03e8759cb7a053d026d629e770f6c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__save_8h.html#a4fe03e8759cb7a053d026d629e770f6c">SWITCH_ONE_ZONE_MAX</a>&#160;&#160;&#160;0x10</td></tr>
+<tr class="separator:a4fe03e8759cb7a053d026d629e770f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a6474994283a94bb331dd42b1f328c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__save_8h.html#a9a6474994283a94bb331dd42b1f328c4">ITEM_ZONE_MAX</a>&#160;&#160;&#160;0x20</td></tr>
+<tr class="separator:a9a6474994283a94bb331dd42b1f328c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0ede3d22365de0551f58d6edf91351e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__save_8h.html#af0ede3d22365de0551f58d6edf91351e">ITEM_ONE_ZONE_MAX</a>&#160;&#160;&#160;0x10</td></tr>
+<tr class="separator:af0ede3d22365de0551f58d6edf91351e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -570,20 +586,20 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a6d317460fab5a02d2a7fc3e2bb396911"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c66d6f382ea908fcb6d2f2f82a22b4d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__save_8h.html#a3c66d6f382ea908fcb6d2f2f82a22b4d">Swords</a> { <a class="el" href="d__save_8h.html#a3c66d6f382ea908fcb6d2f2f82a22b4dad91a186784f21cf2384c6988d6313f4c">ORDON_SWORD_FLAG</a>
-, <a class="el" href="d__save_8h.html#a3c66d6f382ea908fcb6d2f2f82a22b4da01639daf70a0fd8e0ed1c35fa02f1245">MASTER_SWORD_FLAG</a>
-, <a class="el" href="d__save_8h.html#a3c66d6f382ea908fcb6d2f2f82a22b4da0ec34282f8b9fec9dd3ef43598cea211">WOODEN_SWORD_FLAG</a>
-, <a class="el" href="d__save_8h.html#a3c66d6f382ea908fcb6d2f2f82a22b4da2d125100c3f124ee2c8ac32c5ef99ed4">LIGHT_SWORD_FLAG</a>
+<tr class="memitem:a3c66d6f382ea908fcb6d2f2f82a22b4d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__save_8h.html#a3c66d6f382ea908fcb6d2f2f82a22b4d">Swords</a> { <a class="el" href="d__save_8h.html#a3c66d6f382ea908fcb6d2f2f82a22b4dae92d1287774ef4121b33400a8f3314a1">COLLECT_ORDON_SWORD</a>
+, <a class="el" href="d__save_8h.html#a3c66d6f382ea908fcb6d2f2f82a22b4da62cd7f36be2148b11590580df4778ac2">COLLECT_MASTER_SWORD</a>
+, <a class="el" href="d__save_8h.html#a3c66d6f382ea908fcb6d2f2f82a22b4da09ed8a66c8b6e90e79b89bef22dacb00">COLLECT_WOODEN_SWORD</a>
+, <a class="el" href="d__save_8h.html#a3c66d6f382ea908fcb6d2f2f82a22b4da85893ca9d00c64065c065362d71484d9">COLLECT_LIGHT_SWORD</a>
  }</td></tr>
 <tr class="separator:a3c66d6f382ea908fcb6d2f2f82a22b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a180a6a9bca7044e6ac566db4967500d8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__save_8h.html#a180a6a9bca7044e6ac566db4967500d8">Shields</a> { <a class="el" href="d__save_8h.html#a180a6a9bca7044e6ac566db4967500d8abeb556a646540be987fbc139805c8da1">ORDON_SHIELD_FLAG</a>
-, <a class="el" href="d__save_8h.html#a180a6a9bca7044e6ac566db4967500d8a4f8d3bd53e8890ac8fca1ac13d807a5d">HYLIAN_SHIELD_FLAG</a>
-, <a class="el" href="d__save_8h.html#a180a6a9bca7044e6ac566db4967500d8afee8c5ffe7affaa54a2084c0d057ef71">WOODEN_SHIELD_FLAG</a>
+<tr class="memitem:a180a6a9bca7044e6ac566db4967500d8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__save_8h.html#a180a6a9bca7044e6ac566db4967500d8">Shields</a> { <a class="el" href="d__save_8h.html#a180a6a9bca7044e6ac566db4967500d8af8219cd5dee125f54b2ccc7c1c27bca8">COLLECT_WOODEN_SHIELD</a>
+, <a class="el" href="d__save_8h.html#a180a6a9bca7044e6ac566db4967500d8ac99b2a420799a6a004bc4b340dd1ab5f">COLLECT_ORDON_SHIELD</a>
+, <a class="el" href="d__save_8h.html#a180a6a9bca7044e6ac566db4967500d8ab3160b4e8d9542ca06b5f621c7e897e0">COLLECT_HYLIAN_SHIELD</a>
  }</td></tr>
 <tr class="separator:a180a6a9bca7044e6ac566db4967500d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78cc5d8b0be18bb947850d9d612e3775"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__save_8h.html#a78cc5d8b0be18bb947850d9d612e3775">Armors</a> { <a class="el" href="d__save_8h.html#a78cc5d8b0be18bb947850d9d612e3775aa8e82eaa10422a66792fb9c246061c4a">KOKIRI_CLOTHES_FLAG</a>
+<tr class="memitem:a754ce34cf5161a6dc781544dbecc6cd0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__save_8h.html#a754ce34cf5161a6dc781544dbecc6cd0">Clothes</a> { <a class="el" href="d__save_8h.html#a754ce34cf5161a6dc781544dbecc6cd0aa8e82eaa10422a66792fb9c246061c4a">KOKIRI_CLOTHES_FLAG</a>
  }</td></tr>
-<tr class="separator:a78cc5d8b0be18bb947850d9d612e3775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a754ce34cf5161a6dc781544dbecc6cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0a935f72320b410327c48c9e0efce2b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__save_8h.html#ae0a935f72320b410327c48c9e0efce2b">LightDropStages</a> { <a class="el" href="d__save_8h.html#ae0a935f72320b410327c48c9e0efce2ba989ca1c08ae1696cc16c634a68b6093c">FARON_VESSEL</a>
 , <a class="el" href="d__save_8h.html#ae0a935f72320b410327c48c9e0efce2ba1191a3450087c950bf061b61d1bb8517">ELDIN_VESSEL</a>
 , <a class="el" href="d__save_8h.html#ae0a935f72320b410327c48c9e0efce2ba546c7b05da57d7fca6cb607152f26ddb">LANAYRU_VESSEL</a>
@@ -656,6 +672,48 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define DSV_MEMBIT_ENUM_MAX&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a31c33a92a1febe1f6c6ba6dc6db58657"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31c33a92a1febe1f6c6ba6dc6db58657">&#9670;&nbsp;</a></span>ITEM_MAX_DAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ITEM_MAX_DAN&#160;&#160;&#160;128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af0ede3d22365de0551f58d6edf91351e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0ede3d22365de0551f58d6edf91351e">&#9670;&nbsp;</a></span>ITEM_ONE_ZONE_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ITEM_ONE_ZONE_MAX&#160;&#160;&#160;0x10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a6474994283a94bb331dd42b1f328c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a6474994283a94bb331dd42b1f328c4">&#9670;&nbsp;</a></span>ITEM_ZONE_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ITEM_ZONE_MAX&#160;&#160;&#160;0x20</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -746,6 +804,34 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a4fe03e8759cb7a053d026d629e770f6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fe03e8759cb7a053d026d629e770f6c">&#9670;&nbsp;</a></span>SWITCH_ONE_ZONE_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SWITCH_ONE_ZONE_MAX&#160;&#160;&#160;0x10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adfa7e509e088d22ea5a5ea0f13fca514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfa7e509e088d22ea5a5ea0f13fca514">&#9670;&nbsp;</a></span>SWITCH_ZONE_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SWITCH_ZONE_MAX&#160;&#160;&#160;0x20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a64c057020835ff228b7e29600beac303"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a64c057020835ff228b7e29600beac303">&#9670;&nbsp;</a></span>TBOX_MAX</h2>
 
@@ -761,19 +847,19 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a78cc5d8b0be18bb947850d9d612e3775"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78cc5d8b0be18bb947850d9d612e3775">&#9670;&nbsp;</a></span>Armors</h2>
+<a id="a754ce34cf5161a6dc781544dbecc6cd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a754ce34cf5161a6dc781544dbecc6cd0">&#9670;&nbsp;</a></span>Clothes</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="d__save_8h.html#a78cc5d8b0be18bb947850d9d612e3775">Armors</a></td>
+          <td class="memname">enum <a class="el" href="d__save_8h.html#a754ce34cf5161a6dc781544dbecc6cd0">Clothes</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a78cc5d8b0be18bb947850d9d612e3775aa8e82eaa10422a66792fb9c246061c4a"></a>KOKIRI_CLOTHES_FLAG&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a754ce34cf5161a6dc781544dbecc6cd0aa8e82eaa10422a66792fb9c246061c4a"></a>KOKIRI_CLOTHES_FLAG&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1162,9 +1248,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a180a6a9bca7044e6ac566db4967500d8abeb556a646540be987fbc139805c8da1"></a>ORDON_SHIELD_FLAG&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a180a6a9bca7044e6ac566db4967500d8a4f8d3bd53e8890ac8fca1ac13d807a5d"></a>HYLIAN_SHIELD_FLAG&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a180a6a9bca7044e6ac566db4967500d8afee8c5ffe7affaa54a2084c0d057ef71"></a>WOODEN_SHIELD_FLAG&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a180a6a9bca7044e6ac566db4967500d8af8219cd5dee125f54b2ccc7c1c27bca8"></a>COLLECT_WOODEN_SHIELD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a180a6a9bca7044e6ac566db4967500d8ac99b2a420799a6a004bc4b340dd1ab5f"></a>COLLECT_ORDON_SHIELD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a180a6a9bca7044e6ac566db4967500d8ab3160b4e8d9542ca06b5f621c7e897e0"></a>COLLECT_HYLIAN_SHIELD&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1181,10 +1267,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3c66d6f382ea908fcb6d2f2f82a22b4dad91a186784f21cf2384c6988d6313f4c"></a>ORDON_SWORD_FLAG&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3c66d6f382ea908fcb6d2f2f82a22b4da01639daf70a0fd8e0ed1c35fa02f1245"></a>MASTER_SWORD_FLAG&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3c66d6f382ea908fcb6d2f2f82a22b4da0ec34282f8b9fec9dd3ef43598cea211"></a>WOODEN_SWORD_FLAG&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3c66d6f382ea908fcb6d2f2f82a22b4da2d125100c3f124ee2c8ac32c5ef99ed4"></a>LIGHT_SWORD_FLAG&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3c66d6f382ea908fcb6d2f2f82a22b4dae92d1287774ef4121b33400a8f3314a1"></a>COLLECT_ORDON_SWORD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3c66d6f382ea908fcb6d2f2f82a22b4da62cd7f36be2148b11590580df4778ac2"></a>COLLECT_MASTER_SWORD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3c66d6f382ea908fcb6d2f2f82a22b4da09ed8a66c8b6e90e79b89bef22dacb00"></a>COLLECT_WOODEN_SWORD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3c66d6f382ea908fcb6d2f2f82a22b4da85893ca9d00c64065c065362d71484d9"></a>COLLECT_LIGHT_SWORD&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

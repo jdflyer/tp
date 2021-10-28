@@ -73,40 +73,44 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structJAIAudience-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">JAIAudience Struct Reference</div>  </div>
+<div class="title">JAIAudience Struct Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="JAIAudience_8h_source.html">JAIAudience.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for JAIAudience:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structJAIAudience__inherit__graph.svg" width="107" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7ed3e031a09845549694bc84af581efd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAIAudience.html#a7ed3e031a09845549694bc84af581efd">~JAIAudience</a> ()</td></tr>
-<tr class="separator:a7ed3e031a09845549694bc84af581efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adeef4b4fb90b9ccefbe025dc3b84a47e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAIAudience.html#adeef4b4fb90b9ccefbe025dc3b84a47e">~JAIAudience</a> ()</td></tr>
+<tr class="memitem:adeef4b4fb90b9ccefbe025dc3b84a47e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAIAudience.html#adeef4b4fb90b9ccefbe025dc3b84a47e">~JAIAudience</a> ()</td></tr>
 <tr class="separator:adeef4b4fb90b9ccefbe025dc3b84a47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bc615a5218b88e914cf93e9244cffd3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structJAIAudible.html">JAIAudible</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAIAudience.html#a5bc615a5218b88e914cf93e9244cffd3">newAudible</a> (<a class="el" href="structJGeometry_1_1TVec3.html">JGeometry::TVec3</a>&lt; <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> &gt; const &amp;, <a class="el" href="structJAISoundID.html">JAISoundID</a>, <a class="el" href="structJGeometry_1_1TVec3.html">JGeometry::TVec3</a>&lt; <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> &gt; const *, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)=0</td></tr>
+<tr class="separator:a5bc615a5218b88e914cf93e9244cffd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97462892a7c73a745e7da09a92f3e8f5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAIAudience.html#a97462892a7c73a745e7da09a92f3e8f5">getMaxChannels</a> ()=0</td></tr>
+<tr class="separator:a97462892a7c73a745e7da09a92f3e8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a950ef533085a0ae3ade6a8d1587bf3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAIAudience.html#a9a950ef533085a0ae3ade6a8d1587bf3">deleteAudible</a> (<a class="el" href="structJAIAudible.html">JAIAudible</a> *)=0</td></tr>
+<tr class="separator:a9a950ef533085a0ae3ade6a8d1587bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe009c0932f0ad70b10955244bb00b69"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAIAudience.html#abe009c0932f0ad70b10955244bb00b69">calcPriority</a> (<a class="el" href="structJAIAudible.html">JAIAudible</a> *)=0</td></tr>
+<tr class="separator:abe009c0932f0ad70b10955244bb00b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e3baa1745620714314d9f8ca5199705"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAIAudience.html#a4e3baa1745620714314d9f8ca5199705">mixChannelOut</a> (<a class="el" href="structJASSoundParams.html">JASSoundParams</a> const &amp;, <a class="el" href="structJAIAudible.html">JAIAudible</a> *, int)=0</td></tr>
+<tr class="separator:a4e3baa1745620714314d9f8ca5199705"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a7ed3e031a09845549694bc84af581efd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ed3e031a09845549694bc84af581efd">&#9670;&nbsp;</a></span>~JAIAudience() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm JAIAudience::~JAIAudience </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="adeef4b4fb90b9ccefbe025dc3b84a47e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adeef4b4fb90b9ccefbe025dc3b84a47e">&#9670;&nbsp;</a></span>~JAIAudience() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#adeef4b4fb90b9ccefbe025dc3b84a47e">&#9670;&nbsp;</a></span>~JAIAudience()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">JAIAudience::~JAIAudience </td>
@@ -115,13 +119,197 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="abe009c0932f0ad70b10955244bb00b69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe009c0932f0ad70b10955244bb00b69">&#9670;&nbsp;</a></span>calcPriority()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JAIAudience::calcPriority </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structJAIAudible.html">JAIAudible</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="structZ2Audience.html#ac8818e33aa2623e04a3f021849f0f12b">Z2Audience</a>.</p>
+
+</div>
+</div>
+<a id="a9a950ef533085a0ae3ade6a8d1587bf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a950ef533085a0ae3ade6a8d1587bf3">&#9670;&nbsp;</a></span>deleteAudible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JAIAudience::deleteAudible </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structJAIAudible.html">JAIAudible</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="structZ2Audience.html#a9146493eec52cc16c6d0c7e292183ec7">Z2Audience</a>.</p>
+
+</div>
+</div>
+<a id="a97462892a7c73a745e7da09a92f3e8f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97462892a7c73a745e7da09a92f3e8f5">&#9670;&nbsp;</a></span>getMaxChannels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JAIAudience::getMaxChannels </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="structZ2Audience.html#a23ec77815d46a8928466bd693a3a7841">Z2Audience</a>.</p>
+
+</div>
+</div>
+<a id="a4e3baa1745620714314d9f8ca5199705"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e3baa1745620714314d9f8ca5199705">&#9670;&nbsp;</a></span>mixChannelOut()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void JAIAudience::mixChannelOut </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structJASSoundParams.html">JASSoundParams</a> const &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structJAIAudible.html">JAIAudible</a> *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="structZ2Audience.html#a4c5e6f305d84b35d4bf74263c943e75d">Z2Audience</a>.</p>
+
+</div>
+</div>
+<a id="a5bc615a5218b88e914cf93e9244cffd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bc615a5218b88e914cf93e9244cffd3">&#9670;&nbsp;</a></span>newAudible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="structJAIAudible.html">JAIAudible</a>* JAIAudience::newAudible </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structJGeometry_1_1TVec3.html">JGeometry::TVec3</a>&lt; <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> &gt; const &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structJAISoundID.html">JAISoundID</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structJGeometry_1_1TVec3.html">JGeometry::TVec3</a>&lt; <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> &gt; const *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="structZ2Audience.html#a873b162a8d843cccca3c40ba7fea6781">Z2Audience</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
+<li>libs/JSystem/JAudio2/<a class="el" href="JAISe_8cpp.html">JAISe.cpp</a></li>
+<li>include/JSystem/JAudio2/<a class="el" href="JAIAudience_8h_source.html">JAIAudience.h</a></li>
 <li>libs/JSystem/JAudio2/<a class="el" href="JAIAudience_8cpp.html">JAIAudience.cpp</a></li>
-<li>libs/Z2AudioLib/<a class="el" href="Z2Audience_8cpp.html">Z2Audience.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

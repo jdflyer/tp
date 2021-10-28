@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lightdropstages_94674',['LightDropStages',['../d__save_8h.html#ae0a935f72320b410327c48c9e0efce2b',1,'d_save.h']]]
+  ['mode_5fflg_99631',['MODE_FLG',['../structdaAlink__c.html#a7b182e7449148983e233f8d27761820e',1,'daAlink_c']]]
 ];
