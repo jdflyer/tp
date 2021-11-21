@@ -86,12 +86,13 @@ $(function() {
 <code>#include &quot;<a class="el" href="mtx_8h_source.html">dolphin/mtx/mtx.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mtx44_8h_source.html">dolphin/mtx/mtx44.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="global_8h_source.html">global.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for GX.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="GX_8h__incl.svg" width="650" height="336"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="GX_8h__incl.svg" width="635" height="336"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -198,6 +199,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:acc9199a3d7b370511c8ba0af9cb1b377"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a723655c1ff5eb6097db962f01fb71adf"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="struct__GXTexFmt.html">_GXTexFmt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a723655c1ff5eb6097db962f01fb71adf">GXTexFmt</a></td></tr>
 <tr class="separator:a723655c1ff5eb6097db962f01fb71adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa97b783a3413299cbffe6556edeb72b"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="GX_8h.html#a32b67a5bb2dfea1751a31cfa30134f31">_GXGamma</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#aaa97b783a3413299cbffe6556edeb72b">GXGamma</a></td></tr>
+<tr class="separator:aaa97b783a3413299cbffe6556edeb72b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0ee40d7f8684335696ebffd7aec7989"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="struct__GXTlutFmt.html">_GXTlutFmt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#aa0ee40d7f8684335696ebffd7aec7989">GXTlutFmt</a></td></tr>
 <tr class="separator:aa0ee40d7f8684335696ebffd7aec7989"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52ac966e198a83ebf4ca4fa405ec4625"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="GX_8h.html#a75b1b6f72d0574bc98317248012199ef">_GXTlut</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a52ac966e198a83ebf4ca4fa405ec4625">GXTlut</a></td></tr>
@@ -653,6 +656,11 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a8e5846adc997e74805dda52ef6f3c711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32b67a5bb2dfea1751a31cfa30134f31"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a32b67a5bb2dfea1751a31cfa30134f31">_GXGamma</a> { <a class="el" href="GX_8h.html#a32b67a5bb2dfea1751a31cfa30134f31af67d45f2cc2b62156cf985fbccd2c740">GX_GM_1_0</a>
+, <a class="el" href="GX_8h.html#a32b67a5bb2dfea1751a31cfa30134f31afc4ea0a3c959a37466a5adf9886eebc5">GX_GM_1_7</a>
+, <a class="el" href="GX_8h.html#a32b67a5bb2dfea1751a31cfa30134f31ab3aaa212d9376d06b1fa4b65d8d97caf">GX_GM_2_2</a>
+ }</td></tr>
+<tr class="separator:a32b67a5bb2dfea1751a31cfa30134f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a745250e9e2de58304b8778cfc168f337"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a745250e9e2de58304b8778cfc168f337">_GXTlutFmt</a> { <a class="el" href="GX_8h.html#a745250e9e2de58304b8778cfc168f337ad85dd4df2b7d71c6bc975916fb504f50">GX_TL_IA8</a>
 , <a class="el" href="GX_8h.html#a745250e9e2de58304b8778cfc168f337a87fd91d1744a987d343c9c57f30bd8a0">GX_TL_RGB565</a>
 , <a class="el" href="GX_8h.html#a745250e9e2de58304b8778cfc168f337a72f2fde90ef350fd2127ae5b68e0474b">GX_TL_RGB5A3</a>
@@ -996,6 +1004,8 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ae290f8c0016b6ca884a068d649fdfd7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#ae290f8c0016b6ca884a068d649fdfd7a">STATIC_ASSERT</a> (sizeof(<a class="el" href="struct__GXRenderModeObj.html">_GXRenderModeObj</a>)==60)</td></tr>
+<tr class="separator:ae290f8c0016b6ca884a068d649fdfd7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2ed959aca36f038a4e13c93f78285c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#aa2ed959aca36f038a4e13c93f78285c2">GXGetYScaleFactor</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> efb_height, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> xfb_height)</td></tr>
 <tr class="separator:aa2ed959aca36f038a4e13c93f78285c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91d33e2ef72cde6b2030a3618c89bfdb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a91d33e2ef72cde6b2030a3618c89bfdb">GXGetNumXfbLines</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> efb_height, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> y_scale)</td></tr>
@@ -1442,6 +1452,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef enum <a class="el" href="struct__GXFogType.html">_GXFogType</a> <a class="el" href="GX_8h.html#ad275bb84be0072c3ac0b2a3812877e4b">GXFogType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa97b783a3413299cbffe6556edeb72b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa97b783a3413299cbffe6556edeb72b">&#9670;&nbsp;</a></span>GXGamma</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="GX_8h.html#a32b67a5bb2dfea1751a31cfa30134f31">_GXGamma</a> <a class="el" href="GX_8h.html#aaa97b783a3413299cbffe6556edeb72b">GXGamma</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2421,6 +2445,25 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a620e928cb867163e392f55200c865413a5c85921ff507545218221e691ea8323e"></a>GX_FOG_ORTHO_EXP2&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a620e928cb867163e392f55200c865413abea66a11ea4f0cd5ca8aae9ba43c6c0d"></a>GX_FOG_ORTHO_REVEXP&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a620e928cb867163e392f55200c865413aab95f48c0b41d06e5dacdb637eb0866e"></a>GX_FOG_ORTHO_REVEXP2&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a32b67a5bb2dfea1751a31cfa30134f31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32b67a5bb2dfea1751a31cfa30134f31">&#9670;&nbsp;</a></span>_GXGamma</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="GX_8h.html#a32b67a5bb2dfea1751a31cfa30134f31">_GXGamma</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a32b67a5bb2dfea1751a31cfa30134f31af67d45f2cc2b62156cf985fbccd2c740"></a>GX_GM_1_0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a32b67a5bb2dfea1751a31cfa30134f31afc4ea0a3c959a37466a5adf9886eebc5"></a>GX_GM_1_7&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a32b67a5bb2dfea1751a31cfa30134f31ab3aaa212d9376d06b1fa4b65d8d97caf"></a>GX_GM_2_2&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -5934,6 +5977,24 @@ Functions</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae290f8c0016b6ca884a068d649fdfd7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae290f8c0016b6ca884a068d649fdfd7a">&#9670;&nbsp;</a></span>STATIC_ASSERT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">STATIC_ASSERT </td>
+          <td>(</td>
+          <td class="paramtype">sizeof(<a class="el" href="struct__GXRenderModeObj.html">_GXRenderModeObj</a>)&#160;</td>
+          <td class="paramname"> = <code>=60</code></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">

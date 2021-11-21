@@ -81,73 +81,34 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="d__bg__s_8h_source.html">d/bg/d_bg_s.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__com__inf__game_8h_source.html">d/com/d_com_inf_game.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mtxvec_8h_source.html">dolphin/mtx/mtxvec.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/Init__11cBgS_ChkElmFv.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/Regist2__11cBgS_ChkElmFP9dBgW_BaseUiPv.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/Release__11cBgS_ChkElmFv.s&quot;</code><br />
 <code>#include &quot;asm/d/bg/d_bg_s/Regist__4cBgSFP9dBgW_BaseUiPv.s&quot;</code><br />
 <code>#include &quot;asm/d/bg/d_bg_s/Release__4cBgSFP9dBgW_Base.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/Ct__4cBgSFv.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/Dt__4cBgSFv.s&quot;</code><br />
 <code>#include &quot;asm/d/bg/d_bg_s/LineCross__4cBgSFP11cBgS_LinChk.s&quot;</code><br />
 <code>#include &quot;asm/d/bg/d_bg_s/GroundCross__4cBgSFP11cBgS_GndChk.s&quot;</code><br />
 <code>#include &quot;asm/d/bg/d_bg_s/ConvDzb__4cBgSFPv.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/GetActorPointer__4cBgSCFi.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/GetBgWBasePointer__4cBgSCFRC13cBgS_PolyInfo.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/ChkPolySafe__4cBgSFRC13cBgS_PolyInfo.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/GetGrpRoomId__4cBgSCFRC13cBgS_PolyInfo.s&quot;</code><br />
 <code>#include &quot;asm/d/bg/d_bg_s/GetTriPla__4cBgSCFRC13cBgS_PolyInfoP8cM3dGPla.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/GetTriPnt__4cBgSCFRC13cBgS_PolyInfoP4cXyzP4cXyzP4cXyz.s&quot;</code><br />
 <code>#include &quot;asm/d/bg/d_bg_s/ShdwDraw__4cBgSFP13cBgS_ShdwDraw.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/GetGrpInf__4cBgSCFRC13cBgS_PolyInfo.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/Ct__4dBgSFv.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/Dt__4dBgSFv.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/ClrMoveFlag__4dBgSFv.s&quot;</code><br />
 <code>#include &quot;asm/d/bg/d_bg_s/Move__4dBgSFv.s&quot;</code><br />
 <code>#include &quot;asm/d/bg/d_bg_s/Regist__4dBgSFP9dBgW_BaseP10fopAc_ac_c.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/ChkMoveBG__4dBgSFRC13cBgS_PolyInfo.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/ChkMoveBG_NoDABg__4dBgSFRC13cBgS_PolyInfo.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/GetExitId__4dBgSFRC13cBgS_PolyInfo.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/GetPolyColor__4dBgSFRC13cBgS_PolyInfo.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/GetHorseNoEntry__4dBgSFRC13cBgS_PolyInfo.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/GetSpecialCode__4dBgSFRC13cBgS_PolyInfo.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/GetMagnetCode__4dBgSFRC13cBgS_PolyInfo.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/GetMonkeyBarsCode__4dBgSFRC13cBgS_PolyInfo.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/GetUnderwaterRoofCode__4dBgSFRC13cBgS_PolyInfo.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/GetWallCode__4dBgSFRC13cBgS_PolyInfo.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/GetPolyAtt0__4dBgSFRC13cBgS_PolyInfo.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/GetPolyAtt1__4dBgSFRC13cBgS_PolyInfo.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/GetGroundCode__4dBgSFRC13cBgS_PolyInfo.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/GetCamMoveBG__4dBgSFRC13cBgS_PolyInfo.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/GetRoomCamId__4dBgSFRC13cBgS_PolyInfo.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/GetRoomPathId__4dBgSFRC13cBgS_PolyInfo.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/GetRoomPathPntNo__4dBgSFRC13cBgS_PolyInfo.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/GetGrpSoundId__4dBgSFRC13cBgS_PolyInfo.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/ChkGrpInf__4dBgSFRC13cBgS_PolyInfoUl.s&quot;</code><br />
 <code>#include &quot;asm/d/bg/d_bg_s/GetRoomId__4dBgSFRC13cBgS_PolyInfo.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/GetPolyAttackThrough__4dBgSFRC13cBgS_PolyInfo.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/ChkPolyHSStick__4dBgSFRC13cBgS_PolyInfo.s&quot;</code><br />
 <code>#include &quot;asm/d/bg/d_bg_s/WallCorrect__4dBgSFP9dBgS_Acch.s&quot;</code><br />
 <code>#include &quot;asm/d/bg/d_bg_s/WallCorrectSort__4dBgSFP9dBgS_Acch.s&quot;</code><br />
 <code>#include &quot;asm/d/bg/d_bg_s/RoofChk__4dBgSFP12dBgS_RoofChk.s&quot;</code><br />
 <code>#include &quot;asm/d/bg/d_bg_s/SplGrpChk__4dBgSFP14dBgS_SplGrpChk.s&quot;</code><br />
 <code>#include &quot;asm/d/bg/d_bg_s/SphChk__4dBgSFP11dBgS_SphChkPv.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/MoveBgCrrPos__4dBgSFRC13cBgS_PolyInfobP4cXyzP5csXyzP5csXyzbb.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/MoveBgTransPos__4dBgSFRC13cBgS_PolyInfobP4cXyzP5csXyzP5csXyz.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/MoveBgMatrixCrrPos__4dBgSFRC13cBgS_PolyInfobP4cXyzP5csXyzP5csXyz.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/dBgS_MoveBGProc_Typical__FP4dBgWPvRC13cBgS_PolyInfobP4cXyzP5csXyzP5csXyz.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/dBgS_MoveBGProc_RotY__FP4dBgWPvRC13cBgS_PolyInfobP4cXyzP5csXyzP5csXyz.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/dBgS_MoveBGProc_TypicalRotY__FP4dBgWPvRC13cBgS_PolyInfobP4cXyzP5csXyzP5csXyz.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/dBgS_MoveBGProc_Trans__FP4dBgWPvRC13cBgS_PolyInfobP4cXyzP5csXyzP5csXyz.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/RideCallBack__4dBgSFRC13cBgS_PolyInfoP10fopAc_ac_c.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/ArrowStickCallBack__4dBgSFRC13cBgS_PolyInfoP10fopAc_ac_cR4cXyz.s&quot;</code><br />
 <code>#include &quot;asm/d/bg/d_bg_s/PushPullCallBack__4dBgSFRC13cBgS_PolyInfoP10fopAc_ac_csQ29dBgW_Base13PushPullLabel.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/dBgS_CheckBWallPoly__FRC13cBgS_PolyInfo.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/dBgS_CheckBGroundPoly__FRC13cBgS_PolyInfo.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/dBgS_CheckBRoofPoly__FRC13cBgS_PolyInfo.s&quot;</code><br />
-<code>#include &quot;asm/d/bg/d_bg_s/dBgS_GetNY__FRC13cBgS_PolyInfo.s&quot;</code><br />
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for d_bg_s.cpp:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="d__bg__s_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -325,8 +286,8 @@ Functions</h2></td></tr>
 <tr class="separator:a8833ea30ee46643221badba21ac640e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a127917db155e522b6a9d2ee2a3f7642b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8cpp.html#a127917db155e522b6a9d2ee2a3f7642b">cBgW_CheckBGround__Ff</a> ()</td></tr>
 <tr class="separator:a127917db155e522b6a9d2ee2a3f7642b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3eeaf6c6fcaefc13512b4f3c6b0fef8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8cpp.html#aa3eeaf6c6fcaefc13512b4f3c6b0fef8">cBgW_CheckBRoof__Ff</a> ()</td></tr>
-<tr class="separator:aa3eeaf6c6fcaefc13512b4f3c6b0fef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2167b4bc03c676af40b7f2a3be1b9508"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8cpp.html#a2167b4bc03c676af40b7f2a3be1b9508">cBgW_CheckBRoof__Ff</a> (<a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>)</td></tr>
+<tr class="separator:a2167b4bc03c676af40b7f2a3be1b9508"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef003a048e80cb99540a04b3fc095bed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8cpp.html#aef003a048e80cb99540a04b3fc095bed">cBgW_CheckBWall__Ff</a> ()</td></tr>
 <tr class="separator:aef003a048e80cb99540a04b3fc095bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab005390d5a49aad5909569f937a00215"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8cpp.html#ab005390d5a49aad5909569f937a00215">_savegpr_22</a> ()</td></tr>
@@ -357,22 +318,24 @@ Functions</h2></td></tr>
 <tr class="separator:a3f61243ebf5cbb2ff90548d397b16772"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abed5bd59c54272a132a5b4da4beff66d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8cpp.html#abed5bd59c54272a132a5b4da4beff66d">_restgpr_29</a> ()</td></tr>
 <tr class="separator:abed5bd59c54272a132a5b4da4beff66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1af0ab21522127e15ddf5bbcc0a1176"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8cpp.html#ae1af0ab21522127e15ddf5bbcc0a1176">dBgS_MoveBGProc_Typical</a> (<a class="el" href="structdBgW.html">dBgW</a> *param_0, void *param_1, <a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;param_2, bool param_3, <a class="el" href="structcXyz.html">cXyz</a> *param_4, <a class="el" href="structcsXyz.html">csXyz</a> *param_5, <a class="el" href="structcsXyz.html">csXyz</a> *param_6)</td></tr>
-<tr class="separator:ae1af0ab21522127e15ddf5bbcc0a1176"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a690656825884f6a27d611a359cb52e5f"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8cpp.html#a690656825884f6a27d611a359cb52e5f">dBgS_MoveBGProc_RotY</a> (<a class="el" href="structdBgW.html">dBgW</a> *param_0, void *param_1, <a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;param_2, bool param_3, <a class="el" href="structcXyz.html">cXyz</a> *param_4, <a class="el" href="structcsXyz.html">csXyz</a> *param_5, <a class="el" href="structcsXyz.html">csXyz</a> *param_6)</td></tr>
-<tr class="separator:a690656825884f6a27d611a359cb52e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a669d9f3f5a5f8b89ed6cd9b400bcc8db"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8cpp.html#a669d9f3f5a5f8b89ed6cd9b400bcc8db">dBgS_MoveBGProc_TypicalRotY</a> (<a class="el" href="structdBgW.html">dBgW</a> *param_0, void *param_1, <a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;param_2, bool param_3, <a class="el" href="structcXyz.html">cXyz</a> *param_4, <a class="el" href="structcsXyz.html">csXyz</a> *param_5, <a class="el" href="structcsXyz.html">csXyz</a> *param_6)</td></tr>
-<tr class="separator:a669d9f3f5a5f8b89ed6cd9b400bcc8db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8d470b4bd9d6cacf44cc1991bfb424c"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8cpp.html#aa8d470b4bd9d6cacf44cc1991bfb424c">dBgS_MoveBGProc_Trans</a> (<a class="el" href="structdBgW.html">dBgW</a> *param_0, void *param_1, <a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;param_2, bool param_3, <a class="el" href="structcXyz.html">cXyz</a> *param_4, <a class="el" href="structcsXyz.html">csXyz</a> *param_5, <a class="el" href="structcsXyz.html">csXyz</a> *param_6)</td></tr>
-<tr class="separator:aa8d470b4bd9d6cacf44cc1991bfb424c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacff491412b484c4cb5554d3d0ce9bf5"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8cpp.html#aacff491412b484c4cb5554d3d0ce9bf5">dBgS_CheckBWallPoly</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;param_0)</td></tr>
-<tr class="separator:aacff491412b484c4cb5554d3d0ce9bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7ed34bfef0dc6db5032c9ff03c56f81"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8cpp.html#ae7ed34bfef0dc6db5032c9ff03c56f81">dBgS_CheckBGroundPoly</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;param_0)</td></tr>
-<tr class="separator:ae7ed34bfef0dc6db5032c9ff03c56f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af60e7780bd8c0c1753d82e3a6f3f8731"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8cpp.html#af60e7780bd8c0c1753d82e3a6f3f8731">dBgS_CheckBRoofPoly</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;param_0)</td></tr>
-<tr class="separator:af60e7780bd8c0c1753d82e3a6f3f8731"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a747719e8e72a75d0d9d6232e91ac0222"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8cpp.html#a747719e8e72a75d0d9d6232e91ac0222">dBgS_GetNY</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;param_0)</td></tr>
-<tr class="separator:a747719e8e72a75d0d9d6232e91ac0222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6358e3796fe188209ad2a620fe3d9c57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8cpp.html#a6358e3796fe188209ad2a620fe3d9c57">dBgS_MoveBGProc_Typical</a> (<a class="el" href="structdBgW.html">dBgW</a> *param_0, void *param_1, <a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;param_2, bool param_3, <a class="el" href="structcXyz.html">cXyz</a> *param_4, <a class="el" href="structcsXyz.html">csXyz</a> *param_5, <a class="el" href="structcsXyz.html">csXyz</a> *param_6)</td></tr>
+<tr class="separator:a6358e3796fe188209ad2a620fe3d9c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4f95a15b2fbfd93307e4d1a52f0d9d5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8cpp.html#af4f95a15b2fbfd93307e4d1a52f0d9d5">dBgS_MoveBGProc_RotY</a> (<a class="el" href="structdBgW.html">dBgW</a> *param_0, void *param_1, <a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;param_2, bool param_3, <a class="el" href="structcXyz.html">cXyz</a> *param_4, <a class="el" href="structcsXyz.html">csXyz</a> *param_5, <a class="el" href="structcsXyz.html">csXyz</a> *param_6)</td></tr>
+<tr class="separator:af4f95a15b2fbfd93307e4d1a52f0d9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cea5e9fa43656d3c502991932e60cf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8cpp.html#a9cea5e9fa43656d3c502991932e60cf3">dBgS_MoveBGProc_TypicalRotY</a> (<a class="el" href="structdBgW.html">dBgW</a> *param_0, void *param_1, <a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;param_2, bool param_3, <a class="el" href="structcXyz.html">cXyz</a> *param_4, <a class="el" href="structcsXyz.html">csXyz</a> *param_5, <a class="el" href="structcsXyz.html">csXyz</a> *param_6)</td></tr>
+<tr class="separator:a9cea5e9fa43656d3c502991932e60cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f9b5bbc83f5bd035b0da44a93312fe4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8cpp.html#a9f9b5bbc83f5bd035b0da44a93312fe4">dBgS_MoveBGProc_Trans</a> (<a class="el" href="structdBgW.html">dBgW</a> *param_0, void *param_1, <a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;param_2, bool param_3, <a class="el" href="structcXyz.html">cXyz</a> *param_4, <a class="el" href="structcsXyz.html">csXyz</a> *param_5, <a class="el" href="structcsXyz.html">csXyz</a> *param_6)</td></tr>
+<tr class="separator:a9f9b5bbc83f5bd035b0da44a93312fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8e9c27410c2a176b0b5fb2fe2309d3c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8cpp.html#af8e9c27410c2a176b0b5fb2fe2309d3c">dBgS_CheckBWallPoly</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;param_0)</td></tr>
+<tr class="separator:af8e9c27410c2a176b0b5fb2fe2309d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0890548a08e5448a230d40996b6f82d1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8cpp.html#a0890548a08e5448a230d40996b6f82d1">dBgS_CheckBGroundPoly</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;param_0)</td></tr>
+<tr class="separator:a0890548a08e5448a230d40996b6f82d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80263a77a1277eb3ec7a707e6531c0fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8cpp.html#a80263a77a1277eb3ec7a707e6531c0fb">dBgS_CheckBRoofPoly</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;param_0)</td></tr>
+<tr class="separator:a80263a77a1277eb3ec7a707e6531c0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b4be50898ef0b5d4c7bc139edf31970"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8cpp.html#a3b4be50898ef0b5d4c7bc139edf31970">dBgS_GetNY</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;param_0)</td></tr>
+<tr class="separator:a3b4be50898ef0b5d4c7bc139edf31970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a654869442f55f59feb512a56800007f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="d__bg__s__acch_8cpp.html#a224f313e37727ac84843a159aaf4eeb4">data_80450F68</a>[8]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8cpp.html#a654869442f55f59feb512a56800007f4">ALIGN_DECL</a> (8)</td></tr>
+<tr class="separator:a654869442f55f59feb512a56800007f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -386,10 +349,8 @@ Variables</h2></td></tr>
 <tr class="separator:ab2e181445ce14952151eeb09687821f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeee4f33b94cef687fb7a18a630f45b1d"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8cpp.html#aeee4f33b94cef687fb7a18a630f45b1d">__vt__8cM3dGPla</a> [3]</td></tr>
 <tr class="separator:aeee4f33b94cef687fb7a18a630f45b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50ad47c26bcc2867f2c14d349753f58e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8cpp.html#a50ad47c26bcc2867f2c14d349753f58e">g_dComIfG_gameInfo</a> [122384]</td></tr>
-<tr class="separator:a50ad47c26bcc2867f2c14d349753f58e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4a8ae794e30884673e7b20927a9f49e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8cpp.html#ad4a8ae794e30884673e7b20927a9f49e">l_SetCounter</a> [4+4]</td></tr>
-<tr class="separator:ad4a8ae794e30884673e7b20927a9f49e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90ab96277c72ee26e7a4a84f66e9313b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8cpp.html#a90ab96277c72ee26e7a4a84f66e9313b">l_SetCounter</a></td></tr>
+<tr class="separator:a90ab96277c72ee26e7a4a84f66e9313b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a802f01f035ea22a89183fde1be55c510"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8cpp.html#a802f01f035ea22a89183fde1be55c510">lit_3738</a> [1+1]</td></tr>
 <tr class="separator:a802f01f035ea22a89183fde1be55c510"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -683,6 +644,24 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a654869442f55f59feb512a56800007f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a654869442f55f59feb512a56800007f4">&#9670;&nbsp;</a></span>ALIGN_DECL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="d__bg__s__acch_8cpp.html#a224f313e37727ac84843a159aaf4eeb4">data_80450F68</a> [8] ALIGN_DECL </td>
+          <td>(</td>
+          <td class="paramtype">8&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="afc0e98c867f00da13a0eb5a1d648160f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afc0e98c867f00da13a0eb5a1d648160f">&#9670;&nbsp;</a></span>ArrowStickCallBack__4dBgSFRC13cBgS_PolyInfoP10fopAc_ac_cR4cXyz()</h2>
 
@@ -768,15 +747,16 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aa3eeaf6c6fcaefc13512b4f3c6b0fef8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3eeaf6c6fcaefc13512b4f3c6b0fef8">&#9670;&nbsp;</a></span>cBgW_CheckBRoof__Ff()</h2>
+<a id="a2167b4bc03c676af40b7f2a3be1b9508"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2167b4bc03c676af40b7f2a3be1b9508">&#9670;&nbsp;</a></span>cBgW_CheckBRoof__Ff()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void cBgW_CheckBRoof__Ff </td>
+          <td class="memname">bool cBgW_CheckBRoof__Ff </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -1057,14 +1037,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae7ed34bfef0dc6db5032c9ff03c56f81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7ed34bfef0dc6db5032c9ff03c56f81">&#9670;&nbsp;</a></span>dBgS_CheckBGroundPoly()</h2>
+<a id="a0890548a08e5448a230d40996b6f82d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0890548a08e5448a230d40996b6f82d1">&#9670;&nbsp;</a></span>dBgS_CheckBGroundPoly()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void dBgS_CheckBGroundPoly </td>
+          <td class="memname">bool dBgS_CheckBGroundPoly </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -1092,14 +1072,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="af60e7780bd8c0c1753d82e3a6f3f8731"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af60e7780bd8c0c1753d82e3a6f3f8731">&#9670;&nbsp;</a></span>dBgS_CheckBRoofPoly()</h2>
+<a id="a80263a77a1277eb3ec7a707e6531c0fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80263a77a1277eb3ec7a707e6531c0fb">&#9670;&nbsp;</a></span>dBgS_CheckBRoofPoly()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void dBgS_CheckBRoofPoly </td>
+          <td class="memname">bool dBgS_CheckBRoofPoly </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -1127,14 +1107,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aacff491412b484c4cb5554d3d0ce9bf5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacff491412b484c4cb5554d3d0ce9bf5">&#9670;&nbsp;</a></span>dBgS_CheckBWallPoly()</h2>
+<a id="af8e9c27410c2a176b0b5fb2fe2309d3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8e9c27410c2a176b0b5fb2fe2309d3c">&#9670;&nbsp;</a></span>dBgS_CheckBWallPoly()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void dBgS_CheckBWallPoly </td>
+          <td class="memname">bool dBgS_CheckBWallPoly </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -1162,14 +1142,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a747719e8e72a75d0d9d6232e91ac0222"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a747719e8e72a75d0d9d6232e91ac0222">&#9670;&nbsp;</a></span>dBgS_GetNY()</h2>
+<a id="a3b4be50898ef0b5d4c7bc139edf31970"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b4be50898ef0b5d4c7bc139edf31970">&#9670;&nbsp;</a></span>dBgS_GetNY()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void dBgS_GetNY </td>
+          <td class="memname"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> dBgS_GetNY </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -1197,8 +1177,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a690656825884f6a27d611a359cb52e5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a690656825884f6a27d611a359cb52e5f">&#9670;&nbsp;</a></span>dBgS_MoveBGProc_RotY()</h2>
+<a id="af4f95a15b2fbfd93307e4d1a52f0d9d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4f95a15b2fbfd93307e4d1a52f0d9d5">&#9670;&nbsp;</a></span>dBgS_MoveBGProc_RotY()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1207,7 +1187,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void dBgS_MoveBGProc_RotY </td>
+          <td class="memname">static void dBgS_MoveBGProc_RotY </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structdBgW.html">dBgW</a> *&#160;</td>
           <td class="paramname"><em>param_0</em>, </td>
@@ -1288,14 +1268,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aa8d470b4bd9d6cacf44cc1991bfb424c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8d470b4bd9d6cacf44cc1991bfb424c">&#9670;&nbsp;</a></span>dBgS_MoveBGProc_Trans()</h2>
+<a id="a9f9b5bbc83f5bd035b0da44a93312fe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f9b5bbc83f5bd035b0da44a93312fe4">&#9670;&nbsp;</a></span>dBgS_MoveBGProc_Trans()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void dBgS_MoveBGProc_Trans </td>
+          <td class="memname">void dBgS_MoveBGProc_Trans </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structdBgW.html">dBgW</a> *&#160;</td>
           <td class="paramname"><em>param_0</em>, </td>
@@ -1363,14 +1343,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae1af0ab21522127e15ddf5bbcc0a1176"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1af0ab21522127e15ddf5bbcc0a1176">&#9670;&nbsp;</a></span>dBgS_MoveBGProc_Typical()</h2>
+<a id="a6358e3796fe188209ad2a620fe3d9c57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6358e3796fe188209ad2a620fe3d9c57">&#9670;&nbsp;</a></span>dBgS_MoveBGProc_Typical()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void dBgS_MoveBGProc_Typical </td>
+          <td class="memname">void dBgS_MoveBGProc_Typical </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structdBgW.html">dBgW</a> *&#160;</td>
           <td class="paramname"><em>param_0</em>, </td>
@@ -1438,14 +1418,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a669d9f3f5a5f8b89ed6cd9b400bcc8db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a669d9f3f5a5f8b89ed6cd9b400bcc8db">&#9670;&nbsp;</a></span>dBgS_MoveBGProc_TypicalRotY()</h2>
+<a id="a9cea5e9fa43656d3c502991932e60cf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cea5e9fa43656d3c502991932e60cf3">&#9670;&nbsp;</a></span>dBgS_MoveBGProc_TypicalRotY()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void dBgS_MoveBGProc_TypicalRotY </td>
+          <td class="memname">void dBgS_MoveBGProc_TypicalRotY </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structdBgW.html">dBgW</a> *&#160;</td>
           <td class="paramname"><em>param_0</em>, </td>
@@ -2582,26 +2562,12 @@ Variables</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_80450F68</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a50ad47c26bcc2867f2c14d349753f58e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50ad47c26bcc2867f2c14d349753f58e">&#9670;&nbsp;</a></span>g_dComIfG_gameInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> g_dComIfG_gameInfo[122384]</td>
+          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_80450F68</td>
         </tr>
       </table>
   </td>
@@ -2613,8 +2579,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad4a8ae794e30884673e7b20927a9f49e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4a8ae794e30884673e7b20927a9f49e">&#9670;&nbsp;</a></span>l_SetCounter</h2>
+<a id="a90ab96277c72ee26e7a4a84f66e9313b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90ab96277c72ee26e7a4a84f66e9313b">&#9670;&nbsp;</a></span>l_SetCounter</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2623,7 +2589,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> l_SetCounter[4+4]</td>
+          <td class="memname">int l_SetCounter</td>
         </tr>
       </table>
   </td>

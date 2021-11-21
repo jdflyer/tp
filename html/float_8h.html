@@ -73,6 +73,9 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">float.h File Reference</div>  </div>
 </div><!--header-->
@@ -91,11 +94,268 @@ $(function() {
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="float_8h__dep__incl.svg" width="214" height="142"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="float_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div>
 <p><a href="float_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ab7325df23719d1e80c90b4adc1594af9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="float_8h.html#ab7325df23719d1e80c90b4adc1594af9">FP_SNAN</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ab7325df23719d1e80c90b4adc1594af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa74becf56a0db894ec0aacdeeddadd8c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="float_8h.html#aa74becf56a0db894ec0aacdeeddadd8c">FP_QNAN</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:aa74becf56a0db894ec0aacdeeddadd8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f64bcc64f8b84dd9daf5a4e56abf0ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="float_8h.html#a4f64bcc64f8b84dd9daf5a4e56abf0ca">FP_INFINITE</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a4f64bcc64f8b84dd9daf5a4e56abf0ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32eba50da417c9f303ba49583d5b9f40"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="float_8h.html#a32eba50da417c9f303ba49583d5b9f40">FP_ZERO</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a32eba50da417c9f303ba49583d5b9f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9e29bb9e853934c4ba647c840b7e5de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="float_8h.html#ab9e29bb9e853934c4ba647c840b7e5de">FP_NORMAL</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:ab9e29bb9e853934c4ba647c840b7e5de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbc0a13ec75c05d238ca12ef1f8c6b2b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="float_8h.html#adbc0a13ec75c05d238ca12ef1f8c6b2b">FP_SUBNORMAL</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:adbc0a13ec75c05d238ca12ef1f8c6b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d481cc6e6a8ff729147ed46e61a4c9f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="float_8h.html#a1d481cc6e6a8ff729147ed46e61a4c9f">FP_NAN</a>&#160;&#160;&#160;<a class="el" href="float_8h.html#aa74becf56a0db894ec0aacdeeddadd8c">FP_QNAN</a></td></tr>
+<tr class="separator:a1d481cc6e6a8ff729147ed46e61a4c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dad1ca35286e31c328c2b1f51f330c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="float_8h.html#a6dad1ca35286e31c328c2b1f51f330c2">fpclassify</a>(x)&#160;&#160;&#160;((sizeof(x) == sizeof(float)) ? <a class="el" href="float_8h.html#a00dc1f1502c7a2b4abbd3ffe626bd8bc">__fpclassifyf</a>(x) : <a class="el" href="float_8h.html#a405002f0f4a23fe1e8818a81f95593bf">__fpclassifyd</a>(x))</td></tr>
+<tr class="separator:a6dad1ca35286e31c328c2b1f51f330c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa63ffa98f213f62e536b073c28cb3cd8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="float_8h.html#aa63ffa98f213f62e536b073c28cb3cd8">signbit</a>(x)&#160;&#160;&#160;((sizeof(x) == sizeof(float)) ? <a class="el" href="float_8h.html#aeaffabe1b9b6a316c32560ef4a64fcb3">__signbitf</a>(x) : <a class="el" href="float_8h.html#a72d23f0bfd4e74167107961373eb4fea">__signbitd</a>(x))</td></tr>
+<tr class="separator:aa63ffa98f213f62e536b073c28cb3cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaffabe1b9b6a316c32560ef4a64fcb3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="float_8h.html#aeaffabe1b9b6a316c32560ef4a64fcb3">__signbitf</a>(x)&#160;&#160;&#160;((*(<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>*)&amp;(x)) &amp; 0x80)</td></tr>
+<tr class="separator:aeaffabe1b9b6a316c32560ef4a64fcb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72d23f0bfd4e74167107961373eb4fea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="float_8h.html#a72d23f0bfd4e74167107961373eb4fea">__signbitd</a>(x)&#160;&#160;&#160;((*(<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>*)&amp;(x)) &amp; 0x80)</td></tr>
+<tr class="separator:a72d23f0bfd4e74167107961373eb4fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a00dc1f1502c7a2b4abbd3ffe626bd8bc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="float_8h.html#a00dc1f1502c7a2b4abbd3ffe626bd8bc">__fpclassifyf</a> (float __value)</td></tr>
+<tr class="separator:a00dc1f1502c7a2b4abbd3ffe626bd8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a405002f0f4a23fe1e8818a81f95593bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="float_8h.html#a405002f0f4a23fe1e8818a81f95593bf">__fpclassifyd</a> (double __value)</td></tr>
+<tr class="separator:a405002f0f4a23fe1e8818a81f95593bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a72d23f0bfd4e74167107961373eb4fea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72d23f0bfd4e74167107961373eb4fea">&#9670;&nbsp;</a></span>__signbitd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __signbitd</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;((*(<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>*)&amp;(x)) &amp; 0x80)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeaffabe1b9b6a316c32560ef4a64fcb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaffabe1b9b6a316c32560ef4a64fcb3">&#9670;&nbsp;</a></span>__signbitf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __signbitf</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;((*(<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>*)&amp;(x)) &amp; 0x80)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4f64bcc64f8b84dd9daf5a4e56abf0ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f64bcc64f8b84dd9daf5a4e56abf0ca">&#9670;&nbsp;</a></span>FP_INFINITE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FP_INFINITE&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d481cc6e6a8ff729147ed46e61a4c9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d481cc6e6a8ff729147ed46e61a4c9f">&#9670;&nbsp;</a></span>FP_NAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FP_NAN&#160;&#160;&#160;<a class="el" href="float_8h.html#aa74becf56a0db894ec0aacdeeddadd8c">FP_QNAN</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9e29bb9e853934c4ba647c840b7e5de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9e29bb9e853934c4ba647c840b7e5de">&#9670;&nbsp;</a></span>FP_NORMAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FP_NORMAL&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa74becf56a0db894ec0aacdeeddadd8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa74becf56a0db894ec0aacdeeddadd8c">&#9670;&nbsp;</a></span>FP_QNAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FP_QNAN&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7325df23719d1e80c90b4adc1594af9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7325df23719d1e80c90b4adc1594af9">&#9670;&nbsp;</a></span>FP_SNAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FP_SNAN&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adbc0a13ec75c05d238ca12ef1f8c6b2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbc0a13ec75c05d238ca12ef1f8c6b2b">&#9670;&nbsp;</a></span>FP_SUBNORMAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FP_SUBNORMAL&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a32eba50da417c9f303ba49583d5b9f40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32eba50da417c9f303ba49583d5b9f40">&#9670;&nbsp;</a></span>FP_ZERO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FP_ZERO&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6dad1ca35286e31c328c2b1f51f330c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dad1ca35286e31c328c2b1f51f330c2">&#9670;&nbsp;</a></span>fpclassify</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define fpclassify</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;((sizeof(x) == sizeof(float)) ? <a class="el" href="float_8h.html#a00dc1f1502c7a2b4abbd3ffe626bd8bc">__fpclassifyf</a>(x) : <a class="el" href="float_8h.html#a405002f0f4a23fe1e8818a81f95593bf">__fpclassifyd</a>(x))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa63ffa98f213f62e536b073c28cb3cd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa63ffa98f213f62e536b073c28cb3cd8">&#9670;&nbsp;</a></span>signbit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define signbit</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;((sizeof(x) == sizeof(float)) ? <a class="el" href="float_8h.html#aeaffabe1b9b6a316c32560ef4a64fcb3">__signbitf</a>(x) : <a class="el" href="float_8h.html#a72d23f0bfd4e74167107961373eb4fea">__signbitd</a>(x))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a405002f0f4a23fe1e8818a81f95593bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a405002f0f4a23fe1e8818a81f95593bf">&#9670;&nbsp;</a></span>__fpclassifyd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int __fpclassifyd </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>__value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a00dc1f1502c7a2b4abbd3ffe626bd8bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00dc1f1502c7a2b4abbd3ffe626bd8bc">&#9670;&nbsp;</a></span>__fpclassifyf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int __fpclassifyf </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>__value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

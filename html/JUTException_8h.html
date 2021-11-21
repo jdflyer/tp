@@ -74,17 +74,22 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">JUTException.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="JKRThread_8h_source.html">JSystem/JKernel/JKRThread.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JSUList_8h_source.html">JSystem/JSupport/JSUList.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JUTDirectPrint_8h_source.html">JSystem/JUtility/JUTDirectPrint.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="JUTGamePad_8h_source.html">JSystem/JUtility/JUTGamePad.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="____va__arg_8h_source.html">Runtime.PPCEABI.H/__va_arg.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GX_8h_source.html">dolphin/gx/GX.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="global_8h_source.html">global.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for JUTException.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -106,17 +111,141 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__GXGamma.html">_GXGamma</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJUTExternalFB.html">JUTExternalFB</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJUTDirectPrint.html">JUTDirectPrint</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJUTExternalFB.html">JUTExternalFB</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJUTException.html">JUTException</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJUTException_1_1EInfoPage.html">JUTException::EInfoPage</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJUTException_1_1JUTExMapFile.html">JUTException::JUTExMapFile</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a5e4015abac33e6d0ea819de2709313e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JUTException_8h.html#a5e4015abac33e6d0ea819de2709313e0">JUT_PRINT_GPR</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a5e4015abac33e6d0ea819de2709313e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8026f2a3d567f7c878e235d715d511fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JUTException_8h.html#a8026f2a3d567f7c878e235d715d511fe">JUT_PRINT_GPR_MAP</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a8026f2a3d567f7c878e235d715d511fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc80328eac5a860a95c05e23ea289678"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JUTException_8h.html#abc80328eac5a860a95c05e23ea289678">JUT_PRINT_SRR0_MAP</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:abc80328eac5a860a95c05e23ea289678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab88fd64c7cae77004307837f69128274"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JUTException_8h.html#ab88fd64c7cae77004307837f69128274">JUT_PRINT_FLOAT</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:ab88fd64c7cae77004307837f69128274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7618ad2f8b9deaac3c11b3e414a25ab7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JUTException_8h.html#a7618ad2f8b9deaac3c11b3e414a25ab7">JUT_PRINT_STACK</a>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:a7618ad2f8b9deaac3c11b3e414a25ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a9935df93700811e9e9bea54be822eb6d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JUTException_8h.html#a9935df93700811e9e9bea54be822eb6d">STATIC_ASSERT</a> (sizeof(<a class="el" href="classJUTExternalFB.html">JUTExternalFB</a>)==0x14)</td></tr>
+<tr class="separator:a9935df93700811e9e9bea54be822eb6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5066319009a75fe36d415df214e3386"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JUTException_8h.html#ad5066319009a75fe36d415df214e3386">STATIC_ASSERT</a> (sizeof(<a class="el" href="structJUTException.html">JUTException</a>)==0xA4)</td></tr>
+<tr class="separator:ad5066319009a75fe36d415df214e3386"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ab88fd64c7cae77004307837f69128274"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab88fd64c7cae77004307837f69128274">&#9670;&nbsp;</a></span>JUT_PRINT_FLOAT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JUT_PRINT_FLOAT&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e4015abac33e6d0ea819de2709313e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e4015abac33e6d0ea819de2709313e0">&#9670;&nbsp;</a></span>JUT_PRINT_GPR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JUT_PRINT_GPR&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8026f2a3d567f7c878e235d715d511fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8026f2a3d567f7c878e235d715d511fe">&#9670;&nbsp;</a></span>JUT_PRINT_GPR_MAP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JUT_PRINT_GPR_MAP&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc80328eac5a860a95c05e23ea289678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc80328eac5a860a95c05e23ea289678">&#9670;&nbsp;</a></span>JUT_PRINT_SRR0_MAP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JUT_PRINT_SRR0_MAP&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7618ad2f8b9deaac3c11b3e414a25ab7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7618ad2f8b9deaac3c11b3e414a25ab7">&#9670;&nbsp;</a></span>JUT_PRINT_STACK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JUT_PRINT_STACK&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ad5066319009a75fe36d415df214e3386"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5066319009a75fe36d415df214e3386">&#9670;&nbsp;</a></span>STATIC_ASSERT() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">STATIC_ASSERT </td>
+          <td>(</td>
+          <td class="paramtype">sizeof(<a class="el" href="structJUTException.html">JUTException</a>)&#160;</td>
+          <td class="paramname"> = <code>=0xA4</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9935df93700811e9e9bea54be822eb6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9935df93700811e9e9bea54be822eb6d">&#9670;&nbsp;</a></span>STATIC_ASSERT() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">STATIC_ASSERT </td>
+          <td>(</td>
+          <td class="paramtype">sizeof(<a class="el" href="classJUTExternalFB.html">JUTExternalFB</a>)&#160;</td>
+          <td class="paramname"> = <code>=0x14</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -96,8 +96,6 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6a923a3a8299fa6db1498fe26dad6fea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8cpp.html#a6a923a3a8299fa6db1498fe26dad6fea">OSSetErrorHandler</a> ()</td></tr>
-<tr class="separator:a6a923a3a8299fa6db1498fe26dad6fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2794f652f2183164909513ca32ffa873"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8cpp.html#a2794f652f2183164909513ca32ffa873">__OSUnhandledException</a> ()</td></tr>
 <tr class="separator:a2794f652f2183164909513ca32ffa873"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade4b47b8fab54c8f6a71bf594943c828"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8cpp.html#ade4b47b8fab54c8f6a71bf594943c828">OSReport</a> ()</td></tr>
@@ -130,6 +128,8 @@ Functions</h2></td></tr>
 <tr class="separator:ae080e9749b475ef200ae0b6be97cd7c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3a3da27911d7fc3f4f08506ac539ea3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8cpp.html#ad3a3da27911d7fc3f4f08506ac539ea3">OSGetTime</a> ()</td></tr>
 <tr class="separator:ad3a3da27911d7fc3f4f08506ac539ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76ef6ca3f5511bb87745af0625744ff5"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8cpp.html#a76ef6ca3f5511bb87745af0625744ff5">OSSetErrorHandler</a> (<a class="el" href="OSError_8h.html#a753e236842eaa668b6494fc10286df4a">OSError</a>, <a class="el" href="OSError_8h.html#ae0fa82d69b0995d20d2a0d8e627d089d">OSErrorHandler</a>)</td></tr>
+<tr class="separator:a76ef6ca3f5511bb87745af0625744ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -368,17 +368,28 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a6a923a3a8299fa6db1498fe26dad6fea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a923a3a8299fa6db1498fe26dad6fea">&#9670;&nbsp;</a></span>OSSetErrorHandler()</h2>
+<a id="a76ef6ca3f5511bb87745af0625744ff5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76ef6ca3f5511bb87745af0625744ff5">&#9670;&nbsp;</a></span>OSSetErrorHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void OSSetErrorHandler </td>
+          <td class="memname">asm void OSSetErrorHandler </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="OSError_8h.html#a753e236842eaa668b6494fc10286df4a">OSError</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="OSError_8h.html#ae0fa82d69b0995d20d2a0d8e627d089d">OSErrorHandler</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1075,7 +1086,7 @@ Variables</h2></td></tr>
 <div class="line">    </div>
 <div class="line">    <a class="code" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aOSError_8cpp_html_a2794f652f2183164909513ca32ffa873"><div class="ttname"><a href="OSError_8cpp.html#a2794f652f2183164909513ca32ffa873">__OSUnhandledException</a></div><div class="ttdeci">void __OSUnhandledException()</div><div class="ttdef"><b>Definition:</b> OSError.cpp:649</div></div>
+<div class="ttc" id="aOSError_8cpp_html_a2794f652f2183164909513ca32ffa873"><div class="ttname"><a href="OSError_8cpp.html#a2794f652f2183164909513ca32ffa873">__OSUnhandledException</a></div><div class="ttdeci">void __OSUnhandledException()</div><div class="ttdef"><b>Definition:</b> OSError.cpp:648</div></div>
 <div class="ttc" id="atypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> types.h:34</div></div>
 </div><!-- fragment -->
 </div>

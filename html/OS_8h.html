@@ -85,13 +85,15 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="____va__arg_8h_source.html">Runtime.PPCEABI.H/__va_arg.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OSError_8h_source.html">dolphin/os/OSError.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OSLink_8h_source.html">dolphin/os/OSLink.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dvd_8h_source.html">dolphin/dvd/dvd.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for OS.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="OS_8h__incl.svg" width="355" height="202"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="OS_8h__incl.svg" width="100%" height="451"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -132,6 +134,12 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a86a02c5cd51c9719d4741048193bbb54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OS_8h.html#a86a02c5cd51c9719d4741048193bbb54">OS_BUS_CLOCK</a>&#160;&#160;&#160;(*(<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>*)0x800000F8)</td></tr>
+<tr class="separator:a86a02c5cd51c9719d4741048193bbb54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73ac22d5e2756eb8ebf89a603228206a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OS_8h.html#a73ac22d5e2756eb8ebf89a603228206a">OS_CORE_CLOCK</a>&#160;&#160;&#160;(*(<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>*)0x800000FC)</td></tr>
+<tr class="separator:a73ac22d5e2756eb8ebf89a603228206a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab825b9df03eb172646dc925c08b74ba6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OS_8h.html#ab825b9df03eb172646dc925c08b74ba6">OS_TIMER_CLOCK</a>&#160;&#160;&#160;(<a class="el" href="OS_8h.html#a86a02c5cd51c9719d4741048193bbb54">OS_BUS_CLOCK</a> / 4)</td></tr>
+<tr class="separator:ab825b9df03eb172646dc925c08b74ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab8d4a132fbbd592e4ac9ce5b2a1da21"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OS_8h.html#aab8d4a132fbbd592e4ac9ce5b2a1da21">OS_MESSAGE_NON_BLOCKING</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:aab8d4a132fbbd592e4ac9ce5b2a1da21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97ffad36c4f71ab4098dafe6a5d0c400"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OS_8h.html#a97ffad36c4f71ab4098dafe6a5d0c400">OS_MESSAGE_BLOCKING</a>&#160;&#160;&#160;1</td></tr>
@@ -315,6 +323,34 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a86a02c5cd51c9719d4741048193bbb54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86a02c5cd51c9719d4741048193bbb54">&#9670;&nbsp;</a></span>OS_BUS_CLOCK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OS_BUS_CLOCK&#160;&#160;&#160;(*(<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>*)0x800000F8)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a73ac22d5e2756eb8ebf89a603228206a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73ac22d5e2756eb8ebf89a603228206a">&#9670;&nbsp;</a></span>OS_CORE_CLOCK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OS_CORE_CLOCK&#160;&#160;&#160;(*(<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>*)0x800000FC)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a97ffad36c4f71ab4098dafe6a5d0c400"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a97ffad36c4f71ab4098dafe6a5d0c400">&#9670;&nbsp;</a></span>OS_MESSAGE_BLOCKING</h2>
 
@@ -407,6 +443,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define OS_THREAD_STATE_WAITING&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab825b9df03eb172646dc925c08b74ba6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab825b9df03eb172646dc925c08b74ba6">&#9670;&nbsp;</a></span>OS_TIMER_CLOCK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OS_TIMER_CLOCK&#160;&#160;&#160;(<a class="el" href="OS_8h.html#a86a02c5cd51c9719d4741048193bbb54">OS_BUS_CLOCK</a> / 4)</td>
         </tr>
       </table>
 </div><div class="memdoc">
