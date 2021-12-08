@@ -85,23 +85,13 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="functionvalue_8h_source.html">JSystem/JStudio/JStudio/functionvalue.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/toFunction_outside__Q27JStudio14TFunctionValueFi.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/__ct__Q27JStudio14TFunctionValueFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/__dt__Q27JStudio14TFunctionValueFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/refer_initialize__Q27JStudio29TFunctionValueAttribute_referFv.s&quot;</code><br />
+<code>#include &quot;<a class="el" href="math_8h_source.html">msl_c/math.h</a>&quot;</code><br />
 <code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/interpolateValue_hermite__Q27JStudio13functionvalueFddddddd.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/interpolateValue_BSpline_uniform__Q27JStudio13functionvalueFddddd.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/interpolateValue_BSpline_nonuniform__Q27JStudio13functionvalueFdPCdPCd.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/extrapolateParameter_turn__Q27JStudio13functionvalueFdd.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/range_initialize__Q27JStudio29TFunctionValueAttribute_rangeFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/range_prepare__Q27JStudio29TFunctionValueAttribute_rangeFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/range_set__Q27JStudio29TFunctionValueAttribute_rangeFdd.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/range_getParameter__Q27JStudio29TFunctionValueAttribute_rangeCFddd.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/__ct__Q27JStudio29TFunctionValueAttribute_rangeFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/__ct__Q27JStudio24TFunctionValue_compositeFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/getAttributeSet__Q27JStudio24TFunctionValue_compositeFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/initialize__Q27JStudio24TFunctionValue_compositeFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/getValue__Q27JStudio24TFunctionValue_compositeFd.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/func_80281E5C.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/func_80281EC8.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/func_8028202C.s&quot;</code><br />
@@ -109,95 +99,29 @@ $(function() {
 <code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/func_80282118.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/func_80282200.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/func_80282284.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/__ct__Q27JStudio23TFunctionValue_constantFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/getAttributeSet__Q27JStudio23TFunctionValue_constantFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/initialize__Q27JStudio23TFunctionValue_constantFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/getValue__Q27JStudio23TFunctionValue_constantFd.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/__ct__Q27JStudio25TFunctionValue_transitionFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/getAttributeSet__Q27JStudio25TFunctionValue_transitionFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/initialize__Q27JStudio25TFunctionValue_transitionFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/prepare__Q27JStudio25TFunctionValue_transitionFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/getValue__Q27JStudio25TFunctionValue_transitionFd.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/__ct__Q27JStudio19TFunctionValue_listFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/getAttributeSet__Q27JStudio19TFunctionValue_listFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/initialize__Q27JStudio19TFunctionValue_listFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/prepare__Q27JStudio19TFunctionValue_listFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/getValue__Q27JStudio19TFunctionValue_listFd.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/func_80282C10.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/func_80282C24.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/func_80282C58.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/func_80282CA8.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/__ct__Q27JStudio29TFunctionValue_list_parameterFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/getAttributeSet__Q27JStudio29TFunctionValue_list_parameterFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/data_set__Q27JStudio29TFunctionValue_list_parameterFPCfUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/initialize__Q27JStudio29TFunctionValue_list_parameterFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/prepare__Q27JStudio29TFunctionValue_list_parameterFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/getValue__Q27JStudio29TFunctionValue_list_parameterFd.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/func_80282FE8.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/func_80282FF4.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/func_80283024.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/func_80283060.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/__ct__Q27JStudio22TFunctionValue_hermiteFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/getAttributeSet__Q27JStudio22TFunctionValue_hermiteFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/data_set__Q27JStudio22TFunctionValue_hermiteFPCfUlUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/initialize__Q27JStudio22TFunctionValue_hermiteFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/prepare__Q27JStudio22TFunctionValue_hermiteFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/getValue__Q27JStudio22TFunctionValue_hermiteFd.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/extrapolateParameter_repeat__Q27JStudio13functionvalueFdd.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/extrapolateParameter_clamp__Q27JStudio13functionvalueFdd.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/func_802835DC.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/func_80283634.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/func_80283858.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/func_802838C8.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/__dt__Q27JStudio22TFunctionValue_hermiteFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/__dt__Q27JStudio29TFunctionValue_list_parameterFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/__dt__Q27JStudio19TFunctionValue_listFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/__dt__Q27JStudio25TFunctionValue_transitionFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/__dt__Q27JStudio23TFunctionValue_constantFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/__dt__Q27JStudio24TFunctionValue_compositeFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/func_80283E24.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JStudio/JStudio/functionvalue/func_80283EB8.s&quot;</code><br />
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for functionvalue.cpp:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="functionvalue_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJGadget_1_1TVector__pointer.html">JGadget::TVector_pointer&lt; A1 &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJGadget_1_1TVector__pointer____template0.html">JGadget::TVector_pointer__template0</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJGadget_1_1TAllocator.html">JGadget::TAllocator&lt; A1 &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJGadget_1_1TAllocator____template0.html">JGadget::TAllocator__template0</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJGadget_1_1TVector__pointer__void.html">JGadget::TVector_pointer_void</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1TFunctionValue.html">JStudio::TFunctionValue</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1TFunctionValueAttribute__refer.html">JStudio::TFunctionValueAttribute_refer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1functionvalue.html">JStudio::functionvalue</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1TFunctionValueAttribute__range.html">JStudio::TFunctionValueAttribute_range</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1TFunctionValue__composite.html">JStudio::TFunctionValue_composite</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1TFunctionValue__composite_1_1TData.html">JStudio::TFunctionValue_composite::TData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1TFunctionValue__constant.html">JStudio::TFunctionValue_constant</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1TFunctionValue__transition.html">JStudio::TFunctionValue_transition</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1TFunctionValue__list.html">JStudio::TFunctionValue_list</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1TFunctionValue__list_1_1TIndexData__.html">JStudio::TFunctionValue_list::TIndexData_</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1TFunctionValue__list__parameter.html">JStudio::TFunctionValue_list_parameter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1TFunctionValue__list__parameter_1_1TIterator__data__.html">JStudio::TFunctionValue_list_parameter::TIterator_data_</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1TFunctionValue__hermite.html">JStudio::TFunctionValue_hermite</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1TFunctionValue__hermite_1_1TIterator__data__.html">JStudio::TFunctionValue_hermite::TIterator_data_</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1less.html">std::less&lt; A1 &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1less____template0.html">std::less__template0</a></td></tr>
@@ -207,9 +131,11 @@ Classes</h2></td></tr>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceJGadget"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJGadget.html">JGadget</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacestd"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestd.html">std</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceJStudio"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJStudio.html">JStudio</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacestd"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestd.html">std</a></td></tr>
+<tr class="memitem:namespaceJStudio_1_1functionvalue"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJStudio_1_1functionvalue.html">JStudio::functionvalue</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -390,10 +316,10 @@ Functions</h2></td></tr>
 <tr class="separator:a9c3619bebbba282d76e1f7bcd887608f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a361c4c33cc1a713d4b209b3ed1578b30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functionvalue_8cpp.html#a361c4c33cc1a713d4b209b3ed1578b30">__dt__Q27JStudio24TFunctionValue_compositeFv</a> ()</td></tr>
 <tr class="separator:a361c4c33cc1a713d4b209b3ed1578b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af733537ebb5c1ce560b9fd4ffb3f7329"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functionvalue_8cpp.html#af733537ebb5c1ce560b9fd4ffb3f7329">func_80283E24</a> (void *_this, <a class="el" href="structJStudio_1_1TFunctionValue__list__parameter_1_1TIterator__data__.html">JStudio::TFunctionValue_list_parameter::TIterator_data_</a>, <a class="el" href="structJStudio_1_1TFunctionValue__list__parameter_1_1TIterator__data__.html">JStudio::TFunctionValue_list_parameter::TIterator_data_</a>, <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> const &amp;, <a class="el" href="structstd_1_1less.html">std::less</a>&lt; <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> &gt;)</td></tr>
-<tr class="separator:af733537ebb5c1ce560b9fd4ffb3f7329"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad672ed2450a710016a8155e3f2dafae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functionvalue_8cpp.html#aad672ed2450a710016a8155e3f2dafae">func_80283EB8</a> (void *_this, <a class="el" href="structJStudio_1_1TFunctionValue__hermite_1_1TIterator__data__.html">JStudio::TFunctionValue_hermite::TIterator_data_</a>, <a class="el" href="structJStudio_1_1TFunctionValue__hermite_1_1TIterator__data__.html">JStudio::TFunctionValue_hermite::TIterator_data_</a>, <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> const &amp;, <a class="el" href="structstd_1_1less.html">std::less</a>&lt; <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> &gt;)</td></tr>
-<tr class="separator:aad672ed2450a710016a8155e3f2dafae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53b34f6f384b2739b0828c385242991d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functionvalue_8cpp.html#a53b34f6f384b2739b0828c385242991d">func_80283E24</a> (void *_this, <a class="el" href="structJStudio_1_1TFunctionValue__list__parameter_1_1TIterator__data__.html">JStudio::TFunctionValue_list_parameter::TIterator_data_</a>, <a class="el" href="structJStudio_1_1TFunctionValue__list__parameter_1_1TIterator__data__.html">JStudio::TFunctionValue_list_parameter::TIterator_data_</a>, <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> const &amp;, <a class="el" href="structstd_1_1less.html">std::less</a>&lt; <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> &gt;)</td></tr>
+<tr class="separator:a53b34f6f384b2739b0828c385242991d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97cae11351a1de8c9838c311a3942581"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functionvalue_8cpp.html#a97cae11351a1de8c9838c311a3942581">func_80283EB8</a> (void *_this, <a class="el" href="structJStudio_1_1TFunctionValue__hermite_1_1TIterator__data__.html">JStudio::TFunctionValue_hermite::TIterator_data_</a>, <a class="el" href="structJStudio_1_1TFunctionValue__hermite_1_1TIterator__data__.html">JStudio::TFunctionValue_hermite::TIterator_data_</a>, <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> const &amp;, <a class="el" href="structstd_1_1less.html">std::less</a>&lt; <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> &gt;)</td></tr>
+<tr class="separator:a97cae11351a1de8c9838c311a3942581"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a498e6440d5c316e2672169ee4ed92309"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functionvalue_8cpp.html#a498e6440d5c316e2672169ee4ed92309">__dl__FPv</a> ()</td></tr>
 <tr class="separator:a498e6440d5c316e2672169ee4ed92309"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a665d7dd468c3f9a48f144443b6349066"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functionvalue_8cpp.html#a665d7dd468c3f9a48f144443b6349066">func_802DCCD0</a> ()</td></tr>
@@ -414,19 +340,29 @@ Functions</h2></td></tr>
 <tr class="separator:abed5bd59c54272a132a5b4da4beff66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32a18dcb2af867dc724f6197ef475ee3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functionvalue_8cpp.html#a32a18dcb2af867dc724f6197ef475ee3">div</a> ()</td></tr>
 <tr class="separator:a32a18dcb2af867dc724f6197ef475ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02babedaeff0ff9b077ec10773bd6e1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functionvalue_8cpp.html#a02babedaeff0ff9b077ec10773bd6e1e">floor</a> ()</td></tr>
-<tr class="separator:a02babedaeff0ff9b077ec10773bd6e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f3b8371f9b0da9b9b06577f82b6dbdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functionvalue_8cpp.html#a7f3b8371f9b0da9b9b06577f82b6dbdc">fmod</a> ()</td></tr>
-<tr class="separator:a7f3b8371f9b0da9b9b06577f82b6dbdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba673bea78d38172c47dfa6c87927178"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functionvalue_8cpp.html#aba673bea78d38172c47dfa6c87927178">COMPILER_STRIP_GATE</a> (0x8039A9F0, &amp;<a class="el" href="functionvalue_8cpp.html#aff0ca0931736b85e11e17279bd4a4102">data_8039A9F0</a>)</td></tr>
-<tr class="separator:aba673bea78d38172c47dfa6c87927178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a702196917248957a8fa4d5a0a231484b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJStudio_1_1functionvalue.html#a702196917248957a8fa4d5a0a231484b">JStudio::functionvalue::extrapolateParameter_raw</a> (<a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a>, <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a>)</td></tr>
+<tr class="separator:a702196917248957a8fa4d5a0a231484b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5614f98e743ec7da01d6a2f800fa8bb0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJStudio_1_1functionvalue.html#a5614f98e743ec7da01d6a2f800fa8bb0">JStudio::functionvalue::extrapolateParameter_repeat</a> (<a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a>, <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a>)</td></tr>
+<tr class="separator:a5614f98e743ec7da01d6a2f800fa8bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d5edad934e920b4c8951d8f57c21aa3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJStudio_1_1functionvalue.html#a3d5edad934e920b4c8951d8f57c21aa3">JStudio::functionvalue::extrapolateParameter_turn</a> (<a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a>, <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a>)</td></tr>
+<tr class="separator:a3d5edad934e920b4c8951d8f57c21aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cff68fa0f77e03c018d976e3150ecdb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJStudio_1_1functionvalue.html#a9cff68fa0f77e03c018d976e3150ecdb">JStudio::functionvalue::extrapolateParameter_clamp</a> (<a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a>, <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a>)</td></tr>
+<tr class="separator:a9cff68fa0f77e03c018d976e3150ecdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0c32ec51e3940b2703719ce22d0da88"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJStudio_1_1functionvalue.html#aa0c32ec51e3940b2703719ce22d0da88">JStudio::functionvalue::interpolateValue_hermite</a> (<a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> param_0, <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> param_1, <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> param_2, <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> param_3, <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> param_4, <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> param_5, <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> param_6)</td></tr>
+<tr class="separator:aa0c32ec51e3940b2703719ce22d0da88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8015eac591e55d98a2f16181179266c6"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJStudio_1_1functionvalue.html#a8015eac591e55d98a2f16181179266c6">JStudio::functionvalue::interpolateValue_BSpline_uniform</a> (<a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> param_0, <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> param_1, <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> param_2, <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> param_3, <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> param_4)</td></tr>
+<tr class="separator:a8015eac591e55d98a2f16181179266c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f8f91bece7f19882f21f26224b16191"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJStudio_1_1functionvalue.html#a5f8f91bece7f19882f21f26224b16191">JStudio::functionvalue::interpolateValue_BSpline_nonuniform</a> (<a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> param_0, <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> const *param_1, <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> const *param_2)</td></tr>
+<tr class="separator:a5f8f91bece7f19882f21f26224b16191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3eb8a43b2da1d60c846b65206e5b857"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJStudio_1_1functionvalue.html#aa3eb8a43b2da1d60c846b65206e5b857">JStudio::functionvalue::interpolateValue_linear</a> (double a1, double a2, double a3, double a4, double a5)</td></tr>
+<tr class="separator:aa3eb8a43b2da1d60c846b65206e5b857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a560a5414dad76321b2c26fe4183880ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJStudio_1_1functionvalue.html#a560a5414dad76321b2c26fe4183880ae">JStudio::functionvalue::interpolateValue_linear_1</a> (<a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> a1, <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> a2, <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> a3, <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> a4)</td></tr>
+<tr class="separator:a560a5414dad76321b2c26fe4183880ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40529d2140d4a4aa895d3a09e36cca51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJStudio_1_1functionvalue.html#a40529d2140d4a4aa895d3a09e36cca51">JStudio::functionvalue::interpolateValue_plateau</a> (<a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> a1, <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> a2, <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> a3, <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> a4, <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> a5)</td></tr>
+<tr class="separator:a40529d2140d4a4aa895d3a09e36cca51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aa4a520444f72d6f58f3e2056b56174af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functionvalue_8cpp.html#aa4a520444f72d6f58f3e2056b56174af">__float_nan</a></td></tr>
-<tr class="separator:aa4a520444f72d6f58f3e2056b56174af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff0ca0931736b85e11e17279bd4a4102"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> void *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functionvalue_8cpp.html#aff0ca0931736b85e11e17279bd4a4102">data_8039A9F0</a> [4]</td></tr>
-<tr class="separator:aff0ca0931736b85e11e17279bd4a4102"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a3baa2eb838351d9e1b5bf1c204c4a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functionvalue_8cpp.html#a5a3baa2eb838351d9e1b5bf1c204c4a6">__vt__Q27JStudio22TFunctionValue_hermite</a> [8]</td></tr>
 <tr class="separator:a5a3baa2eb838351d9e1b5bf1c204c4a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d755dd48cbcc9ae94d9cfaa4f1e901f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functionvalue_8cpp.html#a3d755dd48cbcc9ae94d9cfaa4f1e901f">__vt__Q27JStudio29TFunctionValue_list_parameter</a> [8]</td></tr>
@@ -839,34 +775,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aba673bea78d38172c47dfa6c87927178"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba673bea78d38172c47dfa6c87927178">&#9670;&nbsp;</a></span>COMPILER_STRIP_GATE()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">COMPILER_STRIP_GATE </td>
-          <td>(</td>
-          <td class="paramtype">0x8039A9F0&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&amp;&#160;</td>
-          <td class="paramname"><em>data_8039A9F0</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ac8401705afc90fbe7b051926611514a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac8401705afc90fbe7b051926611514a1">&#9670;&nbsp;</a></span>data_set__Q27JStudio22TFunctionValue_hermiteFPCfUlUl()</h2>
 
@@ -994,40 +902,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void extrapolateParameter_turn__Q27JStudio13functionvalueFdd </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a02babedaeff0ff9b077ec10773bd6e1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02babedaeff0ff9b077ec10773bd6e1e">&#9670;&nbsp;</a></span>floor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void floor </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7f3b8371f9b0da9b9b06577f82b6dbdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f3b8371f9b0da9b9b06577f82b6dbdc">&#9670;&nbsp;</a></span>fmod()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fmod </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1352,14 +1226,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="af733537ebb5c1ce560b9fd4ffb3f7329"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af733537ebb5c1ce560b9fd4ffb3f7329">&#9670;&nbsp;</a></span>func_80283E24()</h2>
+<a id="a53b34f6f384b2739b0828c385242991d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53b34f6f384b2739b0828c385242991d">&#9670;&nbsp;</a></span>func_80283E24()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">asm void func_80283E24 </td>
+          <td class="memname">void func_80283E24 </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>_this</em>, </td>
@@ -1394,18 +1271,26 @@ Variables</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aad672ed2450a710016a8155e3f2dafae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad672ed2450a710016a8155e3f2dafae">&#9670;&nbsp;</a></span>func_80283EB8()</h2>
+<a id="a97cae11351a1de8c9838c311a3942581"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97cae11351a1de8c9838c311a3942581">&#9670;&nbsp;</a></span>func_80283EB8()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">asm void func_80283EB8 </td>
+          <td class="memname">void func_80283EB8 </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>_this</em>, </td>
@@ -1440,6 +1325,11 @@ Variables</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -2261,28 +2151,6 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="aa4a520444f72d6f58f3e2056b56174af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4a520444f72d6f58f3e2056b56174af">&#9670;&nbsp;</a></span>__float_nan</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> __float_nan</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a278a0f83338a739946040c2cc787ee1b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a278a0f83338a739946040c2cc787ee1b">&#9670;&nbsp;</a></span>__vt__Q27JStudio14TFunctionValue</h2>
 
@@ -2541,38 +2409,6 @@ Variables</h2></td></tr>
 <div class="ttc" id="afunctionvalue_8cpp_html_acd5b275ef38fad70ccfeb82f30bfc0e7"><div class="ttname"><a href="functionvalue_8cpp.html#acd5b275ef38fad70ccfeb82f30bfc0e7">initialize__Q27JStudio29TFunctionValue_list_parameterFv</a></div><div class="ttdeci">void initialize__Q27JStudio29TFunctionValue_list_parameterFv()</div></div>
 <div class="ttc" id="afunctionvalue_8cpp_html_ae394e21b05a2a50ddfc0eeef36301fe3"><div class="ttname"><a href="functionvalue_8cpp.html#ae394e21b05a2a50ddfc0eeef36301fe3">getType__Q27JStudio29TFunctionValue_list_parameterCFv</a></div><div class="ttdeci">s32 getType__Q27JStudio29TFunctionValue_list_parameterCFv()</div></div>
 <div class="ttc" id="afunctionvalue_8cpp_html_ae64db99b6c3291ec9d53ce31d51b6273"><div class="ttname"><a href="functionvalue_8cpp.html#ae64db99b6c3291ec9d53ce31d51b6273">prepare__Q27JStudio29TFunctionValue_list_parameterFv</a></div><div class="ttdeci">void prepare__Q27JStudio29TFunctionValue_list_parameterFv()</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aff0ca0931736b85e11e17279bd4a4102"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff0ca0931736b85e11e17279bd4a4102">&#9670;&nbsp;</a></span>data_8039A9F0</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> void* const data_8039A9F0[4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="functionvalue_8cpp.html#ac2e431baf16b24b1a2b251a2a3d63173">extrapolateParameter_raw__Q27JStudio13functionvalueFdd</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="functionvalue_8cpp.html#a9283d48c90cdb9a30a2dd419e8c79754">extrapolateParameter_repeat__Q27JStudio13functionvalueFdd</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="functionvalue_8cpp.html#ac52ff0d5a1a56a152033b1a2b3caefa9">extrapolateParameter_turn__Q27JStudio13functionvalueFdd</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="functionvalue_8cpp.html#ac20ac9ce865a4d0add6bac9340133a87">extrapolateParameter_clamp__Q27JStudio13functionvalueFdd</a>,</div>
-<div class="line">}</div>
-<div class="ttc" id="afunctionvalue_8cpp_html_a9283d48c90cdb9a30a2dd419e8c79754"><div class="ttname"><a href="functionvalue_8cpp.html#a9283d48c90cdb9a30a2dd419e8c79754">extrapolateParameter_repeat__Q27JStudio13functionvalueFdd</a></div><div class="ttdeci">void extrapolateParameter_repeat__Q27JStudio13functionvalueFdd()</div></div>
-<div class="ttc" id="afunctionvalue_8cpp_html_ac20ac9ce865a4d0add6bac9340133a87"><div class="ttname"><a href="functionvalue_8cpp.html#ac20ac9ce865a4d0add6bac9340133a87">extrapolateParameter_clamp__Q27JStudio13functionvalueFdd</a></div><div class="ttdeci">void extrapolateParameter_clamp__Q27JStudio13functionvalueFdd()</div></div>
-<div class="ttc" id="afunctionvalue_8cpp_html_ac2e431baf16b24b1a2b251a2a3d63173"><div class="ttname"><a href="functionvalue_8cpp.html#ac2e431baf16b24b1a2b251a2a3d63173">extrapolateParameter_raw__Q27JStudio13functionvalueFdd</a></div><div class="ttdeci">void extrapolateParameter_raw__Q27JStudio13functionvalueFdd()</div></div>
-<div class="ttc" id="afunctionvalue_8cpp_html_ac52ff0d5a1a56a152033b1a2b3caefa9"><div class="ttname"><a href="functionvalue_8cpp.html#ac52ff0d5a1a56a152033b1a2b3caefa9">extrapolateParameter_turn__Q27JStudio13functionvalueFdd</a></div><div class="ttdeci">void extrapolateParameter_turn__Q27JStudio13functionvalueFdd()</div></div>
 </div><!-- fragment -->
 </div>
 </div>

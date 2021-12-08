@@ -82,6 +82,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="d__event__data_8h_source.html">d/event/d_event_data.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__com__inf__game_8h_source.html">d/com/d_com_inf_game.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;asm/d/event/d_event_data/getTelopNo__FPCc.s&quot;</code><br />
@@ -96,8 +97,6 @@ $(function() {
 <code>#include &quot;asm/d/event/d_event_data/specialProc_WaitStart__12dEvDtStaff_cFi.s&quot;</code><br />
 <code>#include &quot;asm/d/event/d_event_data/specialProc_WaitProc__12dEvDtStaff_cFi.s&quot;</code><br />
 <code>#include &quot;asm/d/event/d_event_data/specialProc__12dEvDtStaff_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/event/d_event_data/init__12dEvDtStaff_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/event/d_event_data/advanceCut__12dEvDtStaff_cFi.s&quot;</code><br />
 <code>#include &quot;asm/d/event/d_event_data/specialProcLight__12dEvDtStaff_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/event/d_event_data/specialProcMessage__12dEvDtStaff_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/event/d_event_data/specialProcSound__12dEvDtStaff_cFv.s&quot;</code><br />
@@ -107,9 +106,6 @@ $(function() {
 <code>#include &quot;asm/d/event/d_event_data/specialProcTimekeeper__12dEvDtStaff_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/event/d_event_data/specialProcEffect__12dEvDtStaff_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/event/d_event_data/startCheck__10dEvDtCut_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/event/d_event_data/init__11dEvDtBase_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/event/d_event_data/init__11dEvDtBase_cFPci.s&quot;</code><br />
-<code>#include &quot;asm/d/event/d_event_data/advanceCut__11dEvDtBase_cFP12dEvDtEvent_c.s&quot;</code><br />
 <code>#include &quot;asm/d/event/d_event_data/advanceCutLocal__11dEvDtBase_cFP12dEvDtStaff_c.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for d_event_data.cpp:</div>
@@ -124,23 +120,11 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmDoGph__gInf__c.html">mDoGph_gInf_c</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdVibration__c.html">dVibration_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMsgObject__c.html">dMsgObject_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdEvt__control__c.html">dEvt_control_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdEvent__manager__c.html">dEvent_manager_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdDlst__list__c.html">dDlst_list_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdDemo__c.html">dDemo_c</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdCamera__c.html">dCamera_c</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structZ2SeqMgr.html">Z2SeqMgr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISoundID.html">JAISoundID</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structZ2SeMgr.html">Z2SeMgr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -339,8 +323,10 @@ Functions</h2></td></tr>
 <tr class="separator:a6f078ec47ffb70e4c2b36121efdda56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dc2287cbb60544edaf9ad90201edd64"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__event__data_8cpp.html#a1dc2287cbb60544edaf9ad90201edd64">getStartTelopNo</a> ()</td></tr>
 <tr class="separator:a1dc2287cbb60544edaf9ad90201edd64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cd86237af2a5c6979397c645b230c2e"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__event__data_8cpp.html#a7cd86237af2a5c6979397c645b230c2e">dEvDt_Next_Stage</a> (int param_0, int param_1)</td></tr>
-<tr class="separator:a7cd86237af2a5c6979397c645b230c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a890c0447881d110e3800182fafcac4ad"><td class="memItemLeft" align="right" valign="top">static asm int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__event__data_8cpp.html#a890c0447881d110e3800182fafcac4ad">dEvDt_Next_Stage</a> (int param_0, int param_1)</td></tr>
+<tr class="separator:a890c0447881d110e3800182fafcac4ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a256db4796bb99a285de6e2ac77da24d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdEvent__manager__c.html">dEvent_manager_c</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__event__data_8cpp.html#a256db4796bb99a285de6e2ac77da24d1">dComIfGp_getEventManager</a> ()</td></tr>
+<tr class="separator:a256db4796bb99a285de6e2ac77da24d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -350,8 +336,6 @@ Variables</h2></td></tr>
 <tr class="separator:aef730b1f6c6d9212b94ecd3b90b26109"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe0150b36f8791cccf8ed8cf4dad23c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__event__data_8cpp.html#abe0150b36f8791cccf8ed8cf4dad23c4">saveBitLabels__16dSv_event_flag_c</a> [1644+4]</td></tr>
 <tr class="separator:abe0150b36f8791cccf8ed8cf4dad23c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50ad47c26bcc2867f2c14d349753f58e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__event__data_8cpp.html#a50ad47c26bcc2867f2c14d349753f58e">g_dComIfG_gameInfo</a> [122384]</td></tr>
-<tr class="separator:a50ad47c26bcc2867f2c14d349753f58e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e38deb2d5fdcc188497ac34fd8967e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__event__data_8cpp.html#a5e38deb2d5fdcc188497ac34fd8967e4">mFadeRate__13mDoGph_gInf_c</a></td></tr>
 <tr class="separator:a5e38deb2d5fdcc188497ac34fd8967e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af04b66e8f662f7e65fbc6b8ae8aa4d34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__event__data_8cpp.html#af04b66e8f662f7e65fbc6b8ae8aa4d34">struct_80450BE4</a> [4]</td></tr>
@@ -874,6 +858,31 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a256db4796bb99a285de6e2ac77da24d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a256db4796bb99a285de6e2ac77da24d1">&#9670;&nbsp;</a></span>dComIfGp_getEventManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdEvent__manager__c.html">dEvent_manager_c</a>&amp; dComIfGp_getEventManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa66c0b9d33e4c9757a5cdc83a8fe3ada"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa66c0b9d33e4c9757a5cdc83a8fe3ada">&#9670;&nbsp;</a></span>dComIfGp_setNextStage__FPCcsScScfUliScsii()</h2>
 
@@ -976,8 +985,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a7cd86237af2a5c6979397c645b230c2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cd86237af2a5c6979397c645b230c2e">&#9670;&nbsp;</a></span>dEvDt_Next_Stage()</h2>
+<a id="a890c0447881d110e3800182fafcac4ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a890c0447881d110e3800182fafcac4ad">&#9670;&nbsp;</a></span>dEvDt_Next_Stage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -986,7 +995,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void dEvDt_Next_Stage </td>
+          <td class="memname">static asm int dEvDt_Next_Stage </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>param_0</em>, </td>
@@ -2220,28 +2229,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">char const* const d_event_d_event_data__stringBase0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a50ad47c26bcc2867f2c14d349753f58e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50ad47c26bcc2867f2c14d349753f58e">&#9670;&nbsp;</a></span>g_dComIfG_gameInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> g_dComIfG_gameInfo[122384]</td>
         </tr>
       </table>
   </td>

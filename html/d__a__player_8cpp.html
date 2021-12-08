@@ -82,14 +82,15 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="d__a__player_8h_source.html">d/a/d_a_player.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="c__math_8h_source.html">SSystem/SComponent/c_math.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__com__inf__game_8h_source.html">d/com/d_com_inf_game.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mtx_8h_source.html">dolphin/mtx/mtx.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="f__op__actor__iter_8h_source.html">f_op/f_op_actor_iter.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="f__op__actor__mng_8h_source.html">f_op/f_op_actor_mng.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__a__boomerang_8h_source.html">rel/d/a/d_a_boomerang/d_a_boomerang.h</a>&quot;</code><br />
 <code>#include &quot;asm/d/a/d_a_player/setFrameCtrl__16daPy_frameCtrl_cFUcssff.s&quot;</code><br />
-<code>#include &quot;asm/d/a/d_a_player/initOffset__20daPy_boomerangMove_cFPC4cXyz.s&quot;</code><br />
 <code>#include &quot;asm/d/a/d_a_player/posMove__20daPy_boomerangMove_cFP4cXyzPsP10fopAc_ac_cs.s&quot;</code><br />
 <code>#include &quot;asm/d/a/d_a_player/bgCheckAfterOffset__20daPy_boomerangMove_cFPC4cXyz.s&quot;</code><br />
 <code>#include &quot;asm/d/a/d_a_player/setParamData__9daPy_py_cFiiii.s&quot;</code><br />
@@ -117,7 +118,6 @@ $(function() {
 <code>#include &quot;asm/d/a/d_a_player/checkCarryStartLightBallB__9daPy_py_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/a/d_a_player/checkSpinnerReflectEffect__9daPy_py_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/a/d_a_player/checkBoomerangCharge__9daPy_py_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/a/d_a_player/getThrowBoomerangActor__9daPy_py_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/a/d_a_player/cancelBoomerangLockActor__9daPy_py_cFP10fopAc_ac_c.s&quot;</code><br />
 <code>#include &quot;asm/d/a/d_a_player/setPlayerDamage__9daPy_py_cFii.s&quot;</code><br />
 <code>#include &quot;asm/d/a/d_a_player/setMidnaMotionNum__9daPy_py_cFi.s&quot;</code><br />
@@ -135,8 +135,6 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmDoMtx__stack__c.html">mDoMtx_stack_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJMath.html">JMath</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DAnmLoaderDataBaseFlag.html">J3DAnmLoaderDataBaseFlag</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2099,7 +2097,7 @@ Variables</h2></td></tr>
 <div class="line">    </div>
 <div class="line">    <a class="code" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__a__player_8cpp_html_a0eeff15aeb95c416d70195a8d9b6def0"><div class="ttname"><a href="d__a__player_8cpp.html#a0eeff15aeb95c416d70195a8d9b6def0">draw__18daPy_sightPacket_cFv</a></div><div class="ttdeci">void draw__18daPy_sightPacket_cFv()</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:744</div></div>
+<div class="ttc" id="ad__a__player_8cpp_html_a0eeff15aeb95c416d70195a8d9b6def0"><div class="ttname"><a href="d__a__player_8cpp.html#a0eeff15aeb95c416d70195a8d9b6def0">draw__18daPy_sightPacket_cFv</a></div><div class="ttdeci">void draw__18daPy_sightPacket_cFv()</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:739</div></div>
 <div class="ttc" id="ad__a__player_8cpp_html_af3db08124fcc0f0b0103ba3794791e7c"><div class="ttname"><a href="d__a__player_8cpp.html#af3db08124fcc0f0b0103ba3794791e7c">__dt__18daPy_sightPacket_cFv</a></div><div class="ttdeci">void __dt__18daPy_sightPacket_cFv()</div></div>
 <div class="ttc" id="atypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> types.h:34</div></div>
 </div><!-- fragment -->
@@ -2172,14 +2170,14 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__a__player_8cpp.html#aac8cc18c8cfdce2c4241cb22f9a55f94">sumouArcName</a>, (<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__a__player_8cpp.html#a39a04b7b62119de305c80c915810524b">ocArcName</a>,     (<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__a__player_8cpp.html#aee0c4f7243e45899845386b65eb6c7d3">twglArcName</a>,      (<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__a__player_8cpp.html#a18fb27403dd0df0f40c6fecde5095cf0">twgwArcName</a>,</div>
 <div class="line">    (<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__a__player_8cpp.html#abe75bf9091ca82edffb515f545643c77">drArcName</a>,    (<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__a__player_8cpp.html#a0be56006a5a8ab3b6625fe8fda051213">msDemoArcName</a>, (<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__a__player_8cpp.html#a0c11f8a8cb650f795ac431e6b18f468b">lastGanonArcName</a>, (<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__a__player_8cpp.html#acb13f3ec3d642a0a46464405cc9e83bb">pigGanonArcName</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__a__player_8cpp_html_a0be56006a5a8ab3b6625fe8fda051213"><div class="ttname"><a href="d__a__player_8cpp.html#a0be56006a5a8ab3b6625fe8fda051213">msDemoArcName</a></div><div class="ttdeci">char msDemoArcName[8]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:497</div></div>
-<div class="ttc" id="ad__a__player_8cpp_html_a0c11f8a8cb650f795ac431e6b18f468b"><div class="ttname"><a href="d__a__player_8cpp.html#a0c11f8a8cb650f795ac431e6b18f468b">lastGanonArcName</a></div><div class="ttdeci">char lastGanonArcName[8]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:500</div></div>
-<div class="ttc" id="ad__a__player_8cpp_html_a18fb27403dd0df0f40c6fecde5095cf0"><div class="ttname"><a href="d__a__player_8cpp.html#a18fb27403dd0df0f40c6fecde5095cf0">twgwArcName</a></div><div class="ttdeci">static SECTION_RODATA char const twgwArcName[12]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:507</div></div>
-<div class="ttc" id="ad__a__player_8cpp_html_a39a04b7b62119de305c80c915810524b"><div class="ttname"><a href="d__a__player_8cpp.html#a39a04b7b62119de305c80c915810524b">ocArcName</a></div><div class="ttdeci">char ocArcName[8]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:491</div></div>
-<div class="ttc" id="ad__a__player_8cpp_html_aac8cc18c8cfdce2c4241cb22f9a55f94"><div class="ttname"><a href="d__a__player_8cpp.html#aac8cc18c8cfdce2c4241cb22f9a55f94">sumouArcName</a></div><div class="ttdeci">char sumouArcName[8]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:488</div></div>
-<div class="ttc" id="ad__a__player_8cpp_html_abe75bf9091ca82edffb515f545643c77"><div class="ttname"><a href="d__a__player_8cpp.html#abe75bf9091ca82edffb515f545643c77">drArcName</a></div><div class="ttdeci">char drArcName[8]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:494</div></div>
-<div class="ttc" id="ad__a__player_8cpp_html_acb13f3ec3d642a0a46464405cc9e83bb"><div class="ttname"><a href="d__a__player_8cpp.html#acb13f3ec3d642a0a46464405cc9e83bb">pigGanonArcName</a></div><div class="ttdeci">char pigGanonArcName[8]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:503</div></div>
-<div class="ttc" id="ad__a__player_8cpp_html_aee0c4f7243e45899845386b65eb6c7d3"><div class="ttname"><a href="d__a__player_8cpp.html#aee0c4f7243e45899845386b65eb6c7d3">twglArcName</a></div><div class="ttdeci">static SECTION_RODATA char const twglArcName[12]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:505</div></div>
+<div class="ttc" id="ad__a__player_8cpp_html_a0be56006a5a8ab3b6625fe8fda051213"><div class="ttname"><a href="d__a__player_8cpp.html#a0be56006a5a8ab3b6625fe8fda051213">msDemoArcName</a></div><div class="ttdeci">char msDemoArcName[8]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:492</div></div>
+<div class="ttc" id="ad__a__player_8cpp_html_a0c11f8a8cb650f795ac431e6b18f468b"><div class="ttname"><a href="d__a__player_8cpp.html#a0c11f8a8cb650f795ac431e6b18f468b">lastGanonArcName</a></div><div class="ttdeci">char lastGanonArcName[8]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:495</div></div>
+<div class="ttc" id="ad__a__player_8cpp_html_a18fb27403dd0df0f40c6fecde5095cf0"><div class="ttname"><a href="d__a__player_8cpp.html#a18fb27403dd0df0f40c6fecde5095cf0">twgwArcName</a></div><div class="ttdeci">static SECTION_RODATA char const twgwArcName[12]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:502</div></div>
+<div class="ttc" id="ad__a__player_8cpp_html_a39a04b7b62119de305c80c915810524b"><div class="ttname"><a href="d__a__player_8cpp.html#a39a04b7b62119de305c80c915810524b">ocArcName</a></div><div class="ttdeci">char ocArcName[8]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:486</div></div>
+<div class="ttc" id="ad__a__player_8cpp_html_aac8cc18c8cfdce2c4241cb22f9a55f94"><div class="ttname"><a href="d__a__player_8cpp.html#aac8cc18c8cfdce2c4241cb22f9a55f94">sumouArcName</a></div><div class="ttdeci">char sumouArcName[8]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:483</div></div>
+<div class="ttc" id="ad__a__player_8cpp_html_abe75bf9091ca82edffb515f545643c77"><div class="ttname"><a href="d__a__player_8cpp.html#abe75bf9091ca82edffb515f545643c77">drArcName</a></div><div class="ttdeci">char drArcName[8]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:489</div></div>
+<div class="ttc" id="ad__a__player_8cpp_html_acb13f3ec3d642a0a46464405cc9e83bb"><div class="ttname"><a href="d__a__player_8cpp.html#acb13f3ec3d642a0a46464405cc9e83bb">pigGanonArcName</a></div><div class="ttdeci">char pigGanonArcName[8]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:498</div></div>
+<div class="ttc" id="ad__a__player_8cpp_html_aee0c4f7243e45899845386b65eb6c7d3"><div class="ttname"><a href="d__a__player_8cpp.html#aee0c4f7243e45899845386b65eb6c7d3">twglArcName</a></div><div class="ttdeci">static SECTION_RODATA char const twglArcName[12]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:500</div></div>
 </div><!-- fragment -->
 </div>
 </div>

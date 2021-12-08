@@ -87,11 +87,9 @@ $(function() {
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;asm/d/event/d_event_manager/setStartDemo__18dEvent_exception_cFi.s&quot;</code><br />
 <code>#include &quot;asm/d/event/d_event_manager/getEventName__18dEvent_exception_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/event/d_event_manager/getSubstance__16dEvent_manager_cFP11dEvDtData_ci.s&quot;</code><br />
 <code>#include &quot;asm/d/event/d_event_manager/demoInit__16dEvent_manager_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/event/d_event_manager/roomInit__16dEvent_manager_cFi.s&quot;</code><br />
 <code>#include &quot;asm/d/event/d_event_manager/orderStartDemo__16dEvent_manager_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/event/d_event_manager/startProc__16dEvent_manager_cFP12dEvDtEvent_c.s&quot;</code><br />
 <code>#include &quot;asm/d/event/d_event_manager/endProc__16dEvent_manager_cFsi.s&quot;</code><br />
 <code>#include &quot;asm/d/event/d_event_manager/Sequencer__16dEvent_manager_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/event/d_event_manager/Experts__16dEvent_manager_cFv.s&quot;</code><br />
@@ -112,7 +110,6 @@ $(function() {
 <code>#include &quot;asm/d/event/d_event_manager/getMyActIdx__16dEvent_manager_cFiPCPCciii.s&quot;</code><br />
 <code>#include &quot;asm/d/event/d_event_manager/getMyNowCutName__16dEvent_manager_cFi.s&quot;</code><br />
 <code>#include &quot;asm/d/event/d_event_manager/getMyDataP__16dEvent_manager_cFiPCci.s&quot;</code><br />
-<code>#include &quot;asm/d/event/d_event_manager/getMySubstanceP__16dEvent_manager_cFiPCci.s&quot;</code><br />
 <code>#include &quot;asm/d/event/d_event_manager/getMySubstanceNum__16dEvent_manager_cFiPCc.s&quot;</code><br />
 <code>#include &quot;asm/d/event/d_event_manager/cutEnd__16dEvent_manager_cFi.s&quot;</code><br />
 <code>#include &quot;asm/d/event/d_event_manager/getEventPrio__16dEvent_manager_cFP10fopAc_ac_cs.s&quot;</code><br />
@@ -373,6 +370,8 @@ Functions</h2></td></tr>
 <tr class="separator:ac244c0234b0855cdd469bf63c5c37139"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad17ee5dc543235b406d6a668aa6c4924"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__event__manager_8cpp.html#ad17ee5dc543235b406d6a668aa6c4924">dEvmng_strcmp</a> (char const *param_0, char *param_1)</td></tr>
 <tr class="separator:ad17ee5dc543235b406d6a668aa6c4924"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94fd63eeb89de075fb273e4e80eff320"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdEvt__control__c.html">dEvt_control_c</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__event__manager_8cpp.html#a94fd63eeb89de075fb273e4e80eff320">dComIfGp_getEvent</a> ()</td></tr>
+<tr class="separator:a94fd63eeb89de075fb273e4e80eff320"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a456ec382bb2d6f6460a2936742f06d04"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__event__manager_8cpp.html#a456ec382bb2d6f6460a2936742f06d04">findShutterCallBack</a> (<a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *param_0, void *param_1)</td></tr>
 <tr class="separator:a456ec382bb2d6f6460a2936742f06d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c4aea9db65da24f0450330a190698b0"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__event__manager_8cpp.html#a5c4aea9db65da24f0450330a190698b0">dEv_talkman_get_action</a> (int param_0)</td></tr>
@@ -426,8 +425,8 @@ Variables</h2></td></tr>
 <tr class="separator:abe95fdb630578fceb4316787125fbf27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b3c9d3efeb57776968093dd2e485186"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__event__manager_8cpp.html#a8b3c9d3efeb57776968093dd2e485186">stringBase_8037A071</a> = &quot;(!BAD DATA!)&quot;</td></tr>
 <tr class="separator:a8b3c9d3efeb57776968093dd2e485186"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39401206db97775af2ac8661d2a870d0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__event__manager_8cpp.html#a39401206db97775af2ac8661d2a870d0">soecial_names</a> [14]</td></tr>
-<tr class="separator:a39401206db97775af2ac8661d2a870d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13f0e0cfc8a6873b51cf07a908074d4c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__event__manager_8cpp.html#a13f0e0cfc8a6873b51cf07a908074d4c">soecial_names</a> [14]</td></tr>
+<tr class="separator:a13f0e0cfc8a6873b51cf07a908074d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafd64682848e27ef6cb5d5937b331c10"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> char const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__event__manager_8cpp.html#aafd64682848e27ef6cb5d5937b331c10">data_80379F50</a> [16] = &quot;event_list.dat&quot;</td></tr>
 <tr class="separator:aafd64682848e27ef6cb5d5937b331c10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33db2f490a5810f62dc9b33c02aaff15"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__event__manager_8cpp.html#a33db2f490a5810f62dc9b33c02aaff15">stringBase_8037A07E</a> = &quot;Event&quot;</td></tr>
@@ -1074,6 +1073,31 @@ Variables</h2></td></tr>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a94fd63eeb89de075fb273e4e80eff320"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94fd63eeb89de075fb273e4e80eff320">&#9670;&nbsp;</a></span>dComIfGp_getEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdEvt__control__c.html">dEvt_control_c</a>&amp; dComIfGp_getEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -2997,8 +3021,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a39401206db97775af2ac8661d2a870d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39401206db97775af2ac8661d2a870d0">&#9670;&nbsp;</a></span>soecial_names</h2>
+<a id="a13f0e0cfc8a6873b51cf07a908074d4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13f0e0cfc8a6873b51cf07a908074d4c">&#9670;&nbsp;</a></span>soecial_names</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3007,7 +3031,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void* soecial_names[14]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char* soecial_names[14]</td>
         </tr>
       </table>
   </td>
@@ -3017,20 +3041,10 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    (<span class="keywordtype">void</span>*)&amp;<a class="code" href="d__event__manager_8cpp.html#a07683180769794ab72ed0b551228bc2a">d_event_d_event_manager__stringBase0</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__event__manager_8cpp.html#a07683180769794ab72ed0b551228bc2a">d_event_d_event_manager__stringBase0</a>) + 0x10),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__event__manager_8cpp.html#a07683180769794ab72ed0b551228bc2a">d_event_d_event_manager__stringBase0</a>) + 0x1E),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__event__manager_8cpp.html#a07683180769794ab72ed0b551228bc2a">d_event_d_event_manager__stringBase0</a>) + 0x2C),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__event__manager_8cpp.html#a07683180769794ab72ed0b551228bc2a">d_event_d_event_manager__stringBase0</a>) + 0x3F),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__event__manager_8cpp.html#a07683180769794ab72ed0b551228bc2a">d_event_d_event_manager__stringBase0</a>) + 0x50),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__event__manager_8cpp.html#a07683180769794ab72ed0b551228bc2a">d_event_d_event_manager__stringBase0</a>) + 0x63),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__event__manager_8cpp.html#a07683180769794ab72ed0b551228bc2a">d_event_d_event_manager__stringBase0</a>) + 0x6E),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__event__manager_8cpp.html#a07683180769794ab72ed0b551228bc2a">d_event_d_event_manager__stringBase0</a>) + 0x7B),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__event__manager_8cpp.html#a07683180769794ab72ed0b551228bc2a">d_event_d_event_manager__stringBase0</a>) + 0x89),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__event__manager_8cpp.html#a07683180769794ab72ed0b551228bc2a">d_event_d_event_manager__stringBase0</a>) + 0x94),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__event__manager_8cpp.html#a07683180769794ab72ed0b551228bc2a">d_event_d_event_manager__stringBase0</a>) + 0xA3),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__event__manager_8cpp.html#a07683180769794ab72ed0b551228bc2a">d_event_d_event_manager__stringBase0</a>) + 0xB2),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__event__manager_8cpp.html#a07683180769794ab72ed0b551228bc2a">d_event_d_event_manager__stringBase0</a>) + 0xC3),</div>
+<div class="line">    <span class="stringliteral">&quot;NORMAL_COMEBACK&quot;</span>,  <span class="stringliteral">&quot;DEFAULT_START&quot;</span>,      <span class="stringliteral">&quot;SHUTTER_START&quot;</span>,  <span class="stringliteral">&quot;SHUTTER_START_STOP&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;BS_SHUTTER_START&quot;</span>, <span class="stringliteral">&quot;BS_SHUTTER_START_B&quot;</span>, <span class="stringliteral">&quot;KNOB_START&quot;</span>,     <span class="stringliteral">&quot;KNOB_START_B&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;FMASTER_START&quot;</span>,    <span class="stringliteral">&quot;FALL_START&quot;</span>,         <span class="stringliteral">&quot;CRAWLOUT_START&quot;</span>, <span class="stringliteral">&quot;BOSSWARP_START&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;PORTALWARP_START&quot;</span>, <span class="stringliteral">&quot;PORTALWARP_START_B&quot;</span>,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>

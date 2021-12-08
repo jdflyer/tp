@@ -83,19 +83,15 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="J3DModel_8h_source.html">JSystem/J3DGraphAnimator/J3DModel.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="J3DTransform_8h_source.html">JSystem/J3DGraphBase/J3DTransform.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OSCache_8h_source.html">dolphin/os/OSCache.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphAnimator/J3DModel/createShapePacket__8J3DModelFP12J3DModelData.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphAnimator/J3DModel/createMatPacket__8J3DModelFP12J3DModelDataUl.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphAnimator/J3DModel/newDifferedDisplayList__8J3DModelFUl.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphAnimator/J3DModel/lock__8J3DModelFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphAnimator/J3DModel/unlock__8J3DModelFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphAnimator/J3DModel/calcMaterial__8J3DModelFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphAnimator/J3DModel/calcDiffTexMtx__8J3DModelFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphAnimator/J3DModel/diff__8J3DModelFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphAnimator/J3DModel/setSkinDeform__8J3DModelFP13J3DSkinDeformUl.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphAnimator/J3DModel/update__8J3DModelFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphAnimator/J3DModel/calc__8J3DModelFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphAnimator/J3DModel/entry__8J3DModelFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphAnimator/J3DModel/viewCalc__8J3DModelFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphAnimator/J3DModel/calcBumpMtx__8J3DModelFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphAnimator/J3DModel/prepareShapePackets__8J3DModelFv.s&quot;</code><br />
@@ -235,8 +231,6 @@ Functions</h2></td></tr>
 <tr class="separator:a581371ea4d008379510d9eb58acf6a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad915143c5bcd9cf9ae299f17c440c4d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DModel_8cpp.html#ad915143c5bcd9cf9ae299f17c440c4d4">entryIn__8J3DJointFv</a> ()</td></tr>
 <tr class="separator:ad915143c5bcd9cf9ae299f17c440c4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0440acad7d135008a79a898fb9e03f45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DModel_8cpp.html#a0440acad7d135008a79a898fb9e03f45">DCStoreRange</a> ()</td></tr>
-<tr class="separator:a0440acad7d135008a79a898fb9e03f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad447114b3d91ab5c0a9dc74c6da0b71c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DModel_8cpp.html#ad447114b3d91ab5c0a9dc74c6da0b71c">DCStoreRangeNoSync</a> ()</td></tr>
 <tr class="separator:ad447114b3d91ab5c0a9dc74c6da0b71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a323591f74ddf6092f175dfa7e270e6fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DModel_8cpp.html#a323591f74ddf6092f175dfa7e270e6fb">__construct_new_array</a> ()</td></tr>
@@ -1058,23 +1052,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a0440acad7d135008a79a898fb9e03f45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0440acad7d135008a79a898fb9e03f45">&#9670;&nbsp;</a></span>DCStoreRange()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DCStoreRange </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ad447114b3d91ab5c0a9dc74c6da0b71c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad447114b3d91ab5c0a9dc74c6da0b71c">&#9670;&nbsp;</a></span>DCStoreRangeNoSync()</h2>
 
@@ -1610,7 +1587,7 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="J3DModel_8cpp.html#a107cc26b6eb63871d6d36af1312fb3ca">__dt__12J3DMtxBufferFv</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aJ3DModel_8cpp_html_a107cc26b6eb63871d6d36af1312fb3ca"><div class="ttname"><a href="J3DModel_8cpp.html#a107cc26b6eb63871d6d36af1312fb3ca">__dt__12J3DMtxBufferFv</a></div><div class="ttdeci">void __dt__12J3DMtxBufferFv()</div><div class="ttdef"><b>Definition:</b> J3DModel.cpp:483</div></div>
+<div class="ttc" id="aJ3DModel_8cpp_html_a107cc26b6eb63871d6d36af1312fb3ca"><div class="ttname"><a href="J3DModel_8cpp.html#a107cc26b6eb63871d6d36af1312fb3ca">__dt__12J3DMtxBufferFv</a></div><div class="ttdeci">void __dt__12J3DMtxBufferFv()</div><div class="ttdef"><b>Definition:</b> J3DModel.cpp:556</div></div>
 <div class="ttc" id="atypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> types.h:34</div></div>
 </div><!-- fragment -->
 </div>
@@ -1646,7 +1623,7 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="J3DModel_8cpp.html#af52c55e44d091cd8d6d64e9fdf608e60">__dt__8J3DModelFv</a>,</div>
 <div class="line">}</div>
 <div class="ttc" id="aJ3DModel_8cpp_html_a638f0020b6eae1e4b21f286307b7e4c2"><div class="ttname"><a href="J3DModel_8cpp.html#a638f0020b6eae1e4b21f286307b7e4c2">calcMaterial__8J3DModelFv</a></div><div class="ttdeci">void calcMaterial__8J3DModelFv()</div></div>
-<div class="ttc" id="aJ3DModel_8cpp_html_a73a162356eb873084f97033feb31a4c4"><div class="ttname"><a href="J3DModel_8cpp.html#a73a162356eb873084f97033feb31a4c4">update__8J3DModelFv</a></div><div class="ttdeci">void update__8J3DModelFv()</div><div class="ttdef"><b>Definition:</b> J3DModel.cpp:407</div></div>
+<div class="ttc" id="aJ3DModel_8cpp_html_a73a162356eb873084f97033feb31a4c4"><div class="ttname"><a href="J3DModel_8cpp.html#a73a162356eb873084f97033feb31a4c4">update__8J3DModelFv</a></div><div class="ttdeci">void update__8J3DModelFv()</div><div class="ttdef"><b>Definition:</b> J3DModel.cpp:392</div></div>
 <div class="ttc" id="aJ3DModel_8cpp_html_a801db2d1375c11611e50c0acfe294640"><div class="ttname"><a href="J3DModel_8cpp.html#a801db2d1375c11611e50c0acfe294640">viewCalc__8J3DModelFv</a></div><div class="ttdeci">void viewCalc__8J3DModelFv()</div></div>
 <div class="ttc" id="aJ3DModel_8cpp_html_a86171eb8258df619f1635f31bcd57e35"><div class="ttname"><a href="J3DModel_8cpp.html#a86171eb8258df619f1635f31bcd57e35">calcDiffTexMtx__8J3DModelFv</a></div><div class="ttdeci">void calcDiffTexMtx__8J3DModelFv()</div></div>
 <div class="ttc" id="aJ3DModel_8cpp_html_ad0373c5e21028401bb05884356fa787b"><div class="ttname"><a href="J3DModel_8cpp.html#ad0373c5e21028401bb05884356fa787b">entry__8J3DModelFv</a></div><div class="ttdeci">void entry__8J3DModelFv()</div></div>

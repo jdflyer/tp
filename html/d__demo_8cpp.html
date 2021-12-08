@@ -83,6 +83,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="d__demo_8h_source.html">d/d_demo.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="binary_8h_source.html">JSystem/JGadget/binary.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="fvb_8h_source.html">JSystem/JStudio/JStudio/fvb.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stb_8h_source.html">JSystem/JStudio/JStudio/stb.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;asm/d/d_demo/func_80037DE4.s&quot;</code><br />
@@ -204,7 +207,7 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcXyz.html">cXyz</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdPa__control__c.html">dPa_control_c</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdPa__control__c.html">dPa_control_c</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMsgObject__c.html">dMsgObject_c</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -260,8 +263,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1ctb_1_1TControl.html">JStudio::ctb::TControl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1fvb_1_1TControl.html">JStudio::fvb::TControl</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1TCreateObject.html">JStudio::TCreateObject</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1TFactory.html">JStudio::TFactory</a></td></tr>
@@ -274,21 +275,11 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1TAdaptor__message.html">JStudio::TAdaptor_message</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1stb_1_1data.html">JStudio::stb::data</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1stb_1_1data_1_1TParse__TBlock__object.html">JStudio::stb::data::TParse_TBlock_object</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1stb_1_1data_1_1TParse__TParagraph__data.html">JStudio::stb::data::TParse_TParagraph_data</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1stb_1_1data_1_1TParse__TParagraph__data_1_1TData.html">JStudio::stb::data::TParse_TParagraph_data::TData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1stb_1_1TControl.html">JStudio::stb::TControl</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1TObject__message.html">JStudio::TObject_message</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1TObject.html">JStudio::TObject</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJPABaseEmitter.html">JPABaseEmitter</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJPABaseEmitter.html">JPABaseEmitter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio__JParticle.html">JStudio_JParticle</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -298,22 +289,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJMessage_1_1TControl.html">JMessage::TControl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJGadget_1_1binary.html">JGadget::binary</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJGadget_1_1binary_1_1TParse__header__block.html">JGadget::binary::TParse_header_block</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceJStudio"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJStudio.html">JStudio</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceJStudio_1_1ctb"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJStudio_1_1ctb.html">JStudio::ctb</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceJStudio_1_1fvb"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJStudio_1_1fvb.html">JStudio::fvb</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceJStudio_1_1stb"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJStudio_1_1stb.html">JStudio::stb</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceJGadget"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJGadget.html">JGadget</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -797,8 +778,8 @@ Variables</h2></td></tr>
 <tr class="separator:a5bbfcbebab8b50d8b888f8aee1e4a468"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97321cb010d2ae0912f22ee965c52d3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__demo_8cpp.html#a97321cb010d2ae0912f22ee965c52d3d">g_blackColor</a></td></tr>
 <tr class="separator:a97321cb010d2ae0912f22ee965c52d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d12e6552ba9bca754a1cdbcc557d86f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__demo_8cpp.html#a1d12e6552ba9bca754a1cdbcc557d86f">__float_max</a></td></tr>
-<tr class="separator:a1d12e6552ba9bca754a1cdbcc557d86f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa54180cc5cbdef307162651450014ca4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__demo_8cpp.html#aa54180cc5cbdef307162651450014ca4">__float_max</a> = 0x7F7FFFFF</td></tr>
+<tr class="separator:aa54180cc5cbdef307162651450014ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a3885ea08b99d6ef9cb8471b17cfd64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__demo_8cpp.html#a6a3885ea08b99d6ef9cb8471b17cfd64">data_80450B74</a> [4]</td></tr>
 <tr class="separator:a6a3885ea08b99d6ef9cb8471b17cfd64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26bf0818a5e2965243a18b6f833cac42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__demo_8cpp.html#a26bf0818a5e2965243a18b6f833cac42">struct_80450D64</a> [4]</td></tr>
@@ -4396,8 +4377,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a1d12e6552ba9bca754a1cdbcc557d86f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d12e6552ba9bca754a1cdbcc557d86f">&#9670;&nbsp;</a></span>__float_max</h2>
+<a id="aa54180cc5cbdef307162651450014ca4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa54180cc5cbdef307162651450014ca4">&#9670;&nbsp;</a></span>__float_max</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4406,7 +4387,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> __float_max</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> __float_max = 0x7F7FFFFF</td>
         </tr>
       </table>
   </td>
@@ -5198,8 +5179,8 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="d__demo_8cpp.html#a9d22bbb489f2a2192d0ca193c8884ca0">func_80037E74</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="d__demo_8cpp.html#ad647c11054714a17cd437c11d418fc4d">func_80037ED4</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__demo_8cpp_html_a9d22bbb489f2a2192d0ca193c8884ca0"><div class="ttname"><a href="d__demo_8cpp.html#a9d22bbb489f2a2192d0ca193c8884ca0">func_80037E74</a></div><div class="ttdeci">void func_80037E74()</div><div class="ttdef"><b>Definition:</b> d_demo.cpp:920</div></div>
-<div class="ttc" id="ad__demo_8cpp_html_ad647c11054714a17cd437c11d418fc4d"><div class="ttname"><a href="d__demo_8cpp.html#ad647c11054714a17cd437c11d418fc4d">func_80037ED4</a></div><div class="ttdeci">static void func_80037ED4()</div><div class="ttdef"><b>Definition:</b> d_demo.cpp:932</div></div>
+<div class="ttc" id="ad__demo_8cpp_html_a9d22bbb489f2a2192d0ca193c8884ca0"><div class="ttname"><a href="d__demo_8cpp.html#a9d22bbb489f2a2192d0ca193c8884ca0">func_80037E74</a></div><div class="ttdeci">void func_80037E74()</div><div class="ttdef"><b>Definition:</b> d_demo.cpp:888</div></div>
+<div class="ttc" id="ad__demo_8cpp_html_ad647c11054714a17cd437c11d418fc4d"><div class="ttname"><a href="d__demo_8cpp.html#ad647c11054714a17cd437c11d418fc4d">func_80037ED4</a></div><div class="ttdeci">static void func_80037ED4()</div><div class="ttdef"><b>Definition:</b> d_demo.cpp:900</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -5233,8 +5214,8 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="d__demo_8cpp.html#ac56bcd4322a7761e28e653db9f5dc5b1">adaptor_do_data__Q27JStudio8TAdaptorFPCvUlPCvUl</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="d__demo_8cpp.html#a4c87961e65e88bbffa15bfc742a2ad61">func_80037E44</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__demo_8cpp_html_a441aef0d59da61733d94f7c21d1dffac"><div class="ttname"><a href="d__demo_8cpp.html#a441aef0d59da61733d94f7c21d1dffac">func_80037DE4</a></div><div class="ttdeci">void func_80037DE4()</div><div class="ttdef"><b>Definition:</b> d_demo.cpp:897</div></div>
-<div class="ttc" id="ad__demo_8cpp_html_a4c87961e65e88bbffa15bfc742a2ad61"><div class="ttname"><a href="d__demo_8cpp.html#a4c87961e65e88bbffa15bfc742a2ad61">func_80037E44</a></div><div class="ttdeci">static void func_80037E44()</div><div class="ttdef"><b>Definition:</b> d_demo.cpp:909</div></div>
+<div class="ttc" id="ad__demo_8cpp_html_a441aef0d59da61733d94f7c21d1dffac"><div class="ttname"><a href="d__demo_8cpp.html#a441aef0d59da61733d94f7c21d1dffac">func_80037DE4</a></div><div class="ttdeci">void func_80037DE4()</div><div class="ttdef"><b>Definition:</b> d_demo.cpp:865</div></div>
+<div class="ttc" id="ad__demo_8cpp_html_a4c87961e65e88bbffa15bfc742a2ad61"><div class="ttname"><a href="d__demo_8cpp.html#a4c87961e65e88bbffa15bfc742a2ad61">func_80037E44</a></div><div class="ttdeci">static void func_80037E44()</div><div class="ttdef"><b>Definition:</b> d_demo.cpp:877</div></div>
 </div><!-- fragment -->
 </div>
 </div>

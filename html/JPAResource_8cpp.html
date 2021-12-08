@@ -82,7 +82,10 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="JPAResource_8h_source.html">JSystem/JParticle/JPAResource.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JPAMath_8h_source.html">JSystem/JParticle/JPAMath.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JPAParticle_8h_source.html">JSystem/JParticle/JPAParticle.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mtx_8h_source.html">dolphin/mtx/mtx.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;asm/JSystem/JParticle/JPAResource/__ct__11JPAResourceFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JParticle/JPAResource/init__11JPAResourceFP7JKRHeap.s&quot;</code><br />
@@ -97,47 +100,22 @@ $(function() {
 <code>#include &quot;asm/JSystem/JParticle/JPAResource/calcField__11JPAResourceFP18JPAEmitterWorkDataP15JPABaseParticle.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JParticle/JPAResource/calcKey__11JPAResourceFP18JPAEmitterWorkData.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JParticle/JPAResource/calcWorkData_c__11JPAResourceFP18JPAEmitterWorkData.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JParticle/JPAResource/calcWorkData_d__11JPAResourceFP18JPAEmitterWorkData.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for JPAResource.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="JPAResource_8cpp__incl.svg" width="100%" height="484"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="JPAResource_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__GXTexMapID.html">_GXTexMapID</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJUTTexture.html">JUTTexture</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRHeap.html">JKRHeap</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJPABaseParticle.html">JPABaseParticle</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJPABaseEmitter.html">JPABaseEmitter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJPAResource.html">JPAResource</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJPAKeyBlock.html">JPAKeyBlock</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJPAFieldBlock.html">JPAFieldBlock</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJPAFieldBase.html">JPAFieldBase</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJPADynamicsBlock.html">JPADynamicsBlock</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJPABaseShape.html">JPABaseShape</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJGeometry.html">JGeometry</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJGeometry_1_1TVec3.html">JGeometry::TVec3&lt; A1 &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJGeometry_1_1TVec3____template0.html">JGeometry::TVec3__template0</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -342,50 +320,8 @@ Functions</h2></td></tr>
 <tr class="separator:a50822d5e9b3169cfa601e786f9cb374e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac588a730f397c3843520eaaaaf3ac0be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAResource_8cpp.html#ac588a730f397c3843520eaaaaf3ac0be">load__10JUTTextureF11_GXTexMapID</a> ()</td></tr>
 <tr class="separator:ac588a730f397c3843520eaaaaf3ac0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ec00f755b69eb1ecdd833e3148126dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAResource_8cpp.html#a9ec00f755b69eb1ecdd833e3148126dc">PSMTXCopy</a> ()</td></tr>
-<tr class="separator:a9ec00f755b69eb1ecdd833e3148126dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93df645b0f4cbe24ff486f44e7490d6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAResource_8cpp.html#a93df645b0f4cbe24ff486f44e7490d6c">PSMTXConcat</a> ()</td></tr>
-<tr class="separator:a93df645b0f4cbe24ff486f44e7490d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71fe0a3a47a4a7334c3cef19bb25b8a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAResource_8cpp.html#a71fe0a3a47a4a7334c3cef19bb25b8a3">PSMTXScale</a> ()</td></tr>
-<tr class="separator:a71fe0a3a47a4a7334c3cef19bb25b8a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9202d7b49cfe094cad7baadc3487f43d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAResource_8cpp.html#a9202d7b49cfe094cad7baadc3487f43d">PSMTXMultVec</a> ()</td></tr>
-<tr class="separator:a9202d7b49cfe094cad7baadc3487f43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cd48acde1f3d9bf92518f3f56ec841c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAResource_8cpp.html#a9cd48acde1f3d9bf92518f3f56ec841c">PSMTXMultVecSR</a> ()</td></tr>
-<tr class="separator:a9cd48acde1f3d9bf92518f3f56ec841c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fa35943586f0a2cb8b50d0d7311d119"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAResource_8cpp.html#a2fa35943586f0a2cb8b50d0d7311d119">GXSetArray</a> ()</td></tr>
-<tr class="separator:a2fa35943586f0a2cb8b50d0d7311d119"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71bcc96cc7d4a9d330d2be4b5a9548a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAResource_8cpp.html#a71bcc96cc7d4a9d330d2be4b5a9548a5">GXSetTexCoordGen2</a> ()</td></tr>
-<tr class="separator:a71bcc96cc7d4a9d330d2be4b5a9548a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a546f2bd89b1c3dc0298389b68c9ae235"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAResource_8cpp.html#a546f2bd89b1c3dc0298389b68c9ae235">GXSetNumTexGens</a> ()</td></tr>
-<tr class="separator:a546f2bd89b1c3dc0298389b68c9ae235"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d7b1c6a0a90b3d3fc4188cf27011c74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAResource_8cpp.html#a4d7b1c6a0a90b3d3fc4188cf27011c74">GXSetMisc</a> ()</td></tr>
 <tr class="separator:a4d7b1c6a0a90b3d3fc4188cf27011c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dcb00c141590a1fee6b4e6dc38dfb71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAResource_8cpp.html#a5dcb00c141590a1fee6b4e6dc38dfb71">GXSetTevIndirect</a> ()</td></tr>
-<tr class="separator:a5dcb00c141590a1fee6b4e6dc38dfb71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52dd567f740554069aa1653e70b61d64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAResource_8cpp.html#a52dd567f740554069aa1653e70b61d64">GXSetIndTexMtx</a> ()</td></tr>
-<tr class="separator:a52dd567f740554069aa1653e70b61d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2acbae1528973be7edfcb170a0a4422e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAResource_8cpp.html#a2acbae1528973be7edfcb170a0a4422e">GXSetIndTexCoordScale</a> ()</td></tr>
-<tr class="separator:a2acbae1528973be7edfcb170a0a4422e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae146a60da46c013b89aa0f4f6871b0fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAResource_8cpp.html#ae146a60da46c013b89aa0f4f6871b0fc">GXSetIndTexOrder</a> ()</td></tr>
-<tr class="separator:ae146a60da46c013b89aa0f4f6871b0fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab157ef48c99e74b862b53dc0d8daf38e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAResource_8cpp.html#ab157ef48c99e74b862b53dc0d8daf38e">GXSetNumIndStages</a> ()</td></tr>
-<tr class="separator:ab157ef48c99e74b862b53dc0d8daf38e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11c201f2cc3d3288f60574da2c6adca7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAResource_8cpp.html#a11c201f2cc3d3288f60574da2c6adca7">GXSetTevDirect</a> ()</td></tr>
-<tr class="separator:a11c201f2cc3d3288f60574da2c6adca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a23430129345dfbb7940947ced442b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAResource_8cpp.html#a8a23430129345dfbb7940947ced442b0">GXSetTevColorIn</a> ()</td></tr>
-<tr class="separator:a8a23430129345dfbb7940947ced442b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f9a5bd72470b3081e71c92ee31e86f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAResource_8cpp.html#a2f9a5bd72470b3081e71c92ee31e86f6">GXSetTevAlphaIn</a> ()</td></tr>
-<tr class="separator:a2f9a5bd72470b3081e71c92ee31e86f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c0364c5fd1d87b71ac5f6861e371a72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAResource_8cpp.html#a3c0364c5fd1d87b71ac5f6861e371a72">GXSetTevColorOp</a> ()</td></tr>
-<tr class="separator:a3c0364c5fd1d87b71ac5f6861e371a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9af76161230bde11ce5bdfc08d435e98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAResource_8cpp.html#a9af76161230bde11ce5bdfc08d435e98">GXSetTevAlphaOp</a> ()</td></tr>
-<tr class="separator:a9af76161230bde11ce5bdfc08d435e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3baa5564e3349c2e428a6b050f77f582"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAResource_8cpp.html#a3baa5564e3349c2e428a6b050f77f582">GXSetTevOrder</a> ()</td></tr>
-<tr class="separator:a3baa5564e3349c2e428a6b050f77f582"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb3bfc8f821ce0dac4ff59a7435510a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAResource_8cpp.html#acb3bfc8f821ce0dac4ff59a7435510a4">GXSetNumTevStages</a> ()</td></tr>
-<tr class="separator:acb3bfc8f821ce0dac4ff59a7435510a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7b600a47030f5f265b17c877d3b177d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAResource_8cpp.html#ae7b600a47030f5f265b17c877d3b177d">GXSetClipMode</a> ()</td></tr>
-<tr class="separator:ae7b600a47030f5f265b17c877d3b177d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60541d7c3cfbc97f9ab6e4b731e7b199"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAResource_8cpp.html#a60541d7c3cfbc97f9ab6e4b731e7b199">__save_gpr</a> ()</td></tr>
 <tr class="separator:a60541d7c3cfbc97f9ab6e4b731e7b199"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58fb5b02bb14a176b115397be03bbe99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAResource_8cpp.html#a58fb5b02bb14a176b115397be03bbe99">_savegpr_25</a> ()</td></tr>
@@ -852,91 +788,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a2fa35943586f0a2cb8b50d0d7311d119"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fa35943586f0a2cb8b50d0d7311d119">&#9670;&nbsp;</a></span>GXSetArray()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXSetArray </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae7b600a47030f5f265b17c877d3b177d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7b600a47030f5f265b17c877d3b177d">&#9670;&nbsp;</a></span>GXSetClipMode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXSetClipMode </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2acbae1528973be7edfcb170a0a4422e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2acbae1528973be7edfcb170a0a4422e">&#9670;&nbsp;</a></span>GXSetIndTexCoordScale()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXSetIndTexCoordScale </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a52dd567f740554069aa1653e70b61d64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52dd567f740554069aa1653e70b61d64">&#9670;&nbsp;</a></span>GXSetIndTexMtx()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXSetIndTexMtx </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae146a60da46c013b89aa0f4f6871b0fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae146a60da46c013b89aa0f4f6871b0fc">&#9670;&nbsp;</a></span>GXSetIndTexOrder()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXSetIndTexOrder </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a4d7b1c6a0a90b3d3fc4188cf27011c74"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d7b1c6a0a90b3d3fc4188cf27011c74">&#9670;&nbsp;</a></span>GXSetMisc()</h2>
 
@@ -945,193 +796,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void GXSetMisc </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab157ef48c99e74b862b53dc0d8daf38e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab157ef48c99e74b862b53dc0d8daf38e">&#9670;&nbsp;</a></span>GXSetNumIndStages()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXSetNumIndStages </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acb3bfc8f821ce0dac4ff59a7435510a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb3bfc8f821ce0dac4ff59a7435510a4">&#9670;&nbsp;</a></span>GXSetNumTevStages()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXSetNumTevStages </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a546f2bd89b1c3dc0298389b68c9ae235"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a546f2bd89b1c3dc0298389b68c9ae235">&#9670;&nbsp;</a></span>GXSetNumTexGens()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXSetNumTexGens </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2f9a5bd72470b3081e71c92ee31e86f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f9a5bd72470b3081e71c92ee31e86f6">&#9670;&nbsp;</a></span>GXSetTevAlphaIn()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXSetTevAlphaIn </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9af76161230bde11ce5bdfc08d435e98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9af76161230bde11ce5bdfc08d435e98">&#9670;&nbsp;</a></span>GXSetTevAlphaOp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXSetTevAlphaOp </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8a23430129345dfbb7940947ced442b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a23430129345dfbb7940947ced442b0">&#9670;&nbsp;</a></span>GXSetTevColorIn()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXSetTevColorIn </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3c0364c5fd1d87b71ac5f6861e371a72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c0364c5fd1d87b71ac5f6861e371a72">&#9670;&nbsp;</a></span>GXSetTevColorOp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXSetTevColorOp </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a11c201f2cc3d3288f60574da2c6adca7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11c201f2cc3d3288f60574da2c6adca7">&#9670;&nbsp;</a></span>GXSetTevDirect()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXSetTevDirect </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5dcb00c141590a1fee6b4e6dc38dfb71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5dcb00c141590a1fee6b4e6dc38dfb71">&#9670;&nbsp;</a></span>GXSetTevIndirect()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXSetTevIndirect </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3baa5564e3349c2e428a6b050f77f582"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3baa5564e3349c2e428a6b050f77f582">&#9670;&nbsp;</a></span>GXSetTevOrder()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXSetTevOrder </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a71bcc96cc7d4a9d330d2be4b5a9548a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71bcc96cc7d4a9d330d2be4b5a9548a5">&#9670;&nbsp;</a></span>GXSetTexCoordGen2()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXSetTexCoordGen2 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -2492,91 +2156,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void processTillStartFrame__14JPABaseEmitterFv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a93df645b0f4cbe24ff486f44e7490d6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93df645b0f4cbe24ff486f44e7490d6c">&#9670;&nbsp;</a></span>PSMTXConcat()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PSMTXConcat </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9ec00f755b69eb1ecdd833e3148126dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ec00f755b69eb1ecdd833e3148126dc">&#9670;&nbsp;</a></span>PSMTXCopy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PSMTXCopy </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9202d7b49cfe094cad7baadc3487f43d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9202d7b49cfe094cad7baadc3487f43d">&#9670;&nbsp;</a></span>PSMTXMultVec()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PSMTXMultVec </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9cd48acde1f3d9bf92518f3f56ec841c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cd48acde1f3d9bf92518f3f56ec841c">&#9670;&nbsp;</a></span>PSMTXMultVecSR()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PSMTXMultVecSR </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a71fe0a3a47a4a7334c3cef19bb25b8a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71fe0a3a47a4a7334c3cef19bb25b8a3">&#9670;&nbsp;</a></span>PSMTXScale()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PSMTXScale </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>

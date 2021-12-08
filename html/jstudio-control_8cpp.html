@@ -83,6 +83,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="jstudio-control_8h_source.html">JSystem/JStudio/JStudio/jstudio-control.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="binary_8h_source.html">JSystem/JGadget/binary.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="fvb_8h_source.html">JSystem/JStudio/JStudio/fvb.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stb_8h_source.html">JSystem/JStudio/JStudio/stb.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;asm/JSystem/JStudio/JStudio/jstudio-control/__ct__Q27JStudio8TControlFv.s&quot;</code><br />
@@ -107,7 +110,7 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="jstudio-control_8cpp__incl.svg" width="100%" height="495"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="jstudio-control_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><table class="memberdecls">
@@ -116,22 +119,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structVec.html">Vec</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1TCreateObject.html">JStudio::TCreateObject</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1stb_1_1data.html">JStudio::stb::data</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1stb_1_1data_1_1TParse__TBlock__object.html">JStudio::stb::data::TParse_TBlock_object</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1stb_1_1data_1_1TParse__THeader.html">JStudio::stb::data::TParse_THeader</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1stb_1_1data_1_1TParse__TBlock.html">JStudio::stb::data::TParse_TBlock</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1stb_1_1TControl.html">JStudio::stb::TControl</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1stb_1_1TObject.html">JStudio::stb::TObject</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1stb_1_1TFactory.html">JStudio::stb::TFactory</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1stb_1_1TParse.html">JStudio::stb::TParse</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1TFactory.html">JStudio::TFactory</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,36 +134,14 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1TParse.html">JStudio::TParse</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1fvb_1_1TControl.html">JStudio::fvb::TControl</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1fvb_1_1TFactory.html">JStudio::fvb::TFactory</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1fvb_1_1TParse.html">JStudio::fvb::TParse</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1data.html">JStudio::data</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJGadget_1_1binary.html">JGadget::binary</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJGadget_1_1binary_1_1TParse__header__block.html">JGadget::binary::TParse_header_block</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJGadget_1_1TLinkListNode.html">JGadget::TLinkListNode</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJGadget_1_1TNodeLinkList.html">JGadget::TNodeLinkList</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJGadget_1_1TNodeLinkList_1_1iterator.html">JGadget::TNodeLinkList::iterator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceJStudio"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJStudio.html">JStudio</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceJStudio_1_1stb"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJStudio_1_1stb.html">JStudio::stb</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceJStudio_1_1ctb"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJStudio_1_1ctb.html">JStudio::ctb</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceJStudio_1_1fvb"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJStudio_1_1fvb.html">JStudio::fvb</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceJGadget"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJGadget.html">JGadget</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -285,7 +250,7 @@ Functions</h2></td></tr>
 <tr class="separator:a4a469eda933d9930df223beeb5338dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af042145c4f9f93ab85dce161e37f4de1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jstudio-control_8cpp.html#af042145c4f9f93ab85dce161e37f4de1">COMPILER_STRIP_GATE</a> (0x8039AA40, &amp;<a class="el" href="jstudio-object_8cpp.html#a494b07bc5610220ed580bd3dfa3d527d">lit_745</a>)</td></tr>
 <tr class="separator:af042145c4f9f93ab85dce161e37f4de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a5a475c0830518bca900af2925768cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jstudio-control_8cpp.html#a9a5a475c0830518bca900af2925768cd">COMPILER_STRIP_GATE</a> (0x8039AA4C, &amp;<a class="el" href="JUTDbPrint_8cpp.html#a888391dbeedaf1fabf08c82d0514e600">lit_838</a>)</td></tr>
+<tr class="memitem:a9a5a475c0830518bca900af2925768cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jstudio-control_8cpp.html#a9a5a475c0830518bca900af2925768cd">COMPILER_STRIP_GATE</a> (0x8039AA4C, &amp;<a class="el" href="jstudio-control_8cpp.html#a05cc620ba60612e1e0e919cc8160fd16">lit_838</a>)</td></tr>
 <tr class="separator:a9a5a475c0830518bca900af2925768cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4348503a209250dc8bf8314a4dbc6288"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jstudio-control_8cpp.html#a4348503a209250dc8bf8314a4dbc6288">COMPILER_STRIP_GATE</a> (0x8039AA58, &amp;<a class="el" href="jstudio-control_8cpp.html#a3cdf4cd41debd3e5aad5816744c502db">lit_1138</a>)</td></tr>
 <tr class="separator:a4348503a209250dc8bf8314a4dbc6288"><td class="memSeparator" colspan="2">&#160;</td></tr>

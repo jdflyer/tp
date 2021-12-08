@@ -74,20 +74,17 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">J3DShapeDraw.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="J3DShapeDraw_8h_source.html">JSystem/J3DGraphBase/J3DShapeDraw.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
+<code>#include &quot;dolphin/gx/gx.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DShapeDraw/countVertex__12J3DShapeDrawFUl.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DShapeDraw/addTexMtxIndexInDL__12J3DShapeDrawFUlUlUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DShapeDraw/__ct__12J3DShapeDrawFPCUcUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DShapeDraw/draw__12J3DShapeDrawCFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DShapeDraw/__dt__12J3DShapeDrawFv.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for J3DShapeDraw.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -117,17 +114,10 @@ Functions</h2></td></tr>
 <tr class="separator:a498e6440d5c316e2672169ee4ed92309"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0440acad7d135008a79a898fb9e03f45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DShapeDraw_8cpp.html#a0440acad7d135008a79a898fb9e03f45">DCStoreRange</a> ()</td></tr>
 <tr class="separator:a0440acad7d135008a79a898fb9e03f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a205c3e8c47bf4d3722ed1ab5bb56761c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DShapeDraw_8cpp.html#a205c3e8c47bf4d3722ed1ab5bb56761c">GXCallDisplayList</a> ()</td></tr>
-<tr class="separator:a205c3e8c47bf4d3722ed1ab5bb56761c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbb5ad6599b032275cd8ecbdb2b252c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DShapeDraw_8cpp.html#abbb5ad6599b032275cd8ecbdb2b252c4">_savegpr_18</a> ()</td></tr>
 <tr class="separator:abbb5ad6599b032275cd8ecbdb2b252c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41148e4f4d091e2c70013e8725810219"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DShapeDraw_8cpp.html#a41148e4f4d091e2c70013e8725810219">_restgpr_18</a> ()</td></tr>
 <tr class="separator:a41148e4f4d091e2c70013e8725810219"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a7bbe12c2bb66e2543646650e72999ca1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DShapeDraw_8cpp.html#a7bbe12c2bb66e2543646650e72999ca1">__vt__12J3DShapeDraw</a> [3+1]</td></tr>
-<tr class="separator:a7bbe12c2bb66e2543646650e72999ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a513bc442941eb83a183f1f991cebb0fa"></a>
@@ -300,23 +290,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a205c3e8c47bf4d3722ed1ab5bb56761c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a205c3e8c47bf4d3722ed1ab5bb56761c">&#9670;&nbsp;</a></span>GXCallDisplayList()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXCallDisplayList </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="afc6bb37288ea54f2151b2ecd4d4ccf3b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afc6bb37288ea54f2151b2ecd4d4ccf3b">&#9670;&nbsp;</a></span>memcpy()</h2>
 
@@ -332,38 +305,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a7bbe12c2bb66e2543646650e72999ca1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bbe12c2bb66e2543646650e72999ca1">&#9670;&nbsp;</a></span>__vt__12J3DShapeDraw</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void* __vt__12J3DShapeDraw[3+1]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> ,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="J3DShapeDraw_8cpp.html#aeee86b0320a6d4806a856b60b84cc9d8">__dt__12J3DShapeDrawFv</a>,</div>
-<div class="line">    </div>
-<div class="line">    <a class="code" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
-<div class="line">}</div>
-<div class="ttc" id="aJ3DShapeDraw_8cpp_html_aeee86b0320a6d4806a856b60b84cc9d8"><div class="ttname"><a href="J3DShapeDraw_8cpp.html#aeee86b0320a6d4806a856b60b84cc9d8">__dt__12J3DShapeDrawFv</a></div><div class="ttdeci">void __dt__12J3DShapeDrawFv()</div></div>
-<div class="ttc" id="atypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> types.h:34</div></div>
-</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

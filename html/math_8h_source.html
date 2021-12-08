@@ -125,29 +125,30 @@ $(function() {
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">extern</span> <a class="code" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> <a class="code" href="math_8h.html#a5a8600d824defe833070bbeaa7cb680a">__float_nan</a>[4];</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">extern</span> <a class="code" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> <a class="code" href="math_8h.html#acdca8b499975ae051302f583bdc26510">__float_epsilon</a>[4];</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="math_8h.html#a219997cc89e424fa3901aca7cf02845a">   50</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> <a class="code" href="math_8h.html#a219997cc89e424fa3901aca7cf02845a">sqrt_step</a>(<a class="code" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> tmpd, <a class="code" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> mag) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> tmpd * 0.5 * (3.0 - mag * (tmpd * tmpd));</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="math_8h.html#aa8aa680363a6bccf2daff7733139af33">   54</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> <a class="code" href="math_8h.html#aa8aa680363a6bccf2daff7733139af33">sqrtf</a>(<a class="code" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> mag) {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">if</span> (mag &gt; 0.0f) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> tmpd = __frsqrte(mag);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        tmpd = <a class="code" href="math_8h.html#a219997cc89e424fa3901aca7cf02845a">sqrt_step</a>(tmpd, mag);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">extern</span> <a class="code" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> <a class="code" href="math_8h.html#ab9a4887d4ed7a62635374542d2b582a0">__float_max</a>[4];</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="math_8h.html#a219997cc89e424fa3901aca7cf02845a">   51</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> <a class="code" href="math_8h.html#a219997cc89e424fa3901aca7cf02845a">sqrt_step</a>(<a class="code" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> tmpd, <a class="code" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> mag) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> tmpd * 0.5 * (3.0 - mag * (tmpd * tmpd));</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="math_8h.html#aa8aa680363a6bccf2daff7733139af33">   55</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> <a class="code" href="math_8h.html#aa8aa680363a6bccf2daff7733139af33">sqrtf</a>(<a class="code" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> mag) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">if</span> (mag &gt; 0.0f) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> tmpd = __frsqrte(mag);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        tmpd = <a class="code" href="math_8h.html#a219997cc89e424fa3901aca7cf02845a">sqrt_step</a>(tmpd, mag);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        tmpd = <a class="code" href="math_8h.html#a219997cc89e424fa3901aca7cf02845a">sqrt_step</a>(tmpd, mag);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> mag * tmpd;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mag &lt; 0.0) {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="math_8h.html#a5a8600d824defe833070bbeaa7cb680a">__float_nan</a>[0];</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="float_8h.html#a6dad1ca35286e31c328c2b1f51f330c2">fpclassify</a>(mag) == 1) {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="math_8h.html#a5a8600d824defe833070bbeaa7cb680a">__float_nan</a>[0];</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> mag;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        tmpd = <a class="code" href="math_8h.html#a219997cc89e424fa3901aca7cf02845a">sqrt_step</a>(tmpd, mag);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> mag * tmpd;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (mag &lt; 0.0) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="math_8h.html#a5a8600d824defe833070bbeaa7cb680a">__float_nan</a>[0];</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="float_8h.html#a6dad1ca35286e31c328c2b1f51f330c2">fpclassify</a>(mag) == 1) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="math_8h.html#a5a8600d824defe833070bbeaa7cb680a">__float_nan</a>[0];</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">return</span> mag;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="afloat_8h_html"><div class="ttname"><a href="float_8h.html">float.h</a></div></div>
 <div class="ttc" id="afloat_8h_html_a6dad1ca35286e31c328c2b1f51f330c2"><div class="ttname"><a href="float_8h.html#a6dad1ca35286e31c328c2b1f51f330c2">fpclassify</a></div><div class="ttdeci">#define fpclassify(x)</div><div class="ttdef"><b>Definition:</b> float.h:15</div></div>
 <div class="ttc" id="amath_8h_html_a0171e52a2a8e8bcdf56cc8ec678709b1"><div class="ttname"><a href="math_8h.html#a0171e52a2a8e8bcdf56cc8ec678709b1">modf</a></div><div class="ttdeci">f64 modf(f64, f64 *)</div></div>
@@ -156,7 +157,7 @@ $(function() {
 <div class="ttc" id="amath_8h_html_a181e4c26f14a6f5a2baf01ec28596d11"><div class="ttname"><a href="math_8h.html#a181e4c26f14a6f5a2baf01ec28596d11">sqrt</a></div><div class="ttdeci">f64 sqrt(f64)</div></div>
 <div class="ttc" id="amath_8h_html_a1ac30b658237628c81a5ca1ff3a9dd6e"><div class="ttname"><a href="math_8h.html#a1ac30b658237628c81a5ca1ff3a9dd6e">ceil</a></div><div class="ttdeci">f64 ceil(f64)</div></div>
 <div class="ttc" id="amath_8h_html_a1bc367b7a15a8c294f0d1c35840916b3"><div class="ttname"><a href="math_8h.html#a1bc367b7a15a8c294f0d1c35840916b3">sin</a></div><div class="ttdeci">f64 sin(f64)</div></div>
-<div class="ttc" id="amath_8h_html_a219997cc89e424fa3901aca7cf02845a"><div class="ttname"><a href="math_8h.html#a219997cc89e424fa3901aca7cf02845a">sqrt_step</a></div><div class="ttdeci">f64 sqrt_step(f64 tmpd, f32 mag)</div><div class="ttdef"><b>Definition:</b> math.h:50</div></div>
+<div class="ttc" id="amath_8h_html_a219997cc89e424fa3901aca7cf02845a"><div class="ttname"><a href="math_8h.html#a219997cc89e424fa3901aca7cf02845a">sqrt_step</a></div><div class="ttdeci">f64 sqrt_step(f64 tmpd, f32 mag)</div><div class="ttdef"><b>Definition:</b> math.h:51</div></div>
 <div class="ttc" id="amath_8h_html_a272834039a5b40c78b1b1209f8c4e68c"><div class="ttname"><a href="math_8h.html#a272834039a5b40c78b1b1209f8c4e68c">pow</a></div><div class="ttdeci">f64 pow(f64, f64)</div></div>
 <div class="ttc" id="amath_8h_html_a2a22cded6289b7acb6f1eabf4249bffb"><div class="ttname"><a href="math_8h.html#a2a22cded6289b7acb6f1eabf4249bffb">fabs</a></div><div class="ttdeci">f64 fabs(f64 f)</div><div class="ttdef"><b>Definition:</b> math.h:21</div></div>
 <div class="ttc" id="amath_8h_html_a3fcdc424310aaa7fdcbdd0e40a5a93b2"><div class="ttname"><a href="math_8h.html#a3fcdc424310aaa7fdcbdd0e40a5a93b2">floor</a></div><div class="ttdeci">f64 floor(f64)</div></div>
@@ -169,8 +170,9 @@ $(function() {
 <div class="ttc" id="amath_8h_html_a76543be23c88978bb2413725d3c15d7b"><div class="ttname"><a href="math_8h.html#a76543be23c88978bb2413725d3c15d7b">acosf</a></div><div class="ttdeci">f32 acosf(f32)</div></div>
 <div class="ttc" id="amath_8h_html_a91e1d09e9627c1c19ec5ea25dd0b0be7"><div class="ttname"><a href="math_8h.html#a91e1d09e9627c1c19ec5ea25dd0b0be7">frexp</a></div><div class="ttdeci">f64 frexp(f64, s32 *)</div></div>
 <div class="ttc" id="amath_8h_html_aa3ee1b2853bb0d42e6ba725f0d43def4"><div class="ttname"><a href="math_8h.html#aa3ee1b2853bb0d42e6ba725f0d43def4">atan</a></div><div class="ttdeci">f64 atan(f64)</div></div>
-<div class="ttc" id="amath_8h_html_aa8aa680363a6bccf2daff7733139af33"><div class="ttname"><a href="math_8h.html#aa8aa680363a6bccf2daff7733139af33">sqrtf</a></div><div class="ttdeci">f32 sqrtf(f32 mag)</div><div class="ttdef"><b>Definition:</b> math.h:54</div></div>
+<div class="ttc" id="amath_8h_html_aa8aa680363a6bccf2daff7733139af33"><div class="ttname"><a href="math_8h.html#aa8aa680363a6bccf2daff7733139af33">sqrtf</a></div><div class="ttdeci">f32 sqrtf(f32 mag)</div><div class="ttdef"><b>Definition:</b> math.h:55</div></div>
 <div class="ttc" id="amath_8h_html_aa8c41c0f8dbdc7c8bc97671288ae63b6"><div class="ttname"><a href="math_8h.html#aa8c41c0f8dbdc7c8bc97671288ae63b6">fmodf</a></div><div class="ttdeci">f32 fmodf(f32 f1, f32 f2)</div><div class="ttdef"><b>Definition:</b> math.h:33</div></div>
+<div class="ttc" id="amath_8h_html_ab9a4887d4ed7a62635374542d2b582a0"><div class="ttname"><a href="math_8h.html#ab9a4887d4ed7a62635374542d2b582a0">__float_max</a></div><div class="ttdeci">f32 __float_max[4]</div></div>
 <div class="ttc" id="amath_8h_html_abdadd0417247a57733bc0b3b65d33254"><div class="ttname"><a href="math_8h.html#abdadd0417247a57733bc0b3b65d33254">ldexp</a></div><div class="ttdeci">f64 ldexp(f64, s32)</div></div>
 <div class="ttc" id="amath_8h_html_acdca8b499975ae051302f583bdc26510"><div class="ttname"><a href="math_8h.html#acdca8b499975ae051302f583bdc26510">__float_epsilon</a></div><div class="ttdeci">f32 __float_epsilon[4]</div></div>
 <div class="ttc" id="amath_8h_html_adb91d9c844e8f5dfc7342360614f233a"><div class="ttname"><a href="math_8h.html#adb91d9c844e8f5dfc7342360614f233a">tanf</a></div><div class="ttdeci">f32 tanf(f32)</div></div>

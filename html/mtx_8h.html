@@ -141,6 +141,10 @@ Functions</h2></td></tr>
 <tr class="separator:a5fcfe484d797e698957501ccce94d913"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa7888103fe18a9a57d99a632c213f73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtx_8h.html#aaa7888103fe18a9a57d99a632c213f73">PSMTXQuat</a> (<a class="el" href="mtx_8h.html#a8f63117d690d9f816cc9a87664078f16">Mtx</a> matrix, const <a class="el" href="structQuaternion.html">Quaternion</a> *quat)</td></tr>
 <tr class="separator:aaa7888103fe18a9a57d99a632c213f73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6566ce7195e7893f401e26f5c257f071"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtx_8h.html#a6566ce7195e7893f401e26f5c257f071">PSMTXMultVec</a> (const <a class="el" href="mtx_8h.html#a8f63117d690d9f816cc9a87664078f16">Mtx</a> matrix, const <a class="el" href="structVec.html">Vec</a> *src, <a class="el" href="structVec.html">Vec</a> *dst)</td></tr>
+<tr class="separator:a6566ce7195e7893f401e26f5c257f071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7de39415ff681a5e128c7d674ddd77bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtx_8h.html#a7de39415ff681a5e128c7d674ddd77bd">PSMTXMultVecSR</a> (const <a class="el" href="mtx_8h.html#a8f63117d690d9f816cc9a87664078f16">Mtx</a> matrix, const <a class="el" href="structVec.html">Vec</a> *src, <a class="el" href="structVec.html">Vec</a> *dst)</td></tr>
+<tr class="separator:a7de39415ff681a5e128c7d674ddd77bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7a0219d0d98b94f308b4a1e17e6d0c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtx_8h.html#ae7a0219d0d98b94f308b4a1e17e6d0c1">C_MTXLookAt</a> (<a class="el" href="mtx_8h.html#a8f63117d690d9f816cc9a87664078f16">Mtx</a> param_1, const <a class="el" href="structVec.html">Vec</a> *param_2, const <a class="el" href="structVec.html">Vec</a> *param_3, const <a class="el" href="structVec.html">Vec</a> *param_4)</td></tr>
 <tr class="separator:ae7a0219d0d98b94f308b4a1e17e6d0c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b90eb6f14d765b991732b4b40d02020"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mtx_8h.html#a3b90eb6f14d765b991732b4b40d02020">C_MTXLightPerspective</a> (<a class="el" href="mtx_8h.html#a8f63117d690d9f816cc9a87664078f16">Mtx</a> matrix, float fov_y, float aspect, float scale_s, float scale_t, float trans_s, float trans_t)</td></tr>
@@ -510,6 +514,74 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="mtx_8h.html#a8f63117d690d9f816cc9a87664078f16">Mtx</a>&#160;</td>
+          <td class="paramname"><em>dst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6566ce7195e7893f401e26f5c257f071"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6566ce7195e7893f401e26f5c257f071">&#9670;&nbsp;</a></span>PSMTXMultVec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PSMTXMultVec </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="mtx_8h.html#a8f63117d690d9f816cc9a87664078f16">Mtx</a>&#160;</td>
+          <td class="paramname"><em>matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structVec.html">Vec</a> *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structVec.html">Vec</a> *&#160;</td>
+          <td class="paramname"><em>dst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7de39415ff681a5e128c7d674ddd77bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7de39415ff681a5e128c7d674ddd77bd">&#9670;&nbsp;</a></span>PSMTXMultVecSR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PSMTXMultVecSR </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="mtx_8h.html#a8f63117d690d9f816cc9a87664078f16">Mtx</a>&#160;</td>
+          <td class="paramname"><em>matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structVec.html">Vec</a> *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structVec.html">Vec</a> *&#160;</td>
           <td class="paramname"><em>dst</em>&#160;</td>
         </tr>
         <tr>

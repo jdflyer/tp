@@ -89,23 +89,33 @@ $(function() {
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">return</span> __fres(value);</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceJMath.html">JMath</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="namespaceJMath.html#aaacbd97029a9626f4028cb3988077e51">   15</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> <a class="code" href="namespaceJMath.html#aaacbd97029a9626f4028cb3988077e51">fastReciprocal</a>(<a class="code" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> value) {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="JMath_8h.html#a68e6580e820a34bc8b43294f6769615e">JMAFastReciprocal</a>(value);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};  <span class="comment">// namespace JMath</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="JMath_8h.html#a1d398641174170a1eba8d3c735a791b0">   13</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> <a class="code" href="JMath_8h.html#a1d398641174170a1eba8d3c735a791b0">JMAFastSqrt</a>(<a class="code" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> input) {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">if</span> (input &gt; 0.0f) {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <a class="code" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> tmp = __frsqrte(input);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordflow">return</span> tmp * input;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">return</span> input;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* JMATH_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceJMath.html">JMath</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespaceJMath.html#aaacbd97029a9626f4028cb3988077e51">   23</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> <a class="code" href="namespaceJMath.html#aaacbd97029a9626f4028cb3988077e51">fastReciprocal</a>(<a class="code" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> value) {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="JMath_8h.html#a68e6580e820a34bc8b43294f6769615e">JMAFastReciprocal</a>(value);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};  <span class="comment">// namespace JMath</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* JMATH_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aJMath_8h_html_a1d398641174170a1eba8d3c735a791b0"><div class="ttname"><a href="JMath_8h.html#a1d398641174170a1eba8d3c735a791b0">JMAFastSqrt</a></div><div class="ttdeci">f32 JMAFastSqrt(f32 input)</div><div class="ttdef"><b>Definition:</b> JMath.h:13</div></div>
 <div class="ttc" id="aJMath_8h_html_a68e6580e820a34bc8b43294f6769615e"><div class="ttname"><a href="JMath_8h.html#a68e6580e820a34bc8b43294f6769615e">JMAFastReciprocal</a></div><div class="ttdeci">f32 JMAFastReciprocal(f32 value)</div><div class="ttdef"><b>Definition:</b> JMath.h:9</div></div>
 <div class="ttc" id="aJMath_8h_html_aedd3628b5c263d6dbb63ce5dcd153435"><div class="ttname"><a href="JMath_8h.html#aedd3628b5c263d6dbb63ce5dcd153435">JMAMTXApplyScale</a></div><div class="ttdeci">void JMAMTXApplyScale(const Mtx, Mtx, f32, f32, f32)</div></div>
 <div class="ttc" id="amtx_8h_html"><div class="ttname"><a href="mtx_8h.html">mtx.h</a></div></div>
 <div class="ttc" id="amtx_8h_html_a8f63117d690d9f816cc9a87664078f16"><div class="ttname"><a href="mtx_8h.html#a8f63117d690d9f816cc9a87664078f16">Mtx</a></div><div class="ttdeci">float Mtx[3][4]</div><div class="ttdef"><b>Definition:</b> mtx.h:8</div></div>
 <div class="ttc" id="anamespaceJMath_html"><div class="ttname"><a href="namespaceJMath.html">JMath</a></div><div class="ttdef"><b>Definition:</b> JMATrigonometric.cpp:77</div></div>
-<div class="ttc" id="anamespaceJMath_html_aaacbd97029a9626f4028cb3988077e51"><div class="ttname"><a href="namespaceJMath.html#aaacbd97029a9626f4028cb3988077e51">JMath::fastReciprocal</a></div><div class="ttdeci">f32 fastReciprocal(f32 value)</div><div class="ttdef"><b>Definition:</b> JMath.h:15</div></div>
+<div class="ttc" id="anamespaceJMath_html_aaacbd97029a9626f4028cb3988077e51"><div class="ttname"><a href="namespaceJMath.html#aaacbd97029a9626f4028cb3988077e51">JMath::fastReciprocal</a></div><div class="ttdeci">f32 fastReciprocal(f32 value)</div><div class="ttdef"><b>Definition:</b> JMath.h:23</div></div>
 <div class="ttc" id="atypes_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div></div>
 <div class="ttc" id="atypes_8h_html_a5f6906312a689f27d70e9d086649d3fd"><div class="ttname"><a href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a></div><div class="ttdeci">float f32</div><div class="ttdef"><b>Definition:</b> types.h:22</div></div>
+<div class="ttc" id="atypes_8h_html_a94dab5770726ccbef8c7d026cfbdf8e5"><div class="ttname"><a href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a></div><div class="ttdeci">double f64</div><div class="ttdef"><b>Definition:</b> types.h:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

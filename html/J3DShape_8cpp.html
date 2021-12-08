@@ -82,6 +82,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="J3DShape_8h_source.html">JSystem/J3DGraphBase/J3DShape.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J3DSys_8h_source.html">JSystem/J3DGraphBase/J3DSys.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DShape/initialize__8J3DShapeFv.s&quot;</code><br />
@@ -91,15 +92,12 @@ $(function() {
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DShape/countBumpMtxNum__8J3DShapeCFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DShape/J3DLoadCPCmd__FUcUl.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DShape/J3DLoadArrayBasePtr__F7_GXAttrPv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DShape/loadVtxArray__8J3DShapeCFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DShape/isSameVcdVatCmd__8J3DShapeFP8J3DShape.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DShape/makeVtxArrayCmd__8J3DShapeFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DShape/makeVcdVatCmd__8J3DShapeFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DShape/loadPreDrawSetting__8J3DShapeCFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DShape/setArrayAndBindPipeline__8J3DShapeCFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DShape/drawFast__8J3DShapeCFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DShape/draw__8J3DShapeCFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DShape/simpleDraw__8J3DShapeCFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DShape/simpleDrawCache__8J3DShapeCFv.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for J3DShape.cpp:</div>
@@ -173,8 +171,6 @@ Functions</h2></td></tr>
 <tr class="separator:a3eeaabe1fcda9f5da39be89190d1ca39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af49d6686d9db6413976b966287e70a75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DShape_8cpp.html#af49d6686d9db6413976b966287e70a75">OSEnableScheduler</a> ()</td></tr>
 <tr class="separator:af49d6686d9db6413976b966287e70a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fa35943586f0a2cb8b50d0d7311d119"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DShape_8cpp.html#a2fa35943586f0a2cb8b50d0d7311d119">GXSetArray</a> ()</td></tr>
-<tr class="separator:a2fa35943586f0a2cb8b50d0d7311d119"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75da4d84917c9274a4ec32a84f10d8b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DShape_8cpp.html#a75da4d84917c9274a4ec32a84f10d8b8">GDInitGDLObj</a> ()</td></tr>
 <tr class="separator:a75da4d84917c9274a4ec32a84f10d8b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb7dcd627764b5725c549d223e25fa2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DShape_8cpp.html#adb7dcd627764b5725c549d223e25fa2b">GDFlushCurrToMem</a> ()</td></tr>
@@ -208,22 +204,20 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ab91f16970de0a82f3c69e42da0162ef9"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DShape_8cpp.html#ab91f16970de0a82f3c69e42da0162ef9">__vt__8J3DShape</a> [6]</td></tr>
-<tr class="separator:ab91f16970de0a82f3c69e42da0162ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab01448c805dd195e5424ac8d143084a2"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DShape_8cpp.html#ab01448c805dd195e5424ac8d143084a2">__vt__8J3DShape</a> [6]</td></tr>
+<tr class="separator:ab01448c805dd195e5424ac8d143084a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6373c27207d560ebc802d37ccb42965b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DShape_8cpp.html#a6373c27207d560ebc802d37ccb42965b">sOldVcdVatCmd__8J3DShape</a> [4]</td></tr>
 <tr class="separator:a6373c27207d560ebc802d37ccb42965b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae72d2e91667c54fa66f49a18c8aaa30b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DShape_8cpp.html#ae72d2e91667c54fa66f49a18c8aaa30b">j3dSys</a> [284]</td></tr>
-<tr class="separator:ae72d2e91667c54fa66f49a18c8aaa30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84abbc29e15d4e345c83713d52016bcd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DShape_8cpp.html#a84abbc29e15d4e345c83713d52016bcd">j3dDefaultViewNo</a> [4+4]</td></tr>
 <tr class="separator:a84abbc29e15d4e345c83713d52016bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a367219be8617fb28318ef7e8f118f7c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DShape_8cpp.html#a367219be8617fb28318ef7e8f118f7c3">sCurrentPipeline__11J3DShapeMtx</a> [4]</td></tr>
-<tr class="separator:a367219be8617fb28318ef7e8f118f7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcd98e1791556e269a8096dd6b7f17bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DShape_8cpp.html#afcd98e1791556e269a8096dd6b7f17bc">sCurrentScaleFlag__11J3DShapeMtx</a> [4]</td></tr>
-<tr class="separator:afcd98e1791556e269a8096dd6b7f17bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af26d10268f0210ca025df6504ec4d152"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DShape_8cpp.html#af26d10268f0210ca025df6504ec4d152">sCurrentPipeline__11J3DShapeMtx</a></td></tr>
+<tr class="separator:af26d10268f0210ca025df6504ec4d152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c3304bad8285c4bc038db8b3307e30f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DShape_8cpp.html#a3c3304bad8285c4bc038db8b3307e30f">sCurrentScaleFlag__11J3DShapeMtx</a></td></tr>
+<tr class="separator:a3c3304bad8285c4bc038db8b3307e30f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a450d926c540ce5eac3769f2e1d9a6efa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DShape_8cpp.html#a450d926c540ce5eac3769f2e1d9a6efa">struct_804515B0</a> [4]</td></tr>
 <tr class="separator:a450d926c540ce5eac3769f2e1d9a6efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4e9520a3bd851c9910cd4b67f5af1f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DShape_8cpp.html#aa4e9520a3bd851c9910cd4b67f5af1f6">sTexMtxLoadType__11J3DShapeMtx</a> [4]</td></tr>
-<tr class="separator:aa4e9520a3bd851c9910cd4b67f5af1f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5a149b57f6e92eda429dbe1ecbe7923"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DShape_8cpp.html#ae5a149b57f6e92eda429dbe1ecbe7923">sTexMtxLoadType__11J3DShapeMtx</a></td></tr>
+<tr class="separator:ae5a149b57f6e92eda429dbe1ecbe7923"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a656111290f8611fc6cea5822a56abef2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DShape_8cpp.html#a656111290f8611fc6cea5822a56abef2">__GDCurrentDL</a> [4]</td></tr>
 <tr class="separator:a656111290f8611fc6cea5822a56abef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6187797e4c98cd61e9c5b2e17f3a08d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DShape_8cpp.html#af6187797e4c98cd61e9c5b2e17f3a08d">lit_687</a> [1+1]</td></tr>
@@ -614,23 +608,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void GDSetVtxDescv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2fa35943586f0a2cb8b50d0d7311d119"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fa35943586f0a2cb8b50d0d7311d119">&#9670;&nbsp;</a></span>GXSetArray()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXSetArray </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1074,8 +1051,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ab91f16970de0a82f3c69e42da0162ef9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab91f16970de0a82f3c69e42da0162ef9">&#9670;&nbsp;</a></span>__vt__8J3DShape</h2>
+<a id="ab01448c805dd195e5424ac8d143084a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab01448c805dd195e5424ac8d143084a2">&#9670;&nbsp;</a></span>__vt__8J3DShape</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1084,7 +1061,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void * __vt__8J3DShape</td>
+          <td class="memname">void* __vt__8J3DShape[6]</td>
         </tr>
       </table>
   </td>
@@ -1093,17 +1070,7 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> ,          (<span class="keywordtype">void</span>*)<a class="code" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="J3DShape_8cpp.html#ade914e6ba0829ab7578c742458eb7658">draw__8J3DShapeCFv</a>,       (<span class="keywordtype">void</span>*)<a class="code" href="J3DShape_8cpp.html#afddd868ab0c95e4e6f7d8b163d07c7bd">drawFast__8J3DShapeCFv</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="J3DShape_8cpp.html#acf649f4f0f045839a22cac73ea879fc1">simpleDraw__8J3DShapeCFv</a>, (<span class="keywordtype">void</span>*)<a class="code" href="J3DShape_8cpp.html#a5103d9d77bdede4566f33565e97494b5">simpleDrawCache__8J3DShapeCFv</a>,</div>
-<div class="line">}</div>
-<div class="ttc" id="aJ3DShape_8cpp_html_a5103d9d77bdede4566f33565e97494b5"><div class="ttname"><a href="J3DShape_8cpp.html#a5103d9d77bdede4566f33565e97494b5">simpleDrawCache__8J3DShapeCFv</a></div><div class="ttdeci">void simpleDrawCache__8J3DShapeCFv()</div></div>
-<div class="ttc" id="aJ3DShape_8cpp_html_acf649f4f0f045839a22cac73ea879fc1"><div class="ttname"><a href="J3DShape_8cpp.html#acf649f4f0f045839a22cac73ea879fc1">simpleDraw__8J3DShapeCFv</a></div><div class="ttdeci">void simpleDraw__8J3DShapeCFv()</div></div>
-<div class="ttc" id="aJ3DShape_8cpp_html_ade914e6ba0829ab7578c742458eb7658"><div class="ttname"><a href="J3DShape_8cpp.html#ade914e6ba0829ab7578c742458eb7658">draw__8J3DShapeCFv</a></div><div class="ttdeci">void draw__8J3DShapeCFv()</div></div>
-<div class="ttc" id="aJ3DShape_8cpp_html_afddd868ab0c95e4e6f7d8b163d07c7bd"><div class="ttname"><a href="J3DShape_8cpp.html#afddd868ab0c95e4e6f7d8b163d07c7bd">drawFast__8J3DShapeCFv</a></div><div class="ttdeci">void drawFast__8J3DShapeCFv()</div></div>
-<div class="ttc" id="atypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> types.h:34</div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a0b641a0394e87dd0a839bf6299adf518"></a>
@@ -1172,28 +1139,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae72d2e91667c54fa66f49a18c8aaa30b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae72d2e91667c54fa66f49a18c8aaa30b">&#9670;&nbsp;</a></span>j3dSys</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> j3dSys[284]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="af6187797e4c98cd61e9c5b2e17f3a08d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af6187797e4c98cd61e9c5b2e17f3a08d">&#9670;&nbsp;</a></span>lit_687</h2>
 
@@ -1246,28 +1191,28 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a367219be8617fb28318ef7e8f118f7c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a367219be8617fb28318ef7e8f118f7c3">&#9670;&nbsp;</a></span>sCurrentPipeline__11J3DShapeMtx</h2>
+<a id="af26d10268f0210ca025df6504ec4d152"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af26d10268f0210ca025df6504ec4d152">&#9670;&nbsp;</a></span>sCurrentPipeline__11J3DShapeMtx</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> sCurrentPipeline__11J3DShapeMtx[4]</td>
+          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> sCurrentPipeline__11J3DShapeMtx</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="afcd98e1791556e269a8096dd6b7f17bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afcd98e1791556e269a8096dd6b7f17bc">&#9670;&nbsp;</a></span>sCurrentScaleFlag__11J3DShapeMtx</h2>
+<a id="a3c3304bad8285c4bc038db8b3307e30f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c3304bad8285c4bc038db8b3307e30f">&#9670;&nbsp;</a></span>sCurrentScaleFlag__11J3DShapeMtx</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> sCurrentScaleFlag__11J3DShapeMtx[4]</td>
+          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> sCurrentScaleFlag__11J3DShapeMtx</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1310,14 +1255,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aa4e9520a3bd851c9910cd4b67f5af1f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4e9520a3bd851c9910cd4b67f5af1f6">&#9670;&nbsp;</a></span>sTexMtxLoadType__11J3DShapeMtx</h2>
+<a id="ae5a149b57f6e92eda429dbe1ecbe7923"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5a149b57f6e92eda429dbe1ecbe7923">&#9670;&nbsp;</a></span>sTexMtxLoadType__11J3DShapeMtx</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> sTexMtxLoadType__11J3DShapeMtx[4]</td>
+          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> sTexMtxLoadType__11J3DShapeMtx</td>
         </tr>
       </table>
 </div><div class="memdoc">

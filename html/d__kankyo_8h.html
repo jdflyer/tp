@@ -183,12 +183,17 @@ Classes</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a5626b01f2cac66862b5e179c9119b6ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8h.html#a5626b01f2cac66862b5e179c9119b6ee">dKankyo_DayProc</a> ()</td></tr>
 <tr class="separator:a5626b01f2cac66862b5e179c9119b6ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab15460550558d09bf316860dfb87b8cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8h.html#ab15460550558d09bf316860dfb87b8cd">dKy_set_nexttime</a> (<a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>)</td></tr>
+<tr class="separator:ab15460550558d09bf316860dfb87b8cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa729798f64aefd03de06322fe68de5d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8h.html#afa729798f64aefd03de06322fe68de5d">STATIC_ASSERT</a> (sizeof(<a class="el" href="structdKy__tevstr__c.html">dKy_tevstr_c</a>)==0x388)</td></tr>
 <tr class="separator:afa729798f64aefd03de06322fe68de5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada22cf4a57b7fc0e6bc2a57354d241df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8h.html#ada22cf4a57b7fc0e6bc2a57354d241df">STATIC_ASSERT</a> (sizeof(<a class="el" href="structdScnKy__env__light__c.html">dScnKy_env_light_c</a>)==4880)</td></tr>
 <tr class="separator:ada22cf4a57b7fc0e6bc2a57354d241df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b0fabba6a9baf3ee8fd6b6eb39983a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8h.html#a5b0fabba6a9baf3ee8fd6b6eb39983a6">dKy_darkworld_stage_check</a> (char const *, int)</td></tr>
+<tr class="memdesc:a5b0fabba6a9baf3ee8fd6b6eb39983a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns TRUE if (1) the room is one which can be loaded in twilight, (2) there is nothing currently preventing it from being loaded in twilight, and (3) the player has not cleared the relevant dark level (Faron Twilight, etc.). Otherwise returns FALSE.  <a href="d__kankyo_8h.html#a5b0fabba6a9baf3ee8fd6b6eb39983a6">More...</a><br /></td></tr>
 <tr class="separator:a5b0fabba6a9baf3ee8fd6b6eb39983a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac96176baaa592f0aadc605d28c8525c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8h.html#ac96176baaa592f0aadc605d28c8525c5">dKy_withwarp_capture_check</a> ()</td></tr>
+<tr class="separator:ac96176baaa592f0aadc605d28c8525c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a5626b01f2cac66862b5e179c9119b6ee"></a>
@@ -218,18 +223,63 @@ Functions</h2></td></tr>
           <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> dKy_darkworld_stage_check </td>
           <td>(</td>
           <td class="paramtype">char const *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname"><em>stageName</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname"><em>roomNo</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns TRUE if (1) the room is one which can be loaded in twilight, (2) there is nothing currently preventing it from being loaded in twilight, and (3) the player has not cleared the relevant dark level (Faron Twilight, etc.). Otherwise returns FALSE. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stageName</td><td>stage name </td></tr>
+    <tr><td class="paramname">roomNo</td><td>room number </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>BOOL Returns TRUE if the room can be loaded as twilight and the player has not already cleared it, else FALSE. </dd></dl>
+
+</div>
+</div>
+<a id="ab15460550558d09bf316860dfb87b8cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab15460550558d09bf316860dfb87b8cd">&#9670;&nbsp;</a></span>dKy_set_nexttime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dKy_set_nexttime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td>
+          <td class="paramname"><em>param_0</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac96176baaa592f0aadc605d28c8525c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac96176baaa592f0aadc605d28c8525c5">&#9670;&nbsp;</a></span>dKy_withwarp_capture_check()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> dKy_withwarp_capture_check </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">

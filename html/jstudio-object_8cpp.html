@@ -83,6 +83,8 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="jstudio-object_8h_source.html">JSystem/JStudio/JStudio/jstudio-object.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="fvb_8h_source.html">JSystem/JStudio/JStudio/fvb.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stb_8h_source.html">JSystem/JStudio/JStudio/stb.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;asm/JSystem/JStudio/JStudio/jstudio-object/__dt__Q37JStudio14TVariableValue7TOutputFv.s&quot;</code><br />
@@ -178,12 +180,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1TVariableValue_1_1TOutput__none__.html">JStudio::TVariableValue::TOutput_none_</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1stb_1_1data.html">JStudio::stb::data</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1stb_1_1data_1_1TParse__TBlock__object.html">JStudio::stb::data::TParse_TBlock_object</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1stb_1_1TObject.html">JStudio::stb::TObject</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1TObject.html">JStudio::TObject</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1TAdaptor__actor.html">JStudio::TAdaptor_actor</a></td></tr>
@@ -218,16 +214,10 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1TObject__sound.html">JStudio::TObject_sound</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJStudio_1_1fvb_1_1TControl.html">JStudio::fvb::TControl</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceJStudio"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJStudio.html">JStudio</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceJStudio_1_1stb"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJStudio_1_1stb.html">JStudio::stb</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespaceJStudio_1_1fvb"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJStudio_1_1fvb.html">JStudio::fvb</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -3644,8 +3634,8 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="jstudio-object_8cpp.html#aeb571c72966354219fad269bd0125693">func_802887BC</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="jstudio-object_8cpp.html#a113588a2282ce8283aed9fb3dab05d30">func_802885DC</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ajstudio-object_8cpp_html_a113588a2282ce8283aed9fb3dab05d30"><div class="ttname"><a href="jstudio-object_8cpp.html#a113588a2282ce8283aed9fb3dab05d30">func_802885DC</a></div><div class="ttdeci">void func_802885DC()</div><div class="ttdef"><b>Definition:</b> jstudio-object.cpp:2679</div></div>
-<div class="ttc" id="ajstudio-object_8cpp_html_aeb571c72966354219fad269bd0125693"><div class="ttname"><a href="jstudio-object_8cpp.html#aeb571c72966354219fad269bd0125693">func_802887BC</a></div><div class="ttdeci">void func_802887BC()</div><div class="ttdef"><b>Definition:</b> jstudio-object.cpp:2747</div></div>
+<div class="ttc" id="ajstudio-object_8cpp_html_a113588a2282ce8283aed9fb3dab05d30"><div class="ttname"><a href="jstudio-object_8cpp.html#a113588a2282ce8283aed9fb3dab05d30">func_802885DC</a></div><div class="ttdeci">void func_802885DC()</div><div class="ttdef"><b>Definition:</b> jstudio-object.cpp:2661</div></div>
+<div class="ttc" id="ajstudio-object_8cpp_html_aeb571c72966354219fad269bd0125693"><div class="ttname"><a href="jstudio-object_8cpp.html#aeb571c72966354219fad269bd0125693">func_802887BC</a></div><div class="ttdeci">void func_802887BC()</div><div class="ttdef"><b>Definition:</b> jstudio-object.cpp:2729</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3674,8 +3664,8 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="jstudio-object_8cpp.html#ac0595386aed67bae1d03002836117696">func_80288818</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="jstudio-object_8cpp.html#af7068037fd16c0c8ea5e2c38198a41c4">func_8028863C</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ajstudio-object_8cpp_html_ac0595386aed67bae1d03002836117696"><div class="ttname"><a href="jstudio-object_8cpp.html#ac0595386aed67bae1d03002836117696">func_80288818</a></div><div class="ttdeci">void func_80288818()</div><div class="ttdef"><b>Definition:</b> jstudio-object.cpp:2759</div></div>
-<div class="ttc" id="ajstudio-object_8cpp_html_af7068037fd16c0c8ea5e2c38198a41c4"><div class="ttname"><a href="jstudio-object_8cpp.html#af7068037fd16c0c8ea5e2c38198a41c4">func_8028863C</a></div><div class="ttdeci">void func_8028863C()</div><div class="ttdef"><b>Definition:</b> jstudio-object.cpp:2691</div></div>
+<div class="ttc" id="ajstudio-object_8cpp_html_ac0595386aed67bae1d03002836117696"><div class="ttname"><a href="jstudio-object_8cpp.html#ac0595386aed67bae1d03002836117696">func_80288818</a></div><div class="ttdeci">void func_80288818()</div><div class="ttdef"><b>Definition:</b> jstudio-object.cpp:2741</div></div>
+<div class="ttc" id="ajstudio-object_8cpp_html_af7068037fd16c0c8ea5e2c38198a41c4"><div class="ttname"><a href="jstudio-object_8cpp.html#af7068037fd16c0c8ea5e2c38198a41c4">func_8028863C</a></div><div class="ttdeci">void func_8028863C()</div><div class="ttdef"><b>Definition:</b> jstudio-object.cpp:2673</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3704,8 +3694,8 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="jstudio-object_8cpp.html#a4297266b1886c602dce1231404039d40">func_80288874</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="jstudio-object_8cpp.html#af6540976047a4e2fd136104a390c3e66">func_8028869C</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ajstudio-object_8cpp_html_a4297266b1886c602dce1231404039d40"><div class="ttname"><a href="jstudio-object_8cpp.html#a4297266b1886c602dce1231404039d40">func_80288874</a></div><div class="ttdeci">void func_80288874()</div><div class="ttdef"><b>Definition:</b> jstudio-object.cpp:2771</div></div>
-<div class="ttc" id="ajstudio-object_8cpp_html_af6540976047a4e2fd136104a390c3e66"><div class="ttname"><a href="jstudio-object_8cpp.html#af6540976047a4e2fd136104a390c3e66">func_8028869C</a></div><div class="ttdeci">void func_8028869C()</div><div class="ttdef"><b>Definition:</b> jstudio-object.cpp:2703</div></div>
+<div class="ttc" id="ajstudio-object_8cpp_html_a4297266b1886c602dce1231404039d40"><div class="ttname"><a href="jstudio-object_8cpp.html#a4297266b1886c602dce1231404039d40">func_80288874</a></div><div class="ttdeci">void func_80288874()</div><div class="ttdef"><b>Definition:</b> jstudio-object.cpp:2753</div></div>
+<div class="ttc" id="ajstudio-object_8cpp_html_af6540976047a4e2fd136104a390c3e66"><div class="ttname"><a href="jstudio-object_8cpp.html#af6540976047a4e2fd136104a390c3e66">func_8028869C</a></div><div class="ttdeci">void func_8028869C()</div><div class="ttdef"><b>Definition:</b> jstudio-object.cpp:2685</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3734,8 +3724,8 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="jstudio-object_8cpp.html#a2834567ae9628c238944edcc51ff3cf2">func_802888D0</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="jstudio-object_8cpp.html#a0509f0938e62d2940bb1f5c8bd17203c">func_802886FC</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ajstudio-object_8cpp_html_a0509f0938e62d2940bb1f5c8bd17203c"><div class="ttname"><a href="jstudio-object_8cpp.html#a0509f0938e62d2940bb1f5c8bd17203c">func_802886FC</a></div><div class="ttdeci">void func_802886FC()</div><div class="ttdef"><b>Definition:</b> jstudio-object.cpp:2715</div></div>
-<div class="ttc" id="ajstudio-object_8cpp_html_a2834567ae9628c238944edcc51ff3cf2"><div class="ttname"><a href="jstudio-object_8cpp.html#a2834567ae9628c238944edcc51ff3cf2">func_802888D0</a></div><div class="ttdeci">void func_802888D0()</div><div class="ttdef"><b>Definition:</b> jstudio-object.cpp:2783</div></div>
+<div class="ttc" id="ajstudio-object_8cpp_html_a0509f0938e62d2940bb1f5c8bd17203c"><div class="ttname"><a href="jstudio-object_8cpp.html#a0509f0938e62d2940bb1f5c8bd17203c">func_802886FC</a></div><div class="ttdeci">void func_802886FC()</div><div class="ttdef"><b>Definition:</b> jstudio-object.cpp:2697</div></div>
+<div class="ttc" id="ajstudio-object_8cpp_html_a2834567ae9628c238944edcc51ff3cf2"><div class="ttname"><a href="jstudio-object_8cpp.html#a2834567ae9628c238944edcc51ff3cf2">func_802888D0</a></div><div class="ttdeci">void func_802888D0()</div><div class="ttdef"><b>Definition:</b> jstudio-object.cpp:2765</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3764,8 +3754,8 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="jstudio-object_8cpp.html#a5afdbac8e841f72998318efff6b54d5c">func_8028892C</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="jstudio-object_8cpp.html#ac65819170e88805e61bec4390cde2a0d">func_8028875C</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ajstudio-object_8cpp_html_a5afdbac8e841f72998318efff6b54d5c"><div class="ttname"><a href="jstudio-object_8cpp.html#a5afdbac8e841f72998318efff6b54d5c">func_8028892C</a></div><div class="ttdeci">void func_8028892C()</div><div class="ttdef"><b>Definition:</b> jstudio-object.cpp:2795</div></div>
-<div class="ttc" id="ajstudio-object_8cpp_html_ac65819170e88805e61bec4390cde2a0d"><div class="ttname"><a href="jstudio-object_8cpp.html#ac65819170e88805e61bec4390cde2a0d">func_8028875C</a></div><div class="ttdeci">void func_8028875C()</div><div class="ttdef"><b>Definition:</b> jstudio-object.cpp:2727</div></div>
+<div class="ttc" id="ajstudio-object_8cpp_html_a5afdbac8e841f72998318efff6b54d5c"><div class="ttname"><a href="jstudio-object_8cpp.html#a5afdbac8e841f72998318efff6b54d5c">func_8028892C</a></div><div class="ttdeci">void func_8028892C()</div><div class="ttdef"><b>Definition:</b> jstudio-object.cpp:2777</div></div>
+<div class="ttc" id="ajstudio-object_8cpp_html_ac65819170e88805e61bec4390cde2a0d"><div class="ttname"><a href="jstudio-object_8cpp.html#ac65819170e88805e61bec4390cde2a0d">func_8028875C</a></div><div class="ttdeci">void func_8028875C()</div><div class="ttdef"><b>Definition:</b> jstudio-object.cpp:2709</div></div>
 </div><!-- fragment -->
 </div>
 </div>

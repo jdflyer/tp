@@ -84,6 +84,7 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="JUTTexture_8h_source.html">JSystem/JUtility/JUTTexture.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__resorce_8h_source.html">d/d_resorce.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__menu__window_8h_source.html">d/menu/d_menu_window.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__meter2_8h_source.html">d/meter/d_meter2.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__msg__flow_8h_source.html">d/msg/d_msg_flow.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__pane__class_8h_source.html">d/pane/d_pane_class.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
@@ -111,10 +112,6 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMsgObject__c.html">dMsgObject_c</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMeterMap__c.html">dMeterMap_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DPicture.html">J2DPicture</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJMSMesgEntry__c.html">JMSMesgEntry_c</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMenu__LetterData.html">dMenu_LetterData</a></td></tr>
@@ -122,8 +119,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMenu__Letter.html">dMenu_Letter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdItem__data.html">dItem_data</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMeter2__c.html">dMeter2_c</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMeter2Info__c.html">dMeter2Info_c</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,6 +145,20 @@ Functions</h2></td></tr>
 <tr class="separator:a2b70cdf98a471bc3badee7d07fe1079a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53801749e8d149bcd9fdba970337b5cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__meter2__info_8h.html#a53801749e8d149bcd9fdba970337b5cf">dMeter2Info_setSaveStageName</a> (const char *name)</td></tr>
 <tr class="separator:a53801749e8d149bcd9fdba970337b5cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b25490182a61425122d3579d1a75e99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__meter2__info_8h.html#a6b25490182a61425122d3579d1a75e99">dMeter2Info_getWarpStatus</a> ()</td></tr>
+<tr class="separator:a6b25490182a61425122d3579d1a75e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace8e28c030b79a59fc3c3136c8c0401b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__meter2__info_8h.html#ace8e28c030b79a59fc3c3136c8c0401b">dMeter2Info_getWarpRoomNo</a> ()</td></tr>
+<tr class="separator:ace8e28c030b79a59fc3c3136c8c0401b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29e014d5d1373cf186552df7f44ce179"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__meter2__info_8h.html#a29e014d5d1373cf186552df7f44ce179">dMeter2Info_getWarpPlayerNo</a> ()</td></tr>
+<tr class="separator:a29e014d5d1373cf186552df7f44ce179"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d7bcad6d7ba3be2e53e9692d4fac11e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcXyz.html">cXyz</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__meter2__info_8h.html#a8d7bcad6d7ba3be2e53e9692d4fac11e">dMeter2Info_getWarpPos</a> ()</td></tr>
+<tr class="separator:a8d7bcad6d7ba3be2e53e9692d4fac11e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71ecffcf04653d8238c565c3cf8e9e84"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__meter2__info_8h.html#a71ecffcf04653d8238c565c3cf8e9e84">dMeter2Info_getWarpStageName</a> ()</td></tr>
+<tr class="separator:a71ecffcf04653d8238c565c3cf8e9e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ebd83c8dc0e89de9ad210248c18f486"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__meter2__info_8h.html#a5ebd83c8dc0e89de9ad210248c18f486">dMeter2Info_setNowCount</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> count)</td></tr>
+<tr class="separator:a5ebd83c8dc0e89de9ad210248c18f486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1a0945a4ded8905d2eae5c177378898"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__meter2__info_8h.html#ac1a0945a4ded8905d2eae5c177378898">dMeter2Info_setMaxCount</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> count)</td></tr>
+<tr class="separator:ac1a0945a4ded8905d2eae5c177378898"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -274,6 +283,131 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a29e014d5d1373cf186552df7f44ce179"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29e014d5d1373cf186552df7f44ce179">&#9670;&nbsp;</a></span>dMeter2Info_getWarpPlayerNo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> dMeter2Info_getWarpPlayerNo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8d7bcad6d7ba3be2e53e9692d4fac11e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d7bcad6d7ba3be2e53e9692d4fac11e">&#9670;&nbsp;</a></span>dMeter2Info_getWarpPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcXyz.html">cXyz</a>&amp; dMeter2Info_getWarpPos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ace8e28c030b79a59fc3c3136c8c0401b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace8e28c030b79a59fc3c3136c8c0401b">&#9670;&nbsp;</a></span>dMeter2Info_getWarpRoomNo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> dMeter2Info_getWarpRoomNo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a71ecffcf04653d8238c565c3cf8e9e84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71ecffcf04653d8238c565c3cf8e9e84">&#9670;&nbsp;</a></span>dMeter2Info_getWarpStageName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* dMeter2Info_getWarpStageName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b25490182a61425122d3579d1a75e99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b25490182a61425122d3579d1a75e99">&#9670;&nbsp;</a></span>dMeter2Info_getWarpStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> dMeter2Info_getWarpStatus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a8424c293833330ffecc8fb11e75f76f0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8424c293833330ffecc8fb11e75f76f0">&#9670;&nbsp;</a></span>dMeter2Info_Initialize()</h2>
 
@@ -313,6 +447,58 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
           <td class="paramname"><em>time</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac1a0945a4ded8905d2eae5c177378898"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1a0945a4ded8905d2eae5c177378898">&#9670;&nbsp;</a></span>dMeter2Info_setMaxCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dMeter2Info_setMaxCount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
+          <td class="paramname"><em>count</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ebd83c8dc0e89de9ad210248c18f486"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ebd83c8dc0e89de9ad210248c18f486">&#9670;&nbsp;</a></span>dMeter2Info_setNowCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dMeter2Info_setNowCount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
+          <td class="paramname"><em>count</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

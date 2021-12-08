@@ -82,20 +82,13 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="J3DSys_8h_source.html">JSystem/J3DGraphBase/J3DSys.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="GXPixel_8h_source.html">dolphin/gx/GXPixel.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DSys/__ct__6J3DSysFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DSys/loadPosMtxIndx__6J3DSysCFiUs.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DSys/loadNrmMtxIndx__6J3DSysCFiUs.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DSys/setTexCacheRegion__6J3DSysF15_GXTexCacheSize.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DSys/drawInit__6J3DSysFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DSys/reinitGX__6J3DSysFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DSys/reinitGenMode__6J3DSysFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DSys/reinitLighting__6J3DSysFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DSys/reinitTransform__6J3DSysFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DSys/reinitTexture__6J3DSysFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DSys/reinitTevStages__6J3DSysFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DSys/reinitIndStages__6J3DSysFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DSys/reinitPixelProc__6J3DSysFv.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for J3DSys.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -149,14 +142,8 @@ Functions</h2></td></tr>
 <tr class="separator:acfcab8658298d99a9529336c8e55f1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe53a8a05d06e6da19834198663a2887"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#afe53a8a05d06e6da19834198663a2887">GXFlush</a> ()</td></tr>
 <tr class="separator:afe53a8a05d06e6da19834198663a2887"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabe03ccb4f4862b33e7f2fc882cabe39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#aabe03ccb4f4862b33e7f2fc882cabe39">GXSetChanAmbColor</a> ()</td></tr>
-<tr class="separator:aabe03ccb4f4862b33e7f2fc882cabe39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a250208d8171248b808c84e43fda110be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a250208d8171248b808c84e43fda110be">GXInitTexCacheRegion</a> ()</td></tr>
 <tr class="separator:a250208d8171248b808c84e43fda110be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dcb00c141590a1fee6b4e6dc38dfb71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a5dcb00c141590a1fee6b4e6dc38dfb71">GXSetTevIndirect</a> ()</td></tr>
-<tr class="separator:a5dcb00c141590a1fee6b4e6dc38dfb71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9de32984270ff8a43cf8e00e38ecee8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a9de32984270ff8a43cf8e00e38ecee8a">GXSetColorUpdate</a> ()</td></tr>
-<tr class="separator:a9de32984270ff8a43cf8e00e38ecee8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58fb5b02bb14a176b115397be03bbe99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a58fb5b02bb14a176b115397be03bbe99">_savegpr_25</a> ()</td></tr>
 <tr class="separator:a58fb5b02bb14a176b115397be03bbe99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96be8c79baacd021a226016df5297c51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a96be8c79baacd021a226016df5297c51">_savegpr_28</a> ()</td></tr>
@@ -208,18 +195,12 @@ Variables</h2></td></tr>
 <tr class="separator:aabe2038856414df1e001ee4312f7d892"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e8e670b588f09393d82d2ecd6ecd9b2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a3e8e670b588f09393d82d2ecd6ecd9b2">j3dIdentityMtx</a> [48]</td></tr>
 <tr class="separator:a3e8e670b588f09393d82d2ecd6ecd9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6b3bcfa83694fa889407eca00996be8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#ab6b3bcfa83694fa889407eca00996be8">ColorBlack</a> [4]</td></tr>
-<tr class="separator:ab6b3bcfa83694fa889407eca00996be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51fdef22992dc53ae8bd65202baa73c7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a51fdef22992dc53ae8bd65202baa73c7">ColorWhite</a> = 0xFFFFFFFF</td></tr>
-<tr class="separator:a51fdef22992dc53ae8bd65202baa73c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2da6f708a3ad896816ac520d514179a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#ad2da6f708a3ad896816ac520d514179a">IndMtx</a> [24]</td></tr>
-<tr class="separator:ad2da6f708a3ad896816ac520d514179a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b6a1fcf624a4298f0e399aa3a60b4ce"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a5b6a1fcf624a4298f0e399aa3a60b4ce">lit_892</a> [4]</td></tr>
-<tr class="separator:a5b6a1fcf624a4298f0e399aa3a60b4ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac3cba9775e1d55b5319dfe4bb9bccbf"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#aac3cba9775e1d55b5319dfe4bb9bccbf">lit_893</a> = 1.0f</td></tr>
-<tr class="separator:aac3cba9775e1d55b5319dfe4bb9bccbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e58836d09431331f10738368ee5b560"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a3e58836d09431331f10738368ee5b560">lit_894</a> [1+1]</td></tr>
-<tr class="separator:a3e58836d09431331f10738368ee5b560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a641c934462c10523d8bc4dbf01588230"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="GX_8h.html#a0419d171f4d66c2b2a77bd299ddbdcdc">GXColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a641c934462c10523d8bc4dbf01588230">ColorBlack</a> = {0x00, 0x00, 0x00, 0x00}</td></tr>
+<tr class="separator:a641c934462c10523d8bc4dbf01588230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac790a91a9c0f624a62617973b3c11e97"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="GX_8h.html#a0419d171f4d66c2b2a77bd299ddbdcdc">GXColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#ac790a91a9c0f624a62617973b3c11e97">ColorWhite</a> = {0xFF, 0xFF, 0xFF, 0xFF}</td></tr>
+<tr class="separator:ac790a91a9c0f624a62617973b3c11e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d76a20d00454e879942ef9c3d937c6d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="mtx_8h.html#a2f9f216b3b36051e5afb9e0bf5832136">Mtx23</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a0d76a20d00454e879942ef9c3d937c6d">IndMtx</a> = {0.5f, 0.0f, 0.0f, 0.0f, 0.5f, 0.0f}</td></tr>
+<tr class="separator:a0d76a20d00454e879942ef9c3d937c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a7afbb629bfdeff2ecacde454db95d70a"></a>
@@ -467,57 +448,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void GXInvalidateVtxCache </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aabe03ccb4f4862b33e7f2fc882cabe39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabe03ccb4f4862b33e7f2fc882cabe39">&#9670;&nbsp;</a></span>GXSetChanAmbColor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXSetChanAmbColor </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9de32984270ff8a43cf8e00e38ecee8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9de32984270ff8a43cf8e00e38ecee8a">&#9670;&nbsp;</a></span>GXSetColorUpdate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXSetColorUpdate </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5dcb00c141590a1fee6b4e6dc38dfb71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5dcb00c141590a1fee6b4e6dc38dfb71">&#9670;&nbsp;</a></span>GXSetTevIndirect()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXSetTevIndirect </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -800,8 +730,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="ab6b3bcfa83694fa889407eca00996be8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6b3bcfa83694fa889407eca00996be8">&#9670;&nbsp;</a></span>ColorBlack</h2>
+<a id="a641c934462c10523d8bc4dbf01588230"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a641c934462c10523d8bc4dbf01588230">&#9670;&nbsp;</a></span>ColorBlack</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -810,7 +740,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> ColorBlack[4]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="GX_8h.html#a0419d171f4d66c2b2a77bd299ddbdcdc">GXColor</a> ColorBlack = {0x00, 0x00, 0x00, 0x00}</td>
         </tr>
       </table>
   </td>
@@ -819,17 +749,11 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x00,</div>
-<div class="line">    0x00,</div>
-<div class="line">    0x00,</div>
-<div class="line">    0x00,</div>
-<div class="line">}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
-<a id="a51fdef22992dc53ae8bd65202baa73c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51fdef22992dc53ae8bd65202baa73c7">&#9670;&nbsp;</a></span>ColorWhite</h2>
+<a id="ac790a91a9c0f624a62617973b3c11e97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac790a91a9c0f624a62617973b3c11e97">&#9670;&nbsp;</a></span>ColorWhite</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -838,7 +762,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> ColorWhite = 0xFFFFFFFF</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="GX_8h.html#a0419d171f4d66c2b2a77bd299ddbdcdc">GXColor</a> ColorWhite = {0xFF, 0xFF, 0xFF, 0xFF}</td>
         </tr>
       </table>
   </td>
@@ -894,8 +818,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad2da6f708a3ad896816ac520d514179a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2da6f708a3ad896816ac520d514179a">&#9670;&nbsp;</a></span>IndMtx</h2>
+<a id="a0d76a20d00454e879942ef9c3d937c6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d76a20d00454e879942ef9c3d937c6d">&#9670;&nbsp;</a></span>IndMtx</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -904,7 +828,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> IndMtx[24]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="mtx_8h.html#a2f9f216b3b36051e5afb9e0bf5832136">Mtx23</a> IndMtx = {0.5f, 0.0f, 0.0f, 0.0f, 0.5f, 0.0f}</td>
         </tr>
       </table>
   </td>
@@ -913,11 +837,7 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x3F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,</div>
-<div class="line">    0x00, 0x00, 0x00, 0x00, 0x3F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,</div>
-<div class="line">}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a09092a3fb39922fd33e23c1c814a550c"></a>
@@ -1135,83 +1055,6 @@ Variables</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
 <div class="line">    0x3F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,</div>
 <div class="line">    0x00, 0x00, 0x00, 0x00, 0x3F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,</div>
-<div class="line">}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a5b6a1fcf624a4298f0e399aa3a60b4ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b6a1fcf624a4298f0e399aa3a60b4ce">&#9670;&nbsp;</a></span>lit_892</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> lit_892[4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x00,</div>
-<div class="line">    0x00,</div>
-<div class="line">    0x00,</div>
-<div class="line">    0x00,</div>
-<div class="line">}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aac3cba9775e1d55b5319dfe4bb9bccbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac3cba9775e1d55b5319dfe4bb9bccbf">&#9670;&nbsp;</a></span>lit_893</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> lit_893 = 1.0f</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3e58836d09431331f10738368ee5b560"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e58836d09431331f10738368ee5b560">&#9670;&nbsp;</a></span>lit_894</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> lit_894[1+1]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    1.0f / 10.0f,</div>
-<div class="line">    </div>
-<div class="line">    0.0f,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
