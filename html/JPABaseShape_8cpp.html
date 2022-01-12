@@ -88,14 +88,6 @@ $(function() {
 <code>#include &quot;<a class="el" href="JPAResourceManager_8h_source.html">JSystem/JParticle/JPAResourceManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;asm/JSystem/JParticle/JPABaseShape/JPARegistPrm__FP18JPAEmitterWorkData.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JParticle/JPABaseShape/JPARegistEnv__FP18JPAEmitterWorkData.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JParticle/JPABaseShape/JPARegistPrmEnv__FP18JPAEmitterWorkData.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JParticle/JPABaseShape/JPARegistAlpha__FP18JPAEmitterWorkDataP15JPABaseParticle.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JParticle/JPABaseShape/JPARegistPrmAlpha__FP18JPAEmitterWorkDataP15JPABaseParticle.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JParticle/JPABaseShape/JPARegistPrmAlphaEnv__FP18JPAEmitterWorkDataP15JPABaseParticle.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JParticle/JPABaseShape/JPARegistAlphaEnv__FP18JPAEmitterWorkDataP15JPABaseParticle.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JParticle/JPABaseShape/JPARegistEnv__FP18JPAEmitterWorkDataP15JPABaseParticle.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JParticle/JPABaseShape/JPACalcClrIdxNormal__FP18JPAEmitterWorkData.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JParticle/JPABaseShape/JPACalcClrIdxNormal__FP18JPAEmitterWorkDataP15JPABaseParticle.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JParticle/JPABaseShape/JPACalcClrIdxRepeat__FP18JPAEmitterWorkData.s&quot;</code><br />
@@ -142,7 +134,6 @@ $(function() {
 <code>#include &quot;asm/JSystem/JParticle/JPABaseShape/JPADrawStripe__FP18JPAEmitterWorkData.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JParticle/JPABaseShape/JPADrawStripeX__FP18JPAEmitterWorkData.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JParticle/JPABaseShape/JPADrawEmitterCallBackB__FP18JPAEmitterWorkData.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JParticle/JPABaseShape/JPADrawParticleCallBack__FP18JPAEmitterWorkDataP15JPABaseParticle.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JParticle/JPABaseShape/makeColorTable__FPP8_GXColorPC16JPAClrAnmKeyDataUcsP7JKRHeap.s&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -150,10 +141,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJPAClrAnmKeyData.html">JPAClrAnmKeyData</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRHeap.html">JKRHeap</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJPABaseShapeData.html">JPABaseShapeData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJPABaseShape.html">JPABaseShape</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJMath.html">JMath</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -353,22 +340,24 @@ Functions</h2></td></tr>
 <tr class="separator:a0400b4f3adcf7aa601ede91ecec8fc09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe5adffc0a189e24338295301d493538"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPABaseShape_8cpp.html#abe5adffc0a189e24338295301d493538">JPASetLineWidth</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *work, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *ptcl)</td></tr>
 <tr class="separator:abe5adffc0a189e24338295301d493538"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac50cfdbcadded8faa233592539eeed8f"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPABaseShape_8cpp.html#ac50cfdbcadded8faa233592539eeed8f">JPARegistPrm</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0)</td></tr>
-<tr class="separator:ac50cfdbcadded8faa233592539eeed8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31ec64f3db96bbd5dbb6c0e7652de2f2"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPABaseShape_8cpp.html#a31ec64f3db96bbd5dbb6c0e7652de2f2">JPARegistEnv</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0)</td></tr>
-<tr class="separator:a31ec64f3db96bbd5dbb6c0e7652de2f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20521a4dbe79c777decca671e2476f06"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPABaseShape_8cpp.html#a20521a4dbe79c777decca671e2476f06">JPARegistPrmEnv</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0)</td></tr>
-<tr class="separator:a20521a4dbe79c777decca671e2476f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac479bb76d690614b99ca264acd3f998"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPABaseShape_8cpp.html#aac479bb76d690614b99ca264acd3f998">JPARegistAlpha</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *param_1)</td></tr>
-<tr class="separator:aac479bb76d690614b99ca264acd3f998"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f238d200bb51d1881e3fcb7e6a1c674"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPABaseShape_8cpp.html#a4f238d200bb51d1881e3fcb7e6a1c674">JPARegistPrmAlpha</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *param_1)</td></tr>
-<tr class="separator:a4f238d200bb51d1881e3fcb7e6a1c674"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98979e8925f6d3446adbf4f01f42722f"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPABaseShape_8cpp.html#a98979e8925f6d3446adbf4f01f42722f">JPARegistPrmAlphaEnv</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *param_1)</td></tr>
-<tr class="separator:a98979e8925f6d3446adbf4f01f42722f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d2e83ef119521d32eac51315d234a6e"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPABaseShape_8cpp.html#a4d2e83ef119521d32eac51315d234a6e">JPARegistAlphaEnv</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *param_1)</td></tr>
-<tr class="separator:a4d2e83ef119521d32eac51315d234a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08e3d19a9eb0f07c1b308866adf5ee55"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPABaseShape_8cpp.html#a08e3d19a9eb0f07c1b308866adf5ee55">JPARegistEnv</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *param_1)</td></tr>
-<tr class="separator:a08e3d19a9eb0f07c1b308866adf5ee55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c9ada75c05e78cb748c8c78d942f947"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPABaseShape_8cpp.html#a7c9ada75c05e78cb748c8c78d942f947">COLOR_MULTI</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> a, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> b)</td></tr>
+<tr class="separator:a7c9ada75c05e78cb748c8c78d942f947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08190050127a21b452e60cc6283b0dae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPABaseShape_8cpp.html#a08190050127a21b452e60cc6283b0dae">JPARegistPrm</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *work)</td></tr>
+<tr class="separator:a08190050127a21b452e60cc6283b0dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a288d0147d4cff84ac286b3f1595c5f61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPABaseShape_8cpp.html#a288d0147d4cff84ac286b3f1595c5f61">JPARegistEnv</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *work)</td></tr>
+<tr class="separator:a288d0147d4cff84ac286b3f1595c5f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fcb50fa36264a49ff69f71712e95a63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPABaseShape_8cpp.html#a2fcb50fa36264a49ff69f71712e95a63">JPARegistPrmEnv</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *work)</td></tr>
+<tr class="separator:a2fcb50fa36264a49ff69f71712e95a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48aa0c3514021c3ce8b1a9f7fb609d6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPABaseShape_8cpp.html#a48aa0c3514021c3ce8b1a9f7fb609d6a">JPARegistAlpha</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *work, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *ptcl)</td></tr>
+<tr class="separator:a48aa0c3514021c3ce8b1a9f7fb609d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7aaea27541261850eda9b01f6afac38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPABaseShape_8cpp.html#aa7aaea27541261850eda9b01f6afac38">JPARegistPrmAlpha</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *work, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *ptcl)</td></tr>
+<tr class="separator:aa7aaea27541261850eda9b01f6afac38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68253ea9a6d540100c5148f57e23f94b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPABaseShape_8cpp.html#a68253ea9a6d540100c5148f57e23f94b">JPARegistPrmAlphaEnv</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *work, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *ptcl)</td></tr>
+<tr class="separator:a68253ea9a6d540100c5148f57e23f94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7628d37bbdd066dd174b1555b62650e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPABaseShape_8cpp.html#ad7628d37bbdd066dd174b1555b62650e">JPARegistAlphaEnv</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *work, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *ptcl)</td></tr>
+<tr class="separator:ad7628d37bbdd066dd174b1555b62650e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0415251f27a4746e46ff8720903fe69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPABaseShape_8cpp.html#ac0415251f27a4746e46ff8720903fe69">JPARegistEnv</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *work, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *ptcl)</td></tr>
+<tr class="separator:ac0415251f27a4746e46ff8720903fe69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2c7d58a7b868422450b43badd6d9925"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPABaseShape_8cpp.html#ac2c7d58a7b868422450b43badd6d9925">JPACalcClrIdxNormal</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0)</td></tr>
 <tr class="separator:ac2c7d58a7b868422450b43badd6d9925"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05b6e758af5fc9335c3c249ba6d2edfe"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPABaseShape_8cpp.html#a05b6e758af5fc9335c3c249ba6d2edfe">JPACalcClrIdxNormal</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *param_1)</td></tr>
@@ -497,8 +486,8 @@ Functions</h2></td></tr>
 <tr class="separator:a9edff4785288146f9e475a3d2c5b41b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19261a833a325f0f036d90cd2327c0b3"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPABaseShape_8cpp.html#a19261a833a325f0f036d90cd2327c0b3">JPADrawEmitterCallBackB</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0)</td></tr>
 <tr class="separator:a19261a833a325f0f036d90cd2327c0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3f7eda7ba34a0b44aefa7f2958373ff"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPABaseShape_8cpp.html#ab3f7eda7ba34a0b44aefa7f2958373ff">JPADrawParticleCallBack</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *param_1)</td></tr>
-<tr class="separator:ab3f7eda7ba34a0b44aefa7f2958373ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a785c186ab160cc92bf893b4fd1cc1471"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPABaseShape_8cpp.html#a785c186ab160cc92bf893b4fd1cc1471">JPADrawParticleCallBack</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *work, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *ptcl)</td></tr>
+<tr class="separator:a785c186ab160cc92bf893b4fd1cc1471"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af08e433f401102a06db049cafc437fb9"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPABaseShape_8cpp.html#af08e433f401102a06db049cafc437fb9">makeColorTable</a> (<a class="el" href="struct__GXColor.html">_GXColor</a> **param_0, <a class="el" href="structJPAClrAnmKeyData.html">JPAClrAnmKeyData</a> const *param_1, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_2, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> param_3, <a class="el" href="structJKRHeap.html">JKRHeap</a> *param_4)</td></tr>
 <tr class="separator:af08e433f401102a06db049cafc437fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -938,6 +927,42 @@ Variables</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c9ada75c05e78cb748c8c78d942f947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c9ada75c05e78cb748c8c78d942f947">&#9670;&nbsp;</a></span>COLOR_MULTI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> COLOR_MULTI </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2506,23 +2531,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ab3f7eda7ba34a0b44aefa7f2958373ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3f7eda7ba34a0b44aefa7f2958373ff">&#9670;&nbsp;</a></span>JPADrawParticleCallBack()</h2>
+<a id="a785c186ab160cc92bf893b4fd1cc1471"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a785c186ab160cc92bf893b4fd1cc1471">&#9670;&nbsp;</a></span>JPADrawParticleCallBack()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void JPADrawParticleCallBack </td>
+          <td class="memname">void JPADrawParticleCallBack </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname"><em>work</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname"><em>ptcl</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3226,23 +3251,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aac479bb76d690614b99ca264acd3f998"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac479bb76d690614b99ca264acd3f998">&#9670;&nbsp;</a></span>JPARegistAlpha()</h2>
+<a id="a48aa0c3514021c3ce8b1a9f7fb609d6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48aa0c3514021c3ce8b1a9f7fb609d6a">&#9670;&nbsp;</a></span>JPARegistAlpha()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void JPARegistAlpha </td>
+          <td class="memname">void JPARegistAlpha </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname"><em>work</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname"><em>ptcl</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3271,23 +3296,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4d2e83ef119521d32eac51315d234a6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d2e83ef119521d32eac51315d234a6e">&#9670;&nbsp;</a></span>JPARegistAlphaEnv()</h2>
+<a id="ad7628d37bbdd066dd174b1555b62650e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7628d37bbdd066dd174b1555b62650e">&#9670;&nbsp;</a></span>JPARegistAlphaEnv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void JPARegistAlphaEnv </td>
+          <td class="memname">void JPARegistAlphaEnv </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname"><em>work</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname"><em>ptcl</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3316,17 +3341,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a31ec64f3db96bbd5dbb6c0e7652de2f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31ec64f3db96bbd5dbb6c0e7652de2f2">&#9670;&nbsp;</a></span>JPARegistEnv() <span class="overload">[1/2]</span></h2>
+<a id="a288d0147d4cff84ac286b3f1595c5f61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a288d0147d4cff84ac286b3f1595c5f61">&#9670;&nbsp;</a></span>JPARegistEnv() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void JPARegistEnv </td>
+          <td class="memname">void JPARegistEnv </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em></td><td>)</td>
+          <td class="paramname"><em>work</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -3334,23 +3359,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a08e3d19a9eb0f07c1b308866adf5ee55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08e3d19a9eb0f07c1b308866adf5ee55">&#9670;&nbsp;</a></span>JPARegistEnv() <span class="overload">[2/2]</span></h2>
+<a id="ac0415251f27a4746e46ff8720903fe69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0415251f27a4746e46ff8720903fe69">&#9670;&nbsp;</a></span>JPARegistEnv() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void JPARegistEnv </td>
+          <td class="memname">void JPARegistEnv </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname"><em>work</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname"><em>ptcl</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3396,17 +3421,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac50cfdbcadded8faa233592539eeed8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac50cfdbcadded8faa233592539eeed8f">&#9670;&nbsp;</a></span>JPARegistPrm()</h2>
+<a id="a08190050127a21b452e60cc6283b0dae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08190050127a21b452e60cc6283b0dae">&#9670;&nbsp;</a></span>JPARegistPrm()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void JPARegistPrm </td>
+          <td class="memname">void JPARegistPrm </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em></td><td>)</td>
+          <td class="paramname"><em>work</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -3431,23 +3456,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4f238d200bb51d1881e3fcb7e6a1c674"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f238d200bb51d1881e3fcb7e6a1c674">&#9670;&nbsp;</a></span>JPARegistPrmAlpha()</h2>
+<a id="aa7aaea27541261850eda9b01f6afac38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7aaea27541261850eda9b01f6afac38">&#9670;&nbsp;</a></span>JPARegistPrmAlpha()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void JPARegistPrmAlpha </td>
+          <td class="memname">void JPARegistPrmAlpha </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname"><em>work</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname"><em>ptcl</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3476,23 +3501,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a98979e8925f6d3446adbf4f01f42722f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98979e8925f6d3446adbf4f01f42722f">&#9670;&nbsp;</a></span>JPARegistPrmAlphaEnv()</h2>
+<a id="a68253ea9a6d540100c5148f57e23f94b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68253ea9a6d540100c5148f57e23f94b">&#9670;&nbsp;</a></span>JPARegistPrmAlphaEnv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void JPARegistPrmAlphaEnv </td>
+          <td class="memname">void JPARegistPrmAlphaEnv </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname"><em>work</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname"><em>ptcl</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3521,17 +3546,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a20521a4dbe79c777decca671e2476f06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20521a4dbe79c777decca671e2476f06">&#9670;&nbsp;</a></span>JPARegistPrmEnv()</h2>
+<a id="a2fcb50fa36264a49ff69f71712e95a63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fcb50fa36264a49ff69f71712e95a63">&#9670;&nbsp;</a></span>JPARegistPrmEnv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void JPARegistPrmEnv </td>
+          <td class="memname">void JPARegistPrmEnv </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em></td><td>)</td>
+          <td class="paramname"><em>work</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -4598,8 +4623,8 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)&amp;<a class="code" href="JPABaseShape_8cpp.html#a760921d5590d2a6da8113ce6b05d0b7c">jpa_dl</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)&amp;<a class="code" href="JPABaseShape_8cpp.html#a261bfd9b7cbbef2a4e7a1a27fbed2595">jpa_dl_x</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aJPABaseShape_8cpp_html_a261bfd9b7cbbef2a4e7a1a27fbed2595"><div class="ttname"><a href="JPABaseShape_8cpp.html#a261bfd9b7cbbef2a4e7a1a27fbed2595">jpa_dl_x</a></div><div class="ttdeci">static SECTION_DATA u8 jpa_dl_x[32]</div><div class="ttdef"><b>Definition:</b> JPABaseShape.cpp:702</div></div>
-<div class="ttc" id="aJPABaseShape_8cpp_html_a760921d5590d2a6da8113ce6b05d0b7c"><div class="ttname"><a href="JPABaseShape_8cpp.html#a760921d5590d2a6da8113ce6b05d0b7c">jpa_dl</a></div><div class="ttdeci">static SECTION_DATA u8 jpa_dl[32]</div><div class="ttdef"><b>Definition:</b> JPABaseShape.cpp:696</div></div>
+<div class="ttc" id="aJPABaseShape_8cpp_html_a261bfd9b7cbbef2a4e7a1a27fbed2595"><div class="ttname"><a href="JPABaseShape_8cpp.html#a261bfd9b7cbbef2a4e7a1a27fbed2595">jpa_dl_x</a></div><div class="ttdeci">static SECTION_DATA u8 jpa_dl_x[32]</div><div class="ttdef"><b>Definition:</b> JPABaseShape.cpp:632</div></div>
+<div class="ttc" id="aJPABaseShape_8cpp_html_a760921d5590d2a6da8113ce6b05d0b7c"><div class="ttname"><a href="JPABaseShape_8cpp.html#a760921d5590d2a6da8113ce6b05d0b7c">jpa_dl</a></div><div class="ttdeci">static SECTION_DATA u8 jpa_dl[32]</div><div class="ttdef"><b>Definition:</b> JPABaseShape.cpp:626</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -4658,8 +4683,8 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code" href="JPABaseShape_8cpp.html#a97f993a3a5eac65e977cebd2b93bb1cb">loadPrjAnm__FPC18JPAEmitterWorkDataPA4_Cf</a>,</div>
 <div class="line">}</div>
 <div class="ttc" id="aJPABaseShape_8cpp_html_a97f993a3a5eac65e977cebd2b93bb1cb"><div class="ttname"><a href="JPABaseShape_8cpp.html#a97f993a3a5eac65e977cebd2b93bb1cb">loadPrjAnm__FPC18JPAEmitterWorkDataPA4_Cf</a></div><div class="ttdeci">static void loadPrjAnm__FPC18JPAEmitterWorkDataPA4_Cf()</div></div>
-<div class="ttc" id="aJPABaseShape_8cpp_html_aa99543f8d0c48eacaa86109730805961"><div class="ttname"><a href="JPABaseShape_8cpp.html#aa99543f8d0c48eacaa86109730805961">loadPrj</a></div><div class="ttdeci">void loadPrj(JPAEmitterWorkData const *work, const Mtx srt)</div><div class="ttdef"><b>Definition:</b> JPABaseShape.cpp:678</div></div>
-<div class="ttc" id="aJPABaseShape_8cpp_html_adb5136dbf96b816c45d2eefcbf6e869f"><div class="ttname"><a href="JPABaseShape_8cpp.html#adb5136dbf96b816c45d2eefcbf6e869f">noLoadPrj</a></div><div class="ttdeci">static void noLoadPrj(JPAEmitterWorkData const *work, const Mtx srt)</div><div class="ttdef"><b>Definition:</b> JPABaseShape.cpp:673</div></div>
+<div class="ttc" id="aJPABaseShape_8cpp_html_aa99543f8d0c48eacaa86109730805961"><div class="ttname"><a href="JPABaseShape_8cpp.html#aa99543f8d0c48eacaa86109730805961">loadPrj</a></div><div class="ttdeci">void loadPrj(JPAEmitterWorkData const *work, const Mtx srt)</div><div class="ttdef"><b>Definition:</b> JPABaseShape.cpp:608</div></div>
+<div class="ttc" id="aJPABaseShape_8cpp_html_adb5136dbf96b816c45d2eefcbf6e869f"><div class="ttname"><a href="JPABaseShape_8cpp.html#adb5136dbf96b816c45d2eefcbf6e869f">noLoadPrj</a></div><div class="ttdeci">static void noLoadPrj(JPAEmitterWorkData const *work, const Mtx srt)</div><div class="ttdef"><b>Definition:</b> JPABaseShape.cpp:603</div></div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -136,13 +136,18 @@ $(function() {
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="Z2AudioMgr_8h.html#a5cb2a4b4bbef025f99e4ea5a167b28a7">   58</a></span>&#160;<a class="code" href="Z2AudioMgr_8h.html#a5cb2a4b4bbef025f99e4ea5a167b28a7">STATIC_ASSERT</a>(<span class="keyword">sizeof</span>(<a class="code" href="structZ2AudioMgr.html">Z2AudioMgr</a>) == 0x138C);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* Z2AUDIOMGR_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="Z2AudioMgr_8h.html#ae6aa340e866215e4392468ae80ce0626">   60</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="structZ2AudioMgr.html">Z2AudioMgr</a>* <a class="code" href="Z2AudioMgr_8h.html#ae6aa340e866215e4392468ae80ce0626">Z2GetAudioMgr</a>() {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="structZ2AudioMgr.html#ac6720b498fb7e30a4fe8f5ba0a973385">Z2AudioMgr::getInterface</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* Z2AUDIOMGR_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aJAISound_8h_html"><div class="ttname"><a href="JAISound_8h.html">JAISound.h</a></div></div>
 <div class="ttc" id="aJASAudioReseter_8h_html"><div class="ttname"><a href="JASAudioReseter_8h.html">JASAudioReseter.h</a></div></div>
 <div class="ttc" id="aJKRArchive_8h_html"><div class="ttname"><a href="JKRArchive_8h.html">JKRArchive.h</a></div></div>
 <div class="ttc" id="aJKRSolidHeap_8h_html"><div class="ttname"><a href="JKRSolidHeap_8h.html">JKRSolidHeap.h</a></div></div>
 <div class="ttc" id="aZ2Audience_8h_html"><div class="ttname"><a href="Z2Audience_8h.html">Z2Audience.h</a></div></div>
 <div class="ttc" id="aZ2AudioMgr_8h_html_a5cb2a4b4bbef025f99e4ea5a167b28a7"><div class="ttname"><a href="Z2AudioMgr_8h.html#a5cb2a4b4bbef025f99e4ea5a167b28a7">STATIC_ASSERT</a></div><div class="ttdeci">STATIC_ASSERT(sizeof(Z2AudioMgr)==0x138C)</div></div>
+<div class="ttc" id="aZ2AudioMgr_8h_html_ae6aa340e866215e4392468ae80ce0626"><div class="ttname"><a href="Z2AudioMgr_8h.html#ae6aa340e866215e4392468ae80ce0626">Z2GetAudioMgr</a></div><div class="ttdeci">Z2AudioMgr * Z2GetAudioMgr()</div><div class="ttdef"><b>Definition:</b> Z2AudioMgr.h:60</div></div>
 <div class="ttc" id="aZ2FxLineMgr_8h_html"><div class="ttname"><a href="Z2FxLineMgr_8h.html">Z2FxLineMgr.h</a></div></div>
 <div class="ttc" id="aZ2SceneMgr_8h_html"><div class="ttname"><a href="Z2SceneMgr_8h.html">Z2SceneMgr.h</a></div></div>
 <div class="ttc" id="aZ2SeMgr_8h_html"><div class="ttname"><a href="Z2SeMgr_8h.html">Z2SeMgr.h</a></div></div>
@@ -191,7 +196,7 @@ $(function() {
 <div class="ttc" id="astructZ2FxLineMgr_html"><div class="ttname"><a href="structZ2FxLineMgr.html">Z2FxLineMgr</a></div><div class="ttdef"><b>Definition:</b> Z2AudioArcLoader.cpp:24</div></div>
 <div class="ttc" id="astructZ2SceneMgr_html"><div class="ttname"><a href="structZ2SceneMgr.html">Z2SceneMgr</a></div><div class="ttdef"><b>Definition:</b> d_kankyo.cpp:36</div></div>
 <div class="ttc" id="astructZ2SeMgr_html"><div class="ttname"><a href="structZ2SeMgr.html">Z2SeMgr</a></div><div class="ttdef"><b>Definition:</b> d_a_obj_item.cpp:260</div></div>
-<div class="ttc" id="astructZ2SeqMgr_html"><div class="ttname"><a href="structZ2SeqMgr.html">Z2SeqMgr</a></div><div class="ttdef"><b>Definition:</b> d_com_inf_game.cpp:41</div></div>
+<div class="ttc" id="astructZ2SeqMgr_html"><div class="ttname"><a href="structZ2SeqMgr.html">Z2SeqMgr</a></div><div class="ttdef"><b>Definition:</b> d_com_inf_game.cpp:37</div></div>
 <div class="ttc" id="astructZ2SoundMgr_html"><div class="ttname"><a href="structZ2SoundMgr.html">Z2SoundMgr</a></div><div class="ttdef"><b>Definition:</b> f_pc_manager.cpp:54</div></div>
 <div class="ttc" id="astructZ2SoundObjMgr_html"><div class="ttname"><a href="structZ2SoundObjMgr.html">Z2SoundObjMgr</a></div><div class="ttdef"><b>Definition:</b> Z2Creature.cpp:18</div></div>
 <div class="ttc" id="astructZ2SoundStarter_html"><div class="ttname"><a href="structZ2SoundStarter.html">Z2SoundStarter</a></div><div class="ttdef"><b>Definition:</b> Z2EnvSeMgr.cpp:30</div></div>

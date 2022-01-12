@@ -82,6 +82,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="d__a__player_8h_source.html">d/a/d_a_player.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J3DAnmLoader_8h_source.html">JSystem/J3DGraphLoader/J3DAnmLoader.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="c__math_8h_source.html">SSystem/SComponent/c_math.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__com__inf__game_8h_source.html">d/com/d_com_inf_game.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
@@ -93,35 +94,13 @@ $(function() {
 <code>#include &quot;asm/d/a/d_a_player/setFrameCtrl__16daPy_frameCtrl_cFUcssff.s&quot;</code><br />
 <code>#include &quot;asm/d/a/d_a_player/posMove__20daPy_boomerangMove_cFP4cXyzPsP10fopAc_ac_cs.s&quot;</code><br />
 <code>#include &quot;asm/d/a/d_a_player/bgCheckAfterOffset__20daPy_boomerangMove_cFPC4cXyz.s&quot;</code><br />
-<code>#include &quot;asm/d/a/d_a_player/setParamData__9daPy_py_cFiiii.s&quot;</code><br />
-<code>#include &quot;asm/d/a/d_a_player/checkFishingRodItem__9daPy_py_cFi.s&quot;</code><br />
 <code>#include &quot;asm/d/a/d_a_player/checkBombItem__9daPy_py_cFi.s&quot;</code><br />
-<code>#include &quot;asm/d/a/d_a_player/checkBottleItem__9daPy_py_cFi.s&quot;</code><br />
-<code>#include &quot;asm/d/a/d_a_player/checkDrinkBottleItem__9daPy_py_cFi.s&quot;</code><br />
-<code>#include &quot;asm/d/a/d_a_player/checkTradeItem__9daPy_py_cFi.s&quot;</code><br />
-<code>#include &quot;asm/d/a/d_a_player/mallocBuffer__14daPy_anmHeap_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/a/d_a_player/createHeap__14daPy_anmHeap_cFQ214daPy_anmHeap_c16daAlinkHEAP_TYPE.s&quot;</code><br />
-<code>#include &quot;asm/d/a/d_a_player/loadData__14daPy_anmHeap_cFUs.s&quot;</code><br />
 <code>#include &quot;asm/d/a/d_a_player/draw__18daPy_sightPacket_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/a/d_a_player/setSight__18daPy_sightPacket_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/a/d_a_player/setSightImage__18daPy_sightPacket_cFP7ResTIMG.s&quot;</code><br />
 <code>#include &quot;asm/d/a/d_a_player/checkWoodShieldEquip__9daPy_py_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/a/d_a_player/forceRestartRoom__9daPy_py_cFiUli.s&quot;</code><br />
-<code>#include &quot;asm/d/a/d_a_player/setFmChainPos__9daPy_py_cFP10fopAc_ac_cP4cXyzi.s&quot;</code><br />
-<code>#include &quot;asm/d/a/d_a_player/cancelFmChainGrab__9daPy_py_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/a/d_a_player/setLookPos__9daPy_py_cFP4cXyz.s&quot;</code><br />
-<code>#include &quot;asm/d/a/d_a_player/setPlayerSe__9daPy_py_cFUl.s&quot;</code><br />
 <code>#include &quot;asm/d/a/d_a_player/linkGrabSubjectNoDraw__9daPy_py_cFP10fopAc_ac_c.s&quot;</code><br />
 <code>#include &quot;asm/d/a/d_a_player/wolfGrabSubjectNoDraw__9daPy_py_cFP10fopAc_ac_c.s&quot;</code><br />
-<code>#include &quot;asm/d/a/d_a_player/checkRoomRestartStart__9daPy_py_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/a/d_a_player/checkCarryStartLightBallA__9daPy_py_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/a/d_a_player/checkCarryStartLightBallB__9daPy_py_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/a/d_a_player/checkSpinnerReflectEffect__9daPy_py_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/a/d_a_player/checkBoomerangCharge__9daPy_py_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/a/d_a_player/cancelBoomerangLockActor__9daPy_py_cFP10fopAc_ac_c.s&quot;</code><br />
-<code>#include &quot;asm/d/a/d_a_player/setPlayerDamage__9daPy_py_cFii.s&quot;</code><br />
-<code>#include &quot;asm/d/a/d_a_player/setMidnaMotionNum__9daPy_py_cFi.s&quot;</code><br />
-<code>#include &quot;asm/d/a/d_a_player/setMidnaFaceNum__9daPy_py_cFi.s&quot;</code><br />
 <code>#include &quot;asm/d/a/d_a_player/daPy_addCalcShort__FPsssss.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for d_a_player.cpp:</div>
@@ -135,10 +114,6 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmDoMtx__stack__c.html">mDoMtx_stack_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DAnmLoaderDataBaseFlag.html">J3DAnmLoaderDataBaseFlag</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DAnmLoaderDataBase.html">J3DAnmLoaderDataBase</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -333,6 +308,14 @@ Functions</h2></td></tr>
 <tr class="separator:afdca0eb87578e0952b66387b093d81f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abed5bd59c54272a132a5b4da4beff66d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__a__player_8cpp.html#abed5bd59c54272a132a5b4da4beff66d">_restgpr_29</a> ()</td></tr>
 <tr class="separator:abed5bd59c54272a132a5b4da4beff66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2c2e22f1f1bc087f530a1916cecf4f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a151f780fb455885061d3b77ec1c90c03">s8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__a__player_8cpp.html#af2c2e22f1f1bc087f530a1916cecf4f2">dComIfGp_getPlayerCameraID</a> (int idx)</td></tr>
+<tr class="separator:af2c2e22f1f1bc087f530a1916cecf4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18ef0f98980abcef27cf41efc20ebbd8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__a__player_8cpp.html#a18ef0f98980abcef27cf41efc20ebbd8">i_dComIfGp_event_runCheck</a> ()</td></tr>
+<tr class="separator:a18ef0f98980abcef27cf41efc20ebbd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac246431aa63472ec11ea211932da279f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdStage__stageDt__c.html">dStage_stageDt_c</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__a__player_8cpp.html#ac246431aa63472ec11ea211932da279f">dComIfGp_getStage</a> ()</td></tr>
+<tr class="separator:ac246431aa63472ec11ea211932da279f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2864254c5ef3882826986e5fb98c18d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__a__player_8cpp.html#ac2864254c5ef3882826986e5fb98c18d">dStage_stagInfo_GetSaveTbl</a> (<a class="el" href="structstage__stag__info__class.html">stage_stag_info_class</a> *param_0)</td></tr>
+<tr class="separator:ac2864254c5ef3882826986e5fb98c18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a799b0264f9c1e02270a84cedd2c4a28d"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__a__player_8cpp.html#a799b0264f9c1e02270a84cedd2c4a28d">daPy_addCalcShort</a> (<a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> *param_0, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> param_1, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> param_2, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> param_3, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> param_4)</td></tr>
 <tr class="separator:a799b0264f9c1e02270a84cedd2c4a28d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -398,8 +381,8 @@ Variables</h2></td></tr>
 <tr class="separator:a18fb27403dd0df0f40c6fecde5095cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bbc6a9b37d6769b2c343e819fef2732"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__a__player_8cpp.html#a6bbc6a9b37d6769b2c343e819fef2732">arcName</a> [8]</td></tr>
 <tr class="separator:a6bbc6a9b37d6769b2c343e819fef2732"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5374ec42d11f970d9c382b470c85834b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__a__player_8cpp.html#a5374ec42d11f970d9c382b470c85834b">l_sightDL</a> [137+3]</td></tr>
-<tr class="separator:a5374ec42d11f970d9c382b470c85834b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73a0193f1bab5cb6d93b23ed4484e488"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__a__player_8cpp.html#a73a0193f1bab5cb6d93b23ed4484e488">l_sightDL</a> [137]</td></tr>
+<tr class="separator:a73a0193f1bab5cb6d93b23ed4484e488"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac05f68435b1a294de3739b57b80dadb3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__a__player_8cpp.html#ac05f68435b1a294de3739b57b80dadb3">lit_4668</a> = 0xFF8000FF</td></tr>
 <tr class="separator:ac05f68435b1a294de3739b57b80dadb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d6edc6cc090ebd3df9c5f8274b02023"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__a__player_8cpp.html#a6d6edc6cc090ebd3df9c5f8274b02023">lit_4669</a> = 0x321400FF</td></tr>
@@ -1219,6 +1202,57 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="af2c2e22f1f1bc087f530a1916cecf4f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2c2e22f1f1bc087f530a1916cecf4f2">&#9670;&nbsp;</a></span>dComIfGp_getPlayerCameraID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a151f780fb455885061d3b77ec1c90c03">s8</a> dComIfGp_getPlayerCameraID </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac246431aa63472ec11ea211932da279f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac246431aa63472ec11ea211932da279f">&#9670;&nbsp;</a></span>dComIfGp_getStage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdStage__stageDt__c.html">dStage_stageDt_c</a>* dComIfGp_getStage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a0eeff15aeb95c416d70195a8d9b6def0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0eeff15aeb95c416d70195a8d9b6def0">&#9670;&nbsp;</a></span>draw__18daPy_sightPacket_cFv()</h2>
 
@@ -1232,6 +1266,32 @@ Variables</h2></td></tr>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac2864254c5ef3882826986e5fb98c18d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2864254c5ef3882826986e5fb98c18d">&#9670;&nbsp;</a></span>dStage_stagInfo_GetSaveTbl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> dStage_stagInfo_GetSaveTbl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstage__stag__info__class.html">stage_stag_info_class</a> *&#160;</td>
+          <td class="paramname"><em>param_0</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -1402,6 +1462,31 @@ Variables</h2></td></tr>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a18ef0f98980abcef27cf41efc20ebbd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18ef0f98980abcef27cf41efc20ebbd8">&#9670;&nbsp;</a></span>i_dComIfGp_event_runCheck()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> i_dComIfGp_event_runCheck </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -2097,7 +2182,7 @@ Variables</h2></td></tr>
 <div class="line">    </div>
 <div class="line">    <a class="code" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__a__player_8cpp_html_a0eeff15aeb95c416d70195a8d9b6def0"><div class="ttname"><a href="d__a__player_8cpp.html#a0eeff15aeb95c416d70195a8d9b6def0">draw__18daPy_sightPacket_cFv</a></div><div class="ttdeci">void draw__18daPy_sightPacket_cFv()</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:739</div></div>
+<div class="ttc" id="ad__a__player_8cpp_html_a0eeff15aeb95c416d70195a8d9b6def0"><div class="ttname"><a href="d__a__player_8cpp.html#a0eeff15aeb95c416d70195a8d9b6def0">draw__18daPy_sightPacket_cFv</a></div><div class="ttdeci">void draw__18daPy_sightPacket_cFv()</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:598</div></div>
 <div class="ttc" id="ad__a__player_8cpp_html_af3db08124fcc0f0b0103ba3794791e7c"><div class="ttname"><a href="d__a__player_8cpp.html#af3db08124fcc0f0b0103ba3794791e7c">__dt__18daPy_sightPacket_cFv</a></div><div class="ttdeci">void __dt__18daPy_sightPacket_cFv()</div></div>
 <div class="ttc" id="atypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> types.h:34</div></div>
 </div><!-- fragment -->
@@ -2170,14 +2255,14 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__a__player_8cpp.html#aac8cc18c8cfdce2c4241cb22f9a55f94">sumouArcName</a>, (<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__a__player_8cpp.html#a39a04b7b62119de305c80c915810524b">ocArcName</a>,     (<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__a__player_8cpp.html#aee0c4f7243e45899845386b65eb6c7d3">twglArcName</a>,      (<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__a__player_8cpp.html#a18fb27403dd0df0f40c6fecde5095cf0">twgwArcName</a>,</div>
 <div class="line">    (<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__a__player_8cpp.html#abe75bf9091ca82edffb515f545643c77">drArcName</a>,    (<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__a__player_8cpp.html#a0be56006a5a8ab3b6625fe8fda051213">msDemoArcName</a>, (<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__a__player_8cpp.html#a0c11f8a8cb650f795ac431e6b18f468b">lastGanonArcName</a>, (<span class="keywordtype">char</span>*)&amp;<a class="code" href="d__a__player_8cpp.html#acb13f3ec3d642a0a46464405cc9e83bb">pigGanonArcName</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__a__player_8cpp_html_a0be56006a5a8ab3b6625fe8fda051213"><div class="ttname"><a href="d__a__player_8cpp.html#a0be56006a5a8ab3b6625fe8fda051213">msDemoArcName</a></div><div class="ttdeci">char msDemoArcName[8]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:492</div></div>
-<div class="ttc" id="ad__a__player_8cpp_html_a0c11f8a8cb650f795ac431e6b18f468b"><div class="ttname"><a href="d__a__player_8cpp.html#a0c11f8a8cb650f795ac431e6b18f468b">lastGanonArcName</a></div><div class="ttdeci">char lastGanonArcName[8]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:495</div></div>
-<div class="ttc" id="ad__a__player_8cpp_html_a18fb27403dd0df0f40c6fecde5095cf0"><div class="ttname"><a href="d__a__player_8cpp.html#a18fb27403dd0df0f40c6fecde5095cf0">twgwArcName</a></div><div class="ttdeci">static SECTION_RODATA char const twgwArcName[12]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:502</div></div>
-<div class="ttc" id="ad__a__player_8cpp_html_a39a04b7b62119de305c80c915810524b"><div class="ttname"><a href="d__a__player_8cpp.html#a39a04b7b62119de305c80c915810524b">ocArcName</a></div><div class="ttdeci">char ocArcName[8]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:486</div></div>
-<div class="ttc" id="ad__a__player_8cpp_html_aac8cc18c8cfdce2c4241cb22f9a55f94"><div class="ttname"><a href="d__a__player_8cpp.html#aac8cc18c8cfdce2c4241cb22f9a55f94">sumouArcName</a></div><div class="ttdeci">char sumouArcName[8]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:483</div></div>
-<div class="ttc" id="ad__a__player_8cpp_html_abe75bf9091ca82edffb515f545643c77"><div class="ttname"><a href="d__a__player_8cpp.html#abe75bf9091ca82edffb515f545643c77">drArcName</a></div><div class="ttdeci">char drArcName[8]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:489</div></div>
-<div class="ttc" id="ad__a__player_8cpp_html_acb13f3ec3d642a0a46464405cc9e83bb"><div class="ttname"><a href="d__a__player_8cpp.html#acb13f3ec3d642a0a46464405cc9e83bb">pigGanonArcName</a></div><div class="ttdeci">char pigGanonArcName[8]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:498</div></div>
-<div class="ttc" id="ad__a__player_8cpp_html_aee0c4f7243e45899845386b65eb6c7d3"><div class="ttname"><a href="d__a__player_8cpp.html#aee0c4f7243e45899845386b65eb6c7d3">twglArcName</a></div><div class="ttdeci">static SECTION_RODATA char const twglArcName[12]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:500</div></div>
+<div class="ttc" id="ad__a__player_8cpp_html_a0be56006a5a8ab3b6625fe8fda051213"><div class="ttname"><a href="d__a__player_8cpp.html#a0be56006a5a8ab3b6625fe8fda051213">msDemoArcName</a></div><div class="ttdeci">char msDemoArcName[8]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:476</div></div>
+<div class="ttc" id="ad__a__player_8cpp_html_a0c11f8a8cb650f795ac431e6b18f468b"><div class="ttname"><a href="d__a__player_8cpp.html#a0c11f8a8cb650f795ac431e6b18f468b">lastGanonArcName</a></div><div class="ttdeci">char lastGanonArcName[8]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:479</div></div>
+<div class="ttc" id="ad__a__player_8cpp_html_a18fb27403dd0df0f40c6fecde5095cf0"><div class="ttname"><a href="d__a__player_8cpp.html#a18fb27403dd0df0f40c6fecde5095cf0">twgwArcName</a></div><div class="ttdeci">static SECTION_RODATA char const twgwArcName[12]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:486</div></div>
+<div class="ttc" id="ad__a__player_8cpp_html_a39a04b7b62119de305c80c915810524b"><div class="ttname"><a href="d__a__player_8cpp.html#a39a04b7b62119de305c80c915810524b">ocArcName</a></div><div class="ttdeci">char ocArcName[8]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:470</div></div>
+<div class="ttc" id="ad__a__player_8cpp_html_aac8cc18c8cfdce2c4241cb22f9a55f94"><div class="ttname"><a href="d__a__player_8cpp.html#aac8cc18c8cfdce2c4241cb22f9a55f94">sumouArcName</a></div><div class="ttdeci">char sumouArcName[8]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:467</div></div>
+<div class="ttc" id="ad__a__player_8cpp_html_abe75bf9091ca82edffb515f545643c77"><div class="ttname"><a href="d__a__player_8cpp.html#abe75bf9091ca82edffb515f545643c77">drArcName</a></div><div class="ttdeci">char drArcName[8]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:473</div></div>
+<div class="ttc" id="ad__a__player_8cpp_html_acb13f3ec3d642a0a46464405cc9e83bb"><div class="ttname"><a href="d__a__player_8cpp.html#acb13f3ec3d642a0a46464405cc9e83bb">pigGanonArcName</a></div><div class="ttdeci">char pigGanonArcName[8]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:482</div></div>
+<div class="ttc" id="ad__a__player_8cpp_html_aee0c4f7243e45899845386b65eb6c7d3"><div class="ttname"><a href="d__a__player_8cpp.html#aee0c4f7243e45899845386b65eb6c7d3">twglArcName</a></div><div class="ttdeci">static SECTION_RODATA char const twglArcName[12]</div><div class="ttdef"><b>Definition:</b> d_a_player.cpp:484</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2195,8 +2280,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5374ec42d11f970d9c382b470c85834b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5374ec42d11f970d9c382b470c85834b">&#9670;&nbsp;</a></span>l_sightDL</h2>
+<a id="a73a0193f1bab5cb6d93b23ed4484e488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73a0193f1bab5cb6d93b23ed4484e488">&#9670;&nbsp;</a></span>l_sightDL</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2205,7 +2290,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> l_sightDL[137+3]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> l_sightDL[137]</td>
         </tr>
       </table>
   </td>
@@ -2214,7 +2299,18 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    0x10, 0x00, 0x00, 0x10, 0x40, 0xFF, 0xFF, 0x42, 0x80, 0x08, 0x30, 0x3C, 0xF3, 0xCF, 0x00, 0x10,</div>
+<div class="line">    0x00, 0x00, 0x10, 0x18, 0x3C, 0xF3, 0xCF, 0x00, 0x61, 0x28, 0x38, 0x03, 0xC0, 0x61, 0xC0, 0x08,</div>
+<div class="line">    0x42, 0x8F, 0x61, 0xC1, 0x08, 0xE6, 0x70, 0x61, 0x43, 0x00, 0x00, 0x01, 0x61, 0x40, 0x00, 0x00,</div>
+<div class="line">    0x06, 0x61, 0x41, 0x00, 0x04, 0xAD, 0x61, 0xF3, 0x64, 0x00, 0x00, 0x10, 0x00, 0x00, 0x10, 0x3F,</div>
+<div class="line">    0x00, 0x00, 0x00, 0x01, 0x10, 0x00, 0x00, 0x10, 0x09, 0x00, 0x00, 0x00, 0x00, 0x61, 0x00, 0x00,</div>
+<div class="line">    0x00, 0x01, 0x98, 0x00, 0x04, 0x01, 0x01, 0x00, 0x01, 0x01, 0xFF, 0x01, 0x00, 0x00, 0x01, 0x01,</div>
+<div class="line">    0xFF, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,</div>
+<div class="line">    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,</div>
+<div class="line">    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,</div>
+<div class="line">}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0c11f8a8cb650f795ac431e6b18f468b"></a>

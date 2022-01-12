@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['register_5fctors_109155',['REGISTER_CTORS',['../dol2asm_8h.html#ac73af8db60a625e15a2ce5053f5048ac',1,'dol2asm.h']]]
+  ['register_5fctors_111595',['REGISTER_CTORS',['../dol2asm_8h.html#ac73af8db60a625e15a2ce5053f5048ac',1,'dol2asm.h']]]
 ];

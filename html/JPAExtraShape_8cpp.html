@@ -74,166 +74,69 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">JPAExtraShape.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="JPAExtraShape_8h_source.html">JSystem/JParticle/JPAExtraShape.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JPAParticle_8h_source.html">JSystem/JParticle/JPAParticle.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JPAResource_8h_source.html">JSystem/JParticle/JPAResource.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JPAResourceManager_8h_source.html">JSystem/JParticle/JPAResourceManager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JMATrigonometric_8h_source.html">JSystem/JMath/JMATrigonometric.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;asm/JSystem/JParticle/JPAExtraShape/JPACalcScaleX__FP18JPAEmitterWorkDataP15JPABaseParticle.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JParticle/JPAExtraShape/JPACalcScaleY__FP18JPAEmitterWorkDataP15JPABaseParticle.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JParticle/JPAExtraShape/JPACalcScaleCopy__FP18JPAEmitterWorkDataP15JPABaseParticle.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JParticle/JPAExtraShape/JPACalcScaleAnmNormal__FP18JPAEmitterWorkDataP15JPABaseParticle.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JParticle/JPAExtraShape/JPACalcScaleAnmRepeatX__FP18JPAEmitterWorkDataP15JPABaseParticle.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JParticle/JPAExtraShape/JPACalcScaleAnmRepeatY__FP18JPAEmitterWorkDataP15JPABaseParticle.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JParticle/JPAExtraShape/JPACalcScaleAnmReverseX__FP18JPAEmitterWorkDataP15JPABaseParticle.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JParticle/JPAExtraShape/JPACalcScaleAnmReverseY__FP18JPAEmitterWorkDataP15JPABaseParticle.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JParticle/JPAExtraShape/JPACalcAlphaAnm__FP18JPAEmitterWorkDataP15JPABaseParticle.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JParticle/JPAExtraShape/JPACalcAlphaFlickAnm__FP18JPAEmitterWorkDataP15JPABaseParticle.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JParticle/JPAExtraShape/__ct__13JPAExtraShapeFPCUc.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JParticle/JPAExtraShape/init__13JPAExtraShapeFv.s&quot;</code><br />
+<code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for JPAExtraShape.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="JPAExtraShape_8cpp__incl.svg" width="100%" height="484"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="JPAExtraShape_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJPAExtraShape.html">JPAExtraShape</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJPABaseParticle.html">JPABaseParticle</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJMath.html">JMath</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7870d1ee5797cfb9fb42dbbcc65d9d30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a7870d1ee5797cfb9fb42dbbcc65d9d30">JPACalcScaleX__FP18JPAEmitterWorkDataP15JPABaseParticle</a> ()</td></tr>
-<tr class="separator:a7870d1ee5797cfb9fb42dbbcc65d9d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d2e0b83a0988aef826f77e2e28c50d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a5d2e0b83a0988aef826f77e2e28c50d1">JPACalcScaleY__FP18JPAEmitterWorkDataP15JPABaseParticle</a> ()</td></tr>
-<tr class="separator:a5d2e0b83a0988aef826f77e2e28c50d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37547403a53ed3a8442c6c78d2b2f5a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a37547403a53ed3a8442c6c78d2b2f5a0">JPACalcScaleCopy__FP18JPAEmitterWorkDataP15JPABaseParticle</a> ()</td></tr>
-<tr class="separator:a37547403a53ed3a8442c6c78d2b2f5a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7a70a650e3590b28f5f3ca47d552156"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#af7a70a650e3590b28f5f3ca47d552156">JPACalcScaleAnmNormal__FP18JPAEmitterWorkDataP15JPABaseParticle</a> ()</td></tr>
-<tr class="separator:af7a70a650e3590b28f5f3ca47d552156"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99c89f7cc55989b201e3c302bc494cd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a99c89f7cc55989b201e3c302bc494cd2">JPACalcScaleAnmRepeatX__FP18JPAEmitterWorkDataP15JPABaseParticle</a> ()</td></tr>
-<tr class="separator:a99c89f7cc55989b201e3c302bc494cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f40436896183445f8c01d4ab2850c44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a3f40436896183445f8c01d4ab2850c44">JPACalcScaleAnmRepeatY__FP18JPAEmitterWorkDataP15JPABaseParticle</a> ()</td></tr>
-<tr class="separator:a3f40436896183445f8c01d4ab2850c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afccbbda1241b5871f688f5e7825c194f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#afccbbda1241b5871f688f5e7825c194f">JPACalcScaleAnmReverseX__FP18JPAEmitterWorkDataP15JPABaseParticle</a> ()</td></tr>
-<tr class="separator:afccbbda1241b5871f688f5e7825c194f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb10b785c715db7019f1d4b291285775"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#acb10b785c715db7019f1d4b291285775">JPACalcScaleAnmReverseY__FP18JPAEmitterWorkDataP15JPABaseParticle</a> ()</td></tr>
-<tr class="separator:acb10b785c715db7019f1d4b291285775"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b17c916a955c257b286a028d48eca3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a4b17c916a955c257b286a028d48eca3e">JPACalcAlphaAnm__FP18JPAEmitterWorkDataP15JPABaseParticle</a> ()</td></tr>
-<tr class="separator:a4b17c916a955c257b286a028d48eca3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15d83013b971e5259f65ef9b349dd2b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a15d83013b971e5259f65ef9b349dd2b5">JPACalcAlphaFlickAnm__FP18JPAEmitterWorkDataP15JPABaseParticle</a> ()</td></tr>
-<tr class="separator:a15d83013b971e5259f65ef9b349dd2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cef88425bf563d519c955310c2e377f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a0cef88425bf563d519c955310c2e377f">__ct__13JPAExtraShapeFPCUc</a> ()</td></tr>
-<tr class="separator:a0cef88425bf563d519c955310c2e377f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb384ffdc726602f93998a7beda155de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#acb384ffdc726602f93998a7beda155de">init__13JPAExtraShapeFv</a> ()</td></tr>
-<tr class="separator:acb384ffdc726602f93998a7beda155de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ec30069f780ebae55c5b17891ec38fd"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a7ec30069f780ebae55c5b17891ec38fd">JPACalcScaleX</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *param_1)</td></tr>
-<tr class="separator:a7ec30069f780ebae55c5b17891ec38fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61483763d1643e3fc739229171b28c59"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a61483763d1643e3fc739229171b28c59">JPACalcScaleY</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *param_1)</td></tr>
-<tr class="separator:a61483763d1643e3fc739229171b28c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d970f60e3f41a085a6e873454e186e3"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a2d970f60e3f41a085a6e873454e186e3">JPACalcScaleCopy</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *param_1)</td></tr>
-<tr class="separator:a2d970f60e3f41a085a6e873454e186e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad89ae46e5f31b2b5cec14f4a1dfaba5"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#aad89ae46e5f31b2b5cec14f4a1dfaba5">JPACalcScaleAnmNormal</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *param_1)</td></tr>
-<tr class="separator:aad89ae46e5f31b2b5cec14f4a1dfaba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1325c87dfb3f9d5634aaad75876af797"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a1325c87dfb3f9d5634aaad75876af797">JPACalcScaleAnmRepeatX</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *param_1)</td></tr>
-<tr class="separator:a1325c87dfb3f9d5634aaad75876af797"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5a2a29fef4e72c059bce582ca2e6f1a"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#aa5a2a29fef4e72c059bce582ca2e6f1a">JPACalcScaleAnmRepeatY</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *param_1)</td></tr>
-<tr class="separator:aa5a2a29fef4e72c059bce582ca2e6f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2301cff58f485f10d7b2876784bff1d7"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a2301cff58f485f10d7b2876784bff1d7">JPACalcScaleAnmReverseX</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *param_1)</td></tr>
-<tr class="separator:a2301cff58f485f10d7b2876784bff1d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02a22d0c6bcc975771fdad4767ae8f63"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a02a22d0c6bcc975771fdad4767ae8f63">JPACalcScaleAnmReverseY</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *param_1)</td></tr>
-<tr class="separator:a02a22d0c6bcc975771fdad4767ae8f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92e046b44654859f13e45602e46f50be"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a92e046b44654859f13e45602e46f50be">JPACalcAlphaAnm</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *param_1)</td></tr>
-<tr class="separator:a92e046b44654859f13e45602e46f50be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfa8a88abc65499472d62dfe83919459"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#abfa8a88abc65499472d62dfe83919459">JPACalcAlphaFlickAnm</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *param_1)</td></tr>
-<tr class="separator:abfa8a88abc65499472d62dfe83919459"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a5e862148df6adc58098613dbd1f882cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a5e862148df6adc58098613dbd1f882cd">sincosTable___5JMath</a> [65536]</td></tr>
-<tr class="separator:a5e862148df6adc58098613dbd1f882cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2386d4848b378835bdb3e681a005c0ad"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a2386d4848b378835bdb3e681a005c0ad">lit_2270</a> [1+1]</td></tr>
-<tr class="separator:a2386d4848b378835bdb3e681a005c0ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5162b376f3b57d81a6bc9ac18fe8073d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a5162b376f3b57d81a6bc9ac18fe8073d">lit_2312</a> = 4503601774854144.0</td></tr>
-<tr class="separator:a5162b376f3b57d81a6bc9ac18fe8073d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97bca7eb13680384786990216ccb162e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a97bca7eb13680384786990216ccb162e">lit_2339</a> = 2.0f</td></tr>
-<tr class="separator:a97bca7eb13680384786990216ccb162e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a070d3e2ce7e54eb69fa3092de5a0fb5c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a070d3e2ce7e54eb69fa3092de5a0fb5c">lit_2390</a> = 255.0f</td></tr>
-<tr class="separator:a070d3e2ce7e54eb69fa3092de5a0fb5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f07ab238dfd401a0132d46cc3c08f6f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a6f07ab238dfd401a0132d46cc3c08f6f">lit_2433</a> = 16384.0f</td></tr>
-<tr class="separator:a6f07ab238dfd401a0132d46cc3c08f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a338cdb9877ffc636ea13d24de756b19e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a338cdb9877ffc636ea13d24de756b19e">lit_2434</a> = 0.5f</td></tr>
-<tr class="separator:a338cdb9877ffc636ea13d24de756b19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67151c752f7311f634434808da7b707f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a67151c752f7311f634434808da7b707f">lit_2503</a> [1+1]</td></tr>
-<tr class="separator:a67151c752f7311f634434808da7b707f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a737ad58faa65eb189a49b6e5b6e3751e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a737ad58faa65eb189a49b6e5b6e3751e">JPACalcScaleX</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *work, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *ptcl)</td></tr>
+<tr class="separator:a737ad58faa65eb189a49b6e5b6e3751e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bc85dddef982ac6b1bb7368df3c453b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a1bc85dddef982ac6b1bb7368df3c453b">JPACalcScaleY</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *work, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *ptcl)</td></tr>
+<tr class="separator:a1bc85dddef982ac6b1bb7368df3c453b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8e4d359d7f106920c27e9071323554a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#af8e4d359d7f106920c27e9071323554a">JPACalcScaleCopy</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *work, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *ptcl)</td></tr>
+<tr class="separator:af8e4d359d7f106920c27e9071323554a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f525db9318343a091395190cfd2dcd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a00f525db9318343a091395190cfd2dcd">JPACalcScaleAnmNormal</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *work, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *ptcl)</td></tr>
+<tr class="separator:a00f525db9318343a091395190cfd2dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61ba0232780e66ea2e8b7a1761ec2b92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a61ba0232780e66ea2e8b7a1761ec2b92">JPACalcScaleAnmRepeatX</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *work, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *ptcl)</td></tr>
+<tr class="separator:a61ba0232780e66ea2e8b7a1761ec2b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa10e061bcfee2166e685a44cd0c095e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#aa10e061bcfee2166e685a44cd0c095e4">JPACalcScaleAnmRepeatY</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *work, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *ptcl)</td></tr>
+<tr class="separator:aa10e061bcfee2166e685a44cd0c095e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add3de77349b9c81c8b7bab3ba4544acc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#add3de77349b9c81c8b7bab3ba4544acc">JPACalcScaleAnmReverseX</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *work, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *ptcl)</td></tr>
+<tr class="separator:add3de77349b9c81c8b7bab3ba4544acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6785d4a00ec7b0ebe7ef8d0531411d12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a6785d4a00ec7b0ebe7ef8d0531411d12">JPACalcScaleAnmReverseY</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *work, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *ptcl)</td></tr>
+<tr class="separator:a6785d4a00ec7b0ebe7ef8d0531411d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37a7664019284e29e267d1989b106739"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a37a7664019284e29e267d1989b106739">JPACalcAlphaAnm</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *work, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *ptcl)</td></tr>
+<tr class="separator:a37a7664019284e29e267d1989b106739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8433968c2813e11741c06216eaaf6be6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPAExtraShape_8cpp.html#a8433968c2813e11741c06216eaaf6be6">JPACalcAlphaFlickAnm</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *work, <a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *ptcl)</td></tr>
+<tr class="separator:a8433968c2813e11741c06216eaaf6be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a0cef88425bf563d519c955310c2e377f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0cef88425bf563d519c955310c2e377f">&#9670;&nbsp;</a></span>__ct__13JPAExtraShapeFPCUc()</h2>
+<a id="a37a7664019284e29e267d1989b106739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37a7664019284e29e267d1989b106739">&#9670;&nbsp;</a></span>JPACalcAlphaAnm()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void __ct__13JPAExtraShapeFPCUc </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acb384ffdc726602f93998a7beda155de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb384ffdc726602f93998a7beda155de">&#9670;&nbsp;</a></span>init__13JPAExtraShapeFv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void init__13JPAExtraShapeFv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a92e046b44654859f13e45602e46f50be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92e046b44654859f13e45602e46f50be">&#9670;&nbsp;</a></span>JPACalcAlphaAnm()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void JPACalcAlphaAnm </td>
+          <td class="memname">void JPACalcAlphaAnm </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname"><em>work</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname"><em>ptcl</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -245,40 +148,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4b17c916a955c257b286a028d48eca3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b17c916a955c257b286a028d48eca3e">&#9670;&nbsp;</a></span>JPACalcAlphaAnm__FP18JPAEmitterWorkDataP15JPABaseParticle()</h2>
+<a id="a8433968c2813e11741c06216eaaf6be6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8433968c2813e11741c06216eaaf6be6">&#9670;&nbsp;</a></span>JPACalcAlphaFlickAnm()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void JPACalcAlphaAnm__FP18JPAEmitterWorkDataP15JPABaseParticle </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abfa8a88abc65499472d62dfe83919459"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abfa8a88abc65499472d62dfe83919459">&#9670;&nbsp;</a></span>JPACalcAlphaFlickAnm()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void JPACalcAlphaFlickAnm </td>
+          <td class="memname">void JPACalcAlphaFlickAnm </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname"><em>work</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname"><em>ptcl</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -290,40 +176,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a15d83013b971e5259f65ef9b349dd2b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15d83013b971e5259f65ef9b349dd2b5">&#9670;&nbsp;</a></span>JPACalcAlphaFlickAnm__FP18JPAEmitterWorkDataP15JPABaseParticle()</h2>
+<a id="a00f525db9318343a091395190cfd2dcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00f525db9318343a091395190cfd2dcd">&#9670;&nbsp;</a></span>JPACalcScaleAnmNormal()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void JPACalcAlphaFlickAnm__FP18JPAEmitterWorkDataP15JPABaseParticle </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aad89ae46e5f31b2b5cec14f4a1dfaba5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad89ae46e5f31b2b5cec14f4a1dfaba5">&#9670;&nbsp;</a></span>JPACalcScaleAnmNormal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void JPACalcScaleAnmNormal </td>
+          <td class="memname">void JPACalcScaleAnmNormal </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname"><em>work</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname"><em>ptcl</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -335,40 +204,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="af7a70a650e3590b28f5f3ca47d552156"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7a70a650e3590b28f5f3ca47d552156">&#9670;&nbsp;</a></span>JPACalcScaleAnmNormal__FP18JPAEmitterWorkDataP15JPABaseParticle()</h2>
+<a id="a61ba0232780e66ea2e8b7a1761ec2b92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61ba0232780e66ea2e8b7a1761ec2b92">&#9670;&nbsp;</a></span>JPACalcScaleAnmRepeatX()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void JPACalcScaleAnmNormal__FP18JPAEmitterWorkDataP15JPABaseParticle </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1325c87dfb3f9d5634aaad75876af797"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1325c87dfb3f9d5634aaad75876af797">&#9670;&nbsp;</a></span>JPACalcScaleAnmRepeatX()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void JPACalcScaleAnmRepeatX </td>
+          <td class="memname">void JPACalcScaleAnmRepeatX </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname"><em>work</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname"><em>ptcl</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -380,40 +232,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a99c89f7cc55989b201e3c302bc494cd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99c89f7cc55989b201e3c302bc494cd2">&#9670;&nbsp;</a></span>JPACalcScaleAnmRepeatX__FP18JPAEmitterWorkDataP15JPABaseParticle()</h2>
+<a id="aa10e061bcfee2166e685a44cd0c095e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa10e061bcfee2166e685a44cd0c095e4">&#9670;&nbsp;</a></span>JPACalcScaleAnmRepeatY()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void JPACalcScaleAnmRepeatX__FP18JPAEmitterWorkDataP15JPABaseParticle </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa5a2a29fef4e72c059bce582ca2e6f1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5a2a29fef4e72c059bce582ca2e6f1a">&#9670;&nbsp;</a></span>JPACalcScaleAnmRepeatY()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void JPACalcScaleAnmRepeatY </td>
+          <td class="memname">void JPACalcScaleAnmRepeatY </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname"><em>work</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname"><em>ptcl</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -425,40 +260,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a3f40436896183445f8c01d4ab2850c44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f40436896183445f8c01d4ab2850c44">&#9670;&nbsp;</a></span>JPACalcScaleAnmRepeatY__FP18JPAEmitterWorkDataP15JPABaseParticle()</h2>
+<a id="add3de77349b9c81c8b7bab3ba4544acc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add3de77349b9c81c8b7bab3ba4544acc">&#9670;&nbsp;</a></span>JPACalcScaleAnmReverseX()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void JPACalcScaleAnmRepeatY__FP18JPAEmitterWorkDataP15JPABaseParticle </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2301cff58f485f10d7b2876784bff1d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2301cff58f485f10d7b2876784bff1d7">&#9670;&nbsp;</a></span>JPACalcScaleAnmReverseX()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void JPACalcScaleAnmReverseX </td>
+          <td class="memname">void JPACalcScaleAnmReverseX </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname"><em>work</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname"><em>ptcl</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -470,40 +288,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="afccbbda1241b5871f688f5e7825c194f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afccbbda1241b5871f688f5e7825c194f">&#9670;&nbsp;</a></span>JPACalcScaleAnmReverseX__FP18JPAEmitterWorkDataP15JPABaseParticle()</h2>
+<a id="a6785d4a00ec7b0ebe7ef8d0531411d12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6785d4a00ec7b0ebe7ef8d0531411d12">&#9670;&nbsp;</a></span>JPACalcScaleAnmReverseY()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void JPACalcScaleAnmReverseX__FP18JPAEmitterWorkDataP15JPABaseParticle </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a02a22d0c6bcc975771fdad4767ae8f63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02a22d0c6bcc975771fdad4767ae8f63">&#9670;&nbsp;</a></span>JPACalcScaleAnmReverseY()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void JPACalcScaleAnmReverseY </td>
+          <td class="memname">void JPACalcScaleAnmReverseY </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname"><em>work</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname"><em>ptcl</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -515,40 +316,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="acb10b785c715db7019f1d4b291285775"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb10b785c715db7019f1d4b291285775">&#9670;&nbsp;</a></span>JPACalcScaleAnmReverseY__FP18JPAEmitterWorkDataP15JPABaseParticle()</h2>
+<a id="af8e4d359d7f106920c27e9071323554a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8e4d359d7f106920c27e9071323554a">&#9670;&nbsp;</a></span>JPACalcScaleCopy()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void JPACalcScaleAnmReverseY__FP18JPAEmitterWorkDataP15JPABaseParticle </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2d970f60e3f41a085a6e873454e186e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d970f60e3f41a085a6e873454e186e3">&#9670;&nbsp;</a></span>JPACalcScaleCopy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void JPACalcScaleCopy </td>
+          <td class="memname">void JPACalcScaleCopy </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname"><em>work</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname"><em>ptcl</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -560,40 +344,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a37547403a53ed3a8442c6c78d2b2f5a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37547403a53ed3a8442c6c78d2b2f5a0">&#9670;&nbsp;</a></span>JPACalcScaleCopy__FP18JPAEmitterWorkDataP15JPABaseParticle()</h2>
+<a id="a737ad58faa65eb189a49b6e5b6e3751e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a737ad58faa65eb189a49b6e5b6e3751e">&#9670;&nbsp;</a></span>JPACalcScaleX()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void JPACalcScaleCopy__FP18JPAEmitterWorkDataP15JPABaseParticle </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7ec30069f780ebae55c5b17891ec38fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ec30069f780ebae55c5b17891ec38fd">&#9670;&nbsp;</a></span>JPACalcScaleX()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void JPACalcScaleX </td>
+          <td class="memname">void JPACalcScaleX </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname"><em>work</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname"><em>ptcl</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -605,241 +372,28 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a7870d1ee5797cfb9fb42dbbcc65d9d30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7870d1ee5797cfb9fb42dbbcc65d9d30">&#9670;&nbsp;</a></span>JPACalcScaleX__FP18JPAEmitterWorkDataP15JPABaseParticle()</h2>
+<a id="a1bc85dddef982ac6b1bb7368df3c453b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bc85dddef982ac6b1bb7368df3c453b">&#9670;&nbsp;</a></span>JPACalcScaleY()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void JPACalcScaleX__FP18JPAEmitterWorkDataP15JPABaseParticle </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a61483763d1643e3fc739229171b28c59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61483763d1643e3fc739229171b28c59">&#9670;&nbsp;</a></span>JPACalcScaleY()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void JPACalcScaleY </td>
+          <td class="memname">void JPACalcScaleY </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname"><em>work</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structJPABaseParticle.html">JPABaseParticle</a> *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname"><em>ptcl</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5d2e0b83a0988aef826f77e2e28c50d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d2e0b83a0988aef826f77e2e28c50d1">&#9670;&nbsp;</a></span>JPACalcScaleY__FP18JPAEmitterWorkDataP15JPABaseParticle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void JPACalcScaleY__FP18JPAEmitterWorkDataP15JPABaseParticle </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a2386d4848b378835bdb3e681a005c0ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2386d4848b378835bdb3e681a005c0ad">&#9670;&nbsp;</a></span>lit_2270</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> lit_2270[1+1]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    1.0f,</div>
-<div class="line">    </div>
-<div class="line">    0.0f,</div>
-<div class="line">}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a5162b376f3b57d81a6bc9ac18fe8073d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5162b376f3b57d81a6bc9ac18fe8073d">&#9670;&nbsp;</a></span>lit_2312</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> lit_2312 = 4503601774854144.0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a97bca7eb13680384786990216ccb162e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97bca7eb13680384786990216ccb162e">&#9670;&nbsp;</a></span>lit_2339</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> lit_2339 = 2.0f</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a070d3e2ce7e54eb69fa3092de5a0fb5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a070d3e2ce7e54eb69fa3092de5a0fb5c">&#9670;&nbsp;</a></span>lit_2390</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> lit_2390 = 255.0f</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6f07ab238dfd401a0132d46cc3c08f6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f07ab238dfd401a0132d46cc3c08f6f">&#9670;&nbsp;</a></span>lit_2433</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> lit_2433 = 16384.0f</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a338cdb9877ffc636ea13d24de756b19e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a338cdb9877ffc636ea13d24de756b19e">&#9670;&nbsp;</a></span>lit_2434</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> lit_2434 = 0.5f</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a67151c752f7311f634434808da7b707f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67151c752f7311f634434808da7b707f">&#9670;&nbsp;</a></span>lit_2503</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> lit_2503[1+1]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0.0f,</div>
-<div class="line">    </div>
-<div class="line">    0.0f,</div>
-<div class="line">}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a5e862148df6adc58098613dbd1f882cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e862148df6adc58098613dbd1f882cd">&#9670;&nbsp;</a></span>sincosTable___5JMath</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> sincosTable___5JMath[65536]</td>
         </tr>
       </table>
 </div><div class="memdoc">

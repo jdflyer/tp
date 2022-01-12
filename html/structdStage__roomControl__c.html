@@ -110,8 +110,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acc7b23edecb6d7ea67c111a723162d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc7b23edecb6d7ea67c111a723162d2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdStage__roomControl__c.html#acc7b23edecb6d7ea67c111a723162d2b">getStatusRoomDt</a> (int)</td></tr>
 <tr class="separator:acc7b23edecb6d7ea67c111a723162d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc7b23edecb6d7ea67c111a723162d2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdStage__roomControl__c.html#acc7b23edecb6d7ea67c111a723162d2b">getStatusRoomDt</a> (int)</td></tr>
-<tr class="separator:acc7b23edecb6d7ea67c111a723162d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0caa80fd53015f882bab9bfe079de8d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdStage__roomControl__c.html#a0caa80fd53015f882bab9bfe079de8d1">resetArchiveBank</a> (int)</td></tr>
 <tr class="separator:a0caa80fd53015f882bab9bfe079de8d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc7b23edecb6d7ea67c111a723162d2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdStage__roomControl__c.html#acc7b23edecb6d7ea67c111a723162d2b">getStatusRoomDt</a> (int)</td></tr>
@@ -173,6 +171,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a6f041ea4b9d0ea0faaabfd58176e485d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ba46685a25efe22c6d4fdf35baf8b9b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a151f780fb455885061d3b77ec1c90c03">s8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdStage__roomControl__c.html#a5ba46685a25efe22c6d4fdf35baf8b9b">getStayNo</a> ()</td></tr>
 <tr class="separator:a5ba46685a25efe22c6d4fdf35baf8b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34d04b5f44f931b63e18192ec16b5bf6"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdStage__roomControl__c.html#a34d04b5f44f931b63e18192ec16b5bf6">getDemoArcName</a> ()</td></tr>
+<tr class="separator:a34d04b5f44f931b63e18192ec16b5bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -192,6 +192,8 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:abed5780891c39210c43115a4388bccb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa954f6776b587bcd80b25bdc86261d18"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classdStage__roomStatus__c.html">dStage_roomStatus_c</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdStage__roomControl__c.html#aa954f6776b587bcd80b25bdc86261d18">mStatus</a> [0x40]</td></tr>
 <tr class="separator:aa954f6776b587bcd80b25bdc86261d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d40c039524cd5461afc570b309bfe9"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdStage__roomControl__c.html#a95d40c039524cd5461afc570b309bfe9">mDemoArcName</a> [10]</td></tr>
+<tr class="separator:a95d40c039524cd5461afc570b309bfe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e73871e89a55072aa02142d358e8c48"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdStage__roomControl__c.html#a9e73871e89a55072aa02142d358e8c48">mProcID</a></td></tr>
 <tr class="separator:a9e73871e89a55072aa02142d358e8c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bd946daa72eb34282a5fc89538ed96b"><td class="memItemLeft" align="right" valign="top">static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdStage__roomControl__c.html#a9bd946daa72eb34282a5fc89538ed96b">mArcBankName</a></td></tr>
@@ -384,6 +386,31 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a34d04b5f44f931b63e18192ec16b5bf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34d04b5f44f931b63e18192ec16b5bf6">&#9670;&nbsp;</a></span>getDemoArcName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static char* dStage_roomControl_c::getDemoArcName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a7a5a6620e1a6916b642d0f8c752d4ed4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7a5a6620e1a6916b642d0f8c752d4ed4">&#9670;&nbsp;</a></span>getMemoryBlock() <span class="overload">[1/2]</span></h2>
 
@@ -447,7 +474,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a44d20eb54f77c3dde1477223bd9b59b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44d20eb54f77c3dde1477223bd9b59b6">&#9670;&nbsp;</a></span>getStatusRoomDt() <span class="overload">[1/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a44d20eb54f77c3dde1477223bd9b59b6">&#9670;&nbsp;</a></span>getStatusRoomDt() <span class="overload">[1/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -465,7 +492,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a6ec207cdcc404092dcb437fd437ac139"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ec207cdcc404092dcb437fd437ac139">&#9670;&nbsp;</a></span>getStatusRoomDt() <span class="overload">[2/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ec207cdcc404092dcb437fd437ac139">&#9670;&nbsp;</a></span>getStatusRoomDt() <span class="overload">[2/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -483,7 +510,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <a id="acc7b23edecb6d7ea67c111a723162d2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc7b23edecb6d7ea67c111a723162d2b">&#9670;&nbsp;</a></span>getStatusRoomDt() <span class="overload">[3/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acc7b23edecb6d7ea67c111a723162d2b">&#9670;&nbsp;</a></span>getStatusRoomDt() <span class="overload">[3/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -501,7 +528,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <a id="acc7b23edecb6d7ea67c111a723162d2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc7b23edecb6d7ea67c111a723162d2b">&#9670;&nbsp;</a></span>getStatusRoomDt() <span class="overload">[4/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acc7b23edecb6d7ea67c111a723162d2b">&#9670;&nbsp;</a></span>getStatusRoomDt() <span class="overload">[4/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -519,7 +546,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <a id="acc7b23edecb6d7ea67c111a723162d2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc7b23edecb6d7ea67c111a723162d2b">&#9670;&nbsp;</a></span>getStatusRoomDt() <span class="overload">[5/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acc7b23edecb6d7ea67c111a723162d2b">&#9670;&nbsp;</a></span>getStatusRoomDt() <span class="overload">[5/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -537,7 +564,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <a id="acc7b23edecb6d7ea67c111a723162d2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc7b23edecb6d7ea67c111a723162d2b">&#9670;&nbsp;</a></span>getStatusRoomDt() <span class="overload">[6/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acc7b23edecb6d7ea67c111a723162d2b">&#9670;&nbsp;</a></span>getStatusRoomDt() <span class="overload">[6/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -555,7 +582,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <a id="acc7b23edecb6d7ea67c111a723162d2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc7b23edecb6d7ea67c111a723162d2b">&#9670;&nbsp;</a></span>getStatusRoomDt() <span class="overload">[7/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acc7b23edecb6d7ea67c111a723162d2b">&#9670;&nbsp;</a></span>getStatusRoomDt() <span class="overload">[7/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -573,25 +600,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <a id="acc7b23edecb6d7ea67c111a723162d2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc7b23edecb6d7ea67c111a723162d2b">&#9670;&nbsp;</a></span>getStatusRoomDt() <span class="overload">[8/9]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void dStage_roomControl_c::getStatusRoomDt </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acc7b23edecb6d7ea67c111a723162d2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc7b23edecb6d7ea67c111a723162d2b">&#9670;&nbsp;</a></span>getStatusRoomDt() <span class="overload">[9/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acc7b23edecb6d7ea67c111a723162d2b">&#9670;&nbsp;</a></span>getStatusRoomDt() <span class="overload">[8/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1199,7 +1208,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a18d2fb14727089e6ab5c519ab31de4c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18d2fb14727089e6ab5c519ab31de4c7">&#9670;&nbsp;</a></span>mDemoArcName</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a18d2fb14727089e6ab5c519ab31de4c7">&#9670;&nbsp;</a></span>mDemoArcName <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1209,6 +1218,28 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> dStage_roomControl_c::mDemoArcName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a95d40c039524cd5461afc570b309bfe9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95d40c039524cd5461afc570b309bfe9">&#9670;&nbsp;</a></span>mDemoArcName <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char dStage_roomControl_c::mDemoArcName[10]</td>
         </tr>
       </table>
   </td>
@@ -1341,7 +1372,6 @@ Private Attributes</h2></td></tr>
 <li>src/d/<a class="el" href="d__model_8cpp.html">d_model.cpp</a></li>
 <li>src/d/<a class="el" href="d__simple__model_8cpp.html">d_simple_model.cpp</a></li>
 <li>src/d/map/<a class="el" href="d__map_8cpp.html">d_map.cpp</a></li>
-<li>src/d/map/<a class="el" href="d__map__path__dmap_8cpp.html">d_map_path_dmap.cpp</a></li>
 <li>src/d/menu/<a class="el" href="d__menu__dmap__map_8cpp.html">d_menu_dmap_map.cpp</a></li>
 <li>src/d/s/<a class="el" href="d__s__play_8cpp.html">d_s_play.cpp</a></li>
 <li>src/d/s/<a class="el" href="d__s__room_8cpp.html">d_s_room.cpp</a></li>
@@ -1353,7 +1383,6 @@ Private Attributes</h2></td></tr>
 <li>src/d/<a class="el" href="d__path_8cpp.html">d_path.cpp</a></li>
 <li>src/d/kankyo/<a class="el" href="d__kankyo__rain_8cpp.html">d_kankyo_rain.cpp</a></li>
 <li>src/d/kankyo/<a class="el" href="d__kankyo__wether_8cpp.html">d_kankyo_wether.cpp</a></li>
-<li>src/d/meter/<a class="el" href="d__meter__map_8cpp.html">d_meter_map.cpp</a></li>
 <li>src/d/com/<a class="el" href="d__com__inf__game_8cpp.html">d_com_inf_game.cpp</a></li>
 <li>src/d/<a class="el" href="d__stage_8cpp.html">d_stage.cpp</a></li>
 <li>src/d/kankyo/<a class="el" href="d__kankyo_8cpp.html">d_kankyo.cpp</a></li>

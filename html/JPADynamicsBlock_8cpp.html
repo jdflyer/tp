@@ -74,7 +74,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -82,6 +82,8 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="JPADynamicsBlock_8h_source.html">JSystem/JParticle/JPADynamicsBlock.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JPAParticle_8h_source.html">JSystem/JParticle/JPAParticle.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JMATrigonometric_8h_source.html">JSystem/JMath/JMATrigonometric.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;asm/JSystem/JParticle/JPADynamicsBlock/JPAVolumePoint__FP18JPAEmitterWorkData.s&quot;</code><br />
@@ -91,43 +93,47 @@ $(function() {
 <code>#include &quot;asm/JSystem/JParticle/JPADynamicsBlock/JPAVolumeSphere__FP18JPAEmitterWorkData.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JParticle/JPADynamicsBlock/JPAVolumeCylinder__FP18JPAEmitterWorkData.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JParticle/JPADynamicsBlock/JPAVolumeTorus__FP18JPAEmitterWorkData.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JParticle/JPADynamicsBlock/__ct__16JPADynamicsBlockFPCUc.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JParticle/JPADynamicsBlock/init__16JPADynamicsBlockFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JParticle/JPADynamicsBlock/create__16JPADynamicsBlockFP18JPAEmitterWorkData.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for JPADynamicsBlock.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="JPADynamicsBlock_8cpp__incl.svg" width="100%" height="596"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="JPADynamicsBlock_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJPABaseEmitter.html">JPABaseEmitter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJMath.html">JMath</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a06fc87d81c62e9abb8790b6e5713c55b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="JPADynamicsBlock_8cpp.html#a06fc87d81c62e9abb8790b6e5713c55bab419a25c4ead49148087c03371e2fbc1">VOL_Cube</a> = 0x00
+, <a class="el" href="JPADynamicsBlock_8cpp.html#a06fc87d81c62e9abb8790b6e5713c55baa5efa8cf14ede296f4a51774a79f9028">VOL_Sphere</a> = 0x01
+, <a class="el" href="JPADynamicsBlock_8cpp.html#a06fc87d81c62e9abb8790b6e5713c55ba002174319e08623b89ae509a39884551">VOL_Cylinder</a> = 0x02
+, <a class="el" href="JPADynamicsBlock_8cpp.html#a06fc87d81c62e9abb8790b6e5713c55ba44038c65058b69e6c5a7b0651524ce9a">VOL_Torus</a> = 0x03
+, <br />
+&#160;&#160;<a class="el" href="JPADynamicsBlock_8cpp.html#a06fc87d81c62e9abb8790b6e5713c55ba4fb2558ad66dc1d727e52a0400b61674">VOL_Point</a> = 0x04
+, <a class="el" href="JPADynamicsBlock_8cpp.html#a06fc87d81c62e9abb8790b6e5713c55baa371d768b16c42db20245ee2c7191320">VOL_Circle</a> = 0x05
+, <a class="el" href="JPADynamicsBlock_8cpp.html#a06fc87d81c62e9abb8790b6e5713c55ba2d9d8e5e2998c4f5235015ecddcb48e9">VOL_Line</a> = 0x06
+<br />
+ }</td></tr>
+<tr class="separator:a06fc87d81c62e9abb8790b6e5713c55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a36513ccf6eab17cd08af6ff832f841cc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPADynamicsBlock_8cpp.html#a36513ccf6eab17cd08af6ff832f841cc">JPAVolumePoint__FP18JPAEmitterWorkData</a> ()</td></tr>
-<tr class="separator:a36513ccf6eab17cd08af6ff832f841cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32e430f162d3af0a872745425112097c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPADynamicsBlock_8cpp.html#a32e430f162d3af0a872745425112097c">JPAVolumeLine__FP18JPAEmitterWorkData</a> ()</td></tr>
-<tr class="separator:a32e430f162d3af0a872745425112097c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a844c5ce9e1882d52b6d21b8ee13a8827"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPADynamicsBlock_8cpp.html#a844c5ce9e1882d52b6d21b8ee13a8827">JPAVolumeCircle__FP18JPAEmitterWorkData</a> ()</td></tr>
-<tr class="separator:a844c5ce9e1882d52b6d21b8ee13a8827"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8396bf7a7e54919489c4af5541a0f95"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPADynamicsBlock_8cpp.html#af8396bf7a7e54919489c4af5541a0f95">JPAVolumeCube__FP18JPAEmitterWorkData</a> ()</td></tr>
-<tr class="separator:af8396bf7a7e54919489c4af5541a0f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf6ee63d1e5affca21660b9c07998e01"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPADynamicsBlock_8cpp.html#acf6ee63d1e5affca21660b9c07998e01">JPAVolumeSphere__FP18JPAEmitterWorkData</a> ()</td></tr>
-<tr class="separator:acf6ee63d1e5affca21660b9c07998e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0821cb11db41784d0b619ecfeb35a917"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPADynamicsBlock_8cpp.html#a0821cb11db41784d0b619ecfeb35a917">JPAVolumeCylinder__FP18JPAEmitterWorkData</a> ()</td></tr>
-<tr class="separator:a0821cb11db41784d0b619ecfeb35a917"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9472fc19cf16411a0dfd5d820f0c0f22"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPADynamicsBlock_8cpp.html#a9472fc19cf16411a0dfd5d820f0c0f22">JPAVolumeTorus__FP18JPAEmitterWorkData</a> ()</td></tr>
-<tr class="separator:a9472fc19cf16411a0dfd5d820f0c0f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a4cf5559f3aeedf1e2350671caf9d41"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPADynamicsBlock_8cpp.html#a5a4cf5559f3aeedf1e2350671caf9d41">JPAVolumePoint</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *)</td></tr>
+<tr class="separator:a5a4cf5559f3aeedf1e2350671caf9d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52d09cb162af09d6971ce88c0425f66d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPADynamicsBlock_8cpp.html#a52d09cb162af09d6971ce88c0425f66d">JPAVolumeLine</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *)</td></tr>
+<tr class="separator:a52d09cb162af09d6971ce88c0425f66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a469708276a225ab149306f0f57ae2607"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPADynamicsBlock_8cpp.html#a469708276a225ab149306f0f57ae2607">JPAVolumeCircle</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *)</td></tr>
+<tr class="separator:a469708276a225ab149306f0f57ae2607"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7622026663e924a7d14ef3b27fc2e0cc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPADynamicsBlock_8cpp.html#a7622026663e924a7d14ef3b27fc2e0cc">JPAVolumeCube</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *)</td></tr>
+<tr class="separator:a7622026663e924a7d14ef3b27fc2e0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15339ac00f285001fd7577c2b3693db9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPADynamicsBlock_8cpp.html#a15339ac00f285001fd7577c2b3693db9">JPAVolumeSphere</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *)</td></tr>
+<tr class="separator:a15339ac00f285001fd7577c2b3693db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a011944da105e0ce921cfc23e61e1feb1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPADynamicsBlock_8cpp.html#a011944da105e0ce921cfc23e61e1feb1">JPAVolumeCylinder</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *)</td></tr>
+<tr class="separator:a011944da105e0ce921cfc23e61e1feb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab694619e1773a39874fe90d3f06b1939"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPADynamicsBlock_8cpp.html#ab694619e1773a39874fe90d3f06b1939">JPAVolumeTorus</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *)</td></tr>
+<tr class="separator:ab694619e1773a39874fe90d3f06b1939"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0849796dff027d3d692c4739527d9196"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPADynamicsBlock_8cpp.html#a0849796dff027d3d692c4739527d9196">__ct__16JPADynamicsBlockFPCUc</a> ()</td></tr>
 <tr class="separator:a0849796dff027d3d692c4739527d9196"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaebc63b52bef21b647d2bcadc441f822"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPADynamicsBlock_8cpp.html#aaebc63b52bef21b647d2bcadc441f822">init__16JPADynamicsBlockFv</a> ()</td></tr>
@@ -136,20 +142,6 @@ Functions</h2></td></tr>
 <tr class="separator:a1649a4580a3b19c3863d5f329c447eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a600ae3191b298da06db08e747a59048e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPADynamicsBlock_8cpp.html#a600ae3191b298da06db08e747a59048e">createParticle__14JPABaseEmitterFv</a> ()</td></tr>
 <tr class="separator:a600ae3191b298da06db08e747a59048e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab09ccc842538cddce8f6cdbc53b3c096"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPADynamicsBlock_8cpp.html#ab09ccc842538cddce8f6cdbc53b3c096">JPAVolumePoint</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0)</td></tr>
-<tr class="separator:ab09ccc842538cddce8f6cdbc53b3c096"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fe51dbf7896745f20107d387b6647c6"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPADynamicsBlock_8cpp.html#a0fe51dbf7896745f20107d387b6647c6">JPAVolumeLine</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0)</td></tr>
-<tr class="separator:a0fe51dbf7896745f20107d387b6647c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51b828ae98417f853ffece4ac70c91d3"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPADynamicsBlock_8cpp.html#a51b828ae98417f853ffece4ac70c91d3">JPAVolumeCircle</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0)</td></tr>
-<tr class="separator:a51b828ae98417f853ffece4ac70c91d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a135d39b093b4c14288c0f0fb0b2aa882"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPADynamicsBlock_8cpp.html#a135d39b093b4c14288c0f0fb0b2aa882">JPAVolumeCube</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0)</td></tr>
-<tr class="separator:a135d39b093b4c14288c0f0fb0b2aa882"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a150982badf8c9bad8ca0c10e1ecd5100"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPADynamicsBlock_8cpp.html#a150982badf8c9bad8ca0c10e1ecd5100">JPAVolumeSphere</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0)</td></tr>
-<tr class="separator:a150982badf8c9bad8ca0c10e1ecd5100"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05d170d1710e288f0f49bde6860cddd1"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPADynamicsBlock_8cpp.html#a05d170d1710e288f0f49bde6860cddd1">JPAVolumeCylinder</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0)</td></tr>
-<tr class="separator:a05d170d1710e288f0f49bde6860cddd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd3818ce796da559eb25e6152362d70b"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPADynamicsBlock_8cpp.html#acd3818ce796da559eb25e6152362d70b">JPAVolumeTorus</a> (<a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *param_0)</td></tr>
-<tr class="separator:acd3818ce796da559eb25e6152362d70b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -167,9 +159,31 @@ Variables</h2></td></tr>
 <tr class="separator:ac85079e2bd274eca52f0e771f3d95e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2203553738b0cbba1d9f0559a13a22b3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPADynamicsBlock_8cpp.html#a2203553738b0cbba1d9f0559a13a22b3">lit_2503</a> = 4503599627370496.0</td></tr>
 <tr class="separator:a2203553738b0cbba1d9f0559a13a22b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a092cb3806372603658dd6466c577c2f2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JPADynamicsBlock_8cpp.html#a092cb3806372603658dd6466c577c2f2">lit_2631</a> [7+1]</td></tr>
-<tr class="separator:a092cb3806372603658dd6466c577c2f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a06fc87d81c62e9abb8790b6e5713c55b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06fc87d81c62e9abb8790b6e5713c55b">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55bab419a25c4ead49148087c03371e2fbc1"></a>VOL_Cube&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baa5efa8cf14ede296f4a51774a79f9028"></a>VOL_Sphere&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba002174319e08623b89ae509a39884551"></a>VOL_Cylinder&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba44038c65058b69e6c5a7b0651524ce9a"></a>VOL_Torus&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba4fb2558ad66dc1d727e52a0400b61674"></a>VOL_Point&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baa371d768b16c42db20245ee2c7191320"></a>VOL_Circle&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba2d9d8e5e2998c4f5235015ecddcb48e9"></a>VOL_Line&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a0849796dff027d3d692c4739527d9196"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0849796dff027d3d692c4739527d9196">&#9670;&nbsp;</a></span>__ct__16JPADynamicsBlockFPCUc()</h2>
@@ -239,8 +253,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a51b828ae98417f853ffece4ac70c91d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51b828ae98417f853ffece4ac70c91d3">&#9670;&nbsp;</a></span>JPAVolumeCircle()</h2>
+<a id="a469708276a225ab149306f0f57ae2607"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a469708276a225ab149306f0f57ae2607">&#9670;&nbsp;</a></span>JPAVolumeCircle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -265,33 +279,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a844c5ce9e1882d52b6d21b8ee13a8827"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a844c5ce9e1882d52b6d21b8ee13a8827">&#9670;&nbsp;</a></span>JPAVolumeCircle__FP18JPAEmitterWorkData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void JPAVolumeCircle__FP18JPAEmitterWorkData </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a135d39b093b4c14288c0f0fb0b2aa882"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a135d39b093b4c14288c0f0fb0b2aa882">&#9670;&nbsp;</a></span>JPAVolumeCube()</h2>
+<a id="a7622026663e924a7d14ef3b27fc2e0cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7622026663e924a7d14ef3b27fc2e0cc">&#9670;&nbsp;</a></span>JPAVolumeCube()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -316,33 +305,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="af8396bf7a7e54919489c4af5541a0f95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8396bf7a7e54919489c4af5541a0f95">&#9670;&nbsp;</a></span>JPAVolumeCube__FP18JPAEmitterWorkData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void JPAVolumeCube__FP18JPAEmitterWorkData </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a05d170d1710e288f0f49bde6860cddd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05d170d1710e288f0f49bde6860cddd1">&#9670;&nbsp;</a></span>JPAVolumeCylinder()</h2>
+<a id="a011944da105e0ce921cfc23e61e1feb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a011944da105e0ce921cfc23e61e1feb1">&#9670;&nbsp;</a></span>JPAVolumeCylinder()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -367,33 +331,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a0821cb11db41784d0b619ecfeb35a917"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0821cb11db41784d0b619ecfeb35a917">&#9670;&nbsp;</a></span>JPAVolumeCylinder__FP18JPAEmitterWorkData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void JPAVolumeCylinder__FP18JPAEmitterWorkData </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0fe51dbf7896745f20107d387b6647c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fe51dbf7896745f20107d387b6647c6">&#9670;&nbsp;</a></span>JPAVolumeLine()</h2>
+<a id="a52d09cb162af09d6971ce88c0425f66d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52d09cb162af09d6971ce88c0425f66d">&#9670;&nbsp;</a></span>JPAVolumeLine()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -418,33 +357,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a32e430f162d3af0a872745425112097c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32e430f162d3af0a872745425112097c">&#9670;&nbsp;</a></span>JPAVolumeLine__FP18JPAEmitterWorkData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void JPAVolumeLine__FP18JPAEmitterWorkData </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab09ccc842538cddce8f6cdbc53b3c096"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab09ccc842538cddce8f6cdbc53b3c096">&#9670;&nbsp;</a></span>JPAVolumePoint()</h2>
+<a id="a5a4cf5559f3aeedf1e2350671caf9d41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a4cf5559f3aeedf1e2350671caf9d41">&#9670;&nbsp;</a></span>JPAVolumePoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -469,33 +383,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a36513ccf6eab17cd08af6ff832f841cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36513ccf6eab17cd08af6ff832f841cc">&#9670;&nbsp;</a></span>JPAVolumePoint__FP18JPAEmitterWorkData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void JPAVolumePoint__FP18JPAEmitterWorkData </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a150982badf8c9bad8ca0c10e1ecd5100"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a150982badf8c9bad8ca0c10e1ecd5100">&#9670;&nbsp;</a></span>JPAVolumeSphere()</h2>
+<a id="a15339ac00f285001fd7577c2b3693db9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15339ac00f285001fd7577c2b3693db9">&#9670;&nbsp;</a></span>JPAVolumeSphere()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -520,33 +409,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="acf6ee63d1e5affca21660b9c07998e01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf6ee63d1e5affca21660b9c07998e01">&#9670;&nbsp;</a></span>JPAVolumeSphere__FP18JPAEmitterWorkData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void JPAVolumeSphere__FP18JPAEmitterWorkData </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acd3818ce796da559eb25e6152362d70b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd3818ce796da559eb25e6152362d70b">&#9670;&nbsp;</a></span>JPAVolumeTorus()</h2>
+<a id="ab694619e1773a39874fe90d3f06b1939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab694619e1773a39874fe90d3f06b1939">&#9670;&nbsp;</a></span>JPAVolumeTorus()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -559,31 +423,6 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJPAEmitterWorkData.html">JPAEmitterWorkData</a> *&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9472fc19cf16411a0dfd5d820f0c0f22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9472fc19cf16411a0dfd5d820f0c0f22">&#9670;&nbsp;</a></span>JPAVolumeTorus__FP18JPAEmitterWorkData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void JPAVolumeTorus__FP18JPAEmitterWorkData </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -743,41 +582,6 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a092cb3806372603658dd6466c577c2f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a092cb3806372603658dd6466c577c2f2">&#9670;&nbsp;</a></span>lit_2631</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void* lit_2631[7+1]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code" href="JPADynamicsBlock_8cpp.html#aaebc63b52bef21b647d2bcadc441f822">init__16JPADynamicsBlockFv</a>) + 0x2C),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code" href="JPADynamicsBlock_8cpp.html#aaebc63b52bef21b647d2bcadc441f822">init__16JPADynamicsBlockFv</a>) + 0x3C),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code" href="JPADynamicsBlock_8cpp.html#aaebc63b52bef21b647d2bcadc441f822">init__16JPADynamicsBlockFv</a>) + 0x4C),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code" href="JPADynamicsBlock_8cpp.html#aaebc63b52bef21b647d2bcadc441f822">init__16JPADynamicsBlockFv</a>) + 0x5C),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code" href="JPADynamicsBlock_8cpp.html#aaebc63b52bef21b647d2bcadc441f822">init__16JPADynamicsBlockFv</a>) + 0x6C),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code" href="JPADynamicsBlock_8cpp.html#aaebc63b52bef21b647d2bcadc441f822">init__16JPADynamicsBlockFv</a>) + 0x7C),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code" href="JPADynamicsBlock_8cpp.html#aaebc63b52bef21b647d2bcadc441f822">init__16JPADynamicsBlockFv</a>) + 0x8C),</div>
-<div class="line">    </div>
-<div class="line">    <a class="code" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
-<div class="line">}</div>
-<div class="ttc" id="aJPADynamicsBlock_8cpp_html_aaebc63b52bef21b647d2bcadc441f822"><div class="ttname"><a href="JPADynamicsBlock_8cpp.html#aaebc63b52bef21b647d2bcadc441f822">init__16JPADynamicsBlockFv</a></div><div class="ttdeci">void init__16JPADynamicsBlockFv()</div></div>
-<div class="ttc" id="atypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> types.h:34</div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a5e862148df6adc58098613dbd1f882cd"></a>
