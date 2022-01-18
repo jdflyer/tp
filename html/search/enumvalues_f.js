@@ -1,13 +1,19 @@
 var searchData=
 [
-  ['oil_106333',['OIL',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a6a10c29c017118a747a3f8b75b636420',1,'d_save.h']]],
-  ['oil2_106334',['OIL2',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a6d1385f2d7484c318a4c17de82f025d5',1,'d_save.h']]],
-  ['oil_5fbottle_106335',['OIL_BOTTLE',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a0891a8dc15ce4b05d5de2a66a2529a1a',1,'d_save.h']]],
-  ['oil_5fbottle3_106336',['OIL_BOTTLE3',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a13c49fd7b1d56e0bac2f98de421627c4',1,'d_save.h']]],
-  ['oil_5fbottle_5f2_106337',['OIL_BOTTLE_2',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a3eb77b0702e821844b778556652f038c',1,'d_save.h']]],
-  ['ooccoo_5fnote_106338',['OOCCOO_NOTE',['../structdSv__memBit__c.html#a24bd59de6e4d97541879e0669ad1497fa46ffed48b5c8a931c9ac433e48ffe347',1,'dSv_memBit_c']]],
-  ['opa_5ftex_5fedge_106339',['OPA_TEX_EDGE',['../structJ3DSys.html#a30cc363d626b82865300b658c387eab9a4a18837b3c53b54c677be6c39ab77d11',1,'J3DSys']]],
-  ['orange_5frupee_106340',['ORANGE_RUPEE',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2ae35ebb0d48f70f504d6a3c0b44eee625',1,'d_save.h']]],
-  ['ordon_5fcatfish_106341',['ORDON_CATFISH',['../classdMeter__drawFishingHIO__c.html#abc94987d06f5198e3498d6bbe4cccc53a3b429d3d7a1a7e51e48fe412d357d7ac',1,'dMeter_drawFishingHIO_c']]],
-  ['out_5finit_106342',['OUT_INIT',['../structJStudio_1_1TFunctionValue.html#aed12c4e15d04deacdf481c76184947bda0bf61c0d1b5283bc80447261eb654f8f',1,'JStudio::TFunctionValue']]]
+  ['oil_107411',['OIL',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a6a10c29c017118a747a3f8b75b636420',1,'d_save.h']]],
+  ['oil2_107412',['OIL2',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a6d1385f2d7484c318a4c17de82f025d5',1,'d_save.h']]],
+  ['oil_5fbottle_107413',['OIL_BOTTLE',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a0891a8dc15ce4b05d5de2a66a2529a1a',1,'d_save.h']]],
+  ['oil_5fbottle3_107414',['OIL_BOTTLE3',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a13c49fd7b1d56e0bac2f98de421627c4',1,'d_save.h']]],
+  ['oil_5fbottle_5f2_107415',['OIL_BOTTLE_2',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a3eb77b0702e821844b778556652f038c',1,'d_save.h']]],
+  ['ooccoo_5fnote_107416',['OOCCOO_NOTE',['../structdSv__memBit__c.html#a24bd59de6e4d97541879e0669ad1497fa46ffed48b5c8a931c9ac433e48ffe347',1,'dSv_memBit_c']]],
+  ['opa_5ftex_5fedge_107417',['OPA_TEX_EDGE',['../structJ3DSys.html#a30cc363d626b82865300b658c387eab9a4a18837b3c53b54c677be6c39ab77d11',1,'J3DSys']]],
+  ['options_5fclose_107418',['OPTIONS_CLOSE',['../structdMw__c.html#a9c12bf96930db318a3d8b6704985facea8fca1627451959ea8f4684dcb8f50368',1,'dMw_c']]],
+  ['options_5fmove_107419',['OPTIONS_MOVE',['../structdMw__c.html#a9c12bf96930db318a3d8b6704985faceaa73f7ee7eff52ede61021dd5929e22ea',1,'dMw_c']]],
+  ['options_5fopen_107420',['OPTIONS_OPEN',['../structdMw__c.html#a9c12bf96930db318a3d8b6704985faceaef4d6464f6839431358ef9d7d65d689c',1,'dMw_c']]],
+  ['orange_5frupee_107421',['ORANGE_RUPEE',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2ae35ebb0d48f70f504d6a3c0b44eee625',1,'d_save.h']]],
+  ['ordon_5fcatfish_107422',['ORDON_CATFISH',['../classdMeter__drawFishingHIO__c.html#abc94987d06f5198e3498d6bbe4cccc53a3b429d3d7a1a7e51e48fe412d357d7ac',1,'dMeter_drawFishingHIO_c']]],
+  ['out_5finit_107423',['OUT_INIT',['../structJStudio_1_1TFunctionValue.html#aed12c4e15d04deacdf481c76184947bda0bf61c0d1b5283bc80447261eb654f8f',1,'JStudio::TFunctionValue']]],
+  ['output_5fconsole_107424',['OUTPUT_CONSOLE',['../structJUTConsole.html#a6932adf6a81c4c2d4f2dd8f76dc3f0a1aaba7be9daff3eab9a89779be2412fb48',1,'JUTConsole']]],
+  ['output_5fnone_107425',['OUTPUT_NONE',['../structJUTConsole.html#a6932adf6a81c4c2d4f2dd8f76dc3f0a1a07e56d0ccc9f35caf69a2461052dbaab',1,'JUTConsole']]],
+  ['output_5fosreport_107426',['OUTPUT_OSREPORT',['../structJUTConsole.html#a6932adf6a81c4c2d4f2dd8f76dc3f0a1a3b33a43fad34bab707a246827a61cc6d',1,'JUTConsole']]]
 ];

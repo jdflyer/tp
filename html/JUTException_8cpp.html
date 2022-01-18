@@ -85,10 +85,10 @@ $(function() {
 <code>#include &quot;<a class="el" href="JUTConsole_8h_source.html">JSystem/JUtility/JUTConsole.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="JUTDirectPrint_8h_source.html">JSystem/JUtility/JUTDirectPrint.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="float_8h_source.html">MSL_C.PPCEABI.bare.H/MSL_Common/Src/float.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="printf_8h_source.html">MSL_C.PPCEABI.bare.H/MSL_Common/Src/printf.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="____va__arg_8h_source.html">Runtime.PPCEABI.H/__va_arg.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="msl__c_2string_8h_source.html">msl_c/string.h</a>&quot;</code><br />
 <code>#include &quot;asm/JSystem/JUtility/JUTException/run__12JUTExceptionFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JUtility/JUTException/queryMapAddress_single__12JUTExceptionFPcUllPUlPUlPcUlbb.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -216,8 +216,8 @@ Variables</h2></td></tr>
 <tr class="separator:af97cbac56a4b9a19717ad2bb849da8ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f2624e78eda38921f099cbcb7116e57"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JUTException_8cpp.html#a3f2624e78eda38921f099cbcb7116e57">pad_8039D99E</a> = &quot;\0&quot;</td></tr>
 <tr class="separator:a3f2624e78eda38921f099cbcb7116e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30c190d04ccd00012590c033d0e4e031"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JUTException_8cpp.html#a30c190d04ccd00012590c033d0e4e031">data_804508F8</a> [8]</td></tr>
-<tr class="separator:a30c190d04ccd00012590c033d0e4e031"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8878eeb72bf398767d6c4e3009ec674"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JUTException_8cpp.html#ab8878eeb72bf398767d6c4e3009ec674">sAssertVisible</a> = true</td></tr>
+<tr class="separator:ab8878eeb72bf398767d6c4e3009ec674"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ac30df0d09f81a1aa59f4de82428e4488"></a>
@@ -949,31 +949,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a30c190d04ccd00012590c033d0e4e031"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30c190d04ccd00012590c033d0e4e031">&#9670;&nbsp;</a></span>data_804508F8</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_804508F8[8]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,</div>
-<div class="line">}</div>
-</div><!-- fragment -->
-</div>
-</div>
 <a id="a83b58f5a5906d39f6912b07d6c0812ee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a83b58f5a5906d39f6912b07d6c0812ee">&#9670;&nbsp;</a></span>exCallbackObject</h2>
 
@@ -1084,6 +1059,28 @@ Variables</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab8878eeb72bf398767d6c4e3009ec674"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8878eeb72bf398767d6c4e3009ec674">&#9670;&nbsp;</a></span>sAssertVisible</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> bool sAssertVisible = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

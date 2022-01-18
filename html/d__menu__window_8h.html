@@ -75,14 +75,19 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">d_menu_window.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="d__meter2__info_8h_source.html">d/meter/d_meter2_info.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="d__drawlist_8h_source.html">d/d_drawlist.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__menu__collect_8h_source.html">d/menu/d_menu_collect.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__meter2__info_8h_source.html">d/meter/d_meter2_info.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__msg__class_8h_source.html">d/msg/d_msg_class.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="m__Do__controller__pad_8h_source.html">m_Do/m_Do_controller_pad.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="m__Do__graphic_8h_source.html">m_Do/m_Do_graphic.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for d_menu_window.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -104,8 +109,15 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdDlst__MENU__CAPTURE__c.html">dDlst_MENU_CAPTURE_c</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMw__c.html">dMw_c</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:aae649284c8ee1866c2d821e24fcd7aa0"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__window_8h.html#aae649284c8ee1866c2d821e24fcd7aa0">dMw_Method</a>) (<a class="el" href="structdMw__c.html">dMw_c</a> *)</td></tr>
+<tr class="separator:aae649284c8ee1866c2d821e24fcd7aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -113,8 +125,163 @@ Functions</h2></td></tr>
 <tr class="separator:a20fb6ee637beb6ad98bab2a9bef7ce77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07fa06d3e190680ba6b72a5287f63840"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__window_8h.html#a07fa06d3e190680ba6b72a5287f63840">dMw_RIGHT_TRIGGER</a> ()</td></tr>
 <tr class="separator:a07fa06d3e190680ba6b72a5287f63840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af48c34c24b9fecd8f4e7715f3fc60240"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__window_8h.html#af48c34c24b9fecd8f4e7715f3fc60240">dMw_Draw</a> (<a class="el" href="structdMw__c.html">dMw_c</a> *)</td></tr>
+<tr class="separator:af48c34c24b9fecd8f4e7715f3fc60240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a497a342a9604d953e68ce29d2bf1068a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__window_8h.html#a497a342a9604d953e68ce29d2bf1068a">dMw_Execute</a> (<a class="el" href="structdMw__c.html">dMw_c</a> *)</td></tr>
+<tr class="separator:a497a342a9604d953e68ce29d2bf1068a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd6a517c217251edfee72ad84f4642f5"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__window_8h.html#abd6a517c217251edfee72ad84f4642f5">dMw_IsDelete</a> (<a class="el" href="structdMw__c.html">dMw_c</a> *)</td></tr>
+<tr class="separator:abd6a517c217251edfee72ad84f4642f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91a1a81325c449c126d71e81fc28fad0"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__window_8h.html#a91a1a81325c449c126d71e81fc28fad0">dMw_Delete</a> (<a class="el" href="structdMw__c.html">dMw_c</a> *)</td></tr>
+<tr class="separator:a91a1a81325c449c126d71e81fc28fad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a344c9c7ff8150c7bc11db2baebd7ab99"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__window_8h.html#a344c9c7ff8150c7bc11db2baebd7ab99">dMw_Create</a> (<a class="el" href="structmsg__class.html">msg_class</a> *)</td></tr>
+<tr class="separator:a344c9c7ff8150c7bc11db2baebd7ab99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="aae649284c8ee1866c2d821e24fcd7aa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae649284c8ee1866c2d821e24fcd7aa0">&#9670;&nbsp;</a></span>dMw_Method</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* dMw_Method) (<a class="el" href="structdMw__c.html">dMw_c</a> *)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a344c9c7ff8150c7bc11db2baebd7ab99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a344c9c7ff8150c7bc11db2baebd7ab99">&#9670;&nbsp;</a></span>dMw_Create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int dMw_Create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmsg__class.html">msg_class</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a91a1a81325c449c126d71e81fc28fad0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91a1a81325c449c126d71e81fc28fad0">&#9670;&nbsp;</a></span>dMw_Delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int dMw_Delete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdMw__c.html">dMw_c</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af48c34c24b9fecd8f4e7715f3fc60240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af48c34c24b9fecd8f4e7715f3fc60240">&#9670;&nbsp;</a></span>dMw_Draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int dMw_Draw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdMw__c.html">dMw_c</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a497a342a9604d953e68ce29d2bf1068a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a497a342a9604d953e68ce29d2bf1068a">&#9670;&nbsp;</a></span>dMw_Execute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int dMw_Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdMw__c.html">dMw_c</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd6a517c217251edfee72ad84f4642f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd6a517c217251edfee72ad84f4642f5">&#9670;&nbsp;</a></span>dMw_IsDelete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int dMw_IsDelete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdMw__c.html">dMw_c</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a20fb6ee637beb6ad98bab2a9bef7ce77"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a20fb6ee637beb6ad98bab2a9bef7ce77">&#9670;&nbsp;</a></span>dMw_LEFT_TRIGGER()</h2>
 
