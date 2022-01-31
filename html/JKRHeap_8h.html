@@ -153,6 +153,10 @@ Functions</h2></td></tr>
 <tr class="separator:a9fd5185e369c0e8604f3b79a6a4854f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f44982af371c444bcdec2eae1e8bc50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JKRHeap_8h.html#a3f44982af371c444bcdec2eae1e8bc50">JKRGetMemBlockSize</a> (<a class="el" href="structJKRHeap.html">JKRHeap</a> *heap, void *<a class="el" href="fstload_8cpp.html#a0a77fcc63b2130d6926350d37888d7a4">block</a>)</td></tr>
 <tr class="separator:a3f44982af371c444bcdec2eae1e8bc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1a0a521dcd29288996e6fc989fcadfc"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JKRHeap_8h.html#ac1a0a521dcd29288996e6fc989fcadfc">JKRAlloc</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> size, int alignment)</td></tr>
+<tr class="separator:ac1a0a521dcd29288996e6fc989fcadfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a74a4ddc066d77f2fddf4d6a9f898eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JKRHeap_8h.html#a0a74a4ddc066d77f2fddf4d6a9f898eb">JKRResizeMemBlock</a> (<a class="el" href="structJKRHeap.html">JKRHeap</a> *heap, void *<a class="el" href="fstload_8cpp.html#a0a77fcc63b2130d6926350d37888d7a4">block</a>, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> size)</td></tr>
+<tr class="separator:a0a74a4ddc066d77f2fddf4d6a9f898eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a2e55ce63de02b1e205874219e4f65119"></a>
@@ -170,6 +174,42 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ac1a0a521dcd29288996e6fc989fcadfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1a0a521dcd29288996e6fc989fcadfc">&#9670;&nbsp;</a></span>JKRAlloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* JKRAlloc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>alignment</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a052e9452c7f3179a9f7268b35dcb6c1b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a052e9452c7f3179a9f7268b35dcb6c1b">&#9670;&nbsp;</a></span>JKRAllocFromHeap()</h2>
 
@@ -445,6 +485,48 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a74a4ddc066d77f2fddf4d6a9f898eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a74a4ddc066d77f2fddf4d6a9f898eb">&#9670;&nbsp;</a></span>JKRResizeMemBlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> JKRResizeMemBlock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structJKRHeap.html">JKRHeap</a> *&#160;</td>
+          <td class="paramname"><em>heap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>block</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
