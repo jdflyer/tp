@@ -160,7 +160,8 @@ $(DOL_SHIFT): $(ELF_SHIFT) | tools
 
 shift: dirs $(DOL_SHIFT)
 
-game: | shift rels
+game: shift
+	$(MAKE) rels
 	@mkdir -p game
 	@$(PYTHON) tools/package_game_assets.py game $(BUILD_DIR)
 

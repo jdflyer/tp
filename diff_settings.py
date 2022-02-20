@@ -11,8 +11,6 @@ def apply(config, args):
     config['myimg'] = 'build/dolzel2/main.elf'
     config['baseimg'] = 'expected/build/dolzel2/main.elf'
     config['makeflags'] = []
-    if args.source:
-        config['makeflags'].append('DEBUG=1')
     config['source_directories'] = ['src', 'libs', 'include']
     config['arch'] = 'ppc'
     config['objdump_executable'] = f"{os.environ['DEVKITPPC']}/bin/powerpc-eabi-objdump"

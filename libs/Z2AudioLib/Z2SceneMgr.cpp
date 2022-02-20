@@ -111,7 +111,7 @@ extern "C" void setSceneExist__10Z2SceneMgrFb();
 extern "C" void setFadeOutStart__10Z2SceneMgrFUc();
 extern "C" void setFadeInStart__10Z2SceneMgrFUc();
 extern "C" void setSceneName__10Z2SceneMgrFPcll();
-extern "C" void __ct__10JAISoundIDFRC10JAISoundID();
+extern "C" void __ct__10JAISoundIDFRC10JAISoundID(JAISoundID* this_, JAISoundID const& soundIdToSet);
 extern "C" void setFieldBgmPlay__8Z2SeqMgrFb();
 extern "C" void isActive__12JAIStreamMgrCFv();
 extern "C" void getID__8JAISoundCFv();
@@ -119,7 +119,7 @@ extern "C" void func_802B9994(void* _this);
 extern "C" static void dComIfGs_getStartPoint__Fv();
 extern "C" void unMuteSceneBgm__8Z2SeqMgrFUl();
 extern "C" void muteSceneBgm__8Z2SeqMgrFUlf();
-extern "C" void __as__10JAISoundIDFRC10JAISoundID();
+extern "C" void __as__10JAISoundIDFRC10JAISoundID(JAISoundID* this_, JAISoundID const& param_0);
 extern "C" static void dComIfGs_isSaveSwitch__Fi();
 extern "C" void resetCrowdSize__7Z2SeMgrFv();
 extern "C" void setTwilightGateVol__8Z2SeqMgrFf();
@@ -740,9 +740,9 @@ asm void Z2SceneMgr::setSceneName(char* param_0, s32 param_1, s32 param_2) {
 }
 #pragma pop
 
-//! @meme this looks to be non-inlined here because @ref setSceneName is too large
-JAISoundID::JAISoundID(JAISoundID const& soundIdToSet) {
-    mId = soundIdToSet.mId;
+//! @meme this looks to be non-inlined here because @ref setSceneName is too large*
+extern "C" void __ct__10JAISoundIDFRC10JAISoundID(JAISoundID* this_, JAISoundID const& soundIdToSet) {
+    *this_ = soundIdToSet;
 }
 
 /* 802B9968-802B9978 2B42A8 0010+00 1/1 0/0 0/0 .text            setFieldBgmPlay__8Z2SeqMgrFb */
@@ -828,7 +828,7 @@ asm void Z2SeqMgr::muteSceneBgm(u32 param_0, f32 param_1) {
 #pragma push
 #pragma optimization_level 0
 #pragma optimizewithasm off
-asm void JAISoundID::operator=(JAISoundID const& param_0) {
+asm void __as__10JAISoundIDFRC10JAISoundID(JAISoundID* this_, JAISoundID const& param_0) {
     nofralloc
 #include "asm/Z2AudioLib/Z2SceneMgr/__as__10JAISoundIDFRC10JAISoundID.s"
 }
