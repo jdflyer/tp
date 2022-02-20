@@ -44,10 +44,6 @@ struct dMenu_Letter {
     static dMenu_LetterData letter_data[64];
 };
 
-struct dItem_data {
-    static void* item_resource[1530];
-};
-
 class dMw_c;
 class dMeter2_c;
 class J2DPicture;
@@ -145,6 +141,13 @@ public:
     void* getMsgResource() { return mMsgResource; }
     void* getStageMsgResource() { return mStageMsgResource; }
     void* getMsgUnitResource() { return mMsgUnitResource; }
+    u8 getLightDropGetFlag(int i) { return mLightDropGetFlag[i]; }
+    u32 getMeterStringType() { return mMeterString; }
+    void setMeterClass(dMeter2_c* meter) { mMeterClass = meter; }
+    void onLifeGaugeSE() { mLifeGaugeSE = 1; }
+    void offLifeGaugeSE() { mLifeGaugeSE = 0; }
+    u8 getLifeGaugeSE() { return mLifeGaugeSE; }
+    const char* getSaveStageName() { return mSaveStageName; }
 
 public:
     /* 0x04 */ u8 unk4[4];
@@ -397,6 +400,34 @@ inline void* dMeter2Info_getStageMsgResource() {
 
 inline void* dMeter2Info_getMsgUnitResource() {
     return g_meter2_info.getMsgUnitResource();
+}
+
+inline u8 dMeter2Info_getLightDropGetFlag(int i) {
+    return g_meter2_info.getLightDropGetFlag(i);
+}
+
+inline s32 dMeter2Info_getMeterStringType() {
+    return g_meter2_info.getMeterStringType();
+}
+
+inline void dMeter2Info_setMeterClass(dMeter2_c* meter) {
+    g_meter2_info.setMeterClass(meter);
+}
+
+inline void dMeter2Info_onLifeGaugeSE() {
+    g_meter2_info.onLifeGaugeSE();
+}
+
+inline void dMeter2Info_offLifeGaugeSE() {
+    g_meter2_info.offLifeGaugeSE();
+}
+
+inline u8 dMeter2Info_getLifeGaugeSE() {
+    return g_meter2_info.getLifeGaugeSE();
+}
+
+inline const char* dMeter2Info_getSaveStageName() {
+    return g_meter2_info.getSaveStageName();
 }
 
 char* dMeter2Info_getNumberTextureName(int pIndex);
