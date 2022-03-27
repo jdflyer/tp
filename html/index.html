@@ -75,6 +75,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><p ><a class="anchor" id="md_README"></a> This repo contains a WIP decompilation of The Legend of Zelda: Twilight Princess (GCN USA).</p>
 <ul>
+<li>Progress</li>
 <li>Project Setup</li>
 <li>Building The Game <br  />
 </li>
@@ -83,7 +84,7 @@ $(function() {
 <li><a class="el" href="md_docs_Contributing.html">Contributing</a></li>
 <li><a href="https://zelda64.dev/games/tp">FAQ</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md6"></a>
+<h1><a class="anchor" id="autotoc_md1"></a>
 Project Setup</h1>
 <ol type="1">
 <li>Clone down project</li>
@@ -103,7 +104,7 @@ Project Setup</h1>
 <li>Setup the project</li>
 </ol>
 <div class="fragment"><div class="line">$ ./tp setup</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md7"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md2"></a>
 Building The Game</h2>
 <ol type="1">
 <li>To build a playable game, complete the Project Setup steps, then run</li>
@@ -112,7 +113,8 @@ Building The Game</h2>
 </div><!-- fragment --><p >The completed build is under <code>build/dolzel2/game/sys/main.dol</code></p>
 <p >Build DOL</p>
 <div class="fragment"><div class="line">$ make</div>
-</div><!-- fragment --><p >Build RELs</p>
+</div><!-- fragment --><p >(Note that any time you run make you can add the -j# argument where # is the amount of threads your system has in order to greatly speed up build times)</p>
+<p >Build RELs</p>
 <div class="fragment"><div class="line">$ make rels</div>
 </div><!-- fragment --><p >The completed RELs will be under <code>build/dolzel2/rel</code></p>
 <p >Extract Game Assets</p>
@@ -123,7 +125,7 @@ Building The Game</h2>
 <li>Run:</li>
 </ol>
 <div class="fragment"><div class="line">$ ./tp expected</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md8"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md3"></a>
 Clean Directories</h2>
 <p >Clean RELs</p>
 <div class="fragment"><div class="line">$ make clean_rels</div>
@@ -131,9 +133,9 @@ Clean Directories</h2>
 <div class="fragment"><div class="line">$ make clean_game</div>
 </div><!-- fragment --><p >Clean Build Directory</p>
 <div class="fragment"><div class="line">$ make clean_all</div>
-</div><!-- fragment --><p >Clean everything</p>
+</div><!-- fragment --><p >Clean Dol</p>
 <div class="fragment"><div class="line">$ make clean</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md9"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md4"></a>
 Project Overview</h1>
 <div class="fragment"><div class="line">tp/</div>
 <div class="line">├── .github          # Github actions for this project.</div>
@@ -149,6 +151,7 @@ Project Overview</h1>
 <div class="line">├── .gitignore       # Files/folders to ignore changes to when making commits.</div>
 <div class="line">├── Doxyfile         # Doxygen configuration file.</div>
 <div class="line">├── Makefile         # Makefile for the project containing various targets.</div>
+<div class="line">├── Progress.md      # Markdown file that displays the current progress of the project.</div>
 <div class="line">├── README.md        # The file you&#39;re currently reading.</div>
 <div class="line">├── diff.py          # Python script to diff two functions.</div>
 <div class="line">├── diff_settings.py # Settings for the diff.py script.</div>
