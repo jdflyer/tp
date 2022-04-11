@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['r_0',['R',['../namespaceCButton.html#add08f7e13a25b310100541d1ae576ba0a05a4b8c6b79717e8f71629dcd2aa01ff',1,'CButton']]],
+  ['r_0',['R',['../namespaceCButton.html#a16d1f5cf71882cbb5ac2f9a9dd4d5b7da05a4b8c6b79717e8f71629dcd2aa01ff',1,'CButton']]],
   ['rafrels_5fmemo_1',['RAFRELS_MEMO',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a74435226b0c8e0e0a2ae68167a6dae82',1,'d_save.h']]],
   ['read_2',['READ',['../structJKRAramStreamCommand.html#a584a0f0d44d10e7db7ae9487b83a3486a324710aa291c53e7104f7edd6a48aef0',1,'JKRAramStreamCommand']]],
   ['recovery_5ffaily_3',['RECOVERY_FAILY',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2ad9b8a325c545c2634e2bf78f18922aca',1,'d_save.h']]],

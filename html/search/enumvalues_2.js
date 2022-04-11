@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['b_0',['B',['../namespaceCButton.html#add08f7e13a25b310100541d1ae576ba0a23592f049b7da374fe07b8f127cca616',1,'CButton']]],
+  ['b_0',['B',['../namespaceCButton.html#a16d1f5cf71882cbb5ac2f9a9dd4d5b7da23592f049b7da374fe07b8f127cca616',1,'CButton']]],
   ['b_5fbutton_5fitem_1',['B_BUTTON_ITEM',['../d__save_8h.html#a6d317460fab5a02d2a7fc3e2bb396911ae9fa5ce335f49fa0671129c49d574f4c',1,'d_save.h']]],
   ['back_5fjump_2',['BACK_JUMP',['../structdaAlink__c.html#a6b13b77c4cc04ab5a3e5c875c427d79aaf11690664cf97e58b9891148e2f0e4bb',1,'daAlink_c']]],
   ['back_5fjump_5fland_3',['BACK_JUMP_LAND',['../structdaAlink__c.html#a6b13b77c4cc04ab5a3e5c875c427d79aaea39b0e2ccb92fc0c0488fccd461dc9e',1,'daAlink_c']]],
@@ -31,7 +31,7 @@ var searchData=
   ['boomerang_28',['BOOMERANG',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a41c1c7c62e57d94a3e8bb4a76a274be7',1,'d_save.h']]],
   ['boots_5fequip_29',['BOOTS_EQUIP',['../structdaAlink__c.html#a6b13b77c4cc04ab5a3e5c875c427d79aa9c5a8df15faaa5c62348fb0c4015621e',1,'daAlink_c']]],
   ['boss_5fenemy_5fhang_30',['BOSS_ENEMY_HANG',['../structdaAlink__c.html#a6b13b77c4cc04ab5a3e5c875c427d79aa85482ecf2ace6f90949ceaa67b9d6819',1,'daAlink_c']]],
-  ['boss_5fkey_31',['BOSS_KEY',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2ae5177c3ab4817d6c99577974c512d3cd',1,'BOSS_KEY():&#160;d_save.h'],['../structdSv__memBit__c.html#a1d619f76efbb74c89c2cd332f1cb90d1addc140ece9a60e605fcdd9344585ae22',1,'dSv_memBit_c::BOSS_KEY()']]],
+  ['boss_5fkey_31',['BOSS_KEY',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2ae5177c3ab4817d6c99577974c512d3cd',1,'BOSS_KEY():&#160;d_save.h'],['../structdSv__memBit__c.html#a67add5c3d32a3e9a7a95630a45484aa2addc140ece9a60e605fcdd9344585ae22',1,'dSv_memBit_c::BOSS_KEY()']]],
   ['bossrider_5fkey_32',['BOSSRIDER_KEY',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a3e139d96c259ac549389e2fabcb92895',1,'d_save.h']]],
   ['bottle_5fdrink_33',['BOTTLE_DRINK',['../structdaAlink__c.html#a6b13b77c4cc04ab5a3e5c875c427d79aa37cd0e3f4fed67431165751b817ea4a7',1,'daAlink_c']]],
   ['bottle_5fswing_34',['BOTTLE_SWING',['../structdaAlink__c.html#a6b13b77c4cc04ab5a3e5c875c427d79aa6453a102aca1b6e7238df8ab2550c43b',1,'daAlink_c']]],

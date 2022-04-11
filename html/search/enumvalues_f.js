@@ -5,7 +5,7 @@ var searchData=
   ['oil_5fbottle_2',['OIL_BOTTLE',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a0891a8dc15ce4b05d5de2a66a2529a1a',1,'d_save.h']]],
   ['oil_5fbottle3_3',['OIL_BOTTLE3',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a13c49fd7b1d56e0bac2f98de421627c4',1,'d_save.h']]],
   ['oil_5fbottle_5f2_4',['OIL_BOTTLE_2',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a3eb77b0702e821844b778556652f038c',1,'d_save.h']]],
-  ['ooccoo_5fnote_5',['OOCCOO_NOTE',['../structdSv__memBit__c.html#a1d619f76efbb74c89c2cd332f1cb90d1a46ffed48b5c8a931c9ac433e48ffe347',1,'dSv_memBit_c']]],
+  ['ooccoo_5fnote_5',['OOCCOO_NOTE',['../structdSv__memBit__c.html#a67add5c3d32a3e9a7a95630a45484aa2a46ffed48b5c8a931c9ac433e48ffe347',1,'dSv_memBit_c']]],
   ['opa_5fbuffer_6',['OPA_BUFFER',['../J3DSys_8h.html#a86b42b9786c8ef48baa9e9d1455d1392a7ffb6e17a842d56504b4b42965fb2c98',1,'J3DSys.h']]],
   ['opa_5ftex_5fedge_7',['OPA_TEX_EDGE',['../structJ3DSys.html#a30cc363d626b82865300b658c387eab9a4a18837b3c53b54c677be6c39ab77d11',1,'J3DSys']]],
   ['options_5fclose_8',['OPTIONS_CLOSE',['../structdMw__c.html#a9c12bf96930db318a3d8b6704985facea8fca1627451959ea8f4684dcb8f50368',1,'dMw_c']]],
