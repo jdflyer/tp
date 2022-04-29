@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['wallets_0',['Wallets',['../d__save_8h.html#a5af6360fa7af6b3ff29f1d747eb0782a',1,'d_save.h']]],
-  ['weighttype_1',['WeightType',['../c__cc__s_8h.html#a1cb5573d6a7ba58f26efddb7073ad4de',1,'c_cc_s.h']]]
+  ['upper_5fanm_0',['UPPER_ANM',['../structdaAlink__c.html#ad08eb53f8f5fbabc7333e097688c5542',1,'daAlink_c']]]
 ];

@@ -109,7 +109,7 @@ var searchData=
   ['cardunlock_2eh_106',['CARDUnlock.h',['../CARDUnlock_8h.html',1,'']]],
   ['cardwrite_2ecpp_107',['CARDWrite.cpp',['../CARDWrite_8cpp.html',1,'']]],
   ['cardwrite_2eh_108',['CARDWrite.h',['../CARDWrite_8h.html',1,'']]],
-  ['char_5fio_2ecpp_109',['char_io.cpp',['../char__io_8cpp.html',1,'']]],
+  ['char_5fio_2ec_109',['char_io.c',['../char__io_8c.html',1,'']]],
   ['char_5fio_2eh_110',['char_io.h',['../char__io_8h.html',1,'']]],
   ['circlebuffer_2ecpp_111',['CircleBuffer.cpp',['../CircleBuffer_8cpp.html',1,'']]],
   ['circlebuffer_2eh_112',['CircleBuffer.h',['../CircleBuffer_8h.html',1,'']]],
@@ -118,12 +118,12 @@ var searchData=
   ['control_2eh_115',['control.h',['../JStudio_2JStudio__JStage_2control_8h.html',1,'(Global Namespace)'],['../JStudio_2JStudio__JParticle_2control_8h.html',1,'(Global Namespace)'],['../JStudio_2JStudio__JAudio2_2control_8h.html',1,'(Global Namespace)'],['../JMessage_2control_8h.html',1,'(Global Namespace)']]],
   ['cpluslibppc_2ecpp_116',['CPlusLibPPC.cpp',['../CPlusLibPPC_8cpp.html',1,'']]],
   ['cpluslibppc_2eh_117',['CPlusLibPPC.h',['../CPlusLibPPC_8h.html',1,'']]],
-  ['critical_5fregions_2egamecube_2ecpp_118',['critical_regions.gamecube.cpp',['../critical__regions_8gamecube_8cpp.html',1,'']]],
+  ['critical_5fregions_2egamecube_2ec_118',['critical_regions.gamecube.c',['../critical__regions_8gamecube_8c.html',1,'']]],
   ['critical_5fregions_2egamecube_2eh_119',['critical_regions.gamecube.h',['../critical__regions_8gamecube_8h.html',1,'']]],
   ['ctb_2ddata_2ecpp_120',['ctb-data.cpp',['../ctb-data_8cpp.html',1,'']]],
   ['ctb_2ddata_2eh_121',['ctb-data.h',['../ctb-data_8h.html',1,'']]],
   ['ctb_2ecpp_122',['ctb.cpp',['../ctb_8cpp.html',1,'']]],
   ['ctb_2eh_123',['ctb.h',['../ctb_8h.html',1,'']]],
-  ['ctype_2ecpp_124',['ctype.cpp',['../ctype_8cpp.html',1,'']]],
+  ['ctype_2ec_124',['ctype.c',['../ctype_8c.html',1,'']]],
   ['ctype_2eh_125',['ctype.h',['../ctype_8h.html',1,'']]]
 ];

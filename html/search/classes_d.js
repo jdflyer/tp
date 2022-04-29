@@ -43,7 +43,7 @@ var searchData=
   ['mdohio_5fentry_5fc_40',['mDoHIO_entry_c',['../structmDoHIO__entry__c.html',1,'']]],
   ['mdolib_5fclipper_41',['mDoLib_clipper',['../structmDoLib__clipper.html',1,'']]],
   ['mdomain_42',['mDoMain',['../structmDoMain.html',1,'']]],
-  ['mdomch_5frender_5fc_43',['mDoMch_render_c',['../structmDoMch__render__c.html',1,'']]],
+  ['mdomch_5frender_5fc_43',['mDoMch_render_c',['../classmDoMch__render__c.html',1,'']]],
   ['mdomemcd_5fctrl_5fc_44',['mDoMemCd_Ctrl_c',['../structmDoMemCd__Ctrl__c.html',1,'']]],
   ['mdomemcdrwm_5fheaderdata_45',['mDoMemCdRWm_HeaderData',['../structmDoMemCdRWm__HeaderData.html',1,'']]],
   ['mdomtx_5fquatstack_5fc_46',['mDoMtx_quatStack_c',['../classmDoMtx__quatStack__c.html',1,'']]],

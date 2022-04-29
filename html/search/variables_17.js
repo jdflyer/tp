@@ -33,6 +33,6 @@ var searchData=
   ['workaroundtype_30',['WorkAroundType',['../dvdlow_8cpp.html#a53b4debab236b9b6e140dfad12118eab',1,'dvdlow.cpp']]],
   ['wraps_31',['wrapS',['../structResTIMG.html#a9f4b17006a80fe7bf1b7e2f059163839',1,'ResTIMG']]],
   ['wrapt_32',['wrapT',['../structResTIMG.html#aa2a52f83806da1420efbb167e27c9026',1,'ResTIMG']]],
-  ['write_5ffn_33',['write_fn',['../structFILE.html#aa281ff9dcb12d2e7a726ddd6897e8778',1,'FILE']]],
+  ['write_5ffn_33',['write_fn',['../struct__FILE.html#a7000358c1490aa9bf89cffe281b7dccf',1,'_FILE']]],
   ['write_5fptr_34',['write_ptr',['../struct__GXFifoObj.html#a1f36f43afb1dde38f96318580cea9018',1,'_GXFifoObj']]]
 ];

@@ -75,36 +75,27 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">J2DScreen.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="J2DScreen_8h_source.html">JSystem/J2DGraph/J2DScreen.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J2DMaterialFactory_8h_source.html">JSystem/J2DGraph/J2DMaterialFactory.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J2DOrthoGraph_8h_source.html">JSystem/J2DGraph/J2DOrthoGraph.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J2DPictureEx_8h_source.html">JSystem/J2DGraph/J2DPictureEx.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J2DTextBoxEx_8h_source.html">JSystem/J2DGraph/J2DTextBoxEx.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J2DWindowEx_8h_source.html">JSystem/J2DGraph/J2DWindowEx.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="JGeometry_8h_source.html">JSystem/JGeometry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JSUMemoryStream_8h_source.html">JSystem/JSupport/JSUMemoryStream.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DScreen/__ct__9J2DScreenFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DScreen/__dt__9J2DScreenFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DScreen/setPriority__9J2DScreenFPCcUlP10JKRArchive.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DScreen/private_set__9J2DScreenFP20JSURandomInputStreamUlP10JKRArchive.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DScreen/checkSignature__9J2DScreenFP20JSURandomInputStream.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DScreen/getScreenInformation__9J2DScreenFP20JSURandomInputStream.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DScreen/makeHierarchyPanes__9J2DScreenFP7J2DPaneP20JSURandomInputStreamUlP10JKRArchive.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DScreen/func_802F8B98.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DScreen/draw__9J2DScreenFffPC14J2DGrafContext.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DScreen/search__9J2DScreenFUx.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DScreen/searchUserInfo__9J2DScreenFUx.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DScreen/drawSelf__9J2DScreenFffPA3_A4_f.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DScreen/getResReference__9J2DScreenFP20JSURandomInputStreamUl.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DScreen/createMaterial__9J2DScreenFP20JSURandomInputStreamUlP10JKRArchive.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DScreen/getNameResource__9J2DScreenFPCc.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DScreen/animation__9J2DScreenFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DScreen/setAnimation__9J2DScreenFP11J2DAnmColor.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DScreen/setAnimation__9J2DScreenFP19J2DAnmTextureSRTKey.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DScreen/setAnimation__9J2DScreenFP16J2DAnmTexPattern.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DScreen/setAnimation__9J2DScreenFP15J2DAnmTevRegKey.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for J2DScreen.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -114,35 +105,12 @@ $(function() {
 </div>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSUMemoryInputStream.html">JSUMemoryInputStream</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DWindowEx.html">J2DWindowEx</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DWindow.html">J2DWindow</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DTextBoxEx.html">J2DTextBoxEx</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DTextBox.html">J2DTextBox</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DPictureEx.html">J2DPictureEx</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DPicture.html">J2DPicture</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DOrthoGraph.html">J2DOrthoGraph</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DMaterialBlock.html">J2DMaterialBlock</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DMaterialFactory.html">J2DMaterialFactory</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a3a0a4f36a449427a846040e89b992ff1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DScreen_8cpp.html#a3a0a4f36a449427a846040e89b992ff1">__ct__9J2DScreenFv</a> ()</td></tr>
 <tr class="separator:a3a0a4f36a449427a846040e89b992ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e4ae80985e5d57c736b6a9d30ff7092"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DScreen_8cpp.html#a4e4ae80985e5d57c736b6a9d30ff7092">__dt__9J2DScreenFv</a> ()</td></tr>
-<tr class="separator:a4e4ae80985e5d57c736b6a9d30ff7092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7720a1522f8a45965ca5f0e8fad49fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DScreen_8cpp.html#ab7720a1522f8a45965ca5f0e8fad49fa">__dt__9J2DScreenFv</a> ()</td></tr>
+<tr class="separator:ab7720a1522f8a45965ca5f0e8fad49fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33cb225accc5a9bd108c39471fe732a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DScreen_8cpp.html#a33cb225accc5a9bd108c39471fe732a5">clean__9J2DScreenFv</a> ()</td></tr>
 <tr class="separator:a33cb225accc5a9bd108c39471fe732a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c2cefc799fe6da9f9634368fa484b60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DScreen_8cpp.html#a1c2cefc799fe6da9f9634368fa484b60">setPriority__9J2DScreenFPCcUlP10JKRArchive</a> ()</td></tr>
@@ -370,8 +338,6 @@ Variables</h2></td></tr>
 <tr class="separator:a2de7b8f75531c1805548d182c5cbabf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1ee6cf9c1a9956c5f8a16de746e561b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DScreen_8cpp.html#af1ee6cf9c1a9956c5f8a16de746e561b">lit_1563</a> [1+1]</td></tr>
 <tr class="separator:af1ee6cf9c1a9956c5f8a16de746e561b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84b463b03d3aa7c377a1e17dca34bf69"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DScreen_8cpp.html#a84b463b03d3aa7c377a1e17dca34bf69">lit_1705</a> = 4503599627370496.0</td></tr>
-<tr class="separator:a84b463b03d3aa7c377a1e17dca34bf69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b2d2127dc79515ba7e2b0a3560166f6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DScreen_8cpp.html#a3b2d2127dc79515ba7e2b0a3560166f6">lit_1829</a> = -1.0f</td></tr>
 <tr class="separator:a3b2d2127dc79515ba7e2b0a3560166f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9a6463c0fa6f98acbce9c003e27f670"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DScreen_8cpp.html#ab9a6463c0fa6f98acbce9c003e27f670">lit_1830</a> = 1.0f</td></tr>
@@ -752,14 +718,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4e4ae80985e5d57c736b6a9d30ff7092" name="a4e4ae80985e5d57c736b6a9d30ff7092"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e4ae80985e5d57c736b6a9d30ff7092">&#9670;&nbsp;</a></span>__dt__9J2DScreenFv()</h2>
+<a id="ab7720a1522f8a45965ca5f0e8fad49fa" name="ab7720a1522f8a45965ca5f0e8fad49fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7720a1522f8a45965ca5f0e8fad49fa">&#9670;&nbsp;</a></span>__dt__9J2DScreenFv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __dt__9J2DScreenFv </td>
+          <td class="memname">void __dt__9J2DScreenFv </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -2359,28 +2325,6 @@ Variables</h2></td></tr>
 <div class="line">    0.0f,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-</div>
-</div>
-<a id="a84b463b03d3aa7c377a1e17dca34bf69" name="a84b463b03d3aa7c377a1e17dca34bf69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84b463b03d3aa7c377a1e17dca34bf69">&#9670;&nbsp;</a></span>lit_1705</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> lit_1705 = 4503599627370496.0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
 </div>
 </div>
 <a id="a3b2d2127dc79515ba7e2b0a3560166f6" name="a3b2d2127dc79515ba7e2b0a3560166f6"></a>

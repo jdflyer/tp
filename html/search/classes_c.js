@@ -15,5 +15,6 @@ var searchData=
   ['line_5ftag_12',['line_tag',['../structline__tag.html',1,'']]],
   ['list_5fclass_13',['list_class',['../structdTres__c_1_1list__class.html',1,'dTres_c']]],
   ['listdata_14',['ListData',['../structJStudio_1_1fvb_1_1TObject__hermite_1_1ListData.html',1,'JStudio::fvb::TObject_hermite::ListData'],['../structJStudio_1_1fvb_1_1TObject__list_1_1ListData.html',1,'JStudio::fvb::TObject_list::ListData'],['../structJStudio_1_1fvb_1_1TObject__list__parameter_1_1ListData.html',1,'JStudio::fvb::TObject_list_parameter::ListData']]],
-  ['locale_15',['locale',['../structJMessage_1_1locale.html',1,'JMessage']]]
+  ['locale_15',['locale',['../structJMessage_1_1locale.html',1,'JMessage']]],
+  ['lookat_5fclass_16',['lookat_class',['../classlookat__class.html',1,'']]]
 ];

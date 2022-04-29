@@ -83,12 +83,20 @@ $(function() {
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="ansi__files_8h.html">MSL_C/MSL_Common/Src/ansi_files.h</a>&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="types_8h.html">dolphin/types.h</a>&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> <span class="keywordtype">int</span> <a class="code hl_function" href="char__io_8h.html#a908b30e1f45b09bb45441a26885fd119">fputs</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>*, <a class="code hl_struct" href="structFILE.html">FILE</a>*);</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#endif </span><span class="comment">/* MSL_COMMON_SRC_CHAR_IO_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keywordtype">int</span> <a class="code hl_function" href="char__io_8h.html#a908b30e1f45b09bb45441a26885fd119">fputs</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>*, <a class="code hl_struct" href="struct__FILE.html">FILE</a>*);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>}</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif </span><span class="comment">/* MSL_COMMON_SRC_CHAR_IO_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aansi__files_8h_html"><div class="ttname"><a href="ansi__files_8h.html">ansi_files.h</a></div></div>
-<div class="ttc" id="achar__io_8h_html_a908b30e1f45b09bb45441a26885fd119"><div class="ttname"><a href="char__io_8h.html#a908b30e1f45b09bb45441a26885fd119">fputs</a></div><div class="ttdeci">int fputs(const char *, FILE *)</div><div class="ttdef"><b>Definition:</b> char_io.cpp:36</div></div>
-<div class="ttc" id="astructFILE_html"><div class="ttname"><a href="structFILE.html">FILE</a></div><div class="ttdef"><b>Definition:</b> ansi_files.h:6</div></div>
+<div class="ttc" id="achar__io_8h_html_a908b30e1f45b09bb45441a26885fd119"><div class="ttname"><a href="char__io_8h.html#a908b30e1f45b09bb45441a26885fd119">fputs</a></div><div class="ttdeci">int fputs(const char *, FILE *)</div><div class="ttdef"><b>Definition:</b> char_io.c:36</div></div>
+<div class="ttc" id="astruct__FILE_html"><div class="ttname"><a href="struct__FILE.html">_FILE</a></div><div class="ttdef"><b>Definition:</b> ansi_files.h:33</div></div>
 <div class="ttc" id="atypes_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

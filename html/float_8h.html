@@ -120,6 +120,8 @@ Macros</h2></td></tr>
 <tr class="separator:a6dad1ca35286e31c328c2b1f51f330c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa63ffa98f213f62e536b073c28cb3cd8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="float_8h.html#aa63ffa98f213f62e536b073c28cb3cd8">signbit</a>(x)&#160;&#160;&#160;((sizeof(x) == sizeof(float)) ? <a class="el" href="float_8h.html#aeaffabe1b9b6a316c32560ef4a64fcb3">__signbitf</a>(x) : <a class="el" href="float_8h.html#a72d23f0bfd4e74167107961373eb4fea">__signbitd</a>(x))</td></tr>
 <tr class="separator:aa63ffa98f213f62e536b073c28cb3cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a256d70a32c03904ce13c999c1e9dc35d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="float_8h.html#a256d70a32c03904ce13c999c1e9dc35d">isfinite</a>(x)&#160;&#160;&#160;((<a class="el" href="float_8h.html#a6dad1ca35286e31c328c2b1f51f330c2">fpclassify</a>(x) &gt; 2))</td></tr>
+<tr class="separator:a256d70a32c03904ce13c999c1e9dc35d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeaffabe1b9b6a316c32560ef4a64fcb3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="float_8h.html#aeaffabe1b9b6a316c32560ef4a64fcb3">__signbitf</a>(x)&#160;&#160;&#160;((*(<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>*)&amp;(x)) &amp; 0x80)</td></tr>
 <tr class="separator:aeaffabe1b9b6a316c32560ef4a64fcb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72d23f0bfd4e74167107961373eb4fea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="float_8h.html#a72d23f0bfd4e74167107961373eb4fea">__signbitd</a>(x)&#160;&#160;&#160;((*(<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>*)&amp;(x)) &amp; 0x80)</td></tr>
@@ -279,6 +281,24 @@ Functions</h2></td></tr>
           <td class="paramtype">&#160;</td>
           <td class="paramname">x</td><td>)</td>
           <td>&#160;&#160;&#160;((sizeof(x) == sizeof(float)) ? <a class="el" href="float_8h.html#a00dc1f1502c7a2b4abbd3ffe626bd8bc">__fpclassifyf</a>(x) : <a class="el" href="float_8h.html#a405002f0f4a23fe1e8818a81f95593bf">__fpclassifyd</a>(x))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a256d70a32c03904ce13c999c1e9dc35d" name="a256d70a32c03904ce13c999c1e9dc35d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a256d70a32c03904ce13c999c1e9dc35d">&#9670;&nbsp;</a></span>isfinite</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define isfinite</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="float_8h.html#a6dad1ca35286e31c328c2b1f51f330c2">fpclassify</a>(x) &gt; 2))</td>
         </tr>
       </table>
 </div><div class="memdoc">

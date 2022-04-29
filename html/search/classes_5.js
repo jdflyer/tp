@@ -15,5 +15,6 @@ var searchData=
   ['entry_12',['Entry',['../structResNTAB_1_1Entry.html',1,'ResNTAB']]],
   ['erumble_13',['ERumble',['../structJUTGamePad_1_1CRumble_1_1ERumble.html',1,'JUTGamePad::CRumble']]],
   ['estatus_14',['EStatus',['../structJUTFader_1_1EStatus.html',1,'JUTFader']]],
-  ['event_5fbinary_5fdata_5fheader_15',['event_binary_data_header',['../structevent__binary__data__header.html',1,'']]]
+  ['event_5fbinary_5fdata_5fheader_15',['event_binary_data_header',['../structevent__binary__data__header.html',1,'']]],
+  ['exception_16',['exception',['../structexception.html',1,'']]]
 ];

@@ -1,12 +1,23 @@
 var searchData=
 [
-  ['_5f_5fsignbitd_0',['__signbitd',['../float_8h.html#a72d23f0bfd4e74167107961373eb4fea',1,'float.h']]],
-  ['_5f_5fsignbitf_1',['__signbitf',['../float_8h.html#aeaffabe1b9b6a316c32560ef4a64fcb3',1,'float.h']]],
-  ['_5f_5fva_5farg_2',['__va_arg',['../____va__arg_8h.html#a6a60fc4ca22a2634889c2c9f24a55d87',1,'__va_arg.h']]],
-  ['_5f_5fva_5fcopy_3',['__va_copy',['../____va__arg_8h.html#a0015bca7c6eba824fdf8f0e3eda0e703',1,'__va_arg.h']]],
-  ['_5f_5fva_5fend_4',['__va_end',['../____va__arg_8h.html#a63cd833ec66080984cc90381073bf735',1,'__va_arg.h']]],
-  ['_5f_5fva_5fstart_5',['__va_start',['../____va__arg_8h.html#a399539f9e2cf2151895417298ee0c10b',1,'__va_arg.h']]],
-  ['_5fhuge_5fenuf_6',['_HUGE_ENUF',['../dol2asm_8h.html#a52a6517f60c82a7de26b237be9e86110',1,'dol2asm.h']]],
-  ['_5fsda2_5fbase_5f_7',['_SDA2_BASE_',['../global_8h.html#ad0fefc37f812292947c6c50703a2441f',1,'global.h']]],
-  ['_5fsda_5fbase_5f_8',['_SDA_BASE_',['../global_8h.html#a363e64ace3badec611bfbb2ed2b1f162',1,'global.h']]]
+  ['_5f_5fhi_0',['__HI',['../fdlibm_8h.html#a5934764962e1cdd0b50bec228537a127',1,'fdlibm.h']]],
+  ['_5f_5fhip_1',['__HIp',['../fdlibm_8h.html#ac1460c048521de6b4cfaa992fc80799c',1,'fdlibm.h']]],
+  ['_5f_5flo_2',['__LO',['../fdlibm_8h.html#a3e811eb5592161550c18c0e102d39d45',1,'fdlibm.h']]],
+  ['_5f_5flop_3',['__LOp',['../fdlibm_8h.html#abc7c672a14f8c7f4cc0d1954505a7af0',1,'fdlibm.h']]],
+  ['_5f_5fp_4',['__P',['../fdlibm_8h.html#ab9c005cb4384e91eed15711238094197',1,'fdlibm.h']]],
+  ['_5f_5fsignbitd_5',['__signbitd',['../float_8h.html#a72d23f0bfd4e74167107961373eb4fea',1,'float.h']]],
+  ['_5f_5fsignbitf_6',['__signbitf',['../float_8h.html#aeaffabe1b9b6a316c32560ef4a64fcb3',1,'float.h']]],
+  ['_5f_5fva_5farg_7',['__va_arg',['../____va__arg_8h.html#a6a60fc4ca22a2634889c2c9f24a55d87',1,'__va_arg.h']]],
+  ['_5f_5fva_5fcopy_8',['__va_copy',['../____va__arg_8h.html#a0015bca7c6eba824fdf8f0e3eda0e703',1,'__va_arg.h']]],
+  ['_5f_5fva_5fend_9',['__va_end',['../____va__arg_8h.html#a63cd833ec66080984cc90381073bf735',1,'__va_arg.h']]],
+  ['_5f_5fva_5fstart_10',['__va_start',['../____va__arg_8h.html#a399539f9e2cf2151895417298ee0c10b',1,'__va_arg.h']]],
+  ['_5fhuge_5fenuf_11',['_HUGE_ENUF',['../dol2asm_8h.html#a52a6517f60c82a7de26b237be9e86110',1,'dol2asm.h']]],
+  ['_5fieee_5f_12',['_IEEE_',['../fdlibm_8h.html#acfb34cc518c74d2587d4f993e1a7c59e',1,'fdlibm.h']]],
+  ['_5flib_5fversion_13',['_LIB_VERSION',['../fdlibm_8h.html#aa94e52d4217308ddf36a693641b4ee25',1,'fdlibm.h']]],
+  ['_5flib_5fversion_5ftype_14',['_LIB_VERSION_TYPE',['../fdlibm_8h.html#a285b275add7d0527e2801f96be28fb8d',1,'fdlibm.h']]],
+  ['_5fposix_5f_15',['_POSIX_',['../fdlibm_8h.html#a9bc78053c7218c9a2fc4aff01b551a9c',1,'fdlibm.h']]],
+  ['_5fsda2_5fbase_5f_16',['_SDA2_BASE_',['../global_8h.html#ad0fefc37f812292947c6c50703a2441f',1,'global.h']]],
+  ['_5fsda_5fbase_5f_17',['_SDA_BASE_',['../global_8h.html#a363e64ace3badec611bfbb2ed2b1f162',1,'global.h']]],
+  ['_5fsvid_5f_18',['_SVID_',['../fdlibm_8h.html#ad4f62c6467349c7e048f3b22d5a092b5',1,'fdlibm.h']]],
+  ['_5fxopen_5f_19',['_XOPEN_',['../fdlibm_8h.html#a987851ed9d309ce400e272854d728811',1,'fdlibm.h']]]
 ];

@@ -83,12 +83,10 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="J3DSys_8h_source.html">JSystem/J3DGraphBase/J3DSys.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GXPixel_8h_source.html">dolphin/gx/GXPixel.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DSys/__ct__6J3DSysFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DSys/loadPosMtxIndx__6J3DSysCFiUs.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DSys/loadNrmMtxIndx__6J3DSysCFiUs.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DSys/setTexCacheRegion__6J3DSysF15_GXTexCacheSize.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DSys/drawInit__6J3DSysFv.s&quot;</code><br />
+<code>#include &quot;<a class="el" href="J3DTevs_8h_source.html">JSystem/J3DGraphBase/J3DTevs.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J3DTexture_8h_source.html">JSystem/J3DGraphBase/J3DTexture.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for J3DSys.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -100,346 +98,49 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7afbb629bfdeff2ecacde454db95d70a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a7afbb629bfdeff2ecacde454db95d70a">__ct__6J3DSysFv</a> ()</td></tr>
-<tr class="separator:a7afbb629bfdeff2ecacde454db95d70a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad38d4b4b6a34ffbb18d043795a08b96f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#ad38d4b4b6a34ffbb18d043795a08b96f">loadPosMtxIndx__6J3DSysCFiUs</a> ()</td></tr>
-<tr class="separator:ad38d4b4b6a34ffbb18d043795a08b96f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbcffadd5702da4ce529bb3189a2cbe0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#afbcffadd5702da4ce529bb3189a2cbe0">loadNrmMtxIndx__6J3DSysCFiUs</a> ()</td></tr>
-<tr class="separator:afbcffadd5702da4ce529bb3189a2cbe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0067debf7b0683702a3a3cae155fdc31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a0067debf7b0683702a3a3cae155fdc31">setTexCacheRegion__6J3DSysF15_GXTexCacheSize</a> ()</td></tr>
-<tr class="separator:a0067debf7b0683702a3a3cae155fdc31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadca1c7daf4ad847a43ee8469cbfa7e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#aadca1c7daf4ad847a43ee8469cbfa7e5">drawInit__6J3DSysFv</a> ()</td></tr>
-<tr class="separator:aadca1c7daf4ad847a43ee8469cbfa7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabe9cc312fc1167ccae29ccdb68bd65b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#aabe9cc312fc1167ccae29ccdb68bd65b">reinitGX__6J3DSysFv</a> ()</td></tr>
-<tr class="separator:aabe9cc312fc1167ccae29ccdb68bd65b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65bf5490c26c0890d611b1fdaa1022d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a65bf5490c26c0890d611b1fdaa1022d1">reinitGenMode__6J3DSysFv</a> ()</td></tr>
-<tr class="separator:a65bf5490c26c0890d611b1fdaa1022d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee43a573b124e549f68b933b65db5ab8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#aee43a573b124e549f68b933b65db5ab8">reinitLighting__6J3DSysFv</a> ()</td></tr>
-<tr class="separator:aee43a573b124e549f68b933b65db5ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bcaae0999bc5d64559094c95b0a14b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a0bcaae0999bc5d64559094c95b0a14b2">reinitTransform__6J3DSysFv</a> ()</td></tr>
-<tr class="separator:a0bcaae0999bc5d64559094c95b0a14b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83bce79a6c32cb82ab153969e2fe3951"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a83bce79a6c32cb82ab153969e2fe3951">reinitTexture__6J3DSysFv</a> ()</td></tr>
-<tr class="separator:a83bce79a6c32cb82ab153969e2fe3951"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a019e7d1442cbbf343cde0ef49f9ec3e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a019e7d1442cbbf343cde0ef49f9ec3e0">reinitTevStages__6J3DSysFv</a> ()</td></tr>
-<tr class="separator:a019e7d1442cbbf343cde0ef49f9ec3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58bce5dd14a000585547ade9ea77079f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a58bce5dd14a000585547ade9ea77079f">reinitIndStages__6J3DSysFv</a> ()</td></tr>
-<tr class="separator:a58bce5dd14a000585547ade9ea77079f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98673fb14466aea365c94dd27f8b8795"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a98673fb14466aea365c94dd27f8b8795">reinitPixelProc__6J3DSysFv</a> ()</td></tr>
-<tr class="separator:a98673fb14466aea365c94dd27f8b8795"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d834b1f503c84a0b0b6a41b3e98b906"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a7d834b1f503c84a0b0b6a41b3e98b906">__sinit_J3DSys_cpp</a> ()</td></tr>
-<tr class="separator:a7d834b1f503c84a0b0b6a41b3e98b906"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e0f5f19f452dbd3864ed706ee7b250f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a6e0f5f19f452dbd3864ed706ee7b250f">J3DFifoLoadTexCached__F11_GXTexMapIDUl15_GXTexCacheSizeUl15_GXTexCacheSize</a> ()</td></tr>
-<tr class="separator:a6e0f5f19f452dbd3864ed706ee7b250f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a589bc7fec0459e3506784bf33155a49d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a589bc7fec0459e3506784bf33155a49d">makeTexCoordTable__Fv</a> ()</td></tr>
-<tr class="separator:a589bc7fec0459e3506784bf33155a49d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54d76ab8b2c9f937fa41a519c8556188"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a54d76ab8b2c9f937fa41a519c8556188">makeAlphaCmpTable__Fv</a> ()</td></tr>
-<tr class="separator:a54d76ab8b2c9f937fa41a519c8556188"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbde2e2ad60c5e6f718adda08c52648c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#abbde2e2ad60c5e6f718adda08c52648c">makeZModeTable__Fv</a> ()</td></tr>
-<tr class="separator:abbde2e2ad60c5e6f718adda08c52648c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7e12c8f10d2c69b33a63174df090041"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#ab7e12c8f10d2c69b33a63174df090041">makeTevSwapTable__Fv</a> ()</td></tr>
-<tr class="separator:ab7e12c8f10d2c69b33a63174df090041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9030956a0423dce7823e4ef59e912f68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a9030956a0423dce7823e4ef59e912f68">J3DFifoLoadTexCached</a> (<a class="el" href="GX_8h.html#a72532f5d20cdea292c5f2f9c296848ab">GXTexMapID</a>, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>, <a class="el" href="GX_8h.html#a7f56843917ede8336a10d8a79c426584">GXTexCacheSize</a>, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>, <a class="el" href="GX_8h.html#a7f56843917ede8336a10d8a79c426584">GXTexCacheSize</a>)</td></tr>
+<tr class="separator:a9030956a0423dce7823e4ef59e912f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa1c7d1250f5eb836c0eafdd174f7af6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#aaa1c7d1250f5eb836c0eafdd174f7af6">makeTexCoordTable</a> ()</td></tr>
+<tr class="separator:aaa1c7d1250f5eb836c0eafdd174f7af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11b094b8495449597f23636b5cd1ff5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a11b094b8495449597f23636b5cd1ff5d">makeAlphaCmpTable</a> ()</td></tr>
+<tr class="separator:a11b094b8495449597f23636b5cd1ff5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e08847b10d612f4b6a92873ffa7b3f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a4e08847b10d612f4b6a92873ffa7b3f6">makeZModeTable</a> ()</td></tr>
+<tr class="separator:a4e08847b10d612f4b6a92873ffa7b3f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c9809a1fe03ceba38aea87cc5a37f50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a4c9809a1fe03ceba38aea87cc5a37f50">makeTevSwapTable</a> ()</td></tr>
+<tr class="separator:a4c9809a1fe03ceba38aea87cc5a37f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfcab8658298d99a9529336c8e55f1fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#acfcab8658298d99a9529336c8e55f1fb">GXInvalidateVtxCache</a> ()</td></tr>
 <tr class="separator:acfcab8658298d99a9529336c8e55f1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe53a8a05d06e6da19834198663a2887"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#afe53a8a05d06e6da19834198663a2887">GXFlush</a> ()</td></tr>
-<tr class="separator:afe53a8a05d06e6da19834198663a2887"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a250208d8171248b808c84e43fda110be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a250208d8171248b808c84e43fda110be">GXInitTexCacheRegion</a> ()</td></tr>
-<tr class="separator:a250208d8171248b808c84e43fda110be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58fb5b02bb14a176b115397be03bbe99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a58fb5b02bb14a176b115397be03bbe99">_savegpr_25</a> ()</td></tr>
-<tr class="separator:a58fb5b02bb14a176b115397be03bbe99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96be8c79baacd021a226016df5297c51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a96be8c79baacd021a226016df5297c51">_savegpr_28</a> ()</td></tr>
-<tr class="separator:a96be8c79baacd021a226016df5297c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07802390ec789d585ab9991a261e4ee5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a07802390ec789d585ab9991a261e4ee5">_restgpr_25</a> ()</td></tr>
-<tr class="separator:a07802390ec789d585ab9991a261e4ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f61243ebf5cbb2ff90548d397b16772"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a3f61243ebf5cbb2ff90548d397b16772">_restgpr_28</a> ()</td></tr>
-<tr class="separator:a3f61243ebf5cbb2ff90548d397b16772"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d6f0dedc138e8b86ec49e1c82c751a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a7d6f0dedc138e8b86ec49e1c82c751a6">COMPILER_STRIP_GATE</a> (0x803A1DF8, &amp;<a class="el" href="J3DSys_8cpp.html#a75b8351f9e6d1ac922ec72ce751ff8b5">lit_695</a>)</td></tr>
-<tr class="separator:a7d6f0dedc138e8b86ec49e1c82c751a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a803c0f2b844cfaba3e303c4993d83750"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a803c0f2b844cfaba3e303c4993d83750">COMPILER_STRIP_GATE</a> (0x803A1E08, &amp;<a class="el" href="J3DSys_8cpp.html#a87d655695c1d855466353fa4e9deff28">lit_696</a>)</td></tr>
-<tr class="separator:a803c0f2b844cfaba3e303c4993d83750"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a058aa05d5ff9ada8c73c54d1b63f5ce6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a058aa05d5ff9ada8c73c54d1b63f5ce6">COMPILER_STRIP_GATE</a> (0x803A1E18, &amp;<a class="el" href="J3DSys_8cpp.html#a0a14a1115653dae234758ee04e578828">lit_737</a>)</td></tr>
-<tr class="separator:a058aa05d5ff9ada8c73c54d1b63f5ce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac03f25f700b96a4075ea28bfca5df842"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#ac03f25f700b96a4075ea28bfca5df842">J3DFifoLoadIndx</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> cmd, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> indx, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> addr)</td></tr>
+<tr class="separator:ac03f25f700b96a4075ea28bfca5df842"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a78056ab3a5d817d3aceff202c22d5518"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a78056ab3a5d817d3aceff202c22d5518">mCurrentMtx__6J3DSys</a> [48]</td></tr>
-<tr class="separator:a78056ab3a5d817d3aceff202c22d5518"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7aad676f7dd3bf53af0baa303298c8a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a7aad676f7dd3bf53af0baa303298c8a2">mCurrentS__6J3DSys</a> [3]</td></tr>
-<tr class="separator:a7aad676f7dd3bf53af0baa303298c8a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab960aef2eef3d230610d528848ae89ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#ab960aef2eef3d230610d528848ae89ce">mParentS__6J3DSys</a> [3]</td></tr>
-<tr class="separator:ab960aef2eef3d230610d528848ae89ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c0da5bcb5cced5d87580744f54f300d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a1c0da5bcb5cced5d87580744f54f300d">sTexCoordScaleTable__6J3DSys</a> [64+4]</td></tr>
-<tr class="separator:a1c0da5bcb5cced5d87580744f54f300d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c4243618fd3998c3a56f0c9c166dba4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a8c4243618fd3998c3a56f0c9c166dba4">j3dDefaultViewNo</a> [4+4]</td></tr>
-<tr class="separator:a8c4243618fd3998c3a56f0c9c166dba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b892a3c1987a9d057308966c04185a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a9b892a3c1987a9d057308966c04185a0">j3dDefaultTexCoordInfo</a> [32]</td></tr>
-<tr class="separator:a9b892a3c1987a9d057308966c04185a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09092a3fb39922fd33e23c1c814a550c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a09092a3fb39922fd33e23c1c814a550c">j3dDefaultColInfo</a></td></tr>
-<tr class="separator:a09092a3fb39922fd33e23c1c814a550c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a832cf74de888bd3edcf2edd1414187ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a832cf74de888bd3edcf2edd1414187ab">data_804563C8</a> = 0x01000000</td></tr>
-<tr class="separator:a832cf74de888bd3edcf2edd1414187ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70ac3c68b522289e27946167fd5b20b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a70ac3c68b522289e27946167fd5b20b2">j3dDefaultTevColor</a></td></tr>
-<tr class="separator:a70ac3c68b522289e27946167fd5b20b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1f69c9eed7224f65a3fc83fd384d6ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#ad1f69c9eed7224f65a3fc83fd384d6ca">data_804563D8</a> = 0x00FF00FF</td></tr>
-<tr class="separator:ad1f69c9eed7224f65a3fc83fd384d6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ae0dc2b1eb93f6064edee0ac47cae60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a5ae0dc2b1eb93f6064edee0ac47cae60">j3dDefaultTevKColor</a></td></tr>
-<tr class="separator:a5ae0dc2b1eb93f6064edee0ac47cae60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ec945fe3147236e5f9bb5e9512ce918"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJ3DDefaultTexCoordInfo.html">J3DDefaultTexCoordInfo</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a5ec945fe3147236e5f9bb5e9512ce918">j3dDefaultTexCoordInfo</a> [8]</td></tr>
+<tr class="separator:a5ec945fe3147236e5f9bb5e9512ce918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1479b3cb520a6d178ce9675044de7af3"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="GX_8h.html#a0419d171f4d66c2b2a77bd299ddbdcdc">GXColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a1479b3cb520a6d178ce9675044de7af3">j3dDefaultColInfo</a></td></tr>
+<tr class="separator:a1479b3cb520a6d178ce9675044de7af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a550f5290f830c660fdff2adb9bc41a51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a550f5290f830c660fdff2adb9bc41a51">data_804563C8</a> = 0x01</td></tr>
+<tr class="separator:a550f5290f830c660fdff2adb9bc41a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac52d44787630f5cbca3db3db2c0f6058"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="GX_8h.html#a6e884c434a48c87e5eb4fa7e60bd897b">GXColorS10</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#ac52d44787630f5cbca3db3db2c0f6058">j3dDefaultTevColor</a></td></tr>
+<tr class="separator:ac52d44787630f5cbca3db3db2c0f6058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3cb14219fce73f08cc3d7f1ec9da833"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="GX_8h.html#a0419d171f4d66c2b2a77bd299ddbdcdc">GXColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#af3cb14219fce73f08cc3d7f1ec9da833">j3dDefaultTevKColor</a></td></tr>
+<tr class="separator:af3cb14219fce73f08cc3d7f1ec9da833"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe0887d3a0f9e2ff9c2d5f6ccfbf8e76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJ3DSys.html">J3DSys</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#afe0887d3a0f9e2ff9c2d5f6ccfbf8e76">j3dSys</a></td></tr>
 <tr class="separator:afe0887d3a0f9e2ff9c2d5f6ccfbf8e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75b8351f9e6d1ac922ec72ce751ff8b5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a75b8351f9e6d1ac922ec72ce751ff8b5">lit_695</a> [16]</td></tr>
-<tr class="separator:a75b8351f9e6d1ac922ec72ce751ff8b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87d655695c1d855466353fa4e9deff28"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a87d655695c1d855466353fa4e9deff28">lit_696</a> [16]</td></tr>
-<tr class="separator:a87d655695c1d855466353fa4e9deff28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a14a1115653dae234758ee04e578828"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a0a14a1115653dae234758ee04e578828">lit_737</a> [24]</td></tr>
-<tr class="separator:a0a14a1115653dae234758ee04e578828"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabe2038856414df1e001ee4312f7d892"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#aabe2038856414df1e001ee4312f7d892">NullTexData</a> [16]</td></tr>
 <tr class="separator:aabe2038856414df1e001ee4312f7d892"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e8e670b588f09393d82d2ecd6ecd9b2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a3e8e670b588f09393d82d2ecd6ecd9b2">j3dIdentityMtx</a> [48]</td></tr>
-<tr class="separator:a3e8e670b588f09393d82d2ecd6ecd9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d58cd72c5bc127e9bffc22028998667"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="mtx_8h.html#afc58fc7f5dd84f97da2dab35156849ae">Mtx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a8d58cd72c5bc127e9bffc22028998667">j3dIdentityMtx</a></td></tr>
+<tr class="separator:a8d58cd72c5bc127e9bffc22028998667"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a641c934462c10523d8bc4dbf01588230"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="GX_8h.html#a0419d171f4d66c2b2a77bd299ddbdcdc">GXColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a641c934462c10523d8bc4dbf01588230">ColorBlack</a> = {0x00, 0x00, 0x00, 0x00}</td></tr>
 <tr class="separator:a641c934462c10523d8bc4dbf01588230"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac790a91a9c0f624a62617973b3c11e97"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="GX_8h.html#a0419d171f4d66c2b2a77bd299ddbdcdc">GXColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#ac790a91a9c0f624a62617973b3c11e97">ColorWhite</a> = {0xFF, 0xFF, 0xFF, 0xFF}</td></tr>
 <tr class="separator:ac790a91a9c0f624a62617973b3c11e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d76a20d00454e879942ef9c3d937c6d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="mtx_8h.html#aaab553b8b0ec87e06105492872ede525">Mtx23</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a0d76a20d00454e879942ef9c3d937c6d">IndMtx</a> = {0.5f, 0.0f, 0.0f, 0.0f, 0.5f, 0.0f}</td></tr>
 <tr class="separator:a0d76a20d00454e879942ef9c3d937c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c4243618fd3998c3a56f0c9c166dba4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DSys_8cpp.html#a8c4243618fd3998c3a56f0c9c166dba4">j3dDefaultViewNo</a> [4+4]</td></tr>
+<tr class="separator:a8c4243618fd3998c3a56f0c9c166dba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a7afbb629bfdeff2ecacde454db95d70a" name="a7afbb629bfdeff2ecacde454db95d70a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7afbb629bfdeff2ecacde454db95d70a">&#9670;&nbsp;</a></span>__ct__6J3DSysFv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void __ct__6J3DSysFv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7d834b1f503c84a0b0b6a41b3e98b906" name="a7d834b1f503c84a0b0b6a41b3e98b906"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d834b1f503c84a0b0b6a41b3e98b906">&#9670;&nbsp;</a></span>__sinit_J3DSys_cpp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void __sinit_J3DSys_cpp </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a07802390ec789d585ab9991a261e4ee5" name="a07802390ec789d585ab9991a261e4ee5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07802390ec789d585ab9991a261e4ee5">&#9670;&nbsp;</a></span>_restgpr_25()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void _restgpr_25 </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3f61243ebf5cbb2ff90548d397b16772" name="a3f61243ebf5cbb2ff90548d397b16772"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f61243ebf5cbb2ff90548d397b16772">&#9670;&nbsp;</a></span>_restgpr_28()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void _restgpr_28 </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a58fb5b02bb14a176b115397be03bbe99" name="a58fb5b02bb14a176b115397be03bbe99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58fb5b02bb14a176b115397be03bbe99">&#9670;&nbsp;</a></span>_savegpr_25()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void _savegpr_25 </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a96be8c79baacd021a226016df5297c51" name="a96be8c79baacd021a226016df5297c51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96be8c79baacd021a226016df5297c51">&#9670;&nbsp;</a></span>_savegpr_28()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void _savegpr_28 </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7d6f0dedc138e8b86ec49e1c82c751a6" name="a7d6f0dedc138e8b86ec49e1c82c751a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d6f0dedc138e8b86ec49e1c82c751a6">&#9670;&nbsp;</a></span>COMPILER_STRIP_GATE() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">COMPILER_STRIP_GATE </td>
-          <td>(</td>
-          <td class="paramtype">0x803A1DF8&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&amp;&#160;</td>
-          <td class="paramname"><em>lit_695</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a803c0f2b844cfaba3e303c4993d83750" name="a803c0f2b844cfaba3e303c4993d83750"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a803c0f2b844cfaba3e303c4993d83750">&#9670;&nbsp;</a></span>COMPILER_STRIP_GATE() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">COMPILER_STRIP_GATE </td>
-          <td>(</td>
-          <td class="paramtype">0x803A1E08&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&amp;&#160;</td>
-          <td class="paramname"><em>lit_696</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a058aa05d5ff9ada8c73c54d1b63f5ce6" name="a058aa05d5ff9ada8c73c54d1b63f5ce6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a058aa05d5ff9ada8c73c54d1b63f5ce6">&#9670;&nbsp;</a></span>COMPILER_STRIP_GATE() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">COMPILER_STRIP_GATE </td>
-          <td>(</td>
-          <td class="paramtype">0x803A1E18&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&amp;&#160;</td>
-          <td class="paramname"><em>lit_737</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aadca1c7daf4ad847a43ee8469cbfa7e5" name="aadca1c7daf4ad847a43ee8469cbfa7e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadca1c7daf4ad847a43ee8469cbfa7e5">&#9670;&nbsp;</a></span>drawInit__6J3DSysFv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void drawInit__6J3DSysFv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afe53a8a05d06e6da19834198663a2887" name="afe53a8a05d06e6da19834198663a2887"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe53a8a05d06e6da19834198663a2887">&#9670;&nbsp;</a></span>GXFlush()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXFlush </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a250208d8171248b808c84e43fda110be" name="a250208d8171248b808c84e43fda110be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a250208d8171248b808c84e43fda110be">&#9670;&nbsp;</a></span>GXInitTexCacheRegion()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void GXInitTexCacheRegion </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="acfcab8658298d99a9529336c8e55f1fb" name="acfcab8658298d99a9529336c8e55f1fb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acfcab8658298d99a9529336c8e55f1fb">&#9670;&nbsp;</a></span>GXInvalidateVtxCache()</h2>
 
@@ -457,14 +158,102 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a6e0f5f19f452dbd3864ed706ee7b250f" name="a6e0f5f19f452dbd3864ed706ee7b250f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e0f5f19f452dbd3864ed706ee7b250f">&#9670;&nbsp;</a></span>J3DFifoLoadTexCached__F11_GXTexMapIDUl15_GXTexCacheSizeUl15_GXTexCacheSize()</h2>
+<a id="ac03f25f700b96a4075ea28bfca5df842" name="ac03f25f700b96a4075ea28bfca5df842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac03f25f700b96a4075ea28bfca5df842">&#9670;&nbsp;</a></span>J3DFifoLoadIndx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void J3DFifoLoadIndx </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
+          <td class="paramname"><em>indx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
+          <td class="paramname"><em>addr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9030956a0423dce7823e4ef59e912f68" name="a9030956a0423dce7823e4ef59e912f68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9030956a0423dce7823e4ef59e912f68">&#9670;&nbsp;</a></span>J3DFifoLoadTexCached()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void J3DFifoLoadTexCached__F11_GXTexMapIDUl15_GXTexCacheSizeUl15_GXTexCacheSize </td>
+          <td class="memname">void J3DFifoLoadTexCached </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="GX_8h.html#a72532f5d20cdea292c5f2f9c296848ab">GXTexMapID</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="GX_8h.html#a7f56843917ede8336a10d8a79c426584">GXTexCacheSize</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="GX_8h.html#a7f56843917ede8336a10d8a79c426584">GXTexCacheSize</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a11b094b8495449597f23636b5cd1ff5d" name="a11b094b8495449597f23636b5cd1ff5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11b094b8495449597f23636b5cd1ff5d">&#9670;&nbsp;</a></span>makeAlphaCmpTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void makeAlphaCmpTable </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -474,14 +263,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="afbcffadd5702da4ce529bb3189a2cbe0" name="afbcffadd5702da4ce529bb3189a2cbe0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbcffadd5702da4ce529bb3189a2cbe0">&#9670;&nbsp;</a></span>loadNrmMtxIndx__6J3DSysCFiUs()</h2>
+<a id="a4c9809a1fe03ceba38aea87cc5a37f50" name="a4c9809a1fe03ceba38aea87cc5a37f50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c9809a1fe03ceba38aea87cc5a37f50">&#9670;&nbsp;</a></span>makeTevSwapTable()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void loadNrmMtxIndx__6J3DSysCFiUs </td>
+          <td class="memname">void makeTevSwapTable </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -491,14 +280,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad38d4b4b6a34ffbb18d043795a08b96f" name="ad38d4b4b6a34ffbb18d043795a08b96f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad38d4b4b6a34ffbb18d043795a08b96f">&#9670;&nbsp;</a></span>loadPosMtxIndx__6J3DSysCFiUs()</h2>
+<a id="aaa1c7d1250f5eb836c0eafdd174f7af6" name="aaa1c7d1250f5eb836c0eafdd174f7af6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa1c7d1250f5eb836c0eafdd174f7af6">&#9670;&nbsp;</a></span>makeTexCoordTable()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void loadPosMtxIndx__6J3DSysCFiUs </td>
+          <td class="memname">void makeTexCoordTable </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -508,218 +297,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a54d76ab8b2c9f937fa41a519c8556188" name="a54d76ab8b2c9f937fa41a519c8556188"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54d76ab8b2c9f937fa41a519c8556188">&#9670;&nbsp;</a></span>makeAlphaCmpTable__Fv()</h2>
+<a id="a4e08847b10d612f4b6a92873ffa7b3f6" name="a4e08847b10d612f4b6a92873ffa7b3f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e08847b10d612f4b6a92873ffa7b3f6">&#9670;&nbsp;</a></span>makeZModeTable()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void makeAlphaCmpTable__Fv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab7e12c8f10d2c69b33a63174df090041" name="ab7e12c8f10d2c69b33a63174df090041"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7e12c8f10d2c69b33a63174df090041">&#9670;&nbsp;</a></span>makeTevSwapTable__Fv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void makeTevSwapTable__Fv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a589bc7fec0459e3506784bf33155a49d" name="a589bc7fec0459e3506784bf33155a49d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a589bc7fec0459e3506784bf33155a49d">&#9670;&nbsp;</a></span>makeTexCoordTable__Fv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void makeTexCoordTable__Fv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abbde2e2ad60c5e6f718adda08c52648c" name="abbde2e2ad60c5e6f718adda08c52648c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbde2e2ad60c5e6f718adda08c52648c">&#9670;&nbsp;</a></span>makeZModeTable__Fv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void makeZModeTable__Fv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a65bf5490c26c0890d611b1fdaa1022d1" name="a65bf5490c26c0890d611b1fdaa1022d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65bf5490c26c0890d611b1fdaa1022d1">&#9670;&nbsp;</a></span>reinitGenMode__6J3DSysFv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void reinitGenMode__6J3DSysFv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aabe9cc312fc1167ccae29ccdb68bd65b" name="aabe9cc312fc1167ccae29ccdb68bd65b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabe9cc312fc1167ccae29ccdb68bd65b">&#9670;&nbsp;</a></span>reinitGX__6J3DSysFv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void reinitGX__6J3DSysFv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a58bce5dd14a000585547ade9ea77079f" name="a58bce5dd14a000585547ade9ea77079f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58bce5dd14a000585547ade9ea77079f">&#9670;&nbsp;</a></span>reinitIndStages__6J3DSysFv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void reinitIndStages__6J3DSysFv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aee43a573b124e549f68b933b65db5ab8" name="aee43a573b124e549f68b933b65db5ab8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee43a573b124e549f68b933b65db5ab8">&#9670;&nbsp;</a></span>reinitLighting__6J3DSysFv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void reinitLighting__6J3DSysFv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a98673fb14466aea365c94dd27f8b8795" name="a98673fb14466aea365c94dd27f8b8795"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98673fb14466aea365c94dd27f8b8795">&#9670;&nbsp;</a></span>reinitPixelProc__6J3DSysFv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void reinitPixelProc__6J3DSysFv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a019e7d1442cbbf343cde0ef49f9ec3e0" name="a019e7d1442cbbf343cde0ef49f9ec3e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a019e7d1442cbbf343cde0ef49f9ec3e0">&#9670;&nbsp;</a></span>reinitTevStages__6J3DSysFv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void reinitTevStages__6J3DSysFv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a83bce79a6c32cb82ab153969e2fe3951" name="a83bce79a6c32cb82ab153969e2fe3951"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83bce79a6c32cb82ab153969e2fe3951">&#9670;&nbsp;</a></span>reinitTexture__6J3DSysFv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void reinitTexture__6J3DSysFv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0bcaae0999bc5d64559094c95b0a14b2" name="a0bcaae0999bc5d64559094c95b0a14b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bcaae0999bc5d64559094c95b0a14b2">&#9670;&nbsp;</a></span>reinitTransform__6J3DSysFv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void reinitTransform__6J3DSysFv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0067debf7b0683702a3a3cae155fdc31" name="a0067debf7b0683702a3a3cae155fdc31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0067debf7b0683702a3a3cae155fdc31">&#9670;&nbsp;</a></span>setTexCacheRegion__6J3DSysF15_GXTexCacheSize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void setTexCacheRegion__6J3DSysF15_GXTexCacheSize </td>
+          <td class="memname">void makeZModeTable </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -774,8 +359,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a832cf74de888bd3edcf2edd1414187ab" name="a832cf74de888bd3edcf2edd1414187ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a832cf74de888bd3edcf2edd1414187ab">&#9670;&nbsp;</a></span>data_804563C8</h2>
+<a id="a550f5290f830c660fdff2adb9bc41a51" name="a550f5290f830c660fdff2adb9bc41a51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a550f5290f830c660fdff2adb9bc41a51">&#9670;&nbsp;</a></span>data_804563C8</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -784,29 +369,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> data_804563C8 = 0x01000000</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad1f69c9eed7224f65a3fc83fd384d6ca" name="ad1f69c9eed7224f65a3fc83fd384d6ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1f69c9eed7224f65a3fc83fd384d6ca">&#9670;&nbsp;</a></span>data_804563D8</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> data_804563D8 = 0x00FF00FF</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_804563C8 = 0x01</td>
         </tr>
       </table>
   </td>
@@ -840,8 +403,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a09092a3fb39922fd33e23c1c814a550c" name="a09092a3fb39922fd33e23c1c814a550c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09092a3fb39922fd33e23c1c814a550c">&#9670;&nbsp;</a></span>j3dDefaultColInfo</h2>
+<a id="a1479b3cb520a6d178ce9675044de7af3" name="a1479b3cb520a6d178ce9675044de7af3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1479b3cb520a6d178ce9675044de7af3">&#9670;&nbsp;</a></span>j3dDefaultColInfo</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -850,7 +413,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> j3dDefaultColInfo</td>
+          <td class="memname">const <a class="el" href="GX_8h.html#a0419d171f4d66c2b2a77bd299ddbdcdc">GXColor</a> j3dDefaultColInfo</td>
         </tr>
       </table>
   </td>
@@ -862,8 +425,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a70ac3c68b522289e27946167fd5b20b2" name="a70ac3c68b522289e27946167fd5b20b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70ac3c68b522289e27946167fd5b20b2">&#9670;&nbsp;</a></span>j3dDefaultTevColor</h2>
+<a id="ac52d44787630f5cbca3db3db2c0f6058" name="ac52d44787630f5cbca3db3db2c0f6058"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac52d44787630f5cbca3db3db2c0f6058">&#9670;&nbsp;</a></span>j3dDefaultTevColor</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -872,7 +435,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> j3dDefaultTevColor</td>
+          <td class="memname">const <a class="el" href="GX_8h.html#a6e884c434a48c87e5eb4fa7e60bd897b">GXColorS10</a> j3dDefaultTevColor</td>
         </tr>
       </table>
   </td>
@@ -884,8 +447,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5ae0dc2b1eb93f6064edee0ac47cae60" name="a5ae0dc2b1eb93f6064edee0ac47cae60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ae0dc2b1eb93f6064edee0ac47cae60">&#9670;&nbsp;</a></span>j3dDefaultTevKColor</h2>
+<a id="af3cb14219fce73f08cc3d7f1ec9da833" name="af3cb14219fce73f08cc3d7f1ec9da833"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3cb14219fce73f08cc3d7f1ec9da833">&#9670;&nbsp;</a></span>j3dDefaultTevKColor</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -894,7 +457,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> j3dDefaultTevKColor</td>
+          <td class="memname">const <a class="el" href="GX_8h.html#a0419d171f4d66c2b2a77bd299ddbdcdc">GXColor</a> j3dDefaultTevKColor</td>
         </tr>
       </table>
   </td>
@@ -906,8 +469,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a9b892a3c1987a9d057308966c04185a0" name="a9b892a3c1987a9d057308966c04185a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b892a3c1987a9d057308966c04185a0">&#9670;&nbsp;</a></span>j3dDefaultTexCoordInfo</h2>
+<a id="a5ec945fe3147236e5f9bb5e9512ce918" name="a5ec945fe3147236e5f9bb5e9512ce918"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ec945fe3147236e5f9bb5e9512ce918">&#9670;&nbsp;</a></span>j3dDefaultTexCoordInfo</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -916,7 +479,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const j3dDefaultTexCoordInfo[32]</td>
+          <td class="memname"><a class="el" href="structJ3DDefaultTexCoordInfo.html">J3DDefaultTexCoordInfo</a> const j3dDefaultTexCoordInfo[8]</td>
         </tr>
       </table>
   </td>
@@ -942,8 +505,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a3e8e670b588f09393d82d2ecd6ecd9b2" name="a3e8e670b588f09393d82d2ecd6ecd9b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e8e670b588f09393d82d2ecd6ecd9b2">&#9670;&nbsp;</a></span>j3dIdentityMtx</h2>
+<a id="a8d58cd72c5bc127e9bffc22028998667" name="a8d58cd72c5bc127e9bffc22028998667"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d58cd72c5bc127e9bffc22028998667">&#9670;&nbsp;</a></span>j3dIdentityMtx</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -952,7 +515,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> j3dIdentityMtx[48]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="mtx_8h.html#afc58fc7f5dd84f97da2dab35156849ae">Mtx</a> j3dIdentityMtx</td>
         </tr>
       </table>
   </td>
@@ -962,9 +525,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x3F, 0x80, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,</div>
-<div class="line">    0x00, 0x00, 0x00, 0x00, 0x3F, 0x80, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,</div>
-<div class="line">    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x3F, 0x80, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,</div>
+<div class="line">    1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
@@ -977,124 +538,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structJ3DSys.html">J3DSys</a> j3dSys</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a75b8351f9e6d1ac922ec72ce751ff8b5" name="a75b8351f9e6d1ac922ec72ce751ff8b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75b8351f9e6d1ac922ec72ce751ff8b5">&#9670;&nbsp;</a></span>lit_695</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const lit_695[16]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x00, 0x00, 0x80, 0x00, 0x00, 0x02, 0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,</div>
-<div class="line">}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a87d655695c1d855466353fa4e9deff28" name="a87d655695c1d855466353fa4e9deff28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87d655695c1d855466353fa4e9deff28">&#9670;&nbsp;</a></span>lit_696</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const lit_696[16]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x04, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00,</div>
-<div class="line">}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a0a14a1115653dae234758ee04e578828" name="a0a14a1115653dae234758ee04e578828"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a14a1115653dae234758ee04e578828">&#9670;&nbsp;</a></span>lit_737</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const lit_737[24]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x3F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,</div>
-<div class="line">    0x00, 0x00, 0x00, 0x00, 0x3F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,</div>
-<div class="line">}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a78056ab3a5d817d3aceff202c22d5518" name="a78056ab3a5d817d3aceff202c22d5518"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78056ab3a5d817d3aceff202c22d5518">&#9670;&nbsp;</a></span>mCurrentMtx__6J3DSys</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> mCurrentMtx__6J3DSys[48]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7aad676f7dd3bf53af0baa303298c8a2" name="a7aad676f7dd3bf53af0baa303298c8a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7aad676f7dd3bf53af0baa303298c8a2">&#9670;&nbsp;</a></span>mCurrentS__6J3DSys</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> mCurrentS__6J3DSys[3]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab960aef2eef3d230610d528848ae89ce" name="ab960aef2eef3d230610d528848ae89ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab960aef2eef3d230610d528848ae89ce">&#9670;&nbsp;</a></span>mParentS__6J3DSys</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> mParentS__6J3DSys[3]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1124,20 +567,6 @@ Variables</h2></td></tr>
 <div class="line">    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-</div>
-</div>
-<a id="a1c0da5bcb5cced5d87580744f54f300d" name="a1c0da5bcb5cced5d87580744f54f300d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c0da5bcb5cced5d87580744f54f300d">&#9670;&nbsp;</a></span>sTexCoordScaleTable__6J3DSys</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> sTexCoordScaleTable__6J3DSys[64+4]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
 </div>
 </div>
 </div><!-- contents -->

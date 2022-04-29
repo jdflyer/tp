@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['tbox_5fmax_0',['TBOX_MAX',['../d__save_8h.html#a64c057020835ff228b7e29600beac303',1,'d_save.h']]],
-  ['true_1',['TRUE',['../types_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d',1,'types.h']]]
+  ['register_5fctors_0',['REGISTER_CTORS',['../dol2asm_8h.html#ac73af8db60a625e15a2ce5053f5048ac',1,'dol2asm.h']]]
 ];
