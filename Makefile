@@ -79,7 +79,7 @@ INCLUDES := -i include -i include/dolphin/ -i src
 ASFLAGS := -mgekko -I include
 
 # Linker flags
-LDFLAGS := -unused -map $(MAP) -fp hard -nodefaults -w off
+LDFLAGS += -unused -map $(MAP) -fp hard -nodefaults -w off
 
 # Compiler flags
 CFLAGS  += -Cpp_exceptions off -proc gekko -fp hard -O3 -nodefaults -str pool,readonly,reuse -RTTI off -maxerrors 5 -enum int $(INCLUDES)
@@ -118,12 +118,12 @@ clean:
 	rm -f $(BUILD_DIR)/*.a
 
 clean_game:
-	rm -r -f -d $(TARGET)/game
+	rm -r -f -d $(BUILD_DIR)/game
 
 clean_assets:
 	rm -r -f -d game
 
-clean_all: 
+clean_all: clean_assets
 	rm -f -d -r build
 
 clean_rels:
@@ -165,11 +165,19 @@ game: shift
 	@mkdir -p game
 	@$(PYTHON) tools/package_game_assets.py game $(BUILD_DIR)
 
+game-nocomp:
+	@mkdir -p game
+	@$(PYTHON) tools/package_game_assets.py game $(BUILD_DIR)
+
+rungame-nocomp: game-nocomp
+	@echo If you are playing on a shifted game make sure Hyrule Field Speed hack is disabled in dolphin!
+	dolphin-emu $(BUILD_DIR)/game/sys/main.dol
+
+
 rungame: game
 	@echo If you are playing on a shifted game make sure Hyrule Field Speed hack is disabled in dolphin!
 	dolphin-emu $(BUILD_DIR)/game/sys/main.dol
 
-#
 $(BUILD_DIR)/%.o: %.cpp
 	@mkdir -p $(@D)
 	@echo building... $<

@@ -1,5 +1,7 @@
 import os
 import sys
+import libarc
+import oead
 
 """
 Extracts the game assets and stores them in the game folder
@@ -127,6 +129,81 @@ def writeFolder(parsedFstBin, i):
 Use the parsed fst.bin contents to write assets to file
 """
 
+def recursiveArcWrite(arc,node,path,customIndexes):
+    if not os.path.exists(path):
+        os.makedirs(path)
+    directoriesInNode = arc._directories[(node.directory_index):(node.directory_index+node.directory_count)]
+    dirListToWrite = ""
+    for dir in directoriesInNode:
+        name = ""
+        if isinstance(dir,libarc.Folder):
+            if dir.name != "." and dir.name != "..":
+                newNode = arc._nodes[dir.data_offset]
+                if newNode.name != dir.name:
+                    print("Invalid node!")
+                    exit(1)
+                recursiveArcWrite(arc,newNode,path+dir.name+"/",customIndexes)
+                name = dir.name
+        elif isinstance(dir,libarc.File):
+            if dir.type != 0x1100 and dir.type != 0x9500 and dir.type != 0xA500:
+                print("Unknown type in "+str(arc))
+            name = writeFile(path+dir.name,dir.data)
+
+        if name!="":
+            if customIndexes==True:
+                dirListToWrite = dirListToWrite+name+","+str(dir.index)+"\n"
+            else:
+                dirListToWrite = dirListToWrite+name+"\n"
+    
+    dirListToWrite = dirListToWrite[0:-1]
+    open(path+"_files.txt","w").write(dirListToWrite)
+
+def writeFile(path,data):
+    if path[-4:] == ".arc":
+        #print(path)
+        if data[:4] == bytearray("Yaz0","utf-8"):
+            #print("Yaz0 compressed arc")
+            splitname = os.path.splitext(path)
+            ext = splitname[1]
+            name = splitname[0]
+            data = oead.yaz0.decompress(data)
+            path = name+".c"+ext
+
+
+        if data[:4] != bytearray("RARC","utf-8"):
+            print("Incorrect arc header for "+path)
+            open(path,"wb").write(data)
+            return os.path.basename(path)
+
+        arc = libarc.read(data)
+        if not os.path.exists(path):
+            os.makedirs(path)
+
+        #print(arc._root)
+        #print(arc._nodes)
+        #print(arc._directories)
+        open(path+"/_arc.txt","w").write(str(arc))
+        customIndexes = False
+        if arc.unknown2==0x0:
+            #The ID allocation is custom in the arc, write to files.txt
+            open(path+"/_arcHasCustomIndexes","w").write("")
+            open(path+"/_files.txt","w").write(arc._root.name+","+str(arc._root.directory_index))
+            customIndexes = True
+        else:
+            open(path+"/_files.txt","w").write(arc._root.name)
+
+        recursiveArcWrite(arc,arc._root,path+"/"+arc._root.name+"/",customIndexes)
+        return os.path.basename(path)
+    elif data[:4] == bytearray("Yaz0","utf-8"):
+        data = oead.yaz0.decompress(data)
+        splitname = os.path.splitext(path)
+        ext = splitname[1]
+        name = splitname[0]
+        open(name+".c"+ext,"wb").write(data)
+        return os.path.basename(name+".c"+ext)
+    else:
+        open(path,"wb").write(data)
+        return os.path.basename(path)
 
 def writeAssets(parsedFstBin, handler):
     # Write the folder structure and files to disc
@@ -145,10 +222,8 @@ def writeAssets(parsedFstBin, handler):
             )
         else:
             handler.seek(i["fileOffset"])
-            with open(
-                (folderStack[-1]["folderName"] + i["fileName"]), "wb"
-            ) as currentFile:
-                currentFile.write(bytearray(handler.read(i["fileSize"])))
+            data = bytearray(handler.read(i["fileSize"]))
+            writeFile((folderStack[-1]["folderName"] + i["fileName"]),data)
 
             while folderStack[-1]["lastEntryNumber"] == j + 1:
                 folderStack.pop()

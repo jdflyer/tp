@@ -1,4 +1,5 @@
 import os
+from platform import node
 import sys
 import shutil
 import extract_game_assets
@@ -7,24 +8,302 @@ import hashlib
 import struct
 import ctypes
 import oead
+import libarc
+
+def findInStringTable(stringTable,entry):
+    return (bytearray(stringTable,"shift_jis").find(bytearray(("\0"+entry+"\0"),"shift-jis")))+1
+
+def appendToStringTable(stringTable,entry):
+    stringTableOffset = len(bytearray(stringTable,"shift-jis"))
+    stringTable = stringTable+entry+"\0"
+    return stringTable,stringTableOffset
+
+def recursiveCreateArc(path, stringTable, nodes, dirs, isRoot, dirIndex, data, parentNode, customIndexes):
+    #print(os.path.basename(path))
+    nodename = None
+    if isRoot == True:
+        nodename = "ROOT"
+    else:
+        nodename = os.path.basename(path)
+        if len(nodename)<4:
+            nodename = nodename.upper()
+            for i in range(4-len(nodename)):
+                nodename = nodename + " "
+        else:
+            nodename = nodename.upper()[:4]
+    
+    stroffset = findInStringTable(stringTable,os.path.basename(path))
+    entries = open(path/"_files.txt","r").read().splitlines()
+    mainNode = libarc.Node(struct.unpack('>I', nodename.encode('ascii'))[0],stroffset,computeHash(os.path.basename(path)),len(entries)+2,dirIndex,os.path.basename(path))
+    nodes.append(mainNode)
+
+    files = []
+    folders = []
+    
+    for entry in entries:
+        entryname = entry
+        if customIndexes == True:
+            entryname = entryname.split(",")[0]
+        if os.path.isfile(path/entryname):
+            files.append(entry)
+        elif os.path.isdir(path/entryname):   
+            if entryname[-4:] == ".arc":
+                files.append(entry)
+            else:
+                folders.append(entry)
+        
+
+    for file in files:
+        index = 0
+        if customIndexes == True:
+            split = file.split(",")
+            file = split[0]
+            index = int(split[1])
+        else:
+            index = len(dirs)
+        if file[-4:] == ".arc" and file != "speakerse.arc":
+            fileData = createArcFromDirectory(path/file,False)
+            fileName = file
+        else:
+            fileData,fileName = convFile(path/file)
+        fileOffset = len(data)
+        if fileData == None:
+            fileData = open(path/file,"rb").read()
+        
+        data = data + fileData
+        size = len(fileData)
+
+        stroffset = findInStringTable(stringTable,fileName)
+        fileType = 0x1100
+        if fileData[:4] == bytearray("Yaz0","utf-8"):
+            fileType = 0x9500
+        
+        dirs.append(libarc.Directory(index,computeHash(fileName),fileType,stroffset,fileOffset,size,0,fileName))
+
+        padding = (0x20-(size%0x20))
+        if padding != 0x20:
+            data = data + bytearray(padding)
+
+    for i,entry in enumerate(folders):
+        if customIndexes == True:
+            entry = entry.split(",")[0]
+        stroffset = findInStringTable(stringTable,entry)
+        dirs.append(libarc.Directory(65535,computeHash(entry),512,stroffset,len(nodes)+i,16,0,entry))
+    
+    dirs.append(libarc.Directory(65535,computeHash("."),512,0,len(nodes)-1,0x10,0,"."))
+    upIndex = 0
+    if isRoot:
+        upIndex = 0xFFFFFFFF
+    else:
+        for i,node in enumerate(nodes):
+            if nodes[i] == parentNode:
+                upIndex = i
+    
+    dirs.append(libarc.Directory(65535,computeHash(".."),512,2,upIndex,0x10,0,".."))
+    for folder in folders:
+        if customIndexes == True:
+            folder = folder.split(",")[0]
+        dirs,nodes,stringTable,dirIndex,data = recursiveCreateArc(path/folder,stringTable,nodes,dirs,False,len(dirs),data,mainNode,customIndexes)
+
+    return dirs,nodes,stringTable,dirIndex,data
+
+def recursiveGenerateStringTable(path,stringTable,customIndexes):
+    entries = open(path/"_files.txt","r").read().splitlines()
+
+    for entry in entries:
+        if customIndexes == True:
+            entry = entry.split(",")[0]
+        newentry = ""
+        if entry[-4:] == ".arc" and entry != "speakerse.arc":
+            newentry = entry
+        else:
+            split = os.path.splitext(entry)
+            entryName,entryExt = convName(split[0],split[1])
+            newentry = entryName+entryExt
+        stringTable,offset = appendToStringTable(stringTable,newentry)
+        if os.path.isdir(path/entry) and entry[-4:] != ".arc":
+            stringTable = recursiveGenerateStringTable(path/entry,stringTable,customIndexes)
+            
+    return stringTable
+
+def recursiveArrangeDirs(nodes,dirs):
+    return dirs
+
+def createArcFromDirectory(path,compressed):
+    rootFolderName = open(path/"_files.txt","r").read()
+    customIndexes = False
+    if os.path.exists(path/"_arcHasCustomIndexes"):
+        print("Arc has custom indexes")
+        customIndexes = True
+        rootFolderName = rootFolderName.split(",")[0]
+    stringTable = ".\0..\0"
+    stringTable = recursiveGenerateStringTable(path,stringTable,customIndexes)
+    dirs,nodes,stringTable,numDirs,data = recursiveCreateArc(path/rootFolderName,stringTable,[],[],True,0,bytearray(),None,customIndexes)
+
+    dirs = recursiveArrangeDirs(nodes,dirs)
+
+    #nodeIndex = 0
+    #for dir in dirs:
+    #    if dir.name == ".":
+    #        dir.data_offset = nodeIndex
+    #        nodeIndex = nodeIndex+1
+
+    lenHead = 0x40
+    lenNodes = len(nodes)*0x10
+    postNodesPadding = (0x20-((lenHead+lenNodes)%0x20))
+    if postNodesPadding == 0x20:
+        postNodesPadding = 0
+    lenDirs = len(dirs)*0x14
+    lenHeadDirsNodes = lenNodes+lenDirs+lenHead+postNodesPadding
+    preStrTablePadding = (0x20-(lenHeadDirsNodes%0x20))
+    if preStrTablePadding == 0x20:
+        preStrTablePadding = 0
+    lenStrTable = len(bytearray(stringTable,"shift-jis"))
+    #print(lenStrTable)
+    postStrTablePadding = (0x20-((lenStrTable+preStrTablePadding+lenHeadDirsNodes)%0x20))
+    if postStrTablePadding == 0x20:
+        postStrTablePadding = 0
+    dataOffset = lenHeadDirsNodes+preStrTablePadding+lenStrTable+postStrTablePadding
+    length = len(data)+dataOffset
+
+    numFiles = len(dirs) #logic for this seems to vary between arcs
+
+    customIndexIdentifier = 0x100
+    if customIndexes == True:
+        customIndexIdentifier = 0
+
+    arcHeader = libarc.RARC(struct.unpack('>I', "RARC".encode('ascii'))[0],length,0x20,dataOffset-0x20,len(data),len(data),0,0,len(nodes),0x20,len(dirs),lenNodes+0x20+postNodesPadding,lenStrTable+postStrTablePadding,lenHeadDirsNodes+preStrTablePadding-0x20,numFiles,customIndexIdentifier,0)
+
+    #print(arcHeader)
 
 
-def copy(path,destPath):
+    #print(nodes)
+    #print(stringTable)
+    #print(dirs)
+
+    fullData = bytearray()
+    fullData = fullData + struct.pack('>IIIIIIIIIIIIIIHHI',arcHeader.magic,arcHeader.file_length,arcHeader.header_length,arcHeader.file_offset,arcHeader.file_data_length,arcHeader.file_data_length2,arcHeader.unknown0,arcHeader.unknown1,arcHeader.node_count,arcHeader.node_offset,arcHeader.directory_count,arcHeader.directory_offset,arcHeader.string_table_length,arcHeader.string_table_offset,arcHeader.file_count,arcHeader.unknown2,arcHeader.unknown3)
+    for node in nodes:
+        fullData = fullData + struct.pack('>IIHHI',node.identifier,node.name_offset,node.name_hash,node.directory_count,node.directory_index)
+    fullData = fullData + bytearray(postNodesPadding)
+    for dir in dirs:
+        fullData = fullData + struct.pack('>HHHHIII',dir.index,dir.name_hash,dir.type,dir.name_offset,dir.data_offset,dir.data_length,dir.unknown0)
+    fullData = fullData + bytearray(preStrTablePadding)
+    fullData = fullData + bytearray(stringTable,"shift-jis")
+    fullData = fullData + bytearray(postStrTablePadding)
+    fullData = fullData + data
+
+    if compressed == True:
+        fullData = oead.yaz0.compress(fullData)
+
+    return fullData
+
+def getMaxDateFromDir(path):
+    maxTime = 0
     for root,dirs,files in os.walk(str(path)):
         for file in files:
-            outputDir = destPath/Path(str(root))
-            #print(str(outputDir.absolute())+file)
-            if not outputDir.absolute().exists():
-                os.makedirs(outputDir.absolute())
-            outputFile = Path(str(outputDir.absolute())+"/"+str(file))
-            inFile = Path(str(Path(root).absolute())+"/"+str(file))
-            if not outputFile.exists():
-                print(str(inFile)+" -> "+str(outputFile))
-                shutil.copyfile(inFile,outputFile)
+            time = os.path.getmtime(Path(root+"/"+file))
+            if time > maxTime:
+                maxTime = time
+    return maxTime
+
+def convName(name,ext):
+    #converts the name of a source file to the final form and returns that name
+    if name[-2:] == ".c":
+        name = name[0:-2]
+    
+    return name,ext
+
+
+def convFile(path): #Return None if isn't converted, return -1 to not copy
+    splitpath = os.path.splitext(os.path.basename(path))
+    name = splitpath[0]
+    ext = splitpath[1]
+    convertedName,convertedExt = convName(name,ext)
+
+    isCompressed = False
+    if name[-2:] == ".c":
+        isCompressed = True
+    
+    if ext == ".rel":
+        return -1,None
+    elif ext == ".dol":
+        return -1,None
+    data = None
+    #convert file data and put in data here
+
+    if isCompressed:
+        if data == None:
+            data = open(path,"rb").read()
+        data = oead.yaz0.compress(data)
+    
+    return data,os.path.basename(convertedName+convertedExt)
+
+def copy(path,destPath):
+    for entry in os.listdir(path):
+        if os.path.isfile(path/entry):
+            targetTime = 0
+            if Path(destPath/entry).exists():
+                targetTime = os.path.getmtime(destPath/entry)
+            
+            if os.path.getmtime(path/entry) > targetTime:
+                file,name = convFile(path/entry)
+                if file == None:
+                    print(str(path/entry)+" -> "+str(destPath/name))
+                    shutil.copyfile(path/entry,destPath/entry)
+                elif file == -1:
+                    pass
+                else:
+                    print(str(path/entry)+" -> "+str(destPath/name))
+                    open(destPath/name,"wb").write(file)
+        elif os.path.isdir(path/entry):
+            if str(entry)[-6:] == ".c.arc":
+                sourceTime = 0
+                targetTime = 0
+                realPath = destPath/Path(str(entry)[0:-5]+"arc")
+                if realPath.exists():
+                    sourceTime = getMaxDateFromDir(path/entry)
+                    targetTime = os.path.getmtime(realPath)
+
+                if sourceTime >= targetTime:
+                    print("Creating compressed arc "+str(realPath))
+                    arc_data = createArcFromDirectory(path/entry,True)
+                    open(realPath,"wb").write(arc_data)
+            elif str(entry)[-4:] == ".arc" and entry != "RELS.arc":
+                sourceTime = 0
+                targetTime = 0
+                if Path(destPath/entry).exists():
+                    sourceTime = getMaxDateFromDir(path/entry)
+                    targetTime = os.path.getmtime(destPath/entry)
+
+                if sourceTime >= targetTime:
+                    print("Creating arc "+str(destPath/entry))
+                    arc_data = createArcFromDirectory(path/entry,False)
+                    open(destPath/entry,"wb").write(arc_data)
+            elif entry == "RELS.arc":
+                pass #copy later
             else:
-                if os.path.getmtime(inFile)>os.path.getmtime(outputFile):
-                    print(str(inFile)+" -> "+str(outputFile))
-                    shutil.copyfile(inFile,outputFile)
+                if not Path(destPath/entry).exists():
+                    os.mkdir(destPath/entry)
+                copy(path/entry,destPath/entry)
+
+            
+
+    #for root,dirs,files in os.walk(str(path)):
+    #    for file in files:
+    #        outputDir = destPath/Path(str(root))
+    #        #print(str(outputDir.absolute())+file)
+    #        if not outputDir.absolute().exists():
+    #            os.makedirs(outputDir.absolute())
+    #        outputFile = Path(str(outputDir.absolute())+"/"+str(file))
+    #        inFile = Path(str(Path(root).absolute())+"/"+str(file))
+    #        if not outputFile.exists():
+    #            print(str(inFile)+" -> "+str(outputFile))
+    #            shutil.copyfile(inFile,outputFile)
+    #        else:
+    #            if os.path.getmtime(inFile)>os.path.getmtime(outputFile):
+    #                print(str(inFile)+" -> "+str(outputFile))
+    #                shutil.copyfile(inFile,outputFile)
 
 
 aMemRels = """d_a_alldie.rel
@@ -414,18 +693,6 @@ def copyRelFiles(buildPath,aMemList,mMemList):
     outputArcFile.truncate()
     outputArcFile.close()
 
-    
-
-
-
-    
-
-
-
-
-
-    
-
 def main(gamePath,buildPath):
     if not gamePath.exists():
         gamePath.mkdir(parents=True, exist_ok=True)
@@ -443,15 +710,14 @@ def main(gamePath,buildPath):
         os.chdir(previousDir)
 
     print("Copying game files...")
-    copy(gamePath,buildPath.absolute())
+    if not os.path.exists(buildPath/"game"):
+        os.mkdir(buildPath/"game")
+    copy(gamePath,buildPath/"game")
 
     print(str(buildPath/"main_shift.dol")+" -> "+str(buildPath/"game/sys/main.dol"))
     shutil.copyfile(buildPath/"main_shift.dol",buildPath/"game/sys/main.dol")
     
     copyRelFiles(buildPath,aMemRels.splitlines(),mMemRels.splitlines())
-
-
-    
 
 if __name__ == "__main__":
     main(Path(sys.argv[1]),Path(sys.argv[2]))

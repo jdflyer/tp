@@ -126,9 +126,9 @@ def read_string_table(rarc, data):
     rarc.string_table = StringTable()
 
     offset = 0
-    for string in buffer.decode('ascii').split('\0'):
+    for string in buffer.decode('shift-jis').split('\0'):
         rarc.string_table.strings[offset] = string
-        offset += len(string) + 1
+        offset += len(bytearray(string,"shift-jis")) + 1
 
 
 def read_node(rarc, buffer):

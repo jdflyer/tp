@@ -1061,16 +1061,16 @@ class CheckException(Exception):
 def check_sha1(game_path, build_path, include_rels):
     if include_rels:
         rel_path = game_path.joinpath("rel/Final/Release")
+        rel_path2 = game_path.joinpath("RELS.arc/rels")
         if not rel_path.exists():
             raise CheckException(f"Path not found: '{rel_path}'")
 
         rels_path = get_files_with_ext(rel_path, ".rel")
-        rels_archive_path = game_path.joinpath("RELS.arc")
-        if not rels_archive_path.exists():
-            raise CheckException(f"File not found: '{rels_archive_path}'")
+        rels_path2 = get_files_with_ext(rel_path2, ".rel")
+        for incRel in rels_path2:
+            rels_path.append(incRel)
 
-        LOG.debug(f"RELs Path: '{rel_path}' (found {len(rels_path)} RELs)")
-        LOG.debug(f"RELs Archive Path: '{rels_archive_path}'")
+        LOG.debug(f"RELs Path: '{rel_path}' and '{rel_path2}' (found {len(rels_path)} RELs)")
 
     EXPECTED = {}
     EXPECTED[0] = (
@@ -1094,29 +1094,6 @@ def check_sha1(game_path, build_path, include_rels):
                     sha1_from_data(data),
                 )
 
-        with rels_archive_path.open("rb") as file:
-            rarc = libarc.read(file.read())
-            for depth, file in rarc.files_and_folders:
-                if not isinstance(file, libarc.File):
-                    continue
-
-                if file.name.endswith(".rel"):
-                    data = file.data
-                    yaz0_data = data
-                    if struct.unpack(">I", data[:4])[0] == 0x59617A30:
-                        data = yaz0.decompress(io.BytesIO(data))
-
-                    xxx_path = Path("build").joinpath(file.name)
-                    with xxx_path.open("wb") as write_file:
-                        write_file.write(data)
-
-                    rel = librel.read(data)
-                    EXPECTED[rel.index] = (
-                        file.name,
-                        sha1_from_data(yaz0_data),
-                        sha1_from_data(data),
-                    )
-
     if not build_path.exists():
         raise CheckException(f"Path not found: '{build_path}'")
 
@@ -1134,7 +1111,7 @@ def check_sha1(game_path, build_path, include_rels):
         )
 
     if include_rels:
-        build_rels_path = get_files_with_ext(build_path, ".rel")
+        build_rels_path = get_files_with_ext(build_path.joinpath("rel"), ".rel")
         for rel_filepath in build_rels_path:
             with rel_filepath.open("rb") as file:
                 data = bytearray(file.read())
