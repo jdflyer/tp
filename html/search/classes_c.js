@@ -11,10 +11,11 @@ var searchData=
   ['less_5f_5ftemplate0_8',['less__template0',['../structstd_1_1less____template0.html',1,'std']]],
   ['level_5fc_9',['level_c',['../structdPa__control__c_1_1level__c.html',1,'dPa_control_c']]],
   ['light_5finfluence_10',['LIGHT_INFLUENCE',['../structLIGHT__INFLUENCE.html',1,'']]],
-  ['line_5fclass_11',['line_class',['../structdDrawPath__c_1_1line__class.html',1,'dDrawPath_c']]],
-  ['line_5ftag_12',['line_tag',['../structline__tag.html',1,'']]],
-  ['list_5fclass_13',['list_class',['../structdTres__c_1_1list__class.html',1,'dTres_c']]],
-  ['listdata_14',['ListData',['../structJStudio_1_1fvb_1_1TObject__hermite_1_1ListData.html',1,'JStudio::fvb::TObject_hermite::ListData'],['../structJStudio_1_1fvb_1_1TObject__list_1_1ListData.html',1,'JStudio::fvb::TObject_list::ListData'],['../structJStudio_1_1fvb_1_1TObject__list__parameter_1_1ListData.html',1,'JStudio::fvb::TObject_list_parameter::ListData']]],
-  ['locale_15',['locale',['../structJMessage_1_1locale.html',1,'JMessage']]],
-  ['lookat_5fclass_16',['lookat_class',['../classlookat__class.html',1,'']]]
+  ['lightstatus_11',['LightStatus',['../structLightStatus.html',1,'']]],
+  ['line_5fclass_12',['line_class',['../structdDrawPath__c_1_1line__class.html',1,'dDrawPath_c']]],
+  ['line_5ftag_13',['line_tag',['../structline__tag.html',1,'']]],
+  ['list_5fclass_14',['list_class',['../structdTres__c_1_1list__class.html',1,'dTres_c']]],
+  ['listdata_15',['ListData',['../structJStudio_1_1fvb_1_1TObject__hermite_1_1ListData.html',1,'JStudio::fvb::TObject_hermite::ListData'],['../structJStudio_1_1fvb_1_1TObject__list_1_1ListData.html',1,'JStudio::fvb::TObject_list::ListData'],['../structJStudio_1_1fvb_1_1TObject__list__parameter_1_1ListData.html',1,'JStudio::fvb::TObject_list_parameter::ListData']]],
+  ['locale_16',['locale',['../structJMessage_1_1locale.html',1,'JMessage']]],
+  ['lookat_5fclass_17',['lookat_class',['../classlookat__class.html',1,'']]]
 ];

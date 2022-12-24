@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['quat_5frotbasey_0',['quat_rotBaseY',['../structdaObj.html#a9046cfa1d3f0256c0220e915201288de',1,'daObj']]],
+  ['quat_5frotbasey_0',['quat_rotBaseY',['../namespacedaObj.html#a13a0da3c3c3649693e825fbcca93dc1b',1,'daObj']]],
   ['quat_5frotbasey_5f_5f5daobjfp10quaternionrc4cxyz_1',['quat_rotBaseY__5daObjFP10QuaternionRC4cXyz',['../d__a__obj_8cpp.html#a9d4d49310b3c8df0ab4d397749b17666',1,'d_a_obj.cpp']]],
   ['quatm_2',['quatM',['../structmDoMtx__stack__c.html#ae4c6d18946631cc67232f4e601beaec4',1,'mDoMtx_stack_c']]],
   ['quatm_5f_5f14mdomtx_5fstack_5fcfpc10quaternion_3',['quatM__14mDoMtx_stack_cFPC10Quaternion',['../m__Do__mtx_8cpp.html#ab47ecd4ae4139e111047e68f5fac414c',1,'quatM__14mDoMtx_stack_cFPC10Quaternion():&#160;m_Do_mtx.cpp'],['../d__a__alink_8cpp.html#ab47ecd4ae4139e111047e68f5fac414c',1,'quatM__14mDoMtx_stack_cFPC10Quaternion():&#160;d_a_alink.cpp']]],
@@ -112,6 +112,7 @@ var searchData=
   ['query053_5f_5f10dmsgflow_5fcfp21mesg_5fflow_5fnode_5fbranchp10fopac_5fac_5fci_109',['query053__10dMsgFlow_cFP21mesg_flow_node_branchP10fopAc_ac_ci',['../d__msg__flow_8cpp.html#abb009503b8a59ec6a81667d29e988ab6',1,'d_msg_flow.cpp']]],
   ['querymapaddress_110',['queryMapAddress',['../structJUTException.html#ac2fa3cd26fb516d971a240d6103c9e86',1,'JUTException']]],
   ['querymapaddress_5fsingle_111',['queryMapAddress_single',['../structJUTException.html#aeb50fb73800ba5238413322e6ed3604c',1,'JUTException']]],
-  ['quickstart_112',['QuickStart',['../structdCamera__c.html#ad0cab4b47132f7be5325c906e6027198',1,'dCamera_c::QuickStart()'],['../structdCamera__c.html#a37ec7594e5517125c0766779b1370cb4',1,'dCamera_c::QuickStart()']]],
-  ['quickstart_5f_5f9dcamera_5fcfv_113',['QuickStart__9dCamera_cFv',['../d__camera_8cpp.html#a308e108dfec8345eaa1b2676abaef6ab',1,'QuickStart__9dCamera_cFv():&#160;d_camera.cpp'],['../d__event_8cpp.html#a308e108dfec8345eaa1b2676abaef6ab',1,'QuickStart__9dCamera_cFv():&#160;d_event.cpp']]]
+  ['quickstart_112',['QuickStart',['../structdCamera__c.html#a37ec7594e5517125c0766779b1370cb4',1,'dCamera_c']]],
+  ['quickstart_5f_5f9dcamera_5fcfv_113',['QuickStart__9dCamera_cFv',['../d__camera_8cpp.html#a308e108dfec8345eaa1b2676abaef6ab',1,'QuickStart__9dCamera_cFv():&#160;d_camera.cpp'],['../d__event_8cpp.html#a308e108dfec8345eaa1b2676abaef6ab',1,'QuickStart__9dCamera_cFv():&#160;d_event.cpp']]],
+  ['quitimmortalemitter_114',['quitImmortalEmitter',['../structJPABaseEmitter.html#a52875bae713308a57fddbb4f4d63844c',1,'JPABaseEmitter']]]
 ];

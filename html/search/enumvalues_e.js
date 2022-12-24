@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['no_5fitem_0',['NO_ITEM',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2aa5731035b93d58a8a9288d85a487ed9b',1,'d_save.h']]],
-  ['no_5fmenu_1',['NO_MENU',['../structdMw__c.html#a9c12bf96930db318a3d8b6704985facea859033885f7c4f62426f21b2d7482b27',1,'dMw_c']]],
-  ['no_5fservice_5fwait_2',['NO_SERVICE_WAIT',['../structdaMidna__c.html#af44f83d157f63375a0decd84f8de9193a4e73a51595f66c915dd444da11514a42',1,'daMidna_c']]],
+  ['no_5fdraw_5fwait_0',['NO_DRAW_WAIT',['../structdaHorse__c.html#a778b41d40876155c5fac639fbd8cc47faa3208064755de837ef458a91d60838fa',1,'daHorse_c']]],
+  ['no_5fitem_1',['NO_ITEM',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2aa5731035b93d58a8a9288d85a487ed9b',1,'d_save.h']]],
+  ['no_5fmenu_2',['NO_MENU',['../structdMw__c.html#a9c12bf96930db318a3d8b6704985facea859033885f7c4f62426f21b2d7482b27',1,'dMw_c']]],
   ['noentry1_3',['noentry1',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a49bfc7cb7cde2422af29ea6d7c8543e1',1,'d_save.h']]],
   ['noentry10_4',['noentry10',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2af6051a8c2fafeadd19604b0741851e47',1,'d_save.h']]],
   ['noentry11_5',['noentry11',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2af674b5156a007d8c796f5ed3766348c7',1,'d_save.h']]],
@@ -73,7 +73,5 @@ var searchData=
   ['noentry9_70',['noentry9',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a1001dc75f0a8819f265f43c3d41bfcf8',1,'d_save.h']]],
   ['normal_5fbomb_71',['NORMAL_BOMB',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a7135c07e49a3cc4fffe3a78b750950fb',1,'d_save.h']]],
   ['normal_5fbomb_5fmax_72',['NORMAL_BOMB_MAX',['../d__save_8h.html#ac85105b4d4fc7197addac0797f0cc984ab8b9c08845a1dae42b6f2965ccffd744',1,'d_save.h']]],
-  ['normal_5fgrp_73',['NORMAL_GRP',['../classdBgS__GrpPassChk.html#aaeeed2a18c2fac3f28fadf3f8728fdccaa99f7a741b1180ee33ffd491680c39c1',1,'dBgS_GrpPassChk']]],
-  ['npc_5ffar_74',['NPC_FAR',['../structdaMidna__c.html#afd650b3ac2667d2563caea1fc54375f1ad535c19c951f79a218bd4168e65b6e49',1,'daMidna_c']]],
-  ['npc_5fnear_75',['NPC_NEAR',['../structdaMidna__c.html#afd650b3ac2667d2563caea1fc54375f1a88cfdc00790e6e3708c19608a58cf7ab',1,'daMidna_c']]]
+  ['normal_5fgrp_73',['NORMAL_GRP',['../classdBgS__GrpPassChk.html#a9fe23bd1790bf6f8041f72d7b267bef6aa99f7a741b1180ee33ffd491680c39c1',1,'dBgS_GrpPassChk']]]
 ];

@@ -1,5 +1,20 @@
 var searchData=
 [
-  ['uint32_5fmax_0',['UINT32_MAX',['../types_8h.html#ab5eb23180f7cc12b7d6c04a8ec067fdd',1,'types.h']]],
-  ['underflow_1',['UNDERFLOW',['../fdlibm_8h.html#a8f5b89d6fb5f161fff5e257f755692ce',1,'fdlibm.h']]]
+  ['tbox_5fmax_0',['TBOX_MAX',['../d__save_8h.html#a64c057020835ff228b7e29600beac303',1,'d_save.h']]],
+  ['tloss_1',['TLOSS',['../fdlibm_8h.html#a825e55df6d9d9077086624c460867730',1,'fdlibm.h']]],
+  ['trk_5fdispatch_5fcmd_5fconnect_2',['TRK_DISPATCH_CMD_CONNECT',['../dispatch_8h.html#a558403363ac034e1f2a2a2cbc6ee4ac4',1,'dispatch.h']]],
+  ['trk_5fdispatch_5fcmd_5fcontinue_3',['TRK_DISPATCH_CMD_CONTINUE',['../dispatch_8h.html#a0d7aedeb9825d0de9053382481ed3e6b',1,'dispatch.h']]],
+  ['trk_5fdispatch_5fcmd_5fdisconnect_4',['TRK_DISPATCH_CMD_DISCONNECT',['../dispatch_8h.html#ab882a88c21e17384fa37a3001b1cbe86',1,'dispatch.h']]],
+  ['trk_5fdispatch_5fcmd_5fgetsupportmask_5',['TRK_DISPATCH_CMD_GETSUPPORTMASK',['../dispatch_8h.html#a6787a7d19e12ffaec923f335dca921e4',1,'dispatch.h']]],
+  ['trk_5fdispatch_5fcmd_5fgetversion_6',['TRK_DISPATCH_CMD_GETVERSION',['../dispatch_8h.html#a242f55eaac6727bff844f035b8b18c60',1,'dispatch.h']]],
+  ['trk_5fdispatch_5fcmd_5foverride_7',['TRK_DISPATCH_CMD_OVERRIDE',['../dispatch_8h.html#a4a40466bf289386ea458a4f5a6bdf75a',1,'dispatch.h']]],
+  ['trk_5fdispatch_5fcmd_5freadmem_8',['TRK_DISPATCH_CMD_READMEM',['../dispatch_8h.html#a580190ea190ff84e70c6820439115cc3',1,'dispatch.h']]],
+  ['trk_5fdispatch_5fcmd_5freadregs_9',['TRK_DISPATCH_CMD_READREGS',['../dispatch_8h.html#ad955e9034f206eef1af61fb7d61e30b4',1,'dispatch.h']]],
+  ['trk_5fdispatch_5fcmd_5freset_10',['TRK_DISPATCH_CMD_RESET',['../dispatch_8h.html#a4e51303959a56b19ce28a3dd51429b51',1,'dispatch.h']]],
+  ['trk_5fdispatch_5fcmd_5fsetoption_11',['TRK_DISPATCH_CMD_SETOPTION',['../dispatch_8h.html#adccd78cc6aae87170f6efeb357e8e133',1,'dispatch.h']]],
+  ['trk_5fdispatch_5fcmd_5fstep_12',['TRK_DISPATCH_CMD_STEP',['../dispatch_8h.html#ab3d4b8f9da9c9a44bbe275a4cca11173',1,'dispatch.h']]],
+  ['trk_5fdispatch_5fcmd_5fstop_13',['TRK_DISPATCH_CMD_STOP',['../dispatch_8h.html#a72ee518192dd3b2aa8dbf092bc7196de',1,'dispatch.h']]],
+  ['trk_5fdispatch_5fcmd_5fwritemem_14',['TRK_DISPATCH_CMD_WRITEMEM',['../dispatch_8h.html#a42ff22f9bca1049afe4bcace08bb316f',1,'dispatch.h']]],
+  ['trk_5fdispatch_5fcmd_5fwriteregs_15',['TRK_DISPATCH_CMD_WRITEREGS',['../dispatch_8h.html#a42a3e5de5e3b8ba04a1a839875b4aa5e',1,'dispatch.h']]],
+  ['true_16',['TRUE',['../types_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d',1,'types.h']]]
 ];

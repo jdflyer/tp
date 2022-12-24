@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['va_5farg_0',['va_arg',['../____va__arg_8h.html#a1c295ecce41e71a2ba213e32e7a5c346',1,'__va_arg.h']]],
-  ['va_5fend_1',['va_end',['../____va__arg_8h.html#a1763b4d5c9d8e5a9bed197b316e3586a',1,'__va_arg.h']]],
-  ['va_5flist_2',['va_list',['../____va__arg_8h.html#a6e6fde95f2a221e9bcd58fa102bd90ff',1,'__va_arg.h']]],
-  ['va_5fstart_3',['va_start',['../____va__arg_8h.html#ac4689fee617f24306933fd79ce206fcc',1,'__va_arg.h']]]
+  ['uint32_5fmax_0',['UINT32_MAX',['../types_8h.html#ab5eb23180f7cc12b7d6c04a8ec067fdd',1,'types.h']]],
+  ['underflow_1',['UNDERFLOW',['../fdlibm_8h.html#a8f5b89d6fb5f161fff5e257f755692ce',1,'fdlibm.h']]]
 ];

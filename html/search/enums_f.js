@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['upper_5fanm_0',['UPPER_ANM',['../structdaAlink__c.html#ad08eb53f8f5fbabc7333e097688c5542',1,'daAlink_c']]]
+  ['z2bgmid_0',['Z2BgmID',['../Z2SeqMgr_8h.html#a61d7f798d58941871faea3c813b33b5c',1,'Z2SeqMgr.h']]],
+  ['z2soundid_1',['Z2SoundID',['../Z2SeMgr_8h.html#a2015be0323c9a6d9908c0ddb691584ab',1,'Z2SeMgr.h']]]
 ];

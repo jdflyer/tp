@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['callback_0',['Callback',['../structJUTVideo.html#afe4f60162a8dd449a1c1ac471aa82b9a',1,'JUTVideo']]],
+  ['callback_0',['Callback',['../classJUTVideo.html#afe4f60162a8dd449a1c1ac471aa82b9a',1,'JUTVideo']]],
   ['callbackfn_1',['callbackFn',['../JUTGamePad_8h.html#a2f0b00652a669749e07a12c29412b6b2',1,'JUTGamePad.h']]],
   ['capigph_5fmthd_2',['cAPIGph_Mthd',['../c__API_8h.html#a886376eb0d4542ca26341714d48a17a1',1,'c_API.h']]],
   ['cardcallback_3',['CARDCallback',['../card_8h.html#a8a311968cfcc822a58025382bdf723a7',1,'card.h']]],

@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['huge_0',['HUGE',['../fdlibm_8h.html#a5f3d17bf39f78da3422ca52e475d7724',1,'fdlibm.h']]],
-  ['huge_5fval_1',['HUGE_VAL',['../dol2asm_8h.html#af2164b2db92d8a0ed3838ad5c28db971',1,'dol2asm.h']]],
-  ['huge_5fvalf_2',['HUGE_VALF',['../dol2asm_8h.html#acd69981d54c27fe0ff514645dbfc6359',1,'dol2asm.h']]],
-  ['huge_5fvall_3',['HUGE_VALL',['../dol2asm_8h.html#ab8b359c356d4311bf5d4ae6c03f43182',1,'dol2asm.h']]]
+  ['gfx_5ffifo_0',['GFX_FIFO',['../GX_8h.html#a74f31c89c4c221f415afa94edd409aae',1,'GX.h']]],
+  ['glue_1',['GLUE',['../global_8h.html#af3ddc5a73ff88a58733f0879ce37196d',1,'global.h']]],
+  ['glue2_2',['GLUE2',['../global_8h.html#a8aacf963fc7253845c961ed3912d78a2',1,'global.h']]],
+  ['gx_5fbitfield_5fset_3',['GX_BITFIELD_SET',['../GX_8h.html#af949c98422762750a49c767d038cb930',1,'GX.h']]],
+  ['gx_5fload_5fbp_5freg_4',['GX_LOAD_BP_REG',['../GX_8h.html#abf826caf8d8fa06d80f2f6efe7c65a55',1,'GX.h']]],
+  ['gx_5fnop_5',['GX_NOP',['../GX_8h.html#a3449e16a5d271f54f6aff735c58234e3',1,'GX.h']]]
 ];
