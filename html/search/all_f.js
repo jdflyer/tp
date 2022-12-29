@@ -425,7 +425,7 @@ var searchData=
   ['onwolfenemybiteall_5f_5f9dapy_5fpy_5fcfp10fopac_5fac_5fcq29dapy_5fpy_5fc9dapy_5fflg2_422',['onWolfEnemyBiteAll__9daPy_py_cFP10fopAc_ac_cQ29daPy_py_c9daPy_FLG2',['../d__a__alink_8cpp.html#a44a9c2fa83666bd98168647f03a51680',1,'d_a_alink.cpp']]],
   ['onwolfeyeup_423',['onWolfEyeUp',['../structdaAlink__c.html#a7f5cc07f005c0c6b86f65504584d000e',1,'daAlink_c']]],
   ['onwolfeyeup_5f_5f9daalink_5fcfv_424',['onWolfEyeUp__9daAlink_cFv',['../d__a__alink_8cpp.html#a75b4749718dad613671d3f3a835bcfd8',1,'d_a_alink.cpp']]],
-  ['ooccoo_5fnote_425',['OOCCOO_NOTE',['../structdSv__memBit__c.html#ae54d93a06a6f503245587067ff11ec9aa46ffed48b5c8a931c9ac433e48ffe347',1,'dSv_memBit_c']]],
+  ['ooccoo_5fnote_425',['OOCCOO_NOTE',['../structdSv__memBit__c.html#ab5df9793ecb00d9072882e2a8288629ea46ffed48b5c8a931c9ac433e48ffe347',1,'dSv_memBit_c']]],
   ['op_5ftx_426',['op_tx',['../d__menu__option_8cpp.html#a2de71ad66e8c41a190b854cd93919af4',1,'d_menu_option.cpp']]],
   ['opa_5fbuffer_427',['OPA_BUFFER',['../J3DSys_8h.html#a86b42b9786c8ef48baa9e9d1455d1392a7ffb6e17a842d56504b4b42965fb2c98',1,'J3DSys.h']]],
   ['opa_5ftex_5fedge_428',['OPA_TEX_EDGE',['../structJ3DSys.html#a30cc363d626b82865300b658c387eab9a4a18837b3c53b54c677be6c39ab77d11',1,'J3DSys']]],
