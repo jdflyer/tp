@@ -92,8 +92,9 @@ $(function() {
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASAudioReseter/start__15JASAudioReseterFUlb.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASAudioReseter/calc__15JASAudioReseterFv.s&quot;</code><br />
+<code>#include &quot;<a class="el" href="JAISoundHandles_8h_source.html">JSystem/JAudio2/JAISoundHandles.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JASGadget_8h_source.html">JSystem/JAudio2/JASGadget.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JASAudioThread_8h_source.html">JSystem/JAudio2/JASAudioThread.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for JASAudioReseter.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -106,8 +107,6 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASDSPChannel.html">JASDSPChannel</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASAudioThread.html">JASAudioThread</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -143,10 +142,8 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a523cfe2dd6731ea41725146d959cf7d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAudioReseter_8cpp.html#a523cfe2dd6731ea41725146d959cf7d1">data_80450B8C</a> [4]</td></tr>
-<tr class="separator:a523cfe2dd6731ea41725146d959cf7d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe98ee7c1fd89d2af76ab5545459fe7c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAudioReseter_8cpp.html#abe98ee7c1fd89d2af76ab5545459fe7c">lit_156</a> = 4503599627370496.0</td></tr>
-<tr class="separator:abe98ee7c1fd89d2af76ab5545459fe7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f07d509de9690639dc983c2f4824a33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJASAudioThread.html">JASAudioThread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAudioReseter_8cpp.html#a2f07d509de9690639dc983c2f4824a33">data_80450B8C</a></td></tr>
+<tr class="separator:a2f07d509de9690639dc983c2f4824a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ac43b747f19ddc3d343edfe32d6174908" name="ac43b747f19ddc3d343edfe32d6174908"></a>
@@ -388,8 +385,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a523cfe2dd6731ea41725146d959cf7d1" name="a523cfe2dd6731ea41725146d959cf7d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a523cfe2dd6731ea41725146d959cf7d1">&#9670;&#160;</a></span>data_80450B8C</h2>
+<a id="a2f07d509de9690639dc983c2f4824a33" name="a2f07d509de9690639dc983c2f4824a33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f07d509de9690639dc983c2f4824a33">&#9670;&#160;</a></span>data_80450B8C</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -398,34 +395,12 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_80450B8C[4]</td>
+          <td class="memname"><a class="el" href="structJASAudioThread.html">JASAudioThread</a>* data_80450B8C</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abe98ee7c1fd89d2af76ab5545459fe7c" name="abe98ee7c1fd89d2af76ab5545459fe7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe98ee7c1fd89d2af76ab5545459fe7c">&#9670;&#160;</a></span>lit_156</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a> lit_156 = 4503599627370496.0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

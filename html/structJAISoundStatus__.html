@@ -95,15 +95,87 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a183b35be7d7529f64ed51d3747f258ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cf4e819ba1bad0cae23bf194f717eb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISoundStatus__.html#a9cf4e819ba1bad0cae23bf194f717eb8">init</a> ()</td></tr>
 <tr class="separator:a9cf4e819ba1bad0cae23bf194f717eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bddb3b076805810022a6386486ba749"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISoundStatus__.html#a7bddb3b076805810022a6386486ba749">isAlive</a> ()</td></tr>
+<tr class="separator:a7bddb3b076805810022a6386486ba749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa943276d28a255fa548308d440fc25c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISoundStatus__.html#afa943276d28a255fa548308d440fc25c">isPlaying</a> ()</td></tr>
+<tr class="separator:afa943276d28a255fa548308d440fc25c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c550c99bf0e946d91b00eafd2629129"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISoundStatus__.html#a3c550c99bf0e946d91b00eafd2629129">isPaused</a> ()</td></tr>
+<tr class="separator:a3c550c99bf0e946d91b00eafd2629129"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a6d8d10645e85fe58c23636659497b7e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISoundStatus__.html#a6d8d10645e85fe58c23636659497b7e0">field_0x0</a></td></tr>
-<tr class="separator:a6d8d10645e85fe58c23636659497b7e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a87a4119627447fda8b97974848a02d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISoundStatus__.html#a0a87a4119627447fda8b97974848a02d">field_0x1</a></td></tr>
-<tr class="separator:a0a87a4119627447fda8b97974848a02d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58a87c684cebd9bfbbf12e00d1d4904b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISoundStatus__.html#a58a87c684cebd9bfbbf12e00d1d4904b">state</a> [2]</td></tr>
-<tr class="separator:a58a87c684cebd9bfbbf12e00d1d4904b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c0acd3f962c50e19d86d59093eb5285"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a2e43135b4978ced125d8a652e721a6f2"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#a53072c96abfd3feecd04e7bd239fd4b8">value</a></td></tr>
+<tr class="separator:a2e43135b4978ced125d8a652e721a6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5bb673d122a55a3dc28f8b4a614df61"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a6230358a394f5ac1f1007f8867010fd5"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#a02b2ba3742445cad56928261e24a2001">flag1</a>:1</td></tr>
+<tr class="separator:a6230358a394f5ac1f1007f8867010fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a281c4f3104b65a5028c12ea4fd837358"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#a90b35cca6009dec13fc44c7bec123712">paused</a>:1</td></tr>
+<tr class="separator:a281c4f3104b65a5028c12ea4fd837358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae265b22c9bb2ddef2e88f5a5c2a7fe89"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#a149c25bc2bf65d924e1f7fb281683b43">flag3</a>:1</td></tr>
+<tr class="separator:ae265b22c9bb2ddef2e88f5a5c2a7fe89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9e6d86b1b34f427135dd21d87e6a73a"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#a0dc87480778694c5329602199e6cc541">flag4</a>:1</td></tr>
+<tr class="separator:ae9e6d86b1b34f427135dd21d87e6a73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad20b0f20674a298fe3c34395e2a96779"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#aa7421c6e137a5597f6aede74b92132b0">flag5</a>:1</td></tr>
+<tr class="separator:ad20b0f20674a298fe3c34395e2a96779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46ab665179ab4383ff670e618776a859"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#a2f786d913ac31344673432cacfc15569">flag6</a>:1</td></tr>
+<tr class="separator:a46ab665179ab4383ff670e618776a859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae75d6d493a042f37cf349f78dbaa87fb"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#ad549e7d262471bc5128c23e3b29278d4">flag7</a>:1</td></tr>
+<tr class="separator:ae75d6d493a042f37cf349f78dbaa87fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a796b14d8254d0ef5f4d95ba9188c79d6"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#a1fa7378fb0f50d9357dd9997a26ac115">flag8</a>:1</td></tr>
+<tr class="separator:a796b14d8254d0ef5f4d95ba9188c79d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5bb673d122a55a3dc28f8b4a614df61"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#a5eb0871e9171d9830c24406697a1c3b4">flags</a></td></tr>
+<tr class="separator:aa5bb673d122a55a3dc28f8b4a614df61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c0acd3f962c50e19d86d59093eb5285"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISoundStatus__.html#a9c0acd3f962c50e19d86d59093eb5285">field_0x0</a></td></tr>
+<tr class="separator:a9c0acd3f962c50e19d86d59093eb5285"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a5f6871c6cb2a2e7a4d525e2c062e0a"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:ae5dd2b26c06c89b18adb777947442b8f"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#a53072c96abfd3feecd04e7bd239fd4b8">value</a></td></tr>
+<tr class="separator:ae5dd2b26c06c89b18adb777947442b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb7db129bf2ed5e899b54585549a914f"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a29d298271c1a54e72b075fd7d7a9e50c"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#a02b2ba3742445cad56928261e24a2001">flag1</a>:1</td></tr>
+<tr class="separator:a29d298271c1a54e72b075fd7d7a9e50c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4afefc0d0beda98242d8a2d14bfbe10"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#a0d25f2d9da05974c5a9ac3d315daa4b0">flag2</a>:1</td></tr>
+<tr class="separator:aa4afefc0d0beda98242d8a2d14bfbe10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a976ea8da241f2baae94e158c8be76a1e"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#a149c25bc2bf65d924e1f7fb281683b43">flag3</a>:1</td></tr>
+<tr class="separator:a976ea8da241f2baae94e158c8be76a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8be543102a1eff56fd98375dae3b89a"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#a0dc87480778694c5329602199e6cc541">flag4</a>:1</td></tr>
+<tr class="separator:ae8be543102a1eff56fd98375dae3b89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a127ae8ba2e728a8081c654f6ec527b4d"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#aa7421c6e137a5597f6aede74b92132b0">flag5</a>:1</td></tr>
+<tr class="separator:a127ae8ba2e728a8081c654f6ec527b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f2d5b988995add717b64110e2fd0316"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#a2f786d913ac31344673432cacfc15569">flag6</a>:1</td></tr>
+<tr class="separator:a5f2d5b988995add717b64110e2fd0316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd1cdb53b6b8177dd7914c06e8fe9d15"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#ad549e7d262471bc5128c23e3b29278d4">flag7</a>:1</td></tr>
+<tr class="separator:afd1cdb53b6b8177dd7914c06e8fe9d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a39a0e70da1e3af244052a05e920c68"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#a1fa7378fb0f50d9357dd9997a26ac115">flag8</a>:1</td></tr>
+<tr class="separator:a4a39a0e70da1e3af244052a05e920c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb7db129bf2ed5e899b54585549a914f"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#aab0e471a7b504b9cd6a9474831b21133">flags</a></td></tr>
+<tr class="separator:adb7db129bf2ed5e899b54585549a914f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a5f6871c6cb2a2e7a4d525e2c062e0a"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISoundStatus__.html#a7a5f6871c6cb2a2e7a4d525e2c062e0a">field_0x1</a></td></tr>
+<tr class="separator:a7a5f6871c6cb2a2e7a4d525e2c062e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebe320c93928fde349968086564fb8a2"><td class="memItemLeft" >struct {</td></tr>
+<tr class="memitem:a0d056bf46ee178ee0693901b0beac3d3"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#a16a729fd5fbed5a52f7bc4ae5ee6e172">unk</a></td></tr>
+<tr class="separator:a0d056bf46ee178ee0693901b0beac3d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2a77e1b92624f4a1eaafef573dc980d"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:abc71f32a52a20621e1fac02c529cb351"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#a02b2ba3742445cad56928261e24a2001">flag1</a>:1</td></tr>
+<tr class="separator:abc71f32a52a20621e1fac02c529cb351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65479eda51eaeebb507842d15d07af6a"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#a0d25f2d9da05974c5a9ac3d315daa4b0">flag2</a>:1</td></tr>
+<tr class="separator:a65479eda51eaeebb507842d15d07af6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a836d3d55ff3fde0512b484f378586588"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#a149c25bc2bf65d924e1f7fb281683b43">flag3</a>:1</td></tr>
+<tr class="separator:a836d3d55ff3fde0512b484f378586588"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdaccab76927404c9c32e2df9e09f893"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#a0dc87480778694c5329602199e6cc541">flag4</a>:1</td></tr>
+<tr class="separator:acdaccab76927404c9c32e2df9e09f893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3444b9e69a3806369fdfede1587aa98b"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#aa7421c6e137a5597f6aede74b92132b0">flag5</a>:1</td></tr>
+<tr class="separator:a3444b9e69a3806369fdfede1587aa98b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae501bbfb177c76f830c98003c0b2090e"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#a2f786d913ac31344673432cacfc15569">flag6</a>:1</td></tr>
+<tr class="separator:ae501bbfb177c76f830c98003c0b2090e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa410d8324f9f3c4cb99aa5edb4c052ed"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#ad549e7d262471bc5128c23e3b29278d4">flag7</a>:1</td></tr>
+<tr class="separator:aa410d8324f9f3c4cb99aa5edb4c052ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a829f930dce7b108a25341a3e3a1660f1"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#a1fa7378fb0f50d9357dd9997a26ac115">flag8</a>:1</td></tr>
+<tr class="separator:a829f930dce7b108a25341a3e3a1660f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2a77e1b92624f4a1eaafef573dc980d"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structJAISoundStatus__.html#aef1ed8a6cf1e32a4fcfecd72fa2123fa">flags</a></td></tr>
+<tr class="separator:af2a77e1b92624f4a1eaafef573dc980d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebe320c93928fde349968086564fb8a2"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISoundStatus__.html#aebe320c93928fde349968086564fb8a2">state</a></td></tr>
+<tr class="separator:aebe320c93928fde349968086564fb8a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a608a26b532017b7ac2eecc26fd15e765"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISoundStatus__.html#a608a26b532017b7ac2eecc26fd15e765">user_data</a></td></tr>
 <tr class="separator:a608a26b532017b7ac2eecc26fd15e765"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -119,6 +191,73 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void JAISoundStatus_::init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7bddb3b076805810022a6386486ba749" name="a7bddb3b076805810022a6386486ba749"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bddb3b076805810022a6386486ba749">&#9670;&#160;</a></span>isAlive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool JAISoundStatus_::isAlive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c550c99bf0e946d91b00eafd2629129" name="a3c550c99bf0e946d91b00eafd2629129"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c550c99bf0e946d91b00eafd2629129">&#9670;&#160;</a></span>isPaused()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool JAISoundStatus_::isPaused </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa943276d28a255fa548308d440fc25c" name="afa943276d28a255fa548308d440fc25c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa943276d28a255fa548308d440fc25c">&#9670;&#160;</a></span>isPlaying()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool JAISoundStatus_::isPlaying </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -168,42 +307,224 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a6d8d10645e85fe58c23636659497b7e0" name="a6d8d10645e85fe58c23636659497b7e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d8d10645e85fe58c23636659497b7e0">&#9670;&#160;</a></span>field_0x0</h2>
+<a id="a9c0acd3f962c50e19d86d59093eb5285" name="a9c0acd3f962c50e19d86d59093eb5285"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c0acd3f962c50e19d86d59093eb5285">&#9670;&#160;</a></span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> JAISoundStatus_::field_0x0</td>
+          <td class="memname">union  { ... }  JAISoundStatus_::field_0x0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a0a87a4119627447fda8b97974848a02d" name="a0a87a4119627447fda8b97974848a02d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a87a4119627447fda8b97974848a02d">&#9670;&#160;</a></span>field_0x1</h2>
+<a id="a7a5f6871c6cb2a2e7a4d525e2c062e0a" name="a7a5f6871c6cb2a2e7a4d525e2c062e0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a5f6871c6cb2a2e7a4d525e2c062e0a">&#9670;&#160;</a></span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> JAISoundStatus_::field_0x1</td>
+          <td class="memname">union  { ... }  JAISoundStatus_::field_0x1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a58a87c684cebd9bfbbf12e00d1d4904b" name="a58a87c684cebd9bfbbf12e00d1d4904b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58a87c684cebd9bfbbf12e00d1d4904b">&#9670;&#160;</a></span>state</h2>
+<a id="a02b2ba3742445cad56928261e24a2001" name="a02b2ba3742445cad56928261e24a2001"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02b2ba3742445cad56928261e24a2001">&#9670;&#160;</a></span>flag1</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> JAISoundStatus_::state[2]</td>
+          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> JAISoundStatus_::flag1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d25f2d9da05974c5a9ac3d315daa4b0" name="a0d25f2d9da05974c5a9ac3d315daa4b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d25f2d9da05974c5a9ac3d315daa4b0">&#9670;&#160;</a></span>flag2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> JAISoundStatus_::flag2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a149c25bc2bf65d924e1f7fb281683b43" name="a149c25bc2bf65d924e1f7fb281683b43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a149c25bc2bf65d924e1f7fb281683b43">&#9670;&#160;</a></span>flag3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> JAISoundStatus_::flag3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0dc87480778694c5329602199e6cc541" name="a0dc87480778694c5329602199e6cc541"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dc87480778694c5329602199e6cc541">&#9670;&#160;</a></span>flag4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> JAISoundStatus_::flag4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa7421c6e137a5597f6aede74b92132b0" name="aa7421c6e137a5597f6aede74b92132b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7421c6e137a5597f6aede74b92132b0">&#9670;&#160;</a></span>flag5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> JAISoundStatus_::flag5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f786d913ac31344673432cacfc15569" name="a2f786d913ac31344673432cacfc15569"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f786d913ac31344673432cacfc15569">&#9670;&#160;</a></span>flag6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> JAISoundStatus_::flag6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad549e7d262471bc5128c23e3b29278d4" name="ad549e7d262471bc5128c23e3b29278d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad549e7d262471bc5128c23e3b29278d4">&#9670;&#160;</a></span>flag7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> JAISoundStatus_::flag7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1fa7378fb0f50d9357dd9997a26ac115" name="a1fa7378fb0f50d9357dd9997a26ac115"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fa7378fb0f50d9357dd9997a26ac115">&#9670;&#160;</a></span>flag8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> JAISoundStatus_::flag8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5eb0871e9171d9830c24406697a1c3b4" name="a5eb0871e9171d9830c24406697a1c3b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eb0871e9171d9830c24406697a1c3b4">&#9670;&#160;</a></span> <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct  { ... }  JAISoundStatus_::flags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab0e471a7b504b9cd6a9474831b21133" name="aab0e471a7b504b9cd6a9474831b21133"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab0e471a7b504b9cd6a9474831b21133">&#9670;&#160;</a></span> <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct  { ... }  JAISoundStatus_::flags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef1ed8a6cf1e32a4fcfecd72fa2123fa" name="aef1ed8a6cf1e32a4fcfecd72fa2123fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef1ed8a6cf1e32a4fcfecd72fa2123fa">&#9670;&#160;</a></span> <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct  { ... }  JAISoundStatus_::flags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a90b35cca6009dec13fc44c7bec123712" name="a90b35cca6009dec13fc44c7bec123712"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90b35cca6009dec13fc44c7bec123712">&#9670;&#160;</a></span>paused</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> JAISoundStatus_::paused</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aebe320c93928fde349968086564fb8a2" name="aebe320c93928fde349968086564fb8a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebe320c93928fde349968086564fb8a2">&#9670;&#160;</a></span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct  { ... }  JAISoundStatus_::state</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a16a729fd5fbed5a52f7bc4ae5ee6e172" name="a16a729fd5fbed5a52f7bc4ae5ee6e172"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16a729fd5fbed5a52f7bc4ae5ee6e172">&#9670;&#160;</a></span>unk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> JAISoundStatus_::unk</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -218,6 +539,20 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> JAISoundStatus_::user_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a53072c96abfd3feecd04e7bd239fd4b8" name="a53072c96abfd3feecd04e7bd239fd4b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53072c96abfd3feecd04e7bd239fd4b8">&#9670;&#160;</a></span>value</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> JAISoundStatus_::value</td>
         </tr>
       </table>
 </div><div class="memdoc">

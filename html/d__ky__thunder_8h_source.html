@@ -88,9 +88,56 @@ $(function() {
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define D_D_KY_THUNDER_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="types_8h.html">dolphin/types.h</a>&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#endif </span><span class="comment">/* D_D_KY_THUNDER_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="JKRSolidHeap_8h.html">JSystem/JKernel/JKRSolidHeap.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="m__Do__ext_8h.html">m_Do/m_Do_ext.h</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="classdThunder__c.html">    8</a></span><span class="keyword">class </span><a class="code hl_class" href="classdThunder__c.html">dThunder_c</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classdThunder__c.html#a87323a32fd5efdc82abb9ae047000a8b">   10</a></span>    <span class="comment">/* 0x00 */</span> <a class="code hl_typedef" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="code hl_variable" href="classdThunder__c.html#a87323a32fd5efdc82abb9ae047000a8b">field_0x00</a>[0xf8];</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classdThunder__c.html#a6d08969bb9ddc6211e523f879549daab">   11</a></span>    <span class="comment">/* 0xF8 */</span> <a class="code hl_class" href="structJKRSolidHeap.html">JKRSolidHeap</a>* <a class="code hl_variable" href="classdThunder__c.html#a6d08969bb9ddc6211e523f879549daab">mpHeap</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="comment">/* 801ADF58 */</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classdThunder__c.html#af8f174eda9b273f1fee2aa1dc2222974">createHeap</a>();</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="comment">/* 801ADFB4 */</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classdThunder__c.html#a9fc5e4e66b079eb6f54e913d5ba04c63">adjustHeap</a>();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="comment">/* 801AE458 */</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classdThunder__c.html#a4c649381b11245692ed4636dc40a5741">create</a>();</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classdThunder__c.html#a03175721c5eda3d1e20345b3eee4ae7c">   17</a></span>    <a class="code hl_function" href="classdThunder__c.html#a03175721c5eda3d1e20345b3eee4ae7c">~dThunder_c</a>() {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <a class="code hl_function" href="m__Do__ext_8cpp.html#abf95683ffd909cc5bbe3077348c3f439">mDoExt_destroySolidHeap</a>(<a class="code hl_variable" href="classdThunder__c.html#a6d08969bb9ddc6211e523f879549daab">mpHeap</a>);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    }</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>};</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="d__ky__thunder_8h.html#a924505abf4e7955e1b94a6572baee070">   23</a></span><span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code hl_function" href="d__ky__thunder_8h.html#a924505abf4e7955e1b94a6572baee070">draw</a>() {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="comment">// finish</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="d__ky__thunder_8h.html#a1482759d1e5a47290e33809d3664da13">   27</a></span><span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code hl_function" href="d__ky__thunder_8h.html#a1482759d1e5a47290e33809d3664da13">execute</a>() {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="comment">// finish</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="d__ky__thunder_8h.html#a8aca47d579f8d0d5c81526440a07f490">   31</a></span><span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code hl_function" href="d__ky__thunder_8h.html#a8aca47d579f8d0d5c81526440a07f490">thunder_delete</a>(<a class="code hl_class" href="classdThunder__c.html">dThunder_c</a>* i_dthunderP) {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">if</span> (i_dthunderP) {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keyword">delete</span> i_dthunderP;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#endif </span><span class="comment">/* D_D_KY_THUNDER_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aJKRSolidHeap_8h_html"><div class="ttname"><a href="JKRSolidHeap_8h.html">JKRSolidHeap.h</a></div></div>
+<div class="ttc" id="aclassdThunder__c_html"><div class="ttname"><a href="classdThunder__c.html">dThunder_c</a></div><div class="ttdef"><b>Definition:</b> d_ky_thunder.h:8</div></div>
+<div class="ttc" id="aclassdThunder__c_html_a03175721c5eda3d1e20345b3eee4ae7c"><div class="ttname"><a href="classdThunder__c.html#a03175721c5eda3d1e20345b3eee4ae7c">dThunder_c::~dThunder_c</a></div><div class="ttdeci">~dThunder_c()</div><div class="ttdef"><b>Definition:</b> d_ky_thunder.h:17</div></div>
+<div class="ttc" id="aclassdThunder__c_html_a4c649381b11245692ed4636dc40a5741"><div class="ttname"><a href="classdThunder__c.html#a4c649381b11245692ed4636dc40a5741">dThunder_c::create</a></div><div class="ttdeci">int create()</div><div class="ttdef"><b>Definition:</b> d_ky_thunder.cpp:328</div></div>
+<div class="ttc" id="aclassdThunder__c_html_a6d08969bb9ddc6211e523f879549daab"><div class="ttname"><a href="classdThunder__c.html#a6d08969bb9ddc6211e523f879549daab">dThunder_c::mpHeap</a></div><div class="ttdeci">JKRSolidHeap * mpHeap</div><div class="ttdef"><b>Definition:</b> d_ky_thunder.h:11</div></div>
+<div class="ttc" id="aclassdThunder__c_html_a87323a32fd5efdc82abb9ae047000a8b"><div class="ttname"><a href="classdThunder__c.html#a87323a32fd5efdc82abb9ae047000a8b">dThunder_c::field_0x00</a></div><div class="ttdeci">u8 field_0x00[0xf8]</div><div class="ttdef"><b>Definition:</b> d_ky_thunder.h:10</div></div>
+<div class="ttc" id="aclassdThunder__c_html_a9fc5e4e66b079eb6f54e913d5ba04c63"><div class="ttname"><a href="classdThunder__c.html#a9fc5e4e66b079eb6f54e913d5ba04c63">dThunder_c::adjustHeap</a></div><div class="ttdeci">void adjustHeap()</div><div class="ttdef"><b>Definition:</b> d_ky_thunder.cpp:102</div></div>
+<div class="ttc" id="aclassdThunder__c_html_af8f174eda9b273f1fee2aa1dc2222974"><div class="ttname"><a href="classdThunder__c.html#af8f174eda9b273f1fee2aa1dc2222974">dThunder_c::createHeap</a></div><div class="ttdeci">int createHeap()</div><div class="ttdef"><b>Definition:</b> d_ky_thunder.cpp:91</div></div>
+<div class="ttc" id="ad__ky__thunder_8h_html_a1482759d1e5a47290e33809d3664da13"><div class="ttname"><a href="d__ky__thunder_8h.html#a1482759d1e5a47290e33809d3664da13">execute</a></div><div class="ttdeci">int execute()</div><div class="ttdef"><b>Definition:</b> d_ky_thunder.h:27</div></div>
+<div class="ttc" id="ad__ky__thunder_8h_html_a8aca47d579f8d0d5c81526440a07f490"><div class="ttname"><a href="d__ky__thunder_8h.html#a8aca47d579f8d0d5c81526440a07f490">thunder_delete</a></div><div class="ttdeci">int thunder_delete(dThunder_c *i_dthunderP)</div><div class="ttdef"><b>Definition:</b> d_ky_thunder.h:31</div></div>
+<div class="ttc" id="ad__ky__thunder_8h_html_a924505abf4e7955e1b94a6572baee070"><div class="ttname"><a href="d__ky__thunder_8h.html#a924505abf4e7955e1b94a6572baee070">draw</a></div><div class="ttdeci">int draw()</div><div class="ttdef"><b>Definition:</b> d_ky_thunder.h:23</div></div>
+<div class="ttc" id="am__Do__ext_8cpp_html_abf95683ffd909cc5bbe3077348c3f439"><div class="ttname"><a href="m__Do__ext_8cpp.html#abf95683ffd909cc5bbe3077348c3f439">mDoExt_destroySolidHeap</a></div><div class="ttdeci">void mDoExt_destroySolidHeap(JKRSolidHeap *i_heap)</div><div class="ttdef"><b>Definition:</b> m_Do_ext.cpp:2396</div></div>
+<div class="ttc" id="am__Do__ext_8h_html"><div class="ttname"><a href="m__Do__ext_8h.html">m_Do_ext.h</a></div></div>
+<div class="ttc" id="astructJKRSolidHeap_html"><div class="ttname"><a href="structJKRSolidHeap.html">JKRSolidHeap</a></div><div class="ttdef"><b>Definition:</b> d_k_wmark.cpp:76</div></div>
 <div class="ttc" id="atypes_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div></div>
+<div class="ttc" id="atypes_8h_html_aed742c436da53c1080638ce6ef7d13de"><div class="ttname"><a href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a></div><div class="ttdeci">unsigned char u8</div><div class="ttdef"><b>Definition:</b> types.h:8</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

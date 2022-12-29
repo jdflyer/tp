@@ -100,12 +100,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adeef4b4fb90b9ccefbe025dc3b84a47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a334331e0b586c2f12a423e6a39b2092e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structJAIAudible.html">JAIAudible</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAIAudience.html#a334331e0b586c2f12a423e6a39b2092e">newAudible</a> (<a class="el" href="structJGeometry_1_1TVec3.html">JGeometry::TVec3</a>&lt; <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> &gt; const &amp;, <a class="el" href="structJAISoundID.html">JAISoundID</a>, <a class="el" href="structJGeometry_1_1TVec3.html">JGeometry::TVec3</a>&lt; <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> &gt; const *, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)=0</td></tr>
 <tr class="separator:a334331e0b586c2f12a423e6a39b2092e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97462892a7c73a745e7da09a92f3e8f5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAIAudience.html#a97462892a7c73a745e7da09a92f3e8f5">getMaxChannels</a> ()=0</td></tr>
-<tr class="separator:a97462892a7c73a745e7da09a92f3e8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fe462a7eaf9c54e5bdb6b1011dd4818"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAIAudience.html#a4fe462a7eaf9c54e5bdb6b1011dd4818">getMaxChannels</a> ()=0</td></tr>
+<tr class="separator:a4fe462a7eaf9c54e5bdb6b1011dd4818"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a950ef533085a0ae3ade6a8d1587bf3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAIAudience.html#a9a950ef533085a0ae3ade6a8d1587bf3">deleteAudible</a> (<a class="el" href="structJAIAudible.html">JAIAudible</a> *)=0</td></tr>
 <tr class="separator:a9a950ef533085a0ae3ade6a8d1587bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe009c0932f0ad70b10955244bb00b69"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAIAudience.html#abe009c0932f0ad70b10955244bb00b69">calcPriority</a> (<a class="el" href="structJAIAudible.html">JAIAudible</a> *)=0</td></tr>
-<tr class="separator:abe009c0932f0ad70b10955244bb00b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89cc922c344b86ee66d158177835c3e1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAIAudience.html#a89cc922c344b86ee66d158177835c3e1">calcPriority</a> (<a class="el" href="structJAIAudible.html">JAIAudible</a> *)=0</td></tr>
+<tr class="separator:a89cc922c344b86ee66d158177835c3e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e3baa1745620714314d9f8ca5199705"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAIAudience.html#a4e3baa1745620714314d9f8ca5199705">mixChannelOut</a> (<a class="el" href="structJASSoundParams.html">JASSoundParams</a> const &amp;, <a class="el" href="structJAIAudible.html">JAIAudible</a> *, int)=0</td></tr>
 <tr class="separator:a4e3baa1745620714314d9f8ca5199705"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -136,8 +136,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="abe009c0932f0ad70b10955244bb00b69" name="abe009c0932f0ad70b10955244bb00b69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe009c0932f0ad70b10955244bb00b69">&#9670;&#160;</a></span>calcPriority()</h2>
+<a id="a89cc922c344b86ee66d158177835c3e1" name="a89cc922c344b86ee66d158177835c3e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89cc922c344b86ee66d158177835c3e1">&#9670;&#160;</a></span>calcPriority()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -146,7 +146,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void JAIAudience::calcPriority </td>
+          <td class="memname">virtual <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> JAIAudience::calcPriority </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJAIAudible.html">JAIAudible</a> *&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -160,7 +160,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="structZ2Audience.html#ac8818e33aa2623e04a3f021849f0f12b">Z2Audience</a>.</p>
+<p>Implemented in <a class="el" href="structZ2Audience.html#a7cf390d80cbe4715ab07a94a3e431836">Z2Audience</a>.</p>
 
 </div>
 </div>
@@ -192,8 +192,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a97462892a7c73a745e7da09a92f3e8f5" name="a97462892a7c73a745e7da09a92f3e8f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97462892a7c73a745e7da09a92f3e8f5">&#9670;&#160;</a></span>getMaxChannels()</h2>
+<a id="a4fe462a7eaf9c54e5bdb6b1011dd4818" name="a4fe462a7eaf9c54e5bdb6b1011dd4818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fe462a7eaf9c54e5bdb6b1011dd4818">&#9670;&#160;</a></span>getMaxChannels()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -202,7 +202,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void JAIAudience::getMaxChannels </td>
+          <td class="memname">virtual int JAIAudience::getMaxChannels </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -215,7 +215,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="structZ2Audience.html#a23ec77815d46a8928466bd693a3a7841">Z2Audience</a>.</p>
+<p>Implemented in <a class="el" href="structZ2Audience.html#a56fba082d588f3f0fef606fe5bf26797">Z2Audience</a>.</p>
 
 </div>
 </div>

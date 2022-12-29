@@ -90,15 +90,12 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="JAISound_8h_source.html">JSystem/JAudio2/JAISound.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JASReport_8h_source.html">JSystem/JAudio2/JASReport.h</a>&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAISound/__ct__8JAISoundFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAISound/func_802A2328.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISound/func_802A2474.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAISound/stop__8JAISoundFUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISound/stop__8JAISoundFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAISound/die_JAISound___8JAISoundFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISound/increasePrepareCount_JAISound___8JAISoundFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAISound/calc_JAISound___8JAISoundFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISound/initTrack_JAISound___8JAISoundFP8JASTrack.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for JAISound.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -173,10 +170,6 @@ Variables</h2></td></tr>
 <tr class="separator:a5c7b92e5224db411ebe59ec3dce43a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeea1acb67c3bac1b753c5c54d6f7b6f8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAISound_8cpp.html#aeea1acb67c3bac1b753c5c54d6f7b6f8">lit_766</a> = 4503599627370496.0</td></tr>
 <tr class="separator:aeea1acb67c3bac1b753c5c54d6f7b6f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe709d7625ca1b7dbbe73d3b17a1cb47"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAISound_8cpp.html#afe709d7625ca1b7dbbe73d3b17a1cb47">stringBase_8039B910</a></td></tr>
-<tr class="separator:afe709d7625ca1b7dbbe73d3b17a1cb47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c004e36e8b01d981a6721e3fa4901fc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAISound_8cpp.html#a8c004e36e8b01d981a6721e3fa4901fc">pad_8039B94A</a> = &quot;\0\0\0\0\0&quot;</td></tr>
-<tr class="separator:a8c004e36e8b01d981a6721e3fa4901fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87d705ece98d2587788c290066aadb8a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAISound_8cpp.html#a87d705ece98d2587788c290066aadb8a">lit_887</a> [1+1]</td></tr>
 <tr class="separator:a87d705ece98d2587788c290066aadb8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -769,53 +762,6 @@ Variables</h2></td></tr>
 <div class="line">    </div>
 <div class="line">    0.0f,</div>
 <div class="line">}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a8c004e36e8b01d981a6721e3fa4901fc" name="a8c004e36e8b01d981a6721e3fa4901fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c004e36e8b01d981a6721e3fa4901fc">&#9670;&#160;</a></span>pad_8039B94A</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const pad_8039B94A = &quot;\0\0\0\0\0&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afe709d7625ca1b7dbbe73d3b17a1cb47" name="afe709d7625ca1b7dbbe73d3b17a1cb47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe709d7625ca1b7dbbe73d3b17a1cb47">&#9670;&#160;</a></span>stringBase_8039B910</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_8039B910</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">    <span class="stringliteral">&quot;It cost %d steps to prepare Sound(ID:%08x, Addre&quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot;ss%08x).\n&quot;</span></div>
 </div><!-- fragment -->
 </div>
 </div>

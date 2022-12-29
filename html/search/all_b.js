@@ -50,7 +50,7 @@ var searchData=
   ['keycheck_47',['keyCheck',['../structdMeterMap__c.html#ae49acb1ed130d27d865353023d9faf9b',1,'dMeterMap_c']]],
   ['keycheck_5f_5f11dmetermap_5fcfv_48',['keyCheck__11dMeterMap_cFv',['../d__meter__map_8cpp.html#a97fe6b10d8828050539c29175fae9e09',1,'d_meter_map.cpp']]],
   ['kick_49',['kick',['../classmDoDvdThd__param__c.html#a4e938f288f2404f9109aa35e799160b2',1,'mDoDvdThd_param_c']]],
-  ['kill_50',['Kill',['../structdVibration__c.html#ac8b08f55f18bc47c95c9323d590a0b57',1,'dVibration_c']]],
+  ['kill_50',['Kill',['../structdVibration__c.html#a6748285980082eddcf9e7e711b107e35',1,'dVibration_c']]],
   ['kill_5f_5f12dvibration_5fcfv_51',['Kill__12dVibration_cFv',['../d__vibration_8cpp.html#a7d26492db7b443a4fb87d1f984486655',1,'d_vibration.cpp']]],
   ['killactivechannel_52',['killActiveChannel',['../structJASDSPChannel.html#a87dcbdd21e0601e4ebf0a93d3c018c4e',1,'JASDSPChannel::killActiveChannel()'],['../structJASDSPChannel.html#ae37a21ea6116e6d5b766b7c8463565d1',1,'JASDSPChannel::killActiveChannel()']]],
   ['killactivechannel_5f_5f13jasdspchannelfv_53',['killActiveChannel__13JASDSPChannelFv',['../JASAiCtrl_8cpp.html#aec6fb04a5f93b5fde9a125aba8277c19',1,'killActiveChannel__13JASDSPChannelFv():&#160;JASAiCtrl.cpp'],['../JASDSPChannel_8cpp.html#aec6fb04a5f93b5fde9a125aba8277c19',1,'killActiveChannel__13JASDSPChannelFv():&#160;JASDSPChannel.cpp']]],
