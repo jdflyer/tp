@@ -5,5 +5,6 @@ var searchData=
   ['action_5fclass_3c_20devlib_5fcallback_5fc_20_3e_2',['action_class&lt; dEvLib_callback_c &gt;',['../structaction__class.html',1,'']]],
   ['actor_5fattention_5ftypes_3',['actor_attention_types',['../structactor__attention__types.html',1,'']]],
   ['actor_5fplace_4',['actor_place',['../structactor__place.html',1,'']]],
-  ['arqrequest_5',['ARQRequest',['../structARQRequest.html',1,'']]]
+  ['actor_5fprocess_5fprofile_5fdefinition_5',['actor_process_profile_definition',['../structactor__process__profile__definition.html',1,'']]],
+  ['arqrequest_6',['ARQRequest',['../structARQRequest.html',1,'']]]
 ];

@@ -7,5 +7,6 @@ var searchData=
   ['vertexnormal_4',['VertexNormal',['../structVertexNormal.html',1,'']]],
   ['view_5fclass_5',['view_class',['../structview__class.html',1,'']]],
   ['view_5fport_5fclass_6',['view_port_class',['../structview__port__class.html',1,'']]],
-  ['vrkumo_5feff_7',['VRKUMO_EFF',['../structVRKUMO__EFF.html',1,'']]]
+  ['view_5fprocess_5fprofile_5fdefinition_7',['view_process_profile_definition',['../structview__process__profile__definition.html',1,'']]],
+  ['vrkumo_5feff_8',['VRKUMO_EFF',['../structVRKUMO__EFF.html',1,'']]]
 ];

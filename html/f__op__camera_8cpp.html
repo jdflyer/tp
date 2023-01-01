@@ -93,6 +93,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="f__op__draw__tag_8h_source.html">f_op/f_op_draw_tag.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="f__op__msg__mng_8h_source.html">f_op/f_op_msg_mng.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="f__pc__leaf_8h_source.html">f_pc/f_pc_leaf.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for f_op_camera.cpp:</div>
@@ -118,8 +119,8 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ae5b3689ec98c860da6084b2ca386dc55"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__camera_8cpp.html#ae5b3689ec98c860da6084b2ca386dc55">g_fopCam_Method</a> [5]</td></tr>
-<tr class="separator:ae5b3689ec98c860da6084b2ca386dc55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0950afb196f35506bcd62929a090b724"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structleafdraw__method__class.html">leafdraw_method_class</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__camera_8cpp.html#a0950afb196f35506bcd62929a090b724">g_fopCam_Method</a></td></tr>
+<tr class="separator:a0950afb196f35506bcd62929a090b724"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a5c7216f0f4681436b11dbd92f89ad1a0" name="a5c7216f0f4681436b11dbd92f89ad1a0"></a>
@@ -237,29 +238,30 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="ae5b3689ec98c860da6084b2ca386dc55" name="ae5b3689ec98c860da6084b2ca386dc55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5b3689ec98c860da6084b2ca386dc55">&#9670;&#160;</a></span>g_fopCam_Method</h2>
+<a id="a0950afb196f35506bcd62929a090b724" name="a0950afb196f35506bcd62929a090b724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0950afb196f35506bcd62929a090b724">&#9670;&#160;</a></span>g_fopCam_Method</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void* g_fopCam_Method[5]</td>
+          <td class="memname"><a class="el" href="structleafdraw__method__class.html">leafdraw_method_class</a> g_fopCam_Method</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    <a class="code hl_function" href="f__op__camera_8cpp.html#a5c7216f0f4681436b11dbd92f89ad1a0">fopCam_Create</a>,</div>
-<div class="line">    <a class="code hl_function" href="f__op__camera_8cpp.html#abd42263e8865ecf4745992d9ac16e06d">fopCam_Delete</a>,</div>
-<div class="line">    <a class="code hl_function" href="f__op__camera_8cpp.html#a80f73dfafede2017fbeaf4b06fa56b71">fopCam_Execute</a>,</div>
-<div class="line">    <a class="code hl_function" href="f__op__camera_8cpp.html#a99c22883f1cb8c21432723dd49c67877">fopCam_IsDelete</a>,</div>
-<div class="line">    <a class="code hl_function" href="f__op__camera_8cpp.html#a0144531dfae02ae1aece3fac395e57a5">fopCam_Draw</a></div>
+<div class="line">    (<a class="code hl_typedef" href="f__pc__method_8h.html#a56bd92368b7dda361388b2d13df2e4ac">process_method_func</a>)<a class="code hl_function" href="f__op__camera_8cpp.html#a5c7216f0f4681436b11dbd92f89ad1a0">fopCam_Create</a>,</div>
+<div class="line">    (<a class="code hl_typedef" href="f__pc__method_8h.html#a56bd92368b7dda361388b2d13df2e4ac">process_method_func</a>)<a class="code hl_function" href="f__op__camera_8cpp.html#abd42263e8865ecf4745992d9ac16e06d">fopCam_Delete</a>,</div>
+<div class="line">    (<a class="code hl_typedef" href="f__pc__method_8h.html#a56bd92368b7dda361388b2d13df2e4ac">process_method_func</a>)<a class="code hl_function" href="f__op__camera_8cpp.html#a80f73dfafede2017fbeaf4b06fa56b71">fopCam_Execute</a>,</div>
+<div class="line">    (<a class="code hl_typedef" href="f__pc__method_8h.html#a56bd92368b7dda361388b2d13df2e4ac">process_method_func</a>)<a class="code hl_function" href="f__op__camera_8cpp.html#a99c22883f1cb8c21432723dd49c67877">fopCam_IsDelete</a>,</div>
+<div class="line">    (<a class="code hl_typedef" href="f__pc__method_8h.html#a56bd92368b7dda361388b2d13df2e4ac">process_method_func</a>)<a class="code hl_function" href="f__op__camera_8cpp.html#a0144531dfae02ae1aece3fac395e57a5">fopCam_Draw</a></div>
 <div class="line">}</div>
-<div class="ttc" id="af__op__camera_8cpp_html_a0144531dfae02ae1aece3fac395e57a5"><div class="ttname"><a href="f__op__camera_8cpp.html#a0144531dfae02ae1aece3fac395e57a5">fopCam_Draw</a></div><div class="ttdeci">static s32 fopCam_Draw(camera_class *pCamera)</div><div class="ttdef"><b>Definition:</b> f_op_camera.cpp:15</div></div>
-<div class="ttc" id="af__op__camera_8cpp_html_a5c7216f0f4681436b11dbd92f89ad1a0"><div class="ttname"><a href="f__op__camera_8cpp.html#a5c7216f0f4681436b11dbd92f89ad1a0">fopCam_Create</a></div><div class="ttdeci">static int fopCam_Create(void *i_actorP)</div><div class="ttdef"><b>Definition:</b> f_op_camera.cpp:57</div></div>
-<div class="ttc" id="af__op__camera_8cpp_html_a80f73dfafede2017fbeaf4b06fa56b71"><div class="ttname"><a href="f__op__camera_8cpp.html#a80f73dfafede2017fbeaf4b06fa56b71">fopCam_Execute</a></div><div class="ttdeci">static int fopCam_Execute(camera_class *pCamera)</div><div class="ttdef"><b>Definition:</b> f_op_camera.cpp:25</div></div>
-<div class="ttc" id="af__op__camera_8cpp_html_a99c22883f1cb8c21432723dd49c67877"><div class="ttname"><a href="f__op__camera_8cpp.html#a99c22883f1cb8c21432723dd49c67877">fopCam_IsDelete</a></div><div class="ttdeci">int fopCam_IsDelete(camera_class *pCamera)</div><div class="ttdef"><b>Definition:</b> f_op_camera.cpp:37</div></div>
-<div class="ttc" id="af__op__camera_8cpp_html_abd42263e8865ecf4745992d9ac16e06d"><div class="ttname"><a href="f__op__camera_8cpp.html#abd42263e8865ecf4745992d9ac16e06d">fopCam_Delete</a></div><div class="ttdeci">int fopCam_Delete(camera_class *pCamera)</div><div class="ttdef"><b>Definition:</b> f_op_camera.cpp:47</div></div>
+<div class="ttc" id="af__op__camera_8cpp_html_a0144531dfae02ae1aece3fac395e57a5"><div class="ttname"><a href="f__op__camera_8cpp.html#a0144531dfae02ae1aece3fac395e57a5">fopCam_Draw</a></div><div class="ttdeci">static s32 fopCam_Draw(camera_class *pCamera)</div><div class="ttdef"><b>Definition:</b> f_op_camera.cpp:16</div></div>
+<div class="ttc" id="af__op__camera_8cpp_html_a5c7216f0f4681436b11dbd92f89ad1a0"><div class="ttname"><a href="f__op__camera_8cpp.html#a5c7216f0f4681436b11dbd92f89ad1a0">fopCam_Create</a></div><div class="ttdeci">static int fopCam_Create(void *i_actorP)</div><div class="ttdef"><b>Definition:</b> f_op_camera.cpp:58</div></div>
+<div class="ttc" id="af__op__camera_8cpp_html_a80f73dfafede2017fbeaf4b06fa56b71"><div class="ttname"><a href="f__op__camera_8cpp.html#a80f73dfafede2017fbeaf4b06fa56b71">fopCam_Execute</a></div><div class="ttdeci">static int fopCam_Execute(camera_class *pCamera)</div><div class="ttdef"><b>Definition:</b> f_op_camera.cpp:26</div></div>
+<div class="ttc" id="af__op__camera_8cpp_html_a99c22883f1cb8c21432723dd49c67877"><div class="ttname"><a href="f__op__camera_8cpp.html#a99c22883f1cb8c21432723dd49c67877">fopCam_IsDelete</a></div><div class="ttdeci">int fopCam_IsDelete(camera_class *pCamera)</div><div class="ttdef"><b>Definition:</b> f_op_camera.cpp:38</div></div>
+<div class="ttc" id="af__op__camera_8cpp_html_abd42263e8865ecf4745992d9ac16e06d"><div class="ttname"><a href="f__op__camera_8cpp.html#abd42263e8865ecf4745992d9ac16e06d">fopCam_Delete</a></div><div class="ttdeci">int fopCam_Delete(camera_class *pCamera)</div><div class="ttdef"><b>Definition:</b> f_op_camera.cpp:48</div></div>
+<div class="ttc" id="af__pc__method_8h_html_a56bd92368b7dda361388b2d13df2e4ac"><div class="ttname"><a href="f__pc__method_8h.html#a56bd92368b7dda361388b2d13df2e4ac">process_method_func</a></div><div class="ttdeci">int(* process_method_func)(void *)</div><div class="ttdef"><b>Definition:</b> f_pc_method.h:7</div></div>
 </div><!-- fragment -->
 </div>
 </div>

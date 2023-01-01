@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['z_0',['Z',['../namespaceCButton.html#a6bee82ea8ddc507db631c847167756b0ae4865325afef917eeabffe27dfe90151',1,'CButton']]],
+  ['z_0',['Z',['../namespaceCButton.html#a008499cbae9456400c722afe47ea1224ae4865325afef917eeabffe27dfe90151',1,'CButton']]],
   ['z2bgm_5fbattle_5fnormal_1',['Z2BGM_BATTLE_NORMAL',['../Z2SeqMgr_8h.html#a61d7f798d58941871faea3c813b33b5ca696939df78fdfb96a8743c2ad852d3ae',1,'Z2SeqMgr.h']]],
   ['z2bgm_5fbattle_5ftwilight_2',['Z2BGM_BATTLE_TWILIGHT',['../Z2SeqMgr_8h.html#a61d7f798d58941871faea3c813b33b5ca374055519a4d80fb4d1a513b7c5af315',1,'Z2SeqMgr.h']]],
   ['z2bgm_5fboomeramg_5fmonkey_3',['Z2BGM_BOOMERAMG_MONKEY',['../Z2SeqMgr_8h.html#a61d7f798d58941871faea3c813b33b5ca702dbfe5fcd9d7ee17e62ba4a589e9aa',1,'Z2SeqMgr.h']]],
@@ -4221,7 +4221,7 @@ var searchData=
   ['z2se_5fzrc_5fv_5fsleeping_4218',['Z2SE_ZRC_V_SLEEPING',['../Z2SeMgr_8h.html#a2015be0323c9a6d9908c0ddb691584abae3b35d44d2aed30fe1a36355e838f23c',1,'Z2SeMgr.h']]],
   ['z2se_5fzrc_5fv_5funasare_4219',['Z2SE_ZRC_V_UNASARE',['../Z2SeMgr_8h.html#a2015be0323c9a6d9908c0ddb691584aba403bd00cf52bf473df4d3189668af29c',1,'Z2SeMgr.h']]],
   ['z2se_5fzrz_5fmv_4220',['Z2SE_ZRZ_MV',['../Z2SeMgr_8h.html#a2015be0323c9a6d9908c0ddb691584aba49b58b7e1bf26241a52ff95f2e2ef98c',1,'Z2SeMgr.h']]],
-  ['zelda_5fcode_5fsize_4221',['ZELDA_CODE_SIZE',['../d__bg__plc_8h.html#a61dadd085c1777f559549e05962b2c9ea528c94922b014d4149a61ffa65eb0531',1,'d_bg_plc.h']]],
-  ['zoom_5fview_4222',['ZOOM_VIEW',['../classdMeter__fmapHIO__c.html#a1a36e018a0075ad39c124842f615dddaa6987c503b214d8fa77a11d84513402e8',1,'dMeter_fmapHIO_c']]],
+  ['zelda_5fcode_5fsize_4221',['ZELDA_CODE_SIZE',['../d__bg__plc_8h.html#a726ca809ffd3d67ab4b8476646f26635a528c94922b014d4149a61ffa65eb0531',1,'d_bg_plc.h']]],
+  ['zoom_5fview_4222',['ZOOM_VIEW',['../classdMeter__fmapHIO__c.html#adf09c20572183202cc6834f426eac813a6987c503b214d8fa77a11d84513402e8',1,'dMeter_fmapHIO_c']]],
   ['zoras_5fjewel_4223',['ZORAS_JEWEL',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a5d46101043cef2e0453461956a543349',1,'d_save.h']]]
 ];

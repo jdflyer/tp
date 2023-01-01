@@ -88,6 +88,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="f__op__msg_8h_source.html">f_op/f_op_msg.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="f__op__msg__mng_8h_source.html">f_op/f_op_msg_mng.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__msg__class_8h_source.html">d/msg/d_msg_class.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__s__play_8h_source.html">d/s/d_s_play.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
@@ -151,8 +152,8 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:ad905c6f29b67287097389b1581d9640d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__msg_8cpp.html#ad905c6f29b67287097389b1581d9640d">fopMsg_MSG_TYPE</a></td></tr>
 <tr class="separator:ad905c6f29b67287097389b1581d9640d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64855cbd776aca0b8d1a090874a6eeb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="structleafdraw__method__class.html">leafdraw_method_class</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__msg_8cpp.html#a64855cbd776aca0b8d1a090874a6eeb4">g_fopMsg_Method</a></td></tr>
-<tr class="separator:a64855cbd776aca0b8d1a090874a6eeb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c87dec04f1678d18541f1301e0f424c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structleafdraw__method__class.html">leafdraw_method_class</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__msg_8cpp.html#a2c87dec04f1678d18541f1301e0f424c">g_fopMsg_Method</a></td></tr>
+<tr class="separator:a2c87dec04f1678d18541f1301e0f424c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a0120d5e528c56a5d8fe63f8ea5ab1116" name="a0120d5e528c56a5d8fe63f8ea5ab1116"></a>
@@ -620,33 +621,30 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a64855cbd776aca0b8d1a090874a6eeb4" name="a64855cbd776aca0b8d1a090874a6eeb4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64855cbd776aca0b8d1a090874a6eeb4">&#9670;&#160;</a></span>g_fopMsg_Method</h2>
+<a id="a2c87dec04f1678d18541f1301e0f424c" name="a2c87dec04f1678d18541f1301e0f424c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c87dec04f1678d18541f1301e0f424c">&#9670;&#160;</a></span>g_fopMsg_Method</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="structleafdraw__method__class.html">leafdraw_method_class</a> g_fopMsg_Method</td>
+          <td class="memname"><a class="el" href="structleafdraw__method__class.html">leafdraw_method_class</a> g_fopMsg_Method</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    &amp;<a class="code hl_function" href="f__op__msg_8cpp.html#a6988799b6e4267e8e50a6e15e81582b9">fopMsg_Create</a>, &amp;<a class="code hl_function" href="f__op__msg_8cpp.html#a514dbffbe2313b9c9e796a0d64b3a66d">fopMsg_Delete</a>, &amp;<a class="code hl_function" href="f__op__msg_8cpp.html#a9c2d0c1fea1cfa9afec2988ec0e553db">fopMsg_Execute</a>, &amp;<a class="code hl_function" href="f__op__msg_8cpp.html#a2a04f1a45e650adfab364e43106b0d9b">fopMsg_IsDelete</a>, &amp;<a class="code hl_function" href="f__op__msg_8cpp.html#a760ac565fdfc12e18e7b8d1299237d72">fopMsg_Draw</a>,</div>
+<div class="line">    (<a class="code hl_typedef" href="f__pc__method_8h.html#a56bd92368b7dda361388b2d13df2e4ac">process_method_func</a>) <a class="code hl_function" href="f__op__msg_8cpp.html#a6988799b6e4267e8e50a6e15e81582b9">fopMsg_Create</a>,</div>
+<div class="line">    (<a class="code hl_typedef" href="f__pc__method_8h.html#a56bd92368b7dda361388b2d13df2e4ac">process_method_func</a>) <a class="code hl_function" href="f__op__msg_8cpp.html#a514dbffbe2313b9c9e796a0d64b3a66d">fopMsg_Delete</a>,</div>
+<div class="line">    (<a class="code hl_typedef" href="f__pc__method_8h.html#a56bd92368b7dda361388b2d13df2e4ac">process_method_func</a>) <a class="code hl_function" href="f__op__msg_8cpp.html#a9c2d0c1fea1cfa9afec2988ec0e553db">fopMsg_Execute</a>,</div>
+<div class="line">    (<a class="code hl_typedef" href="f__pc__method_8h.html#a56bd92368b7dda361388b2d13df2e4ac">process_method_func</a>) <a class="code hl_function" href="f__op__msg_8cpp.html#a2a04f1a45e650adfab364e43106b0d9b">fopMsg_IsDelete</a>,</div>
+<div class="line">    (<a class="code hl_typedef" href="f__pc__method_8h.html#a56bd92368b7dda361388b2d13df2e4ac">process_method_func</a>) <a class="code hl_function" href="f__op__msg_8cpp.html#a760ac565fdfc12e18e7b8d1299237d72">fopMsg_Draw</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="af__op__msg_8cpp_html_a2a04f1a45e650adfab364e43106b0d9b"><div class="ttname"><a href="f__op__msg_8cpp.html#a2a04f1a45e650adfab364e43106b0d9b">fopMsg_IsDelete</a></div><div class="ttdeci">static int fopMsg_IsDelete(void *msg)</div><div class="ttdef"><b>Definition:</b> f_op_msg.cpp:61</div></div>
-<div class="ttc" id="af__op__msg_8cpp_html_a514dbffbe2313b9c9e796a0d64b3a66d"><div class="ttname"><a href="f__op__msg_8cpp.html#a514dbffbe2313b9c9e796a0d64b3a66d">fopMsg_Delete</a></div><div class="ttdeci">static int fopMsg_Delete(void *msg)</div><div class="ttdef"><b>Definition:</b> f_op_msg.cpp:73</div></div>
-<div class="ttc" id="af__op__msg_8cpp_html_a6988799b6e4267e8e50a6e15e81582b9"><div class="ttname"><a href="f__op__msg_8cpp.html#a6988799b6e4267e8e50a6e15e81582b9">fopMsg_Create</a></div><div class="ttdeci">static asm int fopMsg_Create(void *param_0)</div><div class="ttdef"><b>Definition:</b> f_op_msg.cpp:90</div></div>
-<div class="ttc" id="af__op__msg_8cpp_html_a760ac565fdfc12e18e7b8d1299237d72"><div class="ttname"><a href="f__op__msg_8cpp.html#a760ac565fdfc12e18e7b8d1299237d72">fopMsg_Draw</a></div><div class="ttdeci">static int fopMsg_Draw(void *msg)</div><div class="ttdef"><b>Definition:</b> f_op_msg.cpp:43</div></div>
-<div class="ttc" id="af__op__msg_8cpp_html_a9c2d0c1fea1cfa9afec2988ec0e553db"><div class="ttname"><a href="f__op__msg_8cpp.html#a9c2d0c1fea1cfa9afec2988ec0e553db">fopMsg_Execute</a></div><div class="ttdeci">static int fopMsg_Execute(void *msg)</div><div class="ttdef"><b>Definition:</b> f_op_msg.cpp:49</div></div>
+<div class="ttc" id="af__op__msg_8cpp_html_a2a04f1a45e650adfab364e43106b0d9b"><div class="ttname"><a href="f__op__msg_8cpp.html#a2a04f1a45e650adfab364e43106b0d9b">fopMsg_IsDelete</a></div><div class="ttdeci">static int fopMsg_IsDelete(void *msg)</div><div class="ttdef"><b>Definition:</b> f_op_msg.cpp:62</div></div>
+<div class="ttc" id="af__op__msg_8cpp_html_a514dbffbe2313b9c9e796a0d64b3a66d"><div class="ttname"><a href="f__op__msg_8cpp.html#a514dbffbe2313b9c9e796a0d64b3a66d">fopMsg_Delete</a></div><div class="ttdeci">static int fopMsg_Delete(void *msg)</div><div class="ttdef"><b>Definition:</b> f_op_msg.cpp:74</div></div>
+<div class="ttc" id="af__op__msg_8cpp_html_a6988799b6e4267e8e50a6e15e81582b9"><div class="ttname"><a href="f__op__msg_8cpp.html#a6988799b6e4267e8e50a6e15e81582b9">fopMsg_Create</a></div><div class="ttdeci">static asm int fopMsg_Create(void *param_0)</div><div class="ttdef"><b>Definition:</b> f_op_msg.cpp:120</div></div>
+<div class="ttc" id="af__op__msg_8cpp_html_a760ac565fdfc12e18e7b8d1299237d72"><div class="ttname"><a href="f__op__msg_8cpp.html#a760ac565fdfc12e18e7b8d1299237d72">fopMsg_Draw</a></div><div class="ttdeci">static int fopMsg_Draw(void *msg)</div><div class="ttdef"><b>Definition:</b> f_op_msg.cpp:44</div></div>
+<div class="ttc" id="af__op__msg_8cpp_html_a9c2d0c1fea1cfa9afec2988ec0e553db"><div class="ttname"><a href="f__op__msg_8cpp.html#a9c2d0c1fea1cfa9afec2988ec0e553db">fopMsg_Execute</a></div><div class="ttdeci">static int fopMsg_Execute(void *msg)</div><div class="ttdef"><b>Definition:</b> f_op_msg.cpp:50</div></div>
+<div class="ttc" id="af__pc__method_8h_html_a56bd92368b7dda361388b2d13df2e4ac"><div class="ttname"><a href="f__pc__method_8h.html#a56bd92368b7dda361388b2d13df2e4ac">process_method_func</a></div><div class="ttdeci">int(* process_method_func)(void *)</div><div class="ttdef"><b>Definition:</b> f_pc_method.h:7</div></div>
 </div><!-- fragment -->
 </div>
 </div>

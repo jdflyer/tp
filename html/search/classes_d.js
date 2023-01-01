@@ -62,5 +62,6 @@ var searchData=
   ['model_5fc_59',['model_c',['../structdPa__modelEcallBack_1_1model__c.html',1,'dPa_modelEcallBack']]],
   ['modellist_5fc_60',['modelList_c',['../classmodelList__c.html',1,'']]],
   ['moveparam_5f_61',['MoveParam_',['../structJASTrack_1_1MoveParam__.html',1,'JASTrack']]],
-  ['msg_5fclass_62',['msg_class',['../classmsg__class.html',1,'']]]
+  ['msg_5fclass_62',['msg_class',['../classmsg__class.html',1,'']]],
+  ['msg_5fprocess_5fprofile_5fdefinition_63',['msg_process_profile_definition',['../structmsg__process__profile__definition.html',1,'']]]
 ];
