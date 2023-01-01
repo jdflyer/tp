@@ -82,65 +82,23 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">JASWaveArcLoader.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="JASWaveArcLoader_8h_source.html">JSystem/JAudio2/JASWaveArcLoader.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASWaveArcLoader/getRootHeap__16JASWaveArcLoaderFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASWaveArcLoader/setCurrentDir__16JASWaveArcLoaderFPCc.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASWaveArcLoader/getCurrentDir__16JASWaveArcLoaderFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASWaveArcLoader/__ct__10JASWaveArcFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JASWaveArcLoader/__dt__10JASWaveArcFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASWaveArcLoader/loadSetup__10JASWaveArcFUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASWaveArcLoader/eraseSetup__10JASWaveArcFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASWaveArcLoader/loadToAramCallback__10JASWaveArcFPv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASWaveArcLoader/sendLoadCmd__10JASWaveArcFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASWaveArcLoader/load__10JASWaveArcFP7JASHeap.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASWaveArcLoader/loadTail__10JASWaveArcFP7JASHeap.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASWaveArcLoader/erase__10JASWaveArcFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASWaveArcLoader/onDispose__10JASWaveArcFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASWaveArcLoader/setEntryNum__10JASWaveArcFl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASWaveArcLoader/setFileName__10JASWaveArcFPCc.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JASWaveArcLoader/__dt__11JASDisposerFv.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for JASWaveArcLoader.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="JASWaveArcLoader_8cpp__incl.svg" width="100%" height="470"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="JASWaveArcLoader_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSUPtrList.html">JSUPtrList</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSUPtrLink.html">JSUPtrLink</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRHeap.html">JKRHeap</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRExpandSwitch.html">JKRExpandSwitch</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRDvdAramRipper.html">JKRDvdAramRipper</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASWaveArcLoader.html">JASWaveArcLoader</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASDisposer.html">JASDisposer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASHeap.html">JASHeap</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASWaveArc.html">JASWaveArc</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASTaskThread.html">JASTaskThread</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASKernel.html">JASKernel</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aff985e86f54188f845cd982a52ffe60a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASWaveArcLoader_8cpp.html#aff985e86f54188f845cd982a52ffe60a">getRootHeap__16JASWaveArcLoaderFv</a> ()</td></tr>
@@ -173,8 +131,8 @@ Functions</h2></td></tr>
 <tr class="separator:ae271b8994196ce7594348599c83d8485"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a343025d5cd3fecfba92c3d8c7c909454"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASWaveArcLoader_8cpp.html#a343025d5cd3fecfba92c3d8c7c909454">setFileName__10JASWaveArcFPCc</a> ()</td></tr>
 <tr class="separator:a343025d5cd3fecfba92c3d8c7c909454"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0042104d4cbe93819359fc48be3bcf34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASWaveArcLoader_8cpp.html#a0042104d4cbe93819359fc48be3bcf34">__dt__11JASDisposerFv</a> ()</td></tr>
-<tr class="separator:a0042104d4cbe93819359fc48be3bcf34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19e3f2965ea5e8fc9b5f8dd568d6f324"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASWaveArcLoader_8cpp.html#a19e3f2965ea5e8fc9b5f8dd568d6f324">__dt__11JASDisposerFv</a> ()</td></tr>
+<tr class="separator:a19e3f2965ea5e8fc9b5f8dd568d6f324"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a064b47709a82b8e487e36d3bd2785459"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASWaveArcLoader_8cpp.html#a064b47709a82b8e487e36d3bd2785459">sendCmdMsg__13JASTaskThreadFPFPv_vPCvUl</a> ()</td></tr>
 <tr class="separator:a064b47709a82b8e487e36d3bd2785459"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad62206a8a6277b39a86375ae6735e695"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASWaveArcLoader_8cpp.html#ad62206a8a6277b39a86375ae6735e695">getThreadPointer__6JASDvdFv</a> ()</td></tr>
@@ -209,28 +167,10 @@ Functions</h2></td></tr>
 <tr class="separator:ab4ea0984d59ed1f3074078cdba2fa41e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad169dce2c1d6d6192840f04eef6a7359"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASWaveArcLoader_8cpp.html#ad169dce2c1d6d6192840f04eef6a7359">__dt__10JSUPtrListFv</a> ()</td></tr>
 <tr class="separator:ad169dce2c1d6d6192840f04eef6a7359"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0479ff9acf9dce313eca521393718388"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASWaveArcLoader_8cpp.html#a0479ff9acf9dce313eca521393718388">OSInitMutex</a> ()</td></tr>
-<tr class="separator:a0479ff9acf9dce313eca521393718388"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3cc032bb3c6864dcd79c297743c4b6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASWaveArcLoader_8cpp.html#ac3cc032bb3c6864dcd79c297743c4b6c">OSLockMutex</a> ()</td></tr>
-<tr class="separator:ac3cc032bb3c6864dcd79c297743c4b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f1d6e851f76276d5bbcfd37f2005628"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASWaveArcLoader_8cpp.html#a4f1d6e851f76276d5bbcfd37f2005628">OSUnlockMutex</a> ()</td></tr>
-<tr class="separator:a4f1d6e851f76276d5bbcfd37f2005628"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a317217bd2cfd509717f33a5e15328bf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASWaveArcLoader_8cpp.html#a317217bd2cfd509717f33a5e15328bf3">DVDConvertPathToEntrynum</a> ()</td></tr>
-<tr class="separator:a317217bd2cfd509717f33a5e15328bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c0ba1b18c585eaaebd478832f6dfa59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASWaveArcLoader_8cpp.html#a8c0ba1b18c585eaaebd478832f6dfa59">DVDFastOpen</a> ()</td></tr>
-<tr class="separator:a8c0ba1b18c585eaaebd478832f6dfa59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63a8ad146c3203f2ffc517e2d2147fdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASWaveArcLoader_8cpp.html#a63a8ad146c3203f2ffc517e2d2147fdc">DVDClose</a> ()</td></tr>
-<tr class="separator:a63a8ad146c3203f2ffc517e2d2147fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8b2b992407cf48ba98905b417420685"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASWaveArcLoader_8cpp.html#aa8b2b992407cf48ba98905b417420685">_savegpr_27</a> ()</td></tr>
 <tr class="separator:aa8b2b992407cf48ba98905b417420685"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdca0eb87578e0952b66387b093d81f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASWaveArcLoader_8cpp.html#afdca0eb87578e0952b66387b093d81f3">_restgpr_27</a> ()</td></tr>
 <tr class="separator:afdca0eb87578e0952b66387b093d81f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f8c43f6bc28806e57f7021471778e69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASWaveArcLoader_8cpp.html#a1f8c43f6bc28806e57f7021471778e69">strcat</a> ()</td></tr>
-<tr class="separator:a1f8c43f6bc28806e57f7021471778e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8e4e43a28c10dd68005340b8e2d8439"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASWaveArcLoader_8cpp.html#ab8e4e43a28c10dd68005340b8e2d8439">strcpy</a> ()</td></tr>
-<tr class="separator:ab8e4e43a28c10dd68005340b8e2d8439"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98209d00dd1f4e3dcd920710544de79f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASWaveArcLoader_8cpp.html#a98209d00dd1f4e3dcd920710544de79f">strlen</a> ()</td></tr>
-<tr class="separator:a98209d00dd1f4e3dcd920710544de79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -363,14 +303,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a0042104d4cbe93819359fc48be3bcf34" name="a0042104d4cbe93819359fc48be3bcf34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0042104d4cbe93819359fc48be3bcf34">&#9670;&#160;</a></span>__dt__11JASDisposerFv()</h2>
+<a id="a19e3f2965ea5e8fc9b5f8dd568d6f324" name="a19e3f2965ea5e8fc9b5f8dd568d6f324"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19e3f2965ea5e8fc9b5f8dd568d6f324">&#9670;&#160;</a></span>__dt__11JASDisposerFv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void __dt__11JASDisposerFv </td>
+          <td class="memname">asm void __dt__11JASDisposerFv </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -456,57 +396,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void allocTail__7JASHeapFP7JASHeapUl </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a63a8ad146c3203f2ffc517e2d2147fdc" name="a63a8ad146c3203f2ffc517e2d2147fdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63a8ad146c3203f2ffc517e2d2147fdc">&#9670;&#160;</a></span>DVDClose()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DVDClose </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a317217bd2cfd509717f33a5e15328bf3" name="a317217bd2cfd509717f33a5e15328bf3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a317217bd2cfd509717f33a5e15328bf3">&#9670;&#160;</a></span>DVDConvertPathToEntrynum()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DVDConvertPathToEntrynum </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8c0ba1b18c585eaaebd478832f6dfa59" name="a8c0ba1b18c585eaaebd478832f6dfa59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c0ba1b18c585eaaebd478832f6dfa59">&#9670;&#160;</a></span>DVDFastOpen()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DVDFastOpen </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -805,57 +694,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a0479ff9acf9dce313eca521393718388" name="a0479ff9acf9dce313eca521393718388"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0479ff9acf9dce313eca521393718388">&#9670;&#160;</a></span>OSInitMutex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSInitMutex </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac3cc032bb3c6864dcd79c297743c4b6c" name="ac3cc032bb3c6864dcd79c297743c4b6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3cc032bb3c6864dcd79c297743c4b6c">&#9670;&#160;</a></span>OSLockMutex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSLockMutex </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4f1d6e851f76276d5bbcfd37f2005628" name="a4f1d6e851f76276d5bbcfd37f2005628"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f1d6e851f76276d5bbcfd37f2005628">&#9670;&#160;</a></span>OSUnlockMutex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSUnlockMutex </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a064b47709a82b8e487e36d3bd2785459" name="a064b47709a82b8e487e36d3bd2785459"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a064b47709a82b8e487e36d3bd2785459">&#9670;&#160;</a></span>sendCmdMsg__13JASTaskThreadFPFPv_vPCvUl()</h2>
 
@@ -941,57 +779,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a1f8c43f6bc28806e57f7021471778e69" name="a1f8c43f6bc28806e57f7021471778e69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f8c43f6bc28806e57f7021471778e69">&#9670;&#160;</a></span>strcat()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void strcat </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab8e4e43a28c10dd68005340b8e2d8439" name="ab8e4e43a28c10dd68005340b8e2d8439"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8e4e43a28c10dd68005340b8e2d8439">&#9670;&#160;</a></span>strcpy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void strcpy </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a98209d00dd1f4e3dcd920710544de79f" name="a98209d00dd1f4e3dcd920710544de79f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98209d00dd1f4e3dcd920710544de79f">&#9670;&#160;</a></span>strlen()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void strlen </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="a02857bacdcbb0ae48624fa6515837c6b" name="a02857bacdcbb0ae48624fa6515837c6b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a02857bacdcbb0ae48624fa6515837c6b">&#9670;&#160;</a></span>__vt__10JASWaveArc</h2>
@@ -1022,7 +809,7 @@ Variables</h2></td></tr>
 <div class="line">}</div>
 <div class="ttc" id="aJASWaveArcLoader_8cpp_html_a03928a35625a58730e5fd7980478cda0"><div class="ttname"><a href="JASWaveArcLoader_8cpp.html#a03928a35625a58730e5fd7980478cda0">onEraseDone__10JASWaveArcFv</a></div><div class="ttdeci">void onEraseDone__10JASWaveArcFv()</div></div>
 <div class="ttc" id="aJASWaveArcLoader_8cpp_html_a30dc2749f561a29969189b56b852e0cc"><div class="ttname"><a href="JASWaveArcLoader_8cpp.html#a30dc2749f561a29969189b56b852e0cc">onDispose__10JASWaveArcFv</a></div><div class="ttdeci">void onDispose__10JASWaveArcFv()</div></div>
-<div class="ttc" id="aJASWaveArcLoader_8cpp_html_aaf434f5c5cb4aa2e30218395ede315b7"><div class="ttname"><a href="JASWaveArcLoader_8cpp.html#aaf434f5c5cb4aa2e30218395ede315b7">__dt__10JASWaveArcFv</a></div><div class="ttdeci">void __dt__10JASWaveArcFv()</div></div>
+<div class="ttc" id="aJASWaveArcLoader_8cpp_html_aaf434f5c5cb4aa2e30218395ede315b7"><div class="ttname"><a href="JASWaveArcLoader_8cpp.html#aaf434f5c5cb4aa2e30218395ede315b7">__dt__10JASWaveArcFv</a></div><div class="ttdeci">void __dt__10JASWaveArcFv()</div><div class="ttdef"><b>Definition:</b> JASWaveArcLoader.cpp:130</div></div>
 <div class="ttc" id="aJASWaveArcLoader_8cpp_html_ac48d4a0fb27468a95fa132aa44ecf82e"><div class="ttname"><a href="JASWaveArcLoader_8cpp.html#ac48d4a0fb27468a95fa132aa44ecf82e">onLoadDone__10JASWaveArcFv</a></div><div class="ttdeci">void onLoadDone__10JASWaveArcFv()</div></div>
 <div class="ttc" id="atypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> types.h:34</div></div>
 </div><!-- fragment -->
@@ -1050,10 +837,10 @@ Variables</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> ,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="JASWaveArcLoader_8cpp.html#a0042104d4cbe93819359fc48be3bcf34">__dt__11JASDisposerFv</a>,</div>
+<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="JASWaveArcLoader_8cpp.html#a19e3f2965ea5e8fc9b5f8dd568d6f324">__dt__11JASDisposerFv</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="JASWaveArcLoader_8cpp.html#a5014d7dd42c4bebef3f28e87e0bf946b">onDispose__11JASDisposerFv</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aJASWaveArcLoader_8cpp_html_a0042104d4cbe93819359fc48be3bcf34"><div class="ttname"><a href="JASWaveArcLoader_8cpp.html#a0042104d4cbe93819359fc48be3bcf34">__dt__11JASDisposerFv</a></div><div class="ttdeci">void __dt__11JASDisposerFv()</div></div>
+<div class="ttc" id="aJASWaveArcLoader_8cpp_html_a19e3f2965ea5e8fc9b5f8dd568d6f324"><div class="ttname"><a href="JASWaveArcLoader_8cpp.html#a19e3f2965ea5e8fc9b5f8dd568d6f324">__dt__11JASDisposerFv</a></div><div class="ttdeci">void __dt__11JASDisposerFv()</div><div class="ttdef"><b>Definition:</b> JASWaveArcLoader.cpp:293</div></div>
 <div class="ttc" id="aJASWaveArcLoader_8cpp_html_a5014d7dd42c4bebef3f28e87e0bf946b"><div class="ttname"><a href="JASWaveArcLoader_8cpp.html#a5014d7dd42c4bebef3f28e87e0bf946b">onDispose__11JASDisposerFv</a></div><div class="ttdeci">void onDispose__11JASDisposerFv()</div></div>
 </div><!-- fragment -->
 </div>

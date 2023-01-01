@@ -95,7 +95,7 @@ var searchData=
   ['audience_5f_92',['audience_',['../structJAISound.html#a2a01484b00ff99be77cc9b2cc1b6c170',1,'JAISound']]],
   ['audio_5ftask_93',['audio_task',['../dsptask_8cpp.html#aeab0ed16a608aac7411aa25e7c0528f7',1,'dsptask.cpp']]],
   ['audio_5fyield_5fbuffer_94',['AUDIO_YIELD_BUFFER',['../dsptask_8cpp.html#af20c176654153e714dbe4f6a1913a23d',1,'dsptask.cpp']]],
-  ['audioaramheap_95',['audioAramHeap',['../structJASKernel.html#a722f755a873a797c9d44ffeef003fa50',1,'JASKernel']]],
+  ['audioaramheap_95',['audioAramHeap',['../structJASKernel.html#aff08a265098235ab530ce6408de5d613',1,'JASKernel']]],
   ['audioaramheap_5f_5f9jaskernel_96',['audioAramHeap__9JASKernel',['../JASHeapCtrl_8cpp.html#a1a465f682db5c5f92f2e8cbb4fa52446',1,'JASHeapCtrl.cpp']]],
   ['autofinishing_97',['AutoFinishing',['../dvd_8c.html#a1254f291bab7fa4c1aa1a986b3b828e2',1,'dvd.c']]],
   ['autoinvalidation_98',['autoInvalidation',['../dvd_8c.html#ab316ceea9d3654662299e5baebfd2e09',1,'dvd.c']]]
