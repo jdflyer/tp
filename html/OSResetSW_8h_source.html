@@ -93,18 +93,19 @@ $(function() {
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keywordtype">void</span> <a class="code hl_function" href="OSResetSW_8h.html#af875bc548429c44fb6d5f1277ab2948b">__OSResetSWInterruptHandler</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="OSResetSW_8h.html#a34f559b62aa4ba148769a7607be3851b">   11</a></span><span class="keyword">static</span> <a class="code hl_typedef" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> <a class="code hl_function" href="OSResetSW_8h.html#a34f559b62aa4ba148769a7607be3851b">OSGetResetButtonState</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><a class="code hl_typedef" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> <a class="code hl_function" href="OSResetSW_8h.html#ac1e336dc9e3686ca5a7f24063270e6f0">OSGetResetSwitchState</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>};</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif </span><span class="comment">/* OSRESETSW_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="OSResetSW_8h.html#ae54f4c70336362d145f41c0a6ba2cb70">   10</a></span><span class="keyword">typedef</span> void (*<a class="code hl_typedef" href="OSResetSW_8h.html#ae54f4c70336362d145f41c0a6ba2cb70">OSResetCallback</a>)(void);</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="OSResetSW_8h.html#a34f559b62aa4ba148769a7607be3851b">   12</a></span><span class="keyword">static</span> <a class="code hl_typedef" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> <a class="code hl_function" href="OSResetSW_8h.html#a34f559b62aa4ba148769a7607be3851b">OSGetResetButtonState</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><a class="code hl_typedef" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> <a class="code hl_function" href="OSResetSW_8h.html#ac1e336dc9e3686ca5a7f24063270e6f0">OSGetResetSwitchState</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>};</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#endif </span><span class="comment">/* OSRESETSW_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aOSResetSW_8h_html_a34f559b62aa4ba148769a7607be3851b"><div class="ttname"><a href="OSResetSW_8h.html#a34f559b62aa4ba148769a7607be3851b">OSGetResetButtonState</a></div><div class="ttdeci">static BOOL OSGetResetButtonState(void)</div></div>
-<div class="ttc" id="aOSResetSW_8h_html_ac1e336dc9e3686ca5a7f24063270e6f0"><div class="ttname"><a href="OSResetSW_8h.html#ac1e336dc9e3686ca5a7f24063270e6f0">OSGetResetSwitchState</a></div><div class="ttdeci">BOOL OSGetResetSwitchState(void)</div><div class="ttdef"><b>Definition:</b> OSResetSW.c:71</div></div>
-<div class="ttc" id="aOSResetSW_8h_html_af875bc548429c44fb6d5f1277ab2948b"><div class="ttname"><a href="OSResetSW_8h.html#af875bc548429c44fb6d5f1277ab2948b">__OSResetSWInterruptHandler</a></div><div class="ttdeci">void __OSResetSWInterruptHandler(void)</div><div class="ttdef"><b>Definition:</b> OSResetSW.c:51</div></div>
+<div class="ttc" id="aOSResetSW_8h_html_ac1e336dc9e3686ca5a7f24063270e6f0"><div class="ttname"><a href="OSResetSW_8h.html#ac1e336dc9e3686ca5a7f24063270e6f0">OSGetResetSwitchState</a></div><div class="ttdeci">BOOL OSGetResetSwitchState(void)</div><div class="ttdef"><b>Definition:</b> OSResetSW.c:85</div></div>
+<div class="ttc" id="aOSResetSW_8h_html_ae54f4c70336362d145f41c0a6ba2cb70"><div class="ttname"><a href="OSResetSW_8h.html#ae54f4c70336362d145f41c0a6ba2cb70">OSResetCallback</a></div><div class="ttdeci">void(* OSResetCallback)(void)</div><div class="ttdef"><b>Definition:</b> OSResetSW.h:10</div></div>
 <div class="ttc" id="atypes_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div></div>
 <div class="ttc" id="atypes_8h_html_a050c65e107f0c828f856a231f4b4e788"><div class="ttname"><a href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a></div><div class="ttdeci">int BOOL</div><div class="ttdef"><b>Definition:</b> types.h:27</div></div>
 </div><!-- fragment --></div><!-- contents -->

@@ -88,8 +88,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="OSMessage_8h_source.html">dolphin/os/OSMessage.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;asm/dolphin/os/OSMessage/OSInitMessageQueue.s&quot;</code><br />
+<code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
 <code>#include &quot;asm/dolphin/os/OSMessage/OSSendMessage.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/os/OSMessage/OSReceiveMessage.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/os/OSMessage/OSJamMessage.s&quot;</code><br />
@@ -98,18 +97,14 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="OSMessage_8c__incl.svg" width="100%" height="558"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="OSMessage_8c__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a65b7dd4c9756f26d16dcf8f0dedb07bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMessage_8c.html#a65b7dd4c9756f26d16dcf8f0dedb07bf">OSDisableInterrupts</a> ()</td></tr>
-<tr class="separator:a65b7dd4c9756f26d16dcf8f0dedb07bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14b5cc2befa83d8710fba14f4de14fd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMessage_8c.html#a14b5cc2befa83d8710fba14f4de14fd9">OSRestoreInterrupts</a> ()</td></tr>
-<tr class="separator:a14b5cc2befa83d8710fba14f4de14fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3457c9b0bd40b9011905ade0fd8de5f0"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMessage_8c.html#a3457c9b0bd40b9011905ade0fd8de5f0">OSInitMessageQueue</a> (<a class="el" href="structOSMessageQueue.html">OSMessageQueue</a> *<a class="el" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>, <a class="el" href="OSMessage_8h.html#a29207f9ff15a7a595a6aad5f8edd83c0">OSMessage</a> *msgArray, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> msgCount)</td></tr>
-<tr class="separator:a3457c9b0bd40b9011905ade0fd8de5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a639ddb7e32c14ee0d7e149feed9ec698"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMessage_8c.html#a639ddb7e32c14ee0d7e149feed9ec698">OSInitMessageQueue</a> (<a class="el" href="structOSMessageQueue.html">OSMessageQueue</a> *mq, <a class="el" href="OSMessage_8h.html#a29207f9ff15a7a595a6aad5f8edd83c0">OSMessage</a> *msgArray, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> msgCount)</td></tr>
+<tr class="separator:a639ddb7e32c14ee0d7e149feed9ec698"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05667a9b8603cc58c05de793c1c1af1b"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMessage_8c.html#a05667a9b8603cc58c05de793c1c1af1b">OSSendMessage</a> (<a class="el" href="structOSMessageQueue.html">OSMessageQueue</a> *<a class="el" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>, <a class="el" href="OSMessage_8h.html#a29207f9ff15a7a595a6aad5f8edd83c0">OSMessage</a> msg, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> flags)</td></tr>
 <tr class="separator:a05667a9b8603cc58c05de793c1c1af1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a452f79dcd4388dccade177ab4f1a9221"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMessage_8c.html#a452f79dcd4388dccade177ab4f1a9221">OSReceiveMessage</a> (<a class="el" href="structOSMessageQueue.html">OSMessageQueue</a> *<a class="el" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>, <a class="el" href="OSMessage_8h.html#a29207f9ff15a7a595a6aad5f8edd83c0">OSMessage</a> *msg, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> flags)</td></tr>
@@ -118,34 +113,17 @@ Functions</h2></td></tr>
 <tr class="separator:ad377ea31d935e40d6f6e88fe76208134"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a65b7dd4c9756f26d16dcf8f0dedb07bf" name="a65b7dd4c9756f26d16dcf8f0dedb07bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65b7dd4c9756f26d16dcf8f0dedb07bf">&#9670;&#160;</a></span>OSDisableInterrupts()</h2>
+<a id="a639ddb7e32c14ee0d7e149feed9ec698" name="a639ddb7e32c14ee0d7e149feed9ec698"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a639ddb7e32c14ee0d7e149feed9ec698">&#9670;&#160;</a></span>OSInitMessageQueue()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void OSDisableInterrupts </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3457c9b0bd40b9011905ade0fd8de5f0" name="a3457c9b0bd40b9011905ade0fd8de5f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3457c9b0bd40b9011905ade0fd8de5f0">&#9670;&#160;</a></span>OSInitMessageQueue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void OSInitMessageQueue </td>
+          <td class="memname">void OSInitMessageQueue </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structOSMessageQueue.html">OSMessageQueue</a> *&#160;</td>
-          <td class="paramname"><em>queue</em>, </td>
+          <td class="paramname"><em>mq</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -231,23 +209,6 @@ Functions</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a14b5cc2befa83d8710fba14f4de14fd9" name="a14b5cc2befa83d8710fba14f4de14fd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14b5cc2befa83d8710fba14f4de14fd9">&#9670;&#160;</a></span>OSRestoreInterrupts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSRestoreInterrupts </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">

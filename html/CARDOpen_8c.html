@@ -82,70 +82,169 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">CARDOpen.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="CARDOpen_8h_source.html">dolphin/card/CARDOpen.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mem_8h_source.html">MSL_C/MSL_Common/Src/mem.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;asm/dolphin/card/CARDOpen/__CARDCompareFileName.s&quot;</code><br />
+<code>#include &quot;<a class="el" href="card_8h_source.html">dolphin/card/card.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="dsp_8h_source.html">dolphin/dsp/dsp.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="dvd_8h_source.html">dolphin/dvd/dvd.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="CARDPriv_8h_source.html">dolphin/card/CARDPriv.h</a>&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDOpen/__CARDAccess.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDOpen/__CARDIsWritable.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDOpen/__CARDIsReadable.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDOpen/CARDOpen.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/card/CARDOpen/CARDClose.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for CARDOpen.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="CARDOpen_8c__incl.svg" width="100%" height="448"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="CARDOpen_8c__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a815ba4acbd8833225bf835b1305d8f84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDOpen_8c.html#a815ba4acbd8833225bf835b1305d8f84">__CARDCompareFileName</a> ()</td></tr>
-<tr class="separator:a815ba4acbd8833225bf835b1305d8f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b7daa034770941a7b868f6d59b962cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDOpen_8c.html#a1b7daa034770941a7b868f6d59b962cc">__CARDAccess</a> ()</td></tr>
-<tr class="separator:a1b7daa034770941a7b868f6d59b962cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f5607ad13f73418a9706d9139fa6d4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDOpen_8c.html#a8f5607ad13f73418a9706d9139fa6d4a">__CARDIsWritable</a> ()</td></tr>
-<tr class="separator:a8f5607ad13f73418a9706d9139fa6d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f72d389a6d6e78d1c9ad0ca79fcd522"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDOpen_8c.html#a0f72d389a6d6e78d1c9ad0ca79fcd522">__CARDIsReadable</a> ()</td></tr>
-<tr class="separator:a0f72d389a6d6e78d1c9ad0ca79fcd522"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bad63018b8d99a7281510a40a2ad556"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDOpen_8c.html#a0bad63018b8d99a7281510a40a2ad556">CARDOpen</a> ()</td></tr>
-<tr class="separator:a0bad63018b8d99a7281510a40a2ad556"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab0acf1365c87a85b5b07638e0d0a040"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDOpen_8c.html#aab0acf1365c87a85b5b07638e0d0a040">CARDClose</a> ()</td></tr>
-<tr class="separator:aab0acf1365c87a85b5b07638e0d0a040"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c7c74d92e5e8b00ccd6f78670996125"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDOpen_8c.html#a8c7c74d92e5e8b00ccd6f78670996125">__CARDGetControlBlock</a> ()</td></tr>
-<tr class="separator:a8c7c74d92e5e8b00ccd6f78670996125"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa47b81f07ba19f1f29bf5b7eb8ceac08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDOpen_8c.html#aa47b81f07ba19f1f29bf5b7eb8ceac08">__CARDPutControlBlock</a> ()</td></tr>
-<tr class="separator:aa47b81f07ba19f1f29bf5b7eb8ceac08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a740b6ec3d429b897ee9eeb0a540752e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDOpen_8c.html#a740b6ec3d429b897ee9eeb0a540752e4">__CARDGetDirBlock</a> ()</td></tr>
-<tr class="separator:a740b6ec3d429b897ee9eeb0a540752e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a469eda933d9930df223beeb5338dd8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDOpen_8c.html#a4a469eda933d9930df223beeb5338dd8">memcmp</a> ()</td></tr>
-<tr class="separator:a4a469eda933d9930df223beeb5338dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a9ba13c947aad997c1ccb3d5543432d01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDOpen_8c.html#a9ba13c947aad997c1ccb3d5543432d01">__CARDDiskNone</a> [32]</td></tr>
-<tr class="separator:a9ba13c947aad997c1ccb3d5543432d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade7b000f589abcf430a649c316ea6dd9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDOpen_8c.html#ade7b000f589abcf430a649c316ea6dd9">struct_80450A70</a> [8]</td></tr>
-<tr class="separator:ade7b000f589abcf430a649c316ea6dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fb364956689ccb44301cc145aeb3e6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDOpen_8c.html#a6fb364956689ccb44301cc145aeb3e6d">__CARDCompareFileName</a> (<a class="el" href="structCARDDir.html">CARDDir</a> *ent, const char *fileName)</td></tr>
+<tr class="separator:a6fb364956689ccb44301cc145aeb3e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c287a3363fb943323011fc03467e7fd"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDOpen_8c.html#a3c287a3363fb943323011fc03467e7fd">__CARDAccess</a> (<a class="el" href="structCARDControl.html">CARDControl</a> *card, <a class="el" href="structCARDDir.html">CARDDir</a> *ent)</td></tr>
+<tr class="separator:a3c287a3363fb943323011fc03467e7fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa75d7f1f2945e116410788cc84909798"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDOpen_8c.html#aa75d7f1f2945e116410788cc84909798">__CARDIsWritable</a> (<a class="el" href="structCARDControl.html">CARDControl</a> *card, <a class="el" href="structCARDDir.html">CARDDir</a> *ent)</td></tr>
+<tr class="separator:aa75d7f1f2945e116410788cc84909798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace0ce2964c6b4d5871fa06d349b6efe9"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDOpen_8c.html#ace0ce2964c6b4d5871fa06d349b6efe9">__CARDIsReadable</a> (<a class="el" href="structCARDControl.html">CARDControl</a> *card, <a class="el" href="structCARDDir.html">CARDDir</a> *ent)</td></tr>
+<tr class="separator:ace0ce2964c6b4d5871fa06d349b6efe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03dbe80484bba36606e06c143ca48ec7"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDOpen_8c.html#a03dbe80484bba36606e06c143ca48ec7">CARDOpen</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, const char *fileName, <a class="el" href="structCARDFileInfo.html">CARDFileInfo</a> *fileInfo)</td></tr>
+<tr class="separator:a03dbe80484bba36606e06c143ca48ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52867ec62756a9aac2eb08b7d9c50a06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDOpen_8c.html#a52867ec62756a9aac2eb08b7d9c50a06">CARDClose</a> (<a class="el" href="structCARDFileInfo.html">CARDFileInfo</a> *fileInfo)</td></tr>
+<tr class="separator:a52867ec62756a9aac2eb08b7d9c50a06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a1b7daa034770941a7b868f6d59b962cc" name="a1b7daa034770941a7b868f6d59b962cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b7daa034770941a7b868f6d59b962cc">&#9670;&#160;</a></span>__CARDAccess()</h2>
+<a id="a3c287a3363fb943323011fc03467e7fd" name="a3c287a3363fb943323011fc03467e7fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c287a3363fb943323011fc03467e7fd">&#9670;&#160;</a></span>__CARDAccess()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __CARDAccess </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDAccess </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structCARDControl.html">CARDControl</a> *&#160;</td>
+          <td class="paramname"><em>card</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structCARDDir.html">CARDDir</a> *&#160;</td>
+          <td class="paramname"><em>ent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6fb364956689ccb44301cc145aeb3e6d" name="a6fb364956689ccb44301cc145aeb3e6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fb364956689ccb44301cc145aeb3e6d">&#9670;&#160;</a></span>__CARDCompareFileName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> __CARDCompareFileName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCARDDir.html">CARDDir</a> *&#160;</td>
+          <td class="paramname"><em>ent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fileName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ace0ce2964c6b4d5871fa06d349b6efe9" name="ace0ce2964c6b4d5871fa06d349b6efe9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace0ce2964c6b4d5871fa06d349b6efe9">&#9670;&#160;</a></span>__CARDIsReadable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDIsReadable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCARDControl.html">CARDControl</a> *&#160;</td>
+          <td class="paramname"><em>card</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structCARDDir.html">CARDDir</a> *&#160;</td>
+          <td class="paramname"><em>ent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa75d7f1f2945e116410788cc84909798" name="aa75d7f1f2945e116410788cc84909798"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa75d7f1f2945e116410788cc84909798">&#9670;&#160;</a></span>__CARDIsWritable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDIsWritable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCARDControl.html">CARDControl</a> *&#160;</td>
+          <td class="paramname"><em>card</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structCARDDir.html">CARDDir</a> *&#160;</td>
+          <td class="paramname"><em>ent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a52867ec62756a9aac2eb08b7d9c50a06" name="a52867ec62756a9aac2eb08b7d9c50a06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52867ec62756a9aac2eb08b7d9c50a06">&#9670;&#160;</a></span>CARDClose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> CARDClose </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCARDFileInfo.html">CARDFileInfo</a> *&#160;</td>
+          <td class="paramname"><em>fileInfo</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -153,200 +252,36 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a815ba4acbd8833225bf835b1305d8f84" name="a815ba4acbd8833225bf835b1305d8f84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a815ba4acbd8833225bf835b1305d8f84">&#9670;&#160;</a></span>__CARDCompareFileName()</h2>
+<a id="a03dbe80484bba36606e06c143ca48ec7" name="a03dbe80484bba36606e06c143ca48ec7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03dbe80484bba36606e06c143ca48ec7">&#9670;&#160;</a></span>CARDOpen()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void __CARDCompareFileName </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> CARDOpen </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8c7c74d92e5e8b00ccd6f78670996125" name="a8c7c74d92e5e8b00ccd6f78670996125"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c7c74d92e5e8b00ccd6f78670996125">&#9670;&#160;</a></span>__CARDGetControlBlock()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">void __CARDGetControlBlock </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structCARDFileInfo.html">CARDFileInfo</a> *&#160;</td>
+          <td class="paramname"><em>fileInfo</em>&#160;</td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a740b6ec3d429b897ee9eeb0a540752e4" name="a740b6ec3d429b897ee9eeb0a540752e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a740b6ec3d429b897ee9eeb0a540752e4">&#9670;&#160;</a></span>__CARDGetDirBlock()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">void __CARDGetDirBlock </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
           <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0f72d389a6d6e78d1c9ad0ca79fcd522" name="a0f72d389a6d6e78d1c9ad0ca79fcd522"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f72d389a6d6e78d1c9ad0ca79fcd522">&#9670;&#160;</a></span>__CARDIsReadable()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void __CARDIsReadable </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8f5607ad13f73418a9706d9139fa6d4a" name="a8f5607ad13f73418a9706d9139fa6d4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f5607ad13f73418a9706d9139fa6d4a">&#9670;&#160;</a></span>__CARDIsWritable()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void __CARDIsWritable </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa47b81f07ba19f1f29bf5b7eb8ceac08" name="aa47b81f07ba19f1f29bf5b7eb8ceac08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa47b81f07ba19f1f29bf5b7eb8ceac08">&#9670;&#160;</a></span>__CARDPutControlBlock()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void __CARDPutControlBlock </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aab0acf1365c87a85b5b07638e0d0a040" name="aab0acf1365c87a85b5b07638e0d0a040"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab0acf1365c87a85b5b07638e0d0a040">&#9670;&#160;</a></span>CARDClose()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void CARDClose </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0bad63018b8d99a7281510a40a2ad556" name="a0bad63018b8d99a7281510a40a2ad556"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bad63018b8d99a7281510a40a2ad556">&#9670;&#160;</a></span>CARDOpen()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void CARDOpen </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4a469eda933d9930df223beeb5338dd8" name="a4a469eda933d9930df223beeb5338dd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a469eda933d9930df223beeb5338dd8">&#9670;&#160;</a></span>memcmp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void memcmp </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a9ba13c947aad997c1ccb3d5543432d01" name="a9ba13c947aad997c1ccb3d5543432d01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ba13c947aad997c1ccb3d5543432d01">&#9670;&#160;</a></span>__CARDDiskNone</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> __CARDDiskNone[32]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ade7b000f589abcf430a649c316ea6dd9" name="ade7b000f589abcf430a649c316ea6dd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade7b000f589abcf430a649c316ea6dd9">&#9670;&#160;</a></span>struct_80450A70</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> struct_80450A70[8]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>

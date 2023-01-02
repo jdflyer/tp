@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Twilight Princess: libs/exi/EXIBios.c File Reference</title>
+<title>Twilight Princess: libs/dolphin/exi/EXIBios.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -77,19 +77,20 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_6719ab1f1f7655efc2fa43f7eb574fd1.html">libs</a></li><li class="navelem"><a class="el" href="dir_ec5f6a02bdf9f74d6d5ffbe1a631a391.html">exi</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_6719ab1f1f7655efc2fa43f7eb574fd1.html">libs</a></li><li class="navelem"><a class="el" href="dir_22235b545bd11e9cf035754dc4797b88.html">dolphin</a></li><li class="navelem"><a class="el" href="dir_495f850e13beac8acea4bdc4940b4e53.html">exi</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">EXIBios.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="EXIBios_8h_source.html">exi/EXIBios.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="EXIBios_8h_source.html">dolphin/exi/EXIBios.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
 <code>#include &quot;asm/exi/EXIBios/SetExiInterruptMask.s&quot;</code><br />
 <code>#include &quot;asm/exi/EXIBios/EXIImm.s&quot;</code><br />
 <code>#include &quot;asm/exi/EXIBios/EXIImmEx.s&quot;</code><br />
@@ -118,99 +119,84 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="EXIBios_8c__incl.svg" width="100%" height="448"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="EXIBios_8c__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a7bf0745445b86dffaa684215783643d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a7bf0745445b86dffaa684215783643d0">REG_MAX</a>&#160;&#160;&#160;5</td></tr>
+<tr class="separator:a7bf0745445b86dffaa684215783643d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acda88c8ac2d28272d0e986901b876433"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#acda88c8ac2d28272d0e986901b876433">REG</a>(chan,  idx)&#160;&#160;&#160;(<a class="el" href="EXIBios_8h.html#ab67c1b63c4267fc3ef8630aee423c984">__EXIRegs</a>[((chan)*<a class="el" href="EXIBios_8c.html#a7bf0745445b86dffaa684215783643d0">REG_MAX</a>) + (idx)])</td></tr>
+<tr class="separator:acda88c8ac2d28272d0e986901b876433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5643177857b820c7b462bc2b44996c74"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a5643177857b820c7b462bc2b44996c74">EXI_0CR</a>(tstart,  dma,  rw,  tlen)&#160;&#160;&#160;    ((((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)(tstart)) &lt;&lt; 0) | (((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)(dma)) &lt;&lt; 1) | (((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)(rw)) &lt;&lt; 2) | (((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)(tlen)) &lt;&lt; 4))</td></tr>
+<tr class="separator:a5643177857b820c7b462bc2b44996c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9dbd8c5f782cfb1b1c04ee127bebf949"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a9dbd8c5f782cfb1b1c04ee127bebf949">SetExiInterruptMask</a> ()</td></tr>
-<tr class="separator:a9dbd8c5f782cfb1b1c04ee127bebf949"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e20c415368f82aa687e8809651af67f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a3e20c415368f82aa687e8809651af67f">EXIImm</a> ()</td></tr>
-<tr class="separator:a3e20c415368f82aa687e8809651af67f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19124709c66a37738754436676d461ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a19124709c66a37738754436676d461ea">EXIImmEx</a> ()</td></tr>
-<tr class="separator:a19124709c66a37738754436676d461ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dcb71521fc7dd6a230a5ac38f6c75f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a6dcb71521fc7dd6a230a5ac38f6c75f0">EXIDma</a> ()</td></tr>
-<tr class="separator:a6dcb71521fc7dd6a230a5ac38f6c75f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dc51ac2d103fcea4603114ec51325d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a5dc51ac2d103fcea4603114ec51325d8">EXISync</a> ()</td></tr>
-<tr class="separator:a5dc51ac2d103fcea4603114ec51325d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4cfa5434ba263475fcb300f776703e0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#af4cfa5434ba263475fcb300f776703e0">EXIClearInterrupts</a> ()</td></tr>
-<tr class="separator:af4cfa5434ba263475fcb300f776703e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b7456da6f7cc236c6afb0ea7c48dc5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a3b7456da6f7cc236c6afb0ea7c48dc5b">EXISetExiCallback</a> ()</td></tr>
-<tr class="separator:a3b7456da6f7cc236c6afb0ea7c48dc5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d3bc83f59efd258eda98075a0c09b37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a9d3bc83f59efd258eda98075a0c09b37">__EXIProbe</a> ()</td></tr>
-<tr class="separator:a9d3bc83f59efd258eda98075a0c09b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8862e49a0c3b7998f4d673ab3c8a7ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#aa8862e49a0c3b7998f4d673ab3c8a7ad">EXIProbe</a> ()</td></tr>
-<tr class="separator:aa8862e49a0c3b7998f4d673ab3c8a7ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51cac7c7eda946382e14b233d43eba29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a51cac7c7eda946382e14b233d43eba29">EXIProbeEx</a> ()</td></tr>
-<tr class="separator:a51cac7c7eda946382e14b233d43eba29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d8cffa018029826586f06c9ba6c9e63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a7d8cffa018029826586f06c9ba6c9e63">EXIAttach</a> ()</td></tr>
-<tr class="separator:a7d8cffa018029826586f06c9ba6c9e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afae1d325f3d9cb1f59c9ed876084ac9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#afae1d325f3d9cb1f59c9ed876084ac9c">EXIDetach</a> ()</td></tr>
-<tr class="separator:afae1d325f3d9cb1f59c9ed876084ac9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51869477a746fdd062fba6f236f31fc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a51869477a746fdd062fba6f236f31fc1">EXISelect</a> ()</td></tr>
-<tr class="separator:a51869477a746fdd062fba6f236f31fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0184cba2135eee7d423f3c82f4c26bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#ae0184cba2135eee7d423f3c82f4c26bb">EXIDeselect</a> ()</td></tr>
-<tr class="separator:ae0184cba2135eee7d423f3c82f4c26bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2633b70dc8169b62a865e12be1c68272"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a2633b70dc8169b62a865e12be1c68272">EXIIntrruptHandler</a> ()</td></tr>
-<tr class="separator:a2633b70dc8169b62a865e12be1c68272"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8de2b6484feaa72cdffd4709470ec78e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a8de2b6484feaa72cdffd4709470ec78e">TCIntrruptHandler</a> ()</td></tr>
-<tr class="separator:a8de2b6484feaa72cdffd4709470ec78e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff7564deecbd6f4bcd147cea6aea65d5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#aff7564deecbd6f4bcd147cea6aea65d5">EXTIntrruptHandler</a> ()</td></tr>
-<tr class="separator:aff7564deecbd6f4bcd147cea6aea65d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c8bda133d97baa80e6132cb06c3bde1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a0c8bda133d97baa80e6132cb06c3bde1">EXIInit</a> ()</td></tr>
-<tr class="separator:a0c8bda133d97baa80e6132cb06c3bde1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ad896c74edfd0467ae510438218d0b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a2ad896c74edfd0467ae510438218d0b8">EXILock</a> ()</td></tr>
-<tr class="separator:a2ad896c74edfd0467ae510438218d0b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21699c679d0d88f19d579336412e1f10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a21699c679d0d88f19d579336412e1f10">EXIUnlock</a> ()</td></tr>
-<tr class="separator:a21699c679d0d88f19d579336412e1f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59b17eb673965d20029a1bb23cc6f8e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a59b17eb673965d20029a1bb23cc6f8e1">EXIGetState</a> ()</td></tr>
-<tr class="separator:a59b17eb673965d20029a1bb23cc6f8e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add93f1080261952d2c2998fbbd791b85"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#add93f1080261952d2c2998fbbd791b85">UnlockedHandler</a> ()</td></tr>
-<tr class="separator:add93f1080261952d2c2998fbbd791b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab49371d8f2afac422065617282cdaa72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#ab49371d8f2afac422065617282cdaa72">EXIGetID</a> ()</td></tr>
-<tr class="separator:ab49371d8f2afac422065617282cdaa72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9144b2707b0a8250037579ba6b1dd919"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a9144b2707b0a8250037579ba6b1dd919">OSGetConsoleType</a> ()</td></tr>
-<tr class="separator:a9144b2707b0a8250037579ba6b1dd919"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b09355ef575c9e548e6a94ddec2658c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a0b09355ef575c9e548e6a94ddec2658c">__OSGetDIConfig</a> ()</td></tr>
-<tr class="separator:a0b09355ef575c9e548e6a94ddec2658c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a688d1c86f609bd2033df6f4d22094f42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a688d1c86f609bd2033df6f4d22094f42">OSRegisterVersion</a> ()</td></tr>
-<tr class="separator:a688d1c86f609bd2033df6f4d22094f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a184beaa362f37ba6f41541041df12976"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a184beaa362f37ba6f41541041df12976">OSSetCurrentContext</a> ()</td></tr>
-<tr class="separator:a184beaa362f37ba6f41541041df12976"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b34b2f4e5276b3852fc3b025a023d14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a3b34b2f4e5276b3852fc3b025a023d14">OSClearContext</a> ()</td></tr>
-<tr class="separator:a3b34b2f4e5276b3852fc3b025a023d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65b7dd4c9756f26d16dcf8f0dedb07bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a65b7dd4c9756f26d16dcf8f0dedb07bf">OSDisableInterrupts</a> ()</td></tr>
-<tr class="separator:a65b7dd4c9756f26d16dcf8f0dedb07bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14b5cc2befa83d8710fba14f4de14fd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a14b5cc2befa83d8710fba14f4de14fd9">OSRestoreInterrupts</a> ()</td></tr>
-<tr class="separator:a14b5cc2befa83d8710fba14f4de14fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84bf60a3621a2d64b536790302451842"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a84bf60a3621a2d64b536790302451842">__OSSetInterruptHandler</a> ()</td></tr>
-<tr class="separator:a84bf60a3621a2d64b536790302451842"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a744968b043cccd90db9a3f3f7b5bb66c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a744968b043cccd90db9a3f3f7b5bb66c">__OSGetInterruptHandler</a> ()</td></tr>
-<tr class="separator:a744968b043cccd90db9a3f3f7b5bb66c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e60365da6a6649f8f35881410c7759a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a1e60365da6a6649f8f35881410c7759a">__OSMaskInterrupts</a> ()</td></tr>
-<tr class="separator:a1e60365da6a6649f8f35881410c7759a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5da344ee9fd9ebbc010c971a7a75baa0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a5da344ee9fd9ebbc010c971a7a75baa0">__OSUnmaskInterrupts</a> ()</td></tr>
-<tr class="separator:a5da344ee9fd9ebbc010c971a7a75baa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3a3da27911d7fc3f4f08506ac539ea3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#ad3a3da27911d7fc3f4f08506ac539ea3">OSGetTime</a> ()</td></tr>
-<tr class="separator:ad3a3da27911d7fc3f4f08506ac539ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39392170fe6ae6925b4724f0142fa450"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a39392170fe6ae6925b4724f0142fa450">SetExiInterruptMask</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="structEXIControl.html">EXIControl</a> *exi)</td></tr>
+<tr class="separator:a39392170fe6ae6925b4724f0142fa450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0656fa820669fa3fa6a5645541318d32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a0656fa820669fa3fa6a5645541318d32">__EXIProbe</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan)</td></tr>
+<tr class="separator:a0656fa820669fa3fa6a5645541318d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a72379a0e372050ff8851e08ad1fd0f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a2a72379a0e372050ff8851e08ad1fd0f">EXIClearInterrupts</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> exi, <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> tc, <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> ext)</td></tr>
+<tr class="separator:a2a72379a0e372050ff8851e08ad1fd0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a720c524734599d54bc8f1a9c7cd514da"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a720c524734599d54bc8f1a9c7cd514da">EXIIntrruptHandler</a> (<a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> interrupt, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
+<tr class="separator:a720c524734599d54bc8f1a9c7cd514da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6809328bcc3607eba8b32e2b2f3b5cc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#aa6809328bcc3607eba8b32e2b2f3b5cc">TCIntrruptHandler</a> (<a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> interrupt, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
+<tr class="separator:aa6809328bcc3607eba8b32e2b2f3b5cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a216038ec89fc1410cb4a29a842b7fb07"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a216038ec89fc1410cb4a29a842b7fb07">EXTIntrruptHandler</a> (<a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> interrupt, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
+<tr class="separator:a216038ec89fc1410cb4a29a842b7fb07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b8131ad7bc54eb9f5acb19003007588"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a1b8131ad7bc54eb9f5acb19003007588">__OSEnableBarnacle</a> ()</td></tr>
 <tr class="separator:a1b8131ad7bc54eb9f5acb19003007588"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1046e3742f7a74b930cd76bd54949702"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a1046e3742f7a74b930cd76bd54949702">__div2i</a> ()</td></tr>
 <tr class="separator:a1046e3742f7a74b930cd76bd54949702"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33ac2943a3008386e2f43e9377376f03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a33ac2943a3008386e2f43e9377376f03">memmove</a> ()</td></tr>
 <tr class="separator:a33ac2943a3008386e2f43e9377376f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a039f66377af2147f6217833d790cf58c"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a039f66377af2147f6217833d790cf58c">EXIImm</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, void *buf, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> len, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> type, <a class="el" href="EXIBios_8h.html#a7138fa1e7122b3f129311feaafcb13e7">EXICallback</a> callback)</td></tr>
+<tr class="separator:a039f66377af2147f6217833d790cf58c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2af2a747983129d8d6e7a7cc4410f462"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a2af2a747983129d8d6e7a7cc4410f462">EXIImmEx</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, void *buf, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> len, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> mode)</td></tr>
+<tr class="separator:a2af2a747983129d8d6e7a7cc4410f462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cb1a0e758c84aedc71f8b56c954cb41"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a4cb1a0e758c84aedc71f8b56c954cb41">EXIDma</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, void *buf, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> len, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> type, <a class="el" href="EXIBios_8h.html#a7138fa1e7122b3f129311feaafcb13e7">EXICallback</a> callback)</td></tr>
+<tr class="separator:a4cb1a0e758c84aedc71f8b56c954cb41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8743b23b3a2b8bf346cf3c8b5b8c30a"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#ab8743b23b3a2b8bf346cf3c8b5b8c30a">EXISync</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan)</td></tr>
+<tr class="separator:ab8743b23b3a2b8bf346cf3c8b5b8c30a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4962df469bfad2103ee099c3f68969a1"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="EXIBios_8h.html#a7138fa1e7122b3f129311feaafcb13e7">EXICallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a4962df469bfad2103ee099c3f68969a1">EXISetExiCallback</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="EXIBios_8h.html#a7138fa1e7122b3f129311feaafcb13e7">EXICallback</a> exiCallback)</td></tr>
+<tr class="separator:a4962df469bfad2103ee099c3f68969a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55ed6bc52cc91d2d21f4b0d3a20e664b"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a55ed6bc52cc91d2d21f4b0d3a20e664b">EXIProbe</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan)</td></tr>
+<tr class="separator:a55ed6bc52cc91d2d21f4b0d3a20e664b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71976aca583ff1fd4e4a86a61c758879"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a71976aca583ff1fd4e4a86a61c758879">EXIProbeEx</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan)</td></tr>
+<tr class="separator:a71976aca583ff1fd4e4a86a61c758879"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc544412b143715315abf25fac795c73"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#acc544412b143715315abf25fac795c73">EXIAttach</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="EXIBios_8h.html#a7138fa1e7122b3f129311feaafcb13e7">EXICallback</a> extCallback)</td></tr>
+<tr class="separator:acc544412b143715315abf25fac795c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b98f359b5b80a30194b9be367efee21"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a5b98f359b5b80a30194b9be367efee21">EXIDetach</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan)</td></tr>
+<tr class="separator:a5b98f359b5b80a30194b9be367efee21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15676d57fb66f0e102c488d9a9f08fd6"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a15676d57fb66f0e102c488d9a9f08fd6">EXISelect</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> dev, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> freq)</td></tr>
+<tr class="separator:a15676d57fb66f0e102c488d9a9f08fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af041fc299b1e45cdb43207febedfe421"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#af041fc299b1e45cdb43207febedfe421">EXIDeselect</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan)</td></tr>
+<tr class="separator:af041fc299b1e45cdb43207febedfe421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af87b191f65881287c9bf175ee27ef364"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#af87b191f65881287c9bf175ee27ef364">EXIInit</a> (void)</td></tr>
+<tr class="separator:af87b191f65881287c9bf175ee27ef364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ba8796f7d9ad7a7abefe3e832cd7544"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a3ba8796f7d9ad7a7abefe3e832cd7544">EXILock</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> dev, <a class="el" href="EXIBios_8h.html#a7138fa1e7122b3f129311feaafcb13e7">EXICallback</a> unlockedCallback)</td></tr>
+<tr class="separator:a3ba8796f7d9ad7a7abefe3e832cd7544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d632f2f054e96c272511760f93ef86d"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a3d632f2f054e96c272511760f93ef86d">EXIUnlock</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan)</td></tr>
+<tr class="separator:a3d632f2f054e96c272511760f93ef86d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3a4653bd407e2c77c43830b64b7ed29"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#aa3a4653bd407e2c77c43830b64b7ed29">EXIGetState</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan)</td></tr>
+<tr class="separator:aa3a4653bd407e2c77c43830b64b7ed29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06cb82b2b0ac93467c329e4577b31538"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a06cb82b2b0ac93467c329e4577b31538">UnlockedHandler</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
+<tr class="separator:a06cb82b2b0ac93467c329e4577b31538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63cc2e6b270bebf57fe30721778db06b"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a63cc2e6b270bebf57fe30721778db06b">EXIGetID</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> dev, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> *<a class="el" href="d__a__npc__cd_8cpp.html#ab7710104fe587e0c8b4be67c675f3e0c">id</a>)</td></tr>
+<tr class="separator:a63cc2e6b270bebf57fe30721778db06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aebbe5bb66d95502f5728cbc8a9aab3c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#aebbe5bb66d95502f5728cbc8a9aab3c7">__OSInIPL</a> [4+4]</td></tr>
-<tr class="separator:aebbe5bb66d95502f5728cbc8a9aab3c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f535f84ecb541332c3a95c43d39ab15"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a0f535f84ecb541332c3a95c43d39ab15">Ecb</a> [192]</td></tr>
-<tr class="separator:a0f535f84ecb541332c3a95c43d39ab15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a6069729885614d1c28f573d06bd419"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a1a6069729885614d1c28f573d06bd419">lit_1</a> [] = &quot;&lt;&lt; Dolphin SDK - EXI\trelease build: Apr 5 2004 04:14:14 (0x2301) &gt;&gt;&quot;</td></tr>
+<tr class="memitem:a925af902a1d663744fe01fe29e21b4de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a925af902a1d663744fe01fe29e21b4de">__OSInIPL</a> [4+4]</td></tr>
+<tr class="separator:a925af902a1d663744fe01fe29e21b4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6b8e9b20518e1b7600d0083b5728c06"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structEXIControl.html">EXIControl</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#ab6b8e9b20518e1b7600d0083b5728c06">Ecb</a> [3]</td></tr>
+<tr class="separator:ab6b8e9b20518e1b7600d0083b5728c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a6069729885614d1c28f573d06bd419"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a1a6069729885614d1c28f573d06bd419">lit_1</a> []</td></tr>
 <tr class="separator:a1a6069729885614d1c28f573d06bd419"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac79240d60828f1e8d782a34c8fc6ff66"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#ac79240d60828f1e8d782a34c8fc6ff66">__EXIVersion</a> [1+1]</td></tr>
-<tr class="separator:ac79240d60828f1e8d782a34c8fc6ff66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0279559454233f1688c5e4dcdcaac672"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a0279559454233f1688c5e4dcdcaac672">__EXIVersion</a> = <a class="el" href="ai_8c.html#a1a6069729885614d1c28f573d06bd419">lit_1</a></td></tr>
+<tr class="separator:a0279559454233f1688c5e4dcdcaac672"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaab6804fb48bd5e4b1a8e72b2a684d4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#adaab6804fb48bd5e4b1a8e72b2a684d4">IDSerialPort1</a> [4+4]</td></tr>
 <tr class="separator:adaab6804fb48bd5e4b1a8e72b2a684d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d8e5ff4fa0008565949070d51138a3b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a0d8e5ff4fa0008565949070d51138a3b">lit_473</a> [] = &quot;Memory Card 59&quot;</td></tr>
@@ -238,6 +224,89 @@ Variables</h2></td></tr>
 <tr class="memitem:a03912aec0efaa5b0238e6b1df4f5ccb9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EXIBios_8c.html#a03912aec0efaa5b0238e6b1df4f5ccb9">lit_490</a> [] = &quot;IS-DOL-VIEWER&quot;</td></tr>
 <tr class="separator:a03912aec0efaa5b0238e6b1df4f5ccb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a5643177857b820c7b462bc2b44996c74" name="a5643177857b820c7b462bc2b44996c74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5643177857b820c7b462bc2b44996c74">&#9670;&#160;</a></span>EXI_0CR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EXI_0CR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">tstart, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">dma, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">rw, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">tlen&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;    ((((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)(tstart)) &lt;&lt; 0) | (((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)(dma)) &lt;&lt; 1) | (((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)(rw)) &lt;&lt; 2) | (((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)(tlen)) &lt;&lt; 4))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acda88c8ac2d28272d0e986901b876433" name="acda88c8ac2d28272d0e986901b876433"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acda88c8ac2d28272d0e986901b876433">&#9670;&#160;</a></span>REG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">chan, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">idx&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(<a class="el" href="EXIBios_8h.html#ab67c1b63c4267fc3ef8630aee423c984">__EXIRegs</a>[((chan)*<a class="el" href="EXIBios_8c.html#a7bf0745445b86dffaa684215783643d0">REG_MAX</a>) + (idx)])</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7bf0745445b86dffaa684215783643d0" name="a7bf0745445b86dffaa684215783643d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bf0745445b86dffaa684215783643d0">&#9670;&#160;</a></span>REG_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REG_MAX&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a1046e3742f7a74b930cd76bd54949702" name="a1046e3742f7a74b930cd76bd54949702"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1046e3742f7a74b930cd76bd54949702">&#9670;&#160;</a></span>__div2i()</h2>
@@ -256,16 +325,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a9d3bc83f59efd258eda98075a0c09b37" name="a9d3bc83f59efd258eda98075a0c09b37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d3bc83f59efd258eda98075a0c09b37">&#9670;&#160;</a></span>__EXIProbe()</h2>
+<a id="a0656fa820669fa3fa6a5645541318d32" name="a0656fa820669fa3fa6a5645541318d32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0656fa820669fa3fa6a5645541318d32">&#9670;&#160;</a></span>__EXIProbe()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __EXIProbe </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> __EXIProbe </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -290,110 +360,36 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a0b09355ef575c9e548e6a94ddec2658c" name="a0b09355ef575c9e548e6a94ddec2658c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b09355ef575c9e548e6a94ddec2658c">&#9670;&#160;</a></span>__OSGetDIConfig()</h2>
+<a id="acc544412b143715315abf25fac795c73" name="acc544412b143715315abf25fac795c73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc544412b143715315abf25fac795c73">&#9670;&#160;</a></span>EXIAttach()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void __OSGetDIConfig </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> EXIAttach </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="EXIBios_8h.html#a7138fa1e7122b3f129311feaafcb13e7">EXICallback</a>&#160;</td>
+          <td class="paramname"><em>extCallback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a744968b043cccd90db9a3f3f7b5bb66c" name="a744968b043cccd90db9a3f3f7b5bb66c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a744968b043cccd90db9a3f3f7b5bb66c">&#9670;&#160;</a></span>__OSGetInterruptHandler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void __OSGetInterruptHandler </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1e60365da6a6649f8f35881410c7759a" name="a1e60365da6a6649f8f35881410c7759a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e60365da6a6649f8f35881410c7759a">&#9670;&#160;</a></span>__OSMaskInterrupts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void __OSMaskInterrupts </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a84bf60a3621a2d64b536790302451842" name="a84bf60a3621a2d64b536790302451842"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84bf60a3621a2d64b536790302451842">&#9670;&#160;</a></span>__OSSetInterruptHandler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void __OSSetInterruptHandler </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5da344ee9fd9ebbc010c971a7a75baa0" name="a5da344ee9fd9ebbc010c971a7a75baa0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5da344ee9fd9ebbc010c971a7a75baa0">&#9670;&#160;</a></span>__OSUnmaskInterrupts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void __OSUnmaskInterrupts </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7d8cffa018029826586f06c9ba6c9e63" name="a7d8cffa018029826586f06c9ba6c9e63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d8cffa018029826586f06c9ba6c9e63">&#9670;&#160;</a></span>EXIAttach()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void EXIAttach </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af4cfa5434ba263475fcb300f776703e0" name="af4cfa5434ba263475fcb300f776703e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4cfa5434ba263475fcb300f776703e0">&#9670;&#160;</a></span>EXIClearInterrupts()</h2>
+<a id="a2a72379a0e372050ff8851e08ad1fd0f" name="a2a72379a0e372050ff8851e08ad1fd0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a72379a0e372050ff8851e08ad1fd0f">&#9670;&#160;</a></span>EXIClearInterrupts()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -402,10 +398,33 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void EXIClearInterrupts </td>
+          <td class="memname">static asm <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> EXIClearInterrupts </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td>
+          <td class="paramname"><em>exi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td>
+          <td class="paramname"><em>tc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td>
+          <td class="paramname"><em>ext</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -417,15 +436,236 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae0184cba2135eee7d423f3c82f4c26bb" name="ae0184cba2135eee7d423f3c82f4c26bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0184cba2135eee7d423f3c82f4c26bb">&#9670;&#160;</a></span>EXIDeselect()</h2>
+<a id="af041fc299b1e45cdb43207febedfe421" name="af041fc299b1e45cdb43207febedfe421"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af041fc299b1e45cdb43207febedfe421">&#9670;&#160;</a></span>EXIDeselect()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void EXIDeselect </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> EXIDeselect </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b98f359b5b80a30194b9be367efee21" name="a5b98f359b5b80a30194b9be367efee21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b98f359b5b80a30194b9be367efee21">&#9670;&#160;</a></span>EXIDetach()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> EXIDetach </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4cb1a0e758c84aedc71f8b56c954cb41" name="a4cb1a0e758c84aedc71f8b56c954cb41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cb1a0e758c84aedc71f8b56c954cb41">&#9670;&#160;</a></span>EXIDma()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> EXIDma </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="EXIBios_8h.html#a7138fa1e7122b3f129311feaafcb13e7">EXICallback</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a63cc2e6b270bebf57fe30721778db06b" name="a63cc2e6b270bebf57fe30721778db06b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63cc2e6b270bebf57fe30721778db06b">&#9670;&#160;</a></span>EXIGetID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> EXIGetID </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> *&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa3a4653bd407e2c77c43830b64b7ed29" name="aa3a4653bd407e2c77c43830b64b7ed29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3a4653bd407e2c77c43830b64b7ed29">&#9670;&#160;</a></span>EXIGetState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">asm <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> EXIGetState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a039f66377af2147f6217833d790cf58c" name="a039f66377af2147f6217833d790cf58c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a039f66377af2147f6217833d790cf58c">&#9670;&#160;</a></span>EXIImm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> EXIImm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="EXIBios_8h.html#a7138fa1e7122b3f129311feaafcb13e7">EXICallback</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2af2a747983129d8d6e7a7cc4410f462" name="a2af2a747983129d8d6e7a7cc4410f462"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2af2a747983129d8d6e7a7cc4410f462">&#9670;&#160;</a></span>EXIImmEx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> EXIImmEx </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af87b191f65881287c9bf175ee27ef364" name="af87b191f65881287c9bf175ee27ef364"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af87b191f65881287c9bf175ee27ef364">&#9670;&#160;</a></span>EXIInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">asm void EXIInit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -434,127 +674,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="afae1d325f3d9cb1f59c9ed876084ac9c" name="afae1d325f3d9cb1f59c9ed876084ac9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afae1d325f3d9cb1f59c9ed876084ac9c">&#9670;&#160;</a></span>EXIDetach()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void EXIDetach </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6dcb71521fc7dd6a230a5ac38f6c75f0" name="a6dcb71521fc7dd6a230a5ac38f6c75f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6dcb71521fc7dd6a230a5ac38f6c75f0">&#9670;&#160;</a></span>EXIDma()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void EXIDma </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab49371d8f2afac422065617282cdaa72" name="ab49371d8f2afac422065617282cdaa72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab49371d8f2afac422065617282cdaa72">&#9670;&#160;</a></span>EXIGetID()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void EXIGetID </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a59b17eb673965d20029a1bb23cc6f8e1" name="a59b17eb673965d20029a1bb23cc6f8e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59b17eb673965d20029a1bb23cc6f8e1">&#9670;&#160;</a></span>EXIGetState()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void EXIGetState </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3e20c415368f82aa687e8809651af67f" name="a3e20c415368f82aa687e8809651af67f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e20c415368f82aa687e8809651af67f">&#9670;&#160;</a></span>EXIImm()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void EXIImm </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a19124709c66a37738754436676d461ea" name="a19124709c66a37738754436676d461ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19124709c66a37738754436676d461ea">&#9670;&#160;</a></span>EXIImmEx()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void EXIImmEx </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0c8bda133d97baa80e6132cb06c3bde1" name="a0c8bda133d97baa80e6132cb06c3bde1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c8bda133d97baa80e6132cb06c3bde1">&#9670;&#160;</a></span>EXIInit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void EXIInit </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2633b70dc8169b62a865e12be1c68272" name="a2633b70dc8169b62a865e12be1c68272"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2633b70dc8169b62a865e12be1c68272">&#9670;&#160;</a></span>EXIIntrruptHandler()</h2>
+<a id="a720c524734599d54bc8f1a9c7cd514da" name="a720c524734599d54bc8f1a9c7cd514da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a720c524734599d54bc8f1a9c7cd514da">&#9670;&#160;</a></span>EXIIntrruptHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -565,8 +686,19 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static asm void EXIIntrruptHandler </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a>&#160;</td>
+          <td class="paramname"><em>interrupt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structOSContext.html">OSContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -578,16 +710,51 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a2ad896c74edfd0467ae510438218d0b8" name="a2ad896c74edfd0467ae510438218d0b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ad896c74edfd0467ae510438218d0b8">&#9670;&#160;</a></span>EXILock()</h2>
+<a id="a3ba8796f7d9ad7a7abefe3e832cd7544" name="a3ba8796f7d9ad7a7abefe3e832cd7544"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ba8796f7d9ad7a7abefe3e832cd7544">&#9670;&#160;</a></span>EXILock()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void EXILock </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> EXILock </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="EXIBios_8h.html#a7138fa1e7122b3f129311feaafcb13e7">EXICallback</a>&#160;</td>
+          <td class="paramname"><em>unlockedCallback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a55ed6bc52cc91d2d21f4b0d3a20e664b" name="a55ed6bc52cc91d2d21f4b0d3a20e664b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55ed6bc52cc91d2d21f4b0d3a20e664b">&#9670;&#160;</a></span>EXIProbe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> EXIProbe </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -595,16 +762,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aa8862e49a0c3b7998f4d673ab3c8a7ad" name="aa8862e49a0c3b7998f4d673ab3c8a7ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8862e49a0c3b7998f4d673ab3c8a7ad">&#9670;&#160;</a></span>EXIProbe()</h2>
+<a id="a71976aca583ff1fd4e4a86a61c758879" name="a71976aca583ff1fd4e4a86a61c758879"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71976aca583ff1fd4e4a86a61c758879">&#9670;&#160;</a></span>EXIProbeEx()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void EXIProbe </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> EXIProbeEx </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -612,16 +780,79 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a51cac7c7eda946382e14b233d43eba29" name="a51cac7c7eda946382e14b233d43eba29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51cac7c7eda946382e14b233d43eba29">&#9670;&#160;</a></span>EXIProbeEx()</h2>
+<a id="a15676d57fb66f0e102c488d9a9f08fd6" name="a15676d57fb66f0e102c488d9a9f08fd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15676d57fb66f0e102c488d9a9f08fd6">&#9670;&#160;</a></span>EXISelect()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void EXIProbeEx </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> EXISelect </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>dev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>freq</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4962df469bfad2103ee099c3f68969a1" name="a4962df469bfad2103ee099c3f68969a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4962df469bfad2103ee099c3f68969a1">&#9670;&#160;</a></span>EXISetExiCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">asm <a class="el" href="EXIBios_8h.html#a7138fa1e7122b3f129311feaafcb13e7">EXICallback</a> EXISetExiCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="EXIBios_8h.html#a7138fa1e7122b3f129311feaafcb13e7">EXICallback</a>&#160;</td>
+          <td class="paramname"><em>exiCallback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab8743b23b3a2b8bf346cf3c8b5b8c30a" name="ab8743b23b3a2b8bf346cf3c8b5b8c30a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8743b23b3a2b8bf346cf3c8b5b8c30a">&#9670;&#160;</a></span>EXISync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> EXISync </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -629,16 +860,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a51869477a746fdd062fba6f236f31fc1" name="a51869477a746fdd062fba6f236f31fc1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51869477a746fdd062fba6f236f31fc1">&#9670;&#160;</a></span>EXISelect()</h2>
+<a id="a3d632f2f054e96c272511760f93ef86d" name="a3d632f2f054e96c272511760f93ef86d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d632f2f054e96c272511760f93ef86d">&#9670;&#160;</a></span>EXIUnlock()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void EXISelect </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> EXIUnlock </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -646,59 +878,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a3b7456da6f7cc236c6afb0ea7c48dc5b" name="a3b7456da6f7cc236c6afb0ea7c48dc5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b7456da6f7cc236c6afb0ea7c48dc5b">&#9670;&#160;</a></span>EXISetExiCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void EXISetExiCallback </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5dc51ac2d103fcea4603114ec51325d8" name="a5dc51ac2d103fcea4603114ec51325d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5dc51ac2d103fcea4603114ec51325d8">&#9670;&#160;</a></span>EXISync()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void EXISync </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a21699c679d0d88f19d579336412e1f10" name="a21699c679d0d88f19d579336412e1f10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21699c679d0d88f19d579336412e1f10">&#9670;&#160;</a></span>EXIUnlock()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void EXIUnlock </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aff7564deecbd6f4bcd147cea6aea65d5" name="aff7564deecbd6f4bcd147cea6aea65d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff7564deecbd6f4bcd147cea6aea65d5">&#9670;&#160;</a></span>EXTIntrruptHandler()</h2>
+<a id="a216038ec89fc1410cb4a29a842b7fb07" name="a216038ec89fc1410cb4a29a842b7fb07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a216038ec89fc1410cb4a29a842b7fb07">&#9670;&#160;</a></span>EXTIntrruptHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -709,8 +890,19 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static asm void EXTIntrruptHandler </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a>&#160;</td>
+          <td class="paramname"><em>interrupt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structOSContext.html">OSContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -739,127 +931,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a3b34b2f4e5276b3852fc3b025a023d14" name="a3b34b2f4e5276b3852fc3b025a023d14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b34b2f4e5276b3852fc3b025a023d14">&#9670;&#160;</a></span>OSClearContext()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSClearContext </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a65b7dd4c9756f26d16dcf8f0dedb07bf" name="a65b7dd4c9756f26d16dcf8f0dedb07bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65b7dd4c9756f26d16dcf8f0dedb07bf">&#9670;&#160;</a></span>OSDisableInterrupts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSDisableInterrupts </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9144b2707b0a8250037579ba6b1dd919" name="a9144b2707b0a8250037579ba6b1dd919"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9144b2707b0a8250037579ba6b1dd919">&#9670;&#160;</a></span>OSGetConsoleType()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSGetConsoleType </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad3a3da27911d7fc3f4f08506ac539ea3" name="ad3a3da27911d7fc3f4f08506ac539ea3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3a3da27911d7fc3f4f08506ac539ea3">&#9670;&#160;</a></span>OSGetTime()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSGetTime </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a688d1c86f609bd2033df6f4d22094f42" name="a688d1c86f609bd2033df6f4d22094f42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a688d1c86f609bd2033df6f4d22094f42">&#9670;&#160;</a></span>OSRegisterVersion()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSRegisterVersion </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a14b5cc2befa83d8710fba14f4de14fd9" name="a14b5cc2befa83d8710fba14f4de14fd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14b5cc2befa83d8710fba14f4de14fd9">&#9670;&#160;</a></span>OSRestoreInterrupts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSRestoreInterrupts </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a184beaa362f37ba6f41541041df12976" name="a184beaa362f37ba6f41541041df12976"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a184beaa362f37ba6f41541041df12976">&#9670;&#160;</a></span>OSSetCurrentContext()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSSetCurrentContext </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9dbd8c5f782cfb1b1c04ee127bebf949" name="a9dbd8c5f782cfb1b1c04ee127bebf949"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9dbd8c5f782cfb1b1c04ee127bebf949">&#9670;&#160;</a></span>SetExiInterruptMask()</h2>
+<a id="a39392170fe6ae6925b4724f0142fa450" name="a39392170fe6ae6925b4724f0142fa450"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39392170fe6ae6925b4724f0142fa450">&#9670;&#160;</a></span>SetExiInterruptMask()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -870,8 +943,19 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static asm void SetExiInterruptMask </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structEXIControl.html">EXIControl</a> *&#160;</td>
+          <td class="paramname"><em>exi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -883,8 +967,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a8de2b6484feaa72cdffd4709470ec78e" name="a8de2b6484feaa72cdffd4709470ec78e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8de2b6484feaa72cdffd4709470ec78e">&#9670;&#160;</a></span>TCIntrruptHandler()</h2>
+<a id="aa6809328bcc3607eba8b32e2b2f3b5cc" name="aa6809328bcc3607eba8b32e2b2f3b5cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6809328bcc3607eba8b32e2b2f3b5cc">&#9670;&#160;</a></span>TCIntrruptHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -895,8 +979,19 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static asm void TCIntrruptHandler </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a>&#160;</td>
+          <td class="paramname"><em>interrupt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structOSContext.html">OSContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -908,8 +1003,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="add93f1080261952d2c2998fbbd791b85" name="add93f1080261952d2c2998fbbd791b85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add93f1080261952d2c2998fbbd791b85">&#9670;&#160;</a></span>UnlockedHandler()</h2>
+<a id="a06cb82b2b0ac93467c329e4577b31538" name="a06cb82b2b0ac93467c329e4577b31538"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06cb82b2b0ac93467c329e4577b31538">&#9670;&#160;</a></span>UnlockedHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -920,8 +1015,19 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static asm void UnlockedHandler </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structOSContext.html">OSContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -934,8 +1040,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="ac79240d60828f1e8d782a34c8fc6ff66" name="ac79240d60828f1e8d782a34c8fc6ff66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac79240d60828f1e8d782a34c8fc6ff66">&#9670;&#160;</a></span>__EXIVersion</h2>
+<a id="a0279559454233f1688c5e4dcdcaac672" name="a0279559454233f1688c5e4dcdcaac672"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0279559454233f1688c5e4dcdcaac672">&#9670;&#160;</a></span>__EXIVersion</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -944,7 +1050,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> void* __EXIVersion[1+1]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> const char* __EXIVersion = <a class="el" href="ai_8c.html#a1a6069729885614d1c28f573d06bd419">lit_1</a></td>
         </tr>
       </table>
   </td>
@@ -953,18 +1059,11 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    (<span class="keywordtype">void</span>*)&amp;<a class="code hl_variable" href="EXIBios_8c.html#a1a6069729885614d1c28f573d06bd419">lit_1</a>,</div>
-<div class="line">    </div>
-<div class="line">    <a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
-<div class="line">}</div>
-<div class="ttc" id="aEXIBios_8c_html_a1a6069729885614d1c28f573d06bd419"><div class="ttname"><a href="EXIBios_8c.html#a1a6069729885614d1c28f573d06bd419">lit_1</a></div><div class="ttdeci">static SECTION_DATA char lit_1[]</div><div class="ttdef"><b>Definition:</b> EXIBios.c:239</div></div>
-<div class="ttc" id="atypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> types.h:34</div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
-<a id="aebbe5bb66d95502f5728cbc8a9aab3c7" name="aebbe5bb66d95502f5728cbc8a9aab3c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebbe5bb66d95502f5728cbc8a9aab3c7">&#9670;&#160;</a></span>__OSInIPL</h2>
+<a id="a925af902a1d663744fe01fe29e21b4de" name="a925af902a1d663744fe01fe29e21b4de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a925af902a1d663744fe01fe29e21b4de">&#9670;&#160;</a></span>__OSInIPL</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -973,7 +1072,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> __OSInIPL[4+4]</td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> __OSInIPL</td>
         </tr>
       </table>
   </td>
@@ -985,8 +1084,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a0f535f84ecb541332c3a95c43d39ab15" name="a0f535f84ecb541332c3a95c43d39ab15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f535f84ecb541332c3a95c43d39ab15">&#9670;&#160;</a></span>Ecb</h2>
+<a id="ab6b8e9b20518e1b7600d0083b5728c06" name="ab6b8e9b20518e1b7600d0083b5728c06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6b8e9b20518e1b7600d0083b5728c06">&#9670;&#160;</a></span>Ecb</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -995,7 +1094,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> Ecb[192]</td>
+          <td class="memname"><a class="el" href="structEXIControl.html">EXIControl</a> Ecb[3]</td>
         </tr>
       </table>
   </td>
@@ -1039,7 +1138,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_1[] = &quot;&lt;&lt; Dolphin SDK - EXI\trelease build: Apr 5 2004 04:14:14 (0x2301) &gt;&gt;&quot;</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_1[]</td>
         </tr>
       </table>
   </td>
@@ -1048,7 +1147,9 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    <span class="stringliteral">&quot;&lt;&lt; Dolphin SDK - EXI\trelease build: Apr  5 2004 04:14:14 (0x2301) &gt;&gt;&quot;</span></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0d8e5ff4fa0008565949070d51138a3b" name="a0d8e5ff4fa0008565949070d51138a3b"></a>

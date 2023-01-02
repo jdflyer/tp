@@ -82,6 +82,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">SIBios.c File Reference</div></div>
@@ -89,26 +90,18 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="SIBios_8h_source.html">dolphin/si/SIBios.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;asm/dolphin/si/SIBios/SIBusy.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/si/SIBios/SIIsChanBusy.s&quot;</code><br />
+<code>#include &quot;<a class="el" href="SISamplingRate_8h_source.html">dolphin/si/SISamplingRate.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="vi_8h_source.html">dolphin/vi/vi.h</a>&quot;</code><br />
 <code>#include &quot;asm/dolphin/si/SIBios/CompleteTransfer.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/si/SIBios/SIInterruptHandler.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/si/SIBios/SIEnablePollingInterrupt.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/si/SIBios/SIRegisterPollingHandler.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/si/SIBios/SIUnregisterPollingHandler.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/si/SIBios/SIInit.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/si/SIBios/__SITransfer.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/si/SIBios/SIGetStatus.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/si/SIBios/SISetCommand.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/si/SIBios/SITransferCommands.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/si/SIBios/SISetXY.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/si/SIBios/SIEnablePolling.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/si/SIBios/SIDisablePolling.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/si/SIBios/SIGetResponseRaw.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/si/SIBios/SIGetResponse.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/si/SIBios/AlarmHandler.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/si/SIBios/SITransfer.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/si/SIBios/GetTypeCallback.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/si/SIBios/SIGetType.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/si/SIBios/SIGetTypeAsync.s&quot;</code><br />
@@ -117,115 +110,102 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="SIBios_8c__incl.svg" width="100%" height="448"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="SIBios_8c__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a7e76e74ec6703d0410b634d73ebc5f33"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a7e76e74ec6703d0410b634d73ebc5f33">ROUND</a>(n,  a)&#160;&#160;&#160;(((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)(n) + (a)-1) &amp; ~((a)-1))</td></tr>
+<tr class="separator:a7e76e74ec6703d0410b634d73ebc5f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abb401efc68b58269e70bfe790a6d92b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#abb401efc68b58269e70bfe790a6d92b2">SIBusy</a> ()</td></tr>
-<tr class="separator:abb401efc68b58269e70bfe790a6d92b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8faf0c6da6889574c63b4189cbacc5b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a8faf0c6da6889574c63b4189cbacc5b1">SIIsChanBusy</a> ()</td></tr>
-<tr class="separator:a8faf0c6da6889574c63b4189cbacc5b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd929f9a9e9994f659a3be03399f3e32"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#afd929f9a9e9994f659a3be03399f3e32">CompleteTransfer</a> ()</td></tr>
-<tr class="separator:afd929f9a9e9994f659a3be03399f3e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbb3e09b04c996beb7d275366b2c49bb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#acbb3e09b04c996beb7d275366b2c49bb">SIInterruptHandler</a> ()</td></tr>
-<tr class="separator:acbb3e09b04c996beb7d275366b2c49bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cc2bc2811310fcb25c21d0d18f4b045"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a4cc2bc2811310fcb25c21d0d18f4b045">SIEnablePollingInterrupt</a> ()</td></tr>
-<tr class="separator:a4cc2bc2811310fcb25c21d0d18f4b045"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75d1adb6accd9b1fb5cfe27ae803159b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a75d1adb6accd9b1fb5cfe27ae803159b">SIRegisterPollingHandler</a> ()</td></tr>
-<tr class="separator:a75d1adb6accd9b1fb5cfe27ae803159b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd6341638ae970865eb4dee60a2857e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#afd6341638ae970865eb4dee60a2857e5">SIUnregisterPollingHandler</a> ()</td></tr>
-<tr class="separator:afd6341638ae970865eb4dee60a2857e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34ff61a21a4e69e37957f910c5788c7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a34ff61a21a4e69e37957f910c5788c7e">SIInit</a> ()</td></tr>
-<tr class="separator:a34ff61a21a4e69e37957f910c5788c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4459ec1d3ac003d3fbc60fb4af330e58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a4459ec1d3ac003d3fbc60fb4af330e58">__SITransfer</a> ()</td></tr>
-<tr class="separator:a4459ec1d3ac003d3fbc60fb4af330e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6e7c9722d0d43abaebe835b3a4a0352"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#ae6e7c9722d0d43abaebe835b3a4a0352">SIGetStatus</a> ()</td></tr>
-<tr class="separator:ae6e7c9722d0d43abaebe835b3a4a0352"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5225e15d6440d72312dcdb9dcee05e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#ac5225e15d6440d72312dcdb9dcee05e2">SISetCommand</a> ()</td></tr>
-<tr class="separator:ac5225e15d6440d72312dcdb9dcee05e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a072f59ff90ffc29cd8491dd2a932af46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a072f59ff90ffc29cd8491dd2a932af46">SITransferCommands</a> ()</td></tr>
-<tr class="separator:a072f59ff90ffc29cd8491dd2a932af46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acffb8eb70e5080f6026f695cdda187c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#acffb8eb70e5080f6026f695cdda187c3">SISetXY</a> ()</td></tr>
-<tr class="separator:acffb8eb70e5080f6026f695cdda187c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73167c3655f393ae8f733c356649275e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a73167c3655f393ae8f733c356649275e">SIEnablePolling</a> ()</td></tr>
-<tr class="separator:a73167c3655f393ae8f733c356649275e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c7348ae4ba2c3103b8da921302acf42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a0c7348ae4ba2c3103b8da921302acf42">SIDisablePolling</a> ()</td></tr>
-<tr class="separator:a0c7348ae4ba2c3103b8da921302acf42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a583c8bff8dbbcdc45f528de4a4d7ecb6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a583c8bff8dbbcdc45f528de4a4d7ecb6">SIGetResponseRaw</a> ()</td></tr>
-<tr class="separator:a583c8bff8dbbcdc45f528de4a4d7ecb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4bc57fc087e716e1277832401212097"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#ad4bc57fc087e716e1277832401212097">SIGetResponse</a> ()</td></tr>
-<tr class="separator:ad4bc57fc087e716e1277832401212097"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dd6f3034ead4aca934d65ff1d220d81"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a4dd6f3034ead4aca934d65ff1d220d81">AlarmHandler</a> ()</td></tr>
-<tr class="separator:a4dd6f3034ead4aca934d65ff1d220d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac624e4565762c15b0f01fd6db27b0a3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#ac624e4565762c15b0f01fd6db27b0a3f">SITransfer</a> ()</td></tr>
-<tr class="separator:ac624e4565762c15b0f01fd6db27b0a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a365af7a5b7ac485f99754fc4307d8946"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a365af7a5b7ac485f99754fc4307d8946">GetTypeCallback</a> ()</td></tr>
-<tr class="separator:a365af7a5b7ac485f99754fc4307d8946"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af01f3a700ec21fb4956ccbfb7ae4840a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#af01f3a700ec21fb4956ccbfb7ae4840a">SIGetType</a> ()</td></tr>
-<tr class="separator:af01f3a700ec21fb4956ccbfb7ae4840a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60235635a68e8727e1834a7b7980abfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a60235635a68e8727e1834a7b7980abfb">SIGetTypeAsync</a> ()</td></tr>
-<tr class="separator:a60235635a68e8727e1834a7b7980abfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a688d1c86f609bd2033df6f4d22094f42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a688d1c86f609bd2033df6f4d22094f42">OSRegisterVersion</a> ()</td></tr>
-<tr class="separator:a688d1c86f609bd2033df6f4d22094f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b1eed12a179c480bc5ccda5abc42d35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a8b1eed12a179c480bc5ccda5abc42d35">OSSetAlarm</a> ()</td></tr>
-<tr class="separator:a8b1eed12a179c480bc5ccda5abc42d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b6b438fc3e4ceeaed24cbfa3dca2851"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a8b6b438fc3e4ceeaed24cbfa3dca2851">OSCancelAlarm</a> ()</td></tr>
-<tr class="separator:a8b6b438fc3e4ceeaed24cbfa3dca2851"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65b7dd4c9756f26d16dcf8f0dedb07bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a65b7dd4c9756f26d16dcf8f0dedb07bf">OSDisableInterrupts</a> ()</td></tr>
-<tr class="separator:a65b7dd4c9756f26d16dcf8f0dedb07bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14b5cc2befa83d8710fba14f4de14fd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a14b5cc2befa83d8710fba14f4de14fd9">OSRestoreInterrupts</a> ()</td></tr>
-<tr class="separator:a14b5cc2befa83d8710fba14f4de14fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84bf60a3621a2d64b536790302451842"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a84bf60a3621a2d64b536790302451842">__OSSetInterruptHandler</a> ()</td></tr>
-<tr class="separator:a84bf60a3621a2d64b536790302451842"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5da344ee9fd9ebbc010c971a7a75baa0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a5da344ee9fd9ebbc010c971a7a75baa0">__OSUnmaskInterrupts</a> ()</td></tr>
-<tr class="separator:a5da344ee9fd9ebbc010c971a7a75baa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dd85811ff98d42ce6818bf569850d0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a3dd85811ff98d42ce6818bf569850d0d">OSGetWirelessID</a> ()</td></tr>
-<tr class="separator:a3dd85811ff98d42ce6818bf569850d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7702e9a85ddb3e62003e299ee439021f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a7702e9a85ddb3e62003e299ee439021f">OSSetWirelessID</a> ()</td></tr>
-<tr class="separator:a7702e9a85ddb3e62003e299ee439021f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab291114d2ce5fe2988a979db7b11f85c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#ab291114d2ce5fe2988a979db7b11f85c">__OSGetSystemTime</a> ()</td></tr>
-<tr class="separator:ab291114d2ce5fe2988a979db7b11f85c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b6a789c25639bf6ffb3ae76651fd650"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a4b6a789c25639bf6ffb3ae76651fd650">SISetSamplingRate</a> ()</td></tr>
-<tr class="separator:a4b6a789c25639bf6ffb3ae76651fd650"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a284ce8323f84a30df92d0c05a23eff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a1a284ce8323f84a30df92d0c05a23eff">VIGetCurrentLine</a> ()</td></tr>
+<tr class="memitem:a0e6ba4534d12da7b497c0e10dbe23fbc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a0e6ba4534d12da7b497c0e10dbe23fbc">CompleteTransfer</a> (void)</td></tr>
+<tr class="separator:a0e6ba4534d12da7b497c0e10dbe23fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a495718dcdea4cd2f0aeb7aad48c752f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a495718dcdea4cd2f0aeb7aad48c752f6">__SITransfer</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, void *output, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> outputBytes, void *input, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> inputBytes, <a class="el" href="SIBios_8h.html#a8ede730d273d5d7fe6c7b726637dd387">SICallback</a> callback)</td></tr>
+<tr class="separator:a495718dcdea4cd2f0aeb7aad48c752f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af782b8657b2637bf66177b7327c74fe6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#af782b8657b2637bf66177b7327c74fe6">AlarmHandler</a> (<a class="el" href="structOSAlarm.html">OSAlarm</a> *alarm, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
+<tr class="separator:af782b8657b2637bf66177b7327c74fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfc8f06cf56752a4ba0a3d3983786692"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#adfc8f06cf56752a4ba0a3d3983786692">GetTypeCallback</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> error, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
+<tr class="separator:adfc8f06cf56752a4ba0a3d3983786692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a284ce8323f84a30df92d0c05a23eff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a1a284ce8323f84a30df92d0c05a23eff">VIGetCurrentLine</a> ()</td></tr>
 <tr class="separator:a1a284ce8323f84a30df92d0c05a23eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34710754b3fdbb750a36e3478b728acc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a34710754b3fdbb750a36e3478b728acc">SIBusy</a> ()</td></tr>
+<tr class="separator:a34710754b3fdbb750a36e3478b728acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae447368c681b79857bba3bd65ba0cfab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#ae447368c681b79857bba3bd65ba0cfab">SIIsChanBusy</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan)</td></tr>
+<tr class="separator:ae447368c681b79857bba3bd65ba0cfab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33aad28c3260e6cceb63db239d0865e3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a33aad28c3260e6cceb63db239d0865e3">SIClearTCInterrupt</a> ()</td></tr>
+<tr class="separator:a33aad28c3260e6cceb63db239d0865e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae03d2aaf97b75d4d9f5e2762ea17bd07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#ae03d2aaf97b75d4d9f5e2762ea17bd07">SITransferNext</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan)</td></tr>
+<tr class="separator:ae03d2aaf97b75d4d9f5e2762ea17bd07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0de8d51ddfe728795ba211b629a38703"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a0de8d51ddfe728795ba211b629a38703">SIInterruptHandler</a> (<a class="el" href="OSInterrupt_8h.html#acd5c403776740063a124b880906361fd">OSInterrupt</a> interrupt, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
+<tr class="separator:a0de8d51ddfe728795ba211b629a38703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58de98640d0d9f9078539c89bf98ffb3"><td class="memItemLeft" align="right" valign="top">static asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a58de98640d0d9f9078539c89bf98ffb3">SIEnablePollingInterrupt</a> (<a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> enable)</td></tr>
+<tr class="separator:a58de98640d0d9f9078539c89bf98ffb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d620d1a9a2f8d03cc39f9431b7bb021"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a1d620d1a9a2f8d03cc39f9431b7bb021">SIRegisterPollingHandler</a> (<a class="el" href="OSInterrupt_8h.html#aaf338797f75922de0f63e0ce14935954">OSInterruptHandler</a> handler)</td></tr>
+<tr class="separator:a1d620d1a9a2f8d03cc39f9431b7bb021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee47945d06960d573fe140b3ce13079a"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#aee47945d06960d573fe140b3ce13079a">SIUnregisterPollingHandler</a> (<a class="el" href="OSInterrupt_8h.html#aaf338797f75922de0f63e0ce14935954">OSInterruptHandler</a> handler)</td></tr>
+<tr class="separator:aee47945d06960d573fe140b3ce13079a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5554df5c35e119f94fb6e8777bca1e8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a5554df5c35e119f94fb6e8777bca1e8d">SIInit</a> (void)</td></tr>
+<tr class="separator:a5554df5c35e119f94fb6e8777bca1e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbc2d596b5703c18797a8bb0a55c63cc"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#afbc2d596b5703c18797a8bb0a55c63cc">SIGetStatus</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan)</td></tr>
+<tr class="separator:afbc2d596b5703c18797a8bb0a55c63cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc2285e0060f6444306c30941c94a5b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#afc2285e0060f6444306c30941c94a5b8">SISetCommand</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> command)</td></tr>
+<tr class="separator:afc2285e0060f6444306c30941c94a5b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe599aadb0e7f1738021e008e7adc4bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#afe599aadb0e7f1738021e008e7adc4bf">SITransferCommands</a> (void)</td></tr>
+<tr class="separator:afe599aadb0e7f1738021e008e7adc4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace0f0608e7663c34baee4ff3778f4571"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#ace0f0608e7663c34baee4ff3778f4571">SISetXY</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> x, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> y)</td></tr>
+<tr class="separator:ace0f0608e7663c34baee4ff3778f4571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a6b39d124a3d6e021e974c74df7322f"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a4a6b39d124a3d6e021e974c74df7322f">SIEnablePolling</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> poll)</td></tr>
+<tr class="separator:a4a6b39d124a3d6e021e974c74df7322f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7da89bb1deb457edffbb021ec38758f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a7da89bb1deb457edffbb021ec38758f8">SIDisablePolling</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> poll)</td></tr>
+<tr class="separator:a7da89bb1deb457edffbb021ec38758f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22a249ab96334782a23ecc9ed15f0037"><td class="memItemLeft" align="right" valign="top">static asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a22a249ab96334782a23ecc9ed15f0037">SIGetResponseRaw</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan)</td></tr>
+<tr class="separator:a22a249ab96334782a23ecc9ed15f0037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a672c9cf1e9ee7f01833312844992be7f"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a672c9cf1e9ee7f01833312844992be7f">SIGetResponse</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, void *<a class="el" href="d__vibration_8cpp.html#a8893b57d88e7968dc17781c8655e17dc">data</a>)</td></tr>
+<tr class="separator:a672c9cf1e9ee7f01833312844992be7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d57d95fc79d606ef79f0a15459d110e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a6d57d95fc79d606ef79f0a15459d110e">SITransfer</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, void *output, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> outputBytes, void *input, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> inputBytes, <a class="el" href="SIBios_8h.html#a8ede730d273d5d7fe6c7b726637dd387">SICallback</a> callback, <a class="el" href="OSTime_8h.html#a3d32c840b403a8d37875867a7ea9b381">OSTime</a> delay)</td></tr>
+<tr class="separator:a6d57d95fc79d606ef79f0a15459d110e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a775e027c3de3c70f5f9c7f9cbb0ca3d9"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a775e027c3de3c70f5f9c7f9cbb0ca3d9">SIGetType</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan)</td></tr>
+<tr class="separator:a775e027c3de3c70f5f9c7f9cbb0ca3d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d915c9922a67294b4bfc966647d786f"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a6d915c9922a67294b4bfc966647d786f">SIGetTypeAsync</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="SIBios_8h.html#a7a3a7fac08ddb4844f9c934eeedc914a">SITypeAndStatusCallback</a> callback)</td></tr>
+<tr class="separator:a6d915c9922a67294b4bfc966647d786f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a1a6069729885614d1c28f573d06bd419"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a1a6069729885614d1c28f573d06bd419">lit_1</a> [] = &quot;&lt;&lt; Dolphin SDK - SI\trelease build: Apr 5 2004 04:14:16 (0x2301) &gt;&gt;&quot;</td></tr>
+<tr class="memitem:a1a6069729885614d1c28f573d06bd419"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a1a6069729885614d1c28f573d06bd419">lit_1</a> []</td></tr>
 <tr class="separator:a1a6069729885614d1c28f573d06bd419"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb40494fbb16b4d77818a57d48e036f3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#aeb40494fbb16b4d77818a57d48e036f3">Si</a> [20]</td></tr>
-<tr class="separator:aeb40494fbb16b4d77818a57d48e036f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb062c51fdd6550b5ac09df027a7299f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#adb062c51fdd6550b5ac09df027a7299f">Packet</a> [128]</td></tr>
-<tr class="separator:adb062c51fdd6550b5ac09df027a7299f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedefc5c10e18fb89351ebb19389af8fd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#aedefc5c10e18fb89351ebb19389af8fd">Alarm</a> [160]</td></tr>
-<tr class="separator:aedefc5c10e18fb89351ebb19389af8fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae396679fb616de5f2f49038d662665e5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#ae396679fb616de5f2f49038d662665e5">TypeTime</a> [32]</td></tr>
-<tr class="separator:ae396679fb616de5f2f49038d662665e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bebd1f4757ec83b33663e231cc83404"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a6bebd1f4757ec83b33663e231cc83404">XferTime</a> [32]</td></tr>
-<tr class="separator:a6bebd1f4757ec83b33663e231cc83404"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5026783d296a4b5185c46344fd05717"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#ae5026783d296a4b5185c46344fd05717">TypeCallback</a> [64]</td></tr>
-<tr class="separator:ae5026783d296a4b5185c46344fd05717"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72c5e5f644ed2358a51059aa2aa8a0c1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a72c5e5f644ed2358a51059aa2aa8a0c1">RDSTHandler</a> [16]</td></tr>
-<tr class="separator:a72c5e5f644ed2358a51059aa2aa8a0c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab97424eb64a66f26f095229257a2b806"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#ab97424eb64a66f26f095229257a2b806">InputBufferValid</a> [16]</td></tr>
-<tr class="separator:ab97424eb64a66f26f095229257a2b806"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac37ef3120fab7cd99e61e103aa244119"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#ac37ef3120fab7cd99e61e103aa244119">InputBuffer</a> [32]</td></tr>
-<tr class="separator:ac37ef3120fab7cd99e61e103aa244119"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac57f3f0dd7160f62650bbe8eeee7bbae"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#ac57f3f0dd7160f62650bbe8eeee7bbae">InputBufferVcount</a> [16]</td></tr>
-<tr class="separator:ac57f3f0dd7160f62650bbe8eeee7bbae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3d8e9b09d82b77a6d268607a14e8e1c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#ad3d8e9b09d82b77a6d268607a14e8e1c">__SIVersion</a> = <a class="el" href="ai_8c.html#a1a6069729885614d1c28f573d06bd419">lit_1</a></td></tr>
+<tr class="separator:ad3d8e9b09d82b77a6d268607a14e8e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a311917cefdcf7c3b27c3b69587183220"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structSIControl.html">SIControl</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a311917cefdcf7c3b27c3b69587183220">Si</a></td></tr>
+<tr class="separator:a311917cefdcf7c3b27c3b69587183220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b5453da543cb648d2f7933b7057c413"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a0b5453da543cb648d2f7933b7057c413">Type</a> [<a class="el" href="SIBios_8h.html#a98ade5148b74597b3e1306fbbec0a399">SI_MAX_CHAN</a>]</td></tr>
+<tr class="separator:a0b5453da543cb648d2f7933b7057c413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b3d691f2a4f06d96a4b7cffb639a128"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structSIPacket.html">SIPacket</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a3b3d691f2a4f06d96a4b7cffb639a128">Packet</a> [<a class="el" href="SIBios_8h.html#a98ade5148b74597b3e1306fbbec0a399">SI_MAX_CHAN</a>]</td></tr>
+<tr class="separator:a3b3d691f2a4f06d96a4b7cffb639a128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79dc3d98620704511a6ff2dad3cfe746"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structOSAlarm.html">OSAlarm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a79dc3d98620704511a6ff2dad3cfe746">Alarm</a> [<a class="el" href="SIBios_8h.html#a98ade5148b74597b3e1306fbbec0a399">SI_MAX_CHAN</a>]</td></tr>
+<tr class="separator:a79dc3d98620704511a6ff2dad3cfe746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7847d7c79fde0088fe1cf122ea19146"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="OSTime_8h.html#a3d32c840b403a8d37875867a7ea9b381">OSTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#af7847d7c79fde0088fe1cf122ea19146">TypeTime</a> [<a class="el" href="SIBios_8h.html#a98ade5148b74597b3e1306fbbec0a399">SI_MAX_CHAN</a>]</td></tr>
+<tr class="separator:af7847d7c79fde0088fe1cf122ea19146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0777189a976736b560f3690e3b19dd5b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="OSTime_8h.html#a3d32c840b403a8d37875867a7ea9b381">OSTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a0777189a976736b560f3690e3b19dd5b">XferTime</a> [<a class="el" href="SIBios_8h.html#a98ade5148b74597b3e1306fbbec0a399">SI_MAX_CHAN</a>]</td></tr>
+<tr class="separator:a0777189a976736b560f3690e3b19dd5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc2b77133ec8984862c423a26a24f4d2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="SIBios_8h.html#a7a3a7fac08ddb4844f9c934eeedc914a">SITypeAndStatusCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#acc2b77133ec8984862c423a26a24f4d2">TypeCallback</a> [<a class="el" href="SIBios_8h.html#a98ade5148b74597b3e1306fbbec0a399">SI_MAX_CHAN</a>][4]</td></tr>
+<tr class="separator:acc2b77133ec8984862c423a26a24f4d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a627d0980d3e69fd7071c20b0b8ab8d5b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="OSInterrupt_8h.html#aaf338797f75922de0f63e0ce14935954">OSInterruptHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a627d0980d3e69fd7071c20b0b8ab8d5b">RDSTHandler</a> [4]</td></tr>
+<tr class="separator:a627d0980d3e69fd7071c20b0b8ab8d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae26e6061357c98858902570f03763c57"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#ae26e6061357c98858902570f03763c57">InputBufferValid</a> [<a class="el" href="SIBios_8h.html#a98ade5148b74597b3e1306fbbec0a399">SI_MAX_CHAN</a>]</td></tr>
+<tr class="separator:ae26e6061357c98858902570f03763c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaad1b11bb23451fab826364cc4458c59"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#aaad1b11bb23451fab826364cc4458c59">InputBuffer</a> [<a class="el" href="SIBios_8h.html#a98ade5148b74597b3e1306fbbec0a399">SI_MAX_CHAN</a>][2]</td></tr>
+<tr class="separator:aaad1b11bb23451fab826364cc4458c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0cfd4368b1ebfddf1860ca409b1f17e"><td class="memItemLeft" align="right" valign="top">static volatile <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#ac0cfd4368b1ebfddf1860ca409b1f17e">InputBufferVcount</a> [<a class="el" href="SIBios_8h.html#a98ade5148b74597b3e1306fbbec0a399">SI_MAX_CHAN</a>]</td></tr>
+<tr class="separator:ac0cfd4368b1ebfddf1860ca409b1f17e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a512b7e10ef17bc2cf997481880c11a44"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a512b7e10ef17bc2cf997481880c11a44">cmdTypeAndStatus_78</a> [4]</td></tr>
 <tr class="separator:a512b7e10ef17bc2cf997481880c11a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec08c0a788d3ed79052d59556ee80bd4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#aec08c0a788d3ed79052d59556ee80bd4">__SIVersion</a> [1+1]</td></tr>
-<tr class="separator:aec08c0a788d3ed79052d59556ee80bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a717c7dff78d44f3cdd9acc0d3a7dec41"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a717c7dff78d44f3cdd9acc0d3a7dec41">Type</a> [16]</td></tr>
-<tr class="separator:a717c7dff78d44f3cdd9acc0d3a7dec41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8768d6a6d96d78c7ce77d74ad7a6073"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#aa8768d6a6d96d78c7ce77d74ad7a6073">cmdTypeAndStatus_372</a> [4]</td></tr>
 <tr class="separator:aa8768d6a6d96d78c7ce77d74ad7a6073"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7760ce9878dff2212659c26dd2b486b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#ac7760ce9878dff2212659c26dd2b486b">__PADFixBits</a> [4+4]</td></tr>
-<tr class="separator:ac7760ce9878dff2212659c26dd2b486b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a403e3b390e006c1c348c43c212353a40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a403e3b390e006c1c348c43c212353a40">__PADFixBits</a></td></tr>
+<tr class="separator:a403e3b390e006c1c348c43c212353a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cb6af27b625f7ff0b04ab58a62d8a13"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a4cb6af27b625f7ff0b04ab58a62d8a13">lit_457</a> [] = &quot;No response&quot;</td></tr>
 <tr class="separator:a4cb6af27b625f7ff0b04ab58a62d8a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5e5197ce3b44f29375673c49a3e5f78"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#ad5e5197ce3b44f29375673c49a3e5f78">lit_459</a> [] = &quot;N64 controller&quot;</td></tr>
@@ -251,77 +231,90 @@ Variables</h2></td></tr>
 <tr class="memitem:a378d4096c348645bbcfb481848de7193"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a378d4096c348645bbcfb481848de7193">cmdFixDevice</a> [16]</td></tr>
 <tr class="separator:a378d4096c348645bbcfb481848de7193"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a7e76e74ec6703d0410b634d73ebc5f33" name="a7e76e74ec6703d0410b634d73ebc5f33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e76e74ec6703d0410b634d73ebc5f33">&#9670;&#160;</a></span>ROUND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ROUND</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">n, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)(n) + (a)-1) &amp; ~((a)-1))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ab291114d2ce5fe2988a979db7b11f85c" name="ab291114d2ce5fe2988a979db7b11f85c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab291114d2ce5fe2988a979db7b11f85c">&#9670;&#160;</a></span>__OSGetSystemTime()</h2>
+<a id="a495718dcdea4cd2f0aeb7aad48c752f6" name="a495718dcdea4cd2f0aeb7aad48c752f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a495718dcdea4cd2f0aeb7aad48c752f6">&#9670;&#160;</a></span>__SITransfer()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void __OSGetSystemTime </td>
+          <td class="memname">static <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> __SITransfer </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>outputBytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>inputBytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="SIBios_8h.html#a8ede730d273d5d7fe6c7b726637dd387">SICallback</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a84bf60a3621a2d64b536790302451842" name="a84bf60a3621a2d64b536790302451842"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84bf60a3621a2d64b536790302451842">&#9670;&#160;</a></span>__OSSetInterruptHandler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void __OSSetInterruptHandler </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5da344ee9fd9ebbc010c971a7a75baa0" name="a5da344ee9fd9ebbc010c971a7a75baa0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5da344ee9fd9ebbc010c971a7a75baa0">&#9670;&#160;</a></span>__OSUnmaskInterrupts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void __OSUnmaskInterrupts </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4459ec1d3ac003d3fbc60fb4af330e58" name="a4459ec1d3ac003d3fbc60fb4af330e58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4459ec1d3ac003d3fbc60fb4af330e58">&#9670;&#160;</a></span>__SITransfer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void __SITransfer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4dd6f3034ead4aca934d65ff1d220d81" name="a4dd6f3034ead4aca934d65ff1d220d81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4dd6f3034ead4aca934d65ff1d220d81">&#9670;&#160;</a></span>AlarmHandler()</h2>
+<a id="af782b8657b2637bf66177b7327c74fe6" name="af782b8657b2637bf66177b7327c74fe6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af782b8657b2637bf66177b7327c74fe6">&#9670;&#160;</a></span>AlarmHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -330,8 +323,45 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void AlarmHandler </td>
+          <td class="memname">static void AlarmHandler </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="structOSAlarm.html">OSAlarm</a> *&#160;</td>
+          <td class="paramname"><em>alarm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structOSContext.html">OSContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0e6ba4534d12da7b497c0e10dbe23fbc" name="a0e6ba4534d12da7b497c0e10dbe23fbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e6ba4534d12da7b497c0e10dbe23fbc">&#9670;&#160;</a></span>CompleteTransfer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static asm <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> CompleteTransfer </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -345,33 +375,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="afd929f9a9e9994f659a3be03399f3e32" name="afd929f9a9e9994f659a3be03399f3e32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd929f9a9e9994f659a3be03399f3e32">&#9670;&#160;</a></span>CompleteTransfer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static asm void CompleteTransfer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a365af7a5b7ac485f99754fc4307d8946" name="a365af7a5b7ac485f99754fc4307d8946"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a365af7a5b7ac485f99754fc4307d8946">&#9670;&#160;</a></span>GetTypeCallback()</h2>
+<a id="adfc8f06cf56752a4ba0a3d3983786692" name="adfc8f06cf56752a4ba0a3d3983786692"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfc8f06cf56752a4ba0a3d3983786692">&#9670;&#160;</a></span>GetTypeCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -382,8 +387,25 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static asm void GetTypeCallback </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>error</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structOSContext.html">OSContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -395,15 +417,16 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a8b6b438fc3e4ceeaed24cbfa3dca2851" name="a8b6b438fc3e4ceeaed24cbfa3dca2851"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b6b438fc3e4ceeaed24cbfa3dca2851">&#9670;&#160;</a></span>OSCancelAlarm()</h2>
+<a id="a34710754b3fdbb750a36e3478b728acc" name="a34710754b3fdbb750a36e3478b728acc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34710754b3fdbb750a36e3478b728acc">&#9670;&#160;</a></span>SIBusy()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void OSCancelAlarm </td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> SIBusy </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -412,161 +435,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a65b7dd4c9756f26d16dcf8f0dedb07bf" name="a65b7dd4c9756f26d16dcf8f0dedb07bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65b7dd4c9756f26d16dcf8f0dedb07bf">&#9670;&#160;</a></span>OSDisableInterrupts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSDisableInterrupts </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3dd85811ff98d42ce6818bf569850d0d" name="a3dd85811ff98d42ce6818bf569850d0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3dd85811ff98d42ce6818bf569850d0d">&#9670;&#160;</a></span>OSGetWirelessID()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSGetWirelessID </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a688d1c86f609bd2033df6f4d22094f42" name="a688d1c86f609bd2033df6f4d22094f42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a688d1c86f609bd2033df6f4d22094f42">&#9670;&#160;</a></span>OSRegisterVersion()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSRegisterVersion </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a14b5cc2befa83d8710fba14f4de14fd9" name="a14b5cc2befa83d8710fba14f4de14fd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14b5cc2befa83d8710fba14f4de14fd9">&#9670;&#160;</a></span>OSRestoreInterrupts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSRestoreInterrupts </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8b1eed12a179c480bc5ccda5abc42d35" name="a8b1eed12a179c480bc5ccda5abc42d35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b1eed12a179c480bc5ccda5abc42d35">&#9670;&#160;</a></span>OSSetAlarm()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSSetAlarm </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7702e9a85ddb3e62003e299ee439021f" name="a7702e9a85ddb3e62003e299ee439021f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7702e9a85ddb3e62003e299ee439021f">&#9670;&#160;</a></span>OSSetWirelessID()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSSetWirelessID </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abb401efc68b58269e70bfe790a6d92b2" name="abb401efc68b58269e70bfe790a6d92b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb401efc68b58269e70bfe790a6d92b2">&#9670;&#160;</a></span>SIBusy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void SIBusy </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0c7348ae4ba2c3103b8da921302acf42" name="a0c7348ae4ba2c3103b8da921302acf42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c7348ae4ba2c3103b8da921302acf42">&#9670;&#160;</a></span>SIDisablePolling()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void SIDisablePolling </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a73167c3655f393ae8f733c356649275e" name="a73167c3655f393ae8f733c356649275e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73167c3655f393ae8f733c356649275e">&#9670;&#160;</a></span>SIEnablePolling()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void SIEnablePolling </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4cc2bc2811310fcb25c21d0d18f4b045" name="a4cc2bc2811310fcb25c21d0d18f4b045"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cc2bc2811310fcb25c21d0d18f4b045">&#9670;&#160;</a></span>SIEnablePollingInterrupt()</h2>
+<a id="a33aad28c3260e6cceb63db239d0865e3" name="a33aad28c3260e6cceb63db239d0865e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33aad28c3260e6cceb63db239d0865e3">&#9670;&#160;</a></span>SIClearTCInterrupt()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -575,7 +445,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void SIEnablePollingInterrupt </td>
+          <td class="memname">static void SIClearTCInterrupt </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -583,23 +453,24 @@ Variables</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ad4bc57fc087e716e1277832401212097" name="ad4bc57fc087e716e1277832401212097"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4bc57fc087e716e1277832401212097">&#9670;&#160;</a></span>SIGetResponse()</h2>
+<a id="a7da89bb1deb457edffbb021ec38758f8" name="a7da89bb1deb457edffbb021ec38758f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7da89bb1deb457edffbb021ec38758f8">&#9670;&#160;</a></span>SIDisablePolling()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void SIGetResponse </td>
+          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> SIDisablePolling </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>poll</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -607,8 +478,26 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a583c8bff8dbbcdc45f528de4a4d7ecb6" name="a583c8bff8dbbcdc45f528de4a4d7ecb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a583c8bff8dbbcdc45f528de4a4d7ecb6">&#9670;&#160;</a></span>SIGetResponseRaw()</h2>
+<a id="a4a6b39d124a3d6e021e974c74df7322f" name="a4a6b39d124a3d6e021e974c74df7322f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a6b39d124a3d6e021e974c74df7322f">&#9670;&#160;</a></span>SIEnablePolling()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">asm <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> SIEnablePolling </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>poll</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a58de98640d0d9f9078539c89bf98ffb3" name="a58de98640d0d9f9078539c89bf98ffb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58de98640d0d9f9078539c89bf98ffb3">&#9670;&#160;</a></span>SIEnablePollingInterrupt()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -617,9 +506,10 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void SIGetResponseRaw </td>
+          <td class="memname">static asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> SIEnablePollingInterrupt </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -632,16 +522,71 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae6e7c9722d0d43abaebe835b3a4a0352" name="ae6e7c9722d0d43abaebe835b3a4a0352"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6e7c9722d0d43abaebe835b3a4a0352">&#9670;&#160;</a></span>SIGetStatus()</h2>
+<a id="a672c9cf1e9ee7f01833312844992be7f" name="a672c9cf1e9ee7f01833312844992be7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a672c9cf1e9ee7f01833312844992be7f">&#9670;&#160;</a></span>SIGetResponse()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void SIGetStatus </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> SIGetResponse </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a22a249ab96334782a23ecc9ed15f0037" name="a22a249ab96334782a23ecc9ed15f0037"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22a249ab96334782a23ecc9ed15f0037">&#9670;&#160;</a></span>SIGetResponseRaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> SIGetResponseRaw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afbc2d596b5703c18797a8bb0a55c63cc" name="afbc2d596b5703c18797a8bb0a55c63cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbc2d596b5703c18797a8bb0a55c63cc">&#9670;&#160;</a></span>SIGetStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">asm <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> SIGetStatus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -649,16 +594,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="af01f3a700ec21fb4956ccbfb7ae4840a" name="af01f3a700ec21fb4956ccbfb7ae4840a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af01f3a700ec21fb4956ccbfb7ae4840a">&#9670;&#160;</a></span>SIGetType()</h2>
+<a id="a775e027c3de3c70f5f9c7f9cbb0ca3d9" name="a775e027c3de3c70f5f9c7f9cbb0ca3d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a775e027c3de3c70f5f9c7f9cbb0ca3d9">&#9670;&#160;</a></span>SIGetType()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void SIGetType </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> SIGetType </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -666,25 +612,36 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a60235635a68e8727e1834a7b7980abfb" name="a60235635a68e8727e1834a7b7980abfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60235635a68e8727e1834a7b7980abfb">&#9670;&#160;</a></span>SIGetTypeAsync()</h2>
+<a id="a6d915c9922a67294b4bfc966647d786f" name="a6d915c9922a67294b4bfc966647d786f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d915c9922a67294b4bfc966647d786f">&#9670;&#160;</a></span>SIGetTypeAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void SIGetTypeAsync </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> SIGetTypeAsync </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="SIBios_8h.html#a7a3a7fac08ddb4844f9c934eeedc914a">SITypeAndStatusCallback</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a34ff61a21a4e69e37957f910c5788c7e" name="a34ff61a21a4e69e37957f910c5788c7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34ff61a21a4e69e37957f910c5788c7e">&#9670;&#160;</a></span>SIInit()</h2>
+<a id="a5554df5c35e119f94fb6e8777bca1e8d" name="a5554df5c35e119f94fb6e8777bca1e8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5554df5c35e119f94fb6e8777bca1e8d">&#9670;&#160;</a></span>SIInit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -692,6 +649,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void SIInit </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -700,8 +658,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="acbb3e09b04c996beb7d275366b2c49bb" name="acbb3e09b04c996beb7d275366b2c49bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbb3e09b04c996beb7d275366b2c49bb">&#9670;&#160;</a></span>SIInterruptHandler()</h2>
+<a id="a0de8d51ddfe728795ba211b629a38703" name="a0de8d51ddfe728795ba211b629a38703"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0de8d51ddfe728795ba211b629a38703">&#9670;&#160;</a></span>SIInterruptHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -712,8 +670,19 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static asm void SIInterruptHandler </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="OSInterrupt_8h.html#acd5c403776740063a124b880906361fd">OSInterrupt</a>&#160;</td>
+          <td class="paramname"><em>interrupt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structOSContext.html">OSContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -725,16 +694,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a8faf0c6da6889574c63b4189cbacc5b1" name="a8faf0c6da6889574c63b4189cbacc5b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8faf0c6da6889574c63b4189cbacc5b1">&#9670;&#160;</a></span>SIIsChanBusy()</h2>
+<a id="ae447368c681b79857bba3bd65ba0cfab" name="ae447368c681b79857bba3bd65ba0cfab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae447368c681b79857bba3bd65ba0cfab">&#9670;&#160;</a></span>SIIsChanBusy()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void SIIsChanBusy </td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> SIIsChanBusy </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -742,16 +712,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a75d1adb6accd9b1fb5cfe27ae803159b" name="a75d1adb6accd9b1fb5cfe27ae803159b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75d1adb6accd9b1fb5cfe27ae803159b">&#9670;&#160;</a></span>SIRegisterPollingHandler()</h2>
+<a id="a1d620d1a9a2f8d03cc39f9431b7bb021" name="a1d620d1a9a2f8d03cc39f9431b7bb021"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d620d1a9a2f8d03cc39f9431b7bb021">&#9670;&#160;</a></span>SIRegisterPollingHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void SIRegisterPollingHandler </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> SIRegisterPollingHandler </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="OSInterrupt_8h.html#aaf338797f75922de0f63e0ce14935954">OSInterruptHandler</a>&#160;</td>
+          <td class="paramname"><em>handler</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -759,8 +730,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac5225e15d6440d72312dcdb9dcee05e2" name="ac5225e15d6440d72312dcdb9dcee05e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5225e15d6440d72312dcdb9dcee05e2">&#9670;&#160;</a></span>SISetCommand()</h2>
+<a id="afc2285e0060f6444306c30941c94a5b8" name="afc2285e0060f6444306c30941c94a5b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc2285e0060f6444306c30941c94a5b8">&#9670;&#160;</a></span>SISetCommand()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -768,67 +739,113 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void SISetCommand </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>command</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a4b6a789c25639bf6ffb3ae76651fd650" name="a4b6a789c25639bf6ffb3ae76651fd650"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b6a789c25639bf6ffb3ae76651fd650">&#9670;&#160;</a></span>SISetSamplingRate()</h2>
+<a id="ace0f0608e7663c34baee4ff3778f4571" name="ace0f0608e7663c34baee4ff3778f4571"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace0f0608e7663c34baee4ff3778f4571">&#9670;&#160;</a></span>SISetXY()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void SISetSamplingRate </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> SISetXY </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="acffb8eb70e5080f6026f695cdda187c3" name="acffb8eb70e5080f6026f695cdda187c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acffb8eb70e5080f6026f695cdda187c3">&#9670;&#160;</a></span>SISetXY()</h2>
+<a id="a6d57d95fc79d606ef79f0a15459d110e" name="a6d57d95fc79d606ef79f0a15459d110e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d57d95fc79d606ef79f0a15459d110e">&#9670;&#160;</a></span>SITransfer()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void SISetXY </td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> SITransfer </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac624e4565762c15b0f01fd6db27b0a3f" name="ac624e4565762c15b0f01fd6db27b0a3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac624e4565762c15b0f01fd6db27b0a3f">&#9670;&#160;</a></span>SITransfer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">void SITransfer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>outputBytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>inputBytes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="SIBios_8h.html#a8ede730d273d5d7fe6c7b726637dd387">SICallback</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="OSTime_8h.html#a3d32c840b403a8d37875867a7ea9b381">OSTime</a>&#160;</td>
+          <td class="paramname"><em>delay</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a072f59ff90ffc29cd8491dd2a932af46" name="a072f59ff90ffc29cd8491dd2a932af46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a072f59ff90ffc29cd8491dd2a932af46">&#9670;&#160;</a></span>SITransferCommands()</h2>
+<a id="afe599aadb0e7f1738021e008e7adc4bf" name="afe599aadb0e7f1738021e008e7adc4bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe599aadb0e7f1738021e008e7adc4bf">&#9670;&#160;</a></span>SITransferCommands()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -836,6 +853,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void SITransferCommands </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -844,16 +862,43 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="afd6341638ae970865eb4dee60a2857e5" name="afd6341638ae970865eb4dee60a2857e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd6341638ae970865eb4dee60a2857e5">&#9670;&#160;</a></span>SIUnregisterPollingHandler()</h2>
+<a id="ae03d2aaf97b75d4d9f5e2762ea17bd07" name="ae03d2aaf97b75d4d9f5e2762ea17bd07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae03d2aaf97b75d4d9f5e2762ea17bd07">&#9670;&#160;</a></span>SITransferNext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SITransferNext </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aee47945d06960d573fe140b3ce13079a" name="aee47945d06960d573fe140b3ce13079a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee47945d06960d573fe140b3ce13079a">&#9670;&#160;</a></span>SIUnregisterPollingHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void SIUnregisterPollingHandler </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> SIUnregisterPollingHandler </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="OSInterrupt_8h.html#aaf338797f75922de0f63e0ce14935954">OSInterruptHandler</a>&#160;</td>
+          <td class="paramname"><em>handler</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -879,22 +924,22 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="ac7760ce9878dff2212659c26dd2b486b" name="ac7760ce9878dff2212659c26dd2b486b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7760ce9878dff2212659c26dd2b486b">&#9670;&#160;</a></span>__PADFixBits</h2>
+<a id="a403e3b390e006c1c348c43c212353a40" name="a403e3b390e006c1c348c43c212353a40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a403e3b390e006c1c348c43c212353a40">&#9670;&#160;</a></span>__PADFixBits</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> __PADFixBits[4+4]</td>
+          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> __PADFixBits</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aec08c0a788d3ed79052d59556ee80bd4" name="aec08c0a788d3ed79052d59556ee80bd4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec08c0a788d3ed79052d59556ee80bd4">&#9670;&#160;</a></span>__SIVersion</h2>
+<a id="ad3d8e9b09d82b77a6d268607a14e8e1c" name="ad3d8e9b09d82b77a6d268607a14e8e1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3d8e9b09d82b77a6d268607a14e8e1c">&#9670;&#160;</a></span>__SIVersion</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -903,7 +948,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> void* __SIVersion[1+1]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> char* __SIVersion = <a class="el" href="ai_8c.html#a1a6069729885614d1c28f573d06bd419">lit_1</a></td>
         </tr>
       </table>
   </td>
@@ -912,18 +957,11 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    (<span class="keywordtype">void</span>*)&amp;<a class="code hl_variable" href="SIBios_8c.html#a1a6069729885614d1c28f573d06bd419">lit_1</a>,</div>
-<div class="line">    </div>
-<div class="line">    <a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
-<div class="line">}</div>
-<div class="ttc" id="aSIBios_8c_html_a1a6069729885614d1c28f573d06bd419"><div class="ttname"><a href="SIBios_8c.html#a1a6069729885614d1c28f573d06bd419">lit_1</a></div><div class="ttdeci">static SECTION_DATA char lit_1[]</div><div class="ttdef"><b>Definition:</b> SIBios.c:60</div></div>
-<div class="ttc" id="atypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> types.h:34</div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
-<a id="aedefc5c10e18fb89351ebb19389af8fd" name="aedefc5c10e18fb89351ebb19389af8fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedefc5c10e18fb89351ebb19389af8fd">&#9670;&#160;</a></span>Alarm</h2>
+<a id="a79dc3d98620704511a6ff2dad3cfe746" name="a79dc3d98620704511a6ff2dad3cfe746"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79dc3d98620704511a6ff2dad3cfe746">&#9670;&#160;</a></span>Alarm</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -932,7 +970,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> Alarm[160]</td>
+          <td class="memname"><a class="el" href="structOSAlarm.html">OSAlarm</a> Alarm[<a class="el" href="SIBios_8h.html#a98ade5148b74597b3e1306fbbec0a399">SI_MAX_CHAN</a>]</td>
         </tr>
       </table>
   </td>
@@ -1010,8 +1048,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac37ef3120fab7cd99e61e103aa244119" name="ac37ef3120fab7cd99e61e103aa244119"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac37ef3120fab7cd99e61e103aa244119">&#9670;&#160;</a></span>InputBuffer</h2>
+<a id="aaad1b11bb23451fab826364cc4458c59" name="aaad1b11bb23451fab826364cc4458c59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaad1b11bb23451fab826364cc4458c59">&#9670;&#160;</a></span>InputBuffer</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1020,7 +1058,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> InputBuffer[32]</td>
+          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> InputBuffer[<a class="el" href="SIBios_8h.html#a98ade5148b74597b3e1306fbbec0a399">SI_MAX_CHAN</a>][2]</td>
         </tr>
       </table>
   </td>
@@ -1032,8 +1070,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ab97424eb64a66f26f095229257a2b806" name="ab97424eb64a66f26f095229257a2b806"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab97424eb64a66f26f095229257a2b806">&#9670;&#160;</a></span>InputBufferValid</h2>
+<a id="ae26e6061357c98858902570f03763c57" name="ae26e6061357c98858902570f03763c57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae26e6061357c98858902570f03763c57">&#9670;&#160;</a></span>InputBufferValid</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1042,7 +1080,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> InputBufferValid[16]</td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> InputBufferValid[<a class="el" href="SIBios_8h.html#a98ade5148b74597b3e1306fbbec0a399">SI_MAX_CHAN</a>]</td>
         </tr>
       </table>
   </td>
@@ -1054,8 +1092,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac57f3f0dd7160f62650bbe8eeee7bbae" name="ac57f3f0dd7160f62650bbe8eeee7bbae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac57f3f0dd7160f62650bbe8eeee7bbae">&#9670;&#160;</a></span>InputBufferVcount</h2>
+<a id="ac0cfd4368b1ebfddf1860ca409b1f17e" name="ac0cfd4368b1ebfddf1860ca409b1f17e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0cfd4368b1ebfddf1860ca409b1f17e">&#9670;&#160;</a></span>InputBufferVcount</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1064,7 +1102,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> InputBufferVcount[16]</td>
+          <td class="memname">volatile <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> InputBufferVcount[<a class="el" href="SIBios_8h.html#a98ade5148b74597b3e1306fbbec0a399">SI_MAX_CHAN</a>]</td>
         </tr>
       </table>
   </td>
@@ -1086,7 +1124,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_1[] = &quot;&lt;&lt; Dolphin SDK - SI\trelease build: Apr 5 2004 04:14:16 (0x2301) &gt;&gt;&quot;</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_1[]</td>
         </tr>
       </table>
   </td>
@@ -1095,7 +1133,9 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    <span class="stringliteral">&quot;&lt;&lt; Dolphin SDK - SI\trelease build: Apr  5 2004 04:14:16 (0x2301) &gt;&gt;&quot;</span></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4cb6af27b625f7ff0b04ab58a62d8a13" name="a4cb6af27b625f7ff0b04ab58a62d8a13"></a>
@@ -1340,8 +1380,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="adb062c51fdd6550b5ac09df027a7299f" name="adb062c51fdd6550b5ac09df027a7299f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb062c51fdd6550b5ac09df027a7299f">&#9670;&#160;</a></span>Packet</h2>
+<a id="a3b3d691f2a4f06d96a4b7cffb639a128" name="a3b3d691f2a4f06d96a4b7cffb639a128"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b3d691f2a4f06d96a4b7cffb639a128">&#9670;&#160;</a></span>Packet</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1350,7 +1390,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> Packet[128]</td>
+          <td class="memname"><a class="el" href="structSIPacket.html">SIPacket</a> Packet[<a class="el" href="SIBios_8h.html#a98ade5148b74597b3e1306fbbec0a399">SI_MAX_CHAN</a>]</td>
         </tr>
       </table>
   </td>
@@ -1362,8 +1402,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a72c5e5f644ed2358a51059aa2aa8a0c1" name="a72c5e5f644ed2358a51059aa2aa8a0c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72c5e5f644ed2358a51059aa2aa8a0c1">&#9670;&#160;</a></span>RDSTHandler</h2>
+<a id="a627d0980d3e69fd7071c20b0b8ab8d5b" name="a627d0980d3e69fd7071c20b0b8ab8d5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a627d0980d3e69fd7071c20b0b8ab8d5b">&#9670;&#160;</a></span>RDSTHandler</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1372,7 +1412,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> RDSTHandler[16]</td>
+          <td class="memname"><a class="el" href="OSInterrupt_8h.html#aaf338797f75922de0f63e0ce14935954">OSInterruptHandler</a> RDSTHandler[4]</td>
         </tr>
       </table>
   </td>
@@ -1384,8 +1424,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aeb40494fbb16b4d77818a57d48e036f3" name="aeb40494fbb16b4d77818a57d48e036f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb40494fbb16b4d77818a57d48e036f3">&#9670;&#160;</a></span>Si</h2>
+<a id="a311917cefdcf7c3b27c3b69587183220" name="a311917cefdcf7c3b27c3b69587183220"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a311917cefdcf7c3b27c3b69587183220">&#9670;&#160;</a></span>Si</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1394,33 +1434,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> Si[20]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0xFF, 0xFF, 0xFF, 0xFF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,</div>
-<div class="line">    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,</div>
-<div class="line">}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a717c7dff78d44f3cdd9acc0d3a7dec41" name="a717c7dff78d44f3cdd9acc0d3a7dec41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a717c7dff78d44f3cdd9acc0d3a7dec41">&#9670;&#160;</a></span>Type</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> Type[16]</td>
+          <td class="memname"><a class="el" href="structSIControl.html">SIControl</a> Si</td>
         </tr>
       </table>
   </td>
@@ -1430,13 +1444,14 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x08, 0x00, 0x00, 0x00, 0x08,</div>
+<div class="line">    -1, 0, 0, <a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
+<div class="ttc" id="atypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> types.h:34</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ae5026783d296a4b5185c46344fd05717" name="ae5026783d296a4b5185c46344fd05717"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5026783d296a4b5185c46344fd05717">&#9670;&#160;</a></span>TypeCallback</h2>
+<a id="a0b5453da543cb648d2f7933b7057c413" name="a0b5453da543cb648d2f7933b7057c413"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b5453da543cb648d2f7933b7057c413">&#9670;&#160;</a></span>Type</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1445,7 +1460,36 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> TypeCallback[64]</td>
+          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> Type[<a class="el" href="SIBios_8h.html#a98ade5148b74597b3e1306fbbec0a399">SI_MAX_CHAN</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    <a class="code hl_define" href="SIBios_8h.html#a11c33d2fd2f5bc6814e01e165f7825a8">SI_ERROR_NO_RESPONSE</a>,</div>
+<div class="line">    <a class="code hl_define" href="SIBios_8h.html#a11c33d2fd2f5bc6814e01e165f7825a8">SI_ERROR_NO_RESPONSE</a>,</div>
+<div class="line">    <a class="code hl_define" href="SIBios_8h.html#a11c33d2fd2f5bc6814e01e165f7825a8">SI_ERROR_NO_RESPONSE</a>,</div>
+<div class="line">    <a class="code hl_define" href="SIBios_8h.html#a11c33d2fd2f5bc6814e01e165f7825a8">SI_ERROR_NO_RESPONSE</a>,</div>
+<div class="line">}</div>
+<div class="ttc" id="aSIBios_8h_html_a11c33d2fd2f5bc6814e01e165f7825a8"><div class="ttname"><a href="SIBios_8h.html#a11c33d2fd2f5bc6814e01e165f7825a8">SI_ERROR_NO_RESPONSE</a></div><div class="ttdeci">#define SI_ERROR_NO_RESPONSE</div><div class="ttdef"><b>Definition:</b> SIBios.h:16</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acc2b77133ec8984862c423a26a24f4d2" name="acc2b77133ec8984862c423a26a24f4d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc2b77133ec8984862c423a26a24f4d2">&#9670;&#160;</a></span>TypeCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="SIBios_8h.html#a7a3a7fac08ddb4844f9c934eeedc914a">SITypeAndStatusCallback</a> TypeCallback[<a class="el" href="SIBios_8h.html#a98ade5148b74597b3e1306fbbec0a399">SI_MAX_CHAN</a>][4]</td>
         </tr>
       </table>
   </td>
@@ -1457,8 +1501,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae396679fb616de5f2f49038d662665e5" name="ae396679fb616de5f2f49038d662665e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae396679fb616de5f2f49038d662665e5">&#9670;&#160;</a></span>TypeTime</h2>
+<a id="af7847d7c79fde0088fe1cf122ea19146" name="af7847d7c79fde0088fe1cf122ea19146"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7847d7c79fde0088fe1cf122ea19146">&#9670;&#160;</a></span>TypeTime</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1467,7 +1511,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> TypeTime[32]</td>
+          <td class="memname"><a class="el" href="OSTime_8h.html#a3d32c840b403a8d37875867a7ea9b381">OSTime</a> TypeTime[<a class="el" href="SIBios_8h.html#a98ade5148b74597b3e1306fbbec0a399">SI_MAX_CHAN</a>]</td>
         </tr>
       </table>
   </td>
@@ -1479,8 +1523,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a6bebd1f4757ec83b33663e231cc83404" name="a6bebd1f4757ec83b33663e231cc83404"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bebd1f4757ec83b33663e231cc83404">&#9670;&#160;</a></span>XferTime</h2>
+<a id="a0777189a976736b560f3690e3b19dd5b" name="a0777189a976736b560f3690e3b19dd5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0777189a976736b560f3690e3b19dd5b">&#9670;&#160;</a></span>XferTime</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1489,7 +1533,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> XferTime[32]</td>
+          <td class="memname"><a class="el" href="OSTime_8h.html#a3d32c840b403a8d37875867a7ea9b381">OSTime</a> XferTime[<a class="el" href="SIBios_8h.html#a98ade5148b74597b3e1306fbbec0a399">SI_MAX_CHAN</a>]</td>
         </tr>
       </table>
   </td>

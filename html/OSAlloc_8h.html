@@ -104,7 +104,7 @@ $(function() {
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="OSAlloc_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="OSAlloc_8h__dep__incl.svg" width="100%" height="591"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div>
@@ -119,6 +119,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a3832f11e441e5f49e9b1efde98e78279"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSAlloc_8h.html#a3832f11e441e5f49e9b1efde98e78279">OSRoundUp32B</a>(v)&#160;&#160;&#160;(((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)(v + 31) &amp; ~31))</td></tr>
+<tr class="separator:a3832f11e441e5f49e9b1efde98e78279"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac39aed620ea2b6b8370770ec665bf6e4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSAlloc_8h.html#ac39aed620ea2b6b8370770ec665bf6e4">OSRoundUp</a>(x,  align)&#160;&#160;&#160;(((x) + (align)-1) &amp; (-(align)))</td></tr>
 <tr class="separator:ac39aed620ea2b6b8370770ec665bf6e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf6daf31f8a052edce7b8fd2977b87df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSAlloc_8h.html#adf6daf31f8a052edce7b8fd2977b87df">OSRoundUpPtr</a>(x,  align)&#160;&#160;&#160;((void*)((((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)(x)) + (align)-1) &amp; (~((align)-1))))</td></tr>
@@ -234,6 +236,24 @@ Variables</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td>&#160;&#160;&#160;(((x) + (align)-1) &amp; (-(align)))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3832f11e441e5f49e9b1efde98e78279" name="a3832f11e441e5f49e9b1efde98e78279"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3832f11e441e5f49e9b1efde98e78279">&#9670;&#160;</a></span>OSRoundUp32B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OSRoundUp32B</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">v</td><td>)</td>
+          <td>&#160;&#160;&#160;(((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)(v + 31) &amp; ~31))</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -82,6 +82,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">dsp_task.c File Reference</div></div>
@@ -89,43 +90,52 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="dsp__task_8h_source.html">dolphin/dsp/dsp_task.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="dsp__debug_8h_source.html">dolphin/dsp/dsp_debug.h</a>&quot;</code><br />
 <code>#include &quot;asm/dolphin/dsp/dsp_task/__DSP_exec_task.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/dsp/dsp_task/__DSP_boot_task.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/dsp/dsp_task/__DSP_insert_task.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/dsp/dsp_task/__DSP_remove_task.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for dsp_task.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="dsp__task_8c__incl.svg" width="100%" height="459"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="dsp__task_8c__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:abadebe2481f517df246b0cec4ad72e21"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#abadebe2481f517df246b0cec4ad72e21">MSG_BASE</a>&#160;&#160;&#160;0x80F30000</td></tr>
+<tr class="separator:abadebe2481f517df246b0cec4ad72e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a62fb19f971eb98b93560bc9a1bff60f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#a62fb19f971eb98b93560bc9a1bff60f7">__DSP_exec_task</a> ()</td></tr>
-<tr class="separator:a62fb19f971eb98b93560bc9a1bff60f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0252ad403bcdf39c51714f8f06a791ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#a0252ad403bcdf39c51714f8f06a791ea">__DSP_boot_task</a> ()</td></tr>
-<tr class="separator:a0252ad403bcdf39c51714f8f06a791ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8effc54a556f83ee279d74bd396b33d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#ad8effc54a556f83ee279d74bd396b33d">__DSP_insert_task</a> ()</td></tr>
-<tr class="separator:ad8effc54a556f83ee279d74bd396b33d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad24e9ea3d1d26593d6f040dbf237dddc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#ad24e9ea3d1d26593d6f040dbf237dddc">__DSP_remove_task</a> ()</td></tr>
-<tr class="separator:ad24e9ea3d1d26593d6f040dbf237dddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98eefec700202c5f87ca84e3f132aed3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#a98eefec700202c5f87ca84e3f132aed3">DSPCheckMailToDSP</a> ()</td></tr>
-<tr class="separator:a98eefec700202c5f87ca84e3f132aed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13e224685350c00dec11f3034b7c88b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#a13e224685350c00dec11f3034b7c88b4">DSPCheckMailFromDSP</a> ()</td></tr>
-<tr class="separator:a13e224685350c00dec11f3034b7c88b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad90d4a056267ec96c8e6e6f720b393a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#ad90d4a056267ec96c8e6e6f720b393a7">DSPReadMailFromDSP</a> ()</td></tr>
-<tr class="separator:ad90d4a056267ec96c8e6e6f720b393a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a062773d9cf66ef4c4f9e930a1c792d35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#a062773d9cf66ef4c4f9e930a1c792d35">DSPSendMailToDSP</a> ()</td></tr>
-<tr class="separator:a062773d9cf66ef4c4f9e930a1c792d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11c8256e259c584b10a99ba2c9ad3ce8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#a11c8256e259c584b10a99ba2c9ad3ce8">__DSP_debug_printf</a> ()</td></tr>
-<tr class="separator:a11c8256e259c584b10a99ba2c9ad3ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32bc46c295976eb3dba487503bb235c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#a32bc46c295976eb3dba487503bb235c9">__DSP_exec_task</a> ()</td></tr>
+<tr class="separator:a32bc46c295976eb3dba487503bb235c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74b859f7f9d4ee0589c2eb137a927222"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#a74b859f7f9d4ee0589c2eb137a927222">__DSP_boot_task</a> ()</td></tr>
+<tr class="separator:a74b859f7f9d4ee0589c2eb137a927222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af08e7519b3cdb1739656265dba54ce66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#af08e7519b3cdb1739656265dba54ce66">__DSP_insert_task</a> ()</td></tr>
+<tr class="separator:af08e7519b3cdb1739656265dba54ce66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8d85b594370f1a04741f4a57cdea19b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#ad8d85b594370f1a04741f4a57cdea19b">__DSP_remove_task</a> ()</td></tr>
+<tr class="separator:ad8d85b594370f1a04741f4a57cdea19b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a412801b16ce51323848bfbf396507b12"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#a412801b16ce51323848bfbf396507b12">__DSP_exec_task</a> (<a class="el" href="structDSPTaskInfo.html">DSPTaskInfo</a> *curr, <a class="el" href="structDSPTaskInfo.html">DSPTaskInfo</a> *<a class="el" href="CARDUnlock_8c.html#ae3d9c203031a75cf83ae5b2aa5cde689">next</a>)</td></tr>
+<tr class="separator:a412801b16ce51323848bfbf396507b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3776409fbae64b7447c1429f17d8c39e"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#a3776409fbae64b7447c1429f17d8c39e">__DSP_boot_task</a> (<a class="el" href="structDSPTaskInfo.html">DSPTaskInfo</a> *task)</td></tr>
+<tr class="separator:a3776409fbae64b7447c1429f17d8c39e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f9067e9df9259ec8bf617c7255c7eee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#a1f9067e9df9259ec8bf617c7255c7eee">__DSP_insert_task</a> (<a class="el" href="structDSPTaskInfo.html">DSPTaskInfo</a> *task)</td></tr>
+<tr class="separator:a1f9067e9df9259ec8bf617c7255c7eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2dc318611012da7ea4211a41b769809"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#ab2dc318611012da7ea4211a41b769809">__DSP_remove_task</a> (<a class="el" href="structDSPTaskInfo.html">DSPTaskInfo</a> *task)</td></tr>
+<tr class="separator:ab2dc318611012da7ea4211a41b769809"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:ae5b083af0cfed9ca54daf3e7c7e18002"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDSPTaskInfo.html">DSPTaskInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#ae5b083af0cfed9ca54daf3e7c7e18002">__DSP_curr_task</a></td></tr>
+<tr class="separator:ae5b083af0cfed9ca54daf3e7c7e18002"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4d11addde73d9a955b0c466b0d43be0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDSPTaskInfo.html">DSPTaskInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#ae4d11addde73d9a955b0c466b0d43be0">__DSP_first_task</a></td></tr>
+<tr class="separator:ae4d11addde73d9a955b0c466b0d43be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b47790156d66d7601210ecad8082241"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDSPTaskInfo.html">DSPTaskInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#a2b47790156d66d7601210ecad8082241">__DSP_last_task</a></td></tr>
+<tr class="separator:a2b47790156d66d7601210ecad8082241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e5d0f89f933542ce075b5fb0c210d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDSPTaskInfo.html">DSPTaskInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#a05e5d0f89f933542ce075b5fb0c210d5">__DSP_tmp_task</a></td></tr>
+<tr class="separator:a05e5d0f89f933542ce075b5fb0c210d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5da1163bd868e017de09dea473277b5b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#a5da1163bd868e017de09dea473277b5b">lit_266</a> [] = &quot;DSP is booting task: 0x%08X\n&quot;</td></tr>
 <tr class="separator:a5da1163bd868e017de09dea473277b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2879d9da188884fe0cb68f33a4bbd41"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#af2879d9da188884fe0cb68f33a4bbd41">lit_267</a> [] = &quot;__DSP_boot_task() : IRAM MMEM ADDR: 0x%08X\n&quot;</td></tr>
@@ -138,20 +148,44 @@ Variables</h2></td></tr>
 <tr class="separator:a5520257cbafab7ac555095a7ab96ca94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09d49cb2f3cd2eef6d95d82d964b8234"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#a09d49cb2f3cd2eef6d95d82d964b8234">lit_271</a> [] = &quot;__DSP_boot_task() : Start Vector : 0x%08X\n&quot;</td></tr>
 <tr class="separator:a09d49cb2f3cd2eef6d95d82d964b8234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ad03d6e01ef594cd9dd49d36301b31c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#a7ad03d6e01ef594cd9dd49d36301b31c">__DSP_curr_task</a> [4]</td></tr>
-<tr class="separator:a7ad03d6e01ef594cd9dd49d36301b31c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac70738d7a6f93aad25279fd2c333eda9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#ac70738d7a6f93aad25279fd2c333eda9">__DSP_first_task</a> [4]</td></tr>
-<tr class="separator:ac70738d7a6f93aad25279fd2c333eda9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1980ebebc5108d6ace541f9ca53030f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#a1980ebebc5108d6ace541f9ca53030f8">__DSP_last_task</a> [4]</td></tr>
-<tr class="separator:a1980ebebc5108d6ace541f9ca53030f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73e23791254fcc29da22add0c09c8b3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#a73e23791254fcc29da22add0c09c8b3f">__DSP_tmp_task</a> [4]</td></tr>
-<tr class="separator:a73e23791254fcc29da22add0c09c8b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa710d57b143725496204389393d067e1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dsp__task_8c.html#aa710d57b143725496204389393d067e1">lit_294</a> [] = &quot;__DSP_add_task() : Added task : 0x%08X\n&quot;</td></tr>
 <tr class="separator:aa710d57b143725496204389393d067e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="abadebe2481f517df246b0cec4ad72e21" name="abadebe2481f517df246b0cec4ad72e21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abadebe2481f517df246b0cec4ad72e21">&#9670;&#160;</a></span>MSG_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MSG_BASE&#160;&#160;&#160;0x80F30000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a0252ad403bcdf39c51714f8f06a791ea" name="a0252ad403bcdf39c51714f8f06a791ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0252ad403bcdf39c51714f8f06a791ea">&#9670;&#160;</a></span>__DSP_boot_task()</h2>
+<a id="a74b859f7f9d4ee0589c2eb137a927222" name="a74b859f7f9d4ee0589c2eb137a927222"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74b859f7f9d4ee0589c2eb137a927222">&#9670;&#160;</a></span>__DSP_boot_task() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void __DSP_boot_task </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3776409fbae64b7447c1429f17d8c39e" name="a3776409fbae64b7447c1429f17d8c39e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3776409fbae64b7447c1429f17d8c39e">&#9670;&#160;</a></span>__DSP_boot_task() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -159,7 +193,8 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">asm void __DSP_boot_task </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structDSPTaskInfo.html">DSPTaskInfo</a> *&#160;</td>
+          <td class="paramname"><em>task</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -167,14 +202,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a11c8256e259c584b10a99ba2c9ad3ce8" name="a11c8256e259c584b10a99ba2c9ad3ce8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11c8256e259c584b10a99ba2c9ad3ce8">&#9670;&#160;</a></span>__DSP_debug_printf()</h2>
+<a id="a32bc46c295976eb3dba487503bb235c9" name="a32bc46c295976eb3dba487503bb235c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32bc46c295976eb3dba487503bb235c9">&#9670;&#160;</a></span>__DSP_exec_task() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void __DSP_debug_printf </td>
+          <td class="memname">void __DSP_exec_task </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -184,8 +219,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a62fb19f971eb98b93560bc9a1bff60f7" name="a62fb19f971eb98b93560bc9a1bff60f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62fb19f971eb98b93560bc9a1bff60f7">&#9670;&#160;</a></span>__DSP_exec_task()</h2>
+<a id="a412801b16ce51323848bfbf396507b12" name="a412801b16ce51323848bfbf396507b12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a412801b16ce51323848bfbf396507b12">&#9670;&#160;</a></span>__DSP_exec_task() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -193,22 +228,33 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">asm void __DSP_exec_task </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structDSPTaskInfo.html">DSPTaskInfo</a> *&#160;</td>
+          <td class="paramname"><em>curr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structDSPTaskInfo.html">DSPTaskInfo</a> *&#160;</td>
+          <td class="paramname"><em>next</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ad8effc54a556f83ee279d74bd396b33d" name="ad8effc54a556f83ee279d74bd396b33d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8effc54a556f83ee279d74bd396b33d">&#9670;&#160;</a></span>__DSP_insert_task()</h2>
+<a id="af08e7519b3cdb1739656265dba54ce66" name="af08e7519b3cdb1739656265dba54ce66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af08e7519b3cdb1739656265dba54ce66">&#9670;&#160;</a></span>__DSP_insert_task() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __DSP_insert_task </td>
+          <td class="memname">void __DSP_insert_task </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -218,14 +264,32 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad24e9ea3d1d26593d6f040dbf237dddc" name="ad24e9ea3d1d26593d6f040dbf237dddc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad24e9ea3d1d26593d6f040dbf237dddc">&#9670;&#160;</a></span>__DSP_remove_task()</h2>
+<a id="a1f9067e9df9259ec8bf617c7255c7eee" name="a1f9067e9df9259ec8bf617c7255c7eee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f9067e9df9259ec8bf617c7255c7eee">&#9670;&#160;</a></span>__DSP_insert_task() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __DSP_remove_task </td>
+          <td class="memname">void __DSP_insert_task </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structDSPTaskInfo.html">DSPTaskInfo</a> *&#160;</td>
+          <td class="paramname"><em>task</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8d85b594370f1a04741f4a57cdea19b" name="ad8d85b594370f1a04741f4a57cdea19b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8d85b594370f1a04741f4a57cdea19b">&#9670;&#160;</a></span>__DSP_remove_task() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void __DSP_remove_task </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -235,67 +299,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a13e224685350c00dec11f3034b7c88b4" name="a13e224685350c00dec11f3034b7c88b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13e224685350c00dec11f3034b7c88b4">&#9670;&#160;</a></span>DSPCheckMailFromDSP()</h2>
+<a id="ab2dc318611012da7ea4211a41b769809" name="ab2dc318611012da7ea4211a41b769809"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2dc318611012da7ea4211a41b769809">&#9670;&#160;</a></span>__DSP_remove_task() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DSPCheckMailFromDSP </td>
+          <td class="memname">void __DSP_remove_task </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a98eefec700202c5f87ca84e3f132aed3" name="a98eefec700202c5f87ca84e3f132aed3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98eefec700202c5f87ca84e3f132aed3">&#9670;&#160;</a></span>DSPCheckMailToDSP()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DSPCheckMailToDSP </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad90d4a056267ec96c8e6e6f720b393a7" name="ad90d4a056267ec96c8e6e6f720b393a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad90d4a056267ec96c8e6e6f720b393a7">&#9670;&#160;</a></span>DSPReadMailFromDSP()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DSPReadMailFromDSP </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a062773d9cf66ef4c4f9e930a1c792d35" name="a062773d9cf66ef4c4f9e930a1c792d35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a062773d9cf66ef4c4f9e930a1c792d35">&#9670;&#160;</a></span>DSPSendMailToDSP()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DSPSendMailToDSP </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structDSPTaskInfo.html">DSPTaskInfo</a> *&#160;</td>
+          <td class="paramname"><em>task</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -304,56 +318,56 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a7ad03d6e01ef594cd9dd49d36301b31c" name="a7ad03d6e01ef594cd9dd49d36301b31c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ad03d6e01ef594cd9dd49d36301b31c">&#9670;&#160;</a></span>__DSP_curr_task</h2>
+<a id="ae5b083af0cfed9ca54daf3e7c7e18002" name="ae5b083af0cfed9ca54daf3e7c7e18002"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5b083af0cfed9ca54daf3e7c7e18002">&#9670;&#160;</a></span>__DSP_curr_task</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> __DSP_curr_task[4]</td>
+          <td class="memname"><a class="el" href="structDSPTaskInfo.html">DSPTaskInfo</a>* __DSP_curr_task</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ac70738d7a6f93aad25279fd2c333eda9" name="ac70738d7a6f93aad25279fd2c333eda9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac70738d7a6f93aad25279fd2c333eda9">&#9670;&#160;</a></span>__DSP_first_task</h2>
+<a id="ae4d11addde73d9a955b0c466b0d43be0" name="ae4d11addde73d9a955b0c466b0d43be0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4d11addde73d9a955b0c466b0d43be0">&#9670;&#160;</a></span>__DSP_first_task</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> __DSP_first_task[4]</td>
+          <td class="memname"><a class="el" href="structDSPTaskInfo.html">DSPTaskInfo</a>* __DSP_first_task</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a1980ebebc5108d6ace541f9ca53030f8" name="a1980ebebc5108d6ace541f9ca53030f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1980ebebc5108d6ace541f9ca53030f8">&#9670;&#160;</a></span>__DSP_last_task</h2>
+<a id="a2b47790156d66d7601210ecad8082241" name="a2b47790156d66d7601210ecad8082241"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b47790156d66d7601210ecad8082241">&#9670;&#160;</a></span>__DSP_last_task</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> __DSP_last_task[4]</td>
+          <td class="memname"><a class="el" href="structDSPTaskInfo.html">DSPTaskInfo</a>* __DSP_last_task</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a73e23791254fcc29da22add0c09c8b3f" name="a73e23791254fcc29da22add0c09c8b3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73e23791254fcc29da22add0c09c8b3f">&#9670;&#160;</a></span>__DSP_tmp_task</h2>
+<a id="a05e5d0f89f933542ce075b5fb0c210d5" name="a05e5d0f89f933542ce075b5fb0c210d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05e5d0f89f933542ce075b5fb0c210d5">&#9670;&#160;</a></span>__DSP_tmp_task</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> __DSP_tmp_task[4]</td>
+          <td class="memname"><a class="el" href="structDSPTaskInfo.html">DSPTaskInfo</a>* __DSP_tmp_task</td>
         </tr>
       </table>
 </div><div class="memdoc">

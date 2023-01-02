@@ -103,7 +103,7 @@ $(function() {
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="OSAlarm_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="OSAlarm_8h__dep__incl.svg" width="100%" height="591"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div>
@@ -115,6 +115,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOSAlarm.html">OSAlarm</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOSAlarmQueue.html">OSAlarmQueue</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -124,6 +126,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:a04087809eb8ab20177b0c663bb2113d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe3fe2259612e01057e5c7b71ac1b51b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structOSAlarm.html">OSAlarm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSAlarm_8h.html#abe3fe2259612e01057e5c7b71ac1b51b">OSAlarm</a></td></tr>
 <tr class="separator:abe3fe2259612e01057e5c7b71ac1b51b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fda9bac83e5e790e234d877e9a7e5aa"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structOSAlarmQueue.html">OSAlarmQueue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSAlarm_8h.html#a2fda9bac83e5e790e234d877e9a7e5aa">OSAlarmQueue</a></td></tr>
+<tr class="separator:a2fda9bac83e5e790e234d877e9a7e5aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -131,20 +135,18 @@ Functions</h2></td></tr>
 <tr class="separator:a57a60d9e768f3686cf9911cad08c9b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a664886e2a2735e954d8d82f5dfdcc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSAlarm_8h.html#a5a664886e2a2735e954d8d82f5dfdcc8">OSCreateAlarm</a> (<a class="el" href="structOSAlarm.html">OSAlarm</a> *alarm)</td></tr>
 <tr class="separator:a5a664886e2a2735e954d8d82f5dfdcc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b8e573e98400e8a78dbefe83a8b9c5e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSAlarm_8h.html#a3b8e573e98400e8a78dbefe83a8b9c5e">InsertAlarm</a> (<a class="el" href="structOSAlarm.html">OSAlarm</a> *alarm, <a class="el" href="types_8h.html#a4258bfb2c3a440d06c4aaa3c2b450dde">s64</a> <a class="el" href="GXInit_8c.html#a34e459429f04027e70dfa35aaa4fe268">time</a>, <a class="el" href="OSAlarm_8h.html#a04087809eb8ab20177b0c663bb2113d2">OSAlarmHandler</a> *handler)</td></tr>
-<tr class="separator:a3b8e573e98400e8a78dbefe83a8b9c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7120fbf681da90a0eff6a3ea6ea95e86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSAlarm_8h.html#a7120fbf681da90a0eff6a3ea6ea95e86">OSSetAlarm</a> (<a class="el" href="structOSAlarm.html">OSAlarm</a> *alarm, <a class="el" href="types_8h.html#a4258bfb2c3a440d06c4aaa3c2b450dde">s64</a> <a class="el" href="GXInit_8c.html#a34e459429f04027e70dfa35aaa4fe268">time</a>, <a class="el" href="OSAlarm_8h.html#a04087809eb8ab20177b0c663bb2113d2">OSAlarmHandler</a> *handler)</td></tr>
-<tr class="separator:a7120fbf681da90a0eff6a3ea6ea95e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3db0796004701bd761dae128bf95a35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSAlarm_8h.html#aa3db0796004701bd761dae128bf95a35">OSSetPeriodicAlarm</a> (<a class="el" href="structOSAlarm.html">OSAlarm</a> *alarm, <a class="el" href="types_8h.html#a4258bfb2c3a440d06c4aaa3c2b450dde">s64</a> start, <a class="el" href="types_8h.html#a4258bfb2c3a440d06c4aaa3c2b450dde">s64</a> period, <a class="el" href="OSAlarm_8h.html#a04087809eb8ab20177b0c663bb2113d2">OSAlarmHandler</a> *handler)</td></tr>
-<tr class="separator:aa3db0796004701bd761dae128bf95a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a589bcc0f093b7a22d6d7c25366320f31"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSAlarm_8h.html#a589bcc0f093b7a22d6d7c25366320f31">InsertAlarm</a> (<a class="el" href="structOSAlarm.html">OSAlarm</a> *alarm, <a class="el" href="types_8h.html#a4258bfb2c3a440d06c4aaa3c2b450dde">s64</a> <a class="el" href="GXInit_8c.html#a34e459429f04027e70dfa35aaa4fe268">time</a>, <a class="el" href="OSAlarm_8h.html#a04087809eb8ab20177b0c663bb2113d2">OSAlarmHandler</a> handler)</td></tr>
+<tr class="separator:a589bcc0f093b7a22d6d7c25366320f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0df54e14b240ba1840edec6d8fce5ae6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSAlarm_8h.html#a0df54e14b240ba1840edec6d8fce5ae6">OSSetAlarm</a> (<a class="el" href="structOSAlarm.html">OSAlarm</a> *alarm, <a class="el" href="types_8h.html#a4258bfb2c3a440d06c4aaa3c2b450dde">s64</a> <a class="el" href="GXInit_8c.html#a34e459429f04027e70dfa35aaa4fe268">time</a>, <a class="el" href="OSAlarm_8h.html#a04087809eb8ab20177b0c663bb2113d2">OSAlarmHandler</a> handler)</td></tr>
+<tr class="separator:a0df54e14b240ba1840edec6d8fce5ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a307fbfd4c713d5fe6122833d7d2cbb19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSAlarm_8h.html#a307fbfd4c713d5fe6122833d7d2cbb19">OSSetPeriodicAlarm</a> (<a class="el" href="structOSAlarm.html">OSAlarm</a> *alarm, <a class="el" href="types_8h.html#a4258bfb2c3a440d06c4aaa3c2b450dde">s64</a> start, <a class="el" href="types_8h.html#a4258bfb2c3a440d06c4aaa3c2b450dde">s64</a> period, <a class="el" href="OSAlarm_8h.html#a04087809eb8ab20177b0c663bb2113d2">OSAlarmHandler</a> handler)</td></tr>
+<tr class="separator:a307fbfd4c713d5fe6122833d7d2cbb19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad08820cab8590f7b2a3345b3ed8c3a0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSAlarm_8h.html#ad08820cab8590f7b2a3345b3ed8c3a0e">OSCancelAlarm</a> (<a class="el" href="structOSAlarm.html">OSAlarm</a> *alarm)</td></tr>
 <tr class="separator:ad08820cab8590f7b2a3345b3ed8c3a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9b4a3cccbe5d47a89463640ad0d6e65"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSAlarm_8h.html#ac9b4a3cccbe5d47a89463640ad0d6e65">DecrementerExceptionCallback</a> (<a class="el" href="OSError_8h.html#add6149ead84c8568031dabdedbee4f27">__OSException</a> <a class="el" href="structexception.html">exception</a>, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
 <tr class="separator:ac9b4a3cccbe5d47a89463640ad0d6e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad60ad77e7a4d0277ee9de9acbc0e6a58"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSAlarm_8h.html#ad60ad77e7a4d0277ee9de9acbc0e6a58">DecrementerExceptionHandler</a> (<a class="el" href="OSError_8h.html#add6149ead84c8568031dabdedbee4f27">__OSException</a> <a class="el" href="structexception.html">exception</a>, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
 <tr class="separator:ad60ad77e7a4d0277ee9de9acbc0e6a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17822b1ace4046cc5949fd3c11dbeaf8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSAlarm_8h.html#a17822b1ace4046cc5949fd3c11dbeaf8">OnReset</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> param_0)</td></tr>
-<tr class="separator:a17822b1ace4046cc5949fd3c11dbeaf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="abe3fe2259612e01057e5c7b71ac1b51b" name="abe3fe2259612e01057e5c7b71ac1b51b"></a>
@@ -183,6 +185,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef struct <a class="el" href="structOSAlarmLink.html">OSAlarmLink</a> <a class="el" href="structOSAlarmLink.html">OSAlarmLink</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2fda9bac83e5e790e234d877e9a7e5aa" name="a2fda9bac83e5e790e234d877e9a7e5aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fda9bac83e5e790e234d877e9a7e5aa">&#9670;&#160;</a></span>OSAlarmQueue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structOSAlarmQueue.html">OSAlarmQueue</a> <a class="el" href="structOSAlarmQueue.html">OSAlarmQueue</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -262,8 +278,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3b8e573e98400e8a78dbefe83a8b9c5e" name="a3b8e573e98400e8a78dbefe83a8b9c5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b8e573e98400e8a78dbefe83a8b9c5e">&#9670;&#160;</a></span>InsertAlarm()</h2>
+<a id="a589bcc0f093b7a22d6d7c25366320f31" name="a589bcc0f093b7a22d6d7c25366320f31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a589bcc0f093b7a22d6d7c25366320f31">&#9670;&#160;</a></span>InsertAlarm()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -286,39 +302,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="OSAlarm_8h.html#a04087809eb8ab20177b0c663bb2113d2">OSAlarmHandler</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="OSAlarm_8h.html#a04087809eb8ab20177b0c663bb2113d2">OSAlarmHandler</a>&#160;</td>
           <td class="paramname"><em>handler</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a17822b1ace4046cc5949fd3c11dbeaf8" name="a17822b1ace4046cc5949fd3c11dbeaf8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17822b1ace4046cc5949fd3c11dbeaf8">&#9670;&#160;</a></span>OnReset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> OnReset </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
-          <td class="paramname"><em>param_0</em></td><td>)</td>
-          <td></td>
         </tr>
       </table>
   </td>
@@ -384,8 +374,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7120fbf681da90a0eff6a3ea6ea95e86" name="a7120fbf681da90a0eff6a3ea6ea95e86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7120fbf681da90a0eff6a3ea6ea95e86">&#9670;&#160;</a></span>OSSetAlarm()</h2>
+<a id="a0df54e14b240ba1840edec6d8fce5ae6" name="a0df54e14b240ba1840edec6d8fce5ae6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0df54e14b240ba1840edec6d8fce5ae6">&#9670;&#160;</a></span>OSSetAlarm()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -405,7 +395,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="OSAlarm_8h.html#a04087809eb8ab20177b0c663bb2113d2">OSAlarmHandler</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="OSAlarm_8h.html#a04087809eb8ab20177b0c663bb2113d2">OSAlarmHandler</a>&#160;</td>
           <td class="paramname"><em>handler</em>&#160;</td>
         </tr>
         <tr>
@@ -418,8 +408,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa3db0796004701bd761dae128bf95a35" name="aa3db0796004701bd761dae128bf95a35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3db0796004701bd761dae128bf95a35">&#9670;&#160;</a></span>OSSetPeriodicAlarm()</h2>
+<a id="a307fbfd4c713d5fe6122833d7d2cbb19" name="a307fbfd4c713d5fe6122833d7d2cbb19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a307fbfd4c713d5fe6122833d7d2cbb19">&#9670;&#160;</a></span>OSSetPeriodicAlarm()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -445,7 +435,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="OSAlarm_8h.html#a04087809eb8ab20177b0c663bb2113d2">OSAlarmHandler</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="OSAlarm_8h.html#a04087809eb8ab20177b0c663bb2113d2">OSAlarmHandler</a>&#160;</td>
           <td class="paramname"><em>handler</em>&#160;</td>
         </tr>
         <tr>

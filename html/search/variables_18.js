@@ -5,9 +5,13 @@ var searchData=
   ['xer_2',['xer',['../structOSContext.html#ac1f012b2474b7bc2dcd4d804ca507d14',1,'OSContext']]],
   ['xfb_5fheight_3',['xfb_height',['../struct__GXRenderModeObj.html#a63a935dcf80a3dfa4ef527740c0575c8',1,'_GXRenderModeObj']]],
   ['xfb_5fmode_4',['xfb_mode',['../struct__GXRenderModeObj.html#aa07bb18cdc8e156d8b0cecf92a5ca40c',1,'_GXRenderModeObj']]],
-  ['xfertime_5',['XferTime',['../SIBios_8c.html#a6bebd1f4757ec83b33663e231cc83404',1,'SIBios.c']]],
-  ['xpatchbits_6',['XPatchBits',['../Pad_8c.html#a3d12b82b7a417a68da58fcbb49f520f7',1,'Pad.c']]],
-  ['xy_5ftext_7',['xy_text',['../d__menu__ring_8cpp.html#a7f08a77197f647e0a99d732ab652efe5',1,'d_menu_ring.cpp']]],
-  ['xyntsc_8',['XYNTSC',['../SISamplingRate_8c.html#a90f5f3e5f0c63df1db39c81aab32f230',1,'SISamplingRate.c']]],
-  ['xypal_9',['XYPAL',['../SISamplingRate_8c.html#a90926e95f86c43b9b9e8aa3bbc4c23eb',1,'SISamplingRate.c']]]
+  ['xfercallback_5',['xferCallback',['../structCARDControl.html#a33400119c1158ecead323952099c9036',1,'CARDControl']]],
+  ['xferred_6',['xferred',['../structCARDControl.html#a8f283e071c7668669361e24ac1b0e39e',1,'CARDControl']]],
+  ['xfertime_7',['XferTime',['../SIBios_8c.html#a0777189a976736b560f3690e3b19dd5b',1,'SIBios.c']]],
+  ['xpatchbits_8',['XPatchBits',['../Pad_8c.html#a3d12b82b7a417a68da58fcbb49f520f7',1,'Pad.c']]],
+  ['xy_5ftext_9',['xy_text',['../d__menu__ring_8cpp.html#a7f08a77197f647e0a99d732ab652efe5',1,'d_menu_ring.cpp']]],
+  ['xyntsc_10',['XYNTSC',['../SISamplingRate_8c.html#a7f8e75b510ffdde6823597efd8c1af46',1,'SISamplingRate.c']]],
+  ['xypal_11',['XYPAL',['../SISamplingRate_8c.html#af0c5b6bec9a402be4834cf592e0b02b6',1,'SISamplingRate.c']]],
+  ['xystick_12',['xyStick',['../structPADClampRegion.html#a4c3fa20d75dd5adc60a07a79832df3b6',1,'PADClampRegion']]],
+  ['xysubstick_13',['xySubstick',['../structPADClampRegion.html#abeefa9d6b8065dd4425d77be66f1dd22',1,'PADClampRegion']]]
 ];

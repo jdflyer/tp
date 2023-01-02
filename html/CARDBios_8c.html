@@ -82,18 +82,20 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">CARDBios.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="CARDBios_8h_source.html">dolphin/card/CARDBios.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;asm/dolphin/card/CARDBios/__CARDSyncCallback.s&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="card_8h_source.html">dolphin/card/card.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="dsp_8h_source.html">dolphin/dsp/dsp.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="dvd_8h_source.html">dolphin/dvd/dvd.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="EXIBios_8h_source.html">dolphin/exi/EXIBios.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="CARDPriv_8h_source.html">dolphin/card/CARDPriv.h</a>&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDBios/__CARDExtHandler.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDBios/__CARDExiHandler.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/card/CARDBios/__CARDTxHandler.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDBios/__CARDUnlockedHandler.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDBios/__CARDEnableInterrupt.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDBios/__CARDReadStatus.s&quot;</code><br />
@@ -107,156 +109,209 @@ $(function() {
 <code>#include &quot;asm/dolphin/card/CARDBios/__CARDWritePage.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDBios/__CARDEraseSector.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDBios/CARDInit.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/card/CARDBios/__CARDGetFontEncode.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/card/CARDBios/__CARDSetDiskID.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDBios/__CARDGetControlBlock.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDBios/__CARDPutControlBlock.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDBios/CARDFreeBlocks.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDBios/__CARDSync.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/card/CARDBios/OnReset.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/card/CARDBios/CARDGetFastMode.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for CARDBios.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="CARDBios_8c__incl.svg" width="100%" height="448"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="CARDBios_8c__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a644c568d8dc8a2ebc5ddf1de323599d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a644c568d8dc8a2ebc5ddf1de323599d4">AD1</a>(x)&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)(((x) &gt;&gt; 17) &amp; 0x7f))</td></tr>
+<tr class="separator:a644c568d8dc8a2ebc5ddf1de323599d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05d07b6bd1dc56cb635d707ad5b6dfa2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a05d07b6bd1dc56cb635d707ad5b6dfa2">AD1EX</a>(x)&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)(<a class="el" href="CARDBios_8c.html#a644c568d8dc8a2ebc5ddf1de323599d4">AD1</a>(x) | 0x80));</td></tr>
+<tr class="separator:a05d07b6bd1dc56cb635d707ad5b6dfa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3326cb6edf5500f2f657284184927a7d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a3326cb6edf5500f2f657284184927a7d">AD2</a>(x)&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)(((x) &gt;&gt; 9) &amp; 0xff))</td></tr>
+<tr class="separator:a3326cb6edf5500f2f657284184927a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb49df9f442aef5da74b28626df1fc4b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#abb49df9f442aef5da74b28626df1fc4b">AD3</a>(x)&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)(((x) &gt;&gt; 7) &amp; 0x03))</td></tr>
+<tr class="separator:abb49df9f442aef5da74b28626df1fc4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f7bd7a3b49464f89e70da98c084950b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a8f7bd7a3b49464f89e70da98c084950b">BA</a>(x)&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)((x)&amp;0x7f))</td></tr>
+<tr class="separator:a8f7bd7a3b49464f89e70da98c084950b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a915c87ca1eea612704714cfc855d3294"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a915c87ca1eea612704714cfc855d3294">__CARDDefaultApiCallback</a> ()</td></tr>
-<tr class="separator:a915c87ca1eea612704714cfc855d3294"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85c8b4f120ba288fe3b453babab949ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a85c8b4f120ba288fe3b453babab949ad">__CARDSyncCallback</a> ()</td></tr>
-<tr class="separator:a85c8b4f120ba288fe3b453babab949ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a440d495ccd4044c86142b02177267945"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a440d495ccd4044c86142b02177267945">__CARDExtHandler</a> ()</td></tr>
-<tr class="separator:a440d495ccd4044c86142b02177267945"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0892d7ef437cd3dda3cd6414a8d4b3b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a0892d7ef437cd3dda3cd6414a8d4b3b8">__CARDExiHandler</a> ()</td></tr>
-<tr class="separator:a0892d7ef437cd3dda3cd6414a8d4b3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa200ca06d0340b54c6d6546794f31d6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#aa200ca06d0340b54c6d6546794f31d6c">__CARDTxHandler</a> ()</td></tr>
-<tr class="separator:aa200ca06d0340b54c6d6546794f31d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae930eab42db0b23aae038b443b6ada2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#ae930eab42db0b23aae038b443b6ada2c">__CARDUnlockedHandler</a> ()</td></tr>
-<tr class="separator:ae930eab42db0b23aae038b443b6ada2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cff661fbea7fe55774f2f351061b932"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a9cff661fbea7fe55774f2f351061b932">__CARDEnableInterrupt</a> ()</td></tr>
-<tr class="separator:a9cff661fbea7fe55774f2f351061b932"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a653c98552280c2bfbdb3e60568ad4a38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a653c98552280c2bfbdb3e60568ad4a38">__CARDReadStatus</a> ()</td></tr>
-<tr class="separator:a653c98552280c2bfbdb3e60568ad4a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59e697dbc69897c08c2c9ec919f05f2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a59e697dbc69897c08c2c9ec919f05f2f">__CARDReadVendorID</a> ()</td></tr>
+<tr class="memitem:a0620bfe030de4beadfebb05f62509e09"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a0620bfe030de4beadfebb05f62509e09">OnReset</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>)</td></tr>
+<tr class="separator:a0620bfe030de4beadfebb05f62509e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73271d2051625594a06835f1d97f2fa6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a73271d2051625594a06835f1d97f2fa6">TimeoutHandler</a> (<a class="el" href="structOSAlarm.html">OSAlarm</a> *alarm, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
+<tr class="separator:a73271d2051625594a06835f1d97f2fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a9be985e4dd6438c1af66533231bda5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a1a9be985e4dd6438c1af66533231bda5">Retry</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan)</td></tr>
+<tr class="separator:a1a9be985e4dd6438c1af66533231bda5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10821ab9c01bd2e1916aaf8ce20a7526"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a10821ab9c01bd2e1916aaf8ce20a7526">UnlockedCallback</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> result)</td></tr>
+<tr class="separator:a10821ab9c01bd2e1916aaf8ce20a7526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaff55a1246da783bdc06d06c99ffa4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#adaff55a1246da783bdc06d06c99ffa4f">DSPInit</a> ()</td></tr>
+<tr class="separator:adaff55a1246da783bdc06d06c99ffa4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f42c643a03e4272ace22690a74dc9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a72f42c643a03e4272ace22690a74dc9a">__CARDDefaultApiCallback</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> result)</td></tr>
+<tr class="separator:a72f42c643a03e4272ace22690a74dc9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf2b407fcb67e854c44739b8194fb134"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#acf2b407fcb67e854c44739b8194fb134">__CARDSyncCallback</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> result)</td></tr>
+<tr class="separator:acf2b407fcb67e854c44739b8194fb134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9eb1a27906e83ff6efda9db71d087f6"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#af9eb1a27906e83ff6efda9db71d087f6">__CARDExtHandler</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
+<tr class="separator:af9eb1a27906e83ff6efda9db71d087f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fbb2e8ba711f1dfb61cfd6d3a639309"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a4fbb2e8ba711f1dfb61cfd6d3a639309">__CARDExiHandler</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
+<tr class="separator:a4fbb2e8ba711f1dfb61cfd6d3a639309"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9e1631358c73f50f0504198e42e0e94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#ab9e1631358c73f50f0504198e42e0e94">__CARDTxHandler</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
+<tr class="separator:ab9e1631358c73f50f0504198e42e0e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b44dd7051c014573cd7d0d0a608a955"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a4b44dd7051c014573cd7d0d0a608a955">__CARDUnlockedHandler</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
+<tr class="separator:a4b44dd7051c014573cd7d0d0a608a955"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8264efc62711832ef563ec9542e5ec7c"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a8264efc62711832ef563ec9542e5ec7c">__CARDEnableInterrupt</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> enable)</td></tr>
+<tr class="separator:a8264efc62711832ef563ec9542e5ec7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dc45e4ca353b88405f16d6c07fd1ad1"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a2dc45e4ca353b88405f16d6c07fd1ad1">__CARDReadStatus</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *<a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>)</td></tr>
+<tr class="separator:a2dc45e4ca353b88405f16d6c07fd1ad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59e697dbc69897c08c2c9ec919f05f2f"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a59e697dbc69897c08c2c9ec919f05f2f">__CARDReadVendorID</a> ()</td></tr>
 <tr class="separator:a59e697dbc69897c08c2c9ec919f05f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98c3b890f30964eb5edc5597fe5d49f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a98c3b890f30964eb5edc5597fe5d49f3">__CARDClearStatus</a> ()</td></tr>
-<tr class="separator:a98c3b890f30964eb5edc5597fe5d49f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe9407e894b63d2daffa2b1a090878b4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#afe9407e894b63d2daffa2b1a090878b4">TimeoutHandler</a> ()</td></tr>
-<tr class="separator:afe9407e894b63d2daffa2b1a090878b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d48b94bd5879bd5b4abff2b6d471ff5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a1d48b94bd5879bd5b4abff2b6d471ff5">Retry</a> ()</td></tr>
-<tr class="separator:a1d48b94bd5879bd5b4abff2b6d471ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d6d8fc55d02fc76ef7e353513337272"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a4d6d8fc55d02fc76ef7e353513337272">UnlockedCallback</a> ()</td></tr>
-<tr class="separator:a4d6d8fc55d02fc76ef7e353513337272"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a029cea5ef5b5d38a4c6ac19f9fda0298"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a029cea5ef5b5d38a4c6ac19f9fda0298">__CARDStart</a> ()</td></tr>
-<tr class="separator:a029cea5ef5b5d38a4c6ac19f9fda0298"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab35dbe68a72e904b2ea6e88b08468127"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#ab35dbe68a72e904b2ea6e88b08468127">__CARDReadSegment</a> ()</td></tr>
-<tr class="separator:ab35dbe68a72e904b2ea6e88b08468127"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9213fc8e940ec1e9f7c616e074c78021"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a9213fc8e940ec1e9f7c616e074c78021">__CARDWritePage</a> ()</td></tr>
-<tr class="separator:a9213fc8e940ec1e9f7c616e074c78021"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a025a32119320a1515b9d895cc51bc8ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a025a32119320a1515b9d895cc51bc8ba">__CARDEraseSector</a> ()</td></tr>
-<tr class="separator:a025a32119320a1515b9d895cc51bc8ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafe328168623e6cc4d458ea2ef584644"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#aafe328168623e6cc4d458ea2ef584644">CARDInit</a> ()</td></tr>
-<tr class="separator:aafe328168623e6cc4d458ea2ef584644"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69af9e680d5a8d595eae2adeceff7c14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a69af9e680d5a8d595eae2adeceff7c14">__CARDGetFontEncode</a> ()</td></tr>
-<tr class="separator:a69af9e680d5a8d595eae2adeceff7c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77adfecd2cd974237a1e02b1a511d147"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a77adfecd2cd974237a1e02b1a511d147">__CARDSetDiskID</a> ()</td></tr>
-<tr class="separator:a77adfecd2cd974237a1e02b1a511d147"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fac9832578d322ac4df7585a46eee46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a2fac9832578d322ac4df7585a46eee46">__CARDGetControlBlock</a> ()</td></tr>
-<tr class="separator:a2fac9832578d322ac4df7585a46eee46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a450619d2e1853da7977e786d98997460"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a450619d2e1853da7977e786d98997460">__CARDPutControlBlock</a> ()</td></tr>
-<tr class="separator:a450619d2e1853da7977e786d98997460"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af557e6a51cabd8dc6895732e37c3acdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#af557e6a51cabd8dc6895732e37c3acdc">CARDFreeBlocks</a> ()</td></tr>
-<tr class="separator:af557e6a51cabd8dc6895732e37c3acdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26a2d50af1666a4e6480e1c962020555"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a26a2d50af1666a4e6480e1c962020555">__CARDSync</a> ()</td></tr>
-<tr class="separator:a26a2d50af1666a4e6480e1c962020555"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9462ff26e8664066b54c1969eb75668d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a9462ff26e8664066b54c1969eb75668d">OnReset</a> ()</td></tr>
-<tr class="separator:a9462ff26e8664066b54c1969eb75668d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacaa9844dd25e3aafa9a527b84ea605f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#aacaa9844dd25e3aafa9a527b84ea605f">CARDGetFastMode</a> ()</td></tr>
-<tr class="separator:aacaa9844dd25e3aafa9a527b84ea605f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a688d1c86f609bd2033df6f4d22094f42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a688d1c86f609bd2033df6f4d22094f42">OSRegisterVersion</a> ()</td></tr>
-<tr class="separator:a688d1c86f609bd2033df6f4d22094f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6db83ea94e00550dff9ed61435babe5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#af6db83ea94e00550dff9ed61435babe5">OSInitAlarm</a> ()</td></tr>
-<tr class="separator:af6db83ea94e00550dff9ed61435babe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4036cad6c05aa01ade7aacfcd4874b94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a4036cad6c05aa01ade7aacfcd4874b94">OSCreateAlarm</a> ()</td></tr>
-<tr class="separator:a4036cad6c05aa01ade7aacfcd4874b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b1eed12a179c480bc5ccda5abc42d35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a8b1eed12a179c480bc5ccda5abc42d35">OSSetAlarm</a> ()</td></tr>
-<tr class="separator:a8b1eed12a179c480bc5ccda5abc42d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b6b438fc3e4ceeaed24cbfa3dca2851"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a8b6b438fc3e4ceeaed24cbfa3dca2851">OSCancelAlarm</a> ()</td></tr>
-<tr class="separator:a8b6b438fc3e4ceeaed24cbfa3dca2851"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c9733bb50b084a02763400521c5d03d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a3c9733bb50b084a02763400521c5d03d">OSGetFontEncode</a> ()</td></tr>
-<tr class="separator:a3c9733bb50b084a02763400521c5d03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65b7dd4c9756f26d16dcf8f0dedb07bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a65b7dd4c9756f26d16dcf8f0dedb07bf">OSDisableInterrupts</a> ()</td></tr>
-<tr class="separator:a65b7dd4c9756f26d16dcf8f0dedb07bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14b5cc2befa83d8710fba14f4de14fd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a14b5cc2befa83d8710fba14f4de14fd9">OSRestoreInterrupts</a> ()</td></tr>
-<tr class="separator:a14b5cc2befa83d8710fba14f4de14fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe91e5db2528aef6f85b05b3ad54048b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#abe91e5db2528aef6f85b05b3ad54048b">OSRegisterResetFunction</a> ()</td></tr>
-<tr class="separator:abe91e5db2528aef6f85b05b3ad54048b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80a57c003eabefac201eaea43e75a0b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a80a57c003eabefac201eaea43e75a0b2">OSInitThreadQueue</a> ()</td></tr>
-<tr class="separator:a80a57c003eabefac201eaea43e75a0b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62d2ccbe6753b791a60fc5a3489795b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a62d2ccbe6753b791a60fc5a3489795b3">OSSleepThread</a> ()</td></tr>
-<tr class="separator:a62d2ccbe6753b791a60fc5a3489795b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a806d1105cc8e0355ebe1358a6d234074"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a806d1105cc8e0355ebe1358a6d234074">OSWakeupThread</a> ()</td></tr>
-<tr class="separator:a806d1105cc8e0355ebe1358a6d234074"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b5bfba1655bfa0c41993f7b3d3f57ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a2b5bfba1655bfa0c41993f7b3d3f57ce">EXIImm</a> ()</td></tr>
-<tr class="separator:a2b5bfba1655bfa0c41993f7b3d3f57ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53d5a11a3cfee59957f85a52bcc3e0c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a53d5a11a3cfee59957f85a52bcc3e0c6">EXIImmEx</a> ()</td></tr>
-<tr class="separator:a53d5a11a3cfee59957f85a52bcc3e0c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0993bd655719b15cc5ad5f9a4c6de431"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a0993bd655719b15cc5ad5f9a4c6de431">EXIDma</a> ()</td></tr>
-<tr class="separator:a0993bd655719b15cc5ad5f9a4c6de431"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c362b37176c89bb6422ff3c20a324c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a6c362b37176c89bb6422ff3c20a324c6">EXISync</a> ()</td></tr>
-<tr class="separator:a6c362b37176c89bb6422ff3c20a324c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa78a4d6a726e7a2a28f8eaee34923355"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#aa78a4d6a726e7a2a28f8eaee34923355">EXISetExiCallback</a> ()</td></tr>
-<tr class="separator:aa78a4d6a726e7a2a28f8eaee34923355"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bed33377c1f3b15aa3606957721b787"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a5bed33377c1f3b15aa3606957721b787">EXIProbe</a> ()</td></tr>
-<tr class="separator:a5bed33377c1f3b15aa3606957721b787"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b2d1fe7d445f73887a22508343aad5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a3b2d1fe7d445f73887a22508343aad5b">EXISelect</a> ()</td></tr>
-<tr class="separator:a3b2d1fe7d445f73887a22508343aad5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a035e1bcb1ee8eb19c60c95e8d0130306"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a035e1bcb1ee8eb19c60c95e8d0130306">EXIDeselect</a> ()</td></tr>
-<tr class="separator:a035e1bcb1ee8eb19c60c95e8d0130306"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25ae41fa8f82b729f9b7b705977b99fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a25ae41fa8f82b729f9b7b705977b99fe">EXILock</a> ()</td></tr>
-<tr class="separator:a25ae41fa8f82b729f9b7b705977b99fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb2f3b7668906dc557d403e2294174c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#afb2f3b7668906dc557d403e2294174c0">EXIUnlock</a> ()</td></tr>
-<tr class="separator:afb2f3b7668906dc557d403e2294174c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac589cba52be2cdb77260c73d1e9623c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#ac589cba52be2cdb77260c73d1e9623c0">DSPInit</a> ()</td></tr>
-<tr class="separator:ac589cba52be2cdb77260c73d1e9623c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23dea5db7e7b849f385f400546fb449e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a23dea5db7e7b849f385f400546fb449e">__CARDGetFatBlock</a> ()</td></tr>
-<tr class="separator:a23dea5db7e7b849f385f400546fb449e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7580f1d80251c04351d02c0dc5fa914"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#ad7580f1d80251c04351d02c0dc5fa914">__CARDGetDirBlock</a> ()</td></tr>
-<tr class="separator:ad7580f1d80251c04351d02c0dc5fa914"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c00aa7021ecf2b587041eba0a32ed90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a9c00aa7021ecf2b587041eba0a32ed90">CARDUnmount</a> ()</td></tr>
-<tr class="separator:a9c00aa7021ecf2b587041eba0a32ed90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dd9b8dec2ac2589812713de9344d591"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a7dd9b8dec2ac2589812713de9344d591">__CARDClearStatus</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan)</td></tr>
+<tr class="separator:a7dd9b8dec2ac2589812713de9344d591"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e37e46859aef8f71c75384554cd9d34"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a8e37e46859aef8f71c75384554cd9d34">__CARDStart</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="card_8h.html#a7e14558c66d616c768d3a6f73bd640a6">CARDCallback</a> txCallback, <a class="el" href="card_8h.html#a7e14558c66d616c768d3a6f73bd640a6">CARDCallback</a> exiCallback)</td></tr>
+<tr class="separator:a8e37e46859aef8f71c75384554cd9d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6faf9a96d9b7c596072fda2e13764196"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a6faf9a96d9b7c596072fda2e13764196">__CARDReadSegment</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="card_8h.html#a7e14558c66d616c768d3a6f73bd640a6">CARDCallback</a> callback)</td></tr>
+<tr class="separator:a6faf9a96d9b7c596072fda2e13764196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a966df5171d19dc3ed4c8926409d4c15b"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a966df5171d19dc3ed4c8926409d4c15b">__CARDWritePage</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="card_8h.html#a7e14558c66d616c768d3a6f73bd640a6">CARDCallback</a> callback)</td></tr>
+<tr class="separator:a966df5171d19dc3ed4c8926409d4c15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29bffa6eff4dfd9b97c74affd1cd4f85"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a29bffa6eff4dfd9b97c74affd1cd4f85">__CARDEraseSector</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> addr, <a class="el" href="card_8h.html#a7e14558c66d616c768d3a6f73bd640a6">CARDCallback</a> callback)</td></tr>
+<tr class="separator:a29bffa6eff4dfd9b97c74affd1cd4f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54a25f7cd2ff5227e7c8b07bdafb8b47"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a54a25f7cd2ff5227e7c8b07bdafb8b47">CARDInit</a> (void)</td></tr>
+<tr class="separator:a54a25f7cd2ff5227e7c8b07bdafb8b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c880444c5b3264af248362f57818f38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a0c880444c5b3264af248362f57818f38">__CARDGetFontEncode</a> (void)</td></tr>
+<tr class="separator:a0c880444c5b3264af248362f57818f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bd2f7d3786a0c4b139756746318a5e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a1bd2f7d3786a0c4b139756746318a5e5">__CARDSetDiskID</a> (const <a class="el" href="structDVDDiskID.html">DVDDiskID</a> *<a class="el" href="d__a__npc__cd_8cpp.html#ab7710104fe587e0c8b4be67c675f3e0c">id</a>)</td></tr>
+<tr class="separator:a1bd2f7d3786a0c4b139756746318a5e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4786f7911394b393c7467240b96e19bd"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a4786f7911394b393c7467240b96e19bd">__CARDGetControlBlock</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="structCARDControl.html">CARDControl</a> **pcard)</td></tr>
+<tr class="separator:a4786f7911394b393c7467240b96e19bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fb92b9eb6f2237018fc5010e7889d9f"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a8fb92b9eb6f2237018fc5010e7889d9f">__CARDPutControlBlock</a> (<a class="el" href="structCARDControl.html">CARDControl</a> *card, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> result)</td></tr>
+<tr class="separator:a8fb92b9eb6f2237018fc5010e7889d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e7b70c3aa3744a6fc6b31249abe3368"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a0e7b70c3aa3744a6fc6b31249abe3368">CARDFreeBlocks</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> *byteNotUsed, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> *filesNotUsed)</td></tr>
+<tr class="separator:a0e7b70c3aa3744a6fc6b31249abe3368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28a409b9e975a9bd65dae89d2f38673b"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a28a409b9e975a9bd65dae89d2f38673b">__CARDSync</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan)</td></tr>
+<tr class="separator:a28a409b9e975a9bd65dae89d2f38673b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f327f5e861fe980309ce3bf529223c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a0f327f5e861fe980309ce3bf529223c6">CARDGetFastMode</a> (void)</td></tr>
+<tr class="separator:a0f327f5e861fe980309ce3bf529223c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a88eef48dbdc3ee7dd041fe7c6f5b8bc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a88eef48dbdc3ee7dd041fe7c6f5b8bc7">__CARDDiskNone</a> [32]</td></tr>
-<tr class="separator:a88eef48dbdc3ee7dd041fe7c6f5b8bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63b9d4a99060578067847d5fa40afe7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a63b9d4a99060578067847d5fa40afe7e">__CARDBlock</a> [544]</td></tr>
-<tr class="separator:a63b9d4a99060578067847d5fa40afe7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a6069729885614d1c28f573d06bd419"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a1a6069729885614d1c28f573d06bd419">lit_1</a> [] = &quot;&lt;&lt; Dolphin SDK - CARD\trelease build: Apr 5 2004 04:15:35 (0x2301) &gt;&gt;&quot;</td></tr>
+<tr class="memitem:a7ebf31387a355f07630bbcf3d3ce94a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structDVDDiskID.html">DVDDiskID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a7ebf31387a355f07630bbcf3d3ce94a2">__CARDDiskNone</a></td></tr>
+<tr class="separator:a7ebf31387a355f07630bbcf3d3ce94a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4ddb862f764b09d8cf10ae2f75dd14c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCARDControl.html">CARDControl</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#ac4ddb862f764b09d8cf10ae2f75dd14c">__CARDBlock</a> [2]</td></tr>
+<tr class="separator:ac4ddb862f764b09d8cf10ae2f75dd14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a6069729885614d1c28f573d06bd419"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a1a6069729885614d1c28f573d06bd419">lit_1</a> []</td></tr>
 <tr class="separator:a1a6069729885614d1c28f573d06bd419"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad711ab98ac1f0455cd8863ea30277d18"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#ad711ab98ac1f0455cd8863ea30277d18">ResetFunctionInfo</a> [4+4]</td></tr>
-<tr class="separator:ad711ab98ac1f0455cd8863ea30277d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af57b205b6a9e6f78473c9b6eff351d74"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#af57b205b6a9e6f78473c9b6eff351d74">__CARDVersion</a> [1+1]</td></tr>
-<tr class="separator:af57b205b6a9e6f78473c9b6eff351d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94626c984e53168b716994f3da1609bd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a94626c984e53168b716994f3da1609bd">struct_80451918</a> [4+4]</td></tr>
-<tr class="separator:a94626c984e53168b716994f3da1609bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28ade2ab6552d24bc5bb12bb07b5df18"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="structOSResetFunctionInfo.html">OSResetFunctionInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a28ade2ab6552d24bc5bb12bb07b5df18">ResetFunctionInfo</a></td></tr>
+<tr class="separator:a28ade2ab6552d24bc5bb12bb07b5df18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a2066edb1aafcc8be717c244e04b098"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a0a2066edb1aafcc8be717c244e04b098">__CARDVersion</a> = <a class="el" href="ai_8c.html#a1a6069729885614d1c28f573d06bd419">lit_1</a></td></tr>
+<tr class="separator:a0a2066edb1aafcc8be717c244e04b098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6410b87546d40327223f9ce57cefb453"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a6410b87546d40327223f9ce57cefb453">__CARDEncode</a></td></tr>
+<tr class="separator:a6410b87546d40327223f9ce57cefb453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a592844fa691ddc55e82e1e6cb4d70d18"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a592844fa691ddc55e82e1e6cb4d70d18">__CARDFastMode</a></td></tr>
+<tr class="separator:a592844fa691ddc55e82e1e6cb4d70d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a98c3b890f30964eb5edc5597fe5d49f3" name="a98c3b890f30964eb5edc5597fe5d49f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98c3b890f30964eb5edc5597fe5d49f3">&#9670;&#160;</a></span>__CARDClearStatus()</h2>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a644c568d8dc8a2ebc5ddf1de323599d4" name="a644c568d8dc8a2ebc5ddf1de323599d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a644c568d8dc8a2ebc5ddf1de323599d4">&#9670;&#160;</a></span>AD1</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __CARDClearStatus </td>
+          <td class="memname">#define AD1</td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)(((x) &gt;&gt; 17) &amp; 0x7f))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a05d07b6bd1dc56cb635d707ad5b6dfa2" name="a05d07b6bd1dc56cb635d707ad5b6dfa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05d07b6bd1dc56cb635d707ad5b6dfa2">&#9670;&#160;</a></span>AD1EX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AD1EX</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)(<a class="el" href="CARDBios_8c.html#a644c568d8dc8a2ebc5ddf1de323599d4">AD1</a>(x) | 0x80));</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3326cb6edf5500f2f657284184927a7d" name="a3326cb6edf5500f2f657284184927a7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3326cb6edf5500f2f657284184927a7d">&#9670;&#160;</a></span>AD2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AD2</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)(((x) &gt;&gt; 9) &amp; 0xff))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb49df9f442aef5da74b28626df1fc4b" name="abb49df9f442aef5da74b28626df1fc4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb49df9f442aef5da74b28626df1fc4b">&#9670;&#160;</a></span>AD3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AD3</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)(((x) &gt;&gt; 7) &amp; 0x03))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f7bd7a3b49464f89e70da98c084950b" name="a8f7bd7a3b49464f89e70da98c084950b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f7bd7a3b49464f89e70da98c084950b">&#9670;&#160;</a></span>BA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BA</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;((<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)((x)&amp;0x7f))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a7dd9b8dec2ac2589812713de9344d591" name="a7dd9b8dec2ac2589812713de9344d591"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dd9b8dec2ac2589812713de9344d591">&#9670;&#160;</a></span>__CARDClearStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDClearStatus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -264,8 +319,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a915c87ca1eea612704714cfc855d3294" name="a915c87ca1eea612704714cfc855d3294"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a915c87ca1eea612704714cfc855d3294">&#9670;&#160;</a></span>__CARDDefaultApiCallback()</h2>
+<a id="a72f42c643a03e4272ace22690a74dc9a" name="a72f42c643a03e4272ace22690a74dc9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72f42c643a03e4272ace22690a74dc9a">&#9670;&#160;</a></span>__CARDDefaultApiCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -273,50 +328,89 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void __CARDDefaultApiCallback </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a9cff661fbea7fe55774f2f351061b932" name="a9cff661fbea7fe55774f2f351061b932"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cff661fbea7fe55774f2f351061b932">&#9670;&#160;</a></span>__CARDEnableInterrupt()</h2>
+<a id="a8264efc62711832ef563ec9542e5ec7c" name="a8264efc62711832ef563ec9542e5ec7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8264efc62711832ef563ec9542e5ec7c">&#9670;&#160;</a></span>__CARDEnableInterrupt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __CARDEnableInterrupt </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDEnableInterrupt </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a025a32119320a1515b9d895cc51bc8ba" name="a025a32119320a1515b9d895cc51bc8ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a025a32119320a1515b9d895cc51bc8ba">&#9670;&#160;</a></span>__CARDEraseSector()</h2>
+<a id="a29bffa6eff4dfd9b97c74affd1cd4f85" name="a29bffa6eff4dfd9b97c74affd1cd4f85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29bffa6eff4dfd9b97c74affd1cd4f85">&#9670;&#160;</a></span>__CARDEraseSector()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __CARDEraseSector </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDEraseSector </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="card_8h.html#a7e14558c66d616c768d3a6f73bd640a6">CARDCallback</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a0892d7ef437cd3dda3cd6414a8d4b3b8" name="a0892d7ef437cd3dda3cd6414a8d4b3b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0892d7ef437cd3dda3cd6414a8d4b3b8">&#9670;&#160;</a></span>__CARDExiHandler()</h2>
+<a id="a4fbb2e8ba711f1dfb61cfd6d3a639309" name="a4fbb2e8ba711f1dfb61cfd6d3a639309"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fbb2e8ba711f1dfb61cfd6d3a639309">&#9670;&#160;</a></span>__CARDExiHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -324,16 +418,27 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">asm void __CARDExiHandler </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structOSContext.html">OSContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a440d495ccd4044c86142b02177267945" name="a440d495ccd4044c86142b02177267945"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a440d495ccd4044c86142b02177267945">&#9670;&#160;</a></span>__CARDExtHandler()</h2>
+<a id="af9eb1a27906e83ff6efda9db71d087f6" name="af9eb1a27906e83ff6efda9db71d087f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9eb1a27906e83ff6efda9db71d087f6">&#9670;&#160;</a></span>__CARDExtHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -341,6 +446,63 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">asm void __CARDExtHandler </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structOSContext.html">OSContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4786f7911394b393c7467240b96e19bd" name="a4786f7911394b393c7467240b96e19bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4786f7911394b393c7467240b96e19bd">&#9670;&#160;</a></span>__CARDGetControlBlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDGetControlBlock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structCARDControl.html">CARDControl</a> **&#160;</td>
+          <td class="paramname"><em>pcard</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c880444c5b3264af248362f57818f38" name="a0c880444c5b3264af248362f57818f38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c880444c5b3264af248362f57818f38">&#9670;&#160;</a></span>__CARDGetFontEncode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> __CARDGetFontEncode </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -349,119 +511,84 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a2fac9832578d322ac4df7585a46eee46" name="a2fac9832578d322ac4df7585a46eee46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fac9832578d322ac4df7585a46eee46">&#9670;&#160;</a></span>__CARDGetControlBlock()</h2>
+<a id="a8fb92b9eb6f2237018fc5010e7889d9f" name="a8fb92b9eb6f2237018fc5010e7889d9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fb92b9eb6f2237018fc5010e7889d9f">&#9670;&#160;</a></span>__CARDPutControlBlock()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __CARDGetControlBlock </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDPutControlBlock </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structCARDControl.html">CARDControl</a> *&#160;</td>
+          <td class="paramname"><em>card</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ad7580f1d80251c04351d02c0dc5fa914" name="ad7580f1d80251c04351d02c0dc5fa914"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7580f1d80251c04351d02c0dc5fa914">&#9670;&#160;</a></span>__CARDGetDirBlock()</h2>
+<a id="a6faf9a96d9b7c596072fda2e13764196" name="a6faf9a96d9b7c596072fda2e13764196"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6faf9a96d9b7c596072fda2e13764196">&#9670;&#160;</a></span>__CARDReadSegment()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __CARDGetDirBlock </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDReadSegment </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="card_8h.html#a7e14558c66d616c768d3a6f73bd640a6">CARDCallback</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a23dea5db7e7b849f385f400546fb449e" name="a23dea5db7e7b849f385f400546fb449e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23dea5db7e7b849f385f400546fb449e">&#9670;&#160;</a></span>__CARDGetFatBlock()</h2>
+<a id="a2dc45e4ca353b88405f16d6c07fd1ad1" name="a2dc45e4ca353b88405f16d6c07fd1ad1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dc45e4ca353b88405f16d6c07fd1ad1">&#9670;&#160;</a></span>__CARDReadStatus()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __CARDGetFatBlock </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDReadStatus </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a69af9e680d5a8d595eae2adeceff7c14" name="a69af9e680d5a8d595eae2adeceff7c14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69af9e680d5a8d595eae2adeceff7c14">&#9670;&#160;</a></span>__CARDGetFontEncode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">asm void __CARDGetFontEncode </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a450619d2e1853da7977e786d98997460" name="a450619d2e1853da7977e786d98997460"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a450619d2e1853da7977e786d98997460">&#9670;&#160;</a></span>__CARDPutControlBlock()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">asm void __CARDPutControlBlock </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
           <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab35dbe68a72e904b2ea6e88b08468127" name="ab35dbe68a72e904b2ea6e88b08468127"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab35dbe68a72e904b2ea6e88b08468127">&#9670;&#160;</a></span>__CARDReadSegment()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void __CARDReadSegment </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a653c98552280c2bfbdb3e60568ad4a38" name="a653c98552280c2bfbdb3e60568ad4a38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a653c98552280c2bfbdb3e60568ad4a38">&#9670;&#160;</a></span>__CARDReadStatus()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void __CARDReadStatus </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -485,16 +612,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a77adfecd2cd974237a1e02b1a511d147" name="a77adfecd2cd974237a1e02b1a511d147"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77adfecd2cd974237a1e02b1a511d147">&#9670;&#160;</a></span>__CARDSetDiskID()</h2>
+<a id="a1bd2f7d3786a0c4b139756746318a5e5" name="a1bd2f7d3786a0c4b139756746318a5e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bd2f7d3786a0c4b139756746318a5e5">&#9670;&#160;</a></span>__CARDSetDiskID()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __CARDSetDiskID </td>
+          <td class="memname">void __CARDSetDiskID </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="structDVDDiskID.html">DVDDiskID</a> *&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -502,16 +630,51 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a029cea5ef5b5d38a4c6ac19f9fda0298" name="a029cea5ef5b5d38a4c6ac19f9fda0298"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a029cea5ef5b5d38a4c6ac19f9fda0298">&#9670;&#160;</a></span>__CARDStart()</h2>
+<a id="a8e37e46859aef8f71c75384554cd9d34" name="a8e37e46859aef8f71c75384554cd9d34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e37e46859aef8f71c75384554cd9d34">&#9670;&#160;</a></span>__CARDStart()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __CARDStart </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDStart </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="card_8h.html#a7e14558c66d616c768d3a6f73bd640a6">CARDCallback</a>&#160;</td>
+          <td class="paramname"><em>txCallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="card_8h.html#a7e14558c66d616c768d3a6f73bd640a6">CARDCallback</a>&#160;</td>
+          <td class="paramname"><em>exiCallback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a28a409b9e975a9bd65dae89d2f38673b" name="a28a409b9e975a9bd65dae89d2f38673b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28a409b9e975a9bd65dae89d2f38673b">&#9670;&#160;</a></span>__CARDSync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDSync </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -519,59 +682,64 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a26a2d50af1666a4e6480e1c962020555" name="a26a2d50af1666a4e6480e1c962020555"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26a2d50af1666a4e6480e1c962020555">&#9670;&#160;</a></span>__CARDSync()</h2>
+<a id="acf2b407fcb67e854c44739b8194fb134" name="acf2b407fcb67e854c44739b8194fb134"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf2b407fcb67e854c44739b8194fb134">&#9670;&#160;</a></span>__CARDSyncCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __CARDSync </td>
+          <td class="memname">void __CARDSyncCallback </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a85c8b4f120ba288fe3b453babab949ad" name="a85c8b4f120ba288fe3b453babab949ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85c8b4f120ba288fe3b453babab949ad">&#9670;&#160;</a></span>__CARDSyncCallback()</h2>
+<a id="ab9e1631358c73f50f0504198e42e0e94" name="ab9e1631358c73f50f0504198e42e0e94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9e1631358c73f50f0504198e42e0e94">&#9670;&#160;</a></span>__CARDTxHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __CARDSyncCallback </td>
+          <td class="memname">void __CARDTxHandler </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structOSContext.html">OSContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aa200ca06d0340b54c6d6546794f31d6c" name="aa200ca06d0340b54c6d6546794f31d6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa200ca06d0340b54c6d6546794f31d6c">&#9670;&#160;</a></span>__CARDTxHandler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void __CARDTxHandler </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae930eab42db0b23aae038b443b6ada2c" name="ae930eab42db0b23aae038b443b6ada2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae930eab42db0b23aae038b443b6ada2c">&#9670;&#160;</a></span>__CARDUnlockedHandler()</h2>
+<a id="a4b44dd7051c014573cd7d0d0a608a955" name="a4b44dd7051c014573cd7d0d0a608a955"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b44dd7051c014573cd7d0d0a608a955">&#9670;&#160;</a></span>__CARDUnlockedHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -579,57 +747,97 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">asm void __CARDUnlockedHandler </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structOSContext.html">OSContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a9213fc8e940ec1e9f7c616e074c78021" name="a9213fc8e940ec1e9f7c616e074c78021"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9213fc8e940ec1e9f7c616e074c78021">&#9670;&#160;</a></span>__CARDWritePage()</h2>
+<a id="a966df5171d19dc3ed4c8926409d4c15b" name="a966df5171d19dc3ed4c8926409d4c15b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a966df5171d19dc3ed4c8926409d4c15b">&#9670;&#160;</a></span>__CARDWritePage()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __CARDWritePage </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDWritePage </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="card_8h.html#a7e14558c66d616c768d3a6f73bd640a6">CARDCallback</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="af557e6a51cabd8dc6895732e37c3acdc" name="af557e6a51cabd8dc6895732e37c3acdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af557e6a51cabd8dc6895732e37c3acdc">&#9670;&#160;</a></span>CARDFreeBlocks()</h2>
+<a id="a0e7b70c3aa3744a6fc6b31249abe3368" name="a0e7b70c3aa3744a6fc6b31249abe3368"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e7b70c3aa3744a6fc6b31249abe3368">&#9670;&#160;</a></span>CARDFreeBlocks()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void CARDFreeBlocks </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> CARDFreeBlocks </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> *&#160;</td>
+          <td class="paramname"><em>byteNotUsed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> *&#160;</td>
+          <td class="paramname"><em>filesNotUsed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aacaa9844dd25e3aafa9a527b84ea605f" name="aacaa9844dd25e3aafa9a527b84ea605f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacaa9844dd25e3aafa9a527b84ea605f">&#9670;&#160;</a></span>CARDGetFastMode()</h2>
+<a id="a0f327f5e861fe980309ce3bf529223c6" name="a0f327f5e861fe980309ce3bf529223c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f327f5e861fe980309ce3bf529223c6">&#9670;&#160;</a></span>CARDGetFastMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void CARDGetFastMode </td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> CARDGetFastMode </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -638,8 +846,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aafe328168623e6cc4d458ea2ef584644" name="aafe328168623e6cc4d458ea2ef584644"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafe328168623e6cc4d458ea2ef584644">&#9670;&#160;</a></span>CARDInit()</h2>
+<a id="a54a25f7cd2ff5227e7c8b07bdafb8b47" name="a54a25f7cd2ff5227e7c8b07bdafb8b47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54a25f7cd2ff5227e7c8b07bdafb8b47">&#9670;&#160;</a></span>CARDInit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -656,14 +864,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a9c00aa7021ecf2b587041eba0a32ed90" name="a9c00aa7021ecf2b587041eba0a32ed90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c00aa7021ecf2b587041eba0a32ed90">&#9670;&#160;</a></span>CARDUnmount()</h2>
+<a id="adaff55a1246da783bdc06d06c99ffa4f" name="adaff55a1246da783bdc06d06c99ffa4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaff55a1246da783bdc06d06c99ffa4f">&#9670;&#160;</a></span>DSPInit()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void CARDUnmount </td>
+          <td class="memname">void DSPInit </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -673,195 +881,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac589cba52be2cdb77260c73d1e9623c0" name="ac589cba52be2cdb77260c73d1e9623c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac589cba52be2cdb77260c73d1e9623c0">&#9670;&#160;</a></span>DSPInit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void DSPInit </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a035e1bcb1ee8eb19c60c95e8d0130306" name="a035e1bcb1ee8eb19c60c95e8d0130306"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a035e1bcb1ee8eb19c60c95e8d0130306">&#9670;&#160;</a></span>EXIDeselect()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void EXIDeselect </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0993bd655719b15cc5ad5f9a4c6de431" name="a0993bd655719b15cc5ad5f9a4c6de431"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0993bd655719b15cc5ad5f9a4c6de431">&#9670;&#160;</a></span>EXIDma()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void EXIDma </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2b5bfba1655bfa0c41993f7b3d3f57ce" name="a2b5bfba1655bfa0c41993f7b3d3f57ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b5bfba1655bfa0c41993f7b3d3f57ce">&#9670;&#160;</a></span>EXIImm()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void EXIImm </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a53d5a11a3cfee59957f85a52bcc3e0c6" name="a53d5a11a3cfee59957f85a52bcc3e0c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53d5a11a3cfee59957f85a52bcc3e0c6">&#9670;&#160;</a></span>EXIImmEx()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void EXIImmEx </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a25ae41fa8f82b729f9b7b705977b99fe" name="a25ae41fa8f82b729f9b7b705977b99fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25ae41fa8f82b729f9b7b705977b99fe">&#9670;&#160;</a></span>EXILock()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void EXILock </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5bed33377c1f3b15aa3606957721b787" name="a5bed33377c1f3b15aa3606957721b787"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5bed33377c1f3b15aa3606957721b787">&#9670;&#160;</a></span>EXIProbe()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void EXIProbe </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3b2d1fe7d445f73887a22508343aad5b" name="a3b2d1fe7d445f73887a22508343aad5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b2d1fe7d445f73887a22508343aad5b">&#9670;&#160;</a></span>EXISelect()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void EXISelect </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa78a4d6a726e7a2a28f8eaee34923355" name="aa78a4d6a726e7a2a28f8eaee34923355"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa78a4d6a726e7a2a28f8eaee34923355">&#9670;&#160;</a></span>EXISetExiCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void EXISetExiCallback </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6c362b37176c89bb6422ff3c20a324c6" name="a6c362b37176c89bb6422ff3c20a324c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c362b37176c89bb6422ff3c20a324c6">&#9670;&#160;</a></span>EXISync()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void EXISync </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afb2f3b7668906dc557d403e2294174c0" name="afb2f3b7668906dc557d403e2294174c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb2f3b7668906dc557d403e2294174c0">&#9670;&#160;</a></span>EXIUnlock()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void EXIUnlock </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9462ff26e8664066b54c1969eb75668d" name="a9462ff26e8664066b54c1969eb75668d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9462ff26e8664066b54c1969eb75668d">&#9670;&#160;</a></span>OnReset()</h2>
+<a id="a0620bfe030de4beadfebb05f62509e09" name="a0620bfe030de4beadfebb05f62509e09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0620bfe030de4beadfebb05f62509e09">&#9670;&#160;</a></span>OnReset()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -870,9 +891,10 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void OnReset </td>
+          <td class="memname">static <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> OnReset </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -885,212 +907,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a8b6b438fc3e4ceeaed24cbfa3dca2851" name="a8b6b438fc3e4ceeaed24cbfa3dca2851"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b6b438fc3e4ceeaed24cbfa3dca2851">&#9670;&#160;</a></span>OSCancelAlarm()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSCancelAlarm </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4036cad6c05aa01ade7aacfcd4874b94" name="a4036cad6c05aa01ade7aacfcd4874b94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4036cad6c05aa01ade7aacfcd4874b94">&#9670;&#160;</a></span>OSCreateAlarm()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSCreateAlarm </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a65b7dd4c9756f26d16dcf8f0dedb07bf" name="a65b7dd4c9756f26d16dcf8f0dedb07bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65b7dd4c9756f26d16dcf8f0dedb07bf">&#9670;&#160;</a></span>OSDisableInterrupts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSDisableInterrupts </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3c9733bb50b084a02763400521c5d03d" name="a3c9733bb50b084a02763400521c5d03d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c9733bb50b084a02763400521c5d03d">&#9670;&#160;</a></span>OSGetFontEncode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSGetFontEncode </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af6db83ea94e00550dff9ed61435babe5" name="af6db83ea94e00550dff9ed61435babe5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6db83ea94e00550dff9ed61435babe5">&#9670;&#160;</a></span>OSInitAlarm()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSInitAlarm </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a80a57c003eabefac201eaea43e75a0b2" name="a80a57c003eabefac201eaea43e75a0b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80a57c003eabefac201eaea43e75a0b2">&#9670;&#160;</a></span>OSInitThreadQueue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSInitThreadQueue </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abe91e5db2528aef6f85b05b3ad54048b" name="abe91e5db2528aef6f85b05b3ad54048b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe91e5db2528aef6f85b05b3ad54048b">&#9670;&#160;</a></span>OSRegisterResetFunction()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSRegisterResetFunction </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a688d1c86f609bd2033df6f4d22094f42" name="a688d1c86f609bd2033df6f4d22094f42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a688d1c86f609bd2033df6f4d22094f42">&#9670;&#160;</a></span>OSRegisterVersion()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSRegisterVersion </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a14b5cc2befa83d8710fba14f4de14fd9" name="a14b5cc2befa83d8710fba14f4de14fd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14b5cc2befa83d8710fba14f4de14fd9">&#9670;&#160;</a></span>OSRestoreInterrupts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSRestoreInterrupts </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8b1eed12a179c480bc5ccda5abc42d35" name="a8b1eed12a179c480bc5ccda5abc42d35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b1eed12a179c480bc5ccda5abc42d35">&#9670;&#160;</a></span>OSSetAlarm()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSSetAlarm </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a62d2ccbe6753b791a60fc5a3489795b3" name="a62d2ccbe6753b791a60fc5a3489795b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62d2ccbe6753b791a60fc5a3489795b3">&#9670;&#160;</a></span>OSSleepThread()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSSleepThread </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a806d1105cc8e0355ebe1358a6d234074" name="a806d1105cc8e0355ebe1358a6d234074"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a806d1105cc8e0355ebe1358a6d234074">&#9670;&#160;</a></span>OSWakeupThread()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSWakeupThread </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1d48b94bd5879bd5b4abff2b6d471ff5" name="a1d48b94bd5879bd5b4abff2b6d471ff5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d48b94bd5879bd5b4abff2b6d471ff5">&#9670;&#160;</a></span>Retry()</h2>
+<a id="a1a9be985e4dd6438c1af66533231bda5" name="a1a9be985e4dd6438c1af66533231bda5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a9be985e4dd6438c1af66533231bda5">&#9670;&#160;</a></span>Retry()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1099,9 +917,10 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void Retry </td>
+          <td class="memname">static asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> Retry </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1114,8 +933,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="afe9407e894b63d2daffa2b1a090878b4" name="afe9407e894b63d2daffa2b1a090878b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe9407e894b63d2daffa2b1a090878b4">&#9670;&#160;</a></span>TimeoutHandler()</h2>
+<a id="a73271d2051625594a06835f1d97f2fa6" name="a73271d2051625594a06835f1d97f2fa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73271d2051625594a06835f1d97f2fa6">&#9670;&#160;</a></span>TimeoutHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1126,8 +945,19 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static asm void TimeoutHandler </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structOSAlarm.html">OSAlarm</a> *&#160;</td>
+          <td class="paramname"><em>alarm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structOSContext.html">OSContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -1139,8 +969,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4d6d8fc55d02fc76ef7e353513337272" name="a4d6d8fc55d02fc76ef7e353513337272"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d6d8fc55d02fc76ef7e353513337272">&#9670;&#160;</a></span>UnlockedCallback()</h2>
+<a id="a10821ab9c01bd2e1916aaf8ce20a7526" name="a10821ab9c01bd2e1916aaf8ce20a7526"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10821ab9c01bd2e1916aaf8ce20a7526">&#9670;&#160;</a></span>UnlockedCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1151,8 +981,19 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static asm void UnlockedCallback </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>chan</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -1165,36 +1006,36 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a63b9d4a99060578067847d5fa40afe7e" name="a63b9d4a99060578067847d5fa40afe7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63b9d4a99060578067847d5fa40afe7e">&#9670;&#160;</a></span>__CARDBlock</h2>
+<a id="ac4ddb862f764b09d8cf10ae2f75dd14c" name="ac4ddb862f764b09d8cf10ae2f75dd14c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4ddb862f764b09d8cf10ae2f75dd14c">&#9670;&#160;</a></span>__CARDBlock</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> __CARDBlock</td>
+          <td class="memname"><a class="el" href="structCARDControl.html">CARDControl</a> __CARDBlock[2]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a88eef48dbdc3ee7dd041fe7c6f5b8bc7" name="a88eef48dbdc3ee7dd041fe7c6f5b8bc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88eef48dbdc3ee7dd041fe7c6f5b8bc7">&#9670;&#160;</a></span>__CARDDiskNone</h2>
+<a id="a7ebf31387a355f07630bbcf3d3ce94a2" name="a7ebf31387a355f07630bbcf3d3ce94a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ebf31387a355f07630bbcf3d3ce94a2">&#9670;&#160;</a></span>__CARDDiskNone</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> __CARDDiskNone</td>
+          <td class="memname"><a class="el" href="structDVDDiskID.html">DVDDiskID</a> __CARDDiskNone</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="af57b205b6a9e6f78473c9b6eff351d74" name="af57b205b6a9e6f78473c9b6eff351d74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af57b205b6a9e6f78473c9b6eff351d74">&#9670;&#160;</a></span>__CARDVersion</h2>
+<a id="a6410b87546d40327223f9ce57cefb453" name="a6410b87546d40327223f9ce57cefb453"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6410b87546d40327223f9ce57cefb453">&#9670;&#160;</a></span>__CARDEncode</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1203,7 +1044,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> void* __CARDVersion[1+1]</td>
+          <td class="memname"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> __CARDEncode</td>
         </tr>
       </table>
   </td>
@@ -1212,14 +1053,51 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    (<span class="keywordtype">void</span>*)&amp;<a class="code hl_variable" href="CARDBios_8c.html#a1a6069729885614d1c28f573d06bd419">lit_1</a>,</div>
-<div class="line">    </div>
-<div class="line">    <a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
-<div class="line">}</div>
-<div class="ttc" id="aCARDBios_8c_html_a1a6069729885614d1c28f573d06bd419"><div class="ttname"><a href="CARDBios_8c.html#a1a6069729885614d1c28f573d06bd419">lit_1</a></div><div class="ttdeci">static SECTION_DATA char lit_1[]</div><div class="ttdef"><b>Definition:</b> CARDBios.c:253</div></div>
-<div class="ttc" id="atypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> types.h:34</div></div>
-</div><!-- fragment -->
+
+</div>
+</div>
+<a id="a592844fa691ddc55e82e1e6cb4d70d18" name="a592844fa691ddc55e82e1e6cb4d70d18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a592844fa691ddc55e82e1e6cb4d70d18">&#9670;&#160;</a></span>__CARDFastMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> __CARDFastMode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a2066edb1aafcc8be717c244e04b098" name="a0a2066edb1aafcc8be717c244e04b098"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a2066edb1aafcc8be717c244e04b098">&#9670;&#160;</a></span>__CARDVersion</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> const char* __CARDVersion = <a class="el" href="ai_8c.html#a1a6069729885614d1c28f573d06bd419">lit_1</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a id="a1a6069729885614d1c28f573d06bd419" name="a1a6069729885614d1c28f573d06bd419"></a>
@@ -1232,7 +1110,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_1[] = &quot;&lt;&lt; Dolphin SDK - CARD\trelease build: Apr 5 2004 04:15:35 (0x2301) &gt;&gt;&quot;</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_1[]</td>
         </tr>
       </table>
   </td>
@@ -1241,11 +1119,13 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    <span class="stringliteral">&quot;&lt;&lt; Dolphin SDK - CARD\trelease build: Apr  5 2004 04:15:35 (0x2301) &gt;&gt;&quot;</span></div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="ad711ab98ac1f0455cd8863ea30277d18" name="ad711ab98ac1f0455cd8863ea30277d18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad711ab98ac1f0455cd8863ea30277d18">&#9670;&#160;</a></span>ResetFunctionInfo</h2>
+<a id="a28ade2ab6552d24bc5bb12bb07b5df18" name="a28ade2ab6552d24bc5bb12bb07b5df18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28ade2ab6552d24bc5bb12bb07b5df18">&#9670;&#160;</a></span>ResetFunctionInfo</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1254,7 +1134,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void* ResetFunctionInfo[4+4]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="structOSResetFunctionInfo.html">OSResetFunctionInfo</a> ResetFunctionInfo</td>
         </tr>
       </table>
   </td>
@@ -1264,40 +1144,14 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="CARDBios_8c.html#a9462ff26e8664066b54c1969eb75668d">OnReset</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)0x0000007F,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
-<div class="line">    </div>
-<div class="line">    <a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
-<div class="line">    <a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
+<div class="line">    <a class="code hl_function" href="CARDBios_8c.html#a0620bfe030de4beadfebb05f62509e09">OnReset</a>,</div>
+<div class="line">    127,</div>
 <div class="line">    <a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    <a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aCARDBios_8c_html_a9462ff26e8664066b54c1969eb75668d"><div class="ttname"><a href="CARDBios_8c.html#a9462ff26e8664066b54c1969eb75668d">OnReset</a></div><div class="ttdeci">static void OnReset()</div><div class="ttdef"><b>Definition:</b> CARDBios.c:354</div></div>
+<div class="ttc" id="aCARDBios_8c_html_a0620bfe030de4beadfebb05f62509e09"><div class="ttname"><a href="CARDBios_8c.html#a0620bfe030de4beadfebb05f62509e09">OnReset</a></div><div class="ttdeci">static s32 OnReset(s32)</div><div class="ttdef"><b>Definition:</b> CARDBios.c:643</div></div>
+<div class="ttc" id="atypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> types.h:34</div></div>
 </div><!-- fragment -->
-</div>
-</div>
-<a id="a94626c984e53168b716994f3da1609bd" name="a94626c984e53168b716994f3da1609bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94626c984e53168b716994f3da1609bd">&#9670;&#160;</a></span>struct_80451918</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> struct_80451918[4+4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
 </div>
 </div>
 </div><!-- contents -->

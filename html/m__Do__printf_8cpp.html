@@ -93,7 +93,6 @@ $(function() {
 <code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;asm/m_Do/m_Do_printf/OSSwitchFiberEx__FUlUlUlUlUlUl.s&quot;</code><br />
-<code>#include &quot;asm/m_Do/m_Do_printf/OSPanic.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for m_Do_printf.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -169,8 +168,8 @@ Functions</h2></td></tr>
 <tr class="separator:abda6bebecd234eca52f871b028590188"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa45c90de27626a4ac5d65b166caf6bd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__printf_8cpp.html#aa45c90de27626a4ac5d65b166caf6bd2">OSReport_System</a> (char *fmt,...)</td></tr>
 <tr class="separator:aa45c90de27626a4ac5d65b166caf6bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae96666521c1a72a1472795f7500c49e0"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__printf_8cpp.html#ae96666521c1a72a1472795f7500c49e0">OSPanic</a> (char *file, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> line, char *fmt,...)</td></tr>
-<tr class="separator:ae96666521c1a72a1472795f7500c49e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bec99d18776e76c0c5199df90d9964f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__printf_8cpp.html#a9bec99d18776e76c0c5199df90d9964f">OSPanic</a> (char *file, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> line, char *fmt,...)</td></tr>
+<tr class="separator:a9bec99d18776e76c0c5199df90d9964f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -190,12 +189,6 @@ Variables</h2></td></tr>
 <tr class="separator:afd0c833e8867e01d5c11a7329e52a609"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbad6897428cce46a49d938a833d7d14"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__printf_8cpp.html#acbad6897428cce46a49d938a833d7d14">data_80450BB5</a></td></tr>
 <tr class="separator:acbad6897428cce46a49d938a833d7d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ad2a15a8ef034937047744df711ac7d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__printf_8cpp.html#a2ad2a15a8ef034937047744df711ac7d">stringBase_80373D10</a> = &quot; in \&quot;%s\&quot; on line %d.\n&quot;</td></tr>
-<tr class="separator:a2ad2a15a8ef034937047744df711ac7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5965dc547099559d094ed053710ee79f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__printf_8cpp.html#a5965dc547099559d094ed053710ee79f">stringBase_80373D26</a></td></tr>
-<tr class="separator:a5965dc547099559d094ed053710ee79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88e2e53ad6a5de8ca1233256253f23b1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__printf_8cpp.html#a88e2e53ad6a5de8ca1233256253f23b1">stringBase_80373D4C</a> = &quot;0x%08x: 0x%08x 0x%08x\n&quot;</td></tr>
-<tr class="separator:a88e2e53ad6a5de8ca1233256253f23b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="abed5bd59c54272a132a5b4da4beff66d" name="abed5bd59c54272a132a5b4da4beff66d"></a>
@@ -519,14 +512,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae96666521c1a72a1472795f7500c49e0" name="ae96666521c1a72a1472795f7500c49e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae96666521c1a72a1472795f7500c49e0">&#9670;&#160;</a></span>OSPanic()</h2>
+<a id="a9bec99d18776e76c0c5199df90d9964f" name="a9bec99d18776e76c0c5199df90d9964f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bec99d18776e76c0c5199df90d9964f">&#9670;&#160;</a></span>OSPanic()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void OSPanic </td>
+          <td class="memname">void OSPanic </td>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>file</em>, </td>
@@ -1166,74 +1159,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> print_warings</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2ad2a15a8ef034937047744df711ac7d" name="a2ad2a15a8ef034937047744df711ac7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ad2a15a8ef034937047744df711ac7d">&#9670;&#160;</a></span>stringBase_80373D10</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_80373D10 = &quot; in \&quot;%s\&quot; on line %d.\n&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5965dc547099559d094ed053710ee79f" name="a5965dc547099559d094ed053710ee79f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5965dc547099559d094ed053710ee79f">&#9670;&#160;</a></span>stringBase_80373D26</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_80373D26</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">    <span class="stringliteral">&quot;\nAddress:      Back Chain    LR Save\n&quot;</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a88e2e53ad6a5de8ca1233256253f23b1" name="a88e2e53ad6a5de8ca1233256253f23b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88e2e53ad6a5de8ca1233256253f23b1">&#9670;&#160;</a></span>stringBase_80373D4C</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_80373D4C = &quot;0x%08x: 0x%08x 0x%08x\n&quot;</td>
         </tr>
       </table>
   </td>

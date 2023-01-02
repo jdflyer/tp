@@ -82,6 +82,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">OSTime.c File Reference</div></div>
@@ -89,20 +90,33 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="OSTime_8h_source.html">dolphin/os/OSTime.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OSInterrupt_8h_source.html">dolphin/os/OSInterrupt.h</a>&quot;</code><br />
 <code>#include &quot;asm/dolphin/os/OSTime/__OSGetSystemTime.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/os/OSTime/__OSTimeToSystemTime.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/os/OSTime/GetDates.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/os/OSTime/OSTicksToCalendarTime.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for OSTime.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="OSTime_8c__incl.svg" width="100%" height="503"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="OSTime_8c__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:af96e81beda50168c0fc7d9f1c4b201dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSTime_8c.html#af96e81beda50168c0fc7d9f1c4b201dc">OS_TIME_MONTH_MAX</a>&#160;&#160;&#160;12</td></tr>
+<tr class="separator:af96e81beda50168c0fc7d9f1c4b201dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12205eb20adbf1d930848d09bdddb468"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSTime_8c.html#a12205eb20adbf1d930848d09bdddb468">OS_TIME_WEEK_DAY_MAX</a>&#160;&#160;&#160;7</td></tr>
+<tr class="separator:a12205eb20adbf1d930848d09bdddb468"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2466947c0d12861c3cf8d5e6b846d38"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSTime_8c.html#ae2466947c0d12861c3cf8d5e6b846d38">OS_TIME_YEAR_DAY_MAX</a>&#160;&#160;&#160;365</td></tr>
+<tr class="separator:ae2466947c0d12861c3cf8d5e6b846d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0936873c2c9fcc1c75160ff3b49c9c46"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSTime_8c.html#a0936873c2c9fcc1c75160ff3b49c9c46">OS_SYSTEMTIME_BASE</a>&#160;&#160;&#160;0x30D8</td></tr>
+<tr class="separator:a0936873c2c9fcc1c75160ff3b49c9c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbb32e6744a151dde6686dbc26bdd342"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSTime_8c.html#adbb32e6744a151dde6686dbc26bdd342">BIAS</a>&#160;&#160;&#160;(2000 * 365 + (2000 + 3) / 4 - (2000 - 1) / 100 + (2000 - 1) / 400)</td></tr>
+<tr class="separator:adbb32e6744a151dde6686dbc26bdd342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a1046e3742f7a74b930cd76bd54949702"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSTime_8c.html#a1046e3742f7a74b930cd76bd54949702">__div2i</a> ()</td></tr>
@@ -117,8 +131,14 @@ Functions</h2></td></tr>
 <tr class="separator:ac9befdb2ec45a852afea0815b2fb0a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9e8537ec0c643bdbe700af3fb7531e5"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="OSTime_8h.html#a3d32c840b403a8d37875867a7ea9b381">OSTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSTime_8c.html#af9e8537ec0c643bdbe700af3fb7531e5">__OSTimeToSystemTime</a> (<a class="el" href="OSTime_8h.html#a3d32c840b403a8d37875867a7ea9b381">OSTime</a> <a class="el" href="GXInit_8c.html#a34e459429f04027e70dfa35aaa4fe268">time</a>)</td></tr>
 <tr class="separator:af9e8537ec0c643bdbe700af3fb7531e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a671f48f030593c1b89013d7ce60905be"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSTime_8c.html#a671f48f030593c1b89013d7ce60905be">GetDates</a> (<a class="el" href="OSTime_8h.html#a3d32c840b403a8d37875867a7ea9b381">OSTime</a> ticks, <a class="el" href="structOSCalendarTime.html">OSCalendarTime</a> *ct)</td></tr>
-<tr class="separator:a671f48f030593c1b89013d7ce60905be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a374b8f0f4ed138028763e66093cece08"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSTime_8c.html#a374b8f0f4ed138028763e66093cece08">IsLeapYear</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> year)</td></tr>
+<tr class="separator:a374b8f0f4ed138028763e66093cece08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97916c09c8e0ea0933fa944d4beb5a23"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSTime_8c.html#a97916c09c8e0ea0933fa944d4beb5a23">GetYearDays</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> year, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> mon)</td></tr>
+<tr class="separator:a97916c09c8e0ea0933fa944d4beb5a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbacf627dff4c6f731b37bb06c351f53"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSTime_8c.html#abbacf627dff4c6f731b37bb06c351f53">GetLeapDays</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> year)</td></tr>
+<tr class="separator:abbacf627dff4c6f731b37bb06c351f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa926e73f2bd8ccac6253d0496106d27f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSTime_8c.html#aa926e73f2bd8ccac6253d0496106d27f">GetDates</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> days, <a class="el" href="structOSCalendarTime.html">OSCalendarTime</a> *cal)</td></tr>
+<tr class="separator:aa926e73f2bd8ccac6253d0496106d27f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae536da024c1ad2f59bac85a5c3288d0"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSTime_8c.html#aae536da024c1ad2f59bac85a5c3288d0">OSTicksToCalendarTime</a> (<a class="el" href="OSTime_8h.html#a3d32c840b403a8d37875867a7ea9b381">OSTime</a> ticks, <a class="el" href="structOSCalendarTime.html">OSCalendarTime</a> *ct)</td></tr>
 <tr class="separator:aae536da024c1ad2f59bac85a5c3288d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -129,6 +149,77 @@ Variables</h2></td></tr>
 <tr class="memitem:ac4da315b6d43326a0309ead71a1f89c6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSTime_8c.html#ac4da315b6d43326a0309ead71a1f89c6">LeapYearDays</a> []</td></tr>
 <tr class="separator:ac4da315b6d43326a0309ead71a1f89c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="adbb32e6744a151dde6686dbc26bdd342" name="adbb32e6744a151dde6686dbc26bdd342"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbb32e6744a151dde6686dbc26bdd342">&#9670;&#160;</a></span>BIAS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BIAS&#160;&#160;&#160;(2000 * 365 + (2000 + 3) / 4 - (2000 - 1) / 100 + (2000 - 1) / 400)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0936873c2c9fcc1c75160ff3b49c9c46" name="a0936873c2c9fcc1c75160ff3b49c9c46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0936873c2c9fcc1c75160ff3b49c9c46">&#9670;&#160;</a></span>OS_SYSTEMTIME_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OS_SYSTEMTIME_BASE&#160;&#160;&#160;0x30D8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af96e81beda50168c0fc7d9f1c4b201dc" name="af96e81beda50168c0fc7d9f1c4b201dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af96e81beda50168c0fc7d9f1c4b201dc">&#9670;&#160;</a></span>OS_TIME_MONTH_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OS_TIME_MONTH_MAX&#160;&#160;&#160;12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12205eb20adbf1d930848d09bdddb468" name="a12205eb20adbf1d930848d09bdddb468"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12205eb20adbf1d930848d09bdddb468">&#9670;&#160;</a></span>OS_TIME_WEEK_DAY_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OS_TIME_WEEK_DAY_MAX&#160;&#160;&#160;7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae2466947c0d12861c3cf8d5e6b846d38" name="ae2466947c0d12861c3cf8d5e6b846d38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2466947c0d12861c3cf8d5e6b846d38">&#9670;&#160;</a></span>OS_TIME_YEAR_DAY_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OS_TIME_YEAR_DAY_MAX&#160;&#160;&#160;365</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a1046e3742f7a74b930cd76bd54949702" name="a1046e3742f7a74b930cd76bd54949702"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1046e3742f7a74b930cd76bd54949702">&#9670;&#160;</a></span>__div2i()</h2>
@@ -200,23 +291,26 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a671f48f030593c1b89013d7ce60905be" name="a671f48f030593c1b89013d7ce60905be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a671f48f030593c1b89013d7ce60905be">&#9670;&#160;</a></span>GetDates()</h2>
+<a id="aa926e73f2bd8ccac6253d0496106d27f" name="aa926e73f2bd8ccac6253d0496106d27f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa926e73f2bd8ccac6253d0496106d27f">&#9670;&#160;</a></span>GetDates()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">asm void GetDates </td>
+          <td class="memname">static void GetDates </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="OSTime_8h.html#a3d32c840b403a8d37875867a7ea9b381">OSTime</a>&#160;</td>
-          <td class="paramname"><em>ticks</em>, </td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>days</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structOSCalendarTime.html">OSCalendarTime</a> *&#160;</td>
-          <td class="paramname"><em>ct</em>&#160;</td>
+          <td class="paramname"><em>cal</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -224,6 +318,99 @@ Variables</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abbacf627dff4c6f731b37bb06c351f53" name="abbacf627dff4c6f731b37bb06c351f53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbacf627dff4c6f731b37bb06c351f53">&#9670;&#160;</a></span>GetLeapDays()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> GetLeapDays </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>year</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a97916c09c8e0ea0933fa944d4beb5a23" name="a97916c09c8e0ea0933fa944d4beb5a23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97916c09c8e0ea0933fa944d4beb5a23">&#9670;&#160;</a></span>GetYearDays()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> GetYearDays </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>year</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>mon</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a374b8f0f4ed138028763e66093cece08" name="a374b8f0f4ed138028763e66093cece08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a374b8f0f4ed138028763e66093cece08">&#9670;&#160;</a></span>IsLeapYear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> IsLeapYear </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>year</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

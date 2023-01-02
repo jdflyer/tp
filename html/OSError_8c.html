@@ -82,6 +82,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">OSError.c File Reference</div></div>
@@ -89,7 +90,9 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="OSError_8h_source.html">dolphin/os/OSError.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="PPCArch_8h_source.html">dolphin/base/PPCArch.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="dsp_8h_source.html">dolphin/dsp/dsp.h</a>&quot;</code><br />
 <code>#include &quot;asm/dolphin/os/OSError/OSSetErrorHandler.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/os/OSError/__OSUnhandledException.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -97,49 +100,30 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="OSError_8c__incl.svg" width="100%" height="503"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="OSError_8c__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a5a7cebac0d09bbb3502789b69ab6d9f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a5a7cebac0d09bbb3502789b69ab6d9f0">FPSCR_ENABLE</a>&#160;&#160;&#160;(<a class="el" href="PPCArch_8h.html#a3f5dcceee15e4c6ef264c2f2b2e28bce">FPSCR_VE</a> | <a class="el" href="PPCArch_8h.html#a1ea6ef941c0ef17be7ad6b9b3cf63477">FPSCR_OE</a> | <a class="el" href="PPCArch_8h.html#a5a73c335cf8ee14ec623843e5bc6de32">FPSCR_UE</a> | <a class="el" href="PPCArch_8h.html#a77fde01e36f13fd8228854157b7f08f1">FPSCR_ZE</a> | <a class="el" href="PPCArch_8h.html#adbcd79dfe7f32e03002f0680aa68b3d1">FPSCR_XE</a>)</td></tr>
+<tr class="separator:a5a7cebac0d09bbb3502789b69ab6d9f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ade4b47b8fab54c8f6a71bf594943c828"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#ade4b47b8fab54c8f6a71bf594943c828">OSReport</a> ()</td></tr>
-<tr class="separator:ade4b47b8fab54c8f6a71bf594943c828"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72288d6fddcf63b28eee8bca4b9d9a9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a72288d6fddcf63b28eee8bca4b9d9a9f">PPCMfmsr</a> ()</td></tr>
-<tr class="separator:a72288d6fddcf63b28eee8bca4b9d9a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af18f0ca95ca6936e66ef36667e69e82a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#af18f0ca95ca6936e66ef36667e69e82a">PPCMtmsr</a> ()</td></tr>
-<tr class="separator:af18f0ca95ca6936e66ef36667e69e82a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4831a1a131204873ef617718ff64223"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#ad4831a1a131204873ef617718ff64223">PPCHalt</a> ()</td></tr>
-<tr class="separator:ad4831a1a131204873ef617718ff64223"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a826caa258026149675dfe6eaf4554fa6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a826caa258026149675dfe6eaf4554fa6">PPCMffpscr</a> ()</td></tr>
-<tr class="separator:a826caa258026149675dfe6eaf4554fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d10859d53ab7d06766ad6ec22081d42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a7d10859d53ab7d06766ad6ec22081d42">PPCMtfpscr</a> ()</td></tr>
-<tr class="separator:a7d10859d53ab7d06766ad6ec22081d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad36a1a1b8487b8d1f70a485983f251a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#ad36a1a1b8487b8d1f70a485983f251a9">OSSaveFPUContext</a> ()</td></tr>
-<tr class="separator:ad36a1a1b8487b8d1f70a485983f251a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8f3080e14ff508a63cc9a075164484c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#ab8f3080e14ff508a63cc9a075164484c">OSLoadContext</a> ()</td></tr>
-<tr class="separator:ab8f3080e14ff508a63cc9a075164484c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a310dbe1438ed769a46914dca79a43c2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a310dbe1438ed769a46914dca79a43c2b">OSDumpContext</a> ()</td></tr>
-<tr class="separator:a310dbe1438ed769a46914dca79a43c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65b7dd4c9756f26d16dcf8f0dedb07bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a65b7dd4c9756f26d16dcf8f0dedb07bf">OSDisableInterrupts</a> ()</td></tr>
-<tr class="separator:a65b7dd4c9756f26d16dcf8f0dedb07bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14b5cc2befa83d8710fba14f4de14fd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a14b5cc2befa83d8710fba14f4de14fd9">OSRestoreInterrupts</a> ()</td></tr>
-<tr class="separator:a14b5cc2befa83d8710fba14f4de14fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3eeaabe1fcda9f5da39be89190d1ca39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a3eeaabe1fcda9f5da39be89190d1ca39">OSDisableScheduler</a> ()</td></tr>
-<tr class="separator:a3eeaabe1fcda9f5da39be89190d1ca39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af49d6686d9db6413976b966287e70a75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#af49d6686d9db6413976b966287e70a75">OSEnableScheduler</a> ()</td></tr>
-<tr class="separator:af49d6686d9db6413976b966287e70a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae080e9749b475ef200ae0b6be97cd7c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#ae080e9749b475ef200ae0b6be97cd7c1">__OSReschedule</a> ()</td></tr>
-<tr class="separator:ae080e9749b475ef200ae0b6be97cd7c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3a3da27911d7fc3f4f08506ac539ea3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#ad3a3da27911d7fc3f4f08506ac539ea3">OSGetTime</a> ()</td></tr>
-<tr class="separator:ad3a3da27911d7fc3f4f08506ac539ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b9ccf9c643d63a7300a6f7ecf834af8"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="OSError_8h.html#a274d27739bcd814a61cf5246698608c3">OSErrorHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a7b9ccf9c643d63a7300a6f7ecf834af8">OSSetErrorHandler</a> (<a class="el" href="OSError_8h.html#a753e236842eaa668b6494fc10286df4a">OSError</a> error, <a class="el" href="OSError_8h.html#a274d27739bcd814a61cf5246698608c3">OSErrorHandler</a> handler)</td></tr>
 <tr class="separator:a7b9ccf9c643d63a7300a6f7ecf834af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac328a65bee1932c21016bba1f30f1636"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#ac328a65bee1932c21016bba1f30f1636">__OSUnhandledException</a> (<a class="el" href="OSError_8h.html#a2b261709e59d5102803e80c6a02148e4">OSException</a> <a class="el" href="structexception.html">exception</a>, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> dsisr, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> dar)</td></tr>
-<tr class="separator:ac328a65bee1932c21016bba1f30f1636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77d08e948b55a2057dfb992994ec9ba7"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a77d08e948b55a2057dfb992994ec9ba7">__OSUnhandledException</a> (<a class="el" href="OSError_8h.html#add6149ead84c8568031dabdedbee4f27">__OSException</a> <a class="el" href="structexception.html">exception</a>, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> dsisr, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> dar)</td></tr>
+<tr class="separator:a77d08e948b55a2057dfb992994ec9ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:a63f1c0135e05a09f229ac20b4ddff0b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structOSThread.html">OSThread</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a63f1c0135e05a09f229ac20b4ddff0b6">__OSCurrentThread</a></td></tr>
+<tr class="separator:a63f1c0135e05a09f229ac20b4ddff0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcc1b49aaba25658b431b933b39b3547"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structOSThreadQueue.html">OSThreadQueue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#afcc1b49aaba25658b431b933b39b3547">__OSActiveThreadQueue</a></td></tr>
+<tr class="separator:afcc1b49aaba25658b431b933b39b3547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41efc37d176fc4af1d54860ec61dc6a9"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="structOSContext.html">OSContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a41efc37d176fc4af1d54860ec61dc6a9">__OSFPUContext</a></td></tr>
+<tr class="separator:a41efc37d176fc4af1d54860ec61dc6a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4601f2142c57bb56519f12d2ad1b7e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#aa4601f2142c57bb56519f12d2ad1b7e7">__OSLastInterruptSrr0</a> [4]</td></tr>
 <tr class="separator:aa4601f2142c57bb56519f12d2ad1b7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf38c00d8d2a252c1d70b84517d0dc58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#acf38c00d8d2a252c1d70b84517d0dc58">__OSLastInterrupt</a> [2+6]</td></tr>
@@ -148,13 +132,13 @@ Variables</h2></td></tr>
 <tr class="separator:a47e34c2ffe583c844494001bac0d5353"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2e3b656f2d7b52c8b1aca29b9820c04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#ad2e3b656f2d7b52c8b1aca29b9820c04">data_80451684</a> [4]</td></tr>
 <tr class="separator:ad2e3b656f2d7b52c8b1aca29b9820c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef3e092a0c4250d0e7a521fa83617ce2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="OSError_8h.html#a274d27739bcd814a61cf5246698608c3">OSErrorHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#aef3e092a0c4250d0e7a521fa83617ce2">__OSErrorTable</a> [17+3]</td></tr>
-<tr class="separator:aef3e092a0c4250d0e7a521fa83617ce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86983478223a666c57f2b344898e5489"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a86983478223a666c57f2b344898e5489">__OSFpscrEnableBits</a> = 0xF8</td></tr>
+<tr class="memitem:aeac109808f3767c0ddd27ba5b19e9353"><td class="memItemLeft" align="right" valign="top"><a class="el" href="OSError_8h.html#a274d27739bcd814a61cf5246698608c3">OSErrorHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#aeac109808f3767c0ddd27ba5b19e9353">__OSErrorTable</a> [17]</td></tr>
+<tr class="separator:aeac109808f3767c0ddd27ba5b19e9353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86983478223a666c57f2b344898e5489"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a86983478223a666c57f2b344898e5489">__OSFpscrEnableBits</a> = <a class="el" href="OSError_8c.html#a5a7cebac0d09bbb3502789b69ab6d9f0">FPSCR_ENABLE</a></td></tr>
 <tr class="separator:a86983478223a666c57f2b344898e5489"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84b590c66e8751dc9281a89568e77164"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a84b590c66e8751dc9281a89568e77164">lit_13</a> [] = &quot; in \&quot;%s\&quot; on line %d.\n&quot;</td></tr>
 <tr class="separator:a84b590c66e8751dc9281a89568e77164"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbabae56bcdf6a794016d045d4698099"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#adbabae56bcdf6a794016d045d4698099">lit_14</a> [] = &quot;\nAddress: Back Chain LR Save\n&quot;</td></tr>
+<tr class="memitem:adbabae56bcdf6a794016d045d4698099"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#adbabae56bcdf6a794016d045d4698099">lit_14</a> [] = &quot;\nAddress: Back Chain <a class="el" href="PPCArch_8h.html#a3572ba4e929ec4380493fcfbbde0efa2">LR</a> Save\n&quot;</td></tr>
 <tr class="separator:adbabae56bcdf6a794016d045d4698099"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd4a100da3b22c43924bd71d34776e84"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#acd4a100da3b22c43924bd71d34776e84">lit_15</a> [] = &quot;0x%08x: 0x%08x 0x%08x\n&quot;</td></tr>
 <tr class="separator:acd4a100da3b22c43924bd71d34776e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,17 +146,17 @@ Variables</h2></td></tr>
 <tr class="separator:a5a8e37766164719ddf3ca05829e91ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c5574d7264ab1a4fb0c4b7975348944"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a7c5574d7264ab1a4fb0c4b7975348944">lit_75</a> [] = &quot;Unhandled Exception %d&quot;</td></tr>
 <tr class="separator:a7c5574d7264ab1a4fb0c4b7975348944"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29ab15bb68592c7f70a1a6bfdc6bb76a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a29ab15bb68592c7f70a1a6bfdc6bb76a">lit_77</a> [] = &quot;\nDSISR = 0x%08x DAR = 0x%08x\n&quot;</td></tr>
+<tr class="memitem:a29ab15bb68592c7f70a1a6bfdc6bb76a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a29ab15bb68592c7f70a1a6bfdc6bb76a">lit_77</a> [] = &quot;\nDSISR = 0x%08x <a class="el" href="PPCArch_8h.html#a39174fabdee3d62c4d87f497e0bce9c3">DAR</a> = 0x%08x\n&quot;</td></tr>
 <tr class="separator:a29ab15bb68592c7f70a1a6bfdc6bb76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e5f9810f30710c1fcc7942ff0dfc4ae"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a3e5f9810f30710c1fcc7942ff0dfc4ae">lit_78</a> [] = &quot;TB = 0x%016llx\n&quot;</td></tr>
 <tr class="separator:a3e5f9810f30710c1fcc7942ff0dfc4ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3b2baccf4f44718e03b2e66f373cb2b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#ac3b2baccf4f44718e03b2e66f373cb2b">lit_79</a> [] = &quot;\nInstruction at 0x%x (read from SRR0) attempted to access invalid address 0x%x (read from DAR)\n&quot;</td></tr>
+<tr class="memitem:ac3b2baccf4f44718e03b2e66f373cb2b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#ac3b2baccf4f44718e03b2e66f373cb2b">lit_79</a> []</td></tr>
 <tr class="separator:ac3b2baccf4f44718e03b2e66f373cb2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf19ee461243355ae0286bd5e5b66b94"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#abf19ee461243355ae0286bd5e5b66b94">lit_80</a> [] = &quot;\nAttempted to fetch instruction from invalid address 0x%x (read from SRR0)\n&quot;</td></tr>
+<tr class="memitem:abf19ee461243355ae0286bd5e5b66b94"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#abf19ee461243355ae0286bd5e5b66b94">lit_80</a> []</td></tr>
 <tr class="separator:abf19ee461243355ae0286bd5e5b66b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d9c4cd38386c9593a1479f2b1ef046b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a0d9c4cd38386c9593a1479f2b1ef046b">lit_81</a> [] = &quot;\nInstruction at 0x%x (read from SRR0) attempted to access unaligned address 0x%x (read from DAR)\n&quot;</td></tr>
+<tr class="memitem:a0d9c4cd38386c9593a1479f2b1ef046b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a0d9c4cd38386c9593a1479f2b1ef046b">lit_81</a> []</td></tr>
 <tr class="separator:a0d9c4cd38386c9593a1479f2b1ef046b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c20951319b5ab8c79c0fbb05b0e1f34"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a5c20951319b5ab8c79c0fbb05b0e1f34">lit_82</a> [] = &quot;\nProgram <a class="el" href="structexception.html">exception</a> : Possible illegal instruction/operation at or around 0x%x (read from SRR0)\n&quot;</td></tr>
+<tr class="memitem:a5c20951319b5ab8c79c0fbb05b0e1f34"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a5c20951319b5ab8c79c0fbb05b0e1f34">lit_82</a> []</td></tr>
 <tr class="separator:a5c20951319b5ab8c79c0fbb05b0e1f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29d7b815724f8ad0a459e18f69ca6306"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a29d7b815724f8ad0a459e18f69ca6306">lit_83</a> [] = &quot;AI DMA Address = 0x%04x%04x\n&quot;</td></tr>
 <tr class="separator:a29d7b815724f8ad0a459e18f69ca6306"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,33 +164,31 @@ Variables</h2></td></tr>
 <tr class="separator:a497e6713d7c96eea63ae83ddb8a0b49e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a286209bf9faf975c0d87aa5786adbb7c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a286209bf9faf975c0d87aa5786adbb7c">lit_85</a> [] = &quot;DI DMA Address = 0x%08x\n&quot;</td></tr>
 <tr class="separator:a286209bf9faf975c0d87aa5786adbb7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3c080679d197c08d8872e6493604a5f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#af3c080679d197c08d8872e6493604a5f">lit_86</a> [] = &quot;\nLast interrupt (%d): SRR0 = 0x%08x TB = 0x%016llx\n&quot;</td></tr>
+<tr class="memitem:af3c080679d197c08d8872e6493604a5f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#af3c080679d197c08d8872e6493604a5f">lit_86</a> [] = &quot;\nLast interrupt (%d): <a class="el" href="PPCArch_8h.html#a641629768bc5979dc55d43f6e3e96b20">SRR0</a> = 0x%08x TB = 0x%016llx\n&quot;</td></tr>
 <tr class="separator:af3c080679d197c08d8872e6493604a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ecc5556c99501d3411bb7f4b3de6b1f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a8ecc5556c99501d3411bb7f4b3de6b1f">lit_87</a> [16+1]</td></tr>
 <tr class="separator:a8ecc5556c99501d3411bb7f4b3de6b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ee3476d8712076d8907b1ac9f06dcd0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a8ee3476d8712076d8907b1ac9f06dcd0">lit_76</a> [] = &quot;\n&quot;</td></tr>
 <tr class="separator:a8ee3476d8712076d8907b1ac9f06dcd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ae080e9749b475ef200ae0b6be97cd7c1" name="ae080e9749b475ef200ae0b6be97cd7c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae080e9749b475ef200ae0b6be97cd7c1">&#9670;&#160;</a></span>__OSReschedule()</h2>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a5a7cebac0d09bbb3502789b69ab6d9f0" name="a5a7cebac0d09bbb3502789b69ab6d9f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a7cebac0d09bbb3502789b69ab6d9f0">&#9670;&#160;</a></span>FPSCR_ENABLE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void __OSReschedule </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">#define FPSCR_ENABLE&#160;&#160;&#160;(<a class="el" href="PPCArch_8h.html#a3f5dcceee15e4c6ef264c2f2b2e28bce">FPSCR_VE</a> | <a class="el" href="PPCArch_8h.html#a1ea6ef941c0ef17be7ad6b9b3cf63477">FPSCR_OE</a> | <a class="el" href="PPCArch_8h.html#a5a73c335cf8ee14ec623843e5bc6de32">FPSCR_UE</a> | <a class="el" href="PPCArch_8h.html#a77fde01e36f13fd8228854157b7f08f1">FPSCR_ZE</a> | <a class="el" href="PPCArch_8h.html#adbcd79dfe7f32e03002f0680aa68b3d1">FPSCR_XE</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ac328a65bee1932c21016bba1f30f1636" name="ac328a65bee1932c21016bba1f30f1636"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac328a65bee1932c21016bba1f30f1636">&#9670;&#160;</a></span>__OSUnhandledException()</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a77d08e948b55a2057dfb992994ec9ba7" name="a77d08e948b55a2057dfb992994ec9ba7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77d08e948b55a2057dfb992994ec9ba7">&#9670;&#160;</a></span>__OSUnhandledException()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -214,7 +196,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">asm void __OSUnhandledException </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="OSError_8h.html#a2b261709e59d5102803e80c6a02148e4">OSException</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="OSError_8h.html#add6149ead84c8568031dabdedbee4f27">__OSException</a>&#160;</td>
           <td class="paramname"><em>exception</em>, </td>
         </tr>
         <tr>
@@ -239,159 +221,6 @@ Variables</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a65b7dd4c9756f26d16dcf8f0dedb07bf" name="a65b7dd4c9756f26d16dcf8f0dedb07bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65b7dd4c9756f26d16dcf8f0dedb07bf">&#9670;&#160;</a></span>OSDisableInterrupts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSDisableInterrupts </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3eeaabe1fcda9f5da39be89190d1ca39" name="a3eeaabe1fcda9f5da39be89190d1ca39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3eeaabe1fcda9f5da39be89190d1ca39">&#9670;&#160;</a></span>OSDisableScheduler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSDisableScheduler </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a310dbe1438ed769a46914dca79a43c2b" name="a310dbe1438ed769a46914dca79a43c2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a310dbe1438ed769a46914dca79a43c2b">&#9670;&#160;</a></span>OSDumpContext()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSDumpContext </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af49d6686d9db6413976b966287e70a75" name="af49d6686d9db6413976b966287e70a75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af49d6686d9db6413976b966287e70a75">&#9670;&#160;</a></span>OSEnableScheduler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSEnableScheduler </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad3a3da27911d7fc3f4f08506ac539ea3" name="ad3a3da27911d7fc3f4f08506ac539ea3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3a3da27911d7fc3f4f08506ac539ea3">&#9670;&#160;</a></span>OSGetTime()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSGetTime </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab8f3080e14ff508a63cc9a075164484c" name="ab8f3080e14ff508a63cc9a075164484c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8f3080e14ff508a63cc9a075164484c">&#9670;&#160;</a></span>OSLoadContext()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSLoadContext </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ade4b47b8fab54c8f6a71bf594943c828" name="ade4b47b8fab54c8f6a71bf594943c828"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade4b47b8fab54c8f6a71bf594943c828">&#9670;&#160;</a></span>OSReport()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSReport </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a14b5cc2befa83d8710fba14f4de14fd9" name="a14b5cc2befa83d8710fba14f4de14fd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14b5cc2befa83d8710fba14f4de14fd9">&#9670;&#160;</a></span>OSRestoreInterrupts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSRestoreInterrupts </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad36a1a1b8487b8d1f70a485983f251a9" name="ad36a1a1b8487b8d1f70a485983f251a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad36a1a1b8487b8d1f70a485983f251a9">&#9670;&#160;</a></span>OSSaveFPUContext()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSSaveFPUContext </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -426,94 +255,37 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad4831a1a131204873ef617718ff64223" name="ad4831a1a131204873ef617718ff64223"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4831a1a131204873ef617718ff64223">&#9670;&#160;</a></span>PPCHalt()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PPCHalt </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a826caa258026149675dfe6eaf4554fa6" name="a826caa258026149675dfe6eaf4554fa6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a826caa258026149675dfe6eaf4554fa6">&#9670;&#160;</a></span>PPCMffpscr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PPCMffpscr </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a72288d6fddcf63b28eee8bca4b9d9a9f" name="a72288d6fddcf63b28eee8bca4b9d9a9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72288d6fddcf63b28eee8bca4b9d9a9f">&#9670;&#160;</a></span>PPCMfmsr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PPCMfmsr </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7d10859d53ab7d06766ad6ec22081d42" name="a7d10859d53ab7d06766ad6ec22081d42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d10859d53ab7d06766ad6ec22081d42">&#9670;&#160;</a></span>PPCMtfpscr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PPCMtfpscr </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af18f0ca95ca6936e66ef36667e69e82a" name="af18f0ca95ca6936e66ef36667e69e82a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af18f0ca95ca6936e66ef36667e69e82a">&#9670;&#160;</a></span>PPCMtmsr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PPCMtmsr </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="aef3e092a0c4250d0e7a521fa83617ce2" name="aef3e092a0c4250d0e7a521fa83617ce2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef3e092a0c4250d0e7a521fa83617ce2">&#9670;&#160;</a></span>__OSErrorTable</h2>
+<a id="afcc1b49aaba25658b431b933b39b3547" name="afcc1b49aaba25658b431b933b39b3547"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcc1b49aaba25658b431b933b39b3547">&#9670;&#160;</a></span>__OSActiveThreadQueue</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structOSThreadQueue.html">OSThreadQueue</a> __OSActiveThreadQueue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a63f1c0135e05a09f229ac20b4ddff0b6" name="a63f1c0135e05a09f229ac20b4ddff0b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63f1c0135e05a09f229ac20b4ddff0b6">&#9670;&#160;</a></span>__OSCurrentThread</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structOSThread.html">OSThread</a>* __OSCurrentThread</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeac109808f3767c0ddd27ba5b19e9353" name="aeac109808f3767c0ddd27ba5b19e9353"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeac109808f3767c0ddd27ba5b19e9353">&#9670;&#160;</a></span>__OSErrorTable</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -536,7 +308,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> __OSFpscrEnableBits = 0xF8</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> __OSFpscrEnableBits = <a class="el" href="OSError_8c.html#a5a7cebac0d09bbb3502789b69ab6d9f0">FPSCR_ENABLE</a></td>
         </tr>
       </table>
   </td>
@@ -544,6 +316,20 @@ Variables</h2></td></tr>
 <span class="mlabels"><span class="mlabel">extern</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a41efc37d176fc4af1d54860ec61dc6a9" name="a41efc37d176fc4af1d54860ec61dc6a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41efc37d176fc4af1d54860ec61dc6a9">&#9670;&#160;</a></span>__OSFPUContext</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile <a class="el" href="structOSContext.html">OSContext</a>* __OSFPUContext</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -668,7 +454,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_14[] = &quot;\nAddress: Back Chain LR Save\n&quot;</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_14[] = &quot;\nAddress: Back Chain <a class="el" href="PPCArch_8h.html#a3572ba4e929ec4380493fcfbbde0efa2">LR</a> Save\n&quot;</td>
         </tr>
       </table>
   </td>
@@ -778,7 +564,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_77[] = &quot;\nDSISR = 0x%08x DAR = 0x%08x\n&quot;</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_77[] = &quot;\nDSISR = 0x%08x <a class="el" href="PPCArch_8h.html#a39174fabdee3d62c4d87f497e0bce9c3">DAR</a> = 0x%08x\n&quot;</td>
         </tr>
       </table>
   </td>
@@ -822,7 +608,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_79[] = &quot;\nInstruction at 0x%x (read from SRR0) attempted to access invalid address 0x%x (read from DAR)\n&quot;</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_79[]</td>
         </tr>
       </table>
   </td>
@@ -831,7 +617,9 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line">= <span class="stringliteral">&quot;\nInstruction at 0x%x (read from SRR0) attempted to access &quot;</span></div>
+<div class="line">                                    <span class="stringliteral">&quot;invalid address 0x%x (read from DAR)\n&quot;</span></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="abf19ee461243355ae0286bd5e5b66b94" name="abf19ee461243355ae0286bd5e5b66b94"></a>
@@ -844,7 +632,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_80[] = &quot;\nAttempted to fetch instruction from invalid address 0x%x (read from SRR0)\n&quot;</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_80[]</td>
         </tr>
       </table>
   </td>
@@ -853,7 +641,9 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    <span class="stringliteral">&quot;\nAttempted to fetch instruction from invalid address 0x%x (read from SRR0)\n&quot;</span></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0d9c4cd38386c9593a1479f2b1ef046b" name="a0d9c4cd38386c9593a1479f2b1ef046b"></a>
@@ -866,7 +656,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_81[] = &quot;\nInstruction at 0x%x (read from SRR0) attempted to access unaligned address 0x%x (read from DAR)\n&quot;</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_81[]</td>
         </tr>
       </table>
   </td>
@@ -875,7 +665,9 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line">= <span class="stringliteral">&quot;\nInstruction at 0x%x (read from SRR0) attempted to access &quot;</span></div>
+<div class="line">                                    <span class="stringliteral">&quot;unaligned address 0x%x (read from DAR)\n&quot;</span></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5c20951319b5ab8c79c0fbb05b0e1f34" name="a5c20951319b5ab8c79c0fbb05b0e1f34"></a>
@@ -888,7 +680,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_82[] = &quot;\nProgram <a class="el" href="structexception.html">exception</a> : Possible illegal instruction/operation at or around 0x%x (read from SRR0)\n&quot;</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_82[]</td>
         </tr>
       </table>
   </td>
@@ -897,7 +689,9 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line">= <span class="stringliteral">&quot;\nProgram exception : Possible illegal instruction/operation &quot;</span></div>
+<div class="line">                                    <span class="stringliteral">&quot;at or around 0x%x (read from SRR0)\n&quot;</span></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a29d7b815724f8ad0a459e18f69ca6306" name="a29d7b815724f8ad0a459e18f69ca6306"></a>
@@ -976,7 +770,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_86[] = &quot;\nLast interrupt (%d): SRR0 = 0x%08x TB = 0x%016llx\n&quot;</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_86[] = &quot;\nLast interrupt (%d): <a class="el" href="PPCArch_8h.html#a641629768bc5979dc55d43f6e3e96b20">SRR0</a> = 0x%08x TB = 0x%016llx\n&quot;</td>
         </tr>
       </table>
   </td>
@@ -1008,26 +802,26 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSMemory_8c.html#a2794f652f2183164909513ca32ffa873">__OSUnhandledException</a>) + 0x2B4),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSMemory_8c.html#a2794f652f2183164909513ca32ffa873">__OSUnhandledException</a>) + 0x2B4),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSMemory_8c.html#a2794f652f2183164909513ca32ffa873">__OSUnhandledException</a>) + 0x20C),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSMemory_8c.html#a2794f652f2183164909513ca32ffa873">__OSUnhandledException</a>) + 0x224),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSMemory_8c.html#a2794f652f2183164909513ca32ffa873">__OSUnhandledException</a>) + 0x2B4),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSMemory_8c.html#a2794f652f2183164909513ca32ffa873">__OSUnhandledException</a>) + 0x238),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSMemory_8c.html#a2794f652f2183164909513ca32ffa873">__OSUnhandledException</a>) + 0x250),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSMemory_8c.html#a2794f652f2183164909513ca32ffa873">__OSUnhandledException</a>) + 0x2B4),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSMemory_8c.html#a2794f652f2183164909513ca32ffa873">__OSUnhandledException</a>) + 0x2B4),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSMemory_8c.html#a2794f652f2183164909513ca32ffa873">__OSUnhandledException</a>) + 0x2B4),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSMemory_8c.html#a2794f652f2183164909513ca32ffa873">__OSUnhandledException</a>) + 0x2B4),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSMemory_8c.html#a2794f652f2183164909513ca32ffa873">__OSUnhandledException</a>) + 0x2B4),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSMemory_8c.html#a2794f652f2183164909513ca32ffa873">__OSUnhandledException</a>) + 0x2B4),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSMemory_8c.html#a2794f652f2183164909513ca32ffa873">__OSUnhandledException</a>) + 0x2B4),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSMemory_8c.html#a2794f652f2183164909513ca32ffa873">__OSUnhandledException</a>) + 0x2B4),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSMemory_8c.html#a2794f652f2183164909513ca32ffa873">__OSUnhandledException</a>) + 0x268),</div>
+<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSError_8c.html#a77d08e948b55a2057dfb992994ec9ba7">__OSUnhandledException</a>) + 0x2B4),</div>
+<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSError_8c.html#a77d08e948b55a2057dfb992994ec9ba7">__OSUnhandledException</a>) + 0x2B4),</div>
+<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSError_8c.html#a77d08e948b55a2057dfb992994ec9ba7">__OSUnhandledException</a>) + 0x20C),</div>
+<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSError_8c.html#a77d08e948b55a2057dfb992994ec9ba7">__OSUnhandledException</a>) + 0x224),</div>
+<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSError_8c.html#a77d08e948b55a2057dfb992994ec9ba7">__OSUnhandledException</a>) + 0x2B4),</div>
+<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSError_8c.html#a77d08e948b55a2057dfb992994ec9ba7">__OSUnhandledException</a>) + 0x238),</div>
+<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSError_8c.html#a77d08e948b55a2057dfb992994ec9ba7">__OSUnhandledException</a>) + 0x250),</div>
+<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSError_8c.html#a77d08e948b55a2057dfb992994ec9ba7">__OSUnhandledException</a>) + 0x2B4),</div>
+<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSError_8c.html#a77d08e948b55a2057dfb992994ec9ba7">__OSUnhandledException</a>) + 0x2B4),</div>
+<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSError_8c.html#a77d08e948b55a2057dfb992994ec9ba7">__OSUnhandledException</a>) + 0x2B4),</div>
+<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSError_8c.html#a77d08e948b55a2057dfb992994ec9ba7">__OSUnhandledException</a>) + 0x2B4),</div>
+<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSError_8c.html#a77d08e948b55a2057dfb992994ec9ba7">__OSUnhandledException</a>) + 0x2B4),</div>
+<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSError_8c.html#a77d08e948b55a2057dfb992994ec9ba7">__OSUnhandledException</a>) + 0x2B4),</div>
+<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSError_8c.html#a77d08e948b55a2057dfb992994ec9ba7">__OSUnhandledException</a>) + 0x2B4),</div>
+<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSError_8c.html#a77d08e948b55a2057dfb992994ec9ba7">__OSUnhandledException</a>) + 0x2B4),</div>
+<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)<a class="code hl_function" href="OSError_8c.html#a77d08e948b55a2057dfb992994ec9ba7">__OSUnhandledException</a>) + 0x268),</div>
 <div class="line">    </div>
 <div class="line">    <a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aOSMemory_8c_html_a2794f652f2183164909513ca32ffa873"><div class="ttname"><a href="OSMemory_8c.html#a2794f652f2183164909513ca32ffa873">__OSUnhandledException</a></div><div class="ttdeci">void __OSUnhandledException()</div></div>
+<div class="ttc" id="aOSError_8c_html_a77d08e948b55a2057dfb992994ec9ba7"><div class="ttname"><a href="OSError_8c.html#a77d08e948b55a2057dfb992994ec9ba7">__OSUnhandledException</a></div><div class="ttdeci">asm void __OSUnhandledException(__OSException exception, OSContext *context, u32 dsisr, u32 dar)</div><div class="ttdef"><b>Definition:</b> OSError.c:277</div></div>
 <div class="ttc" id="atypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> types.h:34</div></div>
 </div><!-- fragment -->
 </div>
