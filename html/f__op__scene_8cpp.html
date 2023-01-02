@@ -88,10 +88,10 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="f__op__scene_8h_source.html">f_op/f_op_scene.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="f__op__scene__tag_8h_source.html">f_op/f_op_scene_tag.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="f__pc__manager_8h_source.html">f_pc/f_pc_manager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="f__op__scene__tag_8h_source.html">f_op/f_op_scene_tag.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="f__pc__manager_8h_source.html">f_pc/f_pc_manager.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for f_op_scene.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -109,8 +109,8 @@ Functions</h2></td></tr>
 <tr class="separator:a07e069c89c38a437d409aea367cc3da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54d7fac0ef0f62e14a715e29034854d2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__scene_8cpp.html#a54d7fac0ef0f62e14a715e29034854d2">fopScn_IsDelete</a> (void *pScene)</td></tr>
 <tr class="separator:a54d7fac0ef0f62e14a715e29034854d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a236a81e2acfd43445e6afeffc578e6a2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__scene_8cpp.html#a236a81e2acfd43445e6afeffc578e6a2">fopScn_Delete</a> (void *param_1)</td></tr>
-<tr class="separator:a236a81e2acfd43445e6afeffc578e6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abffaf6f3faba378335a7a140791f67d0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__scene_8cpp.html#abffaf6f3faba378335a7a140791f67d0">fopScn_Delete</a> (void *pScene)</td></tr>
+<tr class="separator:abffaf6f3faba378335a7a140791f67d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad85f68eef5a8f61e32c8367a7926729c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__scene_8cpp.html#ad85f68eef5a8f61e32c8367a7926729c">fopScn_Create</a> (void *pScene)</td></tr>
 <tr class="separator:ad85f68eef5a8f61e32c8367a7926729c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -146,8 +146,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a236a81e2acfd43445e6afeffc578e6a2" name="a236a81e2acfd43445e6afeffc578e6a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a236a81e2acfd43445e6afeffc578e6a2">&#9670;&#160;</a></span>fopScn_Delete()</h2>
+<a id="abffaf6f3faba378335a7a140791f67d0" name="abffaf6f3faba378335a7a140791f67d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abffaf6f3faba378335a7a140791f67d0">&#9670;&#160;</a></span>fopScn_Delete()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -159,7 +159,7 @@ Variables</h2></td></tr>
           <td class="memname">static <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> fopScn_Delete </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>param_1</em></td><td>)</td>
+          <td class="paramname"><em>pScene</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -263,16 +263,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    (<a class="code hl_typedef" href="f__pc__method_8h.html#a56bd92368b7dda361388b2d13df2e4ac">process_method_func</a>)<a class="code hl_function" href="f__op__scene_8cpp.html#ad85f68eef5a8f61e32c8367a7926729c">fopScn_Create</a>,</div>
-<div class="line">    (<a class="code hl_typedef" href="f__pc__method_8h.html#a56bd92368b7dda361388b2d13df2e4ac">process_method_func</a>)<a class="code hl_function" href="f__op__scene_8cpp.html#a236a81e2acfd43445e6afeffc578e6a2">fopScn_Delete</a>,</div>
-<div class="line">    (<a class="code hl_typedef" href="f__pc__method_8h.html#a56bd92368b7dda361388b2d13df2e4ac">process_method_func</a>)<a class="code hl_function" href="f__op__scene_8cpp.html#a07e069c89c38a437d409aea367cc3da6">fopScn_Execute</a>,</div>
-<div class="line">    (<a class="code hl_typedef" href="f__pc__method_8h.html#a56bd92368b7dda361388b2d13df2e4ac">process_method_func</a>)<a class="code hl_function" href="f__op__scene_8cpp.html#a54d7fac0ef0f62e14a715e29034854d2">fopScn_IsDelete</a>,</div>
+<div class="line">    (<a class="code hl_typedef" href="f__pc__method_8h.html#a56bd92368b7dda361388b2d13df2e4ac">process_method_func</a>)<a class="code hl_function" href="f__op__scene_8cpp.html#ad85f68eef5a8f61e32c8367a7926729c">fopScn_Create</a>,  (<a class="code hl_typedef" href="f__pc__method_8h.html#a56bd92368b7dda361388b2d13df2e4ac">process_method_func</a>)<a class="code hl_function" href="f__op__scene_8cpp.html#abffaf6f3faba378335a7a140791f67d0">fopScn_Delete</a>,</div>
+<div class="line">    (<a class="code hl_typedef" href="f__pc__method_8h.html#a56bd92368b7dda361388b2d13df2e4ac">process_method_func</a>)<a class="code hl_function" href="f__op__scene_8cpp.html#a07e069c89c38a437d409aea367cc3da6">fopScn_Execute</a>, (<a class="code hl_typedef" href="f__pc__method_8h.html#a56bd92368b7dda361388b2d13df2e4ac">process_method_func</a>)<a class="code hl_function" href="f__op__scene_8cpp.html#a54d7fac0ef0f62e14a715e29034854d2">fopScn_IsDelete</a>,</div>
 <div class="line">    (<a class="code hl_typedef" href="f__pc__method_8h.html#a56bd92368b7dda361388b2d13df2e4ac">process_method_func</a>)<a class="code hl_function" href="f__op__scene_8cpp.html#a795ba8de6e12d95cfad7182e70d22466">fopScn_Draw</a>,</div>
 <div class="line">}</div>
 <div class="ttc" id="af__op__scene_8cpp_html_a07e069c89c38a437d409aea367cc3da6"><div class="ttname"><a href="f__op__scene_8cpp.html#a07e069c89c38a437d409aea367cc3da6">fopScn_Execute</a></div><div class="ttdeci">static void fopScn_Execute(scene_class *pScene)</div><div class="ttdef"><b>Definition:</b> f_op_scene.cpp:18</div></div>
-<div class="ttc" id="af__op__scene_8cpp_html_a236a81e2acfd43445e6afeffc578e6a2"><div class="ttname"><a href="f__op__scene_8cpp.html#a236a81e2acfd43445e6afeffc578e6a2">fopScn_Delete</a></div><div class="ttdeci">static s32 fopScn_Delete(void *param_1)</div><div class="ttdef"><b>Definition:</b> f_op_scene.cpp:28</div></div>
 <div class="ttc" id="af__op__scene_8cpp_html_a54d7fac0ef0f62e14a715e29034854d2"><div class="ttname"><a href="f__op__scene_8cpp.html#a54d7fac0ef0f62e14a715e29034854d2">fopScn_IsDelete</a></div><div class="ttdeci">static s32 fopScn_IsDelete(void *pScene)</div><div class="ttdef"><b>Definition:</b> f_op_scene.cpp:23</div></div>
 <div class="ttc" id="af__op__scene_8cpp_html_a795ba8de6e12d95cfad7182e70d22466"><div class="ttname"><a href="f__op__scene_8cpp.html#a795ba8de6e12d95cfad7182e70d22466">fopScn_Draw</a></div><div class="ttdeci">static void fopScn_Draw(scene_class *pScene)</div><div class="ttdef"><b>Definition:</b> f_op_scene.cpp:13</div></div>
+<div class="ttc" id="af__op__scene_8cpp_html_abffaf6f3faba378335a7a140791f67d0"><div class="ttname"><a href="f__op__scene_8cpp.html#abffaf6f3faba378335a7a140791f67d0">fopScn_Delete</a></div><div class="ttdeci">static s32 fopScn_Delete(void *pScene)</div><div class="ttdef"><b>Definition:</b> f_op_scene.cpp:28</div></div>
 <div class="ttc" id="af__op__scene_8cpp_html_ad85f68eef5a8f61e32c8367a7926729c"><div class="ttname"><a href="f__op__scene_8cpp.html#ad85f68eef5a8f61e32c8367a7926729c">fopScn_Create</a></div><div class="ttdeci">static s32 fopScn_Create(void *pScene)</div><div class="ttdef"><b>Definition:</b> f_op_scene.cpp:38</div></div>
 <div class="ttc" id="af__pc__method_8h_html_a56bd92368b7dda361388b2d13df2e4ac"><div class="ttname"><a href="f__pc__method_8h.html#a56bd92368b7dda361388b2d13df2e4ac">process_method_func</a></div><div class="ttdeci">int(* process_method_func)(void *)</div><div class="ttdef"><b>Definition:</b> f_pc_method.h:7</div></div>
 </div><!-- fragment -->
