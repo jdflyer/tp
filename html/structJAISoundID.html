@@ -79,7 +79,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structJAISoundID-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">JAISoundID Struct Reference</div></div>
 </div><!--header-->
@@ -100,10 +100,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4c6f2ff71f78c0b918acff30857deb18"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISoundID.html#a4c6f2ff71f78c0b918acff30857deb18">JAISoundID</a> ()</td></tr>
 <tr class="separator:a4c6f2ff71f78c0b918acff30857deb18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a258eab70ee684fb37dc929b19db89c86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISoundID.html#a258eab70ee684fb37dc929b19db89c86">mId</a></td></tr>
-<tr class="separator:a258eab70ee684fb37dc929b19db89c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a59ca1143f1c867e879ed3a8dc398fbe0"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:acb2fd534ab1d6208503f25a8a131c4e8"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;&#160;&#160;<a class="el" href="structJAISoundID.html#a258eab70ee684fb37dc929b19db89c86">mId</a></td></tr>
+<tr class="separator:acb2fd534ab1d6208503f25a8a131c4e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad286c50af3a752b8ff8274c246f42482"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a02dbc0ddbddbbfd4b162971ece45eb82"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;&#160;&#160;<a class="el" href="structJAISoundID.html#a0bd7c9219e0de290673ba752582fa8e8">mSoundType</a></td></tr>
+<tr class="separator:a02dbc0ddbddbbfd4b162971ece45eb82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ec59cf49b088761960ab1029d9022a4"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;&#160;&#160;<a class="el" href="structJAISoundID.html#a75210bb9b79742da8e97a6f5a71474a5">mShortId</a></td></tr>
+<tr class="separator:a1ec59cf49b088761960ab1029d9022a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad286c50af3a752b8ff8274c246f42482"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structJAISoundID.html#af9e2958fd31982495a6a88cde651a015">mAdvancedId</a></td></tr>
+<tr class="separator:ad286c50af3a752b8ff8274c246f42482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59ca1143f1c867e879ed3a8dc398fbe0"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISoundID.html#a59ca1143f1c867e879ed3a8dc398fbe0">mId</a></td></tr>
+<tr class="separator:a59ca1143f1c867e879ed3a8dc398fbe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a06ede88e95aa3baf66f20a125a9822ec" name="a06ede88e95aa3baf66f20a125a9822ec"></a>
@@ -236,24 +246,72 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a258eab70ee684fb37dc929b19db89c86" name="a258eab70ee684fb37dc929b19db89c86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a258eab70ee684fb37dc929b19db89c86">&#9670;&#160;</a></span>mId</h2>
+<a id="af9e2958fd31982495a6a88cde651a015" name="af9e2958fd31982495a6a88cde651a015"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9e2958fd31982495a6a88cde651a015">&#9670;&#160;</a></span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct  { ... }  JAISoundID::mAdvancedId</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a258eab70ee684fb37dc929b19db89c86" name="a258eab70ee684fb37dc929b19db89c86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a258eab70ee684fb37dc929b19db89c86">&#9670;&#160;</a></span>mId <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> JAISoundID::mId</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a59ca1143f1c867e879ed3a8dc398fbe0" name="a59ca1143f1c867e879ed3a8dc398fbe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59ca1143f1c867e879ed3a8dc398fbe0">&#9670;&#160;</a></span> <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union  { ... }  JAISoundID::mId</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a75210bb9b79742da8e97a6f5a71474a5" name="a75210bb9b79742da8e97a6f5a71474a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75210bb9b79742da8e97a6f5a71474a5">&#9670;&#160;</a></span>mShortId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> JAISoundID::mShortId</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0bd7c9219e0de290673ba752582fa8e8" name="a0bd7c9219e0de290673ba752582fa8e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bd7c9219e0de290673ba752582fa8e8">&#9670;&#160;</a></span>mSoundType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> JAISoundID::mSoundType</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
