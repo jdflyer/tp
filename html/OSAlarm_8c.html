@@ -92,8 +92,6 @@ $(function() {
 <code>#include &quot;<a class="el" href="PPCArch_8h_source.html">dolphin/base/PPCArch.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OSReset_8h_source.html">dolphin/os/OSReset.h</a>&quot;</code><br />
-<code>#include &quot;asm/dolphin/os/OSAlarm/OSCancelAlarm.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/os/OSAlarm/DecrementerExceptionCallback.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/os/OSAlarm/OnReset.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for OSAlarm.c:</div>
@@ -124,10 +122,10 @@ Functions</h2></td></tr>
 <tr class="separator:a30c3f169414ab63f05f5275e50c8c575"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf8900f9a91d3f8084cc2c2abc4f8d5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSAlarm_8c.html#adf8900f9a91d3f8084cc2c2abc4f8d5f">OSSetPeriodicAlarm</a> (<a class="el" href="structOSAlarm.html">OSAlarm</a> *alarm, <a class="el" href="OSTime_8h.html#a3d32c840b403a8d37875867a7ea9b381">OSTime</a> start, <a class="el" href="OSTime_8h.html#a3d32c840b403a8d37875867a7ea9b381">OSTime</a> period, <a class="el" href="OSAlarm_8h.html#a04087809eb8ab20177b0c663bb2113d2">OSAlarmHandler</a> handler)</td></tr>
 <tr class="separator:adf8900f9a91d3f8084cc2c2abc4f8d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a933daf75af71358825984f3ce3d12345"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSAlarm_8c.html#a933daf75af71358825984f3ce3d12345">OSCancelAlarm</a> (<a class="el" href="structOSAlarm.html">OSAlarm</a> *alarm)</td></tr>
-<tr class="separator:a933daf75af71358825984f3ce3d12345"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f8c9aad92a2d807811b2c187b10d0ad"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSAlarm_8c.html#a0f8c9aad92a2d807811b2c187b10d0ad">DecrementerExceptionCallback</a> (<a class="el" href="OSError_8h.html#add6149ead84c8568031dabdedbee4f27">__OSException</a> <a class="el" href="structexception.html">exception</a>, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
-<tr class="separator:a0f8c9aad92a2d807811b2c187b10d0ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad08820cab8590f7b2a3345b3ed8c3a0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSAlarm_8c.html#ad08820cab8590f7b2a3345b3ed8c3a0e">OSCancelAlarm</a> (<a class="el" href="structOSAlarm.html">OSAlarm</a> *alarm)</td></tr>
+<tr class="separator:ad08820cab8590f7b2a3345b3ed8c3a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1122859864b8fa63ef93fad9cf492f16"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSAlarm_8c.html#a1122859864b8fa63ef93fad9cf492f16">DecrementerExceptionCallback</a> (register <a class="el" href="OSError_8h.html#add6149ead84c8568031dabdedbee4f27">__OSException</a> <a class="el" href="structexception.html">exception</a>, register <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
+<tr class="separator:a1122859864b8fa63ef93fad9cf492f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fbdfde0e787de6d1cd6a5e1d74ea187"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSAlarm_8c.html#a3fbdfde0e787de6d1cd6a5e1d74ea187">DecrementerExceptionHandler</a> (register <a class="el" href="OSError_8h.html#add6149ead84c8568031dabdedbee4f27">__OSException</a> <a class="el" href="structexception.html">exception</a>, register <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
 <tr class="separator:a3fbdfde0e787de6d1cd6a5e1d74ea187"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -173,8 +171,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a0f8c9aad92a2d807811b2c187b10d0ad" name="a0f8c9aad92a2d807811b2c187b10d0ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f8c9aad92a2d807811b2c187b10d0ad">&#9670;&#160;</a></span>DecrementerExceptionCallback()</h2>
+<a id="a1122859864b8fa63ef93fad9cf492f16" name="a1122859864b8fa63ef93fad9cf492f16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1122859864b8fa63ef93fad9cf492f16">&#9670;&#160;</a></span>DecrementerExceptionCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -183,15 +181,15 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void DecrementerExceptionCallback </td>
+          <td class="memname">static void DecrementerExceptionCallback </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="OSError_8h.html#add6149ead84c8568031dabdedbee4f27">__OSException</a>&#160;</td>
+          <td class="paramtype">register <a class="el" href="OSError_8h.html#add6149ead84c8568031dabdedbee4f27">__OSException</a>&#160;</td>
           <td class="paramname"><em>exception</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structOSContext.html">OSContext</a> *&#160;</td>
+          <td class="paramtype">register <a class="el" href="structOSContext.html">OSContext</a> *&#160;</td>
           <td class="paramname"><em>context</em>&#160;</td>
         </tr>
         <tr>
@@ -313,14 +311,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a933daf75af71358825984f3ce3d12345" name="a933daf75af71358825984f3ce3d12345"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a933daf75af71358825984f3ce3d12345">&#9670;&#160;</a></span>OSCancelAlarm()</h2>
+<a id="ad08820cab8590f7b2a3345b3ed8c3a0e" name="ad08820cab8590f7b2a3345b3ed8c3a0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad08820cab8590f7b2a3345b3ed8c3a0e">&#9670;&#160;</a></span>OSCancelAlarm()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void OSCancelAlarm </td>
+          <td class="memname">void OSCancelAlarm </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structOSAlarm.html">OSAlarm</a> *&#160;</td>
           <td class="paramname"><em>alarm</em></td><td>)</td>
@@ -515,7 +513,7 @@ Variables</h2></td></tr>
 <div class="line">    <a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    <a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aOSAlarm_8c_html_a462ea128f58200a4baec991647ae6dca"><div class="ttname"><a href="OSAlarm_8c.html#a462ea128f58200a4baec991647ae6dca">OnReset</a></div><div class="ttdeci">static s32 OnReset(s32 param_0)</div><div class="ttdef"><b>Definition:</b> OSAlarm.c:268</div></div>
+<div class="ttc" id="aOSAlarm_8c_html_a462ea128f58200a4baec991647ae6dca"><div class="ttname"><a href="OSAlarm_8c.html#a462ea128f58200a4baec991647ae6dca">OnReset</a></div><div class="ttdeci">static s32 OnReset(s32 param_0)</div><div class="ttdef"><b>Definition:</b> OSAlarm.c:244</div></div>
 <div class="ttc" id="atypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> types.h:34</div></div>
 </div><!-- fragment -->
 </div>

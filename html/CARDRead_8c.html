@@ -92,7 +92,6 @@ $(function() {
 <code>#include &quot;<a class="el" href="dsp_8h_source.html">dolphin/dsp/dsp.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dvd_8h_source.html">dolphin/dvd/dvd.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="CARDPriv_8h_source.html">dolphin/card/CARDPriv.h</a>&quot;</code><br />
-<code>#include &quot;asm/dolphin/card/CARDRead/__CARDSeek.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDRead/CARDReadAsync.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for CARDRead.c:</div>
@@ -107,22 +106,22 @@ $(function() {
 Functions</h2></td></tr>
 <tr class="memitem:a90cc86d11ccedf23acabcf66c2388b01"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDRead_8c.html#a90cc86d11ccedf23acabcf66c2388b01">ReadCallback</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> result)</td></tr>
 <tr class="separator:a90cc86d11ccedf23acabcf66c2388b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad58d9640757d8ad75600be9f41bf3dda"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDRead_8c.html#ad58d9640757d8ad75600be9f41bf3dda">__CARDSeek</a> (<a class="el" href="structCARDFileInfo.html">CARDFileInfo</a> *fileInfo, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> length, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> <a class="el" href="d__gameover_8cpp.html#a2928a81aabe02fb912912373508b1286">offset</a>, <a class="el" href="structCARDControl.html">CARDControl</a> **pcard)</td></tr>
-<tr class="separator:ad58d9640757d8ad75600be9f41bf3dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1225017bc5c3e1f18317a7a0f9e482d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDRead_8c.html#a1225017bc5c3e1f18317a7a0f9e482d6">__CARDSeek</a> (<a class="el" href="structCARDFileInfo.html">CARDFileInfo</a> *fileInfo, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> length, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> <a class="el" href="d__gameover_8cpp.html#a2928a81aabe02fb912912373508b1286">offset</a>, <a class="el" href="structCARDControl.html">CARDControl</a> **pcard)</td></tr>
+<tr class="separator:a1225017bc5c3e1f18317a7a0f9e482d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63355835c3211b7d1764c0c1106e996a"><td class="memItemLeft" align="right" valign="top">static asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDRead_8c.html#a63355835c3211b7d1764c0c1106e996a">CARDReadAsync</a> (<a class="el" href="structCARDFileInfo.html">CARDFileInfo</a> *fileInfo, void *buf, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> length, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> <a class="el" href="d__gameover_8cpp.html#a2928a81aabe02fb912912373508b1286">offset</a>, <a class="el" href="card_8h.html#a7e14558c66d616c768d3a6f73bd640a6">CARDCallback</a> callback)</td></tr>
 <tr class="separator:a63355835c3211b7d1764c0c1106e996a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeff2d93ce202ad27c452a92381cd445f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDRead_8c.html#aeff2d93ce202ad27c452a92381cd445f">CARDRead</a> (<a class="el" href="structCARDFileInfo.html">CARDFileInfo</a> *fileInfo, void *buf, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> length, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> <a class="el" href="d__gameover_8cpp.html#a2928a81aabe02fb912912373508b1286">offset</a>)</td></tr>
 <tr class="separator:aeff2d93ce202ad27c452a92381cd445f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ad58d9640757d8ad75600be9f41bf3dda" name="ad58d9640757d8ad75600be9f41bf3dda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad58d9640757d8ad75600be9f41bf3dda">&#9670;&#160;</a></span>__CARDSeek()</h2>
+<a id="a1225017bc5c3e1f18317a7a0f9e482d6" name="a1225017bc5c3e1f18317a7a0f9e482d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1225017bc5c3e1f18317a7a0f9e482d6">&#9670;&#160;</a></span>__CARDSeek()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDSeek </td>
+          <td class="memname"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDSeek </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structCARDFileInfo.html">CARDFileInfo</a> *&#160;</td>
           <td class="paramname"><em>fileInfo</em>, </td>

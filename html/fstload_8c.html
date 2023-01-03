@@ -92,7 +92,6 @@ $(function() {
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dvd_8h_source.html">dolphin/dvd/dvd.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
-<code>#include &quot;asm/dolphin/dvd/fstload/__fstLoad.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for fstload.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -119,26 +118,10 @@ Variables</h2></td></tr>
 <tr class="separator:aeb755f9f391b9e20f8edc93c864e6496"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94dace58c3d91ccd33749d8771077651"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structDVDDiskID.html">DVDDiskID</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fstload_8c.html#a94dace58c3d91ccd33749d8771077651">idTmp</a></td></tr>
 <tr class="separator:a94dace58c3d91ccd33749d8771077651"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9a3389a79017cdc96c951afae32cfb5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fstload_8c.html#ad9a3389a79017cdc96c951afae32cfb5">lit_38</a> [] = &quot; Game Name ... %c%c%c%c\n&quot;</td></tr>
-<tr class="separator:ad9a3389a79017cdc96c951afae32cfb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ddb72207eecf3d2e3793d3a26cbabc7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fstload_8c.html#a5ddb72207eecf3d2e3793d3a26cbabc7">lit_39</a> [] = &quot; Company ..... %c%c\n&quot;</td></tr>
-<tr class="separator:a5ddb72207eecf3d2e3793d3a26cbabc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fb5272284fdcdd2d07c91ca1f11e6a5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fstload_8c.html#a5fb5272284fdcdd2d07c91ca1f11e6a5">lit_40</a> [] = &quot; Disk # ...... %d\n&quot;</td></tr>
-<tr class="separator:a5fb5272284fdcdd2d07c91ca1f11e6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a171c58d6c5158363d44d5d0a49bd0550"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fstload_8c.html#a171c58d6c5158363d44d5d0a49bd0550">lit_41</a> [] = &quot; Game ver .... %d\n&quot;</td></tr>
-<tr class="separator:a171c58d6c5158363d44d5d0a49bd0550"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1d905f3f4cf9c80aef54e681f18d6df"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fstload_8c.html#af1d905f3f4cf9c80aef54e681f18d6df">lit_44</a> [] = &quot; Streaming ... %s\n&quot;</td></tr>
-<tr class="separator:af1d905f3f4cf9c80aef54e681f18d6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1145f1e2759d0cdd9db617630dfc408e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fstload_8c.html#a1145f1e2759d0cdd9db617630dfc408e">bb2Buf</a> [<a class="el" href="OSAlloc_8h.html#a3832f11e441e5f49e9b1efde98e78279">OSRoundUp32B</a>(sizeof(<a class="el" href="structDVDBB2.html">DVDBB2</a>))+31]</td></tr>
 <tr class="separator:a1145f1e2759d0cdd9db617630dfc408e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a77fcc63b2130d6926350d37888d7a4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fstload_8c.html#a0a77fcc63b2130d6926350d37888d7a4">block</a> [48]</td></tr>
 <tr class="separator:a0a77fcc63b2130d6926350d37888d7a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7241ff6102649315b0290473043036fa"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fstload_8c.html#a7241ff6102649315b0290473043036fa">lit_37</a> [] = &quot;\n&quot;</td></tr>
-<tr class="separator:a7241ff6102649315b0290473043036fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa491d40b99c4ff89f9f92e6be60997ea"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fstload_8c.html#aa491d40b99c4ff89f9f92e6be60997ea">lit_42</a> [] = &quot;OFF&quot;</td></tr>
-<tr class="separator:aa491d40b99c4ff89f9f92e6be60997ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a159ff7c531e7550272d753a7c7fdcc2d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fstload_8c.html#a159ff7c531e7550272d753a7c7fdcc2d">lit_43</a> [] = &quot;ON&quot;</td></tr>
-<tr class="separator:a159ff7c531e7550272d753a7c7fdcc2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a139f733b5d112a3181b78ccb98989739" name="a139f733b5d112a3181b78ccb98989739"></a>
@@ -298,182 +281,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structDVDDiskID.html">DVDDiskID</a>* idTmp</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7241ff6102649315b0290473043036fa" name="a7241ff6102649315b0290473043036fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7241ff6102649315b0290473043036fa">&#9670;&#160;</a></span>lit_37</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> char lit_37[] = &quot;\n&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad9a3389a79017cdc96c951afae32cfb5" name="ad9a3389a79017cdc96c951afae32cfb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9a3389a79017cdc96c951afae32cfb5">&#9670;&#160;</a></span>lit_38</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_38[] = &quot; Game Name ... %c%c%c%c\n&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5ddb72207eecf3d2e3793d3a26cbabc7" name="a5ddb72207eecf3d2e3793d3a26cbabc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ddb72207eecf3d2e3793d3a26cbabc7">&#9670;&#160;</a></span>lit_39</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_39[] = &quot; Company ..... %c%c\n&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5fb5272284fdcdd2d07c91ca1f11e6a5" name="a5fb5272284fdcdd2d07c91ca1f11e6a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fb5272284fdcdd2d07c91ca1f11e6a5">&#9670;&#160;</a></span>lit_40</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_40[] = &quot; Disk # ...... %d\n&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a171c58d6c5158363d44d5d0a49bd0550" name="a171c58d6c5158363d44d5d0a49bd0550"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a171c58d6c5158363d44d5d0a49bd0550">&#9670;&#160;</a></span>lit_41</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_41[] = &quot; Game ver .... %d\n&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa491d40b99c4ff89f9f92e6be60997ea" name="aa491d40b99c4ff89f9f92e6be60997ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa491d40b99c4ff89f9f92e6be60997ea">&#9670;&#160;</a></span>lit_42</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> char lit_42[] = &quot;OFF&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a159ff7c531e7550272d753a7c7fdcc2d" name="a159ff7c531e7550272d753a7c7fdcc2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a159ff7c531e7550272d753a7c7fdcc2d">&#9670;&#160;</a></span>lit_43</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> char lit_43[] = &quot;ON&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af1d905f3f4cf9c80aef54e681f18d6df" name="af1d905f3f4cf9c80aef54e681f18d6df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1d905f3f4cf9c80aef54e681f18d6df">&#9670;&#160;</a></span>lit_44</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_44[] = &quot; Streaming ... %s\n&quot;</td>
         </tr>
       </table>
   </td>

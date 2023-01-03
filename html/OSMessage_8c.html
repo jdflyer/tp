@@ -89,8 +89,6 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="OSMessage_8h_source.html">dolphin/os/OSMessage.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
-<code>#include &quot;asm/dolphin/os/OSMessage/OSSendMessage.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/os/OSMessage/OSReceiveMessage.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/os/OSMessage/OSJamMessage.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for OSMessage.c:</div>
@@ -105,10 +103,10 @@ $(function() {
 Functions</h2></td></tr>
 <tr class="memitem:a639ddb7e32c14ee0d7e149feed9ec698"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMessage_8c.html#a639ddb7e32c14ee0d7e149feed9ec698">OSInitMessageQueue</a> (<a class="el" href="structOSMessageQueue.html">OSMessageQueue</a> *mq, <a class="el" href="OSMessage_8h.html#a29207f9ff15a7a595a6aad5f8edd83c0">OSMessage</a> *msgArray, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> msgCount)</td></tr>
 <tr class="separator:a639ddb7e32c14ee0d7e149feed9ec698"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05667a9b8603cc58c05de793c1c1af1b"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMessage_8c.html#a05667a9b8603cc58c05de793c1c1af1b">OSSendMessage</a> (<a class="el" href="structOSMessageQueue.html">OSMessageQueue</a> *<a class="el" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>, <a class="el" href="OSMessage_8h.html#a29207f9ff15a7a595a6aad5f8edd83c0">OSMessage</a> msg, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> flags)</td></tr>
-<tr class="separator:a05667a9b8603cc58c05de793c1c1af1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a452f79dcd4388dccade177ab4f1a9221"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMessage_8c.html#a452f79dcd4388dccade177ab4f1a9221">OSReceiveMessage</a> (<a class="el" href="structOSMessageQueue.html">OSMessageQueue</a> *<a class="el" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>, <a class="el" href="OSMessage_8h.html#a29207f9ff15a7a595a6aad5f8edd83c0">OSMessage</a> *msg, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> flags)</td></tr>
-<tr class="separator:a452f79dcd4388dccade177ab4f1a9221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab68e61d804cc92f23bdf82199d649590"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMessage_8c.html#ab68e61d804cc92f23bdf82199d649590">OSSendMessage</a> (<a class="el" href="structOSMessageQueue.html">OSMessageQueue</a> *mq, <a class="el" href="OSMessage_8h.html#a29207f9ff15a7a595a6aad5f8edd83c0">OSMessage</a> msg, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> flags)</td></tr>
+<tr class="separator:ab68e61d804cc92f23bdf82199d649590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2cc365e30f6547f81084fc4feb32f16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMessage_8c.html#ab2cc365e30f6547f81084fc4feb32f16">OSReceiveMessage</a> (<a class="el" href="structOSMessageQueue.html">OSMessageQueue</a> *mq, <a class="el" href="OSMessage_8h.html#a29207f9ff15a7a595a6aad5f8edd83c0">OSMessage</a> *msg, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> flags)</td></tr>
+<tr class="separator:ab2cc365e30f6547f81084fc4feb32f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad377ea31d935e40d6f6e88fe76208134"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMessage_8c.html#ad377ea31d935e40d6f6e88fe76208134">OSJamMessage</a> (<a class="el" href="structOSMessageQueue.html">OSMessageQueue</a> *<a class="el" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>, <a class="el" href="OSMessage_8h.html#a29207f9ff15a7a595a6aad5f8edd83c0">OSMessage</a> msg, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> flags)</td></tr>
 <tr class="separator:ad377ea31d935e40d6f6e88fe76208134"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -181,17 +179,17 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a452f79dcd4388dccade177ab4f1a9221" name="a452f79dcd4388dccade177ab4f1a9221"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a452f79dcd4388dccade177ab4f1a9221">&#9670;&#160;</a></span>OSReceiveMessage()</h2>
+<a id="ab2cc365e30f6547f81084fc4feb32f16" name="ab2cc365e30f6547f81084fc4feb32f16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2cc365e30f6547f81084fc4feb32f16">&#9670;&#160;</a></span>OSReceiveMessage()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> OSReceiveMessage </td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> OSReceiveMessage </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structOSMessageQueue.html">OSMessageQueue</a> *&#160;</td>
-          <td class="paramname"><em>queue</em>, </td>
+          <td class="paramname"><em>mq</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -215,17 +213,17 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a05667a9b8603cc58c05de793c1c1af1b" name="a05667a9b8603cc58c05de793c1c1af1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05667a9b8603cc58c05de793c1c1af1b">&#9670;&#160;</a></span>OSSendMessage()</h2>
+<a id="ab68e61d804cc92f23bdf82199d649590" name="ab68e61d804cc92f23bdf82199d649590"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab68e61d804cc92f23bdf82199d649590">&#9670;&#160;</a></span>OSSendMessage()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> OSSendMessage </td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> OSSendMessage </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structOSMessageQueue.html">OSMessageQueue</a> *&#160;</td>
-          <td class="paramname"><em>queue</em>, </td>
+          <td class="paramname"><em>mq</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

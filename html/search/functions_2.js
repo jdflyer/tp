@@ -128,7 +128,7 @@ var searchData=
   ['blckconnect_5f_5f4cbgwfpuspii_125',['BlckConnect__4cBgWFPUsPii',['../d__bg__w_8cpp.html#a8614c653f5d97c0587d2590e96192065',1,'d_bg_w.cpp']]],
   ['blinkmove_126',['blinkMove',['../structdMenuMapCommon__c.html#a7d45460118fa46c3fe1729fedaf4fb69',1,'dMenuMapCommon_c::blinkMove(s16)'],['../structdMenuMapCommon__c.html#af0fc334c19ea5b9451f8d53233eb628c',1,'dMenuMapCommon_c::blinkMove(s16)']]],
   ['blinkmove_5f_5f16dmenumapcommon_5fcfs_127',['blinkMove__16dMenuMapCommon_cFs',['../d__menu__fmap2D_8cpp.html#a2176a3b4f140f7321bd84ebf97443192',1,'blinkMove__16dMenuMapCommon_cFs():&#160;d_menu_fmap2D.cpp'],['../d__menu__map__common_8cpp.html#a2176a3b4f140f7321bd84ebf97443192',1,'blinkMove__16dMenuMapCommon_cFs():&#160;d_menu_map_common.cpp']]],
-  ['blockreadcallback_128',['BlockReadCallback',['../CARDRdwr_8c.html#abffe941d31548534a46ceb5dfd0a90cd',1,'CARDRdwr.c']]],
+  ['blockreadcallback_128',['BlockReadCallback',['../CARDRdwr_8c.html#a5781820f54ce1235ccef0455b9976a4d',1,'CARDRdwr.c']]],
   ['blockwritecallback_129',['BlockWriteCallback',['../CARDRdwr_8c.html#a0ad32387ab9818fe4fde68953baae2b5',1,'CARDRdwr.c']]],
   ['blurecamera_130',['blureCamera',['../structdCamera__c.html#a6547e8bc821c2e998d406255515631ff',1,'dCamera_c']]],
   ['blurecamera_5f_5f9dcamera_5fcfv_131',['blureCamera__9dCamera_cFv',['../d__camera_8cpp.html#a1f110ccf71c8b0735e8eac71f1a770e2',1,'d_camera.cpp']]],

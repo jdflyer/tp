@@ -92,11 +92,8 @@ $(function() {
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SISamplingRate_8h_source.html">dolphin/si/SISamplingRate.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="vi_8h_source.html">dolphin/vi/vi.h</a>&quot;</code><br />
-<code>#include &quot;asm/dolphin/si/SIBios/CompleteTransfer.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/si/SIBios/SIInterruptHandler.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/si/SIBios/SIEnablePollingInterrupt.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/si/SIBios/SIRegisterPollingHandler.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/si/SIBios/SIUnregisterPollingHandler.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/si/SIBios/SIGetStatus.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/si/SIBios/SISetXY.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/si/SIBios/SIEnablePolling.s&quot;</code><br />
@@ -121,8 +118,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0e6ba4534d12da7b497c0e10dbe23fbc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a0e6ba4534d12da7b497c0e10dbe23fbc">CompleteTransfer</a> (void)</td></tr>
-<tr class="separator:a0e6ba4534d12da7b497c0e10dbe23fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f7c579b5be677a75ea5cf34f03fab89"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a5f7c579b5be677a75ea5cf34f03fab89">CompleteTransfer</a> (void)</td></tr>
+<tr class="separator:a5f7c579b5be677a75ea5cf34f03fab89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a495718dcdea4cd2f0aeb7aad48c752f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a495718dcdea4cd2f0aeb7aad48c752f6">__SITransfer</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, void *output, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> outputBytes, void *input, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> inputBytes, <a class="el" href="SIBios_8h.html#a8ede730d273d5d7fe6c7b726637dd387">SICallback</a> callback)</td></tr>
 <tr class="separator:a495718dcdea4cd2f0aeb7aad48c752f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af782b8657b2637bf66177b7327c74fe6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#af782b8657b2637bf66177b7327c74fe6">AlarmHandler</a> (<a class="el" href="structOSAlarm.html">OSAlarm</a> *alarm, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
@@ -143,10 +140,10 @@ Functions</h2></td></tr>
 <tr class="separator:a0de8d51ddfe728795ba211b629a38703"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58de98640d0d9f9078539c89bf98ffb3"><td class="memItemLeft" align="right" valign="top">static asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a58de98640d0d9f9078539c89bf98ffb3">SIEnablePollingInterrupt</a> (<a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> enable)</td></tr>
 <tr class="separator:a58de98640d0d9f9078539c89bf98ffb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d620d1a9a2f8d03cc39f9431b7bb021"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a1d620d1a9a2f8d03cc39f9431b7bb021">SIRegisterPollingHandler</a> (<a class="el" href="OSInterrupt_8h.html#aaf338797f75922de0f63e0ce14935954">OSInterruptHandler</a> handler)</td></tr>
-<tr class="separator:a1d620d1a9a2f8d03cc39f9431b7bb021"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee47945d06960d573fe140b3ce13079a"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#aee47945d06960d573fe140b3ce13079a">SIUnregisterPollingHandler</a> (<a class="el" href="OSInterrupt_8h.html#aaf338797f75922de0f63e0ce14935954">OSInterruptHandler</a> handler)</td></tr>
-<tr class="separator:aee47945d06960d573fe140b3ce13079a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21150018820b0471173db9a71da8346c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a21150018820b0471173db9a71da8346c">SIRegisterPollingHandler</a> (<a class="el" href="OSInterrupt_8h.html#aaf338797f75922de0f63e0ce14935954">OSInterruptHandler</a> handler)</td></tr>
+<tr class="separator:a21150018820b0471173db9a71da8346c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab354608d5797b4ad892e58bcbbe3aa93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#ab354608d5797b4ad892e58bcbbe3aa93">SIUnregisterPollingHandler</a> (<a class="el" href="OSInterrupt_8h.html#aaf338797f75922de0f63e0ce14935954">OSInterruptHandler</a> handler)</td></tr>
+<tr class="separator:ab354608d5797b4ad892e58bcbbe3aa93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5554df5c35e119f94fb6e8777bca1e8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a5554df5c35e119f94fb6e8777bca1e8d">SIInit</a> (void)</td></tr>
 <tr class="separator:a5554df5c35e119f94fb6e8777bca1e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbc2d596b5703c18797a8bb0a55c63cc"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#afbc2d596b5703c18797a8bb0a55c63cc">SIGetStatus</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan)</td></tr>
@@ -349,8 +346,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a0e6ba4534d12da7b497c0e10dbe23fbc" name="a0e6ba4534d12da7b497c0e10dbe23fbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e6ba4534d12da7b497c0e10dbe23fbc">&#9670;&#160;</a></span>CompleteTransfer()</h2>
+<a id="a5f7c579b5be677a75ea5cf34f03fab89" name="a5f7c579b5be677a75ea5cf34f03fab89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f7c579b5be677a75ea5cf34f03fab89">&#9670;&#160;</a></span>CompleteTransfer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -359,7 +356,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> CompleteTransfer </td>
+          <td class="memname">static <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> CompleteTransfer </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -712,14 +709,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a1d620d1a9a2f8d03cc39f9431b7bb021" name="a1d620d1a9a2f8d03cc39f9431b7bb021"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d620d1a9a2f8d03cc39f9431b7bb021">&#9670;&#160;</a></span>SIRegisterPollingHandler()</h2>
+<a id="a21150018820b0471173db9a71da8346c" name="a21150018820b0471173db9a71da8346c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21150018820b0471173db9a71da8346c">&#9670;&#160;</a></span>SIRegisterPollingHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> SIRegisterPollingHandler </td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> SIRegisterPollingHandler </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="OSInterrupt_8h.html#aaf338797f75922de0f63e0ce14935954">OSInterruptHandler</a>&#160;</td>
           <td class="paramname"><em>handler</em></td><td>)</td>
@@ -888,14 +885,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aee47945d06960d573fe140b3ce13079a" name="aee47945d06960d573fe140b3ce13079a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee47945d06960d573fe140b3ce13079a">&#9670;&#160;</a></span>SIUnregisterPollingHandler()</h2>
+<a id="ab354608d5797b4ad892e58bcbbe3aa93" name="ab354608d5797b4ad892e58bcbbe3aa93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab354608d5797b4ad892e58bcbbe3aa93">&#9670;&#160;</a></span>SIUnregisterPollingHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> SIUnregisterPollingHandler </td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> SIUnregisterPollingHandler </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="OSInterrupt_8h.html#aaf338797f75922de0f63e0ce14935954">OSInterruptHandler</a>&#160;</td>
           <td class="paramname"><em>handler</em></td><td>)</td>

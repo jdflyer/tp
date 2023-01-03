@@ -95,8 +95,6 @@ $(function() {
 <code>#include &quot;<a class="el" href="EXIBios_8h_source.html">dolphin/exi/EXIBios.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="CARDPriv_8h_source.html">dolphin/card/CARDPriv.h</a>&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDMount/DoMount.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/card/CARDMount/__CARDMountCallback.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/card/CARDMount/DoUnmount.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDMount/CARDUnmount.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for CARDMount.c:</div>
@@ -113,14 +111,14 @@ Functions</h2></td></tr>
 <tr class="separator:a893dc62d9a29667a3a03adbb82fe5ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85c9cd39fef24440a68199b450d62285"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDMount_8c.html#a85c9cd39fef24440a68199b450d62285">DoMount</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan)</td></tr>
 <tr class="separator:a85c9cd39fef24440a68199b450d62285"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ec486c923810bdaf1cd1f157c17afdb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDMount_8c.html#a6ec486c923810bdaf1cd1f157c17afdb">DoUnmount</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> result)</td></tr>
-<tr class="separator:a6ec486c923810bdaf1cd1f157c17afdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93b3f296f9087dea4ee27041724e6389"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDMount_8c.html#a93b3f296f9087dea4ee27041724e6389">DoUnmount</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> result)</td></tr>
+<tr class="separator:a93b3f296f9087dea4ee27041724e6389"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89c95613214573011d0d2e2501d04e4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDMount_8c.html#a89c95613214573011d0d2e2501d04e4a">CARDProbe</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan)</td></tr>
 <tr class="separator:a89c95613214573011d0d2e2501d04e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04f1fc1338a5e97c5460ba8b990b30dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDMount_8c.html#a04f1fc1338a5e97c5460ba8b990b30dc">CARDProbeEx</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> *memSize, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> *sectorSize)</td></tr>
 <tr class="separator:a04f1fc1338a5e97c5460ba8b990b30dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adeffe041fc26f7572938a43189d43d5f"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDMount_8c.html#adeffe041fc26f7572938a43189d43d5f">__CARDMountCallback</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> result)</td></tr>
-<tr class="separator:adeffe041fc26f7572938a43189d43d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6093d691781a5ff6f6c800ed787a1e14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDMount_8c.html#a6093d691781a5ff6f6c800ed787a1e14">__CARDMountCallback</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> result)</td></tr>
+<tr class="separator:a6093d691781a5ff6f6c800ed787a1e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabe7c2c323ab818e1b765c79e1e32efe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDMount_8c.html#aabe7c2c323ab818e1b765c79e1e32efe">CARDMountAsync</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, void *workArea, <a class="el" href="card_8h.html#a7e14558c66d616c768d3a6f73bd640a6">CARDCallback</a> detachCallback, <a class="el" href="card_8h.html#a7e14558c66d616c768d3a6f73bd640a6">CARDCallback</a> attachCallback)</td></tr>
 <tr class="separator:aabe7c2c323ab818e1b765c79e1e32efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a326af802275bf6ee03e44227c611d9cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDMount_8c.html#a326af802275bf6ee03e44227c611d9cd">CARDMount</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, void *workArea, <a class="el" href="card_8h.html#a7e14558c66d616c768d3a6f73bd640a6">CARDCallback</a> attachCb)</td></tr>
@@ -138,14 +136,14 @@ Variables</h2></td></tr>
 <tr class="separator:a2951b2ce31ab6eed46a92cd1ce14a2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="adeffe041fc26f7572938a43189d43d5f" name="adeffe041fc26f7572938a43189d43d5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adeffe041fc26f7572938a43189d43d5f">&#9670;&#160;</a></span>__CARDMountCallback()</h2>
+<a id="a6093d691781a5ff6f6c800ed787a1e14" name="a6093d691781a5ff6f6c800ed787a1e14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6093d691781a5ff6f6c800ed787a1e14">&#9670;&#160;</a></span>__CARDMountCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __CARDMountCallback </td>
+          <td class="memname">void __CARDMountCallback </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
           <td class="paramname"><em>chan</em>, </td>
@@ -336,8 +334,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a6ec486c923810bdaf1cd1f157c17afdb" name="a6ec486c923810bdaf1cd1f157c17afdb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ec486c923810bdaf1cd1f157c17afdb">&#9670;&#160;</a></span>DoUnmount()</h2>
+<a id="a93b3f296f9087dea4ee27041724e6389" name="a93b3f296f9087dea4ee27041724e6389"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93b3f296f9087dea4ee27041724e6389">&#9670;&#160;</a></span>DoUnmount()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -346,7 +344,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void DoUnmount </td>
+          <td class="memname">static void DoUnmount </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
           <td class="paramname"><em>chan</em>, </td>

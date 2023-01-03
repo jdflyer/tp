@@ -91,7 +91,6 @@ $(function() {
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OSError_8h_source.html">dolphin/os/OSError.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OSInterrupt_8h_source.html">dolphin/os/OSInterrupt.h</a>&quot;</code><br />
-<code>#include &quot;asm/dolphin/os/OSCache/LCStoreData.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/os/OSCache/L2GlobalInvalidate.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/os/OSCache/DMAErrorHandler.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/os/OSCache/__OSCacheInit.s&quot;</code><br />
@@ -156,8 +155,8 @@ Functions</h2></td></tr>
 <tr class="separator:a3f91db9430a43c76a31aa386000ca306"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a689b2c63c80586fa4e9a648640dc7292"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSCache_8c.html#a689b2c63c80586fa4e9a648640dc7292">LCStoreBlocks</a> (register void *destAddr, register void *srcAddr, register <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> blockNum)</td></tr>
 <tr class="separator:a689b2c63c80586fa4e9a648640dc7292"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42992b71ce3de712b8af6a7428701742"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSCache_8c.html#a42992b71ce3de712b8af6a7428701742">LCStoreData</a> (void *destAddr, void *srcAddr, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> nBytes)</td></tr>
-<tr class="separator:a42992b71ce3de712b8af6a7428701742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0855275ac50f3cdf7982d22f0b4b5a77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSCache_8c.html#a0855275ac50f3cdf7982d22f0b4b5a77">LCStoreData</a> (void *destAddr, void *srcAddr, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> nBytes)</td></tr>
+<tr class="separator:a0855275ac50f3cdf7982d22f0b4b5a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8820cb630bcd3a007368b0f9e166fb2a"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSCache_8c.html#a8820cb630bcd3a007368b0f9e166fb2a">LCQueueWait</a> (register <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> len)</td></tr>
 <tr class="separator:a8820cb630bcd3a007368b0f9e166fb2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d95f6d6e78efe55aa26cb93708f2aa3"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSCache_8c.html#a0d95f6d6e78efe55aa26cb93708f2aa3">L2GlobalInvalidate</a> (void)</td></tr>
@@ -676,14 +675,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a42992b71ce3de712b8af6a7428701742" name="a42992b71ce3de712b8af6a7428701742"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42992b71ce3de712b8af6a7428701742">&#9670;&#160;</a></span>LCStoreData()</h2>
+<a id="a0855275ac50f3cdf7982d22f0b4b5a77" name="a0855275ac50f3cdf7982d22f0b4b5a77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0855275ac50f3cdf7982d22f0b4b5a77">&#9670;&#160;</a></span>LCStoreData()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> LCStoreData </td>
+          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> LCStoreData </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>destAddr</em>, </td>

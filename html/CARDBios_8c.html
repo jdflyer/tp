@@ -94,22 +94,11 @@ $(function() {
 <code>#include &quot;<a class="el" href="dvd_8h_source.html">dolphin/dvd/dvd.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="EXIBios_8h_source.html">dolphin/exi/EXIBios.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="CARDPriv_8h_source.html">dolphin/card/CARDPriv.h</a>&quot;</code><br />
-<code>#include &quot;asm/dolphin/card/CARDBios/__CARDExtHandler.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/card/CARDBios/__CARDExiHandler.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/card/CARDBios/__CARDUnlockedHandler.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/card/CARDBios/__CARDEnableInterrupt.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/card/CARDBios/__CARDReadStatus.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDBios/__CARDReadVendorID.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/card/CARDBios/__CARDClearStatus.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/card/CARDBios/TimeoutHandler.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDBios/Retry.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/card/CARDBios/UnlockedCallback.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDBios/__CARDStart.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/card/CARDBios/__CARDReadSegment.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDBios/__CARDWritePage.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDBios/__CARDEraseSector.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/card/CARDBios/CARDInit.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/card/CARDBios/__CARDGetControlBlock.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDBios/__CARDPutControlBlock.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDBios/CARDFreeBlocks.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDBios/__CARDSync.s&quot;</code><br />
@@ -139,50 +128,50 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a0620bfe030de4beadfebb05f62509e09"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a0620bfe030de4beadfebb05f62509e09">OnReset</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>)</td></tr>
 <tr class="separator:a0620bfe030de4beadfebb05f62509e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73271d2051625594a06835f1d97f2fa6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a73271d2051625594a06835f1d97f2fa6">TimeoutHandler</a> (<a class="el" href="structOSAlarm.html">OSAlarm</a> *alarm, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
-<tr class="separator:a73271d2051625594a06835f1d97f2fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27d9c0504645b5c29e4bb369cf3a2da9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a27d9c0504645b5c29e4bb369cf3a2da9">TimeoutHandler</a> (<a class="el" href="structOSAlarm.html">OSAlarm</a> *alarm, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
+<tr class="separator:a27d9c0504645b5c29e4bb369cf3a2da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a9be985e4dd6438c1af66533231bda5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a1a9be985e4dd6438c1af66533231bda5">Retry</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan)</td></tr>
 <tr class="separator:a1a9be985e4dd6438c1af66533231bda5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10821ab9c01bd2e1916aaf8ce20a7526"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a10821ab9c01bd2e1916aaf8ce20a7526">UnlockedCallback</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> result)</td></tr>
-<tr class="separator:a10821ab9c01bd2e1916aaf8ce20a7526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a320b896ec0c77a154e2beddc895d8e1b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a320b896ec0c77a154e2beddc895d8e1b">UnlockedCallback</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> result)</td></tr>
+<tr class="separator:a320b896ec0c77a154e2beddc895d8e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaff55a1246da783bdc06d06c99ffa4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#adaff55a1246da783bdc06d06c99ffa4f">DSPInit</a> ()</td></tr>
 <tr class="separator:adaff55a1246da783bdc06d06c99ffa4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72f42c643a03e4272ace22690a74dc9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a72f42c643a03e4272ace22690a74dc9a">__CARDDefaultApiCallback</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> result)</td></tr>
 <tr class="separator:a72f42c643a03e4272ace22690a74dc9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf2b407fcb67e854c44739b8194fb134"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#acf2b407fcb67e854c44739b8194fb134">__CARDSyncCallback</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> result)</td></tr>
 <tr class="separator:acf2b407fcb67e854c44739b8194fb134"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9eb1a27906e83ff6efda9db71d087f6"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#af9eb1a27906e83ff6efda9db71d087f6">__CARDExtHandler</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
-<tr class="separator:af9eb1a27906e83ff6efda9db71d087f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fbb2e8ba711f1dfb61cfd6d3a639309"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a4fbb2e8ba711f1dfb61cfd6d3a639309">__CARDExiHandler</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
-<tr class="separator:a4fbb2e8ba711f1dfb61cfd6d3a639309"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6849cb848818ce84e7e8179feb4ff33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#aa6849cb848818ce84e7e8179feb4ff33">__CARDExtHandler</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
+<tr class="separator:aa6849cb848818ce84e7e8179feb4ff33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac52ef5ba24ac9e1b2e66066cc15d4569"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#ac52ef5ba24ac9e1b2e66066cc15d4569">__CARDExiHandler</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
+<tr class="separator:ac52ef5ba24ac9e1b2e66066cc15d4569"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9e1631358c73f50f0504198e42e0e94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#ab9e1631358c73f50f0504198e42e0e94">__CARDTxHandler</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
 <tr class="separator:ab9e1631358c73f50f0504198e42e0e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b44dd7051c014573cd7d0d0a608a955"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a4b44dd7051c014573cd7d0d0a608a955">__CARDUnlockedHandler</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
-<tr class="separator:a4b44dd7051c014573cd7d0d0a608a955"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8264efc62711832ef563ec9542e5ec7c"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a8264efc62711832ef563ec9542e5ec7c">__CARDEnableInterrupt</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> enable)</td></tr>
-<tr class="separator:a8264efc62711832ef563ec9542e5ec7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dc45e4ca353b88405f16d6c07fd1ad1"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a2dc45e4ca353b88405f16d6c07fd1ad1">__CARDReadStatus</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *<a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>)</td></tr>
-<tr class="separator:a2dc45e4ca353b88405f16d6c07fd1ad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a379d48dd4a6e83557d5906a0ad5858b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a379d48dd4a6e83557d5906a0ad5858b6">__CARDUnlockedHandler</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
+<tr class="separator:a379d48dd4a6e83557d5906a0ad5858b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ca9f0d4abb0feea0a7d5d5f91fabab2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a3ca9f0d4abb0feea0a7d5d5f91fabab2">__CARDEnableInterrupt</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> enable)</td></tr>
+<tr class="separator:a3ca9f0d4abb0feea0a7d5d5f91fabab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3459bbb51aa1f4ca2f3e800b68ca454"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#ab3459bbb51aa1f4ca2f3e800b68ca454">__CARDReadStatus</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *<a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>)</td></tr>
+<tr class="separator:ab3459bbb51aa1f4ca2f3e800b68ca454"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59e697dbc69897c08c2c9ec919f05f2f"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a59e697dbc69897c08c2c9ec919f05f2f">__CARDReadVendorID</a> ()</td></tr>
 <tr class="separator:a59e697dbc69897c08c2c9ec919f05f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dd9b8dec2ac2589812713de9344d591"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a7dd9b8dec2ac2589812713de9344d591">__CARDClearStatus</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan)</td></tr>
-<tr class="separator:a7dd9b8dec2ac2589812713de9344d591"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a246bb771fbbfe585a04f831c524af0e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a246bb771fbbfe585a04f831c524af0e4">__CARDClearStatus</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan)</td></tr>
+<tr class="separator:a246bb771fbbfe585a04f831c524af0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e37e46859aef8f71c75384554cd9d34"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a8e37e46859aef8f71c75384554cd9d34">__CARDStart</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="card_8h.html#a7e14558c66d616c768d3a6f73bd640a6">CARDCallback</a> txCallback, <a class="el" href="card_8h.html#a7e14558c66d616c768d3a6f73bd640a6">CARDCallback</a> exiCallback)</td></tr>
 <tr class="separator:a8e37e46859aef8f71c75384554cd9d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6faf9a96d9b7c596072fda2e13764196"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a6faf9a96d9b7c596072fda2e13764196">__CARDReadSegment</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="card_8h.html#a7e14558c66d616c768d3a6f73bd640a6">CARDCallback</a> callback)</td></tr>
-<tr class="separator:a6faf9a96d9b7c596072fda2e13764196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a129a537656b956fc3fe995c2ec3bc807"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a129a537656b956fc3fe995c2ec3bc807">__CARDReadSegment</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="card_8h.html#a7e14558c66d616c768d3a6f73bd640a6">CARDCallback</a> callback)</td></tr>
+<tr class="separator:a129a537656b956fc3fe995c2ec3bc807"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a966df5171d19dc3ed4c8926409d4c15b"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a966df5171d19dc3ed4c8926409d4c15b">__CARDWritePage</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="card_8h.html#a7e14558c66d616c768d3a6f73bd640a6">CARDCallback</a> callback)</td></tr>
 <tr class="separator:a966df5171d19dc3ed4c8926409d4c15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29bffa6eff4dfd9b97c74affd1cd4f85"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a29bffa6eff4dfd9b97c74affd1cd4f85">__CARDEraseSector</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> addr, <a class="el" href="card_8h.html#a7e14558c66d616c768d3a6f73bd640a6">CARDCallback</a> callback)</td></tr>
 <tr class="separator:a29bffa6eff4dfd9b97c74affd1cd4f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54a25f7cd2ff5227e7c8b07bdafb8b47"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a54a25f7cd2ff5227e7c8b07bdafb8b47">CARDInit</a> (void)</td></tr>
-<tr class="separator:a54a25f7cd2ff5227e7c8b07bdafb8b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0373f746bf885bf1a12f665790c1a215"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a0373f746bf885bf1a12f665790c1a215">CARDInit</a> (void)</td></tr>
+<tr class="separator:a0373f746bf885bf1a12f665790c1a215"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c880444c5b3264af248362f57818f38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a0c880444c5b3264af248362f57818f38">__CARDGetFontEncode</a> (void)</td></tr>
 <tr class="separator:a0c880444c5b3264af248362f57818f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bd2f7d3786a0c4b139756746318a5e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a1bd2f7d3786a0c4b139756746318a5e5">__CARDSetDiskID</a> (const <a class="el" href="structDVDDiskID.html">DVDDiskID</a> *<a class="el" href="d__a__npc__cd_8cpp.html#ab7710104fe587e0c8b4be67c675f3e0c">id</a>)</td></tr>
 <tr class="separator:a1bd2f7d3786a0c4b139756746318a5e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4786f7911394b393c7467240b96e19bd"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a4786f7911394b393c7467240b96e19bd">__CARDGetControlBlock</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="structCARDControl.html">CARDControl</a> **pcard)</td></tr>
-<tr class="separator:a4786f7911394b393c7467240b96e19bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5f0a1a1cb2541b7d7c6686b81e052c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#ab5f0a1a1cb2541b7d7c6686b81e052c2">__CARDGetControlBlock</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="structCARDControl.html">CARDControl</a> **pcard)</td></tr>
+<tr class="separator:ab5f0a1a1cb2541b7d7c6686b81e052c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fb92b9eb6f2237018fc5010e7889d9f"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a8fb92b9eb6f2237018fc5010e7889d9f">__CARDPutControlBlock</a> (<a class="el" href="structCARDControl.html">CARDControl</a> *card, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> result)</td></tr>
 <tr class="separator:a8fb92b9eb6f2237018fc5010e7889d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e7b70c3aa3744a6fc6b31249abe3368"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDBios_8c.html#a0e7b70c3aa3744a6fc6b31249abe3368">CARDFreeBlocks</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> *byteNotUsed, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> *filesNotUsed)</td></tr>
@@ -301,14 +290,14 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a7dd9b8dec2ac2589812713de9344d591" name="a7dd9b8dec2ac2589812713de9344d591"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7dd9b8dec2ac2589812713de9344d591">&#9670;&#160;</a></span>__CARDClearStatus()</h2>
+<a id="a246bb771fbbfe585a04f831c524af0e4" name="a246bb771fbbfe585a04f831c524af0e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a246bb771fbbfe585a04f831c524af0e4">&#9670;&#160;</a></span>__CARDClearStatus()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDClearStatus </td>
+          <td class="memname"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDClearStatus </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
           <td class="paramname"><em>chan</em></td><td>)</td>
@@ -347,14 +336,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a8264efc62711832ef563ec9542e5ec7c" name="a8264efc62711832ef563ec9542e5ec7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8264efc62711832ef563ec9542e5ec7c">&#9670;&#160;</a></span>__CARDEnableInterrupt()</h2>
+<a id="a3ca9f0d4abb0feea0a7d5d5f91fabab2" name="a3ca9f0d4abb0feea0a7d5d5f91fabab2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ca9f0d4abb0feea0a7d5d5f91fabab2">&#9670;&#160;</a></span>__CARDEnableInterrupt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDEnableInterrupt </td>
+          <td class="memname"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDEnableInterrupt </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
           <td class="paramname"><em>chan</em>, </td>
@@ -409,14 +398,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4fbb2e8ba711f1dfb61cfd6d3a639309" name="a4fbb2e8ba711f1dfb61cfd6d3a639309"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fbb2e8ba711f1dfb61cfd6d3a639309">&#9670;&#160;</a></span>__CARDExiHandler()</h2>
+<a id="ac52ef5ba24ac9e1b2e66066cc15d4569" name="ac52ef5ba24ac9e1b2e66066cc15d4569"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac52ef5ba24ac9e1b2e66066cc15d4569">&#9670;&#160;</a></span>__CARDExiHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __CARDExiHandler </td>
+          <td class="memname">void __CARDExiHandler </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
           <td class="paramname"><em>chan</em>, </td>
@@ -437,14 +426,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="af9eb1a27906e83ff6efda9db71d087f6" name="af9eb1a27906e83ff6efda9db71d087f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9eb1a27906e83ff6efda9db71d087f6">&#9670;&#160;</a></span>__CARDExtHandler()</h2>
+<a id="aa6849cb848818ce84e7e8179feb4ff33" name="aa6849cb848818ce84e7e8179feb4ff33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6849cb848818ce84e7e8179feb4ff33">&#9670;&#160;</a></span>__CARDExtHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __CARDExtHandler </td>
+          <td class="memname">void __CARDExtHandler </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
           <td class="paramname"><em>chan</em>, </td>
@@ -465,14 +454,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4786f7911394b393c7467240b96e19bd" name="a4786f7911394b393c7467240b96e19bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4786f7911394b393c7467240b96e19bd">&#9670;&#160;</a></span>__CARDGetControlBlock()</h2>
+<a id="ab5f0a1a1cb2541b7d7c6686b81e052c2" name="ab5f0a1a1cb2541b7d7c6686b81e052c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5f0a1a1cb2541b7d7c6686b81e052c2">&#9670;&#160;</a></span>__CARDGetControlBlock()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDGetControlBlock </td>
+          <td class="memname"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDGetControlBlock </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
           <td class="paramname"><em>chan</em>, </td>
@@ -539,14 +528,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a6faf9a96d9b7c596072fda2e13764196" name="a6faf9a96d9b7c596072fda2e13764196"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6faf9a96d9b7c596072fda2e13764196">&#9670;&#160;</a></span>__CARDReadSegment()</h2>
+<a id="a129a537656b956fc3fe995c2ec3bc807" name="a129a537656b956fc3fe995c2ec3bc807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a129a537656b956fc3fe995c2ec3bc807">&#9670;&#160;</a></span>__CARDReadSegment()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDReadSegment </td>
+          <td class="memname"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDReadSegment </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
           <td class="paramname"><em>chan</em>, </td>
@@ -567,14 +556,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a2dc45e4ca353b88405f16d6c07fd1ad1" name="a2dc45e4ca353b88405f16d6c07fd1ad1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2dc45e4ca353b88405f16d6c07fd1ad1">&#9670;&#160;</a></span>__CARDReadStatus()</h2>
+<a id="ab3459bbb51aa1f4ca2f3e800b68ca454" name="ab3459bbb51aa1f4ca2f3e800b68ca454"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3459bbb51aa1f4ca2f3e800b68ca454">&#9670;&#160;</a></span>__CARDReadStatus()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDReadStatus </td>
+          <td class="memname"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDReadStatus </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
           <td class="paramname"><em>chan</em>, </td>
@@ -738,14 +727,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4b44dd7051c014573cd7d0d0a608a955" name="a4b44dd7051c014573cd7d0d0a608a955"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b44dd7051c014573cd7d0d0a608a955">&#9670;&#160;</a></span>__CARDUnlockedHandler()</h2>
+<a id="a379d48dd4a6e83557d5906a0ad5858b6" name="a379d48dd4a6e83557d5906a0ad5858b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a379d48dd4a6e83557d5906a0ad5858b6">&#9670;&#160;</a></span>__CARDUnlockedHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __CARDUnlockedHandler </td>
+          <td class="memname">void __CARDUnlockedHandler </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
           <td class="paramname"><em>chan</em>, </td>
@@ -846,14 +835,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a54a25f7cd2ff5227e7c8b07bdafb8b47" name="a54a25f7cd2ff5227e7c8b07bdafb8b47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54a25f7cd2ff5227e7c8b07bdafb8b47">&#9670;&#160;</a></span>CARDInit()</h2>
+<a id="a0373f746bf885bf1a12f665790c1a215" name="a0373f746bf885bf1a12f665790c1a215"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0373f746bf885bf1a12f665790c1a215">&#9670;&#160;</a></span>CARDInit()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void CARDInit </td>
+          <td class="memname">void CARDInit </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -933,8 +922,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a73271d2051625594a06835f1d97f2fa6" name="a73271d2051625594a06835f1d97f2fa6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73271d2051625594a06835f1d97f2fa6">&#9670;&#160;</a></span>TimeoutHandler()</h2>
+<a id="a27d9c0504645b5c29e4bb369cf3a2da9" name="a27d9c0504645b5c29e4bb369cf3a2da9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27d9c0504645b5c29e4bb369cf3a2da9">&#9670;&#160;</a></span>TimeoutHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -943,7 +932,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void TimeoutHandler </td>
+          <td class="memname">static void TimeoutHandler </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structOSAlarm.html">OSAlarm</a> *&#160;</td>
           <td class="paramname"><em>alarm</em>, </td>
@@ -969,8 +958,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a10821ab9c01bd2e1916aaf8ce20a7526" name="a10821ab9c01bd2e1916aaf8ce20a7526"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10821ab9c01bd2e1916aaf8ce20a7526">&#9670;&#160;</a></span>UnlockedCallback()</h2>
+<a id="a320b896ec0c77a154e2beddc895d8e1b" name="a320b896ec0c77a154e2beddc895d8e1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a320b896ec0c77a154e2beddc895d8e1b">&#9670;&#160;</a></span>UnlockedCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -979,7 +968,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void UnlockedCallback </td>
+          <td class="memname">static void UnlockedCallback </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
           <td class="paramname"><em>chan</em>, </td>
@@ -1149,7 +1138,7 @@ Variables</h2></td></tr>
 <div class="line">    <a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    <a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aCARDBios_8c_html_a0620bfe030de4beadfebb05f62509e09"><div class="ttname"><a href="CARDBios_8c.html#a0620bfe030de4beadfebb05f62509e09">OnReset</a></div><div class="ttdeci">static s32 OnReset(s32)</div><div class="ttdef"><b>Definition:</b> CARDBios.c:643</div></div>
+<div class="ttc" id="aCARDBios_8c_html_a0620bfe030de4beadfebb05f62509e09"><div class="ttname"><a href="CARDBios_8c.html#a0620bfe030de4beadfebb05f62509e09">OnReset</a></div><div class="ttdeci">static s32 OnReset(s32)</div><div class="ttdef"><b>Definition:</b> CARDBios.c:511</div></div>
 <div class="ttc" id="atypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> types.h:34</div></div>
 </div><!-- fragment -->
 </div>

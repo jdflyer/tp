@@ -91,8 +91,6 @@ $(function() {
 <code>#include &quot;<a class="el" href="Padclamp_8h_source.html">dolphin/pad/Padclamp.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;asm/dolphin/pad/Padclamp/ClampCircle.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/pad/Padclamp/PADClamp.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/pad/Padclamp/PADClampCircle.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for Padclamp.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -110,10 +108,10 @@ Functions</h2></td></tr>
 <tr class="separator:ab1f320887d93201fcbe6175d238b3d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f5e5feb6a20d1122bd6bf8c4e866051"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Padclamp_8c.html#a9f5e5feb6a20d1122bd6bf8c4e866051">ClampTrigger</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *trigger, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="f__op__actor__mng_8cpp.html#ad1ba4aa382f91a401c20f286ad9b51e3">min</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="f__op__actor__mng_8cpp.html#a05562b462f621ba109ae33c766b51a83">max</a>)</td></tr>
 <tr class="separator:a9f5e5feb6a20d1122bd6bf8c4e866051"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a580e8c47780397a60c8bcc19cf540906"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Padclamp_8c.html#a580e8c47780397a60c8bcc19cf540906">PADClamp</a> (<a class="el" href="structPADStatus.html">PADStatus</a> *<a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>)</td></tr>
-<tr class="separator:a580e8c47780397a60c8bcc19cf540906"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab155ec392902c4a2d07efbdbfe85b63a"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Padclamp_8c.html#ab155ec392902c4a2d07efbdbfe85b63a">PADClampCircle</a> (<a class="el" href="structPADStatus.html">PADStatus</a> *<a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>)</td></tr>
-<tr class="separator:ab155ec392902c4a2d07efbdbfe85b63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abebde887f3eb6f0f6d68549267ef5768"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Padclamp_8c.html#abebde887f3eb6f0f6d68549267ef5768">PADClamp</a> (<a class="el" href="structPADStatus.html">PADStatus</a> *<a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>)</td></tr>
+<tr class="separator:abebde887f3eb6f0f6d68549267ef5768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5f59ba84c9d0a0141f4d57e922bf7a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Padclamp_8c.html#aa5f59ba84c9d0a0141f4d57e922bf7a0">PADClampCircle</a> (<a class="el" href="structPADStatus.html">PADStatus</a> *<a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>)</td></tr>
+<tr class="separator:aa5f59ba84c9d0a0141f4d57e922bf7a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -273,14 +271,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a580e8c47780397a60c8bcc19cf540906" name="a580e8c47780397a60c8bcc19cf540906"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a580e8c47780397a60c8bcc19cf540906">&#9670;&#160;</a></span>PADClamp()</h2>
+<a id="abebde887f3eb6f0f6d68549267ef5768" name="abebde887f3eb6f0f6d68549267ef5768"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abebde887f3eb6f0f6d68549267ef5768">&#9670;&#160;</a></span>PADClamp()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void PADClamp </td>
+          <td class="memname">void PADClamp </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structPADStatus.html">PADStatus</a> *&#160;</td>
           <td class="paramname"><em>status</em></td><td>)</td>
@@ -291,14 +289,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ab155ec392902c4a2d07efbdbfe85b63a" name="ab155ec392902c4a2d07efbdbfe85b63a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab155ec392902c4a2d07efbdbfe85b63a">&#9670;&#160;</a></span>PADClampCircle()</h2>
+<a id="aa5f59ba84c9d0a0141f4d57e922bf7a0" name="aa5f59ba84c9d0a0141f4d57e922bf7a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5f59ba84c9d0a0141f4d57e922bf7a0">&#9670;&#160;</a></span>PADClampCircle()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void PADClampCircle </td>
+          <td class="memname">void PADClampCircle </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structPADStatus.html">PADStatus</a> *&#160;</td>
           <td class="paramname"><em>status</em></td><td>)</td>

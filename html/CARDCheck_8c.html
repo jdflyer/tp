@@ -96,7 +96,6 @@ $(function() {
 <code>#include &quot;asm/dolphin/card/CARDCheck/VerifyID.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDCheck/VerifyDir.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDCheck/VerifyFAT.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/card/CARDCheck/__CARDVerify.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/card/CARDCheck/CARDCheckExAsync.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for CARDCheck.c:</div>
@@ -119,8 +118,8 @@ Functions</h2></td></tr>
 <tr class="separator:aa5b4aa76f42394b791a0e22770be79fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c9cfd1362e6ba6a881e64f4a97072c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDCheck_8c.html#a5c9cfd1362e6ba6a881e64f4a97072c6">__CARDCheckSum</a> (void *ptr, int length, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> *checksum, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> *checksumInv)</td></tr>
 <tr class="separator:a5c9cfd1362e6ba6a881e64f4a97072c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ba91112947e372c7e4485f93daf99bc"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDCheck_8c.html#a1ba91112947e372c7e4485f93daf99bc">__CARDVerify</a> (<a class="el" href="structCARDControl.html">CARDControl</a> *card)</td></tr>
-<tr class="separator:a1ba91112947e372c7e4485f93daf99bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89342b0725b80cd452ac6b989adf16ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDCheck_8c.html#a89342b0725b80cd452ac6b989adf16ad">__CARDVerify</a> (<a class="el" href="structCARDControl.html">CARDControl</a> *card)</td></tr>
+<tr class="separator:a89342b0725b80cd452ac6b989adf16ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0294c235c95c5e4539a4423cf419ed1f"><td class="memItemLeft" align="right" valign="top">static asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDCheck_8c.html#a0294c235c95c5e4539a4423cf419ed1f">CARDCheckExAsync</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> *xferBytes, <a class="el" href="card_8h.html#a7e14558c66d616c768d3a6f73bd640a6">CARDCallback</a> callback)</td></tr>
 <tr class="separator:a0294c235c95c5e4539a4423cf419ed1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57531f4d5e2f1fe600ac390d46d1983b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDCheck_8c.html#a57531f4d5e2f1fe600ac390d46d1983b">CARDCheck</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan)</td></tr>
@@ -167,14 +166,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1ba91112947e372c7e4485f93daf99bc" name="a1ba91112947e372c7e4485f93daf99bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ba91112947e372c7e4485f93daf99bc">&#9670;&#160;</a></span>__CARDVerify()</h2>
+<a id="a89342b0725b80cd452ac6b989adf16ad" name="a89342b0725b80cd452ac6b989adf16ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89342b0725b80cd452ac6b989adf16ad">&#9670;&#160;</a></span>__CARDVerify()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDVerify </td>
+          <td class="memname"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDVerify </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structCARDControl.html">CARDControl</a> *&#160;</td>
           <td class="paramname"><em>card</em></td><td>)</td>

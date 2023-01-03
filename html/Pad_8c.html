@@ -93,9 +93,6 @@ $(function() {
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SIBios_8h_source.html">dolphin/si/SIBios.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SISamplingRate_8h_source.html">dolphin/si/SISamplingRate.h</a>&quot;</code><br />
-<code>#include &quot;asm/dolphin/pad/Pad/PADOriginUpdateCallback.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/pad/Pad/PADProbeCallback.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/pad/Pad/PADTypeAndStatusCallback.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/pad/Pad/PADReceiveCheckCallback.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/pad/Pad/PADReset.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/pad/Pad/PADRecalibrate.s&quot;</code><br />
@@ -147,12 +144,12 @@ Functions</h2></td></tr>
 <tr class="separator:a75648e687c5aa7290d2bcc6b0bff947d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac80dfdce1609d7a1f39a43083506a63e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#ac80dfdce1609d7a1f39a43083506a63e">PADDisable</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan)</td></tr>
 <tr class="separator:ac80dfdce1609d7a1f39a43083506a63e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3209c91fb6f9b45ac133b4874d20b3a"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#ae3209c91fb6f9b45ac133b4874d20b3a">PADOriginUpdateCallback</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> error, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
-<tr class="separator:ae3209c91fb6f9b45ac133b4874d20b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4b06b081d4baeb95fbbf5f403aed596"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#ac4b06b081d4baeb95fbbf5f403aed596">PADProbeCallback</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> error, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
-<tr class="separator:ac4b06b081d4baeb95fbbf5f403aed596"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a324205a43f95c2a0355e959946f1e23a"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#a324205a43f95c2a0355e959946f1e23a">PADTypeAndStatusCallback</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> type)</td></tr>
-<tr class="separator:a324205a43f95c2a0355e959946f1e23a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2704a144bfa7a5736a1616c27684cc9a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#a2704a144bfa7a5736a1616c27684cc9a">PADOriginUpdateCallback</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> error, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
+<tr class="separator:a2704a144bfa7a5736a1616c27684cc9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25b8efe5e23633958ccac23821db2c63"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#a25b8efe5e23633958ccac23821db2c63">PADProbeCallback</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> error, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
+<tr class="separator:a25b8efe5e23633958ccac23821db2c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eeeae69469801257e5b26e6d0f8e77b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#a9eeeae69469801257e5b26e6d0f8e77b">PADTypeAndStatusCallback</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> type)</td></tr>
+<tr class="separator:a9eeeae69469801257e5b26e6d0f8e77b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e036a154606ace8adbedea4ec7ef714"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#a7e036a154606ace8adbedea4ec7ef714">PADReceiveCheckCallback</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> type)</td></tr>
 <tr class="separator:a7e036a154606ace8adbedea4ec7ef714"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f11a23752ece5967324527d12eee558"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#a2f11a23752ece5967324527d12eee558">PADReset</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> mask)</td></tr>
@@ -589,8 +586,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae3209c91fb6f9b45ac133b4874d20b3a" name="ae3209c91fb6f9b45ac133b4874d20b3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3209c91fb6f9b45ac133b4874d20b3a">&#9670;&#160;</a></span>PADOriginUpdateCallback()</h2>
+<a id="a2704a144bfa7a5736a1616c27684cc9a" name="a2704a144bfa7a5736a1616c27684cc9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2704a144bfa7a5736a1616c27684cc9a">&#9670;&#160;</a></span>PADOriginUpdateCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -599,7 +596,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void PADOriginUpdateCallback </td>
+          <td class="memname">static void PADOriginUpdateCallback </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
           <td class="paramname"><em>chan</em>, </td>
@@ -631,8 +628,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac4b06b081d4baeb95fbbf5f403aed596" name="ac4b06b081d4baeb95fbbf5f403aed596"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4b06b081d4baeb95fbbf5f403aed596">&#9670;&#160;</a></span>PADProbeCallback()</h2>
+<a id="a25b8efe5e23633958ccac23821db2c63" name="a25b8efe5e23633958ccac23821db2c63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25b8efe5e23633958ccac23821db2c63">&#9670;&#160;</a></span>PADProbeCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -641,7 +638,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void PADProbeCallback </td>
+          <td class="memname">static void PADProbeCallback </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
           <td class="paramname"><em>chan</em>, </td>
@@ -851,8 +848,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a324205a43f95c2a0355e959946f1e23a" name="a324205a43f95c2a0355e959946f1e23a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a324205a43f95c2a0355e959946f1e23a">&#9670;&#160;</a></span>PADTypeAndStatusCallback()</h2>
+<a id="a9eeeae69469801257e5b26e6d0f8e77b" name="a9eeeae69469801257e5b26e6d0f8e77b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9eeeae69469801257e5b26e6d0f8e77b">&#9670;&#160;</a></span>PADTypeAndStatusCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -861,7 +858,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void PADTypeAndStatusCallback </td>
+          <td class="memname">static void PADTypeAndStatusCallback </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
           <td class="paramname"><em>chan</em>, </td>
@@ -1479,7 +1476,7 @@ Variables</h2></td></tr>
 <div class="line">    <a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    <a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aPad_8c_html_a0f8bd96edf66a43aa51282191beedf1b"><div class="ttname"><a href="Pad_8c.html#a0f8bd96edf66a43aa51282191beedf1b">OnReset</a></div><div class="ttdeci">static s32 OnReset(s32 final)</div><div class="ttdef"><b>Definition:</b> Pad.c:816</div></div>
+<div class="ttc" id="aPad_8c_html_a0f8bd96edf66a43aa51282191beedf1b"><div class="ttname"><a href="Pad_8c.html#a0f8bd96edf66a43aa51282191beedf1b">OnReset</a></div><div class="ttdeci">static s32 OnReset(s32 final)</div><div class="ttdef"><b>Definition:</b> Pad.c:780</div></div>
 <div class="ttc" id="atypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> types.h:34</div></div>
 </div><!-- fragment -->
 </div>

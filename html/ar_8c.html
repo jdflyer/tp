@@ -95,7 +95,6 @@ $(function() {
 <code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
 <code>#include &quot;asm/dolphin/ar/ar/ARRegisterDMACallback.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/ar/ar/ARGetDMAStatus.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/ar/ar/ARStartDMA.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/ar/ar/ARAlloc.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/ar/ar/ARInit.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/ar/ar/__ARClearInterrupt.s&quot;</code><br />
@@ -124,8 +123,8 @@ Functions</h2></td></tr>
 <tr class="separator:a783e4f62b834021461dea16fa4dd89bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7575fca4c0d571a7ce0f9fe1d3add28"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ar_8c.html#ae7575fca4c0d571a7ce0f9fe1d3add28">ARGetDMAStatus</a> (void)</td></tr>
 <tr class="separator:ae7575fca4c0d571a7ce0f9fe1d3add28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a462e14a60b7fc88b24641937808a5727"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ar_8c.html#a462e14a60b7fc88b24641937808a5727">ARStartDMA</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> type, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> mainmem_addr, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> aram_addr, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> length)</td></tr>
-<tr class="separator:a462e14a60b7fc88b24641937808a5727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75359f3ed5d9c6e2c688e2e44a2a87e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ar_8c.html#a75359f3ed5d9c6e2c688e2e44a2a87e5">ARStartDMA</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> type, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> mainmem_addr, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> aram_addr, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> length)</td></tr>
+<tr class="separator:a75359f3ed5d9c6e2c688e2e44a2a87e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82dfe14ac7ba2e74222596c72e046ff4"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ar_8c.html#a82dfe14ac7ba2e74222596c72e046ff4">ARAlloc</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> length)</td></tr>
 <tr class="separator:a82dfe14ac7ba2e74222596c72e046ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fba55932fb7290a5438c998b4f68c84"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ar_8c.html#a9fba55932fb7290a5438c998b4f68c84">ARInit</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> *stack_index_addr, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> num_entries)</td></tr>
@@ -336,14 +335,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a462e14a60b7fc88b24641937808a5727" name="a462e14a60b7fc88b24641937808a5727"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a462e14a60b7fc88b24641937808a5727">&#9670;&#160;</a></span>ARStartDMA()</h2>
+<a id="a75359f3ed5d9c6e2c688e2e44a2a87e5" name="a75359f3ed5d9c6e2c688e2e44a2a87e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75359f3ed5d9c6e2c688e2e44a2a87e5">&#9670;&#160;</a></span>ARStartDMA()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void ARStartDMA </td>
+          <td class="memname">void ARStartDMA </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
