@@ -90,28 +90,15 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="d__s__room_8h_source.html">d/s/d_s_room.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__com__inf__game_8h_source.html">d/com/d_com_inf_game.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__procname_8h_source.html">d/d_procname.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__s__play_8h_source.html">d/s/d_s_play.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="f__op__scene_8h_source.html">f_op/f_op_scene.h</a>&quot;</code><br />
 <code>#include &quot;asm/d/s/d_s_room/getResetArchiveBank__FiPPCUc.s&quot;</code><br />
-<code>#include &quot;asm/d/s/d_s_room/resetArchiveBank__Fi.s&quot;</code><br />
 <code>#include &quot;asm/d/s/d_s_room/setArchiveBank__Fi.s&quot;</code><br />
-<code>#include &quot;asm/d/s/d_s_room/objectDeleteJugge__FPvPv.s&quot;</code><br />
-<code>#include &quot;asm/d/s/d_s_room/deleteJugge__FPvPv.s&quot;</code><br />
 <code>#include &quot;asm/d/s/d_s_room/isCreatingCallback__FP10create_tagPUi.s&quot;</code><br />
-<code>#include &quot;asm/d/s/d_s_room/isCreating__FUi.s&quot;</code><br />
 <code>#include &quot;asm/d/s/d_s_room/loadDemoArchive__Fi.s&quot;</code><br />
-<code>#include &quot;asm/d/s/d_s_room/objectSetCheck__FP19room_of_scene_class.s&quot;</code><br />
 <code>#include &quot;asm/d/s/d_s_room/dScnRoom_Execute__FP19room_of_scene_class.s&quot;</code><br />
-<code>#include &quot;asm/d/s/d_s_room/isReadRoom__Fi.s&quot;</code><br />
-<code>#include &quot;asm/d/s/d_s_room/dScnRoom_Delete__FP19room_of_scene_class.s&quot;</code><br />
-<code>#include &quot;asm/d/s/d_s_room/phase_0__FP19room_of_scene_class.s&quot;</code><br />
-<code>#include &quot;asm/d/s/d_s_room/phase_1__FP19room_of_scene_class.s&quot;</code><br />
-<code>#include &quot;asm/d/s/d_s_room/phase_2__FP19room_of_scene_class.s&quot;</code><br />
-<code>#include &quot;asm/d/s/d_s_room/setZoneNo__20dStage_roomControl_cFii.s&quot;</code><br />
-<code>#include &quot;asm/d/s/d_s_room/phase_3__FP19room_of_scene_class.s&quot;</code><br />
-<code>#include &quot;asm/d/s/d_s_room/phase_4__FP19room_of_scene_class.s&quot;</code><br />
-<code>#include &quot;asm/d/s/d_s_room/dScnRoom_Create__FP11scene_class.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for d_s_room.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -128,6 +115,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ad8fd38a614824afb7b8f0de393423e61"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#ad8fd38a614824afb7b8f0de393423e61">resetArchiveBank</a> (int param_0)</td></tr>
+<tr class="separator:ad8fd38a614824afb7b8f0de393423e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5fed7827fc895bdad9cdcb203cd9f46"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#ac5fed7827fc895bdad9cdcb203cd9f46">setArchiveBank</a> (int param_0)</td></tr>
+<tr class="separator:ac5fed7827fc895bdad9cdcb203cd9f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9938051429a6f026ccc08e5a9085161"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#ad9938051429a6f026ccc08e5a9085161">dScnRoom_Draw__FP19room_of_scene_class</a> ()</td></tr>
 <tr class="separator:ad9938051429a6f026ccc08e5a9085161"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e44acb2fa763472b22c55a49dbc0b3c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a9e44acb2fa763472b22c55a49dbc0b3c">getResetArchiveBank__FiPPCUc</a> ()</td></tr>
@@ -256,48 +247,46 @@ Functions</h2></td></tr>
 <tr class="separator:a3f61243ebf5cbb2ff90548d397b16772"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abed5bd59c54272a132a5b4da4beff66d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#abed5bd59c54272a132a5b4da4beff66d">_restgpr_29</a> ()</td></tr>
 <tr class="separator:abed5bd59c54272a132a5b4da4beff66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acda998109edeb2af7ae6711ec8e5bfb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#acda998109edeb2af7ae6711ec8e5bfb1">strnicmp</a> ()</td></tr>
-<tr class="separator:acda998109edeb2af7ae6711ec8e5bfb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8794ca6f41707157887df23c80602bb0"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a8794ca6f41707157887df23c80602bb0">dScnRoom_Draw</a> (<a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *param_0)</td></tr>
-<tr class="separator:a8794ca6f41707157887df23c80602bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31d2f7ed4ccd44fe3e34f41ea28cc613"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a31d2f7ed4ccd44fe3e34f41ea28cc613">getResetArchiveBank</a> (int param_0, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const **param_1)</td></tr>
-<tr class="separator:a31d2f7ed4ccd44fe3e34f41ea28cc613"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f9ada5dfee2974c487f307aff51749a"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a9f9ada5dfee2974c487f307aff51749a">resetArchiveBank</a> (int param_0)</td></tr>
-<tr class="separator:a9f9ada5dfee2974c487f307aff51749a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af56079f8cc0776cc80af3dd0b8ef9fc1"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#af56079f8cc0776cc80af3dd0b8ef9fc1">setArchiveBank</a> (int param_0)</td></tr>
-<tr class="separator:af56079f8cc0776cc80af3dd0b8ef9fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac07eb71e936842d27809bed45a6e6fde"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#ac07eb71e936842d27809bed45a6e6fde">objectDeleteJugge</a> (void *param_0, void *param_1)</td></tr>
-<tr class="separator:ac07eb71e936842d27809bed45a6e6fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48cc046c88c8bf1dc7fffc1f19e4f532"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a48cc046c88c8bf1dc7fffc1f19e4f532">deleteJugge</a> (void *param_0, void *param_1)</td></tr>
-<tr class="separator:a48cc046c88c8bf1dc7fffc1f19e4f532"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6682ee37c28cc715171ccf93e92ea844"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a6682ee37c28cc715171ccf93e92ea844">isCreatingCallback</a> (<a class="el" href="structcreate__tag.html">create_tag</a> *param_0, unsigned int *param_1)</td></tr>
-<tr class="separator:a6682ee37c28cc715171ccf93e92ea844"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a465a65422562068540e13d923e123fc3"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a465a65422562068540e13d923e123fc3">isCreating</a> (unsigned int param_0)</td></tr>
-<tr class="separator:a465a65422562068540e13d923e123fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd911bff83db2006ccb8997efdcc6757"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#abd911bff83db2006ccb8997efdcc6757">strnicmp</a> ()</td></tr>
+<tr class="separator:abd911bff83db2006ccb8997efdcc6757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc6a1aeb7e080fc98760b34dcadc7275"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#afc6a1aeb7e080fc98760b34dcadc7275">dScnRoom_Draw</a> (<a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *i_this)</td></tr>
+<tr class="separator:afc6a1aeb7e080fc98760b34dcadc7275"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bb59fa20897f94899db220327ab4dea"><td class="memItemLeft" align="right" valign="top">static asm int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a3bb59fa20897f94899db220327ab4dea">getResetArchiveBank</a> (int param_0, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const **param_1)</td></tr>
+<tr class="separator:a3bb59fa20897f94899db220327ab4dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae75c749edca7bd9577a89af61d94b634"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#ae75c749edca7bd9577a89af61d94b634">objectDeleteJugge</a> (void *i_obj, void *)</td></tr>
+<tr class="separator:ae75c749edca7bd9577a89af61d94b634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f26ed3c4f47a89f23beb92142bcf37c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a1f26ed3c4f47a89f23beb92142bcf37c">deleteJugge</a> (void *i_obj, void *)</td></tr>
+<tr class="separator:a1f26ed3c4f47a89f23beb92142bcf37c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae25af88acea50866e970ced6094bdb0a"><td class="memItemLeft" align="right" valign="top">static asm void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#ae25af88acea50866e970ced6094bdb0a">isCreatingCallback</a> (<a class="el" href="structcreate__tag.html">create_tag</a> *param_0, unsigned int *param_1)</td></tr>
+<tr class="separator:ae25af88acea50866e970ced6094bdb0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e8aeb2aac65413a6cd45b37db339dc3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a4e8aeb2aac65413a6cd45b37db339dc3">isCreating</a> (unsigned int param_0)</td></tr>
+<tr class="separator:a4e8aeb2aac65413a6cd45b37db339dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15c960b0163d4a867c5300193081e436"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a15c960b0163d4a867c5300193081e436">loadDemoArchive</a> (int param_0)</td></tr>
 <tr class="separator:a15c960b0163d4a867c5300193081e436"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae60dd464f54c71c6b1bce1fd69d6f236"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#ae60dd464f54c71c6b1bce1fd69d6f236">objectSetCheck</a> (<a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *param_0)</td></tr>
-<tr class="separator:ae60dd464f54c71c6b1bce1fd69d6f236"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1beec16e1b0a0a0680fd0747f1efe4f4"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a1beec16e1b0a0a0680fd0747f1efe4f4">dScnRoom_Execute</a> (<a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *param_0)</td></tr>
-<tr class="separator:a1beec16e1b0a0a0680fd0747f1efe4f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f5a92dcc6f432be51caedc998c906dc"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a7f5a92dcc6f432be51caedc998c906dc">dScnRoom_IsDelete</a> (<a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *param_0)</td></tr>
-<tr class="separator:a7f5a92dcc6f432be51caedc998c906dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a160a006eaf3e1872adf2fa4c2b51d48f"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a160a006eaf3e1872adf2fa4c2b51d48f">isReadRoom</a> (int param_0)</td></tr>
-<tr class="separator:a160a006eaf3e1872adf2fa4c2b51d48f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a696a7f5d225fa29602ff87c70fb84aae"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a696a7f5d225fa29602ff87c70fb84aae">dScnRoom_Delete</a> (<a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *param_0)</td></tr>
-<tr class="separator:a696a7f5d225fa29602ff87c70fb84aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a722d27ead7cfbd0c7211e0aa8ae492f3"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a722d27ead7cfbd0c7211e0aa8ae492f3">phase_0</a> (<a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *param_0)</td></tr>
-<tr class="separator:a722d27ead7cfbd0c7211e0aa8ae492f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21c58f50bdbe7f9492fca696ce229bb2"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a21c58f50bdbe7f9492fca696ce229bb2">phase_1</a> (<a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *param_0)</td></tr>
-<tr class="separator:a21c58f50bdbe7f9492fca696ce229bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43f6403ecf306bf55bd2af4d195a04fc"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a43f6403ecf306bf55bd2af4d195a04fc">phase_2</a> (<a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *param_0)</td></tr>
-<tr class="separator:a43f6403ecf306bf55bd2af4d195a04fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5017606f649ea49810f36ae3f37fc86"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#ab5017606f649ea49810f36ae3f37fc86">phase_3</a> (<a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *param_0)</td></tr>
-<tr class="separator:ab5017606f649ea49810f36ae3f37fc86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21bdc74d5b16ad3c326ad702df9d9d66"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a21bdc74d5b16ad3c326ad702df9d9d66">phase_4</a> (<a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *param_0)</td></tr>
-<tr class="separator:a21bdc74d5b16ad3c326ad702df9d9d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7933b52e19cbd37c69c199c88e425b15"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a7933b52e19cbd37c69c199c88e425b15">dScnRoom_Create</a> (<a class="el" href="classscene__class.html">scene_class</a> *param_0)</td></tr>
-<tr class="separator:a7933b52e19cbd37c69c199c88e425b15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8777a2c2a14b91754e1ae79e412ba63d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a8777a2c2a14b91754e1ae79e412ba63d">objectSetCheck</a> (<a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *i_this)</td></tr>
+<tr class="separator:a8777a2c2a14b91754e1ae79e412ba63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60ae838ecc5174adc8474705a44a607d"><td class="memItemLeft" align="right" valign="top">static asm int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a60ae838ecc5174adc8474705a44a607d">dScnRoom_Execute</a> (<a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *param_0)</td></tr>
+<tr class="separator:a60ae838ecc5174adc8474705a44a607d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a6524cf73b43c6bd16ea91a6e29ccb5"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a2a6524cf73b43c6bd16ea91a6e29ccb5">dScnRoom_IsDelete</a> (<a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *)</td></tr>
+<tr class="separator:a2a6524cf73b43c6bd16ea91a6e29ccb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04c6b60d59a5da2d686dd4c582065d0f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a04c6b60d59a5da2d686dd4c582065d0f">isReadRoom</a> (int param_0)</td></tr>
+<tr class="separator:a04c6b60d59a5da2d686dd4c582065d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d2eabbb40da736562785efd100cf7e"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a87d2eabbb40da736562785efd100cf7e">setArcName</a> (<a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *i_room)</td></tr>
+<tr class="separator:a87d2eabbb40da736562785efd100cf7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70c700c528af2ec2917690c9575a633b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a70c700c528af2ec2917690c9575a633b">dScnRoom_Delete</a> (<a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *i_this)</td></tr>
+<tr class="separator:a70c700c528af2ec2917690c9575a633b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f1253e218285c5adef7d8618730718b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a5f1253e218285c5adef7d8618730718b">phase_0</a> (<a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *i_this)</td></tr>
+<tr class="separator:a5f1253e218285c5adef7d8618730718b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72d8733e2e0192e63a908c3b01c578bd"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a72d8733e2e0192e63a908c3b01c578bd">phase_1</a> (<a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *i_this)</td></tr>
+<tr class="separator:a72d8733e2e0192e63a908c3b01c578bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abed64f52db96c45fbadfc3c3b982e5ed"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#abed64f52db96c45fbadfc3c3b982e5ed">phase_2</a> (<a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *i_this)</td></tr>
+<tr class="separator:abed64f52db96c45fbadfc3c3b982e5ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3691b4381168fbf39142ba57c6748403"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a3691b4381168fbf39142ba57c6748403">phase_3</a> (<a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *i_this)</td></tr>
+<tr class="separator:a3691b4381168fbf39142ba57c6748403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9904831327510e5b78c59a5805f0a34e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a9904831327510e5b78c59a5805f0a34e">phase_4</a> (<a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *i_this)</td></tr>
+<tr class="separator:a9904831327510e5b78c59a5805f0a34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7974ea86cec4ee4ca337e2092174bf42"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a7974ea86cec4ee4ca337e2092174bf42">dScnRoom_Create</a> (<a class="el" href="classscene__class.html">scene_class</a> *i_this)</td></tr>
+<tr class="separator:a7974ea86cec4ee4ca337e2092174bf42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -319,8 +308,6 @@ Variables</h2></td></tr>
 <tr class="separator:ab07a93d85b3db7ea050a712352e50e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad17ce9f94a860826312cdb471be01126"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#ad17ce9f94a860826312cdb471be01126">mArcBankData__20dStage_roomControl_c</a> [4]</td></tr>
 <tr class="separator:ad17ce9f94a860826312cdb471be01126"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8991bac7b6d747ee3854cbeb7340f207"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a8991bac7b6d747ee3854cbeb7340f207">pauseTimer__9dScnPly_c</a> [4]</td></tr>
-<tr class="separator:a8991bac7b6d747ee3854cbeb7340f207"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b16ff4753e806bec9fb7717a4393fed"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a1b16ff4753e806bec9fb7717a4393fed">stringBase_8039A388</a> = &quot;&quot;</td></tr>
 <tr class="separator:a1b16ff4753e806bec9fb7717a4393fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c6dfd23a44a6689111bcf37c5ea1a28"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a9c6dfd23a44a6689111bcf37c5ea1a28">stringBase_8039A389</a> = &quot;pack&quot;</td></tr>
@@ -331,12 +318,6 @@ Variables</h2></td></tr>
 <tr class="separator:ad05260cd9d3fd3f96f79975ef8eeace3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4ffc63304aba809557256b171639194"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#aa4ffc63304aba809557256b171639194">stringBase_8039A3BC</a> = &quot;Demo%02d_%02d&quot;</td></tr>
 <tr class="separator:aa4ffc63304aba809557256b171639194"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadaf3d4bc01903034cf1b8844431b2a3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#aadaf3d4bc01903034cf1b8844431b2a3">stringBase_8039A3CA</a> = &quot;room.dzr&quot;</td></tr>
-<tr class="separator:aadaf3d4bc01903034cf1b8844431b2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad79d34bb54780441217207337e974979"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#ad79d34bb54780441217207337e974979">pad_8039A3D3</a> = &quot;\0\0\0\0&quot;</td></tr>
-<tr class="separator:ad79d34bb54780441217207337e974979"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6620a23f235297fbf5dba176821c0c41"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#a6620a23f235297fbf5dba176821c0c41">l_method</a> [5]</td></tr>
-<tr class="separator:a6620a23f235297fbf5dba176821c0c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add3cc16ce491d1107144d4090b2fc1e6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__room_8cpp.html#add3cc16ce491d1107144d4090b2fc1e6">l_dScnRoom_Method</a> [5]</td></tr>
 <tr class="separator:add3cc16ce491d1107144d4090b2fc1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -596,8 +577,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a48cc046c88c8bf1dc7fffc1f19e4f532" name="a48cc046c88c8bf1dc7fffc1f19e4f532"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48cc046c88c8bf1dc7fffc1f19e4f532">&#9670;&#160;</a></span>deleteJugge()</h2>
+<a id="a1f26ed3c4f47a89f23beb92142bcf37c" name="a1f26ed3c4f47a89f23beb92142bcf37c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f26ed3c4f47a89f23beb92142bcf37c">&#9670;&#160;</a></span>deleteJugge()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -606,16 +587,16 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void deleteJugge </td>
+          <td class="memname">static int deleteJugge </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname"><em>i_obj</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -691,8 +672,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a7933b52e19cbd37c69c199c88e425b15" name="a7933b52e19cbd37c69c199c88e425b15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7933b52e19cbd37c69c199c88e425b15">&#9670;&#160;</a></span>dScnRoom_Create()</h2>
+<a id="a7974ea86cec4ee4ca337e2092174bf42" name="a7974ea86cec4ee4ca337e2092174bf42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7974ea86cec4ee4ca337e2092174bf42">&#9670;&#160;</a></span>dScnRoom_Create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -701,10 +682,10 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void dScnRoom_Create </td>
+          <td class="memname">static int dScnRoom_Create </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classscene__class.html">scene_class</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em></td><td>)</td>
+          <td class="paramname"><em>i_this</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -742,8 +723,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a696a7f5d225fa29602ff87c70fb84aae" name="a696a7f5d225fa29602ff87c70fb84aae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a696a7f5d225fa29602ff87c70fb84aae">&#9670;&#160;</a></span>dScnRoom_Delete()</h2>
+<a id="a70c700c528af2ec2917690c9575a633b" name="a70c700c528af2ec2917690c9575a633b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70c700c528af2ec2917690c9575a633b">&#9670;&#160;</a></span>dScnRoom_Delete()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -752,10 +733,10 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void dScnRoom_Delete </td>
+          <td class="memname">static int dScnRoom_Delete </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em></td><td>)</td>
+          <td class="paramname"><em>i_this</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -793,8 +774,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a8794ca6f41707157887df23c80602bb0" name="a8794ca6f41707157887df23c80602bb0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8794ca6f41707157887df23c80602bb0">&#9670;&#160;</a></span>dScnRoom_Draw()</h2>
+<a id="afc6a1aeb7e080fc98760b34dcadc7275" name="afc6a1aeb7e080fc98760b34dcadc7275"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc6a1aeb7e080fc98760b34dcadc7275">&#9670;&#160;</a></span>dScnRoom_Draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -803,10 +784,10 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static bool dScnRoom_Draw </td>
+          <td class="memname">static int dScnRoom_Draw </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em></td><td>)</td>
+          <td class="paramname"><em>i_this</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -844,8 +825,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a1beec16e1b0a0a0680fd0747f1efe4f4" name="a1beec16e1b0a0a0680fd0747f1efe4f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1beec16e1b0a0a0680fd0747f1efe4f4">&#9670;&#160;</a></span>dScnRoom_Execute()</h2>
+<a id="a60ae838ecc5174adc8474705a44a607d" name="a60ae838ecc5174adc8474705a44a607d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60ae838ecc5174adc8474705a44a607d">&#9670;&#160;</a></span>dScnRoom_Execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -854,7 +835,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void dScnRoom_Execute </td>
+          <td class="memname">static asm int dScnRoom_Execute </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -895,8 +876,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a7f5a92dcc6f432be51caedc998c906dc" name="a7f5a92dcc6f432be51caedc998c906dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f5a92dcc6f432be51caedc998c906dc">&#9670;&#160;</a></span>dScnRoom_IsDelete()</h2>
+<a id="a2a6524cf73b43c6bd16ea91a6e29ccb5" name="a2a6524cf73b43c6bd16ea91a6e29ccb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a6524cf73b43c6bd16ea91a6e29ccb5">&#9670;&#160;</a></span>dScnRoom_IsDelete()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -905,10 +886,10 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static bool dScnRoom_IsDelete </td>
+          <td class="memname">static int dScnRoom_IsDelete </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1184,8 +1165,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a31d2f7ed4ccd44fe3e34f41ea28cc613" name="a31d2f7ed4ccd44fe3e34f41ea28cc613"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31d2f7ed4ccd44fe3e34f41ea28cc613">&#9670;&#160;</a></span>getResetArchiveBank()</h2>
+<a id="a3bb59fa20897f94899db220327ab4dea" name="a3bb59fa20897f94899db220327ab4dea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bb59fa20897f94899db220327ab4dea">&#9670;&#160;</a></span>getResetArchiveBank()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1194,7 +1175,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void getResetArchiveBank </td>
+          <td class="memname">static asm int getResetArchiveBank </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>param_0</em>, </td>
@@ -1296,8 +1277,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a465a65422562068540e13d923e123fc3" name="a465a65422562068540e13d923e123fc3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a465a65422562068540e13d923e123fc3">&#9670;&#160;</a></span>isCreating()</h2>
+<a id="a4e8aeb2aac65413a6cd45b37db339dc3" name="a4e8aeb2aac65413a6cd45b37db339dc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e8aeb2aac65413a6cd45b37db339dc3">&#9670;&#160;</a></span>isCreating()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1306,7 +1287,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void isCreating </td>
+          <td class="memname">static bool isCreating </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -1347,8 +1328,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a6682ee37c28cc715171ccf93e92ea844" name="a6682ee37c28cc715171ccf93e92ea844"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6682ee37c28cc715171ccf93e92ea844">&#9670;&#160;</a></span>isCreatingCallback()</h2>
+<a id="ae25af88acea50866e970ced6094bdb0a" name="ae25af88acea50866e970ced6094bdb0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae25af88acea50866e970ced6094bdb0a">&#9670;&#160;</a></span>isCreatingCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1357,7 +1338,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void isCreatingCallback </td>
+          <td class="memname">static asm void * isCreatingCallback </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structcreate__tag.html">create_tag</a> *&#160;</td>
           <td class="paramname"><em>param_0</em>, </td>
@@ -1408,8 +1389,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a160a006eaf3e1872adf2fa4c2b51d48f" name="a160a006eaf3e1872adf2fa4c2b51d48f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a160a006eaf3e1872adf2fa4c2b51d48f">&#9670;&#160;</a></span>isReadRoom()</h2>
+<a id="a04c6b60d59a5da2d686dd4c582065d0f" name="a04c6b60d59a5da2d686dd4c582065d0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04c6b60d59a5da2d686dd4c582065d0f">&#9670;&#160;</a></span>isReadRoom()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1418,7 +1399,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void isReadRoom </td>
+          <td class="memname">static bool isReadRoom </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -1544,8 +1525,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac07eb71e936842d27809bed45a6e6fde" name="ac07eb71e936842d27809bed45a6e6fde"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac07eb71e936842d27809bed45a6e6fde">&#9670;&#160;</a></span>objectDeleteJugge()</h2>
+<a id="ae75c749edca7bd9577a89af61d94b634" name="ae75c749edca7bd9577a89af61d94b634"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae75c749edca7bd9577a89af61d94b634">&#9670;&#160;</a></span>objectDeleteJugge()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1554,16 +1535,16 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void objectDeleteJugge </td>
+          <td class="memname">static int objectDeleteJugge </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname"><em>i_obj</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1605,8 +1586,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae60dd464f54c71c6b1bce1fd69d6f236" name="ae60dd464f54c71c6b1bce1fd69d6f236"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae60dd464f54c71c6b1bce1fd69d6f236">&#9670;&#160;</a></span>objectSetCheck()</h2>
+<a id="a8777a2c2a14b91754e1ae79e412ba63d" name="a8777a2c2a14b91754e1ae79e412ba63d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8777a2c2a14b91754e1ae79e412ba63d">&#9670;&#160;</a></span>objectSetCheck()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1615,10 +1596,10 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void objectSetCheck </td>
+          <td class="memname">static bool objectSetCheck </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em></td><td>)</td>
+          <td class="paramname"><em>i_this</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1656,8 +1637,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a722d27ead7cfbd0c7211e0aa8ae492f3" name="a722d27ead7cfbd0c7211e0aa8ae492f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a722d27ead7cfbd0c7211e0aa8ae492f3">&#9670;&#160;</a></span>phase_0()</h2>
+<a id="a5f1253e218285c5adef7d8618730718b" name="a5f1253e218285c5adef7d8618730718b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f1253e218285c5adef7d8618730718b">&#9670;&#160;</a></span>phase_0()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1666,10 +1647,10 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void phase_0 </td>
+          <td class="memname">static int phase_0 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em></td><td>)</td>
+          <td class="paramname"><em>i_this</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1707,8 +1688,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a21c58f50bdbe7f9492fca696ce229bb2" name="a21c58f50bdbe7f9492fca696ce229bb2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21c58f50bdbe7f9492fca696ce229bb2">&#9670;&#160;</a></span>phase_1()</h2>
+<a id="a72d8733e2e0192e63a908c3b01c578bd" name="a72d8733e2e0192e63a908c3b01c578bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72d8733e2e0192e63a908c3b01c578bd">&#9670;&#160;</a></span>phase_1()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1717,10 +1698,10 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void phase_1 </td>
+          <td class="memname">static int phase_1 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em></td><td>)</td>
+          <td class="paramname"><em>i_this</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1758,8 +1739,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a43f6403ecf306bf55bd2af4d195a04fc" name="a43f6403ecf306bf55bd2af4d195a04fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43f6403ecf306bf55bd2af4d195a04fc">&#9670;&#160;</a></span>phase_2()</h2>
+<a id="abed64f52db96c45fbadfc3c3b982e5ed" name="abed64f52db96c45fbadfc3c3b982e5ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abed64f52db96c45fbadfc3c3b982e5ed">&#9670;&#160;</a></span>phase_2()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1768,10 +1749,10 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void phase_2 </td>
+          <td class="memname">static int phase_2 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em></td><td>)</td>
+          <td class="paramname"><em>i_this</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1809,8 +1790,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ab5017606f649ea49810f36ae3f37fc86" name="ab5017606f649ea49810f36ae3f37fc86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5017606f649ea49810f36ae3f37fc86">&#9670;&#160;</a></span>phase_3()</h2>
+<a id="a3691b4381168fbf39142ba57c6748403" name="a3691b4381168fbf39142ba57c6748403"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3691b4381168fbf39142ba57c6748403">&#9670;&#160;</a></span>phase_3()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1819,10 +1800,10 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void phase_3 </td>
+          <td class="memname">static int phase_3 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em></td><td>)</td>
+          <td class="paramname"><em>i_this</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1860,8 +1841,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a21bdc74d5b16ad3c326ad702df9d9d66" name="a21bdc74d5b16ad3c326ad702df9d9d66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21bdc74d5b16ad3c326ad702df9d9d66">&#9670;&#160;</a></span>phase_4()</h2>
+<a id="a9904831327510e5b78c59a5805f0a34e" name="a9904831327510e5b78c59a5805f0a34e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9904831327510e5b78c59a5805f0a34e">&#9670;&#160;</a></span>phase_4()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1870,10 +1851,10 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void phase_4 </td>
+          <td class="memname">static int phase_4 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em></td><td>)</td>
+          <td class="paramname"><em>i_this</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1911,8 +1892,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a9f9ada5dfee2974c487f307aff51749a" name="a9f9ada5dfee2974c487f307aff51749a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f9ada5dfee2974c487f307aff51749a">&#9670;&#160;</a></span>resetArchiveBank()</h2>
+<a id="ad8fd38a614824afb7b8f0de393423e61" name="ad8fd38a614824afb7b8f0de393423e61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8fd38a614824afb7b8f0de393423e61">&#9670;&#160;</a></span>resetArchiveBank()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1921,7 +1902,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void resetArchiveBank </td>
+          <td class="memname">static bool resetArchiveBank </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -2030,8 +2011,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="af56079f8cc0776cc80af3dd0b8ef9fc1" name="af56079f8cc0776cc80af3dd0b8ef9fc1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af56079f8cc0776cc80af3dd0b8ef9fc1">&#9670;&#160;</a></span>setArchiveBank()</h2>
+<a id="ac5fed7827fc895bdad9cdcb203cd9f46" name="ac5fed7827fc895bdad9cdcb203cd9f46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5fed7827fc895bdad9cdcb203cd9f46">&#9670;&#160;</a></span>setArchiveBank()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2040,7 +2021,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void setArchiveBank </td>
+          <td class="memname">static asm bool setArchiveBank </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -2075,6 +2056,32 @@ Variables</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87d2eabbb40da736562785efd100cf7e" name="a87d2eabbb40da736562785efd100cf7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87d2eabbb40da736562785efd100cf7e">&#9670;&#160;</a></span>setArcName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * setArcName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classroom__of__scene__class.html">room_of_scene_class</a> *&#160;</td>
+          <td class="paramname"><em>i_room</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -2132,14 +2139,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="acda998109edeb2af7ae6711ec8e5bfb1" name="acda998109edeb2af7ae6711ec8e5bfb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acda998109edeb2af7ae6711ec8e5bfb1">&#9670;&#160;</a></span>strnicmp()</h2>
+<a id="abd911bff83db2006ccb8997efdcc6757" name="abd911bff83db2006ccb8997efdcc6757"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd911bff83db2006ccb8997efdcc6757">&#9670;&#160;</a></span>strnicmp()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void strnicmp </td>
+          <td class="memname">void strnicmp </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -2254,13 +2261,13 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
 <div class="line">    (<span class="keywordtype">void</span>*)0xFFFFFFFD,         (<span class="keywordtype">void</span>*)0x0000FFFD, (<span class="keywordtype">void</span>*)0x00120000, (<span class="keywordtype">void</span>*)&amp;<a class="code hl_variable" href="d__s__room_8cpp.html#a86035a01ea3045debeca5fca6175f722">g_fpcNd_Method</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)0x000001DC,         (<span class="keywordtype">void</span>*)<a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,       (<span class="keywordtype">void</span>*)<a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,       (<span class="keywordtype">void</span>*)&amp;<a class="code hl_variable" href="d__s__room_8cpp.html#a1c9aca8b105db77bcc21ee131fde0d31">g_fopScn_Method</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)&amp;<a class="code hl_variable" href="d__s__room_8cpp.html#add3cc16ce491d1107144d4090b2fc1e6">l_dScnRoom_Method</a>, (<span class="keywordtype">void</span>*)<a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
+<div class="line">    (<span class="keywordtype">void</span>*)0x000001DC,         (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,       (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,       (<span class="keywordtype">void</span>*)&amp;<a class="code hl_variable" href="d__s__room_8cpp.html#a1c9aca8b105db77bcc21ee131fde0d31">g_fopScn_Method</a>,</div>
+<div class="line">    (<span class="keywordtype">void</span>*)&amp;<a class="code hl_variable" href="d__s__room_8cpp.html#add3cc16ce491d1107144d4090b2fc1e6">l_dScnRoom_Method</a>, (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
 <div class="ttc" id="ad__s__room_8cpp_html_a1c9aca8b105db77bcc21ee131fde0d31"><div class="ttname"><a href="d__s__room_8cpp.html#a1c9aca8b105db77bcc21ee131fde0d31">g_fopScn_Method</a></div><div class="ttdeci">void * g_fopScn_Method[5+1]</div><div class="ttdef"><b>Definition:</b> f_op_scene.cpp:58</div></div>
 <div class="ttc" id="ad__s__room_8cpp_html_a86035a01ea3045debeca5fca6175f722"><div class="ttname"><a href="d__s__room_8cpp.html#a86035a01ea3045debeca5fca6175f722">g_fpcNd_Method</a></div><div class="ttdeci">void * g_fpcNd_Method[5+1]</div><div class="ttdef"><b>Definition:</b> f_pc_node.cpp:120</div></div>
-<div class="ttc" id="ad__s__room_8cpp_html_add3cc16ce491d1107144d4090b2fc1e6"><div class="ttname"><a href="d__s__room_8cpp.html#add3cc16ce491d1107144d4090b2fc1e6">l_dScnRoom_Method</a></div><div class="ttdeci">static SECTION_DATA void * l_dScnRoom_Method[5]</div><div class="ttdef"><b>Definition:</b> d_s_room.cpp:362</div></div>
-<div class="ttc" id="atypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> types.h:34</div></div>
+<div class="ttc" id="ad__s__room_8cpp_html_add3cc16ce491d1107144d4090b2fc1e6"><div class="ttname"><a href="d__s__room_8cpp.html#add3cc16ce491d1107144d4090b2fc1e6">l_dScnRoom_Method</a></div><div class="ttdeci">static SECTION_DATA void * l_dScnRoom_Method[5]</div><div class="ttdef"><b>Definition:</b> d_s_room.cpp:477</div></div>
+<div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:12</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2284,49 +2291,14 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__s__room_8cpp.html#a7d06b81fcd9ccf66d18431084f2b1dda">dScnRoom_Create__FP11scene_class</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__s__room_8cpp.html#a32bfac586013cd51d63bb99ae1ad75af">dScnRoom_Delete__FP19room_of_scene_class</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__s__room_8cpp.html#a6ac786dc5e68d2a31e1ffaa883ae3e59">dScnRoom_Execute__FP19room_of_scene_class</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__s__room_8cpp.html#aa73ca9bcefd1284754e2538f25924c13">dScnRoom_IsDelete__FP19room_of_scene_class</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__s__room_8cpp.html#ad9938051429a6f026ccc08e5a9085161">dScnRoom_Draw__FP19room_of_scene_class</a>,</div>
+<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__s__room_8cpp.html#a7974ea86cec4ee4ca337e2092174bf42">dScnRoom_Create</a>,   (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__s__room_8cpp.html#a70c700c528af2ec2917690c9575a633b">dScnRoom_Delete</a>, (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__s__room_8cpp.html#a60ae838ecc5174adc8474705a44a607d">dScnRoom_Execute</a>,</div>
+<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__s__room_8cpp.html#a2a6524cf73b43c6bd16ea91a6e29ccb5">dScnRoom_IsDelete</a>, (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__s__room_8cpp.html#afc6a1aeb7e080fc98760b34dcadc7275">dScnRoom_Draw</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__s__room_8cpp_html_a32bfac586013cd51d63bb99ae1ad75af"><div class="ttname"><a href="d__s__room_8cpp.html#a32bfac586013cd51d63bb99ae1ad75af">dScnRoom_Delete__FP19room_of_scene_class</a></div><div class="ttdeci">static void dScnRoom_Delete__FP19room_of_scene_class()</div></div>
-<div class="ttc" id="ad__s__room_8cpp_html_a6ac786dc5e68d2a31e1ffaa883ae3e59"><div class="ttname"><a href="d__s__room_8cpp.html#a6ac786dc5e68d2a31e1ffaa883ae3e59">dScnRoom_Execute__FP19room_of_scene_class</a></div><div class="ttdeci">static void dScnRoom_Execute__FP19room_of_scene_class()</div></div>
-<div class="ttc" id="ad__s__room_8cpp_html_a7d06b81fcd9ccf66d18431084f2b1dda"><div class="ttname"><a href="d__s__room_8cpp.html#a7d06b81fcd9ccf66d18431084f2b1dda">dScnRoom_Create__FP11scene_class</a></div><div class="ttdeci">static void dScnRoom_Create__FP11scene_class()</div></div>
-<div class="ttc" id="ad__s__room_8cpp_html_aa73ca9bcefd1284754e2538f25924c13"><div class="ttname"><a href="d__s__room_8cpp.html#aa73ca9bcefd1284754e2538f25924c13">dScnRoom_IsDelete__FP19room_of_scene_class</a></div><div class="ttdeci">static bool dScnRoom_IsDelete__FP19room_of_scene_class()</div></div>
-<div class="ttc" id="ad__s__room_8cpp_html_ad9938051429a6f026ccc08e5a9085161"><div class="ttname"><a href="d__s__room_8cpp.html#ad9938051429a6f026ccc08e5a9085161">dScnRoom_Draw__FP19room_of_scene_class</a></div><div class="ttdeci">static bool dScnRoom_Draw__FP19room_of_scene_class()</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a6620a23f235297fbf5dba176821c0c41" name="a6620a23f235297fbf5dba176821c0c41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6620a23f235297fbf5dba176821c0c41">&#9670;&#160;</a></span>l_method</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void* l_method[5]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__s__room_8cpp.html#a86a916927cfddcc62227efc50101d49e">phase_0__FP19room_of_scene_class</a>, (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__s__room_8cpp.html#aeee62a156bcd0631a52f697d658afea6">phase_1__FP19room_of_scene_class</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__s__room_8cpp.html#a7459988a051efc4b220d23f739004005">phase_2__FP19room_of_scene_class</a>, (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__s__room_8cpp.html#ac91d40b8497ef2165af2e3e1c12bd6b9">phase_3__FP19room_of_scene_class</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__s__room_8cpp.html#a99e96c387963a21cee552fbbd3822ad0">phase_4__FP19room_of_scene_class</a>,</div>
-<div class="line">}</div>
-<div class="ttc" id="ad__s__room_8cpp_html_a7459988a051efc4b220d23f739004005"><div class="ttname"><a href="d__s__room_8cpp.html#a7459988a051efc4b220d23f739004005">phase_2__FP19room_of_scene_class</a></div><div class="ttdeci">static void phase_2__FP19room_of_scene_class()</div></div>
-<div class="ttc" id="ad__s__room_8cpp_html_a86a916927cfddcc62227efc50101d49e"><div class="ttname"><a href="d__s__room_8cpp.html#a86a916927cfddcc62227efc50101d49e">phase_0__FP19room_of_scene_class</a></div><div class="ttdeci">static void phase_0__FP19room_of_scene_class()</div></div>
-<div class="ttc" id="ad__s__room_8cpp_html_a99e96c387963a21cee552fbbd3822ad0"><div class="ttname"><a href="d__s__room_8cpp.html#a99e96c387963a21cee552fbbd3822ad0">phase_4__FP19room_of_scene_class</a></div><div class="ttdeci">static void phase_4__FP19room_of_scene_class()</div></div>
-<div class="ttc" id="ad__s__room_8cpp_html_ac91d40b8497ef2165af2e3e1c12bd6b9"><div class="ttname"><a href="d__s__room_8cpp.html#ac91d40b8497ef2165af2e3e1c12bd6b9">phase_3__FP19room_of_scene_class</a></div><div class="ttdeci">static void phase_3__FP19room_of_scene_class()</div></div>
-<div class="ttc" id="ad__s__room_8cpp_html_aeee62a156bcd0631a52f697d658afea6"><div class="ttname"><a href="d__s__room_8cpp.html#aeee62a156bcd0631a52f697d658afea6">phase_1__FP19room_of_scene_class</a></div><div class="ttdeci">static void phase_1__FP19room_of_scene_class()</div></div>
+<div class="ttc" id="ad__s__room_8cpp_html_a2a6524cf73b43c6bd16ea91a6e29ccb5"><div class="ttname"><a href="d__s__room_8cpp.html#a2a6524cf73b43c6bd16ea91a6e29ccb5">dScnRoom_IsDelete</a></div><div class="ttdeci">static int dScnRoom_IsDelete(room_of_scene_class *)</div><div class="ttdef"><b>Definition:</b> d_s_room.cpp:312</div></div>
+<div class="ttc" id="ad__s__room_8cpp_html_a60ae838ecc5174adc8474705a44a607d"><div class="ttname"><a href="d__s__room_8cpp.html#a60ae838ecc5174adc8474705a44a607d">dScnRoom_Execute</a></div><div class="ttdeci">static asm int dScnRoom_Execute(room_of_scene_class *param_0)</div><div class="ttdef"><b>Definition:</b> d_s_room.cpp:303</div></div>
+<div class="ttc" id="ad__s__room_8cpp_html_a70c700c528af2ec2917690c9575a633b"><div class="ttname"><a href="d__s__room_8cpp.html#a70c700c528af2ec2917690c9575a633b">dScnRoom_Delete</a></div><div class="ttdeci">static int dScnRoom_Delete(room_of_scene_class *i_this)</div><div class="ttdef"><b>Definition:</b> d_s_room.cpp:347</div></div>
+<div class="ttc" id="ad__s__room_8cpp_html_a7974ea86cec4ee4ca337e2092174bf42"><div class="ttname"><a href="d__s__room_8cpp.html#a7974ea86cec4ee4ca337e2092174bf42">dScnRoom_Create</a></div><div class="ttdeci">static int dScnRoom_Create(scene_class *i_this)</div><div class="ttdef"><b>Definition:</b> d_s_room.cpp:465</div></div>
+<div class="ttc" id="ad__s__room_8cpp_html_afc6a1aeb7e080fc98760b34dcadc7275"><div class="ttname"><a href="d__s__room_8cpp.html#afc6a1aeb7e080fc98760b34dcadc7275">dScnRoom_Draw</a></div><div class="ttdeci">static int dScnRoom_Draw(room_of_scene_class *i_this)</div><div class="ttdef"><b>Definition:</b> d_s_room.cpp:120</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2396,50 +2368,6 @@ Variables</h2></td></tr>
           <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> mStatus__20dStage_roomControl_c[65792]</td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad79d34bb54780441217207337e974979" name="ad79d34bb54780441217207337e974979"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad79d34bb54780441217207337e974979">&#9670;&#160;</a></span>pad_8039A3D3</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const pad_8039A3D3 = &quot;\0\0\0\0&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8991bac7b6d747ee3854cbeb7340f207" name="a8991bac7b6d747ee3854cbeb7340f207"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8991bac7b6d747ee3854cbeb7340f207">&#9670;&#160;</a></span>pauseTimer__9dScnPly_c</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> pauseTimer__9dScnPly_c[4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -2543,28 +2471,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_8039A3BC = &quot;Demo%02d_%02d&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aadaf3d4bc01903034cf1b8844431b2a3" name="aadaf3d4bc01903034cf1b8844431b2a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadaf3d4bc01903034cf1b8844431b2a3">&#9670;&#160;</a></span>stringBase_8039A3CA</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_8039A3CA = &quot;room.dzr&quot;</td>
         </tr>
       </table>
   </td>

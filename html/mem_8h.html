@@ -86,13 +86,13 @@ $(function() {
   <div class="headertitle"><div class="title">mem.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="stddef_8h_source.html">MSL_C/MSL_Common/Src/stddef.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for mem.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="mem_8h__incl.svg" width="214" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="mem_8h__incl.svg" width="214" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -108,12 +108,86 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0849c52baadd8269575bc57e2273d862"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mem_8h.html#a0849c52baadd8269575bc57e2273d862">memcmp</a> (const void *, const void *, <a class="el" href="types_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>)</td></tr>
-<tr class="separator:a0849c52baadd8269575bc57e2273d862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc842b01023ad0d7849b1ff6db8c45db"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mem_8h.html#abc842b01023ad0d7849b1ff6db8c45db">memcmp</a> (const void *lhs, const void *rhs, <a class="el" href="stddef_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> count)</td></tr>
+<tr class="separator:abc842b01023ad0d7849b1ff6db8c45db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada205f32aa3372602edb8815e72241d0"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mem_8h.html#ada205f32aa3372602edb8815e72241d0">__memrchr</a> (const void *ptr, int ch, <a class="el" href="stddef_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> count)</td></tr>
+<tr class="separator:ada205f32aa3372602edb8815e72241d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab64d3e4b0decc78b4165f36d867be005"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mem_8h.html#ab64d3e4b0decc78b4165f36d867be005">memchr</a> (const void *ptr, int ch, <a class="el" href="stddef_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> count)</td></tr>
+<tr class="separator:ab64d3e4b0decc78b4165f36d867be005"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ad5be721af7967095807a80038b4ef"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mem_8h.html#a82ad5be721af7967095807a80038b4ef">memmove</a> (void *dst, const void *src, <a class="el" href="stddef_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> n)</td></tr>
+<tr class="separator:a82ad5be721af7967095807a80038b4ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a0849c52baadd8269575bc57e2273d862" name="a0849c52baadd8269575bc57e2273d862"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0849c52baadd8269575bc57e2273d862">&#9670;&#160;</a></span>memcmp()</h2>
+<a id="ada205f32aa3372602edb8815e72241d0" name="ada205f32aa3372602edb8815e72241d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada205f32aa3372602edb8815e72241d0">&#9670;&#160;</a></span>__memrchr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * __memrchr </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="stddef_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab64d3e4b0decc78b4165f36d867be005" name="ab64d3e4b0decc78b4165f36d867be005"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab64d3e4b0decc78b4165f36d867be005">&#9670;&#160;</a></span>memchr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * memchr </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="stddef_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc842b01023ad0d7849b1ff6db8c45db" name="abc842b01023ad0d7849b1ff6db8c45db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc842b01023ad0d7849b1ff6db8c45db">&#9670;&#160;</a></span>memcmp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -122,19 +196,53 @@ Functions</h2></td></tr>
           <td class="memname">int memcmp </td>
           <td>(</td>
           <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>__s1</em>, </td>
+          <td class="paramname"><em>lhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>__s2</em>, </td>
+          <td class="paramname"><em>rhs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td>
-          <td class="paramname"><em>__n</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="stddef_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82ad5be721af7967095807a80038b4ef" name="a82ad5be721af7967095807a80038b4ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82ad5be721af7967095807a80038b4ef">&#9670;&#160;</a></span>memmove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * memmove </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="stddef_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

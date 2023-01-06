@@ -42,6 +42,7 @@ var searchData=
   ['pmc4_5fov_39',['PMC4_OV',['../PPCArch_8h.html#a4fb82b7b48daff3ec29de76d073e8338',1,'PPCArch.h']]],
   ['pophead_40',['PopHead',['../OSMutex_8c.html#a5109d2218e560a6ac24327fde76dc15b',1,'OSMutex.c']]],
   ['popitem_41',['PopItem',['../OSMutex_8c.html#a7d3e4c0b55d53ffd5b593d1f669d9359',1,'OSMutex.c']]],
-  ['pushtail_42',['PushTail',['../OSMutex_8c.html#a99e8fa1a61e120c4a825272b73fbd254',1,'OSMutex.c']]],
-  ['pvr_43',['PVR',['../PPCArch_8h.html#aa97ce5983eeb0c13a98c115322a7545d',1,'PPCArch.h']]]
+  ['punc_42',['punc',['../ctype_8c.html#a27095cbbdf47f24d256c2c2c29e57b8f',1,'ctype.c']]],
+  ['pushtail_43',['PushTail',['../OSMutex_8c.html#a99e8fa1a61e120c4a825272b73fbd254',1,'OSMutex.c']]],
+  ['pvr_44',['PVR',['../PPCArch_8h.html#aa97ce5983eeb0c13a98c115322a7545d',1,'PPCArch.h']]]
 ];

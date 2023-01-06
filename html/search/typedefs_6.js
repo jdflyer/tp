@@ -24,6 +24,7 @@ var searchData=
   ['fpcm_5fdrawiteraterfunc_21',['fpcM_DrawIteraterFunc',['../f__pc__manager_8h.html#a8004cac63b5f98215e58e198aa3ee7be',1,'f_pc_manager.h']]],
   ['fpcm_5fmanagementfunc_22',['fpcM_ManagementFunc',['../f__pc__manager_8h.html#a321b5706acfde21e6fbc629578c7788b',1,'f_pc_manager.h']]],
   ['fpcmtdit_5fmethodfunc_23',['fpcMtdIt_MethodFunc',['../f__pc__method__iter_8h.html#ab368557719bf92a48de9ac8528850766',1,'f_pc_method_iter.h']]],
-  ['fptr_24',['fptr',['../structaction__class.html#a5f98d7bead70297da24f4b7752a44ef4',1,'action_class']]],
-  ['fstcreatefunc_25',['fstCreateFunc',['../f__pc__fstcreate__req_8h.html#a8c14f3af571b992c62aa6816bf51d85c',1,'f_pc_fstcreate_req.h']]]
+  ['fpos_5ft_24',['fpos_t',['../ansi__files_8h.html#a73d349137ad7b51aabc6598fcd6efa64',1,'ansi_files.h']]],
+  ['fptr_25',['fptr',['../structaction__class.html#a5f98d7bead70297da24f4b7752a44ef4',1,'action_class']]],
+  ['fstcreatefunc_26',['fstCreateFunc',['../f__pc__fstcreate__req_8h.html#a8c14f3af571b992c62aa6816bf51d85c',1,'f_pc_fstcreate_req.h']]]
 ];

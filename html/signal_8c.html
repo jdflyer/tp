@@ -88,33 +88,30 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="signal_8h_source.html">MSL_C/MSL_Common/Src/signal.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="abort__exit_8h_source.html">MSL_C/MSL_Common/Src/abort_exit.h</a>&quot;</code><br />
 <code>#include &quot;asm/MSL_C/MSL_Common/Src/signal/raise.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for signal.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="signal_8c__incl.svg" width="560" height="212"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="signal_8c__incl.svg" width="608" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:add2606e85e4e73d7a937d91bd9bca2dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signal_8c.html#add2606e85e4e73d7a937d91bd9bca2dc">raise</a> ()</td></tr>
-<tr class="separator:add2606e85e4e73d7a937d91bd9bca2dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a358d2e2397ca11ccd17553e3c40e7901"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signal_8c.html#a358d2e2397ca11ccd17553e3c40e7901">exit</a> ()</td></tr>
-<tr class="separator:a358d2e2397ca11ccd17553e3c40e7901"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fe22559774004b36f3f88f26986b6b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signal_8c.html#a2fe22559774004b36f3f88f26986b6b1">__end_critical_region</a> ()</td></tr>
 <tr class="separator:a2fe22559774004b36f3f88f26986b6b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74b93ada35dd1aa459c27f709df95748"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signal_8c.html#a74b93ada35dd1aa459c27f709df95748">__begin_critical_region</a> ()</td></tr>
 <tr class="separator:a74b93ada35dd1aa459c27f709df95748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae25e39eafb560b10dfba3b3701db02a4"><td class="memItemLeft" align="right" valign="top">asm int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signal_8c.html#ae25e39eafb560b10dfba3b3701db02a4">raise</a> (int sig)</td></tr>
+<tr class="separator:ae25e39eafb560b10dfba3b3701db02a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a3f6b0a0fcf2029dea8a7399f6a9cebf2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signal_8c.html#a3f6b0a0fcf2029dea8a7399f6a9cebf2">signal_funcs</a> [24]</td></tr>
-<tr class="separator:a3f6b0a0fcf2029dea8a7399f6a9cebf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2efdea74bd2974094cd082f0854474a"><td class="memItemLeft" align="right" valign="top">static unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signal_8c.html#aa2efdea74bd2974094cd082f0854474a">signal_funcs</a> [24]</td></tr>
+<tr class="separator:aa2efdea74bd2974094cd082f0854474a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a74b93ada35dd1aa459c27f709df95748" name="a74b93ada35dd1aa459c27f709df95748"></a>
@@ -151,33 +148,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a358d2e2397ca11ccd17553e3c40e7901" name="a358d2e2397ca11ccd17553e3c40e7901"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a358d2e2397ca11ccd17553e3c40e7901">&#9670;&#160;</a></span>exit()</h2>
+<a id="ae25e39eafb560b10dfba3b3701db02a4" name="ae25e39eafb560b10dfba3b3701db02a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae25e39eafb560b10dfba3b3701db02a4">&#9670;&#160;</a></span>raise()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void exit </td>
+          <td class="memname">asm int raise </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="add2606e85e4e73d7a937d91bd9bca2dc" name="add2606e85e4e73d7a937d91bd9bca2dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add2606e85e4e73d7a937d91bd9bca2dc">&#9670;&#160;</a></span>raise()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void raise </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sig</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -186,8 +167,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a3f6b0a0fcf2029dea8a7399f6a9cebf2" name="a3f6b0a0fcf2029dea8a7399f6a9cebf2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f6b0a0fcf2029dea8a7399f6a9cebf2">&#9670;&#160;</a></span>signal_funcs</h2>
+<a id="aa2efdea74bd2974094cd082f0854474a" name="aa2efdea74bd2974094cd082f0854474a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2efdea74bd2974094cd082f0854474a">&#9670;&#160;</a></span>signal_funcs</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -196,7 +177,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> signal_funcs[24]</td>
+          <td class="memname">unsigned char signal_funcs[24]</td>
         </tr>
       </table>
   </td>

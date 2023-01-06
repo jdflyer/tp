@@ -87,14 +87,13 @@ $(function() {
   <div class="headertitle"><div class="title">float.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="fdlibm_8h_source.html">fdlibm.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="fdlibm_8h_source.html">fdlibm.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for float.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="float_8h__incl.svg" width="223" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="float_8h__incl.svg" width="214" height="124"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -130,9 +129,9 @@ Macros</h2></td></tr>
 <tr class="separator:aa63ffa98f213f62e536b073c28cb3cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a256d70a32c03904ce13c999c1e9dc35d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="float_8h.html#a256d70a32c03904ce13c999c1e9dc35d">isfinite</a>(x)&#160;&#160;&#160;((<a class="el" href="float_8h.html#a6dad1ca35286e31c328c2b1f51f330c2">fpclassify</a>(x) &gt; 2))</td></tr>
 <tr class="separator:a256d70a32c03904ce13c999c1e9dc35d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeaffabe1b9b6a316c32560ef4a64fcb3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="float_8h.html#aeaffabe1b9b6a316c32560ef4a64fcb3">__signbitf</a>(x)&#160;&#160;&#160;((*(<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>*)&amp;(x)) &amp; 0x80)</td></tr>
+<tr class="memitem:aeaffabe1b9b6a316c32560ef4a64fcb3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="float_8h.html#aeaffabe1b9b6a316c32560ef4a64fcb3">__signbitf</a>(x)&#160;&#160;&#160;((*(unsigned char*)&amp;(x)) &amp; 0x80)</td></tr>
 <tr class="separator:aeaffabe1b9b6a316c32560ef4a64fcb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72d23f0bfd4e74167107961373eb4fea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="float_8h.html#a72d23f0bfd4e74167107961373eb4fea">__signbitd</a>(x)&#160;&#160;&#160;((*(<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>*)&amp;(x)) &amp; 0x80)</td></tr>
+<tr class="memitem:a72d23f0bfd4e74167107961373eb4fea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="float_8h.html#a72d23f0bfd4e74167107961373eb4fea">__signbitd</a>(x)&#160;&#160;&#160;((*(unsigned char*)&amp;(x)) &amp; 0x80)</td></tr>
 <tr class="separator:a72d23f0bfd4e74167107961373eb4fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -154,7 +153,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;((*(<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>*)&amp;(x)) &amp; 0x80)</td>
+          <td>&#160;&#160;&#160;((*(unsigned char*)&amp;(x)) &amp; 0x80)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -172,7 +171,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;((*(<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>*)&amp;(x)) &amp; 0x80)</td>
+          <td>&#160;&#160;&#160;((*(unsigned char*)&amp;(x)) &amp; 0x80)</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -88,8 +88,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="alloc_8h_source.html">MSL_C/MSL_Common/Src/alloc.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="MSL__Common_2Src_2string_8h_source.html">MSL_C/MSL_Common/Src/string.h</a>&quot;</code><br />
 <code>#include &quot;asm/MSL_C/MSL_Common/Src/alloc/free.s&quot;</code><br />
 <code>#include &quot;asm/MSL_C/MSL_Common/Src/alloc/__pool_free.s&quot;</code><br />
 <code>#include &quot;asm/MSL_C/MSL_Common/Src/alloc/deallocate_from_fixed_pools.s&quot;</code><br />
@@ -99,39 +98,35 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="alloc_8c__incl.svg" width="100%" height="470"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="alloc_8c__incl.svg" width="100%" height="547"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aef7b9f34d16a894f16836419283aafe3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alloc_8c.html#aef7b9f34d16a894f16836419283aafe3">free</a> ()</td></tr>
-<tr class="separator:aef7b9f34d16a894f16836419283aafe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c83bdadee5431b9601089a4bed65a99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alloc_8c.html#a4c83bdadee5431b9601089a4bed65a99">__pool_free</a> ()</td></tr>
-<tr class="separator:a4c83bdadee5431b9601089a4bed65a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea0088da7ebc72d8efe7bc3f57af483c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alloc_8c.html#aea0088da7ebc72d8efe7bc3f57af483c">deallocate_from_fixed_pools</a> ()</td></tr>
 <tr class="separator:aea0088da7ebc72d8efe7bc3f57af483c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1430219ae543014d08990161435e97b4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alloc_8c.html#a1430219ae543014d08990161435e97b4">deallocate_from_var_pools</a> ()</td></tr>
 <tr class="separator:a1430219ae543014d08990161435e97b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5483d4fbef9a528a3f56d30a4c5da3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#adc00f0d3ad529c0cb72985d54bfe7ccf">SECTION_INIT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alloc_8c.html#ae5483d4fbef9a528a3f56d30a4c5da3a">memset</a> ()</td></tr>
-<tr class="separator:ae5483d4fbef9a528a3f56d30a4c5da3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac70a70bfa544fbe9695179c4b83a5391"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alloc_8c.html#ac70a70bfa544fbe9695179c4b83a5391">__sys_free</a> ()</td></tr>
 <tr class="separator:ac70a70bfa544fbe9695179c4b83a5391"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fe22559774004b36f3f88f26986b6b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alloc_8c.html#a2fe22559774004b36f3f88f26986b6b1">__end_critical_region</a> ()</td></tr>
 <tr class="separator:a2fe22559774004b36f3f88f26986b6b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74b93ada35dd1aa459c27f709df95748"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alloc_8c.html#a74b93ada35dd1aa459c27f709df95748">__begin_critical_region</a> ()</td></tr>
 <tr class="separator:a74b93ada35dd1aa459c27f709df95748"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29a29f38f9aefb065a28c0d97a4bdda1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alloc_8c.html#a29a29f38f9aefb065a28c0d97a4bdda1">COMPILER_STRIP_GATE</a> (0x803A2220, &amp;<a class="el" href="alloc_8c.html#a0ef67ade1226c8a00cd5cb337fb66e67">fix_pool_sizes</a>)</td></tr>
-<tr class="separator:a29a29f38f9aefb065a28c0d97a4bdda1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d481d4ad5c864860d967d1f5831134d"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alloc_8c.html#a8d481d4ad5c864860d967d1f5831134d">free</a> (<a class="el" href="ansi__files_8h.html#a175abb747ea3b78aa8da87355dcec473">FILE</a> *file)</td></tr>
+<tr class="separator:a8d481d4ad5c864860d967d1f5831134d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c83bdadee5431b9601089a4bed65a99"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alloc_8c.html#a4c83bdadee5431b9601089a4bed65a99">__pool_free</a> ()</td></tr>
+<tr class="separator:a4c83bdadee5431b9601089a4bed65a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a5e2c47bff8f79d3b1e81a312eec9d631"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alloc_8c.html#a5e2c47bff8f79d3b1e81a312eec9d631">data_804519A0</a> [8]</td></tr>
-<tr class="separator:a5e2c47bff8f79d3b1e81a312eec9d631"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7abb2dc9d2a5869fb53e0ed2b024d0c5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alloc_8c.html#a7abb2dc9d2a5869fb53e0ed2b024d0c5">protopool</a> [56]</td></tr>
-<tr class="separator:a7abb2dc9d2a5869fb53e0ed2b024d0c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ef67ade1226c8a00cd5cb337fb66e67"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alloc_8c.html#a0ef67ade1226c8a00cd5cb337fb66e67">fix_pool_sizes</a> [24]</td></tr>
-<tr class="separator:a0ef67ade1226c8a00cd5cb337fb66e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc358adfca0323c443e7f2b5c02f3281"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alloc_8c.html#acc358adfca0323c443e7f2b5c02f3281">data_804519A0</a> [8]</td></tr>
+<tr class="separator:acc358adfca0323c443e7f2b5c02f3281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f8815d460040552ce5abfcd1a2cb067"><td class="memItemLeft" align="right" valign="top">static unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alloc_8c.html#a9f8815d460040552ce5abfcd1a2cb067">protopool</a> [56]</td></tr>
+<tr class="separator:a9f8815d460040552ce5abfcd1a2cb067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94bc3050fc9d8a18585ac00d71219d5e"><td class="memItemLeft" align="right" valign="top">static unsigned char const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="alloc_8c.html#a94bc3050fc9d8a18585ac00d71219d5e">fix_pool_sizes</a> [24]</td></tr>
+<tr class="separator:a94bc3050fc9d8a18585ac00d71219d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a74b93ada35dd1aa459c27f709df95748" name="a74b93ada35dd1aa459c27f709df95748"></a>
@@ -202,34 +197,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a29a29f38f9aefb065a28c0d97a4bdda1" name="a29a29f38f9aefb065a28c0d97a4bdda1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29a29f38f9aefb065a28c0d97a4bdda1">&#9670;&#160;</a></span>COMPILER_STRIP_GATE()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">COMPILER_STRIP_GATE </td>
-          <td>(</td>
-          <td class="paramtype">0x803A2220&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&amp;&#160;</td>
-          <td class="paramname"><em>fix_pool_sizes</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aea0088da7ebc72d8efe7bc3f57af483c" name="aea0088da7ebc72d8efe7bc3f57af483c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aea0088da7ebc72d8efe7bc3f57af483c">&#9670;&#160;</a></span>deallocate_from_fixed_pools()</h2>
 
@@ -280,8 +247,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aef7b9f34d16a894f16836419283aafe3" name="aef7b9f34d16a894f16836419283aafe3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef7b9f34d16a894f16836419283aafe3">&#9670;&#160;</a></span>free()</h2>
+<a id="a8d481d4ad5c864860d967d1f5831134d" name="a8d481d4ad5c864860d967d1f5831134d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d481d4ad5c864860d967d1f5831134d">&#9670;&#160;</a></span>free()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -289,24 +256,8 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">asm void free </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae5483d4fbef9a528a3f56d30a4c5da3a" name="ae5483d4fbef9a528a3f56d30a4c5da3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5483d4fbef9a528a3f56d30a4c5da3a">&#9670;&#160;</a></span>memset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#adc00f0d3ad529c0cb72985d54bfe7ccf">SECTION_INIT</a> void memset </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="ansi__files_8h.html#a175abb747ea3b78aa8da87355dcec473">FILE</a> *&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -315,8 +266,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a5e2c47bff8f79d3b1e81a312eec9d631" name="a5e2c47bff8f79d3b1e81a312eec9d631"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e2c47bff8f79d3b1e81a312eec9d631">&#9670;&#160;</a></span>data_804519A0</h2>
+<a id="acc358adfca0323c443e7f2b5c02f3281" name="acc358adfca0323c443e7f2b5c02f3281"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc358adfca0323c443e7f2b5c02f3281">&#9670;&#160;</a></span>data_804519A0</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -325,7 +276,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_804519A0[8]</td>
+          <td class="memname">unsigned char data_804519A0[8]</td>
         </tr>
       </table>
   </td>
@@ -337,8 +288,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a0ef67ade1226c8a00cd5cb337fb66e67" name="a0ef67ade1226c8a00cd5cb337fb66e67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ef67ade1226c8a00cd5cb337fb66e67">&#9670;&#160;</a></span>fix_pool_sizes</h2>
+<a id="a94bc3050fc9d8a18585ac00d71219d5e" name="a94bc3050fc9d8a18585ac00d71219d5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94bc3050fc9d8a18585ac00d71219d5e">&#9670;&#160;</a></span>fix_pool_sizes</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -347,7 +298,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const fix_pool_sizes[24]</td>
+          <td class="memname">unsigned char const fix_pool_sizes[24]</td>
         </tr>
       </table>
   </td>
@@ -363,8 +314,8 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a7abb2dc9d2a5869fb53e0ed2b024d0c5" name="a7abb2dc9d2a5869fb53e0ed2b024d0c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7abb2dc9d2a5869fb53e0ed2b024d0c5">&#9670;&#160;</a></span>protopool</h2>
+<a id="a9f8815d460040552ce5abfcd1a2cb067" name="a9f8815d460040552ce5abfcd1a2cb067"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f8815d460040552ce5abfcd1a2cb067">&#9670;&#160;</a></span>protopool</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -373,7 +324,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> protopool[56]</td>
+          <td class="memname">unsigned char protopool[56]</td>
         </tr>
       </table>
   </td>

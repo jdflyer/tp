@@ -76,5 +76,8 @@ var searchData=
   ['cardseticonformat_73',['CARDSetIconFormat',['../card_8h.html#a77d327cf5613f0a4d3305555cc6503ab',1,'card.h']]],
   ['cardseticonspeed_74',['CARDSetIconSpeed',['../card_8h.html#a32eb0417ca3305c9c9a53dd878de8703',1,'card.h']]],
   ['compiler_5fstrip_5fgate_75',['COMPILER_STRIP_GATE',['../dol2asm_8h.html#a45d35135d671197a87d0e3dcb73363f2',1,'dol2asm.h']]],
-  ['ctr_76',['CTR',['../PPCArch_8h.html#aa445a79fc0f7373036c72d198e51f19a',1,'PPCArch.h']]]
+  ['cpd_76',['cpd',['../mem__funcs_8c.html#a90040cbec48e5b05be4ac823e256226c',1,'mem_funcs.c']]],
+  ['cps_77',['cps',['../mem__funcs_8c.html#ad66a9de1917d5b612e31615c7c0245c9',1,'mem_funcs.c']]],
+  ['ctr_78',['CTR',['../PPCArch_8h.html#aa445a79fc0f7373036c72d198e51f19a',1,'PPCArch.h']]],
+  ['ctrl_79',['ctrl',['../ctype_8c.html#af7a772cc980c9e6807aaaaa55e4cb037',1,'ctype.c']]]
 ];

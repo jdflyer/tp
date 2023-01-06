@@ -8,7 +8,8 @@ var searchData=
   ['qmtx_5f1063_5',['qMtx_1063',['../J3DTevs_8cpp.html#abc32bcbcb3cd9856d458276ca1df2a02',1,'J3DTevs.cpp']]],
   ['qs1_6',['qS1',['../e__acos_8c.html#a6a183df1b9d2475539df0b966d63dcf5',1,'qS1():&#160;e_acos.c'],['../e__asin_8c.html#a6a183df1b9d2475539df0b966d63dcf5',1,'qS1():&#160;e_asin.c']]],
   ['qs2_7',['qS2',['../e__acos_8c.html#a1ba4d7ab113ba02beaf144730a89be73',1,'qS2():&#160;e_acos.c'],['../e__asin_8c.html#a1ba4d7ab113ba02beaf144730a89be73',1,'qS2():&#160;e_asin.c']]],
-  ['qs3_8',['qS3',['../e__acos_8c.html#aa516ef6386dfed5f2fedc0499e9e2875',1,'qS3():&#160;e_acos.c'],['../e__asin_8c.html#aa516ef6386dfed5f2fedc0499e9e2875',1,'qS3():&#160;e_asin.c']]],
+  ['qs3_8',['qS3',['../e__asin_8c.html#aa516ef6386dfed5f2fedc0499e9e2875',1,'qS3():&#160;e_asin.c'],['../e__acos_8c.html#aa516ef6386dfed5f2fedc0499e9e2875',1,'qS3():&#160;e_acos.c']]],
   ['qs4_9',['qS4',['../e__asin_8c.html#acd820dd19889874f864c4a49244d3679',1,'qS4():&#160;e_asin.c'],['../e__acos_8c.html#acd820dd19889874f864c4a49244d3679',1,'qS4():&#160;e_acos.c']]],
-  ['queue_10',['queue',['../f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca',1,'queue():&#160;f_pc_manager.cpp'],['../structEXIControl.html#a453c0de79076a6aba560ebc953a51073',1,'EXIControl::queue()'],['../structOSThread.html#ad4db9ecdbeb784a78a7d6abf52f1ff57',1,'OSThread::queue()'],['../structOSCond.html#a589f00ff1643277e5a9702ad9c1c1a03',1,'OSCond::queue()'],['../structOSMutex.html#a94e38e16ab262180416736b11921867b',1,'OSMutex::queue()']]]
+  ['queue_10',['queue',['../f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca',1,'queue():&#160;f_pc_manager.cpp'],['../structEXIControl.html#a453c0de79076a6aba560ebc953a51073',1,'EXIControl::queue()'],['../structOSThread.html#ad4db9ecdbeb784a78a7d6abf52f1ff57',1,'OSThread::queue()'],['../structOSCond.html#a589f00ff1643277e5a9702ad9c1c1a03',1,'OSCond::queue()'],['../structOSMutex.html#a94e38e16ab262180416736b11921867b',1,'OSMutex::queue()']]],
+  ['quot_11',['quot',['../structdiv__t.html#a0b9dda2884048daa68ca4aaa12b17b9a',1,'div_t']]]
 ];

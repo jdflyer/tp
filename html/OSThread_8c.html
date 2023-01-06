@@ -266,9 +266,9 @@ Variables</h2></td></tr>
 <tr class="separator:a7bc1f84aed7138a4c7dd6606c8d8f4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad05979d0a60990bc5f1e0944107b8361"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSThread_8c.html#ad05979d0a60990bc5f1e0944107b8361">lit_847</a> []</td></tr>
 <tr class="separator:ad05979d0a60990bc5f1e0944107b8361"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac22abb78c303157943bcdfb515177c0b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSThread_8c.html#ac22abb78c303157943bcdfb515177c0b">lit_848</a> [] = &quot;OSCheckActiveThreads: Failed thread-&gt;<a class="el" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a> == <a class="el" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> in %d\n&quot;</td></tr>
+<tr class="memitem:ac22abb78c303157943bcdfb515177c0b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSThread_8c.html#ac22abb78c303157943bcdfb515177c0b">lit_848</a> [] = &quot;OSCheckActiveThreads: Failed thread-&gt;<a class="el" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a> == <a class="el" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> in %d\n&quot;</td></tr>
 <tr class="separator:ac22abb78c303157943bcdfb515177c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4d1fa3fc798c4318b2aa33e8c06af54"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSThread_8c.html#aa4d1fa3fc798c4318b2aa33e8c06af54">lit_849</a> [] = &quot;OSCheckActiveThreads: Failed thread-&gt;<a class="el" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a> != <a class="el" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> in %d\n&quot;</td></tr>
+<tr class="memitem:aa4d1fa3fc798c4318b2aa33e8c06af54"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSThread_8c.html#aa4d1fa3fc798c4318b2aa33e8c06af54">lit_849</a> [] = &quot;OSCheckActiveThreads: Failed thread-&gt;<a class="el" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a> != <a class="el" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> in %d\n&quot;</td></tr>
 <tr class="separator:aa4d1fa3fc798c4318b2aa33e8c06af54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1047065b20fdc9be6b4d774e51aca1b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSThread_8c.html#ab1047065b20fdc9be6b4d774e51aca1b">lit_850</a> []</td></tr>
 <tr class="separator:ab1047065b20fdc9be6b4d774e51aca1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -327,14 +327,14 @@ Variables</h2></td></tr>
 <div class="line">        for (<a class="code hl_variable" href="CARDUnlock_8c.html#ae3d9c203031a75cf83ae5b2aa5cde689">next</a> = (<a class="code hl_variable" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>)-&gt;head; <a class="code hl_variable" href="CARDUnlock_8c.html#ae3d9c203031a75cf83ae5b2aa5cde689">next</a> &amp;&amp; <a class="code hl_variable" href="CARDUnlock_8c.html#ae3d9c203031a75cf83ae5b2aa5cde689">next</a>-&gt;effective_priority &lt;= thread-&gt;effective_priority; \</div>
 <div class="line">             <a class="code hl_variable" href="CARDUnlock_8c.html#ae3d9c203031a75cf83ae5b2aa5cde689">next</a> = <a class="code hl_variable" href="CARDUnlock_8c.html#ae3d9c203031a75cf83ae5b2aa5cde689">next</a>-&gt;link.next)                                                               \</div>
 <div class="line">            ;                                                                                      \</div>
-<div class="line">        if (<a class="code hl_variable" href="CARDUnlock_8c.html#ae3d9c203031a75cf83ae5b2aa5cde689">next</a> == <a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)                                                                          \</div>
+<div class="line">        if (<a class="code hl_variable" href="CARDUnlock_8c.html#ae3d9c203031a75cf83ae5b2aa5cde689">next</a> == <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)                                                                          \</div>
 <div class="line">            AddTail(<a class="code hl_variable" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>, thread, link);                                                          \</div>
 <div class="line">        <span class="keywordflow">else</span> {                                                                                     \</div>
 <div class="line">            (thread)-&gt;link.next = <a class="code hl_variable" href="CARDUnlock_8c.html#ae3d9c203031a75cf83ae5b2aa5cde689">next</a>;                                                            \</div>
 <div class="line">            prev = <a class="code hl_variable" href="CARDUnlock_8c.html#ae3d9c203031a75cf83ae5b2aa5cde689">next</a>-&gt;link.prev;                                                                \</div>
 <div class="line">            <a class="code hl_variable" href="CARDUnlock_8c.html#ae3d9c203031a75cf83ae5b2aa5cde689">next</a>-&gt;link.prev = (thread);                                                            \</div>
 <div class="line">            (thread)-&gt;link.prev = prev;                                                            \</div>
-<div class="line">            if (prev == <a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)                                                                      \</div>
+<div class="line">            if (prev == <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)                                                                      \</div>
 <div class="line">                (<a class="code hl_variable" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>)-&gt;head = (thread);                                                          \</div>
 <div class="line">            else                                                                                   \</div>
 <div class="line">                prev-&gt;link.next = (thread);                                                        \</div>
@@ -342,8 +342,8 @@ Variables</h2></td></tr>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 <div class="ttc" id="aCARDUnlock_8c_html_ae3d9c203031a75cf83ae5b2aa5cde689"><div class="ttname"><a href="CARDUnlock_8c.html#ae3d9c203031a75cf83ae5b2aa5cde689">next</a></div><div class="ttdeci">static unsigned long int next</div><div class="ttdef"><b>Definition:</b> CARDUnlock.c:101</div></div>
 <div class="ttc" id="af__pc__manager_8cpp_html_a73b5e8250c6bfb2e8fb034569229b3ca"><div class="ttname"><a href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a></div><div class="ttdeci">static node_list_class queue[10]</div><div class="ttdef"><b>Definition:</b> f_pc_manager.cpp:191</div></div>
+<div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:12</div></div>
 <div class="ttc" id="astructOSThread_html"><div class="ttname"><a href="structOSThread.html">OSThread</a></div><div class="ttdef"><b>Definition:</b> OSThread.h:56</div></div>
-<div class="ttc" id="atypes_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> types.h:34</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -382,12 +382,12 @@ Variables</h2></td></tr>
 <div class="line">        <a class="code hl_struct" href="structOSThread.html">OSThread</a>* prev;                                                                            \</div>
 <div class="line">                                                                                                   \</div>
 <div class="line">        prev = (<a class="code hl_variable" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>)-&gt;tail;                                                                      \</div>
-<div class="line">        if (prev == <a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)                                                                          \</div>
+<div class="line">        if (prev == <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)                                                                          \</div>
 <div class="line">            (<a class="code hl_variable" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>)-&gt;head = (thread);                                                              \</div>
 <div class="line">        else                                                                                       \</div>
 <div class="line">            prev-&gt;<a class="code hl_variable" href="structOSThread.html#ac27abf0e8bb8c9f904cd31da317a32d1">link</a>.<a class="code hl_variable" href="structOSThreadLink.html#aa088858c70226173056897f3086ddd0b">next</a> = (thread);                                                            \</div>
 <div class="line">        (thread)-&gt;link.prev = prev;                                                                \</div>
-<div class="line">        (thread)-&gt;<a class="code hl_variable" href="structOSThread.html#ac27abf0e8bb8c9f904cd31da317a32d1">link</a>.<a class="code hl_variable" href="structOSThreadLink.html#aa088858c70226173056897f3086ddd0b">next</a> = <a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;                                                                \</div>
+<div class="line">        (thread)-&gt;<a class="code hl_variable" href="structOSThread.html#ac27abf0e8bb8c9f904cd31da317a32d1">link</a>.<a class="code hl_variable" href="structOSThreadLink.html#aa088858c70226173056897f3086ddd0b">next</a> = <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;                                                                \</div>
 <div class="line">        (<a class="code hl_variable" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>)-&gt;tail = (thread);                                                                  \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 <div class="ttc" id="astructOSThreadLink_html_aa088858c70226173056897f3086ddd0b"><div class="ttname"><a href="structOSThreadLink.html#aa088858c70226173056897f3086ddd0b">OSThreadLink::next</a></div><div class="ttdeci">OSThread * next</div><div class="ttdef"><b>Definition:</b> OSThread.h:37</div></div>
@@ -430,10 +430,10 @@ Variables</h2></td></tr>
 <div class="line">        <a class="code hl_struct" href="structOSThread.html">OSThread</a>* __next;                                                                          \</div>
 <div class="line">        (thread) = (<a class="code hl_variable" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>)-&gt;head;                                                                  \</div>
 <div class="line">        __next = (thread)-&gt;link.next;                                                              \</div>
-<div class="line">        if (__next == <a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)                                                                        \</div>
-<div class="line">            (<a class="code hl_variable" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>)-&gt;tail = <a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;                                                                  \</div>
+<div class="line">        if (__next == <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)                                                                        \</div>
+<div class="line">            (<a class="code hl_variable" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>)-&gt;tail = <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;                                                                  \</div>
 <div class="line">        else                                                                                       \</div>
-<div class="line">            __next-&gt;link.prev = <a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;                                                              \</div>
+<div class="line">            __next-&gt;link.prev = <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;                                                              \</div>
 <div class="line">        (<a class="code hl_variable" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>)-&gt;head = __next;                                                                    \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
@@ -474,11 +474,11 @@ Variables</h2></td></tr>
 <div class="line">        <a class="code hl_struct" href="structOSThread.html">OSThread</a> *<a class="code hl_variable" href="CARDUnlock_8c.html#ae3d9c203031a75cf83ae5b2aa5cde689">next</a>, *prev;                                                                     \</div>
 <div class="line">        <a class="code hl_variable" href="CARDUnlock_8c.html#ae3d9c203031a75cf83ae5b2aa5cde689">next</a> = (thread)-&gt;link.next;                                                                \</div>
 <div class="line">        prev = (thread)-&gt;link.prev;                                                                \</div>
-<div class="line">        if (<a class="code hl_variable" href="CARDUnlock_8c.html#ae3d9c203031a75cf83ae5b2aa5cde689">next</a> == <a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)                                                                          \</div>
+<div class="line">        if (<a class="code hl_variable" href="CARDUnlock_8c.html#ae3d9c203031a75cf83ae5b2aa5cde689">next</a> == <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)                                                                          \</div>
 <div class="line">            (<a class="code hl_variable" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>)-&gt;tail = prev;                                                                  \</div>
 <div class="line">        else                                                                                       \</div>
 <div class="line">            next-&gt;link.prev = prev;                                                                \</div>
-<div class="line">        if (prev == <a class="code hl_define" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)                                                                          \</div>
+<div class="line">        if (prev == <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)                                                                          \</div>
 <div class="line">            (<a class="code hl_variable" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>)-&gt;head = <a class="code hl_variable" href="CARDUnlock_8c.html#ae3d9c203031a75cf83ae5b2aa5cde689">next</a>;                                                                  \</div>
 <div class="line">        else                                                                                       \</div>
 <div class="line">            prev-&gt;link.next = <a class="code hl_variable" href="CARDUnlock_8c.html#ae3d9c203031a75cf83ae5b2aa5cde689">next</a>;                                                                \</div>
@@ -1886,7 +1886,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_848[] = &quot;OSCheckActiveThreads: Failed thread-&gt;<a class="el" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a> == <a class="el" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> in %d\n&quot;</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_848[] = &quot;OSCheckActiveThreads: Failed thread-&gt;<a class="el" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a> == <a class="el" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> in %d\n&quot;</td>
         </tr>
       </table>
   </td>
@@ -1908,7 +1908,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_849[] = &quot;OSCheckActiveThreads: Failed thread-&gt;<a class="el" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a> != <a class="el" href="types_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> in %d\n&quot;</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_849[] = &quot;OSCheckActiveThreads: Failed thread-&gt;<a class="el" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a> != <a class="el" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> in %d\n&quot;</td>
         </tr>
       </table>
   </td>

@@ -87,54 +87,122 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="buffer__io_8h_source.html">MSL_C/MSL_Common/Src/buffer_io.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;asm/MSL_C/MSL_Common/Src/buffer_io/__flush_buffer.s&quot;</code><br />
-<code>#include &quot;asm/MSL_C/MSL_Common/Src/buffer_io/__prep_buffer.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for buffer_io.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="buffer__io_8c__incl.svg" width="100%" height="470"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="buffer__io_8c__incl.svg" width="192" height="315"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aaece95756f1c628bccc397bffb3c4b90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffer__io_8c.html#aaece95756f1c628bccc397bffb3c4b90">__flush_buffer</a> ()</td></tr>
-<tr class="separator:aaece95756f1c628bccc397bffb3c4b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e27c43518d257b9837452ee175f5a0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffer__io_8c.html#a2e27c43518d257b9837452ee175f5a0d">__prep_buffer</a> ()</td></tr>
-<tr class="separator:a2e27c43518d257b9837452ee175f5a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32142c6dbbe4e22f04e712ce24ed35fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffer__io_8c.html#a32142c6dbbe4e22f04e712ce24ed35fb">__convert_from_newlines</a> (unsigned char *buf, <a class="el" href="stddef_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> *n)</td></tr>
+<tr class="separator:a32142c6dbbe4e22f04e712ce24ed35fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44fd08382c3d773255e33f76ca7507bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffer__io_8c.html#a44fd08382c3d773255e33f76ca7507bc">__convert_to_newlines</a> (unsigned char *buf, <a class="el" href="stddef_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> *n)</td></tr>
+<tr class="separator:a44fd08382c3d773255e33f76ca7507bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab32fd7aaa8ed81632b70aa8d30fa63f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffer__io_8c.html#aab32fd7aaa8ed81632b70aa8d30fa63f">__prep_buffer</a> (<a class="el" href="ansi__files_8h.html#a175abb747ea3b78aa8da87355dcec473">FILE</a> *file)</td></tr>
+<tr class="separator:aab32fd7aaa8ed81632b70aa8d30fa63f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92e8b20037cba45cbcb674edfa5a5920"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="buffer__io_8c.html#a92e8b20037cba45cbcb674edfa5a5920">__flush_buffer</a> (<a class="el" href="ansi__files_8h.html#a175abb747ea3b78aa8da87355dcec473">FILE</a> *file, <a class="el" href="stddef_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> *bytes_flushed)</td></tr>
+<tr class="separator:a92e8b20037cba45cbcb674edfa5a5920"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aaece95756f1c628bccc397bffb3c4b90" name="aaece95756f1c628bccc397bffb3c4b90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaece95756f1c628bccc397bffb3c4b90">&#9670;&#160;</a></span>__flush_buffer()</h2>
+<a id="a32142c6dbbe4e22f04e712ce24ed35fb" name="a32142c6dbbe4e22f04e712ce24ed35fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32142c6dbbe4e22f04e712ce24ed35fb">&#9670;&#160;</a></span>__convert_from_newlines()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __flush_buffer </td>
+          <td class="memname">void __convert_from_newlines </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="stddef_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> *&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a2e27c43518d257b9837452ee175f5a0d" name="a2e27c43518d257b9837452ee175f5a0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e27c43518d257b9837452ee175f5a0d">&#9670;&#160;</a></span>__prep_buffer()</h2>
+<a id="a44fd08382c3d773255e33f76ca7507bc" name="a44fd08382c3d773255e33f76ca7507bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44fd08382c3d773255e33f76ca7507bc">&#9670;&#160;</a></span>__convert_to_newlines()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __prep_buffer </td>
+          <td class="memname">void __convert_to_newlines </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="stddef_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> *&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a92e8b20037cba45cbcb674edfa5a5920" name="a92e8b20037cba45cbcb674edfa5a5920"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92e8b20037cba45cbcb674edfa5a5920">&#9670;&#160;</a></span>__flush_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int __flush_buffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ansi__files_8h.html#a175abb747ea3b78aa8da87355dcec473">FILE</a> *&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="stddef_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> *&#160;</td>
+          <td class="paramname"><em>bytes_flushed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab32fd7aaa8ed81632b70aa8d30fa63f" name="aab32fd7aaa8ed81632b70aa8d30fa63f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab32fd7aaa8ed81632b70aa8d30fa63f">&#9670;&#160;</a></span>__prep_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void __prep_buffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ansi__files_8h.html#a175abb747ea3b78aa8da87355dcec473">FILE</a> *&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

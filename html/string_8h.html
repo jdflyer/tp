@@ -87,13 +87,12 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="____va__arg_8h_source.html">Runtime.PPCEABI.H/__va_arg.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for string.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="string_8h__incl.svg" width="218" height="198"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="string_8h__incl.svg" width="192" height="286"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -139,7 +138,7 @@ Functions</h2></td></tr>
 <tr class="separator:ad3275c2da349019932874fbf31fd91c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6657a2e3ca3a511567b9023cfb972905"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a6657a2e3ca3a511567b9023cfb972905">snprintf</a> (char *, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>, const char *,...)</td></tr>
 <tr class="separator:a6657a2e3ca3a511567b9023cfb972905"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14912bf177556f41c63e504f68c3f373"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a14912bf177556f41c63e504f68c3f373">vsnprintf</a> (char *<a class="el" href="ai_8c.html#afacf0f5f5bb482c160a5d05965598d32">buffer</a>, <a class="el" href="types_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> buffer_size, const char *format, <a class="el" href="____va__arg_8h.html#a6e6fde95f2a221e9bcd58fa102bd90ff">va_list</a> args)</td></tr>
+<tr class="memitem:a14912bf177556f41c63e504f68c3f373"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stddef_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_8h.html#a14912bf177556f41c63e504f68c3f373">vsnprintf</a> (char *<a class="el" href="ai_8c.html#afacf0f5f5bb482c160a5d05965598d32">buffer</a>, <a class="el" href="stddef_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> buffer_size, const char *format, <a class="el" href="____va__arg_8h.html#a6e6fde95f2a221e9bcd58fa102bd90ff">va_list</a> args)</td></tr>
 <tr class="separator:a14912bf177556f41c63e504f68c3f373"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -221,7 +220,7 @@ Functions</h2></td></tr>
           <td class="memname">int printf </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>format</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -435,13 +434,13 @@ Functions</h2></td></tr>
           <td class="memname">int stricmp </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>str1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramname"><em>str2</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -592,7 +591,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> vsnprintf </td>
+          <td class="memname"><a class="el" href="stddef_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a> vsnprintf </td>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
@@ -600,7 +599,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="stddef_8h.html#acf18a0d6c4b39d531e021702e9a77984">size_t</a>&#160;</td>
           <td class="paramname"><em>buffer_size</em>, </td>
         </tr>
         <tr>
