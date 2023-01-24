@@ -93,13 +93,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SIBios_8h_source.html">dolphin/si/SIBios.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SISamplingRate_8h_source.html">dolphin/si/SISamplingRate.h</a>&quot;</code><br />
-<code>#include &quot;asm/dolphin/pad/Pad/PADReceiveCheckCallback.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/pad/Pad/PADReset.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/pad/Pad/PADRecalibrate.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/pad/Pad/PADControlMotor.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/pad/Pad/SPEC2_MakeStatus.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/pad/Pad/PADSetSamplingCallback.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/pad/Pad/__PADDisableRecalibration.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for Pad.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -130,10 +124,10 @@ Functions</h2></td></tr>
 <tr class="separator:a0f8bd96edf66a43aa51282191beedf1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a281739e0e55f218d43e6ccc958f033ca"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#a281739e0e55f218d43e6ccc958f033ca">SamplingHandler</a> (<a class="el" href="OSInterrupt_8h.html#acd5c403776740063a124b880906361fd">OSInterrupt</a> interrupt, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
 <tr class="separator:a281739e0e55f218d43e6ccc958f033ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc882ea88401461d8bd73aa52dbe76bb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Pad_8h.html#ac365d60f8e889e736f04e099fbabd8a8">PADSamplingCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#abc882ea88401461d8bd73aa52dbe76bb">PADSetSamplingCallback</a> (<a class="el" href="Pad_8h.html#ac365d60f8e889e736f04e099fbabd8a8">PADSamplingCallback</a> callback)</td></tr>
-<tr class="separator:abc882ea88401461d8bd73aa52dbe76bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4676371c67468ffe90a9e60ff8e755d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#ac4676371c67468ffe90a9e60ff8e755d">__PADDisableRecalibration</a> (<a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> disable)</td></tr>
-<tr class="separator:ac4676371c67468ffe90a9e60ff8e755d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a357d95a1a556669d642a19f97f331ffb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="Pad_8h.html#ac365d60f8e889e736f04e099fbabd8a8">PADSamplingCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#a357d95a1a556669d642a19f97f331ffb">PADSetSamplingCallback</a> (<a class="el" href="Pad_8h.html#ac365d60f8e889e736f04e099fbabd8a8">PADSamplingCallback</a> callback)</td></tr>
+<tr class="separator:a357d95a1a556669d642a19f97f331ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18222bb50f3cdc38b5bef6745c27640c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#a18222bb50f3cdc38b5bef6745c27640c">__PADDisableRecalibration</a> (<a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> disable)</td></tr>
+<tr class="separator:a18222bb50f3cdc38b5bef6745c27640c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3d6a434788a0b3d713c912011acc40f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#ad3d6a434788a0b3d713c912011acc40f">__shr2i</a> ()</td></tr>
 <tr class="separator:ad3d6a434788a0b3d713c912011acc40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb31a0b7c02d82c942870ac77a8d1ed6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#aeb31a0b7c02d82c942870ac77a8d1ed6">PADEnable</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan)</td></tr>
@@ -150,18 +144,18 @@ Functions</h2></td></tr>
 <tr class="separator:a25b8efe5e23633958ccac23821db2c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9eeeae69469801257e5b26e6d0f8e77b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#a9eeeae69469801257e5b26e6d0f8e77b">PADTypeAndStatusCallback</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> type)</td></tr>
 <tr class="separator:a9eeeae69469801257e5b26e6d0f8e77b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e036a154606ace8adbedea4ec7ef714"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#a7e036a154606ace8adbedea4ec7ef714">PADReceiveCheckCallback</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> type)</td></tr>
-<tr class="separator:a7e036a154606ace8adbedea4ec7ef714"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f11a23752ece5967324527d12eee558"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#a2f11a23752ece5967324527d12eee558">PADReset</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> mask)</td></tr>
-<tr class="separator:a2f11a23752ece5967324527d12eee558"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37d608090864495ef8daa2cc7bdb9f57"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#a37d608090864495ef8daa2cc7bdb9f57">PADRecalibrate</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> mask)</td></tr>
-<tr class="separator:a37d608090864495ef8daa2cc7bdb9f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27a67a688d02a31cce6e4c6e8aa838b3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#a27a67a688d02a31cce6e4c6e8aa838b3">PADReceiveCheckCallback</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> type)</td></tr>
+<tr class="separator:a27a67a688d02a31cce6e4c6e8aa838b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abebff581d0e99d85e056929329d177b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#abebff581d0e99d85e056929329d177b2">PADReset</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> mask)</td></tr>
+<tr class="separator:abebff581d0e99d85e056929329d177b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ca8a40d0247e2eae92a6faa0f696f0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#a6ca8a40d0247e2eae92a6faa0f696f0f">PADRecalibrate</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> mask)</td></tr>
+<tr class="separator:a6ca8a40d0247e2eae92a6faa0f696f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f4c86051a139fc16011e7b3c11b3f5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#a5f4c86051a139fc16011e7b3c11b3f5d">PADInit</a> ()</td></tr>
 <tr class="separator:a5f4c86051a139fc16011e7b3c11b3f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac01469f679ce48201781747d06fbd1a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#ac01469f679ce48201781747d06fbd1a6">PADRead</a> (<a class="el" href="structPADStatus.html">PADStatus</a> *<a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>)</td></tr>
 <tr class="separator:ac01469f679ce48201781747d06fbd1a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f4daa2fc8643f868ae61ce58e66a662"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#a3f4daa2fc8643f868ae61ce58e66a662">PADControlMotor</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> channel, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> command)</td></tr>
-<tr class="separator:a3f4daa2fc8643f868ae61ce58e66a662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a582f0262b407a9eb87c2231880592475"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#a582f0262b407a9eb87c2231880592475">PADControlMotor</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> command)</td></tr>
+<tr class="separator:a582f0262b407a9eb87c2231880592475"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7e5b1d63705d2d69e0f669dbd782653"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#ab7e5b1d63705d2d69e0f669dbd782653">PADSetSpec</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> spec)</td></tr>
 <tr class="separator:ab7e5b1d63705d2d69e0f669dbd782653"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af683eba9471d7813340fe00ddcdb2b92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a151f780fb455885061d3b77ec1c90c03">s8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Pad_8c.html#af683eba9471d7813340fe00ddcdb2b92">ClampS8</a> (<a class="el" href="types_8h.html#a151f780fb455885061d3b77ec1c90c03">s8</a> var, <a class="el" href="types_8h.html#a151f780fb455885061d3b77ec1c90c03">s8</a> org)</td></tr>
@@ -287,14 +281,14 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ac4676371c67468ffe90a9e60ff8e755d" name="ac4676371c67468ffe90a9e60ff8e755d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4676371c67468ffe90a9e60ff8e755d">&#9670;&#160;</a></span>__PADDisableRecalibration()</h2>
+<a id="a18222bb50f3cdc38b5bef6745c27640c" name="a18222bb50f3cdc38b5bef6745c27640c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18222bb50f3cdc38b5bef6745c27640c">&#9670;&#160;</a></span>__PADDisableRecalibration()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> __PADDisableRecalibration </td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> __PADDisableRecalibration </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td>
           <td class="paramname"><em>disable</em></td><td>)</td>
@@ -446,17 +440,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a3f4daa2fc8643f868ae61ce58e66a662" name="a3f4daa2fc8643f868ae61ce58e66a662"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f4daa2fc8643f868ae61ce58e66a662">&#9670;&#160;</a></span>PADControlMotor()</h2>
+<a id="a582f0262b407a9eb87c2231880592475" name="a582f0262b407a9eb87c2231880592475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a582f0262b407a9eb87c2231880592475">&#9670;&#160;</a></span>PADControlMotor()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void PADControlMotor </td>
+          <td class="memname">void PADControlMotor </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
-          <td class="paramname"><em>channel</em>, </td>
+          <td class="paramname"><em>chan</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -688,14 +682,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a37d608090864495ef8daa2cc7bdb9f57" name="a37d608090864495ef8daa2cc7bdb9f57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37d608090864495ef8daa2cc7bdb9f57">&#9670;&#160;</a></span>PADRecalibrate()</h2>
+<a id="a6ca8a40d0247e2eae92a6faa0f696f0f" name="a6ca8a40d0247e2eae92a6faa0f696f0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ca8a40d0247e2eae92a6faa0f696f0f">&#9670;&#160;</a></span>PADRecalibrate()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> PADRecalibrate </td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> PADRecalibrate </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
           <td class="paramname"><em>mask</em></td><td>)</td>
@@ -706,8 +700,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a7e036a154606ace8adbedea4ec7ef714" name="a7e036a154606ace8adbedea4ec7ef714"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e036a154606ace8adbedea4ec7ef714">&#9670;&#160;</a></span>PADReceiveCheckCallback()</h2>
+<a id="a27a67a688d02a31cce6e4c6e8aa838b3" name="a27a67a688d02a31cce6e4c6e8aa838b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27a67a688d02a31cce6e4c6e8aa838b3">&#9670;&#160;</a></span>PADReceiveCheckCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -716,7 +710,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void PADReceiveCheckCallback </td>
+          <td class="memname">static void PADReceiveCheckCallback </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
           <td class="paramname"><em>chan</em>, </td>
@@ -742,14 +736,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a2f11a23752ece5967324527d12eee558" name="a2f11a23752ece5967324527d12eee558"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f11a23752ece5967324527d12eee558">&#9670;&#160;</a></span>PADReset()</h2>
+<a id="abebff581d0e99d85e056929329d177b2" name="abebff581d0e99d85e056929329d177b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abebff581d0e99d85e056929329d177b2">&#9670;&#160;</a></span>PADReset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> PADReset </td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> PADReset </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
           <td class="paramname"><em>mask</em></td><td>)</td>
@@ -778,8 +772,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="abc882ea88401461d8bd73aa52dbe76bb" name="abc882ea88401461d8bd73aa52dbe76bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc882ea88401461d8bd73aa52dbe76bb">&#9670;&#160;</a></span>PADSetSamplingCallback()</h2>
+<a id="a357d95a1a556669d642a19f97f331ffb" name="a357d95a1a556669d642a19f97f331ffb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a357d95a1a556669d642a19f97f331ffb">&#9670;&#160;</a></span>PADSetSamplingCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -788,7 +782,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm <a class="el" href="Pad_8h.html#ac365d60f8e889e736f04e099fbabd8a8">PADSamplingCallback</a> PADSetSamplingCallback </td>
+          <td class="memname"><a class="el" href="Pad_8h.html#ac365d60f8e889e736f04e099fbabd8a8">PADSamplingCallback</a> PADSetSamplingCallback </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="Pad_8h.html#ac365d60f8e889e736f04e099fbabd8a8">PADSamplingCallback</a>&#160;</td>
           <td class="paramname"><em>callback</em></td><td>)</td>
@@ -1476,7 +1470,7 @@ Variables</h2></td></tr>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aPad_8c_html_a0f8bd96edf66a43aa51282191beedf1b"><div class="ttname"><a href="Pad_8c.html#a0f8bd96edf66a43aa51282191beedf1b">OnReset</a></div><div class="ttdeci">static s32 OnReset(s32 final)</div><div class="ttdef"><b>Definition:</b> Pad.c:780</div></div>
+<div class="ttc" id="aPad_8c_html_a0f8bd96edf66a43aa51282191beedf1b"><div class="ttname"><a href="Pad_8c.html#a0f8bd96edf66a43aa51282191beedf1b">OnReset</a></div><div class="ttdeci">static s32 OnReset(s32 final)</div><div class="ttdef"><b>Definition:</b> Pad.c:783</div></div>
 <div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:12</div></div>
 </div><!-- fragment -->
 </div>

@@ -90,13 +90,12 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="dvdFatal_8h_source.html">dolphin/dvd/dvdFatal.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;asm/dolphin/dvd/dvdFatal/__DVDPrintFatalMessage.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for dvdFatal.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="dvdFatal_8c__incl.svg" width="531" height="286"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="dvdFatal_8c__incl.svg" width="320" height="271"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><table class="memberdecls">
@@ -107,8 +106,8 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:abe8fff5d1f6d4e998ed6285763c70639"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdFatal_8c.html#abe8fff5d1f6d4e998ed6285763c70639">FatalFunc</a> [4+4]</td></tr>
-<tr class="separator:abe8fff5d1f6d4e998ed6285763c70639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fd149a28cc76a07c3d5ca70ce7c3b7c"><td class="memItemLeft" align="right" valign="top">static void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdFatal_8c.html#a0fd149a28cc76a07c3d5ca70ce7c3b7c">FatalFunc</a> )(void) = <a class="el" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td></tr>
+<tr class="separator:a0fd149a28cc76a07c3d5ca70ce7c3b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ae84d060632d4c273ecbd00cf3c980c60" name="ae84d060632d4c273ecbd00cf3c980c60"></a>
@@ -120,6 +119,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void __DVDPrintFatalMessage </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -129,8 +129,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="abe8fff5d1f6d4e998ed6285763c70639" name="abe8fff5d1f6d4e998ed6285763c70639"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe8fff5d1f6d4e998ed6285763c70639">&#9670;&#160;</a></span>FatalFunc</h2>
+<a id="a0fd149a28cc76a07c3d5ca70ce7c3b7c" name="a0fd149a28cc76a07c3d5ca70ce7c3b7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fd149a28cc76a07c3d5ca70ce7c3b7c">&#9670;&#160;</a></span>FatalFunc</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -139,7 +139,11 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> FatalFunc[4+4]</td>
+          <td class="memname">void(* FatalFunc) (void) </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> = <a class="el" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></td>
         </tr>
       </table>
   </td>

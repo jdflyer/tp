@@ -93,8 +93,6 @@ $(function() {
 <code>#include &quot;<a class="el" href="dsp_8h_source.html">dolphin/dsp/dsp.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dvd_8h_source.html">dolphin/dvd/dvd.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="CARDPriv_8h_source.html">dolphin/card/CARDPriv.h</a>&quot;</code><br />
-<code>#include &quot;asm/dolphin/card/CARDDir/EraseCallback.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/card/CARDDir/__CARDUpdateDir.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for CARDDir.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -108,12 +106,12 @@ $(function() {
 Functions</h2></td></tr>
 <tr class="memitem:af72339ee8de94fbb2a7b866acea34a81"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDDir_8c.html#af72339ee8de94fbb2a7b866acea34a81">WriteCallback</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> result)</td></tr>
 <tr class="separator:af72339ee8de94fbb2a7b866acea34a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dbadc1c3f6631745f78ac964d89d097"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDDir_8c.html#a1dbadc1c3f6631745f78ac964d89d097">EraseCallback</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> result)</td></tr>
-<tr class="separator:a1dbadc1c3f6631745f78ac964d89d097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ea91fd694ca1aaa6b3f425c1fcbc7cf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDDir_8c.html#a0ea91fd694ca1aaa6b3f425c1fcbc7cf">EraseCallback</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> result)</td></tr>
+<tr class="separator:a0ea91fd694ca1aaa6b3f425c1fcbc7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4775582269a3c38fb14203d504095a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCARDDir.html">CARDDir</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDDir_8c.html#ad4775582269a3c38fb14203d504095a5">__CARDGetDirBlock</a> (<a class="el" href="structCARDControl.html">CARDControl</a> *card)</td></tr>
 <tr class="separator:ad4775582269a3c38fb14203d504095a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61de3dd67bfa3fb52348f4ffb240fe7a"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDDir_8c.html#a61de3dd67bfa3fb52348f4ffb240fe7a">__CARDUpdateDir</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="card_8h.html#a7e14558c66d616c768d3a6f73bd640a6">CARDCallback</a> callback)</td></tr>
-<tr class="separator:a61de3dd67bfa3fb52348f4ffb240fe7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26654b5cec0ed777608cfb4b9f5dd1fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDDir_8c.html#a26654b5cec0ed777608cfb4b9f5dd1fc">__CARDUpdateDir</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> chan, <a class="el" href="card_8h.html#a7e14558c66d616c768d3a6f73bd640a6">CARDCallback</a> callback)</td></tr>
+<tr class="separator:a26654b5cec0ed777608cfb4b9f5dd1fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ad4775582269a3c38fb14203d504095a5" name="ad4775582269a3c38fb14203d504095a5"></a>
@@ -134,14 +132,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a61de3dd67bfa3fb52348f4ffb240fe7a" name="a61de3dd67bfa3fb52348f4ffb240fe7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61de3dd67bfa3fb52348f4ffb240fe7a">&#9670;&#160;</a></span>__CARDUpdateDir()</h2>
+<a id="a26654b5cec0ed777608cfb4b9f5dd1fc" name="a26654b5cec0ed777608cfb4b9f5dd1fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26654b5cec0ed777608cfb4b9f5dd1fc">&#9670;&#160;</a></span>__CARDUpdateDir()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDUpdateDir </td>
+          <td class="memname"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __CARDUpdateDir </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
           <td class="paramname"><em>chan</em>, </td>
@@ -162,8 +160,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1dbadc1c3f6631745f78ac964d89d097" name="a1dbadc1c3f6631745f78ac964d89d097"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1dbadc1c3f6631745f78ac964d89d097">&#9670;&#160;</a></span>EraseCallback()</h2>
+<a id="a0ea91fd694ca1aaa6b3f425c1fcbc7cf" name="a0ea91fd694ca1aaa6b3f425c1fcbc7cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ea91fd694ca1aaa6b3f425c1fcbc7cf">&#9670;&#160;</a></span>EraseCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -172,7 +170,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void EraseCallback </td>
+          <td class="memname">static void EraseCallback </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
           <td class="paramname"><em>chan</em>, </td>

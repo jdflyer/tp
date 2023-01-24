@@ -83,7 +83,9 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">arq.h File Reference</div></div>
 </div><!--header-->
@@ -113,12 +115,32 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structARQRequest.html">ARQRequest</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a864f7c7c98046d10e969cf4be2584bac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arq_8h.html#a864f7c7c98046d10e969cf4be2584bac">ARQ_CHUNK_SIZE_DEFAULT</a>&#160;&#160;&#160;4096</td></tr>
+<tr class="separator:a864f7c7c98046d10e969cf4be2584bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a5d574a7644e6cde2dc9e8895fa983a6a"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arq_8h.html#a5d574a7644e6cde2dc9e8895fa983a6a">ARQCallback</a>) (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> request_address)</td></tr>
 <tr class="separator:a5d574a7644e6cde2dc9e8895fa983a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a133d4629a171cb4a1cc6760fa414c8a7"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="arq_8h.html#abe69f6a049c536777d1f2fcecf45cea9">_ARamType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arq_8h.html#a133d4629a171cb4a1cc6760fa414c8a7">ARamType</a></td></tr>
+<tr class="separator:a133d4629a171cb4a1cc6760fa414c8a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac76c6b51b38046f9087c955e418a291e"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="arq_8h.html#abff982cf54db6ccdbb6833be0987c657">_ArqPriotity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arq_8h.html#ac76c6b51b38046f9087c955e418a291e">ArqPriotity</a></td></tr>
+<tr class="separator:ac76c6b51b38046f9087c955e418a291e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf08f90cbbb879c9e62d7ebfce2b591b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structARQRequest.html">ARQRequest</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arq_8h.html#adf08f90cbbb879c9e62d7ebfce2b591b">ARQRequest</a></td></tr>
 <tr class="separator:adf08f90cbbb879c9e62d7ebfce2b591b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:abe69f6a049c536777d1f2fcecf45cea9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arq_8h.html#abe69f6a049c536777d1f2fcecf45cea9">_ARamType</a> { <a class="el" href="arq_8h.html#abe69f6a049c536777d1f2fcecf45cea9a21ad8b89569048829d8c22fcbda8e973">ARAM_DIR_MRAM_TO_ARAM</a>
+, <a class="el" href="arq_8h.html#abe69f6a049c536777d1f2fcecf45cea9a1d5e528f6bb88154b62a26ac5845cde6">ARAM_DIR_ARAM_TO_MRAM</a>
+ }</td></tr>
+<tr class="separator:abe69f6a049c536777d1f2fcecf45cea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abff982cf54db6ccdbb6833be0987c657"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arq_8h.html#abff982cf54db6ccdbb6833be0987c657">_ArqPriotity</a> { <a class="el" href="arq_8h.html#abff982cf54db6ccdbb6833be0987c657a6a568866eedb2ff086581e0c81b37dd6">ARQ_PRIORITY_LOW</a>
+, <a class="el" href="arq_8h.html#abff982cf54db6ccdbb6833be0987c657a323026e1ece8493a28c0fcd6be36390c">ARQ_PRIORITY_HIGH</a>
+ }</td></tr>
+<tr class="separator:abff982cf54db6ccdbb6833be0987c657"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -127,7 +149,36 @@ Functions</h2></td></tr>
 <tr class="memitem:ad947119f9a8da65211093dcd1c423450"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arq_8h.html#ad947119f9a8da65211093dcd1c423450">ARQPostRequest</a> (<a class="el" href="structARQRequest.html">ARQRequest</a> *task, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> owner, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> type, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> priority, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> source, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> destination, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> length, <a class="el" href="arq_8h.html#a5d574a7644e6cde2dc9e8895fa983a6a">ARQCallback</a> callback)</td></tr>
 <tr class="separator:ad947119f9a8da65211093dcd1c423450"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a864f7c7c98046d10e969cf4be2584bac" name="a864f7c7c98046d10e969cf4be2584bac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a864f7c7c98046d10e969cf4be2584bac">&#9670;&#160;</a></span>ARQ_CHUNK_SIZE_DEFAULT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ARQ_CHUNK_SIZE_DEFAULT&#160;&#160;&#160;4096</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="a133d4629a171cb4a1cc6760fa414c8a7" name="a133d4629a171cb4a1cc6760fa414c8a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a133d4629a171cb4a1cc6760fa414c8a7">&#9670;&#160;</a></span>ARamType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="arq_8h.html#abe69f6a049c536777d1f2fcecf45cea9">_ARamType</a> <a class="el" href="arq_8h.html#a133d4629a171cb4a1cc6760fa414c8a7">ARamType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5d574a7644e6cde2dc9e8895fa983a6a" name="a5d574a7644e6cde2dc9e8895fa983a6a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5d574a7644e6cde2dc9e8895fa983a6a">&#9670;&#160;</a></span>ARQCallback</h2>
 
@@ -136,6 +187,20 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef void(* ARQCallback) (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> request_address)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac76c6b51b38046f9087c955e418a291e" name="ac76c6b51b38046f9087c955e418a291e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac76c6b51b38046f9087c955e418a291e">&#9670;&#160;</a></span>ArqPriotity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="arq_8h.html#abff982cf54db6ccdbb6833be0987c657">_ArqPriotity</a> <a class="el" href="arq_8h.html#ac76c6b51b38046f9087c955e418a291e">ArqPriotity</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -153,6 +218,43 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="abe69f6a049c536777d1f2fcecf45cea9" name="abe69f6a049c536777d1f2fcecf45cea9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe69f6a049c536777d1f2fcecf45cea9">&#9670;&#160;</a></span>_ARamType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="arq_8h.html#abe69f6a049c536777d1f2fcecf45cea9">_ARamType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abe69f6a049c536777d1f2fcecf45cea9a21ad8b89569048829d8c22fcbda8e973" name="abe69f6a049c536777d1f2fcecf45cea9a21ad8b89569048829d8c22fcbda8e973"></a>ARAM_DIR_MRAM_TO_ARAM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abe69f6a049c536777d1f2fcecf45cea9a1d5e528f6bb88154b62a26ac5845cde6" name="abe69f6a049c536777d1f2fcecf45cea9a1d5e528f6bb88154b62a26ac5845cde6"></a>ARAM_DIR_ARAM_TO_MRAM&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="abff982cf54db6ccdbb6833be0987c657" name="abff982cf54db6ccdbb6833be0987c657"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abff982cf54db6ccdbb6833be0987c657">&#9670;&#160;</a></span>_ArqPriotity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="arq_8h.html#abff982cf54db6ccdbb6833be0987c657">_ArqPriotity</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abff982cf54db6ccdbb6833be0987c657a6a568866eedb2ff086581e0c81b37dd6" name="abff982cf54db6ccdbb6833be0987c657a6a568866eedb2ff086581e0c81b37dd6"></a>ARQ_PRIORITY_LOW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abff982cf54db6ccdbb6833be0987c657a323026e1ece8493a28c0fcd6be36390c" name="abff982cf54db6ccdbb6833be0987c657a323026e1ece8493a28c0fcd6be36390c"></a>ARQ_PRIORITY_HIGH&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>

@@ -2,8 +2,8 @@ var searchData=
 [
   ['w_0',['w',['../structQuaternion.html#a8e1d2e0f176abd8a22e6235b25683a5f',1,'Quaternion']]],
   ['waitingbits_1',['WaitingBits',['../Pad_8c.html#a72beff92f7c63786c4c0384d578dc4d2',1,'Pad.c']]],
-  ['waitingcoverclose_2',['WaitingCoverClose',['../dvdlow_8c.html#abc7ce2faf2b4f79cbb2ec4cb57ecf478',1,'dvdlow.c']]],
-  ['waitingqueue_3',['WaitingQueue',['../dvdqueue_8c.html#a9aa05cd28c26899b1e0dfd6a2ccaba93',1,'dvdqueue.c']]],
+  ['waitingcoverclose_2',['WaitingCoverClose',['../dvdlow_8c.html#a8f50c42eafde73327090ae2a918acaeb',1,'dvdlow.c']]],
+  ['waitingqueue_3',['WaitingQueue',['../dvdqueue_8c.html#ac3f16913500a8818fa8ede8b9a15a4e9',1,'dvdqueue.c']]],
   ['waku_5ftag_4',['waku_tag',['../d__menu__dmap_8cpp.html#a6a4ef37f33787594d482fdb89a34cf58',1,'d_menu_dmap.cpp']]],
   ['watercenterscale_5',['waterCenterScale',['../d__a__alink_8cpp.html#ac9936693c6903b8016534b8b4bcbc11e',1,'d_a_alink.cpp']]],
   ['watercolor_6',['waterColor',['../d__a__alink_8cpp.html#ac110bfd10fc778564e85109b5db9ba93',1,'d_a_alink.cpp']]],

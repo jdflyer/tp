@@ -91,9 +91,9 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="OSError_8h_source.html">dolphin/os/OSError.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="PPCArch_8h_source.html">dolphin/base/PPCArch.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dsp_8h_source.html">dolphin/dsp/dsp.h</a>&quot;</code><br />
-<code>#include &quot;asm/dolphin/os/OSError/OSSetErrorHandler.s&quot;</code><br />
+<code>#include &quot;<a class="el" href="dvdlow_8h_source.html">dolphin/dvd/dvdlow.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
 <code>#include &quot;asm/dolphin/os/OSError/__OSUnhandledException.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for OSError.c:</div>
@@ -111,8 +111,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7b9ccf9c643d63a7300a6f7ecf834af8"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="OSError_8h.html#a274d27739bcd814a61cf5246698608c3">OSErrorHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a7b9ccf9c643d63a7300a6f7ecf834af8">OSSetErrorHandler</a> (<a class="el" href="OSError_8h.html#a753e236842eaa668b6494fc10286df4a">OSError</a> error, <a class="el" href="OSError_8h.html#a274d27739bcd814a61cf5246698608c3">OSErrorHandler</a> handler)</td></tr>
-<tr class="separator:a7b9ccf9c643d63a7300a6f7ecf834af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae18c5b4c393d3211fb7cb3952a5ac2db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="OSError_8h.html#a274d27739bcd814a61cf5246698608c3">OSErrorHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#ae18c5b4c393d3211fb7cb3952a5ac2db">OSSetErrorHandler</a> (<a class="el" href="OSError_8h.html#a753e236842eaa668b6494fc10286df4a">OSError</a> error, <a class="el" href="OSError_8h.html#a274d27739bcd814a61cf5246698608c3">OSErrorHandler</a> handler)</td></tr>
+<tr class="separator:ae18c5b4c393d3211fb7cb3952a5ac2db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77d08e948b55a2057dfb992994ec9ba7"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a77d08e948b55a2057dfb992994ec9ba7">__OSUnhandledException</a> (<a class="el" href="OSError_8h.html#add6149ead84c8568031dabdedbee4f27">__OSException</a> <a class="el" href="structexception.html">exception</a>, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> dsisr, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> dar)</td></tr>
 <tr class="separator:a77d08e948b55a2057dfb992994ec9ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -124,14 +124,12 @@ Variables</h2></td></tr>
 <tr class="separator:afcc1b49aaba25658b431b933b39b3547"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41efc37d176fc4af1d54860ec61dc6a9"><td class="memItemLeft" align="right" valign="top">volatile <a class="el" href="structOSContext.html">OSContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a41efc37d176fc4af1d54860ec61dc6a9">__OSFPUContext</a></td></tr>
 <tr class="separator:a41efc37d176fc4af1d54860ec61dc6a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4601f2142c57bb56519f12d2ad1b7e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#aa4601f2142c57bb56519f12d2ad1b7e7">__OSLastInterruptSrr0</a> [4]</td></tr>
-<tr class="separator:aa4601f2142c57bb56519f12d2ad1b7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf38c00d8d2a252c1d70b84517d0dc58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#acf38c00d8d2a252c1d70b84517d0dc58">__OSLastInterrupt</a> [2+6]</td></tr>
-<tr class="separator:acf38c00d8d2a252c1d70b84517d0dc58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47e34c2ffe583c844494001bac0d5353"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a47e34c2ffe583c844494001bac0d5353">__OSLastInterruptTime</a> [4]</td></tr>
-<tr class="separator:a47e34c2ffe583c844494001bac0d5353"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2e3b656f2d7b52c8b1aca29b9820c04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#ad2e3b656f2d7b52c8b1aca29b9820c04">data_80451684</a> [4]</td></tr>
-<tr class="separator:ad2e3b656f2d7b52c8b1aca29b9820c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eefd4c845cfc0fa7617bef36dc3d808"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a4eefd4c845cfc0fa7617bef36dc3d808">__OSLastInterruptSrr0</a></td></tr>
+<tr class="separator:a4eefd4c845cfc0fa7617bef36dc3d808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a679ca9dad385e1f4cc07763f777aba31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a679ca9dad385e1f4cc07763f777aba31">__OSLastInterrupt</a> [4]</td></tr>
+<tr class="separator:a679ca9dad385e1f4cc07763f777aba31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30727714125e0de8124d76f201b0245a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="OSTime_8h.html#a3d32c840b403a8d37875867a7ea9b381">OSTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a30727714125e0de8124d76f201b0245a">__OSLastInterruptTime</a></td></tr>
+<tr class="separator:a30727714125e0de8124d76f201b0245a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeac109808f3767c0ddd27ba5b19e9353"><td class="memItemLeft" align="right" valign="top"><a class="el" href="OSError_8h.html#a274d27739bcd814a61cf5246698608c3">OSErrorHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#aeac109808f3767c0ddd27ba5b19e9353">__OSErrorTable</a> [17]</td></tr>
 <tr class="separator:aeac109808f3767c0ddd27ba5b19e9353"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86983478223a666c57f2b344898e5489"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSError_8c.html#a86983478223a666c57f2b344898e5489">__OSFpscrEnableBits</a> = <a class="el" href="OSError_8c.html#a5a7cebac0d09bbb3502789b69ab6d9f0">FPSCR_ENABLE</a></td></tr>
@@ -227,14 +225,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a7b9ccf9c643d63a7300a6f7ecf834af8" name="a7b9ccf9c643d63a7300a6f7ecf834af8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b9ccf9c643d63a7300a6f7ecf834af8">&#9670;&#160;</a></span>OSSetErrorHandler()</h2>
+<a id="ae18c5b4c393d3211fb7cb3952a5ac2db" name="ae18c5b4c393d3211fb7cb3952a5ac2db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae18c5b4c393d3211fb7cb3952a5ac2db">&#9670;&#160;</a></span>OSSetErrorHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="OSError_8h.html#a274d27739bcd814a61cf5246698608c3">OSErrorHandler</a> OSSetErrorHandler </td>
+          <td class="memname"><a class="el" href="OSError_8h.html#a274d27739bcd814a61cf5246698608c3">OSErrorHandler</a> OSSetErrorHandler </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="OSError_8h.html#a753e236842eaa668b6494fc10286df4a">OSError</a>&#160;</td>
           <td class="paramname"><em>error</em>, </td>
@@ -334,8 +332,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="acf38c00d8d2a252c1d70b84517d0dc58" name="acf38c00d8d2a252c1d70b84517d0dc58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf38c00d8d2a252c1d70b84517d0dc58">&#9670;&#160;</a></span>__OSLastInterrupt</h2>
+<a id="a679ca9dad385e1f4cc07763f777aba31" name="a679ca9dad385e1f4cc07763f777aba31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a679ca9dad385e1f4cc07763f777aba31">&#9670;&#160;</a></span>__OSLastInterrupt</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -356,8 +354,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aa4601f2142c57bb56519f12d2ad1b7e7" name="aa4601f2142c57bb56519f12d2ad1b7e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4601f2142c57bb56519f12d2ad1b7e7">&#9670;&#160;</a></span>__OSLastInterruptSrr0</h2>
+<a id="a4eefd4c845cfc0fa7617bef36dc3d808" name="a4eefd4c845cfc0fa7617bef36dc3d808"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4eefd4c845cfc0fa7617bef36dc3d808">&#9670;&#160;</a></span>__OSLastInterruptSrr0</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -378,8 +376,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a47e34c2ffe583c844494001bac0d5353" name="a47e34c2ffe583c844494001bac0d5353"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47e34c2ffe583c844494001bac0d5353">&#9670;&#160;</a></span>__OSLastInterruptTime</h2>
+<a id="a30727714125e0de8124d76f201b0245a" name="a30727714125e0de8124d76f201b0245a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30727714125e0de8124d76f201b0245a">&#9670;&#160;</a></span>__OSLastInterruptTime</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -389,28 +387,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="OSTime_8h.html#a3d32c840b403a8d37875867a7ea9b381">OSTime</a> __OSLastInterruptTime</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad2e3b656f2d7b52c8b1aca29b9820c04" name="ad2e3b656f2d7b52c8b1aca29b9820c04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2e3b656f2d7b52c8b1aca29b9820c04">&#9670;&#160;</a></span>data_80451684</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_80451684[4]</td>
         </tr>
       </table>
   </td>
@@ -821,7 +797,7 @@ Variables</h2></td></tr>
 <div class="line">    </div>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aOSError_8c_html_a77d08e948b55a2057dfb992994ec9ba7"><div class="ttname"><a href="OSError_8c.html#a77d08e948b55a2057dfb992994ec9ba7">__OSUnhandledException</a></div><div class="ttdeci">asm void __OSUnhandledException(__OSException exception, OSContext *context, u32 dsisr, u32 dar)</div><div class="ttdef"><b>Definition:</b> OSError.c:277</div></div>
+<div class="ttc" id="aOSError_8c_html_a77d08e948b55a2057dfb992994ec9ba7"><div class="ttname"><a href="OSError_8c.html#a77d08e948b55a2057dfb992994ec9ba7">__OSUnhandledException</a></div><div class="ttdeci">asm void __OSUnhandledException(__OSException exception, OSContext *context, u32 dsisr, u32 dar)</div><div class="ttdef"><b>Definition:</b> OSError.c:333</div></div>
 <div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:12</div></div>
 </div><!-- fragment -->
 </div>

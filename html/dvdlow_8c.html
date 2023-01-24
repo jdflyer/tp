@@ -108,7 +108,6 @@ $(function() {
 <code>#include &quot;asm/dolphin/dvd/dvdlow/DVDLowAudioBufferConfig.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/dvd/dvdlow/DVDLowReset.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/dvd/dvdlow/DVDLowBreak.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/dvd/dvdlow/DVDLowClearCallback.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/dvd/dvdlow/__DVDLowSetWAType.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/dvd/dvdlow/__DVDLowTestAlarm.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -158,8 +157,8 @@ Functions</h2></td></tr>
 <tr class="separator:a27749984bf02b7d28922845bac31e301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64f9736f64c1abe3f7899fc4493d200d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a64f9736f64c1abe3f7899fc4493d200d">DVDLowBreak</a> ()</td></tr>
 <tr class="separator:a64f9736f64c1abe3f7899fc4493d200d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ad61b9b4e9b25a1e8f9e9bc530a19b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a7ad61b9b4e9b25a1e8f9e9bc530a19b1">DVDLowClearCallback</a> ()</td></tr>
-<tr class="separator:a7ad61b9b4e9b25a1e8f9e9bc530a19b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac864d2286800f8386fd8e8ff2cef48cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ac864d2286800f8386fd8e8ff2cef48cb">DVDLowClearCallback</a> ()</td></tr>
+<tr class="separator:ac864d2286800f8386fd8e8ff2cef48cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bcff05e083dcd2818af26ef5a16f0af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a9bcff05e083dcd2818af26ef5a16f0af">__DVDLowSetWAType</a> ()</td></tr>
 <tr class="separator:a9bcff05e083dcd2818af26ef5a16f0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a6b03d997f433263bffed94c77b0904"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a4a6b03d997f433263bffed94c77b0904">__DVDLowTestAlarm</a> ()</td></tr>
@@ -195,8 +194,8 @@ Variables</h2></td></tr>
 <tr class="separator:adf47d3f9beac01acd8adf272b4e9a79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8dad1335c48d70a183d116d049c017d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#af8dad1335c48d70a183d116d049c017d">LastLength</a> [4]</td></tr>
 <tr class="separator:af8dad1335c48d70a183d116d049c017d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fbfaf86ed0deb7baa57d1b9782e0d30"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a9fbfaf86ed0deb7baa57d1b9782e0d30">Callback</a> [4]</td></tr>
-<tr class="separator:a9fbfaf86ed0deb7baa57d1b9782e0d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a296cf9939c52623810e2072430bcb3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a7a296cf9939c52623810e2072430bcb3">Callback</a></td></tr>
+<tr class="separator:a7a296cf9939c52623810e2072430bcb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0727c1e8c7353d03e02f94d4d391304a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a0727c1e8c7353d03e02f94d4d391304a">ResetCoverCallback</a> [4]</td></tr>
 <tr class="separator:a0727c1e8c7353d03e02f94d4d391304a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a472586865e635e09caea5176d9c30f9c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a472586865e635e09caea5176d9c30f9c">LastResetEnd</a> [4]</td></tr>
@@ -205,8 +204,8 @@ Variables</h2></td></tr>
 <tr class="separator:a8bfcbfefa4d81d3ed22b2c737e8a2018"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad69aec4a037ef7bd62e4b63a2583c95d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ad69aec4a037ef7bd62e4b63a2583c95d">ResetOccurred</a> [4]</td></tr>
 <tr class="separator:ad69aec4a037ef7bd62e4b63a2583c95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc7ce2faf2b4f79cbb2ec4cb57ecf478"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#abc7ce2faf2b4f79cbb2ec4cb57ecf478">WaitingCoverClose</a> [4]</td></tr>
-<tr class="separator:abc7ce2faf2b4f79cbb2ec4cb57ecf478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f50c42eafde73327090ae2a918acaeb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a8f50c42eafde73327090ae2a918acaeb">WaitingCoverClose</a></td></tr>
+<tr class="separator:a8f50c42eafde73327090ae2a918acaeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae40e1ffc700bff151ff6258b7a8b3551"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ae40e1ffc700bff151ff6258b7a8b3551">Breaking</a> [4]</td></tr>
 <tr class="separator:ae40e1ffc700bff151ff6258b7a8b3551"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53b4debab236b9b6e140dfad12118eab"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a53b4debab236b9b6e140dfad12118eab">WorkAroundType</a> [4]</td></tr>
@@ -459,14 +458,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a7ad61b9b4e9b25a1e8f9e9bc530a19b1" name="a7ad61b9b4e9b25a1e8f9e9bc530a19b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ad61b9b4e9b25a1e8f9e9bc530a19b1">&#9670;&#160;</a></span>DVDLowClearCallback()</h2>
+<a id="ac864d2286800f8386fd8e8ff2cef48cb" name="ac864d2286800f8386fd8e8ff2cef48cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac864d2286800f8386fd8e8ff2cef48cb">&#9670;&#160;</a></span>DVDLowClearCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DVDLowClearCallback </td>
+          <td class="memname"><a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a> DVDLowClearCallback </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -904,8 +903,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a9fbfaf86ed0deb7baa57d1b9782e0d30" name="a9fbfaf86ed0deb7baa57d1b9782e0d30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fbfaf86ed0deb7baa57d1b9782e0d30">&#9670;&#160;</a></span>Callback</h2>
+<a id="a7a296cf9939c52623810e2072430bcb3" name="a7a296cf9939c52623810e2072430bcb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a296cf9939c52623810e2072430bcb3">&#9670;&#160;</a></span>Callback</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -914,7 +913,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> Callback[4] </td>
+          <td class="memname"><a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a> Callback </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -1287,8 +1286,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="abc7ce2faf2b4f79cbb2ec4cb57ecf478" name="abc7ce2faf2b4f79cbb2ec4cb57ecf478"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc7ce2faf2b4f79cbb2ec4cb57ecf478">&#9670;&#160;</a></span>WaitingCoverClose</h2>
+<a id="a8f50c42eafde73327090ae2a918acaeb" name="a8f50c42eafde73327090ae2a918acaeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f50c42eafde73327090ae2a918acaeb">&#9670;&#160;</a></span>WaitingCoverClose</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1297,7 +1296,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> WaitingCoverClose[4]</td>
+          <td class="memname"><a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a> WaitingCoverClose</td>
         </tr>
       </table>
   </td>

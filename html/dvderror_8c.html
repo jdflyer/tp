@@ -89,37 +89,36 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="dvderror_8h_source.html">dolphin/dvd/dvderror.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OSRtc_8h_source.html">dolphin/os/OSRtc.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;asm/dolphin/dvd/dvderror/ErrorCode2Num.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/dvd/dvderror/__DVDStoreErrorCode.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for dvderror.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="dvderror_8c__incl.svg" width="100%" height="514"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="dvderror_8c__incl.svg" width="476" height="271"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a645edd3b6c456c2056d48acb6dfc1171"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvderror_8c.html#a645edd3b6c456c2056d48acb6dfc1171">ErrorCode2Num</a> ()</td></tr>
-<tr class="separator:a645edd3b6c456c2056d48acb6dfc1171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d397c0cf0a26cbf53dc14d5e7b9040c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvderror_8c.html#a8d397c0cf0a26cbf53dc14d5e7b9040c">ErrorCode2Num</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> errorCode)</td></tr>
+<tr class="separator:a8d397c0cf0a26cbf53dc14d5e7b9040c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64e72b4d1aee24472e20b9274a555753"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvderror_8c.html#a64e72b4d1aee24472e20b9274a555753">__DVDStoreErrorCode</a> ()</td></tr>
 <tr class="separator:a64e72b4d1aee24472e20b9274a555753"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a7028c3604bc2746f49b0dc94a8094a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvderror_8c.html#a4a7028c3604bc2746f49b0dc94a8094a">__OSLockSramEx</a> ()</td></tr>
-<tr class="separator:a4a7028c3604bc2746f49b0dc94a8094a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea20d9b2141e59a37e7de3202e9adabe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvderror_8c.html#aea20d9b2141e59a37e7de3202e9adabe">__OSUnlockSramEx</a> ()</td></tr>
-<tr class="separator:aea20d9b2141e59a37e7de3202e9adabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e8dc74e167f857aff1c87135779d51"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvderror_8c.html#a39e8dc74e167f857aff1c87135779d51">Convert</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> error)</td></tr>
+<tr class="separator:a39e8dc74e167f857aff1c87135779d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf7df5e261c2ed60440e22e3e7a79b99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvderror_8c.html#adf7df5e261c2ed60440e22e3e7a79b99">__DVDStoreErrorCode</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> error)</td></tr>
+<tr class="separator:adf7df5e261c2ed60440e22e3e7a79b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a806cc900ee462dc3313f95d26ae454de"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvderror_8c.html#a806cc900ee462dc3313f95d26ae454de">ErrorTable</a> [72]</td></tr>
-<tr class="separator:a806cc900ee462dc3313f95d26ae454de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1150ebc2ec902854e6601aa901b7b65"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvderror_8c.html#ad1150ebc2ec902854e6601aa901b7b65">ErrorTable</a> []</td></tr>
+<tr class="separator:ad1150ebc2ec902854e6601aa901b7b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a64e72b4d1aee24472e20b9274a555753" name="a64e72b4d1aee24472e20b9274a555753"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64e72b4d1aee24472e20b9274a555753">&#9670;&#160;</a></span>__DVDStoreErrorCode()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a64e72b4d1aee24472e20b9274a555753">&#9670;&#160;</a></span>__DVDStoreErrorCode() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -135,16 +134,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4a7028c3604bc2746f49b0dc94a8094a" name="a4a7028c3604bc2746f49b0dc94a8094a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a7028c3604bc2746f49b0dc94a8094a">&#9670;&#160;</a></span>__OSLockSramEx()</h2>
+<a id="adf7df5e261c2ed60440e22e3e7a79b99" name="adf7df5e261c2ed60440e22e3e7a79b99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf7df5e261c2ed60440e22e3e7a79b99">&#9670;&#160;</a></span>__DVDStoreErrorCode() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void __OSLockSramEx </td>
+          <td class="memname">void __DVDStoreErrorCode </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>error</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -152,25 +152,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aea20d9b2141e59a37e7de3202e9adabe" name="aea20d9b2141e59a37e7de3202e9adabe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea20d9b2141e59a37e7de3202e9adabe">&#9670;&#160;</a></span>__OSUnlockSramEx()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void __OSUnlockSramEx </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a645edd3b6c456c2056d48acb6dfc1171" name="a645edd3b6c456c2056d48acb6dfc1171"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a645edd3b6c456c2056d48acb6dfc1171">&#9670;&#160;</a></span>ErrorCode2Num()</h2>
+<a id="a39e8dc74e167f857aff1c87135779d51" name="a39e8dc74e167f857aff1c87135779d51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39e8dc74e167f857aff1c87135779d51">&#9670;&#160;</a></span>Convert()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -179,9 +162,36 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void ErrorCode2Num </td>
+          <td class="memname">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> Convert </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>error</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8d397c0cf0a26cbf53dc14d5e7b9040c" name="a8d397c0cf0a26cbf53dc14d5e7b9040c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d397c0cf0a26cbf53dc14d5e7b9040c">&#9670;&#160;</a></span>ErrorCode2Num()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> ErrorCode2Num </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>errorCode</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -195,8 +205,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a806cc900ee462dc3313f95d26ae454de" name="a806cc900ee462dc3313f95d26ae454de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a806cc900ee462dc3313f95d26ae454de">&#9670;&#160;</a></span>ErrorTable</h2>
+<a id="ad1150ebc2ec902854e6601aa901b7b65" name="ad1150ebc2ec902854e6601aa901b7b65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1150ebc2ec902854e6601aa901b7b65">&#9670;&#160;</a></span>ErrorTable</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -205,7 +215,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> ErrorTable[72]</td>
+          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> ErrorTable[]</td>
         </tr>
       </table>
   </td>
@@ -215,11 +225,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0x3A, 0x00, 0x00, 0x06, 0x28, 0x00, 0x00, 0x03, 0x02,</div>
-<div class="line">    0x00, 0x00, 0x03, 0x11, 0x00, 0x00, 0x05, 0x20, 0x00, 0x00, 0x05, 0x20, 0x01, 0x00, 0x05,</div>
-<div class="line">    0x21, 0x00, 0x00, 0x05, 0x24, 0x00, 0x00, 0x05, 0x24, 0x01, 0x00, 0x05, 0x24, 0x02, 0x00,</div>
-<div class="line">    0x0B, 0x5A, 0x01, 0x00, 0x05, 0x63, 0x00, 0x00, 0x02, 0x04, 0x01, 0x00, 0x02, 0x04, 0x00,</div>
-<div class="line">    0x00, 0x04, 0x08, 0x00, 0x00, 0x10, 0x00, 0x07, 0x00, 0x00, 0x00, 0x00,</div>
+<div class="line">    0,          0x00023A00, 0x00062800, 0x00030200, 0x00031100, 0x00052000,</div>
+<div class="line">    0x00052001, 0x00052100, 0x00052400, 0x00052401, 0x00052402, 0x000B5A01,</div>
+<div class="line">    0x00056300, 0x00020401, 0x00020400, 0x00040800, 0x00100007, 0,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>

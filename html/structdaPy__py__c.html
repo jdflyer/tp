@@ -280,14 +280,15 @@ Public Types</h2></td></tr>
 &#160;&#160;<a class="el" href="structdaPy__py__c.html#aae52cea617087a937ba59045e1b4994dab9e208089335d194af97a6fc786a9fd6">RFLG0_UNK_8000000</a> = 0x8000000
 , <a class="el" href="structdaPy__py__c.html#aae52cea617087a937ba59045e1b4994da6614a7cd8fac393a540798ff87ee9af5">RFLG0_UNK_4000000</a> = 0x4000000
 , <a class="el" href="structdaPy__py__c.html#aae52cea617087a937ba59045e1b4994daf7d7d9ea3570be1629061cb188b1f4e5">RFLG0_UNK_4000</a> = 0x4000
-, <a class="el" href="structdaPy__py__c.html#aae52cea617087a937ba59045e1b4994da2effc626754d203f36e952073791efd2">RFLG0_ENEMY_ATTN_LOCK</a> = 0x1000
+, <a class="el" href="structdaPy__py__c.html#aae52cea617087a937ba59045e1b4994dadb2bd396b1f6d95389203be29bb06c6a">RFLG0_FRONT_ROLL_CRASH</a> = 0x2000
 , <br />
-&#160;&#160;<a class="el" href="structdaPy__py__c.html#aae52cea617087a937ba59045e1b4994dadb51d336c7f5cf08af9b54b84260c4a7">RFLG0_UNK_400</a> = 0x400
+&#160;&#160;<a class="el" href="structdaPy__py__c.html#aae52cea617087a937ba59045e1b4994da2effc626754d203f36e952073791efd2">RFLG0_ENEMY_ATTN_LOCK</a> = 0x1000
+, <a class="el" href="structdaPy__py__c.html#aae52cea617087a937ba59045e1b4994dadb51d336c7f5cf08af9b54b84260c4a7">RFLG0_UNK_400</a> = 0x400
 , <a class="el" href="structdaPy__py__c.html#aae52cea617087a937ba59045e1b4994da894ab96c27ea880e6cceeb449d5d20ce">RFLG0_UNK_80</a> = 0x80
 , <a class="el" href="structdaPy__py__c.html#aae52cea617087a937ba59045e1b4994da4a90e7b01c9d6ff66f33d4e64d031343">RFLG0_UNK_40</a> = 0x40
-, <a class="el" href="structdaPy__py__c.html#aae52cea617087a937ba59045e1b4994da370b1dc7be669a14e21e9ac81af539a5">RFLG0_UNK_10</a> = 0x10
 , <br />
-&#160;&#160;<a class="el" href="structdaPy__py__c.html#aae52cea617087a937ba59045e1b4994da8540d22afb74b8a3249de304bfb14b97">RFLG0_UNK_2</a> = 0x2
+&#160;&#160;<a class="el" href="structdaPy__py__c.html#aae52cea617087a937ba59045e1b4994da370b1dc7be669a14e21e9ac81af539a5">RFLG0_UNK_10</a> = 0x10
+, <a class="el" href="structdaPy__py__c.html#aae52cea617087a937ba59045e1b4994da8540d22afb74b8a3249de304bfb14b97">RFLG0_UNK_2</a> = 0x2
 <br />
  }</td></tr>
 <tr class="separator:aae52cea617087a937ba59045e1b4994d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -825,6 +826,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a03d12aebf4d64340d06cc66fe109bdc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a549cc50bf149ab1e64bb472373376151"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#a549cc50bf149ab1e64bb472373376151">checkSceneChangeAreaStart</a> () const</td></tr>
 <tr class="separator:a549cc50bf149ab1e64bb472373376151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46d8c197dfd516c34ea3958ee43d984b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#a46d8c197dfd516c34ea3958ee43d984b">checkFrontRollCrash</a> () const</td></tr>
+<tr class="separator:a46d8c197dfd516c34ea3958ee43d984b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae65a8a76bdf2bc9eb8d0489b65eae815"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#ae65a8a76bdf2bc9eb8d0489b65eae815">offGoronSideMove</a> ()</td></tr>
 <tr class="separator:ae65a8a76bdf2bc9eb8d0489b65eae815"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e1a2f66c31029820c39da05e93c361a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#a6e1a2f66c31029820c39da05e93c361a">i_checkNoResetFlg0</a> (<a class="el" href="structdaPy__py__c.html#ae31e40b486e08a4375979902714bd2c0">daPy_FLG0</a> pFlag) const</td></tr>
@@ -1482,6 +1485,7 @@ Static Public Attributes</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aae52cea617087a937ba59045e1b4994dab9e208089335d194af97a6fc786a9fd6" name="aae52cea617087a937ba59045e1b4994dab9e208089335d194af97a6fc786a9fd6"></a>RFLG0_UNK_8000000&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aae52cea617087a937ba59045e1b4994da6614a7cd8fac393a540798ff87ee9af5" name="aae52cea617087a937ba59045e1b4994da6614a7cd8fac393a540798ff87ee9af5"></a>RFLG0_UNK_4000000&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aae52cea617087a937ba59045e1b4994daf7d7d9ea3570be1629061cb188b1f4e5" name="aae52cea617087a937ba59045e1b4994daf7d7d9ea3570be1629061cb188b1f4e5"></a>RFLG0_UNK_4000&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aae52cea617087a937ba59045e1b4994dadb2bd396b1f6d95389203be29bb06c6a" name="aae52cea617087a937ba59045e1b4994dadb2bd396b1f6d95389203be29bb06c6a"></a>RFLG0_FRONT_ROLL_CRASH&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aae52cea617087a937ba59045e1b4994da2effc626754d203f36e952073791efd2" name="aae52cea617087a937ba59045e1b4994da2effc626754d203f36e952073791efd2"></a>RFLG0_ENEMY_ATTN_LOCK&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aae52cea617087a937ba59045e1b4994dadb51d336c7f5cf08af9b54b84260c4a7" name="aae52cea617087a937ba59045e1b4994dadb51d336c7f5cf08af9b54b84260c4a7"></a>RFLG0_UNK_400&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aae52cea617087a937ba59045e1b4994da894ab96c27ea880e6cceeb449d5d20ce" name="aae52cea617087a937ba59045e1b4994da894ab96c27ea880e6cceeb449d5d20ce"></a>RFLG0_UNK_80&#160;</td><td class="fielddoc"></td></tr>
@@ -3211,6 +3215,31 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reimplemented in <a class="el" href="structdaAlink__c.html#acaa29d27dc0da9ae295ffbb73be8024a">daAlink_c</a>.</p>
+
+</div>
+</div>
+<a id="a46d8c197dfd516c34ea3958ee43d984b" name="a46d8c197dfd516c34ea3958ee43d984b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46d8c197dfd516c34ea3958ee43d984b">&#9670;&#160;</a></span>checkFrontRollCrash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool daPy_py_c::checkFrontRollCrash </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

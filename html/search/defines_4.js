@@ -42,5 +42,6 @@ var searchData=
   ['dsp_5ftask_5fstate_5finit_39',['DSP_TASK_STATE_INIT',['../dsp_8h.html#a27aafbc7835861b74999e8ca0b9c456e',1,'dsp.h']]],
   ['dsp_5ftask_5fstate_5frun_40',['DSP_TASK_STATE_RUN',['../dsp_8h.html#ab0aa2aa9921782be6e8e7e60055e18dc',1,'dsp.h']]],
   ['dsp_5ftask_5fstate_5fyield_41',['DSP_TASK_STATE_YIELD',['../dsp_8h.html#a1bae122d770cf99251e0a9171ced3eb0',1,'dsp.h']]],
-  ['dsv_5fmembit_5fenum_5fmax_42',['DSV_MEMBIT_ENUM_MAX',['../d__save_8h.html#ac7b5fb97f10ea213fa338b09bcbe7a39',1,'d_save.h']]]
+  ['dsv_5fmembit_5fenum_5fmax_42',['DSV_MEMBIT_ENUM_MAX',['../d__save_8h.html#ac7b5fb97f10ea213fa338b09bcbe7a39',1,'d_save.h']]],
+  ['dvd_5fmin_5ftransfer_5fsize_43',['DVD_MIN_TRANSFER_SIZE',['../dvdfs_8c.html#ad013ebd2deae4f2d0c2451e196ea6ad9',1,'dvdfs.c']]]
 ];

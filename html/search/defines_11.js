@@ -60,11 +60,12 @@ var searchData=
   ['removehead_57',['RemoveHead',['../OSThread_8c.html#a0a1fc58c1ce160ff65971439fe5724bf',1,'OSThread.c']]],
   ['removeitem_58',['RemoveItem',['../OSThread_8c.html#a17041fd4e54cb41bb8ee14ad56d7caf7',1,'OSThread.c']]],
   ['round_59',['ROUND',['../OSMemory_8c.html#a7e76e74ec6703d0410b634d73ebc5f33',1,'ROUND():&#160;OSMemory.c'],['../SIBios_8c.html#a7e76e74ec6703d0410b634d73ebc5f33',1,'ROUND():&#160;SIBios.c']]],
-  ['rtc_5fchan_60',['RTC_CHAN',['../OSRtc_8h.html#a3bd2208daac0ab16ca92b025e4fecc99',1,'OSRtc.h']]],
-  ['rtc_5fcmd_5fread_61',['RTC_CMD_READ',['../OSRtc_8h.html#a2a4a019ab86a1ee742468ebe9aec3bb4',1,'OSRtc.h']]],
-  ['rtc_5fcmd_5fwrite_62',['RTC_CMD_WRITE',['../OSRtc_8h.html#ab2225969ef656f526cf7607acda43a40',1,'OSRtc.h']]],
-  ['rtc_5fdev_63',['RTC_DEV',['../OSRtc_8h.html#acf6c2376af572a7de1e5cd5a2e916f9d',1,'OSRtc.h']]],
-  ['rtc_5ffreq_64',['RTC_FREQ',['../OSRtc_8h.html#a1edab8ee61f0cf4b676e2be3500a17ae',1,'OSRtc.h']]],
-  ['rtc_5fsram_5faddr_65',['RTC_SRAM_ADDR',['../OSRtc_8h.html#ab14826f5bc787e16639bb1779e50fc2a',1,'OSRtc.h']]],
-  ['rtc_5fsram_5fsize_66',['RTC_SRAM_SIZE',['../OSRtc_8h.html#a7f99661bf292cce65772685952370479',1,'OSRtc.h']]]
+  ['roundup32_60',['RoundUP32',['../ar_8c.html#aac04946efaec6c63bec1732d4adb1d92',1,'ar.c']]],
+  ['rtc_5fchan_61',['RTC_CHAN',['../OSRtc_8h.html#a3bd2208daac0ab16ca92b025e4fecc99',1,'OSRtc.h']]],
+  ['rtc_5fcmd_5fread_62',['RTC_CMD_READ',['../OSRtc_8h.html#a2a4a019ab86a1ee742468ebe9aec3bb4',1,'OSRtc.h']]],
+  ['rtc_5fcmd_5fwrite_63',['RTC_CMD_WRITE',['../OSRtc_8h.html#ab2225969ef656f526cf7607acda43a40',1,'OSRtc.h']]],
+  ['rtc_5fdev_64',['RTC_DEV',['../OSRtc_8h.html#acf6c2376af572a7de1e5cd5a2e916f9d',1,'OSRtc.h']]],
+  ['rtc_5ffreq_65',['RTC_FREQ',['../OSRtc_8h.html#a1edab8ee61f0cf4b676e2be3500a17ae',1,'OSRtc.h']]],
+  ['rtc_5fsram_5faddr_66',['RTC_SRAM_ADDR',['../OSRtc_8h.html#ab14826f5bc787e16639bb1779e50fc2a',1,'OSRtc.h']]],
+  ['rtc_5fsram_5fsize_67',['RTC_SRAM_SIZE',['../OSRtc_8h.html#a7f99661bf292cce65772685952370479',1,'OSRtc.h']]]
 ];

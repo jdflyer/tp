@@ -96,6 +96,7 @@ var searchData=
   ['srr1_5fdma_5fbit_93',['SRR1_DMA_BIT',['../PPCArch_8h.html#a81177be1d4b9ebe0d74b8dd082722503',1,'PPCArch.h']]],
   ['srr1_5fl2dp_5fbit_94',['SRR1_L2DP_BIT',['../PPCArch_8h.html#a015f0111bef83117472f50d193e4f7a8',1,'PPCArch.h']]],
   ['static_5fassert_95',['STATIC_ASSERT',['../global_8h.html#a546855aaf69218038a2f19c115eab7db',1,'global.h']]],
-  ['switch_5fone_5fzone_5fmax_96',['SWITCH_ONE_ZONE_MAX',['../d__save_8h.html#a4fe03e8759cb7a053d026d629e770f6c',1,'d_save.h']]],
-  ['switch_5fzone_5fmax_97',['SWITCH_ZONE_MAX',['../d__save_8h.html#adfa7e509e088d22ea5a5ea0f13fca514',1,'d_save.h']]]
+  ['stringoff_96',['stringOff',['../dvdfs_8c.html#a79177b1a114db9634be288be96cb2bc3',1,'dvdfs.c']]],
+  ['switch_5fone_5fzone_5fmax_97',['SWITCH_ONE_ZONE_MAX',['../d__save_8h.html#a4fe03e8759cb7a053d026d629e770f6c',1,'d_save.h']]],
+  ['switch_5fzone_5fmax_98',['SWITCH_ZONE_MAX',['../d__save_8h.html#adfa7e509e088d22ea5a5ea0f13fca514',1,'d_save.h']]]
 ];
