@@ -82,6 +82,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">dvdlow.c File Reference</div></div>
@@ -90,10 +92,10 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="dvdlow_8h_source.html">dolphin/dvd/dvdlow.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OSAlarm_8h_source.html">dolphin/os/OSAlarm.h</a>&quot;</code><br />
 <code>#include &quot;asm/dolphin/dvd/dvdlow/__DVDInitWA.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/dvd/dvdlow/__DVDInterruptHandler.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/dvd/dvdlow/AlarmHandler.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/dvd/dvdlow/AlarmHandlerForTimeout.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/dvd/dvdlow/Read.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/dvd/dvdlow/SeekTwiceBeforeRead.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/dvd/dvdlow/DVDLowRead.s&quot;</code><br />
@@ -115,10 +117,20 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="dvdlow_8c__incl.svg" width="100%" height="514"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="dvdlow_8c__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDVDCommand.html">DVDCommand</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a8cd27c2b185d2f753de671d4d31081a3"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDVDCommand.html">DVDCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a8cd27c2b185d2f753de671d4d31081a3">DVDCommand</a></td></tr>
+<tr class="separator:a8cd27c2b185d2f753de671d4d31081a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ad541f0dc9b439de821121de85c6c5f11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ad541f0dc9b439de821121de85c6c5f11">__DVDInitWA</a> ()</td></tr>
@@ -127,8 +139,8 @@ Functions</h2></td></tr>
 <tr class="separator:aac9528aad94fe4fcd72a04471fbadddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dd6f3034ead4aca934d65ff1d220d81"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a4dd6f3034ead4aca934d65ff1d220d81">AlarmHandler</a> ()</td></tr>
 <tr class="separator:a4dd6f3034ead4aca934d65ff1d220d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a5c5c0a46df2d6f9fcbf2b3c7c46e49"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a9a5c5c0a46df2d6f9fcbf2b3c7c46e49">AlarmHandlerForTimeout</a> ()</td></tr>
-<tr class="separator:a9a5c5c0a46df2d6f9fcbf2b3c7c46e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36516127fc96c72c012ff8ef12f20048"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a36516127fc96c72c012ff8ef12f20048">AlarmHandlerForTimeout</a> ()</td></tr>
+<tr class="separator:a36516127fc96c72c012ff8ef12f20048"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae38c8ff46b3e52847a226c65968ef154"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ae38c8ff46b3e52847a226c65968ef154">Read</a> ()</td></tr>
 <tr class="separator:ae38c8ff46b3e52847a226c65968ef154"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e14b60e4c797c2155a9625499903c1f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a0e14b60e4c797c2155a9625499903c1f">SeekTwiceBeforeRead</a> ()</td></tr>
@@ -181,10 +193,12 @@ Functions</h2></td></tr>
 <tr class="separator:a14b5cc2befa83d8710fba14f4de14fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e60365da6a6649f8f35881410c7759a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a1e60365da6a6649f8f35881410c7759a">__OSMaskInterrupts</a> ()</td></tr>
 <tr class="separator:a1e60365da6a6649f8f35881410c7759a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab291114d2ce5fe2988a979db7b11f85c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ab291114d2ce5fe2988a979db7b11f85c">__OSGetSystemTime</a> ()</td></tr>
-<tr class="separator:ab291114d2ce5fe2988a979db7b11f85c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab46303b88220d14950cdd47b46a4f9f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="OSTime_8h.html#a3d32c840b403a8d37875867a7ea9b381">OSTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ab46303b88220d14950cdd47b46a4f9f6">__OSGetSystemTime</a> ()</td></tr>
+<tr class="separator:ab46303b88220d14950cdd47b46a4f9f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6ecc26233a14298c3cac326e557f985"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ad6ecc26233a14298c3cac326e557f985">DVDGetCurrentDiskID</a> ()</td></tr>
 <tr class="separator:ad6ecc26233a14298c3cac326e557f985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86b72646ff01e3bbfb0d91937775144d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a86b72646ff01e3bbfb0d91937775144d">AlarmHandlerForTimeout</a> (<a class="el" href="structOSAlarm.html">OSAlarm</a> *alarm, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
+<tr class="separator:a86b72646ff01e3bbfb0d91937775144d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -222,8 +236,8 @@ Variables</h2></td></tr>
 <tr class="separator:a67e6da6462cd16c000b4be606e59d6f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e062407c219174150d56ea105071bfe"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a8e062407c219174150d56ea105071bfe">LastCommandWasRead</a> [4]</td></tr>
 <tr class="separator:a8e062407c219174150d56ea105071bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab033d7a3c9649029f075744cd77d0497"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ab033d7a3c9649029f075744cd77d0497">NextCommandNumber</a> [4]</td></tr>
-<tr class="separator:ab033d7a3c9649029f075744cd77d0497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcb2462de99b204fc5236a4861f8f9b1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#abcb2462de99b204fc5236a4861f8f9b1">NextCommandNumber</a></td></tr>
+<tr class="separator:abcb2462de99b204fc5236a4861f8f9b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac74d08b70ea968dadfcd4e7d1cc73a27"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ac74d08b70ea968dadfcd4e7d1cc73a27">AlarmForWA</a> [40]</td></tr>
 <tr class="separator:ac74d08b70ea968dadfcd4e7d1cc73a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2411ed1a42e36fd87c36944856a2e036"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a2411ed1a42e36fd87c36944856a2e036">AlarmForTimeout</a> [40]</td></tr>
@@ -237,6 +251,21 @@ Variables</h2></td></tr>
 <tr class="memitem:a6e2338378563bb637347617d1c6934db"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a6e2338378563bb637347617d1c6934db">FirstRead</a> [1+1]</td></tr>
 <tr class="separator:a6e2338378563bb637347617d1c6934db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a8cd27c2b185d2f753de671d4d31081a3" name="a8cd27c2b185d2f753de671d4d31081a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cd27c2b185d2f753de671d4d31081a3">&#9670;&#160;</a></span>DVDCommand</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structDVDCommand.html">DVDCommand</a> <a class="el" href="structDVDCommand.html">DVDCommand</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ad541f0dc9b439de821121de85c6c5f11" name="ad541f0dc9b439de821121de85c6c5f11"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad541f0dc9b439de821121de85c6c5f11">&#9670;&#160;</a></span>__DVDInitWA()</h2>
@@ -306,14 +335,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ab291114d2ce5fe2988a979db7b11f85c" name="ab291114d2ce5fe2988a979db7b11f85c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab291114d2ce5fe2988a979db7b11f85c">&#9670;&#160;</a></span>__OSGetSystemTime()</h2>
+<a id="ab46303b88220d14950cdd47b46a4f9f6" name="ab46303b88220d14950cdd47b46a4f9f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab46303b88220d14950cdd47b46a4f9f6">&#9670;&#160;</a></span>__OSGetSystemTime()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void __OSGetSystemTime </td>
+          <td class="memname"><a class="el" href="OSTime_8h.html#a3d32c840b403a8d37875867a7ea9b381">OSTime</a> __OSGetSystemTime </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -365,8 +394,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a9a5c5c0a46df2d6f9fcbf2b3c7c46e49" name="a9a5c5c0a46df2d6f9fcbf2b3c7c46e49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a5c5c0a46df2d6f9fcbf2b3c7c46e49">&#9670;&#160;</a></span>AlarmHandlerForTimeout()</h2>
+<a id="a36516127fc96c72c012ff8ef12f20048" name="a36516127fc96c72c012ff8ef12f20048"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36516127fc96c72c012ff8ef12f20048">&#9670;&#160;</a></span>AlarmHandlerForTimeout() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -375,10 +404,46 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void AlarmHandlerForTimeout </td>
+          <td class="memname">static void AlarmHandlerForTimeout </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a86b72646ff01e3bbfb0d91937775144d" name="a86b72646ff01e3bbfb0d91937775144d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86b72646ff01e3bbfb0d91937775144d">&#9670;&#160;</a></span>AlarmHandlerForTimeout() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void AlarmHandlerForTimeout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structOSAlarm.html">OSAlarm</a> *&#160;</td>
+          <td class="paramname"><em>alarm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structOSContext.html">OSContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -1176,8 +1241,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ab033d7a3c9649029f075744cd77d0497" name="ab033d7a3c9649029f075744cd77d0497"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab033d7a3c9649029f075744cd77d0497">&#9670;&#160;</a></span>NextCommandNumber</h2>
+<a id="abcb2462de99b204fc5236a4861f8f9b1" name="abcb2462de99b204fc5236a4861f8f9b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcb2462de99b204fc5236a4861f8f9b1">&#9670;&#160;</a></span>NextCommandNumber</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1186,7 +1251,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> NextCommandNumber[4]</td>
+          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> NextCommandNumber</td>
         </tr>
       </table>
   </td>

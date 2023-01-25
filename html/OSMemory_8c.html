@@ -93,7 +93,6 @@ $(function() {
 <code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OSReset_8h_source.html">dolphin/os/OSReset.h</a>&quot;</code><br />
 <code>#include &quot;asm/dolphin/os/OSMemory/OnReset.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/os/OSMemory/MEMIntrruptHandler.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for OSMemory.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -114,8 +113,8 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a462ea128f58200a4baec991647ae6dca"><td class="memItemLeft" align="right" valign="top">static asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMemory_8c.html#a462ea128f58200a4baec991647ae6dca">OnReset</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> param_0)</td></tr>
 <tr class="separator:a462ea128f58200a4baec991647ae6dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a2c7dd4eb10d716a9ead7d1e2f1b261"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMemory_8c.html#a6a2c7dd4eb10d716a9ead7d1e2f1b261">MEMIntrruptHandler</a> (<a class="el" href="OSInterrupt_8h.html#acd5c403776740063a124b880906361fd">OSInterrupt</a> interrupt, struct <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
-<tr class="separator:a6a2c7dd4eb10d716a9ead7d1e2f1b261"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd40b36f9be24b28b6960eeae296d19"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMemory_8c.html#afdd40b36f9be24b28b6960eeae296d19">MEMIntrruptHandler</a> (<a class="el" href="OSInterrupt_8h.html#acd5c403776740063a124b880906361fd">OSInterrupt</a> interrupt, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
+<tr class="separator:afdd40b36f9be24b28b6960eeae296d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6e38a63462f8cfc837c2aa48e7fa18c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMemory_8c.html#af6e38a63462f8cfc837c2aa48e7fa18c">OSProtectRange</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> chan, void *addr, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> nBytes, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> control)</td></tr>
 <tr class="separator:af6e38a63462f8cfc837c2aa48e7fa18c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c195affb415cc839383d1a7ceb2a87d"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMemory_8c.html#a8c195affb415cc839383d1a7ceb2a87d">Config24MB</a> (void)</td></tr>
@@ -135,8 +134,8 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a50edac55a8c9ee5cb85ffb638a4d2a65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a677aa1edce4bbb53741b1cc24eb4c035">vu16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMemory_8c.html#a50edac55a8c9ee5cb85ffb638a4d2a65">__MEMRegs</a> [64]</td></tr>
 <tr class="separator:a50edac55a8c9ee5cb85ffb638a4d2a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6585e0a47dd383679d7329c1589462a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="OSError_8h.html#a274d27739bcd814a61cf5246698608c3">OSErrorHandler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMemory_8c.html#a6585e0a47dd383679d7329c1589462a4">__OSErrorTable</a> [16]</td></tr>
-<tr class="separator:a6585e0a47dd383679d7329c1589462a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fa56120595daf199fe1cd2417f97129"><td class="memItemLeft" align="right" valign="top"><a class="el" href="OSError_8h.html#ae8a4fcbd1c00011db0d7af1becb95835">OSErrorHandlerEx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMemory_8c.html#a8fa56120595daf199fe1cd2417f97129">__OSErrorTable</a> [16]</td></tr>
+<tr class="separator:a8fa56120595daf199fe1cd2417f97129"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b31ff80779db9f1be128acb22e9cd7c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structOSResetFunctionInfo.html">OSResetFunctionInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMemory_8c.html#a1b31ff80779db9f1be128acb22e9cd7c">ResetFunctionInfo</a></td></tr>
 <tr class="separator:a1b31ff80779db9f1be128acb22e9cd7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -268,8 +267,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a6a2c7dd4eb10d716a9ead7d1e2f1b261" name="a6a2c7dd4eb10d716a9ead7d1e2f1b261"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a2c7dd4eb10d716a9ead7d1e2f1b261">&#9670;&#160;</a></span>MEMIntrruptHandler()</h2>
+<a id="afdd40b36f9be24b28b6960eeae296d19" name="afdd40b36f9be24b28b6960eeae296d19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdd40b36f9be24b28b6960eeae296d19">&#9670;&#160;</a></span>MEMIntrruptHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -278,7 +277,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void MEMIntrruptHandler </td>
+          <td class="memname">static void MEMIntrruptHandler </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="OSInterrupt_8h.html#acd5c403776740063a124b880906361fd">OSInterrupt</a>&#160;</td>
           <td class="paramname"><em>interrupt</em>, </td>
@@ -286,7 +285,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structOSContext.html">OSContext</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structOSContext.html">OSContext</a> *&#160;</td>
           <td class="paramname"><em>context</em>&#160;</td>
         </tr>
         <tr>
@@ -461,8 +460,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a6585e0a47dd383679d7329c1589462a4" name="a6585e0a47dd383679d7329c1589462a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6585e0a47dd383679d7329c1589462a4">&#9670;&#160;</a></span>__OSErrorTable</h2>
+<a id="a8fa56120595daf199fe1cd2417f97129" name="a8fa56120595daf199fe1cd2417f97129"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fa56120595daf199fe1cd2417f97129">&#9670;&#160;</a></span>__OSErrorTable</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -471,7 +470,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="OSError_8h.html#a274d27739bcd814a61cf5246698608c3">OSErrorHandler</a> __OSErrorTable[16]</td>
+          <td class="memname"><a class="el" href="OSError_8h.html#ae8a4fcbd1c00011db0d7af1becb95835">OSErrorHandlerEx</a> __OSErrorTable[16]</td>
         </tr>
       </table>
   </td>

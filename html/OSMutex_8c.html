@@ -90,16 +90,6 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="OSMutex_8h_source.html">dolphin/os/OSMutex.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
-<code>#include &quot;asm/dolphin/os/OSMutex/OSLockMutex.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/os/OSMutex/OSUnlockMutex.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/os/OSMutex/__OSUnlockAllMutex.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/os/OSMutex/OSTryLockMutex.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/os/OSMutex/OSInitCond.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/os/OSMutex/OSWaitCond.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/os/OSMutex/OSSignalCond.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/os/OSMutex/__OSCheckMutex.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/os/OSMutex/__OSCheckDeadLock.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/os/OSMutex/__OSCheckMutexes.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for OSMutex.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -122,26 +112,28 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a03d1b0af602295a14f6df01d5a0aa12e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#a03d1b0af602295a14f6df01d5a0aa12e">OSInitMutex</a> (<a class="el" href="structOSMutex.html">OSMutex</a> *mutex)</td></tr>
 <tr class="separator:a03d1b0af602295a14f6df01d5a0aa12e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1aa0e1528be8e3b9dd3c44f19c59312"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#ac1aa0e1528be8e3b9dd3c44f19c59312">OSLockMutex</a> (<a class="el" href="structOSMutex.html">OSMutex</a> *mutex)</td></tr>
-<tr class="separator:ac1aa0e1528be8e3b9dd3c44f19c59312"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a005aaa61c2a77e88d4096edc8e32b76e"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#a005aaa61c2a77e88d4096edc8e32b76e">OSUnlockMutex</a> (<a class="el" href="structOSMutex.html">OSMutex</a> *mutex)</td></tr>
-<tr class="separator:a005aaa61c2a77e88d4096edc8e32b76e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ce12ef0601e8fb02b8aac9d9122ef07"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#a9ce12ef0601e8fb02b8aac9d9122ef07">__OSUnlockAllMutex</a> (<a class="el" href="structOSThread.html">OSThread</a> *thread)</td></tr>
-<tr class="separator:a9ce12ef0601e8fb02b8aac9d9122ef07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa84beeca0ee88f9b77b7051bc6cbeb70"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#aa84beeca0ee88f9b77b7051bc6cbeb70">OSTryLockMutex</a> (<a class="el" href="structOSMutex.html">OSMutex</a> *mutex)</td></tr>
-<tr class="separator:aa84beeca0ee88f9b77b7051bc6cbeb70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60497b337b36d791d3dc70ebea08a5ab"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#a60497b337b36d791d3dc70ebea08a5ab">OSInitCond</a> (<a class="el" href="structOSCond.html">OSCond</a> *cond)</td></tr>
-<tr class="separator:a60497b337b36d791d3dc70ebea08a5ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd6d475ae7dd3a04d760c8f397bdf382"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#afd6d475ae7dd3a04d760c8f397bdf382">OSWaitCond</a> (<a class="el" href="structOSCond.html">OSCond</a> *cond, <a class="el" href="structOSMutex.html">OSMutex</a> *mutex)</td></tr>
-<tr class="separator:afd6d475ae7dd3a04d760c8f397bdf382"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a5d8d897bf08b12bd797a8c1a20682a"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#a6a5d8d897bf08b12bd797a8c1a20682a">OSSignalCond</a> (<a class="el" href="structOSCond.html">OSCond</a> *con)</td></tr>
-<tr class="separator:a6a5d8d897bf08b12bd797a8c1a20682a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af393d40982e6062ff0df61c42a6336eb"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#af393d40982e6062ff0df61c42a6336eb">__OSCheckMutex</a> (<a class="el" href="structOSThread.html">OSThread</a> *thread)</td></tr>
-<tr class="separator:af393d40982e6062ff0df61c42a6336eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1815b142a4bbe30b55c007ee158fdfc9"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#a1815b142a4bbe30b55c007ee158fdfc9">__OSCheckDeadLock</a> (<a class="el" href="structOSThread.html">OSThread</a> *thread)</td></tr>
-<tr class="separator:a1815b142a4bbe30b55c007ee158fdfc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaed3d2c0b32b6aa1768c3890d9a9c475"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#aaed3d2c0b32b6aa1768c3890d9a9c475">__OSCheckMutexes</a> (<a class="el" href="structOSThread.html">OSThread</a> *thread)</td></tr>
-<tr class="separator:aaed3d2c0b32b6aa1768c3890d9a9c475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac540b8ab45b64548e31395f193f0fc49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#ac540b8ab45b64548e31395f193f0fc49">OSLockMutex</a> (<a class="el" href="structOSMutex.html">OSMutex</a> *mutex)</td></tr>
+<tr class="separator:ac540b8ab45b64548e31395f193f0fc49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdcea1245d3bf588114b33e213892d6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#abdcea1245d3bf588114b33e213892d6f">OSUnlockMutex</a> (<a class="el" href="structOSMutex.html">OSMutex</a> *mutex)</td></tr>
+<tr class="separator:abdcea1245d3bf588114b33e213892d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aa6bb203afd1d6771603ffdf5dcb882"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#a1aa6bb203afd1d6771603ffdf5dcb882">__OSUnlockAllMutex</a> (<a class="el" href="structOSThread.html">OSThread</a> *thread)</td></tr>
+<tr class="separator:a1aa6bb203afd1d6771603ffdf5dcb882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5892ff24353a07eaec68242ef44998d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#a5892ff24353a07eaec68242ef44998d2">OSTryLockMutex</a> (<a class="el" href="structOSMutex.html">OSMutex</a> *mutex)</td></tr>
+<tr class="separator:a5892ff24353a07eaec68242ef44998d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b4f423221a0f3bff5b68efd1c8524e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#a2b4f423221a0f3bff5b68efd1c8524e6">OSInitCond</a> (<a class="el" href="structOSCond.html">OSCond</a> *cond)</td></tr>
+<tr class="separator:a2b4f423221a0f3bff5b68efd1c8524e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7172aefdb664fa1dbc3fb666fae2c157"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#a7172aefdb664fa1dbc3fb666fae2c157">OSWaitCond</a> (<a class="el" href="structOSCond.html">OSCond</a> *cond, <a class="el" href="structOSMutex.html">OSMutex</a> *mutex)</td></tr>
+<tr class="separator:a7172aefdb664fa1dbc3fb666fae2c157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37c4c1ef690ba151a41271f31e5f8039"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#a37c4c1ef690ba151a41271f31e5f8039">OSSignalCond</a> (<a class="el" href="structOSCond.html">OSCond</a> *cond)</td></tr>
+<tr class="separator:a37c4c1ef690ba151a41271f31e5f8039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49ad28989551033add64113ae4c55534"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#a49ad28989551033add64113ae4c55534">IsMember</a> (<a class="el" href="structOSMutexQueue.html">OSMutexQueue</a> *<a class="el" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>, <a class="el" href="structOSMutex.html">OSMutex</a> *mutex)</td></tr>
+<tr class="separator:a49ad28989551033add64113ae4c55534"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5aedd62b4344933225525dc73d3184d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#ab5aedd62b4344933225525dc73d3184d">__OSCheckMutex</a> (<a class="el" href="structOSMutex.html">OSMutex</a> *mutex)</td></tr>
+<tr class="separator:ab5aedd62b4344933225525dc73d3184d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44139aecb52285e28ee357e6fb07e9df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#a44139aecb52285e28ee357e6fb07e9df">__OSCheckDeadLock</a> (<a class="el" href="structOSThread.html">OSThread</a> *thread)</td></tr>
+<tr class="separator:a44139aecb52285e28ee357e6fb07e9df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af756730c8323a5b414eac45cd13aeb48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#af756730c8323a5b414eac45cd13aeb48">__OSCheckMutexes</a> (<a class="el" href="structOSThread.html">OSThread</a> *thread)</td></tr>
+<tr class="separator:af756730c8323a5b414eac45cd13aeb48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a5109d2218e560a6ac24327fde76dc15b" name="a5109d2218e560a6ac24327fde76dc15b"></a>
@@ -240,8 +232,8 @@ Functions</h2></td></tr>
 <div class="line">        else                                                                                       \</div>
 <div class="line">            __prev-&gt;<a class="code hl_variable" href="structOSMutex.html#a81716a34bc8d9003ebb5ada22bb975ea">link</a>.<a class="code hl_variable" href="structOSMutexLink.html#a2d983b1d25f99ad459cfa6fb2d461dce">next</a> = __next;                                                            \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="astructOSMutexLink_html_a2d983b1d25f99ad459cfa6fb2d461dce"><div class="ttname"><a href="structOSMutexLink.html#a2d983b1d25f99ad459cfa6fb2d461dce">OSMutexLink::next</a></div><div class="ttdeci">OSMutex * next</div><div class="ttdef"><b>Definition:</b> OSThread.h:48</div></div>
-<div class="ttc" id="astructOSMutexLink_html_acacc5c293c160ce77244134395c9ab13"><div class="ttname"><a href="structOSMutexLink.html#acacc5c293c160ce77244134395c9ab13">OSMutexLink::prev</a></div><div class="ttdeci">OSMutex * prev</div><div class="ttdef"><b>Definition:</b> OSThread.h:47</div></div>
+<div class="ttc" id="astructOSMutexLink_html_a2d983b1d25f99ad459cfa6fb2d461dce"><div class="ttname"><a href="structOSMutexLink.html#a2d983b1d25f99ad459cfa6fb2d461dce">OSMutexLink::next</a></div><div class="ttdeci">OSMutex * next</div><div class="ttdef"><b>Definition:</b> OSThread.h:47</div></div>
+<div class="ttc" id="astructOSMutexLink_html_acacc5c293c160ce77244134395c9ab13"><div class="ttname"><a href="structOSMutexLink.html#acacc5c293c160ce77244134395c9ab13">OSMutexLink::prev</a></div><div class="ttdeci">OSMutex * prev</div><div class="ttdef"><b>Definition:</b> OSThread.h:48</div></div>
 <div class="ttc" id="astructOSMutex_html_a81716a34bc8d9003ebb5ada22bb975ea"><div class="ttname"><a href="structOSMutex.html#a81716a34bc8d9003ebb5ada22bb975ea">OSMutex::link</a></div><div class="ttdeci">OSMutexLink link</div><div class="ttdef"><b>Definition:</b> OSMutex.h:14</div></div>
 </div><!-- fragment -->
 </div>
@@ -293,14 +285,14 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a1815b142a4bbe30b55c007ee158fdfc9" name="a1815b142a4bbe30b55c007ee158fdfc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1815b142a4bbe30b55c007ee158fdfc9">&#9670;&#160;</a></span>__OSCheckDeadLock()</h2>
+<a id="a44139aecb52285e28ee357e6fb07e9df" name="a44139aecb52285e28ee357e6fb07e9df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44139aecb52285e28ee357e6fb07e9df">&#9670;&#160;</a></span>__OSCheckDeadLock()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> __OSCheckDeadLock </td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> __OSCheckDeadLock </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structOSThread.html">OSThread</a> *&#160;</td>
           <td class="paramname"><em>thread</em></td><td>)</td>
@@ -311,14 +303,32 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af393d40982e6062ff0df61c42a6336eb" name="af393d40982e6062ff0df61c42a6336eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af393d40982e6062ff0df61c42a6336eb">&#9670;&#160;</a></span>__OSCheckMutex()</h2>
+<a id="ab5aedd62b4344933225525dc73d3184d" name="ab5aedd62b4344933225525dc73d3184d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5aedd62b4344933225525dc73d3184d">&#9670;&#160;</a></span>__OSCheckMutex()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> __OSCheckMutex </td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> __OSCheckMutex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structOSMutex.html">OSMutex</a> *&#160;</td>
+          <td class="paramname"><em>mutex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af756730c8323a5b414eac45cd13aeb48" name="af756730c8323a5b414eac45cd13aeb48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af756730c8323a5b414eac45cd13aeb48">&#9670;&#160;</a></span>__OSCheckMutexes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> __OSCheckMutexes </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structOSThread.html">OSThread</a> *&#160;</td>
           <td class="paramname"><em>thread</em></td><td>)</td>
@@ -329,14 +339,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aaed3d2c0b32b6aa1768c3890d9a9c475" name="aaed3d2c0b32b6aa1768c3890d9a9c475"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaed3d2c0b32b6aa1768c3890d9a9c475">&#9670;&#160;</a></span>__OSCheckMutexes()</h2>
+<a id="a1aa6bb203afd1d6771603ffdf5dcb882" name="a1aa6bb203afd1d6771603ffdf5dcb882"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1aa6bb203afd1d6771603ffdf5dcb882">&#9670;&#160;</a></span>__OSUnlockAllMutex()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> __OSCheckMutexes </td>
+          <td class="memname">void __OSUnlockAllMutex </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structOSThread.html">OSThread</a> *&#160;</td>
           <td class="paramname"><em>thread</em></td><td>)</td>
@@ -347,32 +357,50 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9ce12ef0601e8fb02b8aac9d9122ef07" name="a9ce12ef0601e8fb02b8aac9d9122ef07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ce12ef0601e8fb02b8aac9d9122ef07">&#9670;&#160;</a></span>__OSUnlockAllMutex()</h2>
+<a id="a49ad28989551033add64113ae4c55534" name="a49ad28989551033add64113ae4c55534"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49ad28989551033add64113ae4c55534">&#9670;&#160;</a></span>IsMember()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __OSUnlockAllMutex </td>
+          <td class="memname">static <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> IsMember </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structOSThread.html">OSThread</a> *&#160;</td>
-          <td class="paramname"><em>thread</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structOSMutexQueue.html">OSMutexQueue</a> *&#160;</td>
+          <td class="paramname"><em>queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structOSMutex.html">OSMutex</a> *&#160;</td>
+          <td class="paramname"><em>mutex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a60497b337b36d791d3dc70ebea08a5ab" name="a60497b337b36d791d3dc70ebea08a5ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60497b337b36d791d3dc70ebea08a5ab">&#9670;&#160;</a></span>OSInitCond()</h2>
+<a id="a2b4f423221a0f3bff5b68efd1c8524e6" name="a2b4f423221a0f3bff5b68efd1c8524e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b4f423221a0f3bff5b68efd1c8524e6">&#9670;&#160;</a></span>OSInitCond()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void OSInitCond </td>
+          <td class="memname">void OSInitCond </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structOSCond.html">OSCond</a> *&#160;</td>
           <td class="paramname"><em>cond</em></td><td>)</td>
@@ -401,14 +429,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac1aa0e1528be8e3b9dd3c44f19c59312" name="ac1aa0e1528be8e3b9dd3c44f19c59312"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1aa0e1528be8e3b9dd3c44f19c59312">&#9670;&#160;</a></span>OSLockMutex()</h2>
+<a id="ac540b8ab45b64548e31395f193f0fc49" name="ac540b8ab45b64548e31395f193f0fc49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac540b8ab45b64548e31395f193f0fc49">&#9670;&#160;</a></span>OSLockMutex()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void OSLockMutex </td>
+          <td class="memname">void OSLockMutex </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structOSMutex.html">OSMutex</a> *&#160;</td>
           <td class="paramname"><em>mutex</em></td><td>)</td>
@@ -419,17 +447,17 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6a5d8d897bf08b12bd797a8c1a20682a" name="a6a5d8d897bf08b12bd797a8c1a20682a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a5d8d897bf08b12bd797a8c1a20682a">&#9670;&#160;</a></span>OSSignalCond()</h2>
+<a id="a37c4c1ef690ba151a41271f31e5f8039" name="a37c4c1ef690ba151a41271f31e5f8039"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37c4c1ef690ba151a41271f31e5f8039">&#9670;&#160;</a></span>OSSignalCond()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void OSSignalCond </td>
+          <td class="memname">void OSSignalCond </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structOSCond.html">OSCond</a> *&#160;</td>
-          <td class="paramname"><em>con</em></td><td>)</td>
+          <td class="paramname"><em>cond</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -437,14 +465,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa84beeca0ee88f9b77b7051bc6cbeb70" name="aa84beeca0ee88f9b77b7051bc6cbeb70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa84beeca0ee88f9b77b7051bc6cbeb70">&#9670;&#160;</a></span>OSTryLockMutex()</h2>
+<a id="a5892ff24353a07eaec68242ef44998d2" name="a5892ff24353a07eaec68242ef44998d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5892ff24353a07eaec68242ef44998d2">&#9670;&#160;</a></span>OSTryLockMutex()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> OSTryLockMutex </td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> OSTryLockMutex </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structOSMutex.html">OSMutex</a> *&#160;</td>
           <td class="paramname"><em>mutex</em></td><td>)</td>
@@ -455,14 +483,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a005aaa61c2a77e88d4096edc8e32b76e" name="a005aaa61c2a77e88d4096edc8e32b76e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a005aaa61c2a77e88d4096edc8e32b76e">&#9670;&#160;</a></span>OSUnlockMutex()</h2>
+<a id="abdcea1245d3bf588114b33e213892d6f" name="abdcea1245d3bf588114b33e213892d6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdcea1245d3bf588114b33e213892d6f">&#9670;&#160;</a></span>OSUnlockMutex()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void OSUnlockMutex </td>
+          <td class="memname">void OSUnlockMutex </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structOSMutex.html">OSMutex</a> *&#160;</td>
           <td class="paramname"><em>mutex</em></td><td>)</td>
@@ -473,14 +501,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afd6d475ae7dd3a04d760c8f397bdf382" name="afd6d475ae7dd3a04d760c8f397bdf382"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd6d475ae7dd3a04d760c8f397bdf382">&#9670;&#160;</a></span>OSWaitCond()</h2>
+<a id="a7172aefdb664fa1dbc3fb666fae2c157" name="a7172aefdb664fa1dbc3fb666fae2c157"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7172aefdb664fa1dbc3fb666fae2c157">&#9670;&#160;</a></span>OSWaitCond()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void OSWaitCond </td>
+          <td class="memname">void OSWaitCond </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structOSCond.html">OSCond</a> *&#160;</td>
           <td class="paramname"><em>cond</em>, </td>
