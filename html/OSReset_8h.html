@@ -85,7 +85,8 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">OSReset.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -126,7 +127,7 @@ Macros</h2></td></tr>
 <tr class="separator:a9b29ddd4d39efd3c4409ce4941299b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bc5a235037991bf0ddd6f024ec562ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSReset_8h.html#a4bc5a235037991bf0ddd6f024ec562ec">OS_RESETCODE_NETCONFIG</a>&#160;&#160;&#160;0xC0010000</td></tr>
 <tr class="separator:a4bc5a235037991bf0ddd6f024ec562ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69c543b56d78f11bab755ffe8c48f5bd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSReset_8h.html#a69c543b56d78f11bab755ffe8c48f5bd">OS_RESET_TIMEOUT</a>&#160;&#160;&#160;<a class="el" href="OS_8h.html#afde69beba66827e5d5c0922046bc6318">OSMillisecondsToTicks</a>(1000)</td></tr>
+<tr class="memitem:a69c543b56d78f11bab755ffe8c48f5bd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSReset_8h.html#a69c543b56d78f11bab755ffe8c48f5bd">OS_RESET_TIMEOUT</a>&#160;&#160;&#160;<a class="el" href="OSTime_8h.html#afde69beba66827e5d5c0922046bc6318">OSMillisecondsToTicks</a>(1000)</td></tr>
 <tr class="separator:a69c543b56d78f11bab755ffe8c48f5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf80f9262965777a328734bb7aa405d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSReset_8h.html#adf80f9262965777a328734bb7aa405d7">OS_RESET_RESTART</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:adf80f9262965777a328734bb7aa405d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,6 +173,11 @@ Functions</h2></td></tr>
 <tr class="separator:a7036bb15abf7642d6b88165222033baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebd95bc38e155cde6e4f171b1782ecd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSReset_8h.html#aebd95bc38e155cde6e4f171b1782ecd7">OSGetResetCode</a> (void)</td></tr>
 <tr class="separator:aebd95bc38e155cde6e4f171b1782ecd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aa3f67eaf58d2d1c62c0117a1c36fc575"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#abcdd5d61f51cb4c472ac6637916cf72a">vu32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSReset_8h.html#aa3f67eaf58d2d1c62c0117a1c36fc575">__PIRegs</a> [12]</td></tr>
+<tr class="separator:aa3f67eaf58d2d1c62c0117a1c36fc575"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a8e69a797efebd8bf8181fd6e190224b3" name="a8e69a797efebd8bf8181fd6e190224b3"></a>
@@ -307,7 +313,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define OS_RESET_TIMEOUT&#160;&#160;&#160;<a class="el" href="OS_8h.html#afde69beba66827e5d5c0922046bc6318">OSMillisecondsToTicks</a>(1000)</td>
+          <td class="memname">#define OS_RESET_TIMEOUT&#160;&#160;&#160;<a class="el" href="OSTime_8h.html#afde69beba66827e5d5c0922046bc6318">OSMillisecondsToTicks</a>(1000)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -568,6 +574,21 @@ Functions</h2></td></tr>
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="aa3f67eaf58d2d1c62c0117a1c36fc575" name="aa3f67eaf58d2d1c62c0117a1c36fc575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3f67eaf58d2d1c62c0117a1c36fc575">&#9670;&#160;</a></span>__PIRegs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#abcdd5d61f51cb4c472ac6637916cf72a">vu32</a> __PIRegs[12]</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>

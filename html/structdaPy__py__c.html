@@ -235,13 +235,17 @@ Public Types</h2></td></tr>
 , <a class="el" href="structdaPy__py__c.html#a4953bb86a496faa991c75c48a6564d0aaaa5d0c6f85b7b1b83c343ee0bfe2d702">ERFLG0_UNK_1000</a> = 0x1000
 , <a class="el" href="structdaPy__py__c.html#a4953bb86a496faa991c75c48a6564d0aaaad198f9536d4b73c8fe4305debd1d97">ERFLG0_UNK_400</a> = 0x400
 , <br />
-&#160;&#160;<a class="el" href="structdaPy__py__c.html#a4953bb86a496faa991c75c48a6564d0aa855295f8715ee1c782faa815ec1964d5">ERFLG0_UNK_100</a> = 0x100
+&#160;&#160;<a class="el" href="structdaPy__py__c.html#a4953bb86a496faa991c75c48a6564d0aa53dbb10afca6deb1ffc57ef165c50459">ERFLG0_FORCE_AUTO_JUMP</a> = 0x200
+, <a class="el" href="structdaPy__py__c.html#a4953bb86a496faa991c75c48a6564d0aa855295f8715ee1c782faa815ec1964d5">ERFLG0_UNK_100</a> = 0x100
 , <a class="el" href="structdaPy__py__c.html#a4953bb86a496faa991c75c48a6564d0aad9e887c4889fb7ab5a7dfc9ece43c56e">ERFLG0_UNK_80</a> = 0x80
 , <a class="el" href="structdaPy__py__c.html#a4953bb86a496faa991c75c48a6564d0aa948260d19d77eb8f67831bff5dff4cf3">ERFLG0_UNK_40</a> = 0x40
-, <a class="el" href="structdaPy__py__c.html#a4953bb86a496faa991c75c48a6564d0aabcd2e3d03f7d6d6a4f8409d4ee24ce9e">ERFLG0_UNK_8</a> = 8
 , <br />
-&#160;&#160;<a class="el" href="structdaPy__py__c.html#a4953bb86a496faa991c75c48a6564d0aacad8cad68dc3dab3bea6f1f41d485a2a">ERFLG0_UNK_4</a> = 4
-, <a class="el" href="structdaPy__py__c.html#a4953bb86a496faa991c75c48a6564d0aa389ab37969540ba3b92a6454a16123e3">ERFLG0_UNK_2</a> = 2
+&#160;&#160;<a class="el" href="structdaPy__py__c.html#a4953bb86a496faa991c75c48a6564d0aadfe72d2b252c6b543a9f48a17e807387">ERFLG0_NOT_AUTO_JUMP</a> = 0x20
+, <a class="el" href="structdaPy__py__c.html#a4953bb86a496faa991c75c48a6564d0aa7adbc644901fe0f5a744d35fe143333b">ERFLG0_NOT_HANG</a> = 0x10
+, <a class="el" href="structdaPy__py__c.html#a4953bb86a496faa991c75c48a6564d0aabcd2e3d03f7d6d6a4f8409d4ee24ce9e">ERFLG0_UNK_8</a> = 8
+, <a class="el" href="structdaPy__py__c.html#a4953bb86a496faa991c75c48a6564d0aacad8cad68dc3dab3bea6f1f41d485a2a">ERFLG0_UNK_4</a> = 4
+, <br />
+&#160;&#160;<a class="el" href="structdaPy__py__c.html#a4953bb86a496faa991c75c48a6564d0aa389ab37969540ba3b92a6454a16123e3">ERFLG0_UNK_2</a> = 2
 , <a class="el" href="structdaPy__py__c.html#a4953bb86a496faa991c75c48a6564d0aa1f22ccb4c992758d473c4342f8ccf6a7">ERFLG0_UNK_1</a> = 1
 <br />
  }</td></tr>
@@ -828,8 +832,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a549cc50bf149ab1e64bb472373376151"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46d8c197dfd516c34ea3958ee43d984b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#a46d8c197dfd516c34ea3958ee43d984b">checkFrontRollCrash</a> () const</td></tr>
 <tr class="separator:a46d8c197dfd516c34ea3958ee43d984b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ab01b8988efe0a7b4cdf86e63c55910"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#a0ab01b8988efe0a7b4cdf86e63c55910">onForceAutoJump</a> ()</td></tr>
+<tr class="separator:a0ab01b8988efe0a7b4cdf86e63c55910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28844b2731532fd86157fc071e9dd92d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#a28844b2731532fd86157fc071e9dd92d">onNotAutoJump</a> ()</td></tr>
+<tr class="separator:a28844b2731532fd86157fc071e9dd92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a760f0f3ed76554d98ad7e8f00c92ed4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#a760f0f3ed76554d98ad7e8f00c92ed4d">onNotHang</a> ()</td></tr>
+<tr class="separator:a760f0f3ed76554d98ad7e8f00c92ed4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae65a8a76bdf2bc9eb8d0489b65eae815"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#ae65a8a76bdf2bc9eb8d0489b65eae815">offGoronSideMove</a> ()</td></tr>
 <tr class="separator:ae65a8a76bdf2bc9eb8d0489b65eae815"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab382493b8f86aeab3b976a98fbbfda3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#ab382493b8f86aeab3b976a98fbbfda3e">getBodyAngleX</a> () const</td></tr>
+<tr class="separator:ab382493b8f86aeab3b976a98fbbfda3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac69511bf72dd6a816ef1028af2afea32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#ac69511bf72dd6a816ef1028af2afea32">getBodyAngleY</a> () const</td></tr>
+<tr class="separator:ac69511bf72dd6a816ef1028af2afea32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e1a2f66c31029820c39da05e93c361a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#a6e1a2f66c31029820c39da05e93c361a">i_checkNoResetFlg0</a> (<a class="el" href="structdaPy__py__c.html#ae31e40b486e08a4375979902714bd2c0">daPy_FLG0</a> pFlag) const</td></tr>
 <tr class="separator:a6e1a2f66c31029820c39da05e93c361a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a252f6768393f0001d0e349defc97a3df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#a252f6768393f0001d0e349defc97a3df">i_checkNoResetFlg1</a> (<a class="el" href="structdaPy__py__c.html#ae926fe69b6a76e784bc3a05a26732d61">daPy_FLG1</a> pFlag) const</td></tr>
@@ -854,25 +868,25 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a417b609e3d8e50aebf0e0703c22f54d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81dc367296290c81e9d6910002425ffd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#a81dc367296290c81e9d6910002425ffd">i_offNoResetFlg3</a> (int pFlg)</td></tr>
 <tr class="separator:a81dc367296290c81e9d6910002425ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42c0d9d60e68f5dec1d8519653d2a338"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#a42c0d9d60e68f5dec1d8519653d2a338">i_offResetFlg0</a> (int <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:a42c0d9d60e68f5dec1d8519653d2a338"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#a42c0d9d60e68f5dec1d8519653d2a338">i_offResetFlg0</a> (int <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:a42c0d9d60e68f5dec1d8519653d2a338"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d3fd571027a12e58675bb18c8d6c4ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#a5d3fd571027a12e58675bb18c8d6c4ee">i_onResetFlg0</a> (int <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:a5d3fd571027a12e58675bb18c8d6c4ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#a5d3fd571027a12e58675bb18c8d6c4ee">i_onResetFlg0</a> (int <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:a5d3fd571027a12e58675bb18c8d6c4ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc59c3aa75bf58e6bfda52960a777973"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#adc59c3aa75bf58e6bfda52960a777973">i_onResetFlg1</a> (int <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:adc59c3aa75bf58e6bfda52960a777973"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#adc59c3aa75bf58e6bfda52960a777973">i_onResetFlg1</a> (int <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:adc59c3aa75bf58e6bfda52960a777973"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadbe99db469a12e1a55c07ee19dd1196"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#aadbe99db469a12e1a55c07ee19dd1196">i_onEndResetFlg0</a> (int <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:aadbe99db469a12e1a55c07ee19dd1196"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#aadbe99db469a12e1a55c07ee19dd1196">i_onEndResetFlg0</a> (int <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:aadbe99db469a12e1a55c07ee19dd1196"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2e3acfe17393077b8c1c1bb2949a69d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#ac2e3acfe17393077b8c1c1bb2949a69d">i_onEndResetFlg2</a> (int <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:ac2e3acfe17393077b8c1c1bb2949a69d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#ac2e3acfe17393077b8c1c1bb2949a69d">i_onEndResetFlg2</a> (int <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:ac2e3acfe17393077b8c1c1bb2949a69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ea51b8093c1d2f8deeefce21ee0c3bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#a6ea51b8093c1d2f8deeefce21ee0c3bd">i_offEndResetFlg2</a> (<a class="el" href="structdaPy__py__c.html#aaa88576210ca5dfd006110018985781d">daPy_ERFLG2</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:a6ea51b8093c1d2f8deeefce21ee0c3bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#a6ea51b8093c1d2f8deeefce21ee0c3bd">i_offEndResetFlg2</a> (<a class="el" href="structdaPy__py__c.html#aaa88576210ca5dfd006110018985781d">daPy_ERFLG2</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:a6ea51b8093c1d2f8deeefce21ee0c3bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17168ca59af1eeb295ccdc245c4676da"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#a17168ca59af1eeb295ccdc245c4676da">i_checkResetFlg0</a> (<a class="el" href="structdaPy__py__c.html#aae52cea617087a937ba59045e1b4994d">daPy_py_c::daPy_RFLG0</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>) const</td></tr>
+<tr class="memitem:a17168ca59af1eeb295ccdc245c4676da"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#a17168ca59af1eeb295ccdc245c4676da">i_checkResetFlg0</a> (<a class="el" href="structdaPy__py__c.html#aae52cea617087a937ba59045e1b4994d">daPy_py_c::daPy_RFLG0</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>) const</td></tr>
 <tr class="separator:a17168ca59af1eeb295ccdc245c4676da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6f2c628a3308960aa249bf1dd8f4ae8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#ad6f2c628a3308960aa249bf1dd8f4ae8">i_checkEndResetFlg0</a> (<a class="el" href="structdaPy__py__c.html#a4953bb86a496faa991c75c48a6564d0a">daPy_py_c::daPy_ERFLG0</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>) const</td></tr>
+<tr class="memitem:ad6f2c628a3308960aa249bf1dd8f4ae8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#ad6f2c628a3308960aa249bf1dd8f4ae8">i_checkEndResetFlg0</a> (<a class="el" href="structdaPy__py__c.html#a4953bb86a496faa991c75c48a6564d0a">daPy_py_c::daPy_ERFLG0</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>) const</td></tr>
 <tr class="separator:ad6f2c628a3308960aa249bf1dd8f4ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45eb9428d698084a5c626c7eece253f3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#a45eb9428d698084a5c626c7eece253f3">i_checkEndResetFlg1</a> (<a class="el" href="structdaPy__py__c.html#a0a39c81a139137cb3ab3768de238557f">daPy_py_c::daPy_ERFLG1</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>) const</td></tr>
+<tr class="memitem:a45eb9428d698084a5c626c7eece253f3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#a45eb9428d698084a5c626c7eece253f3">i_checkEndResetFlg1</a> (<a class="el" href="structdaPy__py__c.html#a0a39c81a139137cb3ab3768de238557f">daPy_py_c::daPy_ERFLG1</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>) const</td></tr>
 <tr class="separator:a45eb9428d698084a5c626c7eece253f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63821394846b888fd7b40627ed4f0666"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#a63821394846b888fd7b40627ed4f0666">i_checkEndResetFlg2</a> (<a class="el" href="structdaPy__py__c.html#aaa88576210ca5dfd006110018985781d">daPy_py_c::daPy_ERFLG2</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>) const</td></tr>
+<tr class="memitem:a63821394846b888fd7b40627ed4f0666"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#a63821394846b888fd7b40627ed4f0666">i_checkEndResetFlg2</a> (<a class="el" href="structdaPy__py__c.html#aaa88576210ca5dfd006110018985781d">daPy_py_c::daPy_ERFLG2</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>) const</td></tr>
 <tr class="separator:a63821394846b888fd7b40627ed4f0666"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7192c42e547b174432c0b85fc5f97504"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#a7192c42e547b174432c0b85fc5f97504">i_onEndResetFlg1</a> (<a class="el" href="structdaPy__py__c.html#a0a39c81a139137cb3ab3768de238557f">daPy_ERFLG1</a> pFlg)</td></tr>
 <tr class="separator:a7192c42e547b174432c0b85fc5f97504"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1025,10 +1039,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:adf8c39daca97103b73ffafe717027564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b48b918eeb7ee6ee2ee1b4a163379a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#a0b48b918eeb7ee6ee2ee1b4a163379a5">field_0x598</a></td></tr>
 <tr class="separator:a0b48b918eeb7ee6ee2ee1b4a163379a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9128428ff3f87d2de95fb7a5ab1fb005"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#a9128428ff3f87d2de95fb7a5ab1fb005">mLookAngleY</a></td></tr>
-<tr class="separator:a9128428ff3f87d2de95fb7a5ab1fb005"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abae192a1548687faf9fdfb8759906531"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#abae192a1548687faf9fdfb8759906531">field_0x59e</a></td></tr>
-<tr class="separator:abae192a1548687faf9fdfb8759906531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48364add49b14edbc7938e6e021d4f78"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#a48364add49b14edbc7938e6e021d4f78">mBodyAngleX</a></td></tr>
+<tr class="separator:a48364add49b14edbc7938e6e021d4f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21f1c224c82653f3bc7fd95acf35b9bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#a21f1c224c82653f3bc7fd95acf35b9bf">mBodyAngleY</a></td></tr>
+<tr class="separator:a21f1c224c82653f3bc7fd95acf35b9bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46f6499f9d0b38342b15de3b415500f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#a46f6499f9d0b38342b15de3b415500f6">field_0x5a0</a> [0x4]</td></tr>
 <tr class="separator:a46f6499f9d0b38342b15de3b415500f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae992064f4105510074748edaa4e60623"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcXyz.html">cXyz</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaPy__py__c.html#ae992064f4105510074748edaa4e60623">mHeadTopPos</a></td></tr>
@@ -1092,8 +1106,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a9566bedb8565ca90d8ec52d0459a767a inherit pub_attribs_structfopAc__ac__c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac60de3448ead15ae71e8ea9af883408a inherit pub_attribs_structfopAc__ac__c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcXyz.html">cXyz</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfopAc__ac__c.html#ac60de3448ead15ae71e8ea9af883408a">mScale</a></td></tr>
 <tr class="separator:ac60de3448ead15ae71e8ea9af883408a inherit pub_attribs_structfopAc__ac__c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e20d16c43ea9f9c08ebd156e6bbf9fd inherit pub_attribs_structfopAc__ac__c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcXyz.html">cXyz</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfopAc__ac__c.html#a0e20d16c43ea9f9c08ebd156e6bbf9fd">mSpeed</a></td></tr>
-<tr class="separator:a0e20d16c43ea9f9c08ebd156e6bbf9fd inherit pub_attribs_structfopAc__ac__c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a470982203cfe8ab0c79ff6fe2474d0c3 inherit pub_attribs_structfopAc__ac__c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcXyz.html">cXyz</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfopAc__ac__c.html#a470982203cfe8ab0c79ff6fe2474d0c3">speed</a></td></tr>
+<tr class="separator:a470982203cfe8ab0c79ff6fe2474d0c3 inherit pub_attribs_structfopAc__ac__c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4432ca483b42ad43ce395dc0a2ede5e4 inherit pub_attribs_structfopAc__ac__c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mtx_8h.html#a486ec93ad57f76408600fa51e755e290">MtxP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfopAc__ac__c.html#a4432ca483b42ad43ce395dc0a2ede5e4">mCullMtx</a></td></tr>
 <tr class="separator:a4432ca483b42ad43ce395dc0a2ede5e4 inherit pub_attribs_structfopAc__ac__c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a172cb33d51a4bdaac72e0d19fa15fa62 inherit pub_attribs_structfopAc__ac__c"><td class="memItemLeft" >union {</td></tr>
@@ -1115,12 +1129,12 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a172cb33d51a4bdaac72e0d19fa15fa62 inherit pub_attribs_structfopAc__ac__c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b3b0e7b2a479b393c0a833d2ba08faa inherit pub_attribs_structfopAc__ac__c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfopAc__ac__c.html#a7b3b0e7b2a479b393c0a833d2ba08faa">mCullSizeFar</a></td></tr>
 <tr class="separator:a7b3b0e7b2a479b393c0a833d2ba08faa inherit pub_attribs_structfopAc__ac__c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a776206167389ce96e09566ecb0304bba inherit pub_attribs_structfopAc__ac__c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJ3DModel.html">J3DModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfopAc__ac__c.html#a776206167389ce96e09566ecb0304bba">field_0x524</a></td></tr>
-<tr class="separator:a776206167389ce96e09566ecb0304bba inherit pub_attribs_structfopAc__ac__c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9632ec1cb73b987043f95f841760094 inherit pub_attribs_structfopAc__ac__c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJ3DModel.html">J3DModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfopAc__ac__c.html#ab9632ec1cb73b987043f95f841760094">model</a></td></tr>
+<tr class="separator:ab9632ec1cb73b987043f95f841760094 inherit pub_attribs_structfopAc__ac__c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a190e09664b7fcb39ae1eaf15aa60cd77 inherit pub_attribs_structfopAc__ac__c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdJntCol__c.html">dJntCol_c</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfopAc__ac__c.html#a190e09664b7fcb39ae1eaf15aa60cd77">mJntCol</a></td></tr>
 <tr class="separator:a190e09664b7fcb39ae1eaf15aa60cd77 inherit pub_attribs_structfopAc__ac__c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ac9580e6a5eca1496cb2c9b7febc560 inherit pub_attribs_structfopAc__ac__c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfopAc__ac__c.html#a4ac9580e6a5eca1496cb2c9b7febc560">mSpeedF</a></td></tr>
-<tr class="separator:a4ac9580e6a5eca1496cb2c9b7febc560 inherit pub_attribs_structfopAc__ac__c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7ff548455917496e00e74fa1e62c7af inherit pub_attribs_structfopAc__ac__c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfopAc__ac__c.html#ae7ff548455917496e00e74fa1e62c7af">speedF</a></td></tr>
+<tr class="separator:ae7ff548455917496e00e74fa1e62c7af inherit pub_attribs_structfopAc__ac__c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fddec776023ad5e7b84a0af832df522 inherit pub_attribs_structfopAc__ac__c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfopAc__ac__c.html#a9fddec776023ad5e7b84a0af832df522">mGravity</a></td></tr>
 <tr class="separator:a9fddec776023ad5e7b84a0af832df522 inherit pub_attribs_structfopAc__ac__c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d49b4311cc9427376da009f1eacf244 inherit pub_attribs_structfopAc__ac__c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfopAc__ac__c.html#a9d49b4311cc9427376da009f1eacf244">mMaxFallSpeed</a></td></tr>
@@ -1265,9 +1279,12 @@ Static Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a4953bb86a496faa991c75c48a6564d0aa0065413f205fe2148e6d7998004efdd9" name="a4953bb86a496faa991c75c48a6564d0aa0065413f205fe2148e6d7998004efdd9"></a>ERFLG0_UNK_2000&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a4953bb86a496faa991c75c48a6564d0aaaa5d0c6f85b7b1b83c343ee0bfe2d702" name="a4953bb86a496faa991c75c48a6564d0aaaa5d0c6f85b7b1b83c343ee0bfe2d702"></a>ERFLG0_UNK_1000&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a4953bb86a496faa991c75c48a6564d0aaaad198f9536d4b73c8fe4305debd1d97" name="a4953bb86a496faa991c75c48a6564d0aaaad198f9536d4b73c8fe4305debd1d97"></a>ERFLG0_UNK_400&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4953bb86a496faa991c75c48a6564d0aa53dbb10afca6deb1ffc57ef165c50459" name="a4953bb86a496faa991c75c48a6564d0aa53dbb10afca6deb1ffc57ef165c50459"></a>ERFLG0_FORCE_AUTO_JUMP&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a4953bb86a496faa991c75c48a6564d0aa855295f8715ee1c782faa815ec1964d5" name="a4953bb86a496faa991c75c48a6564d0aa855295f8715ee1c782faa815ec1964d5"></a>ERFLG0_UNK_100&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a4953bb86a496faa991c75c48a6564d0aad9e887c4889fb7ab5a7dfc9ece43c56e" name="a4953bb86a496faa991c75c48a6564d0aad9e887c4889fb7ab5a7dfc9ece43c56e"></a>ERFLG0_UNK_80&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a4953bb86a496faa991c75c48a6564d0aa948260d19d77eb8f67831bff5dff4cf3" name="a4953bb86a496faa991c75c48a6564d0aa948260d19d77eb8f67831bff5dff4cf3"></a>ERFLG0_UNK_40&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4953bb86a496faa991c75c48a6564d0aadfe72d2b252c6b543a9f48a17e807387" name="a4953bb86a496faa991c75c48a6564d0aadfe72d2b252c6b543a9f48a17e807387"></a>ERFLG0_NOT_AUTO_JUMP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a4953bb86a496faa991c75c48a6564d0aa7adbc644901fe0f5a744d35fe143333b" name="a4953bb86a496faa991c75c48a6564d0aa7adbc644901fe0f5a744d35fe143333b"></a>ERFLG0_NOT_HANG&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a4953bb86a496faa991c75c48a6564d0aabcd2e3d03f7d6d6a4f8409d4ee24ce9e" name="a4953bb86a496faa991c75c48a6564d0aabcd2e3d03f7d6d6a4f8409d4ee24ce9e"></a>ERFLG0_UNK_8&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a4953bb86a496faa991c75c48a6564d0aacad8cad68dc3dab3bea6f1f41d485a2a" name="a4953bb86a496faa991c75c48a6564d0aacad8cad68dc3dab3bea6f1f41d485a2a"></a>ERFLG0_UNK_4&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a4953bb86a496faa991c75c48a6564d0aa389ab37969540ba3b92a6454a16123e3" name="a4953bb86a496faa991c75c48a6564d0aa389ab37969540ba3b92a6454a16123e3"></a>ERFLG0_UNK_2&#160;</td><td class="fielddoc"></td></tr>
@@ -5608,6 +5625,56 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ab382493b8f86aeab3b976a98fbbfda3e" name="ab382493b8f86aeab3b976a98fbbfda3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab382493b8f86aeab3b976a98fbbfda3e">&#9670;&#160;</a></span>getBodyAngleX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> daPy_py_c::getBodyAngleX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac69511bf72dd6a816ef1028af2afea32" name="ac69511bf72dd6a816ef1028af2afea32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac69511bf72dd6a816ef1028af2afea32">&#9670;&#160;</a></span>getBodyAngleY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> daPy_py_c::getBodyAngleY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5c36cc5eb7fb497f659b750c726af8c3" name="a5c36cc5eb7fb497f659b750c726af8c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5c36cc5eb7fb497f659b750c726af8c3">&#9670;&#160;</a></span>getBokoFlamePos()</h2>
 
@@ -7924,6 +7991,31 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a0ab01b8988efe0a7b4cdf86e63c55910" name="a0ab01b8988efe0a7b4cdf86e63c55910"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ab01b8988efe0a7b4cdf86e63c55910">&#9670;&#160;</a></span>onForceAutoJump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void daPy_py_c::onForceAutoJump </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a84b82472a4c35dd79f1de1f25f962230" name="a84b82472a4c35dd79f1de1f25f962230"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a84b82472a4c35dd79f1de1f25f962230">&#9670;&#160;</a></span>onFrollCrashFlg()</h2>
 
@@ -8030,6 +8122,56 @@ Static Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a28844b2731532fd86157fc071e9dd92d" name="a28844b2731532fd86157fc071e9dd92d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28844b2731532fd86157fc071e9dd92d">&#9670;&#160;</a></span>onNotAutoJump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void daPy_py_c::onNotAutoJump </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a760f0f3ed76554d98ad7e8f00c92ed4d" name="a760f0f3ed76554d98ad7e8f00c92ed4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a760f0f3ed76554d98ad7e8f00c92ed4d">&#9670;&#160;</a></span>onNotHang()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void daPy_py_c::onNotHang </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -9513,20 +9655,6 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="abae192a1548687faf9fdfb8759906531" name="abae192a1548687faf9fdfb8759906531"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abae192a1548687faf9fdfb8759906531">&#9670;&#160;</a></span>field_0x59e</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> daPy_py_c::field_0x59e</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a46f6499f9d0b38342b15de3b415500f6" name="a46f6499f9d0b38342b15de3b415500f6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a46f6499f9d0b38342b15de3b415500f6">&#9670;&#160;</a></span>field_0x5a0</h2>
 
@@ -9595,6 +9723,34 @@ Static Public Attributes</h2></td></tr>
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a48364add49b14edbc7938e6e021d4f78" name="a48364add49b14edbc7938e6e021d4f78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48364add49b14edbc7938e6e021d4f78">&#9670;&#160;</a></span>mBodyAngleX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> daPy_py_c::mBodyAngleX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21f1c224c82653f3bc7fd95acf35b9bf" name="a21f1c224c82653f3bc7fd95acf35b9bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21f1c224c82653f3bc7fd95acf35b9bf">&#9670;&#160;</a></span>mBodyAngleY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> daPy_py_c::mBodyAngleY</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -9747,20 +9903,6 @@ Static Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="structcXyz.html">cXyz</a> daPy_py_c::mLeftHandPos</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9128428ff3f87d2de95fb7a5ab1fb005" name="a9128428ff3f87d2de95fb7a5ab1fb005"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9128428ff3f87d2de95fb7a5ab1fb005">&#9670;&#160;</a></span>mLookAngleY</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> daPy_py_c::mLookAngleY</td>
         </tr>
       </table>
 </div><div class="memdoc">

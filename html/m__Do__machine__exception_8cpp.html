@@ -82,7 +82,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">m_Do_machine_exception.cpp File Reference</div></div>
@@ -98,6 +97,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="m__Do__ext_8h_source.html">m_Do/m_Do_ext.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="m__Do__main_8h_source.html">m_Do/m_Do_main.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="DynamicLink_8h_source.html">DynamicLink.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for m_Do_machine_exception.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -107,15 +107,8 @@ $(function() {
 </div>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDynamicModuleControlBase.html">DynamicModuleControlBase</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a93ca21b10727d8654670ead77745977d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a93ca21b10727d8654670ead77745977d">dump__24DynamicModuleControlBaseFv</a> ()</td></tr>
-<tr class="separator:a93ca21b10727d8654670ead77745977d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd695d41704754aec1f036b725108064"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#acd695d41704754aec1f036b725108064">print_f</a> (char const *fmt,...)</td></tr>
 <tr class="separator:acd695d41704754aec1f036b725108064"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ac9b07d27d4eada7323f657df7d3ec2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a4ac9b07d27d4eada7323f657df7d3ec2">print</a> (char const *string)</td></tr>
@@ -135,8 +128,6 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a97663b9b5d45a581bbaea2ec26c00cad"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structJUTConsole.html">JUTConsole</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a97663b9b5d45a581bbaea2ec26c00cad">sConsole</a></td></tr>
 <tr class="separator:a97663b9b5d45a581bbaea2ec26c00cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d7bbde079b7161ee37bd5260a78196a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a3d7bbde079b7161ee37bd5260a78196a">struct_80450C94</a> [4]</td></tr>
-<tr class="separator:a3d7bbde079b7161ee37bd5260a78196a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a554df824c492c043d4d1c8a66b29d000"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__machine__exception_8cpp.html#a554df824c492c043d4d1c8a66b29d000">stringBase_80374460</a> = &quot;--------------------------------------\n&quot;</td></tr>
 <tr class="separator:a554df824c492c043d4d1c8a66b29d000"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -200,23 +191,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void dispHeapInfo </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a93ca21b10727d8654670ead77745977d" name="a93ca21b10727d8654670ead77745977d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93ca21b10727d8654670ead77745977d">&#9670;&#160;</a></span>dump__24DynamicModuleControlBaseFv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void dump__24DynamicModuleControlBaseFv </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -310,6 +284,7 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p ><a class="el" href="m__Do__machine__exception_8cpp.html">m_Do_machine_exception.cpp</a> Exception Print Functions </p>
 
 </div>
 </div>
@@ -321,20 +296,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">const char* stringBase_80374460 = &quot;--------------------------------------\n&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3d7bbde079b7161ee37bd5260a78196a" name="a3d7bbde079b7161ee37bd5260a78196a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d7bbde079b7161ee37bd5260a78196a">&#9670;&#160;</a></span>struct_80450C94</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> struct_80450C94[4]</td>
         </tr>
       </table>
 </div><div class="memdoc">

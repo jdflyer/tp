@@ -31,5 +31,5 @@ var searchData=
   ['killactivechannel_5f_5f13jasdspchannelfv_28',['killActiveChannel__13JASDSPChannelFv',['../JASAiCtrl_8cpp.html#aec6fb04a5f93b5fde9a125aba8277c19',1,'killActiveChannel__13JASDSPChannelFv():&#160;JASAiCtrl.cpp'],['../JASDSPChannel_8cpp.html#aec6fb04a5f93b5fde9a125aba8277c19',1,'killActiveChannel__13JASDSPChannelFv():&#160;JASDSPChannel.cpp']]],
   ['killsubcontents_29',['killSubContents',['../classdMeter2__c.html#a2e26c996ab1ab5efd0bbf57ab6d366d8',1,'dMeter2_c']]],
   ['killsubcontents_5f_5f9dmeter2_5fcfuc_30',['killSubContents__9dMeter2_cFUc',['../d__meter2_8cpp.html#aa4b5a9a0afed63f5ef1d5b58821b9685',1,'d_meter2.cpp']]],
-  ['killthreads_31',['KillThreads',['../OSReset_8c.html#ab4687a1f4cc5afcd9cce765e8a1191fd',1,'KillThreads(void):&#160;OSReset.c'],['../OSReset_8h.html#afd6e0ba5a2f96cd39ff3e4146be34d44',1,'KillThreads(void):&#160;OSReset.h']]]
+  ['killthreads_31',['KillThreads',['../OSReset_8c.html#afd6e0ba5a2f96cd39ff3e4146be34d44',1,'KillThreads(void):&#160;OSReset.c'],['../OSReset_8h.html#afd6e0ba5a2f96cd39ff3e4146be34d44',1,'KillThreads(void):&#160;OSReset.h']]]
 ];

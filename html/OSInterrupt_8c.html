@@ -93,7 +93,6 @@ $(function() {
 <code>#include &quot;<a class="el" href="dsp_8h_source.html">dolphin/dsp/dsp.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="EXIBios_8h_source.html">dolphin/exi/EXIBios.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
-<code>#include &quot;asm/dolphin/os/OSInterrupt/__OSDispatchInterrupt.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for OSInterrupt.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -125,8 +124,8 @@ Functions</h2></td></tr>
 <tr class="separator:a66b5bd4579980b99e9b4ce25f0f73bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa278c3e8e2ff34dc053b7dfdc9aa56f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="OSInterrupt_8h.html#ae096c8a7b29971ff9bcd9b2283c7732d">OSInterruptMask</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSInterrupt_8c.html#aa278c3e8e2ff34dc053b7dfdc9aa56f8">__OSUnmaskInterrupts</a> (<a class="el" href="OSInterrupt_8h.html#ae096c8a7b29971ff9bcd9b2283c7732d">OSInterruptMask</a> global)</td></tr>
 <tr class="separator:aa278c3e8e2ff34dc053b7dfdc9aa56f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc35e88be889d50b2d08c0f7f8eeeab4"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSInterrupt_8c.html#abc35e88be889d50b2d08c0f7f8eeeab4">__OSDispatchInterrupt</a> (<a class="el" href="OSError_8h.html#add6149ead84c8568031dabdedbee4f27">__OSException</a> <a class="el" href="structexception.html">exception</a>, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
-<tr class="separator:abc35e88be889d50b2d08c0f7f8eeeab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeefc0fd0e04b015811ca3b890e36e30d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSInterrupt_8c.html#aeefc0fd0e04b015811ca3b890e36e30d">__OSDispatchInterrupt</a> (<a class="el" href="OSError_8h.html#add6149ead84c8568031dabdedbee4f27">__OSException</a> <a class="el" href="structexception.html">exception</a>, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
+<tr class="separator:aeefc0fd0e04b015811ca3b890e36e30d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab10f3a350996e1900900e1f987fd490"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSInterrupt_8c.html#aab10f3a350996e1900900e1f987fd490">ExternalInterruptHandler</a> (register <a class="el" href="OSInterrupt_8h.html#acd5c403776740063a124b880906361fd">OSInterrupt</a> type, register <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
 <tr class="separator:aab10f3a350996e1900900e1f987fd490"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -148,14 +147,14 @@ Variables</h2></td></tr>
 <tr class="separator:a4eefd4c845cfc0fa7617bef36dc3d808"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="abc35e88be889d50b2d08c0f7f8eeeab4" name="abc35e88be889d50b2d08c0f7f8eeeab4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc35e88be889d50b2d08c0f7f8eeeab4">&#9670;&#160;</a></span>__OSDispatchInterrupt()</h2>
+<a id="aeefc0fd0e04b015811ca3b890e36e30d" name="aeefc0fd0e04b015811ca3b890e36e30d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeefc0fd0e04b015811ca3b890e36e30d">&#9670;&#160;</a></span>__OSDispatchInterrupt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __OSDispatchInterrupt </td>
+          <td class="memname">void __OSDispatchInterrupt </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="OSError_8h.html#add6149ead84c8568031dabdedbee4f27">__OSException</a>&#160;</td>
           <td class="paramname"><em>exception</em>, </td>

@@ -94,6 +94,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="d__cc__s_8h_source.html">d/cc/d_cc_s.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__attention_8h_source.html">d/d_attention.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__drawlist_8h_source.html">d/d_drawlist.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__procname_8h_source.html">d/d_procname.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__resorce_8h_source.html">d/d_resorce.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__simple__model_8h_source.html">d/d_simple_model.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__stage_8h_source.html">d/d_stage.h</a>&quot;</code><br />
@@ -102,7 +103,6 @@ $(function() {
 <code>#include &quot;<a class="el" href="d__event__manager_8h_source.html">d/event/d_event_manager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__particle_8h_source.html">d/particle/d_particle.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__save_8h_source.html">d/save/d_save.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="f__op__camera__mng_8h_source.html">f_op/f_op_camera_mng.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="f__op__scene__mng_8h_source.html">f_op/f_op_scene_mng.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -208,6 +208,8 @@ Functions</h2></td></tr>
 <tr class="separator:a22f856fafbc5353087e662a0b1dad14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e1ada2d3d6fb5e4555727141e6d69de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a9e1ada2d3d6fb5e4555727141e6d69de">dComIfG_getBrightness</a> ()</td></tr>
 <tr class="separator:a9e1ada2d3d6fb5e4555727141e6d69de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa03e2931c5ddced107bd08c84b3ee0bc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#aa03e2931c5ddced107bd08c84b3ee0bc">dComIfG_getObjctResName2Index</a> (const char *i_arcName, const char *i_resName)</td></tr>
+<tr class="separator:aa03e2931c5ddced107bd08c84b3ee0bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71f4a0f25576edae76546936edfeca6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a71f4a0f25576edae76546936edfeca6b">dComIfGs_getMixItemIndex</a> (int i_no)</td></tr>
 <tr class="separator:a71f4a0f25576edae76546936edfeca6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb9b65f649ebf64de3f62b36e5dc8a2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#aeb9b65f649ebf64de3f62b36e5dc8a2a">dComIfGs_setSelectItemIndex</a> (int i_no, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> item_index)</td></tr>
@@ -636,9 +638,11 @@ Functions</h2></td></tr>
 <tr class="separator:ae47f6970e4b87a70b005497e712ea22c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06772cfeac1337b5969ce192c860cf6f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a06772cfeac1337b5969ce192c860cf6f">dComIfGs_createZone</a> (int roomNo)</td></tr>
 <tr class="separator:a06772cfeac1337b5969ce192c860cf6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacb8bd3aa4388af6ba118d4d27d2d985"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#aacb8bd3aa4388af6ba118d4d27d2d985">dComIfGs_addDeathCount</a> ()</td></tr>
+<tr class="separator:aacb8bd3aa4388af6ba118d4d27d2d985"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c10d317c7a7914b1ff58862417ce799"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a6c10d317c7a7914b1ff58862417ce799">dComIfGp_setSelectItem</a> (int index)</td></tr>
 <tr class="separator:a6c10d317c7a7914b1ff58862417ce799"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a22dc98905ce58c54dabd70742b3acd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a4a22dc98905ce58c54dabd70742b3acd">dComIfGp_offHeapLockFlag</a> (int <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:a4a22dc98905ce58c54dabd70742b3acd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a4a22dc98905ce58c54dabd70742b3acd">dComIfGp_offHeapLockFlag</a> (int <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:a4a22dc98905ce58c54dabd70742b3acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1378ee88c431d8a90a5c15f4a64baa40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a1378ee88c431d8a90a5c15f4a64baa40">dComIfGp_createSubExpHeap2D</a> ()</td></tr>
 <tr class="separator:a1378ee88c431d8a90a5c15f4a64baa40"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -646,7 +650,7 @@ Functions</h2></td></tr>
 <tr class="separator:a6b69d5c4fbe3c84d83a1a773b8d62743"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbe46530b3d96d7c450744b4e0913656"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#abbe46530b3d96d7c450744b4e0913656">dComIfGp_checkEmptySubHeap2D</a> ()</td></tr>
 <tr class="separator:abbe46530b3d96d7c450744b4e0913656"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a645e77d737a43cc6fec972fcc9386c94"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a645e77d737a43cc6fec972fcc9386c94">dComIfGp_searchUseSubHeap2D</a> (int <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:a645e77d737a43cc6fec972fcc9386c94"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a645e77d737a43cc6fec972fcc9386c94">dComIfGp_searchUseSubHeap2D</a> (int <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:a645e77d737a43cc6fec972fcc9386c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab496c1ace33325a7cf53ef66c50ec266"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#ab496c1ace33325a7cf53ef66c50ec266">dComIfGp_addSelectItemNum</a> (int index, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> num)</td></tr>
 <tr class="separator:ab496c1ace33325a7cf53ef66c50ec266"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -676,11 +680,11 @@ Functions</h2></td></tr>
 <tr class="separator:a4f09efb043456f1c187b8cff857cabae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9e8a2d723a4607bf72aa57ca1cc32a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#af9e8a2d723a4607bf72aa57ca1cc32a7">dComIfGp_ret_wp_set</a> (<a class="el" href="types_8h.html#a151f780fb455885061d3b77ec1c90c03">s8</a>)</td></tr>
 <tr class="separator:af9e8a2d723a4607bf72aa57ca1cc32a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af97a3fff853efd595061f8a0f1594e46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#af97a3fff853efd595061f8a0f1594e46">dComIfGp_setHeapLockFlag</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:af97a3fff853efd595061f8a0f1594e46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#af97a3fff853efd595061f8a0f1594e46">dComIfGp_setHeapLockFlag</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:af97a3fff853efd595061f8a0f1594e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a833bf29ff16e34005eccc1cee6708327"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a833bf29ff16e34005eccc1cee6708327">dComIfGp_world_dark_get</a> ()</td></tr>
 <tr class="separator:a833bf29ff16e34005eccc1cee6708327"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62e4b4c06bf44b50b4e04002cca8ab6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJKRExpHeap.html">JKRExpHeap</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a62e4b4c06bf44b50b4e04002cca8ab6b">dComIfGp_getSubHeap2D</a> (int <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:a62e4b4c06bf44b50b4e04002cca8ab6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJKRExpHeap.html">JKRExpHeap</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a62e4b4c06bf44b50b4e04002cca8ab6b">dComIfGp_getSubHeap2D</a> (int <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:a62e4b4c06bf44b50b4e04002cca8ab6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbf3b08e1cce88e3fb18c07b3f5eae57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#adbf3b08e1cce88e3fb18c07b3f5eae57">dComIfGp_world_dark_set</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)</td></tr>
 <tr class="separator:adbf3b08e1cce88e3fb18c07b3f5eae57"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -694,7 +698,7 @@ Functions</h2></td></tr>
 <tr class="separator:a1f925b06ea1353e56267ad756ad351b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dd17db7ea86c31d475fa130da9d2c4a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a3dd17db7ea86c31d475fa130da9d2c4a">dComIfGp_evmng_getMyStaffId</a> (const char *pName, <a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *pActor, int param_2)</td></tr>
 <tr class="separator:a3dd17db7ea86c31d475fa130da9d2c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6c4153c506abaf071a361673dd6803b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#ab6c4153c506abaf071a361673dd6803b">dComIfGp_event_chkEventFlag</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:ab6c4153c506abaf071a361673dd6803b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#ab6c4153c506abaf071a361673dd6803b">dComIfGp_event_chkEventFlag</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:ab6c4153c506abaf071a361673dd6803b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3da004410a97e03028f53743944b78c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a151f780fb455885061d3b77ec1c90c03">s8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#af3da004410a97e03028f53743944b78c">dComIfGp_getPlayerCameraID</a> (int idx)</td></tr>
 <tr class="separator:af3da004410a97e03028f53743944b78c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -724,9 +728,9 @@ Functions</h2></td></tr>
 <tr class="separator:ac15be6031a972ce353bd3ffd7e344b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a286e5fd652ff3ec07d7903676ec88d6f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a286e5fd652ff3ec07d7903676ec88d6f">dComIfGp_getMapTrans</a> (int i_roomNo, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> *o_transX, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> *o_transY, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> *o_angle)</td></tr>
 <tr class="separator:a286e5fd652ff3ec07d7903676ec88d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4265771e85f2f2645f758f0f400818ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a4265771e85f2f2645f758f0f400818ab">i_dComIfGp_checkPlayerStatus0</a> (int param_0, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:a4265771e85f2f2645f758f0f400818ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a4265771e85f2f2645f758f0f400818ab">i_dComIfGp_checkPlayerStatus0</a> (int param_0, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:a4265771e85f2f2645f758f0f400818ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a951b43fa84c7126b107f3062fda04d50"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a951b43fa84c7126b107f3062fda04d50">i_dComIfGp_checkPlayerStatus1</a> (int param_0, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:a951b43fa84c7126b107f3062fda04d50"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a951b43fa84c7126b107f3062fda04d50">i_dComIfGp_checkPlayerStatus1</a> (int param_0, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:a951b43fa84c7126b107f3062fda04d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d364bc27fbe31cec66357ee13bcbd7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a8d364bc27fbe31cec66357ee13bcbd7b">i_dComIfGp_setItemLifeCount</a> (float amount, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> type)</td></tr>
 <tr class="separator:a8d364bc27fbe31cec66357ee13bcbd7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -852,41 +856,43 @@ Functions</h2></td></tr>
 <tr class="separator:a635dfaab191c92972ae3f106d4375827"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe5682e24f8bc2c80319e82c3ea280af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#abe5682e24f8bc2c80319e82c3ea280af">dComIfGp_getGameoverStatus</a> ()</td></tr>
 <tr class="separator:abe5682e24f8bc2c80319e82c3ea280af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acedf784c274cff7e56d48dfca0940966"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#acedf784c274cff7e56d48dfca0940966">dComIfGp_setGameoverStatus</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> i_status)</td></tr>
+<tr class="separator:acedf784c274cff7e56d48dfca0940966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca942b075edd664f70e264f993bc2e2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#aca942b075edd664f70e264f993bc2e2a">dComIfGp_getNowVibration</a> ()</td></tr>
 <tr class="separator:aca942b075edd664f70e264f993bc2e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6457c9f0da289fdd8f9764c6013cc981"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a6457c9f0da289fdd8f9764c6013cc981">dComIfGp_setRStatus</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:a6457c9f0da289fdd8f9764c6013cc981"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a6457c9f0da289fdd8f9764c6013cc981">dComIfGp_setRStatus</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:a6457c9f0da289fdd8f9764c6013cc981"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e50ac8c3338e576f2983f8315b1f640"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a7e50ac8c3338e576f2983f8315b1f640">dComIfGp_setDoStatus</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:a7e50ac8c3338e576f2983f8315b1f640"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a7e50ac8c3338e576f2983f8315b1f640">dComIfGp_setDoStatus</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:a7e50ac8c3338e576f2983f8315b1f640"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6f2698e5ab18901211cd3244ee9e9ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#af6f2698e5ab18901211cd3244ee9e9ef">dComIfGp_setAStatus</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:af6f2698e5ab18901211cd3244ee9e9ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#af6f2698e5ab18901211cd3244ee9e9ef">dComIfGp_setAStatus</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:af6f2698e5ab18901211cd3244ee9e9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81e1d122b72030b6495828b5c717189a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a81e1d122b72030b6495828b5c717189a">dComIfGp_setZStatus</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:a81e1d122b72030b6495828b5c717189a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a81e1d122b72030b6495828b5c717189a">dComIfGp_setZStatus</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:a81e1d122b72030b6495828b5c717189a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab248de59b082f4915fa592f90387545e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#ab248de59b082f4915fa592f90387545e">dComIfGp_set3DStatus</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> direction, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:ab248de59b082f4915fa592f90387545e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#ab248de59b082f4915fa592f90387545e">dComIfGp_set3DStatus</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> direction, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:ab248de59b082f4915fa592f90387545e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae425d46aea185eb52106509334dd8890"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#ae425d46aea185eb52106509334dd8890">dComIfGp_setXStatus</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:ae425d46aea185eb52106509334dd8890"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#ae425d46aea185eb52106509334dd8890">dComIfGp_setXStatus</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:ae425d46aea185eb52106509334dd8890"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec02886e26bac3114007034a6957cd37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#aec02886e26bac3114007034a6957cd37">dComIfGp_setYStatus</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:aec02886e26bac3114007034a6957cd37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#aec02886e26bac3114007034a6957cd37">dComIfGp_setYStatus</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:aec02886e26bac3114007034a6957cd37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65cdf7cd4f0b9c0e61ec305c8e910fea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a65cdf7cd4f0b9c0e61ec305c8e910fea">dComIfGp_setNunStatus</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_1, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:a65cdf7cd4f0b9c0e61ec305c8e910fea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a65cdf7cd4f0b9c0e61ec305c8e910fea">dComIfGp_setNunStatus</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_1, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:a65cdf7cd4f0b9c0e61ec305c8e910fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45cc6a635c7da6467e89676d316530d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a45cc6a635c7da6467e89676d316530d6">dComIfGp_setRemoConStatus</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_1, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:a45cc6a635c7da6467e89676d316530d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a45cc6a635c7da6467e89676d316530d6">dComIfGp_setRemoConStatus</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_1, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:a45cc6a635c7da6467e89676d316530d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a1a8f13ce2cda89903461a554becfd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a1a1a8f13ce2cda89903461a554becfd1">dComIfGp_setNunZStatus</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_0, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_1)</td></tr>
 <tr class="separator:a1a1a8f13ce2cda89903461a554becfd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfe2ef73d230d71edbe6e2abdc2a146a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#adfe2ef73d230d71edbe6e2abdc2a146a">dComIfGp_setNunCStatus</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_0, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_1)</td></tr>
 <tr class="separator:adfe2ef73d230d71edbe6e2abdc2a146a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2979cf16f57482abf19ac4f6688ce453"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a2979cf16f57482abf19ac4f6688ce453">dComIfGp_setCStickStatus</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_1, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:a2979cf16f57482abf19ac4f6688ce453"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a2979cf16f57482abf19ac4f6688ce453">dComIfGp_setCStickStatus</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_1, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:a2979cf16f57482abf19ac4f6688ce453"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af300f3f024333240f9538c590604210f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#af300f3f024333240f9538c590604210f">dComIfGp_setCStickStatusForce</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_1, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:af300f3f024333240f9538c590604210f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#af300f3f024333240f9538c590604210f">dComIfGp_setCStickStatusForce</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_1, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:af300f3f024333240f9538c590604210f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a07fcdf54206e4dbc1a1fa014c2aca8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a8a07fcdf54206e4dbc1a1fa014c2aca8">dComIfGp_setSButtonStatus</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:a8a07fcdf54206e4dbc1a1fa014c2aca8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a8a07fcdf54206e4dbc1a1fa014c2aca8">dComIfGp_setSButtonStatus</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:a8a07fcdf54206e4dbc1a1fa014c2aca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56a025a9e9590e0ef1a709e5c4459544"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a56a025a9e9590e0ef1a709e5c4459544">dComIfGp_setSButtonStatusForce</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:a56a025a9e9590e0ef1a709e5c4459544"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a56a025a9e9590e0ef1a709e5c4459544">dComIfGp_setSButtonStatusForce</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:a56a025a9e9590e0ef1a709e5c4459544"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff892d6121d1b23db0d6f2c1dd9fe059"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#aff892d6121d1b23db0d6f2c1dd9fe059">dComIfGp_setDoStatusForce</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:aff892d6121d1b23db0d6f2c1dd9fe059"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#aff892d6121d1b23db0d6f2c1dd9fe059">dComIfGp_setDoStatusForce</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:aff892d6121d1b23db0d6f2c1dd9fe059"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33394340b965440994ab0d1cb99cfeda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a33394340b965440994ab0d1cb99cfeda">dComIfGp_setAStatusForce</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:a33394340b965440994ab0d1cb99cfeda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a33394340b965440994ab0d1cb99cfeda">dComIfGp_setAStatusForce</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="fstload_8c.html#a7dd63b23746a64a9a58ba770d86359e3">status</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:a33394340b965440994ab0d1cb99cfeda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dbe6f42b67087247360d02f322ec1db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a7dbe6f42b67087247360d02f322ec1db">dComIfGp_getAStatus</a> ()</td></tr>
 <tr class="separator:a7dbe6f42b67087247360d02f322ec1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -984,19 +990,19 @@ Functions</h2></td></tr>
 <tr class="separator:a12e89c957bdf4279fd5acfe58ef6d002"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b806cc1be8a12507acb459d84a4d57d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a6b806cc1be8a12507acb459d84a4d57d">dComIfGp_setPlayerInfo</a> (int plyrIdx, <a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *ptr, int camIdx)</td></tr>
 <tr class="separator:a6b806cc1be8a12507acb459d84a4d57d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba1b46a0f5646a7250cd1161225e1950"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#aba1b46a0f5646a7250cd1161225e1950">dComIfGp_setPlayerStatus0</a> (int param_0, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:aba1b46a0f5646a7250cd1161225e1950"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#aba1b46a0f5646a7250cd1161225e1950">dComIfGp_setPlayerStatus0</a> (int param_0, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:aba1b46a0f5646a7250cd1161225e1950"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7df12e8ac5f8682294414fdd8462c2a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a7df12e8ac5f8682294414fdd8462c2a9">dComIfGp_setPlayerStatus1</a> (int param_0, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:a7df12e8ac5f8682294414fdd8462c2a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a7df12e8ac5f8682294414fdd8462c2a9">dComIfGp_setPlayerStatus1</a> (int param_0, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:a7df12e8ac5f8682294414fdd8462c2a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f5eb692a73c2a2a0724786514f753b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a5f5eb692a73c2a2a0724786514f753b2">dComIfGp_checkCameraAttentionStatus</a> (int i, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:a5f5eb692a73c2a2a0724786514f753b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a5f5eb692a73c2a2a0724786514f753b2">dComIfGp_checkCameraAttentionStatus</a> (int i, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:a5f5eb692a73c2a2a0724786514f753b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05cd98b3bfe6439740d794fe43df89ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a05cd98b3bfe6439740d794fe43df89ea">dComIfGp_onCameraAttentionStatus</a> (int i, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:a05cd98b3bfe6439740d794fe43df89ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a05cd98b3bfe6439740d794fe43df89ea">dComIfGp_onCameraAttentionStatus</a> (int i, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:a05cd98b3bfe6439740d794fe43df89ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adaa872b3b425839aa0ca19b8dcb692df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#adaa872b3b425839aa0ca19b8dcb692df">dComIfGp_offCameraAttentionStatus</a> (int i, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:adaa872b3b425839aa0ca19b8dcb692df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#adaa872b3b425839aa0ca19b8dcb692df">dComIfGp_offCameraAttentionStatus</a> (int i, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:adaa872b3b425839aa0ca19b8dcb692df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2d75b5ea94618c0e9d4745eb0d6296b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#aa2d75b5ea94618c0e9d4745eb0d6296b">dComIfGp_setCameraInfo</a> (int camIdx, <a class="el" href="structcamera__class.html">camera_class</a> *p_cam, int param_2, int param_3, int param_4)</td></tr>
 <tr class="separator:aa2d75b5ea94618c0e9d4745eb0d6296b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d393db525fb88453b1faf1d75b5c412"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a6d393db525fb88453b1faf1d75b5c412">dComIfGp_clearPlayerStatus0</a> (int param_0, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:a6d393db525fb88453b1faf1d75b5c412"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a6d393db525fb88453b1faf1d75b5c412">dComIfGp_clearPlayerStatus0</a> (int param_0, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:a6d393db525fb88453b1faf1d75b5c412"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87117d71b5c9a81c76badafb5c22853e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdStage__stageDt__c.html">dStage_stageDt_c</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a87117d71b5c9a81c76badafb5c22853e">i_dComIfGp_getStage</a> ()</td></tr>
 <tr class="separator:a87117d71b5c9a81c76badafb5c22853e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1030,19 +1036,19 @@ Functions</h2></td></tr>
 <tr class="separator:a9e009229746dccbe3a5973e9b01e9b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fbb4457d558a66457c6c64952f8d8ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a6fbb4457d558a66457c6c64952f8d8ed">dComIfGp_setItemOilCount</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> oil)</td></tr>
 <tr class="separator:a6fbb4457d558a66457c6c64952f8d8ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa20599badde09029605e229ccfe5856c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#aa20599badde09029605e229ccfe5856c">dComIfGp_isDoSetFlag</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:aa20599badde09029605e229ccfe5856c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#aa20599badde09029605e229ccfe5856c">dComIfGp_isDoSetFlag</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:aa20599badde09029605e229ccfe5856c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabaabc3d02ce954a768ddff8df652d42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#aabaabc3d02ce954a768ddff8df652d42">dComIfGp_isASetFlag</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:aabaabc3d02ce954a768ddff8df652d42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#aabaabc3d02ce954a768ddff8df652d42">dComIfGp_isASetFlag</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:aabaabc3d02ce954a768ddff8df652d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade8a9ab59fcc160f5aa6ee558d3bb063"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#ade8a9ab59fcc160f5aa6ee558d3bb063">dComIfGp_isRSetFlag</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:ade8a9ab59fcc160f5aa6ee558d3bb063"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#ade8a9ab59fcc160f5aa6ee558d3bb063">dComIfGp_isRSetFlag</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:ade8a9ab59fcc160f5aa6ee558d3bb063"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0ebc339295abacc4bea6c557a41faf0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#ab0ebc339295abacc4bea6c557a41faf0">dComIfGp_isXSetFlag</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:ab0ebc339295abacc4bea6c557a41faf0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#ab0ebc339295abacc4bea6c557a41faf0">dComIfGp_isXSetFlag</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:ab0ebc339295abacc4bea6c557a41faf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a917bc0dc4f0c4bb0f0bb16287eeec2c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a917bc0dc4f0c4bb0f0bb16287eeec2c2">dComIfGp_isYSetFlag</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:a917bc0dc4f0c4bb0f0bb16287eeec2c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a917bc0dc4f0c4bb0f0bb16287eeec2c2">dComIfGp_isYSetFlag</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:a917bc0dc4f0c4bb0f0bb16287eeec2c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0f3cf4134ec02d8bf65b69a7efec67f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#af0f3cf4134ec02d8bf65b69a7efec67f">dComIfGp_isPauseFlag</a> ()</td></tr>
 <tr class="separator:af0f3cf4134ec02d8bf65b69a7efec67f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d462758f9a0142476bf9d6db3f60696"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a9d462758f9a0142476bf9d6db3f60696">dComIfGp_isCStickSetFlag</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:a9d462758f9a0142476bf9d6db3f60696"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a9d462758f9a0142476bf9d6db3f60696">dComIfGp_isCStickSetFlag</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:a9d462758f9a0142476bf9d6db3f60696"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a571c65b69be4fce2817dbcfe9a6d10de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a571c65b69be4fce2817dbcfe9a6d10de">dComIfGp_offPauseFlag</a> ()</td></tr>
 <tr class="separator:a571c65b69be4fce2817dbcfe9a6d10de"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1112,6 +1118,10 @@ Functions</h2></td></tr>
 <tr class="separator:afd22e721cc85adaa1313ac096e10e52a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2956c1f56d7254ca27865dedd438df4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#ac2956c1f56d7254ca27865dedd438df4">i_dComIfGp_setHitMark</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> i_hitmark, <a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *param_1, const <a class="el" href="structcXyz.html">cXyz</a> *param_2, const <a class="el" href="structcsXyz.html">csXyz</a> *param_3, const <a class="el" href="structcXyz.html">cXyz</a> *param_4, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> i_atType)</td></tr>
 <tr class="separator:ac2956c1f56d7254ca27865dedd438df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a8ec437128d6ea22d92c14abc20fb6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJKRArchive.html">JKRArchive</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a0a8ec437128d6ea22d92c14abc20fb6e">dComIfGp_getFmapResArchive</a> ()</td></tr>
+<tr class="separator:a0a8ec437128d6ea22d92c14abc20fb6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59ba12e5763d433dca724746d9ebd07a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a59ba12e5763d433dca724746d9ebd07a">dComIfGp_getMesgStatus</a> ()</td></tr>
+<tr class="separator:a59ba12e5763d433dca724746d9ebd07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4551ba6cc2a071591a880a1cd25f89b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#ab4551ba6cc2a071591a880a1cd25f89b">dComIfGp_roomControl_getStayNo</a> ()</td></tr>
 <tr class="separator:ab4551ba6cc2a071591a880a1cd25f89b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95f1d6f14937e1848bfe7cbbabdb69e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a95f1d6f14937e1848bfe7cbbabdb69e4">dComIfGp_roomControl_getZoneNo</a> (int i_roomNo)</td></tr>
@@ -1134,13 +1144,13 @@ Functions</h2></td></tr>
 <tr class="separator:ab47e01bca27c373a076e2209b8cedbcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4a627e6bc1c3da80e079b0ab3ac4b18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdKy__tevstr__c.html">dKy_tevstr_c</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#aa4a627e6bc1c3da80e079b0ab3ac4b18">dComIfGp_roomControl_getTevStr</a> (int i_roomNo)</td></tr>
 <tr class="separator:aa4a627e6bc1c3da80e079b0ab3ac4b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a073766b882409b9c21493b58681d4fea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a073766b882409b9c21493b58681d4fea">dComIfGp_roomControl_checkStatusFlag</a> (int i_roomNo, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:a073766b882409b9c21493b58681d4fea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a073766b882409b9c21493b58681d4fea">dComIfGp_roomControl_checkStatusFlag</a> (int i_roomNo, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:a073766b882409b9c21493b58681d4fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b8aa96efe570fa41cff4e68b89a3f02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a3b8aa96efe570fa41cff4e68b89a3f02">dComIfGp_roomControl_offStatusFlag</a> (int i_roomNo, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:a3b8aa96efe570fa41cff4e68b89a3f02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a3b8aa96efe570fa41cff4e68b89a3f02">dComIfGp_roomControl_offStatusFlag</a> (int i_roomNo, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:a3b8aa96efe570fa41cff4e68b89a3f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03a1cc359a5060d3ce53458e67ea3712"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a03a1cc359a5060d3ce53458e67ea3712">dComIfGp_roomControl_onStatusFlag</a> (int i_roomNo, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:a03a1cc359a5060d3ce53458e67ea3712"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a03a1cc359a5060d3ce53458e67ea3712">dComIfGp_roomControl_onStatusFlag</a> (int i_roomNo, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:a03a1cc359a5060d3ce53458e67ea3712"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad318417b62d3e2619fb4ffe177cd446b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#ad318417b62d3e2619fb4ffe177cd446b">dComIfGp_roomControl_setStatusFlag</a> (int i_roomNo, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:ad318417b62d3e2619fb4ffe177cd446b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#ad318417b62d3e2619fb4ffe177cd446b">dComIfGp_roomControl_setStatusFlag</a> (int i_roomNo, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:ad318417b62d3e2619fb4ffe177cd446b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fbd2d9b4195e648b2acb1832801154c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a0fbd2d9b4195e648b2acb1832801154c">dComIfGp_roomControl_zoneCountCheck</a> (int i_roomNo)</td></tr>
 <tr class="separator:a0fbd2d9b4195e648b2acb1832801154c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1158,7 +1168,7 @@ Functions</h2></td></tr>
 <tr class="separator:ab43e8b99104996edd0d3242c33af5554"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c55f78cd0ae52640f18b5d8bd6f80d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a6c55f78cd0ae52640f18b5d8bd6f80d6">dComIfGp_event_moveApproval</a> (void *actor)</td></tr>
 <tr class="separator:a6c55f78cd0ae52640f18b5d8bd6f80d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3f8c0dccc99952f8990c9a85c7c2289"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#af3f8c0dccc99952f8990c9a85c7c2289">dComIfGp_event_order</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> eventType, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> priority, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> param_3, void *param_4, void *param_5, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> eventID, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> infoIdx)</td></tr>
+<tr class="memitem:af3f8c0dccc99952f8990c9a85c7c2289"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#af3f8c0dccc99952f8990c9a85c7c2289">dComIfGp_event_order</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> eventType, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> priority, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> param_3, void *param_4, void *param_5, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> eventID, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> infoIdx)</td></tr>
 <tr class="separator:af3f8c0dccc99952f8990c9a85c7c2289"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a360980ea4ebb25ef0b064be2139bc725"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a360980ea4ebb25ef0b064be2139bc725">dComIfGp_event_setGtItm</a> (int i_itemNo)</td></tr>
 <tr class="separator:a360980ea4ebb25ef0b064be2139bc725"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1184,9 +1194,9 @@ Functions</h2></td></tr>
 <tr class="separator:afe0782e0b7dccc1a1c4b1f00792466ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18ef0f98980abcef27cf41efc20ebbd8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a18ef0f98980abcef27cf41efc20ebbd8">i_dComIfGp_event_runCheck</a> ()</td></tr>
 <tr class="separator:a18ef0f98980abcef27cf41efc20ebbd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad75ee2646d44293a6bfce7da1741b788"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#ad75ee2646d44293a6bfce7da1741b788">dComIfGp_event_checkHind</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:ad75ee2646d44293a6bfce7da1741b788"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#ad75ee2646d44293a6bfce7da1741b788">dComIfGp_event_checkHind</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:ad75ee2646d44293a6bfce7da1741b788"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e2d51cf2b9b5c8607996cd0c1eb109f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a7e2d51cf2b9b5c8607996cd0c1eb109f">i_dComIfGp_event_chkEventFlag</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> <a class="el" href="dspproc_8cpp.html#aaa7f9c123455f57fa07112fe3baee3c9">flag</a>)</td></tr>
+<tr class="memitem:a7e2d51cf2b9b5c8607996cd0c1eb109f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a7e2d51cf2b9b5c8607996cd0c1eb109f">i_dComIfGp_event_chkEventFlag</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:a7e2d51cf2b9b5c8607996cd0c1eb109f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a386c4f321e44e0c9f43e6f84f9abb656"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a386c4f321e44e0c9f43e6f84f9abb656">dComIfGp_event_setCullRate</a> (<a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> f)</td></tr>
 <tr class="separator:a386c4f321e44e0c9f43e6f84f9abb656"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1286,8 +1296,14 @@ Functions</h2></td></tr>
 <tr class="separator:aea41948bd923eb4c3ef3ceb8363ee172"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97564199ff8f44594c01a79ad381d598"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a97564199ff8f44594c01a79ad381d598">dComIfGd_set2DOpaTop</a> (<a class="el" href="structdDlst__base__c.html">dDlst_base_c</a> *dlst)</td></tr>
 <tr class="separator:a97564199ff8f44594c01a79ad381d598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af82125d862ae0353ddc364b41a3fa8c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#af82125d862ae0353ddc364b41a3fa8c9">dComIfGd_setCopy2D</a> (<a class="el" href="structdDlst__base__c.html">dDlst_base_c</a> *dlst)</td></tr>
+<tr class="separator:af82125d862ae0353ddc364b41a3fa8c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3d5abd66d0a59c9170bb9c8cd3055b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structview__class.html">view_class</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#aa3d5abd66d0a59c9170bb9c8cd3055b9">dComIfGd_getView</a> ()</td></tr>
 <tr class="separator:aa3d5abd66d0a59c9170bb9c8cd3055b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5004061cf2fd7243b5b5eb63a4a06bf4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mtx44_8h.html#ae712a1ab7801758ac69d04c4f13d5947">Mtx44</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a5004061cf2fd7243b5b5eb63a4a06bf4">dComIfGd_getProjViewMtx</a> ()</td></tr>
+<tr class="separator:a5004061cf2fd7243b5b5eb63a4a06bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a554c52f877e90ff170550043192934e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structview__port__class.html">view_port_class</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a554c52f877e90ff170550043192934e1">dComIfGd_getViewport</a> ()</td></tr>
+<tr class="separator:a554c52f877e90ff170550043192934e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a930bfd51b39d40784efce4b69dc41824"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mtx_8h.html#a486ec93ad57f76408600fa51e755e290">MtxP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a930bfd51b39d40784efce4b69dc41824">dComIfGd_getViewRotMtx</a> ()</td></tr>
 <tr class="separator:a930bfd51b39d40784efce4b69dc41824"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a2c739dbe158f60982f313a74e722fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mtx_8h.html#a486ec93ad57f76408600fa51e755e290">MtxP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a3a2c739dbe158f60982f313a74e722fb">dComIfGd_getViewMtx</a> ()</td></tr>
@@ -1334,8 +1350,6 @@ Functions</h2></td></tr>
 <tr class="separator:a181a37e30be0e2bda7efed0700fcf897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5099867228d0e37e861ba7b31e753bf4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdaAlink__c.html">daAlink_c</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a5099867228d0e37e861ba7b31e753bf4">daAlink_getAlinkActorClass</a> ()</td></tr>
 <tr class="separator:a5099867228d0e37e861ba7b31e753bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a8ec437128d6ea22d92c14abc20fb6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJKRArchive.html">JKRArchive</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__com__inf__game_8h.html#a0a8ec437128d6ea22d92c14abc20fb6e">dComIfGp_getFmapResArchive</a> ()</td></tr>
-<tr class="separator:a0a8ec437128d6ea22d92c14abc20fb6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -1630,6 +1644,42 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa03e2931c5ddced107bd08c84b3ee0bc" name="aa03e2931c5ddced107bd08c84b3ee0bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa03e2931c5ddced107bd08c84b3ee0bc">&#9670;&#160;</a></span>dComIfG_getObjctResName2Index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int dComIfG_getObjctResName2Index </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>i_arcName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>i_resName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -2468,6 +2518,31 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a5004061cf2fd7243b5b5eb63a4a06bf4" name="a5004061cf2fd7243b5b5eb63a4a06bf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5004061cf2fd7243b5b5eb63a4a06bf4">&#9670;&#160;</a></span>dComIfGd_getProjViewMtx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="mtx44_8h.html#ae712a1ab7801758ac69d04c4f13d5947">Mtx44</a> * dComIfGd_getProjViewMtx </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa3d5abd66d0a59c9170bb9c8cd3055b9" name="aa3d5abd66d0a59c9170bb9c8cd3055b9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa3d5abd66d0a59c9170bb9c8cd3055b9">&#9670;&#160;</a></span>dComIfGd_getView()</h2>
 
@@ -2504,6 +2579,31 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="mtx_8h.html#a486ec93ad57f76408600fa51e755e290">MtxP</a> dComIfGd_getViewMtx </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a554c52f877e90ff170550043192934e1" name="a554c52f877e90ff170550043192934e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a554c52f877e90ff170550043192934e1">&#9670;&#160;</a></span>dComIfGd_getViewport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structview__port__class.html">view_port_class</a> * dComIfGd_getViewport </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -2723,6 +2823,32 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void dComIfGd_set2DXlu </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdDlst__base__c.html">dDlst_base_c</a> *&#160;</td>
+          <td class="paramname"><em>dlst</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af82125d862ae0353ddc364b41a3fa8c9" name="af82125d862ae0353ddc364b41a3fa8c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af82125d862ae0353ddc364b41a3fa8c9">&#9670;&#160;</a></span>dComIfGd_setCopy2D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dComIfGd_setCopy2D </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structdDlst__base__c.html">dDlst_base_c</a> *&#160;</td>
           <td class="paramname"><em>dlst</em></td><td>)</td>
@@ -5601,6 +5727,31 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> dComIfGp_getMesgFaceAnimeAttrInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a59ba12e5763d433dca724746d9ebd07a" name="a59ba12e5763d433dca724746d9ebd07a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59ba12e5763d433dca724746d9ebd07a">&#9670;&#160;</a></span>dComIfGp_getMesgStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> dComIfGp_getMesgStatus </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -10029,6 +10180,32 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="acedf784c274cff7e56d48dfca0940966" name="acedf784c274cff7e56d48dfca0940966"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acedf784c274cff7e56d48dfca0940966">&#9670;&#160;</a></span>dComIfGp_setGameoverStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dComIfGp_setGameoverStatus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
+          <td class="paramname"><em>i_status</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af97a3fff853efd595061f8a0f1594e46" name="af97a3fff853efd595061f8a0f1594e46"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af97a3fff853efd595061f8a0f1594e46">&#9670;&#160;</a></span>dComIfGp_setHeapLockFlag()</h2>
 
@@ -12131,6 +12308,31 @@ Variables</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aacb8bd3aa4388af6ba118d4d27d2d985" name="aacb8bd3aa4388af6ba118d4d27d2d985"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacb8bd3aa4388af6ba118d4d27d2d985">&#9670;&#160;</a></span>dComIfGs_addDeathCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dComIfGs_addDeathCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>

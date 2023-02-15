@@ -82,29 +82,24 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">GXFrameBuf.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="GXFrameBuf_8h_source.html">dolphin/gx/GXFrameBuf.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="GXInit_8h_source.html">dolphin/gx/GXInit.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="GX_8h_source.html">dolphin/gx/GX.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;asm/dolphin/gx/GXFrameBuf/GXSetDispCopySrc.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/gx/GXFrameBuf/GXSetTexCopySrc.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/gx/GXFrameBuf/GXSetDispCopyDst.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/gx/GXFrameBuf/GXSetTexCopyDst.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/gx/GXFrameBuf/GXSetDispCopyFrame2Field.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/gx/GXFrameBuf/GXSetCopyClamp.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/gx/GXFrameBuf/GXGetNumXfbLines.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/gx/GXFrameBuf/GXGetYScaleFactor.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/gx/GXFrameBuf/GXSetDispCopyYScale.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/gx/GXFrameBuf/GXSetCopyClear.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/gx/GXFrameBuf/GXSetCopyFilter.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/gx/GXFrameBuf/GXSetDispCopyGamma.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/gx/GXFrameBuf/GXCopyDisp.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/gx/GXFrameBuf/GXCopyTex.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/gx/GXFrameBuf/GXClearBoundingBox.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for GXFrameBuf.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -114,6 +109,11 @@ $(function() {
 </div>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:aee8afc66bf32221889992ce1aec4c603"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#aee8afc66bf32221889992ce1aec4c603">INSERT_FIELD</a>(reg,  value,  nbits,  shift)</td></tr>
+<tr class="separator:aee8afc66bf32221889992ce1aec4c603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aaf8d03d257dd104435f1fdcd2c43c11d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#aaf8d03d257dd104435f1fdcd2c43c11d">GXSetDispCopyFrame2Field</a> ()</td></tr>
@@ -124,36 +124,34 @@ Functions</h2></td></tr>
 <tr class="separator:a6ae33b116607afe86edf4496929a690f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae108f44ad33523f5e4f671960f394b95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#ae108f44ad33523f5e4f671960f394b95">GXSetDispCopyGamma</a> ()</td></tr>
 <tr class="separator:ae108f44ad33523f5e4f671960f394b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a161de2e1c806035d3fc9a0605ea18f65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#a161de2e1c806035d3fc9a0605ea18f65">GXClearBoundingBox</a> ()</td></tr>
-<tr class="separator:a161de2e1c806035d3fc9a0605ea18f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a179241d861dc79f5411ce22fb027b497"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#a179241d861dc79f5411ce22fb027b497">__GetImageTileCount</a> ()</td></tr>
-<tr class="separator:a179241d861dc79f5411ce22fb027b497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86ec442045a52da029043b72afa12574"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#a86ec442045a52da029043b72afa12574">GXClearBoundingBox</a> ()</td></tr>
+<tr class="separator:a86ec442045a52da029043b72afa12574"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab132a97d6c068a9d01cba513d3066c21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#ab132a97d6c068a9d01cba513d3066c21">__cvt_fp2unsigned</a> ()</td></tr>
 <tr class="separator:ab132a97d6c068a9d01cba513d3066c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a267adaf26256c1f76db032febfaaba41"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#a267adaf26256c1f76db032febfaaba41">GXSetDispCopySrc</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> left, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> top, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> width, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> height)</td></tr>
-<tr class="separator:a267adaf26256c1f76db032febfaaba41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63b7d5be13b3838a540bacfd44f699ee"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#a63b7d5be13b3838a540bacfd44f699ee">GXSetTexCopySrc</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> left, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> top, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> width, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> height)</td></tr>
-<tr class="separator:a63b7d5be13b3838a540bacfd44f699ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6c032369cb0ca4213473e1077f277d3"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#ab6c032369cb0ca4213473e1077f277d3">GXSetDispCopyDst</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> width, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> height)</td></tr>
-<tr class="separator:ab6c032369cb0ca4213473e1077f277d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c7a5e129681669311383ed9dbbee7bf"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#a9c7a5e129681669311383ed9dbbee7bf">GXSetTexCopyDst</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> width, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> height, <a class="el" href="GXEnum_8h.html#a723655c1ff5eb6097db962f01fb71adf">GXTexFmt</a> fmt, <a class="el" href="GXEnum_8h.html#af649d9b5b9edfd6b1587a5d363729b52">GXBool</a> mipmap)</td></tr>
-<tr class="separator:a9c7a5e129681669311383ed9dbbee7bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6572e13e4767c406ed752e7e8d3556de"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#a6572e13e4767c406ed752e7e8d3556de">GXSetDispCopyFrame2Field</a> (<a class="el" href="GXEnum_8h.html#a10267333cf967636f7a4de713ab02d84">GXCopyMode</a> mode)</td></tr>
-<tr class="separator:a6572e13e4767c406ed752e7e8d3556de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a732504a040002796abae0aa21e086462"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#a732504a040002796abae0aa21e086462">GXSetCopyClamp</a> (<a class="el" href="GXEnum_8h.html#a29fe032c98d2247ca03eca212b03f4cd">GXFBClamp</a> clamp)</td></tr>
-<tr class="separator:a732504a040002796abae0aa21e086462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98b206c8fd9731ab07727739ab4efa6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#a98b206c8fd9731ab07727739ab4efa6d">GXSetDispCopySrc</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> left, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> top, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> width, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> height)</td></tr>
+<tr class="separator:a98b206c8fd9731ab07727739ab4efa6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ced8cc8aa89f58a5d8756b2b7666aab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#a8ced8cc8aa89f58a5d8756b2b7666aab">GXSetTexCopySrc</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> left, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> top, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> width, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> height)</td></tr>
+<tr class="separator:a8ced8cc8aa89f58a5d8756b2b7666aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3714431f0a882eaab17a5340ebaef71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#ad3714431f0a882eaab17a5340ebaef71">GXSetDispCopyDst</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> arg0, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> arg1)</td></tr>
+<tr class="separator:ad3714431f0a882eaab17a5340ebaef71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e0c3ff5a1bfdcbdc0f0a93b9f23d029"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#a3e0c3ff5a1bfdcbdc0f0a93b9f23d029">GXSetTexCopyDst</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> width, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> height, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> fmt, <a class="el" href="GXEnum_8h.html#af649d9b5b9edfd6b1587a5d363729b52">GXBool</a> mipmap)</td></tr>
+<tr class="separator:a3e0c3ff5a1bfdcbdc0f0a93b9f23d029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a777d2706a33de2d757ae0130a2a22a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#a9a777d2706a33de2d757ae0130a2a22a">GXSetDispCopyFrame2Field</a> (<a class="el" href="GXEnum_8h.html#a10267333cf967636f7a4de713ab02d84">GXCopyMode</a> arg0)</td></tr>
+<tr class="separator:a9a777d2706a33de2d757ae0130a2a22a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9543bed0015edf119314e029d577f59c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#a9543bed0015edf119314e029d577f59c">GXSetCopyClamp</a> (<a class="el" href="GXEnum_8h.html#a29fe032c98d2247ca03eca212b03f4cd">GXFBClamp</a> clamp)</td></tr>
+<tr class="separator:a9543bed0015edf119314e029d577f59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac213a3f5a39a94999bc41d0ddf5c95fb"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#ac213a3f5a39a94999bc41d0ddf5c95fb">GXGetNumXfbLines</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> efb_height, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> y_scale)</td></tr>
 <tr class="separator:ac213a3f5a39a94999bc41d0ddf5c95fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27242f38112a35da080dc86f99ef765e"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#a27242f38112a35da080dc86f99ef765e">GXGetYScaleFactor</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> efb_height, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> xfb_height)</td></tr>
 <tr class="separator:a27242f38112a35da080dc86f99ef765e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebbdf86a7a549d3e690bc2ff9fd8688e"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#aebbdf86a7a549d3e690bc2ff9fd8688e">GXSetDispCopyYScale</a> (<a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> y_scale)</td></tr>
 <tr class="separator:aebbdf86a7a549d3e690bc2ff9fd8688e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8b0407607117ccbed85e2ba0582fd61"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#af8b0407607117ccbed85e2ba0582fd61">GXSetCopyClear</a> (<a class="el" href="GXStruct_8h.html#a0419d171f4d66c2b2a77bd299ddbdcdc">GXColor</a> color, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> clear_z)</td></tr>
-<tr class="separator:af8b0407607117ccbed85e2ba0582fd61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf352a84229e1318a2226f8bd4bb8b75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#adf352a84229e1318a2226f8bd4bb8b75">GXSetCopyClear</a> (<a class="el" href="GXStruct_8h.html#a0419d171f4d66c2b2a77bd299ddbdcdc">GXColor</a> color, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> clear_z)</td></tr>
+<tr class="separator:adf352a84229e1318a2226f8bd4bb8b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace2855cff55a6dabb91b7aa0e201318e"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#ace2855cff55a6dabb91b7aa0e201318e">GXSetCopyFilter</a> (<a class="el" href="GXEnum_8h.html#af649d9b5b9edfd6b1587a5d363729b52">GXBool</a> antialias, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> pattern[12][2], <a class="el" href="GXEnum_8h.html#af649d9b5b9edfd6b1587a5d363729b52">GXBool</a> vf, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> vfilter[7])</td></tr>
 <tr class="separator:ace2855cff55a6dabb91b7aa0e201318e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d7eae9dc28a3bbe6540c4a56c575441"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#a6d7eae9dc28a3bbe6540c4a56c575441">GXSetDispCopyGamma</a> (<a class="el" href="GXEnum_8h.html#aaa97b783a3413299cbffe6556edeb72b">GXGamma</a> gamma)</td></tr>
-<tr class="separator:a6d7eae9dc28a3bbe6540c4a56c575441"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa14e9b45a341d0356c96b33fb43066a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#aa14e9b45a341d0356c96b33fb43066a1">GXSetDispCopyGamma</a> (<a class="el" href="GXEnum_8h.html#aaa97b783a3413299cbffe6556edeb72b">GXGamma</a> gamma)</td></tr>
+<tr class="separator:aa14e9b45a341d0356c96b33fb43066a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f2111aa063a3433c62704ef73c961aa"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#a5f2111aa063a3433c62704ef73c961aa">GXCopyDisp</a> (void *dst, <a class="el" href="GXEnum_8h.html#af649d9b5b9edfd6b1587a5d363729b52">GXBool</a> <a class="el" href="f__pc__node__req_8cpp.html#a41cd45f76f63eb149b18a92ec73d22fc">clear</a>)</td></tr>
 <tr class="separator:a5f2111aa063a3433c62704ef73c961aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac16ef56b6ddb18c52af54a309134cf8b"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#ac16ef56b6ddb18c52af54a309134cf8b">GXCopyTex</a> (void *dst, <a class="el" href="GXEnum_8h.html#af649d9b5b9edfd6b1587a5d363729b52">GXBool</a> <a class="el" href="f__pc__node__req_8cpp.html#a41cd45f76f63eb149b18a92ec73d22fc">clear</a>)</td></tr>
@@ -171,13 +169,55 @@ Variables</h2></td></tr>
 <tr class="separator:a4e10f990dbaec527788e9d1c0332d085"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a039d570e90bcd0db1ee73b9eb7f2a182"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#a039d570e90bcd0db1ee73b9eb7f2a182">GXEurgb60Hz480IntDf</a> [60+4]</td></tr>
 <tr class="separator:a039d570e90bcd0db1ee73b9eb7f2a182"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e47407c3ef9719704c835ea6958a7f1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#a9e47407c3ef9719704c835ea6958a7f1">__GXData</a></td></tr>
-<tr class="separator:a9e47407c3ef9719704c835ea6958a7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41ea98cdafc3142de104081b1f9a59e5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#a41ea98cdafc3142de104081b1f9a59e5">lit_179</a> [1+1]</td></tr>
 <tr class="separator:a41ea98cdafc3142de104081b1f9a59e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39cb36b207615977421b43115f6b42d6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXFrameBuf_8c.html#a39cb36b207615977421b43115f6b42d6">lit_234</a> = 4503599627370496.0</td></tr>
 <tr class="separator:a39cb36b207615977421b43115f6b42d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="aee8afc66bf32221889992ce1aec4c603" name="aee8afc66bf32221889992ce1aec4c603"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee8afc66bf32221889992ce1aec4c603">&#9670;&#160;</a></span>INSERT_FIELD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INSERT_FIELD</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">reg, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">nbits, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">shift&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    (reg) = ((<a class="code hl_typedef" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>) (reg) &amp; ~(((1 &lt;&lt; (nbits)) - 1) &lt;&lt; (shift))) |               \</div>
+<div class="line">            ((<a class="code hl_typedef" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>) (value) &lt;&lt; (shift));</div>
+<div class="ttc" id="atypes_8h_html_a2caf5cd7bcdbe1eefa727f44ffb10bac"><div class="ttname"><a href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a></div><div class="ttdeci">unsigned long u32</div><div class="ttdef"><b>Definition:</b> types.h:10</div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ab132a97d6c068a9d01cba513d3066c21" name="ab132a97d6c068a9d01cba513d3066c21"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab132a97d6c068a9d01cba513d3066c21">&#9670;&#160;</a></span>__cvt_fp2unsigned()</h2>
@@ -196,31 +236,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a179241d861dc79f5411ce22fb027b497" name="a179241d861dc79f5411ce22fb027b497"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a179241d861dc79f5411ce22fb027b497">&#9670;&#160;</a></span>__GetImageTileCount()</h2>
+<a id="a86ec442045a52da029043b72afa12574" name="a86ec442045a52da029043b72afa12574"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86ec442045a52da029043b72afa12574">&#9670;&#160;</a></span>GXClearBoundingBox()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __GetImageTileCount </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a161de2e1c806035d3fc9a0605ea18f65" name="a161de2e1c806035d3fc9a0605ea18f65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a161de2e1c806035d3fc9a0605ea18f65">&#9670;&#160;</a></span>GXClearBoundingBox()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void GXClearBoundingBox </td>
+          <td class="memname">void GXClearBoundingBox </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -360,14 +383,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a732504a040002796abae0aa21e086462" name="a732504a040002796abae0aa21e086462"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a732504a040002796abae0aa21e086462">&#9670;&#160;</a></span>GXSetCopyClamp() <span class="overload">[2/2]</span></h2>
+<a id="a9543bed0015edf119314e029d577f59c" name="a9543bed0015edf119314e029d577f59c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9543bed0015edf119314e029d577f59c">&#9670;&#160;</a></span>GXSetCopyClamp() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void GXSetCopyClamp </td>
+          <td class="memname">void GXSetCopyClamp </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="GXEnum_8h.html#a29fe032c98d2247ca03eca212b03f4cd">GXFBClamp</a>&#160;</td>
           <td class="paramname"><em>clamp</em></td><td>)</td>
@@ -395,14 +418,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="af8b0407607117ccbed85e2ba0582fd61" name="af8b0407607117ccbed85e2ba0582fd61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8b0407607117ccbed85e2ba0582fd61">&#9670;&#160;</a></span>GXSetCopyClear() <span class="overload">[2/2]</span></h2>
+<a id="adf352a84229e1318a2226f8bd4bb8b75" name="adf352a84229e1318a2226f8bd4bb8b75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf352a84229e1318a2226f8bd4bb8b75">&#9670;&#160;</a></span>GXSetCopyClear() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void GXSetCopyClear </td>
+          <td class="memname">void GXSetCopyClear </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="GXStruct_8h.html#a0419d171f4d66c2b2a77bd299ddbdcdc">GXColor</a>&#160;</td>
           <td class="paramname"><em>color</em>, </td>
@@ -463,23 +486,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ab6c032369cb0ca4213473e1077f277d3" name="ab6c032369cb0ca4213473e1077f277d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6c032369cb0ca4213473e1077f277d3">&#9670;&#160;</a></span>GXSetDispCopyDst()</h2>
+<a id="ad3714431f0a882eaab17a5340ebaef71" name="ad3714431f0a882eaab17a5340ebaef71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3714431f0a882eaab17a5340ebaef71">&#9670;&#160;</a></span>GXSetDispCopyDst()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void GXSetDispCopyDst </td>
+          <td class="memname">void GXSetDispCopyDst </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
-          <td class="paramname"><em>width</em>, </td>
+          <td class="paramname"><em>arg0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
-          <td class="paramname"><em>height</em>&#160;</td>
+          <td class="paramname"><em>arg1</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -508,17 +531,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a6572e13e4767c406ed752e7e8d3556de" name="a6572e13e4767c406ed752e7e8d3556de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6572e13e4767c406ed752e7e8d3556de">&#9670;&#160;</a></span>GXSetDispCopyFrame2Field() <span class="overload">[2/2]</span></h2>
+<a id="a9a777d2706a33de2d757ae0130a2a22a" name="a9a777d2706a33de2d757ae0130a2a22a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a777d2706a33de2d757ae0130a2a22a">&#9670;&#160;</a></span>GXSetDispCopyFrame2Field() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void GXSetDispCopyFrame2Field </td>
+          <td class="memname">void GXSetDispCopyFrame2Field </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="GXEnum_8h.html#a10267333cf967636f7a4de713ab02d84">GXCopyMode</a>&#160;</td>
-          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td class="paramname"><em>arg0</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -543,14 +566,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a6d7eae9dc28a3bbe6540c4a56c575441" name="a6d7eae9dc28a3bbe6540c4a56c575441"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d7eae9dc28a3bbe6540c4a56c575441">&#9670;&#160;</a></span>GXSetDispCopyGamma() <span class="overload">[2/2]</span></h2>
+<a id="aa14e9b45a341d0356c96b33fb43066a1" name="aa14e9b45a341d0356c96b33fb43066a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa14e9b45a341d0356c96b33fb43066a1">&#9670;&#160;</a></span>GXSetDispCopyGamma() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void GXSetDispCopyGamma </td>
+          <td class="memname">void GXSetDispCopyGamma </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="GXEnum_8h.html#aaa97b783a3413299cbffe6556edeb72b">GXGamma</a>&#160;</td>
           <td class="paramname"><em>gamma</em></td><td>)</td>
@@ -561,14 +584,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a267adaf26256c1f76db032febfaaba41" name="a267adaf26256c1f76db032febfaaba41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a267adaf26256c1f76db032febfaaba41">&#9670;&#160;</a></span>GXSetDispCopySrc()</h2>
+<a id="a98b206c8fd9731ab07727739ab4efa6d" name="a98b206c8fd9731ab07727739ab4efa6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98b206c8fd9731ab07727739ab4efa6d">&#9670;&#160;</a></span>GXSetDispCopySrc()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void GXSetDispCopySrc </td>
+          <td class="memname">void GXSetDispCopySrc </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>left</em>, </td>
@@ -619,8 +642,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a9c7a5e129681669311383ed9dbbee7bf" name="a9c7a5e129681669311383ed9dbbee7bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c7a5e129681669311383ed9dbbee7bf">&#9670;&#160;</a></span>GXSetTexCopyDst()</h2>
+<a id="a3e0c3ff5a1bfdcbdc0f0a93b9f23d029" name="a3e0c3ff5a1bfdcbdc0f0a93b9f23d029"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e0c3ff5a1bfdcbdc0f0a93b9f23d029">&#9670;&#160;</a></span>GXSetTexCopyDst()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -640,7 +663,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="GXEnum_8h.html#a723655c1ff5eb6097db962f01fb71adf">GXTexFmt</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
           <td class="paramname"><em>fmt</em>, </td>
         </tr>
         <tr>
@@ -659,14 +682,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a63b7d5be13b3838a540bacfd44f699ee" name="a63b7d5be13b3838a540bacfd44f699ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63b7d5be13b3838a540bacfd44f699ee">&#9670;&#160;</a></span>GXSetTexCopySrc()</h2>
+<a id="a8ced8cc8aa89f58a5d8756b2b7666aab" name="a8ced8cc8aa89f58a5d8756b2b7666aab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ced8cc8aa89f58a5d8756b2b7666aab">&#9670;&#160;</a></span>GXSetTexCopySrc()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void GXSetTexCopySrc </td>
+          <td class="memname">void GXSetTexCopySrc </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>left</em>, </td>
@@ -700,28 +723,6 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a9e47407c3ef9719704c835ea6958a7f1" name="a9e47407c3ef9719704c835ea6958a7f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e47407c3ef9719704c835ea6958a7f1">&#9670;&#160;</a></span>__GXData</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* __GXData</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a039d570e90bcd0db1ee73b9eb7f2a182" name="a039d570e90bcd0db1ee73b9eb7f2a182"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a039d570e90bcd0db1ee73b9eb7f2a182">&#9670;&#160;</a></span>GXEurgb60Hz480IntDf</h2>
 

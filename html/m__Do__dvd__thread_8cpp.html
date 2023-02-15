@@ -82,7 +82,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">m_Do_dvd_thread.cpp File Reference</div></div>
@@ -98,6 +97,8 @@ $(function() {
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="m__Do__ext_8h_source.html">m_Do/m_Do_ext.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="m__Do__Reset_8h_source.html">m_Do/m_Do_Reset.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JASDvdThread_8h_source.html">JSystem/JAudio2/JASDvdThread.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JASTaskThread_8h_source.html">JSystem/JAudio2/JASTaskThread.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for m_Do_dvd_thread.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -107,13 +108,6 @@ $(function() {
 </div>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASTaskThread.html">JASTaskThread</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASDvd.html">JASDvd</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a7e0be60e981e29f1dfe531ebdad74246"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__dvd__thread_8cpp.html#a7e0be60e981e29f1dfe531ebdad74246">my_DVDConvertPathToEntrynum</a> (char const *param_0)</td></tr>
@@ -123,7 +117,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a630e0cc12c72995e312035d2a4fff74f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__dvd__thread_8cpp.html#a630e0cc12c72995e312035d2a4fff74f">padding</a> [0x18]</td></tr>
+<tr class="memitem:a630e0cc12c72995e312035d2a4fff74f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__dvd__thread_8cpp.html#a630e0cc12c72995e312035d2a4fff74f">padding</a> [0x18]</td></tr>
 <tr class="separator:a630e0cc12c72995e312035d2a4fff74f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f0a71def48d3a66f13d0bef021472fa"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="m__Do__dvd__thread_8cpp.html#a3f0a71def48d3a66f13d0bef021472fa">stringBase_80374357</a></td></tr>
 <tr class="separator:a3f0a71def48d3a66f13d0bef021472fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,11 +185,19 @@ Variables</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> padding[0x18]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

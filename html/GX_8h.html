@@ -111,14 +111,6 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="GX_8h__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
-</div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> This graph shows which files directly or indirectly include this file:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="GX_8h__dep__incl.svg" width="100%" height="591"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
 </div>
 <p><a href="GX_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -131,6 +123,8 @@ Classes</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:af949c98422762750a49c767d038cb930"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#af949c98422762750a49c767d038cb930">GX_BITFIELD_SET</a>(field,  <a class="el" href="d__particle_8cpp.html#ace1fdee459d440398d4f1551d6419939">pos</a>,  size,  value)&#160;&#160;&#160;(field) = __rlwimi((field), (value), 31 - (<a class="el" href="d__particle_8cpp.html#ace1fdee459d440398d4f1551d6419939">pos</a>) - (size) + 1, (<a class="el" href="d__particle_8cpp.html#ace1fdee459d440398d4f1551d6419939">pos</a>), (<a class="el" href="d__particle_8cpp.html#ace1fdee459d440398d4f1551d6419939">pos</a>) + (size)-1)</td></tr>
 <tr class="separator:af949c98422762750a49c767d038cb930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee8afc66bf32221889992ce1aec4c603"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#aee8afc66bf32221889992ce1aec4c603">INSERT_FIELD</a>(reg,  value,  nbits,  shift)</td></tr>
+<tr class="separator:aee8afc66bf32221889992ce1aec4c603"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf826caf8d8fa06d80f2f6efe7c65a55"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#abf826caf8d8fa06d80f2f6efe7c65a55">GX_LOAD_BP_REG</a>&#160;&#160;&#160;0x61</td></tr>
 <tr class="separator:abf826caf8d8fa06d80f2f6efe7c65a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3449e16a5d271f54f6aff735c58234e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a3449e16a5d271f54f6aff735c58234e3">GX_NOP</a>&#160;&#160;&#160;0</td></tr>
@@ -142,12 +136,16 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:aae439f02be3af2d58c873b8791e34e3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#aae439f02be3af2d58c873b8791e34e3b">GXPosition3f32</a> (<a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> x, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> y, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> z)</td></tr>
 <tr class="separator:aae439f02be3af2d58c873b8791e34e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a6efa1b76587b85cfaa46b54b2f15ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a2a6efa1b76587b85cfaa46b54b2f15ba">GXPosition2f32</a> (<a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> x, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> z)</td></tr>
+<tr class="separator:a2a6efa1b76587b85cfaa46b54b2f15ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a813f885f58eee058da72db3d582fe427"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a813f885f58eee058da72db3d582fe427">GXColor1u32</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> c)</td></tr>
 <tr class="separator:a813f885f58eee058da72db3d582fe427"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60d52dd5e47707747b2d98ada2a4febe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a60d52dd5e47707747b2d98ada2a4febe">GXTexCoord2f32</a> (<a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> s, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> t)</td></tr>
 <tr class="separator:a60d52dd5e47707747b2d98ada2a4febe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0effe06ff49c78fa0d317375c914aa5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a0effe06ff49c78fa0d317375c914aa5b">GXTexCoord2u8</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> s, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> t)</td></tr>
 <tr class="separator:a0effe06ff49c78fa0d317375c914aa5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76c02c8e5a9ba8d0940c5bb620a11e05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a76c02c8e5a9ba8d0940c5bb620a11e05">GXTexCoord1x8</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> s)</td></tr>
+<tr class="separator:a76c02c8e5a9ba8d0940c5bb620a11e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a210b36ce6d72c5a583772a1505baa5cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a210b36ce6d72c5a583772a1505baa5cb">GXPosition2u16</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> x, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> y)</td></tr>
 <tr class="separator:a210b36ce6d72c5a583772a1505baa5cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea218c355445b6a7a8921b1f40013e3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#aea218c355445b6a7a8921b1f40013e3c">GXPosition1x16</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> x)</td></tr>
@@ -162,6 +160,10 @@ Functions</h2></td></tr>
 <tr class="separator:a7e1d7fd0721c8af057f51be05485c4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57e3d46ef7f7e65bfaa1937479064953"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a57e3d46ef7f7e65bfaa1937479064953">GXTexCoord2s8</a> (<a class="el" href="types_8h.html#a151f780fb455885061d3b77ec1c90c03">s8</a> x, <a class="el" href="types_8h.html#a151f780fb455885061d3b77ec1c90c03">s8</a> y)</td></tr>
 <tr class="separator:a57e3d46ef7f7e65bfaa1937479064953"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3865d5ae6a47048efff7d76533927413"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a3865d5ae6a47048efff7d76533927413">GFWriteBPCmd</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> param_1)</td></tr>
+<tr class="separator:a3865d5ae6a47048efff7d76533927413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91332f6553353fc70d03a0d1a72b8581"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a91332f6553353fc70d03a0d1a72b8581">GFFill</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> param_1, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> param_2)</td></tr>
+<tr class="separator:a91332f6553353fc70d03a0d1a72b8581"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72b8e35267dcca2e8f18c3d267dd4bf1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a72b8e35267dcca2e8f18c3d267dd4bf1">i_GXEnd</a> ()</td></tr>
 <tr class="separator:a72b8e35267dcca2e8f18c3d267dd4bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -257,7 +259,112 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="aee8afc66bf32221889992ce1aec4c603" name="aee8afc66bf32221889992ce1aec4c603"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee8afc66bf32221889992ce1aec4c603">&#9670;&#160;</a></span>INSERT_FIELD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INSERT_FIELD</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">reg, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">value, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">nbits, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">shift&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    (reg) = ((<a class="code hl_typedef" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>) (reg) &amp; ~(((1 &lt;&lt; (nbits)) - 1) &lt;&lt; (shift))) |               \</div>
+<div class="line">            ((<a class="code hl_typedef" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>) (value) &lt;&lt; (shift));</div>
+<div class="ttc" id="atypes_8h_html_a2caf5cd7bcdbe1eefa727f44ffb10bac"><div class="ttname"><a href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a></div><div class="ttdeci">unsigned long u32</div><div class="ttdef"><b>Definition:</b> types.h:10</div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a91332f6553353fc70d03a0d1a72b8581" name="a91332f6553353fc70d03a0d1a72b8581"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91332f6553353fc70d03a0d1a72b8581">&#9670;&#160;</a></span>GFFill()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFFill </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
+          <td class="paramname"><em>param_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>param_2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3865d5ae6a47048efff7d76533927413" name="a3865d5ae6a47048efff7d76533927413"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3865d5ae6a47048efff7d76533927413">&#9670;&#160;</a></span>GFWriteBPCmd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GFWriteBPCmd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>param_1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a813f885f58eee058da72db3d582fe427" name="a813f885f58eee058da72db3d582fe427"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a813f885f58eee058da72db3d582fe427">&#9670;&#160;</a></span>GXColor1u32()</h2>
 
@@ -325,6 +432,42 @@ Variables</h2></td></tr>
           <td class="paramtype"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a6efa1b76587b85cfaa46b54b2f15ba" name="a2a6efa1b76587b85cfaa46b54b2f15ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a6efa1b76587b85cfaa46b54b2f15ba">&#9670;&#160;</a></span>GXPosition2f32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GXPosition2f32 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td>
+          <td class="paramname"><em>z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -481,6 +624,32 @@ Variables</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76c02c8e5a9ba8d0940c5bb620a11e05" name="a76c02c8e5a9ba8d0940c5bb620a11e05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76c02c8e5a9ba8d0940c5bb620a11e05">&#9670;&#160;</a></span>GXTexCoord1x8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GXTexCoord1x8 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>

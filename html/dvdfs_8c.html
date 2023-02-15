@@ -93,10 +93,8 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="dvdfs_8h_source.html">dolphin/dvd/dvdfs.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dvd_8h_source.html">dolphin/dvd/dvd.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ctype_8h_source.html">MSL_C/MSL_Common/Src/ctype.h</a>&quot;</code><br />
-<code>#include &quot;asm/dolphin/dvd/dvdfs/DVDReadAsyncPrio.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for dvdfs.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -155,11 +153,11 @@ Functions</h2></td></tr>
 <tr class="separator:a620aa506ed9f8d044d77372cd08c2df1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5240fb0b9481dcf81ec413a3755d4a4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdfs_8c.html#a5240fb0b9481dcf81ec413a3755d4a4b">DVDChangeDir</a> (const char *dirname)</td></tr>
 <tr class="separator:a5240fb0b9481dcf81ec413a3755d4a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad58d497bb595079397583dcfeacd2e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdfs_8c.html#aad58d497bb595079397583dcfeacd2e6">DVDReadAsyncPrio</a> (<a class="el" href="structDVDFileInfo.html">DVDFileInfo</a> *fileInfo, void *addr, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> length, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> <a class="el" href="d__gameover_8cpp.html#a2928a81aabe02fb912912373508b1286">offset</a>, <a class="el" href="dvd_8h.html#a218ae313498d4861727ac63f63f8edf7">DVDCallback</a> callback, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> prio)</td></tr>
-<tr class="separator:aad58d497bb595079397583dcfeacd2e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a036a24a390bb610a914d4562af608791"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdfs_8c.html#a036a24a390bb610a914d4562af608791">DVDReadAsyncPrio</a> (<a class="el" href="structDVDFileInfo.html">DVDFileInfo</a> *fileInfo, void *addr, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> length, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> <a class="el" href="d__gameover_8cpp.html#a278744385c8918b3813d6136e5e37b30">offset</a>, <a class="el" href="dvd_8h.html#a218ae313498d4861727ac63f63f8edf7">DVDCallback</a> callback, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> prio)</td></tr>
+<tr class="separator:a036a24a390bb610a914d4562af608791"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc4339eb9f15e8d4d734a74221af99d1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdfs_8c.html#acc4339eb9f15e8d4d734a74221af99d1">cbForReadAsync</a> ()</td></tr>
 <tr class="separator:acc4339eb9f15e8d4d734a74221af99d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb9e798e39ff53559f3d99be949bbf44"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdfs_8c.html#acb9e798e39ff53559f3d99be949bbf44">DVDReadPrio</a> (<a class="el" href="structDVDFileInfo.html">DVDFileInfo</a> *fileInfo, void *addr, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> length, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> <a class="el" href="d__gameover_8cpp.html#a2928a81aabe02fb912912373508b1286">offset</a>, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> prio)</td></tr>
+<tr class="memitem:acb9e798e39ff53559f3d99be949bbf44"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdfs_8c.html#acb9e798e39ff53559f3d99be949bbf44">DVDReadPrio</a> (<a class="el" href="structDVDFileInfo.html">DVDFileInfo</a> *fileInfo, void *addr, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> length, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> <a class="el" href="d__gameover_8cpp.html#a278744385c8918b3813d6136e5e37b30">offset</a>, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> prio)</td></tr>
 <tr class="separator:acb9e798e39ff53559f3d99be949bbf44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae38f008cbbb18fa03868f248a9bd2ead"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdfs_8c.html#ae38f008cbbb18fa03868f248a9bd2ead">cbForReadSync</a> ()</td></tr>
 <tr class="separator:ae38f008cbbb18fa03868f248a9bd2ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,20 +188,12 @@ Variables</h2></td></tr>
 <tr class="separator:a83f4fb45ef35a69aaa37054e1295cf47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83a7039cfb07b3f6a147aaa618b5b82e"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdfs_8c.html#a83a7039cfb07b3f6a147aaa618b5b82e">MaxEntryNum</a></td></tr>
 <tr class="separator:a83a7039cfb07b3f6a147aaa618b5b82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93d5f482d77f1567348bfe8d0ad5303c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdfs_8c.html#a93d5f482d77f1567348bfe8d0ad5303c">lit_119</a> []</td></tr>
-<tr class="separator:a93d5f482d77f1567348bfe8d0ad5303c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91cb24ca3608adb105cddfe2badffe5c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdfs_8c.html#a91cb24ca3608adb105cddfe2badffe5c">lit_118</a> [] = &quot;dvdfs.c&quot;</td></tr>
-<tr class="separator:a91cb24ca3608adb105cddfe2badffe5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94aa7710e24e584747226714bf0389c2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdfs_8c.html#a94aa7710e24e584747226714bf0389c2">currentDirectory</a></td></tr>
 <tr class="separator:a94aa7710e24e584747226714bf0389c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0764984f4a23336c239ccbc9fec3e724"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structOSThreadQueue.html">OSThreadQueue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdfs_8c.html#a0764984f4a23336c239ccbc9fec3e724">__DVDThreadQueue</a></td></tr>
 <tr class="separator:a0764984f4a23336c239ccbc9fec3e724"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad54dca4cd8b5d4c4caa734dc0c04c435"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdfs_8c.html#ad54dca4cd8b5d4c4caa734dc0c04c435">__DVDLongFileNameFlag</a></td></tr>
 <tr class="separator:ad54dca4cd8b5d4c4caa734dc0c04c435"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52336099d3aa1d051932101c2b90f7f8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdfs_8c.html#a52336099d3aa1d051932101c2b90f7f8">lit_239</a> [] = &quot;DVDReadAsync(): specified area is out of the file &quot;</td></tr>
-<tr class="separator:a52336099d3aa1d051932101c2b90f7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3eb2f81bf6ab15dace5cd028bdd6daaf"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdfs_8c.html#a3eb2f81bf6ab15dace5cd028bdd6daaf">lit_311</a> [] = &quot;Warning: <a class="el" href="dvdfs_8c.html#a084b903f36aea9ae7bc6b4df700cdd69">DVDOpenDir</a>(): file '%s' was not found under %s.\n&quot;</td></tr>
-<tr class="separator:a3eb2f81bf6ab15dace5cd028bdd6daaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ad013ebd2deae4f2d0c2451e196ea6ad9" name="ad013ebd2deae4f2d0c2451e196ea6ad9"></a>
@@ -772,14 +762,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aad58d497bb595079397583dcfeacd2e6" name="aad58d497bb595079397583dcfeacd2e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad58d497bb595079397583dcfeacd2e6">&#9670;&#160;</a></span>DVDReadAsyncPrio()</h2>
+<a id="a036a24a390bb610a914d4562af608791" name="a036a24a390bb610a914d4562af608791"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a036a24a390bb610a914d4562af608791">&#9670;&#160;</a></span>DVDReadAsyncPrio()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> DVDReadAsyncPrio </td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> DVDReadAsyncPrio </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structDVDFileInfo.html">DVDFileInfo</a> *&#160;</td>
           <td class="paramname"><em>fileInfo</em>, </td>
@@ -1124,98 +1114,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">char* FstStringStart</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a91cb24ca3608adb105cddfe2badffe5c" name="a91cb24ca3608adb105cddfe2badffe5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91cb24ca3608adb105cddfe2badffe5c">&#9670;&#160;</a></span>lit_118</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> char lit_118[] = &quot;dvdfs.c&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a93d5f482d77f1567348bfe8d0ad5303c" name="a93d5f482d77f1567348bfe8d0ad5303c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93d5f482d77f1567348bfe8d0ad5303c">&#9670;&#160;</a></span>lit_119</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_119[]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">    <span class="stringliteral">&quot;DVDConvertEntrynumToPath(possibly DVDOpen or DVDChangeDir or DVDOpenDir): specified directory &quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot;or file (%s) doesn&#39;t match standard 8.3 format. This is a temporary restriction and will be &quot;</span></div>
-<div class="line">    <span class="stringliteral">&quot;removed soon\n&quot;</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a52336099d3aa1d051932101c2b90f7f8" name="a52336099d3aa1d051932101c2b90f7f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52336099d3aa1d051932101c2b90f7f8">&#9670;&#160;</a></span>lit_239</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_239[] = &quot;DVDReadAsync(): specified area is out of the file &quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3eb2f81bf6ab15dace5cd028bdd6daaf" name="a3eb2f81bf6ab15dace5cd028bdd6daaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3eb2f81bf6ab15dace5cd028bdd6daaf">&#9670;&#160;</a></span>lit_311</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_311[] = &quot;Warning: <a class="el" href="dvdfs_8c.html#a084b903f36aea9ae7bc6b4df700cdd69">DVDOpenDir</a>(): file '%s' was not found under %s.\n&quot;</td>
         </tr>
       </table>
   </td>

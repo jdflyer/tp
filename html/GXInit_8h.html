@@ -132,6 +132,8 @@ Functions</h2></td></tr>
 <tr class="separator:ac69ee80193522cfb1cb0a16a9a1144c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40631acea1f92d19e82b27b92e7c25bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXInit_8h.html#a40631acea1f92d19e82b27b92e7c25bb">GXSetWasteFlags</a> ()</td></tr>
 <tr class="separator:a40631acea1f92d19e82b27b92e7c25bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf270fd15360a8bf9ed85dc06cd41baa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXInit_8h.html#aaf270fd15360a8bf9ed85dc06cd41baa">set_x2</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> value)</td></tr>
+<tr class="separator:aaf270fd15360a8bf9ed85dc06cd41baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6191b2a1740adae03bdd61e228fdab5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="GXStruct_8h.html#aea8423b7092e3b999be3337cf3c4b9aa">GXTexRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXInit_8h.html#ab6191b2a1740adae03bdd61e228fdab5">__GXDefaultTexRegionCallback</a> (<a class="el" href="GXStruct_8h.html#a300d2e5e09d00f766ea22f9969237c98">GXTexObj</a> *obj, <a class="el" href="GXEnum_8h.html#a72532f5d20cdea292c5f2f9c296848ab">GXTexMapID</a> mapID)</td></tr>
 <tr class="separator:ab6191b2a1740adae03bdd61e228fdab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b6b909aa3b14a23b812e73a1c7fecde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="GXStruct_8h.html#ac45538f651d3d85f644158fb95413bb6">GXTlutRegion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXInit_8h.html#a2b6b909aa3b14a23b812e73a1c7fecde">__GXDefaultTlutRegionCallback</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> tlut)</td></tr>
@@ -147,8 +149,8 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ad3a87c946e6a632ad110c9a274604dd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="GXInit_8h.html#a6f1be31bdf6491074a13f515ab26f2bc">GXData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXInit_8h.html#ad3a87c946e6a632ad110c9a274604dd3">__GXData</a></td></tr>
-<tr class="separator:ad3a87c946e6a632ad110c9a274604dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfe3847fe8043ea4e4a9f5b66eb5994a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="GXInit_8h.html#a6f1be31bdf6491074a13f515ab26f2bc">GXData</a> *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXInit_8h.html#acfe3847fe8043ea4e4a9f5b66eb5994a">__GXData</a></td></tr>
+<tr class="separator:acfe3847fe8043ea4e4a9f5b66eb5994a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2ade8bc947673e5c565431e4f2ed4fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXInit_8h.html#af2ade8bc947673e5c565431e4f2ed4fa">__piReg</a></td></tr>
 <tr class="separator:af2ade8bc947673e5c565431e4f2ed4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c44a96044c83afdb405a82fc607eb27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXInit_8h.html#a5c44a96044c83afdb405a82fc607eb27">__cpReg</a></td></tr>
@@ -355,6 +357,32 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="aaf270fd15360a8bf9ed85dc06cd41baa" name="aaf270fd15360a8bf9ed85dc06cd41baa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf270fd15360a8bf9ed85dc06cd41baa">&#9670;&#160;</a></span>set_x2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void set_x2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac69ee80193522cfb1cb0a16a9a1144c1" name="ac69ee80193522cfb1cb0a16a9a1144c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac69ee80193522cfb1cb0a16a9a1144c1">&#9670;&#160;</a></span>STATIC_ASSERT()</h2>
 
@@ -396,8 +424,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad3a87c946e6a632ad110c9a274604dd3" name="ad3a87c946e6a632ad110c9a274604dd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3a87c946e6a632ad110c9a274604dd3">&#9670;&#160;</a></span>__GXData</h2>
+<a id="acfe3847fe8043ea4e4a9f5b66eb5994a" name="acfe3847fe8043ea4e4a9f5b66eb5994a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfe3847fe8043ea4e4a9f5b66eb5994a">&#9670;&#160;</a></span>__GXData</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -406,7 +434,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="GXInit_8h.html#a6f1be31bdf6491074a13f515ab26f2bc">GXData</a>* __GXData</td>
+          <td class="memname"><a class="el" href="GXInit_8h.html#a6f1be31bdf6491074a13f515ab26f2bc">GXData</a>* const __GXData</td>
         </tr>
       </table>
   </td>

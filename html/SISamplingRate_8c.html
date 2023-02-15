@@ -91,7 +91,6 @@ $(function() {
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SIBios_8h_source.html">dolphin/si/SIBios.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="vi_8h_source.html">dolphin/vi/vi.h</a>&quot;</code><br />
-<code>#include &quot;asm/dolphin/si/SISamplingRate/SISetSamplingRate.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for SISamplingRate.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -105,8 +104,8 @@ $(function() {
 Functions</h2></td></tr>
 <tr class="memitem:a8f2b308606c5afbbce874728fe93f0ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SISamplingRate_8c.html#a8f2b308606c5afbbce874728fe93f0ee">VIGetTvFormat</a> ()</td></tr>
 <tr class="separator:a8f2b308606c5afbbce874728fe93f0ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ee6201126748f5f2c0418e914a1bbb1"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SISamplingRate_8c.html#a7ee6201126748f5f2c0418e914a1bbb1">SISetSamplingRate</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> msec)</td></tr>
-<tr class="separator:a7ee6201126748f5f2c0418e914a1bbb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3701c63abbfe16a80bc7d5294e74390"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SISamplingRate_8c.html#ab3701c63abbfe16a80bc7d5294e74390">SISetSamplingRate</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> msec)</td></tr>
+<tr class="separator:ab3701c63abbfe16a80bc7d5294e74390"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4147e3551d3169bd8130363da59e0c76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SISamplingRate_8c.html#a4147e3551d3169bd8130363da59e0c76">SIRefreshSamplingRate</a> ()</td></tr>
 <tr class="separator:a4147e3551d3169bd8130363da59e0c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -116,8 +115,6 @@ Variables</h2></td></tr>
 <tr class="separator:a7f8e75b510ffdde6823597efd8c1af46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0c5b6bec9a402be4834cf592e0b02b6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structXY.html">XY</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SISamplingRate_8c.html#af0c5b6bec9a402be4834cf592e0b02b6">XYPAL</a> [12]</td></tr>
 <tr class="separator:af0c5b6bec9a402be4834cf592e0b02b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8e7f35df0a0c3d1a69deabe4825be30"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SISamplingRate_8c.html#ae8e7f35df0a0c3d1a69deabe4825be30">lit_16</a> [] = &quot;SISetSamplingRate: unknown TV format. Use default.&quot;</td></tr>
-<tr class="separator:ae8e7f35df0a0c3d1a69deabe4825be30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a413a6306387fcc73ce2d6832ae03c51f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SISamplingRate_8c.html#a413a6306387fcc73ce2d6832ae03c51f">SamplingRate</a></td></tr>
 <tr class="separator:a413a6306387fcc73ce2d6832ae03c51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -140,14 +137,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a7ee6201126748f5f2c0418e914a1bbb1" name="a7ee6201126748f5f2c0418e914a1bbb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ee6201126748f5f2c0418e914a1bbb1">&#9670;&#160;</a></span>SISetSamplingRate()</h2>
+<a id="ab3701c63abbfe16a80bc7d5294e74390" name="ab3701c63abbfe16a80bc7d5294e74390"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3701c63abbfe16a80bc7d5294e74390">&#9670;&#160;</a></span>SISetSamplingRate()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void SISetSamplingRate </td>
+          <td class="memname">void SISetSamplingRate </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
           <td class="paramname"><em>msec</em></td><td>)</td>
@@ -176,28 +173,6 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="ae8e7f35df0a0c3d1a69deabe4825be30" name="ae8e7f35df0a0c3d1a69deabe4825be30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8e7f35df0a0c3d1a69deabe4825be30">&#9670;&#160;</a></span>lit_16</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char lit_16[] = &quot;SISetSamplingRate: unknown TV format. Use default.&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a413a6306387fcc73ce2d6832ae03c51f" name="a413a6306387fcc73ce2d6832ae03c51f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a413a6306387fcc73ce2d6832ae03c51f">&#9670;&#160;</a></span>SamplingRate</h2>
 

@@ -91,13 +91,14 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="d__drawlist_8h_source.html">d/d_drawlist.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="J3DShape_8h_source.html">JSystem/J3DGraphBase/J3DShape.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="J3DSys_8h_source.html">JSystem/J3DGraphBase/J3DSys.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__com__inf__game_8h_source.html">d/com/d_com_inf_game.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mtx44_8h_source.html">dolphin/mtx/mtx44.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mtxvec_8h_source.html">dolphin/mtx/mtxvec.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="m__Do__mtx_8h_source.html">m_Do/m_Do_mtx.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="m__Do__lib_8h_source.html">m_Do/m_Do_lib.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="m__Do__graphic_8h_source.html">m_Do/m_Do_graphic.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="m__Do__lib_8h_source.html">m_Do/m_Do_lib.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="m__Do__mtx_8h_source.html">m_Do/m_Do_mtx.h</a>&quot;</code><br />
 <code>#include &quot;asm/d/d_drawlist/draw__13dDlst_2DTri_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/d_drawlist/draw__14dDlst_2DQuad_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/d_drawlist/draw__15dDlst_2DPoint_cFv.s&quot;</code><br />
@@ -150,7 +151,6 @@ $(function() {
 <code>#include &quot;asm/d/d_drawlist/reset__12dDlst_list_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/d_drawlist/entryZSortXluDrawList__12dDlst_list_cFP13J3DDrawBufferP9J3DPacketR4cXyz.s&quot;</code><br />
 <code>#include &quot;asm/d/d_drawlist/wipeIn__12dDlst_list_cFfR8_GXColor.s&quot;</code><br />
-<code>#include &quot;asm/d/d_drawlist/wipeIn__12dDlst_list_cFf.s&quot;</code><br />
 <code>#include &quot;asm/d/d_drawlist/calcWipe__12dDlst_list_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/d_drawlist/getTri__22dDlst_shadowRealPoly_cFv.s&quot;</code><br />
 </div><table class="memberdecls">
@@ -171,10 +171,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdDlst__2DMt__c.html">dDlst_2DMt_c</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdDlst__2DM__c.html">dDlst_2DM_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcBgS__ShdwDraw.html">cBgS_ShdwDraw</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcBgS.html">cBgS</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structShdwDrawPoly__c.html">ShdwDrawPoly_c</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -455,9 +451,11 @@ Functions</h2></td></tr>
 <tr class="separator:a3f61243ebf5cbb2ff90548d397b16772"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abed5bd59c54272a132a5b4da4beff66d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#abed5bd59c54272a132a5b4da4beff66d">_restgpr_29</a> ()</td></tr>
 <tr class="separator:abed5bd59c54272a132a5b4da4beff66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43d7f114ec56b1a283f3c519ad4cc7f0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> l_frontZMat[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#a43d7f114ec56b1a283f3c519ad4cc7f0">ALIGN_DECL</a> (32)</td></tr>
+<tr class="separator:a43d7f114ec56b1a283f3c519ad4cc7f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac45e0ba39b78b7e8c5c73ffd6f3098b4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structJ3DDrawBuffer.html">J3DDrawBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#ac45e0ba39b78b7e8c5c73ffd6f3098b4">J3DDrawBuffer__create</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> size)</td></tr>
 <tr class="separator:ac45e0ba39b78b7e8c5c73ffd6f3098b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20f57b08301f24e14767066be0ffb532"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#a20f57b08301f24e14767066be0ffb532">psdRealCallBack</a> (<a class="el" href="structcBgS__ShdwDraw.html">cBgS_ShdwDraw</a> *param_0, <a class="el" href="structcBgD__Vtx__t.html">cBgD_Vtx_t</a> *param_1, int param_2, int param_3, int param_4, <a class="el" href="structcM3dGPla.html">cM3dGPla</a> *param_5)</td></tr>
+<tr class="memitem:a20f57b08301f24e14767066be0ffb532"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#a20f57b08301f24e14767066be0ffb532">psdRealCallBack</a> (<a class="el" href="classcBgS__ShdwDraw.html">cBgS_ShdwDraw</a> *param_0, <a class="el" href="structcBgD__Vtx__t.html">cBgD_Vtx_t</a> *param_1, int param_2, int param_3, int param_4, <a class="el" href="structcM3dGPla.html">cM3dGPla</a> *param_5)</td></tr>
 <tr class="separator:a20f57b08301f24e14767066be0ffb532"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c278f6c7bf2ae846144a93ffa0a5082"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#a1c278f6c7bf2ae846144a93ffa0a5082">realPolygonCheck</a> (<a class="el" href="structcXyz.html">cXyz</a> *param_0, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_1, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_2, <a class="el" href="structcXyz.html">cXyz</a> *param_3, <a class="el" href="classdDlst__shadowPoly__c.html">dDlst_shadowPoly_c</a> *param_4)</td></tr>
 <tr class="separator:a1c278f6c7bf2ae846144a93ffa0a5082"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -467,6 +465,8 @@ Functions</h2></td></tr>
 <tr class="separator:a39a8670ad12eaa670696a1570c590965"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8467a5de4e692e7ac94cd045167219f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#a8467a5de4e692e7ac94cd045167219f7">COMPILER_STRIP_GATE</a> (0x8037A1A4, &amp;<a class="el" href="d__drawlist_8cpp.html#aafbb55a16186fa640a25e7d9c5c8e642">l_nonSortId</a>)</td></tr>
 <tr class="separator:a8467a5de4e692e7ac94cd045167219f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a287d90167ae59e87e96ae8749ed3abca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="d__drawlist_8cpp.html#a3edef3b08e7f89044fe301dcaf6a329f">data_80450EE0</a>[8]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#a287d90167ae59e87e96ae8749ed3abca">ALIGN_DECL</a> (8)</td></tr>
+<tr class="separator:a287d90167ae59e87e96ae8749ed3abca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -502,20 +502,12 @@ Variables</h2></td></tr>
 <tr class="separator:a8e01467eed17327e0c624b22ccc7ed8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3954c8ec887c98d760441edb7e95058"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#ab3954c8ec887c98d760441edb7e95058">mClipper__14mDoLib_clipper</a> [92]</td></tr>
 <tr class="separator:ab3954c8ec887c98d760441edb7e95058"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50ad47c26bcc2867f2c14d349753f58e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#a50ad47c26bcc2867f2c14d349753f58e">g_dComIfG_gameInfo</a> [122384]</td></tr>
-<tr class="separator:a50ad47c26bcc2867f2c14d349753f58e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41953e39fd856436c04b9241939ee73c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#a41953e39fd856436c04b9241939ee73c">g_envHIO</a> [68]</td></tr>
 <tr class="separator:a41953e39fd856436c04b9241939ee73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e862148df6adc58098613dbd1f882cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#a5e862148df6adc58098613dbd1f882cd">sincosTable___5JMath</a> [65536]</td></tr>
 <tr class="separator:a5e862148df6adc58098613dbd1f882cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7ed21a8d37e63f30ca2790175e9770c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#ac7ed21a8d37e63f30ca2790175e9770c">mBackColor__13mDoGph_gInf_c</a> [4]</td></tr>
 <tr class="separator:ac7ed21a8d37e63f30ca2790175e9770c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4f4051c6c5c3a381d90f5bde6544cdc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#ac4f4051c6c5c3a381d90f5bde6544cdc">g_clearColor</a> [4]</td></tr>
-<tr class="separator:ac4f4051c6c5c3a381d90f5bde6544cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97321cb010d2ae0912f22ee965c52d3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#a97321cb010d2ae0912f22ee965c52d3d">g_blackColor</a></td></tr>
-<tr class="separator:a97321cb010d2ae0912f22ee965c52d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1943b5c45c0f3e49bbe1c18c1cf80f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#aa1943b5c45c0f3e49bbe1c18c1cf80f4">g_whiteColor</a></td></tr>
-<tr class="separator:aa1943b5c45c0f3e49bbe1c18c1cf80f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9872c557f049883fada00623d7ff1ac7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#a9872c557f049883fada00623d7ff1ac7">mSystemFar__14mDoLib_clipper</a></td></tr>
 <tr class="separator:a9872c557f049883fada00623d7ff1ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10e6fdfe47f4fcc5902af436a7595cf0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#a10e6fdfe47f4fcc5902af436a7595cf0">mFovyRate__14mDoLib_clipper</a></td></tr>
@@ -536,44 +528,18 @@ Variables</h2></td></tr>
 <tr class="separator:a8d6651ec654c8e7f872d8ab224ef2b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f4c1776085117fd5025458b47aa2248"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#a7f4c1776085117fd5025458b47aa2248">lit_4270</a> = 1.0f</td></tr>
 <tr class="separator:a7f4c1776085117fd5025458b47aa2248"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68577bdcbf8af12908bcc1fbc5b739ae"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#a68577bdcbf8af12908bcc1fbc5b739ae">cNullVec__6Z2Calc</a> [12+20]</td></tr>
-<tr class="separator:a68577bdcbf8af12908bcc1fbc5b739ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a643c116fedfd8f2b8dde5e3fb68d52fd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#a643c116fedfd8f2b8dde5e3fb68d52fd">l_frontZMat</a> [60+4]</td></tr>
-<tr class="separator:a643c116fedfd8f2b8dde5e3fb68d52fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc2c5192ecc5cf58948fbe47f97f21dc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#abc2c5192ecc5cf58948fbe47f97f21dc">l_frontNoZSubMat</a> [42+2]</td></tr>
-<tr class="separator:abc2c5192ecc5cf58948fbe47f97f21dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a350fea407dd5812856c8f75cb993598c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#a350fea407dd5812856c8f75cb993598c">l_shadowVolPos</a> [96+20]</td></tr>
-<tr class="separator:a350fea407dd5812856c8f75cb993598c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a463b365b5af09fb9435f0c96468636d8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#a463b365b5af09fb9435f0c96468636d8">l_shadowVolDL</a> [59+5]</td></tr>
-<tr class="separator:a463b365b5af09fb9435f0c96468636d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab39d8cdfe34324d9bb1b233a4a0148d7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#ab39d8cdfe34324d9bb1b233a4a0148d7">l_shadowProjMat</a> [90+6]</td></tr>
-<tr class="separator:ab39d8cdfe34324d9bb1b233a4a0148d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaec186e27fc043d8101e7a6866a32b24"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#aaec186e27fc043d8101e7a6866a32b24">l_shadowVolMat</a> [90+6]</td></tr>
-<tr class="separator:aaec186e27fc043d8101e7a6866a32b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a30c05af715980980b0b1a9c490342a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#a4a30c05af715980980b0b1a9c490342a">l_clearMat</a> [85+11]</td></tr>
-<tr class="separator:a4a30c05af715980980b0b1a9c490342a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15f1c4cf31cb6b1778a8c64e18b55b31"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#a15f1c4cf31cb6b1778a8c64e18b55b31">l_frontMat</a> [85+11]</td></tr>
-<tr class="separator:a15f1c4cf31cb6b1778a8c64e18b55b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa952016d28645467de395ebcb97dae01"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#aa952016d28645467de395ebcb97dae01">l_backSubMat</a> [60]</td></tr>
-<tr class="separator:aa952016d28645467de395ebcb97dae01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e40f58fe569989f6661c9d9d1bcdbc2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#a7e40f58fe569989f6661c9d9d1bcdbc2">l_simpleShadowPos</a> [168+28]</td></tr>
-<tr class="separator:a7e40f58fe569989f6661c9d9d1bcdbc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9674e6825c259a7b67a298f1adcb9f05"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#a9674e6825c259a7b67a298f1adcb9f05">l_shadowVolumeDL</a> [88+8]</td></tr>
-<tr class="separator:a9674e6825c259a7b67a298f1adcb9f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ef1f05a9e423b48e60d20965ef6631c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#a5ef1f05a9e423b48e60d20965ef6631c">l_shadowSealTexDL</a> [85+11]</td></tr>
-<tr class="separator:a5ef1f05a9e423b48e60d20965ef6631c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5e0951e5355ca53843dcb252b8f409f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#af5e0951e5355ca53843dcb252b8f409f">l_shadowSealTex2DL</a> [85+11]</td></tr>
-<tr class="separator:af5e0951e5355ca53843dcb252b8f409f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03d1a3200cb499ac2bd4b3e460e425eb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#a03d1a3200cb499ac2bd4b3e460e425eb">l_shadowSealDL</a> [105+23]</td></tr>
-<tr class="separator:a03d1a3200cb499ac2bd4b3e460e425eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a074256dd0270a5d4d6195e11a1e7a7ab"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#a074256dd0270a5d4d6195e11a1e7a7ab">l_matDL</a> [123+1]</td></tr>
-<tr class="separator:a074256dd0270a5d4d6195e11a1e7a7ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d641d5006e9852701e43891c9ccc5c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#af1d641d5006e9852701e43891c9ccc5c">cNullVec__6Z2Calc</a> [12]</td></tr>
+<tr class="separator:af1d641d5006e9852701e43891c9ccc5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac19649b720016b4f885f201dfe781b24"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="structVec.html">Vec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#ac19649b720016b4f885f201dfe781b24">l_shadowVolPos</a> []</td></tr>
+<tr class="separator:ac19649b720016b4f885f201dfe781b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a026e6108386a40e6941e8a5f319b1d02"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="structVec.html">Vec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#a026e6108386a40e6941e8a5f319b1d02">l_simpleShadowPos</a> []</td></tr>
+<tr class="separator:a026e6108386a40e6941e8a5f319b1d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ad94ede6ae293e2ca370a6b78a789cf"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="GXStruct_8h.html#a0419d171f4d66c2b2a77bd299ddbdcdc">GXColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#a6ad94ede6ae293e2ca370a6b78a789cf">l_imageDrawColor</a> [4]</td></tr>
 <tr class="separator:a6ad94ede6ae293e2ca370a6b78a789cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d51beb69e3158692b56d35b8620efbb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="GXEnum_8h.html#a7a4b6191626b8d1e23b0042f7f763e99">GXTevColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#a7d51beb69e3158692b56d35b8620efbb">l_tevColorChan</a> [4]</td></tr>
 <tr class="separator:a7d51beb69e3158692b56d35b8620efbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0b703f4a485d7baac8df72a889e96a0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#ac0b703f4a485d7baac8df72a889e96a0">mtx_adj</a> [48]</td></tr>
-<tr class="separator:ac0b703f4a485d7baac8df72a889e96a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0135a0460de05b5a21061e92acc62db"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="mtx_8h.html#afc58fc7f5dd84f97da2dab35156849ae">Mtx</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#ae0135a0460de05b5a21061e92acc62db">mtx_adj</a></td></tr>
+<tr class="separator:ae0135a0460de05b5a21061e92acc62db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0550fbe05e003bd21983ad0e629783d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#a0550fbe05e003bd21983ad0e629783d1">__vt__18dDlst_shadowPoly_c</a> [4]</td></tr>
 <tr class="separator:a0550fbe05e003bd21983ad0e629783d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb85b2cb7572eba2a740a6cfd97be7e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__drawlist_8cpp.html#aeb85b2cb7572eba2a740a6cfd97be7e1">__vt__22dDlst_shadowRealPoly_c</a> [4]</td></tr>
@@ -1466,6 +1432,50 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void addReal__21dDlst_shadowControl_cFUlP8J3DModel </td>
           <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43d7f114ec56b1a283f3c519ad4cc7f0" name="a43d7f114ec56b1a283f3c519ad4cc7f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43d7f114ec56b1a283f3c519ad4cc7f0">&#9670;&#160;</a></span>ALIGN_DECL() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> l_frontZMat[] ALIGN_DECL </td>
+          <td>(</td>
+          <td class="paramtype">32&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a287d90167ae59e87e96ae8749ed3abca" name="a287d90167ae59e87e96ae8749ed3abca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a287d90167ae59e87e96ae8749ed3abca">&#9670;&#160;</a></span>ALIGN_DECL() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="d__drawlist_8cpp.html#a3edef3b08e7f89044fe301dcaf6a329f">data_80450EE0</a>[8] ALIGN_DECL </td>
+          <td>(</td>
+          <td class="paramtype">8&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -2665,7 +2675,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">static asm void psdRealCallBack </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structcBgS__ShdwDraw.html">cBgS_ShdwDraw</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classcBgS__ShdwDraw.html">cBgS_ShdwDraw</a> *&#160;</td>
           <td class="paramname"><em>param_0</em>, </td>
         </tr>
         <tr>
@@ -3311,7 +3321,7 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__drawlist_8cpp.html#a1a94831f5a9ceee6d720fff74a937eac">draw__10dDlst_2D_cFv</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__drawlist_8cpp_html_a1a94831f5a9ceee6d720fff74a937eac"><div class="ttname"><a href="d__drawlist_8cpp.html#a1a94831f5a9ceee6d720fff74a937eac">draw__10dDlst_2D_cFv</a></div><div class="ttdeci">void draw__10dDlst_2D_cFv()</div><div class="ttdef"><b>Definition:</b> d_drawlist.cpp:2099</div></div>
+<div class="ttc" id="ad__drawlist_8cpp_html_a1a94831f5a9ceee6d720fff74a937eac"><div class="ttname"><a href="d__drawlist_8cpp.html#a1a94831f5a9ceee6d720fff74a937eac">draw__10dDlst_2D_cFv</a></div><div class="ttdeci">void draw__10dDlst_2D_cFv()</div><div class="ttdef"><b>Definition:</b> d_drawlist.cpp:711</div></div>
 <div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:12</div></div>
 </div><!-- fragment -->
 </div>
@@ -3341,8 +3351,8 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__drawlist_8cpp.html#a15c2250dd3f5c2bbd6ab387392cbce7e">__dt__10J2DAnmBaseFv</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__drawlist_8cpp.html#adab638ff22c79d87e59a80b7ca6a2db8">searchUpdateMaterialID__10J2DAnmBaseFP9J2DScreen</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__drawlist_8cpp_html_a15c2250dd3f5c2bbd6ab387392cbce7e"><div class="ttname"><a href="d__drawlist_8cpp.html#a15c2250dd3f5c2bbd6ab387392cbce7e">__dt__10J2DAnmBaseFv</a></div><div class="ttdeci">void __dt__10J2DAnmBaseFv()</div><div class="ttdef"><b>Definition:</b> d_drawlist.cpp:2176</div></div>
-<div class="ttc" id="ad__drawlist_8cpp_html_adab638ff22c79d87e59a80b7ca6a2db8"><div class="ttname"><a href="d__drawlist_8cpp.html#adab638ff22c79d87e59a80b7ca6a2db8">searchUpdateMaterialID__10J2DAnmBaseFP9J2DScreen</a></div><div class="ttdeci">void searchUpdateMaterialID__10J2DAnmBaseFP9J2DScreen()</div><div class="ttdef"><b>Definition:</b> d_drawlist.cpp:3028</div></div>
+<div class="ttc" id="ad__drawlist_8cpp_html_a15c2250dd3f5c2bbd6ab387392cbce7e"><div class="ttname"><a href="d__drawlist_8cpp.html#a15c2250dd3f5c2bbd6ab387392cbce7e">__dt__10J2DAnmBaseFv</a></div><div class="ttdeci">void __dt__10J2DAnmBaseFv()</div><div class="ttdef"><b>Definition:</b> d_drawlist.cpp:788</div></div>
+<div class="ttc" id="ad__drawlist_8cpp_html_adab638ff22c79d87e59a80b7ca6a2db8"><div class="ttname"><a href="d__drawlist_8cpp.html#adab638ff22c79d87e59a80b7ca6a2db8">searchUpdateMaterialID__10J2DAnmBaseFP9J2DScreen</a></div><div class="ttdeci">void searchUpdateMaterialID__10J2DAnmBaseFP9J2DScreen()</div><div class="ttdef"><b>Definition:</b> d_drawlist.cpp:1619</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3514,7 +3524,7 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__drawlist_8cpp.html#aabae8b1bc23f711afeecc0bec4bf324b">draw__12dDlst_2DT2_cFv</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__drawlist_8cpp_html_aabae8b1bc23f711afeecc0bec4bf324b"><div class="ttname"><a href="d__drawlist_8cpp.html#aabae8b1bc23f711afeecc0bec4bf324b">draw__12dDlst_2DT2_cFv</a></div><div class="ttdeci">void draw__12dDlst_2DT2_cFv()</div><div class="ttdef"><b>Definition:</b> d_drawlist.cpp:341</div></div>
+<div class="ttc" id="ad__drawlist_8cpp_html_aabae8b1bc23f711afeecc0bec4bf324b"><div class="ttname"><a href="d__drawlist_8cpp.html#aabae8b1bc23f711afeecc0bec4bf324b">draw__12dDlst_2DT2_cFv</a></div><div class="ttdeci">void draw__12dDlst_2DT2_cFv()</div><div class="ttdef"><b>Definition:</b> d_drawlist.cpp:327</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3676,7 +3686,7 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__drawlist_8cpp.html#a3b32b66ed85cfe2961a3d554f437d10b">draw__18dDlst_effectLine_cFv</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__drawlist_8cpp_html_a3b32b66ed85cfe2961a3d554f437d10b"><div class="ttname"><a href="d__drawlist_8cpp.html#a3b32b66ed85cfe2961a3d554f437d10b">draw__18dDlst_effectLine_cFv</a></div><div class="ttdeci">void draw__18dDlst_effectLine_cFv()</div><div class="ttdef"><b>Definition:</b> d_drawlist.cpp:2252</div></div>
+<div class="ttc" id="ad__drawlist_8cpp_html_a3b32b66ed85cfe2961a3d554f437d10b"><div class="ttname"><a href="d__drawlist_8cpp.html#a3b32b66ed85cfe2961a3d554f437d10b">draw__18dDlst_effectLine_cFv</a></div><div class="ttdeci">void draw__18dDlst_effectLine_cFv()</div><div class="ttdef"><b>Definition:</b> d_drawlist.cpp:864</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3733,7 +3743,7 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__drawlist_8cpp.html#a1413a955e0391b6204308dce30ed8e5a">getTri__22dDlst_shadowRealPoly_cFv</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__drawlist_8cpp.html#a279929987a697479e6d68d471068cabe">getTriMax__22dDlst_shadowRealPoly_cFv</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__drawlist_8cpp_html_a1413a955e0391b6204308dce30ed8e5a"><div class="ttname"><a href="d__drawlist_8cpp.html#a1413a955e0391b6204308dce30ed8e5a">getTri__22dDlst_shadowRealPoly_cFv</a></div><div class="ttdeci">void getTri__22dDlst_shadowRealPoly_cFv()</div><div class="ttdef"><b>Definition:</b> d_drawlist.cpp:3014</div></div>
+<div class="ttc" id="ad__drawlist_8cpp_html_a1413a955e0391b6204308dce30ed8e5a"><div class="ttname"><a href="d__drawlist_8cpp.html#a1413a955e0391b6204308dce30ed8e5a">getTri__22dDlst_shadowRealPoly_cFv</a></div><div class="ttdeci">void getTri__22dDlst_shadowRealPoly_cFv()</div><div class="ttdef"><b>Definition:</b> d_drawlist.cpp:1605</div></div>
 <div class="ttc" id="ad__drawlist_8cpp_html_a279929987a697479e6d68d471068cabe"><div class="ttname"><a href="d__drawlist_8cpp.html#a279929987a697479e6d68d471068cabe">getTriMax__22dDlst_shadowRealPoly_cFv</a></div><div class="ttdeci">s32 getTriMax__22dDlst_shadowRealPoly_cFv()</div></div>
 </div><!-- fragment -->
 </div>
@@ -3810,8 +3820,8 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a68577bdcbf8af12908bcc1fbc5b739ae" name="a68577bdcbf8af12908bcc1fbc5b739ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68577bdcbf8af12908bcc1fbc5b739ae">&#9670;&#160;</a></span>cNullVec__6Z2Calc</h2>
+<a id="af1d641d5006e9852701e43891c9ccc5c" name="af1d641d5006e9852701e43891c9ccc5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1d641d5006e9852701e43891c9ccc5c">&#9670;&#160;</a></span>cNullVec__6Z2Calc</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3820,7 +3830,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> cNullVec__6Z2Calc[12+20]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> cNullVec__6Z2Calc[12]</td>
         </tr>
       </table>
   </td>
@@ -3829,7 +3839,10 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,</div>
+<div class="line">}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a90329003902e71741de40d1b98f4c02a" name="a90329003902e71741de40d1b98f4c02a"></a>
@@ -3859,70 +3872,12 @@ Variables</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_80450EE0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a97321cb010d2ae0912f22ee965c52d3d" name="a97321cb010d2ae0912f22ee965c52d3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97321cb010d2ae0912f22ee965c52d3d">&#9670;&#160;</a></span>g_blackColor</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> g_blackColor</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac4f4051c6c5c3a381d90f5bde6544cdc" name="ac4f4051c6c5c3a381d90f5bde6544cdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4f4051c6c5c3a381d90f5bde6544cdc">&#9670;&#160;</a></span>g_clearColor</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> g_clearColor[4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a50ad47c26bcc2867f2c14d349753f58e" name="a50ad47c26bcc2867f2c14d349753f58e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50ad47c26bcc2867f2c14d349753f58e">&#9670;&#160;</a></span>g_dComIfG_gameInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> g_dComIfG_gameInfo[122384]</td>
         </tr>
       </table>
   </td>
@@ -3950,78 +3905,6 @@ Variables</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa1943b5c45c0f3e49bbe1c18c1cf80f4" name="aa1943b5c45c0f3e49bbe1c18c1cf80f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1943b5c45c0f3e49bbe1c18c1cf80f4">&#9670;&#160;</a></span>g_whiteColor</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> g_whiteColor</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa952016d28645467de395ebcb97dae01" name="aa952016d28645467de395ebcb97dae01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa952016d28645467de395ebcb97dae01">&#9670;&#160;</a></span>l_backSubMat</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> l_backSubMat[60]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x61, 0x41, 0x00, 0x09, 0x35, 0x10, 0x00, 0x00, 0x10, 0x3F, 0x00, 0x00, 0x00, 0x00, 0x10,</div>
-<div class="line">    0x00, 0x00, 0x10, 0x09, 0x00, 0x00, 0x00, 0x01, 0x61, 0x00, 0x00, 0x80, 0x10, 0x00, 0x00,</div>
-<div class="line">    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,</div>
-<div class="line">    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,</div>
-<div class="line">}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a4a30c05af715980980b0b1a9c490342a" name="a4a30c05af715980980b0b1a9c490342a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a30c05af715980980b0b1a9c490342a">&#9670;&#160;</a></span>l_clearMat</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> l_clearMat[85+11]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -4132,95 +4015,10 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x0001,</div>
-<div class="line">    0x0001,</div>
-<div class="line">    0x0001,</div>
-<div class="line">    0x0080,</div>
-<div class="line">    0x0001,</div>
-<div class="line">    0x0001,</div>
-<div class="line">    0x0001,</div>
-<div class="line">    0x0080,</div>
-<div class="line">    0x0100,</div>
-<div class="line">    0x0001,</div>
-<div class="line">    0x0100,</div>
-<div class="line">    0x0001,</div>
-<div class="line">    0x0020,</div>
-<div class="line">    0x0010,</div>
-<div class="line">    0x0010,</div>
-<div class="line">    0x0020,</div>
-<div class="line">    0x0020,</div>
-<div class="line">    0x0100,</div>
-<div class="line">    0x0001,</div>
-<div class="line">    0x0004,</div>
-<div class="line">    0x0004,</div>
+<div class="line">    0x0001, 0x0001, 0x0001, 0x0080, 0x0001, 0x0001, 0x0001, 0x0080, 0x0100, 0x0001, 0x0100,</div>
+<div class="line">    0x0001, 0x0020, 0x0010, 0x0010, 0x0020, 0x0020, 0x0100, 0x0001, 0x0004, 0x0004,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-</div>
-</div>
-<a id="a15f1c4cf31cb6b1778a8c64e18b55b31" name="a15f1c4cf31cb6b1778a8c64e18b55b31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15f1c4cf31cb6b1778a8c64e18b55b31">&#9670;&#160;</a></span>l_frontMat</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> l_frontMat[85+11]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abc2c5192ecc5cf58948fbe47f97f21dc" name="abc2c5192ecc5cf58948fbe47f97f21dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc2c5192ecc5cf58948fbe47f97f21dc">&#9670;&#160;</a></span>l_frontNoZSubMat</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> l_frontNoZSubMat[42+2]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a643c116fedfd8f2b8dde5e3fb68d52fd" name="a643c116fedfd8f2b8dde5e3fb68d52fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a643c116fedfd8f2b8dde5e3fb68d52fd">&#9670;&#160;</a></span>l_frontZMat</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> l_frontZMat[60+4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
 </div>
 </div>
 <a id="a6ad94ede6ae293e2ca370a6b78a789cf" name="a6ad94ede6ae293e2ca370a6b78a789cf"></a>
@@ -4242,33 +4040,13 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {{0xFF, 0x00, 0x00, 0x00},</div>
-<div class="line">                                                    {0x00, 0xFF, 0x00, 0x00},</div>
-<div class="line">                                                    {0x00, 0x00, 0xFF, 0x00},</div>
-<div class="line">                                                    {0x00, 0x00, 0x00, 0xFF}}</div>
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    {255, 0, 0, 0},</div>
+<div class="line">    {0, 255, 0, 0},</div>
+<div class="line">    {0, 0, 255, 0},</div>
+<div class="line">    {0, 0, 0, 255},</div>
+<div class="line">}</div>
 </div><!-- fragment -->
-</div>
-</div>
-<a id="a074256dd0270a5d4d6195e11a1e7a7ab" name="a074256dd0270a5d4d6195e11a1e7a7ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a074256dd0270a5d4d6195e11a1e7a7ab">&#9670;&#160;</a></span>l_matDL</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> l_matDL[123+1]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
 </div>
 </div>
 <a id="aafbb55a16186fa640a25e7d9c5c8e642" name="aafbb55a16186fa640a25e7d9c5c8e642"></a>
@@ -4291,15 +4069,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x00,</div>
-<div class="line">    0x01,</div>
-<div class="line">    0x02,</div>
-<div class="line">    0x04,</div>
-<div class="line">    0x05,</div>
-<div class="line">    0x06,</div>
-<div class="line">    0x09,</div>
-<div class="line">    0x12,</div>
-<div class="line">    0x0D,</div>
+<div class="line">    0x00, 0x01, 0x02, 0x04, 0x05, 0x06, 0x09, 0x12, 0x0D,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
@@ -4332,8 +4102,8 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ab39d8cdfe34324d9bb1b233a4a0148d7" name="ab39d8cdfe34324d9bb1b233a4a0148d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab39d8cdfe34324d9bb1b233a4a0148d7">&#9670;&#160;</a></span>l_shadowProjMat</h2>
+<a id="ac19649b720016b4f885f201dfe781b24" name="ac19649b720016b4f885f201dfe781b24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac19649b720016b4f885f201dfe781b24">&#9670;&#160;</a></span>l_shadowVolPos</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4342,7 +4112,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> l_shadowProjMat[90+6]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="structVec.html">Vec</a> l_shadowVolPos[]</td>
         </tr>
       </table>
   </td>
@@ -4351,11 +4121,15 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    {-1.0f, -1.0f, 0.0f}, {-1.0f, -1.0f, -300.0f}, {-1.0f, 1.0f, 0.0f}, {-1.0f, 1.0f, -300.0f},</div>
+<div class="line">    {1.0f, -1.0f, 0.0f},  {1.0f, -1.0f, -300.0f},  {1.0f, 1.0f, 0.0f},  {1.0f, 1.0f, -300.0f},</div>
+<div class="line">}</div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="a03d1a3200cb499ac2bd4b3e460e425eb" name="a03d1a3200cb499ac2bd4b3e460e425eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03d1a3200cb499ac2bd4b3e460e425eb">&#9670;&#160;</a></span>l_shadowSealDL</h2>
+<a id="a026e6108386a40e6941e8a5f319b1d02" name="a026e6108386a40e6941e8a5f319b1d02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a026e6108386a40e6941e8a5f319b1d02">&#9670;&#160;</a></span>l_simpleShadowPos</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4364,7 +4138,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> l_shadowSealDL[105+23]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="structVec.html">Vec</a> l_simpleShadowPos[]</td>
         </tr>
       </table>
   </td>
@@ -4373,161 +4147,13 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="af5e0951e5355ca53843dcb252b8f409f" name="af5e0951e5355ca53843dcb252b8f409f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5e0951e5355ca53843dcb252b8f409f">&#9670;&#160;</a></span>l_shadowSealTex2DL</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> l_shadowSealTex2DL[85+11]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5ef1f05a9e423b48e60d20965ef6631c" name="a5ef1f05a9e423b48e60d20965ef6631c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ef1f05a9e423b48e60d20965ef6631c">&#9670;&#160;</a></span>l_shadowSealTexDL</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> l_shadowSealTexDL[85+11]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a463b365b5af09fb9435f0c96468636d8" name="a463b365b5af09fb9435f0c96468636d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a463b365b5af09fb9435f0c96468636d8">&#9670;&#160;</a></span>l_shadowVolDL</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> l_shadowVolDL[59+5]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aaec186e27fc043d8101e7a6866a32b24" name="aaec186e27fc043d8101e7a6866a32b24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaec186e27fc043d8101e7a6866a32b24">&#9670;&#160;</a></span>l_shadowVolMat</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> l_shadowVolMat[90+6]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a350fea407dd5812856c8f75cb993598c" name="a350fea407dd5812856c8f75cb993598c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a350fea407dd5812856c8f75cb993598c">&#9670;&#160;</a></span>l_shadowVolPos</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> l_shadowVolPos[96+20]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9674e6825c259a7b67a298f1adcb9f05" name="a9674e6825c259a7b67a298f1adcb9f05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9674e6825c259a7b67a298f1adcb9f05">&#9670;&#160;</a></span>l_shadowVolumeDL</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> l_shadowVolumeDL[88+8]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7e40f58fe569989f6661c9d9d1bcdbc2" name="a7e40f58fe569989f6661c9d9d1bcdbc2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e40f58fe569989f6661c9d9d1bcdbc2">&#9670;&#160;</a></span>l_simpleShadowPos</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> l_simpleShadowPos[168+28]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    {0.0f, -1.0f, 0.0f},   {0.0f, 0.0f, 0.0f},   {1.0f, -1.0f, -1.0f}, {1.0f, 0.0f, -1.0f},</div>
+<div class="line">    {-1.0f, -1.0f, -1.0f}, {-1.0f, 0.0f, -1.0f}, {-1.0f, -1.0f, 1.0f}, {-1.0f, 0.0f, 1.0f},</div>
+<div class="line">    {1.0f, -1.0f, 1.0f},   {1.0f, 0.0f, 1.0f},   {-1.0f, 1.0f, -1.0f}, {1.0f, 1.0f, -1.0f},</div>
+<div class="line">    {1.0f, 1.0f, 1.0f},    {-1.0f, 1.0f, 1.0f},</div>
+<div class="line">}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7d51beb69e3158692b56d35b8620efbb" name="a7d51beb69e3158692b56d35b8620efbb"></a>
@@ -4549,8 +4175,12 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {<a class="code hl_enumvalue" href="GXEnum_8h.html#a8779cb27c7377ca867c0d8ba6fc2f71eaf9a870bac0f96ffcee4d35bdeb383faa">GX_CH_RED</a>, <a class="code hl_enumvalue" href="GXEnum_8h.html#a8779cb27c7377ca867c0d8ba6fc2f71ea830b63413ce052476d2530c26442b98f">GX_CH_GREEN</a>, <a class="code hl_enumvalue" href="GXEnum_8h.html#a8779cb27c7377ca867c0d8ba6fc2f71ea52b4ac458f8f3531f01cfb6bc6491441">GX_CH_BLUE</a>,</div>
-<div class="line">                                                    <a class="code hl_enumvalue" href="GXEnum_8h.html#a8779cb27c7377ca867c0d8ba6fc2f71ea996f462db57491cd93f7029051c346ca">GX_CH_ALPHA</a>}</div>
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    <a class="code hl_enumvalue" href="GXEnum_8h.html#a8779cb27c7377ca867c0d8ba6fc2f71eaf9a870bac0f96ffcee4d35bdeb383faa">GX_CH_RED</a>,</div>
+<div class="line">    <a class="code hl_enumvalue" href="GXEnum_8h.html#a8779cb27c7377ca867c0d8ba6fc2f71ea830b63413ce052476d2530c26442b98f">GX_CH_GREEN</a>,</div>
+<div class="line">    <a class="code hl_enumvalue" href="GXEnum_8h.html#a8779cb27c7377ca867c0d8ba6fc2f71ea52b4ac458f8f3531f01cfb6bc6491441">GX_CH_BLUE</a>,</div>
+<div class="line">    <a class="code hl_enumvalue" href="GXEnum_8h.html#a8779cb27c7377ca867c0d8ba6fc2f71ea996f462db57491cd93f7029051c346ca">GX_CH_ALPHA</a>,</div>
+<div class="line">}</div>
 <div class="ttc" id="aGXEnum_8h_html_a8779cb27c7377ca867c0d8ba6fc2f71ea52b4ac458f8f3531f01cfb6bc6491441"><div class="ttname"><a href="GXEnum_8h.html#a8779cb27c7377ca867c0d8ba6fc2f71ea52b4ac458f8f3531f01cfb6bc6491441">GX_CH_BLUE</a></div><div class="ttdeci">@ GX_CH_BLUE</div><div class="ttdef"><b>Definition:</b> GXEnum.h:307</div></div>
 <div class="ttc" id="aGXEnum_8h_html_a8779cb27c7377ca867c0d8ba6fc2f71ea830b63413ce052476d2530c26442b98f"><div class="ttname"><a href="GXEnum_8h.html#a8779cb27c7377ca867c0d8ba6fc2f71ea830b63413ce052476d2530c26442b98f">GX_CH_GREEN</a></div><div class="ttdeci">@ GX_CH_GREEN</div><div class="ttdef"><b>Definition:</b> GXEnum.h:306</div></div>
 <div class="ttc" id="aGXEnum_8h_html_a8779cb27c7377ca867c0d8ba6fc2f71ea996f462db57491cd93f7029051c346ca"><div class="ttname"><a href="GXEnum_8h.html#a8779cb27c7377ca867c0d8ba6fc2f71ea996f462db57491cd93f7029051c346ca">GX_CH_ALPHA</a></div><div class="ttdeci">@ GX_CH_ALPHA</div><div class="ttdef"><b>Definition:</b> GXEnum.h:308</div></div>
@@ -4578,12 +4208,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x08,</div>
-<div class="line">    0x0A,</div>
-<div class="line">    0x0C,</div>
-<div class="line">    0x0E,</div>
-<div class="line">    0x10,</div>
-<div class="line">    0x11,</div>
+<div class="line">    0x08, 0x0A, 0x0C, 0x0E, 0x10, 0x11,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
@@ -5639,8 +5264,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac0b703f4a485d7baac8df72a889e96a0" name="ac0b703f4a485d7baac8df72a889e96a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0b703f4a485d7baac8df72a889e96a0">&#9670;&#160;</a></span>mtx_adj</h2>
+<a id="ae0135a0460de05b5a21061e92acc62db" name="ae0135a0460de05b5a21061e92acc62db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0135a0460de05b5a21061e92acc62db">&#9670;&#160;</a></span>mtx_adj</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5649,7 +5274,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> mtx_adj[48]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="mtx_8h.html#afc58fc7f5dd84f97da2dab35156849ae">Mtx</a> mtx_adj</td>
         </tr>
       </table>
   </td>
@@ -5659,9 +5284,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x3F, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x3F, 0x00, 0x00, 0x00,</div>
-<div class="line">    0x00, 0x00, 0x00, 0x00, 0xBF, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x3F, 0x00, 0x00, 0x00,</div>
-<div class="line">    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x3F, 0x80, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,</div>
+<div class="line">    {0.5f, 0.0f, 0.0f, 0.5f},</div>
+<div class="line">    {0.0f, -0.5f, 0.0f, 0.5f},</div>
+<div class="line">    {0.0f, 0.0f, 1.0f, 0.0f},</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>

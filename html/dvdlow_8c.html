@@ -90,28 +90,13 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="dvdlow_8h_source.html">dolphin/dvd/dvdlow.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="dvd_8h_source.html">dolphin/dvd/dvd.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OSAlarm_8h_source.html">dolphin/os/OSAlarm.h</a>&quot;</code><br />
-<code>#include &quot;asm/dolphin/dvd/dvdlow/__DVDInitWA.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/dvd/dvdlow/__DVDInterruptHandler.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/dvd/dvdlow/AlarmHandler.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/dvd/dvdlow/Read.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/dvd/dvdlow/SeekTwiceBeforeRead.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/dvd/dvdlow/DVDLowRead.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/dvd/dvdlow/DVDLowSeek.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/dvd/dvdlow/DVDLowWaitCoverClose.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/dvd/dvdlow/DVDLowReadDiskID.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/dvd/dvdlow/DVDLowStopMotor.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/dvd/dvdlow/DVDLowRequestError.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/dvd/dvdlow/DVDLowInquiry.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/dvd/dvdlow/DVDLowAudioStream.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/dvd/dvdlow/DVDLowRequestAudioStatus.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/dvd/dvdlow/DVDLowAudioBufferConfig.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/dvd/dvdlow/DVDLowReset.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/dvd/dvdlow/DVDLowBreak.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/dvd/dvdlow/__DVDLowSetWAType.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/dvd/dvdlow/__DVDLowTestAlarm.s&quot;</code><br />
+<code>#include &quot;<a class="el" href="OSTime_8h_source.html">dolphin/os/OSTime.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OSContext_8h_source.html">dolphin/os/OSContext.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OSReset_8h_source.html">dolphin/os/OSReset.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for dvdlow.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -123,11 +108,15 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDVDBuffer.html">DVDBuffer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDVDCommand.html">DVDCommand</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a7c124abe9ed36ff71928c6f0185f660a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDVDBuffer.html">DVDBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a7c124abe9ed36ff71928c6f0185f660a">DVDBuffer</a></td></tr>
+<tr class="separator:a7c124abe9ed36ff71928c6f0185f660a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cd27c2b185d2f753de671d4d31081a3"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDVDCommand.html">DVDCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a8cd27c2b185d2f753de671d4d31081a3">DVDCommand</a></td></tr>
 <tr class="separator:a8cd27c2b185d2f753de671d4d31081a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -135,46 +124,46 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ad541f0dc9b439de821121de85c6c5f11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ad541f0dc9b439de821121de85c6c5f11">__DVDInitWA</a> ()</td></tr>
 <tr class="separator:ad541f0dc9b439de821121de85c6c5f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac9528aad94fe4fcd72a04471fbadddc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#aac9528aad94fe4fcd72a04471fbadddc">__DVDInterruptHandler</a> ()</td></tr>
-<tr class="separator:aac9528aad94fe4fcd72a04471fbadddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dd6f3034ead4aca934d65ff1d220d81"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a4dd6f3034ead4aca934d65ff1d220d81">AlarmHandler</a> ()</td></tr>
-<tr class="separator:a4dd6f3034ead4aca934d65ff1d220d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a894ddd9a6524664e2d7bd6c977787cba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a894ddd9a6524664e2d7bd6c977787cba">__DVDInterruptHandler</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> arg0, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
+<tr class="separator:a894ddd9a6524664e2d7bd6c977787cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ebed606d1166c85186a7692f8fbc04b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a1ebed606d1166c85186a7692f8fbc04b">AlarmHandler</a> ()</td></tr>
+<tr class="separator:a1ebed606d1166c85186a7692f8fbc04b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36516127fc96c72c012ff8ef12f20048"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a36516127fc96c72c012ff8ef12f20048">AlarmHandlerForTimeout</a> ()</td></tr>
 <tr class="separator:a36516127fc96c72c012ff8ef12f20048"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae38c8ff46b3e52847a226c65968ef154"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ae38c8ff46b3e52847a226c65968ef154">Read</a> ()</td></tr>
-<tr class="separator:ae38c8ff46b3e52847a226c65968ef154"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e14b60e4c797c2155a9625499903c1f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a0e14b60e4c797c2155a9625499903c1f">SeekTwiceBeforeRead</a> ()</td></tr>
-<tr class="separator:a0e14b60e4c797c2155a9625499903c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32624e963ba1a6c76b13f22286a76ae8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a32624e963ba1a6c76b13f22286a76ae8">DVDLowRead</a> ()</td></tr>
-<tr class="separator:a32624e963ba1a6c76b13f22286a76ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3e420238564dcfd67b4c3f41cd171bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#aa3e420238564dcfd67b4c3f41cd171bf">DVDLowSeek</a> ()</td></tr>
-<tr class="separator:aa3e420238564dcfd67b4c3f41cd171bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47e39319c35802c6dad1c717a7fe4355"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a47e39319c35802c6dad1c717a7fe4355">DVDLowWaitCoverClose</a> ()</td></tr>
-<tr class="separator:a47e39319c35802c6dad1c717a7fe4355"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a9845c6a8e7244a74c47274875b9db2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a7a9845c6a8e7244a74c47274875b9db2">DVDLowReadDiskID</a> ()</td></tr>
-<tr class="separator:a7a9845c6a8e7244a74c47274875b9db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab705ef9373a3a9cfadc906dfd4a577ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ab705ef9373a3a9cfadc906dfd4a577ca">DVDLowStopMotor</a> ()</td></tr>
-<tr class="separator:ab705ef9373a3a9cfadc906dfd4a577ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f558ec49ec70eae563b90f1741afe8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a2f558ec49ec70eae563b90f1741afe8a">DVDLowRequestError</a> ()</td></tr>
-<tr class="separator:a2f558ec49ec70eae563b90f1741afe8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58341d1bc014d612af307616716e22db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a58341d1bc014d612af307616716e22db">DVDLowInquiry</a> ()</td></tr>
-<tr class="separator:a58341d1bc014d612af307616716e22db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ba04174d8bc491a3f9b3938ac982593"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a7ba04174d8bc491a3f9b3938ac982593">DVDLowAudioStream</a> ()</td></tr>
-<tr class="separator:a7ba04174d8bc491a3f9b3938ac982593"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54fdfb6888d4e09e462e19c81e334ff6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a54fdfb6888d4e09e462e19c81e334ff6">DVDLowRequestAudioStatus</a> ()</td></tr>
-<tr class="separator:a54fdfb6888d4e09e462e19c81e334ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9edfe1ed6f9ba0d677e48f8262f625e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ad9edfe1ed6f9ba0d677e48f8262f625e">DVDLowAudioBufferConfig</a> ()</td></tr>
-<tr class="separator:ad9edfe1ed6f9ba0d677e48f8262f625e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a439c7e8e315dd6f3579a8d13b8e645"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a5a439c7e8e315dd6f3579a8d13b8e645">Read</a> (void *arg0, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> arg1, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> arg2, <a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a> <a class="el" href="m__Do__dvd__thread_8cpp.html#a6740c015dd9c1f64fe72cfe15f1db677">cb</a>)</td></tr>
+<tr class="separator:a5a439c7e8e315dd6f3579a8d13b8e645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade64b8b50a0f949a232b08855542fd4a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ade64b8b50a0f949a232b08855542fd4a">SeekTwiceBeforeRead</a> (void *arg0, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> arg1, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> arg2, <a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a> <a class="el" href="m__Do__dvd__thread_8cpp.html#a6740c015dd9c1f64fe72cfe15f1db677">cb</a>)</td></tr>
+<tr class="separator:ade64b8b50a0f949a232b08855542fd4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af16e72e78de3d4421e0ae5dea0b14166"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#af16e72e78de3d4421e0ae5dea0b14166">DVDLowRead</a> (void *arg0, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> arg1, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> arg2, <a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a> <a class="el" href="m__Do__dvd__thread_8cpp.html#a6740c015dd9c1f64fe72cfe15f1db677">cb</a>)</td></tr>
+<tr class="separator:af16e72e78de3d4421e0ae5dea0b14166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94a206e0d6a0ed6c9d0d489aab54636d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a94a206e0d6a0ed6c9d0d489aab54636d">DVDLowSeek</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> arg0, <a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a> <a class="el" href="m__Do__dvd__thread_8cpp.html#a6740c015dd9c1f64fe72cfe15f1db677">cb</a>)</td></tr>
+<tr class="separator:a94a206e0d6a0ed6c9d0d489aab54636d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0629cc9eae4e7a371bcc5ee1c089c7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ac0629cc9eae4e7a371bcc5ee1c089c7e">DVDLowWaitCoverClose</a> (<a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a> <a class="el" href="m__Do__dvd__thread_8cpp.html#a6740c015dd9c1f64fe72cfe15f1db677">cb</a>)</td></tr>
+<tr class="separator:ac0629cc9eae4e7a371bcc5ee1c089c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d1b10db9b2a3fa835482dc6bf5f60ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a6d1b10db9b2a3fa835482dc6bf5f60ca">DVDLowReadDiskID</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> arg0, <a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a> <a class="el" href="m__Do__dvd__thread_8cpp.html#a6740c015dd9c1f64fe72cfe15f1db677">cb</a>)</td></tr>
+<tr class="separator:a6d1b10db9b2a3fa835482dc6bf5f60ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a979d5a891d9679143931c2328782b15f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a979d5a891d9679143931c2328782b15f">DVDLowStopMotor</a> (<a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a> <a class="el" href="m__Do__dvd__thread_8cpp.html#a6740c015dd9c1f64fe72cfe15f1db677">cb</a>)</td></tr>
+<tr class="separator:a979d5a891d9679143931c2328782b15f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad22b17ce377aa5f5e9702b6a89bbfb09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ad22b17ce377aa5f5e9702b6a89bbfb09">DVDLowRequestError</a> (<a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a> <a class="el" href="m__Do__dvd__thread_8cpp.html#a6740c015dd9c1f64fe72cfe15f1db677">cb</a>)</td></tr>
+<tr class="separator:ad22b17ce377aa5f5e9702b6a89bbfb09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b5635d0cf0661ded095896a4381986"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ab9b5635d0cf0661ded095896a4381986">DVDLowInquiry</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> arg0, <a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a> <a class="el" href="m__Do__dvd__thread_8cpp.html#a6740c015dd9c1f64fe72cfe15f1db677">cb</a>)</td></tr>
+<tr class="separator:ab9b5635d0cf0661ded095896a4381986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcfee82ae1fd547edb159fbacf331a04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#abcfee82ae1fd547edb159fbacf331a04">DVDLowAudioStream</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> arg0, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> arg1, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> arg2, <a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a> <a class="el" href="m__Do__dvd__thread_8cpp.html#a6740c015dd9c1f64fe72cfe15f1db677">cb</a>)</td></tr>
+<tr class="separator:abcfee82ae1fd547edb159fbacf331a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a251575dc525e3fafcc1e8a2f61d5272f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a251575dc525e3fafcc1e8a2f61d5272f">DVDLowRequestAudioStatus</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> arg0, <a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a> <a class="el" href="m__Do__dvd__thread_8cpp.html#a6740c015dd9c1f64fe72cfe15f1db677">cb</a>)</td></tr>
+<tr class="separator:a251575dc525e3fafcc1e8a2f61d5272f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56ee1a61740bdd64551a0e7da1c78c10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a56ee1a61740bdd64551a0e7da1c78c10">DVDLowAudioBufferConfig</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> arg0, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> arg1, <a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a> <a class="el" href="m__Do__dvd__thread_8cpp.html#a6740c015dd9c1f64fe72cfe15f1db677">cb</a>)</td></tr>
+<tr class="separator:a56ee1a61740bdd64551a0e7da1c78c10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27749984bf02b7d28922845bac31e301"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a27749984bf02b7d28922845bac31e301">DVDLowReset</a> ()</td></tr>
 <tr class="separator:a27749984bf02b7d28922845bac31e301"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64f9736f64c1abe3f7899fc4493d200d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a64f9736f64c1abe3f7899fc4493d200d">DVDLowBreak</a> ()</td></tr>
-<tr class="separator:a64f9736f64c1abe3f7899fc4493d200d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a643b5038425a74a6e3336953b4588269"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a643b5038425a74a6e3336953b4588269">DVDLowBreak</a> ()</td></tr>
+<tr class="separator:a643b5038425a74a6e3336953b4588269"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac864d2286800f8386fd8e8ff2cef48cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ac864d2286800f8386fd8e8ff2cef48cb">DVDLowClearCallback</a> ()</td></tr>
 <tr class="separator:ac864d2286800f8386fd8e8ff2cef48cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bcff05e083dcd2818af26ef5a16f0af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a9bcff05e083dcd2818af26ef5a16f0af">__DVDLowSetWAType</a> ()</td></tr>
-<tr class="separator:a9bcff05e083dcd2818af26ef5a16f0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a6b03d997f433263bffed94c77b0904"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a4a6b03d997f433263bffed94c77b0904">__DVDLowTestAlarm</a> ()</td></tr>
-<tr class="separator:a4a6b03d997f433263bffed94c77b0904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73cebfdd886ea4345b2a06142acad352"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a73cebfdd886ea4345b2a06142acad352">__DVDLowSetWAType</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> arg0, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> arg1)</td></tr>
+<tr class="separator:a73cebfdd886ea4345b2a06142acad352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3407d74c2121ea24acd8efc16477454"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#aa3407d74c2121ea24acd8efc16477454">__DVDLowTestAlarm</a> (<a class="el" href="structOSAlarm.html">OSAlarm</a> *alarm)</td></tr>
+<tr class="separator:aa3407d74c2121ea24acd8efc16477454"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6db83ea94e00550dff9ed61435babe5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#af6db83ea94e00550dff9ed61435babe5">OSInitAlarm</a> ()</td></tr>
 <tr class="separator:af6db83ea94e00550dff9ed61435babe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4036cad6c05aa01ade7aacfcd4874b94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a4036cad6c05aa01ade7aacfcd4874b94">OSCreateAlarm</a> ()</td></tr>
@@ -183,75 +172,87 @@ Functions</h2></td></tr>
 <tr class="separator:a8b1eed12a179c480bc5ccda5abc42d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b6b438fc3e4ceeaed24cbfa3dca2851"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a8b6b438fc3e4ceeaed24cbfa3dca2851">OSCancelAlarm</a> ()</td></tr>
 <tr class="separator:a8b6b438fc3e4ceeaed24cbfa3dca2851"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a184beaa362f37ba6f41541041df12976"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a184beaa362f37ba6f41541041df12976">OSSetCurrentContext</a> ()</td></tr>
-<tr class="separator:a184beaa362f37ba6f41541041df12976"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b34b2f4e5276b3852fc3b025a023d14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a3b34b2f4e5276b3852fc3b025a023d14">OSClearContext</a> ()</td></tr>
-<tr class="separator:a3b34b2f4e5276b3852fc3b025a023d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65b7dd4c9756f26d16dcf8f0dedb07bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a65b7dd4c9756f26d16dcf8f0dedb07bf">OSDisableInterrupts</a> ()</td></tr>
-<tr class="separator:a65b7dd4c9756f26d16dcf8f0dedb07bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14b5cc2befa83d8710fba14f4de14fd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a14b5cc2befa83d8710fba14f4de14fd9">OSRestoreInterrupts</a> ()</td></tr>
-<tr class="separator:a14b5cc2befa83d8710fba14f4de14fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcd904277ca039ab62ea0425c311e807"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#abcd904277ca039ab62ea0425c311e807">OSDisableInterrupts</a> ()</td></tr>
+<tr class="separator:abcd904277ca039ab62ea0425c311e807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00b73d3571ff0d32a3489db315ab975e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a00b73d3571ff0d32a3489db315ab975e">OSRestoreInterrupts</a> (<a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> enabled)</td></tr>
+<tr class="separator:a00b73d3571ff0d32a3489db315ab975e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e60365da6a6649f8f35881410c7759a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a1e60365da6a6649f8f35881410c7759a">__OSMaskInterrupts</a> ()</td></tr>
 <tr class="separator:a1e60365da6a6649f8f35881410c7759a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab46303b88220d14950cdd47b46a4f9f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="OSTime_8h.html#a3d32c840b403a8d37875867a7ea9b381">OSTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ab46303b88220d14950cdd47b46a4f9f6">__OSGetSystemTime</a> ()</td></tr>
 <tr class="separator:ab46303b88220d14950cdd47b46a4f9f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6ecc26233a14298c3cac326e557f985"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ad6ecc26233a14298c3cac326e557f985">DVDGetCurrentDiskID</a> ()</td></tr>
-<tr class="separator:ad6ecc26233a14298c3cac326e557f985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af782b8657b2637bf66177b7327c74fe6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#af782b8657b2637bf66177b7327c74fe6">AlarmHandler</a> (<a class="el" href="structOSAlarm.html">OSAlarm</a> *alarm, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
+<tr class="separator:af782b8657b2637bf66177b7327c74fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86b72646ff01e3bbfb0d91937775144d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a86b72646ff01e3bbfb0d91937775144d">AlarmHandlerForTimeout</a> (<a class="el" href="structOSAlarm.html">OSAlarm</a> *alarm, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
 <tr class="separator:a86b72646ff01e3bbfb0d91937775144d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c426b1e67f147d0559953c090f6dfe7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a0c426b1e67f147d0559953c090f6dfe7">__setAlarm</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> seconds)</td></tr>
+<tr class="separator:a0c426b1e67f147d0559953c090f6dfe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15b7ce73521964abaa4eda262e179e86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a15b7ce73521964abaa4eda262e179e86">HitCache</a> ()</td></tr>
+<tr class="separator:a15b7ce73521964abaa4eda262e179e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a874f354a14bfc5b982fb943a81b445bd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a874f354a14bfc5b982fb943a81b445bd">DoJustRead</a> (void *addr, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> length, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> <a class="el" href="d__gameover_8cpp.html#a278744385c8918b3813d6136e5e37b30">offset</a>, <a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a> callback)</td></tr>
+<tr class="separator:a874f354a14bfc5b982fb943a81b445bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c5085ceebdeaec56b6bf6e22331147b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a6c5085ceebdeaec56b6bf6e22331147b">WaitBeforeRead</a> (void *addr, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> length, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> <a class="el" href="d__gameover_8cpp.html#a278744385c8918b3813d6136e5e37b30">offset</a>, <a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a> callback, <a class="el" href="OSTime_8h.html#a3d32c840b403a8d37875867a7ea9b381">OSTime</a> timeout)</td></tr>
+<tr class="separator:a6c5085ceebdeaec56b6bf6e22331147b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a05c83af9e9fc19aee1c64ecc76e422ba"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a05c83af9e9fc19aee1c64ecc76e422ba">CommandList</a> [60+4]</td></tr>
-<tr class="separator:a05c83af9e9fc19aee1c64ecc76e422ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf47d3f9beac01acd8adf272b4e9a79f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#adf47d3f9beac01acd8adf272b4e9a79f">StopAtNextInt</a> [4]</td></tr>
-<tr class="separator:adf47d3f9beac01acd8adf272b4e9a79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8dad1335c48d70a183d116d049c017d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#af8dad1335c48d70a183d116d049c017d">LastLength</a> [4]</td></tr>
-<tr class="separator:af8dad1335c48d70a183d116d049c017d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2160dff4907d7e3ebcdde78ec0b79c1f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structDVDCommand.html">DVDCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a2160dff4907d7e3ebcdde78ec0b79c1f">CommandList</a> [3]</td></tr>
+<tr class="separator:a2160dff4907d7e3ebcdde78ec0b79c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad209bd8691fc1e67ac76241498764cd9"><td class="memItemLeft" align="right" valign="top">static volatile <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ad209bd8691fc1e67ac76241498764cd9">StopAtNextInt</a></td></tr>
+<tr class="separator:ad209bd8691fc1e67ac76241498764cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78bbb1c0774f4fb98c31265de6fffe9f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a78bbb1c0774f4fb98c31265de6fffe9f">LastLength</a></td></tr>
+<tr class="separator:a78bbb1c0774f4fb98c31265de6fffe9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a296cf9939c52623810e2072430bcb3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a7a296cf9939c52623810e2072430bcb3">Callback</a></td></tr>
 <tr class="separator:a7a296cf9939c52623810e2072430bcb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0727c1e8c7353d03e02f94d4d391304a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a0727c1e8c7353d03e02f94d4d391304a">ResetCoverCallback</a> [4]</td></tr>
-<tr class="separator:a0727c1e8c7353d03e02f94d4d391304a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a472586865e635e09caea5176d9c30f9c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a472586865e635e09caea5176d9c30f9c">LastResetEnd</a> [4]</td></tr>
-<tr class="separator:a472586865e635e09caea5176d9c30f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bfcbfefa4d81d3ed22b2c737e8a2018"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a8bfcbfefa4d81d3ed22b2c737e8a2018">data_80451724</a> [4]</td></tr>
-<tr class="separator:a8bfcbfefa4d81d3ed22b2c737e8a2018"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad69aec4a037ef7bd62e4b63a2583c95d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ad69aec4a037ef7bd62e4b63a2583c95d">ResetOccurred</a> [4]</td></tr>
-<tr class="separator:ad69aec4a037ef7bd62e4b63a2583c95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f50c42eafde73327090ae2a918acaeb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a8f50c42eafde73327090ae2a918acaeb">WaitingCoverClose</a></td></tr>
-<tr class="separator:a8f50c42eafde73327090ae2a918acaeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae40e1ffc700bff151ff6258b7a8b3551"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ae40e1ffc700bff151ff6258b7a8b3551">Breaking</a> [4]</td></tr>
-<tr class="separator:ae40e1ffc700bff151ff6258b7a8b3551"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53b4debab236b9b6e140dfad12118eab"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a53b4debab236b9b6e140dfad12118eab">WorkAroundType</a> [4]</td></tr>
-<tr class="separator:a53b4debab236b9b6e140dfad12118eab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2776ea8a66ea3ce1a6750ad5e9c26be"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ad2776ea8a66ea3ce1a6750ad5e9c26be">WorkAroundSeekLocation</a> [4+4]</td></tr>
-<tr class="separator:ad2776ea8a66ea3ce1a6750ad5e9c26be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5a89719be19be6de55f9566f041a274"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ac5a89719be19be6de55f9566f041a274">LastReadFinished</a> [4]</td></tr>
-<tr class="separator:ac5a89719be19be6de55f9566f041a274"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8918d290334430faa887463ea4bfb69f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a8918d290334430faa887463ea4bfb69f">data_80451744</a> [4]</td></tr>
-<tr class="separator:a8918d290334430faa887463ea4bfb69f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25368212a9313b110dc95e83ab9d41b0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a25368212a9313b110dc95e83ab9d41b0">LastReadIssued</a> [4]</td></tr>
-<tr class="separator:a25368212a9313b110dc95e83ab9d41b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67e6da6462cd16c000b4be606e59d6f3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a67e6da6462cd16c000b4be606e59d6f3">data_8045174C</a> [4]</td></tr>
-<tr class="separator:a67e6da6462cd16c000b4be606e59d6f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e062407c219174150d56ea105071bfe"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a8e062407c219174150d56ea105071bfe">LastCommandWasRead</a> [4]</td></tr>
-<tr class="separator:a8e062407c219174150d56ea105071bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcb2462de99b204fc5236a4861f8f9b1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#abcb2462de99b204fc5236a4861f8f9b1">NextCommandNumber</a></td></tr>
-<tr class="separator:abcb2462de99b204fc5236a4861f8f9b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac74d08b70ea968dadfcd4e7d1cc73a27"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ac74d08b70ea968dadfcd4e7d1cc73a27">AlarmForWA</a> [40]</td></tr>
-<tr class="separator:ac74d08b70ea968dadfcd4e7d1cc73a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2411ed1a42e36fd87c36944856a2e036"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a2411ed1a42e36fd87c36944856a2e036">AlarmForTimeout</a> [40]</td></tr>
-<tr class="separator:a2411ed1a42e36fd87c36944856a2e036"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c9eec72373c79e5eed0e2a0ec0c6259"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a3c9eec72373c79e5eed0e2a0ec0c6259">AlarmForBreak</a> [40]</td></tr>
-<tr class="separator:a3c9eec72373c79e5eed0e2a0ec0c6259"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a434e066f1f9be85f1e2cabd09c8314c4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a434e066f1f9be85f1e2cabd09c8314c4">Prev</a> [12]</td></tr>
-<tr class="separator:a434e066f1f9be85f1e2cabd09c8314c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5784a60932f94199b7edc15143b5838a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a5784a60932f94199b7edc15143b5838a">Curr</a> [12]</td></tr>
-<tr class="separator:a5784a60932f94199b7edc15143b5838a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e2338378563bb637347617d1c6934db"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a6e2338378563bb637347617d1c6934db">FirstRead</a> [1+1]</td></tr>
-<tr class="separator:a6e2338378563bb637347617d1c6934db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9ee8e6cdca2aeb2fa3da0a983bdb9b9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ab9ee8e6cdca2aeb2fa3da0a983bdb9b9">ResetCoverCallback</a></td></tr>
+<tr class="separator:ab9ee8e6cdca2aeb2fa3da0a983bdb9b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef0b19327da015a3d75f61bb2e2aec88"><td class="memItemLeft" align="right" valign="top">static volatile <a class="el" href="OSTime_8h.html#a3d32c840b403a8d37875867a7ea9b381">OSTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#aef0b19327da015a3d75f61bb2e2aec88">LastResetEnd</a></td></tr>
+<tr class="separator:aef0b19327da015a3d75f61bb2e2aec88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0dc0237ce0050721d2543ba0990e42c"><td class="memItemLeft" align="right" valign="top">static volatile <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#aa0dc0237ce0050721d2543ba0990e42c">ResetOccurred</a></td></tr>
+<tr class="separator:aa0dc0237ce0050721d2543ba0990e42c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc3cde4df9b502e6e27a71e1ab00e1f4"><td class="memItemLeft" align="right" valign="top">static volatile <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#abc3cde4df9b502e6e27a71e1ab00e1f4">WaitingCoverClose</a></td></tr>
+<tr class="separator:abc3cde4df9b502e6e27a71e1ab00e1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a377297e22b084c49b478fa3fcbe5daa9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a377297e22b084c49b478fa3fcbe5daa9">Breaking</a></td></tr>
+<tr class="separator:a377297e22b084c49b478fa3fcbe5daa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28b7db61f0807ffd37c488ffc87584e6"><td class="memItemLeft" align="right" valign="top">static volatile <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a28b7db61f0807ffd37c488ffc87584e6">WorkAroundType</a></td></tr>
+<tr class="separator:a28b7db61f0807ffd37c488ffc87584e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41df260c107a081dbbc799272cfce6c5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a41df260c107a081dbbc799272cfce6c5">WorkAroundSeekLocation</a> [2]</td></tr>
+<tr class="separator:a41df260c107a081dbbc799272cfce6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace03238b015f8113cda08c6f1fdf98ae"><td class="memItemLeft" align="right" valign="top">static volatile <a class="el" href="OSTime_8h.html#a3d32c840b403a8d37875867a7ea9b381">OSTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ace03238b015f8113cda08c6f1fdf98ae">LastReadFinished</a></td></tr>
+<tr class="separator:ace03238b015f8113cda08c6f1fdf98ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26dd48acac705568c896af20d0fc1104"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="OSTime_8h.html#a3d32c840b403a8d37875867a7ea9b381">OSTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a26dd48acac705568c896af20d0fc1104">LastReadIssued</a></td></tr>
+<tr class="separator:a26dd48acac705568c896af20d0fc1104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af37088b0dff0743fc62c731496294044"><td class="memItemLeft" align="right" valign="top">static volatile <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#af37088b0dff0743fc62c731496294044">LastCommandWasRead</a></td></tr>
+<tr class="separator:af37088b0dff0743fc62c731496294044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe9bb4bc63724bc471a28b6dfb77ddb3"><td class="memItemLeft" align="right" valign="top">static volatile <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#abe9bb4bc63724bc471a28b6dfb77ddb3">NextCommandNumber</a></td></tr>
+<tr class="separator:abe9bb4bc63724bc471a28b6dfb77ddb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8140f796a3a1df409d50771d519acc9d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structOSAlarm.html">OSAlarm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a8140f796a3a1df409d50771d519acc9d">AlarmForWA</a></td></tr>
+<tr class="separator:a8140f796a3a1df409d50771d519acc9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a482ca2f1b23c968b8089aae7bffe7dda"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structOSAlarm.html">OSAlarm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a482ca2f1b23c968b8089aae7bffe7dda">AlarmForTimeout</a></td></tr>
+<tr class="separator:a482ca2f1b23c968b8089aae7bffe7dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bc4b19095bb58277f0d205520da588c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structOSAlarm.html">OSAlarm</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a7bc4b19095bb58277f0d205520da588c">AlarmForBreak</a></td></tr>
+<tr class="separator:a7bc4b19095bb58277f0d205520da588c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8650e6f1f024671e17426e6ccc96daf2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structDVDBuffer.html">DVDBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a8650e6f1f024671e17426e6ccc96daf2">Prev</a></td></tr>
+<tr class="separator:a8650e6f1f024671e17426e6ccc96daf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39ef7c5e9e2d636341cf4b0396216136"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structDVDBuffer.html">DVDBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a39ef7c5e9e2d636341cf4b0396216136">Curr</a></td></tr>
+<tr class="separator:a39ef7c5e9e2d636341cf4b0396216136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d13300e7d7935abb5617060a74438cc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a1d13300e7d7935abb5617060a74438cc">FirstRead</a> = <a class="el" href="types_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td></tr>
+<tr class="separator:a1d13300e7d7935abb5617060a74438cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="a7c124abe9ed36ff71928c6f0185f660a" name="a7c124abe9ed36ff71928c6f0185f660a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c124abe9ed36ff71928c6f0185f660a">&#9670;&#160;</a></span>DVDBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structDVDBuffer.html">DVDBuffer</a> <a class="el" href="structDVDBuffer.html">DVDBuffer</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a8cd27c2b185d2f753de671d4d31081a3" name="a8cd27c2b185d2f753de671d4d31081a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8cd27c2b185d2f753de671d4d31081a3">&#9670;&#160;</a></span>DVDCommand</h2>
 
@@ -284,50 +285,73 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aac9528aad94fe4fcd72a04471fbadddc" name="aac9528aad94fe4fcd72a04471fbadddc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac9528aad94fe4fcd72a04471fbadddc">&#9670;&#160;</a></span>__DVDInterruptHandler()</h2>
+<a id="a894ddd9a6524664e2d7bd6c977787cba" name="a894ddd9a6524664e2d7bd6c977787cba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a894ddd9a6524664e2d7bd6c977787cba">&#9670;&#160;</a></span>__DVDInterruptHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __DVDInterruptHandler </td>
+          <td class="memname">void __DVDInterruptHandler </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>arg0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="structOSContext.html">OSContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a9bcff05e083dcd2818af26ef5a16f0af" name="a9bcff05e083dcd2818af26ef5a16f0af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bcff05e083dcd2818af26ef5a16f0af">&#9670;&#160;</a></span>__DVDLowSetWAType()</h2>
+<a id="a73cebfdd886ea4345b2a06142acad352" name="a73cebfdd886ea4345b2a06142acad352"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73cebfdd886ea4345b2a06142acad352">&#9670;&#160;</a></span>__DVDLowSetWAType()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __DVDLowSetWAType </td>
+          <td class="memname">void __DVDLowSetWAType </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>arg0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>arg1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a4a6b03d997f433263bffed94c77b0904" name="a4a6b03d997f433263bffed94c77b0904"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a6b03d997f433263bffed94c77b0904">&#9670;&#160;</a></span>__DVDLowTestAlarm()</h2>
+<a id="aa3407d74c2121ea24acd8efc16477454" name="aa3407d74c2121ea24acd8efc16477454"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3407d74c2121ea24acd8efc16477454">&#9670;&#160;</a></span>__DVDLowTestAlarm()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __DVDLowTestAlarm </td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> __DVDLowTestAlarm </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structOSAlarm.html">OSAlarm</a> *&#160;</td>
+          <td class="paramname"><em>alarm</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -369,8 +393,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4dd6f3034ead4aca934d65ff1d220d81" name="a4dd6f3034ead4aca934d65ff1d220d81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4dd6f3034ead4aca934d65ff1d220d81">&#9670;&#160;</a></span>AlarmHandler()</h2>
+<a id="a0c426b1e67f147d0559953c090f6dfe7" name="a0c426b1e67f147d0559953c090f6dfe7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c426b1e67f147d0559953c090f6dfe7">&#9670;&#160;</a></span>__setAlarm()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -379,10 +403,72 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void AlarmHandler </td>
+          <td class="memname">static void __setAlarm </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>seconds</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ebed606d1166c85186a7692f8fbc04b" name="a1ebed606d1166c85186a7692f8fbc04b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ebed606d1166c85186a7692f8fbc04b">&#9670;&#160;</a></span>AlarmHandler() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void AlarmHandler </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af782b8657b2637bf66177b7327c74fe6" name="af782b8657b2637bf66177b7327c74fe6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af782b8657b2637bf66177b7327c74fe6">&#9670;&#160;</a></span>AlarmHandler() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void AlarmHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structOSAlarm.html">OSAlarm</a> *&#160;</td>
+          <td class="paramname"><em>alarm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structOSContext.html">OSContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -455,65 +541,136 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad6ecc26233a14298c3cac326e557f985" name="ad6ecc26233a14298c3cac326e557f985"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6ecc26233a14298c3cac326e557f985">&#9670;&#160;</a></span>DVDGetCurrentDiskID()</h2>
+<a id="a874f354a14bfc5b982fb943a81b445bd" name="a874f354a14bfc5b982fb943a81b445bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a874f354a14bfc5b982fb943a81b445bd">&#9670;&#160;</a></span>DoJustRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void DoJustRead </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56ee1a61740bdd64551a0e7da1c78c10" name="a56ee1a61740bdd64551a0e7da1c78c10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56ee1a61740bdd64551a0e7da1c78c10">&#9670;&#160;</a></span>DVDLowAudioBufferConfig()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DVDGetCurrentDiskID </td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> DVDLowAudioBufferConfig </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>arg0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>arg1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ad9edfe1ed6f9ba0d677e48f8262f625e" name="ad9edfe1ed6f9ba0d677e48f8262f625e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9edfe1ed6f9ba0d677e48f8262f625e">&#9670;&#160;</a></span>DVDLowAudioBufferConfig()</h2>
+<a id="abcfee82ae1fd547edb159fbacf331a04" name="abcfee82ae1fd547edb159fbacf331a04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcfee82ae1fd547edb159fbacf331a04">&#9670;&#160;</a></span>DVDLowAudioStream()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DVDLowAudioBufferConfig </td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> DVDLowAudioStream </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>arg0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>arg1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>arg2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a7ba04174d8bc491a3f9b3938ac982593" name="a7ba04174d8bc491a3f9b3938ac982593"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ba04174d8bc491a3f9b3938ac982593">&#9670;&#160;</a></span>DVDLowAudioStream()</h2>
+<a id="a643b5038425a74a6e3336953b4588269" name="a643b5038425a74a6e3336953b4588269"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a643b5038425a74a6e3336953b4588269">&#9670;&#160;</a></span>DVDLowBreak()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DVDLowAudioStream </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a64f9736f64c1abe3f7899fc4493d200d" name="a64f9736f64c1abe3f7899fc4493d200d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64f9736f64c1abe3f7899fc4493d200d">&#9670;&#160;</a></span>DVDLowBreak()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DVDLowBreak </td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> DVDLowBreak </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -540,84 +697,141 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a58341d1bc014d612af307616716e22db" name="a58341d1bc014d612af307616716e22db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58341d1bc014d612af307616716e22db">&#9670;&#160;</a></span>DVDLowInquiry()</h2>
+<a id="ab9b5635d0cf0661ded095896a4381986" name="ab9b5635d0cf0661ded095896a4381986"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9b5635d0cf0661ded095896a4381986">&#9670;&#160;</a></span>DVDLowInquiry()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DVDLowInquiry </td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> DVDLowInquiry </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>arg0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a32624e963ba1a6c76b13f22286a76ae8" name="a32624e963ba1a6c76b13f22286a76ae8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32624e963ba1a6c76b13f22286a76ae8">&#9670;&#160;</a></span>DVDLowRead()</h2>
+<a id="af16e72e78de3d4421e0ae5dea0b14166" name="af16e72e78de3d4421e0ae5dea0b14166"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af16e72e78de3d4421e0ae5dea0b14166">&#9670;&#160;</a></span>DVDLowRead()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DVDLowRead </td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> DVDLowRead </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>arg1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>arg2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a7a9845c6a8e7244a74c47274875b9db2" name="a7a9845c6a8e7244a74c47274875b9db2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a9845c6a8e7244a74c47274875b9db2">&#9670;&#160;</a></span>DVDLowReadDiskID()</h2>
+<a id="a6d1b10db9b2a3fa835482dc6bf5f60ca" name="a6d1b10db9b2a3fa835482dc6bf5f60ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d1b10db9b2a3fa835482dc6bf5f60ca">&#9670;&#160;</a></span>DVDLowReadDiskID()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DVDLowReadDiskID </td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> DVDLowReadDiskID </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>arg0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a54fdfb6888d4e09e462e19c81e334ff6" name="a54fdfb6888d4e09e462e19c81e334ff6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54fdfb6888d4e09e462e19c81e334ff6">&#9670;&#160;</a></span>DVDLowRequestAudioStatus()</h2>
+<a id="a251575dc525e3fafcc1e8a2f61d5272f" name="a251575dc525e3fafcc1e8a2f61d5272f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a251575dc525e3fafcc1e8a2f61d5272f">&#9670;&#160;</a></span>DVDLowRequestAudioStatus()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DVDLowRequestAudioStatus </td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> DVDLowRequestAudioStatus </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>arg0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a2f558ec49ec70eae563b90f1741afe8a" name="a2f558ec49ec70eae563b90f1741afe8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f558ec49ec70eae563b90f1741afe8a">&#9670;&#160;</a></span>DVDLowRequestError()</h2>
+<a id="ad22b17ce377aa5f5e9702b6a89bbfb09" name="ad22b17ce377aa5f5e9702b6a89bbfb09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad22b17ce377aa5f5e9702b6a89bbfb09">&#9670;&#160;</a></span>DVDLowRequestError()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DVDLowRequestError </td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> DVDLowRequestError </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -642,16 +856,45 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aa3e420238564dcfd67b4c3f41cd171bf" name="aa3e420238564dcfd67b4c3f41cd171bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3e420238564dcfd67b4c3f41cd171bf">&#9670;&#160;</a></span>DVDLowSeek()</h2>
+<a id="a94a206e0d6a0ed6c9d0d489aab54636d" name="a94a206e0d6a0ed6c9d0d489aab54636d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94a206e0d6a0ed6c9d0d489aab54636d">&#9670;&#160;</a></span>DVDLowSeek()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DVDLowSeek </td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> DVDLowSeek </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>arg0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a979d5a891d9679143931c2328782b15f" name="a979d5a891d9679143931c2328782b15f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a979d5a891d9679143931c2328782b15f">&#9670;&#160;</a></span>DVDLowStopMotor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> DVDLowStopMotor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -659,16 +902,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ab705ef9373a3a9cfadc906dfd4a577ca" name="ab705ef9373a3a9cfadc906dfd4a577ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab705ef9373a3a9cfadc906dfd4a577ca">&#9670;&#160;</a></span>DVDLowStopMotor()</h2>
+<a id="ac0629cc9eae4e7a371bcc5ee1c089c7e" name="ac0629cc9eae4e7a371bcc5ee1c089c7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0629cc9eae4e7a371bcc5ee1c089c7e">&#9670;&#160;</a></span>DVDLowWaitCoverClose()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DVDLowStopMotor </td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> DVDLowWaitCoverClose </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -676,14 +920,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a47e39319c35802c6dad1c717a7fe4355" name="a47e39319c35802c6dad1c717a7fe4355"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47e39319c35802c6dad1c717a7fe4355">&#9670;&#160;</a></span>DVDLowWaitCoverClose()</h2>
+<a id="a15b7ce73521964abaa4eda262e179e86" name="a15b7ce73521964abaa4eda262e179e86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15b7ce73521964abaa4eda262e179e86">&#9670;&#160;</a></span>HitCache()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DVDLowWaitCoverClose </td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> HitCache </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -710,23 +954,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a3b34b2f4e5276b3852fc3b025a023d14" name="a3b34b2f4e5276b3852fc3b025a023d14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b34b2f4e5276b3852fc3b025a023d14">&#9670;&#160;</a></span>OSClearContext()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSClearContext </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a4036cad6c05aa01ade7aacfcd4874b94" name="a4036cad6c05aa01ade7aacfcd4874b94"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4036cad6c05aa01ade7aacfcd4874b94">&#9670;&#160;</a></span>OSCreateAlarm()</h2>
 
@@ -744,14 +971,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a65b7dd4c9756f26d16dcf8f0dedb07bf" name="a65b7dd4c9756f26d16dcf8f0dedb07bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65b7dd4c9756f26d16dcf8f0dedb07bf">&#9670;&#160;</a></span>OSDisableInterrupts()</h2>
+<a id="abcd904277ca039ab62ea0425c311e807" name="abcd904277ca039ab62ea0425c311e807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcd904277ca039ab62ea0425c311e807">&#9670;&#160;</a></span>OSDisableInterrupts()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void OSDisableInterrupts </td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> OSDisableInterrupts </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -778,8 +1005,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a14b5cc2befa83d8710fba14f4de14fd9" name="a14b5cc2befa83d8710fba14f4de14fd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14b5cc2befa83d8710fba14f4de14fd9">&#9670;&#160;</a></span>OSRestoreInterrupts()</h2>
+<a id="a00b73d3571ff0d32a3489db315ab975e" name="a00b73d3571ff0d32a3489db315ab975e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00b73d3571ff0d32a3489db315ab975e">&#9670;&#160;</a></span>OSRestoreInterrupts()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -787,7 +1014,8 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void OSRestoreInterrupts </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td>
+          <td class="paramname"><em>enabled</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -812,25 +1040,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a184beaa362f37ba6f41541041df12976" name="a184beaa362f37ba6f41541041df12976"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a184beaa362f37ba6f41541041df12976">&#9670;&#160;</a></span>OSSetCurrentContext()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSSetCurrentContext </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae38c8ff46b3e52847a226c65968ef154" name="ae38c8ff46b3e52847a226c65968ef154"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae38c8ff46b3e52847a226c65968ef154">&#9670;&#160;</a></span>Read()</h2>
+<a id="a5a439c7e8e315dd6f3579a8d13b8e645" name="a5a439c7e8e315dd6f3579a8d13b8e645"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a439c7e8e315dd6f3579a8d13b8e645">&#9670;&#160;</a></span>Read()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -839,10 +1050,33 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void Read </td>
+          <td class="memname">void Read </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>arg1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>arg2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -854,8 +1088,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a0e14b60e4c797c2155a9625499903c1f" name="a0e14b60e4c797c2155a9625499903c1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e14b60e4c797c2155a9625499903c1f">&#9670;&#160;</a></span>SeekTwiceBeforeRead()</h2>
+<a id="ade64b8b50a0f949a232b08855542fd4a" name="ade64b8b50a0f949a232b08855542fd4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade64b8b50a0f949a232b08855542fd4a">&#9670;&#160;</a></span>SeekTwiceBeforeRead()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -864,10 +1098,87 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void SeekTwiceBeforeRead </td>
+          <td class="memname">void SeekTwiceBeforeRead </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>arg1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>arg2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c5085ceebdeaec56b6bf6e22331147b" name="a6c5085ceebdeaec56b6bf6e22331147b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c5085ceebdeaec56b6bf6e22331147b">&#9670;&#160;</a></span>WaitBeforeRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void WaitBeforeRead </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a>&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="OSTime_8h.html#a3d32c840b403a8d37875867a7ea9b381">OSTime</a>&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -880,8 +1191,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a3c9eec72373c79e5eed0e2a0ec0c6259" name="a3c9eec72373c79e5eed0e2a0ec0c6259"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c9eec72373c79e5eed0e2a0ec0c6259">&#9670;&#160;</a></span>AlarmForBreak</h2>
+<a id="a7bc4b19095bb58277f0d205520da588c" name="a7bc4b19095bb58277f0d205520da588c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bc4b19095bb58277f0d205520da588c">&#9670;&#160;</a></span>AlarmForBreak</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -890,7 +1201,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> AlarmForBreak[40]</td>
+          <td class="memname"><a class="el" href="structOSAlarm.html">OSAlarm</a> AlarmForBreak</td>
         </tr>
       </table>
   </td>
@@ -902,8 +1213,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a2411ed1a42e36fd87c36944856a2e036" name="a2411ed1a42e36fd87c36944856a2e036"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2411ed1a42e36fd87c36944856a2e036">&#9670;&#160;</a></span>AlarmForTimeout</h2>
+<a id="a482ca2f1b23c968b8089aae7bffe7dda" name="a482ca2f1b23c968b8089aae7bffe7dda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a482ca2f1b23c968b8089aae7bffe7dda">&#9670;&#160;</a></span>AlarmForTimeout</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -912,7 +1223,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> AlarmForTimeout[40]</td>
+          <td class="memname"><a class="el" href="structOSAlarm.html">OSAlarm</a> AlarmForTimeout</td>
         </tr>
       </table>
   </td>
@@ -924,8 +1235,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac74d08b70ea968dadfcd4e7d1cc73a27" name="ac74d08b70ea968dadfcd4e7d1cc73a27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac74d08b70ea968dadfcd4e7d1cc73a27">&#9670;&#160;</a></span>AlarmForWA</h2>
+<a id="a8140f796a3a1df409d50771d519acc9d" name="a8140f796a3a1df409d50771d519acc9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8140f796a3a1df409d50771d519acc9d">&#9670;&#160;</a></span>AlarmForWA</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -934,7 +1245,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> AlarmForWA[40]</td>
+          <td class="memname"><a class="el" href="structOSAlarm.html">OSAlarm</a> AlarmForWA</td>
         </tr>
       </table>
   </td>
@@ -946,8 +1257,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae40e1ffc700bff151ff6258b7a8b3551" name="ae40e1ffc700bff151ff6258b7a8b3551"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae40e1ffc700bff151ff6258b7a8b3551">&#9670;&#160;</a></span>Breaking</h2>
+<a id="a377297e22b084c49b478fa3fcbe5daa9" name="a377297e22b084c49b478fa3fcbe5daa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a377297e22b084c49b478fa3fcbe5daa9">&#9670;&#160;</a></span>Breaking</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -956,7 +1267,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> Breaking[4]</td>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> Breaking</td>
         </tr>
       </table>
   </td>
@@ -994,8 +1305,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a05c83af9e9fc19aee1c64ecc76e422ba" name="a05c83af9e9fc19aee1c64ecc76e422ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05c83af9e9fc19aee1c64ecc76e422ba">&#9670;&#160;</a></span>CommandList</h2>
+<a id="a2160dff4907d7e3ebcdde78ec0b79c1f" name="a2160dff4907d7e3ebcdde78ec0b79c1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2160dff4907d7e3ebcdde78ec0b79c1f">&#9670;&#160;</a></span>CommandList</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1004,7 +1315,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> CommandList[60+4]</td>
+          <td class="memname"><a class="el" href="structDVDCommand.html">DVDCommand</a> CommandList[3]</td>
         </tr>
       </table>
   </td>
@@ -1016,8 +1327,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5784a60932f94199b7edc15143b5838a" name="a5784a60932f94199b7edc15143b5838a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5784a60932f94199b7edc15143b5838a">&#9670;&#160;</a></span>Curr</h2>
+<a id="a39ef7c5e9e2d636341cf4b0396216136" name="a39ef7c5e9e2d636341cf4b0396216136"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39ef7c5e9e2d636341cf4b0396216136">&#9670;&#160;</a></span>Curr</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1026,7 +1337,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> Curr[12]</td>
+          <td class="memname"><a class="el" href="structDVDBuffer.html">DVDBuffer</a> Curr</td>
         </tr>
       </table>
   </td>
@@ -1038,8 +1349,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a8bfcbfefa4d81d3ed22b2c737e8a2018" name="a8bfcbfefa4d81d3ed22b2c737e8a2018"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bfcbfefa4d81d3ed22b2c737e8a2018">&#9670;&#160;</a></span>data_80451724</h2>
+<a id="a1d13300e7d7935abb5617060a74438cc" name="a1d13300e7d7935abb5617060a74438cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d13300e7d7935abb5617060a74438cc">&#9670;&#160;</a></span>FirstRead</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1048,7 +1359,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_80451724[4]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> FirstRead = <a class="el" href="types_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></td>
         </tr>
       </table>
   </td>
@@ -1060,8 +1371,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a8918d290334430faa887463ea4bfb69f" name="a8918d290334430faa887463ea4bfb69f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8918d290334430faa887463ea4bfb69f">&#9670;&#160;</a></span>data_80451744</h2>
+<a id="af37088b0dff0743fc62c731496294044" name="af37088b0dff0743fc62c731496294044"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af37088b0dff0743fc62c731496294044">&#9670;&#160;</a></span>LastCommandWasRead</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1070,7 +1381,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_80451744[4]</td>
+          <td class="memname">volatile <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> LastCommandWasRead</td>
         </tr>
       </table>
   </td>
@@ -1082,8 +1393,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a67e6da6462cd16c000b4be606e59d6f3" name="a67e6da6462cd16c000b4be606e59d6f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67e6da6462cd16c000b4be606e59d6f3">&#9670;&#160;</a></span>data_8045174C</h2>
+<a id="a78bbb1c0774f4fb98c31265de6fffe9f" name="a78bbb1c0774f4fb98c31265de6fffe9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78bbb1c0774f4fb98c31265de6fffe9f">&#9670;&#160;</a></span>LastLength</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1092,7 +1403,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_8045174C[4]</td>
+          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> LastLength</td>
         </tr>
       </table>
   </td>
@@ -1104,8 +1415,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a6e2338378563bb637347617d1c6934db" name="a6e2338378563bb637347617d1c6934db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e2338378563bb637347617d1c6934db">&#9670;&#160;</a></span>FirstRead</h2>
+<a id="ace03238b015f8113cda08c6f1fdf98ae" name="ace03238b015f8113cda08c6f1fdf98ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace03238b015f8113cda08c6f1fdf98ae">&#9670;&#160;</a></span>LastReadFinished</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1114,34 +1425,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> FirstRead[1+1]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x00000001,</div>
-<div class="line">    </div>
-<div class="line">    0x00000000,</div>
-<div class="line">}</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a8e062407c219174150d56ea105071bfe" name="a8e062407c219174150d56ea105071bfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e062407c219174150d56ea105071bfe">&#9670;&#160;</a></span>LastCommandWasRead</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> LastCommandWasRead[4]</td>
+          <td class="memname">volatile <a class="el" href="OSTime_8h.html#a3d32c840b403a8d37875867a7ea9b381">OSTime</a> LastReadFinished</td>
         </tr>
       </table>
   </td>
@@ -1153,8 +1437,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="af8dad1335c48d70a183d116d049c017d" name="af8dad1335c48d70a183d116d049c017d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8dad1335c48d70a183d116d049c017d">&#9670;&#160;</a></span>LastLength</h2>
+<a id="a26dd48acac705568c896af20d0fc1104" name="a26dd48acac705568c896af20d0fc1104"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26dd48acac705568c896af20d0fc1104">&#9670;&#160;</a></span>LastReadIssued</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1163,7 +1447,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> LastLength[4]</td>
+          <td class="memname"><a class="el" href="OSTime_8h.html#a3d32c840b403a8d37875867a7ea9b381">OSTime</a> LastReadIssued</td>
         </tr>
       </table>
   </td>
@@ -1175,8 +1459,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac5a89719be19be6de55f9566f041a274" name="ac5a89719be19be6de55f9566f041a274"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5a89719be19be6de55f9566f041a274">&#9670;&#160;</a></span>LastReadFinished</h2>
+<a id="aef0b19327da015a3d75f61bb2e2aec88" name="aef0b19327da015a3d75f61bb2e2aec88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef0b19327da015a3d75f61bb2e2aec88">&#9670;&#160;</a></span>LastResetEnd</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1185,7 +1469,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> LastReadFinished[4]</td>
+          <td class="memname">volatile <a class="el" href="OSTime_8h.html#a3d32c840b403a8d37875867a7ea9b381">OSTime</a> LastResetEnd</td>
         </tr>
       </table>
   </td>
@@ -1197,8 +1481,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a25368212a9313b110dc95e83ab9d41b0" name="a25368212a9313b110dc95e83ab9d41b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25368212a9313b110dc95e83ab9d41b0">&#9670;&#160;</a></span>LastReadIssued</h2>
+<a id="abe9bb4bc63724bc471a28b6dfb77ddb3" name="abe9bb4bc63724bc471a28b6dfb77ddb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe9bb4bc63724bc471a28b6dfb77ddb3">&#9670;&#160;</a></span>NextCommandNumber</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1207,7 +1491,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> LastReadIssued[4]</td>
+          <td class="memname">volatile <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> NextCommandNumber</td>
         </tr>
       </table>
   </td>
@@ -1219,8 +1503,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a472586865e635e09caea5176d9c30f9c" name="a472586865e635e09caea5176d9c30f9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a472586865e635e09caea5176d9c30f9c">&#9670;&#160;</a></span>LastResetEnd</h2>
+<a id="a8650e6f1f024671e17426e6ccc96daf2" name="a8650e6f1f024671e17426e6ccc96daf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8650e6f1f024671e17426e6ccc96daf2">&#9670;&#160;</a></span>Prev</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1229,7 +1513,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> LastResetEnd[4]</td>
+          <td class="memname"><a class="el" href="structDVDBuffer.html">DVDBuffer</a> Prev</td>
         </tr>
       </table>
   </td>
@@ -1241,8 +1525,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="abcb2462de99b204fc5236a4861f8f9b1" name="abcb2462de99b204fc5236a4861f8f9b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abcb2462de99b204fc5236a4861f8f9b1">&#9670;&#160;</a></span>NextCommandNumber</h2>
+<a id="ab9ee8e6cdca2aeb2fa3da0a983bdb9b9" name="ab9ee8e6cdca2aeb2fa3da0a983bdb9b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9ee8e6cdca2aeb2fa3da0a983bdb9b9">&#9670;&#160;</a></span>ResetCoverCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1251,7 +1535,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> NextCommandNumber</td>
+          <td class="memname"><a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a> ResetCoverCallback</td>
         </tr>
       </table>
   </td>
@@ -1263,8 +1547,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a434e066f1f9be85f1e2cabd09c8314c4" name="a434e066f1f9be85f1e2cabd09c8314c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a434e066f1f9be85f1e2cabd09c8314c4">&#9670;&#160;</a></span>Prev</h2>
+<a id="aa0dc0237ce0050721d2543ba0990e42c" name="aa0dc0237ce0050721d2543ba0990e42c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0dc0237ce0050721d2543ba0990e42c">&#9670;&#160;</a></span>ResetOccurred</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1273,7 +1557,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> Prev[12]</td>
+          <td class="memname">volatile <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> ResetOccurred</td>
         </tr>
       </table>
   </td>
@@ -1285,8 +1569,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a0727c1e8c7353d03e02f94d4d391304a" name="a0727c1e8c7353d03e02f94d4d391304a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0727c1e8c7353d03e02f94d4d391304a">&#9670;&#160;</a></span>ResetCoverCallback</h2>
+<a id="ad209bd8691fc1e67ac76241498764cd9" name="ad209bd8691fc1e67ac76241498764cd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad209bd8691fc1e67ac76241498764cd9">&#9670;&#160;</a></span>StopAtNextInt</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1295,7 +1579,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> ResetCoverCallback[4]</td>
+          <td class="memname">volatile <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> StopAtNextInt</td>
         </tr>
       </table>
   </td>
@@ -1307,8 +1591,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad69aec4a037ef7bd62e4b63a2583c95d" name="ad69aec4a037ef7bd62e4b63a2583c95d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad69aec4a037ef7bd62e4b63a2583c95d">&#9670;&#160;</a></span>ResetOccurred</h2>
+<a id="abc3cde4df9b502e6e27a71e1ab00e1f4" name="abc3cde4df9b502e6e27a71e1ab00e1f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc3cde4df9b502e6e27a71e1ab00e1f4">&#9670;&#160;</a></span>WaitingCoverClose</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1317,7 +1601,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> ResetOccurred[4]</td>
+          <td class="memname">volatile <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> WaitingCoverClose</td>
         </tr>
       </table>
   </td>
@@ -1329,8 +1613,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="adf47d3f9beac01acd8adf272b4e9a79f" name="adf47d3f9beac01acd8adf272b4e9a79f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf47d3f9beac01acd8adf272b4e9a79f">&#9670;&#160;</a></span>StopAtNextInt</h2>
+<a id="a41df260c107a081dbbc799272cfce6c5" name="a41df260c107a081dbbc799272cfce6c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41df260c107a081dbbc799272cfce6c5">&#9670;&#160;</a></span>WorkAroundSeekLocation</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1339,7 +1623,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> StopAtNextInt[4]</td>
+          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> WorkAroundSeekLocation[2]</td>
         </tr>
       </table>
   </td>
@@ -1351,8 +1635,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a8f50c42eafde73327090ae2a918acaeb" name="a8f50c42eafde73327090ae2a918acaeb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f50c42eafde73327090ae2a918acaeb">&#9670;&#160;</a></span>WaitingCoverClose</h2>
+<a id="a28b7db61f0807ffd37c488ffc87584e6" name="a28b7db61f0807ffd37c488ffc87584e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28b7db61f0807ffd37c488ffc87584e6">&#9670;&#160;</a></span>WorkAroundType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1361,51 +1645,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dvdlow_8h.html#ab66cbd342948bdcbf3da919c605539e7">DVDLowCallback</a> WaitingCoverClose</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad2776ea8a66ea3ce1a6750ad5e9c26be" name="ad2776ea8a66ea3ce1a6750ad5e9c26be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2776ea8a66ea3ce1a6750ad5e9c26be">&#9670;&#160;</a></span>WorkAroundSeekLocation</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> WorkAroundSeekLocation[4+4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a53b4debab236b9b6e140dfad12118eab" name="a53b4debab236b9b6e140dfad12118eab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53b4debab236b9b6e140dfad12118eab">&#9670;&#160;</a></span>WorkAroundType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> WorkAroundType[4]</td>
+          <td class="memname">volatile <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> WorkAroundType</td>
         </tr>
       </table>
   </td>

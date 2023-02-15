@@ -147,32 +147,6 @@ Macros</h2></td></tr>
 <tr class="separator:a06b5c4f3585f639dcd888aa646e5f388"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac32adf0ad8140a03b5078cb34930c0bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OS_8h.html#ac32adf0ad8140a03b5078cb34930c0bf">OS_BASE_UNCACHED</a>&#160;&#160;&#160;(<a class="el" href="OS_8h.html#ab5dc01ca9e017d2eaaa93b0226836a34">OS_UNCACHED_REGION_PREFIX</a> &lt;&lt; 16)</td></tr>
 <tr class="separator:ac32adf0ad8140a03b5078cb34930c0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86a02c5cd51c9719d4741048193bbb54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OS_8h.html#a86a02c5cd51c9719d4741048193bbb54">OS_BUS_CLOCK</a>&#160;&#160;&#160;(*(<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>*)0x800000F8)</td></tr>
-<tr class="separator:a86a02c5cd51c9719d4741048193bbb54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73ac22d5e2756eb8ebf89a603228206a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OS_8h.html#a73ac22d5e2756eb8ebf89a603228206a">OS_CORE_CLOCK</a>&#160;&#160;&#160;(*(<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>*)0x800000FC)</td></tr>
-<tr class="separator:a73ac22d5e2756eb8ebf89a603228206a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab825b9df03eb172646dc925c08b74ba6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OS_8h.html#ab825b9df03eb172646dc925c08b74ba6">OS_TIMER_CLOCK</a>&#160;&#160;&#160;(<a class="el" href="OS_8h.html#a86a02c5cd51c9719d4741048193bbb54">OS_BUS_CLOCK</a> / 4)</td></tr>
-<tr class="separator:ab825b9df03eb172646dc925c08b74ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d53af35fc6ee4d5283da485502ec584"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OS_8h.html#a2d53af35fc6ee4d5283da485502ec584">OS_TIMER_CLOCK_MS</a>&#160;&#160;&#160;(<a class="el" href="OS_8h.html#ab825b9df03eb172646dc925c08b74ba6">OS_TIMER_CLOCK</a> / 1000)</td></tr>
-<tr class="separator:a2d53af35fc6ee4d5283da485502ec584"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33c81c81d793a709ef2d5ffb56eb3b1c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OS_8h.html#a33c81c81d793a709ef2d5ffb56eb3b1c">OSTicksToCycles</a>(ticks)&#160;&#160;&#160;(((ticks) * ((<a class="el" href="OS_8h.html#a73ac22d5e2756eb8ebf89a603228206a">OS_CORE_CLOCK</a> * 2) / <a class="el" href="OS_8h.html#ab825b9df03eb172646dc925c08b74ba6">OS_TIMER_CLOCK</a>)) / 2)</td></tr>
-<tr class="separator:a33c81c81d793a709ef2d5ffb56eb3b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4ad4710edca1090a1d9cf64dae86209"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OS_8h.html#ab4ad4710edca1090a1d9cf64dae86209">OSTicksToSeconds</a>(ticks)&#160;&#160;&#160;((ticks) / <a class="el" href="OS_8h.html#ab825b9df03eb172646dc925c08b74ba6">OS_TIMER_CLOCK</a>)</td></tr>
-<tr class="separator:ab4ad4710edca1090a1d9cf64dae86209"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3aaf8e898b79bd50c4c99ba39ff5a212"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OS_8h.html#a3aaf8e898b79bd50c4c99ba39ff5a212">OSTicksToMilliseconds</a>(ticks)&#160;&#160;&#160;((ticks) / (<a class="el" href="OS_8h.html#ab825b9df03eb172646dc925c08b74ba6">OS_TIMER_CLOCK</a> / 1000))</td></tr>
-<tr class="separator:a3aaf8e898b79bd50c4c99ba39ff5a212"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad40d99c102c0db19099f2b98ac8cb6bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OS_8h.html#ad40d99c102c0db19099f2b98ac8cb6bf">OSTicksToMicroseconds</a>(ticks)&#160;&#160;&#160;(((ticks)*8) / (<a class="el" href="OS_8h.html#ab825b9df03eb172646dc925c08b74ba6">OS_TIMER_CLOCK</a> / 125000))</td></tr>
-<tr class="separator:ad40d99c102c0db19099f2b98ac8cb6bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85492c74e9e0c92b092674c804c4a362"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OS_8h.html#a85492c74e9e0c92b092674c804c4a362">OSTicksToNanoseconds</a>(ticks)&#160;&#160;&#160;(((ticks)*8000) / (<a class="el" href="OS_8h.html#ab825b9df03eb172646dc925c08b74ba6">OS_TIMER_CLOCK</a> / 125000))</td></tr>
-<tr class="separator:a85492c74e9e0c92b092674c804c4a362"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee55c950df9feb2a1e298b629c7a7f84"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OS_8h.html#aee55c950df9feb2a1e298b629c7a7f84">OSSecondsToTicks</a>(sec)&#160;&#160;&#160;((sec)*<a class="el" href="OS_8h.html#ab825b9df03eb172646dc925c08b74ba6">OS_TIMER_CLOCK</a>)</td></tr>
-<tr class="separator:aee55c950df9feb2a1e298b629c7a7f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afde69beba66827e5d5c0922046bc6318"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OS_8h.html#afde69beba66827e5d5c0922046bc6318">OSMillisecondsToTicks</a>(msec)&#160;&#160;&#160;((msec) * (<a class="el" href="OS_8h.html#ab825b9df03eb172646dc925c08b74ba6">OS_TIMER_CLOCK</a> / 1000))</td></tr>
-<tr class="separator:afde69beba66827e5d5c0922046bc6318"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75df5864dbe3bb0b1cd88ca7a0b8f0c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OS_8h.html#a75df5864dbe3bb0b1cd88ca7a0b8f0c0">OSMicrosecondsToTicks</a>(usec)&#160;&#160;&#160;(((usec) * (<a class="el" href="OS_8h.html#ab825b9df03eb172646dc925c08b74ba6">OS_TIMER_CLOCK</a> / 125000)) / 8)</td></tr>
-<tr class="separator:a75df5864dbe3bb0b1cd88ca7a0b8f0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3011cbc24e69d84b06c541ab5227f0a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OS_8h.html#aa3011cbc24e69d84b06c541ab5227f0a">OSNanosecondsToTicks</a>(nsec)&#160;&#160;&#160;(((nsec) * (<a class="el" href="OS_8h.html#ab825b9df03eb172646dc925c08b74ba6">OS_TIMER_CLOCK</a> / 125000)) / 8000)</td></tr>
-<tr class="separator:aa3011cbc24e69d84b06c541ab5227f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab8d4a132fbbd592e4ac9ce5b2a1da21"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OS_8h.html#aab8d4a132fbbd592e4ac9ce5b2a1da21">OS_MESSAGE_NON_BLOCKING</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:aab8d4a132fbbd592e4ac9ce5b2a1da21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97ffad36c4f71ab4098dafe6a5d0c400"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OS_8h.html#a97ffad36c4f71ab4098dafe6a5d0c400">OS_MESSAGE_BLOCKING</a>&#160;&#160;&#160;1</td></tr>
@@ -388,20 +362,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define OS_BASE_UNCACHED&#160;&#160;&#160;(<a class="el" href="OS_8h.html#ab5dc01ca9e017d2eaaa93b0226836a34">OS_UNCACHED_REGION_PREFIX</a> &lt;&lt; 16)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a86a02c5cd51c9719d4741048193bbb54" name="a86a02c5cd51c9719d4741048193bbb54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86a02c5cd51c9719d4741048193bbb54">&#9670;&#160;</a></span>OS_BUS_CLOCK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OS_BUS_CLOCK&#160;&#160;&#160;(*(<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>*)0x800000F8)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -702,20 +662,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a73ac22d5e2756eb8ebf89a603228206a" name="a73ac22d5e2756eb8ebf89a603228206a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73ac22d5e2756eb8ebf89a603228206a">&#9670;&#160;</a></span>OS_CORE_CLOCK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OS_CORE_CLOCK&#160;&#160;&#160;(*(<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>*)0x800000FC)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a97ffad36c4f71ab4098dafe6a5d0c400" name="a97ffad36c4f71ab4098dafe6a5d0c400"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a97ffad36c4f71ab4098dafe6a5d0c400">&#9670;&#160;</a></span>OS_MESSAGE_BLOCKING</h2>
 
@@ -752,34 +698,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define OS_PHYSICAL_MASK&#160;&#160;&#160;0x3FFF</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab825b9df03eb172646dc925c08b74ba6" name="ab825b9df03eb172646dc925c08b74ba6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab825b9df03eb172646dc925c08b74ba6">&#9670;&#160;</a></span>OS_TIMER_CLOCK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OS_TIMER_CLOCK&#160;&#160;&#160;(<a class="el" href="OS_8h.html#a86a02c5cd51c9719d4741048193bbb54">OS_BUS_CLOCK</a> / 4)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2d53af35fc6ee4d5283da485502ec584" name="a2d53af35fc6ee4d5283da485502ec584"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d53af35fc6ee4d5283da485502ec584">&#9670;&#160;</a></span>OS_TIMER_CLOCK_MS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OS_TIMER_CLOCK_MS&#160;&#160;&#160;(<a class="el" href="OS_8h.html#ab825b9df03eb172646dc925c08b74ba6">OS_TIMER_CLOCK</a> / 1000)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -836,60 +754,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a75df5864dbe3bb0b1cd88ca7a0b8f0c0" name="a75df5864dbe3bb0b1cd88ca7a0b8f0c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75df5864dbe3bb0b1cd88ca7a0b8f0c0">&#9670;&#160;</a></span>OSMicrosecondsToTicks</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OSMicrosecondsToTicks</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">usec</td><td>)</td>
-          <td>&#160;&#160;&#160;(((usec) * (<a class="el" href="OS_8h.html#ab825b9df03eb172646dc925c08b74ba6">OS_TIMER_CLOCK</a> / 125000)) / 8)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afde69beba66827e5d5c0922046bc6318" name="afde69beba66827e5d5c0922046bc6318"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afde69beba66827e5d5c0922046bc6318">&#9670;&#160;</a></span>OSMillisecondsToTicks</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OSMillisecondsToTicks</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">msec</td><td>)</td>
-          <td>&#160;&#160;&#160;((msec) * (<a class="el" href="OS_8h.html#ab825b9df03eb172646dc925c08b74ba6">OS_TIMER_CLOCK</a> / 1000))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa3011cbc24e69d84b06c541ab5227f0a" name="aa3011cbc24e69d84b06c541ab5227f0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3011cbc24e69d84b06c541ab5227f0a">&#9670;&#160;</a></span>OSNanosecondsToTicks</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OSNanosecondsToTicks</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">nsec</td><td>)</td>
-          <td>&#160;&#160;&#160;(((nsec) * (<a class="el" href="OS_8h.html#ab825b9df03eb172646dc925c08b74ba6">OS_TIMER_CLOCK</a> / 125000)) / 8000)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ace957d040592a9519a208b27251be311" name="ace957d040592a9519a208b27251be311"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ace957d040592a9519a208b27251be311">&#9670;&#160;</a></span>OSPhysicalToCached</h2>
 
@@ -920,114 +784,6 @@ Variables</h2></td></tr>
           <td class="paramtype">&#160;</td>
           <td class="paramname">paddr</td><td>)</td>
           <td>&#160;&#160;&#160;((void*)((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)(paddr) + <a class="el" href="OS_8h.html#ac32adf0ad8140a03b5078cb34930c0bf">OS_BASE_UNCACHED</a>))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aee55c950df9feb2a1e298b629c7a7f84" name="aee55c950df9feb2a1e298b629c7a7f84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee55c950df9feb2a1e298b629c7a7f84">&#9670;&#160;</a></span>OSSecondsToTicks</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OSSecondsToTicks</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">sec</td><td>)</td>
-          <td>&#160;&#160;&#160;((sec)*<a class="el" href="OS_8h.html#ab825b9df03eb172646dc925c08b74ba6">OS_TIMER_CLOCK</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a33c81c81d793a709ef2d5ffb56eb3b1c" name="a33c81c81d793a709ef2d5ffb56eb3b1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33c81c81d793a709ef2d5ffb56eb3b1c">&#9670;&#160;</a></span>OSTicksToCycles</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OSTicksToCycles</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">ticks</td><td>)</td>
-          <td>&#160;&#160;&#160;(((ticks) * ((<a class="el" href="OS_8h.html#a73ac22d5e2756eb8ebf89a603228206a">OS_CORE_CLOCK</a> * 2) / <a class="el" href="OS_8h.html#ab825b9df03eb172646dc925c08b74ba6">OS_TIMER_CLOCK</a>)) / 2)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad40d99c102c0db19099f2b98ac8cb6bf" name="ad40d99c102c0db19099f2b98ac8cb6bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad40d99c102c0db19099f2b98ac8cb6bf">&#9670;&#160;</a></span>OSTicksToMicroseconds</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OSTicksToMicroseconds</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">ticks</td><td>)</td>
-          <td>&#160;&#160;&#160;(((ticks)*8) / (<a class="el" href="OS_8h.html#ab825b9df03eb172646dc925c08b74ba6">OS_TIMER_CLOCK</a> / 125000))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3aaf8e898b79bd50c4c99ba39ff5a212" name="a3aaf8e898b79bd50c4c99ba39ff5a212"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3aaf8e898b79bd50c4c99ba39ff5a212">&#9670;&#160;</a></span>OSTicksToMilliseconds</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OSTicksToMilliseconds</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">ticks</td><td>)</td>
-          <td>&#160;&#160;&#160;((ticks) / (<a class="el" href="OS_8h.html#ab825b9df03eb172646dc925c08b74ba6">OS_TIMER_CLOCK</a> / 1000))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a85492c74e9e0c92b092674c804c4a362" name="a85492c74e9e0c92b092674c804c4a362"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85492c74e9e0c92b092674c804c4a362">&#9670;&#160;</a></span>OSTicksToNanoseconds</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OSTicksToNanoseconds</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">ticks</td><td>)</td>
-          <td>&#160;&#160;&#160;(((ticks)*8000) / (<a class="el" href="OS_8h.html#ab825b9df03eb172646dc925c08b74ba6">OS_TIMER_CLOCK</a> / 125000))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab4ad4710edca1090a1d9cf64dae86209" name="ab4ad4710edca1090a1d9cf64dae86209"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4ad4710edca1090a1d9cf64dae86209">&#9670;&#160;</a></span>OSTicksToSeconds</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define OSTicksToSeconds</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">ticks</td><td>)</td>
-          <td>&#160;&#160;&#160;((ticks) / <a class="el" href="OS_8h.html#ab825b9df03eb172646dc925c08b74ba6">OS_TIMER_CLOCK</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2030,6 +1786,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="m__Do__printf_8cpp.html">m_Do_printf.cpp</a> OSReport and printf Helper Functions </p>
 
 </div>
 </div>
