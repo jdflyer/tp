@@ -89,8 +89,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="Z2WolfHowlMgr_8h_source.html">Z2AudioLib/Z2WolfHowlMgr.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Z2Creature_8h_source.html">Z2AudioLib/Z2Creature.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2WolfHowlMgr/__ct__13Z2WolfHowlMgrFv.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2WolfHowlMgr/resetState__13Z2WolfHowlMgrFv.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2WolfHowlMgr/calcVolumeMod__13Z2WolfHowlMgrFf.s&quot;</code><br />
@@ -121,8 +122,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structZ2SeqMgr.html">Z2SeqMgr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structZ2SeMgr.html">Z2SeMgr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structZ2CreatureLink.html">Z2CreatureLink</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structZ2Calc.html">Z2Calc</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,16 +195,10 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:aa4a520444f72d6f58f3e2056b56174af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2WolfHowlMgr_8cpp.html#aa4a520444f72d6f58f3e2056b56174af">__float_nan</a></td></tr>
-<tr class="separator:aa4a520444f72d6f58f3e2056b56174af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acab3d293f1e8fca690faae7cbe643d94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structZ2WolfHowlMgr.html">Z2WolfHowlMgr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2WolfHowlMgr_8cpp.html#acab3d293f1e8fca690faae7cbe643d94">data_80450B38</a></td></tr>
-<tr class="separator:acab3d293f1e8fca690faae7cbe643d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1de5c592f9e2c2441b93ef0a5c9f8476"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2WolfHowlMgr_8cpp.html#a1de5c592f9e2c2441b93ef0a5c9f8476">data_80450B44</a> [4]</td></tr>
 <tr class="separator:a1de5c592f9e2c2441b93ef0a5c9f8476"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82f59053b99d3ea99326b60f2a24951c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2WolfHowlMgr_8cpp.html#a82f59053b99d3ea99326b60f2a24951c">data_80450B60</a> [4]</td></tr>
 <tr class="separator:a82f59053b99d3ea99326b60f2a24951c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e5852eaeb38e9ebcec5306ffd8e6a7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2WolfHowlMgr_8cpp.html#a6e5852eaeb38e9ebcec5306ffd8e6a7e">data_80450B74</a> [4]</td></tr>
-<tr class="separator:a6e5852eaeb38e9ebcec5306ffd8e6a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e3349cf415ed50a8cbac7ee47eca8b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2WolfHowlMgr_8cpp.html#a2e3349cf415ed50a8cbac7ee47eca8b8">data_80450B80</a> [4]</td></tr>
 <tr class="separator:a2e3349cf415ed50a8cbac7ee47eca8b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d7307cf2ac391c2138a741fef4e7fe8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2WolfHowlMgr_8cpp.html#a6d7307cf2ac391c2138a741fef4e7fe8">data_80450B84</a> [4]</td></tr>
@@ -853,28 +846,6 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="aa4a520444f72d6f58f3e2056b56174af" name="aa4a520444f72d6f58f3e2056b56174af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4a520444f72d6f58f3e2056b56174af">&#9670;&#160;</a></span>__float_nan</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> __float_nan</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ac65829fe8a51c873c46b62e553c66bc8" name="ac65829fe8a51c873c46b62e553c66bc8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac65829fe8a51c873c46b62e553c66bc8">&#9670;&#160;</a></span>cPitchCenter</h2>
 
@@ -985,28 +956,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="acab3d293f1e8fca690faae7cbe643d94" name="acab3d293f1e8fca690faae7cbe643d94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acab3d293f1e8fca690faae7cbe643d94">&#9670;&#160;</a></span>data_80450B38</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structZ2WolfHowlMgr.html">Z2WolfHowlMgr</a>* data_80450B38</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a1de5c592f9e2c2441b93ef0a5c9f8476" name="a1de5c592f9e2c2441b93ef0a5c9f8476"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1de5c592f9e2c2441b93ef0a5c9f8476">&#9670;&#160;</a></span>data_80450B44</h2>
 
@@ -1040,28 +989,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_80450B60[4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6e5852eaeb38e9ebcec5306ffd8e6a7e" name="a6e5852eaeb38e9ebcec5306ffd8e6a7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e5852eaeb38e9ebcec5306ffd8e6a7e">&#9670;&#160;</a></span>data_80450B74</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_80450B74[4]</td>
         </tr>
       </table>
   </td>
@@ -1829,15 +1756,15 @@ Variables</h2></td></tr>
 <div class="line">    {6, <a class="code hl_variable" href="Z2WolfHowlMgr_8cpp.html#a4babd349188fcd71877751fea6a243a0">sHealingSong</a>},  {6, <a class="code hl_variable" href="Z2WolfHowlMgr_8cpp.html#ae96ece186fe346f5cd1fcfb138d33dea">sHowlSoulRequiem</a>}, {6, <a class="code hl_variable" href="Z2WolfHowlMgr_8cpp.html#a3ab395bdb14cb2aa35c9d5742610d011">sHowlLightPrelude</a>},</div>
 <div class="line">    {7, <a class="code hl_variable" href="Z2WolfHowlMgr_8cpp.html#aa92a7e50382551585424425b4b198f4a">sNewSong1</a>},     {8, <a class="code hl_variable" href="Z2WolfHowlMgr_8cpp.html#af16f94537ac72fa7564f222de36f08a5">sNewSong2</a>},        {9, <a class="code hl_variable" href="Z2WolfHowlMgr_8cpp.html#a5138ea0247f823a87daf45498543d258">sNewSong3</a>},</div>
 <div class="line">}</div>
-<div class="ttc" id="aZ2WolfHowlMgr_8cpp_html_a3ab395bdb14cb2aa35c9d5742610d011"><div class="ttname"><a href="Z2WolfHowlMgr_8cpp.html#a3ab395bdb14cb2aa35c9d5742610d011">sHowlLightPrelude</a></div><div class="ttdeci">static SECTION_DATA u16 sHowlLightPrelude[6]</div><div class="ttdef"><b>Definition:</b> Z2WolfHowlMgr.cpp:102</div></div>
-<div class="ttc" id="aZ2WolfHowlMgr_8cpp_html_a4babd349188fcd71877751fea6a243a0"><div class="ttname"><a href="Z2WolfHowlMgr_8cpp.html#a4babd349188fcd71877751fea6a243a0">sHealingSong</a></div><div class="ttdeci">static SECTION_DATA u16 sHealingSong[6]</div><div class="ttdef"><b>Definition:</b> Z2WolfHowlMgr.cpp:112</div></div>
-<div class="ttc" id="aZ2WolfHowlMgr_8cpp_html_a5138ea0247f823a87daf45498543d258"><div class="ttname"><a href="Z2WolfHowlMgr_8cpp.html#a5138ea0247f823a87daf45498543d258">sNewSong3</a></div><div class="ttdeci">static SECTION_DATA u16 sNewSong3[9]</div><div class="ttdef"><b>Definition:</b> Z2WolfHowlMgr.cpp:127</div></div>
-<div class="ttc" id="aZ2WolfHowlMgr_8cpp_html_a62e3d70dc2277e67b2a33b8edc037ec3"><div class="ttname"><a href="Z2WolfHowlMgr_8cpp.html#a62e3d70dc2277e67b2a33b8edc037ec3">sHowlZeldaSong</a></div><div class="ttdeci">static SECTION_DATA u16 sHowlZeldaSong[6]</div><div class="ttdef"><b>Definition:</b> Z2WolfHowlMgr.cpp:97</div></div>
-<div class="ttc" id="aZ2WolfHowlMgr_8cpp_html_a66f5a6ea3d0f44da171ce20a2e7ddaec"><div class="ttname"><a href="Z2WolfHowlMgr_8cpp.html#a66f5a6ea3d0f44da171ce20a2e7ddaec">sHowlTobikusa</a></div><div class="ttdeci">u16 sHowlTobikusa[4]</div><div class="ttdef"><b>Definition:</b> Z2WolfHowlMgr.cpp:89</div></div>
-<div class="ttc" id="aZ2WolfHowlMgr_8cpp_html_aa92a7e50382551585424425b4b198f4a"><div class="ttname"><a href="Z2WolfHowlMgr_8cpp.html#aa92a7e50382551585424425b4b198f4a">sNewSong1</a></div><div class="ttdeci">static SECTION_DATA u16 sNewSong1[7]</div><div class="ttdef"><b>Definition:</b> Z2WolfHowlMgr.cpp:117</div></div>
-<div class="ttc" id="aZ2WolfHowlMgr_8cpp_html_ac0b86e16b8c258520c77a292e4c34d71"><div class="ttname"><a href="Z2WolfHowlMgr_8cpp.html#ac0b86e16b8c258520c77a292e4c34d71">sHowlUmakusa</a></div><div class="ttdeci">static SECTION_DATA u16 sHowlUmakusa[6]</div><div class="ttdef"><b>Definition:</b> Z2WolfHowlMgr.cpp:92</div></div>
-<div class="ttc" id="aZ2WolfHowlMgr_8cpp_html_ae96ece186fe346f5cd1fcfb138d33dea"><div class="ttname"><a href="Z2WolfHowlMgr_8cpp.html#ae96ece186fe346f5cd1fcfb138d33dea">sHowlSoulRequiem</a></div><div class="ttdeci">static SECTION_DATA u16 sHowlSoulRequiem[6]</div><div class="ttdef"><b>Definition:</b> Z2WolfHowlMgr.cpp:107</div></div>
-<div class="ttc" id="aZ2WolfHowlMgr_8cpp_html_af16f94537ac72fa7564f222de36f08a5"><div class="ttname"><a href="Z2WolfHowlMgr_8cpp.html#af16f94537ac72fa7564f222de36f08a5">sNewSong2</a></div><div class="ttdeci">static SECTION_DATA u16 sNewSong2[8]</div><div class="ttdef"><b>Definition:</b> Z2WolfHowlMgr.cpp:122</div></div>
+<div class="ttc" id="aZ2WolfHowlMgr_8cpp_html_a3ab395bdb14cb2aa35c9d5742610d011"><div class="ttname"><a href="Z2WolfHowlMgr_8cpp.html#a3ab395bdb14cb2aa35c9d5742610d011">sHowlLightPrelude</a></div><div class="ttdeci">static SECTION_DATA u16 sHowlLightPrelude[6]</div><div class="ttdef"><b>Definition:</b> Z2WolfHowlMgr.cpp:96</div></div>
+<div class="ttc" id="aZ2WolfHowlMgr_8cpp_html_a4babd349188fcd71877751fea6a243a0"><div class="ttname"><a href="Z2WolfHowlMgr_8cpp.html#a4babd349188fcd71877751fea6a243a0">sHealingSong</a></div><div class="ttdeci">static SECTION_DATA u16 sHealingSong[6]</div><div class="ttdef"><b>Definition:</b> Z2WolfHowlMgr.cpp:106</div></div>
+<div class="ttc" id="aZ2WolfHowlMgr_8cpp_html_a5138ea0247f823a87daf45498543d258"><div class="ttname"><a href="Z2WolfHowlMgr_8cpp.html#a5138ea0247f823a87daf45498543d258">sNewSong3</a></div><div class="ttdeci">static SECTION_DATA u16 sNewSong3[9]</div><div class="ttdef"><b>Definition:</b> Z2WolfHowlMgr.cpp:121</div></div>
+<div class="ttc" id="aZ2WolfHowlMgr_8cpp_html_a62e3d70dc2277e67b2a33b8edc037ec3"><div class="ttname"><a href="Z2WolfHowlMgr_8cpp.html#a62e3d70dc2277e67b2a33b8edc037ec3">sHowlZeldaSong</a></div><div class="ttdeci">static SECTION_DATA u16 sHowlZeldaSong[6]</div><div class="ttdef"><b>Definition:</b> Z2WolfHowlMgr.cpp:91</div></div>
+<div class="ttc" id="aZ2WolfHowlMgr_8cpp_html_a66f5a6ea3d0f44da171ce20a2e7ddaec"><div class="ttname"><a href="Z2WolfHowlMgr_8cpp.html#a66f5a6ea3d0f44da171ce20a2e7ddaec">sHowlTobikusa</a></div><div class="ttdeci">u16 sHowlTobikusa[4]</div><div class="ttdef"><b>Definition:</b> Z2WolfHowlMgr.cpp:83</div></div>
+<div class="ttc" id="aZ2WolfHowlMgr_8cpp_html_aa92a7e50382551585424425b4b198f4a"><div class="ttname"><a href="Z2WolfHowlMgr_8cpp.html#aa92a7e50382551585424425b4b198f4a">sNewSong1</a></div><div class="ttdeci">static SECTION_DATA u16 sNewSong1[7]</div><div class="ttdef"><b>Definition:</b> Z2WolfHowlMgr.cpp:111</div></div>
+<div class="ttc" id="aZ2WolfHowlMgr_8cpp_html_ac0b86e16b8c258520c77a292e4c34d71"><div class="ttname"><a href="Z2WolfHowlMgr_8cpp.html#ac0b86e16b8c258520c77a292e4c34d71">sHowlUmakusa</a></div><div class="ttdeci">static SECTION_DATA u16 sHowlUmakusa[6]</div><div class="ttdef"><b>Definition:</b> Z2WolfHowlMgr.cpp:86</div></div>
+<div class="ttc" id="aZ2WolfHowlMgr_8cpp_html_ae96ece186fe346f5cd1fcfb138d33dea"><div class="ttname"><a href="Z2WolfHowlMgr_8cpp.html#ae96ece186fe346f5cd1fcfb138d33dea">sHowlSoulRequiem</a></div><div class="ttdeci">static SECTION_DATA u16 sHowlSoulRequiem[6]</div><div class="ttdef"><b>Definition:</b> Z2WolfHowlMgr.cpp:101</div></div>
+<div class="ttc" id="aZ2WolfHowlMgr_8cpp_html_af16f94537ac72fa7564f222de36f08a5"><div class="ttname"><a href="Z2WolfHowlMgr_8cpp.html#af16f94537ac72fa7564f222de36f08a5">sNewSong2</a></div><div class="ttdeci">static SECTION_DATA u16 sNewSong2[8]</div><div class="ttdef"><b>Definition:</b> Z2WolfHowlMgr.cpp:116</div></div>
 </div><!-- fragment -->
 </div>
 </div>

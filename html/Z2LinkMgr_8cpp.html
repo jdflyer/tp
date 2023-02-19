@@ -90,42 +90,26 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="Z2LinkMgr_8h_source.html">Z2AudioLib/Z2LinkMgr.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Z2Creature_8h_source.html">Z2AudioLib/Z2Creature.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__com__inf__game_8h_source.html">d/com/d_com_inf_game.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/setLinkSwordType__14Z2CreatureLinkFll.s&quot;</code><br />
-<code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/setLinkShieldType__14Z2CreatureLinkFll.s&quot;</code><br />
-<code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/setLinkBootsType__14Z2CreatureLinkFl.s&quot;</code><br />
-<code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/__ct__14Z2CreatureLinkFv.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/__dt__18Z2LinkSoundStarterFv.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/__dt__14Z2CreatureLinkFv.s&quot;</code><br />
-<code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/deleteObject__14Z2CreatureLinkFv.s&quot;</code><br />
-<code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/init__14Z2CreatureLinkFP3VecP3VecP3Vec.s&quot;</code><br />
-<code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/initKantera__14Z2CreatureLinkFP3Vec.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/framework__14Z2CreatureLinkFUlSc.s&quot;</code><br />
-<code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/setRiding__14Z2CreatureLinkFb.s&quot;</code><br />
-<code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/setMagnetized__14Z2CreatureLinkFb.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/setWolfEyeOpen__14Z2CreatureLinkFb.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/startLinkSound__14Z2CreatureLinkF10JAISoundIDUlSc.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/startLinkSoundLevel__14Z2CreatureLinkF10JAISoundIDUlSc.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/startLinkVoice__14Z2CreatureLinkF10JAISoundIDSc.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/startLinkVoiceLevel__14Z2CreatureLinkF10JAISoundIDSc.s&quot;</code><br />
-<code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/startLinkSwordSound__14Z2CreatureLinkF10JAISoundIDUlSc.s&quot;</code><br />
-<code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/startCollisionSE__14Z2CreatureLinkFUlUl.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/startHitItemSE__14Z2CreatureLinkFUlUlP14Z2SoundObjBasef.s&quot;</code><br />
-<code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/setResumeAttack__14Z2CreatureLinkFb.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/func_802C4928.s&quot;</code><br />
-<code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/__ct__14Z2CreatureRideFv.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/__dt__18Z2RideSoundStarterFv.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/__dt__14Z2CreatureRideFv.s&quot;</code><br />
-<code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/deleteObject__14Z2CreatureRideFv.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/func_802C5284.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/__ct__15Z2SoundObjCoachFv.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/init__15Z2SoundObjCoachFP3VecUc.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/startWheelSound__15Z2SoundObjCoachFf.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/startFireSound__15Z2SoundObjCoachFUs.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/startSound__15Z2SoundObjCoachF10JAISoundIDUlSc.s&quot;</code><br />
-<code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/func_802C588C.s&quot;</code><br />
-<code>#include &quot;asm/Z2AudioLib/Z2LinkMgr/func_802C5894.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for Z2LinkMgr.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -137,25 +121,7 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdSv__event__flag__c.html">dSv_event_flag_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdSv__event__c.html">dSv_event_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structZ2SoundObjMgr.html">Z2SoundObjMgr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structZ2SoundObjCoach.html">Z2SoundObjCoach</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structZ2SeqMgr.html">Z2SeqMgr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structZ2SeMgr.html">Z2SeMgr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structZ2FxLineMgr.html">Z2FxLineMgr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structZ2Calc.html">Z2Calc</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structZ2Calc_1_1CurveSign.html">Z2Calc::CurveSign</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structZ2Audience.html">Z2Audience</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -172,12 +138,12 @@ Functions</h2></td></tr>
 <tr class="separator:aafba2bc1cb420f8f823bc7b3cf49ba08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58601d6b934624d2bedab0726c6dd8cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a58601d6b934624d2bedab0726c6dd8cd">__ct__14Z2CreatureLinkFv</a> ()</td></tr>
 <tr class="separator:a58601d6b934624d2bedab0726c6dd8cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a215914d204dbfb7159370d66e86233d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a215914d204dbfb7159370d66e86233d2">__dt__18Z2LinkSoundStarterFv</a> ()</td></tr>
-<tr class="separator:a215914d204dbfb7159370d66e86233d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b9a7c99f8d21d5b50142fcec35d207a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a1b9a7c99f8d21d5b50142fcec35d207a">__dt__18Z2LinkSoundStarterFv</a> ()</td></tr>
+<tr class="separator:a1b9a7c99f8d21d5b50142fcec35d207a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4bf410d33d268a1640c637a3cb9490c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#ac4bf410d33d268a1640c637a3cb9490c">__dt__14Z2CreatureLinkFv</a> ()</td></tr>
 <tr class="separator:ac4bf410d33d268a1640c637a3cb9490c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4622fa0f0ba1f6971cb411f0841e5b9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a4622fa0f0ba1f6971cb411f0841e5b9d">deleteObject__14Z2CreatureLinkFv</a> ()</td></tr>
-<tr class="separator:a4622fa0f0ba1f6971cb411f0841e5b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b710409e41d608d72b75f4ae59aac44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a1b710409e41d608d72b75f4ae59aac44">deleteObject__14Z2CreatureLinkFv</a> ()</td></tr>
+<tr class="separator:a1b710409e41d608d72b75f4ae59aac44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f8c22341bfe653ee83af9e5c17566c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a2f8c22341bfe653ee83af9e5c17566c0">init__14Z2CreatureLinkFP3VecP3VecP3Vec</a> ()</td></tr>
 <tr class="separator:a2f8c22341bfe653ee83af9e5c17566c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d88f83791f2b950b38ac5e7f73c6b75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a3d88f83791f2b950b38ac5e7f73c6b75">initKantera__14Z2CreatureLinkFP3Vec</a> ()</td></tr>
@@ -218,12 +184,12 @@ Functions</h2></td></tr>
 <tr class="separator:afc83521d2603e3f0d3972c2aca651bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44948e4103b03beeb8fb529fa16e9628"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a44948e4103b03beeb8fb529fa16e9628">__ct__14Z2CreatureRideFv</a> ()</td></tr>
 <tr class="separator:a44948e4103b03beeb8fb529fa16e9628"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ba2a071743ca7f16124c6c7e0d9de18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a1ba2a071743ca7f16124c6c7e0d9de18">__dt__18Z2RideSoundStarterFv</a> ()</td></tr>
-<tr class="separator:a1ba2a071743ca7f16124c6c7e0d9de18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e524c58cd0debe550cfe28e2e646387"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a8e524c58cd0debe550cfe28e2e646387">__dt__18Z2RideSoundStarterFv</a> ()</td></tr>
+<tr class="separator:a8e524c58cd0debe550cfe28e2e646387"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95e850d38ca93db0a33447819a287136"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a95e850d38ca93db0a33447819a287136">__dt__14Z2CreatureRideFv</a> ()</td></tr>
 <tr class="separator:a95e850d38ca93db0a33447819a287136"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b2a514acc4e4bb9280bb58c3ccc24b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a8b2a514acc4e4bb9280bb58c3ccc24b0">deleteObject__14Z2CreatureRideFv</a> ()</td></tr>
-<tr class="separator:a8b2a514acc4e4bb9280bb58c3ccc24b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8f97e300399a0d30d9f96cbdcc9ff12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#ad8f97e300399a0d30d9f96cbdcc9ff12">deleteObject__14Z2CreatureRideFv</a> ()</td></tr>
+<tr class="separator:ad8f97e300399a0d30d9f96cbdcc9ff12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5fdd8a85b647843c19e9e9e1157781b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#aa5fdd8a85b647843c19e9e9e1157781b">init__14Z2CreatureRideFP3VecP3VecUcUc</a> ()</td></tr>
 <tr class="separator:aa5fdd8a85b647843c19e9e9e1157781b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ceb28654ba42aaa19755d32f15cc6d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a1ceb28654ba42aaa19755d32f15cc6d1">setLinkRiding__14Z2CreatureRideFb</a> ()</td></tr>
@@ -242,10 +208,10 @@ Functions</h2></td></tr>
 <tr class="separator:a305b8dbc3aacbd7d22692948575757c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2bd1d5862e5c69e2e4a904123d1ab44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#ac2bd1d5862e5c69e2e4a904123d1ab44">startSound__15Z2SoundObjCoachF10JAISoundIDUlSc</a> ()</td></tr>
 <tr class="separator:ac2bd1d5862e5c69e2e4a904123d1ab44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a4a9380b9438ab46916c6ffcfe1e41c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a4a4a9380b9438ab46916c6ffcfe1e41c">func_802C588C</a> ()</td></tr>
-<tr class="separator:a4a4a9380b9438ab46916c6ffcfe1e41c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec52c2cee5204aad1d4ca7d081372681"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#aec52c2cee5204aad1d4ca7d081372681">func_802C5894</a> ()</td></tr>
-<tr class="separator:aec52c2cee5204aad1d4ca7d081372681"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fe7b0d421eb478324d1e8128c9ac6dc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a9fe7b0d421eb478324d1e8128c9ac6dc">func_802C588C</a> ()</td></tr>
+<tr class="separator:a9fe7b0d421eb478324d1e8128c9ac6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d3b53b7aea06f2d58c9c05efaba06ec"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a2d3b53b7aea06f2d58c9c05efaba06ec">func_802C5894</a> ()</td></tr>
+<tr class="separator:a2d3b53b7aea06f2d58c9c05efaba06ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e7b1ea21cc466f0117126266bd45e87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a4e7b1ea21cc466f0117126266bd45e87">isEventBit__11dSv_event_cCFUs</a> ()</td></tr>
 <tr class="separator:a4e7b1ea21cc466f0117126266bd45e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92345edb4728bd4e0d6f8c3fa698a7d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a92345edb4728bd4e0d6f8c3fa698a7d3">stop__8JAISoundFUl</a> ()</td></tr>
@@ -363,24 +329,6 @@ Variables</h2></td></tr>
 <tr class="separator:a315d70e26635968c089f5a925757ee5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed41a964e6fe1025a2d0b4a2ef61fb37"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#aed41a964e6fe1025a2d0b4a2ef61fb37">__vt__16Z2SoundObjSimple</a> [8]</td></tr>
 <tr class="separator:aed41a964e6fe1025a2d0b4a2ef61fb37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50ad47c26bcc2867f2c14d349753f58e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a50ad47c26bcc2867f2c14d349753f58e">g_dComIfG_gameInfo</a> [122384]</td></tr>
-<tr class="separator:a50ad47c26bcc2867f2c14d349753f58e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a397018c73abbf2576f73051263ecc75f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a397018c73abbf2576f73051263ecc75f">data_80450B40</a> [4]</td></tr>
-<tr class="separator:a397018c73abbf2576f73051263ecc75f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1de5c592f9e2c2441b93ef0a5c9f8476"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a1de5c592f9e2c2441b93ef0a5c9f8476">data_80450B44</a> [4]</td></tr>
-<tr class="separator:a1de5c592f9e2c2441b93ef0a5c9f8476"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed2fd4b9dffb70ac6572668fdf372861"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#aed2fd4b9dffb70ac6572668fdf372861">data_80450B48</a> [4]</td></tr>
-<tr class="separator:aed2fd4b9dffb70ac6572668fdf372861"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e5852eaeb38e9ebcec5306ffd8e6a7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a6e5852eaeb38e9ebcec5306ffd8e6a7e">data_80450B74</a> [4]</td></tr>
-<tr class="separator:a6e5852eaeb38e9ebcec5306ffd8e6a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a908c2fe3c0e4c675d38456ad43b75d8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a908c2fe3c0e4c675d38456ad43b75d8c">data_80450B7C</a> [4]</td></tr>
-<tr class="separator:a908c2fe3c0e4c675d38456ad43b75d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e3349cf415ed50a8cbac7ee47eca8b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a2e3349cf415ed50a8cbac7ee47eca8b8">data_80450B80</a> [4]</td></tr>
-<tr class="separator:a2e3349cf415ed50a8cbac7ee47eca8b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d7307cf2ac391c2138a741fef4e7fe8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a6d7307cf2ac391c2138a741fef4e7fe8">data_80450B84</a> [4]</td></tr>
-<tr class="separator:a6d7307cf2ac391c2138a741fef4e7fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f69c958a82191e873c72138c91d3213"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a9f69c958a82191e873c72138c91d3213">data_80450B88</a> [4]</td></tr>
-<tr class="separator:a9f69c958a82191e873c72138c91d3213"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a681a562fcb32181ab5800864212da4a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a681a562fcb32181ab5800864212da4a0">__vt__15Z2SoundObjCoach</a> [8]</td></tr>
 <tr class="separator:a681a562fcb32181ab5800864212da4a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a869f5a697badd8f50428b2a9dd9a7caf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a869f5a697badd8f50428b2a9dd9a7caf">__vt__18Z2RideSoundStarter</a> [5]</td></tr>
@@ -403,8 +351,6 @@ Variables</h2></td></tr>
 <tr class="separator:a0f575014b3d716d941ad0dcfe74c7d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf8a929148aff3bc98a15a130bf0023b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#aaf8a929148aff3bc98a15a130bf0023b">lit_3726</a> [8]</td></tr>
 <tr class="separator:aaf8a929148aff3bc98a15a130bf0023b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8253b694e3a36ae25bf95e7cf349eef5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#a8253b694e3a36ae25bf95e7cf349eef5">lit_3743</a> = 7.0f / 20.0f</td></tr>
-<tr class="separator:a8253b694e3a36ae25bf95e7cf349eef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3f770fd47c102952f1d662bd84fa821"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#ad3f770fd47c102952f1d662bd84fa821">lit_3834</a> = 32.0f</td></tr>
 <tr class="separator:ad3f770fd47c102952f1d662bd84fa821"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2319f7716da32de45a0488fcf7ae659"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2LinkMgr_8cpp.html#aa2319f7716da32de45a0488fcf7ae659">lit_3835</a> = 127.0f</td></tr>
@@ -718,14 +664,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a215914d204dbfb7159370d66e86233d2" name="a215914d204dbfb7159370d66e86233d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a215914d204dbfb7159370d66e86233d2">&#9670;&#160;</a></span>__dt__18Z2LinkSoundStarterFv()</h2>
+<a id="a1b9a7c99f8d21d5b50142fcec35d207a" name="a1b9a7c99f8d21d5b50142fcec35d207a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b9a7c99f8d21d5b50142fcec35d207a">&#9670;&#160;</a></span>__dt__18Z2LinkSoundStarterFv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __dt__18Z2LinkSoundStarterFv </td>
+          <td class="memname">void __dt__18Z2LinkSoundStarterFv </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -735,14 +681,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a1ba2a071743ca7f16124c6c7e0d9de18" name="a1ba2a071743ca7f16124c6c7e0d9de18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ba2a071743ca7f16124c6c7e0d9de18">&#9670;&#160;</a></span>__dt__18Z2RideSoundStarterFv()</h2>
+<a id="a8e524c58cd0debe550cfe28e2e646387" name="a8e524c58cd0debe550cfe28e2e646387"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e524c58cd0debe550cfe28e2e646387">&#9670;&#160;</a></span>__dt__18Z2RideSoundStarterFv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void __dt__18Z2RideSoundStarterFv </td>
+          <td class="memname">void __dt__18Z2RideSoundStarterFv </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -888,14 +834,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4622fa0f0ba1f6971cb411f0841e5b9d" name="a4622fa0f0ba1f6971cb411f0841e5b9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4622fa0f0ba1f6971cb411f0841e5b9d">&#9670;&#160;</a></span>deleteObject__14Z2CreatureLinkFv()</h2>
+<a id="a1b710409e41d608d72b75f4ae59aac44" name="a1b710409e41d608d72b75f4ae59aac44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b710409e41d608d72b75f4ae59aac44">&#9670;&#160;</a></span>deleteObject__14Z2CreatureLinkFv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void deleteObject__14Z2CreatureLinkFv </td>
+          <td class="memname">void deleteObject__14Z2CreatureLinkFv </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -905,14 +851,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a8b2a514acc4e4bb9280bb58c3ccc24b0" name="a8b2a514acc4e4bb9280bb58c3ccc24b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b2a514acc4e4bb9280bb58c3ccc24b0">&#9670;&#160;</a></span>deleteObject__14Z2CreatureRideFv()</h2>
+<a id="ad8f97e300399a0d30d9f96cbdcc9ff12" name="ad8f97e300399a0d30d9f96cbdcc9ff12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8f97e300399a0d30d9f96cbdcc9ff12">&#9670;&#160;</a></span>deleteObject__14Z2CreatureRideFv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void deleteObject__14Z2CreatureRideFv </td>
+          <td class="memname">void deleteObject__14Z2CreatureRideFv </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1075,8 +1021,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4a4a9380b9438ab46916c6ffcfe1e41c" name="a4a4a9380b9438ab46916c6ffcfe1e41c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a4a9380b9438ab46916c6ffcfe1e41c">&#9670;&#160;</a></span>func_802C588C()</h2>
+<a id="a9fe7b0d421eb478324d1e8128c9ac6dc" name="a9fe7b0d421eb478324d1e8128c9ac6dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fe7b0d421eb478324d1e8128c9ac6dc">&#9670;&#160;</a></span>func_802C588C()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1085,7 +1031,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void func_802C588C </td>
+          <td class="memname">static void func_802C588C </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1100,8 +1046,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aec52c2cee5204aad1d4ca7d081372681" name="aec52c2cee5204aad1d4ca7d081372681"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec52c2cee5204aad1d4ca7d081372681">&#9670;&#160;</a></span>func_802C5894()</h2>
+<a id="a2d3b53b7aea06f2d58c9c05efaba06ec" name="a2d3b53b7aea06f2d58c9c05efaba06ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d3b53b7aea06f2d58c9c05efaba06ec">&#9670;&#160;</a></span>func_802C5894()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1110,7 +1056,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void func_802C5894 </td>
+          <td class="memname">static void func_802C5894 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -2134,7 +2080,7 @@ Variables</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> ,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#a4622fa0f0ba1f6971cb411f0841e5b9d">deleteObject__14Z2CreatureLinkFv</a>,</div>
+<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#a1b710409e41d608d72b75f4ae59aac44">deleteObject__14Z2CreatureLinkFv</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#a975e86ba457e3aabd60f764aa14e36d3">setSoundStarter__10Z2CreatureFP14Z2SoundStarter</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#a89965f292fd2dd53029b08d652866128">framework__14Z2CreatureLinkFUlSc</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#ae154ea6b0d2aca3177c6c29471438de7">startCreatureSound__10Z2CreatureF10JAISoundIDUlSc</a>,</div>
@@ -2146,21 +2092,21 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#a039b2cac342594f465a5bf46f8fbcb1e">startCollisionSE__14Z2CreatureLinkFUlUl</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#a4a4a9380b9438ab46916c6ffcfe1e41c">func_802C588C</a>,</div>
+<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#a9fe7b0d421eb478324d1e8128c9ac6dc">func_802C588C</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#a41ff5d3e641d1bd2e57114f317943c45">func_802AABF4</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#afc83521d2603e3f0d3972c2aca651bf7">func_802C4928</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#ac4bf410d33d268a1640c637a3cb9490c">__dt__14Z2CreatureLinkFv</a>,</div>
 <div class="line">}</div>
 <div class="ttc" id="aZ2LinkMgr_8cpp_html_a039b2cac342594f465a5bf46f8fbcb1e"><div class="ttname"><a href="Z2LinkMgr_8cpp.html#a039b2cac342594f465a5bf46f8fbcb1e">startCollisionSE__14Z2CreatureLinkFUlUl</a></div><div class="ttdeci">void startCollisionSE__14Z2CreatureLinkFUlUl()</div></div>
 <div class="ttc" id="aZ2LinkMgr_8cpp_html_a0a9d1de350834569a97a73290368f604"><div class="ttname"><a href="Z2LinkMgr_8cpp.html#a0a9d1de350834569a97a73290368f604">startCreatureVoice__10Z2CreatureF10JAISoundIDSc</a></div><div class="ttdeci">void startCreatureVoice__10Z2CreatureF10JAISoundIDSc()</div></div>
+<div class="ttc" id="aZ2LinkMgr_8cpp_html_a1b710409e41d608d72b75f4ae59aac44"><div class="ttname"><a href="Z2LinkMgr_8cpp.html#a1b710409e41d608d72b75f4ae59aac44">deleteObject__14Z2CreatureLinkFv</a></div><div class="ttdeci">void deleteObject__14Z2CreatureLinkFv()</div></div>
 <div class="ttc" id="aZ2LinkMgr_8cpp_html_a41ff5d3e641d1bd2e57114f317943c45"><div class="ttname"><a href="Z2LinkMgr_8cpp.html#a41ff5d3e641d1bd2e57114f317943c45">func_802AABF4</a></div><div class="ttdeci">void func_802AABF4()</div></div>
-<div class="ttc" id="aZ2LinkMgr_8cpp_html_a4622fa0f0ba1f6971cb411f0841e5b9d"><div class="ttname"><a href="Z2LinkMgr_8cpp.html#a4622fa0f0ba1f6971cb411f0841e5b9d">deleteObject__14Z2CreatureLinkFv</a></div><div class="ttdeci">void deleteObject__14Z2CreatureLinkFv()</div><div class="ttdef"><b>Definition:</b> Z2LinkMgr.cpp:330</div></div>
-<div class="ttc" id="aZ2LinkMgr_8cpp_html_a4a4a9380b9438ab46916c6ffcfe1e41c"><div class="ttname"><a href="Z2LinkMgr_8cpp.html#a4a4a9380b9438ab46916c6ffcfe1e41c">func_802C588C</a></div><div class="ttdeci">static void func_802C588C()</div><div class="ttdef"><b>Definition:</b> Z2LinkMgr.cpp:780</div></div>
 <div class="ttc" id="aZ2LinkMgr_8cpp_html_a84889055f35e9a764435c5378c5b495e"><div class="ttname"><a href="Z2LinkMgr_8cpp.html#a84889055f35e9a764435c5378c5b495e">startCreatureExtraSound__10Z2CreatureF10JAISoundIDUlSc</a></div><div class="ttdeci">void startCreatureExtraSound__10Z2CreatureF10JAISoundIDUlSc()</div></div>
 <div class="ttc" id="aZ2LinkMgr_8cpp_html_a857453a614b0f2cf1ee9ea78fc9d5b66"><div class="ttname"><a href="Z2LinkMgr_8cpp.html#a857453a614b0f2cf1ee9ea78fc9d5b66">startCreatureSoundLevel__10Z2CreatureF10JAISoundIDUlSc</a></div><div class="ttdeci">void startCreatureSoundLevel__10Z2CreatureF10JAISoundIDUlSc()</div></div>
 <div class="ttc" id="aZ2LinkMgr_8cpp_html_a89965f292fd2dd53029b08d652866128"><div class="ttname"><a href="Z2LinkMgr_8cpp.html#a89965f292fd2dd53029b08d652866128">framework__14Z2CreatureLinkFUlSc</a></div><div class="ttdeci">void framework__14Z2CreatureLinkFUlSc()</div></div>
 <div class="ttc" id="aZ2LinkMgr_8cpp_html_a93c68956a1bc388a610aba3194b1e409"><div class="ttname"><a href="Z2LinkMgr_8cpp.html#a93c68956a1bc388a610aba3194b1e409">startCreatureVoiceLevel__10Z2CreatureF10JAISoundIDSc</a></div><div class="ttdeci">void startCreatureVoiceLevel__10Z2CreatureF10JAISoundIDSc()</div></div>
 <div class="ttc" id="aZ2LinkMgr_8cpp_html_a975e86ba457e3aabd60f764aa14e36d3"><div class="ttname"><a href="Z2LinkMgr_8cpp.html#a975e86ba457e3aabd60f764aa14e36d3">setSoundStarter__10Z2CreatureFP14Z2SoundStarter</a></div><div class="ttdeci">void setSoundStarter__10Z2CreatureFP14Z2SoundStarter()</div></div>
+<div class="ttc" id="aZ2LinkMgr_8cpp_html_a9fe7b0d421eb478324d1e8128c9ac6dc"><div class="ttname"><a href="Z2LinkMgr_8cpp.html#a9fe7b0d421eb478324d1e8128c9ac6dc">func_802C588C</a></div><div class="ttdeci">static void func_802C588C()</div></div>
 <div class="ttc" id="aZ2LinkMgr_8cpp_html_ac4bf410d33d268a1640c637a3cb9490c"><div class="ttname"><a href="Z2LinkMgr_8cpp.html#ac4bf410d33d268a1640c637a3cb9490c">__dt__14Z2CreatureLinkFv</a></div><div class="ttdeci">void __dt__14Z2CreatureLinkFv()</div></div>
 <div class="ttc" id="aZ2LinkMgr_8cpp_html_ac980fc6318cbf60d2a24277199ae2e78"><div class="ttname"><a href="Z2LinkMgr_8cpp.html#ac980fc6318cbf60d2a24277199ae2e78">startCreatureExtraSoundLevel__10Z2CreatureF10JAISoundIDUlSc</a></div><div class="ttdeci">void startCreatureExtraSoundLevel__10Z2CreatureF10JAISoundIDUlSc()</div></div>
 <div class="ttc" id="aZ2LinkMgr_8cpp_html_ae154ea6b0d2aca3177c6c29471438de7"><div class="ttname"><a href="Z2LinkMgr_8cpp.html#ae154ea6b0d2aca3177c6c29471438de7">startCreatureSound__10Z2CreatureF10JAISoundIDUlSc</a></div><div class="ttdeci">void startCreatureSound__10Z2CreatureF10JAISoundIDUlSc()</div></div>
@@ -2191,7 +2137,7 @@ Variables</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> ,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#a8b2a514acc4e4bb9280bb58c3ccc24b0">deleteObject__14Z2CreatureRideFv</a>,</div>
+<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#ad8f97e300399a0d30d9f96cbdcc9ff12">deleteObject__14Z2CreatureRideFv</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#a975e86ba457e3aabd60f764aa14e36d3">setSoundStarter__10Z2CreatureFP14Z2SoundStarter</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#a7415b9f3212cb86a0ac958be5d841b1e">framework__10Z2CreatureFUlSc</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#ae154ea6b0d2aca3177c6c29471438de7">startCreatureSound__10Z2CreatureF10JAISoundIDUlSc</a>,</div>
@@ -2203,16 +2149,16 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#aef63ae1c45c8d57579fac13a3092eed2">startCollisionSE__10Z2CreatureFUlUl</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#aec52c2cee5204aad1d4ca7d081372681">func_802C5894</a>,</div>
+<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#a2d3b53b7aea06f2d58c9c05efaba06ec">func_802C5894</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#a41ff5d3e641d1bd2e57114f317943c45">func_802AABF4</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#a79ff232a6c68985347cd39d8ca5508f6">func_802C5284</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#a95e850d38ca93db0a33447819a287136">__dt__14Z2CreatureRideFv</a>,</div>
 <div class="line">}</div>
+<div class="ttc" id="aZ2LinkMgr_8cpp_html_a2d3b53b7aea06f2d58c9c05efaba06ec"><div class="ttname"><a href="Z2LinkMgr_8cpp.html#a2d3b53b7aea06f2d58c9c05efaba06ec">func_802C5894</a></div><div class="ttdeci">static void func_802C5894()</div></div>
 <div class="ttc" id="aZ2LinkMgr_8cpp_html_a7415b9f3212cb86a0ac958be5d841b1e"><div class="ttname"><a href="Z2LinkMgr_8cpp.html#a7415b9f3212cb86a0ac958be5d841b1e">framework__10Z2CreatureFUlSc</a></div><div class="ttdeci">void framework__10Z2CreatureFUlSc()</div></div>
 <div class="ttc" id="aZ2LinkMgr_8cpp_html_a79ff232a6c68985347cd39d8ca5508f6"><div class="ttname"><a href="Z2LinkMgr_8cpp.html#a79ff232a6c68985347cd39d8ca5508f6">func_802C5284</a></div><div class="ttdeci">void func_802C5284()</div></div>
-<div class="ttc" id="aZ2LinkMgr_8cpp_html_a8b2a514acc4e4bb9280bb58c3ccc24b0"><div class="ttname"><a href="Z2LinkMgr_8cpp.html#a8b2a514acc4e4bb9280bb58c3ccc24b0">deleteObject__14Z2CreatureRideFv</a></div><div class="ttdeci">void deleteObject__14Z2CreatureRideFv()</div><div class="ttdef"><b>Definition:</b> Z2LinkMgr.cpp:661</div></div>
 <div class="ttc" id="aZ2LinkMgr_8cpp_html_a95e850d38ca93db0a33447819a287136"><div class="ttname"><a href="Z2LinkMgr_8cpp.html#a95e850d38ca93db0a33447819a287136">__dt__14Z2CreatureRideFv</a></div><div class="ttdeci">void __dt__14Z2CreatureRideFv()</div></div>
-<div class="ttc" id="aZ2LinkMgr_8cpp_html_aec52c2cee5204aad1d4ca7d081372681"><div class="ttname"><a href="Z2LinkMgr_8cpp.html#aec52c2cee5204aad1d4ca7d081372681">func_802C5894</a></div><div class="ttdeci">static void func_802C5894()</div><div class="ttdef"><b>Definition:</b> Z2LinkMgr.cpp:790</div></div>
+<div class="ttc" id="aZ2LinkMgr_8cpp_html_ad8f97e300399a0d30d9f96cbdcc9ff12"><div class="ttname"><a href="Z2LinkMgr_8cpp.html#ad8f97e300399a0d30d9f96cbdcc9ff12">deleteObject__14Z2CreatureRideFv</a></div><div class="ttdeci">void deleteObject__14Z2CreatureRideFv()</div></div>
 <div class="ttc" id="aZ2LinkMgr_8cpp_html_aef63ae1c45c8d57579fac13a3092eed2"><div class="ttname"><a href="Z2LinkMgr_8cpp.html#aef63ae1c45c8d57579fac13a3092eed2">startCollisionSE__10Z2CreatureFUlUl</a></div><div class="ttdeci">void startCollisionSE__10Z2CreatureFUlUl()</div></div>
 </div><!-- fragment -->
 </div>
@@ -2319,10 +2265,10 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> , (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,          (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#a215914d204dbfb7159370d66e86233d2">__dt__18Z2LinkSoundStarterFv</a>,</div>
+<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> , (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,          (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#a1b9a7c99f8d21d5b50142fcec35d207a">__dt__18Z2LinkSoundStarterFv</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#a41ff5d3e641d1bd2e57114f317943c45">func_802AABF4</a>,   (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#afc83521d2603e3f0d3972c2aca651bf7">func_802C4928</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aZ2LinkMgr_8cpp_html_a215914d204dbfb7159370d66e86233d2"><div class="ttname"><a href="Z2LinkMgr_8cpp.html#a215914d204dbfb7159370d66e86233d2">__dt__18Z2LinkSoundStarterFv</a></div><div class="ttdeci">void __dt__18Z2LinkSoundStarterFv()</div><div class="ttdef"><b>Definition:</b> Z2LinkMgr.cpp:309</div></div>
+<div class="ttc" id="aZ2LinkMgr_8cpp_html_a1b9a7c99f8d21d5b50142fcec35d207a"><div class="ttname"><a href="Z2LinkMgr_8cpp.html#a1b9a7c99f8d21d5b50142fcec35d207a">__dt__18Z2LinkSoundStarterFv</a></div><div class="ttdeci">void __dt__18Z2LinkSoundStarterFv()</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2346,209 +2292,11 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> , (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,          (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#a1ba2a071743ca7f16124c6c7e0d9de18">__dt__18Z2RideSoundStarterFv</a>,</div>
+<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> , (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,          (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#a8e524c58cd0debe550cfe28e2e646387">__dt__18Z2RideSoundStarterFv</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#a41ff5d3e641d1bd2e57114f317943c45">func_802AABF4</a>,   (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2LinkMgr_8cpp.html#a79ff232a6c68985347cd39d8ca5508f6">func_802C5284</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aZ2LinkMgr_8cpp_html_a1ba2a071743ca7f16124c6c7e0d9de18"><div class="ttname"><a href="Z2LinkMgr_8cpp.html#a1ba2a071743ca7f16124c6c7e0d9de18">__dt__18Z2RideSoundStarterFv</a></div><div class="ttdeci">void __dt__18Z2RideSoundStarterFv()</div><div class="ttdef"><b>Definition:</b> Z2LinkMgr.cpp:640</div></div>
+<div class="ttc" id="aZ2LinkMgr_8cpp_html_a8e524c58cd0debe550cfe28e2e646387"><div class="ttname"><a href="Z2LinkMgr_8cpp.html#a8e524c58cd0debe550cfe28e2e646387">__dt__18Z2RideSoundStarterFv</a></div><div class="ttdeci">void __dt__18Z2RideSoundStarterFv()</div></div>
 </div><!-- fragment -->
-</div>
-</div>
-<a id="a397018c73abbf2576f73051263ecc75f" name="a397018c73abbf2576f73051263ecc75f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a397018c73abbf2576f73051263ecc75f">&#9670;&#160;</a></span>data_80450B40</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_80450B40[4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1de5c592f9e2c2441b93ef0a5c9f8476" name="a1de5c592f9e2c2441b93ef0a5c9f8476"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1de5c592f9e2c2441b93ef0a5c9f8476">&#9670;&#160;</a></span>data_80450B44</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_80450B44[4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aed2fd4b9dffb70ac6572668fdf372861" name="aed2fd4b9dffb70ac6572668fdf372861"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed2fd4b9dffb70ac6572668fdf372861">&#9670;&#160;</a></span>data_80450B48</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_80450B48[4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6e5852eaeb38e9ebcec5306ffd8e6a7e" name="a6e5852eaeb38e9ebcec5306ffd8e6a7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e5852eaeb38e9ebcec5306ffd8e6a7e">&#9670;&#160;</a></span>data_80450B74</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_80450B74[4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a908c2fe3c0e4c675d38456ad43b75d8c" name="a908c2fe3c0e4c675d38456ad43b75d8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a908c2fe3c0e4c675d38456ad43b75d8c">&#9670;&#160;</a></span>data_80450B7C</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_80450B7C[4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2e3349cf415ed50a8cbac7ee47eca8b8" name="a2e3349cf415ed50a8cbac7ee47eca8b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e3349cf415ed50a8cbac7ee47eca8b8">&#9670;&#160;</a></span>data_80450B80</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_80450B80[4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6d7307cf2ac391c2138a741fef4e7fe8" name="a6d7307cf2ac391c2138a741fef4e7fe8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d7307cf2ac391c2138a741fef4e7fe8">&#9670;&#160;</a></span>data_80450B84</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_80450B84[4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9f69c958a82191e873c72138c91d3213" name="a9f69c958a82191e873c72138c91d3213"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f69c958a82191e873c72138c91d3213">&#9670;&#160;</a></span>data_80450B88</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_80450B88[4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a50ad47c26bcc2867f2c14d349753f58e" name="a50ad47c26bcc2867f2c14d349753f58e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50ad47c26bcc2867f2c14d349753f58e">&#9670;&#160;</a></span>g_dComIfG_gameInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> g_dComIfG_gameInfo[122384]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
 </div>
 </div>
 <a id="a6d8f8f88148177d0596253fdcec86fde" name="a6d8f8f88148177d0596253fdcec86fde"></a>
@@ -2689,28 +2437,6 @@ Variables</h2></td></tr>
 <div class="line">    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-</div>
-</div>
-<a id="a8253b694e3a36ae25bf95e7cf349eef5" name="a8253b694e3a36ae25bf95e7cf349eef5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8253b694e3a36ae25bf95e7cf349eef5">&#9670;&#160;</a></span>lit_3743</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> lit_3743 = 7.0f / 20.0f</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
 </div>
 </div>
 <a id="ad3f770fd47c102952f1d662bd84fa821" name="ad3f770fd47c102952f1d662bd84fa821"></a>
