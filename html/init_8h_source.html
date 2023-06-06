@@ -87,11 +87,23 @@ $(function() {
 <a href="init_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef INIT_H</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define INIT_H</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="MSL__Common_2Src_2string_8h.html">MSL_C/MSL_Common/Src/string.h</a>&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="types_8h.html">dolphin/types.h</a>&quot;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#endif </span><span class="comment">/* INIT_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aMSL__Common_2Src_2string_8h_html"><div class="ttname"><a href="MSL__Common_2Src_2string_8h.html">string.h</a></div></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="types_8h.html">dolphin/types.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="init_8h.html#a56d9278aaad6bf6ae65419018dddc604">   10</a></span><a class="code hl_function" href="init_8h.html#a56d9278aaad6bf6ae65419018dddc604">__declspec</a>(section <span class="stringliteral">&quot;.init&quot;</span>) <span class="keywordtype">void</span>* <a class="code hl_function" href="msgbuf_8c.html#afeee065ffcd4d71bce554a3c1eb1e653">TRK_memset</a>(<span class="keywordtype">void</span>* dst, <span class="keywordtype">int</span> <a class="code hl_variable" href="init_8h.html#aa0ccb5ee6d882ee3605ff47745c6467b">val</a>, <span class="keywordtype">size_t</span> <a class="code hl_variable" href="init_8h.html#a7ff3cacc14747d630cb3e5b9426c9c6e">n</a>);</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>}</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#endif </span><span class="comment">/* INIT_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="ainit_8h_html_a56d9278aaad6bf6ae65419018dddc604"><div class="ttname"><a href="init_8h.html#a56d9278aaad6bf6ae65419018dddc604">__declspec</a></div><div class="ttdeci">__declspec(section &quot;.init&quot;) void *TRK_memset(void *dst</div></div>
+<div class="ttc" id="ainit_8h_html_a7ff3cacc14747d630cb3e5b9426c9c6e"><div class="ttname"><a href="init_8h.html#a7ff3cacc14747d630cb3e5b9426c9c6e">n</a></div><div class="ttdeci">int size_t n</div><div class="ttdef"><b>Definition:</b> init.h:10</div></div>
+<div class="ttc" id="ainit_8h_html_aa0ccb5ee6d882ee3605ff47745c6467b"><div class="ttname"><a href="init_8h.html#aa0ccb5ee6d882ee3605ff47745c6467b">val</a></div><div class="ttdeci">int val</div><div class="ttdef"><b>Definition:</b> init.h:10</div></div>
+<div class="ttc" id="amsgbuf_8c_html_afeee065ffcd4d71bce554a3c1eb1e653"><div class="ttname"><a href="msgbuf_8c.html#afeee065ffcd4d71bce554a3c1eb1e653">TRK_memset</a></div><div class="ttdeci">SECTION_INIT void TRK_memset()</div></div>
 <div class="ttc" id="atypes_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

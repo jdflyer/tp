@@ -89,8 +89,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="Pad_8h_source.html">dolphin/pad/Pad.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="MSL__Common_2Src_2string_8h_source.html">MSL_C/MSL_Common/Src/string.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="string_8h_source.html">MSL_C/string.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SIBios_8h_source.html">dolphin/si/SIBios.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SISamplingRate_8h_source.html">dolphin/si/SISamplingRate.h</a>&quot;</code><br />
 <code>#include &quot;asm/dolphin/pad/Pad/SPEC2_MakeStatus.s&quot;</code><br />
@@ -265,18 +266,18 @@ Variables</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">    (<a class="code hl_define" href="Pad_8h.html#acb6ec116b0bc8154e39e40d4be67a696">PAD_BUTTON_LEFT</a> | <a class="code hl_define" href="Pad_8h.html#af2b383d85bb3335991cbccbcd4a64c2d">PAD_BUTTON_RIGHT</a> | <a class="code hl_define" href="Pad_8h.html#ae48097e87ec8365ec349992b79523291">PAD_BUTTON_DOWN</a> | <a class="code hl_define" href="Pad_8h.html#a2d1abce63bb9f1f3a2eb27e52755d0df">PAD_BUTTON_UP</a> | <a class="code hl_define" href="Pad_8h.html#a654eb66f90979f4cb95309a3ad40d2e3">PAD_TRIGGER_Z</a> |        \</div>
 <div class="line">     <a class="code hl_define" href="Pad_8h.html#ae173d902987dcc04e51b8a49de48329c">PAD_TRIGGER_R</a> | <a class="code hl_define" href="Pad_8h.html#ad82cf53a825b6346e69e21a5bde77ad4">PAD_TRIGGER_L</a> | <a class="code hl_define" href="Pad_8h.html#a8c9e920d1d324e1174efd9714d5d0875">PAD_BUTTON_A</a> | <a class="code hl_define" href="Pad_8h.html#a4a330b5c13b79007155039104e999802">PAD_BUTTON_B</a> | <a class="code hl_define" href="Pad_8h.html#a5ed8aea160e9ccd981e38b9404345718">PAD_BUTTON_X</a> | <a class="code hl_define" href="Pad_8h.html#a65d018cdd34b0e74b58bec7c3ad1fd13">PAD_BUTTON_Y</a> |   \</div>
 <div class="line">     <a class="code hl_define" href="Pad_8h.html#ac20f6fc48d8e4ce713def71bcd747012">PAD_BUTTON_MENU</a> | 0x2000 | 0x0080)</div>
-<div class="ttc" id="aPad_8h_html_a2d1abce63bb9f1f3a2eb27e52755d0df"><div class="ttname"><a href="Pad_8h.html#a2d1abce63bb9f1f3a2eb27e52755d0df">PAD_BUTTON_UP</a></div><div class="ttdeci">#define PAD_BUTTON_UP</div><div class="ttdef"><b>Definition:</b> Pad.h:36</div></div>
-<div class="ttc" id="aPad_8h_html_a4a330b5c13b79007155039104e999802"><div class="ttname"><a href="Pad_8h.html#a4a330b5c13b79007155039104e999802">PAD_BUTTON_B</a></div><div class="ttdeci">#define PAD_BUTTON_B</div><div class="ttdef"><b>Definition:</b> Pad.h:41</div></div>
-<div class="ttc" id="aPad_8h_html_a5ed8aea160e9ccd981e38b9404345718"><div class="ttname"><a href="Pad_8h.html#a5ed8aea160e9ccd981e38b9404345718">PAD_BUTTON_X</a></div><div class="ttdeci">#define PAD_BUTTON_X</div><div class="ttdef"><b>Definition:</b> Pad.h:42</div></div>
-<div class="ttc" id="aPad_8h_html_a654eb66f90979f4cb95309a3ad40d2e3"><div class="ttname"><a href="Pad_8h.html#a654eb66f90979f4cb95309a3ad40d2e3">PAD_TRIGGER_Z</a></div><div class="ttdeci">#define PAD_TRIGGER_Z</div><div class="ttdef"><b>Definition:</b> Pad.h:37</div></div>
-<div class="ttc" id="aPad_8h_html_a65d018cdd34b0e74b58bec7c3ad1fd13"><div class="ttname"><a href="Pad_8h.html#a65d018cdd34b0e74b58bec7c3ad1fd13">PAD_BUTTON_Y</a></div><div class="ttdeci">#define PAD_BUTTON_Y</div><div class="ttdef"><b>Definition:</b> Pad.h:43</div></div>
-<div class="ttc" id="aPad_8h_html_a8c9e920d1d324e1174efd9714d5d0875"><div class="ttname"><a href="Pad_8h.html#a8c9e920d1d324e1174efd9714d5d0875">PAD_BUTTON_A</a></div><div class="ttdeci">#define PAD_BUTTON_A</div><div class="ttdef"><b>Definition:</b> Pad.h:40</div></div>
-<div class="ttc" id="aPad_8h_html_ac20f6fc48d8e4ce713def71bcd747012"><div class="ttname"><a href="Pad_8h.html#ac20f6fc48d8e4ce713def71bcd747012">PAD_BUTTON_MENU</a></div><div class="ttdeci">#define PAD_BUTTON_MENU</div><div class="ttdef"><b>Definition:</b> Pad.h:44</div></div>
-<div class="ttc" id="aPad_8h_html_acb6ec116b0bc8154e39e40d4be67a696"><div class="ttname"><a href="Pad_8h.html#acb6ec116b0bc8154e39e40d4be67a696">PAD_BUTTON_LEFT</a></div><div class="ttdeci">#define PAD_BUTTON_LEFT</div><div class="ttdef"><b>Definition:</b> Pad.h:33</div></div>
-<div class="ttc" id="aPad_8h_html_ad82cf53a825b6346e69e21a5bde77ad4"><div class="ttname"><a href="Pad_8h.html#ad82cf53a825b6346e69e21a5bde77ad4">PAD_TRIGGER_L</a></div><div class="ttdeci">#define PAD_TRIGGER_L</div><div class="ttdef"><b>Definition:</b> Pad.h:39</div></div>
-<div class="ttc" id="aPad_8h_html_ae173d902987dcc04e51b8a49de48329c"><div class="ttname"><a href="Pad_8h.html#ae173d902987dcc04e51b8a49de48329c">PAD_TRIGGER_R</a></div><div class="ttdeci">#define PAD_TRIGGER_R</div><div class="ttdef"><b>Definition:</b> Pad.h:38</div></div>
-<div class="ttc" id="aPad_8h_html_ae48097e87ec8365ec349992b79523291"><div class="ttname"><a href="Pad_8h.html#ae48097e87ec8365ec349992b79523291">PAD_BUTTON_DOWN</a></div><div class="ttdeci">#define PAD_BUTTON_DOWN</div><div class="ttdef"><b>Definition:</b> Pad.h:35</div></div>
-<div class="ttc" id="aPad_8h_html_af2b383d85bb3335991cbccbcd4a64c2d"><div class="ttname"><a href="Pad_8h.html#af2b383d85bb3335991cbccbcd4a64c2d">PAD_BUTTON_RIGHT</a></div><div class="ttdeci">#define PAD_BUTTON_RIGHT</div><div class="ttdef"><b>Definition:</b> Pad.h:34</div></div>
+<div class="ttc" id="aPad_8h_html_a2d1abce63bb9f1f3a2eb27e52755d0df"><div class="ttname"><a href="Pad_8h.html#a2d1abce63bb9f1f3a2eb27e52755d0df">PAD_BUTTON_UP</a></div><div class="ttdeci">#define PAD_BUTTON_UP</div><div class="ttdef"><b>Definition:</b> Pad.h:38</div></div>
+<div class="ttc" id="aPad_8h_html_a4a330b5c13b79007155039104e999802"><div class="ttname"><a href="Pad_8h.html#a4a330b5c13b79007155039104e999802">PAD_BUTTON_B</a></div><div class="ttdeci">#define PAD_BUTTON_B</div><div class="ttdef"><b>Definition:</b> Pad.h:43</div></div>
+<div class="ttc" id="aPad_8h_html_a5ed8aea160e9ccd981e38b9404345718"><div class="ttname"><a href="Pad_8h.html#a5ed8aea160e9ccd981e38b9404345718">PAD_BUTTON_X</a></div><div class="ttdeci">#define PAD_BUTTON_X</div><div class="ttdef"><b>Definition:</b> Pad.h:44</div></div>
+<div class="ttc" id="aPad_8h_html_a654eb66f90979f4cb95309a3ad40d2e3"><div class="ttname"><a href="Pad_8h.html#a654eb66f90979f4cb95309a3ad40d2e3">PAD_TRIGGER_Z</a></div><div class="ttdeci">#define PAD_TRIGGER_Z</div><div class="ttdef"><b>Definition:</b> Pad.h:39</div></div>
+<div class="ttc" id="aPad_8h_html_a65d018cdd34b0e74b58bec7c3ad1fd13"><div class="ttname"><a href="Pad_8h.html#a65d018cdd34b0e74b58bec7c3ad1fd13">PAD_BUTTON_Y</a></div><div class="ttdeci">#define PAD_BUTTON_Y</div><div class="ttdef"><b>Definition:</b> Pad.h:45</div></div>
+<div class="ttc" id="aPad_8h_html_a8c9e920d1d324e1174efd9714d5d0875"><div class="ttname"><a href="Pad_8h.html#a8c9e920d1d324e1174efd9714d5d0875">PAD_BUTTON_A</a></div><div class="ttdeci">#define PAD_BUTTON_A</div><div class="ttdef"><b>Definition:</b> Pad.h:42</div></div>
+<div class="ttc" id="aPad_8h_html_ac20f6fc48d8e4ce713def71bcd747012"><div class="ttname"><a href="Pad_8h.html#ac20f6fc48d8e4ce713def71bcd747012">PAD_BUTTON_MENU</a></div><div class="ttdeci">#define PAD_BUTTON_MENU</div><div class="ttdef"><b>Definition:</b> Pad.h:46</div></div>
+<div class="ttc" id="aPad_8h_html_acb6ec116b0bc8154e39e40d4be67a696"><div class="ttname"><a href="Pad_8h.html#acb6ec116b0bc8154e39e40d4be67a696">PAD_BUTTON_LEFT</a></div><div class="ttdeci">#define PAD_BUTTON_LEFT</div><div class="ttdef"><b>Definition:</b> Pad.h:35</div></div>
+<div class="ttc" id="aPad_8h_html_ad82cf53a825b6346e69e21a5bde77ad4"><div class="ttname"><a href="Pad_8h.html#ad82cf53a825b6346e69e21a5bde77ad4">PAD_TRIGGER_L</a></div><div class="ttdeci">#define PAD_TRIGGER_L</div><div class="ttdef"><b>Definition:</b> Pad.h:41</div></div>
+<div class="ttc" id="aPad_8h_html_ae173d902987dcc04e51b8a49de48329c"><div class="ttname"><a href="Pad_8h.html#ae173d902987dcc04e51b8a49de48329c">PAD_TRIGGER_R</a></div><div class="ttdeci">#define PAD_TRIGGER_R</div><div class="ttdef"><b>Definition:</b> Pad.h:40</div></div>
+<div class="ttc" id="aPad_8h_html_ae48097e87ec8365ec349992b79523291"><div class="ttname"><a href="Pad_8h.html#ae48097e87ec8365ec349992b79523291">PAD_BUTTON_DOWN</a></div><div class="ttdeci">#define PAD_BUTTON_DOWN</div><div class="ttdef"><b>Definition:</b> Pad.h:37</div></div>
+<div class="ttc" id="aPad_8h_html_af2b383d85bb3335991cbccbcd4a64c2d"><div class="ttname"><a href="Pad_8h.html#af2b383d85bb3335991cbccbcd4a64c2d">PAD_BUTTON_RIGHT</a></div><div class="ttdeci">#define PAD_BUTTON_RIGHT</div><div class="ttdef"><b>Definition:</b> Pad.h:36</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1470,7 +1471,7 @@ Variables</h2></td></tr>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aPad_8c_html_a0f8bd96edf66a43aa51282191beedf1b"><div class="ttname"><a href="Pad_8c.html#a0f8bd96edf66a43aa51282191beedf1b">OnReset</a></div><div class="ttdeci">static s32 OnReset(s32 final)</div><div class="ttdef"><b>Definition:</b> Pad.c:783</div></div>
+<div class="ttc" id="aPad_8c_html_a0f8bd96edf66a43aa51282191beedf1b"><div class="ttname"><a href="Pad_8c.html#a0f8bd96edf66a43aa51282191beedf1b">OnReset</a></div><div class="ttdeci">static s32 OnReset(s32 final)</div><div class="ttdef"><b>Definition:</b> Pad.c:784</div></div>
 <div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:12</div></div>
 </div><!-- fragment -->
 </div>

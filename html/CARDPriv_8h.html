@@ -90,13 +90,15 @@ $(function() {
   <div class="headertitle"><div class="title">CARDPriv.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="OSAlarm_8h_source.html">dolphin/os/OSAlarm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OSThread_8h_source.html">dolphin/os/OSThread.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for CARDPriv.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="CARDPriv_8h__incl.svg" width="192" height="212"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="CARDPriv_8h__incl.svg" width="555" height="359"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -149,13 +151,15 @@ Macros</h2></td></tr>
 <tr class="separator:aaadf43143ecd85f02e457d090404f1ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa209b1f330ee75eb2dd3857c3a3db62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDPriv_8h.html#aaa209b1f330ee75eb2dd3857c3a3db62">__CARDGetDirCheck</a>(dir)&#160;&#160;&#160;((<a class="el" href="structCARDDirCheck.html">CARDDirCheck</a>*)&amp;(dir)[<a class="el" href="card_8h.html#af09abc947ee4aa230511bfadddc23b36">CARD_MAX_FILE</a>])</td></tr>
 <tr class="separator:aaa209b1f330ee75eb2dd3857c3a3db62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83e259a5fda83049d03471292d5e4177"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDPriv_8h.html#a83e259a5fda83049d03471292d5e4177">TRUNC</a>(n,  a)&#160;&#160;&#160;(((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)(n)) &amp; ~((a)-1))</td></tr>
+<tr class="memitem:a83e259a5fda83049d03471292d5e4177"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDPriv_8h.html#a83e259a5fda83049d03471292d5e4177">TRUNC</a>(<a class="el" href="init_8h.html#a7ff3cacc14747d630cb3e5b9426c9c6e">n</a>,  a)&#160;&#160;&#160;(((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)(<a class="el" href="init_8h.html#a7ff3cacc14747d630cb3e5b9426c9c6e">n</a>)) &amp; ~((a)-1))</td></tr>
 <tr class="separator:a83e259a5fda83049d03471292d5e4177"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19bf941510ae3bbbbabae36eb988ff87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDPriv_8h.html#a19bf941510ae3bbbbabae36eb988ff87">OFFSET</a>(n,  a)&#160;&#160;&#160;(((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)(n)) &amp; ((a)-1))</td></tr>
+<tr class="memitem:a19bf941510ae3bbbbabae36eb988ff87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDPriv_8h.html#a19bf941510ae3bbbbabae36eb988ff87">OFFSET</a>(<a class="el" href="init_8h.html#a7ff3cacc14747d630cb3e5b9426c9c6e">n</a>,  a)&#160;&#160;&#160;(((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)(<a class="el" href="init_8h.html#a7ff3cacc14747d630cb3e5b9426c9c6e">n</a>)) &amp; ((a)-1))</td></tr>
 <tr class="separator:a19bf941510ae3bbbbabae36eb988ff87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a68125b6ed2fb7ca42480b489aa63aa96"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structDVDDiskID.html">DVDDiskID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDPriv_8h.html#a68125b6ed2fb7ca42480b489aa63aa96">DVDDiskID</a></td></tr>
+<tr class="separator:a68125b6ed2fb7ca42480b489aa63aa96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7d2fb18fad77a7c4b06de7742e34572"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structCARDDir.html">CARDDir</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDPriv_8h.html#ab7d2fb18fad77a7c4b06de7742e34572">CARDDir</a></td></tr>
 <tr class="separator:ab7d2fb18fad77a7c4b06de7742e34572"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9b94b628041c3e44b29bfe69b4159e8"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structCARDDirCheck.html">CARDDirCheck</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CARDPriv_8h.html#af9b94b628041c3e44b29bfe69b4159e8">CARDDirCheck</a></td></tr>
@@ -462,7 +466,7 @@ Variables</h2></td></tr>
           <td class="memname">#define OFFSET</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">n, </td>
+          <td class="paramname"><a class="el" href="init_8h.html#a7ff3cacc14747d630cb3e5b9426c9c6e">n</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -473,7 +477,7 @@ Variables</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)(n)) &amp; ((a)-1))</td>
+          <td></td><td>&#160;&#160;&#160;(((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)(<a class="el" href="init_8h.html#a7ff3cacc14747d630cb3e5b9426c9c6e">n</a>)) &amp; ((a)-1))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -490,7 +494,7 @@ Variables</h2></td></tr>
           <td class="memname">#define TRUNC</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">n, </td>
+          <td class="paramname"><a class="el" href="init_8h.html#a7ff3cacc14747d630cb3e5b9426c9c6e">n</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -501,7 +505,7 @@ Variables</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)(n)) &amp; ~((a)-1))</td>
+          <td></td><td>&#160;&#160;&#160;(((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)(<a class="el" href="init_8h.html#a7ff3cacc14747d630cb3e5b9426c9c6e">n</a>)) &amp; ~((a)-1))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -559,6 +563,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef struct <a class="el" href="structCARDID.html">CARDID</a> <a class="el" href="structCARDID.html">CARDID</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68125b6ed2fb7ca42480b489aa63aa96" name="a68125b6ed2fb7ca42480b489aa63aa96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68125b6ed2fb7ca42480b489aa63aa96">&#9670;&#160;</a></span>DVDDiskID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structDVDDiskID.html">DVDDiskID</a> <a class="el" href="structDVDDiskID.html">DVDDiskID</a></td>
         </tr>
       </table>
 </div><div class="memdoc">

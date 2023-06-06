@@ -101,11 +101,11 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a99e8fa1a61e120c4a825272b73fbd254"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#a99e8fa1a61e120c4a825272b73fbd254">PushTail</a>(<a class="el" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>,  mutex,  link)</td></tr>
+<tr class="memitem:a99e8fa1a61e120c4a825272b73fbd254"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#a99e8fa1a61e120c4a825272b73fbd254">PushTail</a>(queue,  mutex,  link)</td></tr>
 <tr class="separator:a99e8fa1a61e120c4a825272b73fbd254"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5109d2218e560a6ac24327fde76dc15b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#a5109d2218e560a6ac24327fde76dc15b">PopHead</a>(<a class="el" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>,  mutex,  link)</td></tr>
+<tr class="memitem:a5109d2218e560a6ac24327fde76dc15b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#a5109d2218e560a6ac24327fde76dc15b">PopHead</a>(queue,  mutex,  link)</td></tr>
 <tr class="separator:a5109d2218e560a6ac24327fde76dc15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d3e4c0b55d53ffd5b593d1f669d9359"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#a7d3e4c0b55d53ffd5b593d1f669d9359">PopItem</a>(<a class="el" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>,  mutex,  link)</td></tr>
+<tr class="memitem:a7d3e4c0b55d53ffd5b593d1f669d9359"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#a7d3e4c0b55d53ffd5b593d1f669d9359">PopItem</a>(queue,  mutex,  link)</td></tr>
 <tr class="separator:a7d3e4c0b55d53ffd5b593d1f669d9359"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -126,7 +126,7 @@ Functions</h2></td></tr>
 <tr class="separator:a7172aefdb664fa1dbc3fb666fae2c157"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37c4c1ef690ba151a41271f31e5f8039"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#a37c4c1ef690ba151a41271f31e5f8039">OSSignalCond</a> (<a class="el" href="structOSCond.html">OSCond</a> *cond)</td></tr>
 <tr class="separator:a37c4c1ef690ba151a41271f31e5f8039"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49ad28989551033add64113ae4c55534"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#a49ad28989551033add64113ae4c55534">IsMember</a> (<a class="el" href="structOSMutexQueue.html">OSMutexQueue</a> *<a class="el" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>, <a class="el" href="structOSMutex.html">OSMutex</a> *mutex)</td></tr>
+<tr class="memitem:a49ad28989551033add64113ae4c55534"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#a49ad28989551033add64113ae4c55534">IsMember</a> (<a class="el" href="structOSMutexQueue.html">OSMutexQueue</a> *queue, <a class="el" href="structOSMutex.html">OSMutex</a> *mutex)</td></tr>
 <tr class="separator:a49ad28989551033add64113ae4c55534"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5aedd62b4344933225525dc73d3184d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSMutex_8c.html#ab5aedd62b4344933225525dc73d3184d">__OSCheckMutex</a> (<a class="el" href="structOSMutex.html">OSMutex</a> *mutex)</td></tr>
 <tr class="separator:ab5aedd62b4344933225525dc73d3184d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,7 +146,7 @@ Functions</h2></td></tr>
           <td class="memname">#define PopHead</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>, </td>
+          <td class="paramname">queue, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -170,15 +170,14 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                                                                           \</div>
 <div class="line">        <a class="code hl_struct" href="structOSMutex.html">OSMutex</a>* __next;                                                                           \</div>
 <div class="line">                                                                                                   \</div>
-<div class="line">        (mutex) = (<a class="code hl_variable" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>)-&gt;head;                                                                   \</div>
+<div class="line">        (mutex) = (queue)-&gt;head;                                                                   \</div>
 <div class="line">        __next = (mutex)-&gt;link.next;                                                               \</div>
 <div class="line">        if (__next == <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)                                                                        \</div>
-<div class="line">            (<a class="code hl_variable" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>)-&gt;tail = <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;                                                                  \</div>
+<div class="line">            (queue)-&gt;tail = <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;                                                                  \</div>
 <div class="line">        else                                                                                       \</div>
 <div class="line">            __next-&gt;link.prev = <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;                                                              \</div>
-<div class="line">        (<a class="code hl_variable" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>)-&gt;head = __next;                                                                    \</div>
+<div class="line">        (queue)-&gt;head = __next;                                                                    \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="af__pc__manager_8cpp_html_a73b5e8250c6bfb2e8fb034569229b3ca"><div class="ttname"><a href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a></div><div class="ttdeci">static node_list_class queue[10]</div><div class="ttdef"><b>Definition:</b> f_pc_manager.cpp:181</div></div>
 <div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:12</div></div>
 <div class="ttc" id="astructOSMutex_html"><div class="ttname"><a href="structOSMutex.html">OSMutex</a></div><div class="ttdef"><b>Definition:</b> OSMutex.h:10</div></div>
 </div><!-- fragment -->
@@ -194,7 +193,7 @@ Functions</h2></td></tr>
           <td class="memname">#define PopItem</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>, </td>
+          <td class="paramname">queue, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -223,12 +222,12 @@ Functions</h2></td></tr>
 <div class="line">        __prev = (mutex)-&gt;<a class="code hl_variable" href="structOSMutex.html#a81716a34bc8d9003ebb5ada22bb975ea">link</a>.<a class="code hl_variable" href="structOSMutexLink.html#acacc5c293c160ce77244134395c9ab13">prev</a>;                                                               \</div>
 <div class="line">                                                                                                   \</div>
 <div class="line">        if (__next == <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)                                                                        \</div>
-<div class="line">            (<a class="code hl_variable" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>)-&gt;tail = __prev;                                                                \</div>
+<div class="line">            (queue)-&gt;tail = __prev;                                                                \</div>
 <div class="line">        else                                                                                       \</div>
 <div class="line">            __next-&gt;<a class="code hl_variable" href="structOSMutex.html#a81716a34bc8d9003ebb5ada22bb975ea">link</a>.<a class="code hl_variable" href="structOSMutexLink.html#acacc5c293c160ce77244134395c9ab13">prev</a> = __prev;                                                            \</div>
 <div class="line">                                                                                                   \</div>
 <div class="line">        if (__prev == <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)                                                                        \</div>
-<div class="line">            (<a class="code hl_variable" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>)-&gt;head = __next;                                                                \</div>
+<div class="line">            (queue)-&gt;head = __next;                                                                \</div>
 <div class="line">        else                                                                                       \</div>
 <div class="line">            __prev-&gt;<a class="code hl_variable" href="structOSMutex.html#a81716a34bc8d9003ebb5ada22bb975ea">link</a>.<a class="code hl_variable" href="structOSMutexLink.html#a2d983b1d25f99ad459cfa6fb2d461dce">next</a> = __next;                                                            \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
@@ -248,7 +247,7 @@ Functions</h2></td></tr>
           <td class="memname">#define PushTail</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>, </td>
+          <td class="paramname">queue, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -272,14 +271,14 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                                                                           \</div>
 <div class="line">        <a class="code hl_struct" href="structOSMutex.html">OSMutex</a>* __prev;                                                                           \</div>
 <div class="line">                                                                                                   \</div>
-<div class="line">        __prev = (<a class="code hl_variable" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>)-&gt;tail;                                                                    \</div>
+<div class="line">        __prev = (queue)-&gt;tail;                                                                    \</div>
 <div class="line">        if (__prev == <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)                                                                        \</div>
-<div class="line">            (<a class="code hl_variable" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>)-&gt;head = (mutex);                                                               \</div>
+<div class="line">            (queue)-&gt;head = (mutex);                                                               \</div>
 <div class="line">        else                                                                                       \</div>
 <div class="line">            __prev-&gt;<a class="code hl_variable" href="structOSMutex.html#a81716a34bc8d9003ebb5ada22bb975ea">link</a>.<a class="code hl_variable" href="structOSMutexLink.html#a2d983b1d25f99ad459cfa6fb2d461dce">next</a> = (mutex);                                                           \</div>
 <div class="line">        (mutex)-&gt;link.prev = __prev;                                                               \</div>
 <div class="line">        (mutex)-&gt;<a class="code hl_variable" href="structOSMutex.html#a81716a34bc8d9003ebb5ada22bb975ea">link</a>.<a class="code hl_variable" href="structOSMutexLink.html#a2d983b1d25f99ad459cfa6fb2d461dce">next</a> = <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;                                                                 \</div>
-<div class="line">        (<a class="code hl_variable" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>)-&gt;tail = (mutex);                                                                   \</div>
+<div class="line">        (queue)-&gt;tail = (mutex);                                                                   \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
 </div>

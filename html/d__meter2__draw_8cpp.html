@@ -89,12 +89,18 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="d__meter2__draw_8h_source.html">d/meter/d_meter2_draw.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="J2DAnmLoader_8h_source.html">JSystem/J2DGraph/J2DAnmLoader.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J2DScreen_8h_source.html">JSystem/J2DGraph/J2DScreen.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JKRExpHeap_8h_source.html">JSystem/JKernel/JKRExpHeap.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__a__alink_8h_source.html">d/a/d_a_alink.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__com__inf__game_8h_source.html">d/com/d_com_inf_game.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__kantera__icon__meter_8h_source.html">d/d_kantera_icon_meter.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__meter2__info_8h_source.html">d/meter/d_meter2_info.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__meter__HIO_8h_source.html">d/meter/d_meter_HIO.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__msg__object_8h_source.html">d/msg/d_msg_object.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__pane__class_8h_source.html">d/pane/d_pane_class.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="global_8h_source.html">global.h</a>&quot;</code><br />
 <code>#include &quot;asm/d/meter/d_meter2_draw/__ct__13dMeter2Draw_cFP10JKRExpHeap.s&quot;</code><br />
 <code>#include &quot;asm/d/meter/d_meter2_draw/draw__13dMeter2Draw_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/meter/d_meter2_draw/initLife__13dMeter2Draw_cFv.s&quot;</code><br />
@@ -622,8 +628,8 @@ Variables</h2></td></tr>
 <tr class="separator:a4f4b1473f94682600c021cabe73021e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13f091204cc4df4909df1366fc5cb7f1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__meter2__draw_8cpp.html#a13f091204cc4df4909df1366fc5cb7f1">stringBase_803989BF</a> = &quot;&quot;</td></tr>
 <tr class="separator:a13f091204cc4df4909df1366fc5cb7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad02de1461e3d9ad1d1eea759d424c03f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__meter2__draw_8cpp.html#ad02de1461e3d9ad1d1eea759d424c03f">bmg_filename</a> [10]</td></tr>
-<tr class="separator:ad02de1461e3d9ad1d1eea759d424c03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c52c2f67f0cb8125d4cdaaf34a5b8c0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__meter2__draw_8cpp.html#a6c52c2f67f0cb8125d4cdaaf34a5b8c0">bmg_filename</a> [10]</td></tr>
+<tr class="separator:a6c52c2f67f0cb8125d4cdaaf34a5b8c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a977cc42d05b01ff3251aa84860ae3e36"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__meter2__draw_8cpp.html#a977cc42d05b01ff3251aa84860ae3e36">i_action_num</a> [129]</td></tr>
 <tr class="separator:a977cc42d05b01ff3251aa84860ae3e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f4aaa89f03ae0ff88d5dec8fd6f23ed"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__meter2__draw_8cpp.html#a2f4aaa89f03ae0ff88d5dec8fd6f23ed">lit_9008</a> [9]</td></tr>
@@ -4457,8 +4463,8 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ad02de1461e3d9ad1d1eea759d424c03f" name="ad02de1461e3d9ad1d1eea759d424c03f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad02de1461e3d9ad1d1eea759d424c03f">&#9670;&#160;</a></span>bmg_filename</h2>
+<a id="a6c52c2f67f0cb8125d4cdaaf34a5b8c0" name="a6c52c2f67f0cb8125d4cdaaf34a5b8c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c52c2f67f0cb8125d4cdaaf34a5b8c0">&#9670;&#160;</a></span>bmg_filename</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4467,7 +4473,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char* bmg_filename[10]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> const char* bmg_filename[10]</td>
         </tr>
       </table>
   </td>

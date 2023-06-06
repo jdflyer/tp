@@ -90,7 +90,10 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="Z2AudioMgr_8h_source.html">Z2AudioLib/Z2AudioMgr.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="JASDriverIF_8h_source.html">JSystem/JAudio2/JASDriverIF.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stdio_8h_source.html">MSL_C/stdio.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stdlib_8h_source.html">MSL_C/stdlib.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2AudioMgr/__ct__10Z2AudioMgrFv.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2AudioMgr/init__10Z2AudioMgrFP12JKRSolidHeapUlPvP10JKRArchive.s&quot;</code><br />
@@ -325,10 +328,6 @@ Functions</h2></td></tr>
 <tr class="separator:a3f61243ebf5cbb2ff90548d397b16772"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abed5bd59c54272a132a5b4da4beff66d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2AudioMgr_8cpp.html#abed5bd59c54272a132a5b4da4beff66d">_restgpr_29</a> ()</td></tr>
 <tr class="separator:abed5bd59c54272a132a5b4da4beff66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac54f53dc342019e8db34f4aa581a5792"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2AudioMgr_8cpp.html#ac54f53dc342019e8db34f4aa581a5792">abort</a> ()</td></tr>
-<tr class="separator:ac54f53dc342019e8db34f4aa581a5792"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a358ab065fbc9b7f8973049a5b5da8a77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2AudioMgr_8cpp.html#a358ab065fbc9b7f8973049a5b5da8a77">fprintf</a> ()</td></tr>
-<tr class="separator:a358ab065fbc9b7f8973049a5b5da8a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -348,8 +347,6 @@ Variables</h2></td></tr>
 <tr class="separator:a572ec17cbac34a7319a5f59948efe235"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30618c78dc08ff481d7a02a113d09863"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2AudioMgr_8cpp.html#a30618c78dc08ff481d7a02a113d09863">__vt__11Z2SoundInfo</a> [20]</td></tr>
 <tr class="separator:a30618c78dc08ff481d7a02a113d09863"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e16ab235a21aeb54eed4c251ceb8267"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2AudioMgr_8cpp.html#a8e16ab235a21aeb54eed4c251ceb8267">__files</a> [80]</td></tr>
-<tr class="separator:a8e16ab235a21aeb54eed4c251ceb8267"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c5595bd7939e702595024a20672b3eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2AudioMgr_8cpp.html#a4c5595bd7939e702595024a20672b3eb">data_804341C4</a> [16+4]</td></tr>
 <tr class="separator:a4c5595bd7939e702595024a20672b3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc17f4cac5234c6032bfb1b513faddc6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2AudioMgr_8cpp.html#adc17f4cac5234c6032bfb1b513faddc6">data_804341E4</a> [16+4]</td></tr>
@@ -990,23 +987,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac54f53dc342019e8db34f4aa581a5792" name="ac54f53dc342019e8db34f4aa581a5792"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac54f53dc342019e8db34f4aa581a5792">&#9670;&#160;</a></span>abort()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void abort </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a1dd85a27d22fcbc0b85cdc8750a9283e" name="a1dd85a27d22fcbc0b85cdc8750a9283e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1dd85a27d22fcbc0b85cdc8750a9283e">&#9670;&#160;</a></span>alloc__7JASHeapFP7JASHeapUl()</h2>
 
@@ -1049,23 +1029,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void finishBuild__10JAUSectionFv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a358ab065fbc9b7f8973049a5b5da8a77" name="a358ab065fbc9b7f8973049a5b5da8a77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a358ab065fbc9b7f8973049a5b5da8a77">&#9670;&#160;</a></span>fprintf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fprintf </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1867,28 +1830,6 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a8e16ab235a21aeb54eed4c251ceb8267" name="a8e16ab235a21aeb54eed4c251ceb8267"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e16ab235a21aeb54eed4c251ceb8267">&#9670;&#160;</a></span>__files</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* __files[80]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ac0e62fb6bfc183d1b5eb33aec834551f" name="ac0e62fb6bfc183d1b5eb33aec834551f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac0e62fb6bfc183d1b5eb33aec834551f">&#9670;&#160;</a></span>__vt__10Z2AudioMgr</h2>
 

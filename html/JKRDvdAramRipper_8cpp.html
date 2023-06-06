@@ -92,9 +92,10 @@ $(function() {
 <code>#include &quot;<a class="el" href="JKRAram_8h_source.html">JSystem/JKernel/JKRAram.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="JKRAramStream_8h_source.html">JSystem/JKernel/JKRAramStream.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="JKRDvdFile_8h_source.html">JSystem/JKernel/JKRDvdFile.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JSUFileStream_8h_source.html">JSystem/JSupport/JSUFileStream.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OSCache_8h_source.html">dolphin/os/OSCache.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OSInterrupt_8h_source.html">dolphin/os/OSInterrupt.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="vi_8h_source.html">dolphin/vi/vi.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="global_8h_source.html">global.h</a>&quot;</code><br />
 <code>#include &quot;asm/JSystem/JKernel/JKRDvdAramRipper/callCommand_Async__16JKRDvdAramRipperFP12JKRADCommand.s&quot;</code><br />
@@ -119,16 +120,12 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSUList____template10.html">JSUList__template10</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSUInputStream.html">JSUInputStream</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSUFileInputStream.html">JSUFileInputStream</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRAramPiece.html">JKRAramPiece</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af20526ba20deb2c4d5ede857d2b91d76"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JKRDvdAramRipper_8cpp.html#af20526ba20deb2c4d5ede857d2b91d76">JKRDecompressFromDVDToAram</a> (<a class="el" href="structJKRDvdFile.html">JKRDvdFile</a> *, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> *)</td></tr>
+<tr class="memitem:af20526ba20deb2c4d5ede857d2b91d76"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JKRDvdAramRipper_8cpp.html#af20526ba20deb2c4d5ede857d2b91d76">JKRDecompressFromDVDToAram</a> (<a class="el" href="classJKRDvdFile.html">JKRDvdFile</a> *, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> *)</td></tr>
 <tr class="separator:af20526ba20deb2c4d5ede857d2b91d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c15c85082f848e17f3c004e58210ce9"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JKRDvdAramRipper_8cpp.html#a9c15c85082f848e17f3c004e58210ce9">decompSZS_subroutine</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)</td></tr>
 <tr class="separator:a9c15c85082f848e17f3c004e58210ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,8 +135,8 @@ Functions</h2></td></tr>
 <tr class="separator:a9e3c69ee5ed60f1965d9bbe125f09e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8642f6677f0d272029212dd3a45bc97"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JKRDvdAramRipper_8cpp.html#ae8642f6677f0d272029212dd3a45bc97">dmaBufferFlush</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)</td></tr>
 <tr class="separator:ae8642f6677f0d272029212dd3a45bc97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55d1f77f38b16330b13d2a260a0c71f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JKRDvdAramRipper_8cpp.html#a55d1f77f38b16330b13d2a260a0c71f4">__dt__18JSUFileInputStreamFv</a> ()</td></tr>
-<tr class="separator:a55d1f77f38b16330b13d2a260a0c71f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cd47175369be6ba6b39b57ac2758d9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JKRDvdAramRipper_8cpp.html#a8cd47175369be6ba6b39b57ac2758d9a">__dt__18JSUFileInputStreamFv</a> ()</td></tr>
+<tr class="separator:a8cd47175369be6ba6b39b57ac2758d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c769619b326ccdd08f525a8e198ed01"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JKRDvdAramRipper_8cpp.html#a3c769619b326ccdd08f525a8e198ed01">JKRDecompressFromDVDToAram__FP10JKRDvdFileUlUlUlUlUlPUl</a> ()</td></tr>
 <tr class="separator:a3c769619b326ccdd08f525a8e198ed01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25b36181adb19a73f0c0b8ab75aa117b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JKRDvdAramRipper_8cpp.html#a25b36181adb19a73f0c0b8ab75aa117b">decompSZS_subroutine__FPUcUl</a> ()</td></tr>
@@ -257,7 +254,7 @@ Variables</h2></td></tr>
 <tr class="separator:ab03193c9b6ac14ff6ecb441ea7a57dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0254653bcd643e76f48cfc8377ed1ac"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JKRDvdAramRipper_8cpp.html#af0254653bcd643e76f48cfc8377ed1ac">srcLimit</a></td></tr>
 <tr class="separator:af0254653bcd643e76f48cfc8377ed1ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a033cda99147ba1aec978bda6ba8ef4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structJKRDvdFile.html">JKRDvdFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JKRDvdAramRipper_8cpp.html#a2a033cda99147ba1aec978bda6ba8ef4">srcFile</a></td></tr>
+<tr class="memitem:a2a033cda99147ba1aec978bda6ba8ef4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classJKRDvdFile.html">JKRDvdFile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JKRDvdAramRipper_8cpp.html#a2a033cda99147ba1aec978bda6ba8ef4">srcFile</a></td></tr>
 <tr class="separator:a2a033cda99147ba1aec978bda6ba8ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04e998a5c8297b0fa397174ae7f81b4e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JKRDvdAramRipper_8cpp.html#a04e998a5c8297b0fa397174ae7f81b4e">fileOffset</a></td></tr>
 <tr class="separator:a04e998a5c8297b0fa397174ae7f81b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -375,14 +372,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a55d1f77f38b16330b13d2a260a0c71f4" name="a55d1f77f38b16330b13d2a260a0c71f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55d1f77f38b16330b13d2a260a0c71f4">&#9670;&#160;</a></span>__dt__18JSUFileInputStreamFv()</h2>
+<a id="a8cd47175369be6ba6b39b57ac2758d9a" name="a8cd47175369be6ba6b39b57ac2758d9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cd47175369be6ba6b39b57ac2758d9a">&#9670;&#160;</a></span>__dt__18JSUFileInputStreamFv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void __dt__18JSUFileInputStreamFv </td>
+          <td class="memname">asm void __dt__18JSUFileInputStreamFv </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -908,7 +905,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int JKRDecompressFromDVDToAram </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structJKRDvdFile.html">JKRDvdFile</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classJKRDvdFile.html">JKRDvdFile</a> *&#160;</td>
           <td class="paramname"><em>dvdFile</em>, </td>
         </tr>
         <tr>
@@ -1520,7 +1517,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structJKRDvdFile.html">JKRDvdFile</a>* srcFile</td>
+          <td class="memname"><a class="el" href="classJKRDvdFile.html">JKRDvdFile</a>* srcFile</td>
         </tr>
       </table>
   </td>

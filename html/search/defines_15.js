@@ -1,17 +1,14 @@
 var searchData=
 [
-  ['va_5farg_0',['va_arg',['../____va__arg_8h.html#a1c295ecce41e71a2ba213e32e7a5c346',1,'__va_arg.h']]],
-  ['va_5fend_1',['va_end',['../____va__arg_8h.html#a1763b4d5c9d8e5a9bed197b316e3586a',1,'__va_arg.h']]],
-  ['va_5flist_2',['va_list',['../____va__arg_8h.html#a6e6fde95f2a221e9bcd58fa102bd90ff',1,'__va_arg.h']]],
-  ['va_5fstart_3',['va_start',['../____va__arg_8h.html#ac4689fee617f24306933fd79ce206fcc',1,'__va_arg.h']]],
-  ['vi_5fdebug_4',['VI_DEBUG',['../vi_8h.html#acf3ea9bfc2843997543348faf9e28146',1,'vi.h']]],
-  ['vi_5fdebug_5fpal_5',['VI_DEBUG_PAL',['../vi_8h.html#a45685d513cdc3e2efd891852adf1d213',1,'vi.h']]],
-  ['vi_5feurgb60_6',['VI_EURGB60',['../vi_8h.html#a9523a52bf75172b8b05ff3b66407811b',1,'vi.h']]],
-  ['vi_5finterlace_7',['VI_INTERLACE',['../vi_8h.html#a66a9efb4c948e52b3b46012279ff966b',1,'vi.h']]],
-  ['vi_5fmpal_8',['VI_MPAL',['../vi_8h.html#ab481ba2a801027c2337424939fb244c1',1,'vi.h']]],
-  ['vi_5fnon_5finterlace_9',['VI_NON_INTERLACE',['../vi_8h.html#a39e00bd61ab6a9b76e941fc6edb6f74c',1,'vi.h']]],
-  ['vi_5fntsc_10',['VI_NTSC',['../vi_8h.html#ad3d26e24a4506143faa921167dbd4477',1,'vi.h']]],
-  ['vi_5fpal_11',['VI_PAL',['../vi_8h.html#aa39531650431018a5d27b18e70d4c4bc',1,'vi.h']]],
-  ['vi_5fprogressive_12',['VI_PROGRESSIVE',['../vi_8h.html#a5dfee597a86c115e23b237e771589d15',1,'vi.h']]],
-  ['vi_5ftvmode_13',['VI_TVMODE',['../vi_8h.html#a33c2bbc6807343485d53fe9e3e5d6c8c',1,'vi.h']]]
+  ['uhex_0',['uhex',['../ctype_8c.html#a9f1b6b9574186396699737143fc585da',1,'ctype.c']]],
+  ['uint32_5fmax_1',['UINT32_MAX',['../types_8h.html#ab5eb23180f7cc12b7d6c04a8ec067fdd',1,'types.h']]],
+  ['ummcr0_2',['UMMCR0',['../PPCArch_8h.html#a859198e0ca1077d0a9b89df9f9a2ec1a',1,'PPCArch.h']]],
+  ['ummcr1_3',['UMMCR1',['../PPCArch_8h.html#ad2d5ee6cb76396e44b8eac1ce947237d',1,'PPCArch.h']]],
+  ['underflow_4',['UNDERFLOW',['../fdlibm_8h.html#a8f5b89d6fb5f161fff5e257f755692ce',1,'fdlibm.h']]],
+  ['upmc1_5',['UPMC1',['../PPCArch_8h.html#af6a680da4bd6fabcebde885b83992ffa',1,'PPCArch.h']]],
+  ['upmc2_6',['UPMC2',['../PPCArch_8h.html#a1b0d76a73921f5b10d3a26859d56009f',1,'PPCArch.h']]],
+  ['upmc3_7',['UPMC3',['../PPCArch_8h.html#aa15123ea5896b77558584abd669706fc',1,'PPCArch.h']]],
+  ['upmc4_8',['UPMC4',['../PPCArch_8h.html#a6e324006abede95404a3d1067f0699f0',1,'PPCArch.h']]],
+  ['uppc_9',['uppc',['../ctype_8c.html#a307f06aca9b15ae1e7246b6ae1adf038',1,'ctype.c']]],
+  ['usia_10',['USIA',['../PPCArch_8h.html#a4ce36fb487bb2275d42d46fde36df68f',1,'PPCArch.h']]]
 ];

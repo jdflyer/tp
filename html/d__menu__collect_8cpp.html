@@ -89,6 +89,8 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="d__menu__collect_8h_source.html">d/menu/d_menu_collect.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__lib_8h_source.html">d/d_lib.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="string_8h_source.html">MSL_C/string.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/__ct__17dMenu_Collect2D_cFP10JKRExpHeapP9STControlP10CSTControl.s&quot;</code><br />
@@ -195,8 +197,6 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmDoMtx__stack__c.html">mDoMtx_stack_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmDoGph__gInf__c.html">mDoGph_gInf_c</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaAlink__c.html">daAlink_c</a></td></tr>
@@ -6135,7 +6135,7 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__menu__collect_8cpp.html#a7830024af6ab90348ba2c00fc695de20">__dt__15dMenu_Collect_cFv</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__menu__collect_8cpp_html_a7830024af6ab90348ba2c00fc695de20"><div class="ttname"><a href="d__menu__collect_8cpp.html#a7830024af6ab90348ba2c00fc695de20">__dt__15dMenu_Collect_cFv</a></div><div class="ttdeci">void __dt__15dMenu_Collect_cFv()</div><div class="ttdef"><b>Definition:</b> d_menu_collect.cpp:2382</div></div>
+<div class="ttc" id="ad__menu__collect_8cpp_html_a7830024af6ab90348ba2c00fc695de20"><div class="ttname"><a href="d__menu__collect_8cpp.html#a7830024af6ab90348ba2c00fc695de20">__dt__15dMenu_Collect_cFv</a></div><div class="ttdeci">void __dt__15dMenu_Collect_cFv()</div><div class="ttdef"><b>Definition:</b> d_menu_collect.cpp:2380</div></div>
 <div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:12</div></div>
 </div><!-- fragment -->
 </div>
@@ -6169,7 +6169,7 @@ Variables</h2></td></tr>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__menu__collect_8cpp_html_a81579910a74f8d88488b0e1b39db48c7"><div class="ttname"><a href="d__menu__collect_8cpp.html#a81579910a74f8d88488b0e1b39db48c7">draw__17dMenu_Collect2D_cFv</a></div><div class="ttdeci">void draw__17dMenu_Collect2D_cFv()</div><div class="ttdef"><b>Definition:</b> d_menu_collect.cpp:2458</div></div>
+<div class="ttc" id="ad__menu__collect_8cpp_html_a81579910a74f8d88488b0e1b39db48c7"><div class="ttname"><a href="d__menu__collect_8cpp.html#a81579910a74f8d88488b0e1b39db48c7">draw__17dMenu_Collect2D_cFv</a></div><div class="ttdeci">void draw__17dMenu_Collect2D_cFv()</div><div class="ttdef"><b>Definition:</b> d_menu_collect.cpp:2456</div></div>
 <div class="ttc" id="ad__menu__collect_8cpp_html_acaf1b7262331d64fa591e8ca40854b71"><div class="ttname"><a href="d__menu__collect_8cpp.html#acaf1b7262331d64fa591e8ca40854b71">__dt__17dMenu_Collect2D_cFv</a></div><div class="ttdeci">void __dt__17dMenu_Collect2D_cFv()</div></div>
 </div><!-- fragment -->
 </div>
@@ -6209,7 +6209,7 @@ Variables</h2></td></tr>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__menu__collect_8cpp_html_a2e29da366d26ffcd850eea8702549b79"><div class="ttname"><a href="d__menu__collect_8cpp.html#a2e29da366d26ffcd850eea8702549b79">__dt__17dMenu_Collect3D_cFv</a></div><div class="ttdeci">void __dt__17dMenu_Collect3D_cFv()</div><div class="ttdef"><b>Definition:</b> d_menu_collect.cpp:2032</div></div>
+<div class="ttc" id="ad__menu__collect_8cpp_html_a2e29da366d26ffcd850eea8702549b79"><div class="ttname"><a href="d__menu__collect_8cpp.html#a2e29da366d26ffcd850eea8702549b79">__dt__17dMenu_Collect3D_cFv</a></div><div class="ttdeci">void __dt__17dMenu_Collect3D_cFv()</div><div class="ttdef"><b>Definition:</b> d_menu_collect.cpp:2030</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -6245,7 +6245,7 @@ Variables</h2></td></tr>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__menu__collect_8cpp_html_a3263fc523385a70642687d490e798f0b"><div class="ttname"><a href="d__menu__collect_8cpp.html#a3263fc523385a70642687d490e798f0b">draw__20dMenu_Collect2DTop_cFv</a></div><div class="ttdeci">void draw__20dMenu_Collect2DTop_cFv()</div><div class="ttdef"><b>Definition:</b> d_menu_collect.cpp:2360</div></div>
+<div class="ttc" id="ad__menu__collect_8cpp_html_a3263fc523385a70642687d490e798f0b"><div class="ttname"><a href="d__menu__collect_8cpp.html#a3263fc523385a70642687d490e798f0b">draw__20dMenu_Collect2DTop_cFv</a></div><div class="ttdeci">void draw__20dMenu_Collect2DTop_cFv()</div><div class="ttdef"><b>Definition:</b> d_menu_collect.cpp:2358</div></div>
 <div class="ttc" id="ad__menu__collect_8cpp_html_a96bdf62cde1fc26a26dcbd18dd13b088"><div class="ttname"><a href="d__menu__collect_8cpp.html#a96bdf62cde1fc26a26dcbd18dd13b088">__dt__20dMenu_Collect2DTop_cFv</a></div><div class="ttdeci">void __dt__20dMenu_Collect2DTop_cFv()</div></div>
 </div><!-- fragment -->
 </div>

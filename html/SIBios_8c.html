@@ -90,6 +90,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="SIBios_8h_source.html">dolphin/si/SIBios.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SISamplingRate_8h_source.html">dolphin/si/SISamplingRate.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="vi_8h_source.html">dolphin/vi/vi.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -103,7 +104,7 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a7e76e74ec6703d0410b634d73ebc5f33"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a7e76e74ec6703d0410b634d73ebc5f33">ROUND</a>(n,  a)&#160;&#160;&#160;(((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)(n) + (a)-1) &amp; ~((a)-1))</td></tr>
+<tr class="memitem:a7e76e74ec6703d0410b634d73ebc5f33"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="SIBios_8c.html#a7e76e74ec6703d0410b634d73ebc5f33">ROUND</a>(<a class="el" href="init_8h.html#a7ff3cacc14747d630cb3e5b9426c9c6e">n</a>,  a)&#160;&#160;&#160;(((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)(<a class="el" href="init_8h.html#a7ff3cacc14747d630cb3e5b9426c9c6e">n</a>) + (a)-1) &amp; ~((a)-1))</td></tr>
 <tr class="separator:a7e76e74ec6703d0410b634d73ebc5f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -229,7 +230,7 @@ Variables</h2></td></tr>
           <td class="memname">#define ROUND</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">n, </td>
+          <td class="paramname"><a class="el" href="init_8h.html#a7ff3cacc14747d630cb3e5b9426c9c6e">n</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -240,7 +241,7 @@ Variables</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)(n) + (a)-1) &amp; ~((a)-1))</td>
+          <td></td><td>&#160;&#160;&#160;(((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)(<a class="el" href="init_8h.html#a7ff3cacc14747d630cb3e5b9426c9c6e">n</a>) + (a)-1) &amp; ~((a)-1))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1476,7 +1477,7 @@ Variables</h2></td></tr>
 <div class="line">    <a class="code hl_define" href="SIBios_8h.html#a11c33d2fd2f5bc6814e01e165f7825a8">SI_ERROR_NO_RESPONSE</a>,</div>
 <div class="line">    <a class="code hl_define" href="SIBios_8h.html#a11c33d2fd2f5bc6814e01e165f7825a8">SI_ERROR_NO_RESPONSE</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aSIBios_8h_html_a11c33d2fd2f5bc6814e01e165f7825a8"><div class="ttname"><a href="SIBios_8h.html#a11c33d2fd2f5bc6814e01e165f7825a8">SI_ERROR_NO_RESPONSE</a></div><div class="ttdeci">#define SI_ERROR_NO_RESPONSE</div><div class="ttdef"><b>Definition:</b> SIBios.h:16</div></div>
+<div class="ttc" id="aSIBios_8h_html_a11c33d2fd2f5bc6814e01e165f7825a8"><div class="ttname"><a href="SIBios_8h.html#a11c33d2fd2f5bc6814e01e165f7825a8">SI_ERROR_NO_RESPONSE</a></div><div class="ttdeci">#define SI_ERROR_NO_RESPONSE</div><div class="ttdef"><b>Definition:</b> SIBios.h:17</div></div>
 </div><!-- fragment -->
 </div>
 </div>

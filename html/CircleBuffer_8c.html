@@ -87,51 +87,40 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="CircleBuffer_8h_source.html">TRK_MINNOW_DOLPHIN/utils/common/CircleBuffer.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="MWCriticalSection__gc_8h_source.html">TRK_MINNOW_DOLPHIN/utils/gc/MWCriticalSection_gc.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;asm/TRK_MINNOW_DOLPHIN/utils/common/CircleBuffer/CircleBufferReadBytes.s&quot;</code><br />
-<code>#include &quot;asm/TRK_MINNOW_DOLPHIN/utils/common/CircleBuffer/CircleBufferWriteBytes.s&quot;</code><br />
-<code>#include &quot;asm/TRK_MINNOW_DOLPHIN/utils/common/CircleBuffer/CircleBufferInitialize.s&quot;</code><br />
-<code>#include &quot;asm/TRK_MINNOW_DOLPHIN/utils/common/CircleBuffer/CBGetBytesAvailableForRead.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for CircleBuffer.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="CircleBuffer_8c__incl.svg" width="100%" height="536"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="CircleBuffer_8c__incl.svg" width="483" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae160684beaba80dfd7a9937c1427e417"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CircleBuffer_8c.html#ae160684beaba80dfd7a9937c1427e417">CircleBufferReadBytes</a> ()</td></tr>
-<tr class="separator:ae160684beaba80dfd7a9937c1427e417"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a329f6d86ca39a71f818f1e5f7d54b559"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CircleBuffer_8c.html#a329f6d86ca39a71f818f1e5f7d54b559">CircleBufferWriteBytes</a> ()</td></tr>
-<tr class="separator:a329f6d86ca39a71f818f1e5f7d54b559"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cc66776b95bba236250430e749cde37"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CircleBuffer_8c.html#a9cc66776b95bba236250430e749cde37">CircleBufferInitialize</a> ()</td></tr>
-<tr class="separator:a9cc66776b95bba236250430e749cde37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7a441ecf37649b55ff18633605e21d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CircleBuffer_8c.html#aa7a441ecf37649b55ff18633605e21d5">CBGetBytesAvailableForRead</a> ()</td></tr>
-<tr class="separator:aa7a441ecf37649b55ff18633605e21d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc6bb37288ea54f2151b2ecd4d4ccf3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#adc00f0d3ad529c0cb72985d54bfe7ccf">SECTION_INIT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CircleBuffer_8c.html#afc6bb37288ea54f2151b2ecd4d4ccf3b">memcpy</a> ()</td></tr>
-<tr class="separator:afc6bb37288ea54f2151b2ecd4d4ccf3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c4da82bb83489536936897cb91f0631"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CircleBuffer_8c.html#a4c4da82bb83489536936897cb91f0631">MWExitCriticalSection</a> ()</td></tr>
-<tr class="separator:a4c4da82bb83489536936897cb91f0631"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a934ccbe9a77730adef90e7e4770175e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CircleBuffer_8c.html#a934ccbe9a77730adef90e7e4770175e1">MWEnterCriticalSection</a> ()</td></tr>
-<tr class="separator:a934ccbe9a77730adef90e7e4770175e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a432b849f89148225ca1466430100fd99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CircleBuffer_8c.html#a432b849f89148225ca1466430100fd99">MWInitializeCriticalSection</a> ()</td></tr>
-<tr class="separator:a432b849f89148225ca1466430100fd99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99e5f134e11d3f9f0b9faddc030e684c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CircleBuffer_8c.html#a99e5f134e11d3f9f0b9faddc030e684c">CircleBufferReadBytes</a> (<a class="el" href="structCircleBuffer.html">CircleBuffer</a> *buf, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> param_2, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> param_3)</td></tr>
+<tr class="separator:a99e5f134e11d3f9f0b9faddc030e684c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd57192e19e2a02e8785a72e2e89975d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CircleBuffer_8c.html#abd57192e19e2a02e8785a72e2e89975d">CircleBufferWriteBytes</a> (<a class="el" href="structCircleBuffer.html">CircleBuffer</a> *buf, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> param_2, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> param_3)</td></tr>
+<tr class="separator:abd57192e19e2a02e8785a72e2e89975d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67d7b88b556e5a05eefede65e95eb5cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CircleBuffer_8c.html#a67d7b88b556e5a05eefede65e95eb5cd">CircleBufferInitialize</a> (<a class="el" href="structCircleBuffer.html">CircleBuffer</a> *buf, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> param_2, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> param_3)</td></tr>
+<tr class="separator:a67d7b88b556e5a05eefede65e95eb5cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25e022fef00cac0d60192b586a35a33f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CircleBuffer_8c.html#a25e022fef00cac0d60192b586a35a33f">CBGetBytesAvailableForRead</a> (<a class="el" href="structCircleBuffer.html">CircleBuffer</a> *buf)</td></tr>
+<tr class="separator:a25e022fef00cac0d60192b586a35a33f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aa7a441ecf37649b55ff18633605e21d5" name="aa7a441ecf37649b55ff18633605e21d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7a441ecf37649b55ff18633605e21d5">&#9670;&#160;</a></span>CBGetBytesAvailableForRead()</h2>
+<a id="a25e022fef00cac0d60192b586a35a33f" name="a25e022fef00cac0d60192b586a35a33f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25e022fef00cac0d60192b586a35a33f">&#9670;&#160;</a></span>CBGetBytesAvailableForRead()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void CBGetBytesAvailableForRead </td>
+          <td class="memname"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> CBGetBytesAvailableForRead </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structCircleBuffer.html">CircleBuffer</a> *&#160;</td>
+          <td class="paramname"><em>buf</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -139,8 +128,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9cc66776b95bba236250430e749cde37" name="a9cc66776b95bba236250430e749cde37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cc66776b95bba236250430e749cde37">&#9670;&#160;</a></span>CircleBufferInitialize()</h2>
+<a id="a67d7b88b556e5a05eefede65e95eb5cd" name="a67d7b88b556e5a05eefede65e95eb5cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67d7b88b556e5a05eefede65e95eb5cd">&#9670;&#160;</a></span>CircleBufferInitialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -148,110 +137,93 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void CircleBufferInitialize </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structCircleBuffer.html">CircleBuffer</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>param_2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>param_3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ae160684beaba80dfd7a9937c1427e417" name="ae160684beaba80dfd7a9937c1427e417"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae160684beaba80dfd7a9937c1427e417">&#9670;&#160;</a></span>CircleBufferReadBytes()</h2>
+<a id="a99e5f134e11d3f9f0b9faddc030e684c" name="a99e5f134e11d3f9f0b9faddc030e684c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99e5f134e11d3f9f0b9faddc030e684c">&#9670;&#160;</a></span>CircleBufferReadBytes()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void CircleBufferReadBytes </td>
+          <td class="memname"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> CircleBufferReadBytes </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structCircleBuffer.html">CircleBuffer</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>param_2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>param_3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a329f6d86ca39a71f818f1e5f7d54b559" name="a329f6d86ca39a71f818f1e5f7d54b559"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a329f6d86ca39a71f818f1e5f7d54b559">&#9670;&#160;</a></span>CircleBufferWriteBytes()</h2>
+<a id="abd57192e19e2a02e8785a72e2e89975d" name="abd57192e19e2a02e8785a72e2e89975d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd57192e19e2a02e8785a72e2e89975d">&#9670;&#160;</a></span>CircleBufferWriteBytes()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void CircleBufferWriteBytes </td>
+          <td class="memname"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> CircleBufferWriteBytes </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="structCircleBuffer.html">CircleBuffer</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afc6bb37288ea54f2151b2ecd4d4ccf3b" name="afc6bb37288ea54f2151b2ecd4d4ccf3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc6bb37288ea54f2151b2ecd4d4ccf3b">&#9670;&#160;</a></span>memcpy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#adc00f0d3ad529c0cb72985d54bfe7ccf">SECTION_INIT</a> void memcpy </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
+          <td class="paramname"><em>param_2</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a934ccbe9a77730adef90e7e4770175e1" name="a934ccbe9a77730adef90e7e4770175e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a934ccbe9a77730adef90e7e4770175e1">&#9670;&#160;</a></span>MWEnterCriticalSection()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">void MWEnterCriticalSection </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>param_3</em>&#160;</td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4c4da82bb83489536936897cb91f0631" name="a4c4da82bb83489536936897cb91f0631"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c4da82bb83489536936897cb91f0631">&#9670;&#160;</a></span>MWExitCriticalSection()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">void MWExitCriticalSection </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
           <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a432b849f89148225ca1466430100fd99" name="a432b849f89148225ca1466430100fd99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a432b849f89148225ca1466430100fd99">&#9670;&#160;</a></span>MWInitializeCriticalSection()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MWInitializeCriticalSection </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

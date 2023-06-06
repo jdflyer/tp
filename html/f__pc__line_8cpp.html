@@ -82,16 +82,14 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">f_pc_line.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="f__pc__line_8h_source.html">f_pc/f_pc_line.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="f__pc__node_8h_source.html">f_pc/f_pc_node.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="global_8h_source.html">global.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for f_pc_line.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -101,15 +99,10 @@ $(function() {
 </div>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a949a254e1e990fb6ad81ab2ad1a5111c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__pc__line_8cpp.html#a949a254e1e990fb6ad81ab2ad1a5111c">ARRAY_SIZE</a>(o)&#160;&#160;&#160;(sizeof((o)) / sizeof(*(o)))</td></tr>
-<tr class="separator:a949a254e1e990fb6ad81ab2ad1a5111c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6d6da718191526bf47b6aa3efff36378"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__pc__line_8cpp.html#a6d6da718191526bf47b6aa3efff36378">fpcLn_Create</a> (void)</td></tr>
-<tr class="separator:a6d6da718191526bf47b6aa3efff36378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af629e90c55bfcbbd4b88a9636e0eae89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__pc__line_8cpp.html#af629e90c55bfcbbd4b88a9636e0eae89">fpcLn_Create</a> ()</td></tr>
+<tr class="separator:af629e90c55bfcbbd4b88a9636e0eae89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -118,28 +111,9 @@ Variables</h2></td></tr>
 <tr class="memitem:a44ed2983b3d6268da5f8ad51e69155b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnode__lists__tree__class.html">node_lists_tree_class</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__pc__line_8cpp.html#a44ed2983b3d6268da5f8ad51e69155b8">g_fpcLn_Queue</a></td></tr>
 <tr class="separator:a44ed2983b3d6268da5f8ad51e69155b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a949a254e1e990fb6ad81ab2ad1a5111c" name="a949a254e1e990fb6ad81ab2ad1a5111c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a949a254e1e990fb6ad81ab2ad1a5111c">&#9670;&#160;</a></span>ARRAY_SIZE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ARRAY_SIZE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">o</td><td>)</td>
-          <td>&#160;&#160;&#160;(sizeof((o)) / sizeof(*(o)))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a6d6da718191526bf47b6aa3efff36378" name="a6d6da718191526bf47b6aa3efff36378"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d6da718191526bf47b6aa3efff36378">&#9670;&#160;</a></span>fpcLn_Create()</h2>
+<a id="af629e90c55bfcbbd4b88a9636e0eae89" name="af629e90c55bfcbbd4b88a9636e0eae89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af629e90c55bfcbbd4b88a9636e0eae89">&#9670;&#160;</a></span>fpcLn_Create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -170,10 +144,10 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
 <div class="line">    <a class="code hl_variable" href="f__pc__line_8cpp.html#a3b5ad01ea2ac54a9803eb8f410695c52">l_fpcLn_Line</a>,</div>
-<div class="line">    <a class="code hl_define" href="f__pc__line_8cpp.html#a949a254e1e990fb6ad81ab2ad1a5111c">ARRAY_SIZE</a>(<a class="code hl_variable" href="f__pc__line_8cpp.html#a3b5ad01ea2ac54a9803eb8f410695c52">l_fpcLn_Line</a>),</div>
+<div class="line">    <a class="code hl_define" href="global_8h.html#a949a254e1e990fb6ad81ab2ad1a5111c">ARRAY_SIZE</a>(<a class="code hl_variable" href="f__pc__line_8cpp.html#a3b5ad01ea2ac54a9803eb8f410695c52">l_fpcLn_Line</a>),</div>
 <div class="line">}</div>
-<div class="ttc" id="af__pc__line_8cpp_html_a3b5ad01ea2ac54a9803eb8f410695c52"><div class="ttname"><a href="f__pc__line_8cpp.html#a3b5ad01ea2ac54a9803eb8f410695c52">l_fpcLn_Line</a></div><div class="ttdeci">static node_list_class l_fpcLn_Line[16]</div><div class="ttdef"><b>Definition:</b> f_pc_line.cpp:19</div></div>
-<div class="ttc" id="af__pc__line_8cpp_html_a949a254e1e990fb6ad81ab2ad1a5111c"><div class="ttname"><a href="f__pc__line_8cpp.html#a949a254e1e990fb6ad81ab2ad1a5111c">ARRAY_SIZE</a></div><div class="ttdeci">#define ARRAY_SIZE(o)</div><div class="ttdef"><b>Definition:</b> f_pc_line.cpp:15</div></div>
+<div class="ttc" id="af__pc__line_8cpp_html_a3b5ad01ea2ac54a9803eb8f410695c52"><div class="ttname"><a href="f__pc__line_8cpp.html#a3b5ad01ea2ac54a9803eb8f410695c52">l_fpcLn_Line</a></div><div class="ttdeci">static node_list_class l_fpcLn_Line[16]</div><div class="ttdef"><b>Definition:</b> f_pc_line.cpp:12</div></div>
+<div class="ttc" id="aglobal_8h_html_a949a254e1e990fb6ad81ab2ad1a5111c"><div class="ttname"><a href="global_8h.html#a949a254e1e990fb6ad81ab2ad1a5111c">ARRAY_SIZE</a></div><div class="ttdeci">#define ARRAY_SIZE(o)</div><div class="ttdef"><b>Definition:</b> global.h:6</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -196,6 +170,7 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p ><a class="el" href="f__pc__line_8cpp.html">f_pc_line.cpp</a> Framework - Process Line </p>
 
 </div>
 </div>

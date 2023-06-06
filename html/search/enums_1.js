@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bloomtype_0',['BloomType',['../d__kankyo__data_8h.html#a8eb83049e15a58b364595e306e544abf',1,'d_kankyo_data.h']]]
+  ['anmflags_0',['AnmFlags',['../classdaNpcF__c.html#a42c7ce7d12656a0e775c4e056c13f939',1,'daNpcF_c']]]
 ];

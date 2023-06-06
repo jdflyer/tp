@@ -82,17 +82,17 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">JUTCacheFont.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="JUTCacheFont_8h_source.html">JSystem/JUtility/JUTCacheFont.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JKRAram_8h_source.html">JSystem/JKernel/JKRAram.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JUTException_8h_source.html">JSystem/JUtility/JUTException.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="GX_8h_source.html">dolphin/gx/GX.h</a>&quot;</code><br />
 <code>#include &quot;asm/JSystem/JUtility/JUTCacheFont/getMemorySize__12JUTCacheFontFPC7ResFONTPUsPUlPUsPUlPUsPUlPUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JUtility/JUTCacheFont/allocArea__12JUTCacheFontFPvUlP7JKRHeap.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JUtility/JUTCacheFont/allocArray__12JUTCacheFontFP7JKRHeap.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JUtility/JUTCacheFont/setBlock__12JUTCacheFontFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JUtility/JUTCacheFont/determineBlankPage__12JUTCacheFontFv.s&quot;</code><br />
@@ -100,8 +100,6 @@ $(function() {
 <code>#include &quot;asm/JSystem/JUtility/JUTCacheFont/loadImage__12JUTCacheFontFi11_GXTexMapID.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JUtility/JUTCacheFont/loadCache_char_subroutine__12JUTCacheFontFPib.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JUtility/JUTCacheFont/invalidiateAllCache__12JUTCacheFontFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JUtility/JUTCacheFont/unlink__12JUTCacheFontFPQ212JUTCacheFont15TGlyphCacheInfo.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JUtility/JUTCacheFont/prepend__12JUTCacheFontFPQ212JUTCacheFont15TGlyphCacheInfo.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JUtility/JUTCacheFont/getResFont__10JUTResFontCFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JUtility/JUTCacheFont/getFontType__10JUTResFontCFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JUtility/JUTCacheFont/getLeading__10JUTResFontCFv.s&quot;</code><br />
@@ -118,11 +116,6 @@ $(function() {
 </div>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJUTException.html">JUTException</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a8f3c1e814857bc164b74792620fd1c52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JUTCacheFont_8cpp.html#a8f3c1e814857bc164b74792620fd1c52">__ct__12JUTCacheFontFPC7ResFONTUlP7JKRHeap</a> ()</td></tr>

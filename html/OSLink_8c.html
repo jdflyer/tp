@@ -236,9 +236,9 @@ Macros</h2></td></tr>
 <tr class="separator:aefe6b6aaf5a4286bd53421bd0bf5b82f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fc60ffbb9c2d11dd9fd7138d680bd3b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSLink_8c.html#a0fc60ffbb9c2d11dd9fd7138d680bd3b">R_PPC_EMB_RELSDA</a>&#160;&#160;&#160;116</td></tr>
 <tr class="separator:a0fc60ffbb9c2d11dd9fd7138d680bd3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23523f52204a2de58d69dcce531135ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSLink_8c.html#a23523f52204a2de58d69dcce531135ac">EnqueueTail</a>(<a class="el" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>,  moduleInfo,  link)</td></tr>
+<tr class="memitem:a23523f52204a2de58d69dcce531135ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSLink_8c.html#a23523f52204a2de58d69dcce531135ac">EnqueueTail</a>(queue,  moduleInfo,  link)</td></tr>
 <tr class="separator:a23523f52204a2de58d69dcce531135ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd5ab7d53620dba41b88d2e44b1ba7d9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSLink_8c.html#afd5ab7d53620dba41b88d2e44b1ba7d9">DequeueItem</a>(<a class="el" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>,  moduleInfo,  link)</td></tr>
+<tr class="memitem:afd5ab7d53620dba41b88d2e44b1ba7d9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSLink_8c.html#afd5ab7d53620dba41b88d2e44b1ba7d9">DequeueItem</a>(queue,  moduleInfo,  link)</td></tr>
 <tr class="separator:afd5ab7d53620dba41b88d2e44b1ba7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -290,7 +290,7 @@ Variables</h2></td></tr>
           <td class="memname">#define DequeueItem</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>, </td>
+          <td class="paramname">queue, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -319,16 +319,15 @@ Variables</h2></td></tr>
 <div class="line">        __prev = (moduleInfo)-&gt;link.prev;                                                          \</div>
 <div class="line">                                                                                                   \</div>
 <div class="line">        if (__next == <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)                                                                        \</div>
-<div class="line">            (<a class="code hl_variable" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>)-&gt;tail = __prev;                                                                \</div>
+<div class="line">            (queue)-&gt;tail = __prev;                                                                \</div>
 <div class="line">        else                                                                                       \</div>
 <div class="line">            __next-&gt;link.prev = __prev;                                                            \</div>
 <div class="line">                                                                                                   \</div>
 <div class="line">        if (__prev == <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)                                                                        \</div>
-<div class="line">            (<a class="code hl_variable" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>)-&gt;head = __next;                                                                \</div>
+<div class="line">            (queue)-&gt;head = __next;                                                                \</div>
 <div class="line">        else                                                                                       \</div>
 <div class="line">            __prev-&gt;link.next = __next;                                                            \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="af__pc__manager_8cpp_html_a73b5e8250c6bfb2e8fb034569229b3ca"><div class="ttname"><a href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a></div><div class="ttdeci">static node_list_class queue[10]</div><div class="ttdef"><b>Definition:</b> f_pc_manager.cpp:181</div></div>
 <div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:12</div></div>
 <div class="ttc" id="astructOSModuleInfo_html"><div class="ttname"><a href="structOSModuleInfo.html">OSModuleInfo</a></div><div class="ttdef"><b>Definition:</b> OSLink.h:23</div></div>
 </div><!-- fragment -->
@@ -408,7 +407,7 @@ Variables</h2></td></tr>
           <td class="memname">#define EnqueueTail</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>, </td>
+          <td class="paramname">queue, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -432,14 +431,14 @@ Variables</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                                                                           \</div>
 <div class="line">        <a class="code hl_struct" href="structOSModuleInfo.html">OSModuleInfo</a>* __prev;                                                                      \</div>
 <div class="line">                                                                                                   \</div>
-<div class="line">        __prev = (<a class="code hl_variable" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>)-&gt;tail;                                                                    \</div>
+<div class="line">        __prev = (queue)-&gt;tail;                                                                    \</div>
 <div class="line">        if (__prev == <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)                                                                        \</div>
-<div class="line">            (<a class="code hl_variable" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>)-&gt;head = (moduleInfo);                                                          \</div>
+<div class="line">            (queue)-&gt;head = (moduleInfo);                                                          \</div>
 <div class="line">        else                                                                                       \</div>
 <div class="line">            __prev-&gt;link.next = (moduleInfo);                                                      \</div>
 <div class="line">        (moduleInfo)-&gt;link.prev = __prev;                                                          \</div>
 <div class="line">        (moduleInfo)-&gt;link.next = <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;                                                            \</div>
-<div class="line">        (<a class="code hl_variable" href="f__pc__manager_8cpp.html#a73b5e8250c6bfb2e8fb034569229b3ca">queue</a>)-&gt;tail = (moduleInfo);                                                              \</div>
+<div class="line">        (queue)-&gt;tail = (moduleInfo);                                                              \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
 </div>

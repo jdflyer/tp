@@ -83,18 +83,20 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">d_lib.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="c__xyz_8h_source.html">SSystem/SComponent/c_xyz.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="quat_8h_source.html">dolphin/mtx/quat.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OSTime_8h_source.html">dolphin/os/OSTime.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for d_lib.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="d__lib_8h__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="d__lib_8h__incl.svg" width="471" height="374"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -102,7 +104,7 @@ $(function() {
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="d__lib_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="d__lib_8h__dep__incl.svg" width="100%" height="382"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div>
@@ -121,8 +123,55 @@ Classes</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a2311848953cdfb16b2fabdfedc2cc019"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__lib_8h.html#a2311848953cdfb16b2fabdfedc2cc019">dLib_getExpandSizeFromAramArchive</a> (<a class="el" href="structJKRAramArchive.html">JKRAramArchive</a> *arc, char const *resName)</td></tr>
 <tr class="separator:a2311848953cdfb16b2fabdfedc2cc019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a58d414ecbc4e73e32bfa0f9c57e35a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__lib_8h.html#a4a58d414ecbc4e73e32bfa0f9c57e35a">dLib_checkActorInRectangle</a> (<a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *param_0, <a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *param_1, <a class="el" href="structcXyz.html">cXyz</a> const *param_2, <a class="el" href="structcXyz.html">cXyz</a> const *param_3)</td></tr>
+<tr class="separator:a4a58d414ecbc4e73e32bfa0f9c57e35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a2c856e3299bc0ab3da35a0d7eeaf58bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structQuaternion.html">Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__lib_8h.html#a2c856e3299bc0ab3da35a0d7eeaf58bf">ZeroQuat</a></td></tr>
+<tr class="separator:a2c856e3299bc0ab3da35a0d7eeaf58bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a4a58d414ecbc4e73e32bfa0f9c57e35a" name="a4a58d414ecbc4e73e32bfa0f9c57e35a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a58d414ecbc4e73e32bfa0f9c57e35a">&#9670;&#160;</a></span>dLib_checkActorInRectangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> dLib_checkActorInRectangle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *&#160;</td>
+          <td class="paramname"><em>param_0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *&#160;</td>
+          <td class="paramname"><em>param_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcXyz.html">cXyz</a> const *&#160;</td>
+          <td class="paramname"><em>param_2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcXyz.html">cXyz</a> const *&#160;</td>
+          <td class="paramname"><em>param_3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2311848953cdfb16b2fabdfedc2cc019" name="a2311848953cdfb16b2fabdfedc2cc019"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2311848953cdfb16b2fabdfedc2cc019">&#9670;&#160;</a></span>dLib_getExpandSizeFromAramArchive()</h2>
 
@@ -147,6 +196,29 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a2c856e3299bc0ab3da35a0d7eeaf58bf" name="a2c856e3299bc0ab3da35a0d7eeaf58bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c856e3299bc0ab3da35a0d7eeaf58bf">&#9670;&#160;</a></span>ZeroQuat</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structQuaternion.html">Quaternion</a> ZeroQuat</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

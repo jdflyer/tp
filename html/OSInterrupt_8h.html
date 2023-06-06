@@ -89,13 +89,13 @@ $(function() {
   <div class="headertitle"><div class="title">OSInterrupt.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="OSContext_8h_source.html">dolphin/os/OSContext.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for OSInterrupt.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="OSInterrupt_8h__incl.svg" width="192" height="286"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="OSInterrupt_8h__incl.svg" width="192" height="212"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -103,7 +103,7 @@ $(function() {
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="OSInterrupt_8h__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="OSInterrupt_8h__dep__incl.svg" width="100%" height="536"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div>
@@ -188,6 +188,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a924296baf430a531adb5135a5cd54207"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structOSContext.html">OSContext</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSInterrupt_8h.html#a924296baf430a531adb5135a5cd54207">OSContext</a></td></tr>
+<tr class="separator:a924296baf430a531adb5135a5cd54207"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd5c403776740063a124b880906361fd"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSInterrupt_8h.html#acd5c403776740063a124b880906361fd">OSInterrupt</a></td></tr>
 <tr class="separator:acd5c403776740063a124b880906361fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae096c8a7b29971ff9bcd9b2283c7732d"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="OSInterrupt_8h.html#ae096c8a7b29971ff9bcd9b2283c7732d">OSInterruptMask</a></td></tr>
@@ -389,14 +391,14 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">  (<a class="code hl_define" href="OSInterrupt_8h.html#af17360526c723c314080ebabf5b3e46c">OS_INTERRUPTMASK_EXI_0_EXI</a> | <a class="code hl_define" href="OSInterrupt_8h.html#acdd107cde50066b049e72fead6eea326">OS_INTERRUPTMASK_EXI_0_TC</a> | <a class="code hl_define" href="OSInterrupt_8h.html#abd4595491e2c0ac2820e666d13f45a64">OS_INTERRUPTMASK_EXI_0_EXT</a> |           \</div>
 <div class="line">   <a class="code hl_define" href="OSInterrupt_8h.html#acd26877daf6bdead7acae1ffc4f166d4">OS_INTERRUPTMASK_EXI_1_EXI</a> | <a class="code hl_define" href="OSInterrupt_8h.html#a5d0cbfe0cb739fa1e09f57a55fbe3714">OS_INTERRUPTMASK_EXI_1_TC</a> | <a class="code hl_define" href="OSInterrupt_8h.html#ad568aab0a9239e69ead6c13791925067">OS_INTERRUPTMASK_EXI_1_EXT</a> |           \</div>
 <div class="line">   <a class="code hl_define" href="OSInterrupt_8h.html#a16670a6653a9db88d33e12cc441ec765">OS_INTERRUPTMASK_EXI_2_EXI</a> | <a class="code hl_define" href="OSInterrupt_8h.html#aff3295b7a08bca9f25bfd8406da81a85">OS_INTERRUPTMASK_EXI_2_TC</a>)</div>
-<div class="ttc" id="aOSInterrupt_8h_html_a16670a6653a9db88d33e12cc441ec765"><div class="ttname"><a href="OSInterrupt_8h.html#a16670a6653a9db88d33e12cc441ec765">OS_INTERRUPTMASK_EXI_2_EXI</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_EXI_2_EXI</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:79</div></div>
-<div class="ttc" id="aOSInterrupt_8h_html_a5d0cbfe0cb739fa1e09f57a55fbe3714"><div class="ttname"><a href="OSInterrupt_8h.html#a5d0cbfe0cb739fa1e09f57a55fbe3714">OS_INTERRUPTMASK_EXI_1_TC</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_EXI_1_TC</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:74</div></div>
-<div class="ttc" id="aOSInterrupt_8h_html_abd4595491e2c0ac2820e666d13f45a64"><div class="ttname"><a href="OSInterrupt_8h.html#abd4595491e2c0ac2820e666d13f45a64">OS_INTERRUPTMASK_EXI_0_EXT</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_EXI_0_EXT</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:69</div></div>
-<div class="ttc" id="aOSInterrupt_8h_html_acd26877daf6bdead7acae1ffc4f166d4"><div class="ttname"><a href="OSInterrupt_8h.html#acd26877daf6bdead7acae1ffc4f166d4">OS_INTERRUPTMASK_EXI_1_EXI</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_EXI_1_EXI</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:73</div></div>
-<div class="ttc" id="aOSInterrupt_8h_html_acdd107cde50066b049e72fead6eea326"><div class="ttname"><a href="OSInterrupt_8h.html#acdd107cde50066b049e72fead6eea326">OS_INTERRUPTMASK_EXI_0_TC</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_EXI_0_TC</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:68</div></div>
-<div class="ttc" id="aOSInterrupt_8h_html_ad568aab0a9239e69ead6c13791925067"><div class="ttname"><a href="OSInterrupt_8h.html#ad568aab0a9239e69ead6c13791925067">OS_INTERRUPTMASK_EXI_1_EXT</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_EXI_1_EXT</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:75</div></div>
-<div class="ttc" id="aOSInterrupt_8h_html_af17360526c723c314080ebabf5b3e46c"><div class="ttname"><a href="OSInterrupt_8h.html#af17360526c723c314080ebabf5b3e46c">OS_INTERRUPTMASK_EXI_0_EXI</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_EXI_0_EXI</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:67</div></div>
-<div class="ttc" id="aOSInterrupt_8h_html_aff3295b7a08bca9f25bfd8406da81a85"><div class="ttname"><a href="OSInterrupt_8h.html#aff3295b7a08bca9f25bfd8406da81a85">OS_INTERRUPTMASK_EXI_2_TC</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_EXI_2_TC</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:80</div></div>
+<div class="ttc" id="aOSInterrupt_8h_html_a16670a6653a9db88d33e12cc441ec765"><div class="ttname"><a href="OSInterrupt_8h.html#a16670a6653a9db88d33e12cc441ec765">OS_INTERRUPTMASK_EXI_2_EXI</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_EXI_2_EXI</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:81</div></div>
+<div class="ttc" id="aOSInterrupt_8h_html_a5d0cbfe0cb739fa1e09f57a55fbe3714"><div class="ttname"><a href="OSInterrupt_8h.html#a5d0cbfe0cb739fa1e09f57a55fbe3714">OS_INTERRUPTMASK_EXI_1_TC</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_EXI_1_TC</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:76</div></div>
+<div class="ttc" id="aOSInterrupt_8h_html_abd4595491e2c0ac2820e666d13f45a64"><div class="ttname"><a href="OSInterrupt_8h.html#abd4595491e2c0ac2820e666d13f45a64">OS_INTERRUPTMASK_EXI_0_EXT</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_EXI_0_EXT</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:71</div></div>
+<div class="ttc" id="aOSInterrupt_8h_html_acd26877daf6bdead7acae1ffc4f166d4"><div class="ttname"><a href="OSInterrupt_8h.html#acd26877daf6bdead7acae1ffc4f166d4">OS_INTERRUPTMASK_EXI_1_EXI</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_EXI_1_EXI</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:75</div></div>
+<div class="ttc" id="aOSInterrupt_8h_html_acdd107cde50066b049e72fead6eea326"><div class="ttname"><a href="OSInterrupt_8h.html#acdd107cde50066b049e72fead6eea326">OS_INTERRUPTMASK_EXI_0_TC</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_EXI_0_TC</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:70</div></div>
+<div class="ttc" id="aOSInterrupt_8h_html_ad568aab0a9239e69ead6c13791925067"><div class="ttname"><a href="OSInterrupt_8h.html#ad568aab0a9239e69ead6c13791925067">OS_INTERRUPTMASK_EXI_1_EXT</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_EXI_1_EXT</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:77</div></div>
+<div class="ttc" id="aOSInterrupt_8h_html_af17360526c723c314080ebabf5b3e46c"><div class="ttname"><a href="OSInterrupt_8h.html#af17360526c723c314080ebabf5b3e46c">OS_INTERRUPTMASK_EXI_0_EXI</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_EXI_0_EXI</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:69</div></div>
+<div class="ttc" id="aOSInterrupt_8h_html_aff3295b7a08bca9f25bfd8406da81a85"><div class="ttname"><a href="OSInterrupt_8h.html#aff3295b7a08bca9f25bfd8406da81a85">OS_INTERRUPTMASK_EXI_2_TC</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_EXI_2_TC</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:82</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -567,11 +569,11 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">  (<a class="code hl_define" href="OSInterrupt_8h.html#aa26e8f259537bfd179b30fbb973cd723">OS_INTERRUPTMASK_MEM_0</a> | <a class="code hl_define" href="OSInterrupt_8h.html#aa4fc96a6bee89d2c4210984969e50629">OS_INTERRUPTMASK_MEM_1</a> | <a class="code hl_define" href="OSInterrupt_8h.html#a9a7d4347d1acfcb82008a8545d8ca67c">OS_INTERRUPTMASK_MEM_2</a> |                      \</div>
 <div class="line">   <a class="code hl_define" href="OSInterrupt_8h.html#accb0d80acf163fa8de27f3df28713431">OS_INTERRUPTMASK_MEM_3</a> | <a class="code hl_define" href="OSInterrupt_8h.html#af3ce122a8c49055f923265bf63346da0">OS_INTERRUPTMASK_MEM_ADDRESS</a>)</div>
-<div class="ttc" id="aOSInterrupt_8h_html_a9a7d4347d1acfcb82008a8545d8ca67c"><div class="ttname"><a href="OSInterrupt_8h.html#a9a7d4347d1acfcb82008a8545d8ca67c">OS_INTERRUPTMASK_MEM_2</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_MEM_2</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:51</div></div>
-<div class="ttc" id="aOSInterrupt_8h_html_aa26e8f259537bfd179b30fbb973cd723"><div class="ttname"><a href="OSInterrupt_8h.html#aa26e8f259537bfd179b30fbb973cd723">OS_INTERRUPTMASK_MEM_0</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_MEM_0</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:49</div></div>
-<div class="ttc" id="aOSInterrupt_8h_html_aa4fc96a6bee89d2c4210984969e50629"><div class="ttname"><a href="OSInterrupt_8h.html#aa4fc96a6bee89d2c4210984969e50629">OS_INTERRUPTMASK_MEM_1</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_MEM_1</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:50</div></div>
-<div class="ttc" id="aOSInterrupt_8h_html_accb0d80acf163fa8de27f3df28713431"><div class="ttname"><a href="OSInterrupt_8h.html#accb0d80acf163fa8de27f3df28713431">OS_INTERRUPTMASK_MEM_3</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_MEM_3</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:52</div></div>
-<div class="ttc" id="aOSInterrupt_8h_html_af3ce122a8c49055f923265bf63346da0"><div class="ttname"><a href="OSInterrupt_8h.html#af3ce122a8c49055f923265bf63346da0">OS_INTERRUPTMASK_MEM_ADDRESS</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_MEM_ADDRESS</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:53</div></div>
+<div class="ttc" id="aOSInterrupt_8h_html_a9a7d4347d1acfcb82008a8545d8ca67c"><div class="ttname"><a href="OSInterrupt_8h.html#a9a7d4347d1acfcb82008a8545d8ca67c">OS_INTERRUPTMASK_MEM_2</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_MEM_2</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:53</div></div>
+<div class="ttc" id="aOSInterrupt_8h_html_aa26e8f259537bfd179b30fbb973cd723"><div class="ttname"><a href="OSInterrupt_8h.html#aa26e8f259537bfd179b30fbb973cd723">OS_INTERRUPTMASK_MEM_0</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_MEM_0</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:51</div></div>
+<div class="ttc" id="aOSInterrupt_8h_html_aa4fc96a6bee89d2c4210984969e50629"><div class="ttname"><a href="OSInterrupt_8h.html#aa4fc96a6bee89d2c4210984969e50629">OS_INTERRUPTMASK_MEM_1</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_MEM_1</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:52</div></div>
+<div class="ttc" id="aOSInterrupt_8h_html_accb0d80acf163fa8de27f3df28713431"><div class="ttname"><a href="OSInterrupt_8h.html#accb0d80acf163fa8de27f3df28713431">OS_INTERRUPTMASK_MEM_3</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_MEM_3</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:54</div></div>
+<div class="ttc" id="aOSInterrupt_8h_html_af3ce122a8c49055f923265bf63346da0"><div class="ttname"><a href="OSInterrupt_8h.html#af3ce122a8c49055f923265bf63346da0">OS_INTERRUPTMASK_MEM_ADDRESS</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_MEM_ADDRESS</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:55</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -660,16 +662,16 @@ Functions</h2></td></tr>
 <div class="line">   <a class="code hl_define" href="OSInterrupt_8h.html#a6eef2bb91debebcaa8f6aed0968197b1">OS_INTERRUPTMASK_PI_RSW</a> | <a class="code hl_define" href="OSInterrupt_8h.html#a9879671c8fbc6ddea2d0d3d79f05849b">OS_INTERRUPTMASK_PI_ERROR</a> | <a class="code hl_define" href="OSInterrupt_8h.html#ac9587f5ecddea1f3a19f1887bf096d9a">OS_INTERRUPTMASK_PI_VI</a> |                  \</div>
 <div class="line">   <a class="code hl_define" href="OSInterrupt_8h.html#a6923d157b76d6e58f000d4d206d44c3f">OS_INTERRUPTMASK_PI_PE_TOKEN</a> | <a class="code hl_define" href="OSInterrupt_8h.html#a089dff70fecfbc0a66ff353cf9606f1d">OS_INTERRUPTMASK_PI_PE_FINISH</a> | <a class="code hl_define" href="OSInterrupt_8h.html#adcf731a85c6c467009f6f817ea3b2c26">OS_INTERRUPTMASK_PI_DEBUG</a> |      \</div>
 <div class="line">   <a class="code hl_define" href="OSInterrupt_8h.html#ad31d3e613026329df3f11b3e712abdcd">OS_INTERRUPTMASK_PI_HSP</a>)</div>
-<div class="ttc" id="aOSInterrupt_8h_html_a089dff70fecfbc0a66ff353cf9606f1d"><div class="ttname"><a href="OSInterrupt_8h.html#a089dff70fecfbc0a66ff353cf9606f1d">OS_INTERRUPTMASK_PI_PE_FINISH</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_PI_PE_FINISH</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:88</div></div>
-<div class="ttc" id="aOSInterrupt_8h_html_a6923d157b76d6e58f000d4d206d44c3f"><div class="ttname"><a href="OSInterrupt_8h.html#a6923d157b76d6e58f000d4d206d44c3f">OS_INTERRUPTMASK_PI_PE_TOKEN</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_PI_PE_TOKEN</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:87</div></div>
-<div class="ttc" id="aOSInterrupt_8h_html_a6eef2bb91debebcaa8f6aed0968197b1"><div class="ttname"><a href="OSInterrupt_8h.html#a6eef2bb91debebcaa8f6aed0968197b1">OS_INTERRUPTMASK_PI_RSW</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_PI_RSW</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:94</div></div>
-<div class="ttc" id="aOSInterrupt_8h_html_a88bcecc3987777df229fc52440fe0d8e"><div class="ttname"><a href="OSInterrupt_8h.html#a88bcecc3987777df229fc52440fe0d8e">OS_INTERRUPTMASK_PI_SI</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_PI_SI</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:92</div></div>
-<div class="ttc" id="aOSInterrupt_8h_html_a91a6c35561fe87a289a432864b601b95"><div class="ttname"><a href="OSInterrupt_8h.html#a91a6c35561fe87a289a432864b601b95">OS_INTERRUPTMASK_PI_DI</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_PI_DI</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:93</div></div>
-<div class="ttc" id="aOSInterrupt_8h_html_a9879671c8fbc6ddea2d0d3d79f05849b"><div class="ttname"><a href="OSInterrupt_8h.html#a9879671c8fbc6ddea2d0d3d79f05849b">OS_INTERRUPTMASK_PI_ERROR</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_PI_ERROR</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:95</div></div>
-<div class="ttc" id="aOSInterrupt_8h_html_ac9587f5ecddea1f3a19f1887bf096d9a"><div class="ttname"><a href="OSInterrupt_8h.html#ac9587f5ecddea1f3a19f1887bf096d9a">OS_INTERRUPTMASK_PI_VI</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_PI_VI</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:96</div></div>
-<div class="ttc" id="aOSInterrupt_8h_html_ad31d3e613026329df3f11b3e712abdcd"><div class="ttname"><a href="OSInterrupt_8h.html#ad31d3e613026329df3f11b3e712abdcd">OS_INTERRUPTMASK_PI_HSP</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_PI_HSP</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:98</div></div>
-<div class="ttc" id="aOSInterrupt_8h_html_adcf731a85c6c467009f6f817ea3b2c26"><div class="ttname"><a href="OSInterrupt_8h.html#adcf731a85c6c467009f6f817ea3b2c26">OS_INTERRUPTMASK_PI_DEBUG</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_PI_DEBUG</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:97</div></div>
-<div class="ttc" id="aOSInterrupt_8h_html_aebf0ae490d45ce450ad287e64d3686a1"><div class="ttname"><a href="OSInterrupt_8h.html#aebf0ae490d45ce450ad287e64d3686a1">OS_INTERRUPTMASK_PI_CP</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_PI_CP</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:91</div></div>
+<div class="ttc" id="aOSInterrupt_8h_html_a089dff70fecfbc0a66ff353cf9606f1d"><div class="ttname"><a href="OSInterrupt_8h.html#a089dff70fecfbc0a66ff353cf9606f1d">OS_INTERRUPTMASK_PI_PE_FINISH</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_PI_PE_FINISH</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:90</div></div>
+<div class="ttc" id="aOSInterrupt_8h_html_a6923d157b76d6e58f000d4d206d44c3f"><div class="ttname"><a href="OSInterrupt_8h.html#a6923d157b76d6e58f000d4d206d44c3f">OS_INTERRUPTMASK_PI_PE_TOKEN</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_PI_PE_TOKEN</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:89</div></div>
+<div class="ttc" id="aOSInterrupt_8h_html_a6eef2bb91debebcaa8f6aed0968197b1"><div class="ttname"><a href="OSInterrupt_8h.html#a6eef2bb91debebcaa8f6aed0968197b1">OS_INTERRUPTMASK_PI_RSW</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_PI_RSW</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:96</div></div>
+<div class="ttc" id="aOSInterrupt_8h_html_a88bcecc3987777df229fc52440fe0d8e"><div class="ttname"><a href="OSInterrupt_8h.html#a88bcecc3987777df229fc52440fe0d8e">OS_INTERRUPTMASK_PI_SI</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_PI_SI</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:94</div></div>
+<div class="ttc" id="aOSInterrupt_8h_html_a91a6c35561fe87a289a432864b601b95"><div class="ttname"><a href="OSInterrupt_8h.html#a91a6c35561fe87a289a432864b601b95">OS_INTERRUPTMASK_PI_DI</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_PI_DI</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:95</div></div>
+<div class="ttc" id="aOSInterrupt_8h_html_a9879671c8fbc6ddea2d0d3d79f05849b"><div class="ttname"><a href="OSInterrupt_8h.html#a9879671c8fbc6ddea2d0d3d79f05849b">OS_INTERRUPTMASK_PI_ERROR</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_PI_ERROR</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:97</div></div>
+<div class="ttc" id="aOSInterrupt_8h_html_ac9587f5ecddea1f3a19f1887bf096d9a"><div class="ttname"><a href="OSInterrupt_8h.html#ac9587f5ecddea1f3a19f1887bf096d9a">OS_INTERRUPTMASK_PI_VI</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_PI_VI</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:98</div></div>
+<div class="ttc" id="aOSInterrupt_8h_html_ad31d3e613026329df3f11b3e712abdcd"><div class="ttname"><a href="OSInterrupt_8h.html#ad31d3e613026329df3f11b3e712abdcd">OS_INTERRUPTMASK_PI_HSP</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_PI_HSP</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:100</div></div>
+<div class="ttc" id="aOSInterrupt_8h_html_adcf731a85c6c467009f6f817ea3b2c26"><div class="ttname"><a href="OSInterrupt_8h.html#adcf731a85c6c467009f6f817ea3b2c26">OS_INTERRUPTMASK_PI_DEBUG</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_PI_DEBUG</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:99</div></div>
+<div class="ttc" id="aOSInterrupt_8h_html_aebf0ae490d45ce450ad287e64d3686a1"><div class="ttname"><a href="OSInterrupt_8h.html#aebf0ae490d45ce450ad287e64d3686a1">OS_INTERRUPTMASK_PI_CP</a></div><div class="ttdeci">#define OS_INTERRUPTMASK_PI_CP</div><div class="ttdef"><b>Definition:</b> OSInterrupt.h:93</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -828,6 +830,20 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="a924296baf430a531adb5135a5cd54207" name="a924296baf430a531adb5135a5cd54207"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a924296baf430a531adb5135a5cd54207">&#9670;&#160;</a></span>OSContext</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structOSContext.html">OSContext</a> <a class="el" href="structOSContext.html">OSContext</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="acd5c403776740063a124b880906361fd" name="acd5c403776740063a124b880906361fd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acd5c403776740063a124b880906361fd">&#9670;&#160;</a></span>OSInterrupt</h2>
 

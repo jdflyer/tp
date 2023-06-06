@@ -88,16 +88,14 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="dolphin__trk_8h_source.html">TRK_MINNOW_DOLPHIN/Os/dolphin/dolphin_trk.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="targimpl_8h_source.html">TRK_MINNOW_DOLPHIN/ppc/Generic/targimpl.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;asm/TRK_MINNOW_DOLPHIN/Os/dolphin/dolphin_trk/InitMetroTRK.s&quot;</code><br />
 <code>#include &quot;asm/TRK_MINNOW_DOLPHIN/Os/dolphin/dolphin_trk/InitMetroTRK_BBA.s&quot;</code><br />
 <code>#include &quot;asm/TRK_MINNOW_DOLPHIN/Os/dolphin/dolphin_trk/TRK__write_aram.s&quot;</code><br />
 <code>#include &quot;asm/TRK_MINNOW_DOLPHIN/Os/dolphin/dolphin_trk/TRK__read_aram.s&quot;</code><br />
-<code>#include &quot;asm/TRK_MINNOW_DOLPHIN/Os/dolphin/dolphin_trk/TRKInitializeTarget.s&quot;</code><br />
 <code>#include &quot;asm/TRK_MINNOW_DOLPHIN/Os/dolphin/dolphin_trk/__TRK_copy_vectors.s&quot;</code><br />
-<code>#include &quot;asm/TRK_MINNOW_DOLPHIN/Os/dolphin/dolphin_trk/TRKTargetTranslate.s&quot;</code><br />
-<code>#include &quot;asm/TRK_MINNOW_DOLPHIN/Os/dolphin/dolphin_trk/EnableMetroTRKInterrupts.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for dolphin_trk.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -117,12 +115,12 @@ Functions</h2></td></tr>
 <tr class="separator:a980f885548dc4c2f1c5ad7a5d433aa05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a298db337de7b451263122f06f0f131f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dolphin__trk_8c.html#a298db337de7b451263122f06f0f131f5">TRK__read_aram</a> ()</td></tr>
 <tr class="separator:a298db337de7b451263122f06f0f131f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b874a95a5e31d704c1576f35cd284af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dolphin__trk_8c.html#a1b874a95a5e31d704c1576f35cd284af">TRKInitializeTarget</a> ()</td></tr>
-<tr class="separator:a1b874a95a5e31d704c1576f35cd284af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af227a9bf38725f68b040e452589c2b72"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dolphin__trk_8c.html#af227a9bf38725f68b040e452589c2b72">TRKInitializeTarget</a> ()</td></tr>
+<tr class="separator:af227a9bf38725f68b040e452589c2b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a383a76f02e067a4005e6905ede02670c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dolphin__trk_8c.html#a383a76f02e067a4005e6905ede02670c">__TRK_copy_vectors</a> ()</td></tr>
 <tr class="separator:a383a76f02e067a4005e6905ede02670c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4cd993b94e075c4703e5b2c04f03ca9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dolphin__trk_8c.html#ad4cd993b94e075c4703e5b2c04f03ca9">TRKTargetTranslate</a> ()</td></tr>
-<tr class="separator:ad4cd993b94e075c4703e5b2c04f03ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac29bb355751dc778abc55d643899612f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dolphin__trk_8c.html#ac29bb355751dc778abc55d643899612f">TRKTargetTranslate</a> ()</td></tr>
+<tr class="separator:ac29bb355751dc778abc55d643899612f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6141898582e43d9d9ab5b104edade0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dolphin__trk_8c.html#ab6141898582e43d9d9ab5b104edade0b">EnableMetroTRKInterrupts</a> ()</td></tr>
 <tr class="separator:ab6141898582e43d9d9ab5b104edade0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97226a53913cb00820a7e15639723c70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#adc00f0d3ad529c0cb72985d54bfe7ccf">SECTION_INIT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dolphin__trk_8c.html#a97226a53913cb00820a7e15639723c70">TRK_memcpy</a> ()</td></tr>
@@ -137,8 +135,6 @@ Functions</h2></td></tr>
 <tr class="separator:aad365366f1c526dd08b714d4c501ffc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a736431a8a5a94b1f74042884abb5373e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dolphin__trk_8c.html#a736431a8a5a94b1f74042884abb5373e">TRK_flush_cache</a> ()</td></tr>
 <tr class="separator:a736431a8a5a94b1f74042884abb5373e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a283c90800f4f3aceb5c4d04193d418f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dolphin__trk_8c.html#a283c90800f4f3aceb5c4d04193d418f0">__TRK_get_MSR</a> ()</td></tr>
-<tr class="separator:a283c90800f4f3aceb5c4d04193d418f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e93ab9dd552ccf8eefd2edcc3b43b5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dolphin__trk_8c.html#a6e93ab9dd552ccf8eefd2edcc3b43b5b">TRKSaveExtended1Block</a> ()</td></tr>
 <tr class="separator:a6e93ab9dd552ccf8eefd2edcc3b43b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b69a4c6f5ec1f1e7f42faf5da733585"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dolphin__trk_8c.html#a4b69a4c6f5ec1f1e7f42faf5da733585">TRK_main</a> ()</td></tr>
@@ -149,17 +145,19 @@ Functions</h2></td></tr>
 <tr class="separator:acdf980deb687d02133ccec2bdb00a90d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afad514b65927bb3a99fbfd8236679560"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dolphin__trk_8c.html#afad514b65927bb3a99fbfd8236679560">regist__9daBgObj_cFP4dBgW</a> ()</td></tr>
 <tr class="separator:afad514b65927bb3a99fbfd8236679560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a676e3041d9fd3f9e12fc2c9214558f35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dolphin__trk_8c.html#a676e3041d9fd3f9e12fc2c9214558f35">TRKTargetTranslate</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> param_0)</td></tr>
+<tr class="separator:a676e3041d9fd3f9e12fc2c9214558f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:aec11b6f089b1b7b14e14e8034377f409"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dolphin__trk_8c.html#aec11b6f089b1b7b14e14e8034377f409">__TRK_unknown_data</a> [7988]</td></tr>
 <tr class="separator:aec11b6f089b1b7b14e14e8034377f409"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3188ee7092fc900a1d8a8d7e17c1e150"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dolphin__trk_8c.html#a3188ee7092fc900a1d8a8d7e17c1e150">gTRKState</a> [164]</td></tr>
-<tr class="separator:a3188ee7092fc900a1d8a8d7e17c1e150"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca1f382ca153c330279ba6b01d7bd30e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dolphin__trk_8c.html#aca1f382ca153c330279ba6b01d7bd30e">gTRKCPUState</a> [1072]</td></tr>
-<tr class="separator:aca1f382ca153c330279ba6b01d7bd30e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a599dadc220e2bf9e03f6005436b545f2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a7873e820b6567070fa316a6dac0a74dd">SECTION_BSS</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dolphin__trk_8c.html#a599dadc220e2bf9e03f6005436b545f2">lc_base</a> [4+4]</td></tr>
-<tr class="separator:a599dadc220e2bf9e03f6005436b545f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd7d620a16f961671103c66058428274"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dolphin__trk_8c.html#abd7d620a16f961671103c66058428274">gTRKState</a> [41]</td></tr>
+<tr class="separator:abd7d620a16f961671103c66058428274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0012e52214d8a774307a492d07e1a17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dolphin__trk_8c.html#ac0012e52214d8a774307a492d07e1a17">gTRKCPUState</a> [268]</td></tr>
+<tr class="separator:ac0012e52214d8a774307a492d07e1a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf20465b5f43a9e5b86c4384405a9f5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a7873e820b6567070fa316a6dac0a74dd">SECTION_BSS</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dolphin__trk_8c.html#a4bf20465b5f43a9e5b86c4384405a9f5">lc_base</a> [1+1]</td></tr>
+<tr class="separator:a4bf20465b5f43a9e5b86c4384405a9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52d62201490e777fec8e6596c2f68472"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dolphin__trk_8c.html#a52d62201490e777fec8e6596c2f68472">TRK_ISR_OFFSETS</a> [60+4]</td></tr>
 <tr class="separator:a52d62201490e777fec8e6596c2f68472"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -206,23 +204,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void __TRK_copy_vectors </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a283c90800f4f3aceb5c4d04193d418f0" name="a283c90800f4f3aceb5c4d04193d418f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a283c90800f4f3aceb5c4d04193d418f0">&#9670;&#160;</a></span>__TRK_get_MSR()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">asm void __TRK_get_MSR </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -455,14 +436,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a1b874a95a5e31d704c1576f35cd284af" name="a1b874a95a5e31d704c1576f35cd284af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b874a95a5e31d704c1576f35cd284af">&#9670;&#160;</a></span>TRKInitializeTarget()</h2>
+<a id="af227a9bf38725f68b040e452589c2b72" name="af227a9bf38725f68b040e452589c2b72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af227a9bf38725f68b040e452589c2b72">&#9670;&#160;</a></span>TRKInitializeTarget()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TRKInitializeTarget </td>
+          <td class="memname">int TRKInitializeTarget </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -489,16 +470,34 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad4cd993b94e075c4703e5b2c04f03ca9" name="ad4cd993b94e075c4703e5b2c04f03ca9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4cd993b94e075c4703e5b2c04f03ca9">&#9670;&#160;</a></span>TRKTargetTranslate()</h2>
+<a id="ac29bb355751dc778abc55d643899612f" name="ac29bb355751dc778abc55d643899612f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac29bb355751dc778abc55d643899612f">&#9670;&#160;</a></span>TRKTargetTranslate() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void TRKTargetTranslate </td>
+          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> TRKTargetTranslate </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a676e3041d9fd3f9e12fc2c9214558f35" name="a676e3041d9fd3f9e12fc2c9214558f35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a676e3041d9fd3f9e12fc2c9214558f35">&#9670;&#160;</a></span>TRKTargetTranslate() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> TRKTargetTranslate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>param_0</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -529,8 +528,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aca1f382ca153c330279ba6b01d7bd30e" name="aca1f382ca153c330279ba6b01d7bd30e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca1f382ca153c330279ba6b01d7bd30e">&#9670;&#160;</a></span>gTRKCPUState</h2>
+<a id="ac0012e52214d8a774307a492d07e1a17" name="ac0012e52214d8a774307a492d07e1a17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0012e52214d8a774307a492d07e1a17">&#9670;&#160;</a></span>gTRKCPUState</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -551,8 +550,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a3188ee7092fc900a1d8a8d7e17c1e150" name="a3188ee7092fc900a1d8a8d7e17c1e150"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3188ee7092fc900a1d8a8d7e17c1e150">&#9670;&#160;</a></span>gTRKState</h2>
+<a id="abd7d620a16f961671103c66058428274" name="abd7d620a16f961671103c66058428274"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd7d620a16f961671103c66058428274">&#9670;&#160;</a></span>gTRKState</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -573,8 +572,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a599dadc220e2bf9e03f6005436b545f2" name="a599dadc220e2bf9e03f6005436b545f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a599dadc220e2bf9e03f6005436b545f2">&#9670;&#160;</a></span>lc_base</h2>
+<a id="a4bf20465b5f43a9e5b86c4384405a9f5" name="a4bf20465b5f43a9e5b86c4384405a9f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bf20465b5f43a9e5b86c4384405a9f5">&#9670;&#160;</a></span>lc_base</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -583,7 +582,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a7873e820b6567070fa316a6dac0a74dd">SECTION_BSS</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> lc_base[4+4]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a7873e820b6567070fa316a6dac0a74dd">SECTION_BSS</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> lc_base[1+1]</td>
         </tr>
       </table>
   </td>

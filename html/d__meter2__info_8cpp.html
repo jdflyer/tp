@@ -88,13 +88,19 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="d__meter2__info_8h_source.html">d/meter/d_meter2_info.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J2DTextBox_8h_source.html">JSystem/J2DGraph/J2DTextBox.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__a__player_8h_source.html">d/a/d_a_player.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__com__inf__game_8h_source.html">d/com/d_com_inf_game.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__meter2_8h_source.html">d/meter/d_meter2.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__meter__map_8h_source.html">d/meter/d_meter_map.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__msg__object_8h_source.html">d/msg/d_msg_object.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__save_8h_source.html">d/save/d_save.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OSCache_8h_source.html">dolphin/os/OSCache.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__a__npc_8h_source.html">d/a/d_a_npc.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__item__data_8h_source.html">d/d_item_data.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="global_8h_source.html">global.h</a>&quot;</code><br />
 <code>#include &quot;asm/d/meter/d_meter2_info/init__13dMeter2Info_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/meter/d_meter2_info/getString__13dMeter2Info_cFUlPcP14JMSMesgEntry_c.s&quot;</code><br />
 <code>#include &quot;asm/d/meter/d_meter2_info/getStringKana__13dMeter2Info_cFUlPcP14JMSMesgEntry_c.s&quot;</code><br />
@@ -350,10 +356,10 @@ Functions</h2></td></tr>
 <tr class="separator:a5962bb52cb2ce11cd46dbd915491b8f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b8bd1035e11963f559d8ac80a6f87b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__meter2__info_8cpp.html#a2b8bd1035e11963f559d8ac80a6f87b0">dMeter2Info_getNowLifeGauge</a> ()</td></tr>
 <tr class="separator:a2b8bd1035e11963f559d8ac80a6f87b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ef838b516f3e5b3b96798678f8705f3"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__meter2__info_8cpp.html#a2ef838b516f3e5b3b96798678f8705f3">dMeter2Info_getNumberTextureName</a> (int nameIdx)</td></tr>
-<tr class="separator:a2ef838b516f3e5b3b96798678f8705f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40f50d8bdbe3d489c757d64960b92124"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__meter2__info_8cpp.html#a40f50d8bdbe3d489c757d64960b92124">dMeter2Info_getPlusTextureName</a> ()</td></tr>
-<tr class="separator:a40f50d8bdbe3d489c757d64960b92124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b4df284217510aab2899424e2890a41"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__meter2__info_8cpp.html#a8b4df284217510aab2899424e2890a41">dMeter2Info_getNumberTextureName</a> (int nameIdx)</td></tr>
+<tr class="separator:a8b4df284217510aab2899424e2890a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35e135cc0d2145fb75f3c3b0a935674d"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__meter2__info_8cpp.html#a35e135cc0d2145fb75f3c3b0a935674d">dMeter2Info_getPlusTextureName</a> ()</td></tr>
+<tr class="separator:a35e135cc0d2145fb75f3c3b0a935674d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab65dfeff8717fa432f264c6bd197113e"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__meter2__info_8cpp.html#ab65dfeff8717fa432f264c6bd197113e">dMeter2Info_getPixel</a> (<a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_0, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_1, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_2, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_3, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_4, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_5, <a class="el" href="structResTIMG.html">ResTIMG</a> const *param_6)</td></tr>
 <tr class="separator:ab65dfeff8717fa432f264c6bd197113e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac53f2325353e61094455e08a517c5471"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__meter2__info_8cpp.html#ac53f2325353e61094455e08a517c5471">dMeter2Info_setCloth</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> i_clothId, bool param_1)</td></tr>
@@ -1406,14 +1412,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a2ef838b516f3e5b3b96798678f8705f3" name="a2ef838b516f3e5b3b96798678f8705f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ef838b516f3e5b3b96798678f8705f3">&#9670;&#160;</a></span>dMeter2Info_getNumberTextureName()</h2>
+<a id="a8b4df284217510aab2899424e2890a41" name="a8b4df284217510aab2899424e2890a41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b4df284217510aab2899424e2890a41">&#9670;&#160;</a></span>dMeter2Info_getNumberTextureName()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char * dMeter2Info_getNumberTextureName </td>
+          <td class="memname">const char * dMeter2Info_getNumberTextureName </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>nameIdx</em></td><td>)</td>
@@ -1516,14 +1522,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a40f50d8bdbe3d489c757d64960b92124" name="a40f50d8bdbe3d489c757d64960b92124"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40f50d8bdbe3d489c757d64960b92124">&#9670;&#160;</a></span>dMeter2Info_getPlusTextureName()</h2>
+<a id="a35e135cc0d2145fb75f3c3b0a935674d" name="a35e135cc0d2145fb75f3c3b0a935674d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35e135cc0d2145fb75f3c3b0a935674d">&#9670;&#160;</a></span>dMeter2Info_getPlusTextureName()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char * dMeter2Info_getPlusTextureName </td>
+          <td class="memname">const char * dMeter2Info_getPlusTextureName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>

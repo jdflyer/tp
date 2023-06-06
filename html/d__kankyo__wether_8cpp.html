@@ -88,12 +88,16 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="d__kankyo__wether_8h_source.html">d/kankyo/d_kankyo_wether.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J3DDrawBuffer_8h_source.html">JSystem/J3DGraphBase/J3DDrawBuffer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JKRHeap_8h_source.html">JSystem/JKernel/JKRHeap.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="string_8h_source.html">MSL_C/string.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Z2EnvSeMgr_8h_source.html">Z2AudioLib/Z2EnvSeMgr.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__com__inf__game_8h_source.html">d/com/d_com_inf_game.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__kankyo_8h_source.html">d/kankyo/d_kankyo.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__kankyo__rain_8h_source.html">d/kankyo/d_kankyo_rain.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="global_8h_source.html">global.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="m__Do__audio_8h_source.html">m_Do/m_Do_audio.h</a>&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo_wether/wether_move_rain__Fv.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo_wether/wether_move_vrkumo__Fv.s&quot;</code><br />
@@ -486,8 +490,6 @@ Functions</h2></td></tr>
 <tr class="separator:a3f61243ebf5cbb2ff90548d397b16772"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abed5bd59c54272a132a5b4da4beff66d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo__wether_8cpp.html#abed5bd59c54272a132a5b4da4beff66d">_restgpr_29</a> ()</td></tr>
 <tr class="separator:abed5bd59c54272a132a5b4da4beff66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a469eda933d9930df223beeb5338dd8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo__wether_8cpp.html#a4a469eda933d9930df223beeb5338dd8">memcmp</a> ()</td></tr>
-<tr class="separator:a4a469eda933d9930df223beeb5338dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36f7e81e2a92bf6ce7f41e0cf61719f3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classJ3DPacket.html">J3DPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo__wether_8cpp.html#a36f7e81e2a92bf6ce7f41e0cf61719f3">dKyw_setDrawPacketList</a> (<a class="el" href="classJ3DPacket.html">J3DPacket</a> *p_packet, int param_1)</td></tr>
 <tr class="separator:a36f7e81e2a92bf6ce7f41e0cf61719f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ca456163b975186f56adf7f3ef2fc27"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classJ3DPacket.html">J3DPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo__wether_8cpp.html#a2ca456163b975186f56adf7f3ef2fc27">dKyw_setDrawPacketListIndScreen</a> (<a class="el" href="classJ3DPacket.html">J3DPacket</a> *p_packet, int param_1)</td></tr>
@@ -544,9 +546,9 @@ Functions</h2></td></tr>
 <tr class="separator:a9eb723a5d70387740757f717ec6a2d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a883d4e20e2c35e65c65b2c0966c9a31c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo__wether_8cpp.html#a883d4e20e2c35e65c65b2c0966c9a31c">dKyw_evil_Draw</a> ()</td></tr>
 <tr class="separator:a883d4e20e2c35e65c65b2c0966c9a31c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab29f41cadbaf81c7b28f855d1674d4dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJPABaseEmitter.html">JPABaseEmitter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo__wether_8cpp.html#ab29f41cadbaf81c7b28f855d1674d4dc">tmp_dComIfGp_particle_set</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> param_1, const <a class="el" href="structcXyz.html">cXyz</a> *param_2, const <a class="el" href="structdKy__tevstr__c.html">dKy_tevstr_c</a> *param_3, const <a class="el" href="structcsXyz.html">csXyz</a> *param_4, const <a class="el" href="structcXyz.html">cXyz</a> *param_5, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_6, <a class="el" href="structdPa__levelEcallBack.html">dPa_levelEcallBack</a> *param_7, <a class="el" href="types_8h.html#a151f780fb455885061d3b77ec1c90c03">s8</a> param_8, const <a class="el" href="GXStruct_8h.html#a0419d171f4d66c2b2a77bd299ddbdcdc">GXColor</a> *param_9, const <a class="el" href="GXStruct_8h.html#a0419d171f4d66c2b2a77bd299ddbdcdc">GXColor</a> *param_10, const <a class="el" href="structcXyz.html">cXyz</a> *param_11)</td></tr>
+<tr class="memitem:ab29f41cadbaf81c7b28f855d1674d4dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classJPABaseEmitter.html">JPABaseEmitter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo__wether_8cpp.html#ab29f41cadbaf81c7b28f855d1674d4dc">tmp_dComIfGp_particle_set</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> param_1, const <a class="el" href="structcXyz.html">cXyz</a> *param_2, const <a class="el" href="structdKy__tevstr__c.html">dKy_tevstr_c</a> *param_3, const <a class="el" href="structcsXyz.html">csXyz</a> *param_4, const <a class="el" href="structcXyz.html">cXyz</a> *param_5, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_6, <a class="el" href="structdPa__levelEcallBack.html">dPa_levelEcallBack</a> *param_7, <a class="el" href="types_8h.html#a151f780fb455885061d3b77ec1c90c03">s8</a> param_8, const <a class="el" href="GXStruct_8h.html#a0419d171f4d66c2b2a77bd299ddbdcdc">GXColor</a> *param_9, const <a class="el" href="GXStruct_8h.html#a0419d171f4d66c2b2a77bd299ddbdcdc">GXColor</a> *param_10, const <a class="el" href="structcXyz.html">cXyz</a> *param_11)</td></tr>
 <tr class="separator:ab29f41cadbaf81c7b28f855d1674d4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aceceb981bd3a365bcaa0e00a7326aa7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJPABaseEmitter.html">JPABaseEmitter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo__wether_8cpp.html#aceceb981bd3a365bcaa0e00a7326aa7f">tmp_dComIfGp_particle_set</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> param_0, const <a class="el" href="structcXyz.html">cXyz</a> *param_1, const <a class="el" href="structcsXyz.html">csXyz</a> *param_2, const <a class="el" href="structcXyz.html">cXyz</a> *param_3)</td></tr>
+<tr class="memitem:aceceb981bd3a365bcaa0e00a7326aa7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classJPABaseEmitter.html">JPABaseEmitter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo__wether_8cpp.html#aceceb981bd3a365bcaa0e00a7326aa7f">tmp_dComIfGp_particle_set</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> param_0, const <a class="el" href="structcXyz.html">cXyz</a> *param_1, const <a class="el" href="structcsXyz.html">csXyz</a> *param_2, const <a class="el" href="structcXyz.html">cXyz</a> *param_3)</td></tr>
 <tr class="separator:aceceb981bd3a365bcaa0e00a7326aa7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d2e8027c25ddbcf9df4eb570ce7a0e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo__wether_8cpp.html#a5d2e8027c25ddbcf9df4eb570ce7a0e4">dKyw_wether_init</a> ()</td></tr>
 <tr class="separator:a5d2e8027c25ddbcf9df4eb570ce7a0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -594,8 +596,8 @@ Functions</h2></td></tr>
 <tr class="separator:a84f306b5d09af8e3f32cc37c6c8ea9e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac21661760dad157fb54ee298cd254c39"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo__wether_8cpp.html#ac21661760dad157fb54ee298cd254c39">dKyw_wind_set</a> ()</td></tr>
 <tr class="separator:ac21661760dad157fb54ee298cd254c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01cfb11cf9b10aa7fecda4c80d51234f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcXyz.html">cXyz</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo__wether_8cpp.html#a01cfb11cf9b10aa7fecda4c80d51234f">dKyw_get_wind_vec</a> ()</td></tr>
-<tr class="separator:a01cfb11cf9b10aa7fecda4c80d51234f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1218af3b785ed95dc648175f22b3abdd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcXyz.html">cXyz</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo__wether_8cpp.html#a1218af3b785ed95dc648175f22b3abdd">dKyw_get_wind_vec</a> ()</td></tr>
+<tr class="separator:a1218af3b785ed95dc648175f22b3abdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ade0472300e07dae6c87c9daa79e399"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo__wether_8cpp.html#a8ade0472300e07dae6c87c9daa79e399">dKyw_get_wind_pow</a> ()</td></tr>
 <tr class="separator:a8ade0472300e07dae6c87c9daa79e399"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec21e33f3a8b5390f7ec3d26cffcfdac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcXyz.html">cXyz</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo__wether_8cpp.html#aec21e33f3a8b5390f7ec3d26cffcfdac">dKyw_get_wind_vecpow</a> ()</td></tr>
@@ -3076,14 +3078,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a01cfb11cf9b10aa7fecda4c80d51234f" name="a01cfb11cf9b10aa7fecda4c80d51234f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01cfb11cf9b10aa7fecda4c80d51234f">&#9670;&#160;</a></span>dKyw_get_wind_vec()</h2>
+<a id="a1218af3b785ed95dc648175f22b3abdd" name="a1218af3b785ed95dc648175f22b3abdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1218af3b785ed95dc648175f22b3abdd">&#9670;&#160;</a></span>dKyw_get_wind_vec()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structcXyz.html">cXyz</a> &amp; dKyw_get_wind_vec </td>
+          <td class="memname"><a class="el" href="structcXyz.html">cXyz</a> * dKyw_get_wind_vec </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -5245,23 +5247,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4a469eda933d9930df223beeb5338dd8" name="a4a469eda933d9930df223beeb5338dd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a469eda933d9930df223beeb5338dd8">&#9670;&#160;</a></span>memcmp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void memcmp </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aeaa2e32de730b067844d0db8eb1af56f" name="aeaa2e32de730b067844d0db8eb1af56f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeaa2e32de730b067844d0db8eb1af56f">&#9670;&#160;</a></span>normZP__4cXyzCFv()</h2>
 
@@ -5548,7 +5533,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structJPABaseEmitter.html">JPABaseEmitter</a> * tmp_dComIfGp_particle_set </td>
+          <td class="memname"><a class="el" href="classJPABaseEmitter.html">JPABaseEmitter</a> * tmp_dComIfGp_particle_set </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>param_0</em>, </td>
@@ -5596,7 +5581,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structJPABaseEmitter.html">JPABaseEmitter</a> * tmp_dComIfGp_particle_set </td>
+          <td class="memname"><a class="el" href="classJPABaseEmitter.html">JPABaseEmitter</a> * tmp_dComIfGp_particle_set </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>param_1</em>, </td>

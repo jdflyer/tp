@@ -94,15 +94,16 @@ $(function() {
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OSAlarm_8h_source.html">dolphin/os/OSAlarm.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="OSTime_8h_source.html">dolphin/os/OSTime.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OSContext_8h_source.html">dolphin/os/OSContext.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OSInterrupt_8h_source.html">dolphin/os/OSInterrupt.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OSReset_8h_source.html">dolphin/os/OSReset.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OSTime_8h_source.html">dolphin/os/OSTime.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for dvdlow.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="dvdlow_8c__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="dvdlow_8c__incl.svg" width="100%" height="558"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><table class="memberdecls">
@@ -164,22 +165,6 @@ Functions</h2></td></tr>
 <tr class="separator:a73cebfdd886ea4345b2a06142acad352"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3407d74c2121ea24acd8efc16477454"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#aa3407d74c2121ea24acd8efc16477454">__DVDLowTestAlarm</a> (<a class="el" href="structOSAlarm.html">OSAlarm</a> *alarm)</td></tr>
 <tr class="separator:aa3407d74c2121ea24acd8efc16477454"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6db83ea94e00550dff9ed61435babe5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#af6db83ea94e00550dff9ed61435babe5">OSInitAlarm</a> ()</td></tr>
-<tr class="separator:af6db83ea94e00550dff9ed61435babe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4036cad6c05aa01ade7aacfcd4874b94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a4036cad6c05aa01ade7aacfcd4874b94">OSCreateAlarm</a> ()</td></tr>
-<tr class="separator:a4036cad6c05aa01ade7aacfcd4874b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b1eed12a179c480bc5ccda5abc42d35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a8b1eed12a179c480bc5ccda5abc42d35">OSSetAlarm</a> ()</td></tr>
-<tr class="separator:a8b1eed12a179c480bc5ccda5abc42d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b6b438fc3e4ceeaed24cbfa3dca2851"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a8b6b438fc3e4ceeaed24cbfa3dca2851">OSCancelAlarm</a> ()</td></tr>
-<tr class="separator:a8b6b438fc3e4ceeaed24cbfa3dca2851"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcd904277ca039ab62ea0425c311e807"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#abcd904277ca039ab62ea0425c311e807">OSDisableInterrupts</a> ()</td></tr>
-<tr class="separator:abcd904277ca039ab62ea0425c311e807"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00b73d3571ff0d32a3489db315ab975e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a00b73d3571ff0d32a3489db315ab975e">OSRestoreInterrupts</a> (<a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> enabled)</td></tr>
-<tr class="separator:a00b73d3571ff0d32a3489db315ab975e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e60365da6a6649f8f35881410c7759a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a1e60365da6a6649f8f35881410c7759a">__OSMaskInterrupts</a> ()</td></tr>
-<tr class="separator:a1e60365da6a6649f8f35881410c7759a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab46303b88220d14950cdd47b46a4f9f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="OSTime_8h.html#a3d32c840b403a8d37875867a7ea9b381">OSTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#ab46303b88220d14950cdd47b46a4f9f6">__OSGetSystemTime</a> ()</td></tr>
-<tr class="separator:ab46303b88220d14950cdd47b46a4f9f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af782b8657b2637bf66177b7327c74fe6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#af782b8657b2637bf66177b7327c74fe6">AlarmHandler</a> (<a class="el" href="structOSAlarm.html">OSAlarm</a> *alarm, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
 <tr class="separator:af782b8657b2637bf66177b7327c74fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86b72646ff01e3bbfb0d91937775144d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dvdlow_8c.html#a86b72646ff01e3bbfb0d91937775144d">AlarmHandlerForTimeout</a> (<a class="el" href="structOSAlarm.html">OSAlarm</a> *alarm, <a class="el" href="structOSContext.html">OSContext</a> *<a class="el" href="JUTException_8cpp.html#ab690e765a841a6d0748e1d5e7146b093">context</a>)</td></tr>
@@ -352,40 +337,6 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structOSAlarm.html">OSAlarm</a> *&#160;</td>
           <td class="paramname"><em>alarm</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab46303b88220d14950cdd47b46a4f9f6" name="ab46303b88220d14950cdd47b46a4f9f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab46303b88220d14950cdd47b46a4f9f6">&#9670;&#160;</a></span>__OSGetSystemTime()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="OSTime_8h.html#a3d32c840b403a8d37875867a7ea9b381">OSTime</a> __OSGetSystemTime </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1e60365da6a6649f8f35881410c7759a" name="a1e60365da6a6649f8f35881410c7759a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e60365da6a6649f8f35881410c7759a">&#9670;&#160;</a></span>__OSMaskInterrupts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void __OSMaskInterrupts </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -928,109 +879,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> HitCache </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8b6b438fc3e4ceeaed24cbfa3dca2851" name="a8b6b438fc3e4ceeaed24cbfa3dca2851"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b6b438fc3e4ceeaed24cbfa3dca2851">&#9670;&#160;</a></span>OSCancelAlarm()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSCancelAlarm </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4036cad6c05aa01ade7aacfcd4874b94" name="a4036cad6c05aa01ade7aacfcd4874b94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4036cad6c05aa01ade7aacfcd4874b94">&#9670;&#160;</a></span>OSCreateAlarm()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSCreateAlarm </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abcd904277ca039ab62ea0425c311e807" name="abcd904277ca039ab62ea0425c311e807"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abcd904277ca039ab62ea0425c311e807">&#9670;&#160;</a></span>OSDisableInterrupts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> OSDisableInterrupts </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af6db83ea94e00550dff9ed61435babe5" name="af6db83ea94e00550dff9ed61435babe5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6db83ea94e00550dff9ed61435babe5">&#9670;&#160;</a></span>OSInitAlarm()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSInitAlarm </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a00b73d3571ff0d32a3489db315ab975e" name="a00b73d3571ff0d32a3489db315ab975e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00b73d3571ff0d32a3489db315ab975e">&#9670;&#160;</a></span>OSRestoreInterrupts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSRestoreInterrupts </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td>
-          <td class="paramname"><em>enabled</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8b1eed12a179c480bc5ccda5abc42d35" name="a8b1eed12a179c480bc5ccda5abc42d35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b1eed12a179c480bc5ccda5abc42d35">&#9670;&#160;</a></span>OSSetAlarm()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSSetAlarm </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>

@@ -107,8 +107,6 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a141cc5df0f8b314f2372ac16a70fa111"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdBomb__c.html#a141cc5df0f8b314f2372ac16a70fa111">checkStateCarry</a> ()</td></tr>
 <tr class="separator:a141cc5df0f8b314f2372ac16a70fa111"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60f07caba624d198b325b05cfb9d3867"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdBomb__c.html#a60f07caba624d198b325b05cfb9d3867">checkFlowerBombWait</a> (<a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *)</td></tr>
-<tr class="separator:a60f07caba624d198b325b05cfb9d3867"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1aa881416ac87ee3fb24ebd78b1b685f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdBomb__c.html#a1aa881416ac87ee3fb24ebd78b1b685f">checkWaterBomb</a> (<a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *)</td></tr>
 <tr class="separator:a1aa881416ac87ee3fb24ebd78b1b685f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67b9fc74bfd1d9bfec51b29202a4e48f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdBomb__c.html#a67b9fc74bfd1d9bfec51b29202a4e48f">checkInsectBombMove</a> (<a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *)</td></tr>
@@ -121,10 +119,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a60f07caba624d198b325b05cfb9d3867"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdBomb__c.html#a60f07caba624d198b325b05cfb9d3867">checkFlowerBombWait</a> (<a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *)</td></tr>
+<tr class="separator:a60f07caba624d198b325b05cfb9d3867"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ae35873ede16d61941a9019aab664d8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdBomb__c.html#a8ae35873ede16d61941a9019aab664d8">createNormalBombPlayer</a> (<a class="el" href="structcXyz.html">cXyz</a> *p_pos)</td></tr>
 <tr class="separator:a8ae35873ede16d61941a9019aab664d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fac1bfcf786e38706226d57344ee2d2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdBomb__c.html#a9fac1bfcf786e38706226d57344ee2d2">createWaterBombPlayer</a> (<a class="el" href="structcXyz.html">cXyz</a> *p_pos)</td></tr>
 <tr class="separator:a9fac1bfcf786e38706226d57344ee2d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5fa9876bccf3787dbd34c680854a461"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdBomb__c.html#ac5fa9876bccf3787dbd34c680854a461">createFlowerBomb</a> (<a class="el" href="structcXyz.html">cXyz</a> *i_pos, <a class="el" href="structcsXyz.html">csXyz</a> *i_angle, int param_2)</td></tr>
+<tr class="separator:ac5fa9876bccf3787dbd34c680854a461"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -178,6 +180,9 @@ Additional Inherited Members</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool dBomb_c::checkFlowerBombWait </td>
@@ -187,6 +192,11 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -223,6 +233,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="d__bomb_8cpp.html">d_bomb.cpp</a> dolzel2 - Bomb </p>
 
 </div>
 </div>
@@ -240,6 +251,48 @@ Additional Inherited Members</h2></td></tr>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac5fa9876bccf3787dbd34c680854a461" name="ac5fa9876bccf3787dbd34c680854a461"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5fa9876bccf3787dbd34c680854a461">&#9670;&#160;</a></span>createFlowerBomb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> * dBomb_c::createFlowerBomb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcXyz.html">cXyz</a> *&#160;</td>
+          <td class="paramname"><em>i_pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcsXyz.html">csXyz</a> *&#160;</td>
+          <td class="paramname"><em>i_angle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>param_2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

@@ -88,13 +88,13 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="nubevent_8h_source.html">TRK_MINNOW_DOLPHIN/MetroTRK/Portable/nubevent.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="msgbuf_8h_source.html">TRK_MINNOW_DOLPHIN/MetroTRK/Portable/msgbuf.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mutex__TRK_8h_source.html">TRK_MINNOW_DOLPHIN/MetroTRK/Portable/mutex_TRK.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;asm/TRK_MINNOW_DOLPHIN/MetroTRK/Portable/nubevent/TRKDestructEvent.s&quot;</code><br />
 <code>#include &quot;asm/TRK_MINNOW_DOLPHIN/MetroTRK/Portable/nubevent/TRKConstructEvent.s&quot;</code><br />
 <code>#include &quot;asm/TRK_MINNOW_DOLPHIN/MetroTRK/Portable/nubevent/TRKPostEvent.s&quot;</code><br />
 <code>#include &quot;asm/TRK_MINNOW_DOLPHIN/MetroTRK/Portable/nubevent/TRKGetNextEvent.s&quot;</code><br />
-<code>#include &quot;asm/TRK_MINNOW_DOLPHIN/MetroTRK/Portable/nubevent/TRKInitializeEventQueue.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for nubevent.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -114,23 +114,19 @@ Functions</h2></td></tr>
 <tr class="separator:a76d4d93a9acbbee75408c381b5f7b0ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09b3f48e4cf19a146992990200716725"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nubevent_8c.html#a09b3f48e4cf19a146992990200716725">TRKGetNextEvent</a> ()</td></tr>
 <tr class="separator:a09b3f48e4cf19a146992990200716725"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a185a251456d1e10f7fd9b54824712823"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nubevent_8c.html#a185a251456d1e10f7fd9b54824712823">TRKInitializeEventQueue</a> ()</td></tr>
-<tr class="separator:a185a251456d1e10f7fd9b54824712823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a042d45c93163352c81793f2d2917348c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nubevent_8c.html#a042d45c93163352c81793f2d2917348c">TRKInitializeEventQueue</a> ()</td></tr>
+<tr class="separator:a042d45c93163352c81793f2d2917348c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97226a53913cb00820a7e15639723c70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#adc00f0d3ad529c0cb72985d54bfe7ccf">SECTION_INIT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nubevent_8c.html#a97226a53913cb00820a7e15639723c70">TRK_memcpy</a> ()</td></tr>
 <tr class="separator:a97226a53913cb00820a7e15639723c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23bbb5346014e3624ddbded7822d8566"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nubevent_8c.html#a23bbb5346014e3624ddbded7822d8566">TRKReleaseBuffer</a> ()</td></tr>
 <tr class="separator:a23bbb5346014e3624ddbded7822d8566"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6c9ebb13f5bd28d13d5a7c8e3d2c20c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nubevent_8c.html#ae6c9ebb13f5bd28d13d5a7c8e3d2c20c">TRKReleaseMutex</a> ()</td></tr>
-<tr class="separator:ae6c9ebb13f5bd28d13d5a7c8e3d2c20c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5250d11ec7a97fd864baaeaf3a258ce4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nubevent_8c.html#a5250d11ec7a97fd864baaeaf3a258ce4">TRKAcquireMutex</a> ()</td></tr>
-<tr class="separator:a5250d11ec7a97fd864baaeaf3a258ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99ea4df27c9ecad8e310a6e534566ebc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nubevent_8c.html#a99ea4df27c9ecad8e310a6e534566ebc">TRKInitializeMutex</a> ()</td></tr>
-<tr class="separator:a99ea4df27c9ecad8e310a6e534566ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4734bca53bccb71f0edb4af19af189a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nubevent_8c.html#a4734bca53bccb71f0edb4af19af189a2">TRKDestructEvent</a> (<a class="el" href="structTRKBuffer.html">TRKBuffer</a> *buf)</td></tr>
+<tr class="separator:a4734bca53bccb71f0edb4af19af189a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a833f6409b9ee268bcda49b1b7a91ecad"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nubevent_8c.html#a833f6409b9ee268bcda49b1b7a91ecad">gTRKEventQueue</a> [40]</td></tr>
-<tr class="separator:a833f6409b9ee268bcda49b1b7a91ecad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae000931b9e54113899d778cd4e8e5899"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nubevent_8c.html#ae000931b9e54113899d778cd4e8e5899">gTRKEventQueue</a> [10]</td></tr>
+<tr class="separator:ae000931b9e54113899d778cd4e8e5899"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a97226a53913cb00820a7e15639723c70" name="a97226a53913cb00820a7e15639723c70"></a>
@@ -141,23 +137,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="dol2asm_8h.html#adc00f0d3ad529c0cb72985d54bfe7ccf">SECTION_INIT</a> void TRK_memcpy </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5250d11ec7a97fd864baaeaf3a258ce4" name="a5250d11ec7a97fd864baaeaf3a258ce4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5250d11ec7a97fd864baaeaf3a258ce4">&#9670;&#160;</a></span>TRKAcquireMutex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> TRKAcquireMutex </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -185,7 +164,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a93b301448e51301bb301300c67726ece" name="a93b301448e51301bb301300c67726ece"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93b301448e51301bb301300c67726ece">&#9670;&#160;</a></span>TRKDestructEvent()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a93b301448e51301bb301300c67726ece">&#9670;&#160;</a></span>TRKDestructEvent() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -194,6 +173,24 @@ Variables</h2></td></tr>
           <td class="memname">void TRKDestructEvent </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4734bca53bccb71f0edb4af19af189a2" name="a4734bca53bccb71f0edb4af19af189a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4734bca53bccb71f0edb4af19af189a2">&#9670;&#160;</a></span>TRKDestructEvent() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TRKDestructEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structTRKBuffer.html">TRKBuffer</a> *&#160;</td>
+          <td class="paramname"><em>buf</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -218,31 +215,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a185a251456d1e10f7fd9b54824712823" name="a185a251456d1e10f7fd9b54824712823"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a185a251456d1e10f7fd9b54824712823">&#9670;&#160;</a></span>TRKInitializeEventQueue()</h2>
+<a id="a042d45c93163352c81793f2d2917348c" name="a042d45c93163352c81793f2d2917348c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a042d45c93163352c81793f2d2917348c">&#9670;&#160;</a></span>TRKInitializeEventQueue()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void TRKInitializeEventQueue </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a99ea4df27c9ecad8e310a6e534566ebc" name="a99ea4df27c9ecad8e310a6e534566ebc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99ea4df27c9ecad8e310a6e534566ebc">&#9670;&#160;</a></span>TRKInitializeMutex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> TRKInitializeMutex </td>
+          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> TRKInitializeEventQueue </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -286,27 +266,9 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae6c9ebb13f5bd28d13d5a7c8e3d2c20c" name="ae6c9ebb13f5bd28d13d5a7c8e3d2c20c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6c9ebb13f5bd28d13d5a7c8e3d2c20c">&#9670;&#160;</a></span>TRKReleaseMutex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> TRKReleaseMutex </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p ><a class="el" href="mutex__TRK_8c.html">mutex_TRK.c</a> Description: </p>
-
-</div>
-</div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a833f6409b9ee268bcda49b1b7a91ecad" name="a833f6409b9ee268bcda49b1b7a91ecad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a833f6409b9ee268bcda49b1b7a91ecad">&#9670;&#160;</a></span>gTRKEventQueue</h2>
+<a id="ae000931b9e54113899d778cd4e8e5899" name="ae000931b9e54113899d778cd4e8e5899"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae000931b9e54113899d778cd4e8e5899">&#9670;&#160;</a></span>gTRKEventQueue</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -315,7 +277,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> gTRKEventQueue[40]</td>
+          <td class="memname"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> gTRKEventQueue[10]</td>
         </tr>
       </table>
   </td>

@@ -90,7 +90,6 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="quat_8h_source.html">dolphin/mtx/quat.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="math_8h_source.html">MSL_C/math.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
-<code>#include &quot;asm/dolphin/mtx/quat/PSQUATMultiply.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/mtx/quat/C_QUATRotAxisRad.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/mtx/quat/C_QUATSlerp.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -104,8 +103,8 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8a0a32665d422d326867c669721fe635"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quat_8c.html#a8a0a32665d422d326867c669721fe635">PSQUATMultiply</a> (const <a class="el" href="structQuaternion.html">Quaternion</a> *a, const <a class="el" href="structQuaternion.html">Quaternion</a> *b, <a class="el" href="structQuaternion.html">Quaternion</a> *ab)</td></tr>
-<tr class="separator:a8a0a32665d422d326867c669721fe635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa3685d4dd4e3bdffe2d294d8ef821b1"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quat_8c.html#afa3685d4dd4e3bdffe2d294d8ef821b1">PSQUATMultiply</a> (register const <a class="el" href="structQuaternion.html">Quaternion</a> *a, register const <a class="el" href="structQuaternion.html">Quaternion</a> *b, register <a class="el" href="structQuaternion.html">Quaternion</a> *ab)</td></tr>
+<tr class="separator:afa3685d4dd4e3bdffe2d294d8ef821b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bc33a8cfbe039318065fa9fe8531cbe"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quat_8c.html#a3bc33a8cfbe039318065fa9fe8531cbe">C_QUATRotAxisRad</a> (<a class="el" href="structQuaternion.html">Quaternion</a> *q, const <a class="el" href="structVec.html">Vec</a> *axis, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> rad)</td></tr>
 <tr class="separator:a3bc33a8cfbe039318065fa9fe8531cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcbb3b9fe0d39fe6de9dccb4d0b075b0"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="quat_8c.html#afcbb3b9fe0d39fe6de9dccb4d0b075b0">C_QUATSlerp</a> (const <a class="el" href="structQuaternion.html">Quaternion</a> *p, const <a class="el" href="structQuaternion.html">Quaternion</a> *q, <a class="el" href="structQuaternion.html">Quaternion</a> *r, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> t)</td></tr>
@@ -197,8 +196,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a8a0a32665d422d326867c669721fe635" name="a8a0a32665d422d326867c669721fe635"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a0a32665d422d326867c669721fe635">&#9670;&#160;</a></span>PSQUATMultiply()</h2>
+<a id="afa3685d4dd4e3bdffe2d294d8ef821b1" name="afa3685d4dd4e3bdffe2d294d8ef821b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa3685d4dd4e3bdffe2d294d8ef821b1">&#9670;&#160;</a></span>PSQUATMultiply()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -206,19 +205,19 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">asm void PSQUATMultiply </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structQuaternion.html">Quaternion</a> *&#160;</td>
+          <td class="paramtype">register const <a class="el" href="structQuaternion.html">Quaternion</a> *&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structQuaternion.html">Quaternion</a> *&#160;</td>
+          <td class="paramtype">register const <a class="el" href="structQuaternion.html">Quaternion</a> *&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structQuaternion.html">Quaternion</a> *&#160;</td>
+          <td class="paramtype">register <a class="el" href="structQuaternion.html">Quaternion</a> *&#160;</td>
           <td class="paramname"><em>ab</em>&#160;</td>
         </tr>
         <tr>
@@ -228,6 +227,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p ><a class="el" href="quat_8c.html">quat.c</a> Dolphin - Matrix <a class="el" href="structQuaternion.html">Quaternion</a> Functions </p>
 
 </div>
 </div>

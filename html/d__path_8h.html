@@ -88,13 +88,12 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="d__stage_8h_source.html">d/d_stage.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for d_path.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="d__path_8h__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="d__path_8h__incl.svg" width="192" height="198"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -121,6 +120,8 @@ Functions</h2></td></tr>
 <tr class="separator:a4f9bc87009b89ed91398cd22499d20b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c17c3274ce0b20fbf2cb222d4488150"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdStage__dPnt__c.html">dStage_dPnt_c</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__path_8h.html#a8c17c3274ce0b20fbf2cb222d4488150">dPath_GetPnt</a> (<a class="el" href="structdPath.html">dPath</a> const *path, int pnt_index)</td></tr>
 <tr class="separator:a8c17c3274ce0b20fbf2cb222d4488150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85734a3fdf04892861190be24cf05ba7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__path_8h.html#a85734a3fdf04892861190be24cf05ba7">dPath_GetPolyRoomPathVec</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;poly, <a class="el" href="structcXyz.html">cXyz</a> *p_pathVec, int *param_2)</td></tr>
+<tr class="separator:a85734a3fdf04892861190be24cf05ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a4a59962d3caadc3c6af8dfaea02eed9a" name="a4a59962d3caadc3c6af8dfaea02eed9a"></a>
@@ -166,6 +167,41 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>pnt_index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p ><a class="el" href="d__path_8cpp.html">d_path.cpp</a> dolzel2 - Room Path &amp; Point Management </p>
+
+</div>
+</div>
+<a id="a85734a3fdf04892861190be24cf05ba7" name="a85734a3fdf04892861190be24cf05ba7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85734a3fdf04892861190be24cf05ba7">&#9670;&#160;</a></span>dPath_GetPolyRoomPathVec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> dPath_GetPolyRoomPathVec </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;&#160;</td>
+          <td class="paramname"><em>poly</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcXyz.html">cXyz</a> *&#160;</td>
+          <td class="paramname"><em>p_pathVec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>param_2</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

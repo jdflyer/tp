@@ -90,7 +90,6 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="f__pc__create__req_8h_source.html">f_pc/f_pc_create_req.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="f__pc__layer_8h_source.html">f_pc/f_pc_layer.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for f_pc_stdcreate_req.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -117,6 +116,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:acd4f7c100f7f3197e5f48f1cd8a297bb"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structlayer__class.html">layer_class</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__pc__stdcreate__req_8h.html#acd4f7c100f7f3197e5f48f1cd8a297bb">layer_class</a></td></tr>
+<tr class="separator:acd4f7c100f7f3197e5f48f1cd8a297bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cd23abb99e1ab7ecb184e0eac28de12"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__pc__stdcreate__req_8h.html#a0cd23abb99e1ab7ecb184e0eac28de12">stdCreateFunc</a>) (void *, void *)</td></tr>
 <tr class="separator:a0cd23abb99e1ab7ecb184e0eac28de12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18e2b569db0e7bd678256c92d3f86f21"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structstandard__create__request__class.html">standard_create_request_class</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__pc__stdcreate__req_8h.html#a18e2b569db0e7bd678256c92d3f86f21">standard_create_request_class</a></td></tr>
@@ -146,6 +147,20 @@ Functions</h2></td></tr>
 <tr class="separator:a3583c64666b2ccae8ec5cdc8bfb795ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="acd4f7c100f7f3197e5f48f1cd8a297bb" name="acd4f7c100f7f3197e5f48f1cd8a297bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd4f7c100f7f3197e5f48f1cd8a297bb">&#9670;&#160;</a></span>layer_class</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structlayer__class.html">layer_class</a> <a class="el" href="structlayer__class.html">layer_class</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a18e2b569db0e7bd678256c92d3f86f21" name="a18e2b569db0e7bd678256c92d3f86f21"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a18e2b569db0e7bd678256c92d3f86f21">&#9670;&#160;</a></span>standard_create_request_class</h2>
 
@@ -185,7 +200,7 @@ Functions</h2></td></tr>
           <td class="memname"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> fpcSCtRq_Cancel </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structstandard__create__request__class.html">standard_create_request_class</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em></td><td>)</td>
+          <td class="paramname"><em>i_SCtReq</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -203,7 +218,7 @@ Functions</h2></td></tr>
           <td class="memname"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> fpcSCtRq_Delete </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structstandard__create__request__class.html">standard_create_request_class</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em></td><td>)</td>
+          <td class="paramname"><em>i_SCtReq</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -257,7 +272,7 @@ Functions</h2></td></tr>
           <td class="memname"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> fpcSCtRq_phase_Done </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structstandard__create__request__class.html">standard_create_request_class</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em></td><td>)</td>
+          <td class="paramname"><em>i_SCtReq</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

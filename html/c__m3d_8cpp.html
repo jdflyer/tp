@@ -88,7 +88,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="c__m3d_8h_source.html">SSystem/SComponent/c_m3d.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="math_8h_source.html">MSL_C/math.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="float_8h_source.html">MSL_C/float.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="c__m3d__g__aab_8h_source.html">SSystem/SComponent/c_m3d_g_aab.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="c__m3d__g__cps_8h_source.html">SSystem/SComponent/c_m3d_g_cps.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="c__m3d__g__cyl_8h_source.html">SSystem/SComponent/c_m3d_g_cyl.h</a>&quot;</code><br />
@@ -100,7 +100,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="c__xyz_8h_source.html">SSystem/SComponent/c_xyz.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;asm/SSystem/SComponent/c_m3d/cM3d_Cross_AabSph__FPC8cM3dGAabPC8cM3dGSph.s&quot;</code><br />
+<code>#include &quot;<a class="el" href="global_8h_source.html">global.h</a>&quot;</code><br />
 <code>#include &quot;asm/SSystem/SComponent/c_m3d/cM3d_Check_LinLin__FPC8cM3dGLinPC8cM3dGLinPfPf.s&quot;</code><br />
 <code>#include &quot;asm/SSystem/SComponent/c_m3d/cM3d_Cross_LinPla__FPC8cM3dGLinPC8cM3dGPlaP3Vecbb.s&quot;</code><br />
 <code>#include &quot;asm/SSystem/SComponent/c_m3d/cM3d_Cross_MinMaxBoxLine__FPC3VecPC3VecPC3VecPC3Vec.s&quot;</code><br />
@@ -324,8 +324,8 @@ Functions</h2></td></tr>
 <tr class="separator:a7f7c8ce6c27f7e23b384047146a42706"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5618b88b7089c49fd0749d11ec15b5c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c__m3d_8cpp.html#af5618b88b7089c49fd0749d11ec15b5c">cM3d_Cross_AabCyl</a> (const <a class="el" href="classcM3dGAab.html">cM3dGAab</a> *pAab, const <a class="el" href="structcM3dGCyl.html">cM3dGCyl</a> *pCyl)</td></tr>
 <tr class="separator:af5618b88b7089c49fd0749d11ec15b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e6ff9131f3774af6b96fce95c8e95a1"><td class="memItemLeft" align="right" valign="top">asm bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c__m3d_8cpp.html#a5e6ff9131f3774af6b96fce95c8e95a1">cM3d_Cross_AabSph</a> (<a class="el" href="classcM3dGAab.html">cM3dGAab</a> const *param_0, <a class="el" href="structcM3dGSph.html">cM3dGSph</a> const *param_1)</td></tr>
-<tr class="separator:a5e6ff9131f3774af6b96fce95c8e95a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43dadf81da8d41d94947402dce83b65f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c__m3d_8cpp.html#a43dadf81da8d41d94947402dce83b65f">cM3d_Cross_AabSph</a> (const <a class="el" href="classcM3dGAab.html">cM3dGAab</a> *pAab, const <a class="el" href="structcM3dGSph.html">cM3dGSph</a> *pSph)</td></tr>
+<tr class="separator:a43dadf81da8d41d94947402dce83b65f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fc364b71d4d716830ec8c885184caa7"><td class="memItemLeft" align="right" valign="top">static asm int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c__m3d_8cpp.html#a7fc364b71d4d716830ec8c885184caa7">cM3d_Check_LinLin</a> (<a class="el" href="structcM3dGLin.html">cM3dGLin</a> const *param_0, <a class="el" href="structcM3dGLin.html">cM3dGLin</a> const *param_1, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> *param_2, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> *param_3)</td></tr>
 <tr class="separator:a7fc364b71d4d716830ec8c885184caa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46f65dd0b00880816e9b7f5724f6c6b2"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c__m3d_8cpp.html#a46f65dd0b00880816e9b7f5724f6c6b2">cM3d_CrossInfLineVsInfPlane_proc</a> (<a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> pFloatA, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> pFloatB, const <a class="el" href="structVec.html">Vec</a> *pVecA, const <a class="el" href="structVec.html">Vec</a> *pVecB, <a class="el" href="structVec.html">Vec</a> *pVecOut)</td></tr>
@@ -441,7 +441,7 @@ Variables</h2></td></tr>
 <tr class="separator:af269933247bc5037ff63eaf251a97d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefd9368dbdc7a88a55c5dbc67ed066c3"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c__m3d_8cpp.html#aefd9368dbdc7a88a55c5dbc67ed066c3">__vt__8cM3dGSph</a> [3]</td></tr>
 <tr class="separator:aefd9368dbdc7a88a55c5dbc67ed066c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc13d90aa115bfd8f23589096a26901b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c__m3d_8cpp.html#adc13d90aa115bfd8f23589096a26901b">G_CM3D_F_ABS_MIN</a> = 32 * <a class="el" href="JPABaseShape_8cpp.html#abf8a4db654c31b18010c7cd255393a4a">__float_epsilon</a>[0]</td></tr>
+<tr class="memitem:adc13d90aa115bfd8f23589096a26901b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c__m3d_8cpp.html#adc13d90aa115bfd8f23589096a26901b">G_CM3D_F_ABS_MIN</a> = 32 * <a class="el" href="float_8h.html#aafe5d2c4dc0edd9840f20e885dcae6ad">FLT_EPSILON</a></td></tr>
 <tr class="separator:adc13d90aa115bfd8f23589096a26901b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a360cf5a2922fe1f7541fca01d52ae3f8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c__m3d_8cpp.html#a360cf5a2922fe1f7541fca01d52ae3f8">lit_2256</a> [1+1]</td></tr>
 <tr class="separator:a360cf5a2922fe1f7541fca01d52ae3f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1381,23 +1381,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5e6ff9131f3774af6b96fce95c8e95a1" name="a5e6ff9131f3774af6b96fce95c8e95a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e6ff9131f3774af6b96fce95c8e95a1">&#9670;&#160;</a></span>cM3d_Cross_AabSph()</h2>
+<a id="a43dadf81da8d41d94947402dce83b65f" name="a43dadf81da8d41d94947402dce83b65f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43dadf81da8d41d94947402dce83b65f">&#9670;&#160;</a></span>cM3d_Cross_AabSph()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm bool cM3d_Cross_AabSph </td>
+          <td class="memname">bool cM3d_Cross_AabSph </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classcM3dGAab.html">cM3dGAab</a> const *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramtype">const <a class="el" href="classcM3dGAab.html">cM3dGAab</a> *&#160;</td>
+          <td class="paramname"><em>pAab</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structcM3dGSph.html">cM3dGSph</a> const *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="structcM3dGSph.html">cM3dGSph</a> *&#160;</td>
+          <td class="paramname"><em>pSph</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -5366,7 +5366,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> G_CM3D_F_ABS_MIN = 32 * <a class="el" href="JPABaseShape_8cpp.html#abf8a4db654c31b18010c7cd255393a4a">__float_epsilon</a>[0]</td>
+          <td class="memname"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> G_CM3D_F_ABS_MIN = 32 * <a class="el" href="float_8h.html#aafe5d2c4dc0edd9840f20e885dcae6ad">FLT_EPSILON</a></td>
         </tr>
       </table>
 </div><div class="memdoc">

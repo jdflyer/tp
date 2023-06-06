@@ -88,14 +88,16 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="arq_8h_source.html">dolphin/ar/arq.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ar_8h_source.html">dolphin/ar/ar.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for arq.c:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="arq_8c__incl.svg" width="279" height="271"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="arq_8c__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><table class="memberdecls">
@@ -109,16 +111,6 @@ Functions</h2></td></tr>
 <tr class="separator:af8fd4bce109766fa363942cd7e2799a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a282f38aa9c73feb039197e350089cb9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arq_8c.html#a282f38aa9c73feb039197e350089cb9e">ARQInit</a> ()</td></tr>
 <tr class="separator:a282f38aa9c73feb039197e350089cb9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a688d1c86f609bd2033df6f4d22094f42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arq_8c.html#a688d1c86f609bd2033df6f4d22094f42">OSRegisterVersion</a> ()</td></tr>
-<tr class="separator:a688d1c86f609bd2033df6f4d22094f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcd904277ca039ab62ea0425c311e807"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arq_8c.html#abcd904277ca039ab62ea0425c311e807">OSDisableInterrupts</a> ()</td></tr>
-<tr class="separator:abcd904277ca039ab62ea0425c311e807"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14b5cc2befa83d8710fba14f4de14fd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arq_8c.html#a14b5cc2befa83d8710fba14f4de14fd9">OSRestoreInterrupts</a> ()</td></tr>
-<tr class="separator:a14b5cc2befa83d8710fba14f4de14fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac933d56b9aa1fc37548f815c4137a68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arq_8c.html#aac933d56b9aa1fc37548f815c4137a68">ARRegisterDMACallback</a> ()</td></tr>
-<tr class="separator:aac933d56b9aa1fc37548f815c4137a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c6f5c84a4f43eb6265df1eaaa244dd8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arq_8c.html#a7c6f5c84a4f43eb6265df1eaaa244dd8">ARStartDMA</a> ()</td></tr>
-<tr class="separator:a7c6f5c84a4f43eb6265df1eaaa244dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41f467868c8cd6ec6b734310dad80a50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arq_8c.html#a41f467868c8cd6ec6b734310dad80a50">ARQPostRequest</a> (<a class="el" href="structARQRequest.html">ARQRequest</a> *request, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> owner, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> type, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> priority, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> source, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> dest, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> length, <a class="el" href="arq_8h.html#a5d574a7644e6cde2dc9e8895fa983a6a">ARQCallback</a> callback)</td></tr>
 <tr class="separator:a41f467868c8cd6ec6b734310dad80a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -277,91 +269,6 @@ Variables</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aac933d56b9aa1fc37548f815c4137a68" name="aac933d56b9aa1fc37548f815c4137a68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac933d56b9aa1fc37548f815c4137a68">&#9670;&#160;</a></span>ARRegisterDMACallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ARRegisterDMACallback </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7c6f5c84a4f43eb6265df1eaaa244dd8" name="a7c6f5c84a4f43eb6265df1eaaa244dd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c6f5c84a4f43eb6265df1eaaa244dd8">&#9670;&#160;</a></span>ARStartDMA()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ARStartDMA </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abcd904277ca039ab62ea0425c311e807" name="abcd904277ca039ab62ea0425c311e807"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abcd904277ca039ab62ea0425c311e807">&#9670;&#160;</a></span>OSDisableInterrupts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a> OSDisableInterrupts </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a688d1c86f609bd2033df6f4d22094f42" name="a688d1c86f609bd2033df6f4d22094f42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a688d1c86f609bd2033df6f4d22094f42">&#9670;&#160;</a></span>OSRegisterVersion()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSRegisterVersion </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a14b5cc2befa83d8710fba14f4de14fd9" name="a14b5cc2befa83d8710fba14f4de14fd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14b5cc2befa83d8710fba14f4de14fd9">&#9670;&#160;</a></span>OSRestoreInterrupts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSRestoreInterrupts </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">

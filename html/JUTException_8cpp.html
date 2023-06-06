@@ -90,13 +90,15 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="JUTException_8h_source.html">JSystem/JUtility/JUTException.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="JUTConsole_8h_source.html">JSystem/JUtility/JUTConsole.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="JUTDirectPrint_8h_source.html">JSystem/JUtility/JUTDirectPrint.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="JUTDirectFile_8h_source.html">JSystem/JUtility/JUTDirectFile.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="float_8h_source.html">MSL_C/MSL_Common/Src/float.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="printf_8h_source.html">MSL_C/MSL_Common/Src/printf.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JUTDirectPrint_8h_source.html">JSystem/JUtility/JUTDirectPrint.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="float_8h_source.html">MSL_C/float.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stdio_8h_source.html">MSL_C/stdio.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stdlib_8h_source.html">MSL_C/stdlib.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="____va__arg_8h_source.html">Runtime.PPCEABI.H/__va_arg.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="global_8h_source.html">global.h</a>&quot;</code><br />
 <code>#include &quot;asm/JSystem/JUtility/JUTException/run__12JUTExceptionFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JUtility/JUTException/queryMapAddress_single__12JUTExceptionFPcUllPUlPUlPcUlbb.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -173,8 +175,6 @@ Functions</h2></td></tr>
 <tr class="separator:aa2a4a52a3fc10d36c0c1b5e2e25a5225"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c4164798f985815ace3b6e63b54834d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JUTException_8cpp.html#a2c4164798f985815ace3b6e63b54834d">print__10JUTConsoleFPCc</a> ()</td></tr>
 <tr class="separator:a2c4164798f985815ace3b6e63b54834d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ce966cd04da3c32320f54c332569e03"><td class="memItemLeft" align="right" valign="top">long int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JUTException_8cpp.html#a2ce966cd04da3c32320f54c332569e03">strtol</a> (const char *str, char **endptr, int base)</td></tr>
-<tr class="separator:a2ce966cd04da3c32320f54c332569e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac30df0d09f81a1aa59f4de82428e4488"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JUTException_8cpp.html#ac30df0d09f81a1aa59f4de82428e4488">__ct__13JUTDirectFileFv</a> ()</td></tr>
 <tr class="separator:ac30df0d09f81a1aa59f4de82428e4488"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6aa1bce5e9e7676b52e586f1f02478da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JUTException_8cpp.html#a6aa1bce5e9e7676b52e586f1f02478da">__dt__13JUTDirectFileFv</a> ()</td></tr>
@@ -218,7 +218,7 @@ Variables</h2></td></tr>
 <tr class="separator:ad5314576d35a1f6ccd23bc951b46101f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac771563127029d6b5789e88410b13251"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JUTException_8cpp.html#ac771563127029d6b5789e88410b13251">stringBase_8039D5DF</a> = &quot;\n&quot;</td></tr>
 <tr class="separator:ac771563127029d6b5789e88410b13251"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af97cbac56a4b9a19717ad2bb849da8ec"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JUTException_8cpp.html#af97cbac56a4b9a19717ad2bb849da8ec">stringBase_8039D97E</a> = &quot; [%08X]: .%s [%08X: %XH]\n %s\n&quot;</td></tr>
+<tr class="memitem:af97cbac56a4b9a19717ad2bb849da8ec"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JUTException_8cpp.html#af97cbac56a4b9a19717ad2bb849da8ec">stringBase_8039D97E</a> = &quot; [%08X]: .%s [%08X: %XH]\<a class="el" href="init_8h.html#a7ff3cacc14747d630cb3e5b9426c9c6e">n</a> %s\n&quot;</td></tr>
 <tr class="separator:af97cbac56a4b9a19717ad2bb849da8ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f2624e78eda38921f099cbcb7116e57"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JUTException_8cpp.html#a3f2624e78eda38921f099cbcb7116e57">pad_8039D99E</a> = &quot;\0&quot;</td></tr>
 <tr class="separator:a3f2624e78eda38921f099cbcb7116e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -689,40 +689,6 @@ Variables</h2></td></tr>
           <td class="paramtype">sizeof(<a class="el" href="structCallbackObject.html">CallbackObject</a>)&#160;</td>
           <td class="paramname"> = <code>=0x14</code></td><td>)</td>
           <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2ce966cd04da3c32320f54c332569e03" name="a2ce966cd04da3c32320f54c332569e03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ce966cd04da3c32320f54c332569e03">&#9670;&#160;</a></span>strtol()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">long int strtol </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char **&#160;</td>
-          <td class="paramname"><em>endptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>base</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1201,7 +1167,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_8039D97E = &quot; [%08X]: .%s [%08X: %XH]\n %s\n&quot;</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_8039D97E = &quot; [%08X]: .%s [%08X: %XH]\<a class="el" href="init_8h.html#a7ff3cacc14747d630cb3e5b9426c9c6e">n</a> %s\n&quot;</td>
         </tr>
       </table>
   </td>

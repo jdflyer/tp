@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['itemmax_0',['ItemMax',['../d__save_8h.html#ac85105b4d4fc7197addac0797f0cc984',1,'d_save.h']]],
-  ['itemslots_1',['ItemSlots',['../d__save_8h.html#a9d3885001fb8bb3097ddc87d7fd1c69f',1,'d_save.h']]],
-  ['itemtable_2',['ItemTable',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2',1,'d_save.h']]]
+  ['fdversion_0',['fdversion',['../fdlibm_8h.html#ae15fd6df5a9fbcbedffca4294b04188a',1,'fdlibm.h']]],
+  ['fopacm_5fcarry_1',['fopAcM_CARRY',['../f__op__actor__mng_8h.html#a9a8f0caf5338c590123da43b40d903ab',1,'f_op_actor_mng.h']]]
 ];

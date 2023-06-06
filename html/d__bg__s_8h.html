@@ -90,9 +90,9 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="c__bg__s__gnd__chk_8h_source.html">SSystem/SComponent/c_bg_s_gnd_chk.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="c__bg__s__lin__chk_8h_source.html">SSystem/SComponent/c_bg_s_lin_chk.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="c__bg__s__poly__info_8h_source.html">SSystem/SComponent/c_bg_s_poly_info.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="d__bg__w_8h_source.html">d/bg/d_bg_w.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__bg__w__base_8h_source.html">d/bg/d_bg_w_base.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="f__op__actor_8h_source.html">f_op/f_op_actor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="global_8h_source.html">global.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for d_bg_s.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -106,7 +106,7 @@ $(function() {
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="d__bg__s_8h__dep__incl.svg" width="100%" height="580"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="d__bg__s_8h__dep__incl.svg" width="100%" height="536"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div>
@@ -131,6 +131,10 @@ Functions</h2></td></tr>
 <tr class="separator:ac64579a960b96b4f12e7722cddf453d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6358e3796fe188209ad2a620fe3d9c57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8h.html#a6358e3796fe188209ad2a620fe3d9c57">dBgS_MoveBGProc_Typical</a> (<a class="el" href="classdBgW.html">dBgW</a> *param_0, void *param_1, <a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;param_2, bool param_3, <a class="el" href="structcXyz.html">cXyz</a> *param_4, <a class="el" href="structcsXyz.html">csXyz</a> *param_5, <a class="el" href="structcsXyz.html">csXyz</a> *param_6)</td></tr>
 <tr class="separator:a6358e3796fe188209ad2a620fe3d9c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cea5e9fa43656d3c502991932e60cf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8h.html#a9cea5e9fa43656d3c502991932e60cf3">dBgS_MoveBGProc_TypicalRotY</a> (<a class="el" href="classdBgW.html">dBgW</a> *param_0, void *param_1, <a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;param_2, bool param_3, <a class="el" href="structcXyz.html">cXyz</a> *param_4, <a class="el" href="structcsXyz.html">csXyz</a> *param_5, <a class="el" href="structcsXyz.html">csXyz</a> *param_6)</td></tr>
+<tr class="separator:a9cea5e9fa43656d3c502991932e60cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad55ed89a566f8600247dd36944a96d99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__bg__s_8h.html#ad55ed89a566f8600247dd36944a96d99">dBgS_GetNY</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;poly)</td></tr>
+<tr class="separator:ad55ed89a566f8600247dd36944a96d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a78b8242fa1fb53f91a312d0333c7e3ac" name="a78b8242fa1fb53f91a312d0333c7e3ac"></a>
@@ -169,6 +173,24 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad55ed89a566f8600247dd36944a96d99" name="ad55ed89a566f8600247dd36944a96d99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad55ed89a566f8600247dd36944a96d99">&#9670;&#160;</a></span>dBgS_GetNY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> dBgS_GetNY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;&#160;</td>
+          <td class="paramname"><em>poly</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6358e3796fe188209ad2a620fe3d9c57" name="a6358e3796fe188209ad2a620fe3d9c57"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6358e3796fe188209ad2a620fe3d9c57">&#9670;&#160;</a></span>dBgS_MoveBGProc_Typical()</h2>
 
@@ -177,6 +199,64 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void dBgS_MoveBGProc_Typical </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdBgW.html">dBgW</a> *&#160;</td>
+          <td class="paramname"><em>param_0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>param_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;&#160;</td>
+          <td class="paramname"><em>param_2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>param_3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcXyz.html">cXyz</a> *&#160;</td>
+          <td class="paramname"><em>param_4</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcsXyz.html">csXyz</a> *&#160;</td>
+          <td class="paramname"><em>param_5</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcsXyz.html">csXyz</a> *&#160;</td>
+          <td class="paramname"><em>param_6</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9cea5e9fa43656d3c502991932e60cf3" name="a9cea5e9fa43656d3c502991932e60cf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cea5e9fa43656d3c502991932e60cf3">&#9670;&#160;</a></span>dBgS_MoveBGProc_TypicalRotY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dBgS_MoveBGProc_TypicalRotY </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classdBgW.html">dBgW</a> *&#160;</td>
           <td class="paramname"><em>param_0</em>, </td>
