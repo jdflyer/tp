@@ -119,11 +119,44 @@ $(function() {
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keywordtype">void</span> <a class="code hl_function" href="vec_8h.html#a416efb31cef3daa45b67c4bacda74bd3">C_VECHalfAngle</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structVec.html">Vec</a>* a, <span class="keyword">const</span> <a class="code hl_struct" href="structVec.html">Vec</a>* b, <a class="code hl_struct" href="structVec.html">Vec</a>* <a class="code hl_variable" href="e__rem__pio2_8c.html#aaad8d6a2a7c43ba9c697808113a6261a">half</a>);</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keywordtype">void</span> <a class="code hl_function" href="vec_8h.html#acfe471ea6ffec93669210a3a68ec1d54">C_VECReflect</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structVec.html">Vec</a>* src, <span class="keyword">const</span> <a class="code hl_struct" href="structVec.html">Vec</a>* normal, <a class="code hl_struct" href="structVec.html">Vec</a>* dst);</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>};</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif </span><span class="comment">/* VEC_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="vec_8h.html#a1e8e02c5c45f32f59c00a3e286e11362">   36</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="vec_8h.html#a1e8e02c5c45f32f59c00a3e286e11362">C_VECAdd</a>(<span class="keyword">register</span> <span class="keyword">const</span> <a class="code hl_struct" href="structVec.html">Vec</a>* a, <span class="keyword">register</span> <span class="keyword">const</span> <a class="code hl_struct" href="structVec.html">Vec</a>* b, <span class="keyword">register</span> <a class="code hl_struct" href="structVec.html">Vec</a>* ab) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">register</span> <a class="code hl_typedef" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> axy;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">register</span> <a class="code hl_typedef" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> bxy;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">register</span> <a class="code hl_typedef" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> az;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">register</span> <a class="code hl_typedef" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> sumz;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">register</span> <a class="code hl_typedef" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> bz;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">asm</span> {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        psq_l axy, 0(a), 0, 0</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        psq_l bxy, 0(b), 0, 0</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        ps_add axy, axy, bxy</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        psq_st axy, 0(ab), 0, 0</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        psq_l az, 8(a), 1, 0</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        psq_l bz, 8(b), 1, 0</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        ps_add sumz, az, bz</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        psq_st sumz, 8(ab), 1, 0</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="vec_8h.html#a259a0aa3529e942f4c92a2119bd99ea6">   54</a></span><span class="keyword">inline</span> <a class="code hl_typedef" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> <a class="code hl_function" href="vec_8h.html#a259a0aa3529e942f4c92a2119bd99ea6">C_VECSquareMag</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structVec.html">Vec</a>* v) {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">register</span> <a class="code hl_typedef" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> x_y;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">register</span> <a class="code hl_typedef" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> z;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">register</span> <a class="code hl_typedef" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> res;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">register</span> <span class="keyword">const</span> <a class="code hl_typedef" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>* src = &amp;v-&gt;<a class="code hl_variable" href="structVec.html#a2329da04868799450765a987a6517e16">x</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">asm</span> {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        psq_l   x_y, 0(src), 0, 0</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        ps_mul  x_y, x_y, x_y</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        lfs     z,   8(src)</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        ps_madd res, z, z, x_y</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        ps_sum0 res, res, x_y, x_y</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    };</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">return</span> res;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>};</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#endif </span><span class="comment">/* VEC_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aJ3DCluster_8cpp_html_ad147100ce3c1b81ba959b43b39ad5a53"><div class="ttname"><a href="J3DCluster_8cpp.html#ad147100ce3c1b81ba959b43b39ad5a53">PSVECNormalize</a></div><div class="ttdeci">void PSVECNormalize()</div></div>
 <div class="ttc" id="aJPAFieldBlock_8cpp_html_ad020f89b3a5906e30371543f023f919f"><div class="ttname"><a href="JPAFieldBlock_8cpp.html#ad020f89b3a5906e30371543f023f919f">PSVECCrossProduct</a></div><div class="ttdeci">void PSVECCrossProduct()</div></div>
 <div class="ttc" id="aJPAFieldBlock_8cpp_html_aee5f81b08ecc7317a404edd1b0686ea3"><div class="ttname"><a href="JPAFieldBlock_8cpp.html#aee5f81b08ecc7317a404edd1b0686ea3">PSVECMag</a></div><div class="ttdeci">void PSVECMag()</div></div>
@@ -144,6 +177,8 @@ $(function() {
 <div class="ttc" id="atypes_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div></div>
 <div class="ttc" id="atypes_8h_html_a5f6906312a689f27d70e9d086649d3fd"><div class="ttname"><a href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a></div><div class="ttdeci">float f32</div><div class="ttdef"><b>Definition:</b> types.h:22</div></div>
 <div class="ttc" id="atypes_8h_html_a5ffa4f640862b25ba6d4f635b78bdbe1"><div class="ttname"><a href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a></div><div class="ttdeci">signed short s16</div><div class="ttdef"><b>Definition:</b> types.h:5</div></div>
+<div class="ttc" id="avec_8h_html_a1e8e02c5c45f32f59c00a3e286e11362"><div class="ttname"><a href="vec_8h.html#a1e8e02c5c45f32f59c00a3e286e11362">C_VECAdd</a></div><div class="ttdeci">void C_VECAdd(register const Vec *a, register const Vec *b, register Vec *ab)</div><div class="ttdef"><b>Definition:</b> vec.h:36</div></div>
+<div class="ttc" id="avec_8h_html_a259a0aa3529e942f4c92a2119bd99ea6"><div class="ttname"><a href="vec_8h.html#a259a0aa3529e942f4c92a2119bd99ea6">C_VECSquareMag</a></div><div class="ttdeci">f32 C_VECSquareMag(const Vec *v)</div><div class="ttdef"><b>Definition:</b> vec.h:54</div></div>
 <div class="ttc" id="avec_8h_html_a276fbd082589efa95472964627c0267c"><div class="ttname"><a href="vec_8h.html#a276fbd082589efa95472964627c0267c">PSVECDistance</a></div><div class="ttdeci">f32 PSVECDistance(const Vec *a, const Vec *b)</div><div class="ttdef"><b>Definition:</b> vec.c:147</div></div>
 <div class="ttc" id="avec_8h_html_a416efb31cef3daa45b67c4bacda74bd3"><div class="ttname"><a href="vec_8h.html#a416efb31cef3daa45b67c4bacda74bd3">C_VECHalfAngle</a></div><div class="ttdeci">void C_VECHalfAngle(const Vec *a, const Vec *b, Vec *half)</div><div class="ttdef"><b>Definition:</b> vec.c:113</div></div>
 <div class="ttc" id="avec_8h_html_a66218223b22a54e8791513311279b845"><div class="ttname"><a href="vec_8h.html#a66218223b22a54e8791513311279b845">Point3d</a></div><div class="ttdeci">Vec Point3d</div><div class="ttdef"><b>Definition:</b> vec.h:15</div></div>

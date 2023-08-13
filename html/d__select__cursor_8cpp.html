@@ -82,30 +82,29 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">d_select_cursor.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="d__select__cursor_8h_source.html">d/d_select_cursor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__com__inf__game_8h_source.html">d/com/d_com_inf_game.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J2DAnmLoader_8h_source.html">JSystem/J2DGraph/J2DAnmLoader.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J2DAnimation_8h_source.html">JSystem/J2DGraph/J2DAnimation.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J2DGrafContext_8h_source.html">JSystem/J2DGraph/J2DGrafContext.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="d__com__inf__game_8h_source.html">d/com/d_com_inf_game.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="global_8h_source.html">global.h</a>&quot;</code><br />
 <code>#include &quot;asm/d/d_select_cursor/__ct__19dSelect_cursorHIO_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/d_select_cursor/__ct__16dSelect_cursor_cFUcfP10JKRArchive.s&quot;</code><br />
-<code>#include &quot;asm/d/d_select_cursor/__dt__16dSelect_cursor_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/d_select_cursor/draw__16dSelect_cursor_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/d_select_cursor/update__16dSelect_cursor_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/d_select_cursor/setPos__16dSelect_cursor_cFffP7J2DPaneb.s&quot;</code><br />
 <code>#include &quot;asm/d/d_select_cursor/setScale__16dSelect_cursor_cFf.s&quot;</code><br />
 <code>#include &quot;asm/d/d_select_cursor/addAlpha__16dSelect_cursor_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/d_select_cursor/decAlpha__16dSelect_cursor_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/d_select_cursor/setBpkAnimation__16dSelect_cursor_cFP11J2DAnmColor.s&quot;</code><br />
-<code>#include &quot;asm/d/d_select_cursor/setBtk0Animation__16dSelect_cursor_cFP19J2DAnmTextureSRTKey.s&quot;</code><br />
 <code>#include &quot;asm/d/d_select_cursor/setCursorAnimation__16dSelect_cursor_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/d_select_cursor/__dt__19dSelect_cursorHIO_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/d_select_cursor/__dt__18J2DAnmTransformKeyFv.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for d_select_cursor.cpp:</div>
@@ -116,11 +115,6 @@ $(function() {
 </div>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DAnmLoaderDataBase.html">J2DAnmLoaderDataBase</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aa25705e1d1a8e15f9dc23b9c1b9d390a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#aa25705e1d1a8e15f9dc23b9c1b9d390a">__ct__19dSelect_cursorHIO_cFv</a> ()</td></tr>
@@ -213,14 +207,8 @@ Functions</h2></td></tr>
 <tr class="separator:afdca0eb87578e0952b66387b093d81f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abed5bd59c54272a132a5b4da4beff66d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#abed5bd59c54272a132a5b4da4beff66d">_restgpr_29</a> ()</td></tr>
 <tr class="separator:abed5bd59c54272a132a5b4da4beff66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d1e6bc3e12e03a47a33b023ddee1180"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#a1d1e6bc3e12e03a47a33b023ddee1180">COMPILER_STRIP_GATE</a> (0x80394A10, &amp;<a class="el" href="d__select__cursor_8cpp.html#ab914632820ed651383a1d41c28f2856f">corner_tag</a>)</td></tr>
+<tr class="memitem:a1d1e6bc3e12e03a47a33b023ddee1180"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#a1d1e6bc3e12e03a47a33b023ddee1180">COMPILER_STRIP_GATE</a> (0x80394A10, &amp;<a class="el" href="d__select__cursor_8cpp.html#ace5db7f51fa2582680dd0f7ba997f7f1">corner_tag</a>)</td></tr>
 <tr class="separator:a1d1e6bc3e12e03a47a33b023ddee1180"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1355e50013280d463af1db91915233cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#a1355e50013280d463af1db91915233cf">COMPILER_STRIP_GATE</a> (0x80394A30, &amp;<a class="el" href="d__select__cursor_8cpp.html#a45b64b3e40b9f8866c7f1744dd4ae844">tag_4181</a>)</td></tr>
-<tr class="separator:a1355e50013280d463af1db91915233cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a536b5c1fa54fd64de48a1229e3957142"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#a536b5c1fa54fd64de48a1229e3957142">COMPILER_STRIP_GATE</a> (0x80394A50, &amp;<a class="el" href="d__select__cursor_8cpp.html#aaa35ebd2ccb33454002e5daa2005b5ee">tag_4197</a>)</td></tr>
-<tr class="separator:a536b5c1fa54fd64de48a1229e3957142"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1e0577820384120be0f7a16b3c2aa60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#ae1e0577820384120be0f7a16b3c2aa60">COMPILER_STRIP_GATE</a> (0x80394A90, &amp;<a class="el" href="d__select__cursor_8cpp.html#a1aa9f87fbdff8f84c69687652c34ddff">tag_4204</a>)</td></tr>
-<tr class="separator:ae1e0577820384120be0f7a16b3c2aa60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -234,46 +222,20 @@ Variables</h2></td></tr>
 <tr class="separator:ae54c7e4f0e0420b5cbf96a917591e0cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cdfbf5e2f6eabf8d7cf63096ae66705"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#a5cdfbf5e2f6eabf8d7cf63096ae66705">__vt__18J2DAnmTransformKey</a> [6]</td></tr>
 <tr class="separator:a5cdfbf5e2f6eabf8d7cf63096ae66705"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e59c8ff71a328ebcc0547d799f6d971"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#a8e59c8ff71a328ebcc0547d799f6d971">stringBase_80394AA0</a> = &quot;zelda_select_cursor_4parts.blo&quot;</td></tr>
-<tr class="separator:a8e59c8ff71a328ebcc0547d799f6d971"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad839c7216a5b3ad63f691708a6bdd660"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#ad839c7216a5b3ad63f691708a6bdd660">stringBase_80394ABF</a> = &quot;zelda_store_select_icon.blo&quot;</td></tr>
-<tr class="separator:ad839c7216a5b3ad63f691708a6bdd660"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a275df3c385d5609b68ddbd22d984c9a2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#a275df3c385d5609b68ddbd22d984c9a2">stringBase_80394ADB</a> = &quot;zelda_map_screen_portal_icon.blo&quot;</td></tr>
-<tr class="separator:a275df3c385d5609b68ddbd22d984c9a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb57e019994584f6631ed71e94aabe9f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#aeb57e019994584f6631ed71e94aabe9f">stringBase_80394AFC</a> = &quot;zelda_map_screen_batsumark.blo&quot;</td></tr>
-<tr class="separator:aeb57e019994584f6631ed71e94aabe9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6a8f2a2c445925ee2dbd513f577a6e7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#ab6a8f2a2c445925ee2dbd513f577a6e7">stringBase_80394B1B</a> = &quot;&quot;</td></tr>
-<tr class="separator:ab6a8f2a2c445925ee2dbd513f577a6e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b867e99cb4f6bac5c0f940bc8d3776c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#a1b867e99cb4f6bac5c0f940bc8d3776c">stringBase_80394B1C</a> = &quot;zelda_store_select_icon.bck&quot;</td></tr>
-<tr class="separator:a1b867e99cb4f6bac5c0f940bc8d3776c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9d86c48d24dfd7d7efa8b493ae44e05"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#ac9d86c48d24dfd7d7efa8b493ae44e05">stringBase_80394B38</a> = &quot;zelda_select_cursor_4parts.bpk&quot;</td></tr>
-<tr class="separator:ac9d86c48d24dfd7d7efa8b493ae44e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74f001e0f771476f2b698b8469318976"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#a74f001e0f771476f2b698b8469318976">stringBase_80394B57</a> = &quot;zelda_store_select_icon.bpk&quot;</td></tr>
-<tr class="separator:a74f001e0f771476f2b698b8469318976"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8e908c6fbba6f18a28bcf0e9726ff9c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#ab8e908c6fbba6f18a28bcf0e9726ff9c">stringBase_80394B73</a> = &quot;zelda_map_screen_portal_icon.bpk&quot;</td></tr>
-<tr class="separator:ab8e908c6fbba6f18a28bcf0e9726ff9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fe4779f096af4724185d54c4f61c39b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#a3fe4779f096af4724185d54c4f61c39b">stringBase_80394B94</a> = &quot;zelda_map_screen_batsumark.bpk&quot;</td></tr>
-<tr class="separator:a3fe4779f096af4724185d54c4f61c39b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a745e5e949baaa810e9926c16544de934"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#a745e5e949baaa810e9926c16544de934">stringBase_80394BB3</a> = &quot;zelda_select_cursor_4parts.btk&quot;</td></tr>
-<tr class="separator:a745e5e949baaa810e9926c16544de934"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad84ef9768eb1b2b2e6138f0def38e46f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#ad84ef9768eb1b2b2e6138f0def38e46f">stringBase_80394BD2</a> = &quot;zelda_store_select_icon.btk&quot;</td></tr>
-<tr class="separator:ad84ef9768eb1b2b2e6138f0def38e46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ce5d6009c5d1754410c983df8389993"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#a8ce5d6009c5d1754410c983df8389993">stringBase_80394BEE</a> = &quot;zelda_store_select_icon_02.btk&quot;</td></tr>
-<tr class="separator:a8ce5d6009c5d1754410c983df8389993"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e12cde67108bacf66cac6c88711f9f5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#a2e12cde67108bacf66cac6c88711f9f5">pad_80394C0D</a> = &quot;\0\0&quot;</td></tr>
-<tr class="separator:a2e12cde67108bacf66cac6c88711f9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1d641d5006e9852701e43891c9ccc5c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#af1d641d5006e9852701e43891c9ccc5c">cNullVec__6Z2Calc</a> [12]</td></tr>
 <tr class="separator:af1d641d5006e9852701e43891c9ccc5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afacec2fd8902679bc9ed325d6cbab38a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#afacec2fd8902679bc9ed325d6cbab38a">blo_name</a> [4]</td></tr>
-<tr class="separator:afacec2fd8902679bc9ed325d6cbab38a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa81f0e4ca5cf5ccb04f079465b30ba9f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#aa81f0e4ca5cf5ccb04f079465b30ba9f">bck_name</a> [4]</td></tr>
-<tr class="separator:aa81f0e4ca5cf5ccb04f079465b30ba9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f3e262d6f9b26b6df4e990fb16775b0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#a3f3e262d6f9b26b6df4e990fb16775b0">bpk_name</a> [4]</td></tr>
-<tr class="separator:a3f3e262d6f9b26b6df4e990fb16775b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1419067d7fe04e5c55150b8b2630bf2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#ae1419067d7fe04e5c55150b8b2630bf2">btk_name</a> [4]</td></tr>
-<tr class="separator:ae1419067d7fe04e5c55150b8b2630bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab130c08f72aa5f6e77a5cb1003ba9901"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#ab130c08f72aa5f6e77a5cb1003ba9901">btk2_name</a> [4+12]</td></tr>
-<tr class="separator:ab130c08f72aa5f6e77a5cb1003ba9901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40742f2cfc67e14ce9a1ed0d97a803a4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#a40742f2cfc67e14ce9a1ed0d97a803a4">blo_name</a> [4]</td></tr>
+<tr class="separator:a40742f2cfc67e14ce9a1ed0d97a803a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a033309a15b5240f12199f0513f2e1613"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#a033309a15b5240f12199f0513f2e1613">bck_name</a> [4]</td></tr>
+<tr class="separator:a033309a15b5240f12199f0513f2e1613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a309b543e8363c7f949098126db997f30"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#a309b543e8363c7f949098126db997f30">bpk_name</a> [4]</td></tr>
+<tr class="separator:a309b543e8363c7f949098126db997f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26d864436af708b0958a87d21355e869"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#a26d864436af708b0958a87d21355e869">btk_name</a> [4]</td></tr>
+<tr class="separator:a26d864436af708b0958a87d21355e869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a507f3f42aee142ce497202839ab01242"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#a507f3f42aee142ce497202839ab01242">btk2_name</a> [4+12]</td></tr>
+<tr class="separator:a507f3f42aee142ce497202839ab01242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e12cde67108bacf66cac6c88711f9f5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#a2e12cde67108bacf66cac6c88711f9f5">pad_80394C0D</a> = &quot;\0\0&quot;</td></tr>
+<tr class="separator:a2e12cde67108bacf66cac6c88711f9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af91f2d2b133820e00c3a3dc8b4ec8f88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#af91f2d2b133820e00c3a3dc8b4ec8f88">__vt__16dSelect_cursor_c</a> [4+3]</td></tr>
 <tr class="separator:af91f2d2b133820e00c3a3dc8b4ec8f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1447865be2813aee7bb3bd15b99e0908"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#a1447865be2813aee7bb3bd15b99e0908">__vt__19dSelect_cursorHIO_c</a> [3+1]</td></tr>
@@ -282,8 +244,8 @@ Variables</h2></td></tr>
 <tr class="separator:ac432c9d10b49f8ae32bd7a6fc5ebbc05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17055723121b9ddf8206c37890be9b09"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#a17055723121b9ddf8206c37890be9b09">lit_3674</a> = 3.0f / 10.0f</td></tr>
 <tr class="separator:a17055723121b9ddf8206c37890be9b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab914632820ed651383a1d41c28f2856f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#ab914632820ed651383a1d41c28f2856f">corner_tag</a> [32]</td></tr>
-<tr class="separator:ab914632820ed651383a1d41c28f2856f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace5db7f51fa2582680dd0f7ba997f7f1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#ace5db7f51fa2582680dd0f7ba997f7f1">corner_tag</a> [4]</td></tr>
+<tr class="separator:ace5db7f51fa2582680dd0f7ba997f7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb61daa92c7448cfd6e43675fe3fe01b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#acb61daa92c7448cfd6e43675fe3fe01b">lit_3808</a> [4]</td></tr>
 <tr class="separator:acb61daa92c7448cfd6e43675fe3fe01b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad10f5187a6b61c0f676ceb815e337aca"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#ad10f5187a6b61c0f676ceb815e337aca">lit_4062</a> = 0.5f</td></tr>
@@ -294,12 +256,12 @@ Variables</h2></td></tr>
 <tr class="separator:acd873a967a8b436dc1f3c9db2ce650ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0a827c3ef52271d3c47ad1e537a7278"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#ab0a827c3ef52271d3c47ad1e537a7278">lit_4157</a> = 5.0f</td></tr>
 <tr class="separator:ab0a827c3ef52271d3c47ad1e537a7278"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45b64b3e40b9f8866c7f1744dd4ae844"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#a45b64b3e40b9f8866c7f1744dd4ae844">tag_4181</a> [32]</td></tr>
-<tr class="separator:a45b64b3e40b9f8866c7f1744dd4ae844"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa35ebd2ccb33454002e5daa2005b5ee"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#aaa35ebd2ccb33454002e5daa2005b5ee">tag_4197</a> [64]</td></tr>
-<tr class="separator:aaa35ebd2ccb33454002e5daa2005b5ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1aa9f87fbdff8f84c69687652c34ddff"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#a1aa9f87fbdff8f84c69687652c34ddff">tag_4204</a> [16]</td></tr>
-<tr class="separator:a1aa9f87fbdff8f84c69687652c34ddff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bc5a35fcf0b81e8ca89a91613c3c29d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#a4bc5a35fcf0b81e8ca89a91613c3c29d">tag_4181</a> [4]</td></tr>
+<tr class="separator:a4bc5a35fcf0b81e8ca89a91613c3c29d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1b3521607decdcd5df3e155d7508a32"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#ae1b3521607decdcd5df3e155d7508a32">tag_4197</a> [8]</td></tr>
+<tr class="separator:ae1b3521607decdcd5df3e155d7508a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c34674ea3d41933b99fed0e8db406a7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#a1c34674ea3d41933b99fed0e8db406a7">tag_4204</a> [2]</td></tr>
+<tr class="separator:a1c34674ea3d41933b99fed0e8db406a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5d259527f655ba391c01136884c2cea"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#ab5d259527f655ba391c01136884c2cea">lit_4237</a> = 20.0f</td></tr>
 <tr class="separator:ab5d259527f655ba391c01136884c2cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae611e0f2df49348535d296108e5ec0c3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__select__cursor_8cpp.html#ae611e0f2df49348535d296108e5ec0c3">lit_4238</a> = 10.0f</td></tr>
@@ -647,7 +609,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a1d1e6bc3e12e03a47a33b023ddee1180" name="a1d1e6bc3e12e03a47a33b023ddee1180"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d1e6bc3e12e03a47a33b023ddee1180">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d1e6bc3e12e03a47a33b023ddee1180">&#9670;&#160;</a></span>COMPILER_STRIP_GATE()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -663,90 +625,6 @@ Variables</h2></td></tr>
           <td></td>
           <td class="paramtype">&amp;&#160;</td>
           <td class="paramname"><em>corner_tag</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1355e50013280d463af1db91915233cf" name="a1355e50013280d463af1db91915233cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1355e50013280d463af1db91915233cf">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">COMPILER_STRIP_GATE </td>
-          <td>(</td>
-          <td class="paramtype">0x80394A30&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&amp;&#160;</td>
-          <td class="paramname"><em>tag_4181</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a536b5c1fa54fd64de48a1229e3957142" name="a536b5c1fa54fd64de48a1229e3957142"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a536b5c1fa54fd64de48a1229e3957142">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[3/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">COMPILER_STRIP_GATE </td>
-          <td>(</td>
-          <td class="paramtype">0x80394A50&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&amp;&#160;</td>
-          <td class="paramname"><em>tag_4197</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae1e0577820384120be0f7a16b3c2aa60" name="ae1e0577820384120be0f7a16b3c2aa60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1e0577820384120be0f7a16b3c2aa60">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[4/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">COMPILER_STRIP_GATE </td>
-          <td>(</td>
-          <td class="paramtype">0x80394A90&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&amp;&#160;</td>
-          <td class="paramname"><em>tag_4204</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1279,7 +1157,7 @@ Variables</h2></td></tr>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__select__cursor_8cpp_html_a15062d7bd7b3435897ec0b20fc15d4fb"><div class="ttname"><a href="d__select__cursor_8cpp.html#a15062d7bd7b3435897ec0b20fc15d4fb">draw__16dSelect_cursor_cFv</a></div><div class="ttdeci">void draw__16dSelect_cursor_cFv()</div><div class="ttdef"><b>Definition:</b> d_select_cursor.cpp:269</div></div>
+<div class="ttc" id="ad__select__cursor_8cpp_html_a15062d7bd7b3435897ec0b20fc15d4fb"><div class="ttname"><a href="d__select__cursor_8cpp.html#a15062d7bd7b3435897ec0b20fc15d4fb">draw__16dSelect_cursor_cFv</a></div><div class="ttdeci">void draw__16dSelect_cursor_cFv()</div><div class="ttdef"><b>Definition:</b> d_select_cursor.cpp:451</div></div>
 <div class="ttc" id="ad__select__cursor_8cpp_html_a9ab6107bf59e43d6c3442f1cc8cf8e1d"><div class="ttname"><a href="d__select__cursor_8cpp.html#a9ab6107bf59e43d6c3442f1cc8cf8e1d">__dt__16dSelect_cursor_cFv</a></div><div class="ttdeci">void __dt__16dSelect_cursor_cFv()</div></div>
 <div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:12</div></div>
 </div><!-- fragment -->
@@ -1337,8 +1215,8 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="aa81f0e4ca5cf5ccb04f079465b30ba9f" name="aa81f0e4ca5cf5ccb04f079465b30ba9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa81f0e4ca5cf5ccb04f079465b30ba9f">&#9670;&#160;</a></span>bck_name</h2>
+<a id="a033309a15b5240f12199f0513f2e1613" name="a033309a15b5240f12199f0513f2e1613"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a033309a15b5240f12199f0513f2e1613">&#9670;&#160;</a></span>bck_name</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1347,7 +1225,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void* bck_name[4]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char* bck_name[4]</td>
         </tr>
       </table>
   </td>
@@ -1357,45 +1235,16 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code hl_variable" href="d__select__cursor_8cpp.html#a8e2eb875ca77d6039d90767a7ae657d1">d_d_select_cursor__stringBase0</a>) + 0x7B),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code hl_variable" href="d__select__cursor_8cpp.html#a8e2eb875ca77d6039d90767a7ae657d1">d_d_select_cursor__stringBase0</a>) + 0x7C),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code hl_variable" href="d__select__cursor_8cpp.html#a8e2eb875ca77d6039d90767a7ae657d1">d_d_select_cursor__stringBase0</a>) + 0x7B),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code hl_variable" href="d__select__cursor_8cpp.html#a8e2eb875ca77d6039d90767a7ae657d1">d_d_select_cursor__stringBase0</a>) + 0x7B),</div>
-<div class="line">}</div>
-<div class="ttc" id="ad__select__cursor_8cpp_html_a8e2eb875ca77d6039d90767a7ae657d1"><div class="ttname"><a href="d__select__cursor_8cpp.html#a8e2eb875ca77d6039d90767a7ae657d1">d_d_select_cursor__stringBase0</a></div><div class="ttdeci">char const  *const d_d_select_cursor__stringBase0</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="afacec2fd8902679bc9ed325d6cbab38a" name="afacec2fd8902679bc9ed325d6cbab38a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afacec2fd8902679bc9ed325d6cbab38a">&#9670;&#160;</a></span>blo_name</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void* blo_name[4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    (<span class="keywordtype">void</span>*)&amp;<a class="code hl_variable" href="d__select__cursor_8cpp.html#a8e2eb875ca77d6039d90767a7ae657d1">d_d_select_cursor__stringBase0</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code hl_variable" href="d__select__cursor_8cpp.html#a8e2eb875ca77d6039d90767a7ae657d1">d_d_select_cursor__stringBase0</a>) + 0x1F),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code hl_variable" href="d__select__cursor_8cpp.html#a8e2eb875ca77d6039d90767a7ae657d1">d_d_select_cursor__stringBase0</a>) + 0x3B),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code hl_variable" href="d__select__cursor_8cpp.html#a8e2eb875ca77d6039d90767a7ae657d1">d_d_select_cursor__stringBase0</a>) + 0x5C),</div>
+<div class="line">    <span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;zelda_store_select_icon.bck&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;&quot;</span>,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a3f3e262d6f9b26b6df4e990fb16775b0" name="a3f3e262d6f9b26b6df4e990fb16775b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f3e262d6f9b26b6df4e990fb16775b0">&#9670;&#160;</a></span>bpk_name</h2>
+<a id="a40742f2cfc67e14ce9a1ed0d97a803a4" name="a40742f2cfc67e14ce9a1ed0d97a803a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40742f2cfc67e14ce9a1ed0d97a803a4">&#9670;&#160;</a></span>blo_name</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1404,7 +1253,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void* bpk_name[4]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char* blo_name[4]</td>
         </tr>
       </table>
   </td>
@@ -1414,16 +1263,16 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code hl_variable" href="d__select__cursor_8cpp.html#a8e2eb875ca77d6039d90767a7ae657d1">d_d_select_cursor__stringBase0</a>) + 0x98),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code hl_variable" href="d__select__cursor_8cpp.html#a8e2eb875ca77d6039d90767a7ae657d1">d_d_select_cursor__stringBase0</a>) + 0xB7),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code hl_variable" href="d__select__cursor_8cpp.html#a8e2eb875ca77d6039d90767a7ae657d1">d_d_select_cursor__stringBase0</a>) + 0xD3),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code hl_variable" href="d__select__cursor_8cpp.html#a8e2eb875ca77d6039d90767a7ae657d1">d_d_select_cursor__stringBase0</a>) + 0xF4),</div>
+<div class="line">    <span class="stringliteral">&quot;zelda_select_cursor_4parts.blo&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;zelda_store_select_icon.blo&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;zelda_map_screen_portal_icon.blo&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;zelda_map_screen_batsumark.blo&quot;</span>,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ab130c08f72aa5f6e77a5cb1003ba9901" name="ab130c08f72aa5f6e77a5cb1003ba9901"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab130c08f72aa5f6e77a5cb1003ba9901">&#9670;&#160;</a></span>btk2_name</h2>
+<a id="a309b543e8363c7f949098126db997f30" name="a309b543e8363c7f949098126db997f30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a309b543e8363c7f949098126db997f30">&#9670;&#160;</a></span>bpk_name</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1432,7 +1281,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void* btk2_name[4+12]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char* bpk_name[4]</td>
         </tr>
       </table>
   </td>
@@ -1442,10 +1291,38 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code hl_variable" href="d__select__cursor_8cpp.html#a8e2eb875ca77d6039d90767a7ae657d1">d_d_select_cursor__stringBase0</a>) + 0x7B),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code hl_variable" href="d__select__cursor_8cpp.html#a8e2eb875ca77d6039d90767a7ae657d1">d_d_select_cursor__stringBase0</a>) + 0x14E),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code hl_variable" href="d__select__cursor_8cpp.html#a8e2eb875ca77d6039d90767a7ae657d1">d_d_select_cursor__stringBase0</a>) + 0x7B),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code hl_variable" href="d__select__cursor_8cpp.html#a8e2eb875ca77d6039d90767a7ae657d1">d_d_select_cursor__stringBase0</a>) + 0x7B),</div>
+<div class="line">    <span class="stringliteral">&quot;zelda_select_cursor_4parts.bpk&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;zelda_store_select_icon.bpk&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;zelda_map_screen_portal_icon.bpk&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;zelda_map_screen_batsumark.bpk&quot;</span>,</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a507f3f42aee142ce497202839ab01242" name="a507f3f42aee142ce497202839ab01242"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a507f3f42aee142ce497202839ab01242">&#9670;&#160;</a></span>btk2_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char* btk2_name[4+12]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    <span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;zelda_store_select_icon_02.btk&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;&quot;</span>,</div>
 <div class="line">    </div>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
@@ -1463,8 +1340,8 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ae1419067d7fe04e5c55150b8b2630bf2" name="ae1419067d7fe04e5c55150b8b2630bf2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1419067d7fe04e5c55150b8b2630bf2">&#9670;&#160;</a></span>btk_name</h2>
+<a id="a26d864436af708b0958a87d21355e869" name="a26d864436af708b0958a87d21355e869"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26d864436af708b0958a87d21355e869">&#9670;&#160;</a></span>btk_name</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1473,7 +1350,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void* btk_name[4]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> char* btk_name[4]</td>
         </tr>
       </table>
   </td>
@@ -1483,10 +1360,10 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code hl_variable" href="d__select__cursor_8cpp.html#a8e2eb875ca77d6039d90767a7ae657d1">d_d_select_cursor__stringBase0</a>) + 0x113),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code hl_variable" href="d__select__cursor_8cpp.html#a8e2eb875ca77d6039d90767a7ae657d1">d_d_select_cursor__stringBase0</a>) + 0x132),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code hl_variable" href="d__select__cursor_8cpp.html#a8e2eb875ca77d6039d90767a7ae657d1">d_d_select_cursor__stringBase0</a>) + 0x7B),</div>
-<div class="line">    (<span class="keywordtype">void</span>*)(((<span class="keywordtype">char</span>*)&amp;<a class="code hl_variable" href="d__select__cursor_8cpp.html#a8e2eb875ca77d6039d90767a7ae657d1">d_d_select_cursor__stringBase0</a>) + 0x7B),</div>
+<div class="line">    <span class="stringliteral">&quot;zelda_select_cursor_4parts.btk&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;zelda_store_select_icon.btk&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;&quot;</span>,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
@@ -1516,8 +1393,8 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ab914632820ed651383a1d41c28f2856f" name="ab914632820ed651383a1d41c28f2856f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab914632820ed651383a1d41c28f2856f">&#9670;&#160;</a></span>corner_tag</h2>
+<a id="ace5db7f51fa2582680dd0f7ba997f7f1" name="ace5db7f51fa2582680dd0f7ba997f7f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace5db7f51fa2582680dd0f7ba997f7f1">&#9670;&#160;</a></span>corner_tag</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1526,7 +1403,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const corner_tag[32]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> const corner_tag[4]</td>
         </tr>
       </table>
   </td>
@@ -1536,8 +1413,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x6C, 0x5F, 0x75, 0x5F, 0x6E, 0x75, 0x6C, 0x6C, 0x6C, 0x5F, 0x64, 0x5F, 0x6E, 0x75, 0x6C, 0x6C,</div>
-<div class="line">    0x72, 0x5F, 0x75, 0x5F, 0x6E, 0x75, 0x6C, 0x6C, 0x72, 0x5F, 0x64, 0x5F, 0x6E, 0x75, 0x6C, 0x6C,</div>
+<div class="line">    <span class="stringliteral">&#39;l_u_null&#39;</span>, <span class="stringliteral">&#39;l_d_null&#39;</span>, <span class="stringliteral">&#39;r_u_null&#39;</span>, <span class="stringliteral">&#39;r_d_null&#39;</span>,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
@@ -1790,8 +1666,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a8e59c8ff71a328ebcc0547d799f6d971" name="a8e59c8ff71a328ebcc0547d799f6d971"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e59c8ff71a328ebcc0547d799f6d971">&#9670;&#160;</a></span>stringBase_80394AA0</h2>
+<a id="a4bc5a35fcf0b81e8ca89a91613c3c29d" name="a4bc5a35fcf0b81e8ca89a91613c3c29d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bc5a35fcf0b81e8ca89a91613c3c29d">&#9670;&#160;</a></span>tag_4181</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1800,293 +1676,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_80394AA0 = &quot;zelda_select_cursor_4parts.blo&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad839c7216a5b3ad63f691708a6bdd660" name="ad839c7216a5b3ad63f691708a6bdd660"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad839c7216a5b3ad63f691708a6bdd660">&#9670;&#160;</a></span>stringBase_80394ABF</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_80394ABF = &quot;zelda_store_select_icon.blo&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a275df3c385d5609b68ddbd22d984c9a2" name="a275df3c385d5609b68ddbd22d984c9a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a275df3c385d5609b68ddbd22d984c9a2">&#9670;&#160;</a></span>stringBase_80394ADB</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_80394ADB = &quot;zelda_map_screen_portal_icon.blo&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aeb57e019994584f6631ed71e94aabe9f" name="aeb57e019994584f6631ed71e94aabe9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb57e019994584f6631ed71e94aabe9f">&#9670;&#160;</a></span>stringBase_80394AFC</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_80394AFC = &quot;zelda_map_screen_batsumark.blo&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab6a8f2a2c445925ee2dbd513f577a6e7" name="ab6a8f2a2c445925ee2dbd513f577a6e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6a8f2a2c445925ee2dbd513f577a6e7">&#9670;&#160;</a></span>stringBase_80394B1B</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_80394B1B = &quot;&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1b867e99cb4f6bac5c0f940bc8d3776c" name="a1b867e99cb4f6bac5c0f940bc8d3776c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b867e99cb4f6bac5c0f940bc8d3776c">&#9670;&#160;</a></span>stringBase_80394B1C</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_80394B1C = &quot;zelda_store_select_icon.bck&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac9d86c48d24dfd7d7efa8b493ae44e05" name="ac9d86c48d24dfd7d7efa8b493ae44e05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9d86c48d24dfd7d7efa8b493ae44e05">&#9670;&#160;</a></span>stringBase_80394B38</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_80394B38 = &quot;zelda_select_cursor_4parts.bpk&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a74f001e0f771476f2b698b8469318976" name="a74f001e0f771476f2b698b8469318976"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74f001e0f771476f2b698b8469318976">&#9670;&#160;</a></span>stringBase_80394B57</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_80394B57 = &quot;zelda_store_select_icon.bpk&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab8e908c6fbba6f18a28bcf0e9726ff9c" name="ab8e908c6fbba6f18a28bcf0e9726ff9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8e908c6fbba6f18a28bcf0e9726ff9c">&#9670;&#160;</a></span>stringBase_80394B73</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_80394B73 = &quot;zelda_map_screen_portal_icon.bpk&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3fe4779f096af4724185d54c4f61c39b" name="a3fe4779f096af4724185d54c4f61c39b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fe4779f096af4724185d54c4f61c39b">&#9670;&#160;</a></span>stringBase_80394B94</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_80394B94 = &quot;zelda_map_screen_batsumark.bpk&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a745e5e949baaa810e9926c16544de934" name="a745e5e949baaa810e9926c16544de934"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a745e5e949baaa810e9926c16544de934">&#9670;&#160;</a></span>stringBase_80394BB3</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_80394BB3 = &quot;zelda_select_cursor_4parts.btk&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad84ef9768eb1b2b2e6138f0def38e46f" name="ad84ef9768eb1b2b2e6138f0def38e46f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad84ef9768eb1b2b2e6138f0def38e46f">&#9670;&#160;</a></span>stringBase_80394BD2</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_80394BD2 = &quot;zelda_store_select_icon.btk&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8ce5d6009c5d1754410c983df8389993" name="a8ce5d6009c5d1754410c983df8389993"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ce5d6009c5d1754410c983df8389993">&#9670;&#160;</a></span>stringBase_80394BEE</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_80394BEE = &quot;zelda_store_select_icon_02.btk&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a45b64b3e40b9f8866c7f1744dd4ae844" name="a45b64b3e40b9f8866c7f1744dd4ae844"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45b64b3e40b9f8866c7f1744dd4ae844">&#9670;&#160;</a></span>tag_4181</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const tag_4181[32]</td>
+          <td class="memname"><a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> const tag_4181[4]</td>
         </tr>
       </table>
   </td>
@@ -2096,14 +1686,13 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x00, 0x00, 0x00, 0x00, 0x6C, 0x5F, 0x6C, 0x64, 0x00, 0x00, 0x00, 0x00, 0x6C, 0x5F, 0x6C, 0x75,</div>
-<div class="line">    0x00, 0x00, 0x00, 0x00, 0x6C, 0x5F, 0x72, 0x64, 0x00, 0x00, 0x00, 0x00, 0x6C, 0x5F, 0x72, 0x75,</div>
+<div class="line">    <span class="stringliteral">&#39;l_ld&#39;</span>, <span class="stringliteral">&#39;l_lu&#39;</span>, <span class="stringliteral">&#39;l_rd&#39;</span>, <span class="stringliteral">&#39;l_ru&#39;</span>,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="aaa35ebd2ccb33454002e5daa2005b5ee" name="aaa35ebd2ccb33454002e5daa2005b5ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa35ebd2ccb33454002e5daa2005b5ee">&#9670;&#160;</a></span>tag_4197</h2>
+<a id="ae1b3521607decdcd5df3e155d7508a32" name="ae1b3521607decdcd5df3e155d7508a32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1b3521607decdcd5df3e155d7508a32">&#9670;&#160;</a></span>tag_4197</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2112,7 +1701,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const tag_4197[64]</td>
+          <td class="memname"><a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> const tag_4197[8]</td>
         </tr>
       </table>
   </td>
@@ -2122,16 +1711,13 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x00, 0x69, 0x5F, 0x63, 0x5F, 0x6C, 0x64, 0x31, 0x00, 0x69, 0x5F, 0x63, 0x5F, 0x6C, 0x64, 0x32,</div>
-<div class="line">    0x00, 0x69, 0x5F, 0x63, 0x5F, 0x6C, 0x75, 0x31, 0x00, 0x69, 0x5F, 0x63, 0x5F, 0x6C, 0x75, 0x32,</div>
-<div class="line">    0x00, 0x69, 0x5F, 0x63, 0x5F, 0x72, 0x64, 0x31, 0x00, 0x69, 0x5F, 0x63, 0x5F, 0x72, 0x64, 0x32,</div>
-<div class="line">    0x00, 0x69, 0x5F, 0x63, 0x5F, 0x72, 0x75, 0x31, 0x00, 0x69, 0x5F, 0x63, 0x5F, 0x72, 0x75, 0x32,</div>
+<div class="line">    <span class="stringliteral">&#39;i_c_ld1&#39;</span>, <span class="stringliteral">&#39;i_c_ld2&#39;</span>, <span class="stringliteral">&#39;i_c_lu1&#39;</span>, <span class="stringliteral">&#39;i_c_lu2&#39;</span>, <span class="stringliteral">&#39;i_c_rd1&#39;</span>, <span class="stringliteral">&#39;i_c_rd2&#39;</span>, <span class="stringliteral">&#39;i_c_ru1&#39;</span>, <span class="stringliteral">&#39;i_c_ru2&#39;</span>, </div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a1aa9f87fbdff8f84c69687652c34ddff" name="a1aa9f87fbdff8f84c69687652c34ddff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1aa9f87fbdff8f84c69687652c34ddff">&#9670;&#160;</a></span>tag_4204</h2>
+<a id="a1c34674ea3d41933b99fed0e8db406a7" name="a1c34674ea3d41933b99fed0e8db406a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c34674ea3d41933b99fed0e8db406a7">&#9670;&#160;</a></span>tag_4204</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2140,7 +1726,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const tag_4204[16]</td>
+          <td class="memname"><a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> const tag_4204[2]</td>
         </tr>
       </table>
   </td>
@@ -2150,7 +1736,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x00, 0x00, 0x67, 0x6F, 0x6C, 0x64, 0x30, 0x31, 0x00, 0x00, 0x67, 0x6F, 0x6C, 0x64, 0x30, 0x32,</div>
+<div class="line">    <span class="stringliteral">&#39;gold01&#39;</span>, <span class="stringliteral">&#39;gold02&#39;</span>,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>

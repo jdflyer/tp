@@ -131,8 +131,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adc606a8c5691d75b3559081b127bca0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a415fe6fcff95e08894ce7b1dbfe92308"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DModel.html#a415fe6fcff95e08894ce7b1dbfe92308">calcBBoardMtx</a> ()</td></tr>
 <tr class="separator:a415fe6fcff95e08894ce7b1dbfe92308"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3e5085c2ec17c093853075c4a57231d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DModel.html#ae3e5085c2ec17c093853075c4a57231d">prepareShapePackets</a> ()</td></tr>
-<tr class="separator:ae3e5085c2ec17c093853075c4a57231d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac85dc7a470c2baad38ed47a983a02ed6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DModel.html#ac85dc7a470c2baad38ed47a983a02ed6">prepareShapePackets</a> ()</td></tr>
+<tr class="separator:ac85dc7a470c2baad38ed47a983a02ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1801e6e17d5d6ecfb2e8a95dd66b01db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mtx_8h.html#a486ec93ad57f76408600fa51e755e290">MtxP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DModel.html#a1801e6e17d5d6ecfb2e8a95dd66b01db">getAnmMtx</a> (int)</td></tr>
 <tr class="separator:a1801e6e17d5d6ecfb2e8a95dd66b01db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc97d60132cde7de6052ca0a8fbff28f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DModel.html#afc97d60132cde7de6052ca0a8fbff28f">update</a> ()</td></tr>
@@ -171,6 +171,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6bbe2c8d9dce067ca3720c84e5376e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55d7280ebed0fd1803f181fc4b9ad9fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classJ3DShapePacket.html">J3DShapePacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DModel.html#a55d7280ebed0fd1803f181fc4b9ad9fe">getShapePacket</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> idx) const</td></tr>
 <tr class="separator:a55d7280ebed0fd1803f181fc4b9ad9fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d275689c4f276168011dfe27b310fb0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classJ3DMtxBuffer.html">J3DMtxBuffer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DModel.html#a3d275689c4f276168011dfe27b310fb0">getMtxBuffer</a> () const</td></tr>
+<tr class="separator:a3d275689c4f276168011dfe27b310fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d73cfce8107e85b4ed8324b87ad4163"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mtx_8h.html#a19b5fed3ba94cd1f77a55aedc301b133">Mtx33</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DModel.html#a2d73cfce8107e85b4ed8324b87ad4163">getBumpMtxPtr</a> (int idx) const</td></tr>
 <tr class="separator:a2d73cfce8107e85b4ed8324b87ad4163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e0ffc1a6e2c76949288e81401f4a400"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mtx_8h.html#a19b5fed3ba94cd1f77a55aedc301b133">Mtx33</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DModel.html#a9e0ffc1a6e2c76949288e81401f4a400">getNrmMtxPtr</a> () const</td></tr>
@@ -759,6 +761,31 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a3d275689c4f276168011dfe27b310fb0" name="a3d275689c4f276168011dfe27b310fb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d275689c4f276168011dfe27b310fb0">&#9670;&#160;</a></span>getMtxBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classJ3DMtxBuffer.html">J3DMtxBuffer</a> * J3DModel::getMtxBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a82e9c238110435f286e0551850b0c12b" name="a82e9c238110435f286e0551850b0c12b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a82e9c238110435f286e0551850b0c12b">&#9670;&#160;</a></span>getMtxCalcMode()</h2>
 
@@ -1102,14 +1129,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ae3e5085c2ec17c093853075c4a57231d" name="ae3e5085c2ec17c093853075c4a57231d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3e5085c2ec17c093853075c4a57231d">&#9670;&#160;</a></span>prepareShapePackets()</h2>
+<a id="ac85dc7a470c2baad38ed47a983a02ed6" name="ac85dc7a470c2baad38ed47a983a02ed6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac85dc7a470c2baad38ed47a983a02ed6">&#9670;&#160;</a></span>prepareShapePackets()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void J3DModel::prepareShapePackets </td>
+          <td class="memname">void J3DModel::prepareShapePackets </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>

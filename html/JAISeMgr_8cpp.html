@@ -82,41 +82,23 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">JAISeMgr.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="JAISeMgr_8h_source.html">JSystem/JAudio2/JAISeMgr.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JAISoundHandles_8h_source.html">JSystem/JAudio2/JAISoundHandles.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JAISoundInfo_8h_source.html">JSystem/JAudio2/JAISoundInfo.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JASReport_8h_source.html">JSystem/JAudio2/JASReport.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeMgr/isUsingSeqData__16JAISeCategoryMgrFRC16JAISeqDataRegion.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeMgr/releaseSeqData__16JAISeCategoryMgrFRC16JAISeqDataRegion.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeMgr/JAISeMgr_calc___16JAISeCategoryMgrFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAISeMgr/JAISeMgr_freeDeadSe___16JAISeCategoryMgrFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAISeMgr/func_8029FC34.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeMgr/JAISeMgr_acceptsNewSe___16JAISeCategoryMgrCFUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeMgr/sortByPriority___16JAISeCategoryMgrFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeMgr/stop__16JAISeCategoryMgrFUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeMgr/stop__16JAISeCategoryMgrFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeMgr/stopSoundID__16JAISeCategoryMgrF10JAISoundID.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeMgr/pause__16JAISeCategoryMgrFb.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAISeMgr/JAISeMgr_mixOut___16JAISeCategoryMgrFRC18JAISoundParamsMove16JAISoundActivity.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAISeMgr/__ct__8JAISeMgrFb.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeMgr/isUsingSeqData__8JAISeMgrFRC16JAISeqDataRegion.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeMgr/releaseSeqData__8JAISeMgrFRC16JAISeqDataRegion.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeMgr/setCategoryArrangement__8JAISeMgrFRC24JAISeCategoryArrangement.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeMgr/stop__8JAISeMgrFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeMgr/stopSoundID__8JAISeMgrF10JAISoundID.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAISeMgr/initParams__8JAISeMgrFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeMgr/setSeqDataMgr__8JAISeMgrFP13JAISeqDataMgr.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeMgr/resetSeqDataMgr__8JAISeMgrFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAISeMgr/newSe___8JAISeMgrFiUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeMgr/calc__8JAISeMgrFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeMgr/mixOut__8JAISeMgrFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeMgr/func_802A0768.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeMgr/getNumActiveSe__8JAISeMgrCFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAISeMgr/__dt__8JAISeMgrFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAISeMgr/__ct__16JAISeCategoryMgrFv.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -128,15 +110,6 @@ $(function() {
 </div>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASMemPool.html">JASMemPool&lt; A0 &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASMemPool____template0.html">JASMemPool__template0</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASGenericMemPool.html">JASGenericMemPool</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a02cca08500f02ebc051d9f715f3d9579"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAISeMgr_8cpp.html#a02cca08500f02ebc051d9f715f3d9579">isUsingSeqData__16JAISeCategoryMgrFRC16JAISeqDataRegion</a> ()</td></tr>
@@ -272,16 +245,14 @@ Variables</h2></td></tr>
 <tr class="separator:af61ebcbf3934698829f0a13e3296e434"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a354d3e9d3f1c5fe00913d5029bf1fe3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAISeMgr_8cpp.html#a354d3e9d3f1c5fe00913d5029bf1fe3c">data_80450B5C</a> [4]</td></tr>
 <tr class="separator:a354d3e9d3f1c5fe00913d5029bf1fe3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c3f0927e889e41ba1a598c8c4cb9317"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAISeMgr_8cpp.html#a7c3f0927e889e41ba1a598c8c4cb9317">data_80451310</a> [8]</td></tr>
-<tr class="separator:a7c3f0927e889e41ba1a598c8c4cb9317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1d1d0e48ee8e86aabef549f5f669cb6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAISeMgr_8cpp.html#ae1d1d0e48ee8e86aabef549f5f669cb6">data_80451310</a> [8]</td></tr>
+<tr class="separator:ae1d1d0e48ee8e86aabef549f5f669cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98b58c165eacfc265404d698e5bc9525"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAISeMgr_8cpp.html#a98b58c165eacfc265404d698e5bc9525">__OSReport_disable</a></td></tr>
 <tr class="separator:a98b58c165eacfc265404d698e5bc9525"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab751064dbabe5835f0831ac67fc92a39"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAISeMgr_8cpp.html#ab751064dbabe5835f0831ac67fc92a39">lit_744</a> [12]</td></tr>
 <tr class="separator:ab751064dbabe5835f0831ac67fc92a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd2720035f6f16d62bddb8f89cf540a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAISeMgr_8cpp.html#acd2720035f6f16d62bddb8f89cf540a2">data_80434084</a> [16+4]</td></tr>
 <tr class="separator:acd2720035f6f16d62bddb8f89cf540a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad341ac7a6f49e78f2444eb8045fed074"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAISeMgr_8cpp.html#ad341ac7a6f49e78f2444eb8045fed074">lit_822</a> = 1.0f / 100.0f</td></tr>
-<tr class="separator:ad341ac7a6f49e78f2444eb8045fed074"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bb185b4d2a0517af8c88fb7347da720"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAISeMgr_8cpp.html#a3bb185b4d2a0517af8c88fb7347da720">lit_1040</a> = 1.0f</td></tr>
 <tr class="separator:a3bb185b4d2a0517af8c88fb7347da720"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a705cca0f4edaf85610005e03359eb304"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAISeMgr_8cpp.html#a705cca0f4edaf85610005e03359eb304">lit_1041</a> [4]</td></tr>
@@ -290,10 +261,6 @@ Variables</h2></td></tr>
 <tr class="separator:a957f4d61f11d1f8248bc0e210adcfff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62a9a53b1d4ccc0ed374bffb269aad38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAISeMgr_8cpp.html#a62a9a53b1d4ccc0ed374bffb269aad38">__vt__8JAISeMgr</a> [5]</td></tr>
 <tr class="separator:a62a9a53b1d4ccc0ed374bffb269aad38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47af7c74e42f03dd9f001327e71ce101"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAISeMgr_8cpp.html#a47af7c74e42f03dd9f001327e71ce101">stringBase_8039B8F8</a> = &quot;cannot new Se %08x.&quot;</td></tr>
-<tr class="separator:a47af7c74e42f03dd9f001327e71ce101"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5848a823144147eaaa6f078b4203d075"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAISeMgr_8cpp.html#a5848a823144147eaaa6f078b4203d075">pad_8039B90C</a> = &quot;\0\0\0&quot;</td></tr>
-<tr class="separator:a5848a823144147eaaa6f078b4203d075"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a808936b21fbf976b40bf68453b360078"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAISeMgr_8cpp.html#a808936b21fbf976b40bf68453b360078">__vt__16JAISeCategoryMgr</a> [5]</td></tr>
 <tr class="separator:a808936b21fbf976b40bf68453b360078"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -1465,7 +1432,7 @@ Variables</h2></td></tr>
 <div class="line">}</div>
 <div class="ttc" id="aJAISeMgr_8cpp_html_a15eba4cdf840e5c91e4cf0fcc823d80f"><div class="ttname"><a href="JAISeMgr_8cpp.html#a15eba4cdf840e5c91e4cf0fcc823d80f">isUsingSeqData__8JAISeMgrFRC16JAISeqDataRegion</a></div><div class="ttdeci">void isUsingSeqData__8JAISeMgrFRC16JAISeqDataRegion()</div></div>
 <div class="ttc" id="aJAISeMgr_8cpp_html_a47eacd8253403088f29a8f44cfc3f55a"><div class="ttname"><a href="JAISeMgr_8cpp.html#a47eacd8253403088f29a8f44cfc3f55a">releaseSeqData__8JAISeMgrFRC16JAISeqDataRegion</a></div><div class="ttdeci">void releaseSeqData__8JAISeMgrFRC16JAISeqDataRegion()</div></div>
-<div class="ttc" id="aJAISeMgr_8cpp_html_a77d07241387d3d04a02eeda30c00fe3e"><div class="ttname"><a href="JAISeMgr_8cpp.html#a77d07241387d3d04a02eeda30c00fe3e">__dt__8JAISeMgrFv</a></div><div class="ttdeci">void __dt__8JAISeMgrFv()</div><div class="ttdef"><b>Definition:</b> JAISeMgr.cpp:438</div></div>
+<div class="ttc" id="aJAISeMgr_8cpp_html_a77d07241387d3d04a02eeda30c00fe3e"><div class="ttname"><a href="JAISeMgr_8cpp.html#a77d07241387d3d04a02eeda30c00fe3e">__dt__8JAISeMgrFv</a></div><div class="ttdeci">void __dt__8JAISeMgrFv()</div><div class="ttdef"><b>Definition:</b> JAISeMgr.cpp:517</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1505,8 +1472,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a7c3f0927e889e41ba1a598c8c4cb9317" name="a7c3f0927e889e41ba1a598c8c4cb9317"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c3f0927e889e41ba1a598c8c4cb9317">&#9670;&#160;</a></span>data_80451310</h2>
+<a id="ae1d1d0e48ee8e86aabef549f5f669cb6" name="ae1d1d0e48ee8e86aabef549f5f669cb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1d1d0e48ee8e86aabef549f5f669cb6">&#9670;&#160;</a></span>data_80451310</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1515,7 +1482,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_80451310</td>
+          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_80451310[8]</td>
         </tr>
       </table>
   </td>
@@ -1632,72 +1599,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> lit_744[12]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad341ac7a6f49e78f2444eb8045fed074" name="ad341ac7a6f49e78f2444eb8045fed074"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad341ac7a6f49e78f2444eb8045fed074">&#9670;&#160;</a></span>lit_822</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> lit_822 = 1.0f / 100.0f</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5848a823144147eaaa6f078b4203d075" name="a5848a823144147eaaa6f078b4203d075"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5848a823144147eaaa6f078b4203d075">&#9670;&#160;</a></span>pad_8039B90C</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const pad_8039B90C = &quot;\0\0\0&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a47af7c74e42f03dd9f001327e71ce101" name="a47af7c74e42f03dd9f001327e71ce101"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47af7c74e42f03dd9f001327e71ce101">&#9670;&#160;</a></span>stringBase_8039B8F8</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_8039B8F8 = &quot;cannot new Se %08x.&quot;</td>
         </tr>
       </table>
   </td>

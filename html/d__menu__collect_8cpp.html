@@ -89,18 +89,33 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="d__menu__collect_8h_source.html">d/menu/d_menu_collect.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="d__lib_8h_source.html">d/d_lib.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J2DAnimation_8h_source.html">JSystem/J2DGraph/J2DAnimation.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J2DAnmLoader_8h_source.html">JSystem/J2DGraph/J2DAnmLoader.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J2DScreen_8h_source.html">JSystem/J2DGraph/J2DScreen.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J2DTextBox_8h_source.html">JSystem/J2DGraph/J2DTextBox.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JKRExpHeap_8h_source.html">JSystem/JKernel/JKRExpHeap.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="string_8h_source.html">MSL_C/string.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__a__player_8h_source.html">d/a/d_a_player.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__com__inf__game_8h_source.html">d/com/d_com_inf_game.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__lib_8h_source.html">d/d_lib.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__select__cursor_8h_source.html">d/d_select_cursor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__meter__HIO_8h_source.html">d/meter/d_meter_HIO.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__meter2__info_8h_source.html">d/meter/d_meter2_info.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__menu__fishing_8h_source.html">d/menu/d_menu_fishing.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__menu__insect_8h_source.html">d/menu/d_menu_insect.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__menu__letter_8h_source.html">d/menu/d_menu_letter.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__menu__option_8h_source.html">d/menu/d_menu_option.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__menu__save_8h_source.html">d/menu/d_menu_save.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__menu__skill_8h_source.html">d/menu/d_menu_skill.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__msg__string_8h_source.html">d/msg/d_msg_string.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__pane__class_8h_source.html">d/pane/d_pane_class.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="m__Do__graphic_8h_source.html">m_Do/m_Do_graphic.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="m__Do__mtx_8h_source.html">m_Do/m_Do_mtx.h</a>&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/__ct__17dMenu_Collect2D_cFP10JKRExpHeapP9STControlP10CSTControl.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/__dt__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/_create__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/_delete__17dMenu_Collect2D_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/initialize__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/isFishIconVisible__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/isSkillIconVisible__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/isInsectIconVisible__17dMenu_Collect2D_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/screenSet__17dMenu_Collect2D_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/animationSet__17dMenu_Collect2D_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/btkAnimeLoop0__17dMenu_Collect2D_cFP19J2DAnmTextureSRTKey.s&quot;</code><br />
@@ -110,8 +125,6 @@ $(function() {
 <code>#include &quot;asm/d/menu/d_menu_collect/changeSword__17dMenu_Collect2D_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/changeShield__17dMenu_Collect2D_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/changeClothe__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/setArrowMaxNum__17dMenu_Collect2D_cFUc.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/setWalletMaxNum__17dMenu_Collect2D_cFUs.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/setSmellType__17dMenu_Collect2D_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/setHeartPiece__17dMenu_Collect2D_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/setPohMaxNum__17dMenu_Collect2D_cFUc.s&quot;</code><br />
@@ -122,114 +135,38 @@ $(function() {
 <code>#include &quot;asm/d/menu/d_menu_collect/getItemTag__17dMenu_Collect2D_cFiib.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/wait_init__17dMenu_Collect2D_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/wait_proc__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/save_open_init__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/save_open_proc__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/save_move_init__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/save_move_proc__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/save_close_init__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/save_close_proc__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/option_open_init__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/option_open_proc__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/option_move_init__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/option_move_proc__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/option_close_init__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/option_close_proc__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/letter_open_init__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/letter_open_proc__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/letter_move_init__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/letter_move_proc__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/letter_close_init__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/letter_close_proc__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/fishing_open_init__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/fishing_open_proc__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/fishing_move_init__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/fishing_move_proc__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/fishing_close_init__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/fishing_close_proc__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/skill_open_init__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/skill_open_proc__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/skill_move_init__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/skill_move_proc__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/skill_close_init__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/skill_close_proc__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/insect_open_init__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/insect_open_proc__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/insect_move_init__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/insect_move_proc__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/insect_close_init__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/insect_close_proc__17dMenu_Collect2D_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/_move__17dMenu_Collect2D_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/_draw__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/drawTop__17dMenu_Collect2D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/isKeyCheck__17dMenu_Collect2D_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/setAButtonString__17dMenu_Collect2D_cFUs.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/setBButtonString__17dMenu_Collect2D_cFUs.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/setItemNameString__17dMenu_Collect2D_cFUcUc.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/setItemNameStringNull__17dMenu_Collect2D_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/__ct__17dMenu_Collect3D_cFP10JKRExpHeapP17dMenu_Collect2D_cP10CSTControl.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/__dt__17dMenu_Collect3D_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/_create__17dMenu_Collect3D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/_delete__17dMenu_Collect3D_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/_move__17dMenu_Collect3D_cFUcUc.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/draw__17dMenu_Collect3D_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/setJ3D__17dMenu_Collect3D_cFPCcPCcPCc.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/set_mtx__17dMenu_Collect3D_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/animePlay__17dMenu_Collect3D_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/animeEntry__17dMenu_Collect3D_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/createMaskModel__17dMenu_Collect3D_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/createMirrorModel__17dMenu_Collect3D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/getCrystalNum__17dMenu_Collect3D_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/getMirrorNum__17dMenu_Collect3D_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/getMaskMdlVisible__17dMenu_Collect3D_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/setupItem3D__17dMenu_Collect3D_cFPA4_f.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/toItem3Dpos__17dMenu_Collect3D_cFfffP4cXyz.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/calcViewMtx__17dMenu_Collect3D_cFPA4_f.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/draw__20dMenu_Collect2DTop_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/__ct__15dMenu_Collect_cFP10JKRExpHeapP9STControlP10CSTControl.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/__dt__15dMenu_Collect_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/_create__15dMenu_Collect_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/_delete__15dMenu_Collect_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/_move__15dMenu_Collect_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_collect/draw__15dMenu_Collect_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/__sinit_d_menu_collect_cpp.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/__dt__20dMenu_Collect2DTop_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_collect/draw__17dMenu_Collect2D_cFv.s&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmDoGph__gInf__c.html">mDoGph_gInf_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaAlink__c.html">daAlink_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdSv__player__status__a__c.html">dSv_player_status_a_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdSv__player__get__item__c.html">dSv_player_get_item_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdSv__player__collect__c.html">dSv_player_collect_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdSv__event__flag__c.html">dSv_event_flag_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdSv__event__c.html">dSv_event_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMsgString__c.html">dMsgString_c</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMsgObject__c.html">dMsgObject_c</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJMSMesgEntry__c.html">JMSMesgEntry_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMeter2Info__c.html">dMeter2Info_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMenu__save__c.html">dMenu_save_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMenu__Skill__c.html">dMenu_Skill_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMenu__Option__c.html">dMenu_Option_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMenu__Letter__c.html">dMenu_Letter_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMenu__Insect__c.html">dMenu_Insect_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMenu__Fishing__c.html">dMenu_Fishing_c</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DTexNoAnm.html">J3DTexNoAnm</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -248,8 +185,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DAnmLoaderDataBaseFlag.html">J3DAnmLoaderDataBaseFlag</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DAnmLoaderDataBase.html">J3DAnmLoaderDataBase</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DAnmLoaderDataBase.html">J2DAnmLoaderDataBase</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -788,17 +723,17 @@ Functions</h2></td></tr>
 <tr class="separator:a17c75cafadd408f91d88c9c564a26349"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02d8ae984b704249360719fccfda9d2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__collect_8cpp.html#a02d8ae984b704249360719fccfda9d2e">COMPILER_STRIP_GATE</a> (0x80395290, &amp;<a class="el" href="d__menu__collect_8cpp.html#adf2c102e9b751eadaa14afd6e48d5713">text_b_tag_7134</a>)</td></tr>
 <tr class="separator:a02d8ae984b704249360719fccfda9d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac43dcd2bcc15ce62c8f2640cf48b37fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__collect_8cpp.html#ac43dcd2bcc15ce62c8f2640cf48b37fe">COMPILER_STRIP_GATE</a> (0x803952B8, &amp;<a class="el" href="d__file__select_8cpp.html#a83a474b2f83b456d09a1f9e0f03f8e20">m_kamen_offset_x</a>)</td></tr>
+<tr class="memitem:ac43dcd2bcc15ce62c8f2640cf48b37fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__collect_8cpp.html#ac43dcd2bcc15ce62c8f2640cf48b37fe">COMPILER_STRIP_GATE</a> (0x803952B8, &amp;<a class="el" href="d__file__select_8cpp.html#ada4d6ea6d1b0d9089102f5950c77d764">m_kamen_offset_x</a>)</td></tr>
 <tr class="separator:ac43dcd2bcc15ce62c8f2640cf48b37fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06025a3ea62fd2ee7e9fb6b8e39b392a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__collect_8cpp.html#a06025a3ea62fd2ee7e9fb6b8e39b392a">COMPILER_STRIP_GATE</a> (0x803952CC, &amp;<a class="el" href="d__file__select_8cpp.html#a7e805b98fe961d777bf2907f924404da">m_kamen_offset_y</a>)</td></tr>
+<tr class="memitem:a06025a3ea62fd2ee7e9fb6b8e39b392a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__collect_8cpp.html#a06025a3ea62fd2ee7e9fb6b8e39b392a">COMPILER_STRIP_GATE</a> (0x803952CC, &amp;<a class="el" href="d__file__select_8cpp.html#ac3a8c96470efe8e276a3ca251734fdd2">m_kamen_offset_y</a>)</td></tr>
 <tr class="separator:a06025a3ea62fd2ee7e9fb6b8e39b392a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c376291fc2bba1f94d21c3fab78e225"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__collect_8cpp.html#a5c376291fc2bba1f94d21c3fab78e225">COMPILER_STRIP_GATE</a> (0x803952E0, &amp;<a class="el" href="d__file__select_8cpp.html#a64ce0f53df89a9abffd00a13415dbfac">m_kamen_scale</a>)</td></tr>
+<tr class="memitem:a5c376291fc2bba1f94d21c3fab78e225"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__collect_8cpp.html#a5c376291fc2bba1f94d21c3fab78e225">COMPILER_STRIP_GATE</a> (0x803952E0, &amp;<a class="el" href="d__file__select_8cpp.html#a118bd9b930bae9dcc51a92ad9721b700">m_kamen_scale</a>)</td></tr>
 <tr class="separator:a5c376291fc2bba1f94d21c3fab78e225"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb3b39bec106765b8cfb431d18a446a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__collect_8cpp.html#afb3b39bec106765b8cfb431d18a446a3">COMPILER_STRIP_GATE</a> (0x803952F4, &amp;<a class="el" href="d__file__select_8cpp.html#a92595fdb0c43b35f122ee22f8edb876b">m_mirror_offset_x</a>)</td></tr>
+<tr class="memitem:afb3b39bec106765b8cfb431d18a446a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__collect_8cpp.html#afb3b39bec106765b8cfb431d18a446a3">COMPILER_STRIP_GATE</a> (0x803952F4, &amp;<a class="el" href="d__file__select_8cpp.html#a28823c1ff9379d756eed264c421069c1">m_mirror_offset_x</a>)</td></tr>
 <tr class="separator:afb3b39bec106765b8cfb431d18a446a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12fb8b7839f28999ba7fd7e5931b26d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__collect_8cpp.html#a12fb8b7839f28999ba7fd7e5931b26d8">COMPILER_STRIP_GATE</a> (0x80395308, &amp;<a class="el" href="d__file__select_8cpp.html#a494a65f4d63c9d111c7c5b762c4e9248">m_mirror_offset_y</a>)</td></tr>
+<tr class="memitem:a12fb8b7839f28999ba7fd7e5931b26d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__collect_8cpp.html#a12fb8b7839f28999ba7fd7e5931b26d8">COMPILER_STRIP_GATE</a> (0x80395308, &amp;<a class="el" href="d__file__select_8cpp.html#ad7b2a3bbadba3dcdf2ce563381fb941b">m_mirror_offset_y</a>)</td></tr>
 <tr class="separator:a12fb8b7839f28999ba7fd7e5931b26d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d961d625a58ea49d159cd45de523bcd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__collect_8cpp.html#a7d961d625a58ea49d159cd45de523bcd">COMPILER_STRIP_GATE</a> (0x8039531C, &amp;<a class="el" href="d__file__select_8cpp.html#ad10fadfda154f0589d10faa2c4fb3999">m_mirror_scale</a>)</td></tr>
+<tr class="memitem:a7d961d625a58ea49d159cd45de523bcd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__collect_8cpp.html#a7d961d625a58ea49d159cd45de523bcd">COMPILER_STRIP_GATE</a> (0x8039531C, &amp;<a class="el" href="d__file__select_8cpp.html#a22b7e86e9a3c639c7ff4a92ee772b58a">m_mirror_scale</a>)</td></tr>
 <tr class="separator:a7d961d625a58ea49d159cd45de523bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c28edf200ee3356aad0d00c5d66c2bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__collect_8cpp.html#a8c28edf200ee3356aad0d00c5d66c2bf">REGISTER_CTORS</a> (0x801B7B14, <a class="el" href="d__menu__collect_8cpp.html#ad85d138f593ae492bef64337172648a6">__sinit_d_menu_collect_cpp</a>)</td></tr>
 <tr class="separator:a8c28edf200ee3356aad0d00c5d66c2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -821,12 +756,6 @@ Variables</h2></td></tr>
 <tr class="separator:a4b2ceed66186791d95e55eef39c811da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e01467eed17327e0c624b22ccc7ed8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__collect_8cpp.html#a8e01467eed17327e0c624b22ccc7ed8f">now__14mDoMtx_stack_c</a> [48]</td></tr>
 <tr class="separator:a8e01467eed17327e0c624b22ccc7ed8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50ad47c26bcc2867f2c14d349753f58e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__collect_8cpp.html#a50ad47c26bcc2867f2c14d349753f58e">g_dComIfG_gameInfo</a> [122384]</td></tr>
-<tr class="separator:a50ad47c26bcc2867f2c14d349753f58e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdb664052e8f05184939b039288001f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__collect_8cpp.html#afdb664052e8f05184939b039288001f9">g_drawHIO</a> [3880]</td></tr>
-<tr class="separator:afdb664052e8f05184939b039288001f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fcce57da0213dbb9db2badf854fade0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__collect_8cpp.html#a2fcce57da0213dbb9db2badf854fade0">g_meter2_info</a> [248]</td></tr>
-<tr class="separator:a2fcce57da0213dbb9db2badf854fade0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af45b59d44ff2bcf85d0ac410d3bcf010"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__collect_8cpp.html#af45b59d44ff2bcf85d0ac410d3bcf010">Zero__4cXyz</a> [3]</td></tr>
 <tr class="separator:af45b59d44ff2bcf85d0ac410d3bcf010"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60e6708b28df3a940fccf163d94456f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__collect_8cpp.html#a60e6708b28df3a940fccf163d94456f7">mFader__13mDoGph_gInf_c</a> [4]</td></tr>
@@ -6135,7 +6064,7 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__menu__collect_8cpp.html#a7830024af6ab90348ba2c00fc695de20">__dt__15dMenu_Collect_cFv</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__menu__collect_8cpp_html_a7830024af6ab90348ba2c00fc695de20"><div class="ttname"><a href="d__menu__collect_8cpp.html#a7830024af6ab90348ba2c00fc695de20">__dt__15dMenu_Collect_cFv</a></div><div class="ttdeci">void __dt__15dMenu_Collect_cFv()</div><div class="ttdef"><b>Definition:</b> d_menu_collect.cpp:2380</div></div>
+<div class="ttc" id="ad__menu__collect_8cpp_html_a7830024af6ab90348ba2c00fc695de20"><div class="ttname"><a href="d__menu__collect_8cpp.html#a7830024af6ab90348ba2c00fc695de20">__dt__15dMenu_Collect_cFv</a></div><div class="ttdeci">void __dt__15dMenu_Collect_cFv()</div><div class="ttdef"><b>Definition:</b> d_menu_collect.cpp:2545</div></div>
 <div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:12</div></div>
 </div><!-- fragment -->
 </div>
@@ -6169,7 +6098,7 @@ Variables</h2></td></tr>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__menu__collect_8cpp_html_a81579910a74f8d88488b0e1b39db48c7"><div class="ttname"><a href="d__menu__collect_8cpp.html#a81579910a74f8d88488b0e1b39db48c7">draw__17dMenu_Collect2D_cFv</a></div><div class="ttdeci">void draw__17dMenu_Collect2D_cFv()</div><div class="ttdef"><b>Definition:</b> d_menu_collect.cpp:2456</div></div>
+<div class="ttc" id="ad__menu__collect_8cpp_html_a81579910a74f8d88488b0e1b39db48c7"><div class="ttname"><a href="d__menu__collect_8cpp.html#a81579910a74f8d88488b0e1b39db48c7">draw__17dMenu_Collect2D_cFv</a></div><div class="ttdeci">void draw__17dMenu_Collect2D_cFv()</div><div class="ttdef"><b>Definition:</b> d_menu_collect.cpp:2607</div></div>
 <div class="ttc" id="ad__menu__collect_8cpp_html_acaf1b7262331d64fa591e8ca40854b71"><div class="ttname"><a href="d__menu__collect_8cpp.html#acaf1b7262331d64fa591e8ca40854b71">__dt__17dMenu_Collect2D_cFv</a></div><div class="ttdeci">void __dt__17dMenu_Collect2D_cFv()</div></div>
 </div><!-- fragment -->
 </div>
@@ -6209,7 +6138,7 @@ Variables</h2></td></tr>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__menu__collect_8cpp_html_a2e29da366d26ffcd850eea8702549b79"><div class="ttname"><a href="d__menu__collect_8cpp.html#a2e29da366d26ffcd850eea8702549b79">__dt__17dMenu_Collect3D_cFv</a></div><div class="ttdeci">void __dt__17dMenu_Collect3D_cFv()</div><div class="ttdef"><b>Definition:</b> d_menu_collect.cpp:2030</div></div>
+<div class="ttc" id="ad__menu__collect_8cpp_html_a2e29da366d26ffcd850eea8702549b79"><div class="ttname"><a href="d__menu__collect_8cpp.html#a2e29da366d26ffcd850eea8702549b79">__dt__17dMenu_Collect3D_cFv</a></div><div class="ttdeci">void __dt__17dMenu_Collect3D_cFv()</div><div class="ttdef"><b>Definition:</b> d_menu_collect.cpp:2160</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -6245,7 +6174,7 @@ Variables</h2></td></tr>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__menu__collect_8cpp_html_a3263fc523385a70642687d490e798f0b"><div class="ttname"><a href="d__menu__collect_8cpp.html#a3263fc523385a70642687d490e798f0b">draw__20dMenu_Collect2DTop_cFv</a></div><div class="ttdeci">void draw__20dMenu_Collect2DTop_cFv()</div><div class="ttdef"><b>Definition:</b> d_menu_collect.cpp:2358</div></div>
+<div class="ttc" id="ad__menu__collect_8cpp_html_a3263fc523385a70642687d490e798f0b"><div class="ttname"><a href="d__menu__collect_8cpp.html#a3263fc523385a70642687d490e798f0b">draw__20dMenu_Collect2DTop_cFv</a></div><div class="ttdeci">void draw__20dMenu_Collect2DTop_cFv()</div><div class="ttdef"><b>Definition:</b> d_menu_collect.cpp:2514</div></div>
 <div class="ttc" id="ad__menu__collect_8cpp_html_a96bdf62cde1fc26a26dcbd18dd13b088"><div class="ttname"><a href="d__menu__collect_8cpp.html#a96bdf62cde1fc26a26dcbd18dd13b088">__dt__20dMenu_Collect2DTop_cFv</a></div><div class="ttdeci">void __dt__20dMenu_Collect2DTop_cFv()</div></div>
 </div><!-- fragment -->
 </div>
@@ -6526,72 +6455,6 @@ Variables</h2></td></tr>
 <div class="line">    0x61, 0x76, 0x5F, 0x31, 0x00, 0x66, 0x5F, 0x73, 0x61, 0x76, 0x5F, 0x32,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-</div>
-</div>
-<a id="a50ad47c26bcc2867f2c14d349753f58e" name="a50ad47c26bcc2867f2c14d349753f58e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50ad47c26bcc2867f2c14d349753f58e">&#9670;&#160;</a></span>g_dComIfG_gameInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> g_dComIfG_gameInfo[122384]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afdb664052e8f05184939b039288001f9" name="afdb664052e8f05184939b039288001f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdb664052e8f05184939b039288001f9">&#9670;&#160;</a></span>g_drawHIO</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> g_drawHIO[3880]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2fcce57da0213dbb9db2badf854fade0" name="a2fcce57da0213dbb9db2badf854fade0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fcce57da0213dbb9db2badf854fade0">&#9670;&#160;</a></span>g_meter2_info</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> g_meter2_info[248]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
 </div>
 </div>
 <a id="ae3b2208010f85f8a444c9f2e722b6850" name="ae3b2208010f85f8a444c9f2e722b6850"></a>

@@ -11,5 +11,6 @@ var searchData=
   ['jut_5fprint_5fgpr_8',['JUT_PRINT_GPR',['../JUTException_8h.html#a5e4015abac33e6d0ea819de2709313e0',1,'JUTException.h']]],
   ['jut_5fprint_5fgpr_5fmap_9',['JUT_PRINT_GPR_MAP',['../JUTException_8h.html#a8026f2a3d567f7c878e235d715d511fe',1,'JUTException.h']]],
   ['jut_5fprint_5fsrr0_5fmap_10',['JUT_PRINT_SRR0_MAP',['../JUTException_8h.html#abc80328eac5a860a95c05e23ea289678',1,'JUTException.h']]],
-  ['jut_5fprint_5fstack_11',['JUT_PRINT_STACK',['../JUTException_8h.html#a7618ad2f8b9deaac3c11b3e414a25ab7',1,'JUTException.h']]]
+  ['jut_5fprint_5fstack_11',['JUT_PRINT_STACK',['../JUTException_8h.html#a7618ad2f8b9deaac3c11b3e414a25ab7',1,'JUTException.h']]],
+  ['jutdf_5fbufsize_12',['JUTDF_BUFSIZE',['../JUTDirectFile_8h.html#a003ca8f129b9992eaef22929866d49ab',1,'JUTDirectFile.h']]]
 ];

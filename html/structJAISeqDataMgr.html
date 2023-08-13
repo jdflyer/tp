@@ -94,10 +94,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0a9fb874fb017ebac4a61ca0593749fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97d87cbf3ff734fac315aa0bf1d3d06e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISeqDataMgr.html#a97d87cbf3ff734fac315aa0bf1d3d06e">~JAISeqDataMgr</a> ()</td></tr>
 <tr class="separator:a97d87cbf3ff734fac315aa0bf1d3d06e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe4a02a93494eab2cbb071e6ae468f08"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISeqDataMgr.html#afe4a02a93494eab2cbb071e6ae468f08">getSeqData</a> (<a class="el" href="structJAISoundID.html">JAISoundID</a>, <a class="el" href="structJAISeqData.html">JAISeqData</a> *)=0</td></tr>
-<tr class="separator:afe4a02a93494eab2cbb071e6ae468f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2361e9058120fa8be5fea4d32fe5758c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISeqDataMgr.html#a2361e9058120fa8be5fea4d32fe5758c">releaseSeqData</a> ()=0</td></tr>
-<tr class="separator:a2361e9058120fa8be5fea4d32fe5758c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bb3d66cb803b66f2d87a31617b7ec2d"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISeqDataMgr.html#a0bb3d66cb803b66f2d87a31617b7ec2d">getSeqData</a> (<a class="el" href="structJAISoundID.html">JAISoundID</a>, <a class="el" href="structJAISeqData.html">JAISeqData</a> *)=0</td></tr>
+<tr class="separator:a0bb3d66cb803b66f2d87a31617b7ec2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f86a3d2437d53927853114b84273f0c"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISeqDataMgr.html#a1f86a3d2437d53927853114b84273f0c">releaseSeqData</a> ()=0</td></tr>
+<tr class="separator:a1f86a3d2437d53927853114b84273f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade48f8c3197943f7a7c9c2b35f397982"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISeqDataMgr.html#ade48f8c3197943f7a7c9c2b35f397982">setSeqDataUser</a> (<a class="el" href="structJAISeqDataUser.html">JAISeqDataUser</a> *)=0</td></tr>
 <tr class="separator:ade48f8c3197943f7a7c9c2b35f397982"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -162,8 +162,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="afe4a02a93494eab2cbb071e6ae468f08" name="afe4a02a93494eab2cbb071e6ae468f08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe4a02a93494eab2cbb071e6ae468f08">&#9670;&#160;</a></span>getSeqData()</h2>
+<a id="a0bb3d66cb803b66f2d87a31617b7ec2d" name="a0bb3d66cb803b66f2d87a31617b7ec2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bb3d66cb803b66f2d87a31617b7ec2d">&#9670;&#160;</a></span>getSeqData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -172,7 +172,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void JAISeqDataMgr::getSeqData </td>
+          <td class="memname">virtual int JAISeqDataMgr::getSeqData </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJAISoundID.html">JAISoundID</a>&#160;</td>
           <td class="paramname">, </td>
@@ -198,8 +198,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2361e9058120fa8be5fea4d32fe5758c" name="a2361e9058120fa8be5fea4d32fe5758c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2361e9058120fa8be5fea4d32fe5758c">&#9670;&#160;</a></span>releaseSeqData()</h2>
+<a id="a1f86a3d2437d53927853114b84273f0c" name="a1f86a3d2437d53927853114b84273f0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f86a3d2437d53927853114b84273f0c">&#9670;&#160;</a></span>releaseSeqData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -208,7 +208,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void JAISeqDataMgr::releaseSeqData </td>
+          <td class="memname">virtual int JAISeqDataMgr::releaseSeqData </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>

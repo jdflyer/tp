@@ -105,6 +105,8 @@ Macros</h2></td></tr>
 <tr class="separator:aa8cecfc5c5c054d2875c03e77b7be15d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa93f0eb578d23995850d61f7d61c55c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:aa93f0eb578d23995850d61f7d61c55c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab593dd96bf8f92aee5fba9d85f29a902"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ab593dd96bf8f92aee5fba9d85f29a902">READU32_BE</a>(ptr,  <a class="el" href="d__gameover_8cpp.html#a278744385c8918b3813d6136e5e37b30">offset</a>)&#160;&#160;&#160;    (((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)ptr[<a class="el" href="d__gameover_8cpp.html#a278744385c8918b3813d6136e5e37b30">offset</a>] &lt;&lt; 24) | ((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)ptr[<a class="el" href="d__gameover_8cpp.html#a278744385c8918b3813d6136e5e37b30">offset</a> + 1] &lt;&lt; 16) | ((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)ptr[<a class="el" href="d__gameover_8cpp.html#a278744385c8918b3813d6136e5e37b30">offset</a> + 2] &lt;&lt; 8) | (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)ptr[<a class="el" href="d__gameover_8cpp.html#a278744385c8918b3813d6136e5e37b30">offset</a> + 3]);</td></tr>
+<tr class="separator:ab593dd96bf8f92aee5fba9d85f29a902"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a181807730d4a375f848ba139813ce04f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a181807730d4a375f848ba139813ce04f">INT32_MAX</a>&#160;&#160;&#160;(0x7fffffff)</td></tr>
 <tr class="separator:a181807730d4a375f848ba139813ce04f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5eb23180f7cc12b7d6c04a8ec067fdd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ab5eb23180f7cc12b7d6c04a8ec067fdd">UINT32_MAX</a>&#160;&#160;&#160;(0xffffffff)</td></tr>
@@ -210,6 +212,34 @@ Typedefs</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define INT32_MAX&#160;&#160;&#160;(0x7fffffff)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab593dd96bf8f92aee5fba9d85f29a902" name="ab593dd96bf8f92aee5fba9d85f29a902"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab593dd96bf8f92aee5fba9d85f29a902">&#9670;&#160;</a></span>READU32_BE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define READU32_BE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ptr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="d__gameover_8cpp.html#a278744385c8918b3813d6136e5e37b30">offset</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;    (((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)ptr[<a class="el" href="d__gameover_8cpp.html#a278744385c8918b3813d6136e5e37b30">offset</a>] &lt;&lt; 24) | ((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)ptr[<a class="el" href="d__gameover_8cpp.html#a278744385c8918b3813d6136e5e37b30">offset</a> + 1] &lt;&lt; 16) | ((<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)ptr[<a class="el" href="d__gameover_8cpp.html#a278744385c8918b3813d6136e5e37b30">offset</a> + 2] &lt;&lt; 8) | (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)ptr[<a class="el" href="d__gameover_8cpp.html#a278744385c8918b3813d6136e5e37b30">offset</a> + 3]);</td>
         </tr>
       </table>
 </div><div class="memdoc">

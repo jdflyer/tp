@@ -82,7 +82,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">J2DMaterialFactory.cpp File Reference</div></div>
@@ -90,35 +89,15 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="J2DMaterialFactory_8h_source.html">JSystem/J2DGraph/J2DMaterialFactory.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="J2DMaterial_8h_source.html">JSystem/J2DGraph/J2DMaterial.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J2DScreen_8h_source.html">JSystem/J2DGraph/J2DScreen.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JSupport_8h_source.html">JSystem/JSupport/JSupport.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JUTResource_8h_source.html">JSystem/JUtility/JUTResource.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="string_8h_source.html">MSL_C/string.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/__ct__18J2DMaterialFactoryFRC16J2DMaterialBlock.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/countStages__18J2DMaterialFactoryCFi.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/func_802F2D1C.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/newMatColor__18J2DMaterialFactoryCFii.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/newColorChanNum__18J2DMaterialFactoryCFi.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/newColorChan__18J2DMaterialFactoryCFii.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/newTexGenNum__18J2DMaterialFactoryCFi.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/newTexCoord__18J2DMaterialFactoryCFii.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/newTexMtx__18J2DMaterialFactoryCFii.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/newCullMode__18J2DMaterialFactoryCFi.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/newTexNo__18J2DMaterialFactoryCFii.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/newFontNo__18J2DMaterialFactoryCFi.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/newTevOrder__18J2DMaterialFactoryCFii.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/newTevColor__18J2DMaterialFactoryCFii.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/newTevKColor__18J2DMaterialFactoryCFii.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/newTevStageNum__18J2DMaterialFactoryCFi.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/newTevStage__18J2DMaterialFactoryCFii.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/newTevSwapModeTable__18J2DMaterialFactoryCFii.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/newIndTexStageNum__18J2DMaterialFactoryCFi.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/newIndTexOrder__18J2DMaterialFactoryCFii.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/newIndTexMtx__18J2DMaterialFactoryCFii.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/newIndTevStage__18J2DMaterialFactoryCFii.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/newIndTexCoordScale__18J2DMaterialFactoryCFii.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/newAlphaComp__18J2DMaterialFactoryCFi.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/newBlend__18J2DMaterialFactoryCFi.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/newDither__18J2DMaterialFactoryCFi.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/__ct__11J2DTevStageFRC15J2DTevStageInfo.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/func_802F4170.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J2DGraph/J2DMaterialFactory/func_802F4188.s&quot;</code><br />
@@ -141,17 +120,10 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="J2DMaterialFactory_8cpp__incl.svg" width="100%" height="536"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="J2DMaterialFactory_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJUTResReference.html">JUTResReference</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DScreen.html">J2DScreen</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a15586d2d2dfc386abc077bba8173dbcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DMaterialFactory_8cpp.html#a15586d2d2dfc386abc077bba8173dbcf">__ct__18J2DMaterialFactoryFRC16J2DMaterialBlock</a> ()</td></tr>
@@ -271,36 +243,12 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a430db5b3f9cf77b92b5b3dc1db471303"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DMaterialFactory_8cpp.html#a430db5b3f9cf77b92b5b3dc1db471303">j2dDefaultTexCoordInfo</a> [32]</td></tr>
-<tr class="separator:a430db5b3f9cf77b92b5b3dc1db471303"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2fc5ee0540f0280bdfc452ec74b12c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DMaterialFactory_8cpp.html#aa2fc5ee0540f0280bdfc452ec74b12c4">j2dDefaultIndTexMtxInfo</a> [28]</td></tr>
-<tr class="separator:aa2fc5ee0540f0280bdfc452ec74b12c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57865002c1e9c66c2baa86f395b32b93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DMaterialFactory_8cpp.html#a57865002c1e9c66c2baa86f395b32b93">j2dDefaultIndTevStageInfo</a> [12]</td></tr>
-<tr class="separator:a57865002c1e9c66c2baa86f395b32b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ea249c469d83a1e97e829860207d643"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DMaterialFactory_8cpp.html#a2ea249c469d83a1e97e829860207d643">mDataManage__9J2DScreen</a> [4+4]</td></tr>
 <tr class="separator:a2ea249c469d83a1e97e829860207d643"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c0be9c8ad14c784a7d331ff7c43c362"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DMaterialFactory_8cpp.html#a7c0be9c8ad14c784a7d331ff7c43c362">j2dDefaultTevOrderInfoNull</a></td></tr>
-<tr class="separator:a7c0be9c8ad14c784a7d331ff7c43c362"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba8859000b014c33822c07a9b122177a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DMaterialFactory_8cpp.html#aba8859000b014c33822c07a9b122177a">j2dDefaultIndTexOrderNull</a> [1+1]</td></tr>
-<tr class="separator:aba8859000b014c33822c07a9b122177a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac78d15e6446b9d91e5f183042b209352"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DMaterialFactory_8cpp.html#ac78d15e6446b9d91e5f183042b209352">j2dDefaultIndTexCoordScaleInfo</a> [2+2]</td></tr>
-<tr class="separator:ac78d15e6446b9d91e5f183042b209352"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a080bb362d667e2467fca3c86fd47b912"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DMaterialFactory_8cpp.html#a080bb362d667e2467fca3c86fd47b912">j2dDefaultTevSwapMode</a> [4]</td></tr>
 <tr class="separator:a080bb362d667e2467fca3c86fd47b912"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8388a18799f2a1182700c8538d4df6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DMaterialFactory_8cpp.html#aa8388a18799f2a1182700c8538d4df6c">j2dDefaultTevSwapModeTable</a></td></tr>
-<tr class="separator:aa8388a18799f2a1182700c8538d4df6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c2ed61f6dc8341adabd25bbdc3f1a8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DMaterialFactory_8cpp.html#a9c2ed61f6dc8341adabd25bbdc3f1a8c">j2dDefaultColorChanInfo</a></td></tr>
-<tr class="separator:a9c2ed61f6dc8341adabd25bbdc3f1a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefcde6b496d86ae14d3aba7cfbb4bce4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DMaterialFactory_8cpp.html#aefcde6b496d86ae14d3aba7cfbb4bce4">j2dDefaultAlphaCmp</a></td></tr>
-<tr class="separator:aefcde6b496d86ae14d3aba7cfbb4bce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af637f5ffedd5777298a9966fcc365b72"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DMaterialFactory_8cpp.html#af637f5ffedd5777298a9966fcc365b72">lit_1887</a> = 0xFFFFFFFF</td></tr>
-<tr class="separator:af637f5ffedd5777298a9966fcc365b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a297760c279ffde1e7636b314aa0e8be6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a4f4769b6050d0b45c649c757062be78d">SECTION_SBSS2</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DMaterialFactory_8cpp.html#a297760c279ffde1e7636b314aa0e8be6">lit_2018</a> [4]</td></tr>
-<tr class="separator:a297760c279ffde1e7636b314aa0e8be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed463ab8c37a05a3a196a178f4acaa5a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a4f4769b6050d0b45c649c757062be78d">SECTION_SBSS2</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DMaterialFactory_8cpp.html#aed463ab8c37a05a3a196a178f4acaa5a">data_80456BB4</a> [4]</td></tr>
-<tr class="separator:aed463ab8c37a05a3a196a178f4acaa5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02fe5757eab29914e412fc549a2a7afe"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DMaterialFactory_8cpp.html#a02fe5757eab29914e412fc549a2a7afe">lit_2039</a> = 0xFFFFFFFF</td></tr>
-<tr class="separator:a02fe5757eab29914e412fc549a2a7afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23c333edf44eb557879add113cebae44"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a4f4769b6050d0b45c649c757062be78d">SECTION_SBSS2</a> <a class="el" href="GXStruct_8h.html#a6e884c434a48c87e5eb4fa7e60bd897b">GXColorS10</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J2DMaterialFactory_8cpp.html#a23c333edf44eb557879add113cebae44">lit_2018</a></td></tr>
+<tr class="separator:a23c333edf44eb557879add113cebae44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a619d26856aee04e6e3f4255c20f09a61" name="a619d26856aee04e6e3f4255c20f09a61"></a>
@@ -1545,182 +1493,6 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="aed463ab8c37a05a3a196a178f4acaa5a" name="aed463ab8c37a05a3a196a178f4acaa5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed463ab8c37a05a3a196a178f4acaa5a">&#9670;&#160;</a></span>data_80456BB4</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a4f4769b6050d0b45c649c757062be78d">SECTION_SBSS2</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_80456BB4[4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aefcde6b496d86ae14d3aba7cfbb4bce4" name="aefcde6b496d86ae14d3aba7cfbb4bce4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefcde6b496d86ae14d3aba7cfbb4bce4">&#9670;&#160;</a></span>j2dDefaultAlphaCmp</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> j2dDefaultAlphaCmp</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9c2ed61f6dc8341adabd25bbdc3f1a8c" name="a9c2ed61f6dc8341adabd25bbdc3f1a8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c2ed61f6dc8341adabd25bbdc3f1a8c">&#9670;&#160;</a></span>j2dDefaultColorChanInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> j2dDefaultColorChanInfo</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a57865002c1e9c66c2baa86f395b32b93" name="a57865002c1e9c66c2baa86f395b32b93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57865002c1e9c66c2baa86f395b32b93">&#9670;&#160;</a></span>j2dDefaultIndTevStageInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const j2dDefaultIndTevStageInfo[12]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac78d15e6446b9d91e5f183042b209352" name="ac78d15e6446b9d91e5f183042b209352"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac78d15e6446b9d91e5f183042b209352">&#9670;&#160;</a></span>j2dDefaultIndTexCoordScaleInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> j2dDefaultIndTexCoordScaleInfo[2+2]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa2fc5ee0540f0280bdfc452ec74b12c4" name="aa2fc5ee0540f0280bdfc452ec74b12c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2fc5ee0540f0280bdfc452ec74b12c4">&#9670;&#160;</a></span>j2dDefaultIndTexMtxInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const j2dDefaultIndTexMtxInfo[28]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aba8859000b014c33822c07a9b122177a" name="aba8859000b014c33822c07a9b122177a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba8859000b014c33822c07a9b122177a">&#9670;&#160;</a></span>j2dDefaultIndTexOrderNull</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> j2dDefaultIndTexOrderNull[1+1]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7c0be9c8ad14c784a7d331ff7c43c362" name="a7c0be9c8ad14c784a7d331ff7c43c362"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c0be9c8ad14c784a7d331ff7c43c362">&#9670;&#160;</a></span>j2dDefaultTevOrderInfoNull</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> j2dDefaultTevOrderInfoNull</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a080bb362d667e2467fca3c86fd47b912" name="a080bb362d667e2467fca3c86fd47b912"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a080bb362d667e2467fca3c86fd47b912">&#9670;&#160;</a></span>j2dDefaultTevSwapMode</h2>
 
@@ -1743,8 +1515,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aa8388a18799f2a1182700c8538d4df6c" name="aa8388a18799f2a1182700c8538d4df6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8388a18799f2a1182700c8538d4df6c">&#9670;&#160;</a></span>j2dDefaultTevSwapModeTable</h2>
+<a id="a23c333edf44eb557879add113cebae44" name="a23c333edf44eb557879add113cebae44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23c333edf44eb557879add113cebae44">&#9670;&#160;</a></span>lit_2018</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1753,95 +1525,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> j2dDefaultTevSwapModeTable</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a430db5b3f9cf77b92b5b3dc1db471303" name="a430db5b3f9cf77b92b5b3dc1db471303"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a430db5b3f9cf77b92b5b3dc1db471303">&#9670;&#160;</a></span>j2dDefaultTexCoordInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const j2dDefaultTexCoordInfo[32]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af637f5ffedd5777298a9966fcc365b72" name="af637f5ffedd5777298a9966fcc365b72"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af637f5ffedd5777298a9966fcc365b72">&#9670;&#160;</a></span>lit_1887</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> lit_1887 = 0xFFFFFFFF</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a297760c279ffde1e7636b314aa0e8be6" name="a297760c279ffde1e7636b314aa0e8be6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a297760c279ffde1e7636b314aa0e8be6">&#9670;&#160;</a></span>lit_2018</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a4f4769b6050d0b45c649c757062be78d">SECTION_SBSS2</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> lit_2018[4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a02fe5757eab29914e412fc549a2a7afe" name="a02fe5757eab29914e412fc549a2a7afe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02fe5757eab29914e412fc549a2a7afe">&#9670;&#160;</a></span>lit_2039</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> lit_2039 = 0xFFFFFFFF</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a4f4769b6050d0b45c649c757062be78d">SECTION_SBSS2</a> <a class="el" href="GXStruct_8h.html#a6e884c434a48c87e5eb4fa7e60bd897b">GXColorS10</a> lit_2018</td>
         </tr>
       </table>
   </td>

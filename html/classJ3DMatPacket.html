@@ -127,6 +127,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aaffd1f2c5ab95798f3b87a5784680f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84747c6dffc6c96c64aab4915b767273"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJ3DMatPacket.html#a84747c6dffc6c96c64aab4915b767273">isChanged</a> () const</td></tr>
 <tr class="separator:a84747c6dffc6c96c64aab4915b767273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e13a1c2681a06353b1146f6fb9b28c2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJ3DMatPacket.html#a0e13a1c2681a06353b1146f6fb9b28c2">isEnabled_Diff</a> () const</td></tr>
+<tr class="separator:a0e13a1c2681a06353b1146f6fb9b28c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a287538cb1cf122f4aff2b518ec560b85"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJ3DMatPacket.html#a287538cb1cf122f4aff2b518ec560b85">~J3DMatPacket</a> ()</td></tr>
 <tr class="separator:a287538cb1cf122f4aff2b518ec560b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0965b685d5fdf39eeba81d19b5c6ab0"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJ3DMatPacket.html#ab0965b685d5fdf39eeba81d19b5c6ab0">entry</a> (<a class="el" href="structJ3DDrawBuffer.html">J3DDrawBuffer</a> *)</td></tr>
@@ -148,6 +150,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a91f03cf277af4a82919a7e537c39f00d inherit pub_methods_classJ3DDrawPacket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a972013f447dd066c3451a5d4096fc705 inherit pub_methods_classJ3DDrawPacket"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJ3DDrawPacket.html#a972013f447dd066c3451a5d4096fc705">setDisplayListObj</a> (<a class="el" href="structJ3DDisplayListObj.html">J3DDisplayListObj</a> *pObj)</td></tr>
 <tr class="separator:a972013f447dd066c3451a5d4096fc705 inherit pub_methods_classJ3DDrawPacket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01fb109a6ee6e23c06670e8b02c49a90 inherit pub_methods_classJ3DDrawPacket"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJ3DDrawPacket.html#a01fb109a6ee6e23c06670e8b02c49a90">beginPatch</a> ()</td></tr>
+<tr class="separator:a01fb109a6ee6e23c06670e8b02c49a90 inherit pub_methods_classJ3DDrawPacket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f50ec523101c44714c1e7153ab5598a inherit pub_methods_classJ3DDrawPacket"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJ3DDrawPacket.html#a6f50ec523101c44714c1e7153ab5598a">endPatch</a> ()</td></tr>
+<tr class="separator:a6f50ec523101c44714c1e7153ab5598a inherit pub_methods_classJ3DDrawPacket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88421373001ef864f3dbfd514835e6c7 inherit pub_methods_classJ3DDrawPacket"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJ3DDrawPacket.html#a88421373001ef864f3dbfd514835e6c7">callDL</a> () const</td></tr>
 <tr class="separator:a88421373001ef864f3dbfd514835e6c7 inherit pub_methods_classJ3DDrawPacket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac28c91a7813ed8e36fc4a63b25ad634 inherit pub_methods_classJ3DDrawPacket"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJ3DDrawPacket.html#aac28c91a7813ed8e36fc4a63b25ad634">checkFlag</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>) const</td></tr>
@@ -218,9 +224,9 @@ Public Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classJ3DDrawPacket"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classJ3DDrawPacket')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classJ3DDrawPacket.html">J3DDrawPacket</a></td></tr>
-<tr class="memitem:ae8a60b5c0fca2f6af55aac455acf2bda inherit pub_types_classJ3DDrawPacket"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classJ3DDrawPacket.html#ae8a60b5c0fca2f6af55aac455acf2bdaafe0b2b49c27c19a7108d8a417deba829">LOCKED</a> = 0x01
+<tr class="memitem:a60a6ac2f15dcb6c5a508c9edd721a18e inherit pub_types_classJ3DDrawPacket"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="classJ3DDrawPacket.html#a60a6ac2f15dcb6c5a508c9edd721a18eafe0b2b49c27c19a7108d8a417deba829">LOCKED</a> = 0x01
  }</td></tr>
-<tr class="separator:ae8a60b5c0fca2f6af55aac455acf2bda inherit pub_types_classJ3DDrawPacket"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a60a6ac2f15dcb6c5a508c9edd721a18e inherit pub_types_classJ3DDrawPacket"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a565181e8a9d76a3cc55d873d84c8a0a5" name="a565181e8a9d76a3cc55d873d84c8a0a5"></a>
@@ -434,6 +440,31 @@ Additional Inherited Members</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">bool J3DMatPacket::isChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0e13a1c2681a06353b1146f6fb9b28c2" name="a0e13a1c2681a06353b1146f6fb9b28c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e13a1c2681a06353b1146f6fb9b28c2">&#9670;&#160;</a></span>isEnabled_Diff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool J3DMatPacket::isEnabled_Diff </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>

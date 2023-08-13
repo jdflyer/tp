@@ -89,12 +89,15 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="d__kankyo_8h_source.html">d/kankyo/d_kankyo.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="string_8h_source.html">MSL_C/string.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="J3DMatBlock_8h_source.html">JSystem/J3DGraphBase/J3DMatBlock.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J3DMaterial_8h_source.html">JSystem/J3DGraphBase/J3DMaterial.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="string_8h_source.html">MSL_C/string.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="c__counter_8h_source.html">SSystem/SComponent/c_counter.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="c__math_8h_source.html">SSystem/SComponent/c_math.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__a__player_8h_source.html">d/a/d_a_player.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__com__inf__game_8h_source.html">d/com/d_com_inf_game.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__kankyo__data_8h_source.html">d/kankyo/d_kankyo_data.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__kankyo__rain_8h_source.html">d/kankyo/d_kankyo_rain.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__meter2__info_8h_source.html">d/meter/d_meter2_info.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__msg__object_8h_source.html">d/msg/d_msg_object.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
@@ -102,6 +105,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="global_8h_source.html">global.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="m__Do__audio_8h_source.html">m_Do/m_Do_audio.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__a__kytag08_8h_source.html">rel/d/a/kytag/d_a_kytag08/d_a_kytag08.h</a>&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/dKy_WolfPowerup_FogNearFar__FPfPf.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/dKy_pos2_get_angle__FP4cXyzP4cXyzPsPs.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/dKy_twi_wolflight_set__Fi.s&quot;</code><br />
@@ -124,7 +128,6 @@ $(function() {
 <code>#include &quot;asm/d/kankyo/d_kankyo/envcolor_init__Fv.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/dKy_clear_game_init__Fv.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/setDaytime__18dScnKy_env_light_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/kankyo/d_kankyo/GetTimePass__20dStage_roomControl_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/setSunpos__18dScnKy_env_light_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/dKy_getdaytime_minute__Fv.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/dKy_getDarktime_minute__Fv.s&quot;</code><br />
@@ -139,42 +142,23 @@ $(function() {
 <code>#include &quot;asm/d/kankyo/d_kankyo/func_801A2128.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/settingTevStruct__18dScnKy_env_light_cFiP4cXyzP12dKy_tevstr_c.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/setLightTevColorType_MAJI_sub__FP11J3DMaterialP12dKy_tevstr_ci.s&quot;</code><br />
-<code>#include &quot;asm/d/kankyo/d_kankyo/dKy_cloudshadow_scroll__FP12J3DModelDataP12dKy_tevstr_ci.s&quot;</code><br />
-<code>#include &quot;asm/d/kankyo/d_kankyo/setLightTevColorType_MAJI__18dScnKy_env_light_cFP12J3DModelDataP12dKy_tevstr_c.s&quot;</code><br />
-<code>#include &quot;asm/d/kankyo/d_kankyo/CalcTevColor__18dScnKy_env_light_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/Eflight_flush_proc__18dScnKy_env_light_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/SetBaseLight__18dScnKy_env_light_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/exeKankyo__18dScnKy_env_light_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/dKy_undwater_filter_draw__Fv.s&quot;</code><br />
-<code>#include &quot;asm/d/kankyo/d_kankyo/dKy_Draw__FP17sub_kankyo__class.s&quot;</code><br />
-<code>#include &quot;asm/d/kankyo/d_kankyo/dKy_Execute__FP17sub_kankyo__class.s&quot;</code><br />
-<code>#include &quot;asm/d/kankyo/d_kankyo/dKy_Delete__FP17sub_kankyo__class.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/dKy_Create__FPv.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/dKy_setLight_init__Fv.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/dKy_GlobalLight_set__Fv.s&quot;</code><br />
-<code>#include &quot;asm/d/kankyo/d_kankyo/dKy_lightswitch_check__FP30stage_pure_lightvec_info_classc.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/dKy_setLight_nowroom_common__Fcf.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/dKy_setLight_nowroom_grass__Fcf.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/dKy_move_room_ratio__FP12dKy_tevstr_cPSc.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/dKy_setLight_nowroom_actor__FP12dKy_tevstr_c.s&quot;</code><br />
-<code>#include &quot;asm/d/kankyo/d_kankyo/dKy_Global_amb_set__FP12dKy_tevstr_c.s&quot;</code><br />
-<code>#include &quot;asm/d/kankyo/d_kankyo/dKy_mock_light_every_set__FP15LIGHT_INFLUENCE.s&quot;</code><br />
-<code>#include &quot;asm/d/kankyo/d_kankyo/dKy_plight_set__FP15LIGHT_INFLUENCE.s&quot;</code><br />
-<code>#include &quot;asm/d/kankyo/d_kankyo/dKy_dalkmist_inf_set__FP18DALKMIST_INFLUENCE.s&quot;</code><br />
-<code>#include &quot;asm/d/kankyo/d_kankyo/dKy_dalkmist_inf_cut__FP18DALKMIST_INFLUENCE.s&quot;</code><br />
-<code>#include &quot;asm/d/kankyo/d_kankyo/dKy_plight_priority_set__FP15LIGHT_INFLUENCE.s&quot;</code><br />
-<code>#include &quot;asm/d/kankyo/d_kankyo/dKy_plight_cut__FP15LIGHT_INFLUENCE.s&quot;</code><br />
-<code>#include &quot;asm/d/kankyo/d_kankyo/dKy_efplight_set__FP15LIGHT_INFLUENCE.s&quot;</code><br />
-<code>#include &quot;asm/d/kankyo/d_kankyo/dKy_efplight_cut__FP15LIGHT_INFLUENCE.s&quot;</code><br />
-<code>#include &quot;asm/d/kankyo/d_kankyo/dKy_bgparts_activelight_set__FP15LIGHT_INFLUENCEi.s&quot;</code><br />
-<code>#include &quot;asm/d/kankyo/d_kankyo/dKy_bgparts_activelight_cut__Fi.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/dKy_actor_addcol_amb_set__Fsssf.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/dKy_bg_addcol_amb_set__Fsssf.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/dKy_bg1_addcol_amb_set__Fsssf.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/dKy_bg2_addcol_amb_set__Fsssf.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/dKy_bg3_addcol_amb_set__Fsssf.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/dKy_addcol_fog_set__Fsssf.s&quot;</code><br />
-<code>#include &quot;asm/d/kankyo/d_kankyo/dKy_actor_addcol_set__Fsssf.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/dKy_vrbox_addcol_sky0_set__Fsssf.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/dKy_vrbox_addcol_kasumi_set__Fsssf.s&quot;</code><br />
 <code>#include &quot;asm/d/kankyo/d_kankyo/dKy_fog_startendz_set__Ffff.s&quot;</code><br />
@@ -760,8 +744,8 @@ Functions</h2></td></tr>
 <tr class="separator:abab854e6ee2bb96b9ce6ad12af25f0d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2444cc9341f7457b3de5488399eb955"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#af2444cc9341f7457b3de5488399eb955">_restfpr_29</a> ()</td></tr>
 <tr class="separator:af2444cc9341f7457b3de5488399eb955"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60541d7c3cfbc97f9ab6e4b731e7b199"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a60541d7c3cfbc97f9ab6e4b731e7b199">__save_gpr</a> ()</td></tr>
-<tr class="separator:a60541d7c3cfbc97f9ab6e4b731e7b199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae61f38b4c5a663e641c82ecade261304"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#ae61f38b4c5a663e641c82ecade261304">_savegpr_14</a> ()</td></tr>
+<tr class="separator:ae61f38b4c5a663e641c82ecade261304"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf2003476edb6ea600bcbed61755db0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#adf2003476edb6ea600bcbed61755db0e">_savegpr_16</a> ()</td></tr>
 <tr class="separator:adf2003476edb6ea600bcbed61755db0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fcb3e161ea28d2eaf0d7cd548227067"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a1fcb3e161ea28d2eaf0d7cd548227067">_savegpr_17</a> ()</td></tr>
@@ -784,8 +768,8 @@ Functions</h2></td></tr>
 <tr class="separator:a96be8c79baacd021a226016df5297c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f3662cd06864ff7627d5424c192e6f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a5f3662cd06864ff7627d5424c192e6f2">_savegpr_29</a> ()</td></tr>
 <tr class="separator:a5f3662cd06864ff7627d5424c192e6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa51c34d9110eaec78a3c9a3cccc785bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#aa51c34d9110eaec78a3c9a3cccc785bb">__restore_gpr</a> ()</td></tr>
-<tr class="separator:aa51c34d9110eaec78a3c9a3cccc785bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d31e5e9a452cca5e48ef164a20f3078"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a6d31e5e9a452cca5e48ef164a20f3078">_restgpr_14</a> ()</td></tr>
+<tr class="separator:a6d31e5e9a452cca5e48ef164a20f3078"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a953daf5c47540e88f2726633be0f98be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a953daf5c47540e88f2726633be0f98be">_restgpr_16</a> ()</td></tr>
 <tr class="separator:a953daf5c47540e88f2726633be0f98be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab302b577146f85f15ee58c36ba502038"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#ab302b577146f85f15ee58c36ba502038">_restgpr_17</a> ()</td></tr>
@@ -848,14 +832,14 @@ Functions</h2></td></tr>
 <tr class="separator:a67e9a19e48df24f4ac9fd68d5e661bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae80466f36e38ead9d3c272e3cb6ccf22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#ae80466f36e38ead9d3c272e3cb6ccf22">dKy_FiveSenses_fullthrottle_dark</a> ()</td></tr>
 <tr class="separator:ae80466f36e38ead9d3c272e3cb6ccf22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4f10b20b2dcde4698411b35a3277420"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#ac4f10b20b2dcde4698411b35a3277420">dKy_light_influence_id</a> (<a class="el" href="structcXyz.html">cXyz</a> param_0, int param_1)</td></tr>
-<tr class="separator:ac4f10b20b2dcde4698411b35a3277420"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c2acecf3d4b23cedea5dde523118a99"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a3c2acecf3d4b23cedea5dde523118a99">dKy_eflight_influence_id</a> (<a class="el" href="structcXyz.html">cXyz</a> param_0, int param_1)</td></tr>
-<tr class="separator:a3c2acecf3d4b23cedea5dde523118a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ce5ae0c74209109504d88cb6cd89c67"><td class="memItemLeft" align="right" valign="top">static asm int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a9ce5ae0c74209109504d88cb6cd89c67">dKy_light_influence_id</a> (<a class="el" href="structcXyz.html">cXyz</a> param_0, int param_1)</td></tr>
+<tr class="separator:a9ce5ae0c74209109504d88cb6cd89c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae13bb95e3d1cde6137efdc43d92ced82"><td class="memItemLeft" align="right" valign="top">static asm int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#ae13bb95e3d1cde6137efdc43d92ced82">dKy_eflight_influence_id</a> (<a class="el" href="structcXyz.html">cXyz</a> param_0, int param_1)</td></tr>
+<tr class="separator:ae13bb95e3d1cde6137efdc43d92ced82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89b70a0417c33ce88c017434e2620e61"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="GXStruct_8h.html#a6e884c434a48c87e5eb4fa7e60bd897b">GXColorS10</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a89b70a0417c33ce88c017434e2620e61">dKy_light_influence_col</a> (int param_0)</td></tr>
 <tr class="separator:a89b70a0417c33ce88c017434e2620e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf9ac30e4540930020e988831bf99986"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#adf9ac30e4540930020e988831bf99986">dKy_light_influence_col</a> (<a class="el" href="struct__GXColor.html">_GXColor</a> *param_0, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_1)</td></tr>
-<tr class="separator:adf9ac30e4540930020e988831bf99986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40b9a841e2bb1988c7ba183748678c96"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="GXStruct_8h.html#a0419d171f4d66c2b2a77bd299ddbdcdc">GXColor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a40b9a841e2bb1988c7ba183748678c96">dKy_light_influence_col</a> (<a class="el" href="struct__GXColor.html">_GXColor</a> *param_0, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_1)</td></tr>
+<tr class="separator:a40b9a841e2bb1988c7ba183748678c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd9efbc74984f448fe96b3d66f8ddd4a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#afd9efbc74984f448fe96b3d66f8ddd4a">dKy_light_influence_power</a> (int param_0)</td></tr>
 <tr class="separator:afd9efbc74984f448fe96b3d66f8ddd4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea0602ad877c22e44611c2ddc2876ca7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#aea0602ad877c22e44611c2ddc2876ca7">dKy_light_influence_yuragi</a> (int param_0)</td></tr>
@@ -880,6 +864,10 @@ Functions</h2></td></tr>
 <tr class="separator:ade586b221a1f9ad93e008b48e0b865c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e4756b932f9eafe1c8157db76750962"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a3e4756b932f9eafe1c8157db76750962">dKy_clear_game_init</a> ()</td></tr>
 <tr class="separator:a3e4756b932f9eafe1c8157db76750962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a7dc2a88e109f4e15b661247665709a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a8a7dc2a88e109f4e15b661247665709a">sinf</a> (float x)</td></tr>
+<tr class="separator:a8a7dc2a88e109f4e15b661247665709a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b126b2344591e649c21c9ab0b8adb40"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a7b126b2344591e649c21c9ab0b8adb40">cosf</a> (float x)</td></tr>
+<tr class="separator:a7b126b2344591e649c21c9ab0b8adb40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7449db671f52eeb763e75e0431c0c442"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a7449db671f52eeb763e75e0431c0c442">dKy_getdaytime_hour</a> ()</td></tr>
 <tr class="separator:a7449db671f52eeb763e75e0431c0c442"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab96e157665541526c220bb8225c0462f"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#ab96e157665541526c220bb8225c0462f">dKy_getdaytime_minute</a> ()</td></tr>
@@ -888,8 +876,8 @@ Functions</h2></td></tr>
 <tr class="separator:a871029da6dad27c25d4dc8a99c823043"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93ea98fa947a1091acd51294b8f97582"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a93ea98fa947a1091acd51294b8f97582">dKy_getDarktime_hour</a> ()</td></tr>
 <tr class="separator:a93ea98fa947a1091acd51294b8f97582"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25f4045ad08ce4035b992ca100761f0a"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a25f4045ad08ce4035b992ca100761f0a">dKy_getDarktime_minute</a> ()</td></tr>
-<tr class="separator:a25f4045ad08ce4035b992ca100761f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaae6c8dd2bc29a8431dd139b963570df"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#aaae6c8dd2bc29a8431dd139b963570df">dKy_getDarktime_minute</a> ()</td></tr>
+<tr class="separator:aaae6c8dd2bc29a8431dd139b963570df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad848bf7e51aa89ed273bcc270e785f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#aad848bf7e51aa89ed273bcc270e785f1">dKy_getDarktime_week</a> ()</td></tr>
 <tr class="separator:aad848bf7e51aa89ed273bcc270e785f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9542c71976ccbb3232219a7ee94cc28c"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a9542c71976ccbb3232219a7ee94cc28c">dKy_calc_color_set</a> (<a class="el" href="struct__GXColorS10.html">_GXColorS10</a> *param_0, <a class="el" href="structcolor__RGB__class.html">color_RGB_class</a> *param_1, <a class="el" href="structcolor__RGB__class.html">color_RGB_class</a> *param_2, <a class="el" href="structcolor__RGB__class.html">color_RGB_class</a> *param_3, <a class="el" href="structcolor__RGB__class.html">color_RGB_class</a> *param_4, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_5, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_6, <a class="el" href="struct__GXColorS10.html">_GXColorS10</a> param_7, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_8)</td></tr>
@@ -898,18 +886,18 @@ Functions</h2></td></tr>
 <tr class="separator:a4fc0db786e5e56fae3006d7551d6ff63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72a67be7e2d47146d0178236c9dde8f6"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a72a67be7e2d47146d0178236c9dde8f6">setLightTevColorType_MAJI_sub</a> (<a class="el" href="structJ3DMaterial.html">J3DMaterial</a> *param_0, <a class="el" href="structdKy__tevstr__c.html">dKy_tevstr_c</a> *param_1, int param_2)</td></tr>
 <tr class="separator:a72a67be7e2d47146d0178236c9dde8f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e139a7bbe13392fc73b0263e2fbe6d1"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a3e139a7bbe13392fc73b0263e2fbe6d1">dKy_cloudshadow_scroll</a> (<a class="el" href="structJ3DModelData.html">J3DModelData</a> *param_0, <a class="el" href="structdKy__tevstr__c.html">dKy_tevstr_c</a> *param_1, int param_2)</td></tr>
-<tr class="separator:a3e139a7bbe13392fc73b0263e2fbe6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee9bb40c55329c259af189080fe6f9aa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#aee9bb40c55329c259af189080fe6f9aa">dKy_cloudshadow_scroll</a> (<a class="el" href="structJ3DModelData.html">J3DModelData</a> *i_modelData, <a class="el" href="structdKy__tevstr__c.html">dKy_tevstr_c</a> *i_tevstr, int param_2)</td></tr>
+<tr class="separator:aee9bb40c55329c259af189080fe6f9aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30b5b4a0c61a6b3fe89fe852bcd90e7f"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a30b5b4a0c61a6b3fe89fe852bcd90e7f">dKy_undwater_filter_draw</a> ()</td></tr>
 <tr class="separator:a30b5b4a0c61a6b3fe89fe852bcd90e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa84711348827c0510f6352570bdf96a4"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#aa84711348827c0510f6352570bdf96a4">dKy_Draw</a> (<a class="el" href="structsub__kankyo____class.html">sub_kankyo__class</a> *param_0)</td></tr>
-<tr class="separator:aa84711348827c0510f6352570bdf96a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9be0f7f0c7a84130936426a11c19f22a"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a9be0f7f0c7a84130936426a11c19f22a">dKy_Execute</a> (<a class="el" href="structsub__kankyo____class.html">sub_kankyo__class</a> *param_0)</td></tr>
-<tr class="separator:a9be0f7f0c7a84130936426a11c19f22a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad65cd3c96ea8b084150a6b7b331219cd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#ad65cd3c96ea8b084150a6b7b331219cd">dKy_IsDelete</a> (<a class="el" href="structsub__kankyo____class.html">sub_kankyo__class</a> *param_0)</td></tr>
-<tr class="separator:ad65cd3c96ea8b084150a6b7b331219cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29070f4ae3573c8d83f0bb1e21bb96ec"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a29070f4ae3573c8d83f0bb1e21bb96ec">dKy_Delete</a> (<a class="el" href="structsub__kankyo____class.html">sub_kankyo__class</a> *param_0)</td></tr>
-<tr class="separator:a29070f4ae3573c8d83f0bb1e21bb96ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cfb56d5b5f32a759cd7249a8a18cd96"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a9cfb56d5b5f32a759cd7249a8a18cd96">dKy_Draw</a> (<a class="el" href="structsub__kankyo____class.html">sub_kankyo__class</a> *i_this)</td></tr>
+<tr class="separator:a9cfb56d5b5f32a759cd7249a8a18cd96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07af43d683acd114eba6603b1a78d446"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a07af43d683acd114eba6603b1a78d446">dKy_Execute</a> (<a class="el" href="structsub__kankyo____class.html">sub_kankyo__class</a> *i_this)</td></tr>
+<tr class="separator:a07af43d683acd114eba6603b1a78d446"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b0b8149874663fa77a38360415699ec"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a1b0b8149874663fa77a38360415699ec">dKy_IsDelete</a> (<a class="el" href="structsub__kankyo____class.html">sub_kankyo__class</a> *i_this)</td></tr>
+<tr class="separator:a1b0b8149874663fa77a38360415699ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f5fe4be70e072a12c060a24e9c95f4f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a7f5fe4be70e072a12c060a24e9c95f4f">dKy_Delete</a> (<a class="el" href="structsub__kankyo____class.html">sub_kankyo__class</a> *i_this)</td></tr>
+<tr class="separator:a7f5fe4be70e072a12c060a24e9c95f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a386571f7265d54dc5c86426bbdc27e08"><td class="memItemLeft" align="right" valign="top">static asm int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a386571f7265d54dc5c86426bbdc27e08">dKy_Create</a> (void *param_0)</td></tr>
 <tr class="separator:a386571f7265d54dc5c86426bbdc27e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af39c72446ba4c85207f2ff7ce2628993"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#af39c72446ba4c85207f2ff7ce2628993">dKy_setLight_init</a> ()</td></tr>
@@ -918,8 +906,10 @@ Functions</h2></td></tr>
 <tr class="separator:a3212a567c13eab62a4df3edb3ad859f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5face9819d5be7f1e43bf682690cf3ea"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a5face9819d5be7f1e43bf682690cf3ea">dKy_GlobalLight_set</a> ()</td></tr>
 <tr class="separator:a5face9819d5be7f1e43bf682690cf3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31a6df60303b7295b7962bbb62db0dc6"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a31a6df60303b7295b7962bbb62db0dc6">dKy_lightswitch_check</a> (<a class="el" href="structstage__pure__lightvec__info__class.html">stage_pure_lightvec_info_class</a> *param_0, char param_1)</td></tr>
-<tr class="separator:a31a6df60303b7295b7962bbb62db0dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3264ed46cb15c79971ca3a79de22324c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a3264ed46cb15c79971ca3a79de22324c">dLVI_getSWLight</a> (<a class="el" href="structstage__pure__lightvec__info__class.html">stage_pure_lightvec_info_class</a> *i_info)</td></tr>
+<tr class="separator:a3264ed46cb15c79971ca3a79de22324c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a620a6df5b81f3671eba5c5f26f76eb29"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a620a6df5b81f3671eba5c5f26f76eb29">dKy_lightswitch_check</a> (<a class="el" href="structstage__pure__lightvec__info__class.html">stage_pure_lightvec_info_class</a> *param_0, char i_roomNo)</td></tr>
+<tr class="separator:a620a6df5b81f3671eba5c5f26f76eb29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90fe506df53cb786e15240f10ea1b37b"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a90fe506df53cb786e15240f10ea1b37b">dKy_setLight_nowroom_common</a> (char param_0, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_1)</td></tr>
 <tr class="separator:a90fe506df53cb786e15240f10ea1b37b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20daf4028cfe6224597a5fcfabf89084"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a20daf4028cfe6224597a5fcfabf89084">dKy_setLight_nowroom</a> (char param_0)</td></tr>
@@ -932,32 +922,32 @@ Functions</h2></td></tr>
 <tr class="separator:ab53752687b9ba2912add81aee8dca064"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa06060a0292237cca5f8dd530b902ee2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#aa06060a0292237cca5f8dd530b902ee2">dKy_setLight_again</a> ()</td></tr>
 <tr class="separator:aa06060a0292237cca5f8dd530b902ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2b133e86d977837dd495740bbaabaf5"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#ae2b133e86d977837dd495740bbaabaf5">dKy_Global_amb_set</a> (<a class="el" href="structdKy__tevstr__c.html">dKy_tevstr_c</a> *param_0)</td></tr>
-<tr class="separator:ae2b133e86d977837dd495740bbaabaf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b2593a1b316513802e1531a736f9f42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a2b2593a1b316513802e1531a736f9f42">dKy_Global_amb_set</a> (<a class="el" href="structdKy__tevstr__c.html">dKy_tevstr_c</a> *i_tevstr)</td></tr>
+<tr class="separator:a2b2593a1b316513802e1531a736f9f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f8a03d9d42288cfccc0656f1093c021"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structcXyz.html">cXyz</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a9f8a03d9d42288cfccc0656f1093c021">dKy_light_influence_pos</a> (int param_0)</td></tr>
 <tr class="separator:a9f8a03d9d42288cfccc0656f1093c021"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9360e0ffae8382f919394b1854717f6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcXyz.html">cXyz</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a9360e0ffae8382f919394b1854717f6b">dKy_plight_near_pos</a> ()</td></tr>
 <tr class="separator:a9360e0ffae8382f919394b1854717f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6f42488faee1e2a9ef52e98e0ad69fb"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#ac6f42488faee1e2a9ef52e98e0ad69fb">dKy_mock_light_every_set</a> (<a class="el" href="structLIGHT__INFLUENCE.html">LIGHT_INFLUENCE</a> *param_0)</td></tr>
-<tr class="separator:ac6f42488faee1e2a9ef52e98e0ad69fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c33234e1f583e15abf745fb9f8b8e81"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a3c33234e1f583e15abf745fb9f8b8e81">dKy_plight_set</a> (<a class="el" href="structLIGHT__INFLUENCE.html">LIGHT_INFLUENCE</a> *param_0)</td></tr>
-<tr class="separator:a3c33234e1f583e15abf745fb9f8b8e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64db19680042e1f977b06c925d299105"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a64db19680042e1f977b06c925d299105">dKy_dalkmist_inf_set</a> (<a class="el" href="structDALKMIST__INFLUENCE.html">DALKMIST_INFLUENCE</a> *param_0)</td></tr>
-<tr class="separator:a64db19680042e1f977b06c925d299105"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7a76298fbc480e78860da7b7abce259"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#af7a76298fbc480e78860da7b7abce259">dKy_dalkmist_inf_cut</a> (<a class="el" href="structDALKMIST__INFLUENCE.html">DALKMIST_INFLUENCE</a> *param_0)</td></tr>
-<tr class="separator:af7a76298fbc480e78860da7b7abce259"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a673528c9b0b24ab53e4ff0eaa5e26b"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a7a673528c9b0b24ab53e4ff0eaa5e26b">dKy_plight_priority_set</a> (<a class="el" href="structLIGHT__INFLUENCE.html">LIGHT_INFLUENCE</a> *param_0)</td></tr>
-<tr class="separator:a7a673528c9b0b24ab53e4ff0eaa5e26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7931ee2a875c85015c6d656d4528c02"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#af7931ee2a875c85015c6d656d4528c02">dKy_plight_cut</a> (<a class="el" href="structLIGHT__INFLUENCE.html">LIGHT_INFLUENCE</a> *param_0)</td></tr>
-<tr class="separator:af7931ee2a875c85015c6d656d4528c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a552094d8d0086a67b58e27301ace3d33"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a552094d8d0086a67b58e27301ace3d33">dKy_efplight_set</a> (<a class="el" href="structLIGHT__INFLUENCE.html">LIGHT_INFLUENCE</a> *param_0)</td></tr>
-<tr class="separator:a552094d8d0086a67b58e27301ace3d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5945e1cf64cc25ea87bf0d99d2990962"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a5945e1cf64cc25ea87bf0d99d2990962">dKy_efplight_cut</a> (<a class="el" href="structLIGHT__INFLUENCE.html">LIGHT_INFLUENCE</a> *param_0)</td></tr>
-<tr class="separator:a5945e1cf64cc25ea87bf0d99d2990962"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e89f5a21b1c023e55c4aee8d35fd4bb"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a2e89f5a21b1c023e55c4aee8d35fd4bb">dKy_bgparts_activelight_set</a> (<a class="el" href="structLIGHT__INFLUENCE.html">LIGHT_INFLUENCE</a> *param_0, int param_1)</td></tr>
-<tr class="separator:a2e89f5a21b1c023e55c4aee8d35fd4bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46b34f950a8c42a98e886d7f98edfaad"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a46b34f950a8c42a98e886d7f98edfaad">dKy_bgparts_activelight_cut</a> (int param_0)</td></tr>
-<tr class="separator:a46b34f950a8c42a98e886d7f98edfaad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cd6286d8ae2d95ae4d5f5c9094d53f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a1cd6286d8ae2d95ae4d5f5c9094d53f0">dKy_mock_light_every_set</a> (<a class="el" href="structLIGHT__INFLUENCE.html">LIGHT_INFLUENCE</a> *param_0)</td></tr>
+<tr class="separator:a1cd6286d8ae2d95ae4d5f5c9094d53f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf1579577306100e9a5fcb1c15f91933"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#abf1579577306100e9a5fcb1c15f91933">dKy_plight_set</a> (<a class="el" href="structLIGHT__INFLUENCE.html">LIGHT_INFLUENCE</a> *param_0)</td></tr>
+<tr class="separator:abf1579577306100e9a5fcb1c15f91933"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7b06ce5b25c3614c98030cb81cc1fb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#ab7b06ce5b25c3614c98030cb81cc1fb4">dKy_dalkmist_inf_set</a> (<a class="el" href="structDALKMIST__INFLUENCE.html">DALKMIST_INFLUENCE</a> *param_0)</td></tr>
+<tr class="separator:ab7b06ce5b25c3614c98030cb81cc1fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0af6bccb3ca76ac6386f489ee4b3362"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#af0af6bccb3ca76ac6386f489ee4b3362">dKy_dalkmist_inf_cut</a> (<a class="el" href="structDALKMIST__INFLUENCE.html">DALKMIST_INFLUENCE</a> *param_0)</td></tr>
+<tr class="separator:af0af6bccb3ca76ac6386f489ee4b3362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cebeb68bfbdbfb26e92cb2fac10f08b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a9cebeb68bfbdbfb26e92cb2fac10f08b">dKy_plight_priority_set</a> (<a class="el" href="structLIGHT__INFLUENCE.html">LIGHT_INFLUENCE</a> *param_0)</td></tr>
+<tr class="separator:a9cebeb68bfbdbfb26e92cb2fac10f08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b139f532fc762c3e7070b34999ec7d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a3b139f532fc762c3e7070b34999ec7d9">dKy_plight_cut</a> (<a class="el" href="structLIGHT__INFLUENCE.html">LIGHT_INFLUENCE</a> *param_0)</td></tr>
+<tr class="separator:a3b139f532fc762c3e7070b34999ec7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5a46db23604bf4cfc1763cd14aca543"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#af5a46db23604bf4cfc1763cd14aca543">dKy_efplight_set</a> (<a class="el" href="structLIGHT__INFLUENCE.html">LIGHT_INFLUENCE</a> *param_0)</td></tr>
+<tr class="separator:af5a46db23604bf4cfc1763cd14aca543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab987e271f7cc9b10add94b22945b03a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#ab987e271f7cc9b10add94b22945b03a4">dKy_efplight_cut</a> (<a class="el" href="structLIGHT__INFLUENCE.html">LIGHT_INFLUENCE</a> *param_0)</td></tr>
+<tr class="separator:ab987e271f7cc9b10add94b22945b03a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afee80b287a1cad9980f29eb6371426b1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#afee80b287a1cad9980f29eb6371426b1">dKy_bgparts_activelight_set</a> (<a class="el" href="structLIGHT__INFLUENCE.html">LIGHT_INFLUENCE</a> *influence_p, int param_1)</td></tr>
+<tr class="separator:afee80b287a1cad9980f29eb6371426b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3a8bce287a396fa67ab2a24923b7b19"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#af3a8bce287a396fa67ab2a24923b7b19">dKy_bgparts_activelight_cut</a> (int param_0)</td></tr>
+<tr class="separator:af3a8bce287a396fa67ab2a24923b7b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa35cc485602c45c0f8acd0e0e3523b20"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#aa35cc485602c45c0f8acd0e0e3523b20">dKy_actor_addcol_amb_set</a> (<a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> param_0, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> param_1, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> param_2, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_3)</td></tr>
 <tr class="separator:aa35cc485602c45c0f8acd0e0e3523b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17d745bcc6ca6a72b7c4f1de3ecc7be7"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a17d745bcc6ca6a72b7c4f1de3ecc7be7">dKy_bg_addcol_amb_set</a> (<a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> param_0, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> param_1, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> param_2, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_3)</td></tr>
@@ -970,8 +960,8 @@ Functions</h2></td></tr>
 <tr class="separator:a652818b54636b3fc5736eb41af15817f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4aaae032d821d863829de7353e67bdef"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a4aaae032d821d863829de7353e67bdef">dKy_addcol_fog_set</a> (<a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> param_0, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> param_1, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> param_2, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_3)</td></tr>
 <tr class="separator:a4aaae032d821d863829de7353e67bdef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98674d719952acc7891aacbf558db5b7"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a98674d719952acc7891aacbf558db5b7">dKy_actor_addcol_set</a> (<a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> param_0, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> param_1, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> param_2, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_3)</td></tr>
-<tr class="separator:a98674d719952acc7891aacbf558db5b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac43b1f0b3574bf52668a5e397315d383"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#ac43b1f0b3574bf52668a5e397315d383">dKy_actor_addcol_set</a> (<a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> r, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> g, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> b, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> factor)</td></tr>
+<tr class="separator:ac43b1f0b3574bf52668a5e397315d383"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2c2c61584a27000042abe78acbb3745"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#ae2c2c61584a27000042abe78acbb3745">dKy_vrbox_addcol_sky0_set</a> (<a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> param_0, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> param_1, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> param_2, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_3)</td></tr>
 <tr class="separator:ae2c2c61584a27000042abe78acbb3745"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4b291afb7542cac0398d459f9b9e054"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#ad4b291afb7542cac0398d459f9b9e054">dKy_vrbox_addcol_kasumi_set</a> (<a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> param_0, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> param_1, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> param_2, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_3)</td></tr>
@@ -984,8 +974,8 @@ Functions</h2></td></tr>
 <tr class="separator:a56038648dd591a3ee214dd63c5dd8244"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a117120b69d8f23c41f40b7a77ff8c6ae"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a117120b69d8f23c41f40b7a77ff8c6ae">dKy_Sound_init</a> ()</td></tr>
 <tr class="separator:a117120b69d8f23c41f40b7a77ff8c6ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a730e1c1f751fcc55d26d4405e4f59945"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a730e1c1f751fcc55d26d4405e4f59945">dKy_Sound_set</a> (<a class="el" href="structcXyz.html">cXyz</a> param_0, int param_1, unsigned int param_2, int param_3)</td></tr>
-<tr class="separator:a730e1c1f751fcc55d26d4405e4f59945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af214b0590095d1f035fafef326aa161a"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#af214b0590095d1f035fafef326aa161a">dKy_Sound_set</a> (<a class="el" href="structcXyz.html">cXyz</a> i_pos, int param_1, unsigned int i_actorID, int param_3)</td></tr>
+<tr class="separator:af214b0590095d1f035fafef326aa161a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29d428275d118cb240a86923e726f6d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structSND__INFLUENCE.html">SND_INFLUENCE</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a29d428275d118cb240a86923e726f6d2">dKy_Sound_get</a> ()</td></tr>
 <tr class="separator:a29d428275d118cb240a86923e726f6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f3352b87e45e959d0422caf09313dea"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a1f3352b87e45e959d0422caf09313dea">dKy_SordFlush_set</a> (<a class="el" href="structcXyz.html">cXyz</a> param_0, int param_1)</td></tr>
@@ -1060,30 +1050,30 @@ Functions</h2></td></tr>
 <tr class="separator:a55375fc910f71c32339a0d1ee67bb0c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0419e62f4dbce1d3e7b859a638185f41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a0419e62f4dbce1d3e7b859a638185f41">dKy_camera_water_in_status_check</a> ()</td></tr>
 <tr class="separator:a0419e62f4dbce1d3e7b859a638185f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a7ec6ea6e8d80842e5b27bc5047848f"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a9a7ec6ea6e8d80842e5b27bc5047848f">dKy_pol_efftype_get</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const *param_0)</td></tr>
-<tr class="separator:a9a7ec6ea6e8d80842e5b27bc5047848f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad54a5f005e85a572236be95c9581bc6d"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#ad54a5f005e85a572236be95c9581bc6d">dKy_pol_efftype2_get</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const *param_0)</td></tr>
-<tr class="separator:ad54a5f005e85a572236be95c9581bc6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab492642aaf7d630056bc425c202eb3e0"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#ab492642aaf7d630056bc425c202eb3e0">dKy_pol_efftype_get</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const *param_0)</td></tr>
+<tr class="separator:ab492642aaf7d630056bc425c202eb3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5bde8895e6816ef6d949fa28c9f757c"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#af5bde8895e6816ef6d949fa28c9f757c">dKy_pol_efftype2_get</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const *param_0)</td></tr>
+<tr class="separator:af5bde8895e6816ef6d949fa28c9f757c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9548f8a4f4281e575cf6fc343ea8c21d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a9548f8a4f4281e575cf6fc343ea8c21d">dKy_pol_sound_get</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const *p_poly)</td></tr>
 <tr class="separator:a9548f8a4f4281e575cf6fc343ea8c21d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a74e699573fa80e731906699a4d09c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a3a74e699573fa80e731906699a4d09c9">dKy_pol_argument_get</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const *p_poly)</td></tr>
 <tr class="separator:a3a74e699573fa80e731906699a4d09c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac207db46165c761d68f50aa9e490c32c"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#ac207db46165c761d68f50aa9e490c32c">dKy_pol_eff_prim_get</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const *param_0, <a class="el" href="struct__GXColor.html">_GXColor</a> *param_1)</td></tr>
-<tr class="separator:ac207db46165c761d68f50aa9e490c32c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a513ccb8ea6e7747c1b1de4b361b61411"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a513ccb8ea6e7747c1b1de4b361b61411">dKy_pol_eff_prim_get</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const *param_0, <a class="el" href="struct__GXColor.html">_GXColor</a> *param_1)</td></tr>
+<tr class="separator:a513ccb8ea6e7747c1b1de4b361b61411"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad40954eb95616c10393df67487c60e62"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#ad40954eb95616c10393df67487c60e62">dKy_pol_eff_env_get</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const *param_0, <a class="el" href="struct__GXColor.html">_GXColor</a> *param_1)</td></tr>
 <tr class="separator:ad40954eb95616c10393df67487c60e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11da371734ce55884bdfa7b8b71aa57f"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a11da371734ce55884bdfa7b8b71aa57f">dKy_pol_eff2_prim_get</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const *param_0, <a class="el" href="struct__GXColor.html">_GXColor</a> *param_1)</td></tr>
 <tr class="separator:a11da371734ce55884bdfa7b8b71aa57f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeba9079456d9a497185c75388223330"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#adeba9079456d9a497185c75388223330">dKy_pol_eff2_env_get</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const *param_0, <a class="el" href="struct__GXColor.html">_GXColor</a> *param_1)</td></tr>
 <tr class="separator:adeba9079456d9a497185c75388223330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a970dd2085919c75551dd9a65abb0fab3"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a970dd2085919c75551dd9a65abb0fab3">dKy_pol_eff_alpha_get</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const *param_0)</td></tr>
-<tr class="separator:a970dd2085919c75551dd9a65abb0fab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55c7297eaf907f1378f86635e016d882"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a55c7297eaf907f1378f86635e016d882">dKy_pol_eff_ratio_get</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const *param_0)</td></tr>
-<tr class="separator:a55c7297eaf907f1378f86635e016d882"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab599fabad6da47a605fe77e7371bf7a8"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#ab599fabad6da47a605fe77e7371bf7a8">dKy_pol_eff2_alpha_get</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const *param_0)</td></tr>
-<tr class="separator:ab599fabad6da47a605fe77e7371bf7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7519dbe0fa92d6897c5ad64f24c005ce"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a7519dbe0fa92d6897c5ad64f24c005ce">dKy_pol_eff2_ratio_get</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const *param_0)</td></tr>
-<tr class="separator:a7519dbe0fa92d6897c5ad64f24c005ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1ddef923474a030e3d1d1fae0a18fc4"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#ad1ddef923474a030e3d1d1fae0a18fc4">dKy_pol_eff_alpha_get</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const *param_0)</td></tr>
+<tr class="separator:ad1ddef923474a030e3d1d1fae0a18fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85c72ab66563e3c1fa6d682142994db9"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a85c72ab66563e3c1fa6d682142994db9">dKy_pol_eff_ratio_get</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const *param_0)</td></tr>
+<tr class="separator:a85c72ab66563e3c1fa6d682142994db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a3c83b496eb590089f6e227a7268234"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a5a3c83b496eb590089f6e227a7268234">dKy_pol_eff2_alpha_get</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const *param_0)</td></tr>
+<tr class="separator:a5a3c83b496eb590089f6e227a7268234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b22112b952622115f3817f1d35c2c0e"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a0b22112b952622115f3817f1d35c2c0e">dKy_pol_eff2_ratio_get</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const *param_0)</td></tr>
+<tr class="separator:a0b22112b952622115f3817f1d35c2c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a318c8f9f324a2956c70338f55d4ae092"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a318c8f9f324a2956c70338f55d4ae092">dKy_TeachWind_existence_chk</a> ()</td></tr>
 <tr class="separator:a318c8f9f324a2956c70338f55d4ae092"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f60a4e8b06368e52d737a9b5c0aa903"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a7f60a4e8b06368e52d737a9b5c0aa903">dKy_SunMoon_Light_Check</a> ()</td></tr>
@@ -1422,10 +1412,10 @@ Variables</h2></td></tr>
 <tr class="separator:ad29617e61abc1e9f727b51624cc03489"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06af9517a988edb1f48aa61f49316d43"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a06af9517a988edb1f48aa61f49316d43">lit_7187</a> = 95.0f</td></tr>
 <tr class="separator:a06af9517a988edb1f48aa61f49316d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89ae3bb90d6adbb955cddbe2d98d9112"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a89ae3bb90d6adbb955cddbe2d98d9112">lightMask</a> [1+1]</td></tr>
-<tr class="separator:a89ae3bb90d6adbb955cddbe2d98d9112"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2b4183b2ad70095baf1a4a68f989d9a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#ae2b4183b2ad70095baf1a4a68f989d9a">lightStatusPt</a> = (void*)&amp;<a class="el" href="d__kankyo_8cpp.html#a52950e77a717678fd00f4a7871a6ebd1">lightStatusData</a></td></tr>
-<tr class="separator:ae2b4183b2ad70095baf1a4a68f989d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7de14d1d9809d929983c1e71f9501aa"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#ac7de14d1d9809d929983c1e71f9501aa">lightMask</a> = 0x0001</td></tr>
+<tr class="separator:ac7de14d1d9809d929983c1e71f9501aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad445451543305f6ab5b0f5256aceb0a8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="structLightStatus.html">LightStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#ad445451543305f6ab5b0f5256aceb0a8">lightStatusPt</a> = <a class="el" href="d__kankyo_8cpp.html#a52950e77a717678fd00f4a7871a6ebd1">lightStatusData</a></td></tr>
+<tr class="separator:ad445451543305f6ab5b0f5256aceb0a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c09dfa5a597171e850399fd6cf7d712"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a6c09dfa5a597171e850399fd6cf7d712">lit_7365</a> = 67.5f</td></tr>
 <tr class="separator:a6c09dfa5a597171e850399fd6cf7d712"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b70888cbe5cd4f8b91829f478c5a92b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a1b70888cbe5cd4f8b91829f478c5a92b">lit_7366</a> = 292.5f</td></tr>
@@ -1458,8 +1448,6 @@ Variables</h2></td></tr>
 <tr class="separator:ac87b236072bf90be5b0d50adc7f5ff8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad29e69322f14d5fb8b002e3a23a74dbd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#ad29e69322f14d5fb8b002e3a23a74dbd">stringBase_80394E70</a> = &quot;D_MN&quot;</td></tr>
 <tr class="separator:ad29e69322f14d5fb8b002e3a23a74dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56fdbbb861c16cbeaa3b2fe9c65b470e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a56fdbbb861c16cbeaa3b2fe9c65b470e">stringBase_80394E75</a> = &quot;\nPOINTLIGHT COUNT OVER!!!\n&quot;</td></tr>
-<tr class="separator:a56fdbbb861c16cbeaa3b2fe9c65b470e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbabbca58c8a3a06c0ae171da358a33f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#afbabbca58c8a3a06c0ae171da358a33f">stringBase_80394E90</a></td></tr>
 <tr class="separator:afbabbca58c8a3a06c0ae171da358a33f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23a309e5f55316616d770e66a191df66"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a23a309e5f55316616d770e66a191df66">lit_8647</a> = 160000.0f</td></tr>
@@ -1560,14 +1548,14 @@ Variables</h2></td></tr>
 <tr class="separator:afacff30230c02240efa557da47a4c4b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5e47ddc35669f166c18815829e1f813"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#aa5e47ddc35669f166c18815829e1f813">pad_80394F35</a> = &quot;\0\0&quot;</td></tr>
 <tr class="separator:aa5e47ddc35669f166c18815829e1f813"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33b0bc7f6805392ec181a77279fc857f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a33b0bc7f6805392ec181a77279fc857f">l_zmodeUpEnable</a> = 0x01030100</td></tr>
-<tr class="separator:a33b0bc7f6805392ec181a77279fc857f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e43568d6208982f3585afde2c31662a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a2e43568d6208982f3585afde2c31662a">l_zmodeUpDisable</a> = 0x01030000</td></tr>
-<tr class="separator:a2e43568d6208982f3585afde2c31662a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb076130b9b784aea84eca3a1c400c25"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#afb076130b9b784aea84eca3a1c400c25">l_alphaCompInfoOPA</a> [8]</td></tr>
-<tr class="separator:afb076130b9b784aea84eca3a1c400c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4aabcae57c9a833ee61b8527577c7c62"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a4aabcae57c9a833ee61b8527577c7c62">l_alphaCompInfo</a> [8]</td></tr>
-<tr class="separator:a4aabcae57c9a833ee61b8527577c7c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac534c2e8c9f777ee352d644f3ce2a84f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="structJ3DZModeInfo.html">J3DZModeInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#ac534c2e8c9f777ee352d644f3ce2a84f">l_zmodeUpEnable</a> = {1, 3, 1}</td></tr>
+<tr class="separator:ac534c2e8c9f777ee352d644f3ce2a84f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62249e3dd53f81a0500fb7c6d526cd95"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="structJ3DZModeInfo.html">J3DZModeInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a62249e3dd53f81a0500fb7c6d526cd95">l_zmodeUpDisable</a> = {1, 3, 0}</td></tr>
+<tr class="separator:a62249e3dd53f81a0500fb7c6d526cd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31eb65d9cc86a217b388eea468433c5a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="structJ3DAlphaCompInfo.html">J3DAlphaCompInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a31eb65d9cc86a217b388eea468433c5a">l_alphaCompInfoOPA</a></td></tr>
+<tr class="separator:a31eb65d9cc86a217b388eea468433c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a111254e1a17d5e23d30047197fc47d5c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="structJ3DAlphaCompInfo.html">J3DAlphaCompInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a111254e1a17d5e23d30047197fc47d5c">l_alphaCompInfo</a></td></tr>
+<tr class="separator:a111254e1a17d5e23d30047197fc47d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53acece3faaf724e4d6fac55c2a9f504"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a53acece3faaf724e4d6fac55c2a9f504">lit_10916</a> = 245.0f</td></tr>
 <tr class="separator:a53acece3faaf724e4d6fac55c2a9f504"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34e35a24a121d8505edee37ec7202a39"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__kankyo_8cpp.html#a34e35a24a121d8505edee37ec7202a39">lit_10917</a> = 45.0f</td></tr>
@@ -2046,40 +2034,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aa51c34d9110eaec78a3c9a3cccc785bb" name="aa51c34d9110eaec78a3c9a3cccc785bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa51c34d9110eaec78a3c9a3cccc785bb">&#9670;&#160;</a></span>__restore_gpr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void __restore_gpr </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a60541d7c3cfbc97f9ab6e4b731e7b199" name="a60541d7c3cfbc97f9ab6e4b731e7b199"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60541d7c3cfbc97f9ab6e4b731e7b199">&#9670;&#160;</a></span>__save_gpr()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void __save_gpr </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a690ce9fce8a6d13453e15e0832059ea1" name="a690ce9fce8a6d13453e15e0832059ea1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a690ce9fce8a6d13453e15e0832059ea1">&#9670;&#160;</a></span>__sinit_d_kankyo_cpp()</h2>
 
@@ -2105,6 +2059,23 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void _restfpr_29 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6d31e5e9a452cca5e48ef164a20f3078" name="a6d31e5e9a452cca5e48ef164a20f3078"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d31e5e9a452cca5e48ef164a20f3078">&#9670;&#160;</a></span>_restgpr_14()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _restgpr_14 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -2309,6 +2280,23 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void _savefpr_29 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae61f38b4c5a663e641c82ecade261304" name="ae61f38b4c5a663e641c82ecade261304"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae61f38b4c5a663e641c82ecade261304">&#9670;&#160;</a></span>_savegpr_14()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _savegpr_14 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -2775,6 +2763,32 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a7b126b2344591e649c21c9ab0b8adb40" name="a7b126b2344591e649c21c9ab0b8adb40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b126b2344591e649c21c9ab0b8adb40">&#9670;&#160;</a></span>cosf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float cosf </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae389161916a6896bc6bc0eaa2ef0b2f6" name="ae389161916a6896bc6bc0eaa2ef0b2f6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae389161916a6896bc6bc0eaa2ef0b2f6">&#9670;&#160;</a></span>create__Q213mDoGph_gInf_c7bloom_cFv()</h2>
 
@@ -3018,35 +3032,35 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a98674d719952acc7891aacbf558db5b7" name="a98674d719952acc7891aacbf558db5b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98674d719952acc7891aacbf558db5b7">&#9670;&#160;</a></span>dKy_actor_addcol_set()</h2>
+<a id="ac43b1f0b3574bf52668a5e397315d383" name="ac43b1f0b3574bf52668a5e397315d383"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac43b1f0b3574bf52668a5e397315d383">&#9670;&#160;</a></span>dKy_actor_addcol_set()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void dKy_actor_addcol_set </td>
+          <td class="memname">void dKy_actor_addcol_set </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a>&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname"><em>r</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a>&#160;</td>
-          <td class="paramname"><em>param_1</em>, </td>
+          <td class="paramname"><em>g</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a>&#160;</td>
-          <td class="paramname"><em>param_2</em>, </td>
+          <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td>
-          <td class="paramname"><em>param_3</em>&#160;</td>
+          <td class="paramname"><em>factor</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3427,8 +3441,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a46b34f950a8c42a98e886d7f98edfaad" name="a46b34f950a8c42a98e886d7f98edfaad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46b34f950a8c42a98e886d7f98edfaad">&#9670;&#160;</a></span>dKy_bgparts_activelight_cut()</h2>
+<a id="af3a8bce287a396fa67ab2a24923b7b19" name="af3a8bce287a396fa67ab2a24923b7b19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3a8bce287a396fa67ab2a24923b7b19">&#9670;&#160;</a></span>dKy_bgparts_activelight_cut()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3437,7 +3451,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void dKy_bgparts_activelight_cut </td>
+          <td class="memname">static void dKy_bgparts_activelight_cut </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -3478,8 +3492,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a2e89f5a21b1c023e55c4aee8d35fd4bb" name="a2e89f5a21b1c023e55c4aee8d35fd4bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e89f5a21b1c023e55c4aee8d35fd4bb">&#9670;&#160;</a></span>dKy_bgparts_activelight_set()</h2>
+<a id="afee80b287a1cad9980f29eb6371426b1" name="afee80b287a1cad9980f29eb6371426b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afee80b287a1cad9980f29eb6371426b1">&#9670;&#160;</a></span>dKy_bgparts_activelight_set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3488,10 +3502,10 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void dKy_bgparts_activelight_set </td>
+          <td class="memname">static void dKy_bgparts_activelight_set </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structLIGHT__INFLUENCE.html">LIGHT_INFLUENCE</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname"><em>influence_p</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3918,8 +3932,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a3e139a7bbe13392fc73b0263e2fbe6d1" name="a3e139a7bbe13392fc73b0263e2fbe6d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e139a7bbe13392fc73b0263e2fbe6d1">&#9670;&#160;</a></span>dKy_cloudshadow_scroll()</h2>
+<a id="aee9bb40c55329c259af189080fe6f9aa" name="aee9bb40c55329c259af189080fe6f9aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee9bb40c55329c259af189080fe6f9aa">&#9670;&#160;</a></span>dKy_cloudshadow_scroll()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3928,16 +3942,16 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void dKy_cloudshadow_scroll </td>
+          <td class="memname">static void dKy_cloudshadow_scroll </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJ3DModelData.html">J3DModelData</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname"><em>i_modelData</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="structdKy__tevstr__c.html">dKy_tevstr_c</a> *&#160;</td>
-          <td class="paramname"><em>param_1</em>, </td>
+          <td class="paramname"><em>i_tevstr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -4087,14 +4101,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="af7a76298fbc480e78860da7b7abce259" name="af7a76298fbc480e78860da7b7abce259"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7a76298fbc480e78860da7b7abce259">&#9670;&#160;</a></span>dKy_dalkmist_inf_cut()</h2>
+<a id="af0af6bccb3ca76ac6386f489ee4b3362" name="af0af6bccb3ca76ac6386f489ee4b3362"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0af6bccb3ca76ac6386f489ee4b3362">&#9670;&#160;</a></span>dKy_dalkmist_inf_cut()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void dKy_dalkmist_inf_cut </td>
+          <td class="memname">void dKy_dalkmist_inf_cut </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structDALKMIST__INFLUENCE.html">DALKMIST_INFLUENCE</a> *&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -4122,14 +4136,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a64db19680042e1f977b06c925d299105" name="a64db19680042e1f977b06c925d299105"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64db19680042e1f977b06c925d299105">&#9670;&#160;</a></span>dKy_dalkmist_inf_set()</h2>
+<a id="ab7b06ce5b25c3614c98030cb81cc1fb4" name="ab7b06ce5b25c3614c98030cb81cc1fb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7b06ce5b25c3614c98030cb81cc1fb4">&#9670;&#160;</a></span>dKy_dalkmist_inf_set()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void dKy_dalkmist_inf_set </td>
+          <td class="memname">void dKy_dalkmist_inf_set </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structDALKMIST__INFLUENCE.html">DALKMIST_INFLUENCE</a> *&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -4381,8 +4395,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a29070f4ae3573c8d83f0bb1e21bb96ec" name="a29070f4ae3573c8d83f0bb1e21bb96ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29070f4ae3573c8d83f0bb1e21bb96ec">&#9670;&#160;</a></span>dKy_Delete()</h2>
+<a id="a7f5fe4be70e072a12c060a24e9c95f4f" name="a7f5fe4be70e072a12c060a24e9c95f4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f5fe4be70e072a12c060a24e9c95f4f">&#9670;&#160;</a></span>dKy_Delete()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4391,10 +4405,10 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void dKy_Delete </td>
+          <td class="memname">static int dKy_Delete </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structsub__kankyo____class.html">sub_kankyo__class</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em></td><td>)</td>
+          <td class="paramname"><em>i_this</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -4467,8 +4481,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aa84711348827c0510f6352570bdf96a4" name="aa84711348827c0510f6352570bdf96a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa84711348827c0510f6352570bdf96a4">&#9670;&#160;</a></span>dKy_Draw()</h2>
+<a id="a9cfb56d5b5f32a759cd7249a8a18cd96" name="a9cfb56d5b5f32a759cd7249a8a18cd96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cfb56d5b5f32a759cd7249a8a18cd96">&#9670;&#160;</a></span>dKy_Draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4477,10 +4491,10 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void dKy_Draw </td>
+          <td class="memname">static int dKy_Draw </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structsub__kankyo____class.html">sub_kankyo__class</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em></td><td>)</td>
+          <td class="paramname"><em>i_this</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -4518,8 +4532,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a3c2acecf3d4b23cedea5dde523118a99" name="a3c2acecf3d4b23cedea5dde523118a99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c2acecf3d4b23cedea5dde523118a99">&#9670;&#160;</a></span>dKy_eflight_influence_id()</h2>
+<a id="ae13bb95e3d1cde6137efdc43d92ced82" name="ae13bb95e3d1cde6137efdc43d92ced82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae13bb95e3d1cde6137efdc43d92ced82">&#9670;&#160;</a></span>dKy_eflight_influence_id()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4528,7 +4542,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void dKy_eflight_influence_id </td>
+          <td class="memname">static asm int dKy_eflight_influence_id </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structcXyz.html">cXyz</a>&#160;</td>
           <td class="paramname"><em>param_0</em>, </td>
@@ -4579,14 +4593,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5945e1cf64cc25ea87bf0d99d2990962" name="a5945e1cf64cc25ea87bf0d99d2990962"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5945e1cf64cc25ea87bf0d99d2990962">&#9670;&#160;</a></span>dKy_efplight_cut()</h2>
+<a id="ab987e271f7cc9b10add94b22945b03a4" name="ab987e271f7cc9b10add94b22945b03a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab987e271f7cc9b10add94b22945b03a4">&#9670;&#160;</a></span>dKy_efplight_cut()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void dKy_efplight_cut </td>
+          <td class="memname">void dKy_efplight_cut </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structLIGHT__INFLUENCE.html">LIGHT_INFLUENCE</a> *&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -4614,14 +4628,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a552094d8d0086a67b58e27301ace3d33" name="a552094d8d0086a67b58e27301ace3d33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a552094d8d0086a67b58e27301ace3d33">&#9670;&#160;</a></span>dKy_efplight_set()</h2>
+<a id="af5a46db23604bf4cfc1763cd14aca543" name="af5a46db23604bf4cfc1763cd14aca543"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5a46db23604bf4cfc1763cd14aca543">&#9670;&#160;</a></span>dKy_efplight_set()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void dKy_efplight_set </td>
+          <td class="memname">void dKy_efplight_set </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structLIGHT__INFLUENCE.html">LIGHT_INFLUENCE</a> *&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -4649,8 +4663,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a9be0f7f0c7a84130936426a11c19f22a" name="a9be0f7f0c7a84130936426a11c19f22a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9be0f7f0c7a84130936426a11c19f22a">&#9670;&#160;</a></span>dKy_Execute()</h2>
+<a id="a07af43d683acd114eba6603b1a78d446" name="a07af43d683acd114eba6603b1a78d446"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07af43d683acd114eba6603b1a78d446">&#9670;&#160;</a></span>dKy_Execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4659,10 +4673,10 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void dKy_Execute </td>
+          <td class="memname">static int dKy_Execute </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structsub__kankyo____class.html">sub_kankyo__class</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em></td><td>)</td>
+          <td class="paramname"><em>i_this</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -5039,14 +5053,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a25f4045ad08ce4035b992ca100761f0a" name="a25f4045ad08ce4035b992ca100761f0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25f4045ad08ce4035b992ca100761f0a">&#9670;&#160;</a></span>dKy_getDarktime_minute()</h2>
+<a id="aaae6c8dd2bc29a8431dd139b963570df" name="aaae6c8dd2bc29a8431dd139b963570df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaae6c8dd2bc29a8431dd139b963570df">&#9670;&#160;</a></span>dKy_getDarktime_minute()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void dKy_getDarktime_minute </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> dKy_getDarktime_minute </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -5210,17 +5224,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae2b133e86d977837dd495740bbaabaf5" name="ae2b133e86d977837dd495740bbaabaf5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2b133e86d977837dd495740bbaabaf5">&#9670;&#160;</a></span>dKy_Global_amb_set()</h2>
+<a id="a2b2593a1b316513802e1531a736f9f42" name="a2b2593a1b316513802e1531a736f9f42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b2593a1b316513802e1531a736f9f42">&#9670;&#160;</a></span>dKy_Global_amb_set()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void dKy_Global_amb_set </td>
+          <td class="memname">void dKy_Global_amb_set </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structdKy__tevstr__c.html">dKy_tevstr_c</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em></td><td>)</td>
+          <td class="paramname"><em>i_tevstr</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -5623,8 +5637,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad65cd3c96ea8b084150a6b7b331219cd" name="ad65cd3c96ea8b084150a6b7b331219cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad65cd3c96ea8b084150a6b7b331219cd">&#9670;&#160;</a></span>dKy_IsDelete()</h2>
+<a id="a1b0b8149874663fa77a38360415699ec" name="a1b0b8149874663fa77a38360415699ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b0b8149874663fa77a38360415699ec">&#9670;&#160;</a></span>dKy_IsDelete()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5633,10 +5647,10 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static bool dKy_IsDelete </td>
+          <td class="memname">static int dKy_IsDelete </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structsub__kankyo____class.html">sub_kankyo__class</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em></td><td>)</td>
+          <td class="paramname"><em>i_this</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -5742,14 +5756,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="adf9ac30e4540930020e988831bf99986" name="adf9ac30e4540930020e988831bf99986"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf9ac30e4540930020e988831bf99986">&#9670;&#160;</a></span>dKy_light_influence_col() <span class="overload">[1/2]</span></h2>
+<a id="a40b9a841e2bb1988c7ba183748678c96" name="a40b9a841e2bb1988c7ba183748678c96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40b9a841e2bb1988c7ba183748678c96">&#9670;&#160;</a></span>dKy_light_influence_col() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void dKy_light_influence_col </td>
+          <td class="memname">asm <a class="el" href="GXStruct_8h.html#a0419d171f4d66c2b2a77bd299ddbdcdc">GXColor</a> dKy_light_influence_col </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct__GXColor.html">_GXColor</a> *&#160;</td>
           <td class="paramname"><em>param_0</em>, </td>
@@ -5899,8 +5913,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac4f10b20b2dcde4698411b35a3277420" name="ac4f10b20b2dcde4698411b35a3277420"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4f10b20b2dcde4698411b35a3277420">&#9670;&#160;</a></span>dKy_light_influence_id()</h2>
+<a id="a9ce5ae0c74209109504d88cb6cd89c67" name="a9ce5ae0c74209109504d88cb6cd89c67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ce5ae0c74209109504d88cb6cd89c67">&#9670;&#160;</a></span>dKy_light_influence_id()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5909,7 +5923,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void dKy_light_influence_id </td>
+          <td class="memname">static asm int dKy_light_influence_id </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structcXyz.html">cXyz</a>&#160;</td>
           <td class="paramname"><em>param_0</em>, </td>
@@ -6231,8 +6245,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a31a6df60303b7295b7962bbb62db0dc6" name="a31a6df60303b7295b7962bbb62db0dc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31a6df60303b7295b7962bbb62db0dc6">&#9670;&#160;</a></span>dKy_lightswitch_check()</h2>
+<a id="a620a6df5b81f3671eba5c5f26f76eb29" name="a620a6df5b81f3671eba5c5f26f76eb29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a620a6df5b81f3671eba5c5f26f76eb29">&#9670;&#160;</a></span>dKy_lightswitch_check()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6241,7 +6255,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void dKy_lightswitch_check </td>
+          <td class="memname">static bool dKy_lightswitch_check </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structstage__pure__lightvec__info__class.html">stage_pure_lightvec_info_class</a> *&#160;</td>
           <td class="paramname"><em>param_0</em>, </td>
@@ -6250,7 +6264,7 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname"><em>i_roomNo</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -6292,14 +6306,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac6f42488faee1e2a9ef52e98e0ad69fb" name="ac6f42488faee1e2a9ef52e98e0ad69fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6f42488faee1e2a9ef52e98e0ad69fb">&#9670;&#160;</a></span>dKy_mock_light_every_set()</h2>
+<a id="a1cd6286d8ae2d95ae4d5f5c9094d53f0" name="a1cd6286d8ae2d95ae4d5f5c9094d53f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cd6286d8ae2d95ae4d5f5c9094d53f0">&#9670;&#160;</a></span>dKy_mock_light_every_set()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void dKy_mock_light_every_set </td>
+          <td class="memname">void dKy_mock_light_every_set </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structLIGHT__INFLUENCE.html">LIGHT_INFLUENCE</a> *&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -6714,14 +6728,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="af7931ee2a875c85015c6d656d4528c02" name="af7931ee2a875c85015c6d656d4528c02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7931ee2a875c85015c6d656d4528c02">&#9670;&#160;</a></span>dKy_plight_cut()</h2>
+<a id="a3b139f532fc762c3e7070b34999ec7d9" name="a3b139f532fc762c3e7070b34999ec7d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b139f532fc762c3e7070b34999ec7d9">&#9670;&#160;</a></span>dKy_plight_cut()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void dKy_plight_cut </td>
+          <td class="memname">void dKy_plight_cut </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structLIGHT__INFLUENCE.html">LIGHT_INFLUENCE</a> *&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -6783,14 +6797,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a7a673528c9b0b24ab53e4ff0eaa5e26b" name="a7a673528c9b0b24ab53e4ff0eaa5e26b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a673528c9b0b24ab53e4ff0eaa5e26b">&#9670;&#160;</a></span>dKy_plight_priority_set()</h2>
+<a id="a9cebeb68bfbdbfb26e92cb2fac10f08b" name="a9cebeb68bfbdbfb26e92cb2fac10f08b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cebeb68bfbdbfb26e92cb2fac10f08b">&#9670;&#160;</a></span>dKy_plight_priority_set()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void dKy_plight_priority_set </td>
+          <td class="memname">void dKy_plight_priority_set </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structLIGHT__INFLUENCE.html">LIGHT_INFLUENCE</a> *&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -6818,14 +6832,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a3c33234e1f583e15abf745fb9f8b8e81" name="a3c33234e1f583e15abf745fb9f8b8e81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c33234e1f583e15abf745fb9f8b8e81">&#9670;&#160;</a></span>dKy_plight_set()</h2>
+<a id="abf1579577306100e9a5fcb1c15f91933" name="abf1579577306100e9a5fcb1c15f91933"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf1579577306100e9a5fcb1c15f91933">&#9670;&#160;</a></span>dKy_plight_set()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void dKy_plight_set </td>
+          <td class="memname">void dKy_plight_set </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structLIGHT__INFLUENCE.html">LIGHT_INFLUENCE</a> *&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -6888,14 +6902,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ab599fabad6da47a605fe77e7371bf7a8" name="ab599fabad6da47a605fe77e7371bf7a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab599fabad6da47a605fe77e7371bf7a8">&#9670;&#160;</a></span>dKy_pol_eff2_alpha_get()</h2>
+<a id="a5a3c83b496eb590089f6e227a7268234" name="a5a3c83b496eb590089f6e227a7268234"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a3c83b496eb590089f6e227a7268234">&#9670;&#160;</a></span>dKy_pol_eff2_alpha_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void dKy_pol_eff2_alpha_get </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> dKy_pol_eff2_alpha_get </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const *&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -7013,14 +7027,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a7519dbe0fa92d6897c5ad64f24c005ce" name="a7519dbe0fa92d6897c5ad64f24c005ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7519dbe0fa92d6897c5ad64f24c005ce">&#9670;&#160;</a></span>dKy_pol_eff2_ratio_get()</h2>
+<a id="a0b22112b952622115f3817f1d35c2c0e" name="a0b22112b952622115f3817f1d35c2c0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b22112b952622115f3817f1d35c2c0e">&#9670;&#160;</a></span>dKy_pol_eff2_ratio_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void dKy_pol_eff2_ratio_get </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> dKy_pol_eff2_ratio_get </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const *&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -7048,14 +7062,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a970dd2085919c75551dd9a65abb0fab3" name="a970dd2085919c75551dd9a65abb0fab3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a970dd2085919c75551dd9a65abb0fab3">&#9670;&#160;</a></span>dKy_pol_eff_alpha_get()</h2>
+<a id="ad1ddef923474a030e3d1d1fae0a18fc4" name="ad1ddef923474a030e3d1d1fae0a18fc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1ddef923474a030e3d1d1fae0a18fc4">&#9670;&#160;</a></span>dKy_pol_eff_alpha_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void dKy_pol_eff_alpha_get </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> dKy_pol_eff_alpha_get </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const *&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -7128,14 +7142,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac207db46165c761d68f50aa9e490c32c" name="ac207db46165c761d68f50aa9e490c32c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac207db46165c761d68f50aa9e490c32c">&#9670;&#160;</a></span>dKy_pol_eff_prim_get()</h2>
+<a id="a513ccb8ea6e7747c1b1de4b361b61411" name="a513ccb8ea6e7747c1b1de4b361b61411"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a513ccb8ea6e7747c1b1de4b361b61411">&#9670;&#160;</a></span>dKy_pol_eff_prim_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void dKy_pol_eff_prim_get </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> dKy_pol_eff_prim_get </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const *&#160;</td>
           <td class="paramname"><em>param_0</em>, </td>
@@ -7173,14 +7187,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a55c7297eaf907f1378f86635e016d882" name="a55c7297eaf907f1378f86635e016d882"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55c7297eaf907f1378f86635e016d882">&#9670;&#160;</a></span>dKy_pol_eff_ratio_get()</h2>
+<a id="a85c72ab66563e3c1fa6d682142994db9" name="a85c72ab66563e3c1fa6d682142994db9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85c72ab66563e3c1fa6d682142994db9">&#9670;&#160;</a></span>dKy_pol_eff_ratio_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void dKy_pol_eff_ratio_get </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> dKy_pol_eff_ratio_get </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const *&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -7208,14 +7222,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad54a5f005e85a572236be95c9581bc6d" name="ad54a5f005e85a572236be95c9581bc6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad54a5f005e85a572236be95c9581bc6d">&#9670;&#160;</a></span>dKy_pol_efftype2_get()</h2>
+<a id="af5bde8895e6816ef6d949fa28c9f757c" name="af5bde8895e6816ef6d949fa28c9f757c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5bde8895e6816ef6d949fa28c9f757c">&#9670;&#160;</a></span>dKy_pol_efftype2_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void dKy_pol_efftype2_get </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> dKy_pol_efftype2_get </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const *&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -7243,14 +7257,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a9a7ec6ea6e8d80842e5b27bc5047848f" name="a9a7ec6ea6e8d80842e5b27bc5047848f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a7ec6ea6e8d80842e5b27bc5047848f">&#9670;&#160;</a></span>dKy_pol_efftype_get()</h2>
+<a id="ab492642aaf7d630056bc425c202eb3e0" name="ab492642aaf7d630056bc425c202eb3e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab492642aaf7d630056bc425c202eb3e0">&#9670;&#160;</a></span>dKy_pol_efftype_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void dKy_pol_efftype_get </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> dKy_pol_efftype_get </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const *&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -8329,8 +8343,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a730e1c1f751fcc55d26d4405e4f59945" name="a730e1c1f751fcc55d26d4405e4f59945"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a730e1c1f751fcc55d26d4405e4f59945">&#9670;&#160;</a></span>dKy_Sound_set()</h2>
+<a id="af214b0590095d1f035fafef326aa161a" name="af214b0590095d1f035fafef326aa161a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af214b0590095d1f035fafef326aa161a">&#9670;&#160;</a></span>dKy_Sound_set()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8339,7 +8353,7 @@ Variables</h2></td></tr>
           <td class="memname">asm void dKy_Sound_set </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structcXyz.html">cXyz</a>&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname"><em>i_pos</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -8351,7 +8365,7 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>param_2</em>, </td>
+          <td class="paramname"><em>i_actorID</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -9440,6 +9454,32 @@ Variables</h2></td></tr>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3264ed46cb15c79971ca3a79de22324c" name="a3264ed46cb15c79971ca3a79de22324c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3264ed46cb15c79971ca3a79de22324c">&#9670;&#160;</a></span>dLVI_getSWLight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> dLVI_getSWLight </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structstage__pure__lightvec__info__class.html">stage_pure_lightvec_info_class</a> *&#160;</td>
+          <td class="paramname"><em>i_info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -11422,6 +11462,32 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a8a7dc2a88e109f4e15b661247665709a" name="a8a7dc2a88e109f4e15b661247665709a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a7dc2a88e109f4e15b661247665709a">&#9670;&#160;</a></span>sinf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float sinf </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad426718aede5477831dd4fedbb52352e" name="ad426718aede5477831dd4fedbb52352e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad426718aede5477831dd4fedbb52352e">&#9670;&#160;</a></span>Sndpos__18dScnKy_env_light_cFv()</h2>
 
@@ -11608,7 +11674,7 @@ Variables</h2></td></tr>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__kankyo_8cpp_html_aff2ff895c8db5b8662dc5db6a3008d54"><div class="ttname"><a href="d__kankyo_8cpp.html#aff2ff895c8db5b8662dc5db6a3008d54">__dt__18dScnKy_env_light_cFv</a></div><div class="ttdeci">void __dt__18dScnKy_env_light_cFv()</div><div class="ttdef"><b>Definition:</b> d_kankyo.cpp:4099</div></div>
+<div class="ttc" id="ad__kankyo_8cpp_html_aff2ff895c8db5b8662dc5db6a3008d54"><div class="ttname"><a href="d__kankyo_8cpp.html#aff2ff895c8db5b8662dc5db6a3008d54">__dt__18dScnKy_env_light_cFv</a></div><div class="ttdeci">void __dt__18dScnKy_env_light_cFv()</div><div class="ttdef"><b>Definition:</b> d_kankyo.cpp:5905</div></div>
 <div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:12</div></div>
 </div><!-- fragment -->
 </div>
@@ -11810,13 +11876,13 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)0x00020000, (<span class="keywordtype">void</span>*)&amp;<a class="code hl_variable" href="d__kankyo_8cpp.html#ac9a9789b2ffb60ddbfc30473a0d372f5">l_dKy_Method</a>,</div>
 <div class="line">}</div>
 <div class="ttc" id="ad__a__no__chg__room_8cpp_html_a3de3a374119e8432d211e29713bce0ae"><div class="ttname"><a href="d__a__no__chg__room_8cpp.html#a3de3a374119e8432d211e29713bce0ae">g_fpcLf_Method</a></div><div class="ttdeci">void * g_fpcLf_Method[5+1]</div><div class="ttdef"><b>Definition:</b> f_pc_leaf.cpp:65</div></div>
-<div class="ttc" id="ad__kankyo_8cpp_html_ac9a9789b2ffb60ddbfc30473a0d372f5"><div class="ttname"><a href="d__kankyo_8cpp.html#ac9a9789b2ffb60ddbfc30473a0d372f5">l_dKy_Method</a></div><div class="ttdeci">static SECTION_DATA void * l_dKy_Method[5]</div><div class="ttdef"><b>Definition:</b> d_kankyo.cpp:1659</div></div>
+<div class="ttc" id="ad__kankyo_8cpp_html_ac9a9789b2ffb60ddbfc30473a0d372f5"><div class="ttname"><a href="d__kankyo_8cpp.html#ac9a9789b2ffb60ddbfc30473a0d372f5">l_dKy_Method</a></div><div class="ttdeci">static SECTION_DATA void * l_dKy_Method[5]</div><div class="ttdef"><b>Definition:</b> d_kankyo.cpp:1873</div></div>
 <div class="ttc" id="ad__kankyo_8cpp_html_adeca76fb267e16cf4c9ff4ccb8a28b8c"><div class="ttname"><a href="d__kankyo_8cpp.html#adeca76fb267e16cf4c9ff4ccb8a28b8c">g_fopKy_Method</a></div><div class="ttdeci">void * g_fopKy_Method[5+1]</div><div class="ttdef"><b>Definition:</b> f_op_kankyo.cpp:97</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a4aabcae57c9a833ee61b8527577c7c62" name="a4aabcae57c9a833ee61b8527577c7c62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4aabcae57c9a833ee61b8527577c7c62">&#9670;&#160;</a></span>l_alphaCompInfo</h2>
+<a id="a111254e1a17d5e23d30047197fc47d5c" name="a111254e1a17d5e23d30047197fc47d5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a111254e1a17d5e23d30047197fc47d5c">&#9670;&#160;</a></span>l_alphaCompInfo</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -11825,7 +11891,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> l_alphaCompInfo[8]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="structJ3DAlphaCompInfo.html">J3DAlphaCompInfo</a> l_alphaCompInfo</td>
         </tr>
       </table>
   </td>
@@ -11840,8 +11906,8 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="afb076130b9b784aea84eca3a1c400c25" name="afb076130b9b784aea84eca3a1c400c25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb076130b9b784aea84eca3a1c400c25">&#9670;&#160;</a></span>l_alphaCompInfoOPA</h2>
+<a id="a31eb65d9cc86a217b388eea468433c5a" name="a31eb65d9cc86a217b388eea468433c5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31eb65d9cc86a217b388eea468433c5a">&#9670;&#160;</a></span>l_alphaCompInfoOPA</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -11850,7 +11916,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> l_alphaCompInfoOPA[8]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="structJ3DAlphaCompInfo.html">J3DAlphaCompInfo</a> l_alphaCompInfoOPA</td>
         </tr>
       </table>
   </td>
@@ -11899,8 +11965,8 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a2e43568d6208982f3585afde2c31662a" name="a2e43568d6208982f3585afde2c31662a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e43568d6208982f3585afde2c31662a">&#9670;&#160;</a></span>l_zmodeUpDisable</h2>
+<a id="a62249e3dd53f81a0500fb7c6d526cd95" name="a62249e3dd53f81a0500fb7c6d526cd95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62249e3dd53f81a0500fb7c6d526cd95">&#9670;&#160;</a></span>l_zmodeUpDisable</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -11909,7 +11975,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> l_zmodeUpDisable = 0x01030000</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="structJ3DZModeInfo.html">J3DZModeInfo</a> l_zmodeUpDisable = {1, 3, 0}</td>
         </tr>
       </table>
   </td>
@@ -11921,8 +11987,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a33b0bc7f6805392ec181a77279fc857f" name="a33b0bc7f6805392ec181a77279fc857f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33b0bc7f6805392ec181a77279fc857f">&#9670;&#160;</a></span>l_zmodeUpEnable</h2>
+<a id="ac534c2e8c9f777ee352d644f3ce2a84f" name="ac534c2e8c9f777ee352d644f3ce2a84f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac534c2e8c9f777ee352d644f3ce2a84f">&#9670;&#160;</a></span>l_zmodeUpEnable</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -11931,7 +11997,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> l_zmodeUpEnable = 0x01030100</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="structJ3DZModeInfo.html">J3DZModeInfo</a> l_zmodeUpEnable = {1, 3, 1}</td>
         </tr>
       </table>
   </td>
@@ -11943,8 +12009,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a89ae3bb90d6adbb955cddbe2d98d9112" name="a89ae3bb90d6adbb955cddbe2d98d9112"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89ae3bb90d6adbb955cddbe2d98d9112">&#9670;&#160;</a></span>lightMask</h2>
+<a id="ac7de14d1d9809d929983c1e71f9501aa" name="ac7de14d1d9809d929983c1e71f9501aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7de14d1d9809d929983c1e71f9501aa">&#9670;&#160;</a></span>lightMask</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -11953,7 +12019,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> lightMask[1+1]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> lightMask = 0x0001</td>
         </tr>
       </table>
   </td>
@@ -11962,12 +12028,7 @@ Variables</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x0001,</div>
-<div class="line">    </div>
-<div class="line">    0x0000,</div>
-<div class="line">}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a614bab80156c6459b341a9e99a556ff8" name="a614bab80156c6459b341a9e99a556ff8"></a>
@@ -12064,8 +12125,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae2b4183b2ad70095baf1a4a68f989d9a" name="ae2b4183b2ad70095baf1a4a68f989d9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2b4183b2ad70095baf1a4a68f989d9a">&#9670;&#160;</a></span>lightStatusPt</h2>
+<a id="ad445451543305f6ab5b0f5256aceb0a8" name="ad445451543305f6ab5b0f5256aceb0a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad445451543305f6ab5b0f5256aceb0a8">&#9670;&#160;</a></span>lightStatusPt</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -12074,7 +12135,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> void* lightStatusPt = (void*)&amp;<a class="el" href="d__kankyo_8cpp.html#a52950e77a717678fd00f4a7871a6ebd1">lightStatusData</a></td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a22a2a06fa275008ac56121fac5e1ff92">SECTION_SDATA</a> <a class="el" href="structLightStatus.html">LightStatus</a>* lightStatusPt = <a class="el" href="d__kankyo_8cpp.html#a52950e77a717678fd00f4a7871a6ebd1">lightStatusData</a></td>
         </tr>
       </table>
   </td>
@@ -16362,28 +16423,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_80394E70 = &quot;D_MN&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a56fdbbb861c16cbeaa3b2fe9c65b470e" name="a56fdbbb861c16cbeaa3b2fe9c65b470e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56fdbbb861c16cbeaa3b2fe9c65b470e">&#9670;&#160;</a></span>stringBase_80394E75</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_80394E75 = &quot;\nPOINTLIGHT COUNT OVER!!!\n&quot;</td>
         </tr>
       </table>
   </td>

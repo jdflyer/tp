@@ -89,33 +89,26 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="JASAudioThread_8h_source.html">JSystem/JAudio2/JASAudioThread.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JASDriverIF_8h_source.html">JSystem/JAudio2/JASDriverIF.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASAudioThread/__ct__14JASAudioThreadFiiUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASAudioThread/create__14JASAudioThreadFl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASAudioThread/stop__14JASAudioThreadFv.s&quot;</code><br />
+<code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="dsp_8h_source.html">dolphin/dsp/dsp.h</a>&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JASAudioThread/run__14JASAudioThreadFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASAudioThread/DMACallback__14JASAudioThreadFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASAudioThread/DSPCallback__14JASAudioThreadFPv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASAudioThread/__dt__14JASAudioThreadFv.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for JASAudioThread.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="JASAudioThread_8cpp__incl.svg" width="100%" height="591"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="JASAudioThread_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRHeap.html">JKRHeap</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRThread.html">JKRThread</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASProbe.html">JASProbe</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASMemPool__MultiThreaded.html">JASMemPool_MultiThreaded&lt; A0 &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASMemPool.html">JASMemPool&lt; A0 &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASMemPool__MultiThreaded____template2.html">JASMemPool_MultiThreaded__template2</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,9 +116,15 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASDsp.html">JASDsp</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASDriver.html">JASDriver</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASDSPChannel.html">JASDSPChannel</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLock.html">Lock</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASChannel.html">JASChannel</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASMemPool__MultiThreaded.html">JASMemPool_MultiThreaded&lt; A0 &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJASPoolAllocObject__MultiThreaded.html">JASPoolAllocObject_MultiThreaded&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -184,28 +183,6 @@ Functions</h2></td></tr>
 <tr class="separator:a825b308224211d12d035860083796e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34b8e393760e1451f4d2fc876cc86295"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAudioThread_8cpp.html#a34b8e393760e1451f4d2fc876cc86295">__dt__9JKRThreadFv</a> ()</td></tr>
 <tr class="separator:a34b8e393760e1451f4d2fc876cc86295"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65b7dd4c9756f26d16dcf8f0dedb07bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAudioThread_8cpp.html#a65b7dd4c9756f26d16dcf8f0dedb07bf">OSDisableInterrupts</a> ()</td></tr>
-<tr class="separator:a65b7dd4c9756f26d16dcf8f0dedb07bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14b5cc2befa83d8710fba14f4de14fd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAudioThread_8cpp.html#a14b5cc2befa83d8710fba14f4de14fd9">OSRestoreInterrupts</a> ()</td></tr>
-<tr class="separator:a14b5cc2befa83d8710fba14f4de14fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2047658ade776ce9eb8cfb6820914a8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAudioThread_8cpp.html#a2047658ade776ce9eb8cfb6820914a8b">OSSendMessage</a> ()</td></tr>
-<tr class="separator:a2047658ade776ce9eb8cfb6820914a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f4e639b17c1e988fa8071898bf0334a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAudioThread_8cpp.html#a4f4e639b17c1e988fa8071898bf0334a">OSReceiveMessage</a> ()</td></tr>
-<tr class="separator:a4f4e639b17c1e988fa8071898bf0334a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a177d7f80555fb371115e00d517622f8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAudioThread_8cpp.html#a177d7f80555fb371115e00d517622f8a">OSJamMessage</a> ()</td></tr>
-<tr class="separator:a177d7f80555fb371115e00d517622f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80a57c003eabefac201eaea43e75a0b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAudioThread_8cpp.html#a80a57c003eabefac201eaea43e75a0b2">OSInitThreadQueue</a> ()</td></tr>
-<tr class="separator:a80a57c003eabefac201eaea43e75a0b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbbf6c25ab379e02953ad9c5e14d5048"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAudioThread_8cpp.html#acbbf6c25ab379e02953ad9c5e14d5048">OSExitThread</a> ()</td></tr>
-<tr class="separator:acbbf6c25ab379e02953ad9c5e14d5048"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f96c218acfbd8f92b48607ed3e06598"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAudioThread_8cpp.html#a9f96c218acfbd8f92b48607ed3e06598">OSResumeThread</a> ()</td></tr>
-<tr class="separator:a9f96c218acfbd8f92b48607ed3e06598"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62d2ccbe6753b791a60fc5a3489795b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAudioThread_8cpp.html#a62d2ccbe6753b791a60fc5a3489795b3">OSSleepThread</a> ()</td></tr>
-<tr class="separator:a62d2ccbe6753b791a60fc5a3489795b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13e224685350c00dec11f3034b7c88b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAudioThread_8cpp.html#a13e224685350c00dec11f3034b7c88b4">DSPCheckMailFromDSP</a> ()</td></tr>
-<tr class="separator:a13e224685350c00dec11f3034b7c88b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad90d4a056267ec96c8e6e6f720b393a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAudioThread_8cpp.html#ad90d4a056267ec96c8e6e6f720b393a7">DSPReadMailFromDSP</a> ()</td></tr>
-<tr class="separator:ad90d4a056267ec96c8e6e6f720b393a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75cea59a88b9016eb884c7c20cdc3a21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAudioThread_8cpp.html#a75cea59a88b9016eb884c7c20cdc3a21">__register_global_object</a> ()</td></tr>
 <tr class="separator:a75cea59a88b9016eb884c7c20cdc3a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -217,8 +194,6 @@ Variables</h2></td></tr>
 <tr class="separator:a85eb03d94ec76ec20f13232d271307e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc388646f39b6bbcb10492d5916c335a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAudioThread_8cpp.html#afc388646f39b6bbcb10492d5916c335a">data_80431B34</a> [16+4]</td></tr>
 <tr class="separator:afc388646f39b6bbcb10492d5916c335a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a7a3822f0b02c17ed6f8a99b46e7618"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAudioThread_8cpp.html#a4a7a3822f0b02c17ed6f8a99b46e7618">JASDram</a> [4]</td></tr>
-<tr class="separator:a4a7a3822f0b02c17ed6f8a99b46e7618"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab830a0553fd85b50b49575564a6bde50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAudioThread_8cpp.html#ab830a0553fd85b50b49575564a6bde50">struct_80451260</a> [8]</td></tr>
 <tr class="separator:ab830a0553fd85b50b49575564a6bde50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2560338b58a7b440b0e94ea6217fef7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAudioThread_8cpp.html#ab2560338b58a7b440b0e94ea6217fef7">sSystemHeap__7JKRHeap</a> [4]</td></tr>
@@ -227,8 +202,8 @@ Variables</h2></td></tr>
 <tr class="separator:a5ec5e1d1ec38494498d5f453a709c09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98b58c165eacfc265404d698e5bc9525"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAudioThread_8cpp.html#a98b58c165eacfc265404d698e5bc9525">__OSReport_disable</a></td></tr>
 <tr class="separator:a98b58c165eacfc265404d698e5bc9525"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89440b9594a1fab2a02cf5dda6089ba8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAudioThread_8cpp.html#a89440b9594a1fab2a02cf5dda6089ba8">__vt__14JASAudioThread</a> [4]</td></tr>
-<tr class="separator:a89440b9594a1fab2a02cf5dda6089ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65ddb3674b26abbdc607a9ca1278da20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJKRHeap.html">JKRHeap</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAudioThread_8cpp.html#a65ddb3674b26abbdc607a9ca1278da20">JASDram</a></td></tr>
+<tr class="separator:a65ddb3674b26abbdc607a9ca1278da20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab958d2dc816e1237919dbf1762dca7ee"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAudioThread_8cpp.html#ab958d2dc816e1237919dbf1762dca7ee">stringBase_8039B338</a> = &quot;SFR_DSP&quot;</td></tr>
 <tr class="separator:ab958d2dc816e1237919dbf1762dca7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab47d38a7d05635034a19c6eea615ec9a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAudioThread_8cpp.html#ab47d38a7d05635034a19c6eea615ec9a">lit_205</a> [12+4]</td></tr>
@@ -443,40 +418,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a13e224685350c00dec11f3034b7c88b4" name="a13e224685350c00dec11f3034b7c88b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13e224685350c00dec11f3034b7c88b4">&#9670;&#160;</a></span>DSPCheckMailFromDSP()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DSPCheckMailFromDSP </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad90d4a056267ec96c8e6e6f720b393a7" name="ad90d4a056267ec96c8e6e6f720b393a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad90d4a056267ec96c8e6e6f720b393a7">&#9670;&#160;</a></span>DSPReadMailFromDSP()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DSPReadMailFromDSP </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a837f530e9089bb9c047ab399d953f124" name="a837f530e9089bb9c047ab399d953f124"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a837f530e9089bb9c047ab399d953f124">&#9670;&#160;</a></span>finishDSPFrame__9JASDriverFv()</h2>
 
@@ -588,159 +529,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void newMemPool__17JASGenericMemPoolFUli </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a65b7dd4c9756f26d16dcf8f0dedb07bf" name="a65b7dd4c9756f26d16dcf8f0dedb07bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65b7dd4c9756f26d16dcf8f0dedb07bf">&#9670;&#160;</a></span>OSDisableInterrupts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSDisableInterrupts </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acbbf6c25ab379e02953ad9c5e14d5048" name="acbbf6c25ab379e02953ad9c5e14d5048"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbbf6c25ab379e02953ad9c5e14d5048">&#9670;&#160;</a></span>OSExitThread()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSExitThread </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a80a57c003eabefac201eaea43e75a0b2" name="a80a57c003eabefac201eaea43e75a0b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80a57c003eabefac201eaea43e75a0b2">&#9670;&#160;</a></span>OSInitThreadQueue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSInitThreadQueue </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a177d7f80555fb371115e00d517622f8a" name="a177d7f80555fb371115e00d517622f8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a177d7f80555fb371115e00d517622f8a">&#9670;&#160;</a></span>OSJamMessage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSJamMessage </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4f4e639b17c1e988fa8071898bf0334a" name="a4f4e639b17c1e988fa8071898bf0334a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f4e639b17c1e988fa8071898bf0334a">&#9670;&#160;</a></span>OSReceiveMessage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSReceiveMessage </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a14b5cc2befa83d8710fba14f4de14fd9" name="a14b5cc2befa83d8710fba14f4de14fd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14b5cc2befa83d8710fba14f4de14fd9">&#9670;&#160;</a></span>OSRestoreInterrupts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSRestoreInterrupts </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9f96c218acfbd8f92b48607ed3e06598" name="a9f96c218acfbd8f92b48607ed3e06598"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f96c218acfbd8f92b48607ed3e06598">&#9670;&#160;</a></span>OSResumeThread()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSResumeThread </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2047658ade776ce9eb8cfb6820914a8b" name="a2047658ade776ce9eb8cfb6820914a8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2047658ade776ce9eb8cfb6820914a8b">&#9670;&#160;</a></span>OSSendMessage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSSendMessage </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a62d2ccbe6753b791a60fc5a3489795b3" name="a62d2ccbe6753b791a60fc5a3489795b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62d2ccbe6753b791a60fc5a3489795b3">&#9670;&#160;</a></span>OSSleepThread()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSSleepThread </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -927,37 +715,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a89440b9594a1fab2a02cf5dda6089ba8" name="a89440b9594a1fab2a02cf5dda6089ba8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89440b9594a1fab2a02cf5dda6089ba8">&#9670;&#160;</a></span>__vt__14JASAudioThread</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void* __vt__14JASAudioThread[4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> ,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="JASAudioThread_8cpp.html#a10fbcb75abbde14e0e5cf510d8894309">__dt__14JASAudioThreadFv</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="JASAudioThread_8cpp.html#a0d68442455ec41fe35d623ff404c22bb">run__14JASAudioThreadFv</a>,</div>
-<div class="line">}</div>
-<div class="ttc" id="aJASAudioThread_8cpp_html_a0d68442455ec41fe35d623ff404c22bb"><div class="ttname"><a href="JASAudioThread_8cpp.html#a0d68442455ec41fe35d623ff404c22bb">run__14JASAudioThreadFv</a></div><div class="ttdeci">void run__14JASAudioThreadFv()</div></div>
-<div class="ttc" id="aJASAudioThread_8cpp_html_a10fbcb75abbde14e0e5cf510d8894309"><div class="ttname"><a href="JASAudioThread_8cpp.html#a10fbcb75abbde14e0e5cf510d8894309">__dt__14JASAudioThreadFv</a></div><div class="ttdeci">void __dt__14JASAudioThreadFv()</div></div>
-<div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:12</div></div>
-</div><!-- fragment -->
-</div>
-</div>
 <a id="afc388646f39b6bbcb10492d5916c335a" name="afc388646f39b6bbcb10492d5916c335a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afc388646f39b6bbcb10492d5916c335a">&#9670;&#160;</a></span>data_80431B34</h2>
 
@@ -1002,8 +759,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4a7a3822f0b02c17ed6f8a99b46e7618" name="a4a7a3822f0b02c17ed6f8a99b46e7618"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a7a3822f0b02c17ed6f8a99b46e7618">&#9670;&#160;</a></span>JASDram</h2>
+<a id="a65ddb3674b26abbdc607a9ca1278da20" name="a65ddb3674b26abbdc607a9ca1278da20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65ddb3674b26abbdc607a9ca1278da20">&#9670;&#160;</a></span>JASDram</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1012,7 +769,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> JASDram[4]</td>
+          <td class="memname"><a class="el" href="structJKRHeap.html">JKRHeap</a>* JASDram</td>
         </tr>
       </table>
   </td>

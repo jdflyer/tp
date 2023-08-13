@@ -88,40 +88,12 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="J3DMaterial_8h_source.html">JSystem/J3DGraphBase/J3DMaterial.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J3DGD_8h_source.html">JSystem/J3DGraphBase/J3DGD.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/createColorBlock__11J3DMaterialFUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/createTexGenBlock__11J3DMaterialFUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/createTevBlock__11J3DMaterialFi.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/createIndBlock__11J3DMaterialFi.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/createPEBlock__11J3DMaterialFUlUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/calcSizeColorBlock__11J3DMaterialFUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/calcSizeTexGenBlock__11J3DMaterialFUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/calcSizeTevBlock__11J3DMaterialFi.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/calcSizeIndBlock__11J3DMaterialFi.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/calcSizePEBlock__11J3DMaterialFUlUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/initialize__11J3DMaterialFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/countDLSize__11J3DMaterialFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/makeDisplayList_private__11J3DMaterialFP17J3DDisplayListObj.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/makeDisplayList__11J3DMaterialFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/makeSharedDisplayList__11J3DMaterialFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/load__11J3DMaterialFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/loadSharedDL__11J3DMaterialFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/patch__11J3DMaterialFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/diff__11J3DMaterialFUl.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/calc__11J3DMaterialFPA4_Cf.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/calcDiffTexMtx__11J3DMaterialFPA4_Cf.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/setCurrentMtx__11J3DMaterialFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/calcCurrentMtx__11J3DMaterialFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/copy__11J3DMaterialFP11J3DMaterial.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/reset__11J3DMaterialFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/change__11J3DMaterialFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/newSharedDisplayList__11J3DMaterialFUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/newSingleSharedDisplayList__11J3DMaterialFUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/initialize__18J3DPatchedMaterialFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/load__18J3DPatchedMaterialFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/initialize__17J3DLockedMaterialFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/load__17J3DLockedMaterialFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/__dt__21J3DColorBlockLightOffFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/__dt__13J3DColorBlockFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphBase/J3DMaterial/__dt__21J3DTexGenBlockPatchedFv.s&quot;</code><br />
@@ -534,10 +506,6 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:add9dd5d16dfaad85c999014d6108e324"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterial_8cpp.html#add9dd5d16dfaad85c999014d6108e324">j3dDefaultFogInfo</a> [44]</td></tr>
-<tr class="separator:add9dd5d16dfaad85c999014d6108e324"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a310e23cc3dd43da5e07db187586d106e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterial_8cpp.html#a310e23cc3dd43da5e07db187586d106e">j3dDefaultNBTScaleInfo</a> [16]</td></tr>
-<tr class="separator:a310e23cc3dd43da5e07db187586d106e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6dc4d5eec3aae98621ffd7c07a8493d"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterial_8cpp.html#ad6dc4d5eec3aae98621ffd7c07a8493d">__vt__14J3DPEBlockFull</a> [31]</td></tr>
 <tr class="separator:ad6dc4d5eec3aae98621ffd7c07a8493d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dd5df2ff75947738bc37d69f47807d2"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterial_8cpp.html#a7dd5df2ff75947738bc37d69f47807d2">__vt__16J3DPEBlockFogOff</a> [31]</td></tr>
@@ -572,12 +540,6 @@ Variables</h2></td></tr>
 <tr class="separator:a53ceb3bccd9d9b1172863172b7c4289c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acaa1f5b340fd96fe05309e8eaaf659d1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterial_8cpp.html#acaa1f5b340fd96fe05309e8eaaf659d1">__vt__21J3DColorBlockLightOff</a> [36+1]</td></tr>
 <tr class="separator:acaa1f5b340fd96fe05309e8eaaf659d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38a5b3e6d41174d870ded641a57676ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterial_8cpp.html#a38a5b3e6d41174d870ded641a57676ba">j3dDefaultBlendInfo</a> = 0x01040505</td></tr>
-<tr class="separator:a38a5b3e6d41174d870ded641a57676ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18ae047540f1594559438f614ad7a70c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterial_8cpp.html#a18ae047540f1594559438f614ad7a70c">j3dDefaultAlphaCmpID</a> = 0x00E7</td></tr>
-<tr class="separator:a18ae047540f1594559438f614ad7a70c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c4aa7b184dcc6e3197f436bc3735d47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterial_8cpp.html#a7c4aa7b184dcc6e3197f436bc3735d47">j3dDefaultZModeID</a> [1+1]</td></tr>
-<tr class="separator:a7c4aa7b184dcc6e3197f436bc3735d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdad12d54e438621ce45c05f40d6997a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterial_8cpp.html#abdad12d54e438621ce45c05f40d6997a">__vt__17J3DLockedMaterial</a> [12]</td></tr>
 <tr class="separator:abdad12d54e438621ce45c05f40d6997a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90cf7681695b25a352b72840e9fb7b39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterial_8cpp.html#a90cf7681695b25a352b72840e9fb7b39">__vt__18J3DPatchedMaterial</a> [12]</td></tr>
@@ -3988,7 +3950,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="aJ3DMaterial_8cpp_html_aab409a97e452e50e6f1fad160b0be82d"><div class="ttname"><a href="J3DMaterial_8cpp.html#aab409a97e452e50e6f1fad160b0be82d">setIndTexCoordScale__11J3DIndBlockFUlPC19J3DIndTexCoordScale</a></div><div class="ttdeci">void setIndTexCoordScale__11J3DIndBlockFUlPC19J3DIndTexCoordScale()</div></div>
 <div class="ttc" id="aJ3DMaterial_8cpp_html_ac4bf90184ba5b5a736e1d71ed31133de"><div class="ttname"><a href="J3DMaterial_8cpp.html#ac4bf90184ba5b5a736e1d71ed31133de">setIndTexMtx__11J3DIndBlockFUl12J3DIndTexMtx</a></div><div class="ttdeci">void setIndTexMtx__11J3DIndBlockFUl12J3DIndTexMtx()</div></div>
 <div class="ttc" id="aJ3DMaterial_8cpp_html_ae72839ddac6a826ac55fb657dd5afc0c"><div class="ttname"><a href="J3DMaterial_8cpp.html#ae72839ddac6a826ac55fb657dd5afc0c">countDLSize__11J3DIndBlockFv</a></div><div class="ttdeci">bool countDLSize__11J3DIndBlockFv()</div></div>
-<div class="ttc" id="aJ3DMaterial_8cpp_html_ae7d733e4d504d6e8b2100a70db93f8fb"><div class="ttname"><a href="J3DMaterial_8cpp.html#ae7d733e4d504d6e8b2100a70db93f8fb">reset__11J3DIndBlockFP11J3DIndBlock</a></div><div class="ttdeci">void reset__11J3DIndBlockFP11J3DIndBlock()</div><div class="ttdef"><b>Definition:</b> J3DMaterial.cpp:991</div></div>
+<div class="ttc" id="aJ3DMaterial_8cpp_html_ae7d733e4d504d6e8b2100a70db93f8fb"><div class="ttname"><a href="J3DMaterial_8cpp.html#ae7d733e4d504d6e8b2100a70db93f8fb">reset__11J3DIndBlockFP11J3DIndBlock</a></div><div class="ttdeci">void reset__11J3DIndBlockFP11J3DIndBlock()</div><div class="ttdef"><b>Definition:</b> J3DMaterial.cpp:1083</div></div>
 <div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:12</div></div>
 </div><!-- fragment -->
 </div>
@@ -4029,7 +3991,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="aJ3DMaterial_8cpp_html_a20ba4c8c2e29eae08c35adbdcfa85aa8"><div class="ttname"><a href="J3DMaterial_8cpp.html#a20ba4c8c2e29eae08c35adbdcfa85aa8">makeDisplayList__11J3DMaterialFv</a></div><div class="ttdeci">void makeDisplayList__11J3DMaterialFv()</div></div>
 <div class="ttc" id="aJ3DMaterial_8cpp_html_a2c7ad09ac01fb5a8288b2c3cf0299b63"><div class="ttname"><a href="J3DMaterial_8cpp.html#a2c7ad09ac01fb5a8288b2c3cf0299b63">diff__11J3DMaterialFUl</a></div><div class="ttdeci">void diff__11J3DMaterialFUl()</div></div>
 <div class="ttc" id="aJ3DMaterial_8cpp_html_a4a8c5dcb2add0edd2de0cf45517ad699"><div class="ttname"><a href="J3DMaterial_8cpp.html#a4a8c5dcb2add0edd2de0cf45517ad699">patch__11J3DMaterialFv</a></div><div class="ttdeci">void patch__11J3DMaterialFv()</div></div>
-<div class="ttc" id="aJ3DMaterial_8cpp_html_a6246646ba07ac57296867fd3d1448ab4"><div class="ttname"><a href="J3DMaterial_8cpp.html#a6246646ba07ac57296867fd3d1448ab4">calc__11J3DMaterialFPA4_Cf</a></div><div class="ttdeci">void calc__11J3DMaterialFPA4_Cf()</div><div class="ttdef"><b>Definition:</b> J3DMaterial.cpp:643</div></div>
+<div class="ttc" id="aJ3DMaterial_8cpp_html_a6246646ba07ac57296867fd3d1448ab4"><div class="ttname"><a href="J3DMaterial_8cpp.html#a6246646ba07ac57296867fd3d1448ab4">calc__11J3DMaterialFPA4_Cf</a></div><div class="ttdeci">void calc__11J3DMaterialFPA4_Cf()</div><div class="ttdef"><b>Definition:</b> J3DMaterial.cpp:717</div></div>
 <div class="ttc" id="aJ3DMaterial_8cpp_html_a661a806dfc5362e1671d9ca8548b1f2d"><div class="ttname"><a href="J3DMaterial_8cpp.html#a661a806dfc5362e1671d9ca8548b1f2d">makeSharedDisplayList__11J3DMaterialFv</a></div><div class="ttdeci">void makeSharedDisplayList__11J3DMaterialFv()</div></div>
 <div class="ttc" id="aJ3DMaterial_8cpp_html_a6ea62606284684dd59e33536e78bf4d9"><div class="ttname"><a href="J3DMaterial_8cpp.html#a6ea62606284684dd59e33536e78bf4d9">loadSharedDL__11J3DMaterialFv</a></div><div class="ttdeci">void loadSharedDL__11J3DMaterialFv()</div></div>
 <div class="ttc" id="aJ3DMaterial_8cpp_html_a7311abecab3b6aec937087a74b913793"><div class="ttname"><a href="J3DMaterial_8cpp.html#a7311abecab3b6aec937087a74b913793">reset__11J3DMaterialFv</a></div><div class="ttdeci">void reset__11J3DMaterialFv()</div></div>
@@ -4285,7 +4247,7 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="J3DMaterial_8cpp.html#a1af208926d6d848a9e87a81534e4659a">setTexMtxOffset__14J3DTexGenBlockFUl</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="J3DMaterial_8cpp.html#aa0061dca3f3bbc92ce50f765af1dcf95">__dt__14J3DTexGenBlockFv</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aJ3DMaterial_8cpp_html_a067f1e2c6c16a7612a442aee2109f2a0"><div class="ttname"><a href="J3DMaterial_8cpp.html#a067f1e2c6c16a7612a442aee2109f2a0">reset__14J3DTexGenBlockFP14J3DTexGenBlock</a></div><div class="ttdeci">void reset__14J3DTexGenBlockFP14J3DTexGenBlock()</div><div class="ttdef"><b>Definition:</b> J3DMaterial.cpp:1002</div></div>
+<div class="ttc" id="aJ3DMaterial_8cpp_html_a067f1e2c6c16a7612a442aee2109f2a0"><div class="ttname"><a href="J3DMaterial_8cpp.html#a067f1e2c6c16a7612a442aee2109f2a0">reset__14J3DTexGenBlockFP14J3DTexGenBlock</a></div><div class="ttdeci">void reset__14J3DTexGenBlockFP14J3DTexGenBlock()</div><div class="ttdef"><b>Definition:</b> J3DMaterial.cpp:1094</div></div>
 <div class="ttc" id="aJ3DMaterial_8cpp_html_a159acfeb332135622d351014f5ad639a"><div class="ttname"><a href="J3DMaterial_8cpp.html#a159acfeb332135622d351014f5ad639a">setTexGenNum__14J3DTexGenBlockFUl</a></div><div class="ttdeci">void setTexGenNum__14J3DTexGenBlockFUl()</div></div>
 <div class="ttc" id="aJ3DMaterial_8cpp_html_a16b820672d2223a9561a3c58ffaa1f44"><div class="ttname"><a href="J3DMaterial_8cpp.html#a16b820672d2223a9561a3c58ffaa1f44">setNBTScale__14J3DTexGenBlockF11J3DNBTScale</a></div><div class="ttdeci">void setNBTScale__14J3DTexGenBlockF11J3DNBTScale()</div></div>
 <div class="ttc" id="aJ3DMaterial_8cpp_html_a1af208926d6d848a9e87a81534e4659a"><div class="ttname"><a href="J3DMaterial_8cpp.html#a1af208926d6d848a9e87a81534e4659a">setTexMtxOffset__14J3DTexGenBlockFUl</a></div><div class="ttdeci">void setTexMtxOffset__14J3DTexGenBlockFUl()</div></div>
@@ -4368,7 +4330,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="aJ3DMaterial_8cpp_html_a56684fbac6a8db443ded7092603a4fb2"><div class="ttname"><a href="J3DMaterial_8cpp.html#a56684fbac6a8db443ded7092603a4fb2">load__15J3DIndBlockNullFv</a></div><div class="ttdeci">void load__15J3DIndBlockNullFv()</div></div>
 <div class="ttc" id="aJ3DMaterial_8cpp_html_a987b21abe47768ddeaf18f14b8acccaf"><div class="ttname"><a href="J3DMaterial_8cpp.html#a987b21abe47768ddeaf18f14b8acccaf">diff__15J3DIndBlockNullFUl</a></div><div class="ttdeci">void diff__15J3DIndBlockNullFUl()</div></div>
 <div class="ttc" id="aJ3DMaterial_8cpp_html_aab4692f400293b16b9009402637df357"><div class="ttname"><a href="J3DMaterial_8cpp.html#aab4692f400293b16b9009402637df357">__dt__15J3DIndBlockNullFv</a></div><div class="ttdeci">void __dt__15J3DIndBlockNullFv()</div></div>
-<div class="ttc" id="aJ3DMaterial_8cpp_html_ae0eb42b5c90aaeffae94363eb51675d5"><div class="ttname"><a href="J3DMaterial_8cpp.html#ae0eb42b5c90aaeffae94363eb51675d5">reset__15J3DIndBlockNullFP11J3DIndBlock</a></div><div class="ttdeci">void reset__15J3DIndBlockNullFP11J3DIndBlock()</div><div class="ttdef"><b>Definition:</b> J3DMaterial.cpp:1090</div></div>
+<div class="ttc" id="aJ3DMaterial_8cpp_html_ae0eb42b5c90aaeffae94363eb51675d5"><div class="ttname"><a href="J3DMaterial_8cpp.html#ae0eb42b5c90aaeffae94363eb51675d5">reset__15J3DIndBlockNullFP11J3DIndBlock</a></div><div class="ttdeci">void reset__15J3DIndBlockNullFP11J3DIndBlock()</div><div class="ttdef"><b>Definition:</b> J3DMaterial.cpp:1182</div></div>
 <div class="ttc" id="aJ3DMaterial_8cpp_html_ae76e03167313dc55fbc4b4f82c88ecc5"><div class="ttname"><a href="J3DMaterial_8cpp.html#ae76e03167313dc55fbc4b4f82c88ecc5">getType__15J3DIndBlockNullFv</a></div><div class="ttdeci">void getType__15J3DIndBlockNullFv()</div></div>
 </div><!-- fragment -->
 </div>
@@ -4450,7 +4412,7 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="J3DMaterial_8cpp.html#a3e504c13ea0f49896181b8641619e388">reset__17J3DLockedMaterialFv</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="J3DMaterial_8cpp.html#abbd65a642be9cdc64cd5d375c06217ff">change__17J3DLockedMaterialFv</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aJ3DMaterial_8cpp_html_a30795fc2b0c9019f59a47e144f85a6ee"><div class="ttname"><a href="J3DMaterial_8cpp.html#a30795fc2b0c9019f59a47e144f85a6ee">calc__17J3DLockedMaterialFPA4_Cf</a></div><div class="ttdeci">void calc__17J3DLockedMaterialFPA4_Cf()</div><div class="ttdef"><b>Definition:</b> J3DMaterial.cpp:839</div></div>
+<div class="ttc" id="aJ3DMaterial_8cpp_html_a30795fc2b0c9019f59a47e144f85a6ee"><div class="ttname"><a href="J3DMaterial_8cpp.html#a30795fc2b0c9019f59a47e144f85a6ee">calc__17J3DLockedMaterialFPA4_Cf</a></div><div class="ttdeci">void calc__17J3DLockedMaterialFPA4_Cf()</div><div class="ttdef"><b>Definition:</b> J3DMaterial.cpp:931</div></div>
 <div class="ttc" id="aJ3DMaterial_8cpp_html_a3e504c13ea0f49896181b8641619e388"><div class="ttname"><a href="J3DMaterial_8cpp.html#a3e504c13ea0f49896181b8641619e388">reset__17J3DLockedMaterialFv</a></div><div class="ttdeci">void reset__17J3DLockedMaterialFv()</div></div>
 <div class="ttc" id="aJ3DMaterial_8cpp_html_a4b4dfeb92f70a15aa13087e9789ca48c"><div class="ttname"><a href="J3DMaterial_8cpp.html#a4b4dfeb92f70a15aa13087e9789ca48c">makeSharedDisplayList__17J3DLockedMaterialFv</a></div><div class="ttdeci">void makeSharedDisplayList__17J3DLockedMaterialFv()</div></div>
 <div class="ttc" id="aJ3DMaterial_8cpp_html_a68948bb318c9c415a8aa1b8c5fa91bb9"><div class="ttname"><a href="J3DMaterial_8cpp.html#a68948bb318c9c415a8aa1b8c5fa91bb9">loadSharedDL__17J3DLockedMaterialFv</a></div><div class="ttdeci">void loadSharedDL__17J3DLockedMaterialFv()</div></div>
@@ -4522,7 +4484,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="aJ3DMaterial_8cpp_html_a3f19cc5a92774504468015d2f25e581a"><div class="ttname"><a href="J3DMaterial_8cpp.html#a3f19cc5a92774504468015d2f25e581a">reset__18J3DPatchedMaterialFv</a></div><div class="ttdeci">void reset__18J3DPatchedMaterialFv()</div></div>
 <div class="ttc" id="aJ3DMaterial_8cpp_html_a7b903a679222f686db66232ead58ecec"><div class="ttname"><a href="J3DMaterial_8cpp.html#a7b903a679222f686db66232ead58ecec">loadSharedDL__18J3DPatchedMaterialFv</a></div><div class="ttdeci">void loadSharedDL__18J3DPatchedMaterialFv()</div></div>
 <div class="ttc" id="aJ3DMaterial_8cpp_html_a8ed44b7e69d0569deecbb40d93b01e19"><div class="ttname"><a href="J3DMaterial_8cpp.html#a8ed44b7e69d0569deecbb40d93b01e19">load__18J3DPatchedMaterialFv</a></div><div class="ttdeci">void load__18J3DPatchedMaterialFv()</div></div>
-<div class="ttc" id="aJ3DMaterial_8cpp_html_aa4576a986fc1f7cc5f077e1c9dffd788"><div class="ttname"><a href="J3DMaterial_8cpp.html#aa4576a986fc1f7cc5f077e1c9dffd788">makeDisplayList__18J3DPatchedMaterialFv</a></div><div class="ttdeci">void makeDisplayList__18J3DPatchedMaterialFv()</div><div class="ttdef"><b>Definition:</b> J3DMaterial.cpp:744</div></div>
+<div class="ttc" id="aJ3DMaterial_8cpp_html_aa4576a986fc1f7cc5f077e1c9dffd788"><div class="ttname"><a href="J3DMaterial_8cpp.html#aa4576a986fc1f7cc5f077e1c9dffd788">makeDisplayList__18J3DPatchedMaterialFv</a></div><div class="ttdeci">void makeDisplayList__18J3DPatchedMaterialFv()</div><div class="ttdef"><b>Definition:</b> J3DMaterial.cpp:851</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -4634,121 +4596,6 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a18ae047540f1594559438f614ad7a70c" name="a18ae047540f1594559438f614ad7a70c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18ae047540f1594559438f614ad7a70c">&#9670;&#160;</a></span>j3dDefaultAlphaCmpID</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> j3dDefaultAlphaCmpID = 0x00E7</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a38a5b3e6d41174d870ded641a57676ba" name="a38a5b3e6d41174d870ded641a57676ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38a5b3e6d41174d870ded641a57676ba">&#9670;&#160;</a></span>j3dDefaultBlendInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> j3dDefaultBlendInfo = 0x01040505</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="add9dd5d16dfaad85c999014d6108e324" name="add9dd5d16dfaad85c999014d6108e324"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add9dd5d16dfaad85c999014d6108e324">&#9670;&#160;</a></span>j3dDefaultFogInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const j3dDefaultFogInfo[44]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a310e23cc3dd43da5e07db187586d106e" name="a310e23cc3dd43da5e07db187586d106e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a310e23cc3dd43da5e07db187586d106e">&#9670;&#160;</a></span>j3dDefaultNBTScaleInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const j3dDefaultNBTScaleInfo[16]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7c4aa7b184dcc6e3197f436bc3735d47" name="a7c4aa7b184dcc6e3197f436bc3735d47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c4aa7b184dcc6e3197f436bc3735d47">&#9670;&#160;</a></span>j3dDefaultZModeID</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> j3dDefaultZModeID</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x0017,</div>
-<div class="line">    </div>
-<div class="line">    0x0000,</div>
-<div class="line">}</div>
-</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->

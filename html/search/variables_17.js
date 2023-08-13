@@ -34,8 +34,10 @@ var searchData=
   ['workarea_31',['workArea',['../structCARDControl.html#a2544e2619955b62777cbf2002a4b1153',1,'CARDControl']]],
   ['workaroundseeklocation_32',['WorkAroundSeekLocation',['../dvdlow_8c.html#a41df260c107a081dbbc799272cfce6c5',1,'dvdlow.c']]],
   ['workaroundtype_33',['WorkAroundType',['../dvdlow_8c.html#a28b7db61f0807ffd37c488ffc87584e6',1,'dvdlow.c']]],
-  ['wraps_34',['wrapS',['../structResTIMG.html#a9f4b17006a80fe7bf1b7e2f059163839',1,'ResTIMG']]],
-  ['wrapt_35',['wrapT',['../structResTIMG.html#aa2a52f83806da1420efbb167e27c9026',1,'ResTIMG']]],
-  ['write_5ffn_36',['write_fn',['../struct__FILE.html#a9fdb8e5a0e9bc8b2a0bd8367c919bc97',1,'_FILE']]],
-  ['write_5fptr_37',['write_ptr',['../struct__GXFifoObj.html#a1f36f43afb1dde38f96318580cea9018',1,'_GXFifoObj']]]
+  ['wpar_34',['WPAR',['../structExtended1__PPC__6xx__7xx.html#a2398b9a5ecc18c54020182019f23c2a6',1,'Extended1_PPC_6xx_7xx']]],
+  ['wraps_35',['wrapS',['../structResTIMG.html#a9f4b17006a80fe7bf1b7e2f059163839',1,'ResTIMG']]],
+  ['wrapt_36',['wrapT',['../structResTIMG.html#aa2a52f83806da1420efbb167e27c9026',1,'ResTIMG']]],
+  ['write_5ffn_37',['write_fn',['../struct__FILE.html#a9fdb8e5a0e9bc8b2a0bd8367c919bc97',1,'_FILE']]],
+  ['write_5ffunc_38',['write_func',['../structDBCommTable.html#abc85cac5c3ea6f7b5c6fb90e238aa85f',1,'DBCommTable']]],
+  ['write_5fptr_39',['write_ptr',['../struct__GXFifoObj.html#a1f36f43afb1dde38f96318580cea9018',1,'_GXFifoObj']]]
 ];

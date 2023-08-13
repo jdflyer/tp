@@ -98,12 +98,7 @@ $(function() {
 <code>#include &quot;asm/TRK_MINNOW_DOLPHIN/ppc/Generic/targimpl/ReadFPSCR.s&quot;</code><br />
 <code>#include &quot;asm/TRK_MINNOW_DOLPHIN/ppc/Generic/targimpl/WriteFPSCR.s&quot;</code><br />
 <code>#include &quot;asm/TRK_MINNOW_DOLPHIN/ppc/Generic/targimpl/TRKTargetAccessARAM.s&quot;</code><br />
-<code>#include &quot;asm/TRK_MINNOW_DOLPHIN/ppc/Generic/targimpl/TRKTargetSetInputPendingPtr.s&quot;</code><br />
-<code>#include &quot;asm/TRK_MINNOW_DOLPHIN/ppc/Generic/targimpl/TRKTargetStop.s&quot;</code><br />
-<code>#include &quot;asm/TRK_MINNOW_DOLPHIN/ppc/Generic/targimpl/TRKTargetSetStopped.s&quot;</code><br />
-<code>#include &quot;asm/TRK_MINNOW_DOLPHIN/ppc/Generic/targimpl/TRKTargetStopped.s&quot;</code><br />
 <code>#include &quot;asm/TRK_MINNOW_DOLPHIN/ppc/Generic/targimpl/TRKTargetSupportRequest.s&quot;</code><br />
-<code>#include &quot;asm/TRK_MINNOW_DOLPHIN/ppc/Generic/targimpl/TRKTargetGetPC.s&quot;</code><br />
 <code>#include &quot;asm/TRK_MINNOW_DOLPHIN/ppc/Generic/targimpl/TRKTargetStepOutOfRange.s&quot;</code><br />
 <code>#include &quot;asm/TRK_MINNOW_DOLPHIN/ppc/Generic/targimpl/TRKTargetSingleStep.s&quot;</code><br />
 <code>#include &quot;asm/TRK_MINNOW_DOLPHIN/ppc/Generic/targimpl/TRKTargetAddExceptionInfo.s&quot;</code><br />
@@ -148,14 +143,14 @@ Functions</h2></td></tr>
 <tr class="separator:a55992ee3b62e5a0c40eda8cf18ed3992"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89e5004f8ecbeb131324240005e3eb18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="targimpl_8c.html#a89e5004f8ecbeb131324240005e3eb18">TRKTargetSetInputPendingPtr</a> ()</td></tr>
 <tr class="separator:a89e5004f8ecbeb131324240005e3eb18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70db9d00998e205081b4eb16c14dab75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="targimpl_8c.html#a70db9d00998e205081b4eb16c14dab75">TRKTargetStop</a> ()</td></tr>
-<tr class="separator:a70db9d00998e205081b4eb16c14dab75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae971d4547d98bce81bf7605c640dc422"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="targimpl_8c.html#ae971d4547d98bce81bf7605c640dc422">TRKTargetStopped</a> ()</td></tr>
-<tr class="separator:ae971d4547d98bce81bf7605c640dc422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b12b79764f15613753ffd7d011bd539"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="targimpl_8c.html#a0b12b79764f15613753ffd7d011bd539">TRKTargetStop</a> ()</td></tr>
+<tr class="separator:a0b12b79764f15613753ffd7d011bd539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81147d2ffe47ceabded4555f728c849e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="targimpl_8c.html#a81147d2ffe47ceabded4555f728c849e">TRKTargetStopped</a> ()</td></tr>
+<tr class="separator:a81147d2ffe47ceabded4555f728c849e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abad844a718c1c588dc522ab3dc150e7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="targimpl_8c.html#abad844a718c1c588dc522ab3dc150e7e">TRKTargetSupportRequest</a> ()</td></tr>
 <tr class="separator:abad844a718c1c588dc522ab3dc150e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cae4822df8ad34c3eacb8625ad1d6ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="targimpl_8c.html#a3cae4822df8ad34c3eacb8625ad1d6ff">TRKTargetGetPC</a> ()</td></tr>
-<tr class="separator:a3cae4822df8ad34c3eacb8625ad1d6ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c3f4a10d73e16cd5935ccb3da9d63ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="targimpl_8c.html#a8c3f4a10d73e16cd5935ccb3da9d63ae">TRKTargetGetPC</a> ()</td></tr>
+<tr class="separator:a8c3f4a10d73e16cd5935ccb3da9d63ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f611c6bd3b23ef7eb18dee62d768b86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="targimpl_8c.html#a6f611c6bd3b23ef7eb18dee62d768b86">TRKTargetStepOutOfRange</a> ()</td></tr>
 <tr class="separator:a6f611c6bd3b23ef7eb18dee62d768b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08d1ec5e2f11ffe9c6dba609b0c562f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="targimpl_8c.html#a08d1ec5e2f11ffe9c6dba609b0c562f9">TRKTargetSingleStep</a> ()</td></tr>
@@ -226,8 +221,10 @@ Functions</h2></td></tr>
 <tr class="separator:a7b760bbab16c2cc6f21989b3418b8f6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88ca7df55f769960e9cd9334fd26f383"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="targimpl_8c.html#a88ca7df55f769960e9cd9334fd26f383">TRKSwapAndGo</a> ()</td></tr>
 <tr class="separator:a88ca7df55f769960e9cd9334fd26f383"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c821d6935ed6f4665d40c1549870ba8"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="targimpl_8c.html#a5c821d6935ed6f4665d40c1549870ba8">TRKTargetSetStopped</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>)</td></tr>
-<tr class="separator:a5c821d6935ed6f4665d40c1549870ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae69805c8b96b5aec6753256a7236b010"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="targimpl_8c.html#ae69805c8b96b5aec6753256a7236b010">TRKTargetSetInputPendingPtr</a> (void *ptr)</td></tr>
+<tr class="separator:ae69805c8b96b5aec6753256a7236b010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbef8dcd8ecaf128c76c8ba3c97d7cc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="targimpl_8c.html#acbef8dcd8ecaf128c76c8ba3c97d7cc6">TRKTargetSetStopped</a> (<a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> isStopped)</td></tr>
+<tr class="separator:acbef8dcd8ecaf128c76c8ba3c97d7cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac420013301de16a872f7742ec96b5bfe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="targimpl_8c.html#ac420013301de16a872f7742ec96b5bfe">COMPILER_STRIP_GATE</a> (0x803A2B60, &amp;<a class="el" href="targimpl_8c.html#a2a652a4e9fc60c45966f52bdbd0840ea">gTRKMemMap</a>)</td></tr>
 <tr class="separator:ac420013301de16a872f7742ec96b5bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfab71ff8c77e6ee8cfa3ee5b594d5c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="targimpl_8c.html#abfab71ff8c77e6ee8cfa3ee5b594d5c5">COMPILER_STRIP_GATE</a> (0x803A2B70, &amp;<a class="el" href="JASAiCtrl_8cpp.html#a4c87b335145fd76f22cad6b9f8bb667d">lit_276</a>)</td></tr>
@@ -247,10 +244,6 @@ Variables</h2></td></tr>
 <tr class="separator:ac1aa751b20396eb7f4552df53e98e38a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fea080a882476ffd3f95f9977819e07"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a7873e820b6567070fa316a6dac0a74dd">SECTION_BSS</a> <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="targimpl_8c.html#a4fea080a882476ffd3f95f9977819e07">TRK_saved_exceptionID</a> = 0</td></tr>
 <tr class="separator:a4fea080a882476ffd3f95f9977819e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dd44f7f95956ca5a0fee97a0629f1f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="targimpl_8c.html#a8dd44f7f95956ca5a0fee97a0629f1f3">gTRKState</a> [164]</td></tr>
-<tr class="separator:a8dd44f7f95956ca5a0fee97a0629f1f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bcdd545f2d933d7bbce2e7bf21c6043"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="targimpl_8c.html#a7bcdd545f2d933d7bbce2e7bf21c6043">gTRKCPUState</a> [1072]</td></tr>
-<tr class="separator:a7bcdd545f2d933d7bbce2e7bf21c6043"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae25b9b5b277145e7b4318c5b46465d5e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="targimpl_8c.html#ae25b9b5b277145e7b4318c5b46465d5e">gTRKSaveState</a> [148]</td></tr>
 <tr class="separator:ae25b9b5b277145e7b4318c5b46465d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a652a4e9fc60c45966f52bdbd0840ea"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="targimpl_8c.html#a2a652a4e9fc60c45966f52bdbd0840ea">gTRKMemMap</a> [16]</td></tr>
@@ -1063,14 +1056,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a3cae4822df8ad34c3eacb8625ad1d6ff" name="a3cae4822df8ad34c3eacb8625ad1d6ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3cae4822df8ad34c3eacb8625ad1d6ff">&#9670;&#160;</a></span>TRKTargetGetPC()</h2>
+<a id="a8c3f4a10d73e16cd5935ccb3da9d63ae" name="a8c3f4a10d73e16cd5935ccb3da9d63ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c3f4a10d73e16cd5935ccb3da9d63ae">&#9670;&#160;</a></span>TRKTargetGetPC()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TRKTargetGetPC </td>
+          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> TRKTargetGetPC </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1123,7 +1116,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a89e5004f8ecbeb131324240005e3eb18" name="a89e5004f8ecbeb131324240005e3eb18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89e5004f8ecbeb131324240005e3eb18">&#9670;&#160;</a></span>TRKTargetSetInputPendingPtr()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a89e5004f8ecbeb131324240005e3eb18">&#9670;&#160;</a></span>TRKTargetSetInputPendingPtr() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1139,17 +1132,35 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5c821d6935ed6f4665d40c1549870ba8" name="a5c821d6935ed6f4665d40c1549870ba8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c821d6935ed6f4665d40c1549870ba8">&#9670;&#160;</a></span>TRKTargetSetStopped()</h2>
+<a id="ae69805c8b96b5aec6753256a7236b010" name="ae69805c8b96b5aec6753256a7236b010"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae69805c8b96b5aec6753256a7236b010">&#9670;&#160;</a></span>TRKTargetSetInputPendingPtr() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void TRKTargetSetStopped </td>
+          <td class="memname">void TRKTargetSetInputPendingPtr </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acbef8dcd8ecaf128c76c8ba3c97d7cc6" name="acbef8dcd8ecaf128c76c8ba3c97d7cc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbef8dcd8ecaf128c76c8ba3c97d7cc6">&#9670;&#160;</a></span>TRKTargetSetStopped()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TRKTargetSetStopped </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>isStopped</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1191,14 +1202,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a70db9d00998e205081b4eb16c14dab75" name="a70db9d00998e205081b4eb16c14dab75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70db9d00998e205081b4eb16c14dab75">&#9670;&#160;</a></span>TRKTargetStop()</h2>
+<a id="a0b12b79764f15613753ffd7d011bd539" name="a0b12b79764f15613753ffd7d011bd539"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b12b79764f15613753ffd7d011bd539">&#9670;&#160;</a></span>TRKTargetStop()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TRKTargetStop </td>
+          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> TRKTargetStop </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1208,14 +1219,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae971d4547d98bce81bf7605c640dc422" name="ae971d4547d98bce81bf7605c640dc422"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae971d4547d98bce81bf7605c640dc422">&#9670;&#160;</a></span>TRKTargetStopped()</h2>
+<a id="a81147d2ffe47ceabded4555f728c849e" name="a81147d2ffe47ceabded4555f728c849e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81147d2ffe47ceabded4555f728c849e">&#9670;&#160;</a></span>TRKTargetStopped()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TRKTargetStopped </td>
+          <td class="memname"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> TRKTargetStopped </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1327,20 +1338,6 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a7bcdd545f2d933d7bbce2e7bf21c6043" name="a7bcdd545f2d933d7bbce2e7bf21c6043"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bcdd545f2d933d7bbce2e7bf21c6043">&#9670;&#160;</a></span>gTRKCPUState</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> gTRKCPUState[1072]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ac1aa751b20396eb7f4552df53e98e38a" name="ac1aa751b20396eb7f4552df53e98e38a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac1aa751b20396eb7f4552df53e98e38a">&#9670;&#160;</a></span>gTRKExceptionStatus</h2>
 
@@ -1446,20 +1443,6 @@ Variables</h2></td></tr>
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8dd44f7f95956ca5a0fee97a0629f1f3" name="a8dd44f7f95956ca5a0fee97a0629f1f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8dd44f7f95956ca5a0fee97a0629f1f3">&#9670;&#160;</a></span>gTRKState</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> gTRKState[164]</td>
-        </tr>
-      </table>
 </div><div class="memdoc">
 
 </div>
