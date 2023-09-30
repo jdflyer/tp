@@ -82,32 +82,22 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">JASBasicWaveBank.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="JASBasicWaveBank_8h_source.html">JSystem/JAudio2/JASBasicWaveBank.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JASMutex_8h_source.html">JSystem/JAudio2/JASMutex.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JKRHeap_8h_source.html">JSystem/JKernel/JKRHeap.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JUTAssert_8h_source.html">JSystem/JUtility/JUTAssert.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JASBasicWaveBank/__ct__16JASBasicWaveBankFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JASBasicWaveBank/__dt__16JASBasicWaveBankFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JASBasicWaveBank/__dt__Q216JASBasicWaveBank11TWaveHandleFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASBasicWaveBank/getWaveGroup__16JASBasicWaveBankFUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASBasicWaveBank/setGroupCount__16JASBasicWaveBankFUlP7JKRHeap.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASBasicWaveBank/setWaveTableSize__16JASBasicWaveBankFUlP7JKRHeap.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JASBasicWaveBank/incWaveTable__16JASBasicWaveBankFPCQ216JASBasicWaveBank10TWaveGroup.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASBasicWaveBank/decWaveTable__16JASBasicWaveBankFPCQ216JASBasicWaveBank10TWaveGroup.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASBasicWaveBank/getWaveHandle__16JASBasicWaveBankCFUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASBasicWaveBank/func_80298910.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JASBasicWaveBank/__ct__Q216JASBasicWaveBank10TWaveGroupFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JASBasicWaveBank/__dt__Q216JASBasicWaveBank10TWaveGroupFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASBasicWaveBank/setWaveCount__Q216JASBasicWaveBank10TWaveGroupFUlP7JKRHeap.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASBasicWaveBank/onLoadDone__Q216JASBasicWaveBank10TWaveGroupFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASBasicWaveBank/onEraseDone__Q216JASBasicWaveBank10TWaveGroupFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASBasicWaveBank/getWaveID__Q216JASBasicWaveBank10TWaveGroupCFi.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASBasicWaveBank/getWavePtr__Q216JASBasicWaveBank11TWaveHandleCFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JASBasicWaveBank/__dt__11JASWaveBankFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JASBasicWaveBank/__dt__13JASWaveHandleFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JASBasicWaveBank/__ct__Q216JASBasicWaveBank11TWaveHandleFv.s&quot;</code><br />
@@ -120,31 +110,10 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="JASBasicWaveBank_8cpp__incl.svg" width="100%" height="547"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="JASBasicWaveBank_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRHeap.html">JKRHeap</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASWaveInfo.html">JASWaveInfo</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASWaveHandle.html">JASWaveHandle</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASWaveBank.html">JASWaveBank</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASWaveArc.html">JASWaveArc</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASBasicWaveBank.html">JASBasicWaveBank</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASBasicWaveBank_1_1TWaveHandle.html">JASBasicWaveBank::TWaveHandle</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASBasicWaveBank_1_1TWaveGroup.html">JASBasicWaveBank::TWaveGroup</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASBasicWaveBank_1_1TGroupWaveInfo.html">JASBasicWaveBank::TGroupWaveInfo</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a0dc702e9ad3ac17dbd388a1237f21216"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASBasicWaveBank_8cpp.html#a0dc702e9ad3ac17dbd388a1237f21216">__ct__16JASBasicWaveBankFv</a> ()</td></tr>
@@ -181,20 +150,20 @@ Functions</h2></td></tr>
 <tr class="separator:ad3f2b915a227ba32272be4cb2c225e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c5c983e215a4a7018fd80f64cb6f8d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASBasicWaveBank_8cpp.html#a6c5c983e215a4a7018fd80f64cb6f8d7">getWavePtr__Q216JASBasicWaveBank11TWaveHandleCFv</a> ()</td></tr>
 <tr class="separator:a6c5c983e215a4a7018fd80f64cb6f8d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad667a98f1441cb59488c849bf0267bce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASBasicWaveBank_8cpp.html#ad667a98f1441cb59488c849bf0267bce">__dt__11JASWaveBankFv</a> ()</td></tr>
-<tr class="separator:ad667a98f1441cb59488c849bf0267bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af60fa801a90b950feb531f678cf599a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASBasicWaveBank_8cpp.html#af60fa801a90b950feb531f678cf599a2">__dt__13JASWaveHandleFv</a> ()</td></tr>
-<tr class="separator:af60fa801a90b950feb531f678cf599a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b3d3dbb89de0848f34a5a34d0887bf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASBasicWaveBank_8cpp.html#a5b3d3dbb89de0848f34a5a34d0887bf9">__ct__Q216JASBasicWaveBank11TWaveHandleFv</a> ()</td></tr>
-<tr class="separator:a5b3d3dbb89de0848f34a5a34d0887bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64e994aaeca43ecc6d2661877f1df08d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASBasicWaveBank_8cpp.html#a64e994aaeca43ecc6d2661877f1df08d">__ct__Q216JASBasicWaveBank14TGroupWaveInfoFv</a> ()</td></tr>
-<tr class="separator:a64e994aaeca43ecc6d2661877f1df08d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bcffbf733d9deb50e1441605ae571cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASBasicWaveBank_8cpp.html#a5bcffbf733d9deb50e1441605ae571cf">getWaveInfo__Q216JASBasicWaveBank11TWaveHandleCFv</a> ()</td></tr>
-<tr class="separator:a5bcffbf733d9deb50e1441605ae571cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af22fdbe0f19b928c9b0958e7d54cb44b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASBasicWaveBank_8cpp.html#af22fdbe0f19b928c9b0958e7d54cb44b">getWaveArc__16JASBasicWaveBankFUl</a> ()</td></tr>
-<tr class="separator:af22fdbe0f19b928c9b0958e7d54cb44b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c4195a74dd1802d86e2abd2c6888ffc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASBasicWaveBank_8cpp.html#a4c4195a74dd1802d86e2abd2c6888ffc">getArcCount__16JASBasicWaveBankCFv</a> ()</td></tr>
-<tr class="separator:a4c4195a74dd1802d86e2abd2c6888ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b30bd36219861aa011ec5efbbae7e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASBasicWaveBank_8cpp.html#ab9b30bd36219861aa011ec5efbbae7e6">__dt__11JASWaveBankFv</a> ()</td></tr>
+<tr class="separator:ab9b30bd36219861aa011ec5efbbae7e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a192155f468fb9cddca35e47ac36325cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASBasicWaveBank_8cpp.html#a192155f468fb9cddca35e47ac36325cd">__dt__13JASWaveHandleFv</a> ()</td></tr>
+<tr class="separator:a192155f468fb9cddca35e47ac36325cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc1d7dcb37d2e6fb1cdecb1ad9e4d886"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASBasicWaveBank_8cpp.html#acc1d7dcb37d2e6fb1cdecb1ad9e4d886">__ct__Q216JASBasicWaveBank11TWaveHandleFv</a> ()</td></tr>
+<tr class="separator:acc1d7dcb37d2e6fb1cdecb1ad9e4d886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a2f34e83677159507ee4cbb66c8efc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASBasicWaveBank_8cpp.html#a1a2f34e83677159507ee4cbb66c8efc8">__ct__Q216JASBasicWaveBank14TGroupWaveInfoFv</a> ()</td></tr>
+<tr class="separator:a1a2f34e83677159507ee4cbb66c8efc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afad0a40d0d395220e76dca48c32c0db4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASBasicWaveBank_8cpp.html#afad0a40d0d395220e76dca48c32c0db4">getWaveInfo__Q216JASBasicWaveBank11TWaveHandleCFv</a> ()</td></tr>
+<tr class="separator:afad0a40d0d395220e76dca48c32c0db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24197f6bb7130b24d907f1077cd10a07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASBasicWaveBank_8cpp.html#a24197f6bb7130b24d907f1077cd10a07">getWaveArc__16JASBasicWaveBankFUl</a> ()</td></tr>
+<tr class="separator:a24197f6bb7130b24d907f1077cd10a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ff7c35bb21c43c2155b3c258c62412f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASBasicWaveBank_8cpp.html#a9ff7c35bb21c43c2155b3c258c62412f">getArcCount__16JASBasicWaveBankCFv</a> ()</td></tr>
+<tr class="separator:a9ff7c35bb21c43c2155b3c258c62412f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace519093a7e6e81088e9334d440c9505"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASBasicWaveBank_8cpp.html#ace519093a7e6e81088e9334d440c9505">__ct__10JASWaveArcFv</a> ()</td></tr>
 <tr class="separator:ace519093a7e6e81088e9334d440c9505"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf4ddb2e1ecdbc932ed80747df795b8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASBasicWaveBank_8cpp.html#acf4ddb2e1ecdbc932ed80747df795b8b">__dt__10JASWaveArcFv</a> ()</td></tr>
@@ -207,12 +176,6 @@ Functions</h2></td></tr>
 <tr class="separator:a498e6440d5c316e2672169ee4ed92309"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac74c79eb7e1bd5ec802794f8f8435e59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASBasicWaveBank_8cpp.html#ac74c79eb7e1bd5ec802794f8f8435e59">__dla__FPv</a> ()</td></tr>
 <tr class="separator:ac74c79eb7e1bd5ec802794f8f8435e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0479ff9acf9dce313eca521393718388"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASBasicWaveBank_8cpp.html#a0479ff9acf9dce313eca521393718388">OSInitMutex</a> ()</td></tr>
-<tr class="separator:a0479ff9acf9dce313eca521393718388"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3cc032bb3c6864dcd79c297743c4b6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASBasicWaveBank_8cpp.html#ac3cc032bb3c6864dcd79c297743c4b6c">OSLockMutex</a> ()</td></tr>
-<tr class="separator:ac3cc032bb3c6864dcd79c297743c4b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f1d6e851f76276d5bbcfd37f2005628"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASBasicWaveBank_8cpp.html#a4f1d6e851f76276d5bbcfd37f2005628">OSUnlockMutex</a> ()</td></tr>
-<tr class="separator:a4f1d6e851f76276d5bbcfd37f2005628"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a128810b7f9f87895b3d27d7d137b1519"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASBasicWaveBank_8cpp.html#a128810b7f9f87895b3d27d7d137b1519">__destroy_new_array</a> ()</td></tr>
 <tr class="separator:a128810b7f9f87895b3d27d7d137b1519"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a323591f74ddf6092f175dfa7e270e6fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASBasicWaveBank_8cpp.html#a323591f74ddf6092f175dfa7e270e6fb">__construct_new_array</a> ()</td></tr>
@@ -316,14 +279,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5b3d3dbb89de0848f34a5a34d0887bf9" name="a5b3d3dbb89de0848f34a5a34d0887bf9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b3d3dbb89de0848f34a5a34d0887bf9">&#9670;&#160;</a></span>__ct__Q216JASBasicWaveBank11TWaveHandleFv()</h2>
+<a id="acc1d7dcb37d2e6fb1cdecb1ad9e4d886" name="acc1d7dcb37d2e6fb1cdecb1ad9e4d886"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc1d7dcb37d2e6fb1cdecb1ad9e4d886">&#9670;&#160;</a></span>__ct__Q216JASBasicWaveBank11TWaveHandleFv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void __ct__Q216JASBasicWaveBank11TWaveHandleFv </td>
+          <td class="memname">asm void __ct__Q216JASBasicWaveBank11TWaveHandleFv </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -333,14 +296,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a64e994aaeca43ecc6d2661877f1df08d" name="a64e994aaeca43ecc6d2661877f1df08d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64e994aaeca43ecc6d2661877f1df08d">&#9670;&#160;</a></span>__ct__Q216JASBasicWaveBank14TGroupWaveInfoFv()</h2>
+<a id="a1a2f34e83677159507ee4cbb66c8efc8" name="a1a2f34e83677159507ee4cbb66c8efc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a2f34e83677159507ee4cbb66c8efc8">&#9670;&#160;</a></span>__ct__Q216JASBasicWaveBank14TGroupWaveInfoFv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void __ct__Q216JASBasicWaveBank14TGroupWaveInfoFv </td>
+          <td class="memname">asm void __ct__Q216JASBasicWaveBank14TGroupWaveInfoFv </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -418,14 +381,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad667a98f1441cb59488c849bf0267bce" name="ad667a98f1441cb59488c849bf0267bce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad667a98f1441cb59488c849bf0267bce">&#9670;&#160;</a></span>__dt__11JASWaveBankFv()</h2>
+<a id="ab9b30bd36219861aa011ec5efbbae7e6" name="ab9b30bd36219861aa011ec5efbbae7e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9b30bd36219861aa011ec5efbbae7e6">&#9670;&#160;</a></span>__dt__11JASWaveBankFv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void __dt__11JASWaveBankFv </td>
+          <td class="memname">asm void __dt__11JASWaveBankFv </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -435,14 +398,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="af60fa801a90b950feb531f678cf599a2" name="af60fa801a90b950feb531f678cf599a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af60fa801a90b950feb531f678cf599a2">&#9670;&#160;</a></span>__dt__13JASWaveHandleFv()</h2>
+<a id="a192155f468fb9cddca35e47ac36325cd" name="a192155f468fb9cddca35e47ac36325cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a192155f468fb9cddca35e47ac36325cd">&#9670;&#160;</a></span>__dt__13JASWaveHandleFv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void __dt__13JASWaveHandleFv </td>
+          <td class="memname">asm void __dt__13JASWaveHandleFv </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -639,14 +602,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4c4195a74dd1802d86e2abd2c6888ffc" name="a4c4195a74dd1802d86e2abd2c6888ffc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c4195a74dd1802d86e2abd2c6888ffc">&#9670;&#160;</a></span>getArcCount__16JASBasicWaveBankCFv()</h2>
+<a id="a9ff7c35bb21c43c2155b3c258c62412f" name="a9ff7c35bb21c43c2155b3c258c62412f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ff7c35bb21c43c2155b3c258c62412f">&#9670;&#160;</a></span>getArcCount__16JASBasicWaveBankCFv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void getArcCount__16JASBasicWaveBankCFv </td>
+          <td class="memname">asm void getArcCount__16JASBasicWaveBankCFv </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -656,14 +619,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="af22fdbe0f19b928c9b0958e7d54cb44b" name="af22fdbe0f19b928c9b0958e7d54cb44b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af22fdbe0f19b928c9b0958e7d54cb44b">&#9670;&#160;</a></span>getWaveArc__16JASBasicWaveBankFUl()</h2>
+<a id="a24197f6bb7130b24d907f1077cd10a07" name="a24197f6bb7130b24d907f1077cd10a07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24197f6bb7130b24d907f1077cd10a07">&#9670;&#160;</a></span>getWaveArc__16JASBasicWaveBankFUl()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void getWaveArc__16JASBasicWaveBankFUl </td>
+          <td class="memname">asm void getWaveArc__16JASBasicWaveBankFUl </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -724,14 +687,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5bcffbf733d9deb50e1441605ae571cf" name="a5bcffbf733d9deb50e1441605ae571cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5bcffbf733d9deb50e1441605ae571cf">&#9670;&#160;</a></span>getWaveInfo__Q216JASBasicWaveBank11TWaveHandleCFv()</h2>
+<a id="afad0a40d0d395220e76dca48c32c0db4" name="afad0a40d0d395220e76dca48c32c0db4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afad0a40d0d395220e76dca48c32c0db4">&#9670;&#160;</a></span>getWaveInfo__Q216JASBasicWaveBank11TWaveHandleCFv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void getWaveInfo__Q216JASBasicWaveBank11TWaveHandleCFv </td>
+          <td class="memname">asm void getWaveInfo__Q216JASBasicWaveBank11TWaveHandleCFv </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -817,57 +780,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void onLoadDone__Q216JASBasicWaveBank10TWaveGroupFv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0479ff9acf9dce313eca521393718388" name="a0479ff9acf9dce313eca521393718388"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0479ff9acf9dce313eca521393718388">&#9670;&#160;</a></span>OSInitMutex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSInitMutex </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac3cc032bb3c6864dcd79c297743c4b6c" name="ac3cc032bb3c6864dcd79c297743c4b6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3cc032bb3c6864dcd79c297743c4b6c">&#9670;&#160;</a></span>OSLockMutex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSLockMutex </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4f1d6e851f76276d5bbcfd37f2005628" name="a4f1d6e851f76276d5bbcfd37f2005628"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f1d6e851f76276d5bbcfd37f2005628">&#9670;&#160;</a></span>OSUnlockMutex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSUnlockMutex </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -968,13 +880,13 @@ Variables</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> ,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="JASBasicWaveBank_8cpp.html#ad667a98f1441cb59488c849bf0267bce">__dt__11JASWaveBankFv</a>,</div>
+<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="JASBasicWaveBank_8cpp.html#ab9b30bd36219861aa011ec5efbbae7e6">__dt__11JASWaveBankFv</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aJASBasicWaveBank_8cpp_html_ad667a98f1441cb59488c849bf0267bce"><div class="ttname"><a href="JASBasicWaveBank_8cpp.html#ad667a98f1441cb59488c849bf0267bce">__dt__11JASWaveBankFv</a></div><div class="ttdeci">void __dt__11JASWaveBankFv()</div></div>
-<div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:12</div></div>
+<div class="ttc" id="aJASBasicWaveBank_8cpp_html_ab9b30bd36219861aa011ec5efbbae7e6"><div class="ttname"><a href="JASBasicWaveBank_8cpp.html#ab9b30bd36219861aa011ec5efbbae7e6">__dt__11JASWaveBankFv</a></div><div class="ttdeci">void __dt__11JASWaveBankFv()</div><div class="ttdef"><b>Definition:</b> JASBasicWaveBank.cpp:353</div></div>
+<div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:17</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -998,9 +910,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> , (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, (<span class="keywordtype">void</span>*)<a class="code hl_function" href="JASBasicWaveBank_8cpp.html#af60fa801a90b950feb531f678cf599a2">__dt__13JASWaveHandleFv</a>, (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
+<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> , (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, (<span class="keywordtype">void</span>*)<a class="code hl_function" href="JASBasicWaveBank_8cpp.html#a192155f468fb9cddca35e47ac36325cd">__dt__13JASWaveHandleFv</a>, (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aJASBasicWaveBank_8cpp_html_af60fa801a90b950feb531f678cf599a2"><div class="ttname"><a href="JASBasicWaveBank_8cpp.html#af60fa801a90b950feb531f678cf599a2">__dt__13JASWaveHandleFv</a></div><div class="ttdeci">void __dt__13JASWaveHandleFv()</div></div>
+<div class="ttc" id="aJASBasicWaveBank_8cpp_html_a192155f468fb9cddca35e47ac36325cd"><div class="ttname"><a href="JASBasicWaveBank_8cpp.html#a192155f468fb9cddca35e47ac36325cd">__dt__13JASWaveHandleFv</a></div><div class="ttdeci">void __dt__13JASWaveHandleFv()</div><div class="ttdef"><b>Definition:</b> JASBasicWaveBank.cpp:364</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1028,12 +940,12 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="JASBasicWaveBank_8cpp.html#a8d1b8295688f42bdeb70628090113f2b">__dt__16JASBasicWaveBankFv</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="JASBasicWaveBank_8cpp.html#afc7fa9a1b931bc7e4e9b656341f2d30a">getWaveHandle__16JASBasicWaveBankCFUl</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="JASBasicWaveBank_8cpp.html#af22fdbe0f19b928c9b0958e7d54cb44b">getWaveArc__16JASBasicWaveBankFUl</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="JASBasicWaveBank_8cpp.html#a4c4195a74dd1802d86e2abd2c6888ffc">getArcCount__16JASBasicWaveBankCFv</a>,</div>
+<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="JASBasicWaveBank_8cpp.html#a24197f6bb7130b24d907f1077cd10a07">getWaveArc__16JASBasicWaveBankFUl</a>,</div>
+<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="JASBasicWaveBank_8cpp.html#a9ff7c35bb21c43c2155b3c258c62412f">getArcCount__16JASBasicWaveBankCFv</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aJASBasicWaveBank_8cpp_html_a4c4195a74dd1802d86e2abd2c6888ffc"><div class="ttname"><a href="JASBasicWaveBank_8cpp.html#a4c4195a74dd1802d86e2abd2c6888ffc">getArcCount__16JASBasicWaveBankCFv</a></div><div class="ttdeci">void getArcCount__16JASBasicWaveBankCFv()</div></div>
+<div class="ttc" id="aJASBasicWaveBank_8cpp_html_a24197f6bb7130b24d907f1077cd10a07"><div class="ttname"><a href="JASBasicWaveBank_8cpp.html#a24197f6bb7130b24d907f1077cd10a07">getWaveArc__16JASBasicWaveBankFUl</a></div><div class="ttdeci">void getWaveArc__16JASBasicWaveBankFUl()</div><div class="ttdef"><b>Definition:</b> JASBasicWaveBank.cpp:411</div></div>
 <div class="ttc" id="aJASBasicWaveBank_8cpp_html_a8d1b8295688f42bdeb70628090113f2b"><div class="ttname"><a href="JASBasicWaveBank_8cpp.html#a8d1b8295688f42bdeb70628090113f2b">__dt__16JASBasicWaveBankFv</a></div><div class="ttdeci">void __dt__16JASBasicWaveBankFv()</div></div>
-<div class="ttc" id="aJASBasicWaveBank_8cpp_html_af22fdbe0f19b928c9b0958e7d54cb44b"><div class="ttname"><a href="JASBasicWaveBank_8cpp.html#af22fdbe0f19b928c9b0958e7d54cb44b">getWaveArc__16JASBasicWaveBankFUl</a></div><div class="ttdeci">void getWaveArc__16JASBasicWaveBankFUl()</div></div>
+<div class="ttc" id="aJASBasicWaveBank_8cpp_html_a9ff7c35bb21c43c2155b3c258c62412f"><div class="ttname"><a href="JASBasicWaveBank_8cpp.html#a9ff7c35bb21c43c2155b3c258c62412f">getArcCount__16JASBasicWaveBankCFv</a></div><div class="ttdeci">void getArcCount__16JASBasicWaveBankCFv()</div><div class="ttdef"><b>Definition:</b> JASBasicWaveBank.cpp:423</div></div>
 <div class="ttc" id="aJASBasicWaveBank_8cpp_html_afc7fa9a1b931bc7e4e9b656341f2d30a"><div class="ttname"><a href="JASBasicWaveBank_8cpp.html#afc7fa9a1b931bc7e4e9b656341f2d30a">getWaveHandle__16JASBasicWaveBankCFUl</a></div><div class="ttdeci">void getWaveHandle__16JASBasicWaveBankCFUl()</div></div>
 </div><!-- fragment -->
 </div>
@@ -1095,12 +1007,12 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> ,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="JASBasicWaveBank_8cpp.html#a4a8cc2b17ed4802b0ca1a6272b3a33fd">__dt__Q216JASBasicWaveBank11TWaveHandleFv</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="JASBasicWaveBank_8cpp.html#a5bcffbf733d9deb50e1441605ae571cf">getWaveInfo__Q216JASBasicWaveBank11TWaveHandleCFv</a>,</div>
+<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="JASBasicWaveBank_8cpp.html#afad0a40d0d395220e76dca48c32c0db4">getWaveInfo__Q216JASBasicWaveBank11TWaveHandleCFv</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="JASBasicWaveBank_8cpp.html#a6c5c983e215a4a7018fd80f64cb6f8d7">getWavePtr__Q216JASBasicWaveBank11TWaveHandleCFv</a>,</div>
 <div class="line">}</div>
 <div class="ttc" id="aJASBasicWaveBank_8cpp_html_a4a8cc2b17ed4802b0ca1a6272b3a33fd"><div class="ttname"><a href="JASBasicWaveBank_8cpp.html#a4a8cc2b17ed4802b0ca1a6272b3a33fd">__dt__Q216JASBasicWaveBank11TWaveHandleFv</a></div><div class="ttdeci">void __dt__Q216JASBasicWaveBank11TWaveHandleFv()</div></div>
-<div class="ttc" id="aJASBasicWaveBank_8cpp_html_a5bcffbf733d9deb50e1441605ae571cf"><div class="ttname"><a href="JASBasicWaveBank_8cpp.html#a5bcffbf733d9deb50e1441605ae571cf">getWaveInfo__Q216JASBasicWaveBank11TWaveHandleCFv</a></div><div class="ttdeci">void getWaveInfo__Q216JASBasicWaveBank11TWaveHandleCFv()</div></div>
 <div class="ttc" id="aJASBasicWaveBank_8cpp_html_a6c5c983e215a4a7018fd80f64cb6f8d7"><div class="ttname"><a href="JASBasicWaveBank_8cpp.html#a6c5c983e215a4a7018fd80f64cb6f8d7">getWavePtr__Q216JASBasicWaveBank11TWaveHandleCFv</a></div><div class="ttdeci">void getWavePtr__Q216JASBasicWaveBank11TWaveHandleCFv()</div></div>
+<div class="ttc" id="aJASBasicWaveBank_8cpp_html_afad0a40d0d395220e76dca48c32c0db4"><div class="ttname"><a href="JASBasicWaveBank_8cpp.html#afad0a40d0d395220e76dca48c32c0db4">getWaveInfo__Q216JASBasicWaveBank11TWaveHandleCFv</a></div><div class="ttdeci">void getWaveInfo__Q216JASBasicWaveBank11TWaveHandleCFv()</div><div class="ttdef"><b>Definition:</b> JASBasicWaveBank.cpp:399</div></div>
 </div><!-- fragment -->
 </div>
 </div>

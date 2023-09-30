@@ -10,7 +10,7 @@ var searchData=
   ['xferred_7',['xferred',['../structCARDControl.html#a8f283e071c7668669361e24ac1b0e39e',1,'CARDControl']]],
   ['xfertime_8',['XferTime',['../SIBios_8c.html#a0777189a976736b560f3690e3b19dd5b',1,'SIBios.c']]],
   ['xpatchbits_9',['XPatchBits',['../Pad_8c.html#a3d12b82b7a417a68da58fcbb49f520f7',1,'Pad.c']]],
-  ['xy_5ftext_10',['xy_text',['../d__menu__ring_8cpp.html#a7f08a77197f647e0a99d732ab652efe5',1,'d_menu_ring.cpp']]],
+  ['xy_5ftext_10',['xy_text',['../d__menu__ring_8cpp.html#a50db3ad5f2c1552eca426f70a6d5f2b7',1,'d_menu_ring.cpp']]],
   ['xyntsc_11',['XYNTSC',['../SISamplingRate_8c.html#a7f8e75b510ffdde6823597efd8c1af46',1,'SISamplingRate.c']]],
   ['xypal_12',['XYPAL',['../SISamplingRate_8c.html#af0c5b6bec9a402be4834cf592e0b02b6',1,'SISamplingRate.c']]],
   ['xystick_13',['xyStick',['../structPADClampRegion.html#a4c3fa20d75dd5adc60a07a79832df3b6',1,'PADClampRegion']]],

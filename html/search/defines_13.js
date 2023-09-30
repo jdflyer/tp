@@ -100,6 +100,7 @@ var searchData=
   ['stdin_97',['stdin',['../stdio_8h.html#aaca70138f0cb63ddb026921afc635179',1,'stdio.h']]],
   ['stdout_98',['stdout',['../stdio_8h.html#a0c0ef221f95f64e8632451312fd18cc8',1,'stdio.h']]],
   ['stringoff_99',['stringOff',['../dvdfs_8c.html#a79177b1a114db9634be288be96cb2bc3',1,'dvdfs.c']]],
-  ['switch_5fone_5fzone_5fmax_100',['SWITCH_ONE_ZONE_MAX',['../d__save_8h.html#a4fe03e8759cb7a053d026d629e770f6c',1,'d_save.h']]],
-  ['switch_5fzone_5fmax_101',['SWITCH_ZONE_MAX',['../d__save_8h.html#adfa7e509e088d22ea5a5ea0f13fca514',1,'d_save.h']]]
+  ['suaboutencoding_5f_100',['suAboutEncoding_',['../JUTResFont_8cpp.html#ae6c403045ceae5b64a815ed3218d9edb',1,'JUTResFont.cpp']]],
+  ['switch_5fone_5fzone_5fmax_101',['SWITCH_ONE_ZONE_MAX',['../d__save_8h.html#a4fe03e8759cb7a053d026d629e770f6c',1,'d_save.h']]],
+  ['switch_5fzone_5fmax_102',['SWITCH_ZONE_MAX',['../d__save_8h.html#adfa7e509e088d22ea5a5ea0f13fca514',1,'d_save.h']]]
 ];

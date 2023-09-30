@@ -32,9 +32,8 @@ var searchData=
   ['letter_5finfo_5fbit_29',['LETTER_INFO_BIT',['../d__save_8h.html#a54347ceb85ca9ecbaad8b3f42bcca65a',1,'d_save.h']]],
   ['lhex_30',['lhex',['../ctype_8c.html#a4cf7f3a8f58353f83d533c3299ef6486',1,'ctype.c']]],
   ['light_5fdrop_5fstage_31',['LIGHT_DROP_STAGE',['../d__save_8h.html#ab33908adcf0731110db7e2c429a5693f',1,'d_save.h']]],
-  ['logf_32',['LOGF',['../global_8h.html#a81d5f6c32dcf2185fe6cac2f3e2e4f7b',1,'global.h']]],
-  ['lowc_33',['lowc',['../ctype_8c.html#a1e49dcff6b24a1fac6076c14c6021020',1,'ctype.c']]],
-  ['lpd_34',['lpd',['../mem__funcs_8c.html#a8347c3ad6c2c8efc446e258dcc643f88',1,'mem_funcs.c']]],
-  ['lps_35',['lps',['../mem__funcs_8c.html#a7ff58883a97db2334f0c8688e6395916',1,'mem_funcs.c']]],
-  ['lr_36',['LR',['../PPCArch_8h.html#a3572ba4e929ec4380493fcfbbde0efa2',1,'PPCArch.h']]]
+  ['lowc_32',['lowc',['../ctype_8c.html#a1e49dcff6b24a1fac6076c14c6021020',1,'ctype.c']]],
+  ['lpd_33',['lpd',['../mem__funcs_8c.html#a8347c3ad6c2c8efc446e258dcc643f88',1,'mem_funcs.c']]],
+  ['lps_34',['lps',['../mem__funcs_8c.html#a7ff58883a97db2334f0c8688e6395916',1,'mem_funcs.c']]],
+  ['lr_35',['LR',['../PPCArch_8h.html#a3572ba4e929ec4380493fcfbbde0efa2',1,'PPCArch.h']]]
 ];

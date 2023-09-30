@@ -87,11 +87,8 @@ $(function() {
   <div class="headertitle"><div class="title">JPAEmitter.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="GXEnum_8h_source.html">dolphin/gx/GXEnum.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="GXEnum_8h_source.html">dolphin/gx/GXEnum.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GXStruct_8h_source.html">dolphin/gx/GXStruct.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mtx_8h_source.html">dolphin/mtx/mtx.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="JGeometry_8h_source.html">JSystem/JGeometry.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="JPAResource_8h_source.html">JSystem/JParticle/JPAResource.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="JPAList_8h_source.html">JSystem/JParticle/JPAList.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="JPARandom_8h_source.html">JSystem/JParticle/JPARandom.h</a>&quot;</code><br />
@@ -128,25 +125,25 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a1b70d876770ccff427513794d6b0b2a7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="JPAEmitter_8h.html#a1b70d876770ccff427513794d6b0b2a7ae1b83c054ed8007b618203b81410d3bb">JPAEmtrStts_StopEmit</a> = 0x01
-, <a class="el" href="JPAEmitter_8h.html#a1b70d876770ccff427513794d6b0b2a7ae1e61ba7547167e0c59ab76fd23898fd">JPAEmtrStts_StopCalc</a> = 0x02
-, <a class="el" href="JPAEmitter_8h.html#a1b70d876770ccff427513794d6b0b2a7a74c04fc0ef3046d9891b76b1117a4846">JPAEmtrStts_StopDraw</a> = 0x04
-, <a class="el" href="JPAEmitter_8h.html#a1b70d876770ccff427513794d6b0b2a7aacfd49e0abb0b97ea1fe32c46dbf9c54">JPAEmtrStts_EnableDeleteEmitter</a> = 0x08
+<tr class="memitem:aa57e16cd48de3b9a989056ff8df26f84"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="JPAEmitter_8h.html#aa57e16cd48de3b9a989056ff8df26f84ae1b83c054ed8007b618203b81410d3bb">JPAEmtrStts_StopEmit</a> = 0x01
+, <a class="el" href="JPAEmitter_8h.html#aa57e16cd48de3b9a989056ff8df26f84ae1e61ba7547167e0c59ab76fd23898fd">JPAEmtrStts_StopCalc</a> = 0x02
+, <a class="el" href="JPAEmitter_8h.html#aa57e16cd48de3b9a989056ff8df26f84a74c04fc0ef3046d9891b76b1117a4846">JPAEmtrStts_StopDraw</a> = 0x04
+, <a class="el" href="JPAEmitter_8h.html#aa57e16cd48de3b9a989056ff8df26f84aacfd49e0abb0b97ea1fe32c46dbf9c54">JPAEmtrStts_EnableDeleteEmitter</a> = 0x08
 , <br />
-&#160;&#160;<a class="el" href="JPAEmitter_8h.html#a1b70d876770ccff427513794d6b0b2a7a4b0253428b9e3a6d2610caf0cd5995bb">JPAEmtrStts_FirstEmit</a> = 0x10
-, <a class="el" href="JPAEmitter_8h.html#a1b70d876770ccff427513794d6b0b2a7a6fba5645a555ed5baea2905161cc54f4">JPAEmtrStts_RateStepEmit</a> = 0x20
-, <a class="el" href="JPAEmitter_8h.html#a1b70d876770ccff427513794d6b0b2a7a69e994b632389f74094b63f9c2c01197">JPAEmtrStts_Immortal</a> = 0x40
+&#160;&#160;<a class="el" href="JPAEmitter_8h.html#aa57e16cd48de3b9a989056ff8df26f84a4b0253428b9e3a6d2610caf0cd5995bb">JPAEmtrStts_FirstEmit</a> = 0x10
+, <a class="el" href="JPAEmitter_8h.html#aa57e16cd48de3b9a989056ff8df26f84a6fba5645a555ed5baea2905161cc54f4">JPAEmtrStts_RateStepEmit</a> = 0x20
+, <a class="el" href="JPAEmitter_8h.html#aa57e16cd48de3b9a989056ff8df26f84a69e994b632389f74094b63f9c2c01197">JPAEmtrStts_Immortal</a> = 0x40
 <br />
  }</td></tr>
-<tr class="separator:a1b70d876770ccff427513794d6b0b2a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70ad55be767ca0a42c9150d24618e4ca"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="JPAEmitter_8h.html#a70ad55be767ca0a42c9150d24618e4caade43f3e85dc6ffde68190ece5ee41da0">JPAPtclStts_Invisible</a> = 0x08
+<tr class="separator:aa57e16cd48de3b9a989056ff8df26f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a634f9f55e799f3052a34590f08100017"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="JPAEmitter_8h.html#a634f9f55e799f3052a34590f08100017ade43f3e85dc6ffde68190ece5ee41da0">JPAPtclStts_Invisible</a> = 0x08
  }</td></tr>
-<tr class="separator:a70ad55be767ca0a42c9150d24618e4ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a634f9f55e799f3052a34590f08100017"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a1b70d876770ccff427513794d6b0b2a7" name="a1b70d876770ccff427513794d6b0b2a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b70d876770ccff427513794d6b0b2a7">&#9670;&#160;</a></span>anonymous enum</h2>
+<a id="aa57e16cd48de3b9a989056ff8df26f84" name="aa57e16cd48de3b9a989056ff8df26f84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa57e16cd48de3b9a989056ff8df26f84">&#9670;&#160;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -157,19 +154,19 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1b70d876770ccff427513794d6b0b2a7ae1b83c054ed8007b618203b81410d3bb" name="a1b70d876770ccff427513794d6b0b2a7ae1b83c054ed8007b618203b81410d3bb"></a>JPAEmtrStts_StopEmit&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1b70d876770ccff427513794d6b0b2a7ae1e61ba7547167e0c59ab76fd23898fd" name="a1b70d876770ccff427513794d6b0b2a7ae1e61ba7547167e0c59ab76fd23898fd"></a>JPAEmtrStts_StopCalc&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1b70d876770ccff427513794d6b0b2a7a74c04fc0ef3046d9891b76b1117a4846" name="a1b70d876770ccff427513794d6b0b2a7a74c04fc0ef3046d9891b76b1117a4846"></a>JPAEmtrStts_StopDraw&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1b70d876770ccff427513794d6b0b2a7aacfd49e0abb0b97ea1fe32c46dbf9c54" name="a1b70d876770ccff427513794d6b0b2a7aacfd49e0abb0b97ea1fe32c46dbf9c54"></a>JPAEmtrStts_EnableDeleteEmitter&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1b70d876770ccff427513794d6b0b2a7a4b0253428b9e3a6d2610caf0cd5995bb" name="a1b70d876770ccff427513794d6b0b2a7a4b0253428b9e3a6d2610caf0cd5995bb"></a>JPAEmtrStts_FirstEmit&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1b70d876770ccff427513794d6b0b2a7a6fba5645a555ed5baea2905161cc54f4" name="a1b70d876770ccff427513794d6b0b2a7a6fba5645a555ed5baea2905161cc54f4"></a>JPAEmtrStts_RateStepEmit&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a1b70d876770ccff427513794d6b0b2a7a69e994b632389f74094b63f9c2c01197" name="a1b70d876770ccff427513794d6b0b2a7a69e994b632389f74094b63f9c2c01197"></a>JPAEmtrStts_Immortal&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa57e16cd48de3b9a989056ff8df26f84ae1b83c054ed8007b618203b81410d3bb" name="aa57e16cd48de3b9a989056ff8df26f84ae1b83c054ed8007b618203b81410d3bb"></a>JPAEmtrStts_StopEmit&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa57e16cd48de3b9a989056ff8df26f84ae1e61ba7547167e0c59ab76fd23898fd" name="aa57e16cd48de3b9a989056ff8df26f84ae1e61ba7547167e0c59ab76fd23898fd"></a>JPAEmtrStts_StopCalc&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa57e16cd48de3b9a989056ff8df26f84a74c04fc0ef3046d9891b76b1117a4846" name="aa57e16cd48de3b9a989056ff8df26f84a74c04fc0ef3046d9891b76b1117a4846"></a>JPAEmtrStts_StopDraw&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa57e16cd48de3b9a989056ff8df26f84aacfd49e0abb0b97ea1fe32c46dbf9c54" name="aa57e16cd48de3b9a989056ff8df26f84aacfd49e0abb0b97ea1fe32c46dbf9c54"></a>JPAEmtrStts_EnableDeleteEmitter&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa57e16cd48de3b9a989056ff8df26f84a4b0253428b9e3a6d2610caf0cd5995bb" name="aa57e16cd48de3b9a989056ff8df26f84a4b0253428b9e3a6d2610caf0cd5995bb"></a>JPAEmtrStts_FirstEmit&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa57e16cd48de3b9a989056ff8df26f84a6fba5645a555ed5baea2905161cc54f4" name="aa57e16cd48de3b9a989056ff8df26f84a6fba5645a555ed5baea2905161cc54f4"></a>JPAEmtrStts_RateStepEmit&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa57e16cd48de3b9a989056ff8df26f84a69e994b632389f74094b63f9c2c01197" name="aa57e16cd48de3b9a989056ff8df26f84a69e994b632389f74094b63f9c2c01197"></a>JPAEmtrStts_Immortal&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<a id="a70ad55be767ca0a42c9150d24618e4ca" name="a70ad55be767ca0a42c9150d24618e4ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70ad55be767ca0a42c9150d24618e4ca">&#9670;&#160;</a></span>anonymous enum</h2>
+<a id="a634f9f55e799f3052a34590f08100017" name="a634f9f55e799f3052a34590f08100017"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a634f9f55e799f3052a34590f08100017">&#9670;&#160;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -180,7 +177,7 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a70ad55be767ca0a42c9150d24618e4caade43f3e85dc6ffde68190ece5ee41da0" name="a70ad55be767ca0a42c9150d24618e4caade43f3e85dc6ffde68190ece5ee41da0"></a>JPAPtclStts_Invisible&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a634f9f55e799f3052a34590f08100017ade43f3e85dc6ffde68190ece5ee41da0" name="a634f9f55e799f3052a34590f08100017ade43f3e85dc6ffde68190ece5ee41da0"></a>JPAPtclStts_Invisible&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

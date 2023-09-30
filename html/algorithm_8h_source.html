@@ -96,14 +96,48 @@ $(function() {
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> InputIt, <span class="keyword">class</span> UnaryPredicate&gt;</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="namespacestd.html#a414885b69eafe8468a833647c51b8703">   12</a></span>InputIt <a class="code hl_function" href="namespacestd.html#a964f8b7917a5e7dbc4110fd12f0c95f8">find_if</a>(InputIt first, InputIt last, UnaryPredicate p);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>}  <span class="comment">// namespace std</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">template&lt;class OutputIt, class Size, int A2&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">struct __fill_n {</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">    OutputIt fill_n(OutputIt first, Size count, const unsigned long&amp; value);</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">};</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"></span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">template&lt;&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">unsigned long* __fill_n&lt;unsigned long, long, 0&gt;::fill_n(unsigned long* first, long count, const unsigned long&amp; value) {</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">    for (; count &gt; 0; count--) {</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">        *first++ = value;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">    }</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">    return first;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">}</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"></span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">template&lt;class OutputIt, class Size, class T&gt;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">OutputIt fill_n(OutputIt first, Size count, const T&amp; value) {</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">    return __fill_n::fill_n(first, count, value);</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">}</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"></span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"></span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">template&lt;class ForwardIt, class T&gt;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">void __fill(ForwardIt first, ForwardIt last, const T&amp; value, std::random_access_iterator_tag param_3) {</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">    fill_n(first, last - first, value);</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">}</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> ForwardIt, <span class="keyword">class</span> T&gt;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="namespacestd.html#ad843aca2b74c16de90356cb8e6b08117">   41</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacestd.html#ad843aca2b74c16de90356cb8e6b08117">fill</a>(ForwardIt first, ForwardIt last, <span class="keyword">const</span> <a class="code hl_variable" href="k__tan_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a>&amp; value) {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">for</span> (; first != last; ++first){</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        *first = value;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}  <span class="comment">// namespace std</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="ainit_8h_html_aa0ccb5ee6d882ee3605ff47745c6467b"><div class="ttname"><a href="init_8h.html#aa0ccb5ee6d882ee3605ff47745c6467b">val</a></div><div class="ttdeci">int val</div><div class="ttdef"><b>Definition:</b> init.h:10</div></div>
-<div class="ttc" id="ak__tan_8c_html_a3f23ef19f75a1358ade1d01a49060f77"><div class="ttname"><a href="k__tan_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a></div><div class="ttdeci">static const double T[]</div><div class="ttdef"><b>Definition:</b> k_tan.c:107</div></div>
-<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> d_camera.cpp:20</div></div>
+<div class="ttc" id="ak__tan_8c_html_a3f23ef19f75a1358ade1d01a49060f77"><div class="ttname"><a href="k__tan_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a></div><div class="ttdeci">static const double T[]</div><div class="ttdef"><b>Definition:</b> k_tan.c:106</div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> d_camera.cpp:18</div></div>
 <div class="ttc" id="anamespacestd_html_a41cc439c53681ab2c3c53497bb5ef97d"><div class="ttname"><a href="namespacestd.html#a41cc439c53681ab2c3c53497bb5ef97d">std::lower_bound</a></div><div class="ttdeci">void lower_bound()</div></div>
 <div class="ttc" id="anamespacestd_html_a964f8b7917a5e7dbc4110fd12f0c95f8"><div class="ttname"><a href="namespacestd.html#a964f8b7917a5e7dbc4110fd12f0c95f8">std::find_if</a></div><div class="ttdeci">void find_if()</div></div>
+<div class="ttc" id="anamespacestd_html_ad843aca2b74c16de90356cb8e6b08117"><div class="ttname"><a href="namespacestd.html#ad843aca2b74c16de90356cb8e6b08117">std::fill</a></div><div class="ttdeci">void fill(ForwardIt first, ForwardIt last, const T &amp;value)</div><div class="ttdef"><b>Definition:</b> algorithm.h:41</div></div>
 <div class="ttc" id="anamespacestd_html_af2c4c86486273d2ee66f42c9d67d0096"><div class="ttname"><a href="namespacestd.html#af2c4c86486273d2ee66f42c9d67d0096">std::upper_bound</a></div><div class="ttdeci">void upper_bound()</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

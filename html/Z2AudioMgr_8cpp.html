@@ -89,12 +89,20 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="Z2AudioMgr_8h_source.html">Z2AudioLib/Z2AudioMgr.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JASAiCtrl_8h_source.html">JSystem/JAudio2/JASAiCtrl.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="JASDriverIF_8h_source.html">JSystem/JAudio2/JASDriverIF.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JASResArcLoader_8h_source.html">JSystem/JAudio2/JASResArcLoader.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JASSeqParser_8h_source.html">JSystem/JAudio2/JASSeqParser.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JAUInitializer_8h_source.html">JSystem/JAudio2/JAUInitializer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JAUSectionHeap_8h_source.html">JSystem/JAudio2/JAUSectionHeap.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JAUStreamAramMgr_8h_source.html">JSystem/JAudio2/JAUStreamAramMgr.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JKRSolidHeap_8h_source.html">JSystem/JKernel/JKRSolidHeap.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Z2AudioArcLoader_8h_source.html">Z2AudioLib/Z2AudioArcLoader.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Z2SoundHandles_8h_source.html">Z2AudioLib/Z2SoundHandles.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="stdio_8h_source.html">MSL_C/stdio.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="stdlib_8h_source.html">MSL_C/stdlib.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2AudioMgr/__ct__10Z2AudioMgrFv.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2AudioMgr/init__10Z2AudioMgrFP12JKRSolidHeapUlPvP10JKRArchive.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2AudioMgr/func_802CD7F8.s&quot;</code><br />
@@ -116,40 +124,6 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structZ2Param.html">Z2Param</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAUSection.html">JAUSection</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structZ2AudioArcLoader.html">Z2AudioArcLoader</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAU__JASInitializer.html">JAU_JASInitializer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAU__JAIInitializer.html">JAU_JAIInitializer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAUStreamStaticAramMgr__.html">JAUStreamStaticAramMgr_&lt; A0 &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAUStreamStaticAramMgr______template0.html">JAUStreamStaticAramMgr___template0</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAUStreamAramMgrBase__.html">JAUStreamAramMgrBase_&lt; A0 &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAUStreamAramMgrBase______template0.html">JAUStreamAramMgrBase___template0</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAUSectionHeap.html">JAUSectionHeap</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAUAudioArcLoader.html">JAUAudioArcLoader</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAUAudioArcInterpreter.html">JAUAudioArcInterpreter</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASSeqParser.html">JASSeqParser</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASResArcLoader.html">JASResArcLoader</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASKernel.html">JASKernel</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASAramStream.html">JASAramStream</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAIStreamAramMgr.html">JAIStreamAramMgr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISoundInfo.html">JAISoundInfo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -1844,8 +1818,8 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2AudioMgr_8cpp.html#a052d1aafec3522248fc00f9d7c077932">func_802CDB1C</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aZ2AudioMgr_8cpp_html_a052d1aafec3522248fc00f9d7c077932"><div class="ttname"><a href="Z2AudioMgr_8cpp.html#a052d1aafec3522248fc00f9d7c077932">func_802CDB1C</a></div><div class="ttdeci">void func_802CDB1C()</div><div class="ttdef"><b>Definition:</b> Z2AudioMgr.cpp:390</div></div>
-<div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:12</div></div>
+<div class="ttc" id="aZ2AudioMgr_8cpp_html_a052d1aafec3522248fc00f9d7c077932"><div class="ttname"><a href="Z2AudioMgr_8cpp.html#a052d1aafec3522248fc00f9d7c077932">func_802CDB1C</a></div><div class="ttdeci">void func_802CDB1C()</div><div class="ttdef"><b>Definition:</b> Z2AudioMgr.cpp:431</div></div>
+<div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:17</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2004,9 +1978,9 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> , (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,          (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2AudioMgr_8cpp.html#aa53b5fd446023e75c10bca212d729519">func_802CDCEC</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2AudioMgr_8cpp.html#a9abffeaf8218964095528f33dfa8fd72">func_802CDC08</a>,   (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2AudioMgr_8cpp.html#a9cc89d0f351803bc416f28df22249bb8">func_802CDB68</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aZ2AudioMgr_8cpp_html_a9abffeaf8218964095528f33dfa8fd72"><div class="ttname"><a href="Z2AudioMgr_8cpp.html#a9abffeaf8218964095528f33dfa8fd72">func_802CDC08</a></div><div class="ttdeci">void func_802CDC08(void *_this, u32)</div><div class="ttdef"><b>Definition:</b> Z2AudioMgr.cpp:418</div></div>
-<div class="ttc" id="aZ2AudioMgr_8cpp_html_a9cc89d0f351803bc416f28df22249bb8"><div class="ttname"><a href="Z2AudioMgr_8cpp.html#a9cc89d0f351803bc416f28df22249bb8">func_802CDB68</a></div><div class="ttdeci">void func_802CDB68(void *_this)</div><div class="ttdef"><b>Definition:</b> Z2AudioMgr.cpp:400</div></div>
-<div class="ttc" id="aZ2AudioMgr_8cpp_html_aa53b5fd446023e75c10bca212d729519"><div class="ttname"><a href="Z2AudioMgr_8cpp.html#aa53b5fd446023e75c10bca212d729519">func_802CDCEC</a></div><div class="ttdeci">void func_802CDCEC(void *_this, u32 *)</div><div class="ttdef"><b>Definition:</b> Z2AudioMgr.cpp:438</div></div>
+<div class="ttc" id="aZ2AudioMgr_8cpp_html_a9abffeaf8218964095528f33dfa8fd72"><div class="ttname"><a href="Z2AudioMgr_8cpp.html#a9abffeaf8218964095528f33dfa8fd72">func_802CDC08</a></div><div class="ttdeci">void func_802CDC08(void *_this, u32)</div><div class="ttdef"><b>Definition:</b> Z2AudioMgr.cpp:460</div></div>
+<div class="ttc" id="aZ2AudioMgr_8cpp_html_a9cc89d0f351803bc416f28df22249bb8"><div class="ttname"><a href="Z2AudioMgr_8cpp.html#a9cc89d0f351803bc416f28df22249bb8">func_802CDB68</a></div><div class="ttdeci">void func_802CDB68(void *_this)</div><div class="ttdef"><b>Definition:</b> Z2AudioMgr.cpp:442</div></div>
+<div class="ttc" id="aZ2AudioMgr_8cpp_html_aa53b5fd446023e75c10bca212d729519"><div class="ttname"><a href="Z2AudioMgr_8cpp.html#aa53b5fd446023e75c10bca212d729519">func_802CDCEC</a></div><div class="ttdeci">void func_802CDCEC(void *_this, u32 *)</div><div class="ttdef"><b>Definition:</b> Z2AudioMgr.cpp:480</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2038,7 +2012,7 @@ Variables</h2></td></tr>
 <div class="line">    </div>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aZ2AudioMgr_8cpp_html_a996cc60e275ba4229ddd6f8ec5efb5fc"><div class="ttname"><a href="Z2AudioMgr_8cpp.html#a996cc60e275ba4229ddd6f8ec5efb5fc">func_802CD7F8</a></div><div class="ttdeci">void func_802CD7F8(void *_this)</div><div class="ttdef"><b>Definition:</b> Z2AudioMgr.cpp:298</div></div>
+<div class="ttc" id="aZ2AudioMgr_8cpp_html_a996cc60e275ba4229ddd6f8ec5efb5fc"><div class="ttname"><a href="Z2AudioMgr_8cpp.html#a996cc60e275ba4229ddd6f8ec5efb5fc">func_802CD7F8</a></div><div class="ttdeci">void func_802CD7F8(void *_this)</div><div class="ttdef"><b>Definition:</b> Z2AudioMgr.cpp:329</div></div>
 </div><!-- fragment -->
 </div>
 </div>

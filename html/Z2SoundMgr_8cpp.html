@@ -90,7 +90,6 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="Z2SoundMgr_8h_source.html">Z2AudioLib/Z2SoundMgr.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2SoundMgr/seqCallback__FP8JASTrackUs.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2SoundMgr/__ct__10Z2SoundMgrFv.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2SoundMgr/func_802A9EE8.s&quot;</code><br />
@@ -120,9 +119,9 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structZ2SpeechMgr2.html">Z2SpeechMgr2</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structZ2SoundInfo.html">Z2SoundInfo</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structZ2SoundInfo.html">Z2SoundInfo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAUSectionHeap.html">JAUSectionHeap</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAUSectionHeap.html">JAUSectionHeap</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASDriver.html">JASDriver</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -263,8 +262,8 @@ Functions</h2></td></tr>
 <tr class="separator:a3f61243ebf5cbb2ff90548d397b16772"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84191174c69215693bd801985a205889"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2SoundMgr_8cpp.html#a84191174c69215693bd801985a205889">sprintf</a> ()</td></tr>
 <tr class="separator:a84191174c69215693bd801985a205889"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a813d8ccf038f2b8a4d9259f1ddbf901f"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2SoundMgr_8cpp.html#a813d8ccf038f2b8a4d9259f1ddbf901f">seqCallback</a> (<a class="el" href="structJASTrack.html">JASTrack</a> *param_0, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> param_1)</td></tr>
-<tr class="separator:a813d8ccf038f2b8a4d9259f1ddbf901f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a430fbf8c48c0dff7ab9b6f0c2d19de34"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2SoundMgr_8cpp.html#a430fbf8c48c0dff7ab9b6f0c2d19de34">seqCallback</a> (<a class="el" href="structJASTrack.html">JASTrack</a> *param_0, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> param_1)</td></tr>
+<tr class="separator:a430fbf8c48c0dff7ab9b6f0c2d19de34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d31fa01b2e9db15e4ffadce4281d157"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2SoundMgr_8cpp.html#a8d31fa01b2e9db15e4ffadce4281d157">COMPILER_STRIP_GATE</a> (0x8039B9C0, &amp;<a class="el" href="Z2SoundMgr_8cpp.html#a9c1ddeb181b32d8329cb4a3fab337158">cResetFilterTable</a>)</td></tr>
 <tr class="separator:a8d31fa01b2e9db15e4ffadce4281d157"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -1124,14 +1123,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a813d8ccf038f2b8a4d9259f1ddbf901f" name="a813d8ccf038f2b8a4d9259f1ddbf901f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a813d8ccf038f2b8a4d9259f1ddbf901f">&#9670;&#160;</a></span>seqCallback()</h2>
+<a id="a430fbf8c48c0dff7ab9b6f0c2d19de34" name="a430fbf8c48c0dff7ab9b6f0c2d19de34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a430fbf8c48c0dff7ab9b6f0c2d19de34">&#9670;&#160;</a></span>seqCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void seqCallback </td>
+          <td class="memname">asm <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> seqCallback </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJASTrack.html">JASTrack</a> *&#160;</td>
           <td class="paramname"><em>param_0</em>, </td>
@@ -1543,7 +1542,7 @@ Variables</h2></td></tr>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
 <div class="ttc" id="aZ2SoundMgr_8cpp_html_ab44deda471218e6c374b5fe66df419d4"><div class="ttname"><a href="Z2SoundMgr_8cpp.html#ab44deda471218e6c374b5fe66df419d4">func_802A9EE8</a></div><div class="ttdeci">void func_802A9EE8()</div></div>
-<div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:12</div></div>
+<div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:17</div></div>
 </div><!-- fragment -->
 </div>
 </div>

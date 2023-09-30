@@ -6,11 +6,13 @@ var searchData=
   ['jkrdecomp_5fsync_5fnon_5fblocking_3',['JKRDECOMP_SYNC_NON_BLOCKING',['../JKRDecomp_8h.html#a8fb1bd37ab2259821ffe3341560ca2cf',1,'JKRDecomp.h']]],
   ['jut_5fassert_4',['JUT_ASSERT',['../JUTAssert_8h.html#a666f8d9f61d842b3b29b0f2782cad2d8',1,'JUTAssert.h']]],
   ['jut_5fexpect_5',['JUT_EXPECT',['../global_8h.html#a45a2bf9a03d4ed09842ad44eae97d1b1',1,'global.h']]],
-  ['jut_5fpanic_6',['JUT_PANIC',['../JUTAssert_8h.html#adb737228e3e305747f2c4e9ee3821da3',1,'JUTAssert.h']]],
-  ['jut_5fprint_5ffloat_7',['JUT_PRINT_FLOAT',['../JUTException_8h.html#ab88fd64c7cae77004307837f69128274',1,'JUTException.h']]],
-  ['jut_5fprint_5fgpr_8',['JUT_PRINT_GPR',['../JUTException_8h.html#a5e4015abac33e6d0ea819de2709313e0',1,'JUTException.h']]],
-  ['jut_5fprint_5fgpr_5fmap_9',['JUT_PRINT_GPR_MAP',['../JUTException_8h.html#a8026f2a3d567f7c878e235d715d511fe',1,'JUTException.h']]],
-  ['jut_5fprint_5fsrr0_5fmap_10',['JUT_PRINT_SRR0_MAP',['../JUTException_8h.html#abc80328eac5a860a95c05e23ea289678',1,'JUTException.h']]],
-  ['jut_5fprint_5fstack_11',['JUT_PRINT_STACK',['../JUTException_8h.html#a7618ad2f8b9deaac3c11b3e414a25ab7',1,'JUTException.h']]],
-  ['jutdf_5fbufsize_12',['JUTDF_BUFSIZE',['../JUTDirectFile_8h.html#a003ca8f129b9992eaef22929866d49ab',1,'JUTDirectFile.h']]]
+  ['jut_5flog_6',['JUT_LOG',['../JUTAssert_8h.html#a7df23a725e209c2d42c6595e00ef3a7a',1,'JUTAssert.h']]],
+  ['jut_5fpanic_7',['JUT_PANIC',['../JUTAssert_8h.html#adb737228e3e305747f2c4e9ee3821da3',1,'JUTAssert.h']]],
+  ['jut_5fprint_5ffloat_8',['JUT_PRINT_FLOAT',['../JUTException_8h.html#ab88fd64c7cae77004307837f69128274',1,'JUTException.h']]],
+  ['jut_5fprint_5fgpr_9',['JUT_PRINT_GPR',['../JUTException_8h.html#a5e4015abac33e6d0ea819de2709313e0',1,'JUTException.h']]],
+  ['jut_5fprint_5fgpr_5fmap_10',['JUT_PRINT_GPR_MAP',['../JUTException_8h.html#a8026f2a3d567f7c878e235d715d511fe',1,'JUTException.h']]],
+  ['jut_5fprint_5fsrr0_5fmap_11',['JUT_PRINT_SRR0_MAP',['../JUTException_8h.html#abc80328eac5a860a95c05e23ea289678',1,'JUTException.h']]],
+  ['jut_5fprint_5fstack_12',['JUT_PRINT_STACK',['../JUTException_8h.html#a7618ad2f8b9deaac3c11b3e414a25ab7',1,'JUTException.h']]],
+  ['jut_5fwarn_13',['JUT_WARN',['../JUTAssert_8h.html#a238a87472158eedd79f6ea23fb8e8ae7',1,'JUTAssert.h']]],
+  ['jutdf_5fbufsize_14',['JUTDF_BUFSIZE',['../JUTDirectFile_8h.html#a003ca8f129b9992eaef22929866d49ab',1,'JUTDirectFile.h']]]
 ];

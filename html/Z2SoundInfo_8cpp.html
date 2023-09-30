@@ -89,19 +89,19 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="Z2SoundInfo_8h_source.html">Z2AudioLib/Z2SoundInfo.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JAISeq_8h_source.html">JSystem/JAudio2/JAISeq.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JAUAudibleParam_8h_source.html">JSystem/JAudio2/JAUAudibleParam.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JAUSoundTable_8h_source.html">JSystem/JAudio2/JAUSoundTable.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JUTAssert_8h_source.html">JSystem/JUtility/JUTAssert.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="dvd_8h_source.html">dolphin/dvd/dvd.h</a>&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2SoundInfo/getBgmSeqResourceID__11Z2SoundInfoCF10JAISoundID.s&quot;</code><br />
-<code>#include &quot;asm/Z2AudioLib/Z2SoundInfo/getSoundType__11Z2SoundInfoCF10JAISoundID.s&quot;</code><br />
-<code>#include &quot;asm/Z2AudioLib/Z2SoundInfo/getCategory__11Z2SoundInfoCF10JAISoundID.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2SoundInfo/getPriority__11Z2SoundInfoCF10JAISoundID.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2SoundInfo/getAudibleSwFull__11Z2SoundInfoF10JAISoundID.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2SoundInfo/getAudibleSw__11Z2SoundInfoCF10JAISoundID.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2SoundInfo/getSeInfo__11Z2SoundInfoCF10JAISoundIDP5JAISe.s&quot;</code><br />
-<code>#include &quot;asm/Z2AudioLib/Z2SoundInfo/getSeqInfo__11Z2SoundInfoCF10JAISoundIDP6JAISeq.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2SoundInfo/getStreamInfo__11Z2SoundInfoCF10JAISoundIDP9JAIStream.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2SoundInfo/getStreamFilePath__11Z2SoundInfoF10JAISoundID.s&quot;</code><br />
-<code>#include &quot;asm/Z2AudioLib/Z2SoundInfo/getStreamFileEntry__11Z2SoundInfoF10JAISoundID.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2SoundInfo/getSwBit__11Z2SoundInfoCF10JAISoundID.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2SoundInfo/getSoundInfo___11Z2SoundInfoCF10JAISoundIDP8JAISound.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2SoundInfo/__dt__11Z2SoundInfoFv.s&quot;</code><br />
@@ -123,8 +123,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structZ2Calc.html">Z2Calc</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAUStdSoundTableType.html">JAUStdSoundTableType</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAUSoundTable.html">JAUSoundTable</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -179,8 +177,6 @@ Functions</h2></td></tr>
 <tr class="separator:a6cac73e04e71a435e6a5bbaa75bcc251"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a498e6440d5c316e2672169ee4ed92309"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2SoundInfo_8cpp.html#a498e6440d5c316e2672169ee4ed92309">__dl__FPv</a> ()</td></tr>
 <tr class="separator:a498e6440d5c316e2672169ee4ed92309"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a317217bd2cfd509717f33a5e15328bf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2SoundInfo_8cpp.html#a317217bd2cfd509717f33a5e15328bf3">DVDConvertPathToEntrynum</a> ()</td></tr>
-<tr class="separator:a317217bd2cfd509717f33a5e15328bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae11bdd42afd572025eea91d3374245b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2SoundInfo_8cpp.html#ae11bdd42afd572025eea91d3374245b2">_savegpr_26</a> ()</td></tr>
 <tr class="separator:ae11bdd42afd572025eea91d3374245b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8b2b992407cf48ba98905b417420685"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2SoundInfo_8cpp.html#aa8b2b992407cf48ba98905b417420685">_savegpr_27</a> ()</td></tr>
@@ -427,23 +423,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void _savegpr_29 </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a317217bd2cfd509717f33a5e15328bf3" name="a317217bd2cfd509717f33a5e15328bf3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a317217bd2cfd509717f33a5e15328bf3">&#9670;&#160;</a></span>DVDConvertPathToEntrynum()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DVDConvertPathToEntrynum </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -909,19 +888,19 @@ Variables</h2></td></tr>
 <div class="line">}</div>
 <div class="ttc" id="aZ2SoundInfo_8cpp_html_a0601f1fdc03d5b6bd74f00e208d3eb46"><div class="ttname"><a href="Z2SoundInfo_8cpp.html#a0601f1fdc03d5b6bd74f00e208d3eb46">getBgmSeqResourceID__11Z2SoundInfoCF10JAISoundID</a></div><div class="ttdeci">void getBgmSeqResourceID__11Z2SoundInfoCF10JAISoundID()</div></div>
 <div class="ttc" id="aZ2SoundInfo_8cpp_html_a18a2e5011e4a05e0553a84e3a58bb5be"><div class="ttname"><a href="Z2SoundInfo_8cpp.html#a18a2e5011e4a05e0553a84e3a58bb5be">getAudibleSw__11Z2SoundInfoCF10JAISoundID</a></div><div class="ttdeci">void getAudibleSw__11Z2SoundInfoCF10JAISoundID()</div></div>
-<div class="ttc" id="aZ2SoundInfo_8cpp_html_a28837560dc73c871353e913bb2c9ef6f"><div class="ttname"><a href="Z2SoundInfo_8cpp.html#a28837560dc73c871353e913bb2c9ef6f">func_802BBCBC</a></div><div class="ttdeci">static void func_802BBCBC()</div><div class="ttdef"><b>Definition:</b> Z2SoundInfo.cpp:308</div></div>
+<div class="ttc" id="aZ2SoundInfo_8cpp_html_a28837560dc73c871353e913bb2c9ef6f"><div class="ttname"><a href="Z2SoundInfo_8cpp.html#a28837560dc73c871353e913bb2c9ef6f">func_802BBCBC</a></div><div class="ttdeci">static void func_802BBCBC()</div><div class="ttdef"><b>Definition:</b> Z2SoundInfo.cpp:295</div></div>
 <div class="ttc" id="aZ2SoundInfo_8cpp_html_a3ebb67d2908f96b8b165928f9e4f1362"><div class="ttname"><a href="Z2SoundInfo_8cpp.html#a3ebb67d2908f96b8b165928f9e4f1362">getSeqInfo__11Z2SoundInfoCF10JAISoundIDP6JAISeq</a></div><div class="ttdeci">void getSeqInfo__11Z2SoundInfoCF10JAISoundIDP6JAISeq()</div></div>
-<div class="ttc" id="aZ2SoundInfo_8cpp_html_a49c90bece24a40249e3612084e2c26ef"><div class="ttname"><a href="Z2SoundInfo_8cpp.html#a49c90bece24a40249e3612084e2c26ef">__dt__11Z2SoundInfoFv</a></div><div class="ttdeci">void __dt__11Z2SoundInfoFv()</div><div class="ttdef"><b>Definition:</b> Z2SoundInfo.cpp:296</div></div>
-<div class="ttc" id="aZ2SoundInfo_8cpp_html_a56168039610e21e1922e0ec151042fb6"><div class="ttname"><a href="Z2SoundInfo_8cpp.html#a56168039610e21e1922e0ec151042fb6">func_802BBCC4</a></div><div class="ttdeci">static void func_802BBCC4()</div><div class="ttdef"><b>Definition:</b> Z2SoundInfo.cpp:319</div></div>
+<div class="ttc" id="aZ2SoundInfo_8cpp_html_a49c90bece24a40249e3612084e2c26ef"><div class="ttname"><a href="Z2SoundInfo_8cpp.html#a49c90bece24a40249e3612084e2c26ef">__dt__11Z2SoundInfoFv</a></div><div class="ttdeci">void __dt__11Z2SoundInfoFv()</div><div class="ttdef"><b>Definition:</b> Z2SoundInfo.cpp:283</div></div>
+<div class="ttc" id="aZ2SoundInfo_8cpp_html_a56168039610e21e1922e0ec151042fb6"><div class="ttname"><a href="Z2SoundInfo_8cpp.html#a56168039610e21e1922e0ec151042fb6">func_802BBCC4</a></div><div class="ttdeci">static void func_802BBCC4()</div><div class="ttdef"><b>Definition:</b> Z2SoundInfo.cpp:306</div></div>
 <div class="ttc" id="aZ2SoundInfo_8cpp_html_a606e9c1edc60efc369376a9b389ade8b"><div class="ttname"><a href="Z2SoundInfo_8cpp.html#a606e9c1edc60efc369376a9b389ade8b">getCategory__11Z2SoundInfoCF10JAISoundID</a></div><div class="ttdeci">void getCategory__11Z2SoundInfoCF10JAISoundID()</div></div>
 <div class="ttc" id="aZ2SoundInfo_8cpp_html_a71623410ee05398173baf4a5e976d653"><div class="ttname"><a href="Z2SoundInfo_8cpp.html#a71623410ee05398173baf4a5e976d653">getSoundType__11Z2SoundInfoCF10JAISoundID</a></div><div class="ttdeci">void getSoundType__11Z2SoundInfoCF10JAISoundID()</div></div>
-<div class="ttc" id="aZ2SoundInfo_8cpp_html_a7665a8381735bed507d2409b4700ced3"><div class="ttname"><a href="Z2SoundInfo_8cpp.html#a7665a8381735bed507d2409b4700ced3">func_802BBCCC</a></div><div class="ttdeci">static void func_802BBCCC()</div><div class="ttdef"><b>Definition:</b> Z2SoundInfo.cpp:329</div></div>
-<div class="ttc" id="aZ2SoundInfo_8cpp_html_aa25a314b8e557fc5e9c4c4e0154d39bc"><div class="ttname"><a href="Z2SoundInfo_8cpp.html#aa25a314b8e557fc5e9c4c4e0154d39bc">func_802BBCD4</a></div><div class="ttdeci">static void func_802BBCD4()</div><div class="ttdef"><b>Definition:</b> Z2SoundInfo.cpp:340</div></div>
+<div class="ttc" id="aZ2SoundInfo_8cpp_html_a7665a8381735bed507d2409b4700ced3"><div class="ttname"><a href="Z2SoundInfo_8cpp.html#a7665a8381735bed507d2409b4700ced3">func_802BBCCC</a></div><div class="ttdeci">static void func_802BBCCC()</div><div class="ttdef"><b>Definition:</b> Z2SoundInfo.cpp:316</div></div>
+<div class="ttc" id="aZ2SoundInfo_8cpp_html_aa25a314b8e557fc5e9c4c4e0154d39bc"><div class="ttname"><a href="Z2SoundInfo_8cpp.html#aa25a314b8e557fc5e9c4c4e0154d39bc">func_802BBCD4</a></div><div class="ttdeci">static void func_802BBCD4()</div><div class="ttdef"><b>Definition:</b> Z2SoundInfo.cpp:327</div></div>
 <div class="ttc" id="aZ2SoundInfo_8cpp_html_aaaed8c0fb03b52db3a2386c81296f1ab"><div class="ttname"><a href="Z2SoundInfo_8cpp.html#aaaed8c0fb03b52db3a2386c81296f1ab">getStreamInfo__11Z2SoundInfoCF10JAISoundIDP9JAIStream</a></div><div class="ttdeci">void getStreamInfo__11Z2SoundInfoCF10JAISoundIDP9JAIStream()</div></div>
 <div class="ttc" id="aZ2SoundInfo_8cpp_html_ac05be1e5547b32d916c036747567e6a6"><div class="ttname"><a href="Z2SoundInfo_8cpp.html#ac05be1e5547b32d916c036747567e6a6">getStreamFileEntry__11Z2SoundInfoF10JAISoundID</a></div><div class="ttdeci">void getStreamFileEntry__11Z2SoundInfoF10JAISoundID()</div></div>
 <div class="ttc" id="aZ2SoundInfo_8cpp_html_ac26cd6193180441161acd059dc5f3b74"><div class="ttname"><a href="Z2SoundInfo_8cpp.html#ac26cd6193180441161acd059dc5f3b74">getPriority__11Z2SoundInfoCF10JAISoundID</a></div><div class="ttdeci">void getPriority__11Z2SoundInfoCF10JAISoundID()</div></div>
 <div class="ttc" id="aZ2SoundInfo_8cpp_html_ac5b1d5c0feb7203107ad7ab10edc3530"><div class="ttname"><a href="Z2SoundInfo_8cpp.html#ac5b1d5c0feb7203107ad7ab10edc3530">getSeInfo__11Z2SoundInfoCF10JAISoundIDP5JAISe</a></div><div class="ttdeci">void getSeInfo__11Z2SoundInfoCF10JAISoundIDP5JAISe()</div></div>
-<div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:12</div></div>
+<div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:17</div></div>
 </div><!-- fragment -->
 </div>
 </div>

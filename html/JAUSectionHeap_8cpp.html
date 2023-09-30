@@ -83,47 +83,42 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">JAUSectionHeap.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="JAUSectionHeap_8h_source.html">JSystem/JAudio2/JAUSectionHeap.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JAIStreamDataMgr_8h_source.html">JSystem/JAudio2/JAIStreamDataMgr.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JASBNKParser_8h_source.html">JSystem/JAudio2/JASBNKParser.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JASBankTable_8h_source.html">JSystem/JAudio2/JASBankTable.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JASBasicWaveBank_8h_source.html">JSystem/JAudio2/JASBasicWaveBank.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JASCriticalSection_8h_source.html">JSystem/JAudio2/JASCriticalSection.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JASHeapCtrl_8h_source.html">JSystem/JAudio2/JASHeapCtrl.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JASResArcLoader_8h_source.html">JSystem/JAudio2/JASResArcLoader.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JASVoiceBank_8h_source.html">JSystem/JAudio2/JASVoiceBank.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JAUSeqCollection_8h_source.html">JSystem/JAudio2/JAUSeqCollection.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JAUSoundInfo_8h_source.html">JSystem/JAudio2/JAUSoundInfo.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JAUSoundTable_8h_source.html">JSystem/JAudio2/JAUSoundTable.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JAUStreamFileTable_8h_source.html">JSystem/JAudio2/JAUStreamFileTable.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JKRSolidHeap_8h_source.html">JSystem/JKernel/JKRSolidHeap.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="stdlib_8h_source.html">MSL_C/stdlib.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="dvd_8h_source.html">dolphin/dvd/dvd.h</a>&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/__ct__Q210JAUSection12TSectionDataFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/resetRegisteredBankTables__Q210JAUSection12TSectionDataFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/resetRegisteredWaveBankTables__Q210JAUSection12TSectionDataFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/__ct__10JAUSectionFP14JAUSectionHeapUll.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/finishBuild__10JAUSectionFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/dispose__10JAUSectionFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/newSoundTable__10JAUSectionFPCvUlb.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/newSoundNameTable__10JAUSectionFPCvUlb.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/newStreamFileTable__10JAUSectionFPCvb.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/newSeSeqCollection__10JAUSectionFPCvUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/newStaticSeqDataBlock___10JAUSectionF10JAISoundIDUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/newStaticSeqData__10JAUSectionF10JAISoundIDPCvUl.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/newStaticSeqData__10JAUSectionF10JAISoundID.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/newCopy__10JAUSectionFPCvUll.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/newWaveBank__10JAUSectionFUlPCv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/loadWaveArc__10JAUSectionFUlUl.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/newBank__10JAUSectionFPCvUl.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/newVoiceBank__10JAUSectionFUlUl.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/beginNewBankTable__10JAUSectionFUlUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/endNewBankTable__10JAUSectionFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/__ct__Q214JAUSectionHeap16TSectionHeapDataFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/setSeqDataArchive__14JAUSectionHeapFP10JKRArchive.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/loadDynamicSeq__14JAUSectionHeapF10JAISoundIDb.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/releaseIdleDynamicSeqDataBlock__14JAUSectionHeapFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/JAUNewSectionHeap__FP12JKRSolidHeapb.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/JAUNewSectionHeap__Fb.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/__ct__14JAUSectionHeapFP12JKRSolidHeapbl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/getOpenSection__14JAUSectionHeapFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/setSeqDataUser__14JAUSectionHeapFP14JAISeqDataUser.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/newDynamicSeqBlock__14JAUSectionHeapFUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/getSeqData__14JAUSectionHeapF10JAISoundIDP10JAISeqData.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/__dt__14JAUSectionHeapFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/func_802A6440.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAUSectionHeap/__dt__10JAUSectionFv.s&quot;</code><br />
@@ -141,82 +136,13 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="JAUSectionHeap_8cpp__incl.svg" width="100%" height="492"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="JAUSectionHeap_8cpp__incl.svg" width="100%" height="547"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1____bitset__base.html">std::__bitset_base&lt; A1 &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1____bitset__base____template0.html">std::__bitset_base__template0</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSUPtrLink.html">JSUPtrLink</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSUPtrList.html">JSUPtrList</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSULink.html">JSULink&lt; A0 &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJSULink____template0.html">JSULink__template0</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRHeap.html">JKRHeap</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRSolidHeap.html">JKRSolidHeap</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRDisposer.html">JKRDisposer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRArchive.html">JKRArchive</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAUStreamFileTable.html">JAUStreamFileTable</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAUSoundTable.html">JAUSoundTable</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAUSoundNameTable.html">JAUSoundNameTable</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAUSeqDataMgr__SeqCollection.html">JAUSeqDataMgr_SeqCollection</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAUSeqDataBlock.html">JAUSeqDataBlock</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAUSeqCollection.html">JAUSeqCollection</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISeqDataUser.html">JAISeqDataUser</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISeqData.html">JAISeqData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISoundID.html">JAISoundID</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAUSectionHeap.html">JAUSectionHeap</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAUSectionHeap_1_1TSectionHeapData.html">JAUSectionHeap::TSectionHeapData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAUSection.html">JAUSection</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAUSection_1_1TSectionData.html">JAUSection::TSectionData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAUDynamicSeqDataBlocks.html">JAUDynamicSeqDataBlocks</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAUBankTable.html">JAUBankTable</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAUBankTableDictionary.html">JAUBankTableDictionary</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASHeap.html">JASHeap</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASWaveArc.html">JASWaveArc</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASWSParser.html">JASWSParser</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASResArcLoader.html">JASResArcLoader</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASBNKParser.html">JASBNKParser</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAIStreamDataMgr.html">JAIStreamDataMgr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISeqDataMgr.html">JAISeqDataMgr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespacestd"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestd.html">std</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -309,10 +235,6 @@ Functions</h2></td></tr>
 <tr class="separator:a91c1e6e566d523672aa44cae66495b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4336b4847fdd121768674c03d01d806"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAUSectionHeap_8cpp.html#ab4336b4847fdd121768674c03d01d806">func_802A6698</a> ()</td></tr>
 <tr class="separator:ab4336b4847fdd121768674c03d01d806"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5483d4fbef9a528a3f56d30a4c5da3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#adc00f0d3ad529c0cb72985d54bfe7ccf">SECTION_INIT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAUSectionHeap_8cpp.html#ae5483d4fbef9a528a3f56d30a4c5da3a">memset</a> ()</td></tr>
-<tr class="separator:ae5483d4fbef9a528a3f56d30a4c5da3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc6bb37288ea54f2151b2ecd4d4ccf3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#adc00f0d3ad529c0cb72985d54bfe7ccf">SECTION_INIT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAUSectionHeap_8cpp.html#afc6bb37288ea54f2151b2ecd4d4ccf3b">memcpy</a> ()</td></tr>
-<tr class="separator:afc6bb37288ea54f2151b2ecd4d4ccf3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2f17e02a6bb042b26a930bd12eb8559"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAUSectionHeap_8cpp.html#ab2f17e02a6bb042b26a930bd12eb8559">getResSize__15JASResArcLoaderFPC10JKRArchiveUs</a> ()</td></tr>
 <tr class="separator:ab2f17e02a6bb042b26a930bd12eb8559"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c26e7a6a5e65c9085a73b1f91b6a849"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAUSectionHeap_8cpp.html#a2c26e7a6a5e65c9085a73b1f91b6a849">createWaveBank__11JASWSParserFPCvP7JKRHeap</a> ()</td></tr>
@@ -391,12 +313,6 @@ Functions</h2></td></tr>
 <tr class="separator:a59a33915af65a90059928e122f720e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7a31b21628f22808aeb0929bfe78e16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAUSectionHeap_8cpp.html#ac7a31b21628f22808aeb0929bfe78e16">append__10JSUPtrListFP10JSUPtrLink</a> ()</td></tr>
 <tr class="separator:ac7a31b21628f22808aeb0929bfe78e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65b7dd4c9756f26d16dcf8f0dedb07bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAUSectionHeap_8cpp.html#a65b7dd4c9756f26d16dcf8f0dedb07bf">OSDisableInterrupts</a> ()</td></tr>
-<tr class="separator:a65b7dd4c9756f26d16dcf8f0dedb07bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14b5cc2befa83d8710fba14f4de14fd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAUSectionHeap_8cpp.html#a14b5cc2befa83d8710fba14f4de14fd9">OSRestoreInterrupts</a> ()</td></tr>
-<tr class="separator:a14b5cc2befa83d8710fba14f4de14fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a317217bd2cfd509717f33a5e15328bf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAUSectionHeap_8cpp.html#a317217bd2cfd509717f33a5e15328bf3">DVDConvertPathToEntrynum</a> ()</td></tr>
-<tr class="separator:a317217bd2cfd509717f33a5e15328bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae11bdd42afd572025eea91d3374245b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAUSectionHeap_8cpp.html#ae11bdd42afd572025eea91d3374245b2">_savegpr_26</a> ()</td></tr>
 <tr class="separator:ae11bdd42afd572025eea91d3374245b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8b2b992407cf48ba98905b417420685"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAUSectionHeap_8cpp.html#aa8b2b992407cf48ba98905b417420685">_savegpr_27</a> ()</td></tr>
@@ -413,12 +329,10 @@ Functions</h2></td></tr>
 <tr class="separator:a3f61243ebf5cbb2ff90548d397b16772"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abed5bd59c54272a132a5b4da4beff66d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAUSectionHeap_8cpp.html#abed5bd59c54272a132a5b4da4beff66d">_restgpr_29</a> ()</td></tr>
 <tr class="separator:abed5bd59c54272a132a5b4da4beff66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a358ab065fbc9b7f8973049a5b5da8a77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAUSectionHeap_8cpp.html#a358ab065fbc9b7f8973049a5b5da8a77">fprintf</a> ()</td></tr>
-<tr class="separator:a358ab065fbc9b7f8973049a5b5da8a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a615e370c55ac5bfccbe4f5104e7566f8"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAUSectionHeap_8cpp.html#a615e370c55ac5bfccbe4f5104e7566f8">JAUNewSectionHeap</a> (<a class="el" href="structJKRSolidHeap.html">JKRSolidHeap</a> *param_0, bool param_1)</td></tr>
-<tr class="separator:a615e370c55ac5bfccbe4f5104e7566f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6141feb7c884cf2332aa2d0401184503"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAUSectionHeap_8cpp.html#a6141feb7c884cf2332aa2d0401184503">JAUNewSectionHeap</a> (bool param_0)</td></tr>
-<tr class="separator:a6141feb7c884cf2332aa2d0401184503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fd007169cb399c9582c24bc818a141c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structJAUSectionHeap.html">JAUSectionHeap</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAUSectionHeap_8cpp.html#a0fd007169cb399c9582c24bc818a141c">JAUNewSectionHeap</a> (<a class="el" href="structJKRSolidHeap.html">JKRSolidHeap</a> *heap, bool param_1)</td></tr>
+<tr class="separator:a0fd007169cb399c9582c24bc818a141c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af41a0a3f39360b3c0815857e56adc224"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJAUSectionHeap.html">JAUSectionHeap</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAUSectionHeap_8cpp.html#af41a0a3f39360b3c0815857e56adc224">JAUNewSectionHeap</a> (bool param_0)</td></tr>
+<tr class="separator:af41a0a3f39360b3c0815857e56adc224"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -446,8 +360,6 @@ Variables</h2></td></tr>
 <tr class="separator:a506e6497c945ee54c61ca1447332ec0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29e65495447e41646b5396084d4a5229"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAUSectionHeap_8cpp.html#a29e65495447e41646b5396084d4a5229">data_80450CC0</a> [4+4]</td></tr>
 <tr class="separator:a29e65495447e41646b5396084d4a5229"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a7a3822f0b02c17ed6f8a99b46e7618"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAUSectionHeap_8cpp.html#a4a7a3822f0b02c17ed6f8a99b46e7618">JASDram</a> [4]</td></tr>
-<tr class="separator:a4a7a3822f0b02c17ed6f8a99b46e7618"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98b58c165eacfc265404d698e5bc9525"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAUSectionHeap_8cpp.html#a98b58c165eacfc265404d698e5bc9525">__OSReport_disable</a></td></tr>
 <tr class="separator:a98b58c165eacfc265404d698e5bc9525"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9b8d99b8b35801ab00f68fbaf33ef5a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAUSectionHeap_8cpp.html#af9b8d99b8b35801ab00f68fbaf33ef5a">stringBase_8039B950</a> = &quot;index out of range of bitset::reset&quot;</td></tr>
@@ -1118,23 +1030,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a317217bd2cfd509717f33a5e15328bf3" name="a317217bd2cfd509717f33a5e15328bf3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a317217bd2cfd509717f33a5e15328bf3">&#9670;&#160;</a></span>DVDConvertPathToEntrynum()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DVDConvertPathToEntrynum </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a44849664616b5d9b92d44e7cf1f008ba" name="a44849664616b5d9b92d44e7cf1f008ba"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44849664616b5d9b92d44e7cf1f008ba">&#9670;&#160;</a></span>endNewBankTable__10JAUSectionFv()</h2>
 
@@ -1160,23 +1055,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void finishBuild__10JAUSectionFv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a358ab065fbc9b7f8973049a5b5da8a77" name="a358ab065fbc9b7f8973049a5b5da8a77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a358ab065fbc9b7f8973049a5b5da8a77">&#9670;&#160;</a></span>fprintf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fprintf </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1691,14 +1569,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a6141feb7c884cf2332aa2d0401184503" name="a6141feb7c884cf2332aa2d0401184503"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6141feb7c884cf2332aa2d0401184503">&#9670;&#160;</a></span>JAUNewSectionHeap() <span class="overload">[1/2]</span></h2>
+<a id="af41a0a3f39360b3c0815857e56adc224" name="af41a0a3f39360b3c0815857e56adc224"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af41a0a3f39360b3c0815857e56adc224">&#9670;&#160;</a></span>JAUNewSectionHeap() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void JAUNewSectionHeap </td>
+          <td class="memname"><a class="el" href="structJAUSectionHeap.html">JAUSectionHeap</a> * JAUNewSectionHeap </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -1709,8 +1587,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a615e370c55ac5bfccbe4f5104e7566f8" name="a615e370c55ac5bfccbe4f5104e7566f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a615e370c55ac5bfccbe4f5104e7566f8">&#9670;&#160;</a></span>JAUNewSectionHeap() <span class="overload">[2/2]</span></h2>
+<a id="a0fd007169cb399c9582c24bc818a141c" name="a0fd007169cb399c9582c24bc818a141c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fd007169cb399c9582c24bc818a141c">&#9670;&#160;</a></span>JAUNewSectionHeap() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1719,10 +1597,10 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void JAUNewSectionHeap </td>
+          <td class="memname">static <a class="el" href="structJAUSectionHeap.html">JAUSectionHeap</a> * JAUNewSectionHeap </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structJKRSolidHeap.html">JKRSolidHeap</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname"><em>heap</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1846,40 +1724,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void loadWaveArc__10JAUSectionFUlUl </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afc6bb37288ea54f2151b2ecd4d4ccf3b" name="afc6bb37288ea54f2151b2ecd4d4ccf3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc6bb37288ea54f2151b2ecd4d4ccf3b">&#9670;&#160;</a></span>memcpy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#adc00f0d3ad529c0cb72985d54bfe7ccf">SECTION_INIT</a> void memcpy </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae5483d4fbef9a528a3f56d30a4c5da3a" name="ae5483d4fbef9a528a3f56d30a4c5da3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5483d4fbef9a528a3f56d30a4c5da3a">&#9670;&#160;</a></span>memset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#adc00f0d3ad529c0cb72985d54bfe7ccf">SECTION_INIT</a> void memset </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -2093,40 +1937,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a65b7dd4c9756f26d16dcf8f0dedb07bf" name="a65b7dd4c9756f26d16dcf8f0dedb07bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65b7dd4c9756f26d16dcf8f0dedb07bf">&#9670;&#160;</a></span>OSDisableInterrupts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSDisableInterrupts </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a14b5cc2befa83d8710fba14f4de14fd9" name="a14b5cc2befa83d8710fba14f4de14fd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14b5cc2befa83d8710fba14f4de14fd9">&#9670;&#160;</a></span>OSRestoreInterrupts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void OSRestoreInterrupts </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a644361a8ecdf045aed6f18ad9a2abbb1" name="a644361a8ecdf045aed6f18ad9a2abbb1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a644361a8ecdf045aed6f18ad9a2abbb1">&#9670;&#160;</a></span>releaseIdleDynamicSeqDataBlock__14JAUSectionHeapFv()</h2>
 
@@ -2316,7 +2126,7 @@ Variables</h2></td></tr>
 <div class="line">}</div>
 <div class="ttc" id="aJAUSectionHeap_8cpp_html_a358600daf65b5f37d336b1b7d9e6cb96"><div class="ttname"><a href="JAUSectionHeap_8cpp.html#a358600daf65b5f37d336b1b7d9e6cb96">__dt__10JAUSectionFv</a></div><div class="ttdeci">void __dt__10JAUSectionFv()</div></div>
 <div class="ttc" id="aJAUSectionHeap_8cpp_html_aad50250910a90ec66c265c687845d749"><div class="ttname"><a href="JAUSectionHeap_8cpp.html#aad50250910a90ec66c265c687845d749">dispose__10JAUSectionFv</a></div><div class="ttdeci">void dispose__10JAUSectionFv()</div></div>
-<div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:12</div></div>
+<div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:17</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2451,11 +2261,11 @@ Variables</h2></td></tr>
 <div class="ttc" id="aJAUSectionHeap_8cpp_html_a24211795565515664ff870d8dc75a500"><div class="ttname"><a href="JAUSectionHeap_8cpp.html#a24211795565515664ff870d8dc75a500">__dt__14JAUSectionHeapFv</a></div><div class="ttdeci">void __dt__14JAUSectionHeapFv()</div></div>
 <div class="ttc" id="aJAUSectionHeap_8cpp_html_a82e4c3e55e18e9b56cecbf2133e801ea"><div class="ttname"><a href="JAUSectionHeap_8cpp.html#a82e4c3e55e18e9b56cecbf2133e801ea">setSeqDataUser__14JAUSectionHeapFP14JAISeqDataUser</a></div><div class="ttdeci">void setSeqDataUser__14JAUSectionHeapFP14JAISeqDataUser()</div></div>
 <div class="ttc" id="aJAUSectionHeap_8cpp_html_a8b0a6580960ce48484d3a82ffc3c91fc"><div class="ttname"><a href="JAUSectionHeap_8cpp.html#a8b0a6580960ce48484d3a82ffc3c91fc">getSeqData__14JAUSectionHeapF10JAISoundIDP10JAISeqData</a></div><div class="ttdeci">void getSeqData__14JAUSectionHeapF10JAISoundIDP10JAISeqData()</div></div>
-<div class="ttc" id="aJAUSectionHeap_8cpp_html_a91c1e6e566d523672aa44cae66495b33"><div class="ttname"><a href="JAUSectionHeap_8cpp.html#a91c1e6e566d523672aa44cae66495b33">func_802A6690</a></div><div class="ttdeci">static void func_802A6690()</div><div class="ttdef"><b>Definition:</b> JAUSectionHeap.cpp:829</div></div>
+<div class="ttc" id="aJAUSectionHeap_8cpp_html_a91c1e6e566d523672aa44cae66495b33"><div class="ttname"><a href="JAUSectionHeap_8cpp.html#a91c1e6e566d523672aa44cae66495b33">func_802A6690</a></div><div class="ttdeci">static void func_802A6690()</div><div class="ttdef"><b>Definition:</b> JAUSectionHeap.cpp:1023</div></div>
 <div class="ttc" id="aJAUSectionHeap_8cpp_html_ab30cc3331c1270edd216791ae1c44b79"><div class="ttname"><a href="JAUSectionHeap_8cpp.html#ab30cc3331c1270edd216791ae1c44b79">releaseSeqData__14JAUSectionHeapFv</a></div><div class="ttdeci">int releaseSeqData__14JAUSectionHeapFv()</div></div>
-<div class="ttc" id="aJAUSectionHeap_8cpp_html_ab4336b4847fdd121768674c03d01d806"><div class="ttname"><a href="JAUSectionHeap_8cpp.html#ab4336b4847fdd121768674c03d01d806">func_802A6698</a></div><div class="ttdeci">static void func_802A6698()</div><div class="ttdef"><b>Definition:</b> JAUSectionHeap.cpp:839</div></div>
-<div class="ttc" id="aJAUSectionHeap_8cpp_html_abea819edab4d1ca36defc5b8d25e4ba7"><div class="ttname"><a href="JAUSectionHeap_8cpp.html#abea819edab4d1ca36defc5b8d25e4ba7">func_802A6688</a></div><div class="ttdeci">static void func_802A6688()</div><div class="ttdef"><b>Definition:</b> JAUSectionHeap.cpp:818</div></div>
-<div class="ttc" id="aJAUSectionHeap_8cpp_html_acae1b40bb1f8af32c5defc600a82667c"><div class="ttname"><a href="JAUSectionHeap_8cpp.html#acae1b40bb1f8af32c5defc600a82667c">func_802A6680</a></div><div class="ttdeci">static void func_802A6680()</div><div class="ttdef"><b>Definition:</b> JAUSectionHeap.cpp:808</div></div>
+<div class="ttc" id="aJAUSectionHeap_8cpp_html_ab4336b4847fdd121768674c03d01d806"><div class="ttname"><a href="JAUSectionHeap_8cpp.html#ab4336b4847fdd121768674c03d01d806">func_802A6698</a></div><div class="ttdeci">static void func_802A6698()</div><div class="ttdef"><b>Definition:</b> JAUSectionHeap.cpp:1033</div></div>
+<div class="ttc" id="aJAUSectionHeap_8cpp_html_abea819edab4d1ca36defc5b8d25e4ba7"><div class="ttname"><a href="JAUSectionHeap_8cpp.html#abea819edab4d1ca36defc5b8d25e4ba7">func_802A6688</a></div><div class="ttdeci">static void func_802A6688()</div><div class="ttdef"><b>Definition:</b> JAUSectionHeap.cpp:1012</div></div>
+<div class="ttc" id="aJAUSectionHeap_8cpp_html_acae1b40bb1f8af32c5defc600a82667c"><div class="ttname"><a href="JAUSectionHeap_8cpp.html#acae1b40bb1f8af32c5defc600a82667c">func_802A6680</a></div><div class="ttdeci">static void func_802A6680()</div><div class="ttdef"><b>Definition:</b> JAUSectionHeap.cpp:1002</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2579,8 +2389,8 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="JAUSectionHeap_8cpp.html#a80f22ca703bfc892ae0a90877b841da0">func_802A6440</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="JAUSectionHeap_8cpp.html#aa89a8b613f0405e2f20c6cde56ea6ac5">func_802A6574</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aJAUSectionHeap_8cpp_html_a80f22ca703bfc892ae0a90877b841da0"><div class="ttname"><a href="JAUSectionHeap_8cpp.html#a80f22ca703bfc892ae0a90877b841da0">func_802A6440</a></div><div class="ttdeci">static void func_802A6440()</div><div class="ttdef"><b>Definition:</b> JAUSectionHeap.cpp:719</div></div>
-<div class="ttc" id="aJAUSectionHeap_8cpp_html_aa89a8b613f0405e2f20c6cde56ea6ac5"><div class="ttname"><a href="JAUSectionHeap_8cpp.html#aa89a8b613f0405e2f20c6cde56ea6ac5">func_802A6574</a></div><div class="ttdeci">void func_802A6574()</div><div class="ttdef"><b>Definition:</b> JAUSectionHeap.cpp:740</div></div>
+<div class="ttc" id="aJAUSectionHeap_8cpp_html_a80f22ca703bfc892ae0a90877b841da0"><div class="ttname"><a href="JAUSectionHeap_8cpp.html#a80f22ca703bfc892ae0a90877b841da0">func_802A6440</a></div><div class="ttdeci">static void func_802A6440()</div><div class="ttdef"><b>Definition:</b> JAUSectionHeap.cpp:913</div></div>
+<div class="ttc" id="aJAUSectionHeap_8cpp_html_aa89a8b613f0405e2f20c6cde56ea6ac5"><div class="ttname"><a href="JAUSectionHeap_8cpp.html#aa89a8b613f0405e2f20c6cde56ea6ac5">func_802A6574</a></div><div class="ttdeci">void func_802A6574()</div><div class="ttdef"><b>Definition:</b> JAUSectionHeap.cpp:934</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2683,28 +2493,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_80450CC0[4+4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4a7a3822f0b02c17ed6f8a99b46e7618" name="a4a7a3822f0b02c17ed6f8a99b46e7618"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a7a3822f0b02c17ed6f8a99b46e7618">&#9670;&#160;</a></span>JASDram</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> JASDram[4]</td>
         </tr>
       </table>
   </td>

@@ -83,16 +83,14 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">f_op_actor_mng.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="c__sxyz_8h_source.html">SSystem/SComponent/c_sxyz.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="c__xyz_8h_source.html">SSystem/SComponent/c_xyz.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="f__op__actor_8h_source.html">f_op/f_op_actor.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="f__op__actor_8h_source.html">f_op/f_op_actor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="f__op__actor__iter_8h_source.html">f_op/f_op_actor_iter.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="f__pc__manager_8h_source.html">f_pc/f_pc_manager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="f__pc__searcher_8h_source.html">f_pc/f_pc_searcher.h</a>&quot;</code><br />
@@ -128,6 +126,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDOUBLE__POS.html">DOUBLE_POS</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:aad9fe5f23ec24c176d8b9b6a6877a116"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#aad9fe5f23ec24c176d8b9b6a6877a116">fopAcM_SetupActor</a>(ptr,  ClassName)</td></tr>
+<tr class="separator:aad9fe5f23ec24c176d8b9b6a6877a116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a34f8772bfb53dc3530e3beed0ad247cd"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a34f8772bfb53dc3530e3beed0ad247cd">heapCallbackFunc</a>) (<a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *)</td></tr>
@@ -144,6 +147,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="f__op__actor__mng_8h.html#a9a8f0caf5338c590123da43b40d903aba210c0886cfd5f2a742e644029edda232">fopAcM_CARRY_TYPE_8</a> = 8
 , <br />
 &#160;&#160;<a class="el" href="f__op__actor__mng_8h.html#a9a8f0caf5338c590123da43b40d903aba20604b6174c8536e7812a4c8a0ad8d89">fopAcM_CARRY_LIGHT</a> = 16
+, <a class="el" href="f__op__actor__mng_8h.html#a9a8f0caf5338c590123da43b40d903aba2bc192ea31676580f658582661798be3">fopAcM_CARRY_UNK_30</a> = 0x30
 <br />
  }</td></tr>
 <tr class="separator:a9a8f0caf5338c590123da43b40d903ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,9 +198,9 @@ Functions</h2></td></tr>
 <tr class="separator:abd6ff17e42a42302d0dc85df52c0f17d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a308c8f2d2f30350d536fb86e1f55b689"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcXyz.html">cXyz</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a308c8f2d2f30350d536fb86e1f55b689">fopAcM_GetSpeed_p</a> (<a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *pActor)</td></tr>
 <tr class="separator:a308c8f2d2f30350d536fb86e1f55b689"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acface743a5e903aaad658786518b190c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcsXyz.html">csXyz</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#acface743a5e903aaad658786518b190c">fopAcM_GetAngle_p</a> (<a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *pActor)</td></tr>
+<tr class="memitem:acface743a5e903aaad658786518b190c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcsXyz.html">csXyz</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#acface743a5e903aaad658786518b190c">fopAcM_GetAngle_p</a> (<a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *pActor)</td></tr>
 <tr class="separator:acface743a5e903aaad658786518b190c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af32a3964a124de9628fa7560e410d3dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcsXyz.html">csXyz</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#af32a3964a124de9628fa7560e410d3dd">fopAcM_GetShapeAngle_p</a> (<a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *pActor)</td></tr>
+<tr class="memitem:af32a3964a124de9628fa7560e410d3dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcsXyz.html">csXyz</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#af32a3964a124de9628fa7560e410d3dd">fopAcM_GetShapeAngle_p</a> (<a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *pActor)</td></tr>
 <tr class="separator:af32a3964a124de9628fa7560e410d3dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae04f369129df519ebcf4a9109d3ee24a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#ae04f369129df519ebcf4a9109d3ee24a">fopAcM_CheckCondition</a> (<a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *p_actor, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> <a class="el" href="dspproc_8cpp.html#a1ff3764a774592a9fc9331035ef59212">flag</a>)</td></tr>
 <tr class="separator:ae04f369129df519ebcf4a9109d3ee24a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -302,7 +306,7 @@ Functions</h2></td></tr>
 <tr class="separator:a998a2348e75cc0e539d88c1ee18de916"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a812e6651faf27ae40f4e29f6a255f140"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structfopAcM__prm__class.html">fopAcM_prm_class</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a812e6651faf27ae40f4e29f6a255f140">fopAcM_CreateAppend</a> ()</td></tr>
 <tr class="separator:a812e6651faf27ae40f4e29f6a255f140"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2120f2c95ff7ec3e98a8133d0b18a05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structfopAcM__prm__class.html">fopAcM_prm_class</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#aa2120f2c95ff7ec3e98a8133d0b18a05">createAppend</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> enemyNo, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> parameters, const <a class="el" href="structcXyz.html">cXyz</a> *p_pos, int roomNo, const <a class="el" href="structcsXyz.html">csXyz</a> *p_angle, const <a class="el" href="structcXyz.html">cXyz</a> *p_scale, <a class="el" href="types_8h.html#a151f780fb455885061d3b77ec1c90c03">s8</a> subType, unsigned int parentPId)</td></tr>
+<tr class="memitem:aa2120f2c95ff7ec3e98a8133d0b18a05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structfopAcM__prm__class.html">fopAcM_prm_class</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#aa2120f2c95ff7ec3e98a8133d0b18a05">createAppend</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> enemyNo, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> parameters, const <a class="el" href="structcXyz.html">cXyz</a> *p_pos, int roomNo, const <a class="el" href="classcsXyz.html">csXyz</a> *p_angle, const <a class="el" href="structcXyz.html">cXyz</a> *p_scale, <a class="el" href="types_8h.html#a151f780fb455885061d3b77ec1c90c03">s8</a> subType, unsigned int parentPId)</td></tr>
 <tr class="separator:aa2120f2c95ff7ec3e98a8133d0b18a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a09236b4af1a279e56a169c5ed71c6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a6a09236b4af1a279e56a169c5ed71c6e">fopAcM_Log</a> (<a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> const *p_actor, char const *str)</td></tr>
 <tr class="separator:a6a09236b4af1a279e56a169c5ed71c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -310,17 +314,17 @@ Functions</h2></td></tr>
 <tr class="separator:a5876a8df71cecbc6a06a98334e40d01b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae904b99da664bddaf071a8e60dcc1ae5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#ae904b99da664bddaf071a8e60dcc1ae5">fopAcM_delete</a> (unsigned int actorID)</td></tr>
 <tr class="separator:ae904b99da664bddaf071a8e60dcc1ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f688e5f21e16f57af86caeac4e9ecac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a1f688e5f21e16f57af86caeac4e9ecac">fopAcM_create</a> (<a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> procName, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> enemyNo, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> parameter, const <a class="el" href="structcXyz.html">cXyz</a> *p_pos, int roomNo, const <a class="el" href="structcsXyz.html">csXyz</a> *p_angle, const <a class="el" href="structcXyz.html">cXyz</a> *p_scale, <a class="el" href="types_8h.html#a151f780fb455885061d3b77ec1c90c03">s8</a> subType, <a class="el" href="f__op__actor__mng_8h.html#a0b41bbbca8c43cd70ec786a2a4314295">createFunc</a> p_createFunc)</td></tr>
+<tr class="memitem:a1f688e5f21e16f57af86caeac4e9ecac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a1f688e5f21e16f57af86caeac4e9ecac">fopAcM_create</a> (<a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> procName, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> enemyNo, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> parameter, const <a class="el" href="structcXyz.html">cXyz</a> *p_pos, int roomNo, const <a class="el" href="classcsXyz.html">csXyz</a> *p_angle, const <a class="el" href="structcXyz.html">cXyz</a> *p_scale, <a class="el" href="types_8h.html#a151f780fb455885061d3b77ec1c90c03">s8</a> subType, <a class="el" href="f__op__actor__mng_8h.html#a0b41bbbca8c43cd70ec786a2a4314295">createFunc</a> p_createFunc)</td></tr>
 <tr class="separator:a1f688e5f21e16f57af86caeac4e9ecac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2844f5f27e064a6c3eb03893b1e0ba88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a2844f5f27e064a6c3eb03893b1e0ba88">fopAcM_create</a> (<a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> procName, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> parameter, const <a class="el" href="structcXyz.html">cXyz</a> *p_pos, int roomNo, const <a class="el" href="structcsXyz.html">csXyz</a> *p_angle, const <a class="el" href="structcXyz.html">cXyz</a> *p_scale, <a class="el" href="types_8h.html#a151f780fb455885061d3b77ec1c90c03">s8</a> subType)</td></tr>
+<tr class="memitem:a2844f5f27e064a6c3eb03893b1e0ba88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a2844f5f27e064a6c3eb03893b1e0ba88">fopAcM_create</a> (<a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> procName, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> parameter, const <a class="el" href="structcXyz.html">cXyz</a> *p_pos, int roomNo, const <a class="el" href="classcsXyz.html">csXyz</a> *p_angle, const <a class="el" href="structcXyz.html">cXyz</a> *p_scale, <a class="el" href="types_8h.html#a151f780fb455885061d3b77ec1c90c03">s8</a> subType)</td></tr>
 <tr class="separator:a2844f5f27e064a6c3eb03893b1e0ba88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32c122d18fa039a9fde73adec9528462"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a32c122d18fa039a9fde73adec9528462">fopAcM_fastCreate</a> (<a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> procName, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> parameter, const <a class="el" href="structcXyz.html">cXyz</a> *p_pos, int roomNo, const <a class="el" href="structcsXyz.html">csXyz</a> *p_angle, const <a class="el" href="structcXyz.html">cXyz</a> *p_scale, <a class="el" href="types_8h.html#a151f780fb455885061d3b77ec1c90c03">s8</a> subType, <a class="el" href="f__op__actor__mng_8h.html#a0b41bbbca8c43cd70ec786a2a4314295">createFunc</a> p_createFunc, void *p_createFuncData)</td></tr>
+<tr class="memitem:a32c122d18fa039a9fde73adec9528462"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a32c122d18fa039a9fde73adec9528462">fopAcM_fastCreate</a> (<a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> procName, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> parameter, const <a class="el" href="structcXyz.html">cXyz</a> *p_pos, int roomNo, const <a class="el" href="classcsXyz.html">csXyz</a> *p_angle, const <a class="el" href="structcXyz.html">cXyz</a> *p_scale, <a class="el" href="types_8h.html#a151f780fb455885061d3b77ec1c90c03">s8</a> subType, <a class="el" href="f__op__actor__mng_8h.html#a0b41bbbca8c43cd70ec786a2a4314295">createFunc</a> p_createFunc, void *p_createFuncData)</td></tr>
 <tr class="separator:a32c122d18fa039a9fde73adec9528462"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12d297ccc383356a0b46714b8ccbe147"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a12d297ccc383356a0b46714b8ccbe147">fopAcM_fastCreate</a> (const char *p_actorName, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> parameter, const <a class="el" href="structcXyz.html">cXyz</a> *pActorPos, int roomNo, const <a class="el" href="structcsXyz.html">csXyz</a> *p_angle, const <a class="el" href="structcXyz.html">cXyz</a> *p_scale, <a class="el" href="f__op__actor__mng_8h.html#a0b41bbbca8c43cd70ec786a2a4314295">createFunc</a> p_createFunc, void *p_createFuncData)</td></tr>
+<tr class="memitem:a12d297ccc383356a0b46714b8ccbe147"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a12d297ccc383356a0b46714b8ccbe147">fopAcM_fastCreate</a> (const char *p_actorName, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> parameter, const <a class="el" href="structcXyz.html">cXyz</a> *pActorPos, int roomNo, const <a class="el" href="classcsXyz.html">csXyz</a> *p_angle, const <a class="el" href="structcXyz.html">cXyz</a> *p_scale, <a class="el" href="f__op__actor__mng_8h.html#a0b41bbbca8c43cd70ec786a2a4314295">createFunc</a> p_createFunc, void *p_createFuncData)</td></tr>
 <tr class="separator:a12d297ccc383356a0b46714b8ccbe147"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d3df16aad4c8828c1bda1e6fc0ddc67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a0d3df16aad4c8828c1bda1e6fc0ddc67">fopAcM_createChild</a> (<a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> procName, unsigned int parentPId, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> parameters, const <a class="el" href="structcXyz.html">cXyz</a> *p_pos, int roomNo, const <a class="el" href="structcsXyz.html">csXyz</a> *p_angle, const <a class="el" href="structcXyz.html">cXyz</a> *p_scale, <a class="el" href="types_8h.html#a151f780fb455885061d3b77ec1c90c03">s8</a> subType, <a class="el" href="f__op__actor__mng_8h.html#a0b41bbbca8c43cd70ec786a2a4314295">createFunc</a> p_createFunc)</td></tr>
+<tr class="memitem:a0d3df16aad4c8828c1bda1e6fc0ddc67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a0d3df16aad4c8828c1bda1e6fc0ddc67">fopAcM_createChild</a> (<a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> procName, unsigned int parentPId, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> parameters, const <a class="el" href="structcXyz.html">cXyz</a> *p_pos, int roomNo, const <a class="el" href="classcsXyz.html">csXyz</a> *p_angle, const <a class="el" href="structcXyz.html">cXyz</a> *p_scale, <a class="el" href="types_8h.html#a151f780fb455885061d3b77ec1c90c03">s8</a> subType, <a class="el" href="f__op__actor__mng_8h.html#a0b41bbbca8c43cd70ec786a2a4314295">createFunc</a> p_createFunc)</td></tr>
 <tr class="separator:a0d3df16aad4c8828c1bda1e6fc0ddc67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95ee582b02ef3a3d5e6465fb2bc6f7ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a95ee582b02ef3a3d5e6465fb2bc6f7ac">fopAcM_createChildFromOffset</a> (<a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> procName, unsigned int parentProcID, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> actorParams, const <a class="el" href="structcXyz.html">cXyz</a> *p_pos, int roomNo, const <a class="el" href="structcsXyz.html">csXyz</a> *p_angle, const <a class="el" href="structcXyz.html">cXyz</a> *p_scale, <a class="el" href="types_8h.html#a151f780fb455885061d3b77ec1c90c03">s8</a> subType, <a class="el" href="f__op__actor__mng_8h.html#a0b41bbbca8c43cd70ec786a2a4314295">createFunc</a> p_createFunc)</td></tr>
+<tr class="memitem:a95ee582b02ef3a3d5e6465fb2bc6f7ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a95ee582b02ef3a3d5e6465fb2bc6f7ac">fopAcM_createChildFromOffset</a> (<a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> procName, unsigned int parentProcID, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> actorParams, const <a class="el" href="structcXyz.html">cXyz</a> *p_pos, int roomNo, const <a class="el" href="classcsXyz.html">csXyz</a> *p_angle, const <a class="el" href="structcXyz.html">cXyz</a> *p_scale, <a class="el" href="types_8h.html#a151f780fb455885061d3b77ec1c90c03">s8</a> subType, <a class="el" href="f__op__actor__mng_8h.html#a0b41bbbca8c43cd70ec786a2a4314295">createFunc</a> p_createFunc)</td></tr>
 <tr class="separator:a95ee582b02ef3a3d5e6465fb2bc6f7ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a48818521d3b78d853cfe41671b0e3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a0a48818521d3b78d853cfe41671b0e3d">fopAcM_DeleteHeap</a> (<a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *p_actor)</td></tr>
 <tr class="separator:a0a48818521d3b78d853cfe41671b0e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -340,7 +344,7 @@ Functions</h2></td></tr>
 <tr class="separator:ac652d2fa283bc088f84802d5cce412a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3c0659cf4a419e45f2e265f99131ea4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#aa3c0659cf4a419e45f2e265f99131ea4">fopAcM_setCullSizeBox2</a> (<a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *p_actor, <a class="el" href="structJ3DModelData.html">J3DModelData</a> *p_modelData)</td></tr>
 <tr class="separator:aa3c0659cf4a419e45f2e265f99131ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02c19300c38f04305e29d237a3ebf666"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a02c19300c38f04305e29d237a3ebf666">fopAcM_addAngleY</a> (<a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *p_actor, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> <a class="el" href="d__a__npc__cd2_8cpp.html#af839075603a1a31e84ffe32bc427ad5d">target</a>, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> step)</td></tr>
+<tr class="memitem:a02c19300c38f04305e29d237a3ebf666"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a02c19300c38f04305e29d237a3ebf666">fopAcM_addAngleY</a> (<a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *p_actor, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> <a class="el" href="d__a__npc__cd2_8cpp.html#aa15d1782a0d61976219146e1e4930f51">target</a>, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> step)</td></tr>
 <tr class="separator:a02c19300c38f04305e29d237a3ebf666"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b8a77485e14bff264a0e6acc2436b7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a0b8a77485e14bff264a0e6acc2436b7a">fopAcM_calcSpeed</a> (<a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *p_actor)</td></tr>
 <tr class="separator:a0b8a77485e14bff264a0e6acc2436b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -406,35 +410,35 @@ Functions</h2></td></tr>
 <tr class="separator:ae1daa12cd779a6ba986a42ebc629ec7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30356777fa045f62fbee4ccde0bf0f8f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a30356777fa045f62fbee4ccde0bf0f8f">fopAcM_onSwitch</a> (<a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> const *param_0, int param_1)</td></tr>
 <tr class="separator:a30356777fa045f62fbee4ccde0bf0f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2bf61f5d296a8aecd2a8e5fe70283ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#ae2bf61f5d296a8aecd2a8e5fe70283ea">fopAcM_createItemForPresentDemo</a> (<a class="el" href="structcXyz.html">cXyz</a> const *p_pos, int i_itemNo, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_2, int i_itemBitNo, int i_roomNo, <a class="el" href="structcsXyz.html">csXyz</a> const *p_angle, <a class="el" href="structcXyz.html">cXyz</a> const *p_scale)</td></tr>
+<tr class="memitem:ae2bf61f5d296a8aecd2a8e5fe70283ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#ae2bf61f5d296a8aecd2a8e5fe70283ea">fopAcM_createItemForPresentDemo</a> (<a class="el" href="structcXyz.html">cXyz</a> const *p_pos, int i_itemNo, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_2, int i_itemBitNo, int i_roomNo, <a class="el" href="classcsXyz.html">csXyz</a> const *p_angle, <a class="el" href="structcXyz.html">cXyz</a> const *p_scale)</td></tr>
 <tr class="separator:ae2bf61f5d296a8aecd2a8e5fe70283ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af02a7e69121318e30027783c73006824"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#af02a7e69121318e30027783c73006824">fopAcM_createItemForTrBoxDemo</a> (<a class="el" href="structcXyz.html">cXyz</a> const *p_pos, int i_itemNo, int i_itemBitNo, int i_roomNo, <a class="el" href="structcsXyz.html">csXyz</a> const *p_angle, <a class="el" href="structcXyz.html">cXyz</a> const *p_scale)</td></tr>
+<tr class="memitem:af02a7e69121318e30027783c73006824"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#af02a7e69121318e30027783c73006824">fopAcM_createItemForTrBoxDemo</a> (<a class="el" href="structcXyz.html">cXyz</a> const *p_pos, int i_itemNo, int i_itemBitNo, int i_roomNo, <a class="el" href="classcsXyz.html">csXyz</a> const *p_angle, <a class="el" href="structcXyz.html">cXyz</a> const *p_scale)</td></tr>
 <tr class="separator:af02a7e69121318e30027783c73006824"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade497ca64fd81886250604e7b897077b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#ade497ca64fd81886250604e7b897077b">fopAcM_getItemNoFromTableNo</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> i_tableNo)</td></tr>
 <tr class="separator:ade497ca64fd81886250604e7b897077b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96774e5ed4fbe86140de873f61b07b40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a96774e5ed4fbe86140de873f61b07b40">fopAcM_createItemFromEnemyID</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> i_enemyID, <a class="el" href="structcXyz.html">cXyz</a> const *p_pos, int i_itemBitNo, int i_roomNo, <a class="el" href="structcsXyz.html">csXyz</a> const *p_angle, <a class="el" href="structcXyz.html">cXyz</a> const *p_scale, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> *speedF, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> *speedY)</td></tr>
+<tr class="memitem:a96774e5ed4fbe86140de873f61b07b40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a96774e5ed4fbe86140de873f61b07b40">fopAcM_createItemFromEnemyID</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> i_enemyID, <a class="el" href="structcXyz.html">cXyz</a> const *p_pos, int i_itemBitNo, int i_roomNo, <a class="el" href="classcsXyz.html">csXyz</a> const *p_angle, <a class="el" href="structcXyz.html">cXyz</a> const *p_scale, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> *speedF, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> *speedY)</td></tr>
 <tr class="separator:a96774e5ed4fbe86140de873f61b07b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c1e84d1af0190b9af608f4628e7ab9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a1c1e84d1af0190b9af608f4628e7ab9f">fopAcM_createItemFromTable</a> (<a class="el" href="structcXyz.html">cXyz</a> const *p_pos, int i_tableNo, int i_itemBitNo, int i_roomNo, <a class="el" href="structcsXyz.html">csXyz</a> const *p_angle, int param_5, <a class="el" href="structcXyz.html">cXyz</a> const *p_scale, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> *speedF, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> *speedY, bool createDirect)</td></tr>
+<tr class="memitem:a1c1e84d1af0190b9af608f4628e7ab9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a1c1e84d1af0190b9af608f4628e7ab9f">fopAcM_createItemFromTable</a> (<a class="el" href="structcXyz.html">cXyz</a> const *p_pos, int i_tableNo, int i_itemBitNo, int i_roomNo, <a class="el" href="classcsXyz.html">csXyz</a> const *p_angle, int param_5, <a class="el" href="structcXyz.html">cXyz</a> const *p_scale, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> *speedF, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> *speedY, bool createDirect)</td></tr>
 <tr class="separator:a1c1e84d1af0190b9af608f4628e7ab9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9e7557d84f88fe3d29ee983e98d2028"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#af9e7557d84f88fe3d29ee983e98d2028">fopAcM_createDemoItem</a> (const <a class="el" href="structcXyz.html">cXyz</a> *p_pos, int itemNo, int itemBitNo, const <a class="el" href="structcsXyz.html">csXyz</a> *p_angle, int roomNo, const <a class="el" href="structcXyz.html">cXyz</a> *scale, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_7)</td></tr>
+<tr class="memitem:af9e7557d84f88fe3d29ee983e98d2028"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#af9e7557d84f88fe3d29ee983e98d2028">fopAcM_createDemoItem</a> (const <a class="el" href="structcXyz.html">cXyz</a> *p_pos, int itemNo, int itemBitNo, const <a class="el" href="classcsXyz.html">csXyz</a> *p_angle, int roomNo, const <a class="el" href="structcXyz.html">cXyz</a> *scale, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_7)</td></tr>
 <tr class="separator:af9e7557d84f88fe3d29ee983e98d2028"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac580feca4942e8962876c281becf714f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#ac580feca4942e8962876c281becf714f">fopAcM_createItemForBoss</a> (const <a class="el" href="structcXyz.html">cXyz</a> *p_pos, int param_2, int roomNo, const <a class="el" href="structcsXyz.html">csXyz</a> *p_angle, const <a class="el" href="structcXyz.html">cXyz</a> *p_scale, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> speedF, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> speedY, int param_8)</td></tr>
+<tr class="memitem:ac580feca4942e8962876c281becf714f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#ac580feca4942e8962876c281becf714f">fopAcM_createItemForBoss</a> (const <a class="el" href="structcXyz.html">cXyz</a> *p_pos, int param_2, int roomNo, const <a class="el" href="classcsXyz.html">csXyz</a> *p_angle, const <a class="el" href="structcXyz.html">cXyz</a> *p_scale, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> speedF, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> speedY, int param_8)</td></tr>
 <tr class="separator:ac580feca4942e8962876c281becf714f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d52cd6a81fd16f181ddd7200a57a729"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a0d52cd6a81fd16f181ddd7200a57a729">fopAcM_createItemForMidBoss</a> (const <a class="el" href="structcXyz.html">cXyz</a> *p_pos, int i_itemNo, int i_roomNo, const <a class="el" href="structcsXyz.html">csXyz</a> *p_angle, const <a class="el" href="structcXyz.html">cXyz</a> *p_scale, int param_6, int param_7)</td></tr>
+<tr class="memitem:a0d52cd6a81fd16f181ddd7200a57a729"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a0d52cd6a81fd16f181ddd7200a57a729">fopAcM_createItemForMidBoss</a> (const <a class="el" href="structcXyz.html">cXyz</a> *p_pos, int i_itemNo, int i_roomNo, const <a class="el" href="classcsXyz.html">csXyz</a> *p_angle, const <a class="el" href="structcXyz.html">cXyz</a> *p_scale, int param_6, int param_7)</td></tr>
 <tr class="separator:a0d52cd6a81fd16f181ddd7200a57a729"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ad33f4927f4e1b26408f9ad8e88096f"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a0ad33f4927f4e1b26408f9ad8e88096f">fopAcM_createItemForDirectGet</a> (const <a class="el" href="structcXyz.html">cXyz</a> *p_pos, int i_itemNo, int i_roomNo, const <a class="el" href="structcsXyz.html">csXyz</a> *p_angle, const <a class="el" href="structcXyz.html">cXyz</a> *p_scale, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> speedF, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> speedY)</td></tr>
+<tr class="memitem:a0ad33f4927f4e1b26408f9ad8e88096f"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a0ad33f4927f4e1b26408f9ad8e88096f">fopAcM_createItemForDirectGet</a> (const <a class="el" href="structcXyz.html">cXyz</a> *p_pos, int i_itemNo, int i_roomNo, const <a class="el" href="classcsXyz.html">csXyz</a> *p_angle, const <a class="el" href="structcXyz.html">cXyz</a> *p_scale, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> speedF, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> speedY)</td></tr>
 <tr class="separator:a0ad33f4927f4e1b26408f9ad8e88096f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29c136f66c522a28c0c9129766992171"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a29c136f66c522a28c0c9129766992171">fopAcM_createItemForSimpleDemo</a> (const <a class="el" href="structcXyz.html">cXyz</a> *p_pos, int i_itemNo, int i_roomNo, const <a class="el" href="structcsXyz.html">csXyz</a> *p_angle, const <a class="el" href="structcXyz.html">cXyz</a> *p_scale, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> speedF, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> speedY)</td></tr>
+<tr class="memitem:a29c136f66c522a28c0c9129766992171"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a29c136f66c522a28c0c9129766992171">fopAcM_createItemForSimpleDemo</a> (const <a class="el" href="structcXyz.html">cXyz</a> *p_pos, int i_itemNo, int i_roomNo, const <a class="el" href="classcsXyz.html">csXyz</a> *p_angle, const <a class="el" href="structcXyz.html">cXyz</a> *p_scale, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> speedF, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> speedY)</td></tr>
 <tr class="separator:a29c136f66c522a28c0c9129766992171"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abde8be7f916353ab688f4bfabea004cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#abde8be7f916353ab688f4bfabea004cc">fopAcM_createItem</a> (const <a class="el" href="structcXyz.html">cXyz</a> *p_pos, int itemNo, int param_3, int roomNo, const <a class="el" href="structcsXyz.html">csXyz</a> *p_angle, const <a class="el" href="structcXyz.html">cXyz</a> *p_scale, int param_7)</td></tr>
+<tr class="memitem:abde8be7f916353ab688f4bfabea004cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#abde8be7f916353ab688f4bfabea004cc">fopAcM_createItem</a> (const <a class="el" href="structcXyz.html">cXyz</a> *p_pos, int itemNo, int param_3, int roomNo, const <a class="el" href="classcsXyz.html">csXyz</a> *p_angle, const <a class="el" href="structcXyz.html">cXyz</a> *p_scale, int param_7)</td></tr>
 <tr class="separator:abde8be7f916353ab688f4bfabea004cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9b2d0f885b1cf7eb74e26f2e09413ea"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#ae9b2d0f885b1cf7eb74e26f2e09413ea">fopAcM_fastCreateItem2</a> (const <a class="el" href="structcXyz.html">cXyz</a> *p_pos, int itemNo, int param_3, int roomNo, int param_5, const <a class="el" href="structcsXyz.html">csXyz</a> *p_angle, const <a class="el" href="structcXyz.html">cXyz</a> *p_scale)</td></tr>
+<tr class="memitem:ae9b2d0f885b1cf7eb74e26f2e09413ea"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#ae9b2d0f885b1cf7eb74e26f2e09413ea">fopAcM_fastCreateItem2</a> (const <a class="el" href="structcXyz.html">cXyz</a> *p_pos, int itemNo, int param_3, int roomNo, int param_5, const <a class="el" href="classcsXyz.html">csXyz</a> *p_angle, const <a class="el" href="structcXyz.html">cXyz</a> *p_scale)</td></tr>
 <tr class="separator:ae9b2d0f885b1cf7eb74e26f2e09413ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3610f3d0c6f887032fea5d14ab31a9e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#aa3610f3d0c6f887032fea5d14ab31a9e">fopAcM_fastCreateItem</a> (const <a class="el" href="structcXyz.html">cXyz</a> *p_pos, int i_itemNo, int i_roomNo, const <a class="el" href="structcsXyz.html">csXyz</a> *p_angle, const <a class="el" href="structcXyz.html">cXyz</a> *p_scale, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> *p_speedF, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> *p_speedY, int param_8, int param_9, <a class="el" href="f__op__actor__mng_8h.html#a0b41bbbca8c43cd70ec786a2a4314295">createFunc</a> p_createFunc)</td></tr>
+<tr class="memitem:aa3610f3d0c6f887032fea5d14ab31a9e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#aa3610f3d0c6f887032fea5d14ab31a9e">fopAcM_fastCreateItem</a> (const <a class="el" href="structcXyz.html">cXyz</a> *p_pos, int i_itemNo, int i_roomNo, const <a class="el" href="classcsXyz.html">csXyz</a> *p_angle, const <a class="el" href="structcXyz.html">cXyz</a> *p_scale, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> *p_speedF, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> *p_speedY, int param_8, int param_9, <a class="el" href="f__op__actor__mng_8h.html#a0b41bbbca8c43cd70ec786a2a4314295">createFunc</a> p_createFunc)</td></tr>
 <tr class="separator:aa3610f3d0c6f887032fea5d14ab31a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1732e7161d2b50d9127952226d55c789"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a1732e7161d2b50d9127952226d55c789">fopAcM_createBokkuri</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>, const <a class="el" href="structcXyz.html">cXyz</a> *, int, int, int, const <a class="el" href="structcXyz.html">cXyz</a> *, int, int)</td></tr>
 <tr class="separator:a1732e7161d2b50d9127952226d55c789"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae498390d586993bf8e29c7ff153e6691"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#ae498390d586993bf8e29c7ff153e6691">fopAcM_createWarpHole</a> (const <a class="el" href="structcXyz.html">cXyz</a> *, const <a class="el" href="structcsXyz.html">csXyz</a> *, int, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)</td></tr>
+<tr class="memitem:ae498390d586993bf8e29c7ff153e6691"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#ae498390d586993bf8e29c7ff153e6691">fopAcM_createWarpHole</a> (const <a class="el" href="structcXyz.html">cXyz</a> *, const <a class="el" href="classcsXyz.html">csXyz</a> *, int, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>)</td></tr>
 <tr class="separator:ae498390d586993bf8e29c7ff153e6691"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac925ae67cb873e8225c69392f42060f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#ac925ae67cb873e8225c69392f42060f9">fopAcM_myRoomSearchEnemy</a> (<a class="el" href="types_8h.html#a151f780fb455885061d3b77ec1c90c03">s8</a> roomNo)</td></tr>
 <tr class="separator:ac925ae67cb873e8225c69392f42060f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -452,7 +456,7 @@ Functions</h2></td></tr>
 <tr class="separator:ac34d735d8ff58b1d9d2532ee197a6f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b580cd3067754bee7b7bf71782e05c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a6b580cd3067754bee7b7bf71782e05c7">fopAcM_plAngleCheck</a> (const <a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a>)</td></tr>
 <tr class="separator:a6b580cd3067754bee7b7bf71782e05c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe7628549667fb3cf002d5cf5423c611"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#abe7628549667fb3cf002d5cf5423c611">fopAcM_effSmokeSet1</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> *, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> *, const <a class="el" href="structcXyz.html">cXyz</a> *, const <a class="el" href="structcsXyz.html">csXyz</a> *, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>, const <a class="el" href="structdKy__tevstr__c.html">dKy_tevstr_c</a> *, int)</td></tr>
+<tr class="memitem:abe7628549667fb3cf002d5cf5423c611"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#abe7628549667fb3cf002d5cf5423c611">fopAcM_effSmokeSet1</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> *, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> *, const <a class="el" href="structcXyz.html">cXyz</a> *, const <a class="el" href="classcsXyz.html">csXyz</a> *, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>, const <a class="el" href="classdKy__tevstr__c.html">dKy_tevstr_c</a> *, int)</td></tr>
 <tr class="separator:abe7628549667fb3cf002d5cf5423c611"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b2f6050654269e2f1e2c0e288752f7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a3b2f6050654269e2f1e2c0e288752f7b">fopAcM_effHamonSet</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> *, const <a class="el" href="structcXyz.html">cXyz</a> *, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>)</td></tr>
 <tr class="separator:a3b2f6050654269e2f1e2c0e288752f7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -484,7 +488,7 @@ Functions</h2></td></tr>
 <tr class="separator:af91c33e74149594fb8fbb3e638b8f062"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12f8710e1721722d378aacf8b0275591"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a12f8710e1721722d378aacf8b0275591">make_prm_warp_hole</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> *actorParams, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> p1, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> p2, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> p3)</td></tr>
 <tr class="separator:a12f8710e1721722d378aacf8b0275591"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89f7ab433d607b062a75a03a6b2b3ba1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a89f7ab433d607b062a75a03a6b2b3ba1">make_prm_bokkuri</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> *pActorParams, <a class="el" href="structcsXyz.html">csXyz</a> *p_angle, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_2, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_3, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_4, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_5, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_6)</td></tr>
+<tr class="memitem:a89f7ab433d607b062a75a03a6b2b3ba1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a89f7ab433d607b062a75a03a6b2b3ba1">make_prm_bokkuri</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> *pActorParams, <a class="el" href="classcsXyz.html">csXyz</a> *p_angle, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_2, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_3, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_4, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_5, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> param_6)</td></tr>
 <tr class="separator:a89f7ab433d607b062a75a03a6b2b3ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac94c5528dab6bdbd49f037b45c1033d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#ac94c5528dab6bdbd49f037b45c1033d2">dComIfGp_getPlayer</a> (int)</td></tr>
 <tr class="separator:ac94c5528dab6bdbd49f037b45c1033d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -711,6 +715,41 @@ Functions</h2></td></tr>
 <tr class="memitem:a2b56b8ff54c7ef900096fe0a2c6dd420"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="f__op__actor__mng_8h.html#a2b56b8ff54c7ef900096fe0a2c6dd420">fopAcM_GetID__FPCv</a> (void)</td></tr>
 <tr class="separator:a2b56b8ff54c7ef900096fe0a2c6dd420"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="aad9fe5f23ec24c176d8b9b6a6877a116" name="aad9fe5f23ec24c176d8b9b6a6877a116"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad9fe5f23ec24c176d8b9b6a6877a116">&#9670;&#160;</a></span>fopAcM_SetupActor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define fopAcM_SetupActor</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ptr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ClassName&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">if</span> (!<a class="code hl_function" href="f__op__actor__mng_8h.html#ae04f369129df519ebcf4a9109d3ee24a">fopAcM_CheckCondition</a>(ptr, <a class="code hl_enumvalue" href="f__op__actor_8h.html#ab1287a1d957b35b3d72048712ba82c35a36a6b534748c92fe19c0da633fe96bcb">fopAcCnd_INIT_e</a>)) { \</div>
+<div class="line">        new (ptr) ClassName(); \</div>
+<div class="line">        fopAcM_OnCondition(ptr, <a class="code hl_enumvalue" href="f__op__actor_8h.html#ab1287a1d957b35b3d72048712ba82c35a36a6b534748c92fe19c0da633fe96bcb">fopAcCnd_INIT_e</a>); \</div>
+<div class="line">    }</div>
+<div class="ttc" id="af__op__actor_8h_html_ab1287a1d957b35b3d72048712ba82c35a36a6b534748c92fe19c0da633fe96bcb"><div class="ttname"><a href="f__op__actor_8h.html#ab1287a1d957b35b3d72048712ba82c35a36a6b534748c92fe19c0da633fe96bcb">fopAcCnd_INIT_e</a></div><div class="ttdeci">@ fopAcCnd_INIT_e</div><div class="ttdef"><b>Definition:</b> f_op_actor.h:48</div></div>
+<div class="ttc" id="af__op__actor__mng_8h_html_ae04f369129df519ebcf4a9109d3ee24a"><div class="ttname"><a href="f__op__actor__mng_8h.html#ae04f369129df519ebcf4a9109d3ee24a">fopAcM_CheckCondition</a></div><div class="ttdeci">bool fopAcM_CheckCondition(fopAc_ac_c *p_actor, u32 flag)</div><div class="ttdef"><b>Definition:</b> f_op_actor_mng.h:218</div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a0b41bbbca8c43cd70ec786a2a4314295" name="a0b41bbbca8c43cd70ec786a2a4314295"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0b41bbbca8c43cd70ec786a2a4314295">&#9670;&#160;</a></span>createFunc</h2>
@@ -758,6 +797,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a9a8f0caf5338c590123da43b40d903aba9d1eddeb47a510e3fbb715388b393860" name="a9a8f0caf5338c590123da43b40d903aba9d1eddeb47a510e3fbb715388b393860"></a>fopAcM_CARRY_SIDE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a9a8f0caf5338c590123da43b40d903aba210c0886cfd5f2a742e644029edda232" name="a9a8f0caf5338c590123da43b40d903aba210c0886cfd5f2a742e644029edda232"></a>fopAcM_CARRY_TYPE_8&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a9a8f0caf5338c590123da43b40d903aba20604b6174c8536e7812a4c8a0ad8d89" name="a9a8f0caf5338c590123da43b40d903aba20604b6174c8536e7812a4c8a0ad8d89"></a>fopAcM_CARRY_LIGHT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9a8f0caf5338c590123da43b40d903aba2bc192ea31676580f658582661798be3" name="a9a8f0caf5338c590123da43b40d903aba2bc192ea31676580f658582661798be3"></a>fopAcM_CARRY_UNK_30&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -796,7 +836,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structcsXyz.html">csXyz</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classcsXyz.html">csXyz</a> *&#160;</td>
           <td class="paramname"><em>p_angle</em>, </td>
         </tr>
         <tr>
@@ -1654,7 +1694,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structcsXyz.html">csXyz</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classcsXyz.html">csXyz</a> *&#160;</td>
           <td class="paramname"><em>p_angle</em>, </td>
         </tr>
         <tr>
@@ -1718,7 +1758,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structcsXyz.html">csXyz</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classcsXyz.html">csXyz</a> *&#160;</td>
           <td class="paramname"><em>p_angle</em>, </td>
         </tr>
         <tr>
@@ -1935,7 +1975,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structcsXyz.html">csXyz</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classcsXyz.html">csXyz</a> *&#160;</td>
           <td class="paramname"><em>p_angle</em>, </td>
         </tr>
         <tr>
@@ -2023,7 +2063,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structcsXyz.html">csXyz</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classcsXyz.html">csXyz</a> *&#160;</td>
           <td class="paramname"><em>p_angle</em>, </td>
         </tr>
         <tr>
@@ -2099,7 +2139,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structcsXyz.html">csXyz</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classcsXyz.html">csXyz</a> *&#160;</td>
           <td class="paramname"><em>p_angle</em>, </td>
         </tr>
         <tr>
@@ -2245,7 +2285,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structcsXyz.html">csXyz</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classcsXyz.html">csXyz</a> *&#160;</td>
           <td class="paramname"><em>p_angle</em>, </td>
         </tr>
         <tr>
@@ -2315,7 +2355,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structcsXyz.html">csXyz</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classcsXyz.html">csXyz</a> *&#160;</td>
           <td class="paramname"><em>p_angle</em>, </td>
         </tr>
         <tr>
@@ -2397,7 +2437,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structcsXyz.html">csXyz</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classcsXyz.html">csXyz</a> *&#160;</td>
           <td class="paramname"><em>p_angle</em>, </td>
         </tr>
         <tr>
@@ -2473,7 +2513,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structcsXyz.html">csXyz</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classcsXyz.html">csXyz</a> *&#160;</td>
           <td class="paramname"><em>p_angle</em>, </td>
         </tr>
         <tr>
@@ -2561,7 +2601,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structcsXyz.html">csXyz</a> const *&#160;</td>
+          <td class="paramtype"><a class="el" href="classcsXyz.html">csXyz</a> const *&#160;</td>
           <td class="paramname"><em>p_angle</em>, </td>
         </tr>
         <tr>
@@ -2625,7 +2665,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structcsXyz.html">csXyz</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classcsXyz.html">csXyz</a> *&#160;</td>
           <td class="paramname"><em>p_angle</em>, </td>
         </tr>
         <tr>
@@ -2707,7 +2747,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structcsXyz.html">csXyz</a> const *&#160;</td>
+          <td class="paramtype"><a class="el" href="classcsXyz.html">csXyz</a> const *&#160;</td>
           <td class="paramname"><em>p_angle</em>, </td>
         </tr>
         <tr>
@@ -2777,7 +2817,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structcsXyz.html">csXyz</a> const *&#160;</td>
+          <td class="paramtype"><a class="el" href="classcsXyz.html">csXyz</a> const *&#160;</td>
           <td class="paramname"><em>p_angle</em>, </td>
         </tr>
         <tr>
@@ -2859,7 +2899,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structcsXyz.html">csXyz</a> const *&#160;</td>
+          <td class="paramtype"><a class="el" href="classcsXyz.html">csXyz</a> const *&#160;</td>
           <td class="paramname"><em>p_angle</em>, </td>
         </tr>
         <tr>
@@ -2935,7 +2975,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structcsXyz.html">csXyz</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classcsXyz.html">csXyz</a> *&#160;</td>
           <td class="paramname"><em>i_angle</em>, </td>
         </tr>
         <tr>
@@ -3245,7 +3285,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structcsXyz.html">csXyz</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classcsXyz.html">csXyz</a> *&#160;</td>
           <td class="paramname"><em>param_3</em>, </td>
         </tr>
         <tr>
@@ -3257,7 +3297,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structdKy__tevstr__c.html">dKy_tevstr_c</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classdKy__tevstr__c.html">dKy_tevstr_c</a> *&#160;</td>
           <td class="paramname"><em>param_5</em>, </td>
         </tr>
         <tr>
@@ -3431,7 +3471,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structcsXyz.html">csXyz</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classcsXyz.html">csXyz</a> *&#160;</td>
           <td class="paramname"><em>p_angle</em>, </td>
         </tr>
         <tr>
@@ -3535,7 +3575,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structcsXyz.html">csXyz</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classcsXyz.html">csXyz</a> *&#160;</td>
           <td class="paramname"><em>p_angle</em>, </td>
         </tr>
         <tr>
@@ -3653,7 +3693,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structcsXyz.html">csXyz</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classcsXyz.html">csXyz</a> *&#160;</td>
           <td class="paramname"><em>p_angle</em>, </td>
         </tr>
         <tr>
@@ -3741,7 +3781,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structcsXyz.html">csXyz</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classcsXyz.html">csXyz</a> *&#160;</td>
           <td class="paramname"><em>p_angle</em>, </td>
         </tr>
         <tr>
@@ -3906,7 +3946,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structcsXyz.html">csXyz</a> &amp; fopAcM_GetAngle_p </td>
+          <td class="memname"><a class="el" href="classcsXyz.html">csXyz</a> &amp; fopAcM_GetAngle_p </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *&#160;</td>
           <td class="paramname"><em>pActor</em></td><td>)</td>
@@ -4800,7 +4840,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structcsXyz.html">csXyz</a> &amp; fopAcM_GetShapeAngle_p </td>
+          <td class="memname"><a class="el" href="classcsXyz.html">csXyz</a> &amp; fopAcM_GetShapeAngle_p </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structfopAc__ac__c.html">fopAc_ac_c</a> *&#160;</td>
           <td class="paramname"><em>pActor</em></td><td>)</td>
@@ -8893,7 +8933,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structcsXyz.html">csXyz</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classcsXyz.html">csXyz</a> *&#160;</td>
           <td class="paramname"><em>p_angle</em>, </td>
         </tr>
         <tr>

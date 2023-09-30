@@ -90,12 +90,13 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for JUTAssert.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="JUTAssert_8h__incl.svg" width="192" height="212"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="JUTAssert_8h__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -120,6 +121,10 @@ Macros</h2></td></tr>
 <tr class="separator:a666f8d9f61d842b3b29b0f2782cad2d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb737228e3e305747f2c4e9ee3821da3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JUTAssert_8h.html#adb737228e3e305747f2c4e9ee3821da3">JUT_PANIC</a>(...)</td></tr>
 <tr class="separator:adb737228e3e305747f2c4e9ee3821da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a238a87472158eedd79f6ea23fb8e8ae7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JUTAssert_8h.html#a238a87472158eedd79f6ea23fb8e8ae7">JUT_WARN</a>(...)</td></tr>
+<tr class="separator:a238a87472158eedd79f6ea23fb8e8ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7df23a725e209c2d42c6595e00ef3a7a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JUTAssert_8h.html#a7df23a725e209c2d42c6595e00ef3a7a">JUT_LOG</a>(...)</td></tr>
+<tr class="separator:a7df23a725e209c2d42c6595e00ef3a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -135,6 +140,14 @@ Functions</h2></td></tr>
 <tr class="separator:aeaaae5edbf68eaa6acd9279428663b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e6950527777e7cf47a3cd292934951a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJUTAssertion.html#a4e6950527777e7cf47a3cd292934951a">JUTAssertion::setMessageCount</a> (int msg_count)</td></tr>
 <tr class="separator:a4e6950527777e7cf47a3cd292934951a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8db76c34e2b7f9ef0585afd038d6ab4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJUTAssertion.html#ac8db76c34e2b7f9ef0585afd038d6ab4">JUTAssertion::getSDevice</a> ()</td></tr>
+<tr class="separator:ac8db76c34e2b7f9ef0585afd038d6ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a555149b169b9d5dd52f1c90310008447"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJUTAssertion.html#a555149b169b9d5dd52f1c90310008447">JUTAssertion::showAssert</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> device, const char *file, int line, const char *msg)</td></tr>
+<tr class="separator:a555149b169b9d5dd52f1c90310008447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21363ba1874850f92a827a8ad3d781e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJUTAssertion.html#a21363ba1874850f92a827a8ad3d781e6">JUTAssertion::setWarningMessage_f</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> device, char *file, int line, const char *msg,...)</td></tr>
+<tr class="separator:a21363ba1874850f92a827a8ad3d781e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe49345c33f66af9c8ecddedfe1be6f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceJUTAssertion.html#afe49345c33f66af9c8ecddedfe1be6f5">JUTAssertion::setLogMessage_f</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> device, char *file, int line, const char *msg,...)</td></tr>
+<tr class="separator:afe49345c33f66af9c8ecddedfe1be6f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -160,6 +173,24 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a7df23a725e209c2d42c6595e00ef3a7a" name="a7df23a725e209c2d42c6595e00ef3a7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7df23a725e209c2d42c6595e00ef3a7a">&#9670;&#160;</a></span>JUT_LOG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JUT_LOG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="adb737228e3e305747f2c4e9ee3821da3" name="adb737228e3e305747f2c4e9ee3821da3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb737228e3e305747f2c4e9ee3821da3">&#9670;&#160;</a></span>JUT_PANIC</h2>
 
@@ -168,6 +199,24 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define JUT_PANIC</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a238a87472158eedd79f6ea23fb8e8ae7" name="a238a87472158eedd79f6ea23fb8e8ae7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a238a87472158eedd79f6ea23fb8e8ae7">&#9670;&#160;</a></span>JUT_WARN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define JUT_WARN</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>...</em></td><td>)</td>
