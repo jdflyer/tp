@@ -130,6 +130,8 @@ Functions</h2></td></tr>
 <tr class="separator:a45a09c0e514ab5ca0b41b8ca7b3b85dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cd3c23aed3b3a039fcbcb1537c8fb3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__msg__object_8h.html#a3cd3c23aed3b3a039fcbcb1537c8fb3a">dMsgObject_getOffering</a> ()</td></tr>
 <tr class="separator:a3cd3c23aed3b3a039fcbcb1537c8fb3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1db9800fd8cfed61eb4bd4cdc15c290"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__msg__object_8h.html#ae1db9800fd8cfed61eb4bd4cdc15c290">dMsgObject_addTotalPrice</a> (<a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> param_0)</td></tr>
+<tr class="separator:ae1db9800fd8cfed61eb4bd4cdc15c290"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac80256cee5dc002f7f97eb35bd556dd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdMsgObject__c.html">dMsgObject_c</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__msg__object_8h.html#ac80256cee5dc002f7f97eb35bd556dd3">dMsgObject_getMsgObjectClass</a> ()</td></tr>
 <tr class="separator:ac80256cee5dc002f7f97eb35bd556dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d6b0cd817122db29d2a7250cc75e98c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__msg__object_8h.html#a4d6b0cd817122db29d2a7250cc75e98c">dMsgObject_demoMessageGroup</a> ()</td></tr>
@@ -170,6 +172,10 @@ Functions</h2></td></tr>
 <tr class="separator:a8ef2977dc544a7d947e6019d04e60abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a59c219497341222e63fc274074b3f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__msg__object_8h.html#a8a59c219497341222e63fc274074b3f6">dMsgObject_setEquipBombInfo</a> ()</td></tr>
 <tr class="separator:a8a59c219497341222e63fc274074b3f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60a6cb207fabe23448af92e45d9d777d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__msg__object_8h.html#a60a6cb207fabe23448af92e45d9d777d">dMsgObject_isHowlHearingMode</a> ()</td></tr>
+<tr class="separator:a60a6cb207fabe23448af92e45d9d777d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7b0e03d8567260ff8ce34973d884834"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__msg__object_8h.html#ae7b0e03d8567260ff8ce34973d884834">dMsgObject_onMsgSend</a> ()</td></tr>
+<tr class="separator:ae7b0e03d8567260ff8ce34973d884834"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a45a09c0e514ab5ca0b41b8ca7b3b85dc" name="a45a09c0e514ab5ca0b41b8ca7b3b85dc"></a>
@@ -180,6 +186,24 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void dMsgObject_addOffering </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a>&#160;</td>
+          <td class="paramname"><em>param_0</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1db9800fd8cfed61eb4bd4cdc15c290" name="ae1db9800fd8cfed61eb4bd4cdc15c290"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1db9800fd8cfed61eb4bd4cdc15c290">&#9670;&#160;</a></span>dMsgObject_addTotalPrice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dMsgObject_addTotalPrice </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a>&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -470,6 +494,31 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a60a6cb207fabe23448af92e45d9d777d" name="a60a6cb207fabe23448af92e45d9d777d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60a6cb207fabe23448af92e45d9d777d">&#9670;&#160;</a></span>dMsgObject_isHowlHearingMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dMsgObject_isHowlHearingMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1602ae4eaeda68b8ad5b8aac6704db9d" name="a1602ae4eaeda68b8ad5b8aac6704db9d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1602ae4eaeda68b8ad5b8aac6704db9d">&#9670;&#160;</a></span>dMsgObject_isKillMessageFlag()</h2>
 
@@ -531,6 +580,31 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void dMsgObject_onKillMessageFlag </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae7b0e03d8567260ff8ce34973d884834" name="ae7b0e03d8567260ff8ce34973d884834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7b0e03d8567260ff8ce34973d884834">&#9670;&#160;</a></span>dMsgObject_onMsgSend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dMsgObject_onMsgSend </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>

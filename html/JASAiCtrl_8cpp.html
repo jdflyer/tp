@@ -106,10 +106,6 @@ $(function() {
 <code>#include &quot;asm/JSystem/JAudio2/JASAiCtrl/setOutputRate__9JASDriverF13JASOutputRate.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JASAiCtrl/updateDSP__9JASDriverFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JASAiCtrl/readDspBuffer__9JASDriverFPsUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASAiCtrl/mixMonoTrack__9JASDriverFPsUlPFl_Ps.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASAiCtrl/mixMonoTrackWide__9JASDriverFPsUlPFl_Ps.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASAiCtrl/mixExtraTrack__9JASDriverFPsUlPFl_Ps.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASAiCtrl/mixInterleaveTrack__9JASDriverFPsUlPFl_Ps.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for JASAiCtrl.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -281,16 +277,6 @@ Variables</h2></td></tr>
 <tr class="separator:a4c87b335145fd76f22cad6b9f8bb667d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47f7ebdbbe0fa34db0fa385feaa6c80a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a94dab5770726ccbef8c7d026cfbdf8e5">f64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAiCtrl_8cpp.html#a47f7ebdbbe0fa34db0fa385feaa6c80a">lit_278</a> = 4503599627370496.0</td></tr>
 <tr class="separator:a47f7ebdbbe0fa34db0fa385feaa6c80a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a6b16ce0a8bd7498b4b0ce89c902ed9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAiCtrl_8cpp.html#a4a6b16ce0a8bd7498b4b0ce89c902ed9">stringBase_8039B30C</a> = &quot;DSP-MAIN&quot;</td></tr>
-<tr class="separator:a4a6b16ce0a8bd7498b4b0ce89c902ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11047f76d3a8c7ad2b4a6e60dc14db06"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAiCtrl_8cpp.html#a11047f76d3a8c7ad2b4a6e60dc14db06">stringBase_8039B315</a> = &quot;MONO-MIX&quot;</td></tr>
-<tr class="separator:a11047f76d3a8c7ad2b4a6e60dc14db06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85fcc0bcc73eb4736fb693020d948b43"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAiCtrl_8cpp.html#a85fcc0bcc73eb4736fb693020d948b43">stringBase_8039B31E</a> = &quot;MONO(W)-MIX&quot;</td></tr>
-<tr class="separator:a85fcc0bcc73eb4736fb693020d948b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abef7e0b08896ea6d5d898b2f292a8735"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAiCtrl_8cpp.html#abef7e0b08896ea6d5d898b2f292a8735">stringBase_8039B32A</a> = &quot;DSPMIX&quot;</td></tr>
-<tr class="separator:abef7e0b08896ea6d5d898b2f292a8735"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a160500855e9df01e539d02b2122e86b0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASAiCtrl_8cpp.html#a160500855e9df01e539d02b2122e86b0">stringBase_8039B331</a> = &quot;MIXING&quot;</td></tr>
-<tr class="separator:a160500855e9df01e539d02b2122e86b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a705148c8961d58e1331fd2c53e823e37" name="a705148c8961d58e1331fd2c53e823e37"></a>
@@ -558,7 +544,7 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a>&#160;</td>
-          <td class="paramname"><em>param_0</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1653,116 +1639,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_8039B2FB = &quot;kill DSP channel&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4a6b16ce0a8bd7498b4b0ce89c902ed9" name="a4a6b16ce0a8bd7498b4b0ce89c902ed9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a6b16ce0a8bd7498b4b0ce89c902ed9">&#9670;&#160;</a></span>stringBase_8039B30C</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_8039B30C = &quot;DSP-MAIN&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a11047f76d3a8c7ad2b4a6e60dc14db06" name="a11047f76d3a8c7ad2b4a6e60dc14db06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11047f76d3a8c7ad2b4a6e60dc14db06">&#9670;&#160;</a></span>stringBase_8039B315</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_8039B315 = &quot;MONO-MIX&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a85fcc0bcc73eb4736fb693020d948b43" name="a85fcc0bcc73eb4736fb693020d948b43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85fcc0bcc73eb4736fb693020d948b43">&#9670;&#160;</a></span>stringBase_8039B31E</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_8039B31E = &quot;MONO(W)-MIX&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abef7e0b08896ea6d5d898b2f292a8735" name="abef7e0b08896ea6d5d898b2f292a8735"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abef7e0b08896ea6d5d898b2f292a8735">&#9670;&#160;</a></span>stringBase_8039B32A</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_8039B32A = &quot;DSPMIX&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a160500855e9df01e539d02b2122e86b0" name="a160500855e9df01e539d02b2122e86b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a160500855e9df01e539d02b2122e86b0">&#9670;&#160;</a></span>stringBase_8039B331</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> char const* const stringBase_8039B331 = &quot;MIXING&quot;</td>
         </tr>
       </table>
   </td>

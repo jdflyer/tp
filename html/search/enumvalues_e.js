@@ -86,6 +86,6 @@ var searchData=
   ['noentry9_83',['noentry9',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a1001dc75f0a8819f265f43c3d41bfcf8',1,'d_save.h']]],
   ['normal_5fbomb_84',['NORMAL_BOMB',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a7135c07e49a3cc4fffe3a78b750950fb',1,'d_save.h']]],
   ['normal_5fbomb_5fmax_85',['NORMAL_BOMB_MAX',['../d__save_8h.html#ac85105b4d4fc7197addac0797f0cc984ab8b9c08845a1dae42b6f2965ccffd744',1,'d_save.h']]],
-  ['normal_5fgrp_86',['NORMAL_GRP',['../classdBgS__GrpPassChk.html#ac5c5af4611f950c2f04acc1eda548731aa99f7a741b1180ee33ffd491680c39c1',1,'dBgS_GrpPassChk']]],
+  ['normal_5fgrp_86',['NORMAL_GRP',['../classdBgS__GrpPassChk.html#ab2adf7217f69ea8dfd0fcd22341f7ad0aa99f7a741b1180ee33ffd491680c39c1',1,'dBgS_GrpPassChk']]],
   ['nullevent_87',['NullEvent',['../nubevent_8h.html#a377fbf6a54d6c3797c7e8b7d13f64127a6e4340e446e2a88c8f53b06b9ffd7d58',1,'nubevent.h']]]
 ];

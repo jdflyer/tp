@@ -115,7 +115,7 @@ $(function() {
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="GX_8h__dep__incl.svg" width="100%" height="525"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="GX_8h__dep__incl.svg" width="100%" height="459"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div>
@@ -130,14 +130,40 @@ Classes</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:af949c98422762750a49c767d038cb930"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#af949c98422762750a49c767d038cb930">GX_BITFIELD_SET</a>(field,  <a class="el" href="d__particle_8cpp.html#ac45542939012bee5222cd3e5e740ed64">pos</a>,  size,  value)&#160;&#160;&#160;(field) = __rlwimi((field), (value), 31 - (<a class="el" href="d__particle_8cpp.html#ac45542939012bee5222cd3e5e740ed64">pos</a>) - (size) + 1, (<a class="el" href="d__particle_8cpp.html#ac45542939012bee5222cd3e5e740ed64">pos</a>), (<a class="el" href="d__particle_8cpp.html#ac45542939012bee5222cd3e5e740ed64">pos</a>) + (size)-1)</td></tr>
 <tr class="separator:af949c98422762750a49c767d038cb930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7672e138025e9b26154a4251b810e7bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a7672e138025e9b26154a4251b810e7bc">GX_BITGET</a>(field,  <a class="el" href="d__particle_8cpp.html#ac45542939012bee5222cd3e5e740ed64">pos</a>,  size)&#160;&#160;&#160;((field) &gt;&gt; (31 - (<a class="el" href="d__particle_8cpp.html#ac45542939012bee5222cd3e5e740ed64">pos</a>) - (size) + 1) &amp; ((1 &lt;&lt; (size)) - 1))</td></tr>
+<tr class="separator:a7672e138025e9b26154a4251b810e7bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c47b14c58ffc0ea447679ad01b8880c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a9c47b14c58ffc0ea447679ad01b8880c">GX_GET_REG</a>(reg,  st,  end)&#160;&#160;&#160;<a class="el" href="GX_8h.html#a7672e138025e9b26154a4251b810e7bc">GX_BITGET</a>(reg, st, (end - st + 1))</td></tr>
+<tr class="separator:a9c47b14c58ffc0ea447679ad01b8880c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a83690637a42bcac561598452f96c50"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a3a83690637a42bcac561598452f96c50">GX_SET_REG</a>(reg,  x,  st,  end)&#160;&#160;&#160;<a class="el" href="GX_8h.html#af949c98422762750a49c767d038cb930">GX_BITFIELD_SET</a>(reg, st, (end - st + 1), x)</td></tr>
+<tr class="separator:a3a83690637a42bcac561598452f96c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee8afc66bf32221889992ce1aec4c603"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#aee8afc66bf32221889992ce1aec4c603">INSERT_FIELD</a>(reg,  value,  nbits,  shift)</td></tr>
 <tr class="separator:aee8afc66bf32221889992ce1aec4c603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89745a86a7f9edc77ae1a969547e49f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a89745a86a7f9edc77ae1a969547e49f3">FAST_FLAG_SET</a>(regOrg,  newFlag,  shift,  size)</td></tr>
+<tr class="separator:a89745a86a7f9edc77ae1a969547e49f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf826caf8d8fa06d80f2f6efe7c65a55"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#abf826caf8d8fa06d80f2f6efe7c65a55">GX_LOAD_BP_REG</a>&#160;&#160;&#160;0x61</td></tr>
 <tr class="separator:abf826caf8d8fa06d80f2f6efe7c65a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3449e16a5d271f54f6aff735c58234e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a3449e16a5d271f54f6aff735c58234e3">GX_NOP</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:a3449e16a5d271f54f6aff735c58234e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74f31c89c4c221f415afa94edd409aae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a74f31c89c4c221f415afa94edd409aae">GFX_FIFO</a>(<a class="el" href="k__tan_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a>)&#160;&#160;&#160;(*(volatile <a class="el" href="k__tan_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a>*)0xCC008000)</td></tr>
+<tr class="memitem:afcdcbd22568b1a67e0bfb641d9717bb8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#afcdcbd22568b1a67e0bfb641d9717bb8">GXFIFO_ADDR</a>&#160;&#160;&#160;0xCC008000</td></tr>
+<tr class="separator:afcdcbd22568b1a67e0bfb641d9717bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f31c89c4c221f415afa94edd409aae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a74f31c89c4c221f415afa94edd409aae">GFX_FIFO</a>(<a class="el" href="k__tan_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a>)&#160;&#160;&#160;(*(volatile <a class="el" href="k__tan_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a>*)<a class="el" href="GX_8h.html#afcdcbd22568b1a67e0bfb641d9717bb8">GXFIFO_ADDR</a>)</td></tr>
 <tr class="separator:a74f31c89c4c221f415afa94edd409aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43afcd232cafbc4f54feee16f1173125"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a43afcd232cafbc4f54feee16f1173125">GX_WRITE_U8</a>(<a class="el" href="d__vibration_8cpp.html#a923e25734c61f5a7e48bbfcfbe0c2313">data</a>)&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">GXFIFO.u8</a> = <a class="el" href="d__vibration_8cpp.html#a923e25734c61f5a7e48bbfcfbe0c2313">data</a>;</td></tr>
+<tr class="separator:a43afcd232cafbc4f54feee16f1173125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a539913df0d0503069e1bde8fa61d3a49"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a539913df0d0503069e1bde8fa61d3a49">GX_WRITE_U32</a>(<a class="el" href="d__vibration_8cpp.html#a923e25734c61f5a7e48bbfcfbe0c2313">data</a>)&#160;&#160;&#160;<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">GXFIFO.u32</a> = <a class="el" href="d__vibration_8cpp.html#a923e25734c61f5a7e48bbfcfbe0c2313">data</a>;</td></tr>
+<tr class="separator:a539913df0d0503069e1bde8fa61d3a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4deadb7896ccd929bf741976ccad309e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a4deadb7896ccd929bf741976ccad309e">GX_WRITE_F32</a>(<a class="el" href="init_8h.html#aa0ccb5ee6d882ee3605ff47745c6467b">val</a>)&#160;&#160;&#160;(<a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">GXFIFO.f32</a> = (<a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>)<a class="el" href="init_8h.html#aa0ccb5ee6d882ee3605ff47745c6467b">val</a>)</td></tr>
+<tr class="separator:a4deadb7896ccd929bf741976ccad309e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27be0604b43b6f64aca72dd7c3f371bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a27be0604b43b6f64aca72dd7c3f371bc">GX_CP_LOAD_REG</a>(addr,  <a class="el" href="d__vibration_8cpp.html#a923e25734c61f5a7e48bbfcfbe0c2313">data</a>)</td></tr>
+<tr class="separator:a27be0604b43b6f64aca72dd7c3f371bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a867d1f7a3d37f478c632b3ec337249c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a867d1f7a3d37f478c632b3ec337249c3">GX_XF_LOAD_REG_HDR</a>(addr)</td></tr>
+<tr class="separator:a867d1f7a3d37f478c632b3ec337249c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bd02fe6672d79283aec0f0c98a0e0d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a4bd02fe6672d79283aec0f0c98a0e0d1">GX_XF_LOAD_REG</a>(addr,  <a class="el" href="d__vibration_8cpp.html#a923e25734c61f5a7e48bbfcfbe0c2313">data</a>)</td></tr>
+<tr class="separator:a4bd02fe6672d79283aec0f0c98a0e0d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fa17ca9980999164541698ce3611f16"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a4fa17ca9980999164541698ce3611f16">GX_BP_LOAD_REG</a>(<a class="el" href="d__vibration_8cpp.html#a923e25734c61f5a7e48bbfcfbe0c2313">data</a>)</td></tr>
+<tr class="separator:a4fa17ca9980999164541698ce3611f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a558769bbc4e61a1279e81aa4d2d73c52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a558769bbc4e61a1279e81aa4d2d73c52">GX_XF_LOAD_REGS</a>(size,  addr)</td></tr>
+<tr class="separator:a558769bbc4e61a1279e81aa4d2d73c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -175,6 +201,8 @@ Functions</h2></td></tr>
 <tr class="separator:a938a96aa3743fccb0b1aad9a660ae239"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3865d5ae6a47048efff7d76533927413"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a3865d5ae6a47048efff7d76533927413">GFWriteBPCmd</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> param_1)</td></tr>
 <tr class="separator:a3865d5ae6a47048efff7d76533927413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39ab2df01dc6796a5becb9d7b7fb49bc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a39ab2df01dc6796a5becb9d7b7fb49bc">GXReadCPReg</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> addrLo, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> addrHi)</td></tr>
+<tr class="separator:a39ab2df01dc6796a5becb9d7b7fb49bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91332f6553353fc70d03a0d1a72b8581"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a91332f6553353fc70d03a0d1a72b8581">GFFill</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> param_1, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> param_2)</td></tr>
 <tr class="separator:a91332f6553353fc70d03a0d1a72b8581"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72b8e35267dcca2e8f18c3d267dd4bf1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GX_8h.html#a72b8e35267dcca2e8f18c3d267dd4bf1">i_GXEnd</a> ()</td></tr>
@@ -186,6 +214,50 @@ Variables</h2></td></tr>
 <tr class="separator:ad89fba0c9178e84047567439b1d13f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a89745a86a7f9edc77ae1a969547e49f3" name="a89745a86a7f9edc77ae1a969547e49f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89745a86a7f9edc77ae1a969547e49f3">&#9670;&#160;</a></span>FAST_FLAG_SET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FAST_FLAG_SET</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">regOrg, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">newFlag, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">shift, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">size&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                                                                                           \</div>
+<div class="line">        (regOrg) = (<a class="code hl_typedef" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>)__rlwimi((<span class="keywordtype">int</span>)(regOrg), (<span class="keywordtype">int</span>)(newFlag), (shift), (32 - (shift) - (size)), (31 - (shift))); \</div>
+<div class="line">    } <span class="keywordflow">while</span> (0);</div>
+<div class="ttc" id="atypes_8h_html_a2caf5cd7bcdbe1eefa727f44ffb10bac"><div class="ttname"><a href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a></div><div class="ttdeci">unsigned long u32</div><div class="ttdef"><b>Definition:</b> types.h:10</div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a74f31c89c4c221f415afa94edd409aae" name="a74f31c89c4c221f415afa94edd409aae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74f31c89c4c221f415afa94edd409aae">&#9670;&#160;</a></span>GFX_FIFO</h2>
 
@@ -197,7 +269,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><a class="el" href="k__tan_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a></td><td>)</td>
-          <td>&#160;&#160;&#160;(*(volatile <a class="el" href="k__tan_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a>*)0xCC008000)</td>
+          <td>&#160;&#160;&#160;(*(volatile <a class="el" href="k__tan_8c.html#a3f23ef19f75a1358ade1d01a49060f77">T</a>*)<a class="el" href="GX_8h.html#afcdcbd22568b1a67e0bfb641d9717bb8">GXFIFO_ADDR</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -244,6 +316,132 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a7672e138025e9b26154a4251b810e7bc" name="a7672e138025e9b26154a4251b810e7bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7672e138025e9b26154a4251b810e7bc">&#9670;&#160;</a></span>GX_BITGET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GX_BITGET</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">field, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="d__particle_8cpp.html#ac45542939012bee5222cd3e5e740ed64">pos</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">size&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((field) &gt;&gt; (31 - (<a class="el" href="d__particle_8cpp.html#ac45542939012bee5222cd3e5e740ed64">pos</a>) - (size) + 1) &amp; ((1 &lt;&lt; (size)) - 1))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4fa17ca9980999164541698ce3611f16" name="a4fa17ca9980999164541698ce3611f16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fa17ca9980999164541698ce3611f16">&#9670;&#160;</a></span>GX_BP_LOAD_REG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GX_BP_LOAD_REG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="d__vibration_8cpp.html#a923e25734c61f5a7e48bbfcfbe0c2313">data</a></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <a class="code hl_variable" href="GX_8h.html#ad89fba0c9178e84047567439b1d13f65">GXFIFO</a>.<a class="code hl_variable" href="unionPPCWGPipe.html#a0c1b77ae5827a61b3492d38f95398c3c">s8</a>  = <a class="code hl_enumvalue" href="GXEnum_8h.html#a0353c95d9063085646055aac731133e1a3ee89a3e34112b842ee6b3a3fee75cc2">GX_FIFO_CMD_LOAD_BP_REG</a>; \</div>
+<div class="line">    <a class="code hl_variable" href="GX_8h.html#ad89fba0c9178e84047567439b1d13f65">GXFIFO</a>.<a class="code hl_variable" href="unionPPCWGPipe.html#a58a2889b556df65e88e5840ff5c41513">s32</a> = (<a class="code hl_variable" href="d__vibration_8cpp.html#a923e25734c61f5a7e48bbfcfbe0c2313">data</a>);</div>
+<div class="ttc" id="aGXEnum_8h_html_a0353c95d9063085646055aac731133e1a3ee89a3e34112b842ee6b3a3fee75cc2"><div class="ttname"><a href="GXEnum_8h.html#a0353c95d9063085646055aac731133e1a3ee89a3e34112b842ee6b3a3fee75cc2">GX_FIFO_CMD_LOAD_BP_REG</a></div><div class="ttdeci">@ GX_FIFO_CMD_LOAD_BP_REG</div><div class="ttdef"><b>Definition:</b> GXEnum.h:999</div></div>
+<div class="ttc" id="aGX_8h_html_ad89fba0c9178e84047567439b1d13f65"><div class="ttname"><a href="GX_8h.html#ad89fba0c9178e84047567439b1d13f65">GXFIFO</a></div><div class="ttdeci">volatile PPCWGPipe GXFIFO</div><div class="ttdef"><b>Definition:</b> GX.h:55</div></div>
+<div class="ttc" id="ad__vibration_8cpp_html_a923e25734c61f5a7e48bbfcfbe0c2313"><div class="ttname"><a href="d__vibration_8cpp.html#a923e25734c61f5a7e48bbfcfbe0c2313">data</a></div><div class="ttdeci">static u16 data[4]</div><div class="ttdef"><b>Definition:</b> d_vibration.cpp:114</div></div>
+<div class="ttc" id="aunionPPCWGPipe_html_a0c1b77ae5827a61b3492d38f95398c3c"><div class="ttname"><a href="unionPPCWGPipe.html#a0c1b77ae5827a61b3492d38f95398c3c">PPCWGPipe::s8</a></div><div class="ttdeci">s8 s8</div><div class="ttdef"><b>Definition:</b> GX.h:46</div></div>
+<div class="ttc" id="aunionPPCWGPipe_html_a58a2889b556df65e88e5840ff5c41513"><div class="ttname"><a href="unionPPCWGPipe.html#a58a2889b556df65e88e5840ff5c41513">PPCWGPipe::s32</a></div><div class="ttdeci">s32 s32</div><div class="ttdef"><b>Definition:</b> GX.h:48</div></div>
+</div><!-- fragment --><p >Load immediate value into BP register </p>
+
+</div>
+</div>
+<a id="a27be0604b43b6f64aca72dd7c3f371bc" name="a27be0604b43b6f64aca72dd7c3f371bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27be0604b43b6f64aca72dd7c3f371bc">&#9670;&#160;</a></span>GX_CP_LOAD_REG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GX_CP_LOAD_REG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">addr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="d__vibration_8cpp.html#a923e25734c61f5a7e48bbfcfbe0c2313">data</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <a class="code hl_variable" href="GX_8h.html#ad89fba0c9178e84047567439b1d13f65">GXFIFO</a>.<a class="code hl_variable" href="unionPPCWGPipe.html#a0c1b77ae5827a61b3492d38f95398c3c">s8</a>  = <a class="code hl_enumvalue" href="GXEnum_8h.html#a0353c95d9063085646055aac731133e1aadd25b969bd62cfecb75fb6ed1af60bc">GX_FIFO_CMD_LOAD_CP_REG</a>; \</div>
+<div class="line">    <a class="code hl_variable" href="GX_8h.html#ad89fba0c9178e84047567439b1d13f65">GXFIFO</a>.<a class="code hl_variable" href="unionPPCWGPipe.html#a0c1b77ae5827a61b3492d38f95398c3c">s8</a>  = (addr);                  \</div>
+<div class="line">    <a class="code hl_variable" href="GX_8h.html#ad89fba0c9178e84047567439b1d13f65">GXFIFO</a>.<a class="code hl_variable" href="unionPPCWGPipe.html#a58a2889b556df65e88e5840ff5c41513">s32</a> = (<a class="code hl_variable" href="d__vibration_8cpp.html#a923e25734c61f5a7e48bbfcfbe0c2313">data</a>);</div>
+<div class="ttc" id="aGXEnum_8h_html_a0353c95d9063085646055aac731133e1aadd25b969bd62cfecb75fb6ed1af60bc"><div class="ttname"><a href="GXEnum_8h.html#a0353c95d9063085646055aac731133e1aadd25b969bd62cfecb75fb6ed1af60bc">GX_FIFO_CMD_LOAD_CP_REG</a></div><div class="ttdeci">@ GX_FIFO_CMD_LOAD_CP_REG</div><div class="ttdef"><b>Definition:</b> GXEnum.h:1000</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9c47b14c58ffc0ea447679ad01b8880c" name="a9c47b14c58ffc0ea447679ad01b8880c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c47b14c58ffc0ea447679ad01b8880c">&#9670;&#160;</a></span>GX_GET_REG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GX_GET_REG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">reg, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">st, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">end&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="GX_8h.html#a7672e138025e9b26154a4251b810e7bc">GX_BITGET</a>(reg, st, (end - st + 1))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="abf826caf8d8fa06d80f2f6efe7c65a55" name="abf826caf8d8fa06d80f2f6efe7c65a55"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abf826caf8d8fa06d80f2f6efe7c65a55">&#9670;&#160;</a></span>GX_LOAD_BP_REG</h2>
 
@@ -266,6 +464,201 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define GX_NOP&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a83690637a42bcac561598452f96c50" name="a3a83690637a42bcac561598452f96c50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a83690637a42bcac561598452f96c50">&#9670;&#160;</a></span>GX_SET_REG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GX_SET_REG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">reg, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">st, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">end&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="GX_8h.html#af949c98422762750a49c767d038cb930">GX_BITFIELD_SET</a>(reg, st, (end - st + 1), x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4deadb7896ccd929bf741976ccad309e" name="a4deadb7896ccd929bf741976ccad309e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4deadb7896ccd929bf741976ccad309e">&#9670;&#160;</a></span>GX_WRITE_F32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GX_WRITE_F32</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="init_8h.html#aa0ccb5ee6d882ee3605ff47745c6467b">val</a></td><td>)</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">GXFIFO.f32</a> = (<a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>)<a class="el" href="init_8h.html#aa0ccb5ee6d882ee3605ff47745c6467b">val</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a539913df0d0503069e1bde8fa61d3a49" name="a539913df0d0503069e1bde8fa61d3a49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a539913df0d0503069e1bde8fa61d3a49">&#9670;&#160;</a></span>GX_WRITE_U32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GX_WRITE_U32</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="d__vibration_8cpp.html#a923e25734c61f5a7e48bbfcfbe0c2313">data</a></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">GXFIFO.u32</a> = <a class="el" href="d__vibration_8cpp.html#a923e25734c61f5a7e48bbfcfbe0c2313">data</a>;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43afcd232cafbc4f54feee16f1173125" name="a43afcd232cafbc4f54feee16f1173125"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43afcd232cafbc4f54feee16f1173125">&#9670;&#160;</a></span>GX_WRITE_U8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GX_WRITE_U8</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="d__vibration_8cpp.html#a923e25734c61f5a7e48bbfcfbe0c2313">data</a></td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">GXFIFO.u8</a> = <a class="el" href="d__vibration_8cpp.html#a923e25734c61f5a7e48bbfcfbe0c2313">data</a>;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4bd02fe6672d79283aec0f0c98a0e0d1" name="a4bd02fe6672d79283aec0f0c98a0e0d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bd02fe6672d79283aec0f0c98a0e0d1">&#9670;&#160;</a></span>GX_XF_LOAD_REG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GX_XF_LOAD_REG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">addr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="d__vibration_8cpp.html#a923e25734c61f5a7e48bbfcfbe0c2313">data</a>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <a class="code hl_define" href="GX_8h.html#a867d1f7a3d37f478c632b3ec337249c3">GX_XF_LOAD_REG_HDR</a>(addr);      \</div>
+<div class="line">    <a class="code hl_variable" href="GX_8h.html#ad89fba0c9178e84047567439b1d13f65">GXFIFO</a>.<a class="code hl_variable" href="unionPPCWGPipe.html#a58a2889b556df65e88e5840ff5c41513">s32</a> = (<a class="code hl_variable" href="d__vibration_8cpp.html#a923e25734c61f5a7e48bbfcfbe0c2313">data</a>);</div>
+<div class="ttc" id="aGX_8h_html_a867d1f7a3d37f478c632b3ec337249c3"><div class="ttname"><a href="GX_8h.html#a867d1f7a3d37f478c632b3ec337249c3">GX_XF_LOAD_REG_HDR</a></div><div class="ttdeci">#define GX_XF_LOAD_REG_HDR(addr)</div><div class="ttdef"><b>Definition:</b> GX.h:71</div></div>
+</div><!-- fragment --><p >Load immediate value into XF register </p>
+
+</div>
+</div>
+<a id="a867d1f7a3d37f478c632b3ec337249c3" name="a867d1f7a3d37f478c632b3ec337249c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a867d1f7a3d37f478c632b3ec337249c3">&#9670;&#160;</a></span>GX_XF_LOAD_REG_HDR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GX_XF_LOAD_REG_HDR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">addr</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <a class="code hl_variable" href="GX_8h.html#ad89fba0c9178e84047567439b1d13f65">GXFIFO</a>.<a class="code hl_variable" href="unionPPCWGPipe.html#a0c1b77ae5827a61b3492d38f95398c3c">s8</a>  = <a class="code hl_enumvalue" href="GXEnum_8h.html#a0353c95d9063085646055aac731133e1a12756c7481182fefa29ccfcb8f6364df">GX_FIFO_CMD_LOAD_XF_REG</a>; \</div>
+<div class="line">    <a class="code hl_variable" href="GX_8h.html#ad89fba0c9178e84047567439b1d13f65">GXFIFO</a>.<a class="code hl_variable" href="unionPPCWGPipe.html#a58a2889b556df65e88e5840ff5c41513">s32</a> = (addr);</div>
+<div class="ttc" id="aGXEnum_8h_html_a0353c95d9063085646055aac731133e1a12756c7481182fefa29ccfcb8f6364df"><div class="ttname"><a href="GXEnum_8h.html#a0353c95d9063085646055aac731133e1a12756c7481182fefa29ccfcb8f6364df">GX_FIFO_CMD_LOAD_XF_REG</a></div><div class="ttdeci">@ GX_FIFO_CMD_LOAD_XF_REG</div><div class="ttdef"><b>Definition:</b> GXEnum.h:1001</div></div>
+</div><!-- fragment --><p >Header for an XF register load </p>
+
+</div>
+</div>
+<a id="a558769bbc4e61a1279e81aa4d2d73c52" name="a558769bbc4e61a1279e81aa4d2d73c52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a558769bbc4e61a1279e81aa4d2d73c52">&#9670;&#160;</a></span>GX_XF_LOAD_REGS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GX_XF_LOAD_REGS</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">size, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">addr&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    {                                  \</div>
+<div class="line">        <a class="code hl_typedef" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> cmd = (size) &lt;&lt; 16 | addr; \</div>
+<div class="line">        GX_XF_LOAD_REG_HDR(cmd);       \</div>
+<div class="line">    }</div>
+</div><!-- fragment --><p >Load immediate values into multiple XF registers </p>
+
+</div>
+</div>
+<a id="afcdcbd22568b1a67e0bfb641d9717bb8" name="afcdcbd22568b1a67e0bfb641d9717bb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcdcbd22568b1a67e0bfb641d9717bb8">&#9670;&#160;</a></span>GXFIFO_ADDR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GXFIFO_ADDR&#160;&#160;&#160;0xCC008000</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -311,7 +704,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    (reg) = ((<a class="code hl_typedef" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>) (reg) &amp; ~(((1 &lt;&lt; (nbits)) - 1) &lt;&lt; (shift))) |               \</div>
 <div class="line">            ((<a class="code hl_typedef" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>) (value) &lt;&lt; (shift));</div>
-<div class="ttc" id="atypes_8h_html_a2caf5cd7bcdbe1eefa727f44ffb10bac"><div class="ttname"><a href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a></div><div class="ttdeci">unsigned long u32</div><div class="ttdef"><b>Definition:</b> types.h:10</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -684,6 +1076,42 @@ Variables</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a39ab2df01dc6796a5becb9d7b7fb49bc" name="a39ab2df01dc6796a5becb9d7b7fb49bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39ab2df01dc6796a5becb9d7b7fb49bc">&#9670;&#160;</a></span>GXReadCPReg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> GXReadCPReg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>addrLo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td>
+          <td class="paramname"><em>addrHi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

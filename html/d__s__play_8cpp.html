@@ -92,21 +92,28 @@ $(function() {
 <code>#include &quot;<a class="el" href="JUTConsole_8h_source.html">JSystem/JUtility/JUTConsole.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="JUTGamePad_8h_source.html">JSystem/JUtility/JUTGamePad.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="c__counter_8h_source.html">SSystem/SComponent/c_counter.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="c__dylink_8h_source.html">c/c_dylink.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__a__player_8h_source.html">d/a/d_a_player.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__demo_8h_source.html">d/d_demo.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__eye__hl_8h_source.html">d/d_eye_hl.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__item_8h_source.html">d/d_item.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__model_8h_source.html">d/d_model.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__procname_8h_source.html">d/d_procname.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__map__path__dmap_8h_source.html">d/map/d_map_path_dmap.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__meter2__info_8h_source.html">d/meter/d_meter2_info.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__msg__object_8h_source.html">d/msg/d_msg_object.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__save__HIO_8h_source.html">d/save/d_save_HIO.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="f__op__draw__iter_8h_source.html">f_op/f_op_draw_iter.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="f__op__msg__mng_8h_source.html">f_op/f_op_msg_mng.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="f__op__overlap__mng_8h_source.html">f_op/f_op_overlap_mng.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="f__op__scene__mng_8h_source.html">f_op/f_op_scene_mng.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JKRHeap_8h_source.html">JSystem/JKernel/JKRHeap.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="m__Do__Reset_8h_source.html">m_Do/m_Do_Reset.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="m__Do__audio_8h_source.html">m_Do/m_Do_audio.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="m__Do__graphic_8h_source.html">m_Do/m_Do_graphic.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="d__eye__hl_8h_source.html">d/d_eye_hl.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__a__suspend_8h_source.html">rel/d/a/d_a_suspend/d_a_suspend.h</a>&quot;</code><br />
 <code>#include &quot;asm/d/s/d_s_play/__ct__22dScnPly_env_debugHIO_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/s/d_s_play/dScnPly_Draw__FP9dScnPly_c.s&quot;</code><br />
 <code>#include &quot;asm/d/s/d_s_play/dScnPly_Delete__FP9dScnPly_c.s&quot;</code><br />
 <code>#include &quot;asm/d/s/d_s_play/phase_2__FP9dScnPly_c.s&quot;</code><br />
 <code>#include &quot;asm/d/s/d_s_play/phase_4__FP9dScnPly_c.s&quot;</code><br />
@@ -129,10 +136,6 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaSus__c.html">daSus_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcDylPhs.html">cDylPhs</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaYkgr__c.html">daYkgr_c</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -414,8 +417,8 @@ Functions</h2></td></tr>
 <tr class="separator:a3f61243ebf5cbb2ff90548d397b16772"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abed5bd59c54272a132a5b4da4beff66d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__play_8cpp.html#abed5bd59c54272a132a5b4da4beff66d">_restgpr_29</a> ()</td></tr>
 <tr class="separator:abed5bd59c54272a132a5b4da4beff66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab4a2f88e3a0eb09c5de510f9114de38"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__play_8cpp.html#aab4a2f88e3a0eb09c5de510f9114de38">dScnPly_Draw</a> (<a class="el" href="classdScnPly__c.html">dScnPly_c</a> *param_0)</td></tr>
-<tr class="separator:aab4a2f88e3a0eb09c5de510f9114de38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a126ed9fbd1ee395219c5799dd8043259"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__play_8cpp.html#a126ed9fbd1ee395219c5799dd8043259">dScnPly_Draw</a> (<a class="el" href="classdScnPly__c.html">dScnPly_c</a> *scn)</td></tr>
+<tr class="separator:a126ed9fbd1ee395219c5799dd8043259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e389f7ef952f7b65170e09e44febadf"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__play_8cpp.html#a6e389f7ef952f7b65170e09e44febadf">dScnPly_Execute</a> (<a class="el" href="classdScnPly__c.html">dScnPly_c</a> *scnPly)</td></tr>
 <tr class="separator:a6e389f7ef952f7b65170e09e44febadf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12c0dc2730a0542d2c86d44205c72508"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__play_8cpp.html#a12c0dc2730a0542d2c86d44205c72508">dScnPly_IsDelete</a> (<a class="el" href="classdScnPly__c.html">dScnPly_c</a> scnPly)</td></tr>
@@ -537,8 +540,6 @@ Variables</h2></td></tr>
 <tr class="separator:abcef4955a6e3c3330c09888a4d547e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21a8146014e75fbfd5b43206d5d0e93e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__play_8cpp.html#a21a8146014e75fbfd5b43206d5d0e93e">lit_4068</a> [4]</td></tr>
 <tr class="separator:a21a8146014e75fbfd5b43206d5d0e93e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56c5315bb5d1a900a2b995df531be1cd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__play_8cpp.html#a56c5315bb5d1a900a2b995df531be1cd">lit_4100</a> = 0x2A1E46FF</td></tr>
-<tr class="separator:a56c5315bb5d1a900a2b995df531be1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d652aef7ff58b12be150e1662b7e509"><td class="memItemLeft" align="right" valign="top">char const  *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__play_8cpp.html#a7d652aef7ff58b12be150e1662b7e509">stringBase_8039A2DF</a> = &quot;T_JOINT&quot;</td></tr>
 <tr class="separator:a7d652aef7ff58b12be150e1662b7e509"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a124c3deed76d14a61bb38e7f95ecf9fe"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__s__play_8cpp.html#a124c3deed76d14a61bb38e7f95ecf9fe">T_JOINT_resName</a> = &quot;Always&quot;</td></tr>
@@ -1623,8 +1624,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aab4a2f88e3a0eb09c5de510f9114de38" name="aab4a2f88e3a0eb09c5de510f9114de38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab4a2f88e3a0eb09c5de510f9114de38">&#9670;&#160;</a></span>dScnPly_Draw()</h2>
+<a id="a126ed9fbd1ee395219c5799dd8043259" name="a126ed9fbd1ee395219c5799dd8043259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a126ed9fbd1ee395219c5799dd8043259">&#9670;&#160;</a></span>dScnPly_Draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1633,10 +1634,10 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void dScnPly_Draw </td>
+          <td class="memname">static int dScnPly_Draw </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classdScnPly__c.html">dScnPly_c</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em></td><td>)</td>
+          <td class="paramname"><em>scn</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -3569,7 +3570,7 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__s__play_8cpp.html#a21086e8cc50972a426715a9e18fd4380">__dt__17dScnPly_env_HIO_cFv</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__s__play_8cpp_html_a21086e8cc50972a426715a9e18fd4380"><div class="ttname"><a href="d__s__play_8cpp.html#a21086e8cc50972a426715a9e18fd4380">__dt__17dScnPly_env_HIO_cFv</a></div><div class="ttdeci">void __dt__17dScnPly_env_HIO_cFv()</div><div class="ttdef"><b>Definition:</b> d_s_play.cpp:1053</div></div>
+<div class="ttc" id="ad__s__play_8cpp_html_a21086e8cc50972a426715a9e18fd4380"><div class="ttname"><a href="d__s__play_8cpp.html#a21086e8cc50972a426715a9e18fd4380">__dt__17dScnPly_env_HIO_cFv</a></div><div class="ttdeci">void __dt__17dScnPly_env_HIO_cFv()</div><div class="ttdef"><b>Definition:</b> d_s_play.cpp:1024</div></div>
 <div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:17</div></div>
 </div><!-- fragment -->
 </div>
@@ -3598,7 +3599,7 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__s__play_8cpp.html#a09205a1220584d2dafdb6c38933c5050">__dt__17dScnPly_reg_HIO_cFv</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__s__play_8cpp_html_a09205a1220584d2dafdb6c38933c5050"><div class="ttname"><a href="d__s__play_8cpp.html#a09205a1220584d2dafdb6c38933c5050">__dt__17dScnPly_reg_HIO_cFv</a></div><div class="ttdeci">void __dt__17dScnPly_reg_HIO_cFv()</div><div class="ttdef"><b>Definition:</b> d_s_play.cpp:1064</div></div>
+<div class="ttc" id="ad__s__play_8cpp_html_a09205a1220584d2dafdb6c38933c5050"><div class="ttname"><a href="d__s__play_8cpp.html#a09205a1220584d2dafdb6c38933c5050">__dt__17dScnPly_reg_HIO_cFv</a></div><div class="ttdeci">void __dt__17dScnPly_reg_HIO_cFv()</div><div class="ttdef"><b>Definition:</b> d_s_play.cpp:1035</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3626,7 +3627,7 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__s__play_8cpp.html#a2594fcd3e608dcd1a01d89d3c87ac878">__dt__21dScnPly_preLoad_HIO_cFv</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__s__play_8cpp_html_a2594fcd3e608dcd1a01d89d3c87ac878"><div class="ttname"><a href="d__s__play_8cpp.html#a2594fcd3e608dcd1a01d89d3c87ac878">__dt__21dScnPly_preLoad_HIO_cFv</a></div><div class="ttdeci">void __dt__21dScnPly_preLoad_HIO_cFv()</div><div class="ttdef"><b>Definition:</b> d_s_play.cpp:1075</div></div>
+<div class="ttc" id="ad__s__play_8cpp_html_a2594fcd3e608dcd1a01d89d3c87ac878"><div class="ttname"><a href="d__s__play_8cpp.html#a2594fcd3e608dcd1a01d89d3c87ac878">__dt__21dScnPly_preLoad_HIO_cFv</a></div><div class="ttdeci">void __dt__21dScnPly_preLoad_HIO_cFv()</div><div class="ttdef"><b>Definition:</b> d_s_play.cpp:1046</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3654,7 +3655,7 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__s__play_8cpp.html#a0bf7c0b62fff0bd82d8bcc1c4dd2b683">__dt__22dScnPly_env_debugHIO_cFv</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__s__play_8cpp_html_a0bf7c0b62fff0bd82d8bcc1c4dd2b683"><div class="ttname"><a href="d__s__play_8cpp.html#a0bf7c0b62fff0bd82d8bcc1c4dd2b683">__dt__22dScnPly_env_debugHIO_cFv</a></div><div class="ttdeci">void __dt__22dScnPly_env_debugHIO_cFv()</div><div class="ttdef"><b>Definition:</b> d_s_play.cpp:991</div></div>
+<div class="ttc" id="ad__s__play_8cpp_html_a0bf7c0b62fff0bd82d8bcc1c4dd2b683"><div class="ttname"><a href="d__s__play_8cpp.html#a0bf7c0b62fff0bd82d8bcc1c4dd2b683">__dt__22dScnPly_env_debugHIO_cFv</a></div><div class="ttdeci">void __dt__22dScnPly_env_debugHIO_cFv()</div><div class="ttdef"><b>Definition:</b> d_s_play.cpp:962</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3682,7 +3683,7 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__s__play_8cpp.html#ad460e69cf090eee8f971dd8b4b804306">__dt__22dScnPly_env_otherHIO_cFv</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__s__play_8cpp_html_ad460e69cf090eee8f971dd8b4b804306"><div class="ttname"><a href="d__s__play_8cpp.html#ad460e69cf090eee8f971dd8b4b804306">__dt__22dScnPly_env_otherHIO_cFv</a></div><div class="ttdeci">void __dt__22dScnPly_env_otherHIO_cFv()</div><div class="ttdef"><b>Definition:</b> d_s_play.cpp:1002</div></div>
+<div class="ttc" id="ad__s__play_8cpp_html_ad460e69cf090eee8f971dd8b4b804306"><div class="ttname"><a href="d__s__play_8cpp.html#ad460e69cf090eee8f971dd8b4b804306">__dt__22dScnPly_env_otherHIO_cFv</a></div><div class="ttdeci">void __dt__22dScnPly_env_otherHIO_cFv()</div><div class="ttdef"><b>Definition:</b> d_s_play.cpp:973</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3951,7 +3952,7 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)&amp;<a class="code hl_variable" href="d__s__play_8cpp.html#ad2315441884bece2ff5ee986e9e792e9">l_dScnPly_Method</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__s__play_8cpp_html_ad2315441884bece2ff5ee986e9e792e9"><div class="ttname"><a href="d__s__play_8cpp.html#ad2315441884bece2ff5ee986e9e792e9">l_dScnPly_Method</a></div><div class="ttdeci">static SECTION_DATA void * l_dScnPly_Method[5]</div><div class="ttdef"><b>Definition:</b> d_s_play.cpp:286</div></div>
+<div class="ttc" id="ad__s__play_8cpp_html_ad2315441884bece2ff5ee986e9e792e9"><div class="ttname"><a href="d__s__play_8cpp.html#ad2315441884bece2ff5ee986e9e792e9">l_dScnPly_Method</a></div><div class="ttdeci">static SECTION_DATA void * l_dScnPly_Method[5]</div><div class="ttdef"><b>Definition:</b> d_s_play.cpp:276</div></div>
 <div class="ttc" id="af__op__scene_8cpp_html_a927f43adfead795d0dc870f096b87f8d"><div class="ttname"><a href="f__op__scene_8cpp.html#a927f43adfead795d0dc870f096b87f8d">g_fopScn_Method</a></div><div class="ttdeci">leafdraw_method_class g_fopScn_Method</div><div class="ttdef"><b>Definition:</b> f_op_scene.cpp:55</div></div>
 <div class="ttc" id="af__pc__node_8cpp_html_aaeb9e240dad1a9e1b466a1ad05b61dc9"><div class="ttname"><a href="f__pc__node_8cpp.html#aaeb9e240dad1a9e1b466a1ad05b61dc9">g_fpcNd_Method</a></div><div class="ttdeci">nodedraw_method_class g_fpcNd_Method</div><div class="ttdef"><b>Definition:</b> f_pc_node.cpp:114</div></div>
 </div><!-- fragment -->
@@ -4300,28 +4301,6 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a56c5315bb5d1a900a2b995df531be1cd" name="a56c5315bb5d1a900a2b995df531be1cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56c5315bb5d1a900a2b995df531be1cd">&#9670;&#160;</a></span>lit_4100</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> lit_4100 = 0x2A1E46FF</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a3e9d51bdb44966b220222324d3f97e01" name="a3e9d51bdb44966b220222324d3f97e01"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3e9d51bdb44966b220222324d3f97e01">&#9670;&#160;</a></span>lit_4804</h2>
 
@@ -4594,9 +4573,9 @@ Variables</h2></td></tr>
 <div class="line">    &amp;<a class="code hl_variable" href="d__s__play_8cpp.html#a124c3deed76d14a61bb38e7f95ecf9fe">T_JOINT_resName</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)0x01010000,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__s__play_8cpp_html_a124c3deed76d14a61bb38e7f95ecf9fe"><div class="ttname"><a href="d__s__play_8cpp.html#a124c3deed76d14a61bb38e7f95ecf9fe">T_JOINT_resName</a></div><div class="ttdeci">const char * T_JOINT_resName</div><div class="ttdef"><b>Definition:</b> d_s_play.cpp:504</div></div>
+<div class="ttc" id="ad__s__play_8cpp_html_a124c3deed76d14a61bb38e7f95ecf9fe"><div class="ttname"><a href="d__s__play_8cpp.html#a124c3deed76d14a61bb38e7f95ecf9fe">T_JOINT_resName</a></div><div class="ttdeci">const char * T_JOINT_resName</div><div class="ttdef"><b>Definition:</b> d_s_play.cpp:475</div></div>
 <div class="ttc" id="ad__s__play_8cpp_html_a74aaf07a83fc2d54357edf4fd5268084"><div class="ttname"><a href="d__s__play_8cpp.html#a74aaf07a83fc2d54357edf4fd5268084">d_s_d_s_play__stringBase0</a></div><div class="ttdeci">char const  *const d_s_d_s_play__stringBase0</div></div>
-<div class="ttc" id="ad__s__play_8cpp_html_ad46a3f5be36470532bcd9b5ca1bbe1b5"><div class="ttname"><a href="d__s__play_8cpp.html#ad46a3f5be36470532bcd9b5ca1bbe1b5">T_JOINT_dylKeyTbl</a></div><div class="ttdeci">static SECTION_SDATA2 u16 T_JOINT_dylKeyTbl</div><div class="ttdef"><b>Definition:</b> d_s_play.cpp:335</div></div>
+<div class="ttc" id="ad__s__play_8cpp_html_ad46a3f5be36470532bcd9b5ca1bbe1b5"><div class="ttname"><a href="d__s__play_8cpp.html#ad46a3f5be36470532bcd9b5ca1bbe1b5">T_JOINT_dylKeyTbl</a></div><div class="ttdeci">static SECTION_SDATA2 u16 T_JOINT_dylKeyTbl</div><div class="ttdef"><b>Definition:</b> d_s_play.cpp:325</div></div>
 </div><!-- fragment -->
 </div>
 </div>

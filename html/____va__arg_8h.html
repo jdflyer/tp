@@ -118,7 +118,7 @@ Classes</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a399539f9e2cf2151895417298ee0c10b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="____va__arg_8h.html#a399539f9e2cf2151895417298ee0c10b">__va_start</a>(list,  fmt)&#160;&#160;&#160;__builtin_va_info(&amp;list)</td></tr>
 <tr class="separator:a399539f9e2cf2151895417298ee0c10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a60fc4ca22a2634889c2c9f24a55d87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="____va__arg_8h.html#a6a60fc4ca22a2634889c2c9f24a55d87">__va_arg</a>(list,  type)&#160;&#160;&#160;(*((type*)__va_arg(ap, _var_arg_typeof(type))))</td></tr>
+<tr class="memitem:a6a60fc4ca22a2634889c2c9f24a55d87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="____va__arg_8h.html#a6a60fc4ca22a2634889c2c9f24a55d87">__va_arg</a>(list,  type)&#160;&#160;&#160;(*((type*)__va_arg(list, _var_arg_typeof(type))))</td></tr>
 <tr class="separator:a6a60fc4ca22a2634889c2c9f24a55d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4689fee617f24306933fd79ce206fcc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="____va__arg_8h.html#ac4689fee617f24306933fd79ce206fcc">va_start</a>&#160;&#160;&#160;<a class="el" href="____va__arg_8h.html#a399539f9e2cf2151895417298ee0c10b">__va_start</a></td></tr>
 <tr class="separator:ac4689fee617f24306933fd79ce206fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,7 +167,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(*((type*)__va_arg(ap, _var_arg_typeof(type))))</td>
+          <td></td><td>&#160;&#160;&#160;(*((type*)__va_arg(list, _var_arg_typeof(type))))</td>
         </tr>
       </table>
 </div><div class="memdoc">

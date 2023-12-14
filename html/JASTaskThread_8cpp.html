@@ -82,23 +82,20 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">JASTaskThread.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="JASTaskThread_8h_source.html">JSystem/JAudio2/JASTaskThread.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JASCalc_8h_source.html">JSystem/JAudio2/JASCalc.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JASCriticalSection_8h_source.html">JSystem/JAudio2/JASCriticalSection.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JKRSolidHeap_8h_source.html">JSystem/JKernel/JKRSolidHeap.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OSInterrupt_8h_source.html">dolphin/os/OSInterrupt.h</a>&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASTaskThread/__ct__13JASTaskThreadFiiUl.s&quot;</code><br />
+<code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JASTaskThread/__dt__13JASTaskThreadFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASTaskThread/allocCallStack__13JASTaskThreadFPFPv_vPCvUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASTaskThread/allocCallStack__13JASTaskThreadFPFPv_vPv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASTaskThread/sendCmdMsg__13JASTaskThreadFPFPv_vPCvUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASTaskThread/sendCmdMsg__13JASTaskThreadFPFPv_vPv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JASTaskThread/run__13JASTaskThreadFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASTaskThread/pause__13JASTaskThreadFb.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for JASTaskThread.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -108,11 +105,6 @@ $(function() {
 </div>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASCalc.html">JASCalc</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:acaeda6080489f944f40be99f664edb38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASTaskThread_8cpp.html#acaeda6080489f944f40be99f664edb38">__ct__13JASTaskThreadFiiUl</a> ()</td></tr>
@@ -160,8 +152,6 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a4a7a3822f0b02c17ed6f8a99b46e7618"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASTaskThread_8cpp.html#a4a7a3822f0b02c17ed6f8a99b46e7618">JASDram</a> [4]</td></tr>
-<tr class="separator:a4a7a3822f0b02c17ed6f8a99b46e7618"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2560338b58a7b440b0e94ea6217fef7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASTaskThread_8cpp.html#ab2560338b58a7b440b0e94ea6217fef7">sSystemHeap__7JKRHeap</a> [4]</td></tr>
 <tr class="separator:ab2560338b58a7b440b0e94ea6217fef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aead30f3517ab3feede7a1d3925060d5a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASTaskThread_8cpp.html#aead30f3517ab3feede7a1d3925060d5a">__vt__13JASTaskThread</a> [4]</td></tr>
@@ -551,32 +541,10 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="JASTaskThread_8cpp.html#a09a9aa9992ac3f473e0af3fd09de9d19">__dt__13JASTaskThreadFv</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="JASTaskThread_8cpp.html#a40bac1356e0a354035dac545542bfddc">run__13JASTaskThreadFv</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aJASTaskThread_8cpp_html_a09a9aa9992ac3f473e0af3fd09de9d19"><div class="ttname"><a href="JASTaskThread_8cpp.html#a09a9aa9992ac3f473e0af3fd09de9d19">__dt__13JASTaskThreadFv</a></div><div class="ttdeci">void __dt__13JASTaskThreadFv()</div><div class="ttdef"><b>Definition:</b> JASTaskThread.cpp:79</div></div>
+<div class="ttc" id="aJASTaskThread_8cpp_html_a09a9aa9992ac3f473e0af3fd09de9d19"><div class="ttname"><a href="JASTaskThread_8cpp.html#a09a9aa9992ac3f473e0af3fd09de9d19">__dt__13JASTaskThreadFv</a></div><div class="ttdeci">void __dt__13JASTaskThreadFv()</div><div class="ttdef"><b>Definition:</b> JASTaskThread.cpp:83</div></div>
 <div class="ttc" id="aJASTaskThread_8cpp_html_a40bac1356e0a354035dac545542bfddc"><div class="ttname"><a href="JASTaskThread_8cpp.html#a40bac1356e0a354035dac545542bfddc">run__13JASTaskThreadFv</a></div><div class="ttdeci">void run__13JASTaskThreadFv()</div></div>
 <div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:17</div></div>
 </div><!-- fragment -->
-</div>
-</div>
-<a id="a4a7a3822f0b02c17ed6f8a99b46e7618" name="a4a7a3822f0b02c17ed6f8a99b46e7618"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a7a3822f0b02c17ed6f8a99b46e7618">&#9670;&#160;</a></span>JASDram</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> JASDram[4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
 </div>
 </div>
 <a id="ab2560338b58a7b440b0e94ea6217fef7" name="ab2560338b58a7b440b0e94ea6217fef7"></a>

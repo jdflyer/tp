@@ -106,7 +106,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ac7576eb3c56d041a93b302116ab071dc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdBgW__Base.html#ac7576eb3c56d041a93b302116ab071dc">PushPullLabel</a> </td></tr>
+<tr class="memitem:ac7576eb3c56d041a93b302116ab071dc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdBgW__Base.html#ac7576eb3c56d041a93b302116ab071dc">PushPullLabel</a> { <a class="el" href="classdBgW__Base.html#ac7576eb3c56d041a93b302116ab071dca9d916006aacade7f19b5ab2dd8ea7228">PUSHPULL_LABEL1</a> = 1
+ }</td></tr>
 <tr class="separator:ac7576eb3c56d041a93b302116ab071dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acaa511193b1454aa4379cfefb712c733"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdBgW__Base.html#acaa511193b1454aa4379cfefb712c733">PRIORITY</a> { <a class="el" href="classdBgW__Base.html#acaa511193b1454aa4379cfefb712c733af8a48f016ff589650f6926e70e884ad3">PRIORITY_0</a>
  }</td></tr>
@@ -134,7 +135,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a44620b5029690fe2edf1943428cbc769"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45b6a771eb9f62b7a5bdcbcd2dda6437"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdBgW__Base.html#a45b6a771eb9f62b7a5bdcbcd2dda6437">ChkMoveFlag</a> () const =0</td></tr>
 <tr class="separator:a45b6a771eb9f62b7a5bdcbcd2dda6437"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fdd3606dfeeac6823bdfba9165660d7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structcM3dGPla.html">cM3dGPla</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdBgW__Base.html#a1fdd3606dfeeac6823bdfba9165660d7">GetTriPla</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;) const =0</td></tr>
+<tr class="memitem:a1fdd3606dfeeac6823bdfba9165660d7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classcM3dGPla.html">cM3dGPla</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdBgW__Base.html#a1fdd3606dfeeac6823bdfba9165660d7">GetTriPla</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;) const =0</td></tr>
 <tr class="separator:a1fdd3606dfeeac6823bdfba9165660d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa06b29962ecf73dbfe65b59163402841"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdBgW__Base.html#aa06b29962ecf73dbfe65b59163402841">GetTriPnt</a> (<a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;, <a class="el" href="structcXyz.html">cXyz</a> *, <a class="el" href="structcXyz.html">cXyz</a> *, <a class="el" href="structcXyz.html">cXyz</a> *) const =0</td></tr>
 <tr class="separator:aa06b29962ecf73dbfe65b59163402841"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -250,6 +251,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0cd1efca43ea1bb372090fd4cea543a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae656e74100b81ca5433ff451f8405cd3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdBgW__Base.html#ae656e74100b81ca5433ff451f8405cd3">ChkPushPullOk</a> () const</td></tr>
 <tr class="separator:ae656e74100b81ca5433ff451f8405cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12950dc40d87ac4487aaf255cfda1577"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdBgW__Base.html#a12950dc40d87ac4487aaf255cfda1577">SetPushPullCallback</a> (<a class="el" href="classdBgW__Base.html#aca83c5cff1539885e6bf659513d0dfef">PushPull_CallBack</a> i_callBack)</td></tr>
+<tr class="separator:a12950dc40d87ac4487aaf255cfda1577"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63a92ce6ed349c1238ce898ba4c12130"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdBgW__Base.html#a63a92ce6ed349c1238ce898ba4c12130">SetRoomId</a> (int <a class="el" href="d__a__npc__cd_8cpp.html#ab7710104fe587e0c8b4be67c675f3e0c">id</a>)</td></tr>
 <tr class="separator:a63a92ce6ed349c1238ce898ba4c12130"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab06437abe7f1e3975620d96e84195ab7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdBgW__Base.html#ab06437abe7f1e3975620d96e84195ab7">ChkPriority</a> (int prio)</td></tr>
@@ -339,6 +342,9 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac7576eb3c56d041a93b302116ab071dca9d916006aacade7f19b5ab2dd8ea7228" name="ac7576eb3c56d041a93b302116ab071dca9d916006aacade7f19b5ab2dd8ea7228"></a>PUSHPULL_LABEL1&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>
@@ -1820,7 +1826,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="structcM3dGPla.html">cM3dGPla</a> dBgW_Base::GetTriPla </td>
+          <td class="memname">virtual <a class="el" href="classcM3dGPla.html">cM3dGPla</a> dBgW_Base::GetTriPla </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structcBgS__PolyInfo.html">cBgS_PolyInfo</a> const &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -2207,6 +2213,32 @@ Private Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classdBgW__Base.html#acaa511193b1454aa4379cfefb712c733">PRIORITY</a>&#160;</td>
           <td class="paramname"><em>priority</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12950dc40d87ac4487aaf255cfda1577" name="a12950dc40d87ac4487aaf255cfda1577"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12950dc40d87ac4487aaf255cfda1577">&#9670;&#160;</a></span>SetPushPullCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dBgW_Base::SetPushPullCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdBgW__Base.html#aca83c5cff1539885e6bf659513d0dfef">PushPull_CallBack</a>&#160;</td>
+          <td class="paramname"><em>i_callBack</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

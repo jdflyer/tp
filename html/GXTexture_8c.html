@@ -88,28 +88,20 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="GXTexture_8h_source.html">dolphin/gx/GXTexture.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="GX_8h_source.html">dolphin/gx/GX.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="MSL__Common_2Src_2string_8h_source.html">MSL_C/MSL_Common/Src/string.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;asm/dolphin/gx/GXTexture/GXGetTexBufferSize.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/gx/GXTexture/__GetImageTileCount.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/gx/GXTexture/GXInitTexObj.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/gx/GXTexture/GXInitTexObjCI.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/gx/GXTexture/GXInitTexObjLOD.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/gx/GXTexture/GXGetTexObjWidth.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/gx/GXTexture/GXGetTexObjHeight.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/gx/GXTexture/GXGetTexObjFmt.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/gx/GXTexture/GXGetTexObjWrapS.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/gx/GXTexture/GXGetTexObjWrapT.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/gx/GXTexture/GXGetTexObjMipMap.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/gx/GXTexture/GXGetTexObjTlut.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/gx/GXTexture/GXLoadTexObjPreLoaded.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/gx/GXTexture/GXLoadTexObj.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/gx/GXTexture/GXInitTlutObj.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/gx/GXTexture/GXLoadTlut.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/gx/GXTexture/GXInitTexCacheRegion.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/gx/GXTexture/GXInitTlutRegion.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/gx/GXTexture/GXInvalidateTexAll.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/gx/GXTexture/GXSetTexRegionCallback.s&quot;</code><br />
-<code>#include &quot;asm/dolphin/gx/GXTexture/GXSetTlutRegionCallback.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/gx/GXTexture/GXSetTexCoordScaleManually.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/gx/GXTexture/__SetSURegs.s&quot;</code><br />
 <code>#include &quot;asm/dolphin/gx/GXTexture/__GXSetSUTexRegs.s&quot;</code><br />
@@ -141,34 +133,32 @@ Functions</h2></td></tr>
 <tr class="separator:af5cf91c74fd25c3e5bc0a0a8d1e2912d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a791ccd27617a1b82d0a925598b24d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#a0a791ccd27617a1b82d0a925598b24d5">__GXSetTmemConfig</a> ()</td></tr>
 <tr class="separator:a0a791ccd27617a1b82d0a925598b24d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5483d4fbef9a528a3f56d30a4c5da3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#adc00f0d3ad529c0cb72985d54bfe7ccf">SECTION_INIT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#ae5483d4fbef9a528a3f56d30a4c5da3a">memset</a> ()</td></tr>
-<tr class="separator:ae5483d4fbef9a528a3f56d30a4c5da3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5039421dd0782fe35cf27542833b4f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#ad5039421dd0782fe35cf27542833b4f5">__GXFlushTextureState</a> ()</td></tr>
 <tr class="separator:ad5039421dd0782fe35cf27542833b4f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32694d00485611ea0922635cf94ed9c0"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#a32694d00485611ea0922635cf94ed9c0">GXGetTexBufferSize</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> width, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> height, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> format, <a class="el" href="GXEnum_8h.html#af649d9b5b9edfd6b1587a5d363729b52">GXBool</a> mipmap, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> max_lod)</td></tr>
 <tr class="separator:a32694d00485611ea0922635cf94ed9c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f0ae11ae5efee2bd736e7b926a71e8f"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#a3f0ae11ae5efee2bd736e7b926a71e8f">__GetImageTileCount</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> arg0, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> arg1, <a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a> arg2, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> *arg3, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> *arg4, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> *arg5)</td></tr>
-<tr class="separator:a3f0ae11ae5efee2bd736e7b926a71e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a28a6036f25b35150c67dfeceee03f5"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#a6a28a6036f25b35150c67dfeceee03f5">__GetImageTileCount</a> (<a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> arg0, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> arg1, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> arg2, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> *arg3, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> *arg4, <a class="el" href="types_8h.html#adafe97a8e4be18b0198f234819016582">s32</a> *arg5)</td></tr>
+<tr class="separator:a6a28a6036f25b35150c67dfeceee03f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45f5b222e3576c697982f85b61bbcc68"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#a45f5b222e3576c697982f85b61bbcc68">GXInitTexObj</a> (<a class="el" href="GXStruct_8h.html#a300d2e5e09d00f766ea22f9969237c98">GXTexObj</a> *obj, void *image, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> width, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> height, <a class="el" href="GXEnum_8h.html#a723655c1ff5eb6097db962f01fb71adf">GXTexFmt</a> fmt, <a class="el" href="GXEnum_8h.html#a941542cd63b0d32e8575d5dc52ff4d3a">GXTexWrapMode</a> wrapS, <a class="el" href="GXEnum_8h.html#a941542cd63b0d32e8575d5dc52ff4d3a">GXTexWrapMode</a> wrapT, <a class="el" href="GXEnum_8h.html#af649d9b5b9edfd6b1587a5d363729b52">GXBool</a> mipmap)</td></tr>
 <tr class="separator:a45f5b222e3576c697982f85b61bbcc68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4b68bb6e945c6f1a85315ff3e9e897a"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#aa4b68bb6e945c6f1a85315ff3e9e897a">GXInitTexObjCI</a> (<a class="el" href="GXStruct_8h.html#a300d2e5e09d00f766ea22f9969237c98">GXTexObj</a> *obj, void *image, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> width, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> height, <a class="el" href="GXEnum_8h.html#ac7e042c52aefb7ad9f277f9900a63130">GXCITexFmt</a> format, <a class="el" href="GXEnum_8h.html#a941542cd63b0d32e8575d5dc52ff4d3a">GXTexWrapMode</a> wrapS, <a class="el" href="GXEnum_8h.html#a941542cd63b0d32e8575d5dc52ff4d3a">GXTexWrapMode</a> wrapT, <a class="el" href="GXEnum_8h.html#af649d9b5b9edfd6b1587a5d363729b52">GXBool</a> mipmap, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> tlut_name)</td></tr>
 <tr class="separator:aa4b68bb6e945c6f1a85315ff3e9e897a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c3f774d608bdec167015ff3d84eab5c"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#a9c3f774d608bdec167015ff3d84eab5c">GXInitTexObjLOD</a> (<a class="el" href="GXStruct_8h.html#a300d2e5e09d00f766ea22f9969237c98">GXTexObj</a> *obj, <a class="el" href="GXEnum_8h.html#ae70c71779f89a5d9a1f0766a3bca73ae">GXTexFilter</a> min_filter, <a class="el" href="GXEnum_8h.html#ae70c71779f89a5d9a1f0766a3bca73ae">GXTexFilter</a> max_filter, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> min_lod, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> max_lod, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> lod_bias, <a class="el" href="GXEnum_8h.html#af649d9b5b9edfd6b1587a5d363729b52">GXBool</a> bias_clamp, <a class="el" href="GXEnum_8h.html#af649d9b5b9edfd6b1587a5d363729b52">GXBool</a> edge_lod, <a class="el" href="GXEnum_8h.html#afc5e2b117fc78ae0ea90b91eee3e4ca9">GXAnisotropy</a> aniso)</td></tr>
 <tr class="separator:a9c3f774d608bdec167015ff3d84eab5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f6be9c7424f8f04fffeaa75c19a3b6f"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#a5f6be9c7424f8f04fffeaa75c19a3b6f">GXGetTexObjWidth</a> (<a class="el" href="GXStruct_8h.html#a300d2e5e09d00f766ea22f9969237c98">GXTexObj</a> *obj)</td></tr>
-<tr class="separator:a5f6be9c7424f8f04fffeaa75c19a3b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a159db6f61d4c6f63f7aadfa8f55b5444"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#a159db6f61d4c6f63f7aadfa8f55b5444">GXGetTexObjHeight</a> (<a class="el" href="GXStruct_8h.html#a300d2e5e09d00f766ea22f9969237c98">GXTexObj</a> *obj)</td></tr>
-<tr class="separator:a159db6f61d4c6f63f7aadfa8f55b5444"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2bc52ded5130eb716e448fd4514e446"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="GXEnum_8h.html#a723655c1ff5eb6097db962f01fb71adf">GXTexFmt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#ad2bc52ded5130eb716e448fd4514e446">GXGetTexObjFmt</a> (<a class="el" href="GXStruct_8h.html#a300d2e5e09d00f766ea22f9969237c98">GXTexObj</a> *obj)</td></tr>
-<tr class="separator:ad2bc52ded5130eb716e448fd4514e446"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e750ab0f82a60e5288d98ebefb5d014"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="GXEnum_8h.html#a941542cd63b0d32e8575d5dc52ff4d3a">GXTexWrapMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#a1e750ab0f82a60e5288d98ebefb5d014">GXGetTexObjWrapS</a> (<a class="el" href="GXStruct_8h.html#a300d2e5e09d00f766ea22f9969237c98">GXTexObj</a> *obj)</td></tr>
-<tr class="separator:a1e750ab0f82a60e5288d98ebefb5d014"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a821d95e607e3e5d682c1f62051643593"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="GXEnum_8h.html#a941542cd63b0d32e8575d5dc52ff4d3a">GXTexWrapMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#a821d95e607e3e5d682c1f62051643593">GXGetTexObjWrapT</a> (<a class="el" href="GXStruct_8h.html#a300d2e5e09d00f766ea22f9969237c98">GXTexObj</a> *obj)</td></tr>
-<tr class="separator:a821d95e607e3e5d682c1f62051643593"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d834dc758476f9b3b867c022ebe5a1b"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="GXEnum_8h.html#af649d9b5b9edfd6b1587a5d363729b52">GXBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#a4d834dc758476f9b3b867c022ebe5a1b">GXGetTexObjMipMap</a> (<a class="el" href="GXStruct_8h.html#a300d2e5e09d00f766ea22f9969237c98">GXTexObj</a> *obj)</td></tr>
-<tr class="separator:a4d834dc758476f9b3b867c022ebe5a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6b28b2a1c17f240ce23cc8966a0cf23"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#af6b28b2a1c17f240ce23cc8966a0cf23">GXGetTexObjTlut</a> (<a class="el" href="GXStruct_8h.html#a300d2e5e09d00f766ea22f9969237c98">GXTexObj</a> *obj)</td></tr>
-<tr class="separator:af6b28b2a1c17f240ce23cc8966a0cf23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af305caa958b7b4c8329af39d6ceb08f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#af305caa958b7b4c8329af39d6ceb08f8">GXGetTexObjWidth</a> (<a class="el" href="GXStruct_8h.html#a300d2e5e09d00f766ea22f9969237c98">GXTexObj</a> *obj)</td></tr>
+<tr class="separator:af305caa958b7b4c8329af39d6ceb08f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acee93a307a2246b703333cdbe2e67fbd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#acee93a307a2246b703333cdbe2e67fbd">GXGetTexObjHeight</a> (<a class="el" href="GXStruct_8h.html#a300d2e5e09d00f766ea22f9969237c98">GXTexObj</a> *obj)</td></tr>
+<tr class="separator:acee93a307a2246b703333cdbe2e67fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaea2a501c83ba7015cf064ab1d2193bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="GXEnum_8h.html#a723655c1ff5eb6097db962f01fb71adf">GXTexFmt</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#aaea2a501c83ba7015cf064ab1d2193bf">GXGetTexObjFmt</a> (<a class="el" href="GXStruct_8h.html#a300d2e5e09d00f766ea22f9969237c98">GXTexObj</a> *obj)</td></tr>
+<tr class="separator:aaea2a501c83ba7015cf064ab1d2193bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23606be9a60c21f14e9d7e91c2c88e7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="GXEnum_8h.html#a941542cd63b0d32e8575d5dc52ff4d3a">GXTexWrapMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#a23606be9a60c21f14e9d7e91c2c88e7f">GXGetTexObjWrapS</a> (<a class="el" href="GXStruct_8h.html#a300d2e5e09d00f766ea22f9969237c98">GXTexObj</a> *obj)</td></tr>
+<tr class="separator:a23606be9a60c21f14e9d7e91c2c88e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d1200618f22efaaad5995cda3fa5a90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="GXEnum_8h.html#a941542cd63b0d32e8575d5dc52ff4d3a">GXTexWrapMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#a2d1200618f22efaaad5995cda3fa5a90">GXGetTexObjWrapT</a> (<a class="el" href="GXStruct_8h.html#a300d2e5e09d00f766ea22f9969237c98">GXTexObj</a> *obj)</td></tr>
+<tr class="separator:a2d1200618f22efaaad5995cda3fa5a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afee6860d34f2df230307345a20e3127f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="GXEnum_8h.html#af649d9b5b9edfd6b1587a5d363729b52">GXBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#afee6860d34f2df230307345a20e3127f">GXGetTexObjMipMap</a> (<a class="el" href="GXStruct_8h.html#a300d2e5e09d00f766ea22f9969237c98">GXTexObj</a> *obj)</td></tr>
+<tr class="separator:afee6860d34f2df230307345a20e3127f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a60e4022c4f78ac66a02db04ed7cb27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#a8a60e4022c4f78ac66a02db04ed7cb27">GXGetTexObjTlut</a> (<a class="el" href="GXStruct_8h.html#a300d2e5e09d00f766ea22f9969237c98">GXTexObj</a> *obj)</td></tr>
+<tr class="separator:a8a60e4022c4f78ac66a02db04ed7cb27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97f9c7258ef56bc7d7b4d489d4ef346d"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#a97f9c7258ef56bc7d7b4d489d4ef346d">GXLoadTexObjPreLoaded</a> (<a class="el" href="GXStruct_8h.html#a300d2e5e09d00f766ea22f9969237c98">GXTexObj</a> *obj, <a class="el" href="GXStruct_8h.html#aea8423b7092e3b999be3337cf3c4b9aa">GXTexRegion</a> *region, <a class="el" href="GXEnum_8h.html#a72532f5d20cdea292c5f2f9c296848ab">GXTexMapID</a> <a class="el" href="d__a__npc__cd_8cpp.html#ab7710104fe587e0c8b4be67c675f3e0c">id</a>)</td></tr>
 <tr class="separator:a97f9c7258ef56bc7d7b4d489d4ef346d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a673e1f431c68fe83a02cce3b4bbd67bc"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#a673e1f431c68fe83a02cce3b4bbd67bc">GXLoadTexObj</a> (<a class="el" href="GXStruct_8h.html#a300d2e5e09d00f766ea22f9969237c98">GXTexObj</a> *obj, <a class="el" href="GXEnum_8h.html#a72532f5d20cdea292c5f2f9c296848ab">GXTexMapID</a> <a class="el" href="d__a__npc__cd_8cpp.html#ab7710104fe587e0c8b4be67c675f3e0c">id</a>)</td></tr>
@@ -181,10 +171,10 @@ Functions</h2></td></tr>
 <tr class="separator:ad85010bc01dda45f85693a9bb7c610e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5a68519d3d519ddbb5c758fdf4c02c7"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#ad5a68519d3d519ddbb5c758fdf4c02c7">GXInitTlutRegion</a> (<a class="el" href="GXStruct_8h.html#ac45538f651d3d85f644158fb95413bb6">GXTlutRegion</a> *region, <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> tmem_addr, <a class="el" href="GXEnum_8h.html#a37b513bf7d7ccc0d24f68aca4db9e5bd">GXTlutSize</a> tlut_size)</td></tr>
 <tr class="separator:ad5a68519d3d519ddbb5c758fdf4c02c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93bde86e3e20cce7394bc04ab4215a43"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="GXInit_8h.html#a2e6429cb62d0935a264384c9a9e9eca6">GXTexRegionCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#a93bde86e3e20cce7394bc04ab4215a43">GXSetTexRegionCallback</a> (<a class="el" href="GXInit_8h.html#a2e6429cb62d0935a264384c9a9e9eca6">GXTexRegionCallback</a> callback)</td></tr>
-<tr class="separator:a93bde86e3e20cce7394bc04ab4215a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50224bf7eb0337ef6e473543fe9b36cb"><td class="memItemLeft" align="right" valign="top">asm <a class="el" href="GXInit_8h.html#ace40845d2ddae5d038dccde57cb42eb5">GXTlutRegionCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#a50224bf7eb0337ef6e473543fe9b36cb">GXSetTlutRegionCallback</a> (<a class="el" href="GXInit_8h.html#ace40845d2ddae5d038dccde57cb42eb5">GXTlutRegionCallback</a> callback)</td></tr>
-<tr class="separator:a50224bf7eb0337ef6e473543fe9b36cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b7526feea83dd60b6882439e4569e82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="GXInit_8h.html#a2e6429cb62d0935a264384c9a9e9eca6">GXTexRegionCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#a8b7526feea83dd60b6882439e4569e82">GXSetTexRegionCallback</a> (<a class="el" href="GXInit_8h.html#a2e6429cb62d0935a264384c9a9e9eca6">GXTexRegionCallback</a> callback)</td></tr>
+<tr class="separator:a8b7526feea83dd60b6882439e4569e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10060a1d283d7501948c8072a1df629a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="GXInit_8h.html#ace40845d2ddae5d038dccde57cb42eb5">GXTlutRegionCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#a10060a1d283d7501948c8072a1df629a">GXSetTlutRegionCallback</a> (<a class="el" href="GXInit_8h.html#ace40845d2ddae5d038dccde57cb42eb5">GXTlutRegionCallback</a> callback)</td></tr>
+<tr class="separator:a10060a1d283d7501948c8072a1df629a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a611e061ee3a62f421603f5272c21da69"><td class="memItemLeft" align="right" valign="top">asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GXTexture_8c.html#a611e061ee3a62f421603f5272c21da69">GXSetTexCoordScaleManually</a> (<a class="el" href="GXEnum_8h.html#a2f2455ac28878d571f2ab991d5674999">GXTexCoordID</a> coord, <a class="el" href="GXEnum_8h.html#af649d9b5b9edfd6b1587a5d363729b52">GXBool</a> enable, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> s_scale, <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> t_scale)</td></tr>
 <tr class="separator:a611e061ee3a62f421603f5272c21da69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -230,8 +220,8 @@ Variables</h2></td></tr>
 <tr class="separator:a7d34159801fef5c4fda09878060e6108"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a3f0ae11ae5efee2bd736e7b926a71e8f" name="a3f0ae11ae5efee2bd736e7b926a71e8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f0ae11ae5efee2bd736e7b926a71e8f">&#9670;&#160;</a></span>__GetImageTileCount()</h2>
+<a id="a6a28a6036f25b35150c67dfeceee03f5" name="a6a28a6036f25b35150c67dfeceee03f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a28a6036f25b35150c67dfeceee03f5">&#9670;&#160;</a></span>__GetImageTileCount()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -245,13 +235,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>arg1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a5ffa4f640862b25ba6d4f635b78bdbe1">s16</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>arg2</em>, </td>
         </tr>
         <tr>
@@ -396,14 +386,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad2bc52ded5130eb716e448fd4514e446" name="ad2bc52ded5130eb716e448fd4514e446"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2bc52ded5130eb716e448fd4514e446">&#9670;&#160;</a></span>GXGetTexObjFmt()</h2>
+<a id="aaea2a501c83ba7015cf064ab1d2193bf" name="aaea2a501c83ba7015cf064ab1d2193bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaea2a501c83ba7015cf064ab1d2193bf">&#9670;&#160;</a></span>GXGetTexObjFmt()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="GXEnum_8h.html#a723655c1ff5eb6097db962f01fb71adf">GXTexFmt</a> GXGetTexObjFmt </td>
+          <td class="memname"><a class="el" href="GXEnum_8h.html#a723655c1ff5eb6097db962f01fb71adf">GXTexFmt</a> GXGetTexObjFmt </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="GXStruct_8h.html#a300d2e5e09d00f766ea22f9969237c98">GXTexObj</a> *&#160;</td>
           <td class="paramname"><em>obj</em></td><td>)</td>
@@ -414,14 +404,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a159db6f61d4c6f63f7aadfa8f55b5444" name="a159db6f61d4c6f63f7aadfa8f55b5444"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a159db6f61d4c6f63f7aadfa8f55b5444">&#9670;&#160;</a></span>GXGetTexObjHeight()</h2>
+<a id="acee93a307a2246b703333cdbe2e67fbd" name="acee93a307a2246b703333cdbe2e67fbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acee93a307a2246b703333cdbe2e67fbd">&#9670;&#160;</a></span>GXGetTexObjHeight()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> GXGetTexObjHeight </td>
+          <td class="memname"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> GXGetTexObjHeight </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="GXStruct_8h.html#a300d2e5e09d00f766ea22f9969237c98">GXTexObj</a> *&#160;</td>
           <td class="paramname"><em>obj</em></td><td>)</td>
@@ -432,14 +422,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4d834dc758476f9b3b867c022ebe5a1b" name="a4d834dc758476f9b3b867c022ebe5a1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d834dc758476f9b3b867c022ebe5a1b">&#9670;&#160;</a></span>GXGetTexObjMipMap()</h2>
+<a id="afee6860d34f2df230307345a20e3127f" name="afee6860d34f2df230307345a20e3127f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afee6860d34f2df230307345a20e3127f">&#9670;&#160;</a></span>GXGetTexObjMipMap()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="GXEnum_8h.html#af649d9b5b9edfd6b1587a5d363729b52">GXBool</a> GXGetTexObjMipMap </td>
+          <td class="memname"><a class="el" href="GXEnum_8h.html#af649d9b5b9edfd6b1587a5d363729b52">GXBool</a> GXGetTexObjMipMap </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="GXStruct_8h.html#a300d2e5e09d00f766ea22f9969237c98">GXTexObj</a> *&#160;</td>
           <td class="paramname"><em>obj</em></td><td>)</td>
@@ -450,14 +440,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="af6b28b2a1c17f240ce23cc8966a0cf23" name="af6b28b2a1c17f240ce23cc8966a0cf23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6b28b2a1c17f240ce23cc8966a0cf23">&#9670;&#160;</a></span>GXGetTexObjTlut()</h2>
+<a id="a8a60e4022c4f78ac66a02db04ed7cb27" name="a8a60e4022c4f78ac66a02db04ed7cb27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a60e4022c4f78ac66a02db04ed7cb27">&#9670;&#160;</a></span>GXGetTexObjTlut()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> GXGetTexObjTlut </td>
+          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> GXGetTexObjTlut </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="GXStruct_8h.html#a300d2e5e09d00f766ea22f9969237c98">GXTexObj</a> *&#160;</td>
           <td class="paramname"><em>obj</em></td><td>)</td>
@@ -468,14 +458,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5f6be9c7424f8f04fffeaa75c19a3b6f" name="a5f6be9c7424f8f04fffeaa75c19a3b6f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f6be9c7424f8f04fffeaa75c19a3b6f">&#9670;&#160;</a></span>GXGetTexObjWidth()</h2>
+<a id="af305caa958b7b4c8329af39d6ceb08f8" name="af305caa958b7b4c8329af39d6ceb08f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af305caa958b7b4c8329af39d6ceb08f8">&#9670;&#160;</a></span>GXGetTexObjWidth()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> GXGetTexObjWidth </td>
+          <td class="memname"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> GXGetTexObjWidth </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="GXStruct_8h.html#a300d2e5e09d00f766ea22f9969237c98">GXTexObj</a> *&#160;</td>
           <td class="paramname"><em>obj</em></td><td>)</td>
@@ -486,14 +476,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a1e750ab0f82a60e5288d98ebefb5d014" name="a1e750ab0f82a60e5288d98ebefb5d014"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e750ab0f82a60e5288d98ebefb5d014">&#9670;&#160;</a></span>GXGetTexObjWrapS()</h2>
+<a id="a23606be9a60c21f14e9d7e91c2c88e7f" name="a23606be9a60c21f14e9d7e91c2c88e7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23606be9a60c21f14e9d7e91c2c88e7f">&#9670;&#160;</a></span>GXGetTexObjWrapS()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="GXEnum_8h.html#a941542cd63b0d32e8575d5dc52ff4d3a">GXTexWrapMode</a> GXGetTexObjWrapS </td>
+          <td class="memname"><a class="el" href="GXEnum_8h.html#a941542cd63b0d32e8575d5dc52ff4d3a">GXTexWrapMode</a> GXGetTexObjWrapS </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="GXStruct_8h.html#a300d2e5e09d00f766ea22f9969237c98">GXTexObj</a> *&#160;</td>
           <td class="paramname"><em>obj</em></td><td>)</td>
@@ -504,14 +494,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a821d95e607e3e5d682c1f62051643593" name="a821d95e607e3e5d682c1f62051643593"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a821d95e607e3e5d682c1f62051643593">&#9670;&#160;</a></span>GXGetTexObjWrapT()</h2>
+<a id="a2d1200618f22efaaad5995cda3fa5a90" name="a2d1200618f22efaaad5995cda3fa5a90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d1200618f22efaaad5995cda3fa5a90">&#9670;&#160;</a></span>GXGetTexObjWrapT()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="GXEnum_8h.html#a941542cd63b0d32e8575d5dc52ff4d3a">GXTexWrapMode</a> GXGetTexObjWrapT </td>
+          <td class="memname"><a class="el" href="GXEnum_8h.html#a941542cd63b0d32e8575d5dc52ff4d3a">GXTexWrapMode</a> GXGetTexObjWrapT </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="GXStruct_8h.html#a300d2e5e09d00f766ea22f9969237c98">GXTexObj</a> *&#160;</td>
           <td class="paramname"><em>obj</em></td><td>)</td>
@@ -1084,14 +1074,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a93bde86e3e20cce7394bc04ab4215a43" name="a93bde86e3e20cce7394bc04ab4215a43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93bde86e3e20cce7394bc04ab4215a43">&#9670;&#160;</a></span>GXSetTexRegionCallback()</h2>
+<a id="a8b7526feea83dd60b6882439e4569e82" name="a8b7526feea83dd60b6882439e4569e82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b7526feea83dd60b6882439e4569e82">&#9670;&#160;</a></span>GXSetTexRegionCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="GXInit_8h.html#a2e6429cb62d0935a264384c9a9e9eca6">GXTexRegionCallback</a> GXSetTexRegionCallback </td>
+          <td class="memname"><a class="el" href="GXInit_8h.html#a2e6429cb62d0935a264384c9a9e9eca6">GXTexRegionCallback</a> GXSetTexRegionCallback </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="GXInit_8h.html#a2e6429cb62d0935a264384c9a9e9eca6">GXTexRegionCallback</a>&#160;</td>
           <td class="paramname"><em>callback</em></td><td>)</td>
@@ -1102,34 +1092,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a50224bf7eb0337ef6e473543fe9b36cb" name="a50224bf7eb0337ef6e473543fe9b36cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50224bf7eb0337ef6e473543fe9b36cb">&#9670;&#160;</a></span>GXSetTlutRegionCallback()</h2>
+<a id="a10060a1d283d7501948c8072a1df629a" name="a10060a1d283d7501948c8072a1df629a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10060a1d283d7501948c8072a1df629a">&#9670;&#160;</a></span>GXSetTlutRegionCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm <a class="el" href="GXInit_8h.html#ace40845d2ddae5d038dccde57cb42eb5">GXTlutRegionCallback</a> GXSetTlutRegionCallback </td>
+          <td class="memname"><a class="el" href="GXInit_8h.html#ace40845d2ddae5d038dccde57cb42eb5">GXTlutRegionCallback</a> GXSetTlutRegionCallback </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="GXInit_8h.html#ace40845d2ddae5d038dccde57cb42eb5">GXTlutRegionCallback</a>&#160;</td>
           <td class="paramname"><em>callback</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae5483d4fbef9a528a3f56d30a4c5da3a" name="ae5483d4fbef9a528a3f56d30a4c5da3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5483d4fbef9a528a3f56d30a4c5da3a">&#9670;&#160;</a></span>memset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#adc00f0d3ad529c0cb72985d54bfe7ccf">SECTION_INIT</a> void memset </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['r_0',['r',['../struct__GXColor.html#af4723bcb80b74798ce9b54a83b18410f',1,'_GXColor::r()'],['../struct__GXColorS10.html#a8b5e064824ec91bf2e319139108917fa',1,'_GXColorS10::r()'],['../struct__GXFogAdjTable.html#af29b27ccb5ee34d154eaa28fff5af1b1',1,'_GXFogAdjTable::r()'],['../structcolor__RGB__class.html#a5510795984c17f7f08d1ff8bb1bf147f',1,'color_RGB_class::r()']]],
+  ['r_0',['r',['../struct__GXColor.html#af4723bcb80b74798ce9b54a83b18410f',1,'_GXColor::r()'],['../struct__GXColorS10.html#a8b5e064824ec91bf2e319139108917fa',1,'_GXColorS10::r()'],['../structcolor__RGB__class.html#a5510795984c17f7f08d1ff8bb1bf147f',1,'color_RGB_class::r()']]],
   ['r0_1',['r0',['../c__math_8cpp.html#ae89795cca8972bd8d810f1e61bc7a202',1,'c_math.cpp']]],
   ['r02_2',['r02',['../c__math_8cpp.html#ade776008eb82892e12df3c9a6ea259d1',1,'c_math.cpp']]],
   ['r09o_3',['r09o',['../d__kankyo__wether_8cpp.html#a836cd4fcf752c7dae805cbdf9271a6ad',1,'d_kankyo_wether.cpp']]],
@@ -18,7 +18,7 @@ var searchData=
   ['rboxposx_15',['rboxPosX',['../d__meter__HIO_8cpp.html#ae3153da3e9f3e625cfe35561ffe7a09e',1,'d_meter_HIO.cpp']]],
   ['rboxposy_16',['rboxPosY',['../d__meter__HIO_8cpp.html#a4711af9bba5e19925ba480f8a8ce99ce',1,'d_meter_HIO.cpp']]],
   ['rboxscale_17',['rboxScale',['../d__meter__HIO_8cpp.html#a01b4464eea0f7ff62032c7761027189b',1,'d_meter_HIO.cpp']]],
-  ['rdata_18',['rData',['../structJMessage_1_1TProcessor_1_1TProcess__.html#a9390d4808e23f8b00028e6766e94fff8',1,'JMessage::TProcessor::TProcess_']]],
+  ['rdata_18',['rData',['../structJMessage_1_1TProcessor_1_1TProcess__.html#a3c267c09dc0faf35dc1bb4c52b3e0ca2',1,'JMessage::TProcessor::TProcess_']]],
   ['rdsthandler_19',['RDSTHandler',['../SIBios_8c.html#a627d0980d3e69fd7071c20b0b8ab8d5b',1,'SIBios.c']]],
   ['rdstint_20',['rdstint',['../structSIComm__s.html#a8d984aedfa969ca11a00292908cf47db',1,'SIComm_s']]],
   ['rdstintmsk_21',['rdstintmsk',['../structSIComm__s.html#a571b08239d8d18f318d207c85cc9a359',1,'SIComm_s']]],
@@ -56,7 +56,7 @@ var searchData=
   ['resetalarm_53',['ResetAlarm',['../dvd_8c.html#a012ace3d9bea281aa7fb9d0bcc78d746',1,'dvd.c']]],
   ['resetcallback_54',['ResetCallback',['../OSResetSW_8c.html#a3ef3a51602f918733b9a0f5d39689f6a',1,'OSResetSW.c']]],
   ['resetcovercallback_55',['ResetCoverCallback',['../dvdlow_8c.html#ab9ee8e6cdca2aeb2fa3da0a983bdb9b9',1,'dvdlow.c']]],
-  ['resetfuncregistered_56',['resetFuncRegistered',['../GXInit_8c.html#a7c1e16055954e787198a7f804f5ffb88',1,'GXInit.c']]],
+  ['resetfuncregistered_56',['resetFuncRegistered',['../GXInit_8c.html#abc920798dd3c82dd43663701da66fdc5',1,'GXInit.c']]],
   ['resetfunctioninfo_57',['ResetFunctionInfo',['../Pad_8c.html#a28ade2ab6552d24bc5bb12bb07b5df18',1,'ResetFunctionInfo():&#160;Pad.c'],['../OSMemory_8c.html#a1b31ff80779db9f1be128acb22e9cd7c',1,'ResetFunctionInfo():&#160;OSMemory.c'],['../CARDBios_8c.html#a28ade2ab6552d24bc5bb12bb07b5df18',1,'ResetFunctionInfo():&#160;CARDBios.c'],['../OSAlarm_8c.html#a1b31ff80779db9f1be128acb22e9cd7c',1,'ResetFunctionInfo():&#160;OSAlarm.c']]],
   ['resetfunctionqueue_58',['ResetFunctionQueue',['../OSReset_8c.html#a20801c520a2df76b1b7a8d347586454d',1,'OSReset.c']]],
   ['resetoccurred_59',['ResetOccurred',['../dvdlow_8c.html#aa0dc0237ce0050721d2543ba0990e42c',1,'dvdlow.c']]],
@@ -99,5 +99,5 @@ var searchData=
   ['rupeecount_96',['rupeeCount',['../d__a__alink_8cpp.html#acb95768966a2cc76e34e23b4d93daaae',1,'d_a_alink.cpp']]],
   ['rupeet1_5ftag_97',['rupeet1_tag',['../d__meter2__draw_8cpp.html#a50d082f00a15bc3d41b439158c4f39d3',1,'d_meter2_draw.cpp']]],
   ['rupeet2_5ftag_98',['rupeet2_tag',['../d__meter2__draw_8cpp.html#a1be7609b382a1d0aef0feb46745c2872',1,'d_meter2_draw.cpp']]],
-  ['rw_5fdst_99',['rw_dst',['../struct__GXFifoObj.html#ad35aa3bf876aa66627eca6d878097ebe',1,'_GXFifoObj']]]
+  ['rw_5fdst_99',['rw_dst',['../struct__GXFifoObj.html#a321b755f3cc5c7e34dbe6eee4a7d31d7',1,'_GXFifoObj']]]
 ];
