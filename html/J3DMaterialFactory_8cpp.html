@@ -82,55 +82,28 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">J3DMaterialFactory.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="J3DMaterialFactory_8h_source.html">JSystem/J3DGraphLoader/J3DMaterialFactory.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J3DMaterial_8h_source.html">JSystem/J3DGraphBase/J3DMaterial.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J3DSys_8h_source.html">JSystem/J3DGraphBase/J3DSys.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JSupport_8h_source.html">JSystem/JSupport/JSupport.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/__ct__18J3DMaterialFactoryFRC16J3DMaterialBlock.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/__ct__18J3DMaterialFactoryFRC18J3DMaterialDLBlock.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/countUniqueMaterials__18J3DMaterialFactoryFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/countTexGens__18J3DMaterialFactoryCFi.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/countStages__18J3DMaterialFactoryCFi.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/func_803303C4.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/createNormalMaterial__18J3DMaterialFactoryCFP11J3DMaterialiUl.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/createPatchedMaterial__18J3DMaterialFactoryCFP11J3DMaterialiUl.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/modifyPatchedCurrentMtx__18J3DMaterialFactoryCFP11J3DMateriali.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/createLockedMaterial__18J3DMaterialFactoryCFP11J3DMaterialiUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/func_80331A7C.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/calcSizeNormalMaterial__18J3DMaterialFactoryCFP11J3DMaterialiUl.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/calcSizePatchedMaterial__18J3DMaterialFactoryCFP11J3DMaterialiUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/calcSizeLockedMaterial__18J3DMaterialFactoryCFP11J3DMaterialiUl.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/newMatColor__18J3DMaterialFactoryCFii.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/newColorChanNum__18J3DMaterialFactoryCFi.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/newColorChan__18J3DMaterialFactoryCFii.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/newAmbColor__18J3DMaterialFactoryCFii.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/newTexGenNum__18J3DMaterialFactoryCFi.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/newTexCoord__18J3DMaterialFactoryCFii.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/newTexMtx__18J3DMaterialFactoryCFii.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/newCullMode__18J3DMaterialFactoryCFi.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/newTexNo__18J3DMaterialFactoryCFii.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/newTevOrder__18J3DMaterialFactoryCFii.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/newTevColor__18J3DMaterialFactoryCFii.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/newTevKColor__18J3DMaterialFactoryCFii.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/newTevStageNum__18J3DMaterialFactoryCFi.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/newTevStage__18J3DMaterialFactoryCFii.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/newTevSwapModeTable__18J3DMaterialFactoryCFii.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/newIndTexStageNum__18J3DMaterialFactoryCFi.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/newIndTexOrder__18J3DMaterialFactoryCFii.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/newIndTexMtx__18J3DMaterialFactoryCFii.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/newIndTevStage__18J3DMaterialFactoryCFii.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/newIndTexCoordScale__18J3DMaterialFactoryCFii.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/newFog__18J3DMaterialFactoryCFi.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/newAlphaComp__18J3DMaterialFactoryCFi.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/newBlend__18J3DMaterialFactoryCFi.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/newZMode__18J3DMaterialFactoryCFi.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/newZCompLoc__18J3DMaterialFactoryCFi.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/newDither__18J3DMaterialFactoryCFi.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/newNBTScale__18J3DMaterialFactoryCFi.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/getType__14J3DPEBlockNullFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/__dt__14J3DPEBlockNullFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/indexToPtr__15J3DTevBlockNullFv.s&quot;</code><br />
@@ -141,97 +114,15 @@ $(function() {
 <code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/getType__17J3DColorBlockNullFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/__dt__17J3DColorBlockNullFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/__dt__11J3DMaterialFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/func_80332BDC.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/func_80332BF4.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/func_80332C0C.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/func_80332C24.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/func_80332C3C.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/func_80332C54.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/func_80332C6C.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/func_80332C84.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/func_80332C9C.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/func_80332CB4.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/func_80332CCC.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/func_80332CE4.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/func_80332CFC.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/func_80332D14.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/func_80332D2C.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/func_80332D44.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/func_80332D5C.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/func_80332D74.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DMaterialFactory/func_80332D8C.s&quot;</code><br />
+</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for J3DMaterialFactory.cpp:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="J3DMaterialFactory_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DZMode.html">J3DZMode</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DTexMtxInfo.html">J3DTexMtxInfo</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DTexMtx.html">J3DTexMtx</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DTexGenBlockPatched.html">J3DTexGenBlockPatched</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DTexGenBlockNull.html">J3DTexGenBlockNull</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DNBTScale.html">J3DNBTScale</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DTexCoord.html">J3DTexCoord</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DTexGenBlock.html">J3DTexGenBlock</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DTevSwapModeTable.html">J3DTevSwapModeTable</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DTevSwapModeInfo.html">J3DTevSwapModeInfo</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DTevStageInfo.html">J3DTevStageInfo</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DTevStage.html">J3DTevStage</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DTevOrder.html">J3DTevOrder</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DTevBlockPatched.html">J3DTevBlockPatched</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DGXColorS10.html">J3DGXColorS10</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DIndTevStage.html">J3DIndTevStage</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DGXColor.html">J3DGXColor</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DTevBlock.html">J3DTevBlock</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DTevBlockNull.html">J3DTevBlockNull</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DPatchedMaterial.html">J3DPatchedMaterial</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DPEBlockNull.html">J3DPEBlockNull</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DFog.html">J3DFog</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DAlphaComp.html">J3DAlphaComp</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DBlend.html">J3DBlend</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DPEBlock.html">J3DPEBlock</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DMaterial.html">J3DMaterial</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DLockedMaterial.html">J3DLockedMaterial</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DLightObj.html">J3DLightObj</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DIndTexMtxInfo.html">J3DIndTexMtxInfo</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DFogInfo.html">J3DFogInfo</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DDisplayListObj.html">J3DDisplayListObj</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DColorChan.html">J3DColorChan</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DColorBlockNull.html">J3DColorBlockNull</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ3DColorBlock.html">J3DColorBlock</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a8a75f9ffd471b59be759a434cbd941f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a8a75f9ffd471b59be759a434cbd941f5">__ct__18J3DMaterialFactoryFRC16J3DMaterialBlock</a> ()</td></tr>
@@ -318,20 +209,20 @@ Functions</h2></td></tr>
 <tr class="separator:a8fcafd45fb40dd3cd98251a76235bc1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf2bc4f0ec051f3308efb0ad2f2b5150"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#acf2bc4f0ec051f3308efb0ad2f2b5150">load__14J3DPEBlockNullFv</a> ()</td></tr>
 <tr class="separator:acf2bc4f0ec051f3308efb0ad2f2b5150"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add6a85987153420dc7cff60888285046"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#add6a85987153420dc7cff60888285046">getType__14J3DPEBlockNullFv</a> ()</td></tr>
-<tr class="separator:add6a85987153420dc7cff60888285046"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6580a7b5036a60ea2d2c9a58925bc48d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a6580a7b5036a60ea2d2c9a58925bc48d">__dt__14J3DPEBlockNullFv</a> ()</td></tr>
-<tr class="separator:a6580a7b5036a60ea2d2c9a58925bc48d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77056cb839e446d24705ef6ad7e9dfae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a77056cb839e446d24705ef6ad7e9dfae">getType__14J3DPEBlockNullFv</a> ()</td></tr>
+<tr class="separator:a77056cb839e446d24705ef6ad7e9dfae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12510d73a506631f261782c70d9de7fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a12510d73a506631f261782c70d9de7fd">__dt__14J3DPEBlockNullFv</a> ()</td></tr>
+<tr class="separator:a12510d73a506631f261782c70d9de7fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60e74e65282ba8a369f3c99e8f3d2319"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a60e74e65282ba8a369f3c99e8f3d2319">reset__15J3DTevBlockNullFP11J3DTevBlock</a> ()</td></tr>
 <tr class="separator:a60e74e65282ba8a369f3c99e8f3d2319"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a210ae7abf0c327be0abd1fd0b97f6a7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a210ae7abf0c327be0abd1fd0b97f6a7d">ptrToIndex__15J3DTevBlockNullFv</a> ()</td></tr>
 <tr class="separator:a210ae7abf0c327be0abd1fd0b97f6a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93d5a4ee5615d6c3f4d30c93191e73a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a93d5a4ee5615d6c3f4d30c93191e73a0">indexToPtr__15J3DTevBlockNullFv</a> ()</td></tr>
-<tr class="separator:a93d5a4ee5615d6c3f4d30c93191e73a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54f596516b71ae1828017b659745753b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a54f596516b71ae1828017b659745753b">getType__15J3DTevBlockNullFv</a> ()</td></tr>
-<tr class="separator:a54f596516b71ae1828017b659745753b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a648f9977d0b95038205d8bec81ed67e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a648f9977d0b95038205d8bec81ed67e6">__dt__15J3DTevBlockNullFv</a> ()</td></tr>
-<tr class="separator:a648f9977d0b95038205d8bec81ed67e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c5c7c9ba0c0c7b9e22be1c63822a1c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a8c5c7c9ba0c0c7b9e22be1c63822a1c0">indexToPtr__15J3DTevBlockNullFv</a> ()</td></tr>
+<tr class="separator:a8c5c7c9ba0c0c7b9e22be1c63822a1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf4379800b1501b50bf23c894a1e5cb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#adf4379800b1501b50bf23c894a1e5cb3">getType__15J3DTevBlockNullFv</a> ()</td></tr>
+<tr class="separator:adf4379800b1501b50bf23c894a1e5cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe4b4635427e34431c8397cebd2ab103"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#abe4b4635427e34431c8397cebd2ab103">__dt__15J3DTevBlockNullFv</a> ()</td></tr>
+<tr class="separator:abe4b4635427e34431c8397cebd2ab103"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe58000e90ca04e4abcb4e3b15d5036a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#abe58000e90ca04e4abcb4e3b15d5036a">calc__18J3DTexGenBlockNullFPA4_Cf</a> ()</td></tr>
 <tr class="separator:abe58000e90ca04e4abcb4e3b15d5036a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae296e25fdf22b821f3df6c6a51350e87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#ae296e25fdf22b821f3df6c6a51350e87">calcWithoutViewMtx__18J3DTexGenBlockNullFPA4_Cf</a> ()</td></tr>
@@ -350,54 +241,54 @@ Functions</h2></td></tr>
 <tr class="separator:a25b9b7ab6f22dd0e9dfc1fa57da7f8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e51f1100e2a89126106ebd4e1ec762e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a3e51f1100e2a89126106ebd4e1ec762e">diffTexGen__18J3DTexGenBlockNullFv</a> ()</td></tr>
 <tr class="separator:a3e51f1100e2a89126106ebd4e1ec762e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a858818906e9c5723405b19d375850ada"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a858818906e9c5723405b19d375850ada">getType__18J3DTexGenBlockNullFv</a> ()</td></tr>
-<tr class="separator:a858818906e9c5723405b19d375850ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdd337c3d5dbd53b9e22c2c2a01e0bf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#afdd337c3d5dbd53b9e22c2c2a01e0bf9">__dt__18J3DTexGenBlockNullFv</a> ()</td></tr>
-<tr class="separator:afdd337c3d5dbd53b9e22c2c2a01e0bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a997423a7ba03d166100169c12361edcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a997423a7ba03d166100169c12361edcf">getType__17J3DColorBlockNullFv</a> ()</td></tr>
-<tr class="separator:a997423a7ba03d166100169c12361edcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b34faa5a6e442b2c0b2e0584fd1ac75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a9b34faa5a6e442b2c0b2e0584fd1ac75">__dt__17J3DColorBlockNullFv</a> ()</td></tr>
-<tr class="separator:a9b34faa5a6e442b2c0b2e0584fd1ac75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30979a38dd9e3109d63dff61c50aa394"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a30979a38dd9e3109d63dff61c50aa394">__dt__11J3DMaterialFv</a> ()</td></tr>
-<tr class="separator:a30979a38dd9e3109d63dff61c50aa394"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3b7323885b45d1238d336ff7c58fd15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#ae3b7323885b45d1238d336ff7c58fd15">func_80332BDC</a> (void *_this, void const *, void const *)</td></tr>
-<tr class="separator:ae3b7323885b45d1238d336ff7c58fd15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a162a70f6ec7fefe41789cf2b6d646ba0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a162a70f6ec7fefe41789cf2b6d646ba0">func_80332BF4</a> (void *_this, void const *, void const *)</td></tr>
-<tr class="separator:a162a70f6ec7fefe41789cf2b6d646ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cfddc5671c5b5c646eddf030c73cb4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a6cfddc5671c5b5c646eddf030c73cb4d">func_80332C0C</a> (void *_this, void const *, void const *)</td></tr>
-<tr class="separator:a6cfddc5671c5b5c646eddf030c73cb4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8169f49177e9f459073f7fc4800543c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a8169f49177e9f459073f7fc4800543c2">func_80332C24</a> (void *_this, void const *, void const *)</td></tr>
-<tr class="separator:a8169f49177e9f459073f7fc4800543c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7900e5b658d50a7e07363387f1bc5191"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a7900e5b658d50a7e07363387f1bc5191">func_80332C3C</a> (void *_this, void const *, void const *)</td></tr>
-<tr class="separator:a7900e5b658d50a7e07363387f1bc5191"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af233f16c4071548b92470b0fda858602"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#af233f16c4071548b92470b0fda858602">func_80332C54</a> (void *_this, void const *, void const *)</td></tr>
-<tr class="separator:af233f16c4071548b92470b0fda858602"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30fd4783b64db1d183dbd0a7dec88266"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a30fd4783b64db1d183dbd0a7dec88266">func_80332C6C</a> (void *_this, void const *, void const *)</td></tr>
-<tr class="separator:a30fd4783b64db1d183dbd0a7dec88266"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fbedffd216eeb66ea874b1d8f793f09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a1fbedffd216eeb66ea874b1d8f793f09">func_80332C84</a> (void *_this, void const *, void const *)</td></tr>
-<tr class="separator:a1fbedffd216eeb66ea874b1d8f793f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7ffae6dca546e3dece7d8a11a82c8e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#ab7ffae6dca546e3dece7d8a11a82c8e9">func_80332C9C</a> (void *_this, void const *, void const *)</td></tr>
-<tr class="separator:ab7ffae6dca546e3dece7d8a11a82c8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afaa7a28eb0b066991cf77f4605c7a676"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#afaa7a28eb0b066991cf77f4605c7a676">func_80332CB4</a> (void *_this, void const *, void const *)</td></tr>
-<tr class="separator:afaa7a28eb0b066991cf77f4605c7a676"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acedabfbb2cfe9de8bb4985f1cdee5a5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#acedabfbb2cfe9de8bb4985f1cdee5a5b">func_80332CCC</a> (void *_this, void const *, void const *)</td></tr>
-<tr class="separator:acedabfbb2cfe9de8bb4985f1cdee5a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0780d3c735f62d695f516404bdaefa22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a0780d3c735f62d695f516404bdaefa22">func_80332CE4</a> (void *_this, void const *, void const *)</td></tr>
-<tr class="separator:a0780d3c735f62d695f516404bdaefa22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7cd8dd078d9b3ffe69b3a83020b417e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#aa7cd8dd078d9b3ffe69b3a83020b417e">func_80332CFC</a> (void *_this, void const *, void const *)</td></tr>
-<tr class="separator:aa7cd8dd078d9b3ffe69b3a83020b417e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68ea95aa076e60a9e934ba045e777527"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a68ea95aa076e60a9e934ba045e777527">func_80332D14</a> (void *_this, void const *, void const *)</td></tr>
-<tr class="separator:a68ea95aa076e60a9e934ba045e777527"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac616bc8ddf212228340041f49d462acb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#ac616bc8ddf212228340041f49d462acb">func_80332D2C</a> (void *_this, void const *, void const *)</td></tr>
-<tr class="separator:ac616bc8ddf212228340041f49d462acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81994f6b499bed92248006e0490d80c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a81994f6b499bed92248006e0490d80c3">func_80332D44</a> (void *_this, void const *, void const *)</td></tr>
-<tr class="separator:a81994f6b499bed92248006e0490d80c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae42d6bb6d2e43c66a758d225a2b38012"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#ae42d6bb6d2e43c66a758d225a2b38012">func_80332D5C</a> (void *_this, void const *, void const *)</td></tr>
-<tr class="separator:ae42d6bb6d2e43c66a758d225a2b38012"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1514d1a363aeadbd742976732cf8cf78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a1514d1a363aeadbd742976732cf8cf78">func_80332D74</a> (void *_this, void const *, void const *)</td></tr>
-<tr class="separator:a1514d1a363aeadbd742976732cf8cf78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f6f6b9b51a5b0874688284c9e42b18a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a7f6f6b9b51a5b0874688284c9e42b18a">func_80332D8C</a> (void *_this, void const *, void const *)</td></tr>
-<tr class="separator:a7f6f6b9b51a5b0874688284c9e42b18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56feb39ad930f50ea5759950fa047dbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a56feb39ad930f50ea5759950fa047dbc">getType__18J3DTexGenBlockNullFv</a> ()</td></tr>
+<tr class="separator:a56feb39ad930f50ea5759950fa047dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f23cf1d616eef6afe1040f9ed357507"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a7f23cf1d616eef6afe1040f9ed357507">__dt__18J3DTexGenBlockNullFv</a> ()</td></tr>
+<tr class="separator:a7f23cf1d616eef6afe1040f9ed357507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad70e9bb8d5051c52752e35d452a43479"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#ad70e9bb8d5051c52752e35d452a43479">getType__17J3DColorBlockNullFv</a> ()</td></tr>
+<tr class="separator:ad70e9bb8d5051c52752e35d452a43479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d0e55d15fae484ddbe0ba9ef7c2492c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a5d0e55d15fae484ddbe0ba9ef7c2492c">__dt__17J3DColorBlockNullFv</a> ()</td></tr>
+<tr class="separator:a5d0e55d15fae484ddbe0ba9ef7c2492c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72fdbdb56edeff526e0ee4408839ecac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a72fdbdb56edeff526e0ee4408839ecac">__dt__11J3DMaterialFv</a> ()</td></tr>
+<tr class="separator:a72fdbdb56edeff526e0ee4408839ecac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad07ee9d9fec7cce0738d0c9d4bfdfcf6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#ad07ee9d9fec7cce0738d0c9d4bfdfcf6">func_80332BDC</a> (void *_this, void const *, void const *)</td></tr>
+<tr class="separator:ad07ee9d9fec7cce0738d0c9d4bfdfcf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a810469fffc6e30a8c6189ee1c8d10216"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a810469fffc6e30a8c6189ee1c8d10216">func_80332BF4</a> (void *_this, void const *, void const *)</td></tr>
+<tr class="separator:a810469fffc6e30a8c6189ee1c8d10216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15f56c963693ba6f47988edd30ec8e8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a15f56c963693ba6f47988edd30ec8e8c">func_80332C0C</a> (void *_this, void const *, void const *)</td></tr>
+<tr class="separator:a15f56c963693ba6f47988edd30ec8e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af259ccb490b2bf5156e8fdd5487e1d2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#af259ccb490b2bf5156e8fdd5487e1d2e">func_80332C24</a> (void *_this, void const *, void const *)</td></tr>
+<tr class="separator:af259ccb490b2bf5156e8fdd5487e1d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0947d073762e9b2f223801a0fecab0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#af0947d073762e9b2f223801a0fecab0a">func_80332C3C</a> (void *_this, void const *, void const *)</td></tr>
+<tr class="separator:af0947d073762e9b2f223801a0fecab0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9c743d40cbec90e4040afec215c2d15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#ad9c743d40cbec90e4040afec215c2d15">func_80332C54</a> (void *_this, void const *, void const *)</td></tr>
+<tr class="separator:ad9c743d40cbec90e4040afec215c2d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d460467e673a0ff2b535399906febac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a4d460467e673a0ff2b535399906febac">func_80332C6C</a> (void *_this, void const *, void const *)</td></tr>
+<tr class="separator:a4d460467e673a0ff2b535399906febac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08afd31c63e650a20ef1ee6d31e492fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a08afd31c63e650a20ef1ee6d31e492fc">func_80332C84</a> (void *_this, void const *, void const *)</td></tr>
+<tr class="separator:a08afd31c63e650a20ef1ee6d31e492fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5604a066ad2a28d0f5be3cf1854112aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a5604a066ad2a28d0f5be3cf1854112aa">func_80332C9C</a> (void *_this, void const *, void const *)</td></tr>
+<tr class="separator:a5604a066ad2a28d0f5be3cf1854112aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d294210859c07652f4feb9815434b44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a6d294210859c07652f4feb9815434b44">func_80332CB4</a> (void *_this, void const *, void const *)</td></tr>
+<tr class="separator:a6d294210859c07652f4feb9815434b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79fa3bc4cb7737ddbda4256ddd56a08a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a79fa3bc4cb7737ddbda4256ddd56a08a">func_80332CCC</a> (void *_this, void const *, void const *)</td></tr>
+<tr class="separator:a79fa3bc4cb7737ddbda4256ddd56a08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc93cb85ffeb2bd6022dcf2d30a9a619"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#afc93cb85ffeb2bd6022dcf2d30a9a619">func_80332CE4</a> (void *_this, void const *, void const *)</td></tr>
+<tr class="separator:afc93cb85ffeb2bd6022dcf2d30a9a619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebc606cff344be95e0975fe751847aa5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#aebc606cff344be95e0975fe751847aa5">func_80332CFC</a> (void *_this, void const *, void const *)</td></tr>
+<tr class="separator:aebc606cff344be95e0975fe751847aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13248477b33eb38b89b05ff86c58a0b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a13248477b33eb38b89b05ff86c58a0b5">func_80332D14</a> (void *_this, void const *, void const *)</td></tr>
+<tr class="separator:a13248477b33eb38b89b05ff86c58a0b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacd6866d82126268924def2eb82f72ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#aacd6866d82126268924def2eb82f72ef">func_80332D2C</a> (void *_this, void const *, void const *)</td></tr>
+<tr class="separator:aacd6866d82126268924def2eb82f72ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9df4d91a9afd9511d0a5628c16540b79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a9df4d91a9afd9511d0a5628c16540b79">func_80332D44</a> (void *_this, void const *, void const *)</td></tr>
+<tr class="separator:a9df4d91a9afd9511d0a5628c16540b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54a51896becca239acde95bc7d55ba5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a54a51896becca239acde95bc7d55ba5d">func_80332D5C</a> (void *_this, void const *, void const *)</td></tr>
+<tr class="separator:a54a51896becca239acde95bc7d55ba5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedefd3cc60a02ea5e414066084ae7832"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#aedefd3cc60a02ea5e414066084ae7832">func_80332D74</a> (void *_this, void const *, void const *)</td></tr>
+<tr class="separator:aedefd3cc60a02ea5e414066084ae7832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac88f5cbfbe2bc663dbcdfe77a7eb6c53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#ac88f5cbfbe2bc663dbcdfe77a7eb6c53">func_80332D8C</a> (void *_this, void const *, void const *)</td></tr>
+<tr class="separator:ac88f5cbfbe2bc663dbcdfe77a7eb6c53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f0c9f4727ed316cb2ef9a386754205c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a6f0c9f4727ed316cb2ef9a386754205c">patchTexNoAndTexCoordScale__11J3DTevBlockFv</a> ()</td></tr>
 <tr class="separator:a6f0c9f4727ed316cb2ef9a386754205c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91ad4370d6c52d4cfedaa83cf0b23d55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a91ad4370d6c52d4cfedaa83cf0b23d55">patch__10J3DPEBlockFv</a> ()</td></tr>
@@ -518,16 +409,16 @@ Functions</h2></td></tr>
 <tr class="separator:a2b05986531107cde8783fde25a9a7413"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a498e6440d5c316e2672169ee4ed92309"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a498e6440d5c316e2672169ee4ed92309">__dl__FPv</a> ()</td></tr>
 <tr class="separator:a498e6440d5c316e2672169ee4ed92309"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23dd857013f78d1481e9fb1d2c8e9fb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a23dd857013f78d1481e9fb1d2c8e9fb7">func_802F41E8</a> (void *_this, void const *, void const *)</td></tr>
-<tr class="separator:a23dd857013f78d1481e9fb1d2c8e9fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a177ebc407c21cb67cca9993287242883"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a177ebc407c21cb67cca9993287242883">func_802F4260</a> (void *_this, void const *, void const *)</td></tr>
-<tr class="separator:a177ebc407c21cb67cca9993287242883"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb51b49632c47c5c146bbd034d00e438"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#acb51b49632c47c5c146bbd034d00e438">func_802F4278</a> (void *_this, void const *, void const *)</td></tr>
-<tr class="separator:acb51b49632c47c5c146bbd034d00e438"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe1ca8ea36cb003a2e97f8e97ea5ba14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#afe1ca8ea36cb003a2e97f8e97ea5ba14">func_802F4290</a> (void *_this, void const *, void const *)</td></tr>
-<tr class="separator:afe1ca8ea36cb003a2e97f8e97ea5ba14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8174f0ae3168a481e6474f877616bac2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a8174f0ae3168a481e6474f877616bac2">func_802F42C0</a> (void *_this, void const *, void const *)</td></tr>
-<tr class="separator:a8174f0ae3168a481e6474f877616bac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95514138030c6c34361f29db615d28d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="GXStruct_8h.html#a6e884c434a48c87e5eb4fa7e60bd897b">GXColorS10</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a95514138030c6c34361f29db615d28d1">func_802F41E8</a> (void const *, void const *)</td></tr>
+<tr class="separator:a95514138030c6c34361f29db615d28d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc5b771c538b1be066be82d6078dc842"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#abc5b771c538b1be066be82d6078dc842">func_802F4260</a> (void const *, void const *)</td></tr>
+<tr class="separator:abc5b771c538b1be066be82d6078dc842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68a8219c2fb765d869b56f8b120da113"><td class="memItemLeft" align="right" valign="top"><a class="el" href="GXStruct_8h.html#a0419d171f4d66c2b2a77bd299ddbdcdc">GXColor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a68a8219c2fb765d869b56f8b120da113">func_802F4278</a> (void const *, void const *)</td></tr>
+<tr class="separator:a68a8219c2fb765d869b56f8b120da113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9686581c31b6b487c8ea52feac831cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="GXEnum_8h.html#a8ebd97d771f1498dfbabc1a309411fd1">GXCullMode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#ad9686581c31b6b487c8ea52feac831cf">func_802F4290</a> (void const *, void const *)</td></tr>
+<tr class="separator:ad9686581c31b6b487c8ea52feac831cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a678060cc8f1ec03f6b2c359bcee846f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a678060cc8f1ec03f6b2c359bcee846f2">func_802F42C0</a> (void const *, void const *)</td></tr>
+<tr class="separator:a678060cc8f1ec03f6b2c359bcee846f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b6a331f5f9db6809b84322846de292d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a5b6a331f5f9db6809b84322846de292d">setSingleDisplayList__17J3DDisplayListObjFPvUl</a> ()</td></tr>
 <tr class="separator:a5b6a331f5f9db6809b84322846de292d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87ff3e137b49132357f247a233847951"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a87ff3e137b49132357f247a233847951">createColorBlock__11J3DMaterialFUl</a> ()</td></tr>
@@ -737,16 +628,6 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a9b892a3c1987a9d057308966c04185a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a9b892a3c1987a9d057308966c04185a0">j3dDefaultTexCoordInfo</a> [32]</td></tr>
-<tr class="separator:a9b892a3c1987a9d057308966c04185a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ce17bc8518c5456909ec762c2f48013"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a4ce17bc8518c5456909ec762c2f48013">j3dDefaultIndTexMtxInfo</a> [28]</td></tr>
-<tr class="separator:a4ce17bc8518c5456909ec762c2f48013"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a312da160fb0f4c3bd2afdaf4a8b3e749"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a312da160fb0f4c3bd2afdaf4a8b3e749">j3dDefaultIndTevStageInfo</a> [12]</td></tr>
-<tr class="separator:a312da160fb0f4c3bd2afdaf4a8b3e749"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add9dd5d16dfaad85c999014d6108e324"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#add9dd5d16dfaad85c999014d6108e324">j3dDefaultFogInfo</a> [44]</td></tr>
-<tr class="separator:add9dd5d16dfaad85c999014d6108e324"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a310e23cc3dd43da5e07db187586d106e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a310e23cc3dd43da5e07db187586d106e">j3dDefaultNBTScaleInfo</a> [16]</td></tr>
-<tr class="separator:a310e23cc3dd43da5e07db187586d106e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82bfd2cf4ea7fc2bacc3425e7120c461"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a82bfd2cf4ea7fc2bacc3425e7120c461">__vt__17J3DLockedMaterial</a> [12]</td></tr>
 <tr class="separator:a82bfd2cf4ea7fc2bacc3425e7120c461"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affd343b16cd10b9a9f8b24787421c7ff"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#affd343b16cd10b9a9f8b24787421c7ff">__vt__18J3DPatchedMaterial</a> [12]</td></tr>
@@ -769,20 +650,6 @@ Variables</h2></td></tr>
 <tr class="separator:a15698c931d943db459b88b5bc436c1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53ceb3bccd9d9b1172863172b7c4289c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a53ceb3bccd9d9b1172863172b7c4289c">__vt__11J3DTevBlock</a> [55]</td></tr>
 <tr class="separator:a53ceb3bccd9d9b1172863172b7c4289c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe21793badf45174c77eb5f1dc2028fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#abe21793badf45174c77eb5f1dc2028fc">j3dDefaultTevOrderInfoNull</a></td></tr>
-<tr class="separator:abe21793badf45174c77eb5f1dc2028fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac57d69c1e9a1d136d0046d2c95a3f55c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#ac57d69c1e9a1d136d0046d2c95a3f55c">j3dDefaultIndTexOrderNull</a></td></tr>
-<tr class="separator:ac57d69c1e9a1d136d0046d2c95a3f55c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dbaa20cce55190fdc05d6ee145e4eda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a9dbaa20cce55190fdc05d6ee145e4eda">j3dDefaultIndTexCoordScaleInfo</a> [4]</td></tr>
-<tr class="separator:a9dbaa20cce55190fdc05d6ee145e4eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60288704152075f879e5ab26dccb1a0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a60288704152075f879e5ab26dccb1a0c">j3dDefaultTevSwapModeTable</a></td></tr>
-<tr class="separator:a60288704152075f879e5ab26dccb1a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6b580e21832acbd4b4feb75e152aa36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#ab6b580e21832acbd4b4feb75e152aa36">j3dDefaultBlendInfo</a></td></tr>
-<tr class="separator:ab6b580e21832acbd4b4feb75e152aa36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf5012f1ec51bd0405418214d8211e6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#acf5012f1ec51bd0405418214d8211e6e">j3dDefaultColorChanInfo</a> [8]</td></tr>
-<tr class="separator:acf5012f1ec51bd0405418214d8211e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80161eae380e059dd8865c590a993f59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a80161eae380e059dd8865c590a993f59">j3dDefaultZModeID</a> [1+1]</td></tr>
-<tr class="separator:a80161eae380e059dd8865c590a993f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84c93863d98694bffe964835db74b0f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a84c93863d98694bffe964835db74b0f8">__vt__14J3DPEBlockNull</a> [31]</td></tr>
 <tr class="separator:a84c93863d98694bffe964835db74b0f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25a832d7912d6c14704dfc131655ee84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a25a832d7912d6c14704dfc131655ee84">__vt__15J3DTevBlockNull</a> [55]</td></tr>
@@ -795,10 +662,8 @@ Variables</h2></td></tr>
 <tr class="separator:a0073b4001d95183a8f07e653c263f801"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3149345ca83cf96634365c19f7a8abd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#ad3149345ca83cf96634365c19f7a8abd">lit_1798</a> = 0x32323232</td></tr>
 <tr class="separator:ad3149345ca83cf96634365c19f7a8abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69aec0867aa6f479e5d097fcb0d594b8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a4f4769b6050d0b45c649c757062be78d">SECTION_SBSS2</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a69aec0867aa6f479e5d097fcb0d594b8">lit_1897</a> [4]</td></tr>
-<tr class="separator:a69aec0867aa6f479e5d097fcb0d594b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee210b6bcb27b03ff7bef44752e060f8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a4f4769b6050d0b45c649c757062be78d">SECTION_SBSS2</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#aee210b6bcb27b03ff7bef44752e060f8">data_80456BBC</a> [4]</td></tr>
-<tr class="separator:aee210b6bcb27b03ff7bef44752e060f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e6c50a9e5b3ccb10a444dbbae09b187"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a4f4769b6050d0b45c649c757062be78d">SECTION_SBSS2</a> <a class="el" href="GXStruct_8h.html#a6e884c434a48c87e5eb4fa7e60bd897b">GXColorS10</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a4e6c50a9e5b3ccb10a444dbbae09b187">defaultTevColor</a></td></tr>
+<tr class="separator:a4e6c50a9e5b3ccb10a444dbbae09b187"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63af5ec4a3c13aa2c5fa1366f66f4c30"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialFactory_8cpp.html#a63af5ec4a3c13aa2c5fa1366f66f4c30">lit_1915</a> [1+1]</td></tr>
 <tr class="separator:a63af5ec4a3c13aa2c5fa1366f66f4c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -1041,14 +906,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a30979a38dd9e3109d63dff61c50aa394" name="a30979a38dd9e3109d63dff61c50aa394"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30979a38dd9e3109d63dff61c50aa394">&#9670;&#160;</a></span>__dt__11J3DMaterialFv()</h2>
+<a id="a72fdbdb56edeff526e0ee4408839ecac" name="a72fdbdb56edeff526e0ee4408839ecac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72fdbdb56edeff526e0ee4408839ecac">&#9670;&#160;</a></span>__dt__11J3DMaterialFv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void __dt__11J3DMaterialFv </td>
+          <td class="memname">asm void __dt__11J3DMaterialFv </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1058,14 +923,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a6580a7b5036a60ea2d2c9a58925bc48d" name="a6580a7b5036a60ea2d2c9a58925bc48d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6580a7b5036a60ea2d2c9a58925bc48d">&#9670;&#160;</a></span>__dt__14J3DPEBlockNullFv()</h2>
+<a id="a12510d73a506631f261782c70d9de7fd" name="a12510d73a506631f261782c70d9de7fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12510d73a506631f261782c70d9de7fd">&#9670;&#160;</a></span>__dt__14J3DPEBlockNullFv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void __dt__14J3DPEBlockNullFv </td>
+          <td class="memname">asm void __dt__14J3DPEBlockNullFv </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1075,14 +940,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a648f9977d0b95038205d8bec81ed67e6" name="a648f9977d0b95038205d8bec81ed67e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a648f9977d0b95038205d8bec81ed67e6">&#9670;&#160;</a></span>__dt__15J3DTevBlockNullFv()</h2>
+<a id="abe4b4635427e34431c8397cebd2ab103" name="abe4b4635427e34431c8397cebd2ab103"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe4b4635427e34431c8397cebd2ab103">&#9670;&#160;</a></span>__dt__15J3DTevBlockNullFv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void __dt__15J3DTevBlockNullFv </td>
+          <td class="memname">asm void __dt__15J3DTevBlockNullFv </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1092,14 +957,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a9b34faa5a6e442b2c0b2e0584fd1ac75" name="a9b34faa5a6e442b2c0b2e0584fd1ac75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b34faa5a6e442b2c0b2e0584fd1ac75">&#9670;&#160;</a></span>__dt__17J3DColorBlockNullFv()</h2>
+<a id="a5d0e55d15fae484ddbe0ba9ef7c2492c" name="a5d0e55d15fae484ddbe0ba9ef7c2492c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d0e55d15fae484ddbe0ba9ef7c2492c">&#9670;&#160;</a></span>__dt__17J3DColorBlockNullFv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void __dt__17J3DColorBlockNullFv </td>
+          <td class="memname">asm void __dt__17J3DColorBlockNullFv </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1109,14 +974,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="afdd337c3d5dbd53b9e22c2c2a01e0bf9" name="afdd337c3d5dbd53b9e22c2c2a01e0bf9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdd337c3d5dbd53b9e22c2c2a01e0bf9">&#9670;&#160;</a></span>__dt__18J3DTexGenBlockNullFv()</h2>
+<a id="a7f23cf1d616eef6afe1040f9ed357507" name="a7f23cf1d616eef6afe1040f9ed357507"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f23cf1d616eef6afe1040f9ed357507">&#9670;&#160;</a></span>__dt__18J3DTexGenBlockNullFv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void __dt__18J3DTexGenBlockNullFv </td>
+          <td class="memname">asm void __dt__18J3DTexGenBlockNullFv </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -2129,29 +1994,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a23dd857013f78d1481e9fb1d2c8e9fb7" name="a23dd857013f78d1481e9fb1d2c8e9fb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23dd857013f78d1481e9fb1d2c8e9fb7">&#9670;&#160;</a></span>func_802F41E8()</h2>
+<a id="a95514138030c6c34361f29db615d28d1" name="a95514138030c6c34361f29db615d28d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95514138030c6c34361f29db615d28d1">&#9670;&#160;</a></span>func_802F41E8()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void func_802F41E8 </td>
+          <td class="memname"><a class="el" href="GXStruct_8h.html#a6e884c434a48c87e5eb4fa7e60bd897b">GXColorS10</a> * func_802F41E8 </td>
           <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>_this</em>, </td>
+          <td class="paramtype">void const *&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2163,29 +2022,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a177ebc407c21cb67cca9993287242883" name="a177ebc407c21cb67cca9993287242883"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a177ebc407c21cb67cca9993287242883">&#9670;&#160;</a></span>func_802F4260()</h2>
+<a id="abc5b771c538b1be066be82d6078dc842" name="abc5b771c538b1be066be82d6078dc842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc5b771c538b1be066be82d6078dc842">&#9670;&#160;</a></span>func_802F4260()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void func_802F4260 </td>
+          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> * func_802F4260 </td>
           <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>_this</em>, </td>
+          <td class="paramtype">void const *&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2197,29 +2050,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="acb51b49632c47c5c146bbd034d00e438" name="acb51b49632c47c5c146bbd034d00e438"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb51b49632c47c5c146bbd034d00e438">&#9670;&#160;</a></span>func_802F4278()</h2>
+<a id="a68a8219c2fb765d869b56f8b120da113" name="a68a8219c2fb765d869b56f8b120da113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68a8219c2fb765d869b56f8b120da113">&#9670;&#160;</a></span>func_802F4278()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void func_802F4278 </td>
+          <td class="memname"><a class="el" href="GXStruct_8h.html#a0419d171f4d66c2b2a77bd299ddbdcdc">GXColor</a> * func_802F4278 </td>
           <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>_this</em>, </td>
+          <td class="paramtype">void const *&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2231,29 +2078,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="afe1ca8ea36cb003a2e97f8e97ea5ba14" name="afe1ca8ea36cb003a2e97f8e97ea5ba14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe1ca8ea36cb003a2e97f8e97ea5ba14">&#9670;&#160;</a></span>func_802F4290()</h2>
+<a id="ad9686581c31b6b487c8ea52feac831cf" name="ad9686581c31b6b487c8ea52feac831cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9686581c31b6b487c8ea52feac831cf">&#9670;&#160;</a></span>func_802F4290()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void func_802F4290 </td>
+          <td class="memname"><a class="el" href="GXEnum_8h.html#a8ebd97d771f1498dfbabc1a309411fd1">GXCullMode</a> * func_802F4290 </td>
           <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>_this</em>, </td>
+          <td class="paramtype">void const *&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2265,29 +2106,23 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a8174f0ae3168a481e6474f877616bac2" name="a8174f0ae3168a481e6474f877616bac2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8174f0ae3168a481e6474f877616bac2">&#9670;&#160;</a></span>func_802F42C0()</h2>
+<a id="a678060cc8f1ec03f6b2c359bcee846f2" name="a678060cc8f1ec03f6b2c359bcee846f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a678060cc8f1ec03f6b2c359bcee846f2">&#9670;&#160;</a></span>func_802F42C0()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void func_802F42C0 </td>
+          <td class="memname"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> * func_802F42C0 </td>
           <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>_this</em>, </td>
+          <td class="paramtype">void const *&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2299,14 +2134,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae3b7323885b45d1238d336ff7c58fd15" name="ae3b7323885b45d1238d336ff7c58fd15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3b7323885b45d1238d336ff7c58fd15">&#9670;&#160;</a></span>func_80332BDC()</h2>
+<a id="ad07ee9d9fec7cce0738d0c9d4bfdfcf6" name="ad07ee9d9fec7cce0738d0c9d4bfdfcf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad07ee9d9fec7cce0738d0c9d4bfdfcf6">&#9670;&#160;</a></span>func_80332BDC()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void func_80332BDC </td>
+          <td class="memname">void func_80332BDC </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>_this</em>, </td>
@@ -2315,13 +2150,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2333,14 +2168,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a162a70f6ec7fefe41789cf2b6d646ba0" name="a162a70f6ec7fefe41789cf2b6d646ba0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a162a70f6ec7fefe41789cf2b6d646ba0">&#9670;&#160;</a></span>func_80332BF4()</h2>
+<a id="a810469fffc6e30a8c6189ee1c8d10216" name="a810469fffc6e30a8c6189ee1c8d10216"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a810469fffc6e30a8c6189ee1c8d10216">&#9670;&#160;</a></span>func_80332BF4()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void func_80332BF4 </td>
+          <td class="memname">void func_80332BF4 </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>_this</em>, </td>
@@ -2349,13 +2184,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2367,14 +2202,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a6cfddc5671c5b5c646eddf030c73cb4d" name="a6cfddc5671c5b5c646eddf030c73cb4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6cfddc5671c5b5c646eddf030c73cb4d">&#9670;&#160;</a></span>func_80332C0C()</h2>
+<a id="a15f56c963693ba6f47988edd30ec8e8c" name="a15f56c963693ba6f47988edd30ec8e8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15f56c963693ba6f47988edd30ec8e8c">&#9670;&#160;</a></span>func_80332C0C()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void func_80332C0C </td>
+          <td class="memname">void func_80332C0C </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>_this</em>, </td>
@@ -2383,13 +2218,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2401,14 +2236,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a8169f49177e9f459073f7fc4800543c2" name="a8169f49177e9f459073f7fc4800543c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8169f49177e9f459073f7fc4800543c2">&#9670;&#160;</a></span>func_80332C24()</h2>
+<a id="af259ccb490b2bf5156e8fdd5487e1d2e" name="af259ccb490b2bf5156e8fdd5487e1d2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af259ccb490b2bf5156e8fdd5487e1d2e">&#9670;&#160;</a></span>func_80332C24()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void func_80332C24 </td>
+          <td class="memname">void func_80332C24 </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>_this</em>, </td>
@@ -2417,13 +2252,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2435,14 +2270,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a7900e5b658d50a7e07363387f1bc5191" name="a7900e5b658d50a7e07363387f1bc5191"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7900e5b658d50a7e07363387f1bc5191">&#9670;&#160;</a></span>func_80332C3C()</h2>
+<a id="af0947d073762e9b2f223801a0fecab0a" name="af0947d073762e9b2f223801a0fecab0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0947d073762e9b2f223801a0fecab0a">&#9670;&#160;</a></span>func_80332C3C()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void func_80332C3C </td>
+          <td class="memname">void func_80332C3C </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>_this</em>, </td>
@@ -2451,13 +2286,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2469,14 +2304,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="af233f16c4071548b92470b0fda858602" name="af233f16c4071548b92470b0fda858602"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af233f16c4071548b92470b0fda858602">&#9670;&#160;</a></span>func_80332C54()</h2>
+<a id="ad9c743d40cbec90e4040afec215c2d15" name="ad9c743d40cbec90e4040afec215c2d15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9c743d40cbec90e4040afec215c2d15">&#9670;&#160;</a></span>func_80332C54()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void func_80332C54 </td>
+          <td class="memname">void func_80332C54 </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>_this</em>, </td>
@@ -2485,13 +2320,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2503,14 +2338,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a30fd4783b64db1d183dbd0a7dec88266" name="a30fd4783b64db1d183dbd0a7dec88266"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30fd4783b64db1d183dbd0a7dec88266">&#9670;&#160;</a></span>func_80332C6C()</h2>
+<a id="a4d460467e673a0ff2b535399906febac" name="a4d460467e673a0ff2b535399906febac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d460467e673a0ff2b535399906febac">&#9670;&#160;</a></span>func_80332C6C()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void func_80332C6C </td>
+          <td class="memname">void func_80332C6C </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>_this</em>, </td>
@@ -2519,13 +2354,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2537,14 +2372,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a1fbedffd216eeb66ea874b1d8f793f09" name="a1fbedffd216eeb66ea874b1d8f793f09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fbedffd216eeb66ea874b1d8f793f09">&#9670;&#160;</a></span>func_80332C84()</h2>
+<a id="a08afd31c63e650a20ef1ee6d31e492fc" name="a08afd31c63e650a20ef1ee6d31e492fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08afd31c63e650a20ef1ee6d31e492fc">&#9670;&#160;</a></span>func_80332C84()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void func_80332C84 </td>
+          <td class="memname">void func_80332C84 </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>_this</em>, </td>
@@ -2553,13 +2388,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2571,14 +2406,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ab7ffae6dca546e3dece7d8a11a82c8e9" name="ab7ffae6dca546e3dece7d8a11a82c8e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7ffae6dca546e3dece7d8a11a82c8e9">&#9670;&#160;</a></span>func_80332C9C()</h2>
+<a id="a5604a066ad2a28d0f5be3cf1854112aa" name="a5604a066ad2a28d0f5be3cf1854112aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5604a066ad2a28d0f5be3cf1854112aa">&#9670;&#160;</a></span>func_80332C9C()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void func_80332C9C </td>
+          <td class="memname">void func_80332C9C </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>_this</em>, </td>
@@ -2587,13 +2422,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2605,14 +2440,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="afaa7a28eb0b066991cf77f4605c7a676" name="afaa7a28eb0b066991cf77f4605c7a676"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afaa7a28eb0b066991cf77f4605c7a676">&#9670;&#160;</a></span>func_80332CB4()</h2>
+<a id="a6d294210859c07652f4feb9815434b44" name="a6d294210859c07652f4feb9815434b44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d294210859c07652f4feb9815434b44">&#9670;&#160;</a></span>func_80332CB4()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void func_80332CB4 </td>
+          <td class="memname">void func_80332CB4 </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>_this</em>, </td>
@@ -2621,13 +2456,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2639,14 +2474,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="acedabfbb2cfe9de8bb4985f1cdee5a5b" name="acedabfbb2cfe9de8bb4985f1cdee5a5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acedabfbb2cfe9de8bb4985f1cdee5a5b">&#9670;&#160;</a></span>func_80332CCC()</h2>
+<a id="a79fa3bc4cb7737ddbda4256ddd56a08a" name="a79fa3bc4cb7737ddbda4256ddd56a08a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79fa3bc4cb7737ddbda4256ddd56a08a">&#9670;&#160;</a></span>func_80332CCC()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void func_80332CCC </td>
+          <td class="memname">void func_80332CCC </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>_this</em>, </td>
@@ -2655,13 +2490,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2673,14 +2508,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a0780d3c735f62d695f516404bdaefa22" name="a0780d3c735f62d695f516404bdaefa22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0780d3c735f62d695f516404bdaefa22">&#9670;&#160;</a></span>func_80332CE4()</h2>
+<a id="afc93cb85ffeb2bd6022dcf2d30a9a619" name="afc93cb85ffeb2bd6022dcf2d30a9a619"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc93cb85ffeb2bd6022dcf2d30a9a619">&#9670;&#160;</a></span>func_80332CE4()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void func_80332CE4 </td>
+          <td class="memname">void func_80332CE4 </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>_this</em>, </td>
@@ -2689,13 +2524,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2707,14 +2542,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aa7cd8dd078d9b3ffe69b3a83020b417e" name="aa7cd8dd078d9b3ffe69b3a83020b417e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7cd8dd078d9b3ffe69b3a83020b417e">&#9670;&#160;</a></span>func_80332CFC()</h2>
+<a id="aebc606cff344be95e0975fe751847aa5" name="aebc606cff344be95e0975fe751847aa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebc606cff344be95e0975fe751847aa5">&#9670;&#160;</a></span>func_80332CFC()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void func_80332CFC </td>
+          <td class="memname">void func_80332CFC </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>_this</em>, </td>
@@ -2723,13 +2558,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2741,14 +2576,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a68ea95aa076e60a9e934ba045e777527" name="a68ea95aa076e60a9e934ba045e777527"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68ea95aa076e60a9e934ba045e777527">&#9670;&#160;</a></span>func_80332D14()</h2>
+<a id="a13248477b33eb38b89b05ff86c58a0b5" name="a13248477b33eb38b89b05ff86c58a0b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13248477b33eb38b89b05ff86c58a0b5">&#9670;&#160;</a></span>func_80332D14()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void func_80332D14 </td>
+          <td class="memname">void func_80332D14 </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>_this</em>, </td>
@@ -2757,13 +2592,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2775,14 +2610,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac616bc8ddf212228340041f49d462acb" name="ac616bc8ddf212228340041f49d462acb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac616bc8ddf212228340041f49d462acb">&#9670;&#160;</a></span>func_80332D2C()</h2>
+<a id="aacd6866d82126268924def2eb82f72ef" name="aacd6866d82126268924def2eb82f72ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacd6866d82126268924def2eb82f72ef">&#9670;&#160;</a></span>func_80332D2C()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void func_80332D2C </td>
+          <td class="memname">void func_80332D2C </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>_this</em>, </td>
@@ -2791,13 +2626,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2809,14 +2644,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a81994f6b499bed92248006e0490d80c3" name="a81994f6b499bed92248006e0490d80c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81994f6b499bed92248006e0490d80c3">&#9670;&#160;</a></span>func_80332D44()</h2>
+<a id="a9df4d91a9afd9511d0a5628c16540b79" name="a9df4d91a9afd9511d0a5628c16540b79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9df4d91a9afd9511d0a5628c16540b79">&#9670;&#160;</a></span>func_80332D44()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void func_80332D44 </td>
+          <td class="memname">void func_80332D44 </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>_this</em>, </td>
@@ -2825,13 +2660,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2843,14 +2678,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae42d6bb6d2e43c66a758d225a2b38012" name="ae42d6bb6d2e43c66a758d225a2b38012"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae42d6bb6d2e43c66a758d225a2b38012">&#9670;&#160;</a></span>func_80332D5C()</h2>
+<a id="a54a51896becca239acde95bc7d55ba5d" name="a54a51896becca239acde95bc7d55ba5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54a51896becca239acde95bc7d55ba5d">&#9670;&#160;</a></span>func_80332D5C()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void func_80332D5C </td>
+          <td class="memname">void func_80332D5C </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>_this</em>, </td>
@@ -2859,13 +2694,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2877,14 +2712,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a1514d1a363aeadbd742976732cf8cf78" name="a1514d1a363aeadbd742976732cf8cf78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1514d1a363aeadbd742976732cf8cf78">&#9670;&#160;</a></span>func_80332D74()</h2>
+<a id="aedefd3cc60a02ea5e414066084ae7832" name="aedefd3cc60a02ea5e414066084ae7832"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedefd3cc60a02ea5e414066084ae7832">&#9670;&#160;</a></span>func_80332D74()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void func_80332D74 </td>
+          <td class="memname">void func_80332D74 </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>_this</em>, </td>
@@ -2893,13 +2728,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2911,14 +2746,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a7f6f6b9b51a5b0874688284c9e42b18a" name="a7f6f6b9b51a5b0874688284c9e42b18a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f6f6b9b51a5b0874688284c9e42b18a">&#9670;&#160;</a></span>func_80332D8C()</h2>
+<a id="ac88f5cbfbe2bc663dbcdfe77a7eb6c53" name="ac88f5cbfbe2bc663dbcdfe77a7eb6c53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac88f5cbfbe2bc663dbcdfe77a7eb6c53">&#9670;&#160;</a></span>func_80332D8C()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">asm void func_80332D8C </td>
+          <td class="memname">void func_80332D8C </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>_this</em>, </td>
@@ -2927,13 +2762,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void const *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3455,14 +3290,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="add6a85987153420dc7cff60888285046" name="add6a85987153420dc7cff60888285046"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add6a85987153420dc7cff60888285046">&#9670;&#160;</a></span>getType__14J3DPEBlockNullFv()</h2>
+<a id="a77056cb839e446d24705ef6ad7e9dfae" name="a77056cb839e446d24705ef6ad7e9dfae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77056cb839e446d24705ef6ad7e9dfae">&#9670;&#160;</a></span>getType__14J3DPEBlockNullFv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void getType__14J3DPEBlockNullFv </td>
+          <td class="memname">asm void getType__14J3DPEBlockNullFv </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -3472,14 +3307,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a54f596516b71ae1828017b659745753b" name="a54f596516b71ae1828017b659745753b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54f596516b71ae1828017b659745753b">&#9670;&#160;</a></span>getType__15J3DTevBlockNullFv()</h2>
+<a id="adf4379800b1501b50bf23c894a1e5cb3" name="adf4379800b1501b50bf23c894a1e5cb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf4379800b1501b50bf23c894a1e5cb3">&#9670;&#160;</a></span>getType__15J3DTevBlockNullFv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void getType__15J3DTevBlockNullFv </td>
+          <td class="memname">asm void getType__15J3DTevBlockNullFv </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -3489,14 +3324,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a997423a7ba03d166100169c12361edcf" name="a997423a7ba03d166100169c12361edcf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a997423a7ba03d166100169c12361edcf">&#9670;&#160;</a></span>getType__17J3DColorBlockNullFv()</h2>
+<a id="ad70e9bb8d5051c52752e35d452a43479" name="ad70e9bb8d5051c52752e35d452a43479"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad70e9bb8d5051c52752e35d452a43479">&#9670;&#160;</a></span>getType__17J3DColorBlockNullFv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void getType__17J3DColorBlockNullFv </td>
+          <td class="memname">asm void getType__17J3DColorBlockNullFv </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -3506,14 +3341,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a858818906e9c5723405b19d375850ada" name="a858818906e9c5723405b19d375850ada"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a858818906e9c5723405b19d375850ada">&#9670;&#160;</a></span>getType__18J3DTexGenBlockNullFv()</h2>
+<a id="a56feb39ad930f50ea5759950fa047dbc" name="a56feb39ad930f50ea5759950fa047dbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56feb39ad930f50ea5759950fa047dbc">&#9670;&#160;</a></span>getType__18J3DTexGenBlockNullFv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void getType__18J3DTexGenBlockNullFv </td>
+          <td class="memname">asm void getType__18J3DTexGenBlockNullFv </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -3557,14 +3392,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a93d5a4ee5615d6c3f4d30c93191e73a0" name="a93d5a4ee5615d6c3f4d30c93191e73a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93d5a4ee5615d6c3f4d30c93191e73a0">&#9670;&#160;</a></span>indexToPtr__15J3DTevBlockNullFv()</h2>
+<a id="a8c5c7c9ba0c0c7b9e22be1c63822a1c0" name="a8c5c7c9ba0c0c7b9e22be1c63822a1c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c5c7c9ba0c0c7b9e22be1c63822a1c0">&#9670;&#160;</a></span>indexToPtr__15J3DTevBlockNullFv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void indexToPtr__15J3DTevBlockNullFv </td>
+          <td class="memname">asm void indexToPtr__15J3DTevBlockNullFv </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -5781,7 +5616,7 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="J3DMaterialFactory_8cpp.html#a25b9b7ab6f22dd0e9dfc1fa57da7f8d6">diffTexMtx__18J3DTexGenBlockNullFv</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="J3DMaterialFactory_8cpp.html#a3e51f1100e2a89126106ebd4e1ec762e">diffTexGen__18J3DTexGenBlockNullFv</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="J3DMaterialFactory_8cpp.html#a38d27495ab43ba031834f8af32e9f0a9">countDLSize__14J3DTexGenBlockFv</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="J3DMaterialFactory_8cpp.html#a858818906e9c5723405b19d375850ada">getType__18J3DTexGenBlockNullFv</a>,</div>
+<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="J3DMaterialFactory_8cpp.html#a56feb39ad930f50ea5759950fa047dbc">getType__18J3DTexGenBlockNullFv</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="J3DMaterialFactory_8cpp.html#aa910ed491042dbebdae3e574b21a628f">setTexGenNum__14J3DTexGenBlockFPCUl</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="J3DMaterialFactory_8cpp.html#a159acfeb332135622d351014f5ad639a">setTexGenNum__14J3DTexGenBlockFUl</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="J3DMaterialFactory_8cpp.html#aef745f7527c53a39abde6d4c6b22fbf9">getTexGenNum__14J3DTexGenBlockCFv</a>,</div>
@@ -5794,34 +5629,34 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="J3DMaterialFactory_8cpp.html#ab090d728b70532dd3d940121e254c647">getNBTScale__14J3DTexGenBlockFv</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="J3DMaterialFactory_8cpp.html#ade74b3daf180ea65ad8eee699a57f6eb">getTexMtxOffset__14J3DTexGenBlockCFv</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="J3DMaterialFactory_8cpp.html#a1af208926d6d848a9e87a81534e4659a">setTexMtxOffset__14J3DTexGenBlockFUl</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="J3DMaterialFactory_8cpp.html#afdd337c3d5dbd53b9e22c2c2a01e0bf9">__dt__18J3DTexGenBlockNullFv</a>,</div>
+<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="J3DMaterialFactory_8cpp.html#a7f23cf1d616eef6afe1040f9ed357507">__dt__18J3DTexGenBlockNullFv</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aJ3DMaterialFactory_8cpp_html_a003a2d33021ca1ebb1228ec41731b795"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#a003a2d33021ca1ebb1228ec41731b795">patch__18J3DTexGenBlockNullFv</a></div><div class="ttdeci">void patch__18J3DTexGenBlockNullFv()</div></div>
-<div class="ttc" id="aJ3DMaterialFactory_8cpp_html_a067f1e2c6c16a7612a442aee2109f2a0"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#a067f1e2c6c16a7612a442aee2109f2a0">reset__14J3DTexGenBlockFP14J3DTexGenBlock</a></div><div class="ttdeci">void reset__14J3DTexGenBlockFP14J3DTexGenBlock()</div><div class="ttdef"><b>Definition:</b> J3DMaterial.cpp:1093</div></div>
+<div class="ttc" id="aJ3DMaterialFactory_8cpp_html_a003a2d33021ca1ebb1228ec41731b795"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#a003a2d33021ca1ebb1228ec41731b795">patch__18J3DTexGenBlockNullFv</a></div><div class="ttdeci">void patch__18J3DTexGenBlockNullFv()</div><div class="ttdef"><b>Definition:</b> J3DMaterialFactory.cpp:1389</div></div>
+<div class="ttc" id="aJ3DMaterialFactory_8cpp_html_a067f1e2c6c16a7612a442aee2109f2a0"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#a067f1e2c6c16a7612a442aee2109f2a0">reset__14J3DTexGenBlockFP14J3DTexGenBlock</a></div><div class="ttdeci">void reset__14J3DTexGenBlockFP14J3DTexGenBlock()</div><div class="ttdef"><b>Definition:</b> J3DMaterial.cpp:1097</div></div>
 <div class="ttc" id="aJ3DMaterialFactory_8cpp_html_a159acfeb332135622d351014f5ad639a"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#a159acfeb332135622d351014f5ad639a">setTexGenNum__14J3DTexGenBlockFUl</a></div><div class="ttdeci">void setTexGenNum__14J3DTexGenBlockFUl()</div></div>
 <div class="ttc" id="aJ3DMaterialFactory_8cpp_html_a16b820672d2223a9561a3c58ffaa1f44"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#a16b820672d2223a9561a3c58ffaa1f44">setNBTScale__14J3DTexGenBlockF11J3DNBTScale</a></div><div class="ttdeci">void setNBTScale__14J3DTexGenBlockF11J3DNBTScale()</div></div>
 <div class="ttc" id="aJ3DMaterialFactory_8cpp_html_a1af208926d6d848a9e87a81534e4659a"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#a1af208926d6d848a9e87a81534e4659a">setTexMtxOffset__14J3DTexGenBlockFUl</a></div><div class="ttdeci">void setTexMtxOffset__14J3DTexGenBlockFUl()</div></div>
-<div class="ttc" id="aJ3DMaterialFactory_8cpp_html_a25b9b7ab6f22dd0e9dfc1fa57da7f8d6"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#a25b9b7ab6f22dd0e9dfc1fa57da7f8d6">diffTexMtx__18J3DTexGenBlockNullFv</a></div><div class="ttdeci">void diffTexMtx__18J3DTexGenBlockNullFv()</div></div>
+<div class="ttc" id="aJ3DMaterialFactory_8cpp_html_a25b9b7ab6f22dd0e9dfc1fa57da7f8d6"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#a25b9b7ab6f22dd0e9dfc1fa57da7f8d6">diffTexMtx__18J3DTexGenBlockNullFv</a></div><div class="ttdeci">void diffTexMtx__18J3DTexGenBlockNullFv()</div><div class="ttdef"><b>Definition:</b> J3DMaterialFactory.cpp:1402</div></div>
 <div class="ttc" id="aJ3DMaterialFactory_8cpp_html_a38d27495ab43ba031834f8af32e9f0a9"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#a38d27495ab43ba031834f8af32e9f0a9">countDLSize__14J3DTexGenBlockFv</a></div><div class="ttdeci">bool countDLSize__14J3DTexGenBlockFv()</div></div>
-<div class="ttc" id="aJ3DMaterialFactory_8cpp_html_a3e51f1100e2a89126106ebd4e1ec762e"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#a3e51f1100e2a89126106ebd4e1ec762e">diffTexGen__18J3DTexGenBlockNullFv</a></div><div class="ttdeci">void diffTexGen__18J3DTexGenBlockNullFv()</div></div>
+<div class="ttc" id="aJ3DMaterialFactory_8cpp_html_a3e51f1100e2a89126106ebd4e1ec762e"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#a3e51f1100e2a89126106ebd4e1ec762e">diffTexGen__18J3DTexGenBlockNullFv</a></div><div class="ttdeci">void diffTexGen__18J3DTexGenBlockNullFv()</div><div class="ttdef"><b>Definition:</b> J3DMaterialFactory.cpp:1409</div></div>
+<div class="ttc" id="aJ3DMaterialFactory_8cpp_html_a56feb39ad930f50ea5759950fa047dbc"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#a56feb39ad930f50ea5759950fa047dbc">getType__18J3DTexGenBlockNullFv</a></div><div class="ttdeci">void getType__18J3DTexGenBlockNullFv()</div><div class="ttdef"><b>Definition:</b> J3DMaterialFactory.cpp:1418</div></div>
 <div class="ttc" id="aJ3DMaterialFactory_8cpp_html_a57a4f976f8eeb1afd3f378eb15167c6b"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#a57a4f976f8eeb1afd3f378eb15167c6b">getTexCoord__14J3DTexGenBlockFUl</a></div><div class="ttdeci">bool getTexCoord__14J3DTexGenBlockFUl()</div></div>
 <div class="ttc" id="aJ3DMaterialFactory_8cpp_html_a589537e25c6cfecb446bca749474d27c"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#a589537e25c6cfecb446bca749474d27c">setTexMtx__14J3DTexGenBlockFUlP9J3DTexMtx</a></div><div class="ttdeci">void setTexMtx__14J3DTexGenBlockFUlP9J3DTexMtx()</div></div>
 <div class="ttc" id="aJ3DMaterialFactory_8cpp_html_a66c409ed2468cc2fa4e25827b9e4f751"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#a66c409ed2468cc2fa4e25827b9e4f751">setTexCoord__14J3DTexGenBlockFUlPC11J3DTexCoord</a></div><div class="ttdeci">void setTexCoord__14J3DTexGenBlockFUlPC11J3DTexCoord()</div></div>
-<div class="ttc" id="aJ3DMaterialFactory_8cpp_html_a67e151f7f5fafd0c7f63ef8354603dee"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#a67e151f7f5fafd0c7f63ef8354603dee">load__18J3DTexGenBlockNullFv</a></div><div class="ttdeci">void load__18J3DTexGenBlockNullFv()</div></div>
-<div class="ttc" id="aJ3DMaterialFactory_8cpp_html_a858818906e9c5723405b19d375850ada"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#a858818906e9c5723405b19d375850ada">getType__18J3DTexGenBlockNullFv</a></div><div class="ttdeci">void getType__18J3DTexGenBlockNullFv()</div></div>
-<div class="ttc" id="aJ3DMaterialFactory_8cpp_html_a8e32e6263c91f7e5fa86422383ff6e93"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#a8e32e6263c91f7e5fa86422383ff6e93">calcPostTexMtxWithoutViewMtx__18J3DTexGenBlockNullFPA4_Cf</a></div><div class="ttdeci">void calcPostTexMtxWithoutViewMtx__18J3DTexGenBlockNullFPA4_Cf()</div></div>
+<div class="ttc" id="aJ3DMaterialFactory_8cpp_html_a67e151f7f5fafd0c7f63ef8354603dee"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#a67e151f7f5fafd0c7f63ef8354603dee">load__18J3DTexGenBlockNullFv</a></div><div class="ttdeci">void load__18J3DTexGenBlockNullFv()</div><div class="ttdef"><b>Definition:</b> J3DMaterialFactory.cpp:1383</div></div>
+<div class="ttc" id="aJ3DMaterialFactory_8cpp_html_a7f23cf1d616eef6afe1040f9ed357507"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#a7f23cf1d616eef6afe1040f9ed357507">__dt__18J3DTexGenBlockNullFv</a></div><div class="ttdeci">void __dt__18J3DTexGenBlockNullFv()</div><div class="ttdef"><b>Definition:</b> J3DMaterialFactory.cpp:1429</div></div>
+<div class="ttc" id="aJ3DMaterialFactory_8cpp_html_a8e32e6263c91f7e5fa86422383ff6e93"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#a8e32e6263c91f7e5fa86422383ff6e93">calcPostTexMtxWithoutViewMtx__18J3DTexGenBlockNullFPA4_Cf</a></div><div class="ttdeci">void calcPostTexMtxWithoutViewMtx__18J3DTexGenBlockNullFPA4_Cf()</div><div class="ttdef"><b>Definition:</b> J3DMaterialFactory.cpp:1377</div></div>
 <div class="ttc" id="aJ3DMaterialFactory_8cpp_html_aa910ed491042dbebdae3e574b21a628f"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#aa910ed491042dbebdae3e574b21a628f">setTexGenNum__14J3DTexGenBlockFPCUl</a></div><div class="ttdeci">void setTexGenNum__14J3DTexGenBlockFPCUl()</div></div>
 <div class="ttc" id="aJ3DMaterialFactory_8cpp_html_ab090d728b70532dd3d940121e254c647"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#ab090d728b70532dd3d940121e254c647">getNBTScale__14J3DTexGenBlockFv</a></div><div class="ttdeci">bool getNBTScale__14J3DTexGenBlockFv()</div></div>
 <div class="ttc" id="aJ3DMaterialFactory_8cpp_html_ab421c76281ae40cb915b56cf3e60efbe"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#ab421c76281ae40cb915b56cf3e60efbe">getTexMtx__14J3DTexGenBlockFUl</a></div><div class="ttdeci">bool getTexMtx__14J3DTexGenBlockFUl()</div></div>
-<div class="ttc" id="aJ3DMaterialFactory_8cpp_html_abe58000e90ca04e4abcb4e3b15d5036a"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#abe58000e90ca04e4abcb4e3b15d5036a">calc__18J3DTexGenBlockNullFPA4_Cf</a></div><div class="ttdeci">void calc__18J3DTexGenBlockNullFPA4_Cf()</div></div>
-<div class="ttc" id="aJ3DMaterialFactory_8cpp_html_ac7fda3d10cf210340532dda291ce967f"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#ac7fda3d10cf210340532dda291ce967f">calcPostTexMtx__18J3DTexGenBlockNullFPA4_Cf</a></div><div class="ttdeci">void calcPostTexMtx__18J3DTexGenBlockNullFPA4_Cf()</div></div>
-<div class="ttc" id="aJ3DMaterialFactory_8cpp_html_ad66041b96b6b66fe54667207be1dec6a"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#ad66041b96b6b66fe54667207be1dec6a">diff__18J3DTexGenBlockNullFUl</a></div><div class="ttdeci">void diff__18J3DTexGenBlockNullFUl()</div></div>
+<div class="ttc" id="aJ3DMaterialFactory_8cpp_html_abe58000e90ca04e4abcb4e3b15d5036a"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#abe58000e90ca04e4abcb4e3b15d5036a">calc__18J3DTexGenBlockNullFPA4_Cf</a></div><div class="ttdeci">void calc__18J3DTexGenBlockNullFPA4_Cf()</div><div class="ttdef"><b>Definition:</b> J3DMaterialFactory.cpp:1356</div></div>
+<div class="ttc" id="aJ3DMaterialFactory_8cpp_html_ac7fda3d10cf210340532dda291ce967f"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#ac7fda3d10cf210340532dda291ce967f">calcPostTexMtx__18J3DTexGenBlockNullFPA4_Cf</a></div><div class="ttdeci">void calcPostTexMtx__18J3DTexGenBlockNullFPA4_Cf()</div><div class="ttdef"><b>Definition:</b> J3DMaterialFactory.cpp:1370</div></div>
+<div class="ttc" id="aJ3DMaterialFactory_8cpp_html_ad66041b96b6b66fe54667207be1dec6a"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#ad66041b96b6b66fe54667207be1dec6a">diff__18J3DTexGenBlockNullFUl</a></div><div class="ttdeci">void diff__18J3DTexGenBlockNullFUl()</div><div class="ttdef"><b>Definition:</b> J3DMaterialFactory.cpp:1395</div></div>
 <div class="ttc" id="aJ3DMaterialFactory_8cpp_html_ade74b3daf180ea65ad8eee699a57f6eb"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#ade74b3daf180ea65ad8eee699a57f6eb">getTexMtxOffset__14J3DTexGenBlockCFv</a></div><div class="ttdeci">bool getTexMtxOffset__14J3DTexGenBlockCFv()</div></div>
-<div class="ttc" id="aJ3DMaterialFactory_8cpp_html_ae296e25fdf22b821f3df6c6a51350e87"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#ae296e25fdf22b821f3df6c6a51350e87">calcWithoutViewMtx__18J3DTexGenBlockNullFPA4_Cf</a></div><div class="ttdeci">void calcWithoutViewMtx__18J3DTexGenBlockNullFPA4_Cf()</div></div>
+<div class="ttc" id="aJ3DMaterialFactory_8cpp_html_ae296e25fdf22b821f3df6c6a51350e87"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#ae296e25fdf22b821f3df6c6a51350e87">calcWithoutViewMtx__18J3DTexGenBlockNullFPA4_Cf</a></div><div class="ttdeci">void calcWithoutViewMtx__18J3DTexGenBlockNullFPA4_Cf()</div><div class="ttdef"><b>Definition:</b> J3DMaterialFactory.cpp:1363</div></div>
 <div class="ttc" id="aJ3DMaterialFactory_8cpp_html_aef745f7527c53a39abde6d4c6b22fbf9"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#aef745f7527c53a39abde6d4c6b22fbf9">getTexGenNum__14J3DTexGenBlockCFv</a></div><div class="ttdeci">bool getTexGenNum__14J3DTexGenBlockCFv()</div></div>
 <div class="ttc" id="aJ3DMaterialFactory_8cpp_html_af520b8b53aff37c4e9d15ea65d3c4f56"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#af520b8b53aff37c4e9d15ea65d3c4f56">setNBTScale__14J3DTexGenBlockFPC11J3DNBTScale</a></div><div class="ttdeci">void setNBTScale__14J3DTexGenBlockFPC11J3DNBTScale()</div></div>
-<div class="ttc" id="aJ3DMaterialFactory_8cpp_html_afdd337c3d5dbd53b9e22c2c2a01e0bf9"><div class="ttname"><a href="J3DMaterialFactory_8cpp.html#afdd337c3d5dbd53b9e22c2c2a01e0bf9">__dt__18J3DTexGenBlockNullFv</a></div><div class="ttdeci">void __dt__18J3DTexGenBlockNullFv()</div></div>
-<div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:17</div></div>
+<div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:19</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -5847,8 +5682,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aee210b6bcb27b03ff7bef44752e060f8" name="aee210b6bcb27b03ff7bef44752e060f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee210b6bcb27b03ff7bef44752e060f8">&#9670;&#160;</a></span>data_80456BBC</h2>
+<a id="a4e6c50a9e5b3ccb10a444dbbae09b187" name="a4e6c50a9e5b3ccb10a444dbbae09b187"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e6c50a9e5b3ccb10a444dbbae09b187">&#9670;&#160;</a></span>defaultTevColor</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5857,276 +5692,12 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a4f4769b6050d0b45c649c757062be78d">SECTION_SBSS2</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> data_80456BBC[4]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a4f4769b6050d0b45c649c757062be78d">SECTION_SBSS2</a> <a class="el" href="GXStruct_8h.html#a6e884c434a48c87e5eb4fa7e60bd897b">GXColorS10</a> defaultTevColor</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab6b580e21832acbd4b4feb75e152aa36" name="ab6b580e21832acbd4b4feb75e152aa36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6b580e21832acbd4b4feb75e152aa36">&#9670;&#160;</a></span>j3dDefaultBlendInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> j3dDefaultBlendInfo</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acf5012f1ec51bd0405418214d8211e6e" name="acf5012f1ec51bd0405418214d8211e6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf5012f1ec51bd0405418214d8211e6e">&#9670;&#160;</a></span>j3dDefaultColorChanInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> j3dDefaultColorChanInfo[8]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="add9dd5d16dfaad85c999014d6108e324" name="add9dd5d16dfaad85c999014d6108e324"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add9dd5d16dfaad85c999014d6108e324">&#9670;&#160;</a></span>j3dDefaultFogInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const j3dDefaultFogInfo[44]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a312da160fb0f4c3bd2afdaf4a8b3e749" name="a312da160fb0f4c3bd2afdaf4a8b3e749"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a312da160fb0f4c3bd2afdaf4a8b3e749">&#9670;&#160;</a></span>j3dDefaultIndTevStageInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const j3dDefaultIndTevStageInfo[12]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9dbaa20cce55190fdc05d6ee145e4eda" name="a9dbaa20cce55190fdc05d6ee145e4eda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9dbaa20cce55190fdc05d6ee145e4eda">&#9670;&#160;</a></span>j3dDefaultIndTexCoordScaleInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> j3dDefaultIndTexCoordScaleInfo[4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4ce17bc8518c5456909ec762c2f48013" name="a4ce17bc8518c5456909ec762c2f48013"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ce17bc8518c5456909ec762c2f48013">&#9670;&#160;</a></span>j3dDefaultIndTexMtxInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const j3dDefaultIndTexMtxInfo[28]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac57d69c1e9a1d136d0046d2c95a3f55c" name="ac57d69c1e9a1d136d0046d2c95a3f55c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac57d69c1e9a1d136d0046d2c95a3f55c">&#9670;&#160;</a></span>j3dDefaultIndTexOrderNull</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> j3dDefaultIndTexOrderNull</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a310e23cc3dd43da5e07db187586d106e" name="a310e23cc3dd43da5e07db187586d106e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a310e23cc3dd43da5e07db187586d106e">&#9670;&#160;</a></span>j3dDefaultNBTScaleInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const j3dDefaultNBTScaleInfo[16]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abe21793badf45174c77eb5f1dc2028fc" name="abe21793badf45174c77eb5f1dc2028fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe21793badf45174c77eb5f1dc2028fc">&#9670;&#160;</a></span>j3dDefaultTevOrderInfoNull</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> j3dDefaultTevOrderInfoNull</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a60288704152075f879e5ab26dccb1a0c" name="a60288704152075f879e5ab26dccb1a0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60288704152075f879e5ab26dccb1a0c">&#9670;&#160;</a></span>j3dDefaultTevSwapModeTable</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> j3dDefaultTevSwapModeTable</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9b892a3c1987a9d057308966c04185a0" name="a9b892a3c1987a9d057308966c04185a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b892a3c1987a9d057308966c04185a0">&#9670;&#160;</a></span>j3dDefaultTexCoordInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> const j3dDefaultTexCoordInfo[32]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a80161eae380e059dd8865c590a993f59" name="a80161eae380e059dd8865c590a993f59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80161eae380e059dd8865c590a993f59">&#9670;&#160;</a></span>j3dDefaultZModeID</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> j3dDefaultZModeID[1+1]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -6166,28 +5737,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a> lit_1798 = 0x32323232</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a69aec0867aa6f479e5d097fcb0d594b8" name="a69aec0867aa6f479e5d097fcb0d594b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69aec0867aa6f479e5d097fcb0d594b8">&#9670;&#160;</a></span>lit_1897</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a4f4769b6050d0b45c649c757062be78d">SECTION_SBSS2</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> lit_1897[4]</td>
         </tr>
       </table>
   </td>

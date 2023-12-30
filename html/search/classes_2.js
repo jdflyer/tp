@@ -14,9 +14,13 @@ var searchData=
   ['bitset_3c_20a0_20_3e_11',['bitset&lt; A0 &gt;',['../classstd_1_1bitset.html',1,'std']]],
   ['blend_12',['Blend',['../structJ2DGrafContext_1_1Blend.html',1,'J2DGrafContext']]],
   ['blinkanime_13',['BlinkAnime',['../structdMeter__fmapHIO__c_1_1BlinkAnime.html',1,'dMeter_fmapHIO_c']]],
-  ['blockheader_14',['BlockHeader',['../structBlockHeader.html',1,'']]],
-  ['bloom_5fc_15',['bloom_c',['../classmDoGph__gInf__c_1_1bloom__c.html',1,'mDoGph_gInf_c']]],
-  ['boss_5flight_16',['BOSS_LIGHT',['../structBOSS__LIGHT.html',1,'']]],
-  ['btkgetparam_17',['btkGetParam',['../structbtkGetParam.html',1,'']]],
-  ['btpgetparam_18',['btpGetParam',['../structbtpGetParam.html',1,'']]]
+  ['block_14',['Block',['../structBlock.html',1,'']]],
+  ['block_5fheader_15',['block_header',['../structblock__header.html',1,'']]],
+  ['blockheader_16',['BlockHeader',['../structBlockHeader.html',1,'']]],
+  ['bloom_5fc_17',['bloom_c',['../classmDoGph__gInf__c_1_1bloom__c.html',1,'mDoGph_gInf_c']]],
+  ['bmg_5fheader_5ft_18',['bmg_header_t',['../structbmg__header__t.html',1,'']]],
+  ['bmg_5fsection_5ft_19',['bmg_section_t',['../structbmg__section__t.html',1,'']]],
+  ['boss_5flight_20',['BOSS_LIGHT',['../structBOSS__LIGHT.html',1,'']]],
+  ['btkgetparam_21',['btkGetParam',['../structbtkGetParam.html',1,'']]],
+  ['btpgetparam_22',['btpGetParam',['../structbtpGetParam.html',1,'']]]
 ];

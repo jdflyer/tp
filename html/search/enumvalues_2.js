@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['b_0',['B',['../namespaceCButton.html#aec74d073a2c2a7128f99c0d691ed00e5a23592f049b7da374fe07b8f127cca616',1,'CButton']]],
+  ['b_0',['B',['../namespaceCButton.html#a474f99a65609468ebbee67fb86493cbea23592f049b7da374fe07b8f127cca616',1,'CButton']]],
   ['b_5fbutton_5fitem_1',['B_BUTTON_ITEM',['../d__save_8h.html#a6d317460fab5a02d2a7fc3e2bb396911ae9fa5ce335f49fa0671129c49d574f4c',1,'d_save.h']]],
   ['bee_5fchild_2',['BEE_CHILD',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a274b5373eaa448016e5ecb35488c58cd',1,'d_save.h']]],
   ['bee_5frod_3',['BEE_ROD',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a8d55f4fffecceec921ab40d7cefc8765',1,'d_save.h']]],
@@ -24,7 +24,7 @@ var searchData=
   ['bomb_5finsect_5f30_21',['BOMB_INSECT_30',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a1dc6b95b2985405275a1f82002eb32e4',1,'d_save.h']]],
   ['bomb_5finsect_5f5_22',['BOMB_INSECT_5',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a9ff2c4f565b45abc39a00efebbc854ad',1,'d_save.h']]],
   ['boomerang_23',['BOOMERANG',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a41c1c7c62e57d94a3e8bb4a76a274be7',1,'d_save.h']]],
-  ['boss_5fkey_24',['BOSS_KEY',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2ae5177c3ab4817d6c99577974c512d3cd',1,'BOSS_KEY():&#160;d_save.h'],['../structdSv__memBit__c.html#a1a8dd98611991bae9bf1038e8c55eabbaddc140ece9a60e605fcdd9344585ae22',1,'dSv_memBit_c::BOSS_KEY()']]],
+  ['boss_5fkey_24',['BOSS_KEY',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2ae5177c3ab4817d6c99577974c512d3cd',1,'BOSS_KEY():&#160;d_save.h'],['../structdSv__memBit__c.html#a8dbedc6510468be971f7c7c8708440c7addc140ece9a60e605fcdd9344585ae22',1,'dSv_memBit_c::BOSS_KEY()']]],
   ['bossrider_5fkey_25',['BOSSRIDER_KEY',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a3e139d96c259ac549389e2fabcb92895',1,'d_save.h']]],
   ['bow_26',['BOW',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2ae5557626412a6fc8cd1120c5187203a0',1,'d_save.h']]],
   ['breakpointevent_27',['BreakpointEvent',['../nubevent_8h.html#a377fbf6a54d6c3797c7e8b7d13f64127a4ee3e07237719bfe31d25196e2ee2039',1,'nubevent.h']]],

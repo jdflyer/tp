@@ -88,13 +88,16 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="d__msg__class_8h_source.html">d/msg/d_msg_class.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="stdio_8h_source.html">MSL_C/stdio.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stdio_8h_source.html">stdio.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__meter2__info_8h_source.html">d/meter/d_meter2_info.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__msg__object_8h_source.html">d/msg/d_msg_object.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__msg__unit_8h_source.html">d/msg/d_msg_unit.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OS_8h_source.html">dolphin/os/OS.h</a>&quot;</code><br />
-<code>#include &quot;asm/d/msg/d_msg_class/changeCodeToChar__FUs.s&quot;</code><br />
+<code>#include &quot;<a class="el" href="J2DTextBox_8h_source.html">JSystem/J2DGraph/J2DTextBox.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JUTFont_8h_source.html">JSystem/JUtility/JUTFont.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__msg__out__font_8h_source.html">d/msg/d_msg_out_font.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="m__Do__graphic_8h_source.html">m_Do/m_Do_graphic.h</a>&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/change1ByteTo2Bytes__Fi.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/__ct__19jmessage_tReferenceFv.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/__dt__19jmessage_tReferenceFv.s&quot;</code><br />
@@ -108,9 +111,7 @@ $(function() {
 <code>#include &quot;asm/d/msg/d_msg_class/do_tag__26jmessage_tMeasureProcessorFUlPCvUl.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/do_scale__26jmessage_tMeasureProcessorFf.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/do_space__26jmessage_tMeasureProcessorFUl.s&quot;</code><br />
-<code>#include &quot;asm/d/msg/d_msg_class/do_pageType__26jmessage_tMeasureProcessorFi.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/do_rubyset__26jmessage_tMeasureProcessorFPCvUl.s&quot;</code><br />
-<code>#include &quot;asm/d/msg/d_msg_class/push_word__26jmessage_tMeasureProcessorFPc.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/__ct__27jmessage_tSequenceProcessorFPC19jmessage_tReferenceP17jmessage_tControl.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/__dt__26jmessage_tMeasureProcessorFv.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/do_begin__27jmessage_tSequenceProcessorFPCvPCc.s&quot;</code><br />
@@ -119,7 +120,6 @@ $(function() {
 <code>#include &quot;asm/d/msg/d_msg_class/do_character__27jmessage_tSequenceProcessorFi.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/do_space__27jmessage_tSequenceProcessorFUl.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/do_rubyset__27jmessage_tSequenceProcessorFPCvUl.s&quot;</code><br />
-<code>#include &quot;asm/d/msg/d_msg_class/push_word__27jmessage_tSequenceProcessorFv.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/messageSePlay__27jmessage_tSequenceProcessorFUcUcP4cXyz.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/calcStringLength__27jmessage_tSequenceProcessorFv.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/__ct__28jmessage_tRenderingProcessorFPC19jmessage_tReference.s&quot;</code><br />
@@ -132,55 +132,31 @@ $(function() {
 <code>#include &quot;asm/d/msg/d_msg_class/do_selwidthcenter__28jmessage_tRenderingProcessorFi.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/do_heightcenter__28jmessage_tRenderingProcessorFv.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/do_scale__28jmessage_tRenderingProcessorFf.s&quot;</code><br />
-<code>#include &quot;asm/d/msg/d_msg_class/do_linedown__28jmessage_tRenderingProcessorFs.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/do_transY__28jmessage_tRenderingProcessorFsb.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/do_outfont__28jmessage_tRenderingProcessorFUcUl.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/do_arrow2__28jmessage_tRenderingProcessorFv.s&quot;</code><br />
-<code>#include &quot;asm/d/msg/d_msg_class/getLineLength__28jmessage_tRenderingProcessorFi.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/do_strcat__28jmessage_tRenderingProcessorFPcbbb.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/do_rubyset__28jmessage_tRenderingProcessorFPCvUl.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/do_rubystrcat__28jmessage_tRenderingProcessorFPcPcff.s&quot;</code><br />
-<code>#include &quot;asm/d/msg/d_msg_class/do_numset__28jmessage_tRenderingProcessorFs.s&quot;</code><br />
-<code>#include &quot;asm/d/msg/d_msg_class/push_word__28jmessage_tRenderingProcessorFv.s&quot;</code><br />
-<code>#include &quot;asm/d/msg/d_msg_class/getCharInfo__28jmessage_tRenderingProcessorFfffff.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/__ct__26jmessage_string_tReferenceFv.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/__dt__26jmessage_string_tReferenceFv.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/init__26jmessage_string_tReferenceFP10J2DTextBoxP10J2DTextBoxP7JUTFontP10COutFont_cUc.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/getLineLength__26jmessage_string_tReferenceFi.s&quot;</code><br />
-<code>#include &quot;asm/d/msg/d_msg_class/addLineLength__26jmessage_string_tReferenceFif.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/getOutfontLength__26jmessage_string_tReferenceFi.s&quot;</code><br />
-<code>#include &quot;asm/d/msg/d_msg_class/setOutfontLength__26jmessage_string_tReferenceFif.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/clearOutfontLength__26jmessage_string_tReferenceFi.s&quot;</code><br />
-<code>#include &quot;asm/d/msg/d_msg_class/getLineCountNowPage__26jmessage_string_tReferenceFv.s&quot;</code><br />
-<code>#include &quot;asm/d/msg/d_msg_class/__ct__24jmessage_string_tControlFv.s&quot;</code><br />
-<code>#include &quot;asm/d/msg/d_msg_class/__ct__33jmessage_string_tMeasureProcessorFPC26jmessage_string_tReference.s&quot;</code><br />
-<code>#include &quot;asm/d/msg/d_msg_class/do_begin__33jmessage_string_tMeasureProcessorFPCvPCc.s&quot;</code><br />
-<code>#include &quot;asm/d/msg/d_msg_class/do_end__33jmessage_string_tMeasureProcessorFv.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/do_character__33jmessage_string_tMeasureProcessorFi.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/do_tag__33jmessage_string_tMeasureProcessorFUlPCvUl.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/do_rubyset__33jmessage_string_tMeasureProcessorFPCvUl.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/func_80230A08.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/__dt__33jmessage_string_tMeasureProcessorFv.s&quot;</code><br />
-<code>#include &quot;asm/d/msg/d_msg_class/do_begin__34jmessage_string_tSequenceProcessorFPCvPCc.s&quot;</code><br />
-<code>#include &quot;asm/d/msg/d_msg_class/do_tag__34jmessage_string_tSequenceProcessorFUlPCvUl.s&quot;</code><br />
-<code>#include &quot;asm/d/msg/d_msg_class/__ct__35jmessage_string_tRenderingProcessorFPC26jmessage_string_tReference.s&quot;</code><br />
-<code>#include &quot;asm/d/msg/d_msg_class/getLineCountNowPage__35jmessage_string_tRenderingProcessorFv.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/do_reset__35jmessage_string_tRenderingProcessorFv.s&quot;</code><br />
-<code>#include &quot;asm/d/msg/d_msg_class/do_begin__35jmessage_string_tRenderingProcessorFPCvPCc.s&quot;</code><br />
-<code>#include &quot;asm/d/msg/d_msg_class/do_end__35jmessage_string_tRenderingProcessorFv.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/do_character__35jmessage_string_tRenderingProcessorFi.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/do_tag__35jmessage_string_tRenderingProcessorFUlPCvUl.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/do_widthcenter__35jmessage_string_tRenderingProcessorFv.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/do_heightcenter__35jmessage_string_tRenderingProcessorFv.s&quot;</code><br />
-<code>#include &quot;asm/d/msg/d_msg_class/do_strcat__35jmessage_string_tRenderingProcessorFPc.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/do_rubyset__35jmessage_string_tRenderingProcessorFPCvUl.s&quot;</code><br />
-<code>#include &quot;asm/d/msg/d_msg_class/do_rubystrcat__35jmessage_string_tRenderingProcessorFPc.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/do_outfont__35jmessage_string_tRenderingProcessorFUc.s&quot;</code><br />
-<code>#include &quot;asm/d/msg/d_msg_class/do_color__35jmessage_string_tRenderingProcessorFUc.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/do_scale__35jmessage_string_tRenderingProcessorFf.s&quot;</code><br />
-<code>#include &quot;asm/d/msg/d_msg_class/do_linedown__35jmessage_string_tRenderingProcessorFs.s&quot;</code><br />
-<code>#include &quot;asm/d/msg/d_msg_class/do_numset__35jmessage_string_tRenderingProcessorFs.s&quot;</code><br />
-<code>#include &quot;asm/d/msg/d_msg_class/push_word__35jmessage_string_tRenderingProcessorFPCc.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/__dt__35jmessage_string_tRenderingProcessorFv.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/__dt__34jmessage_string_tSequenceProcessorFv.s&quot;</code><br />
 <code>#include &quot;asm/d/msg/d_msg_class/__dt__24jmessage_string_tControlFv.s&quot;</code><br />
@@ -658,10 +634,10 @@ Functions</h2></td></tr>
 <tr class="separator:abed5bd59c54272a132a5b4da4beff66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc4f6f551e3a00256fb01e443bac8374"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__msg__class_8cpp.html#adc4f6f551e3a00256fb01e443bac8374">checkCharInfoCharactor</a> (int c)</td></tr>
 <tr class="separator:adc4f6f551e3a00256fb01e443bac8374"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab945f411b75bed97e2a1ed3502aafcfa"><td class="memItemLeft" align="right" valign="top">static asm char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__msg__class_8cpp.html#ab945f411b75bed97e2a1ed3502aafcfa">changeCodeToChar</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> param_0)</td></tr>
-<tr class="separator:ab945f411b75bed97e2a1ed3502aafcfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc988eb5784fad5e7666e233091b970e"><td class="memItemLeft" align="right" valign="top">static asm void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__msg__class_8cpp.html#abc988eb5784fad5e7666e233091b970e">change1ByteTo2Bytes</a> (int param_0)</td></tr>
-<tr class="separator:abc988eb5784fad5e7666e233091b970e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af00680eaab7f10251f502656b3c2bdee"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__msg__class_8cpp.html#af00680eaab7f10251f502656b3c2bdee">changeCodeToChar</a> (<a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> param_0)</td></tr>
+<tr class="separator:af00680eaab7f10251f502656b3c2bdee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a692699e76fa554d003c24cb65499628c"><td class="memItemLeft" align="right" valign="top">static asm <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__msg__class_8cpp.html#a692699e76fa554d003c24cb65499628c">change1ByteTo2Bytes</a> (int param_0)</td></tr>
+<tr class="separator:a692699e76fa554d003c24cb65499628c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad12a445e906e337dc94b10d16b0f7321"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__msg__class_8cpp.html#ad12a445e906e337dc94b10d16b0f7321">changeKataToHira</a> (int param_0)</td></tr>
 <tr class="separator:ad12a445e906e337dc94b10d16b0f7321"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6c548344b2f99c6d2c51ea8e43d4401"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__msg__class_8cpp.html#aa6c548344b2f99c6d2c51ea8e43d4401">isOutfontKanjiCode</a> (int param_0)</td></tr>
@@ -670,8 +646,8 @@ Functions</h2></td></tr>
 <tr class="separator:a5eb19e28d356d028fd04fe29bddc6977"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78ec48bcce26a492a4274fb92e492ab5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__msg__class_8cpp.html#a78ec48bcce26a492a4274fb92e492ab5">getFontGCColorTable</a> (<a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> i_colorNo, <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> i_fukiKind)</td></tr>
 <tr class="separator:a78ec48bcce26a492a4274fb92e492ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ba81ca3a006faa25b215ce0cbfc4311"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__msg__class_8cpp.html#a8ba81ca3a006faa25b215ce0cbfc4311">getOutFontNumberType</a> (int param_0)</td></tr>
-<tr class="separator:a8ba81ca3a006faa25b215ce0cbfc4311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6893e9032043593cc71cafba073d771e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__msg__class_8cpp.html#a6893e9032043593cc71cafba073d771e">getOutFontNumberType</a> (int param_0)</td></tr>
+<tr class="separator:a6893e9032043593cc71cafba073d771e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cf03b3c6020c8ca57489a1da494254a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__msg__class_8cpp.html#a5cf03b3c6020c8ca57489a1da494254a">getPohNum</a> ()</td></tr>
 <tr class="separator:a5cf03b3c6020c8ca57489a1da494254a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -1672,8 +1648,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="abc988eb5784fad5e7666e233091b970e" name="abc988eb5784fad5e7666e233091b970e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc988eb5784fad5e7666e233091b970e">&#9670;&#160;</a></span>change1ByteTo2Bytes()</h2>
+<a id="a692699e76fa554d003c24cb65499628c" name="a692699e76fa554d003c24cb65499628c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a692699e76fa554d003c24cb65499628c">&#9670;&#160;</a></span>change1ByteTo2Bytes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1682,7 +1658,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm void change1ByteTo2Bytes </td>
+          <td class="memname">static asm <a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a> change1ByteTo2Bytes </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -1723,8 +1699,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ab945f411b75bed97e2a1ed3502aafcfa" name="ab945f411b75bed97e2a1ed3502aafcfa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab945f411b75bed97e2a1ed3502aafcfa">&#9670;&#160;</a></span>changeCodeToChar()</h2>
+<a id="af00680eaab7f10251f502656b3c2bdee" name="af00680eaab7f10251f502656b3c2bdee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af00680eaab7f10251f502656b3c2bdee">&#9670;&#160;</a></span>changeCodeToChar()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1733,7 +1709,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm char * changeCodeToChar </td>
+          <td class="memname">static const char * changeCodeToChar </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#a9e6c91d77e24643b888dbd1a1a590054">u16</a>&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -3902,8 +3878,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a8ba81ca3a006faa25b215ce0cbfc4311" name="a8ba81ca3a006faa25b215ce0cbfc4311"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ba81ca3a006faa25b215ce0cbfc4311">&#9670;&#160;</a></span>getOutFontNumberType()</h2>
+<a id="a6893e9032043593cc71cafba073d771e" name="a6893e9032043593cc71cafba073d771e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6893e9032043593cc71cafba073d771e">&#9670;&#160;</a></span>getOutFontNumberType()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3912,7 +3888,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static int getOutFontNumberType </td>
+          <td class="memname">static <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> getOutFontNumberType </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -5141,9 +5117,9 @@ Variables</h2></td></tr>
 <div class="line">    </div>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__msg__class_8cpp_html_a0d94be32c738c2efea5ad897a0798182"><div class="ttname"><a href="d__msg__class_8cpp.html#a0d94be32c738c2efea5ad897a0798182">__dt__19jmessage_tReferenceFv</a></div><div class="ttdeci">void __dt__19jmessage_tReferenceFv()</div><div class="ttdef"><b>Definition:</b> d_msg_class.cpp:840</div></div>
+<div class="ttc" id="ad__msg__class_8cpp_html_a0d94be32c738c2efea5ad897a0798182"><div class="ttname"><a href="d__msg__class_8cpp.html#a0d94be32c738c2efea5ad897a0798182">__dt__19jmessage_tReferenceFv</a></div><div class="ttdeci">void __dt__19jmessage_tReferenceFv()</div><div class="ttdef"><b>Definition:</b> d_msg_class.cpp:830</div></div>
 <div class="ttc" id="ad__msg__class_8cpp_html_a57771c55762dea2d625023e4bb99e23a"><div class="ttname"><a href="d__msg__class_8cpp.html#a57771c55762dea2d625023e4bb99e23a">do_word__Q28JMessage10TReferenceCFUl</a></div><div class="ttdeci">bool do_word__Q28JMessage10TReferenceCFUl()</div></div>
-<div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:17</div></div>
+<div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:19</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -5171,7 +5147,7 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__msg__class_8cpp.html#a44fc09e39e81738021531ba11c367e84">__dt__24jmessage_string_tControlFv</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__msg__class_8cpp_html_a44fc09e39e81738021531ba11c367e84"><div class="ttname"><a href="d__msg__class_8cpp.html#a44fc09e39e81738021531ba11c367e84">__dt__24jmessage_string_tControlFv</a></div><div class="ttdeci">void __dt__24jmessage_string_tControlFv()</div><div class="ttdef"><b>Definition:</b> d_msg_class.cpp:3761</div></div>
+<div class="ttc" id="ad__msg__class_8cpp_html_a44fc09e39e81738021531ba11c367e84"><div class="ttname"><a href="d__msg__class_8cpp.html#a44fc09e39e81738021531ba11c367e84">__dt__24jmessage_string_tControlFv</a></div><div class="ttdeci">void __dt__24jmessage_string_tControlFv()</div><div class="ttdef"><b>Definition:</b> d_msg_class.cpp:4109</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -5200,7 +5176,7 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__msg__class_8cpp.html#a7c57f98ec8ff0e73555f4213d878bc4b">__dt__26jmessage_string_tReferenceFv</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__msg__class_8cpp.html#a57771c55762dea2d625023e4bb99e23a">do_word__Q28JMessage10TReferenceCFUl</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__msg__class_8cpp_html_a7c57f98ec8ff0e73555f4213d878bc4b"><div class="ttname"><a href="d__msg__class_8cpp.html#a7c57f98ec8ff0e73555f4213d878bc4b">__dt__26jmessage_string_tReferenceFv</a></div><div class="ttdeci">void __dt__26jmessage_string_tReferenceFv()</div><div class="ttdef"><b>Definition:</b> d_msg_class.cpp:3007</div></div>
+<div class="ttc" id="ad__msg__class_8cpp_html_a7c57f98ec8ff0e73555f4213d878bc4b"><div class="ttname"><a href="d__msg__class_8cpp.html#a7c57f98ec8ff0e73555f4213d878bc4b">__dt__26jmessage_string_tReferenceFv</a></div><div class="ttdeci">void __dt__26jmessage_string_tReferenceFv()</div><div class="ttdef"><b>Definition:</b> d_msg_class.cpp:3152</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -5252,7 +5228,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="ad__msg__class_8cpp_html_a83bd46553c4de147d7dbab401332ccd5"><div class="ttname"><a href="d__msg__class_8cpp.html#a83bd46553c4de147d7dbab401332ccd5">do_reset__Q28JMessage10TProcessorFv</a></div><div class="ttdeci">void do_reset__Q28JMessage10TProcessorFv()</div></div>
 <div class="ttc" id="ad__msg__class_8cpp_html_a8d2f961c2006b1f094e682a5ffe7aa19"><div class="ttname"><a href="d__msg__class_8cpp.html#a8d2f961c2006b1f094e682a5ffe7aa19">do_select_begin__Q28JMessage10TProcessorFUl</a></div><div class="ttdeci">void do_select_begin__Q28JMessage10TProcessorFUl()</div></div>
 <div class="ttc" id="ad__msg__class_8cpp_html_ad5c85cfbd279f9da9a951da62f77892d"><div class="ttname"><a href="d__msg__class_8cpp.html#ad5c85cfbd279f9da9a951da62f77892d">do_setBegin_isReady___Q28JMessage10TProcessorCFv</a></div><div class="ttdeci">bool do_setBegin_isReady___Q28JMessage10TProcessorCFv()</div></div>
-<div class="ttc" id="ad__msg__class_8cpp_html_ae00fe3be4c37f8d360026c3fe12d9709"><div class="ttname"><a href="d__msg__class_8cpp.html#ae00fe3be4c37f8d360026c3fe12d9709">__dt__26jmessage_tMeasureProcessorFv</a></div><div class="ttdeci">void __dt__26jmessage_tMeasureProcessorFv()</div><div class="ttdef"><b>Definition:</b> d_msg_class.cpp:2051</div></div>
+<div class="ttc" id="ad__msg__class_8cpp_html_ae00fe3be4c37f8d360026c3fe12d9709"><div class="ttname"><a href="d__msg__class_8cpp.html#ae00fe3be4c37f8d360026c3fe12d9709">__dt__26jmessage_tMeasureProcessorFv</a></div><div class="ttdeci">void __dt__26jmessage_tMeasureProcessorFv()</div><div class="ttdef"><b>Definition:</b> d_msg_class.cpp:2066</div></div>
 <div class="ttc" id="ad__msg__class_8cpp_html_ae059d93f0c423cba2de9dce9ebe6eaac"><div class="ttname"><a href="d__msg__class_8cpp.html#ae059d93f0c423cba2de9dce9ebe6eaac">do_begin___Q28JMessage19TRenderingProcessorFPCvPCc</a></div><div class="ttdeci">void do_begin___Q28JMessage19TRenderingProcessorFPCvPCc()</div></div>
 <div class="ttc" id="ad__msg__class_8cpp_html_aee7a3832af537a1b93012f82abcd1fd4"><div class="ttname"><a href="d__msg__class_8cpp.html#aee7a3832af537a1b93012f82abcd1fd4">do_end__26jmessage_tMeasureProcessorFv</a></div><div class="ttdeci">void do_end__26jmessage_tMeasureProcessorFv()</div></div>
 </div><!-- fragment -->
@@ -5305,7 +5281,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="ad__msg__class_8cpp_html_a14497ace330402b23f796090e40e60d0"><div class="ttname"><a href="d__msg__class_8cpp.html#a14497ace330402b23f796090e40e60d0">do_begin__27jmessage_tSequenceProcessorFPCvPCc</a></div><div class="ttdeci">void do_begin__27jmessage_tSequenceProcessorFPCvPCc()</div></div>
 <div class="ttc" id="ad__msg__class_8cpp_html_a26fbb0ad95ca302d1d909edad708f880"><div class="ttname"><a href="d__msg__class_8cpp.html#a26fbb0ad95ca302d1d909edad708f880">do_end__27jmessage_tSequenceProcessorFv</a></div><div class="ttdeci">void do_end__27jmessage_tSequenceProcessorFv()</div></div>
 <div class="ttc" id="ad__msg__class_8cpp_html_a2a397fe853f5614ffe5c094987465772"><div class="ttname"><a href="d__msg__class_8cpp.html#a2a397fe853f5614ffe5c094987465772">do_branch_queryResult__Q28JMessage18TSequenceProcessorFv</a></div><div class="ttdeci">s32 do_branch_queryResult__Q28JMessage18TSequenceProcessorFv()</div></div>
-<div class="ttc" id="ad__msg__class_8cpp_html_a3dc58e02398bccda473c85c68a843a7b"><div class="ttname"><a href="d__msg__class_8cpp.html#a3dc58e02398bccda473c85c68a843a7b">__dt__27jmessage_tSequenceProcessorFv</a></div><div class="ttdeci">void __dt__27jmessage_tSequenceProcessorFv()</div><div class="ttdef"><b>Definition:</b> d_msg_class.cpp:3783</div></div>
+<div class="ttc" id="ad__msg__class_8cpp_html_a3dc58e02398bccda473c85c68a843a7b"><div class="ttname"><a href="d__msg__class_8cpp.html#a3dc58e02398bccda473c85c68a843a7b">__dt__27jmessage_tSequenceProcessorFv</a></div><div class="ttdeci">void __dt__27jmessage_tSequenceProcessorFv()</div><div class="ttdef"><b>Definition:</b> d_msg_class.cpp:4131</div></div>
 <div class="ttc" id="ad__msg__class_8cpp_html_a6161b4380fd16069490beb2e772d4f3f"><div class="ttname"><a href="d__msg__class_8cpp.html#a6161b4380fd16069490beb2e772d4f3f">do_begin___Q28JMessage18TSequenceProcessorFPCvPCc</a></div><div class="ttdeci">void do_begin___Q28JMessage18TSequenceProcessorFPCvPCc()</div></div>
 <div class="ttc" id="ad__msg__class_8cpp_html_a6cda32c9b1052209fc420302391ef147"><div class="ttname"><a href="d__msg__class_8cpp.html#a6cda32c9b1052209fc420302391ef147">do_branch_query__Q28JMessage18TSequenceProcessorFUl</a></div><div class="ttdeci">void do_branch_query__Q28JMessage18TSequenceProcessorFUl()</div></div>
 <div class="ttc" id="ad__msg__class_8cpp_html_a76e0d092eb7d204560d6b7ce45ef0c91"><div class="ttname"><a href="d__msg__class_8cpp.html#a76e0d092eb7d204560d6b7ce45ef0c91">do_character__27jmessage_tSequenceProcessorFi</a></div><div class="ttdeci">void do_character__27jmessage_tSequenceProcessorFi()</div></div>
@@ -5358,7 +5334,7 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__msg__class_8cpp.html#a22aaea6a57cf2eb9d41a3aa98d603e31">do_end___Q28JMessage19TRenderingProcessorFv</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__msg__class_8cpp.html#a53b99c711c5060847df5fa20be5d48a7">do_tag___Q28JMessage19TRenderingProcessorFUlPCvUl</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__msg__class_8cpp_html_a0f6614bf4b099574812ad1edc943b127"><div class="ttname"><a href="d__msg__class_8cpp.html#a0f6614bf4b099574812ad1edc943b127">__dt__28jmessage_tRenderingProcessorFv</a></div><div class="ttdeci">void __dt__28jmessage_tRenderingProcessorFv()</div><div class="ttdef"><b>Definition:</b> d_msg_class.cpp:3772</div></div>
+<div class="ttc" id="ad__msg__class_8cpp_html_a0f6614bf4b099574812ad1edc943b127"><div class="ttname"><a href="d__msg__class_8cpp.html#a0f6614bf4b099574812ad1edc943b127">__dt__28jmessage_tRenderingProcessorFv</a></div><div class="ttdeci">void __dt__28jmessage_tRenderingProcessorFv()</div><div class="ttdef"><b>Definition:</b> d_msg_class.cpp:4120</div></div>
 <div class="ttc" id="ad__msg__class_8cpp_html_a47f11d010ee2662a747a9c9e688e8bbc"><div class="ttname"><a href="d__msg__class_8cpp.html#a47f11d010ee2662a747a9c9e688e8bbc">do_begin__28jmessage_tRenderingProcessorFPCvPCc</a></div><div class="ttdeci">void do_begin__28jmessage_tRenderingProcessorFPCvPCc()</div></div>
 <div class="ttc" id="ad__msg__class_8cpp_html_a4b85f80f5bc768ba7037e40d1fc81f81"><div class="ttname"><a href="d__msg__class_8cpp.html#a4b85f80f5bc768ba7037e40d1fc81f81">do_character__28jmessage_tRenderingProcessorFi</a></div><div class="ttdeci">void do_character__28jmessage_tRenderingProcessorFi()</div></div>
 <div class="ttc" id="ad__msg__class_8cpp_html_aa5c50796598833830d7624cae4b52f4d"><div class="ttname"><a href="d__msg__class_8cpp.html#aa5c50796598833830d7624cae4b52f4d">do_end__28jmessage_tRenderingProcessorFv</a></div><div class="ttdeci">void do_end__28jmessage_tRenderingProcessorFv()</div></div>
@@ -5405,7 +5381,7 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="d__msg__class_8cpp.html#a53b99c711c5060847df5fa20be5d48a7">do_tag___Q28JMessage19TRenderingProcessorFUlPCvUl</a>,</div>
 <div class="line">}</div>
 <div class="ttc" id="ad__msg__class_8cpp_html_a16032209d75aa3ef4ccc485863e642b0"><div class="ttname"><a href="d__msg__class_8cpp.html#a16032209d75aa3ef4ccc485863e642b0">do_begin__33jmessage_string_tMeasureProcessorFPCvPCc</a></div><div class="ttdeci">void do_begin__33jmessage_string_tMeasureProcessorFPCvPCc()</div></div>
-<div class="ttc" id="ad__msg__class_8cpp_html_a2fd864e9cc119ebf3305fe19a5621e4d"><div class="ttname"><a href="d__msg__class_8cpp.html#a2fd864e9cc119ebf3305fe19a5621e4d">__dt__33jmessage_string_tMeasureProcessorFv</a></div><div class="ttdeci">void __dt__33jmessage_string_tMeasureProcessorFv()</div><div class="ttdef"><b>Definition:</b> d_msg_class.cpp:3329</div></div>
+<div class="ttc" id="ad__msg__class_8cpp_html_a2fd864e9cc119ebf3305fe19a5621e4d"><div class="ttname"><a href="d__msg__class_8cpp.html#a2fd864e9cc119ebf3305fe19a5621e4d">__dt__33jmessage_string_tMeasureProcessorFv</a></div><div class="ttdeci">void __dt__33jmessage_string_tMeasureProcessorFv()</div><div class="ttdef"><b>Definition:</b> d_msg_class.cpp:3552</div></div>
 <div class="ttc" id="ad__msg__class_8cpp_html_a52e52c55ed728b932bf315a7ec813422"><div class="ttname"><a href="d__msg__class_8cpp.html#a52e52c55ed728b932bf315a7ec813422">do_character__33jmessage_string_tMeasureProcessorFi</a></div><div class="ttdeci">void do_character__33jmessage_string_tMeasureProcessorFi()</div></div>
 <div class="ttc" id="ad__msg__class_8cpp_html_a776ba3611c218c51cefbfb4ca2cbe9bc"><div class="ttname"><a href="d__msg__class_8cpp.html#a776ba3611c218c51cefbfb4ca2cbe9bc">do_end__33jmessage_string_tMeasureProcessorFv</a></div><div class="ttdeci">void do_end__33jmessage_string_tMeasureProcessorFv()</div></div>
 <div class="ttc" id="ad__msg__class_8cpp_html_ab42f72f27b9518cdb12cafffbba46d95"><div class="ttname"><a href="d__msg__class_8cpp.html#ab42f72f27b9518cdb12cafffbba46d95">do_tag__33jmessage_string_tMeasureProcessorFUlPCvUl</a></div><div class="ttdeci">void do_tag__33jmessage_string_tMeasureProcessorFUlPCvUl()</div></div>
@@ -5463,7 +5439,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="ad__msg__class_8cpp_html_abf7280d6f61207d90c24055d1c75fb80"><div class="ttname"><a href="d__msg__class_8cpp.html#abf7280d6f61207d90c24055d1c75fb80">do_jump__34jmessage_string_tSequenceProcessorFPCvPCc</a></div><div class="ttdeci">void do_jump__34jmessage_string_tSequenceProcessorFPCvPCc()</div></div>
 <div class="ttc" id="ad__msg__class_8cpp_html_ad28d47c40f7d5194922fee5deac41f3d"><div class="ttname"><a href="d__msg__class_8cpp.html#ad28d47c40f7d5194922fee5deac41f3d">do_end__34jmessage_string_tSequenceProcessorFv</a></div><div class="ttdeci">void do_end__34jmessage_string_tSequenceProcessorFv()</div></div>
 <div class="ttc" id="ad__msg__class_8cpp_html_af06b7bbfdf66ed8c669adbb945d0fde0"><div class="ttname"><a href="d__msg__class_8cpp.html#af06b7bbfdf66ed8c669adbb945d0fde0">do_character__34jmessage_string_tSequenceProcessorFi</a></div><div class="ttdeci">void do_character__34jmessage_string_tSequenceProcessorFi()</div></div>
-<div class="ttc" id="ad__msg__class_8cpp_html_afe11e0805d655b309fee02affed460a0"><div class="ttname"><a href="d__msg__class_8cpp.html#afe11e0805d655b309fee02affed460a0">__dt__34jmessage_string_tSequenceProcessorFv</a></div><div class="ttdeci">void __dt__34jmessage_string_tSequenceProcessorFv()</div><div class="ttdef"><b>Definition:</b> d_msg_class.cpp:3749</div></div>
+<div class="ttc" id="ad__msg__class_8cpp_html_afe11e0805d655b309fee02affed460a0"><div class="ttname"><a href="d__msg__class_8cpp.html#afe11e0805d655b309fee02affed460a0">__dt__34jmessage_string_tSequenceProcessorFv</a></div><div class="ttdeci">void __dt__34jmessage_string_tSequenceProcessorFv()</div><div class="ttdef"><b>Definition:</b> d_msg_class.cpp:4097</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -5508,7 +5484,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="ad__msg__class_8cpp_html_a7941339f342e74ae978e7318a8889953"><div class="ttname"><a href="d__msg__class_8cpp.html#a7941339f342e74ae978e7318a8889953">do_end__35jmessage_string_tRenderingProcessorFv</a></div><div class="ttdeci">void do_end__35jmessage_string_tRenderingProcessorFv()</div></div>
 <div class="ttc" id="ad__msg__class_8cpp_html_a97e493cc588ea63b27ecc59211f16f0b"><div class="ttname"><a href="d__msg__class_8cpp.html#a97e493cc588ea63b27ecc59211f16f0b">do_tag__35jmessage_string_tRenderingProcessorFUlPCvUl</a></div><div class="ttdeci">void do_tag__35jmessage_string_tRenderingProcessorFUlPCvUl()</div></div>
 <div class="ttc" id="ad__msg__class_8cpp_html_ad756910cdf8d0198c806ce1552b08000"><div class="ttname"><a href="d__msg__class_8cpp.html#ad756910cdf8d0198c806ce1552b08000">do_reset__35jmessage_string_tRenderingProcessorFv</a></div><div class="ttdeci">void do_reset__35jmessage_string_tRenderingProcessorFv()</div></div>
-<div class="ttc" id="ad__msg__class_8cpp_html_af2080b2e22e6b106e8ac75e675faebf2"><div class="ttname"><a href="d__msg__class_8cpp.html#af2080b2e22e6b106e8ac75e675faebf2">__dt__35jmessage_string_tRenderingProcessorFv</a></div><div class="ttdeci">void __dt__35jmessage_string_tRenderingProcessorFv()</div><div class="ttdef"><b>Definition:</b> d_msg_class.cpp:3737</div></div>
+<div class="ttc" id="ad__msg__class_8cpp_html_af2080b2e22e6b106e8ac75e675faebf2"><div class="ttname"><a href="d__msg__class_8cpp.html#af2080b2e22e6b106e8ac75e675faebf2">__dt__35jmessage_string_tRenderingProcessorFv</a></div><div class="ttdeci">void __dt__35jmessage_string_tRenderingProcessorFv()</div><div class="ttdef"><b>Definition:</b> d_msg_class.cpp:4085</div></div>
 <div class="ttc" id="ad__msg__class_8cpp_html_af4165875c82c5ea435e2489e5c10d39d"><div class="ttname"><a href="d__msg__class_8cpp.html#af4165875c82c5ea435e2489e5c10d39d">do_begin__35jmessage_string_tRenderingProcessorFPCvPCc</a></div><div class="ttdeci">void do_begin__35jmessage_string_tRenderingProcessorFPCvPCc()</div></div>
 </div><!-- fragment -->
 </div>

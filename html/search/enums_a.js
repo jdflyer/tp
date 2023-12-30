@@ -19,5 +19,6 @@ var searchData=
   ['jkrexpandswitch_16',['JKRExpandSwitch',['../JKRDvdRipper_8h.html#a3a81ab253efe80892d32be96b8a9dec2',1,'JKRDvdRipper.h']]],
   ['jkrmembreakflag_17',['JKRMemBreakFlag',['../JKRMemArchive_8h.html#a2a0bd9c14b0a5e25b0a8d59556ac8dd2',1,'JKRMemArchive.h']]],
   ['jsustreamseekfrom_18',['JSUStreamSeekFrom',['../JSUInputStream_8h.html#a858865037a136681f994fcd5565c1404',1,'JSUInputStream.h']]],
-  ['juttransparency_19',['JUTTransparency',['../JUTPalette_8h.html#a491b4d113f1985ddc5da78693ee35d61',1,'JUTPalette.h']]]
+  ['justification_5foptions_19',['justification_options',['../printf_8c.html#a5b6c94a6a58fd00dcaa3f31eeea518c1',1,'printf.c']]],
+  ['juttransparency_20',['JUTTransparency',['../JUTPalette_8h.html#a491b4d113f1985ddc5da78693ee35d61',1,'JUTPalette.h']]]
 ];

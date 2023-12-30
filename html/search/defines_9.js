@@ -13,10 +13,12 @@ var searchData=
   ['infinity_10',['INFINITY',['../dol2asm_8h.html#a956e2723d559858d08644ac99146e910',1,'dol2asm.h']]],
   ['insert_5ffield_11',['INSERT_FIELD',['../GXFrameBuf_8c.html#aee8afc66bf32221889992ce1aec4c603',1,'INSERT_FIELD():&#160;GXFrameBuf.c'],['../GX_8h.html#aee8afc66bf32221889992ce1aec4c603',1,'INSERT_FIELD():&#160;GX.h']]],
   ['int32_5fmax_12',['INT32_MAX',['../types_8h.html#a181807730d4a375f848ba139813ce04f',1,'types.h']]],
-  ['is_5faligned_13',['IS_ALIGNED',['../global_8h.html#a2d51ef0022d849e6e19f3f1c0716417b',1,'global.h']]],
-  ['is_5fnot_5faligned_14',['IS_NOT_ALIGNED',['../global_8h.html#a485a2f3a314685f8a6e72278b7746935',1,'global.h']]],
-  ['isfinite_15',['isfinite',['../MSL__Common_2Src_2float_8h.html#a256d70a32c03904ce13c999c1e9dc35d',1,'float.h']]],
-  ['item_5fmax_5fdan_16',['ITEM_MAX_DAN',['../d__save_8h.html#a31c33a92a1febe1f6c6ba6dc6db58657',1,'d_save.h']]],
-  ['item_5fone_5fzone_5fmax_17',['ITEM_ONE_ZONE_MAX',['../d__save_8h.html#af0ede3d22365de0551f58d6edf91351e',1,'d_save.h']]],
-  ['item_5fzone_5fmax_18',['ITEM_ZONE_MAX',['../d__save_8h.html#a9a6474994283a94bb331dd42b1f328c4',1,'d_save.h']]]
+  ['int_5fmax_13',['INT_MAX',['../limits_8h.html#a9ec306f36d50c7375e74f0d1c55a3a67',1,'limits.h']]],
+  ['int_5fmin_14',['INT_MIN',['../limits_8h.html#a21658776274b3d146c674318b635a334',1,'limits.h']]],
+  ['is_5faligned_15',['IS_ALIGNED',['../global_8h.html#a2d51ef0022d849e6e19f3f1c0716417b',1,'global.h']]],
+  ['is_5fnot_5faligned_16',['IS_NOT_ALIGNED',['../global_8h.html#a485a2f3a314685f8a6e72278b7746935',1,'global.h']]],
+  ['isfinite_17',['isfinite',['../float_8h.html#a256d70a32c03904ce13c999c1e9dc35d',1,'float.h']]],
+  ['item_5fmax_5fdan_18',['ITEM_MAX_DAN',['../d__save_8h.html#a31c33a92a1febe1f6c6ba6dc6db58657',1,'d_save.h']]],
+  ['item_5fone_5fzone_5fmax_19',['ITEM_ONE_ZONE_MAX',['../d__save_8h.html#af0ede3d22365de0551f58d6edf91351e',1,'d_save.h']]],
+  ['item_5fzone_5fmax_20',['ITEM_ZONE_MAX',['../d__save_8h.html#a9a6474994283a94bb331dd42b1f328c4',1,'d_save.h']]]
 ];

@@ -68,7 +68,7 @@ var searchData=
   ['z2wolfhowlmgr_65',['Z2WolfHowlMgr',['../structZ2WolfHowlMgr.html#a195a7c86303d9bd3a5574a4a31659ad8',1,'Z2WolfHowlMgr']]],
   ['zeldagframework_66',['zeldaGFrameWork',['../structZ2AudioMgr.html#a2f7eb7ff564d7ab3aa55e87c162c455e',1,'Z2AudioMgr']]],
   ['zeldagframework_5f_5f10z2audiomgrfv_67',['zeldaGFrameWork__10Z2AudioMgrFv',['../Z2AudioMgr_8cpp.html#a98205266e573065a753ee29ca4ca28e4',1,'Z2AudioMgr.cpp']]],
-  ['zero_68',['zero',['../structJGeometry_1_1TVec3_3_01f32_01_4.html#ab9fe898e43ab4959740e5c13ce6e8cca',1,'JGeometry::TVec3&lt; f32 &gt;::zero()'],['../structJAISoundParamsTransition_1_1TTransition.html#a573777e396c2c4dbd593f1ff38aa8f44',1,'JAISoundParamsTransition::TTransition::zero()']]],
+  ['zero_68',['zero',['../structcXyz.html#aad2379e6d249c0cf10e3ea6670728f4d',1,'cXyz::zero()'],['../structJAISoundParamsTransition_1_1TTransition.html#a573777e396c2c4dbd593f1ff38aa8f44',1,'JAISoundParamsTransition::TTransition::zero()'],['../structJGeometry_1_1TVec3_3_01f32_01_4.html#ab9fe898e43ab4959740e5c13ce6e8cca',1,'JGeometry::TVec3&lt; f32 &gt;::zero()']]],
   ['zhintrequest_69',['ZHintRequest',['../classdAttention__c.html#a7a4df384ca21ec7fce72bc1ea31de0f4',1,'dAttention_c']]],
   ['zonecountcheck_70',['zoneCountCheck',['../structdStage__roomControl__c.html#a53150fb6d16722d46f7add91f7259bbb',1,'dStage_roomControl_c']]],
   ['zonecountcheck_5f_5f20dstage_5froomcontrol_5fccfi_71',['zoneCountCheck__20dStage_roomControl_cCFi',['../d__stage_8cpp.html#aceaa51d0c07072400dc2c1d5b5a7c154',1,'d_stage.cpp']]],

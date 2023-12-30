@@ -75,11 +75,15 @@ var searchData=
   ['cardseticonanim_72',['CARDSetIconAnim',['../card_8h.html#a553bdaa563736714aaa9acabf4caf7c7',1,'card.h']]],
   ['cardseticonformat_73',['CARDSetIconFormat',['../card_8h.html#a77d327cf5613f0a4d3305555cc6503ab',1,'card.h']]],
   ['cardseticonspeed_74',['CARDSetIconSpeed',['../card_8h.html#a32eb0417ca3305c9c9a53dd878de8703',1,'card.h']]],
-  ['compiler_5fstrip_5fgate_75',['COMPILER_STRIP_GATE',['../dol2asm_8h.html#a45d35135d671197a87d0e3dcb73363f2',1,'dol2asm.h']]],
-  ['cpd_76',['cpd',['../mem__funcs_8c.html#a90040cbec48e5b05be4ac823e256226c',1,'mem_funcs.c']]],
-  ['cpr_5fclk_77',['CPR_CLK',['../EXIBios_8c.html#a217eabe4ea89d41f0ee3034933422305',1,'EXIBios.c']]],
-  ['cpr_5fcs_78',['CPR_CS',['../EXIBios_8c.html#a783f049b19cbfd8b7ee20e1d0176d9e6',1,'EXIBios.c']]],
-  ['cps_79',['cps',['../mem__funcs_8c.html#ad66a9de1917d5b612e31615c7c0245c9',1,'mem_funcs.c']]],
-  ['ctr_80',['CTR',['../PPCArch_8h.html#aa445a79fc0f7373036c72d198e51f19a',1,'PPCArch.h']]],
-  ['ctrl_81',['ctrl',['../ctype_8c.html#af7a772cc980c9e6807aaaaa55e4cb037',1,'ctype.c']]]
+  ['char_5fbit_75',['CHAR_BIT',['../limits_8h.html#a308d9dd2c0028ddb184b455bbd7865de',1,'limits.h']]],
+  ['char_5fmax_76',['CHAR_MAX',['../limits_8h.html#a778eefd6535a9d4b752fca5dd0af58db',1,'limits.h']]],
+  ['char_5fmin_77',['CHAR_MIN',['../limits_8h.html#a5d707bd32338557ced18c6ac76ca1b3a',1,'limits.h']]],
+  ['classify_78',['classify',['../alloc_8c.html#a674f3ee29c51be006513c5b6d8242274',1,'alloc.c']]],
+  ['compiler_5fstrip_5fgate_79',['COMPILER_STRIP_GATE',['../dol2asm_8h.html#a45d35135d671197a87d0e3dcb73363f2',1,'dol2asm.h']]],
+  ['cpd_80',['cpd',['../mem__funcs_8c.html#a90040cbec48e5b05be4ac823e256226c',1,'mem_funcs.c']]],
+  ['cpr_5fclk_81',['CPR_CLK',['../EXIBios_8c.html#a217eabe4ea89d41f0ee3034933422305',1,'EXIBios.c']]],
+  ['cpr_5fcs_82',['CPR_CS',['../EXIBios_8c.html#a783f049b19cbfd8b7ee20e1d0176d9e6',1,'EXIBios.c']]],
+  ['cps_83',['cps',['../mem__funcs_8c.html#ad66a9de1917d5b612e31615c7c0245c9',1,'mem_funcs.c']]],
+  ['ctr_84',['CTR',['../PPCArch_8h.html#aa445a79fc0f7373036c72d198e51f19a',1,'PPCArch.h']]],
+  ['ctrl_85',['ctrl',['../ctype_8c.html#af7a772cc980c9e6807aaaaa55e4cb037',1,'ctype.c']]]
 ];

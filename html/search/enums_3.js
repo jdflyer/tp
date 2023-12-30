@@ -7,6 +7,7 @@ var searchData=
   ['collectitem_4',['CollectItem',['../d__save_8h.html#a6d317460fab5a02d2a7fc3e2bb396911',1,'d_save.h']]],
   ['cosprm_5fe_5',['CoSPrm_e',['../structcCcD__ObjCommonBase.html#add2b1ff55bbcd1a78dfd2497287b0aca',1,'cCcD_ObjCommonBase']]],
   ['cphs_5f_5fstep_6',['cPhs__Step',['../c__phase_8h.html#a9f111b636d6afcaba75f303583cc8340',1,'c_phase.h']]],
-  ['curvesign_7',['CurveSign',['../structZ2Calc.html#a953421645f3955dbb9d6295945a3c077',1,'Z2Calc']]],
-  ['cuttype_8',['CutType',['../structdaPy__py__c.html#a020d44aa8d44e132f8511d7741121a1c',1,'daPy_py_c']]]
+  ['critical_5fregions_7',['critical_regions',['../critical__regions_8h.html#a5290a6b007b7076f8d1cfad8349535f0',1,'critical_regions.h']]],
+  ['curvesign_8',['CurveSign',['../structZ2Calc.html#a953421645f3955dbb9d6295945a3c077',1,'Z2Calc']]],
+  ['cuttype_9',['CutType',['../structdaPy__py__c.html#a020d44aa8d44e132f8511d7741121a1c',1,'daPy_py_c']]]
 ];

@@ -56,9 +56,12 @@ var searchData=
   ['standard_5fcreate_5frequest_5fclass_53',['standard_create_request_class',['../structstandard__create__request__class.html',1,'']]],
   ['star_5feff_54',['STAR_EFF',['../structSTAR__EFF.html',1,'']]],
   ['stcontrol_55',['STControl',['../structSTControl.html',1,'']]],
-  ['struct_5fdsp_5ftask_56',['STRUCT_DSP_TASK',['../structSTRUCT__DSP__TASK.html',1,'']]],
-  ['styledata_57',['StyleData',['../structdCamStyleData_1_1StyleData.html',1,'dCamStyleData']]],
-  ['sub_5fkankyo_5f_5fclass_58',['sub_kankyo__class',['../structsub__kankyo____class.html',1,'']]],
-  ['svec_59',['SVec',['../structSVec.html',1,'']]],
-  ['syaz0header_60',['SYaz0Header',['../structSYaz0Header.html',1,'']]]
+  ['str1_5fentry_5ft_56',['str1_entry_t',['../structstr1__entry__t.html',1,'']]],
+  ['str1_5fsection_5ft_57',['str1_section_t',['../structstr1__section__t.html',1,'']]],
+  ['struct_5fdsp_5ftask_58',['STRUCT_DSP_TASK',['../structSTRUCT__DSP__TASK.html',1,'']]],
+  ['styledata_59',['StyleData',['../structdCamStyleData_1_1StyleData.html',1,'dCamStyleData']]],
+  ['sub_5fkankyo_5f_5fclass_60',['sub_kankyo__class',['../structsub__kankyo____class.html',1,'']]],
+  ['subblock_61',['SubBlock',['../structSubBlock.html',1,'']]],
+  ['svec_62',['SVec',['../structSVec.html',1,'']]],
+  ['syaz0header_63',['SYaz0Header',['../structSYaz0Header.html',1,'']]]
 ];
