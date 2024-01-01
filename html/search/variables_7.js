@@ -144,7 +144,7 @@ var searchData=
   ['gtrkstepstatus_141',['gTRKStepStatus',['../targimpl_8c.html#a084219c24ff1a6a8da184dd03527b574',1,'targimpl.c']]],
   ['gu32mask_5ftsequence_5fvalue_5fsignexpansion_142',['gu32Mask_TSequence_value_signExpansion',['../namespaceJStudio_1_1stb_1_1data.html#a69636a5d1b2c51fe39c84c922e4e3111',1,'JStudio::stb::data']]],
   ['gubit_5ftsequence_5ftype_143',['guBit_TSequence_type',['../namespaceJStudio_1_1stb_1_1data.html#ab07bbf8f43f286677b9f58792059ee04',1,'JStudio::stb::data']]],
-  ['gx2hwfiltconv_144',['GX2HWFiltConv',['../J3DGD_8cpp.html#a7e3cf501c90929e914e7f9b9dfb86c08',1,'GX2HWFiltConv():&#160;J3DGD.cpp'],['../GXTexture_8c.html#a7e3cf501c90929e914e7f9b9dfb86c08',1,'GX2HWFiltConv():&#160;GXTexture.c']]],
+  ['gx2hwfiltconv_144',['GX2HWFiltConv',['../J3DGD_8cpp.html#a7d8206cd51da086d3e5e00f292c56c84',1,'GX2HWFiltConv():&#160;J3DGD.cpp'],['../GXTexture_8c.html#a7e3cf501c90929e914e7f9b9dfb86c08',1,'GX2HWFiltConv():&#160;GXTexture.c']]],
   ['gxdata_145',['gxData',['../GXInit_8c.html#a0c7923dae1f208a24d59107c9f1e8cd9',1,'GXInit.c']]],
   ['gxdefaultprojdata_146',['GXDefaultProjData',['../GXInit_8c.html#a609d157e7338f89f99eb9bd1aa081c47',1,'GXInit.c']]],
   ['gxdefaultvatlist_147',['GXDefaultVATList',['../GXInit_8c.html#ab4cf3e93feac43911bb881b77771027d',1,'GXInit.c']]],
