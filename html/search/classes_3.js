@@ -97,7 +97,7 @@ var searchData=
   ['color_5frgb_5fclass_94',['color_RGB_class',['../structcolor__RGB__class.html',1,'']]],
   ['const_5fiterator_95',['const_iterator',['../structJGadget_1_1TLinkList_1_1const__iterator.html',1,'JGadget::TLinkList&lt; T, I &gt;::const_iterator'],['../structJGadget_1_1TNodeLinkList_1_1const__iterator.html',1,'JGadget::TNodeLinkList::const_iterator']]],
   ['counter_5fclass_96',['counter_class',['../structcounter__class.html',1,'']]],
-  ['coutfont_5fc_97',['COutFont_c',['../structCOutFont__c.html',1,'']]],
+  ['coutfont_5fc_97',['COutFont_c',['../classCOutFont__c.html',1,'']]],
   ['coutfontset_5fc_98',['COutFontSet_c',['../classCOutFontSet__c.html',1,'']]],
   ['cpanemgr_99',['CPaneMgr',['../structCPaneMgr.html',1,'']]],
   ['cpanemgralpha_100',['CPaneMgrAlpha',['../structCPaneMgrAlpha.html',1,'']]],

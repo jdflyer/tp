@@ -68,7 +68,7 @@ var searchData=
   ['kj3derror_5falloc_65',['kJ3DError_Alloc',['../J3DSys_8h.html#ac80cca76e4c0a8b5d26b0835bbda4125a42330217f356068a0d66dfc3bae798fa',1,'J3DSys.h']]],
   ['kj3derror_5fsuccess_66',['kJ3DError_Success',['../J3DSys_8h.html#ac80cca76e4c0a8b5d26b0835bbda4125a0a335659e4756d79211cfd67b9b7d2e6',1,'J3DSys.h']]],
   ['kokiri_5fclothes_5fflag_67',['KOKIRI_CLOTHES_FLAG',['../d__save_8h.html#a754ce34cf5161a6dc781544dbecc6cd0aa8e82eaa10422a66792fb9c246061c4a',1,'d_save.h']]],
-  ['kvcdvatdlsize_68',['kVcdVatDLSize',['../J3DShape_8cpp.html#adf764cbdea00d65edcd07bb9953ad2b7a1587d173f2bd09d94ac8cf4004fb6bc2',1,'kVcdVatDLSize():&#160;J3DShape.cpp'],['../classJ3DShape.html#ac4a9eba94f6dd72052f90b42c4d439b7a78df67ba3112e67a6e32f56478e5f788',1,'J3DShape::kVcdVatDLSize()']]],
+  ['kvcdvatdlsize_68',['kVcdVatDLSize',['../J3DShape_8cpp.html#adf764cbdea00d65edcd07bb9953ad2b7a1587d173f2bd09d94ac8cf4004fb6bc2',1,'kVcdVatDLSize():&#160;J3DShape.cpp'],['../classJ3DShape.html#a3a69b4167ac507e88089e12b1aa1448fa78df67ba3112e67a6e32f56478e5f788',1,'J3DShape::kVcdVatDLSize()']]],
   ['kytag00_5fclass_69',['kytag00_class',['../classkytag00__class.html',1,'']]],
   ['kytag02_5fclass_70',['kytag02_class',['../classkytag02__class.html',1,'']]],
   ['kytag03_5fclass_71',['kytag03_class',['../classkytag03__class.html',1,'']]],
