@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['kandelaarmodelcallback_0',['kandelaarModelCallBack',['../structdaAlink__c.html#a17a17eb2826267fbd1862e717269f892',1,'daAlink_c']]],
+  ['kandelaarmodelcallback_0',['kandelaarModelCallBack',['../classdaAlink__c.html#a17a17eb2826267fbd1862e717269f892',1,'daAlink_c']]],
   ['kandelaarmodelcallback_5f_5f9daalink_5fcfv_1',['kandelaarModelCallBack__9daAlink_cFv',['../d__a__alink_8cpp.html#aa98327dc2ff560fdc8a005874a4452e9',1,'d_a_alink.cpp']]],
   ['kankyo_5fcolor_5fratio_5fcalc_2',['kankyo_color_ratio_calc',['../d__kankyo_8cpp.html#ab028b3f31af030c2313d9cfa313bcb78',1,'d_kankyo.cpp']]],
   ['kankyo_5fcolor_5fratio_5fcalc_5f_5ffp8_5fgxcolor11_5fgxcolors10f_3',['kankyo_color_ratio_calc__FP8_GXColor11_GXColorS10f',['../d__kankyo_8cpp.html#a236fefd8a49295fef9bd24adc2c6c615',1,'d_kankyo.cpp']]],
@@ -8,7 +8,7 @@ var searchData=
   ['kankyo_5fcolor_5fratio_5fcalc_5fcommon_5f_5ffsf_5',['kankyo_color_ratio_calc_common__Fsf',['../d__kankyo_8cpp.html#a3148ab02447cf76265351adac81d9e36',1,'d_kankyo.cpp']]],
   ['kankyo_5fcolor_5fratio_5fset_6',['kankyo_color_ratio_set',['../d__kankyo_8cpp.html#a1b0564e858763d077e335199ea2d1df0',1,'d_kankyo.cpp']]],
   ['kankyo_5fcolor_5fratio_5fset_5f_5ffucucfucucfsf_7',['kankyo_color_ratio_set__FUcUcfUcUcfsf',['../d__kankyo_8cpp.html#a7cb9b91a102c6e54015b37e242359ab7',1,'d_kankyo.cpp']]],
-  ['keepitemdata_8',['keepItemData',['../structdaAlink__c.html#a6b55eceb3284bc87bedfd4a55c053edc',1,'daAlink_c']]],
+  ['keepitemdata_8',['keepItemData',['../classdaAlink__c.html#a6b55eceb3284bc87bedfd4a55c053edc',1,'daAlink_c']]],
   ['keepitemdata_5f_5f9daalink_5fcfv_9',['keepItemData__9daAlink_cFv',['../d__a__alink_8cpp.html#aefbaa3a38b450d2b422590c57befcc2e',1,'d_a_alink.cpp']]],
   ['keeplock_10',['keepLock',['../classdAttention__c.html#aa38299409aca484ea1f8e1666aa5b77b',1,'dAttention_c']]],
   ['keeplock_5f_5f12dattention_5fcfi_11',['keepLock__12dAttention_cFi',['../d__camera_8cpp.html#a1e2f50de5f86859a9ff79a423043e264',1,'d_camera.cpp']]],
@@ -22,7 +22,7 @@ var searchData=
   ['key_5fwait_5finit_5f_5f5dmw_5fcfuc_19',['key_wait_init__5dMw_cFUc',['../d__menu__window_8cpp.html#aac03b1a6636e2f841fface3a9bce5114',1,'d_menu_window.cpp']]],
   ['key_5fwait_5fproc_20',['key_wait_proc',['../classdMw__c.html#acbc3a72173c689ffca0ebbbf1c85b8f5',1,'dMw_c']]],
   ['key_5fwait_5fproc_5f_5f5dmw_5fcfv_21',['key_wait_proc__5dMw_cFv',['../d__menu__window_8cpp.html#a93c262255a5517f1c591d273f30a6546',1,'d_menu_window.cpp']]],
-  ['keycheck_22',['keyCheck',['../structdMeterMap__c.html#ae49acb1ed130d27d865353023d9faf9b',1,'dMeterMap_c']]],
+  ['keycheck_22',['keyCheck',['../structdMeterMap__c.html#adedc31f0182a3e7eb00174fd318b40e0',1,'dMeterMap_c']]],
   ['keycheck_5f_5f11dmetermap_5fcfv_23',['keyCheck__11dMeterMap_cFv',['../d__meter__map_8cpp.html#a97fe6b10d8828050539c29175fae9e09',1,'d_meter_map.cpp']]],
   ['kick_24',['kick',['../classmDoDvdThd__param__c.html#a4e938f288f2404f9109aa35e799160b2',1,'mDoDvdThd_param_c']]],
   ['kill_25',['Kill',['../classdVibration__c.html#a6748285980082eddcf9e7e711b107e35',1,'dVibration_c']]],

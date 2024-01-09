@@ -94,14 +94,15 @@ $(function() {
 <code>#include &quot;<a class="el" href="c__m3d__g__lin_8h_source.html">SSystem/SComponent/c_m3d_g_lin.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="c__m3d__g__sph_8h_source.html">SSystem/SComponent/c_m3d_g_sph.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="c__m3d__g__tri_8h_source.html">SSystem/SComponent/c_m3d_g_tri.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="c__m3d__g__cps_8h_source.html">SSystem/SComponent/c_m3d_g_cps.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="c__math_8h_source.html">SSystem/SComponent/c_math.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="c__sxyz_8h_source.html">SSystem/SComponent/c_sxyz.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="global_8h_source.html">global.h</a>&quot;</code><br />
 <code>#include &quot;asm/SSystem/SComponent/c_m3d/cM3d_Check_LinLin__FPC8cM3dGLinPC8cM3dGLinPfPf.s&quot;</code><br />
 <code>#include &quot;asm/SSystem/SComponent/c_m3d/cM3d_Cross_LinPla__FPC8cM3dGLinPC8cM3dGPlaP3Vecbb.s&quot;</code><br />
 <code>#include &quot;asm/SSystem/SComponent/c_m3d/cM3d_Cross_MinMaxBoxLine__FPC3VecPC3VecPC3VecPC3Vec.s&quot;</code><br />
-<code>#include &quot;asm/SSystem/SComponent/c_m3d/cM3d_InclusionCheckPosIn3PosBox2d__Ffffffffff.s&quot;</code><br />
 <code>#include &quot;asm/SSystem/SComponent/c_m3d/cM3d_CrossX_Tri__FPC8cM3dGTriPC3Vecf.s&quot;</code><br />
 <code>#include &quot;asm/SSystem/SComponent/c_m3d/cM3d_CrossX_Tri__FPC8cM3dGTriPC3Vec.s&quot;</code><br />
 <code>#include &quot;asm/SSystem/SComponent/c_m3d/cM3d_CrossX_LinTri_proc__FPC8cM3dGTriPC3Vec.s&quot;</code><br />
@@ -136,14 +137,6 @@ $(function() {
 <code>#include &quot;asm/SSystem/SComponent/c_m3d/cM3d_Cross_TriTri__FRC8cM3dGTriRC8cM3dGTriP3Vec.s&quot;</code><br />
 <code>#include &quot;asm/SSystem/SComponent/c_m3d/cM3d_Cross_CpsTri__FRC8cM3dGCps8cM3dGTriP3Vec.s&quot;</code><br />
 <code>#include &quot;asm/SSystem/SComponent/c_m3d/cM3d_CalcVecZAngle__FRC3VecP5csXyz.s&quot;</code><br />
-</div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for c_m3d.cpp:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="c__m3d_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -341,8 +334,8 @@ Functions</h2></td></tr>
 <tr class="separator:af2fa5ae1e24c5fff885b54e5d659c6f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a631a80a1652fc4108ac142524232759e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c__m3d_8cpp.html#a631a80a1652fc4108ac142524232759e">cM3d_InclusionCheckPosIn3PosBox3d</a> (const <a class="el" href="structVec.html">Vec</a> *pVecA, const <a class="el" href="structVec.html">Vec</a> *pVecB, const <a class="el" href="structVec.html">Vec</a> *pVecC, const <a class="el" href="structVec.html">Vec</a> *pVecD, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> pF)</td></tr>
 <tr class="separator:a631a80a1652fc4108ac142524232759e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1970d2aa4eed4e9c6bbea13abefe32d"><td class="memItemLeft" align="right" valign="top">static asm bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c__m3d_8cpp.html#ad1970d2aa4eed4e9c6bbea13abefe32d">cM3d_InclusionCheckPosIn3PosBox2d</a> (<a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_0, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_1, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_2, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_3, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_4, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_5, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_6, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_7, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_8)</td></tr>
-<tr class="separator:ad1970d2aa4eed4e9c6bbea13abefe32d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45bf41135f3fe407ee9ab968c0aa2d7c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c__m3d_8cpp.html#a45bf41135f3fe407ee9ab968c0aa2d7c">cM3d_InclusionCheckPosIn3PosBox2d</a> (<a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_1, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_2, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_3, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_4, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_5, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_6, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_7, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_8, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_9)</td></tr>
+<tr class="separator:a45bf41135f3fe407ee9ab968c0aa2d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d46ed49e5c1c3c3e73763b9b66db006"><td class="memItemLeft" align="right" valign="top">static asm bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c__m3d_8cpp.html#a8d46ed49e5c1c3c3e73763b9b66db006">cM3d_CrossX_Tri</a> (<a class="el" href="classcM3dGTri.html">cM3dGTri</a> const *param_0, <a class="el" href="structVec.html">Vec</a> const *param_1, <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a> param_2)</td></tr>
 <tr class="separator:a8d46ed49e5c1c3c3e73763b9b66db006"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e332d47a1802016306502183266822b"><td class="memItemLeft" align="right" valign="top">static asm bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c__m3d_8cpp.html#a6e332d47a1802016306502183266822b">cM3d_CrossX_Tri</a> (<a class="el" href="classcM3dGTri.html">cM3dGTri</a> const *param_0, <a class="el" href="structVec.html">Vec</a> const *param_1)</td></tr>
@@ -3786,8 +3779,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad1970d2aa4eed4e9c6bbea13abefe32d" name="ad1970d2aa4eed4e9c6bbea13abefe32d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1970d2aa4eed4e9c6bbea13abefe32d">&#9670;&#160;</a></span>cM3d_InclusionCheckPosIn3PosBox2d()</h2>
+<a id="a45bf41135f3fe407ee9ab968c0aa2d7c" name="a45bf41135f3fe407ee9ab968c0aa2d7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45bf41135f3fe407ee9ab968c0aa2d7c">&#9670;&#160;</a></span>cM3d_InclusionCheckPosIn3PosBox2d()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3796,14 +3789,8 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static asm bool cM3d_InclusionCheckPosIn3PosBox2d </td>
+          <td class="memname">static bool cM3d_InclusionCheckPosIn3PosBox2d </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td>
           <td class="paramname"><em>param_1</em>, </td>
         </tr>
@@ -3847,7 +3834,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td>
-          <td class="paramname"><em>param_8</em>&#160;</td>
+          <td class="paramname"><em>param_8</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td>
+          <td class="paramname"><em>param_9</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

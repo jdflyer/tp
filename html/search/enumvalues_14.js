@@ -2,9 +2,9 @@ var searchData=
 [
   ['ugly_5fsoup_0',['UGLY_SOUP',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2ab67ea255f785e98f7c9b810d9626da7b',1,'d_save.h']]],
   ['unclearable_1',['UNCLEARABLE',['../d__kankyo__data_8h.html#a22a7f4c7dfa4763f73a82caff6e1713eac2f1f604155d86eef6b33a8cf9b0f1ac',1,'d_kankyo_data.h']]],
-  ['under_5f0_2',['UNDER_0',['../structdaAlink__c.html#ab648cd37b444a6b86395bd841f25d0c8a5782f7278517176c4b616fd798afb439',1,'daAlink_c']]],
-  ['under_5f1_3',['UNDER_1',['../structdaAlink__c.html#ab648cd37b444a6b86395bd841f25d0c8a5673dec860c25fdb6563ef362eaba74a',1,'daAlink_c']]],
-  ['under_5f2_4',['UNDER_2',['../structdaAlink__c.html#ab648cd37b444a6b86395bd841f25d0c8a2a4bd6afedd8bb7e261a646236977e2c',1,'daAlink_c']]],
+  ['under_5f0_2',['UNDER_0',['../classdaAlink__c.html#ab648cd37b444a6b86395bd841f25d0c8a5782f7278517176c4b616fd798afb439',1,'daAlink_c']]],
+  ['under_5f1_3',['UNDER_1',['../classdaAlink__c.html#ab648cd37b444a6b86395bd841f25d0c8a5673dec860c25fdb6563ef362eaba74a',1,'daAlink_c']]],
+  ['under_5f2_4',['UNDER_2',['../classdaAlink__c.html#ab648cd37b444a6b86395bd841f25d0c8a2a4bd6afedd8bb7e261a646236977e2c',1,'daAlink_c']]],
   ['unk0_5',['UNK0',['../JUTPalette_8h.html#a491b4d113f1985ddc5da78693ee35d61a9229525ca6a5799d37b50b9a33d8a1b9',1,'JUTPalette.h']]],
   ['unk1_6',['UNK1',['../JUTPalette_8h.html#a491b4d113f1985ddc5da78693ee35d61a89492c59f1adf6bb48c497e753a5fea9',1,'JUTPalette.h']]],
   ['unk_5f0_7',['UNK_0',['../classJUTXfb.html#afdd1587f1b4b7c8868f78ac2065e6bc6aafeeeac8b28e1cab8d123c1039b5b208',1,'JUTXfb']]],
@@ -22,8 +22,8 @@ var searchData=
   ['unkstatus_5fm1_19',['UNKSTATUS_M1',['../structJUTFader.html#a606d584eb413fdd3bae4105c7db0e35baa1424faf4cb3b0d746b5da7002333a2c',1,'JUTFader']]],
   ['unoriented_20',['UNORIENTED',['../ansi__files_8h.html#af6827b9bbcdbe2d4efa7ba30be248553af52ed2427e99ed120503006e807cfedd',1,'ansi_files.h']]],
   ['unselect_5fframe_21',['UNSELECT_FRAME',['../classdMeter__ringHIO__c.html#a3dd4f5d2eab4f2f193cf179731803275a2539165f4caafee15ce57d9cfa630790',1,'dMeter_ringHIO_c']]],
-  ['upper_5f0_22',['UPPER_0',['../structdaAlink__c.html#aec4a16a0dabe1247aedc0449068864d1ad96871a99f86f159c45a27fab361f993',1,'daAlink_c']]],
-  ['upper_5f1_23',['UPPER_1',['../structdaAlink__c.html#aec4a16a0dabe1247aedc0449068864d1a492654b0fbaa4cbc7ecb5dda582a4b0f',1,'daAlink_c']]],
-  ['upper_5f2_24',['UPPER_2',['../structdaAlink__c.html#aec4a16a0dabe1247aedc0449068864d1ad1e96afa549e22aaeea41fb0ea243b30',1,'daAlink_c']]],
+  ['upper_5f0_22',['UPPER_0',['../classdaAlink__c.html#aec4a16a0dabe1247aedc0449068864d1ad96871a99f86f159c45a27fab361f993',1,'daAlink_c']]],
+  ['upper_5f1_23',['UPPER_1',['../classdaAlink__c.html#aec4a16a0dabe1247aedc0449068864d1a492654b0fbaa4cbc7ecb5dda582a4b0f',1,'daAlink_c']]],
+  ['upper_5f2_24',['UPPER_2',['../classdaAlink__c.html#aec4a16a0dabe1247aedc0449068864d1ad1e96afa549e22aaeea41fb0ea243b30',1,'daAlink_c']]],
   ['utawa_5fheart_25',['UTAWA_HEART',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a1c6d5d9756bef24449738cd48ec1e1b7',1,'d_save.h']]]
 ];

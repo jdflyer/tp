@@ -82,18 +82,18 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Z2AudioArcLoader.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="Z2AudioArcLoader_8h_source.html">Z2AudioLib/Z2AudioArcLoader.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Z2FxLineMgr_8h_source.html">Z2AudioLib/Z2FxLineMgr.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JKRHeap_8h_source.html">JSystem/JKernel/JKRHeap.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JKRArchive_8h_source.html">JSystem/JKernel/JKRArchive.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JAUSectionHeap_8h_source.html">JSystem/JAudio2/JAUSectionHeap.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
-<code>#include &quot;asm/Z2AudioLib/Z2AudioArcLoader/__ct__16Z2AudioArcLoaderFP10JAUSection.s&quot;</code><br />
-<code>#include &quot;asm/Z2AudioLib/Z2AudioArcLoader/readCommandMore__16Z2AudioArcLoaderFUl.s&quot;</code><br />
 <code>#include &quot;asm/Z2AudioLib/Z2AudioArcLoader/readBFCA__16Z2AudioArcLoaderFPCv.s&quot;</code><br />
-<code>#include &quot;asm/Z2AudioLib/Z2AudioArcLoader/__dt__16Z2AudioArcLoaderFv.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for Z2AudioArcLoader.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -103,19 +103,6 @@ $(function() {
 </div>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRHeap.html">JKRHeap</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRArchive.html">JKRArchive</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRArchive_1_1EMountDirection.html">JKRArchive::EMountDirection</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structZ2FxLineMgr.html">Z2FxLineMgr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAUSectionHeap.html">JAUSectionHeap</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ad614fcc1aacde5aa434cbf2aba418f0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2AudioArcLoader_8cpp.html#ad614fcc1aacde5aa434cbf2aba418f0b">__ct__16Z2AudioArcLoaderFP10JAUSection</a> ()</td></tr>
@@ -181,8 +168,6 @@ Variables</h2></td></tr>
 <tr class="separator:a5ec5e1d1ec38494498d5f453a709c09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98b58c165eacfc265404d698e5bc9525"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2AudioArcLoader_8cpp.html#a98b58c165eacfc265404d698e5bc9525">__OSReport_disable</a></td></tr>
 <tr class="separator:a98b58c165eacfc265404d698e5bc9525"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade76a3ca4b16cdcdf64011afd7ecb115"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Z2AudioArcLoader_8cpp.html#ade76a3ca4b16cdcdf64011afd7ecb115">__vt__16Z2AudioArcLoader</a> [17+1]</td></tr>
-<tr class="separator:ade76a3ca4b16cdcdf64011afd7ecb115"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ad614fcc1aacde5aa434cbf2aba418f0b" name="ad614fcc1aacde5aa434cbf2aba418f0b"></a>
@@ -632,65 +617,6 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p ><a class="el" href="m__Do__printf_8cpp.html">m_Do_printf.cpp</a> OSReport and printf Helper Functions </p>
 
-</div>
-</div>
-<a id="ade76a3ca4b16cdcdf64011afd7ecb115" name="ade76a3ca4b16cdcdf64011afd7ecb115"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade76a3ca4b16cdcdf64011afd7ecb115">&#9670;&#160;</a></span>__vt__16Z2AudioArcLoader</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> void* __vt__16Z2AudioArcLoader[17+1]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> ,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2AudioArcLoader_8cpp.html#a67c34da3e7be19aa1807c5d121d1d66c">__dt__16Z2AudioArcLoaderFv</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2AudioArcLoader_8cpp.html#af8dcf5a4e41ddfdbda5fc5318dae52d9">readWS__17JAUAudioArcLoaderFUlPCvUl</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2AudioArcLoader_8cpp.html#a8c2587fc732974c3dbb008c2d5be12fc">readBNK__17JAUAudioArcLoaderFUlPCv</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2AudioArcLoader_8cpp.html#ad80ff75283bf78c6345040b4b4120fb4">readBSC__17JAUAudioArcLoaderFPCvUl</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2AudioArcLoader_8cpp.html#a234ca2143daa76aeb6a0d5f67e0789e6">readBST__17JAUAudioArcLoaderFPCvUl</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2AudioArcLoader_8cpp.html#a87d098e2bfc9760dc74719994b9e3023">readBSTN__16Z2AudioArcLoaderFPCvUl</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2AudioArcLoader_8cpp.html#a4f1f062243514ad9245f26106051687a">readBMS__17JAUAudioArcLoaderFUlPCvUl</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2AudioArcLoader_8cpp.html#a50702bf499183d5e95a1bbbfbdb2dcf0">readBMS_fromArchive__17JAUAudioArcLoaderFUl</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2AudioArcLoader_8cpp.html#a138d0ac78523fceb68c0e5b94d4b3702">newVoiceBank__17JAUAudioArcLoaderFUlUl</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2AudioArcLoader_8cpp.html#a231c00b88797a2ac17e2d178c788421a">newDynamicSeqBlock__17JAUAudioArcLoaderFUl</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2AudioArcLoader_8cpp.html#aa1a4d82e3b2ce7ac5409701f21f029eb">readBSFT__17JAUAudioArcLoaderFPCv</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2AudioArcLoader_8cpp.html#aa56d61738acf85c034184bed5657fd72">readMaxSeCategory__17JAUAudioArcLoaderFiii</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2AudioArcLoader_8cpp.html#ac21a22dfe0f3017338453573b35d3df6">beginBNKList__17JAUAudioArcLoaderFUlUl</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2AudioArcLoader_8cpp.html#ad9b0609dd3da13e46fbc648af37de8bb">endBNKList__17JAUAudioArcLoaderFv</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="Z2AudioArcLoader_8cpp.html#a15b70f8d8f52f4ada5e0722089c9848f">readCommandMore__16Z2AudioArcLoaderFUl</a>,</div>
-<div class="line">    </div>
-<div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
-<div class="line">}</div>
-<div class="ttc" id="aZ2AudioArcLoader_8cpp_html_a138d0ac78523fceb68c0e5b94d4b3702"><div class="ttname"><a href="Z2AudioArcLoader_8cpp.html#a138d0ac78523fceb68c0e5b94d4b3702">newVoiceBank__17JAUAudioArcLoaderFUlUl</a></div><div class="ttdeci">void newVoiceBank__17JAUAudioArcLoaderFUlUl()</div></div>
-<div class="ttc" id="aZ2AudioArcLoader_8cpp_html_a15b70f8d8f52f4ada5e0722089c9848f"><div class="ttname"><a href="Z2AudioArcLoader_8cpp.html#a15b70f8d8f52f4ada5e0722089c9848f">readCommandMore__16Z2AudioArcLoaderFUl</a></div><div class="ttdeci">void readCommandMore__16Z2AudioArcLoaderFUl()</div></div>
-<div class="ttc" id="aZ2AudioArcLoader_8cpp_html_a231c00b88797a2ac17e2d178c788421a"><div class="ttname"><a href="Z2AudioArcLoader_8cpp.html#a231c00b88797a2ac17e2d178c788421a">newDynamicSeqBlock__17JAUAudioArcLoaderFUl</a></div><div class="ttdeci">void newDynamicSeqBlock__17JAUAudioArcLoaderFUl()</div></div>
-<div class="ttc" id="aZ2AudioArcLoader_8cpp_html_a234ca2143daa76aeb6a0d5f67e0789e6"><div class="ttname"><a href="Z2AudioArcLoader_8cpp.html#a234ca2143daa76aeb6a0d5f67e0789e6">readBST__17JAUAudioArcLoaderFPCvUl</a></div><div class="ttdeci">void readBST__17JAUAudioArcLoaderFPCvUl()</div></div>
-<div class="ttc" id="aZ2AudioArcLoader_8cpp_html_a4f1f062243514ad9245f26106051687a"><div class="ttname"><a href="Z2AudioArcLoader_8cpp.html#a4f1f062243514ad9245f26106051687a">readBMS__17JAUAudioArcLoaderFUlPCvUl</a></div><div class="ttdeci">void readBMS__17JAUAudioArcLoaderFUlPCvUl()</div></div>
-<div class="ttc" id="aZ2AudioArcLoader_8cpp_html_a50702bf499183d5e95a1bbbfbdb2dcf0"><div class="ttname"><a href="Z2AudioArcLoader_8cpp.html#a50702bf499183d5e95a1bbbfbdb2dcf0">readBMS_fromArchive__17JAUAudioArcLoaderFUl</a></div><div class="ttdeci">void readBMS_fromArchive__17JAUAudioArcLoaderFUl()</div></div>
-<div class="ttc" id="aZ2AudioArcLoader_8cpp_html_a67c34da3e7be19aa1807c5d121d1d66c"><div class="ttname"><a href="Z2AudioArcLoader_8cpp.html#a67c34da3e7be19aa1807c5d121d1d66c">__dt__16Z2AudioArcLoaderFv</a></div><div class="ttdeci">void __dt__16Z2AudioArcLoaderFv()</div></div>
-<div class="ttc" id="aZ2AudioArcLoader_8cpp_html_a87d098e2bfc9760dc74719994b9e3023"><div class="ttname"><a href="Z2AudioArcLoader_8cpp.html#a87d098e2bfc9760dc74719994b9e3023">readBSTN__16Z2AudioArcLoaderFPCvUl</a></div><div class="ttdeci">void readBSTN__16Z2AudioArcLoaderFPCvUl()</div></div>
-<div class="ttc" id="aZ2AudioArcLoader_8cpp_html_a8c2587fc732974c3dbb008c2d5be12fc"><div class="ttname"><a href="Z2AudioArcLoader_8cpp.html#a8c2587fc732974c3dbb008c2d5be12fc">readBNK__17JAUAudioArcLoaderFUlPCv</a></div><div class="ttdeci">void readBNK__17JAUAudioArcLoaderFUlPCv()</div></div>
-<div class="ttc" id="aZ2AudioArcLoader_8cpp_html_aa1a4d82e3b2ce7ac5409701f21f029eb"><div class="ttname"><a href="Z2AudioArcLoader_8cpp.html#aa1a4d82e3b2ce7ac5409701f21f029eb">readBSFT__17JAUAudioArcLoaderFPCv</a></div><div class="ttdeci">void readBSFT__17JAUAudioArcLoaderFPCv()</div></div>
-<div class="ttc" id="aZ2AudioArcLoader_8cpp_html_aa56d61738acf85c034184bed5657fd72"><div class="ttname"><a href="Z2AudioArcLoader_8cpp.html#aa56d61738acf85c034184bed5657fd72">readMaxSeCategory__17JAUAudioArcLoaderFiii</a></div><div class="ttdeci">void readMaxSeCategory__17JAUAudioArcLoaderFiii()</div></div>
-<div class="ttc" id="aZ2AudioArcLoader_8cpp_html_ac21a22dfe0f3017338453573b35d3df6"><div class="ttname"><a href="Z2AudioArcLoader_8cpp.html#ac21a22dfe0f3017338453573b35d3df6">beginBNKList__17JAUAudioArcLoaderFUlUl</a></div><div class="ttdeci">void beginBNKList__17JAUAudioArcLoaderFUlUl()</div></div>
-<div class="ttc" id="aZ2AudioArcLoader_8cpp_html_ad80ff75283bf78c6345040b4b4120fb4"><div class="ttname"><a href="Z2AudioArcLoader_8cpp.html#ad80ff75283bf78c6345040b4b4120fb4">readBSC__17JAUAudioArcLoaderFPCvUl</a></div><div class="ttdeci">void readBSC__17JAUAudioArcLoaderFPCvUl()</div></div>
-<div class="ttc" id="aZ2AudioArcLoader_8cpp_html_ad9b0609dd3da13e46fbc648af37de8bb"><div class="ttname"><a href="Z2AudioArcLoader_8cpp.html#ad9b0609dd3da13e46fbc648af37de8bb">endBNKList__17JAUAudioArcLoaderFv</a></div><div class="ttdeci">void endBNKList__17JAUAudioArcLoaderFv()</div></div>
-<div class="ttc" id="aZ2AudioArcLoader_8cpp_html_af8dcf5a4e41ddfdbda5fc5318dae52d9"><div class="ttname"><a href="Z2AudioArcLoader_8cpp.html#af8dcf5a4e41ddfdbda5fc5318dae52d9">readWS__17JAUAudioArcLoaderFUlPCvUl</a></div><div class="ttdeci">void readWS__17JAUAudioArcLoaderFUlPCvUl()</div></div>
-<div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> stddef.h:19</div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <a id="a47821d3df46a04f807cb137caab10ec7" name="a47821d3df46a04f807cb137caab10ec7"></a>

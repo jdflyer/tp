@@ -82,16 +82,19 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">JASWSParser.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="JASWSParser_8h_source.html">JSystem/JAudio2/JASWSParser.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JASWaveInfo_8h_source.html">JSystem/JAudio2/JASWaveInfo.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JASWaveArcLoader_8h_source.html">JSystem/JAudio2/JASWaveArcLoader.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JASSimpleWaveBank_8h_source.html">JSystem/JAudio2/JASSimpleWaveBank.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JASBasicWaveBank_8h_source.html">JSystem/JAudio2/JASBasicWaveBank.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JKRHeap_8h_source.html">JSystem/JKernel/JKRHeap.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JASWSParser/getGroupCount__11JASWSParserFPCv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JASWSParser/createWaveBank__11JASWSParserFPCvP7JKRHeap.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JASWSParser/createBasicWaveBank__11JASWSParserFPCvP7JKRHeap.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JASWSParser/createSimpleWaveBank__11JASWSParserFPCvP7JKRHeap.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JASWSParser/func_80299490.s&quot;</code><br />
@@ -106,27 +109,10 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="JASWSParser_8cpp__incl.svg" width="100%" height="470"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="JASWSParser_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJKRHeap.html">JKRHeap</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASWaveInfo.html">JASWaveInfo</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASWaveArc.html">JASWaveArc</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASWSParser.html">JASWSParser</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASSimpleWaveBank.html">JASSimpleWaveBank</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASBasicWaveBank.html">JASBasicWaveBank</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASBasicWaveBank_1_1TWaveGroup.html">JASBasicWaveBank::TWaveGroup</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ad4c0e849402841e9a01d29c029006df8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASWSParser_8cpp.html#ad4c0e849402841e9a01d29c029006df8">getGroupCount__11JASWSParserFPCv</a> ()</td></tr>
@@ -190,8 +176,6 @@ Variables</h2></td></tr>
 <tr class="separator:ad3e98bc7193fe35e87eaf98403baa5e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad39326200dd446e4969f40a736f3abb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a2caf5cd7bcdbe1eefa727f44ffb10bac">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASWSParser_8cpp.html#ad39326200dd446e4969f40a736f3abb3">one__11JASWaveInfo</a> [1+1]</td></tr>
 <tr class="separator:ad39326200dd446e4969f40a736f3abb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a7a3822f0b02c17ed6f8a99b46e7618"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JASWSParser_8cpp.html#a4a7a3822f0b02c17ed6f8a99b46e7618">JASDram</a> [4]</td></tr>
-<tr class="separator:a4a7a3822f0b02c17ed6f8a99b46e7618"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a0dc702e9ad3ac17dbd388a1237f21216" name="a0dc702e9ad3ac17dbd388a1237f21216"></a>
@@ -773,28 +757,6 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a4a7a3822f0b02c17ed6f8a99b46e7618" name="a4a7a3822f0b02c17ed6f8a99b46e7618"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a7a3822f0b02c17ed6f8a99b46e7618">&#9670;&#160;</a></span>JASDram</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> JASDram[4]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ad39326200dd446e4969f40a736f3abb3" name="ad39326200dd446e4969f40a736f3abb3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad39326200dd446e4969f40a736f3abb3">&#9670;&#160;</a></span>one__11JASWaveInfo</h2>
 

@@ -359,8 +359,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a140194e39f0d79ce67cbfe1a3f766491"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8784832247ef353af249139c969d833b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaHorse__c.html#a8784832247ef353af249139c969d833b">offNoDrawWait</a> ()</td></tr>
 <tr class="separator:a8784832247ef353af249139c969d833b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e95d5825f9bc499f109fe917d72366e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaHorse__c.html#a6e95d5825f9bc499f109fe917d72366e">checkSpecialWallHit</a> (const <a class="el" href="structcXyz.html">cXyz</a> &amp;param_0)</td></tr>
-<tr class="separator:a6e95d5825f9bc499f109fe917d72366e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a773838e9bfd1f27245abeeb5717fa923"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaHorse__c.html#a773838e9bfd1f27245abeeb5717fa923">checkSpecialWallHit</a> (const <a class="el" href="structcXyz.html">cXyz</a> &amp;param_0)</td></tr>
+<tr class="separator:a773838e9bfd1f27245abeeb5717fa923"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6eb92df4e20928a88f2e6d6c1b6854b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mtx_8h.html#a486ec93ad57f76408600fa51e755e290">MtxP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaHorse__c.html#a6eb92df4e20928a88f2e6d6c1b6854b5">getSaddleMtx</a> ()</td></tr>
 <tr class="separator:a6eb92df4e20928a88f2e6d6c1b6854b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11bd2db8a4b335695c0a8893e6d52b5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mtx_8h.html#a486ec93ad57f76408600fa51e755e290">MtxP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaHorse__c.html#a11bd2db8a4b335695c0a8893e6d52b5d">getRootMtx</a> ()</td></tr>
@@ -563,8 +563,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ac0cc45918af06421b0f9161262b72521"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4107b616a36d353714a4193a83abf660"><td class="memItemLeft" align="right" valign="top">int(daHorse_c::*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaHorse__c.html#a4107b616a36d353714a4193a83abf660">mpProcFn</a> )()</td></tr>
 <tr class="separator:a4107b616a36d353714a4193a83abf660"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e2e36d2b6b057420c49977584a844ec"><td class="memItemLeft" align="right" valign="top">int(daHorse_c::*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaHorse__c.html#a2e2e36d2b6b057420c49977584a844ec">mpCheckSpecialWallHitFn</a> )(const <a class="el" href="structcXyz.html">cXyz</a> &amp;)</td></tr>
-<tr class="separator:a2e2e36d2b6b057420c49977584a844ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a699804b74c68034df5199b550b8bd44c"><td class="memItemLeft" align="right" valign="top">bool(daHorse_c::*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaHorse__c.html#a699804b74c68034df5199b550b8bd44c">mpCheckSpecialWallHitFn</a> )(const <a class="el" href="structcXyz.html">cXyz</a> &amp;)</td></tr>
+<tr class="separator:a699804b74c68034df5199b550b8bd44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8c9a4cf48fd6dc326e119cdfbadbf52"><td class="memItemLeft" align="right" valign="top">void(daHorse_c::*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaHorse__c.html#ab8c9a4cf48fd6dc326e119cdfbadbf52">mpSetReinPosHandFn</a> )(int)</td></tr>
 <tr class="separator:ab8c9a4cf48fd6dc326e119cdfbadbf52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab39ce6b98f2df09c86b4dcf3dc470905"><td class="memItemLeft" align="right" valign="top">void(daHorse_c::*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdaHorse__c.html#ab39ce6b98f2df09c86b4dcf3dc470905">mpSetReinPosNormalFn</a> )()</td></tr>
@@ -1354,8 +1354,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a6e95d5825f9bc499f109fe917d72366e" name="a6e95d5825f9bc499f109fe917d72366e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e95d5825f9bc499f109fe917d72366e">&#9670;&#160;</a></span>checkSpecialWallHit()</h2>
+<a id="a773838e9bfd1f27245abeeb5717fa923" name="a773838e9bfd1f27245abeeb5717fa923"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a773838e9bfd1f27245abeeb5717fa923">&#9670;&#160;</a></span>checkSpecialWallHit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1364,7 +1364,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int daHorse_c::checkSpecialWallHit </td>
+          <td class="memname">bool daHorse_c::checkSpecialWallHit </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structcXyz.html">cXyz</a> &amp;&#160;</td>
           <td class="paramname"><em>param_0</em></td><td>)</td>
@@ -4667,14 +4667,14 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a2e2e36d2b6b057420c49977584a844ec" name="a2e2e36d2b6b057420c49977584a844ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e2e36d2b6b057420c49977584a844ec">&#9670;&#160;</a></span>mpCheckSpecialWallHitFn</h2>
+<a id="a699804b74c68034df5199b550b8bd44c" name="a699804b74c68034df5199b550b8bd44c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a699804b74c68034df5199b550b8bd44c">&#9670;&#160;</a></span>mpCheckSpecialWallHitFn</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int(daHorse_c::* daHorse_c::mpCheckSpecialWallHitFn) (const <a class="el" href="structcXyz.html">cXyz</a> &amp;)</td>
+          <td class="memname">bool(daHorse_c::* daHorse_c::mpCheckSpecialWallHitFn) (const <a class="el" href="structcXyz.html">cXyz</a> &amp;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
