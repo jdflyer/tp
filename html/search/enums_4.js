@@ -55,6 +55,12 @@ var searchData=
   ['dmw_5fstatus_52',['dMw_Status',['../classdMw__c.html#a9c12bf96930db318a3d8b6704985face',1,'dMw_c']]],
   ['drawbuffer_53',['DrawBuffer',['../structdDlst__list__c.html#ade1f3b0d8ae13b1208ac59bfcf50415c',1,'dDlst_list_c']]],
   ['drawmode_54',['DrawMode',['../structJ3DSys.html#a30cc363d626b82865300b658c387eab9',1,'J3DSys']]],
-  ['dvdresult_55',['DVDResult',['../dvd_8h.html#ac3c743dfa2642c893af57e9582d42d9b',1,'dvd.h']]],
-  ['dvdstate_56',['DVDState',['../dvd_8h.html#ad4f227aed34861133cc1c89c8a0d86e7',1,'dvd.h']]]
+  ['dserror_55',['DSError',['../trk_8h.html#a05b02c582cd96401f80a16293cccd408',1,'trk.h']]],
+  ['dsfilehandle_56',['DSFileHandle',['../trk_8h.html#ad05ef16f1f26edddaa833cd6980ea313',1,'trk.h']]],
+  ['dsioresult_57',['DSIOResult',['../trk_8h.html#abb04573ed5817a3349abfeb032fc2384',1,'trk.h']]],
+  ['dsmessageregisteroptions_58',['DSMessageRegisterOptions',['../trk_8h.html#a34f2f0d330a3f85587fce2aeea6bc07e',1,'trk.h']]],
+  ['dsmessagestepoptions_59',['DSMessageStepOptions',['../trk_8h.html#a5b538f42a2e6625f06b1dba3dc6f1cbe',1,'trk.h']]],
+  ['dsreplyerror_60',['DSReplyError',['../trk_8h.html#aec22e8e81f3f173090f2c04ac256d143',1,'trk.h']]],
+  ['dvdresult_61',['DVDResult',['../dvd_8h.html#ac3c743dfa2642c893af57e9582d42d9b',1,'dvd.h']]],
+  ['dvdstate_62',['DVDState',['../dvd_8h.html#ad4f227aed34861133cc1c89c8a0d86e7',1,'dvd.h']]]
 ];

@@ -9,6 +9,6 @@ var searchData=
   ['teoutside_6',['TEOutside',['../classJStudio_1_1TFunctionValue.html#aed12c4e15d04deacdf481c76184947bd',1,'JStudio::TFunctionValue']]],
   ['teprogress_7',['TEProgress',['../classJStudio_1_1TFunctionValue.html#ab27cc552802dec5fe42041f948af5753',1,'JStudio::TFunctionValue']]],
   ['testatus_8',['TEStatus',['../classJStudio_1_1stb_1_1TObject.html#afa151e80933671d98b73024b86eab140',1,'JStudio::stb::TObject']]],
-  ['type_9',['Type',['../classdMeter__drawInsectHIO__c.html#a9ecff3b01f861212e86e1496e0e1d49b',1,'dMeter_drawInsectHIO_c::Type()'],['../classJKRAramStreamCommand.html#a584a0f0d44d10e7db7ae9487b83a3486',1,'JKRAramStreamCommand::Type()']]],
-  ['type_5fe_10',['Type_e',['../classdaObjMGate__c.html#a13ca5533e07abcc4c97cc381e6d87cfe',1,'daObjMGate_c::Type_e()'],['../classdaTagHjump__c.html#a30b16f6ca72aed616645c2d8c8abdb65',1,'daTagHjump_c::Type_e()']]]
+  ['type_9',['type',['../classdMeter__drawInsectHIO__c.html#a9ecff3b01f861212e86e1496e0e1d49b',1,'dMeter_drawInsectHIO_c::Type'],['../classJKRAramStreamCommand.html#a584a0f0d44d10e7db7ae9487b83a3486',1,'JKRAramStreamCommand::Type']]],
+  ['type_5fe_10',['type_e',['../classdaObjMGate__c.html#a13ca5533e07abcc4c97cc381e6d87cfe',1,'daObjMGate_c::Type_e'],['../classdaTagHjump__c.html#a30b16f6ca72aed616645c2d8c8abdb65',1,'daTagHjump_c::Type_e']]]
 ];

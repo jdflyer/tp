@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['z2bgmid_0',['Z2BgmID',['../Z2SeqMgr_8h.html#a61d7f798d58941871faea3c813b33b5c',1,'Z2SeqMgr.h']]],
-  ['z2enemyid_1',['Z2EnemyID',['../Z2SoundObjMgr_8h.html#a9ad83c0a3642c62eb12a09c281d23861',1,'Z2SoundObjMgr.h']]],
-  ['z2soundid_2',['Z2SoundID',['../Z2SeMgr_8h.html#a2015be0323c9a6d9908c0ddb691584ab',1,'Z2SeMgr.h']]]
+  ['wallets_0',['Wallets',['../d__save_8h.html#a5af6360fa7af6b3ff29f1d747eb0782a',1,'d_save.h']]],
+  ['weighttype_1',['WeightType',['../c__cc__s_8h.html#a1cb5573d6a7ba58f26efddb7073ad4de',1,'c_cc_s.h']]],
+  ['windtype_2',['WindType',['../Z2EnvSeMgr_8h.html#ab8e8b71b471dbb9aeba77602dcf6240a',1,'Z2EnvSeMgr.h']]]
 ];

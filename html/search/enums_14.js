@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['vitvmode_0',['VITVMode',['../vi_8h.html#abff30bd79dcb2f2ba4293c7630c860ba',1,'vi.h']]],
-  ['vixfbmode_1',['VIXFBMode',['../vi_8h.html#ac3a9e2111ea612658c93a9f4c1b43823',1,'vi.h']]]
+  ['uartbaudrate_0',['UARTBaudRate',['../trk_8h.html#a5bd871a9bbeafd0ddf9b66101739986d',1,'trk.h']]],
+  ['uarterroroptions_1',['UARTErrorOptions',['../trk_8h.html#a32c0a23709984e66a3fd4ba6031886cc',1,'trk.h']]]
 ];

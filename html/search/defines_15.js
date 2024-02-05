@@ -15,6 +15,8 @@ var searchData=
   ['upmc3_12',['UPMC3',['../PPCArch_8h.html#aa15123ea5896b77558584abd669706fc',1,'PPCArch.h']]],
   ['upmc4_13',['UPMC4',['../PPCArch_8h.html#a6e324006abede95404a3d1067f0699f0',1,'PPCArch.h']]],
   ['uppc_14',['uppc',['../ctype_8c.html#a307f06aca9b15ae1e7246b6ae1adf038',1,'ctype.c']]],
-  ['ushrt_5fmax_15',['USHRT_MAX',['../limits_8h.html#a689b119da994dece91d44b5aeac643ed',1,'limits.h']]],
-  ['usia_16',['USIA',['../PPCArch_8h.html#a4ce36fb487bb2275d42d46fde36df68f',1,'PPCArch.h']]]
+  ['ureg_5ff_15',['UREG_F',['../d__s__play_8h.html#a56ae161fb600a0beab79411f09b9c9ca',1,'d_s_play.h']]],
+  ['ureg_5fs_16',['UREG_S',['../d__s__play_8h.html#a85d332fa020cdead043e5409f6ccd3f1',1,'d_s_play.h']]],
+  ['ushrt_5fmax_17',['USHRT_MAX',['../limits_8h.html#a689b119da994dece91d44b5aeac643ed',1,'limits.h']]],
+  ['usia_18',['USIA',['../PPCArch_8h.html#a4ce36fb487bb2275d42d46fde36df68f',1,'PPCArch.h']]]
 ];
