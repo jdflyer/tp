@@ -16,7 +16,7 @@ var searchData=
   ['tloss_13',['TLOSS',['../fdlibm_8h.html#a825e55df6d9d9077086624c460867730',1,'fdlibm.h']]],
   ['tophysical_14',['ToPhysical',['../vi_8c.html#a76484b7bd821ecf016b0b8cab501e85b',1,'vi.c']]],
   ['treg_5ff_15',['treg_f',['../d__s__play_8h.html#a77b7b3b6d8e58e953c26609923b8d787',1,'tREG_F:&#160;d_s_play.h'],['../d__s__play_8h.html#a2c6fe86367401d0b144dcfaa9529e5fc',1,'TREG_F:&#160;d_s_play.h']]],
-  ['treg_5fs_16',['treg_s',['../d__s__play_8h.html#affa22912e24ac702005d8396e265578e',1,'tREG_S:&#160;d_s_play.h'],['../d__s__play_8h.html#aa90a53b50bd2fa4a018c0b15ddd8e8ba',1,'TREG_S:&#160;d_s_play.h']]],
+  ['treg_5fs_16',['treg_s',['../d__s__play_8h.html#aa90a53b50bd2fa4a018c0b15ddd8e8ba',1,'TREG_S:&#160;d_s_play.h'],['../d__s__play_8h.html#affa22912e24ac702005d8396e265578e',1,'tREG_S:&#160;d_s_play.h']]],
   ['trk_5fdispatch_5fcmd_5fconnect_17',['TRK_DISPATCH_CMD_CONNECT',['../dispatch_8h.html#a558403363ac034e1f2a2a2cbc6ee4ac4',1,'dispatch.h']]],
   ['trk_5fdispatch_5fcmd_5fcontinue_18',['TRK_DISPATCH_CMD_CONTINUE',['../dispatch_8h.html#a0d7aedeb9825d0de9053382481ed3e6b',1,'dispatch.h']]],
   ['trk_5fdispatch_5fcmd_5fdisconnect_19',['TRK_DISPATCH_CMD_DISCONNECT',['../dispatch_8h.html#ab882a88c21e17384fa37a3001b1cbe86',1,'dispatch.h']]],

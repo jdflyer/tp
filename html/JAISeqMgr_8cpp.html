@@ -82,25 +82,19 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">JAISeqMgr.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="JAISeqMgr_8h_source.html">JSystem/JAudio2/JAISeqMgr.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JAISeq_8h_source.html">JSystem/JAudio2/JAISeq.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JASHeapCtrl_8h_source.html">JSystem/JAudio2/JASHeapCtrl.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JAISoundHandles_8h_source.html">JSystem/JAudio2/JAISoundHandles.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JAISoundInfo_8h_source.html">JSystem/JAudio2/JAISoundInfo.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeqMgr/isUsingSeqData__9JAISeqMgrFRC16JAISeqDataRegion.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeqMgr/releaseSeqData__9JAISeqMgrFRC16JAISeqDataRegion.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeqMgr/__ct__9JAISeqMgrFb.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAISeqMgr/freeDeadSeq___9JAISeqMgrFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAISeqMgr/func_802A1AF4.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeqMgr/func_802A1B48.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeqMgr/calc__9JAISeqMgrFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeqMgr/stop__9JAISeqMgrFv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeqMgr/stop__9JAISeqMgrFUl.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeqMgr/stopSoundID__9JAISeqMgrF10JAISoundID.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/JAudio2/JAISeqMgr/mixOut__9JAISeqMgrFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAISeqMgr/beginStartSeq___9JAISeqMgrFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAISeqMgr/endStartSeq___9JAISeqMgrFP6JAISeqP14JAISoundHandle.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/JAudio2/JAISeqMgr/__dt__9JAISeqMgrFv.s&quot;</code><br />
@@ -112,17 +106,6 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="JAISeqMgr_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASMemPool.html">JASMemPool&lt; A0 &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASMemPool____template2.html">JASMemPool__template2</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJASGenericMemPool.html">JASGenericMemPool</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJAISeq.html">JAISeq</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a3dd975f81c00c5dd8c9a40d9074fbe63" id="r_a3dd975f81c00c5dd8c9a40d9074fbe63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="JAISeqMgr_8cpp.html#a3dd975f81c00c5dd8c9a40d9074fbe63">isUsingSeqData__9JAISeqMgrFRC16JAISeqDataRegion</a> ()</td></tr>
@@ -973,7 +956,7 @@ Variables</h2></td></tr>
 <div class="line">}</div>
 <div class="ttc" id="aJAISeqMgr_8cpp_html_a1a4800873d3a042de5f483b084ef3173"><div class="ttname"><a href="JAISeqMgr_8cpp.html#a1a4800873d3a042de5f483b084ef3173">releaseSeqData__9JAISeqMgrFRC16JAISeqDataRegion</a></div><div class="ttdeci">void releaseSeqData__9JAISeqMgrFRC16JAISeqDataRegion()</div></div>
 <div class="ttc" id="aJAISeqMgr_8cpp_html_a3dd975f81c00c5dd8c9a40d9074fbe63"><div class="ttname"><a href="JAISeqMgr_8cpp.html#a3dd975f81c00c5dd8c9a40d9074fbe63">isUsingSeqData__9JAISeqMgrFRC16JAISeqDataRegion</a></div><div class="ttdeci">void isUsingSeqData__9JAISeqMgrFRC16JAISeqDataRegion()</div></div>
-<div class="ttc" id="aJAISeqMgr_8cpp_html_a8d3fd290ed1cd0c74fa1220a9a4d3a9f"><div class="ttname"><a href="JAISeqMgr_8cpp.html#a8d3fd290ed1cd0c74fa1220a9a4d3a9f">__dt__9JAISeqMgrFv</a></div><div class="ttdeci">void __dt__9JAISeqMgrFv()</div><div class="ttdef"><b>Definition</b> JAISeqMgr.cpp:270</div></div>
+<div class="ttc" id="aJAISeqMgr_8cpp_html_a8d3fd290ed1cd0c74fa1220a9a4d3a9f"><div class="ttname"><a href="JAISeqMgr_8cpp.html#a8d3fd290ed1cd0c74fa1220a9a4d3a9f">__dt__9JAISeqMgrFv</a></div><div class="ttdeci">void __dt__9JAISeqMgrFv()</div><div class="ttdef"><b>Definition</b> JAISeqMgr.cpp:309</div></div>
 <div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> stddef.h:19</div></div>
 </div><!-- fragment -->
 </div>

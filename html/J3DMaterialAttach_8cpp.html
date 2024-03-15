@@ -90,16 +90,10 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="J3DMaterialAttach_8h_source.html">JSystem/J3DGraphAnimator/J3DMaterialAttach.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="J3DMaterialAnm_8h_source.html">JSystem/J3DGraphAnimator/J3DMaterialAnm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="J3DMaterial_8h_source.html">JSystem/J3DGraphBase/J3DMaterial.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JUTAssert_8h_source.html">JSystem/JUtility/JUTAssert.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphAnimator/J3DMaterialAttach/removeTexNoAnimator__16J3DMaterialTableFP16J3DAnmTexPattern.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphAnimator/J3DMaterialAttach/removeTexMtxAnimator__16J3DMaterialTableFP19J3DAnmTextureSRTKey.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphAnimator/J3DMaterialAttach/removeTevRegAnimator__16J3DMaterialTableFP15J3DAnmTevRegKey.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphAnimator/J3DMaterialAttach/createTexMtxForAnimator__16J3DMaterialTableFP19J3DAnmTextureSRTKey.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphAnimator/J3DMaterialAttach/entryMatColorAnimator__16J3DMaterialTableFP11J3DAnmColor.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphAnimator/J3DMaterialAttach/entryTexNoAnimator__16J3DMaterialTableFP16J3DAnmTexPattern.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphAnimator/J3DMaterialAttach/entryTexMtxAnimator__16J3DMaterialTableFP19J3DAnmTextureSRTKey.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphAnimator/J3DMaterialAttach/entryTevRegAnimator__16J3DMaterialTableFP15J3DAnmTevRegKey.s&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for J3DMaterialAttach.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -169,12 +163,8 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a26c595c565c2a7fcb15ea988569e7f79" id="r_a26c595c565c2a7fcb15ea988569e7f79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialAttach_8cpp.html#a26c595c565c2a7fcb15ea988569e7f79">j3dDefaultTexMtxInfo</a> [100]</td></tr>
-<tr class="separator:a26c595c565c2a7fcb15ea988569e7f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefa7407578e4ecada32aebaa6b59cacd" id="r_aefa7407578e4ecada32aebaa6b59cacd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialAttach_8cpp.html#aefa7407578e4ecada32aebaa6b59cacd">__vt__11J3DTexNoAnm</a> [3]</td></tr>
 <tr class="separator:aefa7407578e4ecada32aebaa6b59cacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc49c3591a46096c26d3d9d501f3e917" id="r_adc49c3591a46096c26d3d9d501f3e917"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DMaterialAttach_8cpp.html#adc49c3591a46096c26d3d9d501f3e917">__vt__16J3DMaterialTable</a> [3+1]</td></tr>
-<tr class="separator:adc49c3591a46096c26d3d9d501f3e917"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a2e5bb0d24ae409ef798475d6f48c9cc4" name="a2e5bb0d24ae409ef798475d6f48c9cc4"></a>
@@ -665,59 +655,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a>* __vt__11J3DTexNoAnm[3]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="adc49c3591a46096c26d3d9d501f3e917" name="adc49c3591a46096c26d3d9d501f3e917"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc49c3591a46096c26d3d9d501f3e917">&#9670;&#160;</a></span>__vt__16J3DMaterialTable</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a>* __vt__16J3DMaterialTable[3+1]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> ,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="J3DMaterialAttach_8cpp.html#ac0e99b1525129c20f69ffc2a03b989ca">__dt__16J3DMaterialTableFv</a>,</div>
-<div class="line">    </div>
-<div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
-<div class="line">}</div>
-<div class="ttc" id="aJ3DMaterialAttach_8cpp_html_ac0e99b1525129c20f69ffc2a03b989ca"><div class="ttname"><a href="J3DMaterialAttach_8cpp.html#ac0e99b1525129c20f69ffc2a03b989ca">__dt__16J3DMaterialTableFv</a></div><div class="ttdeci">void __dt__16J3DMaterialTableFv()</div></div>
-<div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> stddef.h:19</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a26c595c565c2a7fcb15ea988569e7f79" name="a26c595c565c2a7fcb15ea988569e7f79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26c595c565c2a7fcb15ea988569e7f79">&#9670;&#160;</a></span>j3dDefaultTexMtxInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> j3dDefaultTexMtxInfo[100]</td>
         </tr>
       </table>
   </td>

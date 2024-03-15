@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['callback_0',['Callback',['../classJUTVideo.html#afe4f60162a8dd449a1c1ac471aa82b9a',1,'JUTVideo']]],
+  ['callback_0',['callback',['../structJASDSPChannel.html#a1f403dbb73394dabb1e26f91a8a513f9',1,'JASDSPChannel::Callback'],['../classJUTVideo.html#afe4f60162a8dd449a1c1ac471aa82b9a',1,'JUTVideo::Callback'],['../structJASChannel.html#a944c45362ed697cf8c2c70cab24294c7',1,'JASChannel::Callback']]],
   ['callbackfn_1',['callbackFn',['../JUTGamePad_8h.html#a2f0b00652a669749e07a12c29412b6b2',1,'JUTGamePad.h']]],
   ['capigph_5fmthd_2',['cAPIGph_Mthd',['../c__API_8h.html#a886376eb0d4542ca26341714d48a17a1',1,'c_API.h']]],
   ['captpolycallback_3',['CaptPolyCallback',['../d__bg__s__cap__poly_8h.html#a321fa9f31217725b7c933c98416f6b4a',1,'d_bg_s_cap_poly.h']]],
@@ -24,7 +24,7 @@ var searchData=
   ['cphs_5f_5fhandler_21',['cPhs__Handler',['../c__phase_8h.html#afb28692301f219f0e73d2d0046192335',1,'c_phase.h']]],
   ['create_5frequest_22',['create_request',['../f__pc__base_8h.html#a1f8706019eabd0f9c95cb40da5941dbe',1,'create_request:&#160;f_pc_base.h'],['../f__pc__create__req_8h.html#a1f8706019eabd0f9c95cb40da5941dbe',1,'create_request:&#160;f_pc_create_req.h']]],
   ['create_5frequest_5fmethod_5fclass_23',['create_request_method_class',['../f__pc__create__req_8h.html#a923a88d49e2014bbbe0a801ed9f1ca14',1,'f_pc_create_req.h']]],
-  ['create_5ftag_24',['create_tag',['../f__pc__create__tag_8h.html#a17434e1796f05ffc5854c0e470b1efda',1,'create_tag:&#160;f_pc_create_tag.h'],['../f__pc__create__iter_8h.html#a17434e1796f05ffc5854c0e470b1efda',1,'create_tag:&#160;f_pc_create_iter.h']]],
+  ['create_5ftag_24',['create_tag',['../f__pc__create__iter_8h.html#a17434e1796f05ffc5854c0e470b1efda',1,'create_tag:&#160;f_pc_create_iter.h'],['../f__pc__create__tag_8h.html#a17434e1796f05ffc5854c0e470b1efda',1,'create_tag:&#160;f_pc_create_tag.h']]],
   ['create_5ftag_5fclass_25',['create_tag_class',['../f__op__draw__iter_8h.html#a6236acc418b499c98f9b34facd9b4ea0',1,'create_tag_class:&#160;f_op_draw_iter.h'],['../f__op__draw__tag_8h.html#a6236acc418b499c98f9b34facd9b4ea0',1,'create_tag_class:&#160;f_op_draw_tag.h'],['../f__pc__layer_8h.html#a6236acc418b499c98f9b34facd9b4ea0',1,'create_tag_class:&#160;f_pc_layer.h'],['../c__tag_8h.html#a6236acc418b499c98f9b34facd9b4ea0',1,'create_tag_class:&#160;c_tag.h'],['../c__tag__iter_8h.html#a6236acc418b499c98f9b34facd9b4ea0',1,'create_tag_class:&#160;c_tag_iter.h']]],
   ['createfunc_26',['createFunc',['../f__op__actor__mng_8h.html#a0b41bbbca8c43cd70ec786a2a4314295',1,'f_op_actor_mng.h']]],
   ['createheapfunc_27',['createHeapFunc',['../d__a__bg__obj_8h.html#a225733a38384a9e4d0d3b60c9dd9c50e',1,'d_a_bg_obj.h']]],

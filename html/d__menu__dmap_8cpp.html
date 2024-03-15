@@ -82,60 +82,72 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">d_menu_dmap.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="d__menu__dmap_8h_source.html">d/menu/d_menu_dmap.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="string_8h_source.html">string.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__menu__item__explain_8h_source.html">d/menu/d_menu_item_explain.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__msg__string_8h_source.html">d/msg/d_msg_string.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__msg__object_8h_source.html">d/msg/d_msg_object.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__msg__class_8h_source.html">d/msg/d_msg_class.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__map__path__dmap_8h_source.html">d/map/d_map_path_dmap.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__meter__haihai_8h_source.html">d/meter/d_meter_haihai.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__meter__HIO_8h_source.html">d/meter/d_meter_HIO.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__meter2__info_8h_source.html">d/meter/d_meter2_info.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__a__player_8h_source.html">d/a/d_a_player.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="d__lib_8h_source.html">d/d_lib.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__item_8h_source.html">d/d_item.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__tresure_8h_source.html">d/d_tresure.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__pane__class_8h_source.html">d/pane/d_pane_class.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="d__save_8h_source.html">d/save/d_save.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="f__op__msg__mng_8h_source.html">f_op/f_op_msg_mng.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="m__Do__controller__pad_8h_source.html">m_Do/m_Do_controller_pad.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="m__Do__dvd__thread_8h_source.html">m_Do/m_Do_dvd_thread.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="m__Do__graphic_8h_source.html">m_Do/m_Do_graphic.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J2DAnmLoader_8h_source.html">JSystem/J2DGraph/J2DAnmLoader.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J2DGrafContext_8h_source.html">JSystem/J2DGraph/J2DGrafContext.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J2DOrthoGraph_8h_source.html">JSystem/J2DGraph/J2DOrthoGraph.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J2DAnimation_8h_source.html">JSystem/J2DGraph/J2DAnimation.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J2DScreen_8h_source.html">JSystem/J2DGraph/J2DScreen.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="J2DTextBox_8h_source.html">JSystem/J2DGraph/J2DTextBox.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JKRExpHeap_8h_source.html">JSystem/JKernel/JKRExpHeap.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JKRMemArchive_8h_source.html">JSystem/JKernel/JKRMemArchive.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="c__math_8h_source.html">SSystem/SComponent/c_math.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="string_8h_source.html">string.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">dolphin/types.h</a>&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/__ct__14dMenu_DmapBg_cFP10JKRExpHeapP9STControl.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/mapScreenInit__14dMenu_DmapBg_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/mapScreenAnime__14dMenu_DmapBg_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/mapIconScaleSet__14dMenu_DmapBg_cFUc.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_dmap/iconScaleAnmInit__14dMenu_DmapBg_cFffUc.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/iconScaleAnm__14dMenu_DmapBg_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/buttonIconScreenInit__14dMenu_DmapBg_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_dmap/setAButtonString__14dMenu_DmapBg_cFUl.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_dmap/setBButtonString__14dMenu_DmapBg_cFUl.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/setCButtonString__14dMenu_DmapBg_cFUl.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_dmap/setJButtonString__14dMenu_DmapBg_cFUl.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_dmap/createExplain__14dMenu_DmapBg_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_dmap/deleteExplain__14dMenu_DmapBg_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/baseScreenInit__14dMenu_DmapBg_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/setFloorMessage__14dMenu_DmapBg_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/__dt__14dMenu_DmapBg_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_dmap/setAllAlphaRate__14dMenu_DmapBg_cFfb.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_dmap/setGoldAnimation__14dMenu_DmapBg_cFb.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/setGoldFrameAlphaRate__14dMenu_DmapBg_cFf.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/addGoldFrameAlphaRate__14dMenu_DmapBg_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/decGoldFrameAlphaRate__14dMenu_DmapBg_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/draw__14dMenu_DmapBg_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/update__14dMenu_DmapBg_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_dmap/drawCursor__14dMenu_DmapBg_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/__ct__12dMenu_Dmap_cFP10JKRExpHeapP9STControlP10CSTControlUcUc.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/screenInit__12dMenu_Dmap_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/getPlayerIconPos__12dMenu_Dmap_cFScf.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/getIconPos__12dMenu_Dmap_cFScf.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/__dt__12dMenu_Dmap_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/__dt__19dMenu_DmapMapCtrl_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_dmap/getCurFloorPos__12dMenu_Dmap_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_dmap/getDefaultCurFloorPos__12dMenu_Dmap_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_dmap/iconMoveCalc__12dMenu_Dmap_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/drawFloorScreenBack__12dMenu_Dmap_cFP9J2DScreenffP13J2DOrthoGraph.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/drawFloorScreenTop__12dMenu_Dmap_cFP9J2DScreenffP13J2DOrthoGraph.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/isMapMoveState__12dMenu_Dmap_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_dmap/floorChangeMode__12dMenu_Dmap_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/_create__12dMenu_Dmap_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/append__10J2DPictureFPC7ResTIMGf.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/insert__10J2DPictureFPC7ResTIMGUcf.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/_move__12dMenu_Dmap_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/setMapTexture__12dMenu_Dmap_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_dmap/mapBgAnime__12dMenu_Dmap_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/mapControl__12dMenu_Dmap_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/isOpen__12dMenu_Dmap_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/isClose__12dMenu_Dmap_cFv.s&quot;</code><br />
@@ -146,7 +158,6 @@ $(function() {
 <code>#include &quot;asm/d/menu/d_menu_dmap/getNextItem__12dMenu_Dmap_cFi.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/itemSelectAnmInit__12dMenu_Dmap_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/itemSelectAnm__12dMenu_Dmap_cFv.s&quot;</code><br />
-<code>#include &quot;asm/d/menu/d_menu_dmap/itemInfoOpenAnm__12dMenu_Dmap_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/itemInfoWait__12dMenu_Dmap_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/itemInfoCloseAnm__12dMenu_Dmap_cFv.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/getNextStatus__12dMenu_Dmap_cFv.s&quot;</code><br />
@@ -176,50 +187,10 @@ $(function() {
 <code>#include &quot;asm/d/menu/d_menu_dmap/__sinit_d_menu_dmap_cpp.s&quot;</code><br />
 <code>#include &quot;asm/d/menu/d_menu_dmap/func_801C0844.s&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrenderingDmap__c.html">renderingDmap_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmDoDvdThd__mountArchive__c.html">mDoDvdThd_mountArchive_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmDoCPd__c.html">mDoCPd_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdTres__c.html">dTres_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdSv__memBit__c.html">dSv_memBit_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdSv__info__c.html">dSv_info_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdSv__event__c.html">dSv_event_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMsgString__c.html">dMsgString_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMsgObject__c.html">dMsgObject_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMsgFlow__c.html">dMsgFlow_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMpath__c.html">dMpath_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMeterHaihai__c.html">dMeterHaihai_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJMSMesgEntry__c.html">JMSMesgEntry_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMeter2Info__c.html">dMeter2Info_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMenu__StageMapCtrl__c.html">dMenu_StageMapCtrl_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMenu__ItemExplain__c.html">dMenu_ItemExplain_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMenu__DmapMap__c.html">dMenu_DmapMap_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMenu__DmapMapCtrl__c.html">dMenu_DmapMapCtrl_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMenu__DmapBg__c.html">dMenu_DmapBg_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdMenuMapCommon__c.html">dMenuMapCommon_c</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structJ2DAnmLoaderDataBase.html">J2DAnmLoaderDataBase</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a88de0d78be8a14c62a4af702cf140906" id="r_a88de0d78be8a14c62a4af702cf140906"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">typedef</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a>(dMenu_Dmap_c::*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a88de0d78be8a14c62a4af702cf140906">ProcFunc</a>) ()</td></tr>
+<tr class="separator:a88de0d78be8a14c62a4af702cf140906"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -659,37 +630,33 @@ Functions</h2></td></tr>
 <tr class="separator:a3f61243ebf5cbb2ff90548d397b16772"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abed5bd59c54272a132a5b4da4beff66d" id="r_abed5bd59c54272a132a5b4da4beff66d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#abed5bd59c54272a132a5b4da4beff66d">_restgpr_29</a> ()</td></tr>
 <tr class="separator:abed5bd59c54272a132a5b4da4beff66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dc71961a3ab2b4ea47441f5ff67b32d" id="r_a5dc71961a3ab2b4ea47441f5ff67b32d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a5dc71961a3ab2b4ea47441f5ff67b32d">COMPILER_STRIP_GATE</a> (0x80395518, &amp;<a class="el" href="d__menu__dmap_8cpp.html#a326492a896f95854acc65959bbc2ddce">cont_at_4145</a>)</td></tr>
+<tr class="memitem:a5dc71961a3ab2b4ea47441f5ff67b32d" id="r_a5dc71961a3ab2b4ea47441f5ff67b32d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a5dc71961a3ab2b4ea47441f5ff67b32d">COMPILER_STRIP_GATE</a> (0x80395518, &amp;<a class="el" href="d__menu__dmap_8cpp.html#a69ef29a35faeb69d43aebd37d224224d">cont_at_4145</a>)</td></tr>
 <tr class="separator:a5dc71961a3ab2b4ea47441f5ff67b32d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c3c62e87582e2875b88f212ac6127eb" id="r_a5c3c62e87582e2875b88f212ac6127eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a5c3c62e87582e2875b88f212ac6127eb">COMPILER_STRIP_GATE</a> (0x80395540, &amp;<a class="el" href="d__menu__dmap_8cpp.html#a2e90cf3ae475184bfc3758cb7f2f711c">cont_bt_4146</a>)</td></tr>
+<tr class="memitem:a5c3c62e87582e2875b88f212ac6127eb" id="r_a5c3c62e87582e2875b88f212ac6127eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a5c3c62e87582e2875b88f212ac6127eb">COMPILER_STRIP_GATE</a> (0x80395540, &amp;<a class="el" href="d__menu__dmap_8cpp.html#ac0e89eff475bea02a344285736228ae2">cont_bt_4146</a>)</td></tr>
 <tr class="separator:a5c3c62e87582e2875b88f212ac6127eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b6d62dfac50f83fdfcad024e6b7f5e1" id="r_a5b6d62dfac50f83fdfcad024e6b7f5e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a5b6d62dfac50f83fdfcad024e6b7f5e1">COMPILER_STRIP_GATE</a> (0x80395568, &amp;<a class="el" href="d__menu__dmap_8cpp.html#abc1875d14e2fa6b7e5d000385d4e65bd">font_at</a>)</td></tr>
+<tr class="memitem:a5b6d62dfac50f83fdfcad024e6b7f5e1" id="r_a5b6d62dfac50f83fdfcad024e6b7f5e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a5b6d62dfac50f83fdfcad024e6b7f5e1">COMPILER_STRIP_GATE</a> (0x80395568, &amp;<a class="el" href="d__menu__dmap_8cpp.html#a947317a30583411010ee7af59161c779">font_at</a>)</td></tr>
 <tr class="separator:a5b6d62dfac50f83fdfcad024e6b7f5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54e8941e923fc828fc27282f8e01be2d" id="r_a54e8941e923fc828fc27282f8e01be2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a54e8941e923fc828fc27282f8e01be2d">COMPILER_STRIP_GATE</a> (0x80395590, &amp;<a class="el" href="d__menu__dmap_8cpp.html#a1018ec3288a0decb90ceeb4e94a14ba4">font_bt</a>)</td></tr>
+<tr class="memitem:a54e8941e923fc828fc27282f8e01be2d" id="r_a54e8941e923fc828fc27282f8e01be2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a54e8941e923fc828fc27282f8e01be2d">COMPILER_STRIP_GATE</a> (0x80395590, &amp;<a class="el" href="d__menu__dmap_8cpp.html#a4721455dbd08253ddb962105e11f2c6a">font_bt</a>)</td></tr>
 <tr class="separator:a54e8941e923fc828fc27282f8e01be2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62cd4c42ffe97615383162c3805bb4a7" id="r_a62cd4c42ffe97615383162c3805bb4a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a62cd4c42ffe97615383162c3805bb4a7">COMPILER_STRIP_GATE</a> (0x803955B8, &amp;<a class="el" href="d__menu__dmap_8cpp.html#ae04acf50a58ddbb745e08fc29b99f6a6">c_tag_4155</a>)</td></tr>
+<tr class="memitem:a62cd4c42ffe97615383162c3805bb4a7" id="r_a62cd4c42ffe97615383162c3805bb4a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a62cd4c42ffe97615383162c3805bb4a7">COMPILER_STRIP_GATE</a> (0x803955B8, &amp;<a class="el" href="d__menu__dmap_8cpp.html#a5642ff8e15d6d6ca26fc53db5c218293">c_tag_4155</a>)</td></tr>
 <tr class="separator:a62cd4c42ffe97615383162c3805bb4a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1da2cf7ba6d1a690d97285b835333fac" id="r_a1da2cf7ba6d1a690d97285b835333fac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a1da2cf7ba6d1a690d97285b835333fac">COMPILER_STRIP_GATE</a> (0x803955C8, &amp;<a class="el" href="d__menu__dmap_8cpp.html#a9759d9f0aeda36644d8a273a6ace64f2">cont_at_4196</a>)</td></tr>
-<tr class="separator:a1da2cf7ba6d1a690d97285b835333fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a675e90ba3d70cf7f25b7aff296491851" id="r_a675e90ba3d70cf7f25b7aff296491851"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a675e90ba3d70cf7f25b7aff296491851">COMPILER_STRIP_GATE</a> (0x803955F0, &amp;<a class="el" href="d__menu__dmap_8cpp.html#a3cc90836cdaf45caa228ae7bd0e90b1e">cont_bt_4211</a>)</td></tr>
-<tr class="separator:a675e90ba3d70cf7f25b7aff296491851"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97a3433fb02b6def2a40508f44a9a745" id="r_a97a3433fb02b6def2a40508f44a9a745"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a97a3433fb02b6def2a40508f44a9a745">COMPILER_STRIP_GATE</a> (0x80395618, &amp;<a class="el" href="d__menu__dmap_8cpp.html#a32f65803ffd80ad31a096dbaa7f2ff66">c_tag_4229</a>)</td></tr>
+<tr class="memitem:a97a3433fb02b6def2a40508f44a9a745" id="r_a97a3433fb02b6def2a40508f44a9a745"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a97a3433fb02b6def2a40508f44a9a745">COMPILER_STRIP_GATE</a> (0x80395618, &amp;<a class="el" href="d__menu__dmap_8cpp.html#a7db0fc48220ec78df1089fc6f7e09e2a">c_tag_4229</a>)</td></tr>
 <tr class="separator:a97a3433fb02b6def2a40508f44a9a745"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad25e1fe7dc64c05a1b7cdde45f03b28c" id="r_ad25e1fe7dc64c05a1b7cdde45f03b28c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#ad25e1fe7dc64c05a1b7cdde45f03b28c">COMPILER_STRIP_GATE</a> (0x80395628, &amp;<a class="el" href="d__menu__dmap_8cpp.html#aae64453dc8a65537eb2622b60cbbe462">lit_4325</a>)</td></tr>
 <tr class="separator:ad25e1fe7dc64c05a1b7cdde45f03b28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a914f0bf788b06e56194a555cb7d07c9f" id="r_a914f0bf788b06e56194a555cb7d07c9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a914f0bf788b06e56194a555cb7d07c9f">COMPILER_STRIP_GATE</a> (0x80395648, &amp;<a class="el" href="d__menu__dmap_8cpp.html#a4b45d95d0b8c2a8b67f33e9f29fc865b">floor_tag</a>)</td></tr>
+<tr class="memitem:a914f0bf788b06e56194a555cb7d07c9f" id="r_a914f0bf788b06e56194a555cb7d07c9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a914f0bf788b06e56194a555cb7d07c9f">COMPILER_STRIP_GATE</a> (0x80395648, &amp;<a class="el" href="d__menu__dmap_8cpp.html#a2ddb08f201f871aa18b73ba235993547">floor_tag</a>)</td></tr>
 <tr class="separator:a914f0bf788b06e56194a555cb7d07c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c4b43eed503e417c91489fe710d4f03" id="r_a5c4b43eed503e417c91489fe710d4f03"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a5c4b43eed503e417c91489fe710d4f03">COMPILER_STRIP_GATE</a> (0x80395688, &amp;<a class="el" href="d__menu__dmap_8cpp.html#a3624ad1bcb9a0bfbaab39d442273d7c5">icon_tag</a>)</td></tr>
+<tr class="memitem:a5c4b43eed503e417c91489fe710d4f03" id="r_a5c4b43eed503e417c91489fe710d4f03"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a5c4b43eed503e417c91489fe710d4f03">COMPILER_STRIP_GATE</a> (0x80395688, &amp;<a class="el" href="d__menu__dmap_8cpp.html#a8ee0813ea2eb6e49e9696c647f2652b8">icon_tag</a>)</td></tr>
 <tr class="separator:a5c4b43eed503e417c91489fe710d4f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afddf2a61f2f06588f0c8d03bc0f7516b" id="r_afddf2a61f2f06588f0c8d03bc0f7516b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#afddf2a61f2f06588f0c8d03bc0f7516b">COMPILER_STRIP_GATE</a> (0x803956C8, &amp;<a class="el" href="d__menu__dmap_8cpp.html#aae619f4bafb2059bd2e9720c96f5306c">boss_tag</a>)</td></tr>
+<tr class="memitem:afddf2a61f2f06588f0c8d03bc0f7516b" id="r_afddf2a61f2f06588f0c8d03bc0f7516b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#afddf2a61f2f06588f0c8d03bc0f7516b">COMPILER_STRIP_GATE</a> (0x803956C8, &amp;<a class="el" href="d__menu__dmap_8cpp.html#aea0fdaf848d42636e92487335ea44f15">boss_tag</a>)</td></tr>
 <tr class="separator:afddf2a61f2f06588f0c8d03bc0f7516b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4ae0d33214e336c974dfbf97006bf6d" id="r_af4ae0d33214e336c974dfbf97006bf6d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#af4ae0d33214e336c974dfbf97006bf6d">COMPILER_STRIP_GATE</a> (0x80395708, &amp;<a class="el" href="d__menu__dmap_8cpp.html#a16758f41e19c9884679bfb5519bcce56">stay_tag</a>)</td></tr>
+<tr class="memitem:af4ae0d33214e336c974dfbf97006bf6d" id="r_af4ae0d33214e336c974dfbf97006bf6d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#af4ae0d33214e336c974dfbf97006bf6d">COMPILER_STRIP_GATE</a> (0x80395708, &amp;<a class="el" href="d__menu__dmap_8cpp.html#ab3b13b068c3a53dc017c39db26883323">stay_tag</a>)</td></tr>
 <tr class="separator:af4ae0d33214e336c974dfbf97006bf6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0615acb301b6e847def4bad6b083e38" id="r_af0615acb301b6e847def4bad6b083e38"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#af0615acb301b6e847def4bad6b083e38">COMPILER_STRIP_GATE</a> (0x80395718, &amp;<a class="el" href="d__menu__dmap_8cpp.html#a6a4ef37f33787594d482fdb89a34cf58">waku_tag</a>)</td></tr>
+<tr class="memitem:af0615acb301b6e847def4bad6b083e38" id="r_af0615acb301b6e847def4bad6b083e38"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#af0615acb301b6e847def4bad6b083e38">COMPILER_STRIP_GATE</a> (0x80395718, &amp;<a class="el" href="d__menu__dmap_8cpp.html#a86f4b5f89a91be0a8f179c34285df066">waku_tag</a>)</td></tr>
 <tr class="separator:af0615acb301b6e847def4bad6b083e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f535723c2b9bdd7b70f81c334e329f2" id="r_a2f535723c2b9bdd7b70f81c334e329f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a2f535723c2b9bdd7b70f81c334e329f2">COMPILER_STRIP_GATE</a> (0x80395730, &amp;<a class="el" href="d__menu__dmap_8cpp.html#a95a6e887a0c88e60a4e20c88fe8c5de0">key_tag</a>)</td></tr>
+<tr class="memitem:a2f535723c2b9bdd7b70f81c334e329f2" id="r_a2f535723c2b9bdd7b70f81c334e329f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a2f535723c2b9bdd7b70f81c334e329f2">COMPILER_STRIP_GATE</a> (0x80395730, &amp;<a class="el" href="d__menu__dmap_8cpp.html#a0cd5ccc48d537b9ed4946f940d1e08a3">key_tag</a>)</td></tr>
 <tr class="separator:a2f535723c2b9bdd7b70f81c334e329f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95d8fc72add8b1503bf2107de2dddc33" id="r_a95d8fc72add8b1503bf2107de2dddc33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a95d8fc72add8b1503bf2107de2dddc33">COMPILER_STRIP_GATE</a> (0x80395748, &amp;<a class="el" href="d__menu__dmap_8cpp.html#a41d79e6ac8b77cdceca76121b69c63d2">item_tag</a>)</td></tr>
+<tr class="memitem:a95d8fc72add8b1503bf2107de2dddc33" id="r_a95d8fc72add8b1503bf2107de2dddc33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a95d8fc72add8b1503bf2107de2dddc33">COMPILER_STRIP_GATE</a> (0x80395748, &amp;<a class="el" href="d__menu__dmap_8cpp.html#a6db767cceb107ce4826aa217ed88dd09">item_tag</a>)</td></tr>
 <tr class="separator:a95d8fc72add8b1503bf2107de2dddc33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33b44196638e44302925f59b01c58c73" id="r_a33b44196638e44302925f59b01c58c73"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a33b44196638e44302925f59b01c58c73">REGISTER_CTORS</a> (0x801C05C4, <a class="el" href="d__menu__dmap_8cpp.html#a84fc356d88f29e35c253cfec81e725f9">__sinit_d_menu_dmap_cpp</a>)</td></tr>
 <tr class="separator:a33b44196638e44302925f59b01c58c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -720,12 +687,6 @@ Variables</h2></td></tr>
 <tr class="separator:ae7688806897e99257b0956216a718a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76e0f928ce61adfff0bee856273d7ec4" id="r_a76e0f928ce61adfff0bee856273d7ec4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a76e0f928ce61adfff0bee856273d7ec4">m_cpadInfo__8mDoCPd_c</a> [256]</td></tr>
 <tr class="separator:a76e0f928ce61adfff0bee856273d7ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50ad47c26bcc2867f2c14d349753f58e" id="r_a50ad47c26bcc2867f2c14d349753f58e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a50ad47c26bcc2867f2c14d349753f58e">g_dComIfG_gameInfo</a> [122384]</td></tr>
-<tr class="separator:a50ad47c26bcc2867f2c14d349753f58e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b43188831fec4f4939c1f15b77c35b5" id="r_a3b43188831fec4f4939c1f15b77c35b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a3b43188831fec4f4939c1f15b77c35b5">g_fmapHIO</a> [1188]</td></tr>
-<tr class="separator:a3b43188831fec4f4939c1f15b77c35b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fcce57da0213dbb9db2badf854fade0" id="r_a2fcce57da0213dbb9db2badf854fade0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a2fcce57da0213dbb9db2badf854fade0">g_meter2_info</a> [248]</td></tr>
-<tr class="separator:a2fcce57da0213dbb9db2badf854fade0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e862148df6adc58098613dbd1f882cd" id="r_a5e862148df6adc58098613dbd1f882cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a5e862148df6adc58098613dbd1f882cd">sincosTable___5JMath</a> [65536]</td></tr>
 <tr class="separator:a5e862148df6adc58098613dbd1f882cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53f06613837c6908b9e6f59f67a788c4" id="r_a53f06613837c6908b9e6f59f67a788c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a53f06613837c6908b9e6f59f67a788c4">mAllSizeX__8dMpath_c</a></td></tr>
@@ -826,16 +787,16 @@ Variables</h2></td></tr>
 <tr class="separator:a12e99d715828ccf1f588cc2151fca8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3868650a2c485fa230ed3a8cd51f71c" id="r_af3868650a2c485fa230ed3a8cd51f71c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#af3868650a2c485fa230ed3a8cd51f71c">lit_4133</a> = 1.0f / 20.0f</td></tr>
 <tr class="separator:af3868650a2c485fa230ed3a8cd51f71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a326492a896f95854acc65959bbc2ddce" id="r_a326492a896f95854acc65959bbc2ddce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a326492a896f95854acc65959bbc2ddce">cont_at_4145</a> [40]</td></tr>
-<tr class="separator:a326492a896f95854acc65959bbc2ddce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e90cf3ae475184bfc3758cb7f2f711c" id="r_a2e90cf3ae475184bfc3758cb7f2f711c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a2e90cf3ae475184bfc3758cb7f2f711c">cont_bt_4146</a> [40]</td></tr>
-<tr class="separator:a2e90cf3ae475184bfc3758cb7f2f711c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc1875d14e2fa6b7e5d000385d4e65bd" id="r_abc1875d14e2fa6b7e5d000385d4e65bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#abc1875d14e2fa6b7e5d000385d4e65bd">font_at</a> [40]</td></tr>
-<tr class="separator:abc1875d14e2fa6b7e5d000385d4e65bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1018ec3288a0decb90ceeb4e94a14ba4" id="r_a1018ec3288a0decb90ceeb4e94a14ba4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a1018ec3288a0decb90ceeb4e94a14ba4">font_bt</a> [40]</td></tr>
-<tr class="separator:a1018ec3288a0decb90ceeb4e94a14ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae04acf50a58ddbb745e08fc29b99f6a6" id="r_ae04acf50a58ddbb745e08fc29b99f6a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#ae04acf50a58ddbb745e08fc29b99f6a6">c_tag_4155</a> [16]</td></tr>
-<tr class="separator:ae04acf50a58ddbb745e08fc29b99f6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69ef29a35faeb69d43aebd37d224224d" id="r_a69ef29a35faeb69d43aebd37d224224d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a69ef29a35faeb69d43aebd37d224224d">cont_at_4145</a> [5]</td></tr>
+<tr class="separator:a69ef29a35faeb69d43aebd37d224224d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0e89eff475bea02a344285736228ae2" id="r_ac0e89eff475bea02a344285736228ae2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#ac0e89eff475bea02a344285736228ae2">cont_bt_4146</a> [5]</td></tr>
+<tr class="separator:ac0e89eff475bea02a344285736228ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a947317a30583411010ee7af59161c779" id="r_a947317a30583411010ee7af59161c779"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a947317a30583411010ee7af59161c779">font_at</a> [5]</td></tr>
+<tr class="separator:a947317a30583411010ee7af59161c779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4721455dbd08253ddb962105e11f2c6a" id="r_a4721455dbd08253ddb962105e11f2c6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a4721455dbd08253ddb962105e11f2c6a">font_bt</a> [5]</td></tr>
+<tr class="separator:a4721455dbd08253ddb962105e11f2c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5642ff8e15d6d6ca26fc53db5c218293" id="r_a5642ff8e15d6d6ca26fc53db5c218293"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a5642ff8e15d6d6ca26fc53db5c218293">c_tag_4155</a> [2]</td></tr>
+<tr class="separator:a5642ff8e15d6d6ca26fc53db5c218293"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82f001b5b0024254af647668aa9dba52" id="r_a82f001b5b0024254af647668aa9dba52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">char</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>  *<a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a82f001b5b0024254af647668aa9dba52">stringBase_803957AD</a> = &quot;zelda_dungeon_map_spot_button.blo&quot;</td></tr>
 <tr class="separator:a82f001b5b0024254af647668aa9dba52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b08194dc22598000c210fdd394dff10" id="r_a9b08194dc22598000c210fdd394dff10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">char</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>  *<a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a9b08194dc22598000c210fdd394dff10">stringBase_803957CF</a> = &quot;&quot;</td></tr>
@@ -844,12 +805,12 @@ Variables</h2></td></tr>
 <tr class="separator:a5bab94785ce25bae8d79b6d72dcd5dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af29fa305f2d618b0413b3f7a9af27d8d" id="r_af29fa305f2d618b0413b3f7a9af27d8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#af29fa305f2d618b0413b3f7a9af27d8d">lit_4192</a> = 321.0f</td></tr>
 <tr class="separator:af29fa305f2d618b0413b3f7a9af27d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9759d9f0aeda36644d8a273a6ace64f2" id="r_a9759d9f0aeda36644d8a273a6ace64f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a9759d9f0aeda36644d8a273a6ace64f2">cont_at_4196</a> [40]</td></tr>
-<tr class="separator:a9759d9f0aeda36644d8a273a6ace64f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cc90836cdaf45caa228ae7bd0e90b1e" id="r_a3cc90836cdaf45caa228ae7bd0e90b1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a3cc90836cdaf45caa228ae7bd0e90b1e">cont_bt_4211</a> [40]</td></tr>
-<tr class="separator:a3cc90836cdaf45caa228ae7bd0e90b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32f65803ffd80ad31a096dbaa7f2ff66" id="r_a32f65803ffd80ad31a096dbaa7f2ff66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a32f65803ffd80ad31a096dbaa7f2ff66">c_tag_4229</a> [16]</td></tr>
-<tr class="separator:a32f65803ffd80ad31a096dbaa7f2ff66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a835b62cbe86f095d48ab8d414b7280be" id="r_a835b62cbe86f095d48ab8d414b7280be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a835b62cbe86f095d48ab8d414b7280be">cont_at_4196</a> [5]</td></tr>
+<tr class="separator:a835b62cbe86f095d48ab8d414b7280be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3bc2e778438d2c71d8d7a5c9883023a" id="r_ab3bc2e778438d2c71d8d7a5c9883023a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#ab3bc2e778438d2c71d8d7a5c9883023a">cont_bt_4211</a> [5]</td></tr>
+<tr class="separator:ab3bc2e778438d2c71d8d7a5c9883023a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7db0fc48220ec78df1089fc6f7e09e2a" id="r_a7db0fc48220ec78df1089fc6f7e09e2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a7db0fc48220ec78df1089fc6f7e09e2a">c_tag_4229</a> [2]</td></tr>
+<tr class="separator:a7db0fc48220ec78df1089fc6f7e09e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac994a52f55eaba9f6d4aece27335b6c" id="r_aac994a52f55eaba9f6d4aece27335b6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#aac994a52f55eaba9f6d4aece27335b6c">player_px</a></td></tr>
 <tr class="separator:aac994a52f55eaba9f6d4aece27335b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e75c3f2236a838839211cedac215ebb" id="r_a3e75c3f2236a838839211cedac215ebb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a3e75c3f2236a838839211cedac215ebb">player_py</a></td></tr>
@@ -894,20 +855,20 @@ Variables</h2></td></tr>
 <tr class="separator:a724248266dda373d4210d6410af48633"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a491dbb46eebfb764c3da16a06b1016a5" id="r_a491dbb46eebfb764c3da16a06b1016a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a491dbb46eebfb764c3da16a06b1016a5">lit_4927</a> = -448.0f</td></tr>
 <tr class="separator:a491dbb46eebfb764c3da16a06b1016a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b45d95d0b8c2a8b67f33e9f29fc865b" id="r_a4b45d95d0b8c2a8b67f33e9f29fc865b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a4b45d95d0b8c2a8b67f33e9f29fc865b">floor_tag</a> [64]</td></tr>
-<tr class="separator:a4b45d95d0b8c2a8b67f33e9f29fc865b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3624ad1bcb9a0bfbaab39d442273d7c5" id="r_a3624ad1bcb9a0bfbaab39d442273d7c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a3624ad1bcb9a0bfbaab39d442273d7c5">icon_tag</a> [64]</td></tr>
-<tr class="separator:a3624ad1bcb9a0bfbaab39d442273d7c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae619f4bafb2059bd2e9720c96f5306c" id="r_aae619f4bafb2059bd2e9720c96f5306c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#aae619f4bafb2059bd2e9720c96f5306c">boss_tag</a> [64]</td></tr>
-<tr class="separator:aae619f4bafb2059bd2e9720c96f5306c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16758f41e19c9884679bfb5519bcce56" id="r_a16758f41e19c9884679bfb5519bcce56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a16758f41e19c9884679bfb5519bcce56">stay_tag</a> [16]</td></tr>
-<tr class="separator:a16758f41e19c9884679bfb5519bcce56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a4ef37f33787594d482fdb89a34cf58" id="r_a6a4ef37f33787594d482fdb89a34cf58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a6a4ef37f33787594d482fdb89a34cf58">waku_tag</a> [24]</td></tr>
-<tr class="separator:a6a4ef37f33787594d482fdb89a34cf58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95a6e887a0c88e60a4e20c88fe8c5de0" id="r_a95a6e887a0c88e60a4e20c88fe8c5de0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a95a6e887a0c88e60a4e20c88fe8c5de0">key_tag</a> [24]</td></tr>
-<tr class="separator:a95a6e887a0c88e60a4e20c88fe8c5de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41d79e6ac8b77cdceca76121b69c63d2" id="r_a41d79e6ac8b77cdceca76121b69c63d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a41d79e6ac8b77cdceca76121b69c63d2">item_tag</a> [24]</td></tr>
-<tr class="separator:a41d79e6ac8b77cdceca76121b69c63d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ddb08f201f871aa18b73ba235993547" id="r_a2ddb08f201f871aa18b73ba235993547"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a2ddb08f201f871aa18b73ba235993547">floor_tag</a> [8]</td></tr>
+<tr class="separator:a2ddb08f201f871aa18b73ba235993547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ee0813ea2eb6e49e9696c647f2652b8" id="r_a8ee0813ea2eb6e49e9696c647f2652b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a8ee0813ea2eb6e49e9696c647f2652b8">icon_tag</a> [8]</td></tr>
+<tr class="separator:a8ee0813ea2eb6e49e9696c647f2652b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea0fdaf848d42636e92487335ea44f15" id="r_aea0fdaf848d42636e92487335ea44f15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#aea0fdaf848d42636e92487335ea44f15">boss_tag</a> [8]</td></tr>
+<tr class="separator:aea0fdaf848d42636e92487335ea44f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3b13b068c3a53dc017c39db26883323" id="r_ab3b13b068c3a53dc017c39db26883323"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#ab3b13b068c3a53dc017c39db26883323">stay_tag</a> [2]</td></tr>
+<tr class="separator:ab3b13b068c3a53dc017c39db26883323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86f4b5f89a91be0a8f179c34285df066" id="r_a86f4b5f89a91be0a8f179c34285df066"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a86f4b5f89a91be0a8f179c34285df066">waku_tag</a> [3]</td></tr>
+<tr class="separator:a86f4b5f89a91be0a8f179c34285df066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cd5ccc48d537b9ed4946f940d1e08a3" id="r_a0cd5ccc48d537b9ed4946f940d1e08a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a0cd5ccc48d537b9ed4946f940d1e08a3">key_tag</a> [3]</td></tr>
+<tr class="separator:a0cd5ccc48d537b9ed4946f940d1e08a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6db767cceb107ce4826aa217ed88dd09" id="r_a6db767cceb107ce4826aa217ed88dd09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a6db767cceb107ce4826aa217ed88dd09">item_tag</a> [3]</td></tr>
+<tr class="separator:a6db767cceb107ce4826aa217ed88dd09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93ede451cc3f6363ed5456b8350faf8c" id="r_a93ede451cc3f6363ed5456b8350faf8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a93ede451cc3f6363ed5456b8350faf8c">lit_5277</a> = 7.0f</td></tr>
 <tr class="separator:a93ede451cc3f6363ed5456b8350faf8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfc1c32024f84d1af97037870284d1f8" id="r_acfc1c32024f84d1af97037870284d1f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a5c2a45e3895d11e22314dfe16ece0d10">SECTION_SDATA2</a> <a class="el" href="types_8h.html#a5f6906312a689f27d70e9d086649d3fd">f32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#acfc1c32024f84d1af97037870284d1f8">lit_5288</a> = 0.0054931640625f</td></tr>
@@ -925,6 +886,21 @@ Variables</h2></td></tr>
 <tr class="memitem:a92d00bf1fa59684f62b77b93b71267b7" id="r_a92d00bf1fa59684f62b77b93b71267b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">char</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>  *<a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__menu__dmap_8cpp.html#a92d00bf1fa59684f62b77b93b71267b7">pad_8039584B</a> = &quot;\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0&quot;</td></tr>
 <tr class="separator:a92d00bf1fa59684f62b77b93b71267b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a88de0d78be8a14c62a4af702cf140906" name="a88de0d78be8a14c62a4af702cf140906"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88de0d78be8a14c62a4af702cf140906">&#9670;&#160;</a></span>ProcFunc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">typedef</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a>(dMenu_Dmap_c::* ProcFunc) ()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a58dbf4d2335fdc0e2065200543f5e4ea" name="a58dbf4d2335fdc0e2065200543f5e4ea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a58dbf4d2335fdc0e2065200543f5e4ea">&#9670;&#160;</a></span>__construct_array()</h2>
@@ -2049,7 +2025,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a5dc71961a3ab2b4ea47441f5ff67b32d" name="a5dc71961a3ab2b4ea47441f5ff67b32d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5dc71961a3ab2b4ea47441f5ff67b32d">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[1/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dc71961a3ab2b4ea47441f5ff67b32d">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[1/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2077,7 +2053,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a5c3c62e87582e2875b88f212ac6127eb" name="a5c3c62e87582e2875b88f212ac6127eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c3c62e87582e2875b88f212ac6127eb">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[2/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c3c62e87582e2875b88f212ac6127eb">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[2/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2105,7 +2081,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a5b6d62dfac50f83fdfcad024e6b7f5e1" name="a5b6d62dfac50f83fdfcad024e6b7f5e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b6d62dfac50f83fdfcad024e6b7f5e1">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[3/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b6d62dfac50f83fdfcad024e6b7f5e1">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[3/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2133,7 +2109,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a54e8941e923fc828fc27282f8e01be2d" name="a54e8941e923fc828fc27282f8e01be2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54e8941e923fc828fc27282f8e01be2d">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[4/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a54e8941e923fc828fc27282f8e01be2d">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[4/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2161,7 +2137,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a62cd4c42ffe97615383162c3805bb4a7" name="a62cd4c42ffe97615383162c3805bb4a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62cd4c42ffe97615383162c3805bb4a7">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[5/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a62cd4c42ffe97615383162c3805bb4a7">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[5/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2188,64 +2164,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a1da2cf7ba6d1a690d97285b835333fac" name="a1da2cf7ba6d1a690d97285b835333fac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1da2cf7ba6d1a690d97285b835333fac">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[6/16]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">COMPILER_STRIP_GATE </td>
-          <td>(</td>
-          <td class="paramtype">0x803955C8&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&amp;&#160;</td>
-          <td class="paramname"><em>cont_at_4196</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a675e90ba3d70cf7f25b7aff296491851" name="a675e90ba3d70cf7f25b7aff296491851"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a675e90ba3d70cf7f25b7aff296491851">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[7/16]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">COMPILER_STRIP_GATE </td>
-          <td>(</td>
-          <td class="paramtype">0x803955F0&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&amp;&#160;</td>
-          <td class="paramname"><em>cont_bt_4211</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a97a3433fb02b6def2a40508f44a9a745" name="a97a3433fb02b6def2a40508f44a9a745"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97a3433fb02b6def2a40508f44a9a745">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[8/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a97a3433fb02b6def2a40508f44a9a745">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[6/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2273,7 +2193,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="ad25e1fe7dc64c05a1b7cdde45f03b28c" name="ad25e1fe7dc64c05a1b7cdde45f03b28c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad25e1fe7dc64c05a1b7cdde45f03b28c">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[9/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad25e1fe7dc64c05a1b7cdde45f03b28c">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[7/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2301,7 +2221,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a914f0bf788b06e56194a555cb7d07c9f" name="a914f0bf788b06e56194a555cb7d07c9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a914f0bf788b06e56194a555cb7d07c9f">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[10/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a914f0bf788b06e56194a555cb7d07c9f">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[8/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2329,7 +2249,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a5c4b43eed503e417c91489fe710d4f03" name="a5c4b43eed503e417c91489fe710d4f03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c4b43eed503e417c91489fe710d4f03">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[11/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c4b43eed503e417c91489fe710d4f03">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[9/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2357,7 +2277,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="afddf2a61f2f06588f0c8d03bc0f7516b" name="afddf2a61f2f06588f0c8d03bc0f7516b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afddf2a61f2f06588f0c8d03bc0f7516b">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[12/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afddf2a61f2f06588f0c8d03bc0f7516b">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[10/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2385,7 +2305,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="af4ae0d33214e336c974dfbf97006bf6d" name="af4ae0d33214e336c974dfbf97006bf6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4ae0d33214e336c974dfbf97006bf6d">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[13/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af4ae0d33214e336c974dfbf97006bf6d">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[11/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2413,7 +2333,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="af0615acb301b6e847def4bad6b083e38" name="af0615acb301b6e847def4bad6b083e38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0615acb301b6e847def4bad6b083e38">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[14/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af0615acb301b6e847def4bad6b083e38">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[12/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2441,7 +2361,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a2f535723c2b9bdd7b70f81c334e329f2" name="a2f535723c2b9bdd7b70f81c334e329f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f535723c2b9bdd7b70f81c334e329f2">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[15/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f535723c2b9bdd7b70f81c334e329f2">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[13/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2469,7 +2389,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="a95d8fc72add8b1503bf2107de2dddc33" name="a95d8fc72add8b1503bf2107de2dddc33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95d8fc72add8b1503bf2107de2dddc33">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[16/16]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a95d8fc72add8b1503bf2107de2dddc33">&#9670;&#160;</a></span>COMPILER_STRIP_GATE() <span class="overload">[14/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5193,7 +5113,7 @@ Variables</h2></td></tr>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__menu__dmap_8cpp_html_a9440c4fd090960646145aa1a54dbed49"><div class="ttname"><a href="d__menu__dmap_8cpp.html#a9440c4fd090960646145aa1a54dbed49">__dt__12dMenu_Dmap_cFv</a></div><div class="ttdeci">void __dt__12dMenu_Dmap_cFv()</div><div class="ttdef"><b>Definition</b> d_menu_dmap.cpp:1595</div></div>
+<div class="ttc" id="ad__menu__dmap_8cpp_html_a9440c4fd090960646145aa1a54dbed49"><div class="ttname"><a href="d__menu__dmap_8cpp.html#a9440c4fd090960646145aa1a54dbed49">__dt__12dMenu_Dmap_cFv</a></div><div class="ttdeci">void __dt__12dMenu_Dmap_cFv()</div><div class="ttdef"><b>Definition</b> d_menu_dmap.cpp:2658</div></div>
 <div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> stddef.h:19</div></div>
 </div><!-- fragment -->
 </div>
@@ -5230,7 +5150,7 @@ Variables</h2></td></tr>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    <a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="ad__menu__dmap_8cpp_html_a15c156a8ce6309dae7c74e44454544aa"><div class="ttname"><a href="d__menu__dmap_8cpp.html#a15c156a8ce6309dae7c74e44454544aa">func_801C0844</a></div><div class="ttdeci">static void func_801C0844()</div><div class="ttdef"><b>Definition</b> d_menu_dmap.cpp:2177</div></div>
+<div class="ttc" id="ad__menu__dmap_8cpp_html_a15c156a8ce6309dae7c74e44454544aa"><div class="ttname"><a href="d__menu__dmap_8cpp.html#a15c156a8ce6309dae7c74e44454544aa">func_801C0844</a></div><div class="ttdeci">static void func_801C0844()</div><div class="ttdef"><b>Definition</b> d_menu_dmap.cpp:3327</div></div>
 <div class="ttc" id="ad__menu__dmap_8cpp_html_a1b7eb3c5d8504bcd68cd5b5325485b94"><div class="ttname"><a href="d__menu__dmap_8cpp.html#a1b7eb3c5d8504bcd68cd5b5325485b94">draw__14dMenu_DmapBg_cFv</a></div><div class="ttdeci">void draw__14dMenu_DmapBg_cFv()</div></div>
 <div class="ttc" id="ad__menu__dmap_8cpp_html_aa79159b62e487437d210075197d3898a"><div class="ttname"><a href="d__menu__dmap_8cpp.html#aa79159b62e487437d210075197d3898a">__dt__14dMenu_DmapBg_cFv</a></div><div class="ttdeci">void __dt__14dMenu_DmapBg_cFv()</div></div>
 </div><!-- fragment -->
@@ -5452,8 +5372,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aae619f4bafb2059bd2e9720c96f5306c" name="aae619f4bafb2059bd2e9720c96f5306c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae619f4bafb2059bd2e9720c96f5306c">&#9670;&#160;</a></span>boss_tag</h2>
+<a id="aea0fdaf848d42636e92487335ea44f15" name="aea0fdaf848d42636e92487335ea44f15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea0fdaf848d42636e92487335ea44f15">&#9670;&#160;</a></span>boss_tag</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5462,7 +5382,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> boss_tag[64]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> boss_tag[8]</td>
         </tr>
       </table>
   </td>
@@ -5472,16 +5392,13 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x69, 0x63, 0x5F, 0x73, 0x74, 0x5F, 0x62, 0x37, 0x69, 0x63, 0x5F, 0x73, 0x74, 0x5F, 0x62, 0x30,</div>
-<div class="line">    0x69, 0x63, 0x5F, 0x73, 0x74, 0x5F, 0x62, 0x31, 0x69, 0x63, 0x5F, 0x73, 0x74, 0x5F, 0x62, 0x32,</div>
-<div class="line">    0x69, 0x63, 0x5F, 0x73, 0x74, 0x5F, 0x62, 0x33, 0x69, 0x63, 0x5F, 0x73, 0x74, 0x5F, 0x62, 0x34,</div>
-<div class="line">    0x69, 0x63, 0x5F, 0x73, 0x74, 0x5F, 0x62, 0x35, 0x69, 0x63, 0x5F, 0x73, 0x74, 0x5F, 0x62, 0x36,</div>
+<div class="line">    <span class="stringliteral">&#39;ic_st_b7&#39;</span>, <span class="stringliteral">&#39;ic_st_b0&#39;</span>, <span class="stringliteral">&#39;ic_st_b1&#39;</span>, <span class="stringliteral">&#39;ic_st_b2&#39;</span>, <span class="stringliteral">&#39;ic_st_b3&#39;</span>, <span class="stringliteral">&#39;ic_st_b4&#39;</span>, <span class="stringliteral">&#39;ic_st_b5&#39;</span>, <span class="stringliteral">&#39;ic_st_b6&#39;</span>,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ae04acf50a58ddbb745e08fc29b99f6a6" name="ae04acf50a58ddbb745e08fc29b99f6a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae04acf50a58ddbb745e08fc29b99f6a6">&#9670;&#160;</a></span>c_tag_4155</h2>
+<a id="a5642ff8e15d6d6ca26fc53db5c218293" name="a5642ff8e15d6d6ca26fc53db5c218293"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5642ff8e15d6d6ca26fc53db5c218293">&#9670;&#160;</a></span>c_tag_4155</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5490,7 +5407,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> c_tag_4155[16]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> c_tag_4155[2]</td>
         </tr>
       </table>
   </td>
@@ -5500,13 +5417,13 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x66, 0x5F, 0x74, 0x65, 0x78, 0x74, 0x5F, 0x73, 0x00, 0x00, 0x66, 0x5F, 0x74, 0x65, 0x78, 0x74,</div>
+<div class="line">    <span class="stringliteral">&#39;f_text_s&#39;</span>, <span class="stringliteral">&#39;f_text&#39;</span>,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a32f65803ffd80ad31a096dbaa7f2ff66" name="a32f65803ffd80ad31a096dbaa7f2ff66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32f65803ffd80ad31a096dbaa7f2ff66">&#9670;&#160;</a></span>c_tag_4229</h2>
+<a id="a7db0fc48220ec78df1089fc6f7e09e2a" name="a7db0fc48220ec78df1089fc6f7e09e2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7db0fc48220ec78df1089fc6f7e09e2a">&#9670;&#160;</a></span>c_tag_4229</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5515,7 +5432,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> c_tag_4229[16]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> c_tag_4229[2]</td>
         </tr>
       </table>
   </td>
@@ -5525,7 +5442,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x66, 0x5F, 0x74, 0x65, 0x78, 0x74, 0x5F, 0x73, 0x00, 0x00, 0x66, 0x5F, 0x74, 0x65, 0x78, 0x74,</div>
+<div class="line">    <span class="stringliteral">&#39;f_text_s&#39;</span>, <span class="stringliteral">&#39;f_text&#39;</span>,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
@@ -5555,8 +5472,8 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a326492a896f95854acc65959bbc2ddce" name="a326492a896f95854acc65959bbc2ddce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a326492a896f95854acc65959bbc2ddce">&#9670;&#160;</a></span>cont_at_4145</h2>
+<a id="a69ef29a35faeb69d43aebd37d224224d" name="a69ef29a35faeb69d43aebd37d224224d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69ef29a35faeb69d43aebd37d224224d">&#9670;&#160;</a></span>cont_at_4145</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5565,7 +5482,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> cont_at_4145[40]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> cont_at_4145[5]</td>
         </tr>
       </table>
   </td>
@@ -5575,15 +5492,13 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x00, 0x63, 0x6F, 0x6E, 0x74, 0x5F, 0x61, 0x74, 0x63, 0x6F, 0x6E, 0x74, 0x5F, 0x61,</div>
-<div class="line">    0x74, 0x31, 0x63, 0x6F, 0x6E, 0x74, 0x5F, 0x61, 0x74, 0x32, 0x63, 0x6F, 0x6E, 0x74,</div>
-<div class="line">    0x5F, 0x61, 0x74, 0x33, 0x63, 0x6F, 0x6E, 0x74, 0x5F, 0x61, 0x74, 0x34,</div>
+<div class="line">    <span class="stringliteral">&#39;cont_at&#39;</span>, <span class="stringliteral">&#39;cont_at1&#39;</span>, <span class="stringliteral">&#39;cont_at2&#39;</span>, <span class="stringliteral">&#39;cont_at3&#39;</span>, <span class="stringliteral">&#39;cont_at4&#39;</span>,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a9759d9f0aeda36644d8a273a6ace64f2" name="a9759d9f0aeda36644d8a273a6ace64f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9759d9f0aeda36644d8a273a6ace64f2">&#9670;&#160;</a></span>cont_at_4196</h2>
+<a id="a835b62cbe86f095d48ab8d414b7280be" name="a835b62cbe86f095d48ab8d414b7280be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a835b62cbe86f095d48ab8d414b7280be">&#9670;&#160;</a></span>cont_at_4196</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5592,7 +5507,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> cont_at_4196[40]</td>
+          <td class="memname"><a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> cont_at_4196[5]</td>
         </tr>
       </table>
   </td>
@@ -5602,15 +5517,13 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x00, 0x66, 0x6F, 0x6E, 0x74, 0x5F, 0x61, 0x74, 0x66, 0x6F, 0x6E, 0x74, 0x5F, 0x61,</div>
-<div class="line">    0x74, 0x31, 0x66, 0x6F, 0x6E, 0x74, 0x5F, 0x61, 0x74, 0x32, 0x66, 0x6F, 0x6E, 0x74,</div>
-<div class="line">    0x5F, 0x61, 0x74, 0x33, 0x66, 0x6F, 0x6E, 0x74, 0x5F, 0x61, 0x74, 0x34,</div>
+<div class="line">    <span class="stringliteral">&#39;font_at&#39;</span>, <span class="stringliteral">&#39;font_at1&#39;</span>, <span class="stringliteral">&#39;font_at2&#39;</span>, <span class="stringliteral">&#39;font_at3&#39;</span>, <span class="stringliteral">&#39;font_at4&#39;</span>,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a2e90cf3ae475184bfc3758cb7f2f711c" name="a2e90cf3ae475184bfc3758cb7f2f711c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e90cf3ae475184bfc3758cb7f2f711c">&#9670;&#160;</a></span>cont_bt_4146</h2>
+<a id="ac0e89eff475bea02a344285736228ae2" name="ac0e89eff475bea02a344285736228ae2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0e89eff475bea02a344285736228ae2">&#9670;&#160;</a></span>cont_bt_4146</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5619,7 +5532,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> cont_bt_4146[40]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> cont_bt_4146[5]</td>
         </tr>
       </table>
   </td>
@@ -5629,15 +5542,13 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x00, 0x63, 0x6F, 0x6E, 0x74, 0x5F, 0x62, 0x74, 0x63, 0x6F, 0x6E, 0x74, 0x5F, 0x62,</div>
-<div class="line">    0x74, 0x31, 0x63, 0x6F, 0x6E, 0x74, 0x5F, 0x62, 0x74, 0x32, 0x63, 0x6F, 0x6E, 0x74,</div>
-<div class="line">    0x5F, 0x62, 0x74, 0x33, 0x63, 0x6F, 0x6E, 0x74, 0x5F, 0x62, 0x74, 0x34,</div>
+<div class="line">    <span class="stringliteral">&#39;cont_bt&#39;</span>, <span class="stringliteral">&#39;cont_bt1&#39;</span>, <span class="stringliteral">&#39;cont_bt2&#39;</span>, <span class="stringliteral">&#39;cont_bt3&#39;</span>, <span class="stringliteral">&#39;cont_bt4&#39;</span>,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a3cc90836cdaf45caa228ae7bd0e90b1e" name="a3cc90836cdaf45caa228ae7bd0e90b1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3cc90836cdaf45caa228ae7bd0e90b1e">&#9670;&#160;</a></span>cont_bt_4211</h2>
+<a id="ab3bc2e778438d2c71d8d7a5c9883023a" name="ab3bc2e778438d2c71d8d7a5c9883023a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3bc2e778438d2c71d8d7a5c9883023a">&#9670;&#160;</a></span>cont_bt_4211</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5646,7 +5557,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> cont_bt_4211[40]</td>
+          <td class="memname"><a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> cont_bt_4211[5]</td>
         </tr>
       </table>
   </td>
@@ -5656,9 +5567,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x00, 0x66, 0x6F, 0x6E, 0x74, 0x5F, 0x62, 0x74, 0x66, 0x6F, 0x6E, 0x74, 0x5F, 0x62,</div>
-<div class="line">    0x74, 0x31, 0x66, 0x6F, 0x6E, 0x74, 0x5F, 0x62, 0x74, 0x32, 0x66, 0x6F, 0x6E, 0x74,</div>
-<div class="line">    0x5F, 0x62, 0x74, 0x33, 0x66, 0x6F, 0x6E, 0x74, 0x5F, 0x62, 0x74, 0x34,</div>
+<div class="line">    <span class="stringliteral">&#39;font_bt&#39;</span>, <span class="stringliteral">&#39;font_bt1&#39;</span>, <span class="stringliteral">&#39;font_bt2&#39;</span>, <span class="stringliteral">&#39;font_bt3&#39;</span>, <span class="stringliteral">&#39;font_bt4&#39;</span>,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
@@ -5737,8 +5646,8 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a4b45d95d0b8c2a8b67f33e9f29fc865b" name="a4b45d95d0b8c2a8b67f33e9f29fc865b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b45d95d0b8c2a8b67f33e9f29fc865b">&#9670;&#160;</a></span>floor_tag</h2>
+<a id="a2ddb08f201f871aa18b73ba235993547" name="a2ddb08f201f871aa18b73ba235993547"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ddb08f201f871aa18b73ba235993547">&#9670;&#160;</a></span>floor_tag</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5747,7 +5656,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> floor_tag[64]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> floor_tag[8]</td>
         </tr>
       </table>
   </td>
@@ -5757,16 +5666,13 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x66, 0x6C, 0x6F, 0x6F, 0x72, 0x37, 0x5F, 0x6E, 0x66, 0x6C, 0x6F, 0x6F, 0x72, 0x30, 0x5F, 0x6E,</div>
-<div class="line">    0x66, 0x6C, 0x6F, 0x6F, 0x72, 0x31, 0x5F, 0x6E, 0x66, 0x6C, 0x6F, 0x6F, 0x72, 0x32, 0x5F, 0x6E,</div>
-<div class="line">    0x66, 0x6C, 0x6F, 0x6F, 0x72, 0x33, 0x5F, 0x6E, 0x66, 0x6C, 0x6F, 0x6F, 0x72, 0x34, 0x5F, 0x6E,</div>
-<div class="line">    0x66, 0x6C, 0x6F, 0x6F, 0x72, 0x35, 0x5F, 0x6E, 0x66, 0x6C, 0x6F, 0x6F, 0x72, 0x36, 0x5F, 0x6E,</div>
+<div class="line">    <span class="stringliteral">&#39;floor7_n&#39;</span>, <span class="stringliteral">&#39;floor0_n&#39;</span>, <span class="stringliteral">&#39;floor1_n&#39;</span>, <span class="stringliteral">&#39;floor2_n&#39;</span>, <span class="stringliteral">&#39;floor3_n&#39;</span>, <span class="stringliteral">&#39;floor4_n&#39;</span>, <span class="stringliteral">&#39;floor5_n&#39;</span>, <span class="stringliteral">&#39;floor6_n&#39;</span>,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="abc1875d14e2fa6b7e5d000385d4e65bd" name="abc1875d14e2fa6b7e5d000385d4e65bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc1875d14e2fa6b7e5d000385d4e65bd">&#9670;&#160;</a></span>font_at</h2>
+<a id="a947317a30583411010ee7af59161c779" name="a947317a30583411010ee7af59161c779"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a947317a30583411010ee7af59161c779">&#9670;&#160;</a></span>font_at</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5775,7 +5681,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> font_at[40]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> font_at[5]</td>
         </tr>
       </table>
   </td>
@@ -5785,15 +5691,13 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x00, 0x66, 0x6F, 0x6E, 0x74, 0x5F, 0x61, 0x74, 0x66, 0x6F, 0x6E, 0x74, 0x5F, 0x61,</div>
-<div class="line">    0x74, 0x31, 0x66, 0x6F, 0x6E, 0x74, 0x5F, 0x61, 0x74, 0x32, 0x66, 0x6F, 0x6E, 0x74,</div>
-<div class="line">    0x5F, 0x61, 0x74, 0x33, 0x66, 0x6F, 0x6E, 0x74, 0x5F, 0x61, 0x74, 0x34,</div>
+<div class="line">    <span class="stringliteral">&#39;font_at&#39;</span>, <span class="stringliteral">&#39;font_at1&#39;</span>, <span class="stringliteral">&#39;font_at2&#39;</span>, <span class="stringliteral">&#39;font_at3&#39;</span>, <span class="stringliteral">&#39;font_at4&#39;</span>,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a1018ec3288a0decb90ceeb4e94a14ba4" name="a1018ec3288a0decb90ceeb4e94a14ba4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1018ec3288a0decb90ceeb4e94a14ba4">&#9670;&#160;</a></span>font_bt</h2>
+<a id="a4721455dbd08253ddb962105e11f2c6a" name="a4721455dbd08253ddb962105e11f2c6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4721455dbd08253ddb962105e11f2c6a">&#9670;&#160;</a></span>font_bt</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5802,7 +5706,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> font_bt[40]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> font_bt[5]</td>
         </tr>
       </table>
   </td>
@@ -5812,15 +5716,13 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x00, 0x66, 0x6F, 0x6E, 0x74, 0x5F, 0x62, 0x74, 0x66, 0x6F, 0x6E, 0x74, 0x5F, 0x62,</div>
-<div class="line">    0x74, 0x31, 0x66, 0x6F, 0x6E, 0x74, 0x5F, 0x62, 0x74, 0x32, 0x66, 0x6F, 0x6E, 0x74,</div>
-<div class="line">    0x5F, 0x62, 0x74, 0x33, 0x66, 0x6F, 0x6E, 0x74, 0x5F, 0x62, 0x74, 0x34,</div>
+<div class="line">    <span class="stringliteral">&#39;font_bt&#39;</span>, <span class="stringliteral">&#39;font_bt1&#39;</span>, <span class="stringliteral">&#39;font_bt2&#39;</span>, <span class="stringliteral">&#39;font_bt3&#39;</span>, <span class="stringliteral">&#39;font_bt4&#39;</span>,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a50ad47c26bcc2867f2c14d349753f58e" name="a50ad47c26bcc2867f2c14d349753f58e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50ad47c26bcc2867f2c14d349753f58e">&#9670;&#160;</a></span>g_dComIfG_gameInfo</h2>
+<a id="a8ee0813ea2eb6e49e9696c647f2652b8" name="a8ee0813ea2eb6e49e9696c647f2652b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ee0813ea2eb6e49e9696c647f2652b8">&#9670;&#160;</a></span>icon_tag</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5829,73 +5731,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> g_dComIfG_gameInfo[122384]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3b43188831fec4f4939c1f15b77c35b5" name="a3b43188831fec4f4939c1f15b77c35b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b43188831fec4f4939c1f15b77c35b5">&#9670;&#160;</a></span>g_fmapHIO</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> g_fmapHIO[1188]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2fcce57da0213dbb9db2badf854fade0" name="a2fcce57da0213dbb9db2badf854fade0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fcce57da0213dbb9db2badf854fade0">&#9670;&#160;</a></span>g_meter2_info</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> g_meter2_info[248]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3624ad1bcb9a0bfbaab39d442273d7c5" name="a3624ad1bcb9a0bfbaab39d442273d7c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3624ad1bcb9a0bfbaab39d442273d7c5">&#9670;&#160;</a></span>icon_tag</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> icon_tag[64]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> icon_tag[8]</td>
         </tr>
       </table>
   </td>
@@ -5905,10 +5741,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x69, 0x63, 0x6F, 0x5F, 0x73, 0x65, 0x74, 0x37, 0x69, 0x63, 0x6F, 0x5F, 0x73, 0x65, 0x74, 0x30,</div>
-<div class="line">    0x69, 0x63, 0x6F, 0x5F, 0x73, 0x65, 0x74, 0x31, 0x69, 0x63, 0x6F, 0x5F, 0x73, 0x65, 0x74, 0x32,</div>
-<div class="line">    0x69, 0x63, 0x6F, 0x5F, 0x73, 0x65, 0x74, 0x33, 0x69, 0x63, 0x6F, 0x5F, 0x73, 0x65, 0x74, 0x34,</div>
-<div class="line">    0x69, 0x63, 0x6F, 0x5F, 0x73, 0x65, 0x74, 0x35, 0x69, 0x63, 0x6F, 0x5F, 0x73, 0x65, 0x74, 0x36,</div>
+<div class="line">    <span class="stringliteral">&#39;ico_set7&#39;</span>, <span class="stringliteral">&#39;ico_set0&#39;</span>, <span class="stringliteral">&#39;ico_set1&#39;</span>, <span class="stringliteral">&#39;ico_set2&#39;</span>, <span class="stringliteral">&#39;ico_set3&#39;</span>, <span class="stringliteral">&#39;ico_set4&#39;</span>, <span class="stringliteral">&#39;ico_set5&#39;</span>, <span class="stringliteral">&#39;ico_set6&#39;</span>,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
@@ -5941,8 +5774,8 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a41d79e6ac8b77cdceca76121b69c63d2" name="a41d79e6ac8b77cdceca76121b69c63d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41d79e6ac8b77cdceca76121b69c63d2">&#9670;&#160;</a></span>item_tag</h2>
+<a id="a6db767cceb107ce4826aa217ed88dd09" name="a6db767cceb107ce4826aa217ed88dd09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6db767cceb107ce4826aa217ed88dd09">&#9670;&#160;</a></span>item_tag</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5951,7 +5784,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> item_tag[24]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> item_tag[3]</td>
         </tr>
       </table>
   </td>
@@ -5961,8 +5794,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x00, 0x00, 0x6D, 0x61, 0x70, 0x30, 0x30, 0x30, 0x00, 0x00, 0x63, 0x6F,</div>
-<div class="line">    0x6E, 0x30, 0x30, 0x30, 0x00, 0x69, 0x5F, 0x6B, 0x65, 0x79, 0x5F, 0x6E,</div>
+<div class="line">    <span class="stringliteral">&#39;map000&#39;</span>, <span class="stringliteral">&#39;con000&#39;</span>, <span class="stringliteral">&#39;i_key_n&#39;</span>,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
@@ -5995,8 +5827,8 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a95a6e887a0c88e60a4e20c88fe8c5de0" name="a95a6e887a0c88e60a4e20c88fe8c5de0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95a6e887a0c88e60a4e20c88fe8c5de0">&#9670;&#160;</a></span>key_tag</h2>
+<a id="a0cd5ccc48d537b9ed4946f940d1e08a3" name="a0cd5ccc48d537b9ed4946f940d1e08a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cd5ccc48d537b9ed4946f940d1e08a3">&#9670;&#160;</a></span>key_tag</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6005,7 +5837,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> key_tag[24]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> key_tag[3]</td>
         </tr>
       </table>
   </td>
@@ -6015,8 +5847,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x00, 0x00, 0x6B, 0x65, 0x79, 0x5F, 0x30, 0x30, 0x00, 0x00, 0x6B, 0x65,</div>
-<div class="line">    0x79, 0x5F, 0x30, 0x31, 0x00, 0x00, 0x6B, 0x65, 0x79, 0x5F, 0x30, 0x32,</div>
+<div class="line">    <span class="stringliteral">&#39;key_00&#39;</span>, <span class="stringliteral">&#39;key_01&#39;</span>, <span class="stringliteral">&#39;key_02&#39;</span>,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
@@ -7592,8 +7423,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a16758f41e19c9884679bfb5519bcce56" name="a16758f41e19c9884679bfb5519bcce56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16758f41e19c9884679bfb5519bcce56">&#9670;&#160;</a></span>stay_tag</h2>
+<a id="ab3b13b068c3a53dc017c39db26883323" name="ab3b13b068c3a53dc017c39db26883323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3b13b068c3a53dc017c39db26883323">&#9670;&#160;</a></span>stay_tag</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7602,7 +7433,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> stay_tag[16]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> stay_tag[2]</td>
         </tr>
       </table>
   </td>
@@ -7612,7 +7443,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x72, 0x69, 0x6E, 0x6B, 0x5F, 0x6E, 0x75, 0x6C, 0x62, 0x6F, 0x73, 0x73, 0x5F, 0x6E, 0x75, 0x6C,</div>
+<div class="line">    <span class="stringliteral">&#39;rink_nul&#39;</span>, <span class="stringliteral">&#39;boss_nul&#39;</span>,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
@@ -7859,8 +7690,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a6a4ef37f33787594d482fdb89a34cf58" name="a6a4ef37f33787594d482fdb89a34cf58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a4ef37f33787594d482fdb89a34cf58">&#9670;&#160;</a></span>waku_tag</h2>
+<a id="a86f4b5f89a91be0a8f179c34285df066" name="a86f4b5f89a91be0a8f179c34285df066"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86f4b5f89a91be0a8f179c34285df066">&#9670;&#160;</a></span>waku_tag</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7869,7 +7700,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#aed742c436da53c1080638ce6ef7d13de">u8</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> waku_tag[24]</td>
+          <td class="memname"><a class="el" href="dol2asm_8h.html#a4b9935e85afcb3a8dd9bb8636b23ce3b">SECTION_RODATA</a> <a class="el" href="types_8h.html#ad758b7a5c3f18ed79d2fcd23d9f16357">u64</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> waku_tag[3]</td>
         </tr>
       </table>
   </td>
@@ -7879,8 +7710,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    0x67, 0x72, 0x61, 0x79, 0x5F, 0x6D, 0x61, 0x70, 0x67, 0x72, 0x61, 0x79,</div>
-<div class="line">    0x5F, 0x63, 0x6F, 0x6E, 0x67, 0x72, 0x61, 0x79, 0x5F, 0x6B, 0x65, 0x79,</div>
+<div class="line">    <span class="stringliteral">&#39;gray_map&#39;</span>, <span class="stringliteral">&#39;gray_con&#39;</span>, <span class="stringliteral">&#39;gray_key&#39;</span>,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>

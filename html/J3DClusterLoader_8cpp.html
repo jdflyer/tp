@@ -82,23 +82,20 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">J3DClusterLoader.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="J3DClusterLoader_8h_source.html">JSystem/J3DGraphLoader/J3DClusterLoader.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="J3DAnimation_8h_source.html">JSystem/J3DGraphAnimator/J3DAnimation.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="J3DCluster_8h_source.html">JSystem/J3DGraphAnimator/J3DCluster.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="J3DSkinDeform_8h_source.html">JSystem/J3DGraphAnimator/J3DSkinDeform.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="JSupport_8h_source.html">JSystem/JSupport/JSupport.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="JUTNameTab_8h_source.html">JSystem/JUtility/JUTNameTab.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="JKRHeap_8h_source.html">JSystem/JKernel/JKRHeap.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="dol2asm_8h_source.html">dol2asm.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="os_8h_source.html">dolphin/os.h</a>&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DClusterLoader/__ct__20J3DClusterLoader_v15Fv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DClusterLoader/__dt__20J3DClusterLoader_v15Fv.s&quot;</code><br />
-<code>#include &quot;asm/JSystem/J3DGraphLoader/J3DClusterLoader/load__20J3DClusterLoader_v15FPCv.s&quot;</code><br />
+<code>#include &quot;<a class="el" href="string_8h_source.html">string.h</a>&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphLoader/J3DClusterLoader/readCluster__20J3DClusterLoader_v15FPC15J3DClusterBlock.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphLoader/J3DClusterLoader/__dt__16J3DClusterLoaderFv.s&quot;</code><br />
 <code>#include &quot;asm/JSystem/J3DGraphLoader/J3DClusterLoader/func_80334644.s&quot;</code><br />
@@ -112,15 +109,6 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="J3DClusterLoader_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJ3DClusterBlock.html">J3DClusterBlock</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJ3DClusterLoader.html">J3DClusterLoader</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJ3DClusterLoader__v15.html">J3DClusterLoader_v15</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ac912ec63a2a636364c91c3d67dfdc7d3" id="r_ac912ec63a2a636364c91c3d67dfdc7d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DClusterLoader_8cpp.html#ac912ec63a2a636364c91c3d67dfdc7d3">load__24J3DClusterLoaderDataBaseFPCv</a> ()</td></tr>
@@ -129,20 +117,18 @@ Functions</h2></td></tr>
 <tr class="separator:a98d3f253d0624c9c50c3b61e41611dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0758e3936fc202a6f0a59aff8964f1cf" id="r_a0758e3936fc202a6f0a59aff8964f1cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DClusterLoader_8cpp.html#a0758e3936fc202a6f0a59aff8964f1cf">__dt__20J3DClusterLoader_v15Fv</a> ()</td></tr>
 <tr class="separator:a0758e3936fc202a6f0a59aff8964f1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec2e13352dadd8952677962b9f1d5719" id="r_aec2e13352dadd8952677962b9f1d5719"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DClusterLoader_8cpp.html#aec2e13352dadd8952677962b9f1d5719">load__20J3DClusterLoader_v15FPCv</a> ()</td></tr>
-<tr class="separator:aec2e13352dadd8952677962b9f1d5719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a817f13eb954884199362c23d18952759" id="r_a817f13eb954884199362c23d18952759"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DClusterLoader_8cpp.html#a817f13eb954884199362c23d18952759">load__20J3DClusterLoader_v15FPCv</a> ()</td></tr>
+<tr class="separator:a817f13eb954884199362c23d18952759"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fa38bd10dfee176431e7cf5817e83b7" id="r_a5fa38bd10dfee176431e7cf5817e83b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DClusterLoader_8cpp.html#a5fa38bd10dfee176431e7cf5817e83b7">readCluster__20J3DClusterLoader_v15FPC15J3DClusterBlock</a> ()</td></tr>
 <tr class="separator:a5fa38bd10dfee176431e7cf5817e83b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1aaca0e0a212205858a1caf1c8c3416" id="r_ae1aaca0e0a212205858a1caf1c8c3416"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DClusterLoader_8cpp.html#ae1aaca0e0a212205858a1caf1c8c3416">__dt__16J3DClusterLoaderFv</a> ()</td></tr>
-<tr class="separator:ae1aaca0e0a212205858a1caf1c8c3416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc62bbd0ed3776048b20f7ba4234ce8f" id="r_afc62bbd0ed3776048b20f7ba4234ce8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DClusterLoader_8cpp.html#afc62bbd0ed3776048b20f7ba4234ce8f">__dt__16J3DClusterLoaderFv</a> ()</td></tr>
+<tr class="separator:afc62bbd0ed3776048b20f7ba4234ce8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fa4ff55f19abdd7adaa0b28217641c3" id="r_a3fa4ff55f19abdd7adaa0b28217641c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DClusterLoader_8cpp.html#a3fa4ff55f19abdd7adaa0b28217641c3">func_80334644</a> (<a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a> *<a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">_this</a>, <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> *, <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> *)</td></tr>
 <tr class="separator:a3fa4ff55f19abdd7adaa0b28217641c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d3ff55c4cbe6a920f1b667ae74610a3" id="r_a5d3ff55c4cbe6a920f1b667ae74610a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DClusterLoader_8cpp.html#a5d3ff55c4cbe6a920f1b667ae74610a3">func_8033465C</a> (<a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a> *<a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">_this</a>, <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> *, <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> *)</td></tr>
 <tr class="separator:a5d3ff55c4cbe6a920f1b667ae74610a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65f6e9d363b922555f4ea5d272342a66" id="r_a65f6e9d363b922555f4ea5d272342a66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DClusterLoader_8cpp.html#a65f6e9d363b922555f4ea5d272342a66">func_80334674</a> (<a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a> *<a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">_this</a>, <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> *, <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> *)</td></tr>
 <tr class="separator:a65f6e9d363b922555f4ea5d272342a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc6bb37288ea54f2151b2ecd4d4ccf3b" id="r_afc6bb37288ea54f2151b2ecd4d4ccf3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#adc00f0d3ad529c0cb72985d54bfe7ccf">SECTION_INIT</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DClusterLoader_8cpp.html#afc6bb37288ea54f2151b2ecd4d4ccf3b">memcpy</a> ()</td></tr>
-<tr class="separator:afc6bb37288ea54f2151b2ecd4d4ccf3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b05986531107cde8783fde25a9a7413" id="r_a2b05986531107cde8783fde25a9a7413"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DClusterLoader_8cpp.html#a2b05986531107cde8783fde25a9a7413">__nw__FUl</a> ()</td></tr>
 <tr class="separator:a2b05986531107cde8783fde25a9a7413"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26e20ba4264615558229b4fcc3cc083d" id="r_a26e20ba4264615558229b4fcc3cc083d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DClusterLoader_8cpp.html#a26e20ba4264615558229b4fcc3cc083d">__nwa__FUl</a> ()</td></tr>
@@ -180,10 +166,6 @@ Variables</h2></td></tr>
 <tr class="separator:ac83809492673d37bb9ddf58b86ede4e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4818c68186ddb78b52703da306b17b82" id="r_a4818c68186ddb78b52703da306b17b82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dol2asm_8h.html#a9d99eb16c89214979b98ba942a455e7b">SECTION_DATA</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DClusterLoader_8cpp.html#a4818c68186ddb78b52703da306b17b82">__vt__16J3DClusterLoader</a> [4]</td></tr>
 <tr class="separator:a4818c68186ddb78b52703da306b17b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a705cb6194c092061fcff61c5057cfb6d" id="r_a705cb6194c092061fcff61c5057cfb6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">char</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>  *<a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DClusterLoader_8cpp.html#a705cb6194c092061fcff61c5057cfb6d">stringBase_803A2098</a> = &quot;Unknown <a class="el" href="d__vibration_8cpp.html#a923e25734c61f5a7e48bbfcfbe0c2313">data</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">block\n&quot;</a></td></tr>
-<tr class="separator:a705cb6194c092061fcff61c5057cfb6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7fbd1cb101036cb3aea5d249bc958d6" id="r_ad7fbd1cb101036cb3aea5d249bc958d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">char</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>  *<a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="J3DClusterLoader_8cpp.html#ad7fbd1cb101036cb3aea5d249bc958d6">pad_803A20AC</a> = &quot;\0\0\0&quot;</td></tr>
-<tr class="separator:ad7fbd1cb101036cb3aea5d249bc958d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a173b9c3935646494ffc3749070c5c3c4" name="a173b9c3935646494ffc3749070c5c3c4"></a>
@@ -271,14 +253,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae1aaca0e0a212205858a1caf1c8c3416" name="ae1aaca0e0a212205858a1caf1c8c3416"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae1aaca0e0a212205858a1caf1c8c3416">&#9670;&#160;</a></span>__dt__16J3DClusterLoaderFv()</h2>
+<a id="afc62bbd0ed3776048b20f7ba4234ce8f" name="afc62bbd0ed3776048b20f7ba4234ce8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc62bbd0ed3776048b20f7ba4234ce8f">&#9670;&#160;</a></span>__dt__16J3DClusterLoaderFv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a> __dt__16J3DClusterLoaderFv </td>
+          <td class="memname"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">asm</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a> __dt__16J3DClusterLoaderFv </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -440,13 +422,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> *&#160;</td>
-          <td class="paramname"><em>param_0</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> *&#160;</td>
-          <td class="paramname"><em>param_1</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -628,14 +610,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aec2e13352dadd8952677962b9f1d5719" name="aec2e13352dadd8952677962b9f1d5719"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec2e13352dadd8952677962b9f1d5719">&#9670;&#160;</a></span>load__20J3DClusterLoader_v15FPCv()</h2>
+<a id="a817f13eb954884199362c23d18952759" name="a817f13eb954884199362c23d18952759"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a817f13eb954884199362c23d18952759">&#9670;&#160;</a></span>load__20J3DClusterLoader_v15FPCv()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">asm</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a> load__20J3DClusterLoader_v15FPCv </td>
+          <td class="memname"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a> load__20J3DClusterLoader_v15FPCv </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -653,23 +635,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a> load__24J3DClusterLoaderDataBaseFPCv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afc6bb37288ea54f2151b2ecd4d4ccf3b" name="afc6bb37288ea54f2151b2ecd4d4ccf3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc6bb37288ea54f2151b2ecd4d4ccf3b">&#9670;&#160;</a></span>memcpy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#adc00f0d3ad529c0cb72985d54bfe7ccf">SECTION_INIT</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">void</a> memcpy </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -720,9 +685,9 @@ Variables</h2></td></tr>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> ,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="J3DClusterLoader_8cpp.html#ae1aaca0e0a212205858a1caf1c8c3416">__dt__16J3DClusterLoaderFv</a>,</div>
+<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="J3DClusterLoader_8cpp.html#afc62bbd0ed3776048b20f7ba4234ce8f">__dt__16J3DClusterLoaderFv</a>,</div>
 <div class="line">}</div>
-<div class="ttc" id="aJ3DClusterLoader_8cpp_html_ae1aaca0e0a212205858a1caf1c8c3416"><div class="ttname"><a href="J3DClusterLoader_8cpp.html#ae1aaca0e0a212205858a1caf1c8c3416">__dt__16J3DClusterLoaderFv</a></div><div class="ttdeci">void __dt__16J3DClusterLoaderFv()</div></div>
+<div class="ttc" id="aJ3DClusterLoader_8cpp_html_afc62bbd0ed3776048b20f7ba4234ce8f"><div class="ttname"><a href="J3DClusterLoader_8cpp.html#afc62bbd0ed3776048b20f7ba4234ce8f">__dt__16J3DClusterLoaderFv</a></div><div class="ttdeci">void __dt__16J3DClusterLoaderFv()</div><div class="ttdef"><b>Definition</b> J3DClusterLoader.cpp:194</div></div>
 <div class="ttc" id="astddef_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> stddef.h:19</div></div>
 </div><!-- fragment -->
 </div>
@@ -749,11 +714,11 @@ Variables</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> ,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_define" href="stddef_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
-<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="J3DClusterLoader_8cpp.html#aec2e13352dadd8952677962b9f1d5719">load__20J3DClusterLoader_v15FPCv</a>,</div>
+<div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="J3DClusterLoader_8cpp.html#a817f13eb954884199362c23d18952759">load__20J3DClusterLoader_v15FPCv</a>,</div>
 <div class="line">    (<span class="keywordtype">void</span>*)<a class="code hl_function" href="J3DClusterLoader_8cpp.html#a0758e3936fc202a6f0a59aff8964f1cf">__dt__20J3DClusterLoader_v15Fv</a>,</div>
 <div class="line">}</div>
 <div class="ttc" id="aJ3DClusterLoader_8cpp_html_a0758e3936fc202a6f0a59aff8964f1cf"><div class="ttname"><a href="J3DClusterLoader_8cpp.html#a0758e3936fc202a6f0a59aff8964f1cf">__dt__20J3DClusterLoader_v15Fv</a></div><div class="ttdeci">void __dt__20J3DClusterLoader_v15Fv()</div></div>
-<div class="ttc" id="aJ3DClusterLoader_8cpp_html_aec2e13352dadd8952677962b9f1d5719"><div class="ttname"><a href="J3DClusterLoader_8cpp.html#aec2e13352dadd8952677962b9f1d5719">load__20J3DClusterLoader_v15FPCv</a></div><div class="ttdeci">void load__20J3DClusterLoader_v15FPCv()</div><div class="ttdef"><b>Definition</b> J3DClusterLoader.cpp:186</div></div>
+<div class="ttc" id="aJ3DClusterLoader_8cpp_html_a817f13eb954884199362c23d18952759"><div class="ttname"><a href="J3DClusterLoader_8cpp.html#a817f13eb954884199362c23d18952759">load__20J3DClusterLoader_v15FPCv</a></div><div class="ttdeci">void load__20J3DClusterLoader_v15FPCv()</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -773,50 +738,6 @@ Variables</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad7fbd1cb101036cb3aea5d249bc958d6" name="ad7fbd1cb101036cb3aea5d249bc958d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7fbd1cb101036cb3aea5d249bc958d6">&#9670;&#160;</a></span>pad_803A20AC</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">char</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>* <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> pad_803A20AC = &quot;\0\0\0&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a705cb6194c092061fcff61c5057cfb6d" name="a705cb6194c092061fcff61c5057cfb6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a705cb6194c092061fcff61c5057cfb6d">&#9670;&#160;</a></span>stringBase_803A2098</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="dol2asm_8h.html#a0c3c364808dd7c2796cc0eae538b63d7">SECTION_DEAD</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">char</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a>* <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">const</a> stringBase_803A2098 = &quot;Unknown <a class="el" href="d__vibration_8cpp.html#a923e25734c61f5a7e48bbfcfbe0c2313">data</a> <a class="el" href="JSUInputStream_8h.html#a13fa7ef63a40072c7203b3da54a569a2">block\n&quot;</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
