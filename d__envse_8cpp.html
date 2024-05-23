@@ -1,0 +1,433 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Twilight Princess Decompilation" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Documentation for the Twilight Princess codebase" />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Twilight Princess Decompilation" />
+<meta name="twitter:description" content="Documentation for the Twilight Princess codebase" />
+<!-- END twitter metadata -->
+<title>Twilight Princess: src/d/d_envse.cpp File Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="overrides.css" rel="stylesheet" type="text/css"/>
+<!-- ... other metadata & script includes ... -->
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeInteractiveToc.init()
+</script>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/jothepro/doxygen-awesome-css" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="midna.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Twilight Princess
+   </div>
+   <div id="projectbrief">Decompilation of The Legend of Zelda: Twilight Princess</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d__envse_8cpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">d_envse.cpp File Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a5db00af3bff0d06a5e4611494f3904ec" id="r_a5db00af3bff0d06a5e4611494f3904ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__envse_8cpp.html#a5db00af3bff0d06a5e4611494f3904ec">dEnvSe_Draw</a> (<a class="el" href="classdEnvSe__c.html">dEnvSe_c</a> *<a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">i_this</a>)</td></tr>
+<tr class="separator:a5db00af3bff0d06a5e4611494f3904ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8b2c2f6ab066dd7d6f363b85cf456c4" id="r_ad8b2c2f6ab066dd7d6f363b85cf456c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__envse_8cpp.html#ad8b2c2f6ab066dd7d6f363b85cf456c4">dEnvSe_getNearPathPos</a> (<a class="el" href="structcXyz.html">cXyz</a> *<a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">param_0</a>, <a class="el" href="structcXyz.html">cXyz</a> *<a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">param_1</a>, <a class="el" href="structdPath.html">dPath</a> *<a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">i_path</a>)</td></tr>
+<tr class="separator:ad8b2c2f6ab066dd7d6f363b85cf456c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd0c308f8fb9d7e87e9d9001b8975ea4" id="r_acd0c308f8fb9d7e87e9d9001b8975ea4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__envse_8cpp.html#acd0c308f8fb9d7e87e9d9001b8975ea4">dEnvSe_Execute</a> (<a class="el" href="classdEnvSe__c.html">dEnvSe_c</a> *<a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">i_this</a>)</td></tr>
+<tr class="separator:acd0c308f8fb9d7e87e9d9001b8975ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ff428dc471e76cf7debcc440837e592" id="r_a8ff428dc471e76cf7debcc440837e592"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__envse_8cpp.html#a8ff428dc471e76cf7debcc440837e592">dEnvSe_IsDelete</a> (<a class="el" href="classdEnvSe__c.html">dEnvSe_c</a> *<a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">i_this</a>)</td></tr>
+<tr class="separator:a8ff428dc471e76cf7debcc440837e592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a414a16b6dd4c36321ba9c0c12a112433" id="r_a414a16b6dd4c36321ba9c0c12a112433"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__envse_8cpp.html#a414a16b6dd4c36321ba9c0c12a112433">dEnvSe_Delete</a> (<a class="el" href="classdEnvSe__c.html">dEnvSe_c</a> *<a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">i_this</a>)</td></tr>
+<tr class="separator:a414a16b6dd4c36321ba9c0c12a112433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68ecbe2a0d936082076863ca5fb71e36" id="r_a68ecbe2a0d936082076863ca5fb71e36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__envse_8cpp.html#a68ecbe2a0d936082076863ca5fb71e36">dEnvSe_Create</a> (<a class="el" href="classdEnvSe__c.html">dEnvSe_c</a> *<a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">i_this</a>)</td></tr>
+<tr class="separator:a68ecbe2a0d936082076863ca5fb71e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a6a37f2e93b127493c4e6a4175cdcb5e5" id="r_a6a37f2e93b127493c4e6a4175cdcb5e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="structleafdraw__method__class.html">leafdraw_method_class</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__envse_8cpp.html#a6a37f2e93b127493c4e6a4175cdcb5e5">l_dEnvSe_Method</a></td></tr>
+<tr class="separator:a6a37f2e93b127493c4e6a4175cdcb5e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab53e2f4cd08ffba684275563d8e888d6" id="r_ab53e2f4cd08ffba684275563d8e888d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structkankyo__process__profile__definition.html">kankyo_process_profile_definition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d__envse_8cpp.html#ab53e2f4cd08ffba684275563d8e888d6">g_profile_ENVSE</a></td></tr>
+<tr class="separator:ab53e2f4cd08ffba684275563d8e888d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a68ecbe2a0d936082076863ca5fb71e36" name="a68ecbe2a0d936082076863ca5fb71e36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68ecbe2a0d936082076863ca5fb71e36">&#9670;&#160;</a></span>dEnvSe_Create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">int</a> dEnvSe_Create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdEnvSe__c.html">dEnvSe_c</a> *&#160;</td>
+          <td class="paramname"><em>i_this</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a414a16b6dd4c36321ba9c0c12a112433" name="a414a16b6dd4c36321ba9c0c12a112433"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a414a16b6dd4c36321ba9c0c12a112433">&#9670;&#160;</a></span>dEnvSe_Delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">int</a> dEnvSe_Delete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdEnvSe__c.html">dEnvSe_c</a> *&#160;</td>
+          <td class="paramname"><em>i_this</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5db00af3bff0d06a5e4611494f3904ec" name="a5db00af3bff0d06a5e4611494f3904ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5db00af3bff0d06a5e4611494f3904ec">&#9670;&#160;</a></span>dEnvSe_Draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">int</a> dEnvSe_Draw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdEnvSe__c.html">dEnvSe_c</a> *&#160;</td>
+          <td class="paramname"><em>i_this</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><a class="el" href="d__envse_8cpp.html">d_envse.cpp</a> Environment Sound Effects handler </p>
+
+</div>
+</div>
+<a id="acd0c308f8fb9d7e87e9d9001b8975ea4" name="acd0c308f8fb9d7e87e9d9001b8975ea4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd0c308f8fb9d7e87e9d9001b8975ea4">&#9670;&#160;</a></span>dEnvSe_Execute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">int</a> dEnvSe_Execute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdEnvSe__c.html">dEnvSe_c</a> *&#160;</td>
+          <td class="paramname"><em>i_this</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8b2c2f6ab066dd7d6f363b85cf456c4" name="ad8b2c2f6ab066dd7d6f363b85cf456c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8b2c2f6ab066dd7d6f363b85cf456c4">&#9670;&#160;</a></span>dEnvSe_getNearPathPos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">void</a> dEnvSe_getNearPathPos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcXyz.html">cXyz</a> *&#160;</td>
+          <td class="paramname"><em>param_0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcXyz.html">cXyz</a> *&#160;</td>
+          <td class="paramname"><em>param_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structdPath.html">dPath</a> *&#160;</td>
+          <td class="paramname"><em>i_path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8ff428dc471e76cf7debcc440837e592" name="a8ff428dc471e76cf7debcc440837e592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ff428dc471e76cf7debcc440837e592">&#9670;&#160;</a></span>dEnvSe_IsDelete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">static</a> <a class="el" href="group__jsystem-jsupport.html#ga13fa7ef63a40072c7203b3da54a569a2">int</a> dEnvSe_IsDelete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdEnvSe__c.html">dEnvSe_c</a> *&#160;</td>
+          <td class="paramname"><em>i_this</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ab53e2f4cd08ffba684275563d8e888d6" name="ab53e2f4cd08ffba684275563d8e888d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab53e2f4cd08ffba684275563d8e888d6">&#9670;&#160;</a></span>g_profile_ENVSE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structkankyo__process__profile__definition.html">kankyo_process_profile_definition</a> g_profile_ENVSE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    <a class="code hl_enumvalue" href="f__pc__layer__tag_8h.html#ad63240694c6dc2a28c24bfc2db90ad7aa5e7b555fae005988008b1e635ad934af">fpcLy_CURRENT_e</a>,</div>
+<div class="line">    2,</div>
+<div class="line">    <a class="code hl_enumvalue" href="f__pc__priority_8h.html#abe974f22edeef8189603ba75fd90ff3caa92065ae8976f3ac73cde25f46737b63">fpcPi_CURRENT_e</a>,</div>
+<div class="line">    <a class="code hl_enumvalue" href="d__procname_8h.html#a0944a4353780132eeab7b06e3e42291da67afc4d7df0031a2d58c3029379df6ff">PROC_ENVSE</a>,</div>
+<div class="line">    &amp;<a class="code hl_variable" href="f__pc__leaf_8cpp.html#aa2574d10ba20093312ea0a770ce1fb13">g_fpcLf_Method</a>.<a class="code hl_variable" href="structleafdraw__method__class.html#a50ac28a0dd5767027171962df81f25c2">mBase</a>,</div>
+<div class="line">    <span class="keyword">sizeof</span>(<a class="code hl_class" href="classdEnvSe__c.html">dEnvSe_c</a>),</div>
+<div class="line">    0,</div>
+<div class="line">    0,</div>
+<div class="line">    &amp;<a class="code hl_variable" href="d__kankyo_8cpp.html#adeca76fb267e16cf4c9ff4ccb8a28b8c">g_fopKy_Method</a>,</div>
+<div class="line">    689,</div>
+<div class="line">    &amp;<a class="code hl_variable" href="d__envse_8cpp.html#a6a37f2e93b127493c4e6a4175cdcb5e5">l_dEnvSe_Method</a>,</div>
+<div class="line">}</div>
+<div class="ttc" id="aclassdEnvSe__c_html"><div class="ttname"><a href="classdEnvSe__c.html">dEnvSe_c</a></div><div class="ttdef"><b>Definition</b> d_envse.h:8</div></div>
+<div class="ttc" id="ad__envse_8cpp_html_a6a37f2e93b127493c4e6a4175cdcb5e5"><div class="ttname"><a href="d__envse_8cpp.html#a6a37f2e93b127493c4e6a4175cdcb5e5">l_dEnvSe_Method</a></div><div class="ttdeci">static leafdraw_method_class l_dEnvSe_Method</div><div class="ttdef"><b>Definition</b> d_envse.cpp:241</div></div>
+<div class="ttc" id="ad__kankyo_8cpp_html_adeca76fb267e16cf4c9ff4ccb8a28b8c"><div class="ttname"><a href="d__kankyo_8cpp.html#adeca76fb267e16cf4c9ff4ccb8a28b8c">g_fopKy_Method</a></div><div class="ttdeci">void * g_fopKy_Method[5+1]</div><div class="ttdef"><b>Definition</b> f_op_kankyo.cpp:95</div></div>
+<div class="ttc" id="ad__procname_8h_html_a0944a4353780132eeab7b06e3e42291da67afc4d7df0031a2d58c3029379df6ff"><div class="ttname"><a href="d__procname_8h.html#a0944a4353780132eeab7b06e3e42291da67afc4d7df0031a2d58c3029379df6ff">PROC_ENVSE</a></div><div class="ttdeci">@ PROC_ENVSE</div><div class="ttdef"><b>Definition</b> d_procname.h:26</div></div>
+<div class="ttc" id="af__pc__layer__tag_8h_html_ad63240694c6dc2a28c24bfc2db90ad7aa5e7b555fae005988008b1e635ad934af"><div class="ttname"><a href="f__pc__layer__tag_8h.html#ad63240694c6dc2a28c24bfc2db90ad7aa5e7b555fae005988008b1e635ad934af">fpcLy_CURRENT_e</a></div><div class="ttdeci">@ fpcLy_CURRENT_e</div><div class="ttdef"><b>Definition</b> f_pc_layer_tag.h:9</div></div>
+<div class="ttc" id="af__pc__leaf_8cpp_html_aa2574d10ba20093312ea0a770ce1fb13"><div class="ttname"><a href="f__pc__leaf_8cpp.html#aa2574d10ba20093312ea0a770ce1fb13">g_fpcLf_Method</a></div><div class="ttdeci">leafdraw_method_class g_fpcLf_Method</div><div class="ttdef"><b>Definition</b> f_pc_leaf.cpp:65</div></div>
+<div class="ttc" id="af__pc__priority_8h_html_abe974f22edeef8189603ba75fd90ff3caa92065ae8976f3ac73cde25f46737b63"><div class="ttname"><a href="f__pc__priority_8h.html#abe974f22edeef8189603ba75fd90ff3caa92065ae8976f3ac73cde25f46737b63">fpcPi_CURRENT_e</a></div><div class="ttdeci">@ fpcPi_CURRENT_e</div><div class="ttdef"><b>Definition</b> f_pc_priority.h:8</div></div>
+<div class="ttc" id="astructleafdraw__method__class_html_a50ac28a0dd5767027171962df81f25c2"><div class="ttname"><a href="structleafdraw__method__class.html#a50ac28a0dd5767027171962df81f25c2">leafdraw_method_class::mBase</a></div><div class="ttdeci">process_method_class mBase</div><div class="ttdef"><b>Definition</b> f_pc_leaf.h:12</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6a37f2e93b127493c4e6a4175cdcb5e5" name="a6a37f2e93b127493c4e6a4175cdcb5e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a37f2e93b127493c4e6a4175cdcb5e5">&#9670;&#160;</a></span>l_dEnvSe_Method</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structleafdraw__method__class.html">leafdraw_method_class</a> l_dEnvSe_Method</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    (<a class="code hl_typedef" href="f__pc__method_8h.html#a56bd92368b7dda361388b2d13df2e4ac">process_method_func</a>)<a class="code hl_function" href="d__envse_8cpp.html#a68ecbe2a0d936082076863ca5fb71e36">dEnvSe_Create</a>,  (<a class="code hl_typedef" href="f__pc__method_8h.html#a56bd92368b7dda361388b2d13df2e4ac">process_method_func</a>)<a class="code hl_function" href="d__envse_8cpp.html#a414a16b6dd4c36321ba9c0c12a112433">dEnvSe_Delete</a>,</div>
+<div class="line">    (<a class="code hl_typedef" href="f__pc__method_8h.html#a56bd92368b7dda361388b2d13df2e4ac">process_method_func</a>)<a class="code hl_function" href="d__envse_8cpp.html#acd0c308f8fb9d7e87e9d9001b8975ea4">dEnvSe_Execute</a>, (<a class="code hl_typedef" href="f__pc__method_8h.html#a56bd92368b7dda361388b2d13df2e4ac">process_method_func</a>)<a class="code hl_function" href="d__envse_8cpp.html#a8ff428dc471e76cf7debcc440837e592">dEnvSe_IsDelete</a>,</div>
+<div class="line">    (<a class="code hl_typedef" href="f__pc__method_8h.html#a56bd92368b7dda361388b2d13df2e4ac">process_method_func</a>)<a class="code hl_function" href="d__envse_8cpp.html#a5db00af3bff0d06a5e4611494f3904ec">dEnvSe_Draw</a>,</div>
+<div class="line">}</div>
+<div class="ttc" id="ad__envse_8cpp_html_a414a16b6dd4c36321ba9c0c12a112433"><div class="ttname"><a href="d__envse_8cpp.html#a414a16b6dd4c36321ba9c0c12a112433">dEnvSe_Delete</a></div><div class="ttdeci">static int dEnvSe_Delete(dEnvSe_c *i_this)</div><div class="ttdef"><b>Definition</b> d_envse.cpp:224</div></div>
+<div class="ttc" id="ad__envse_8cpp_html_a5db00af3bff0d06a5e4611494f3904ec"><div class="ttname"><a href="d__envse_8cpp.html#a5db00af3bff0d06a5e4611494f3904ec">dEnvSe_Draw</a></div><div class="ttdeci">static int dEnvSe_Draw(dEnvSe_c *i_this)</div><div class="ttdef"><b>Definition</b> d_envse.cpp:12</div></div>
+<div class="ttc" id="ad__envse_8cpp_html_a68ecbe2a0d936082076863ca5fb71e36"><div class="ttname"><a href="d__envse_8cpp.html#a68ecbe2a0d936082076863ca5fb71e36">dEnvSe_Create</a></div><div class="ttdeci">static int dEnvSe_Create(dEnvSe_c *i_this)</div><div class="ttdef"><b>Definition</b> d_envse.cpp:229</div></div>
+<div class="ttc" id="ad__envse_8cpp_html_a8ff428dc471e76cf7debcc440837e592"><div class="ttname"><a href="d__envse_8cpp.html#a8ff428dc471e76cf7debcc440837e592">dEnvSe_IsDelete</a></div><div class="ttdeci">static int dEnvSe_IsDelete(dEnvSe_c *i_this)</div><div class="ttdef"><b>Definition</b> d_envse.cpp:219</div></div>
+<div class="ttc" id="ad__envse_8cpp_html_acd0c308f8fb9d7e87e9d9001b8975ea4"><div class="ttname"><a href="d__envse_8cpp.html#acd0c308f8fb9d7e87e9d9001b8975ea4">dEnvSe_Execute</a></div><div class="ttdeci">static int dEnvSe_Execute(dEnvSe_c *i_this)</div><div class="ttdef"><b>Definition</b> d_envse.cpp:214</div></div>
+<div class="ttc" id="af__pc__method_8h_html_a56bd92368b7dda361388b2d13df2e4ac"><div class="ttname"><a href="f__pc__method_8h.html#a56bd92368b7dda361388b2d13df2e4ac">process_method_func</a></div><div class="ttdeci">int(* process_method_func)(void *)</div><div class="ttdef"><b>Definition</b> f_pc_method.h:7</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a921e71f3ef0b46ce159b4549017b167.html">d</a></li><li class="navelem"><a class="el" href="d__envse_8cpp.html">d_envse.cpp</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>
