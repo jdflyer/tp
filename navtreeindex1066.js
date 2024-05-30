@@ -1,5 +1,6 @@
 var NAVTREEINDEX1066 =
 {
+"osdsp__task_8h.html":[4,0,1,6,5,76],
 "osdsp__task_8h.html#a06476203d643770322374f0096a6a434":[4,0,1,6,5,76,1],
 "osdsp__task_8h.html#aba356086dba137f041988084ffb321b8":[4,0,1,6,5,76,0],
 "osdsp__task_8h_source.html":[4,0,1,6,5,76],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1066 =
 "runtime_8cpp.html#ac6ccea86bcd655fbc4319be542eb829d":[4,0,2,2,2,1,8,14],
 "runtime_8cpp.html#ac7aaca3dcc0f59f45274dfa22f5b73c3":[4,0,2,2,2,1,8,18],
 "runtime_8cpp.html#aca60f93bd9a2ec0c791faf146c3476b0":[4,0,2,2,2,1,8,39],
-"runtime_8cpp.html#acf6b2d15c3141a3d5d6463d15d838275":[4,0,2,2,2,1,8,2],
-"runtime_8cpp.html#acfa6177b08adf46fbd0a45d19a25a13b":[4,0,2,2,2,1,8,4]
+"runtime_8cpp.html#acf6b2d15c3141a3d5d6463d15d838275":[4,0,2,2,2,1,8,2]
 };

@@ -1,5 +1,16 @@
 var NAVTREEINDEX1159 =
 {
+"structdaNpc__Gnd__c.html#a75507e751118d7cc0d4d724ae24d8cc8":[3,0,764,10],
+"structdaNpc__Gnd__c.html#a75fd9753256b2b0b446e99009b21ddfd":[3,0,764,28],
+"structdaNpc__Gnd__c.html#a7be2facb481f48d3331cebfb81087248":[3,0,764,13],
+"structdaNpc__Gnd__c.html#a7d8cd301f9eec0647b988000778f95c4":[3,0,764,19],
+"structdaNpc__Gnd__c.html#a87f1d65cdba34c07db3928fc4c515da5":[3,0,764,36],
+"structdaNpc__Gnd__c.html#a914a7cef2703174215ceef4c9e273df1":[3,0,764,26],
+"structdaNpc__Gnd__c.html#a990ed7b36d08b5da690a81410c1b5f54":[3,0,764,16],
+"structdaNpc__Gnd__c.html#a995a3a69f4c57d0a5ab110a0f17e0405":[3,0,764,15],
+"structdaNpc__Gnd__c.html#a9a8170097fe06efae58cfb4283637a69":[3,0,764,17],
+"structdaNpc__Gnd__c.html#a9b3ba6c8100af96d0e1e5a762fbd067a":[3,0,764,29],
+"structdaNpc__Gnd__c.html#ab3f8b91ce248a5fa46e16b4ce659fef9":[3,0,764,35],
 "structdaNpc__Gnd__c.html#ac74aacb1e31b4165d5ac8607e2931cc9":[3,0,764,30],
 "structdaNpc__Gnd__c.html#ad92de4d4e0dbdce2057eabb56428b9ba":[3,0,764,34],
 "structdaNpc__Gnd__c.html#addf8d1e2ef562a67d30f4a0d1dc57c95":[3,0,764,0],
@@ -238,16 +249,5 @@ var NAVTREEINDEX1159 =
 "structdaNpc__Jagar__c.html#addfcf823993b5ac1c987801a57da8105":[3,0,792,3],
 "structdaNpc__Jagar__c.html#ae92107bd524a775c16432748a9decea6":[3,0,792,7],
 "structdaNpc__Jagar__c.html#af075073f705e6d0d8b6d6046b7dada4f":[3,0,792,51],
-"structdaNpc__Jagar__c.html#af1098c61b44db66dff6060dd88a82ebf":[3,0,792,8],
-"structdaNpc__Jagar__c.html#afc3c707bf519041db9936649e0fb624c":[3,0,792,21],
-"structdaNpc__Jagar__c.html#aff157879c393b6865060d3a34cfd6c63":[3,0,792,26],
-"structdaNpc__Kakashi__Param__c.html":[3,0,795],
-"structdaNpc__Kakashi__Param__c.html#a26b429fbe15bf034c9ac6cc3999deea7":[3,0,795,1],
-"structdaNpc__Kakashi__Param__c.html#a43a2079b2c5acf96273e7ecf8035da42":[3,0,795,0],
-"structdaNpc__Kakashi__c.html":[3,0,794],
-"structdaNpc__Kakashi__c.html#a011b68a9a4f33eb5f8b36142ed940f13":[3,0,794,24],
-"structdaNpc__Kakashi__c.html#a061c20c0748aefbb0fa776dbdce948fa":[3,0,794,18],
-"structdaNpc__Kakashi__c.html#a06fcc5f109222deeb4fea57a0dc956cf":[3,0,794,9],
-"structdaNpc__Kakashi__c.html#a0b9165c4b97f23e63595822041fff75a":[3,0,794,7],
-"structdaNpc__Kakashi__c.html#a0e9190d9a440086a083b523bc10212b9":[3,0,794,10]
+"structdaNpc__Jagar__c.html#af1098c61b44db66dff6060dd88a82ebf":[3,0,792,8]
 };

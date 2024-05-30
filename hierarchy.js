@@ -1581,6 +1581,8 @@ var hierarchy =
       [ "dMenu_Fmap2DBack_c", "structdMenu__Fmap2DBack__c.html", null ]
     ] ],
     [ "dMenuMapCommon_c::data", "structdMenuMapCommon__c_1_1data.html", null ],
+    [ "dMenuMapCommon_c::Stage_c", "structdMenuMapCommon__c_1_1Stage__c.html", null ],
+    [ "dMenuMapCommon_c::Stage_c::Stage_c_data", "structdMenuMapCommon__c_1_1Stage__c_1_1Stage__c__data.html", null ],
     [ "dMeter2Draw_c::item_params", "structdMeter2Draw__c_1_1item__params.html", null ],
     [ "dMeter2Info_c", "structdMeter2Info__c.html", null ],
     [ "dMeter2Info_c::WarpInfo_c", "classdMeter2Info__c_1_1WarpInfo__c.html", null ],

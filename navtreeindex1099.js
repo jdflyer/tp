@@ -1,5 +1,6 @@
 var NAVTREEINDEX1099 =
 {
+"structJUTCacheFont_1_1TGlyphCacheInfo.html#a5daf1ca4e2b8d0d9604dbd65802566e7":[1,1,12,0,1,11],
 "structJUTCacheFont_1_1TGlyphCacheInfo.html#a729f28c24985d779526b8dfa9b2b2c54":[1,1,12,0,1,3],
 "structJUTCacheFont_1_1TGlyphCacheInfo.html#a9c5bfbb13517fd75a3c9f85c98c07868":[1,1,12,0,1,1],
 "structJUTCacheFont_1_1TGlyphCacheInfo.html#aa0508b202f3757f2b058b851b9a9c475":[1,1,12,0,1,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1099 =
 "structJUTGamePad_1_1CStick.html#a3fe6f240470141028950a473b337ebcc":[1,1,12,14,3,6],
 "structJUTGamePad_1_1CStick.html#a73d80ba7e39e74e37496bbb2a0a7e682":[1,1,12,14,3,12],
 "structJUTGamePad_1_1CStick.html#a78f345e177b6f929b00d412bbd379c53":[1,1,12,14,3,4],
-"structJUTGamePad_1_1CStick.html#a87653470e9dade2e312fd0b154c89ba4":[1,1,12,14,3,8],
-"structJUTGamePad_1_1CStick.html#aa1b91352d2d25d135d1810dba58eb93f":[1,1,12,14,3,0]
+"structJUTGamePad_1_1CStick.html#a87653470e9dade2e312fd0b154c89ba4":[1,1,12,14,3,8]
 };

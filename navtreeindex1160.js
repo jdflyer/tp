@@ -1,5 +1,16 @@
 var NAVTREEINDEX1160 =
 {
+"structdaNpc__Jagar__c.html#afc3c707bf519041db9936649e0fb624c":[3,0,792,21],
+"structdaNpc__Jagar__c.html#aff157879c393b6865060d3a34cfd6c63":[3,0,792,26],
+"structdaNpc__Kakashi__Param__c.html":[3,0,795],
+"structdaNpc__Kakashi__Param__c.html#a26b429fbe15bf034c9ac6cc3999deea7":[3,0,795,1],
+"structdaNpc__Kakashi__Param__c.html#a43a2079b2c5acf96273e7ecf8035da42":[3,0,795,0],
+"structdaNpc__Kakashi__c.html":[3,0,794],
+"structdaNpc__Kakashi__c.html#a011b68a9a4f33eb5f8b36142ed940f13":[3,0,794,24],
+"structdaNpc__Kakashi__c.html#a061c20c0748aefbb0fa776dbdce948fa":[3,0,794,18],
+"structdaNpc__Kakashi__c.html#a06fcc5f109222deeb4fea57a0dc956cf":[3,0,794,9],
+"structdaNpc__Kakashi__c.html#a0b9165c4b97f23e63595822041fff75a":[3,0,794,7],
+"structdaNpc__Kakashi__c.html#a0e9190d9a440086a083b523bc10212b9":[3,0,794,10],
 "structdaNpc__Kakashi__c.html#a221cecae16a6ea68ce0079a80f09e78d":[3,0,794,33],
 "structdaNpc__Kakashi__c.html#a2b5d0df3fafb3f0b389487350f4d0cf8":[3,0,794,32],
 "structdaNpc__Kakashi__c.html#a2b78ed8d014c0c436667861e3674d2e1":[3,0,794,29],
@@ -238,16 +249,5 @@ var NAVTREEINDEX1160 =
 "structdaNpc__Kn__c.html#ad41d9c53a66d2d1b6a565b047871767a":[3,0,798,109],
 "structdaNpc__Kn__c.html#ad4f8c4ed0aed258e2b7729c040682181":[3,0,798,115],
 "structdaNpc__Kn__c.html#ad61afc9a0164f5393932cec38aae73cc":[3,0,798,175],
-"structdaNpc__Kn__c.html#ad6f75f35af45707cfbd194e4461f93c5":[3,0,798,114],
-"structdaNpc__Kn__c.html#ad7283bc89f49a6995d0b14b681b65d5c":[3,0,798,128],
-"structdaNpc__Kn__c.html#ad84053585cd9bb05f591caf0c754348b":[3,0,798,8],
-"structdaNpc__Kn__c.html#ad9a1eefb0451db0a3b48bdf3dd464fa8":[3,0,798,63],
-"structdaNpc__Kn__c.html#ada3fc23ac449feede7f2b897f08e03f0":[3,0,798,179],
-"structdaNpc__Kn__c.html#adbfee699981ada4565179e58adc04cf8":[3,0,798,105],
-"structdaNpc__Kn__c.html#adcc92ff044abd469d4d79a3f5f91364a":[3,0,798,125],
-"structdaNpc__Kn__c.html#adce55fae7a42e078107c7f3dbb0f4765":[3,0,798,42],
-"structdaNpc__Kn__c.html#adfb5506682c6e69a4f0e411aa5dd9a96":[3,0,798,25],
-"structdaNpc__Kn__c.html#ae104ffd19c48e3b7968cfeef09cdce43":[3,0,798,70],
-"structdaNpc__Kn__c.html#ae2d0a4925772c756d6182ac7abeaae15":[3,0,798,143],
-"structdaNpc__Kn__c.html#ae3a6ce5269a44e5bc2793549eee0d796":[3,0,798,94]
+"structdaNpc__Kn__c.html#ad6f75f35af45707cfbd194e4461f93c5":[3,0,798,114]
 };

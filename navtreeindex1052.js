@@ -1,5 +1,6 @@
 var NAVTREEINDEX1052 =
 {
+"include_2rel_2d_2a_2obj_2d__a__obj__boumato_2libs_2Runtime_8PPCEABI_8H_2global__destructor__chain_8h.html":[4,0,1,8,0,0,79,19,0,0,0],
 "include_2rel_2d_2a_2obj_2d__a__obj__boumato_2libs_2Runtime_8PPCEABI_8H_2global__destructor__chain_8h_source.html":[4,0,1,8,0,0,79,19,0,0,0],
 "include_2rel_2d_2a_2obj_2d__a__obj__brg_2global__destructor__chain_8h.html":[4,0,1,8,0,0,79,21,3],
 "include_2rel_2d_2a_2obj_2d__a__obj__brg_2global__destructor__chain_8h_source.html":[4,0,1,8,0,0,79,21,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1052 =
 "include_2rel_2d_2a_2obj_2d__a__obj__lv6ChangeGate_2global__destructor__chain_8h.html":[4,0,1,8,0,0,79,171,3],
 "include_2rel_2d_2a_2obj_2d__a__obj__lv6ChangeGate_2global__destructor__chain_8h_source.html":[4,0,1,8,0,0,79,171,3],
 "include_2rel_2d_2a_2obj_2d__a__obj__lv6ChangeGate_2libs_2Runtime_8PPCEABI_8H_2global__destructor__chain_8h.html":[4,0,1,8,0,0,79,171,0,0,0],
-"include_2rel_2d_2a_2obj_2d__a__obj__lv6ChangeGate_2libs_2Runtime_8PPCEABI_8H_2global__destructor__chain_8h_source.html":[4,0,1,8,0,0,79,171,0,0,0],
-"include_2rel_2d_2a_2obj_2d__a__obj__lv6FurikoTrap_2global__destructor__chain_8h.html":[4,0,1,8,0,0,79,174,3]
+"include_2rel_2d_2a_2obj_2d__a__obj__lv6ChangeGate_2libs_2Runtime_8PPCEABI_8H_2global__destructor__chain_8h_source.html":[4,0,1,8,0,0,79,171,0,0,0]
 };

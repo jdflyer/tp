@@ -41,6 +41,7 @@ var d__meter2__info_8h =
     [ "dMeter2Info_getNumberTextureName", "d__meter2__info_8h.html#a18cf8b94b46f065ef9274d63c54731b5", null ],
     [ "dMeter2Info_getOilGaugeBackUp", "d__meter2__info_8h.html#a2b70cdf98a471bc3badee7d07fe1079a", null ],
     [ "dMeter2Info_getPauseStatus", "d__meter2__info_8h.html#a639a6c9582368ef44fc8c5d03c7b29b3", null ],
+    [ "dMeter2Info_getPixel", "d__meter2__info_8h.html#a261837b0b19a72d0bb456dcd767b0ad7", null ],
     [ "dMeter2Info_getPlusTextureName", "d__meter2__info_8h.html#a35e135cc0d2145fb75f3c3b0a935674d", null ],
     [ "dMeter2Info_getRecieveLetterNum", "d__meter2__info_8h.html#abac38e398c5c3f56c61659c3f6031b2c", null ],
     [ "dMeter2Info_getRentalBombBag", "d__meter2__info_8h.html#a9a075f94b150b128d96d3d26ceda1bee", null ],

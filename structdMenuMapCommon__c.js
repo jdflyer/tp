@@ -1,6 +1,7 @@
 var structdMenuMapCommon__c =
 [
     [ "data", "structdMenuMapCommon__c_1_1data.html", "structdMenuMapCommon__c_1_1data" ],
+    [ "Stage_c", "structdMenuMapCommon__c_1_1Stage__c.html", "structdMenuMapCommon__c_1_1Stage__c" ],
     [ "dMenuMapCommon_c", "structdMenuMapCommon__c.html#aedae21d97bee6aeca170c7f427ae7775", null ],
     [ "~dMenuMapCommon_c", "structdMenuMapCommon__c.html#ad3df842c60bd37bcc7a468ed3950c786", null ],
     [ "blinkMove", "structdMenuMapCommon__c.html#af0fc334c19ea5b9451f8d53233eb628c", null ],

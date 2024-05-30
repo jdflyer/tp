@@ -1,5 +1,6 @@
 var NAVTREEINDEX1075 =
 {
+"structJ2DScreen.html#adbdf653f3cf3b6b64a5567e23cd1ab75":[1,1,0,58,49],
 "structJ2DScreen.html#aefd8bf14f8ffc6a6d2b8d1eb1eccd5ab":[1,1,0,58,41],
 "structJ2DScreen.html#af1f81e35cdb890189ba5750229162886":[1,1,0,58,12],
 "structJ2DScreen.html#af5dde6e7683d8f445c653fa24dba1b5f":[1,1,0,58,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1075 =
 "structJ2DWindowEx.html#a256e38445ec882dfd6d74706dd8130ed":[1,1,0,84,22],
 "structJ2DWindowEx.html#a2c246b932f09d53d1fbda125fe8fde28":[1,1,0,84,45],
 "structJ2DWindowEx.html#a2ddd114be35303a8bb02b5ed03f88e9e":[1,1,0,84,36],
-"structJ2DWindowEx.html#a2f10e645827175db1b36cc6d2d339789":[1,1,0,84,51],
-"structJ2DWindowEx.html#a30dac146dd228504d1f8f0ff3790073e":[1,1,0,84,6]
+"structJ2DWindowEx.html#a2f10e645827175db1b36cc6d2d339789":[1,1,0,84,51]
 };

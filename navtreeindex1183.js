@@ -1,5 +1,16 @@
 var NAVTREEINDEX1183 =
 {
+"structdaObj__Kago__c.html#aff7041e9ae14a53f04f7a98ed4df8b02":[3,0,1015,9],
+"structdaObj__KamHIO__c.html":[3,0,1017],
+"structdaObj__KamHIO__c.html#a89b8df2d9d97836cf6c075869fe039a7":[3,0,1017,0],
+"structdaObj__KamHIO__c.html#af6724ececde5dd66da57881e4bb788db":[3,0,1017,1],
+"structdaObj__Kanban2__HIO__c.html":[3,0,1019],
+"structdaObj__Kanban2__HIO__c.html#a9d2c1ad722436a098035364693eb48cf":[3,0,1019,1],
+"structdaObj__Kanban2__HIO__c.html#ab7a4f4961eb5d24ae54b3f010f8b9714":[3,0,1019,0],
+"structdaObj__Kanban2__c.html":[3,0,1018],
+"structdaObj__Kanban2__c.html#a07a8fc4772687dac305c6d9bdd36810a":[3,0,1018,26],
+"structdaObj__Kanban2__c.html#a08675d99f9cf9c9f6c71c5b2ff952519":[3,0,1018,13],
+"structdaObj__Kanban2__c.html#a1256317b75c8cac10e65cc126c7d85c1":[3,0,1018,21],
 "structdaObj__Kanban2__c.html#a19025dff1c71576669cd120eb8f2dd54":[3,0,1018,31],
 "structdaObj__Kanban2__c.html#a2388f89ecaebf53f877bf721e13875fd":[3,0,1018,17],
 "structdaObj__Kanban2__c.html#a3513ea242d4b75abbf9cdefa31bc1898":[3,0,1018,15],
@@ -238,16 +249,5 @@ var NAVTREEINDEX1183 =
 "structdaObj__YBag__c.html#a5aa72593ba7ea1e9ff028089086bd92b":[3,0,1065,2],
 "structdaObj__YBag__c.html#a5b493b7d3a3441c3532a19770c079d8a":[3,0,1065,17],
 "structdaObj__YBag__c.html#a5b613172182b9dbbd22db343e314db5c":[3,0,1065,20],
-"structdaObj__YBag__c.html#a655f969ccad9686acbcedb5773459ef0":[3,0,1065,1],
-"structdaObj__YBag__c.html#a6ecaaa1bc51a658c328e3d9909ab112d":[3,0,1065,16],
-"structdaObj__YBag__c.html#a780632e6c263b7e8c80b2925ce78a914":[3,0,1065,8],
-"structdaObj__YBag__c.html#a8b8f7fb3c41a44c24efe9b97ac9e54d6":[3,0,1065,3],
-"structdaObj__YBag__c.html#a8e5a11b7bd2e688057b48839482ecdff":[3,0,1065,4],
-"structdaObj__YBag__c.html#a936418abdb83f18cc4fb1ffcb90368d5":[3,0,1065,6],
-"structdaObj__YBag__c.html#a98c7a69ecca0bd240f103677aee4d926":[3,0,1065,14],
-"structdaObj__YBag__c.html#ac0f2f885139931cec556128d44f5fa2d":[3,0,1065,12],
-"structdaObj__YBag__c.html#ad6f10089a1a62d28bdfd3733f9325a12":[3,0,1065,15],
-"structdaObj__YBag__c.html#adce1985d3f42bfd222ee8446b9bb8679":[3,0,1065,7],
-"structdaObj__YBag__c.html#ae6b1d26b18dc9d563b484850ee2fe1a5":[3,0,1065,13],
-"structdaObj__YBag__c.html#ae8004d0c5255b49cf3f515b7626ab449":[3,0,1065,18]
+"structdaObj__YBag__c.html#a655f969ccad9686acbcedb5773459ef0":[3,0,1065,1]
 };

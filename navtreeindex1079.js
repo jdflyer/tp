@@ -1,5 +1,6 @@
 var NAVTREEINDEX1079 =
 {
+"structJ3DMaterialFactory.html#aab81daa18b2d4dc950034928ddf32a1e":[1,1,1,178,77],
 "structJ3DMaterialFactory.html#aac4b9816a1f76c81daa9ffc50e482bfc":[1,1,1,178,27],
 "structJ3DMaterialFactory.html#aade42d04e3a2f847a9e4fde1082874e6":[1,1,1,178,59],
 "structJ3DMaterialFactory.html#ab035af3ce02ed12d06308618ac3df2af":[1,1,1,178,40],
@@ -18,8 +19,8 @@ var NAVTREEINDEX1079 =
 "structJ3DMaterialFactory.html#acc29ff549b32222277457d74e9b91f49":[1,1,1,178,6],
 "structJ3DMaterialFactory.html#acfee5eea0b25c772f3004feb5843945a":[1,1,1,178,37],
 "structJ3DMaterialFactory.html#ad3736b6f463260849b7c2c4c40f574dd":[1,1,1,178,75],
-"structJ3DMaterialFactory.html#ad4e7a4306c5f9c32fa766d0715a650c8":[1,1,1,178,3],
 "structJ3DMaterialFactory.html#ad4e7a4306c5f9c32fa766d0715a650c8":[1,1,1,178,4],
+"structJ3DMaterialFactory.html#ad4e7a4306c5f9c32fa766d0715a650c8":[1,1,1,178,3],
 "structJ3DMaterialFactory.html#ad77e984974fd63e202a4cedc90adb9e7":[1,1,1,178,26],
 "structJ3DMaterialFactory.html#ad7af797f98188865324a556d4b4c1576":[1,1,1,178,52],
 "structJ3DMaterialFactory.html#adc3edb6615d47fafaef76a8ad3fdeda5":[1,1,1,178,79],
@@ -215,8 +216,8 @@ var NAVTREEINDEX1079 =
 "structJ3DMtxCalcCalcTransformBasic.html":[1,1,1,57],
 "structJ3DMtxCalcCalcTransformBasic.html#ade782b525d53453ce37ab9434493df1f":[1,1,1,57,0],
 "structJ3DMtxCalcCalcTransformMaya.html":[1,1,1,56],
-"structJ3DMtxCalcCalcTransformMaya.html#a9268983fa48adda4fad07613fe100b7c":[1,1,1,56,1],
 "structJ3DMtxCalcCalcTransformMaya.html#a9268983fa48adda4fad07613fe100b7c":[1,1,1,56,0],
+"structJ3DMtxCalcCalcTransformMaya.html#a9268983fa48adda4fad07613fe100b7c":[1,1,1,56,1],
 "structJ3DMtxCalcCalcTransformSoftimage.html":[1,1,1,55],
 "structJ3DMtxCalcCalcTransformSoftimage.html#a1b0ba737bf407b183b01d737a4e69886":[1,1,1,55,0],
 "structJ3DMtxCalcJ3DSysInitBasic.html":[1,1,1,54],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1079 =
 "structJ3DPatchingInfo.html#a267894a0ccc4d3e4451de1de6ae73a1a":[1,1,1,176,5],
 "structJ3DPatchingInfo.html#a3c715d7b10d43fa5c0a9a382f185b8db":[1,1,1,176,2],
 "structJ3DPatchingInfo.html#a640e9d260fbda2514c8b55ee21933933":[1,1,1,176,1],
-"structJ3DPatchingInfo.html#ab6a5891ad8fbd1f7f0a8fad15c9bfff3":[1,1,1,176,3],
-"structJ3DPatchingInfo.html#ab84880b2e16f15fa98c5b959b80fa10e":[1,1,1,176,6]
+"structJ3DPatchingInfo.html#ab6a5891ad8fbd1f7f0a8fad15c9bfff3":[1,1,1,176,3]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX1076 =
 {
+"structJ2DWindowEx.html#a30dac146dd228504d1f8f0ff3790073e":[1,1,0,84,6],
 "structJ2DWindowEx.html#a33f8a3f9b5c95b2dc245c83aff0577f4":[1,1,0,84,14],
 "structJ2DWindowEx.html#a3e1797ea17785b2183101121e834532b":[1,1,0,84,4],
 "structJ2DWindowEx.html#a3fb6749c59306e3e6fc9d0e116d802d7":[1,1,0,84,48],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1076 =
 "structJ3DAnmTextureSRTKeyData.html#aa4a79a78537a32a181d1e79c6b95f046":[1,1,1,16,21],
 "structJ3DAnmTextureSRTKeyData.html#ac2e30cc113f8cce7198e2e02dc356e92":[1,1,1,16,14],
 "structJ3DAnmTextureSRTKeyData.html#ad5d3da8458695aa222bf6d513b379ce2":[1,1,1,16,19],
-"structJ3DAnmTextureSRTKeyData.html#adce7025465f0636f43e015e54fdfaeb5":[1,1,1,16,10],
-"structJ3DAnmTextureSRTKeyData.html#ae376d531760ce24898834e185ad04c25":[1,1,1,16,24]
+"structJ3DAnmTextureSRTKeyData.html#adce7025465f0636f43e015e54fdfaeb5":[1,1,1,16,10]
 };

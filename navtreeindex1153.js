@@ -1,5 +1,16 @@
 var NAVTREEINDEX1153 =
 {
+"structdaNpcChat__c.html#af3e84ec44ea0b8bb14d6ee2ae30df62f":[3,0,919,42],
+"structdaNpcChat__c.html#af79b436c456e19c625ccf71df21046ae":[3,0,919,40],
+"structdaNpcChat__c.html#af7e04443a4bbd15db2d94fff32178d82":[3,0,919,25],
+"structdaNpcChat__c.html#af86e86c2406fa0c14b380753e22ea639":[3,0,919,15],
+"structdaNpcChat__c.html#afbad1bfe11a144bd680c89157c97ef3f":[3,0,919,34],
+"structdaNpcChin__Param__c.html":[3,0,924],
+"structdaNpcChin__Param__c.html#a78f9c48d6f2ef9cdd9709d0cb83efb68":[3,0,924,0],
+"structdaNpcChin__Param__c.html#ad180d65c4221167e76aec0e2a4cf20e0":[3,0,924,1],
+"structdaNpcChin__c.html":[3,0,923],
+"structdaNpcChin__c.html#a00a241376951b1d562a84cf78487976c":[3,0,923,33],
+"structdaNpcChin__c.html#a023846c4aee00565996630b66d093e07":[3,0,923,19],
 "structdaNpcChin__c.html#a0541cab099f2dccce6e6b4dbe39efc1e":[3,0,923,17],
 "structdaNpcChin__c.html#a0d3942e97c7f48db1ce25414baee839b":[3,0,923,52],
 "structdaNpcChin__c.html#a10186e28e5370b47ebb3a5eda9976876":[3,0,923,32],
@@ -238,16 +249,5 @@ var NAVTREEINDEX1153 =
 "structdaNpcGuard__c.html#ac87716439233ca10f156d98aa5f0dacf":[3,0,940,11],
 "structdaNpcGuard__c.html#aced0e5c19973b98e7c5f2e512b03f6c5":[3,0,940,8],
 "structdaNpcGuard__c.html#ad19b4c691d934413e049d26501b2b903":[3,0,940,4],
-"structdaNpcGuard__c.html#adb13d3fcf0bb3cff629b0e7affff846f":[3,0,940,16],
-"structdaNpcGuard__c.html#ade6b8efeccb63d3fa03e52819ecf048d":[3,0,940,19],
-"structdaNpcGuard__c.html#aeb37fea5fdb101df2d2341d0c856aa0b":[3,0,940,1],
-"structdaNpcGuard__c_1_1Mode__e.html":[3,0,940,0],
-"structdaNpcImpal__Param__c.html":[3,0,942],
-"structdaNpcImpal__Param__c.html#aaa8315a41ad9c0b403dda6f61941277d":[3,0,942,0],
-"structdaNpcImpal__Param__c.html#ab702360c66ded4699c57bfbc8a786738":[3,0,942,1],
-"structdaNpcImpal__c.html":[3,0,941],
-"structdaNpcImpal__c.html#a00114f68dada631d5a752a4f162a533b":[3,0,941,1],
-"structdaNpcImpal__c.html#a0e563523cf386c193536df79fc7929d4":[3,0,941,24],
-"structdaNpcImpal__c.html#a184c6d29a10fcc86f4fb997b855332fe":[3,0,941,14],
-"structdaNpcImpal__c.html#a21d142696695d4dd37c8b77919748648":[3,0,941,29]
+"structdaNpcGuard__c.html#adb13d3fcf0bb3cff629b0e7affff846f":[3,0,940,16]
 };

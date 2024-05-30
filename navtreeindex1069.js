@@ -1,5 +1,6 @@
 var NAVTREEINDEX1069 =
 {
+"structCPaneMgrAlpha.html#a302e5d7f05e67f524d063489e94e4f19":[3,0,177,1],
 "structCPaneMgrAlpha.html#a33b59afa7800bdfb81f6e14d27f8060c":[3,0,177,24],
 "structCPaneMgrAlpha.html#a38bd8288dee0649822e56e0831e7953a":[3,0,177,0],
 "structCPaneMgrAlpha.html#a3b2dcbbb6ff94f8824a3c5706fc385f1":[3,0,177,5],
@@ -13,8 +14,8 @@ var NAVTREEINDEX1069 =
 "structCPaneMgrAlpha.html#a5d04b0b8b9c83e57708ec47f02920cd8":[3,0,177,15],
 "structCPaneMgrAlpha.html#a6c2667c8150753624f49a0748d758315":[3,0,177,16],
 "structCPaneMgrAlpha.html#a7abfcf1aa656a66a27b0e48b09775305":[3,0,177,12],
-"structCPaneMgrAlpha.html#a7d505c78f352552c584611bd70d52882":[3,0,177,2],
 "structCPaneMgrAlpha.html#a7d505c78f352552c584611bd70d52882":[3,0,177,3],
+"structCPaneMgrAlpha.html#a7d505c78f352552c584611bd70d52882":[3,0,177,2],
 "structCPaneMgrAlpha.html#a80550f833fc61b1a6094aca432b7cc54":[3,0,177,37],
 "structCPaneMgrAlpha.html#a805ac473d8c48036db71357e69ea46f3":[3,0,177,6],
 "structCPaneMgrAlpha.html#a84431999b4eaf050383643d01b3f8a92":[3,0,177,21],
@@ -25,8 +26,8 @@ var NAVTREEINDEX1069 =
 "structCPaneMgrAlpha.html#abcc1a9bc9eaa2c353ef636f34461d202":[3,0,177,34],
 "structCPaneMgrAlpha.html#ad9e3ad63e19c78d391fe8c2f4dcb0c3c":[3,0,177,11],
 "structCPaneMgrAlpha.html#ae8782c111bc7ad04626ce13c5952b849":[3,0,177,38],
-"structCPaneMgrAlpha.html#afa8fae85530c011c60dff18591522542":[3,0,177,29],
 "structCPaneMgrAlpha.html#afa8fae85530c011c60dff18591522542":[3,0,177,30],
+"structCPaneMgrAlpha.html#afa8fae85530c011c60dff18591522542":[3,0,177,29],
 "structCPaneMgrAlpha.html#afe78e211f9375694e3eeed65f1bb2fed":[3,0,177,18],
 "structCSTControl.html":[3,0,186],
 "structCSTControl.html#a490a67245321e546bba4f6a8bc55b077":[3,0,186,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1069 =
 "structDynamicModuleControlBase.html#a37805ba7abab48e7b7175c49e5a97294":[3,0,1960,6],
 "structDynamicModuleControlBase.html#a41435f95d5048d6c283aa3e80b69f8b2":[3,0,1960,14],
 "structDynamicModuleControlBase.html#a5a7b51cbed761bcbbd0cadce62dfe611":[3,0,1960,8],
-"structDynamicModuleControlBase.html#a60ad9e6e3078d5fe6452b00675156426":[3,0,1960,25],
-"structDynamicModuleControlBase.html#a634ca3d5440fb1796297d13bfe0c8051":[3,0,1960,0]
+"structDynamicModuleControlBase.html#a60ad9e6e3078d5fe6452b00675156426":[3,0,1960,25]
 };

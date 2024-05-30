@@ -1,5 +1,6 @@
 var NAVTREEINDEX1092 =
 {
+"structJPABaseParticle.html#a7231a429f3eacbd6ec1ac47fc3441b47":[1,1,8,19,6],
 "structJPABaseParticle.html#a77ac25c80f00530ed1391d3e49b35b54":[1,1,8,19,29],
 "structJPABaseParticle.html#a7b017fb8933d41544e189dc03ea54f41":[1,1,8,19,3],
 "structJPABaseParticle.html#a83d515f9b6462523b9aff70c33c5e64e":[1,1,8,19,44],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1092 =
 "structJPAEmitterWorkData.html#adcdbcb4ff6cb97914e76c6f1506fe9dd":[1,1,8,8,18],
 "structJPAEmitterWorkData.html#af0d90a1be6f006570ae110b63e8ad13a":[1,1,8,8,6],
 "structJPAEmitterWorkData.html#af5db1b89e097b8be435271e37907390b":[1,1,8,8,5],
-"structJPAExTexShapeData.html":[1,1,8,12],
-"structJPAExTexShapeData.html#a172e09d5aea3b6d50522a50bbe5c531a":[1,1,8,12,0]
+"structJPAExTexShapeData.html":[1,1,8,12]
 };

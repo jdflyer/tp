@@ -1,5 +1,6 @@
 var NAVTREEINDEX1082 =
 {
+"structJASAudioThread.html#aa5ff4ebfa0fe551cb4cd0c104b5df475":[1,1,2,37,9],
 "structJASAudioThread.html#ab0e12396b7ea1843e0f1a47b1a248d71":[1,1,2,37,0],
 "structJASAudioThread.html#ab6d7482afd261861a3f48b394aa356e8":[1,1,2,37,1],
 "structJASAudioThread.html#ada3e8bf5481ea3ca9a932f19abfe0abc":[1,1,2,37,2],
@@ -7,8 +8,8 @@ var NAVTREEINDEX1082 =
 "structJASAudioThread.html#ae75f72d26e1ffb14113abdf0ec36a606":[1,1,2,37,4],
 "structJASAudioThread.html#ae9b726ffae2d1821e385f6c5c092c612":[1,1,2,37,12],
 "structJASAudioThread.html#afd2b3b762018c69edba8f781f385d937":[1,1,2,37,6],
-"structJASBNKParser_1_1Ver0_1_1THeader.html":[2,0,15,0,0],
 "structJASBNKParser_1_1Ver0_1_1THeader.html":[3,0,1,0,0],
+"structJASBNKParser_1_1Ver0_1_1THeader.html":[2,0,15,0,0],
 "structJASBNKParser_1_1Ver0_1_1TOsc.html":[2,0,15,0,1],
 "structJASBNKParser_1_1Ver0_1_1TOsc.html":[3,0,1,0,1],
 "structJASBank.html":[1,1,2,38],
@@ -44,8 +45,8 @@ var NAVTREEINDEX1082 =
 "structJASBasicInst.html#a5f0cf92f4564d5dce8923bdc84fc007d":[1,1,2,44,9],
 "structJASBasicInst.html#a5f0cf92f4564d5dce8923bdc84fc007d":[1,1,2,44,8],
 "structJASBasicInst.html#a72a42f7bc4fc6f98e2ba45d1bf6de9fb":[1,1,2,44,6],
-"structJASBasicInst.html#a731959bf6412d679f27fac18dd0584c7":[1,1,2,44,10],
 "structJASBasicInst.html#a731959bf6412d679f27fac18dd0584c7":[1,1,2,44,11],
+"structJASBasicInst.html#a731959bf6412d679f27fac18dd0584c7":[1,1,2,44,10],
 "structJASBasicInst.html#a7b9d83728dd6cf55290c6a27f0e369af":[1,1,2,44,5],
 "structJASBasicInst.html#a83fa4ab36a615332cb9a8d187f4d89e3":[1,1,2,44,13],
 "structJASBasicInst.html#a92a64b6a52841edfd26bf632c5aeac09":[1,1,2,44,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1082 =
 "structJASDSPChannel.html#a9c939d29e35e631fb35365f0374ffb6e":[1,1,2,56,10],
 "structJASDSPChannel.html#aa3cc8db67704c0c0a7b0177f8f397b9c":[1,1,2,56,25],
 "structJASDSPChannel.html#ac39103158a28bf39bd0b55dad9b5e103":[1,1,2,56,21],
-"structJASDSPChannel.html#ac77f93a05d4ea29fa28a826babca6997":[1,1,2,56,8],
-"structJASDSPChannel.html#ac8a238d9708114d58802c5a6c5a62989":[1,1,2,56,15]
+"structJASDSPChannel.html#ac77f93a05d4ea29fa28a826babca6997":[1,1,2,56,8]
 };

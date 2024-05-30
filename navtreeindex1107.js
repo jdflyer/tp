@@ -1,5 +1,6 @@
 var NAVTREEINDEX1107 =
 {
+"struct__GXTexObj.html#a16918ebb483fbba57affca8116c4acd3":[3,0,41,1],
 "struct__GXTexObj.html#a420503291cadec6c8f19baeeb7294f07":[3,0,41,6],
 "struct__GXTexObj.html#a6b6d21e4c661980a24b1ba7d4ed2f1c8":[3,0,41,3],
 "struct__GXTexObj.html#a73f1852c7523e78e413cdece7ef0d20a":[3,0,41,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1107 =
 "structcAngle.html#ada439c3606d44ae8d9ccc016bff9ad80":[3,0,87,9],
 "structcAngle.html#ae800ab1dfb79ac41bb6ad765247423a0":[3,0,87,2],
 "structcBgD__Blk__t.html":[3,0,95],
-"structcBgD__Blk__t.html#a6ac15fc00823250f5d28afd5b9305bc1":[3,0,95,0],
-"structcBgD__Grp__t.html":[3,0,96]
+"structcBgD__Blk__t.html#a6ac15fc00823250f5d28afd5b9305bc1":[3,0,95,0]
 };

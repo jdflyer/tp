@@ -1,5 +1,16 @@
 var NAVTREEINDEX1152 =
 {
+"structdaNpcBlueNS__c.html#a962a67643ae081e5a7f44dc79c549ec0":[3,0,905,10],
+"structdaNpcBlueNS__c.html#a9787589de3b6824d1d70ce2ac752f105":[3,0,905,42],
+"structdaNpcBlueNS__c.html#a9f5078c3a445b77ec8d2940ddfd336d5":[3,0,905,56],
+"structdaNpcBlueNS__c.html#aa0f392410dbe9552862c2b0020061331":[3,0,905,18],
+"structdaNpcBlueNS__c.html#aa7d1e5c404848d40b6dc4f2732356f82":[3,0,905,34],
+"structdaNpcBlueNS__c.html#aa91e12468ed7b277df15e21fac07b487":[3,0,905,4],
+"structdaNpcBlueNS__c.html#ab04940192738f45b5b37092406040b11":[3,0,905,29],
+"structdaNpcBlueNS__c.html#ab14972a619e5087fbe7d11d1b31c4b61":[3,0,905,16],
+"structdaNpcBlueNS__c.html#ab28282372d3f0279ce075da0137ef11c":[3,0,905,37],
+"structdaNpcBlueNS__c.html#ab29bfefe611379d26c62a6462ff0fdb9":[3,0,905,11],
+"structdaNpcBlueNS__c.html#abed048818cfe203544b1efc0ed5a5261":[3,0,905,7],
 "structdaNpcBlueNS__c.html#abf25515f81e9dbeabc17132bc29dbb0c":[3,0,905,28],
 "structdaNpcBlueNS__c.html#ac0106d1b955d32a1eeecf2c1b338be69":[3,0,905,20],
 "structdaNpcBlueNS__c.html#ac2cb76bc402a6a007af0815f82cc779a":[3,0,905,1],
@@ -238,16 +249,5 @@ var NAVTREEINDEX1152 =
 "structdaNpcChat__c.html#acecc88013c5acf4db90fc50956f27090":[3,0,919,24],
 "structdaNpcChat__c.html#ae0fe0f0205212fcf18f6bf4977783057":[3,0,919,32],
 "structdaNpcChat__c.html#ae603756565512c1798833999dd26dbff":[3,0,919,43],
-"structdaNpcChat__c.html#aeb94b07a57616d0d39d1dcf905973a3a":[3,0,919,13],
-"structdaNpcChat__c.html#af3e84ec44ea0b8bb14d6ee2ae30df62f":[3,0,919,42],
-"structdaNpcChat__c.html#af79b436c456e19c625ccf71df21046ae":[3,0,919,40],
-"structdaNpcChat__c.html#af7e04443a4bbd15db2d94fff32178d82":[3,0,919,25],
-"structdaNpcChat__c.html#af86e86c2406fa0c14b380753e22ea639":[3,0,919,15],
-"structdaNpcChat__c.html#afbad1bfe11a144bd680c89157c97ef3f":[3,0,919,34],
-"structdaNpcChin__Param__c.html":[3,0,924],
-"structdaNpcChin__Param__c.html#a78f9c48d6f2ef9cdd9709d0cb83efb68":[3,0,924,0],
-"structdaNpcChin__Param__c.html#ad180d65c4221167e76aec0e2a4cf20e0":[3,0,924,1],
-"structdaNpcChin__c.html":[3,0,923],
-"structdaNpcChin__c.html#a00a241376951b1d562a84cf78487976c":[3,0,923,33],
-"structdaNpcChin__c.html#a023846c4aee00565996630b66d093e07":[3,0,923,19]
+"structdaNpcChat__c.html#aeb94b07a57616d0d39d1dcf905973a3a":[3,0,919,13]
 };

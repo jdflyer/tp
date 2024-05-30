@@ -1,5 +1,6 @@
 var NAVTREEINDEX1055 =
 {
+"jstudio-object_8cpp.html#a36bd374ef30770982aa38e8a1500f153":[4,0,2,1,13,0,11,158],
 "jstudio-object_8cpp.html#a38d487ec2275dd3eea40a08e9058d487":[4,0,2,1,13,0,11,178],
 "jstudio-object_8cpp.html#a38da94d513acacc8643be1e7bc6f5d84":[4,0,2,1,13,0,11,131],
 "jstudio-object_8cpp.html#a393a9410909f036b47b48c9053a5e47f":[4,0,2,1,13,0,11,240],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1055 =
 "k__sin_8c.html#a50a0ba985d76ed4ef72a025ada75a5f9":[4,0,2,2,1,0,1,0,0,10,4],
 "k__sin_8c.html#a514f1b439f404f86f77090fa9edc96ce":[4,0,2,2,1,0,1,0,0,10,5],
 "k__sin_8c.html#a62733fd4ae48f0acbc2c91d0e9410bb8":[4,0,2,2,1,0,1,0,0,10,2],
-"k__sin_8c.html#a81cf6add409a8e2e7f3d8049767ce519":[4,0,2,2,1,0,1,0,0,10,8],
-"k__sin_8c.html#aaf7b8ef867ed305cd8e12ee97fff27e1":[4,0,2,2,1,0,1,0,0,10,7]
+"k__sin_8c.html#a81cf6add409a8e2e7f3d8049767ce519":[4,0,2,2,1,0,1,0,0,10,8]
 };

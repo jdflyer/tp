@@ -1,5 +1,6 @@
 var NAVTREEINDEX1106 =
 {
+"structZ2SpeechMgr2.html#a687a3cdbd37d707908271e6ff8bd8f9d":[3,0,3083,13],
 "structZ2SpeechMgr2.html#a6dc33afd6ab03c9c682350b0939c7b41":[3,0,3083,4],
 "structZ2SpeechMgr2.html#a869c72c598d01b3efeabd922cd9f43aa":[3,0,3083,16],
 "structZ2SpeechMgr2.html#a87dcb64ce958961a12e328ae84b4273f":[3,0,3083,15],
@@ -52,9 +53,9 @@ var NAVTREEINDEX1106 =
 "structZ2StatusMgr.html#a448a0874f2ae15af4c257f8f0de8f985":[3,0,3086,15],
 "structZ2StatusMgr.html#a4d1ed240f7faa55fa3bc66a783f3748c":[3,0,3086,34],
 "structZ2StatusMgr.html#a53e444fcbd7add023fa845c9f91a2145":[3,0,3086,4],
+"structZ2StatusMgr.html#a5efe958fbc368ee3fafd2be5c4a52265":[3,0,3086,17],
 "structZ2StatusMgr.html#a5efe958fbc368ee3fafd2be5c4a52265":[3,0,3086,18],
 "structZ2StatusMgr.html#a5efe958fbc368ee3fafd2be5c4a52265":[3,0,3086,19],
-"structZ2StatusMgr.html#a5efe958fbc368ee3fafd2be5c4a52265":[3,0,3086,17],
 "structZ2StatusMgr.html#a5efe958fbc368ee3fafd2be5c4a52265":[3,0,3086,20],
 "structZ2StatusMgr.html#a5efe958fbc368ee3fafd2be5c4a52265":[3,0,3086,21],
 "structZ2StatusMgr.html#a618182f44e337c9970c060ed0a38f2aa":[3,0,3086,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1106 =
 "struct__GXRenderModeObj.html#ad5ac1c34d25be8a257f01bf45956a3ea":[3,0,40,7],
 "struct__GXRenderModeObj.html#adeb7e6da3d8340c13fb97c96a3c8f9d6":[3,0,40,1],
 "struct__GXRenderModeObj.html#ae6083fe9d4c84a2f75f02852085c2c2a":[3,0,40,2],
-"struct__GXTexObj.html":[3,0,41],
-"struct__GXTexObj.html#a16918ebb483fbba57affca8116c4acd3":[3,0,41,1]
+"struct__GXTexObj.html":[3,0,41]
 };
