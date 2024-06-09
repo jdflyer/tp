@@ -1,6 +1,5 @@
 var classdBgW__Base =
 [
-    [ "PushPullLabel", "structdBgW__Base_1_1PushPullLabel.html", null ],
     [ "PushPull_CallBack", "classdBgW__Base.html#aca83c5cff1539885e6bf659513d0dfef", null ],
     [ "PRIORITY", "classdBgW__Base.html#acaa511193b1454aa4379cfefb712c733", [
       [ "PRIORITY_0", "classdBgW__Base.html#acaa511193b1454aa4379cfefb712c733af8a48f016ff589650f6926e70e884ad3", null ]

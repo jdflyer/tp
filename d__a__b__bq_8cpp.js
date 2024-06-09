@@ -1,6 +1,5 @@
 var d__a__b__bq_8cpp =
 [
-    [ "obj_ystone_class", "classobj__ystone__class.html", "classobj__ystone__class" ],
     [ "daB_BQ_HIO_c", "classdaB__BQ__HIO__c.html", "classdaB__BQ__HIO__c" ],
     [ "b_bq_class", "classb__bq__class.html", "classb__bq__class" ],
     [ "__apl__4cXyzFRC3Vec", "d__a__b__bq_8cpp.html#acfce59fa27aed7addbfbd021c7badde9", null ],

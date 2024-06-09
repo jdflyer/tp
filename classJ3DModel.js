@@ -5,8 +5,6 @@ var classJ3DModel =
     [ "~J3DModel", "classJ3DModel.html#a18b75ba1b0f246f3aa659c40d593d73f", null ],
     [ "calc", "classJ3DModel.html#a585c74908a6090736b5d0c22f0d879dd", null ],
     [ "calcAnmMtx", "classJ3DModel.html#aa74d42bfa8471ea9f43c5c61430272c2", null ],
-    [ "calcAnmMtx", "classJ3DModel.html#aa74d42bfa8471ea9f43c5c61430272c2", null ],
-    [ "calcAnmMtx", "classJ3DModel.html#aa74d42bfa8471ea9f43c5c61430272c2", null ],
     [ "calcBBoardMtx", "classJ3DModel.html#a415fe6fcff95e08894ce7b1dbfe92308", null ],
     [ "calcBumpMtx", "classJ3DModel.html#adc606a8c5691d75b3559081b127bca0b", null ],
     [ "calcDiffTexMtx", "classJ3DModel.html#a2638ad404e3567f046847fec29071ac8", null ],

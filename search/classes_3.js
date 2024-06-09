@@ -80,7 +80,7 @@ var searchData=
   ['chkinfo_77',['ChkInfo',['../structdCamBGChk__c_1_1ChkInfo.html',1,'dCamBGChk_c']]],
   ['chrinfo_5fc_78',['ChrInfo_c',['../classChrInfo__c.html',1,'']]],
   ['circlebuffer_79',['CircleBuffer',['../structCircleBuffer.html',1,'']]],
-  ['clothjoint_5fc_80',['ClothJoint_c',['../structClothJoint__c.html',1,'']]],
+  ['clothjoint_5fc_80',['ClothJoint_c',['../classClothJoint__c.html',1,'']]],
   ['cloud_5feff_81',['CLOUD_EFF',['../structCLOUD__EFF.html',1,'']]],
   ['cm2dgcir_82',['cM2dGCir',['../classcM2dGCir.html',1,'']]],
   ['cm3dgaab_83',['cM3dGAab',['../classcM3dGAab.html',1,'']]],

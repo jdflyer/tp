@@ -84,6 +84,7 @@ var classdDlst__list__c =
     [ "set2DOpaTop", "classdDlst__list__c.html#a00c831ae55d72bfc3b366b5f6fc72ad8", null ],
     [ "set2DXlu", "classdDlst__list__c.html#a408a2eaa32bdb42ea1d362b40d485bbc", null ],
     [ "set3DlineMat", "classdDlst__list__c.html#aadcaf2c15ba7beed05cc25321ffeb468", null ],
+    [ "set3DlineMatDark", "classdDlst__list__c.html#a58f95006ef35fb4d989c271efc31d29c", null ],
     [ "setCopy2D", "classdDlst__list__c.html#a96359718db351fd6f755de1a8910b142", null ],
     [ "setOpaDrawList", "classdDlst__list__c.html#a50d7f830a4344387a87360641913257b", null ],
     [ "setOpaList", "classdDlst__list__c.html#a07cca3ba07bc621d546005ee49047f5b", null ],

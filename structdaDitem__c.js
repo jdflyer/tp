@@ -17,7 +17,6 @@ var structdaDitem__c =
     [ "set_pos", "structdaDitem__c.html#ae4edc02b2c4fda9b9bcf760be089cca6", null ],
     [ "setInsectEffect", "structdaDitem__c.html#ae819691b0c2bd1e296e0c91d59175ae8", null ],
     [ "setListStart", "structdaDitem__c.html#a7ebe8c2c11838ea3a25405e8355db5f0", null ],
-    [ "setOffsetPos", "structdaDitem__c.html#ac739a73c8543354c132a745b1e89912d", null ],
     [ "setTevStr", "structdaDitem__c.html#ab28f9dbfd24fc9fb537dfa5e667ebda1", null ],
     [ "settingEffectLight", "structdaDitem__c.html#ad9d1d70e9029abed927ba6d58b6b0608", null ]
 ];

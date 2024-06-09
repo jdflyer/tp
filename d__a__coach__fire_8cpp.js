@@ -2,7 +2,6 @@ var d__a__coach__fire_8cpp =
 [
     [ "mDoMtx_stack_c", "classmDoMtx__stack__c.html", "classmDoMtx__stack__c" ],
     [ "fopAc_ac_c", "structfopAc__ac__c.html", "structfopAc__ac__c" ],
-    [ "daNpcCoach_c", "structdaNpcCoach__c.html", "structdaNpcCoach__c" ],
     [ "daCoachFire_c", "structdaCoachFire__c.html", "structdaCoachFire__c" ],
     [ "dPa_levelEcallBack", "classdPa__levelEcallBack.html", "classdPa__levelEcallBack" ],
     [ "dKy_tevstr_c", "classdKy__tevstr__c.html", "classdKy__tevstr__c" ],

@@ -5,8 +5,6 @@ var classcSGlobe =
     [ "cSGlobe", "classcSGlobe.html#a7aaf83356eef8b1226e1ee5e3daddf1b", null ],
     [ "cSGlobe", "classcSGlobe.html#a52ef173c1389d83506860b6fb17f27fe", null ],
     [ "~cSGlobe", "classcSGlobe.html#a872a47b874323a3c7f7db543adc8f7bb", null ],
-    [ "cSGlobe", "classcSGlobe.html#a6412cd680ae103644c63cf1ef033999e", null ],
-    [ "cSGlobe", "classcSGlobe.html#a6412cd680ae103644c63cf1ef033999e", null ],
     [ "Formal", "classcSGlobe.html#a5ac8cf12089c2ae03f18ccff04d58ddf", null ],
     [ "Invert", "classcSGlobe.html#ac51cfda3e1463489ea4d84bbc73e0f1b", null ],
     [ "Norm", "classcSGlobe.html#aaf45715b64cb1b4aa99b9ca0984138ec", null ],

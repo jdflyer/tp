@@ -17,7 +17,6 @@ var d__a__mg__rod_8cpp =
     [ "fopAc_ac_c", "structfopAc__ac__c.html", "structfopAc__ac__c" ],
     [ "dmg_rod_HIO_c", "structdmg__rod__HIO__c.html", "structdmg__rod__HIO__c" ],
     [ "daPy_py_c", "structdaPy__py__c.html", "structdaPy__py__c" ],
-    [ "daObjLife_c", "structdaObjLife__c.html", "structdaObjLife__c" ],
     [ "daAlink_c", "classdaAlink__c.html", "classdaAlink__c" ],
     [ "dVibration_c", "classdVibration__c.html", "classdVibration__c" ],
     [ "dSv_player_item_record_c", "classdSv__player__item__record__c.html", "classdSv__player__item__record__c" ],

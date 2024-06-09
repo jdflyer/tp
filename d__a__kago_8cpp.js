@@ -13,7 +13,6 @@ var d__a__kago_8cpp =
     [ "fopAc_ac_c", "structfopAc__ac__c.html", "structfopAc__ac__c" ],
     [ "daTagWaterFall_c", "classdaTagWaterFall__c.html", "classdaTagWaterFall__c" ],
     [ "daPy_py_c", "structdaPy__py__c.html", "structdaPy__py__c" ],
-    [ "daObj_Balloon_c", "classdaObj__Balloon__c.html", "classdaObj__Balloon__c" ],
     [ "daKago_c", "classdaKago__c.html", "classdaKago__c" ],
     [ "daKago_HIO_c", "structdaKago__HIO__c.html", "structdaKago__HIO__c" ],
     [ "daBalloon2D_c", "classdaBalloon2D__c.html", "classdaBalloon2D__c" ],

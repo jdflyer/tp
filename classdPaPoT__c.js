@@ -11,7 +11,6 @@ var classdPaPoT__c =
     [ "getRightEmitter", "classdPaPoT__c.html#acda2a1162f9f632744bf2863c0c85f43", null ],
     [ "setEffectTwo", "classdPaPoT__c.html#a694ccc5475edad2223cf6ba12ea0316c", null ],
     [ "setEffectTwo", "classdPaPoT__c.html#a4f18f1605afd6a17987c7e80449e667c", null ],
-    [ "setEffectTwo", "classdPaPoT__c.html#a4f18f1605afd6a17987c7e80449e667c", null ],
     [ "field_0x7c", "classdPaPoT__c.html#a3b74fcdcef2dfac5d3fa7346ffcaffe6", null ],
     [ "field_0x7d", "classdPaPoT__c.html#a7c20b7deaec56ce22df656ff0671df15", null ],
     [ "m_emitterTwoData", "classdPaPoT__c.html#a055b0e9b733fd60dd5e36a9618c1dad0", null ],

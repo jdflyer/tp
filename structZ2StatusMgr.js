@@ -21,7 +21,6 @@ var structZ2StatusMgr =
     [ "setDemoName", "structZ2StatusMgr.html#a5efe958fbc368ee3fafd2be5c4a52265", null ],
     [ "setDemoName", "structZ2StatusMgr.html#a5efe958fbc368ee3fafd2be5c4a52265", null ],
     [ "setDemoName", "structZ2StatusMgr.html#a5efe958fbc368ee3fafd2be5c4a52265", null ],
-    [ "setDemoName", "structZ2StatusMgr.html#a5efe958fbc368ee3fafd2be5c4a52265", null ],
     [ "setEventBit", "structZ2StatusMgr.html#ae2e1a74a57af572c3e6aba99469b49e3", null ],
     [ "setHour", "structZ2StatusMgr.html#aa1098adc54203508b851826771072df1", null ],
     [ "setMinute", "structZ2StatusMgr.html#ace6915fbf2fa4379a509ff13a20ae87f", null ],

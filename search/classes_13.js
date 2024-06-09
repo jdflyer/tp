@@ -1,7 +1,7 @@
 var searchData=
 [
   ['s1_5fke_5fs_0',['s1_ke_s',['../structs1__ke__s.html',1,'']]],
-  ['sakuita_5fc_1',['Sakuita_c',['../structSakuita__c.html',1,'']]],
+  ['sakuita_5fc_1',['Sakuita_c',['../classSakuita__c.html',1,'']]],
   ['sarcdatainfo_2',['SArcDataInfo',['../structSArcDataInfo.html',1,'']]],
   ['sarcheader_3',['SArcHeader',['../structSArcHeader.html',1,'']]],
   ['sbgpc_4',['sBgPc',['../structsBgPc.html',1,'']]],

@@ -1,7 +1,6 @@
 var d__a__canoe_8cpp =
 [
     [ "daTagWaterFall_c", "classdaTagWaterFall__c.html", "classdaTagWaterFall__c" ],
-    [ "daObjGOMIKABE_c", "structdaObjGOMIKABE__c.html", "structdaObjGOMIKABE__c" ],
     [ "__construct_array", "d__a__canoe_8cpp.html#a58dbf4d2335fdc0e2065200543f5e4ea", null ],
     [ "__ct__10dCcD_GSttsFv", "d__a__canoe_8cpp.html#ae4cd09eb67ed2fb9bc6e87d5cea71757", null ],
     [ "__ct__10fopAc_ac_cFv", "d__a__canoe_8cpp.html#a085f3a34ce186ab6e202a97581a1f68a", null ],

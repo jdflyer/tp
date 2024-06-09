@@ -1,7 +1,6 @@
 var d__a__b__gm_8cpp =
 [
     [ "request_of_phase_process_class", "structrequest__of__phase__process__class.html", "structrequest__of__phase__process__class" ],
-    [ "obj_ystone_class", "classobj__ystone__class.html", "classobj__ystone__class" ],
     [ "mDoMtx_stack_c", "classmDoMtx__stack__c.html", "classmDoMtx__stack__c" ],
     [ "mDoExt_btkAnm", "classmDoExt__btkAnm.html", "classmDoExt__btkAnm" ],
     [ "mDoExt_baseAnm", "classmDoExt__baseAnm.html", "classmDoExt__baseAnm" ],

@@ -62,7 +62,7 @@ var searchData=
   ['release_5fdate_59',['release_date',['../structDVDDriveInfo.html#a8847ccd4e7d7646db5303d1c0d89a546',1,'DVDDriveInfo']]],
   ['reloffset_60',['relOffset',['../structOSModuleHeader.html#a62c33a7ada7759eafaab590340434eb6',1,'OSModuleHeader']]],
   ['rem_61',['rem',['../structdiv__t.html#ac64389de252de53eda8b4f8dbb7c623f',1,'div_t']]],
-  ['remove_5fisu_5fidx_62',['REMOVE_ISU_IDX',['../structdaObjNagaisu__c.html#ac46cfa9b36965091ff22b8e6d2c290a2',1,'daObjNagaisu_c']]],
+  ['remove_5fisu_5fidx_62',['REMOVE_ISU_IDX',['../classdaObjNagaisu__c.html#ac46cfa9b36965091ff22b8e6d2c290a2',1,'daObjNagaisu_c']]],
   ['remove_5fisu_5fidx_5f_5f14daobjnagaisu_5fc_63',['REMOVE_ISU_IDX__14daObjNagaisu_c',['../d__a__obj__nagaisu_8cpp.html#a686add0acd6e2645a48a37a76594e4ce',1,'d_a_obj_nagaisu.cpp']]],
   ['rendermode_64',['renderMode',['../structJFWSystem_1_1CSetUpParam.html#a0638fa1ae5bbdbc9d3263284a5a93e65',1,'JFWSystem::CSetUpParam']]],
   ['rendermode_5f_5fq29jfwsystem11csetupparam_65',['rendermode__q29jfwsystem11csetupparam',['../m__Do__machine_8cpp.html#a2c86822c49b733b3cb923ec7c671886d',1,'renderMode__Q29JFWSystem11CSetUpParam:&#160;m_Do_machine.cpp'],['../JFWSystem_8cpp.html#a2c86822c49b733b3cb923ec7c671886d',1,'renderMode__Q29JFWSystem11CSetUpParam:&#160;JFWSystem.cpp']]],

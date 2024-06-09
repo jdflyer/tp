@@ -129,7 +129,6 @@ var classdaCow__c =
     [ "isChaseCowGame", "classdaCow__c.html#a93b86bd94fc0d359aafd54475c462890", null ],
     [ "isGuardFad", "classdaCow__c.html#aae2f6ade53e1a8d6d620ce5ae6dc06bb", null ],
     [ "isGuardFad", "classdaCow__c.html#a6c5eaa30c9898e9c8462d6e777f7c326", null ],
-    [ "isGuardFad", "classdaCow__c.html#a6c5eaa30c9898e9c8462d6e777f7c326", null ],
     [ "setActetcStatus", "classdaCow__c.html#a8aa963043704ac30c669a193a41892bf", null ],
     [ "setActetcStatus", "classdaCow__c.html#a80d1be412630ee7080b25e934b6d12c2", null ],
     [ "setAngryHit", "classdaCow__c.html#a61533a2b92760503c14c970520d412a7", null ],

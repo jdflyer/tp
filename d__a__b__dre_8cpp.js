@@ -2,7 +2,6 @@ var d__a__b__dre_8cpp =
 [
     [ "request_of_phase_process_class", "structrequest__of__phase__process__class.html", "structrequest__of__phase__process__class" ],
     [ "cXyz", "structcXyz.html", "structcXyz" ],
-    [ "obj_ystone_class", "classobj__ystone__class.html", "classobj__ystone__class" ],
     [ "csXyz", "classcsXyz.html", "classcsXyz" ],
     [ "mDoMtx_stack_c", "classmDoMtx__stack__c.html", "classmDoMtx__stack__c" ],
     [ "mDoGph_gInf_c", "structmDoGph__gInf__c.html", "structmDoGph__gInf__c" ],

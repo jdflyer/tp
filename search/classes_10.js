@@ -33,6 +33,5 @@ var searchData=
   ['process_5fprofile_5fdefinition_30',['process_profile_definition',['../structprocess__profile__definition.html',1,'']]],
   ['processorrestoreflags_5fppc_31',['ProcessorRestoreFlags_PPC',['../structProcessorRestoreFlags__PPC.html',1,'']]],
   ['processorstate_5fppc_5f6xx_5f7xx_32',['ProcessorState_PPC_6xx_7xx',['../structProcessorState__PPC__6xx__7xx.html',1,'']]],
-  ['psettbl_33',['PSetTbl',['../structdaObjHBombkoya__c_1_1PSetTbl.html',1,'daObjHBombkoya_c']]],
-  ['pushpulllabel_34',['PushPullLabel',['../structdBgW__Base_1_1PushPullLabel.html',1,'dBgW_Base']]]
+  ['psettbl_33',['PSetTbl',['../structdaObjHBombkoya__c_1_1PSetTbl.html',1,'daObjHBombkoya_c']]]
 ];
