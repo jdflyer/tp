@@ -247,7 +247,7 @@ var NAVTREEINDEX1098 =
 "uart__console__io__gcn_8h.html":[4,0,2,2,1,0,2,0,2],
 "uart__console__io__gcn_8h_source.html":[4,0,2,2,1,0,2,0,2],
 "unionFpscrUnion.html":[3,0,2083],
+"unionFpscrUnion.html#a494892843c6b91866a1f6d1ee7ce000a":[3,0,2083,3],
 "unionFpscrUnion.html#a6ad45d0551f3488a76d20da4253b1fd3":[3,0,2083,0],
-"unionFpscrUnion.html#a79654c3e17cc539e7f980bfc5ea81d3d":[3,0,2083,1],
-"unionFpscrUnion.html#a9448912b10f101bb8f0633bc00301b12":[3,0,2083,3]
+"unionFpscrUnion.html#a79654c3e17cc539e7f980bfc5ea81d3d":[3,0,2083,1]
 };
