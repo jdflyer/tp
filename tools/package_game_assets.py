@@ -7,7 +7,7 @@ import libyaz0
 import libarc
 import libstage
 from datetime import datetime
-import libbti
+import libj3d.libbti as libbti
 
 
 def getMaxDateFromDir(path):

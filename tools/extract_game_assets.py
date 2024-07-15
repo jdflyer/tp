@@ -4,7 +4,7 @@ import libarc
 from pathlib import Path
 import libyaz0
 import libstage
-import libbti
+import libj3d.libbti as libbti
 
 """
 Extracts the game assets and stores them in the game folder

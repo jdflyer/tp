@@ -496,7 +496,7 @@ class CMPRImage(ImageBase):
                     colors.append(self.interpolateColor(colors[0],colors[1],(1/2)))
                     colors.append((0,0,0,0)) # transparent
                 
-                print(colors)
+                # print(colors)
 
                 val = struct.unpack(">I",blockBytes[offset+4:offset+8])[0]
 
@@ -568,12 +568,7 @@ class CMPRImage(ImageBase):
 def bti_to_png_cli(inFile, outFile, data, writeFunc):
     bti_to_png(os.path.splitext(outFile)[0]+".bti",data,writeFunc)
 
-def bti_to_png(name, data, writefunc):
-    outName = os.path.splitext(name)[0] + ".png"
-    print(f"Converting {name} to {outName}")
-
-    header = BTI_Header.fromBytes(data[0:0x20])    
-    # print(header.getBytes())
+def decodeImage(outName,header,data,writefunc):
 
     image = None
 
@@ -637,8 +632,38 @@ def bti_to_png(name, data, writefunc):
 
     # print(header_dict)
 
-    splitext = os.path.splitext(name)
+    splitext = os.path.splitext(outName)
     writefunc(splitext[0]+".bti.json", bytes(json.dumps(header_dict,indent=4),'ascii'))
+
+def decodeImages(numImages,imageNames,data,writefunc):
+    offset = 0
+    images = []
+    for i in range(numImages):
+        header = BTI_Header.fromBytes(data[offset:offset+0x20])
+        header.imageOffset += (0x20*i)
+        header.paletteOffset += (0x20*i)
+        name = imageNames[i]
+        name = os.path.splitext(name)[0] + ".png"
+
+        print(name)
+        if name in images:
+            print(asdict(header))
+        else:
+            images.append(name)
+
+
+        decodeImage(name,header,data,writefunc)
+
+        offset += 0x20
+
+def bti_to_png(name, data, writefunc):
+    outName = os.path.splitext(name)[0] + ".png"
+    print(f"Converting {name} to {outName}")
+
+    header = BTI_Header.fromBytes(data[0:0x20])    
+    # print(header.getBytes())
+
+    decodeImage(header,outName,data,writefunc)
 
     return outName
 
