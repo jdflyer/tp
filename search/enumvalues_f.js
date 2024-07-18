@@ -36,7 +36,7 @@ var searchData=
   ['oil_5fbottle3_33',['OIL_BOTTLE3',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a13c49fd7b1d56e0bac2f98de421627c4',1,'d_save.h']]],
   ['oil_5fbottle_5f2_34',['OIL_BOTTLE_2',['../d__save_8h.html#a0a48966e59817e2d4685d1f0b44b33f2a3eb77b0702e821844b778556652f038c',1,'d_save.h']]],
   ['only_5fminus_35',['only_minus',['../printf_8c.html#ae53c6bc5f86385ca1788677627d07d03ab5eefbf869f06b2be2ee516f35fb1191',1,'printf.c']]],
-  ['ooccoo_5fnote_36',['OOCCOO_NOTE',['../structdSv__memBit__c.html#a48ae5b622a7034b0d1600967bab43fb5a46ffed48b5c8a931c9ac433e48ffe347',1,'dSv_memBit_c']]],
+  ['ooccoo_5fnote_36',['OOCCOO_NOTE',['../structdSv__memBit__c.html#aaa96a29adace9bc0d835244ec95bdbc2a46ffed48b5c8a931c9ac433e48ffe347',1,'dSv_memBit_c']]],
   ['opa_5ftex_5fedge_37',['OPA_TEX_EDGE',['../structJ3DSys.html#a30cc363d626b82865300b658c387eab9a4a18837b3c53b54c677be6c39ab77d11',1,'J3DSys']]],
   ['open_5fe_38',['OPEN_e',['../classdaDoorPush__c.html#a2e894bffd2bde5db2a433b4d6a50d0d6a25625ece8a06aeddd950543817fb5bf9',1,'daDoorPush_c']]],
   ['options_5fclose_39',['OPTIONS_CLOSE',['../classdMw__c.html#a9c12bf96930db318a3d8b6704985facea8fca1627451959ea8f4684dcb8f50368',1,'dMw_c']]],
