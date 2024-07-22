@@ -3,6 +3,7 @@ var m__Do__mtx_8h =
     [ "mDoMtx_stack_c", "classmDoMtx__stack__c.html", "classmDoMtx__stack__c" ],
     [ "mDoMtx_quatStack_c", "classmDoMtx__quatStack__c.html", "classmDoMtx__quatStack__c" ],
     [ "cMtx_concat", "m__Do__mtx_8h.html#aa6d438a419e5c5dd66b892014864f987", null ],
+    [ "cMtx_concatProjView", "m__Do__mtx_8h.html#a6a32d40f4357f35684fbfe1bf3cc6dc8", null ],
     [ "cMtx_copy", "m__Do__mtx_8h.html#ae5ff61a8a67ee861095ce214446df911", null ],
     [ "cMtx_getIdentity", "m__Do__mtx_8h.html#ad91b62ec855550fe5648e331b5dad8d3", null ],
     [ "cMtx_inverse", "m__Do__mtx_8h.html#acf72484db64f5bf0d6df8f97ec216ac0", null ],

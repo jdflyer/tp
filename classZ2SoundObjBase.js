@@ -2,13 +2,6 @@ var classZ2SoundObjBase =
 [
     [ "Z2SoundObjBase", "classZ2SoundObjBase.html#ab1de88cec74ff45d809a7ea9aafedb11", null ],
     [ "~Z2SoundObjBase", "classZ2SoundObjBase.html#aa6abd1f2dae346f8c0370e78a9300fa4", null ],
-    [ "~Z2SoundObjBase", "classZ2SoundObjBase.html#aa6abd1f2dae346f8c0370e78a9300fa4", null ],
-    [ "deleteObject", "classZ2SoundObjBase.html#a45d6e187bdd3f74e54ae2e1c71d8ec46", null ],
-    [ "deleteObject", "classZ2SoundObjBase.html#a45d6e187bdd3f74e54ae2e1c71d8ec46", null ],
-    [ "deleteObject", "classZ2SoundObjBase.html#a45d6e187bdd3f74e54ae2e1c71d8ec46", null ],
-    [ "deleteObject", "classZ2SoundObjBase.html#a45d6e187bdd3f74e54ae2e1c71d8ec46", null ],
-    [ "deleteObject", "classZ2SoundObjBase.html#a45d6e187bdd3f74e54ae2e1c71d8ec46", null ],
-    [ "deleteObject", "classZ2SoundObjBase.html#a45d6e187bdd3f74e54ae2e1c71d8ec46", null ],
     [ "deleteObject", "classZ2SoundObjBase.html#a45d6e187bdd3f74e54ae2e1c71d8ec46", null ],
     [ "dispose", "classZ2SoundObjBase.html#a89aef217d2d5b0c4139ca4dd500f5517", null ],
     [ "framework", "classZ2SoundObjBase.html#a58e29e2c064428fc8b901bfc46da7042", null ],

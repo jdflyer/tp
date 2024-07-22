@@ -70,6 +70,7 @@ var NAVTREEINDEX40 =
 "TColor_8h.html":[4,0,1,6,15,21],
 "TColor_8h_source.html":[4,0,1,6,15,21],
 "TPosition3_8hh.html":[4,0,1,6,17],
+"TPosition3_8hh.html#a3491d62c9dc756944c6ff1ad3e2bbbc4":[4,0,1,6,17,6],
 "TPosition3_8hh_source.html":[4,0,1,6,17],
 "UDP__Stubs_8c.html":[4,0,2,4,2,0,4],
 "UDP__Stubs_8c.html#ae35742eaa5211319ed9a5bda440e1c18":[4,0,2,4,2,0,4,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX40 =
 "Z2AudioArcLoader_8cpp.html#a87d098e2bfc9760dc74719994b9e3023":[4,0,2,5,1,21],
 "Z2AudioArcLoader_8cpp.html#a88bbfed2483807044a849e111cc35f07":[4,0,2,5,1,9],
 "Z2AudioArcLoader_8cpp.html#a8c2587fc732974c3dbb008c2d5be12fc":[4,0,2,5,1,17],
-"Z2AudioArcLoader_8cpp.html#a98b58c165eacfc265404d698e5bc9525":[4,0,2,5,1,25],
-"Z2AudioArcLoader_8cpp.html#aa1a4d82e3b2ce7ac5409701f21f029eb":[4,0,2,5,1,19]
+"Z2AudioArcLoader_8cpp.html#a98b58c165eacfc265404d698e5bc9525":[4,0,2,5,1,25]
 };

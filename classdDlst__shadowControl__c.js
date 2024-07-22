@@ -4,10 +4,6 @@ var classdDlst__shadowControl__c =
     [ "addReal", "classdDlst__shadowControl__c.html#a129cadaf0f9349d8366b1316068564c6", null ],
     [ "addReal", "classdDlst__shadowControl__c.html#af0d423caa75aeade180cfd5331c83cfa", null ],
     [ "addReal", "classdDlst__shadowControl__c.html#af0d423caa75aeade180cfd5331c83cfa", null ],
-    [ "addReal", "classdDlst__shadowControl__c.html#af0d423caa75aeade180cfd5331c83cfa", null ],
-    [ "addReal", "classdDlst__shadowControl__c.html#af0d423caa75aeade180cfd5331c83cfa", null ],
-    [ "addReal", "classdDlst__shadowControl__c.html#af0d423caa75aeade180cfd5331c83cfa", null ],
-    [ "addReal", "classdDlst__shadowControl__c.html#af0d423caa75aeade180cfd5331c83cfa", null ],
     [ "draw", "classdDlst__shadowControl__c.html#a7a6f6a4b2ede3651e1f137f254ef837e", null ],
     [ "getSimpleTex", "classdDlst__shadowControl__c.html#ad7319859d62a8d4efc9326f3dc7ba2a2", null ],
     [ "imageDraw", "classdDlst__shadowControl__c.html#abfcede527b58091535d66b77ee793d26", null ],
@@ -26,6 +22,6 @@ var classdDlst__shadowControl__c =
     [ "mRealNum", "classdDlst__shadowControl__c.html#a62f049cd1c8e6fa9f312f800b469c80f", null ],
     [ "mSimple", "classdDlst__shadowControl__c.html#a1fe8ec018a0581955e64e8b492bad70a", null ],
     [ "mSimpleNum", "classdDlst__shadowControl__c.html#a0235786c0a39e7b06cebe2341037b756", null ],
-    [ "mSimpleTexObj", "classdDlst__shadowControl__c.html#af19acb66c09755fda1bb639ec18a6b6a", null ],
+    [ "mSimpleTexObj", "classdDlst__shadowControl__c.html#ac20aa996e75d1f1cb520474abd88537a", null ],
     [ "mSimpleTexObj", "classdDlst__shadowControl__c.html#a0f6f92b861593f8cb6dac1ad6e112e5a", null ]
 ];

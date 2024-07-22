@@ -1,5 +1,6 @@
 var classdaNpc__zrZ__Param__c =
 [
-    [ "~daNpc_zrZ_Param_c", "classdaNpc__zrZ__Param__c.html#afbd2b727a80b9caa57cd61b90f5730bd", null ],
-    [ "m", "classdaNpc__zrZ__Param__c.html#a1d4e3dc271770c47c3c20d0ce64d1072", null ]
+    [ "param", "structdaNpc__zrZ__Param__c_1_1param.html", "structdaNpc__zrZ__Param__c_1_1param" ],
+    [ "~daNpc_zrZ_Param_c", "classdaNpc__zrZ__Param__c.html#a11f019b35d2dca93a0b22703c6cb2574", null ],
+    [ "m", "classdaNpc__zrZ__Param__c.html#ae7f1963dd9a554971c4b4cc6495cd825", null ]
 ];

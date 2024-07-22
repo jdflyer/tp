@@ -5,6 +5,5 @@ var classfopAcM__wt__c =
     [ "getWaterY", "classfopAcM__wt__c.html#a47cd37ca9f3144d243e2ddf0605cf1b7", null ],
     [ "waterCheck", "classfopAcM__wt__c.html#a628a01d85d8493eb45335da1965a13e9", null ],
     [ "mWaterCheck", "classfopAcM__wt__c.html#afce25a73b9a87b3c529f74e07b5471f1", null ],
-    [ "mWaterCheck", "classfopAcM__wt__c.html#af71155c5a16e7cca438dd30474f51228", null ],
     [ "mWaterY", "classfopAcM__wt__c.html#a0d9a8ab882987e3934f1085e8952540f", null ]
 ];

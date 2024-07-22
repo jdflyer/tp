@@ -6,6 +6,7 @@ var classdaNpcF__Path__c =
     [ "chkPassed", "classdaNpcF__Path__c.html#a9b6b224d716dfeead9f2646c231ea13e", null ],
     [ "chkPassedDst", "classdaNpcF__Path__c.html#a3d71bc23bed03a40d6226ad469ab0084", null ],
     [ "chkReverse", "classdaNpcF__Path__c.html#aab91cfed15b33c628ff0d747398d5af6", null ],
+    [ "getArg0", "classdaNpcF__Path__c.html#a8e8db479b2ff17c59761b53681aa8ba1", null ],
     [ "getArg0", "classdaNpcF__Path__c.html#a7ae0779cba763e29fa9dad69f729bcac", null ],
     [ "getBeforeIdx", "classdaNpcF__Path__c.html#a4389a2b7d78e0ccd1da51def8a347e63", null ],
     [ "getBeforePos", "classdaNpcF__Path__c.html#a098e3516783d63c66306aa11502c6761", null ],

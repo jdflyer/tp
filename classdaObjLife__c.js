@@ -6,7 +6,6 @@ var classdaObjLife__c =
     [ "actionGetDemo", "classdaObjLife__c.html#ad8bbb2ca64247c1747f2bdafc8274aec", null ],
     [ "actionInitBoomerangCarry", "classdaObjLife__c.html#a11467f5833c33ada81ba8332b952f3cf", null ],
     [ "actionInitWait2", "classdaObjLife__c.html#a5b3a09a10e6b07f4d880f8b41cd098c1", null ],
-    [ "actionInitWait2", "classdaObjLife__c.html#a92a7f21e809fa5372332445a40dd19f3", null ],
     [ "actionOrderGetDemo", "classdaObjLife__c.html#a57f3371c1e48667015eb9148d8f24733", null ],
     [ "actionSwOnWait", "classdaObjLife__c.html#a3ec8c2d38f6b239d3d09bc07f77d0c09", null ],
     [ "actionWait", "classdaObjLife__c.html#a165b5ee677615e8ee250a082886d11ef", null ],

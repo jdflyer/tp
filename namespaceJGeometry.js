@@ -17,7 +17,7 @@ var namespaceJGeometry =
     [ "TVec3< double >", "structJGeometry_1_1TVec3_3_01double_01_4.html", "structJGeometry_1_1TVec3_3_01double_01_4" ],
     [ "TVec3< f32 >", "structJGeometry_1_1TVec3_3_01f32_01_4.html", "structJGeometry_1_1TVec3_3_01f32_01_4" ],
     [ "TVec3< s16 >", "structJGeometry_1_1TVec3_3_01s16_01_4.html", "structJGeometry_1_1TVec3_3_01s16_01_4" ],
-    [ "TVec3__template0", "structJGeometry_1_1TVec3____template0.html", null ],
+    [ "TPosition3f32", "namespaceJGeometry.html#a3491d62c9dc756944c6ff1ad3e2bbbc4", null ],
     [ "fsqrt_step", "namespaceJGeometry.html#ab6662eb0a43836dfdcdb31bc28c59908", null ],
     [ "setTVec3f", "namespaceJGeometry.html#aa719da4e2ea857678778c1d2defddab4", null ],
     [ "setTVec3f", "namespaceJGeometry.html#ae96986aa350103d7dd06d9ad9b0d0cbb", null ]

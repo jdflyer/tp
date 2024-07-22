@@ -4,7 +4,6 @@ var classdaObjGOMIKABE__c =
     [ "BreakAction", "classdaObjGOMIKABE__c.html#a29b709449cc6febe5644b5c956f1c016", null ],
     [ "BreakChk", "classdaObjGOMIKABE__c.html#a9636b9c6498e7fa0eace5fc8a44a35f8", null ],
     [ "BreakSet", "classdaObjGOMIKABE__c.html#af3c5a74a59a2a63a1b3e0225a5448acf", null ],
-    [ "BreakSet", "classdaObjGOMIKABE__c.html#a8f3f8471fb456833c9a83e183d2dcdd3", null ],
     [ "CheckCull", "classdaObjGOMIKABE__c.html#a695b9ab9bdcfa66ed912e4c21864475b", null ],
     [ "checkViewArea", "classdaObjGOMIKABE__c.html#a39e3e1416a14e7c158828b37303e2886", null ],
     [ "create", "classdaObjGOMIKABE__c.html#aac615adfc2b06152d572d6d1c2b79927", null ],

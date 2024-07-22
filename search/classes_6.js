@@ -39,7 +39,7 @@ var searchData=
   ['fopmsg_5fprm_5ftimer_36',['fopMsg_prm_timer',['../structfopMsg__prm__timer.html',1,'']]],
   ['fpcctit_5fjilprm_5fc_37',['fpcCtIt_jilprm_c',['../structfpcCtIt__jilprm__c.html',1,'']]],
   ['fpscrunion_38',['FpscrUnion',['../unionFpscrUnion.html',1,'']]],
-  ['fr_5fclass_39',['fr_class',['../structfr__class.html',1,'']]],
+  ['fr_5fclass_39',['fr_class',['../classfr__class.html',1,'']]],
   ['fs_5fkoro2_5fs_40',['fs_koro2_s',['../structfs__koro2__s.html',1,'']]],
   ['fs_5flure_5fs_41',['fs_lure_s',['../structfs__lure__s.html',1,'']]],
   ['fs_5frod_5fs_42',['fs_rod_s',['../structfs__rod__s.html',1,'']]],

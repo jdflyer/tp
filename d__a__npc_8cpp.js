@@ -239,7 +239,7 @@ var d__a__npc_8cpp =
     [ "daNpcT_addIdx__FiiRUsi", "d__a__npc_8cpp.html#ac8ac38a6d466df04252f902cffd19531", null ],
     [ "daNpcT_chkActorInScreen", "d__a__npc_8cpp.html#a5ae0d9266b6418010ec9d8bbe58c7ba3", null ],
     [ "daNpcT_chkActorInScreen__FP10fopAc_ac_cfffffffi", "d__a__npc_8cpp.html#a5e01783cc7c010a7be55487d1f94a613", null ],
-    [ "daNpcT_chkDoBtnIsSpeak", "d__a__npc_8cpp.html#ae41509faf4518a047e3c5abe86a22f56", null ],
+    [ "daNpcT_chkDoBtnIsSpeak", "d__a__npc_8cpp.html#af9dc731de54c16504b9a242bc11ce811", null ],
     [ "daNpcT_chkDoBtnIsSpeak__FP10fopAc_ac_c", "d__a__npc_8cpp.html#a3f6b182cc0507ec0f6625535b05e7401", null ],
     [ "daNpcT_chkEvtBit", "d__a__npc_8cpp.html#ab1fe4a6bb4c2a48d902cdcc36fd5e67d", null ],
     [ "daNpcT_chkEvtBit__FUl", "d__a__npc_8cpp.html#a81b6b56ff67327daf09785168ed47799", null ],

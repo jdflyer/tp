@@ -1,7 +1,6 @@
 var classdaNpcT__Path__c =
 [
     [ "~daNpcT_Path_c", "classdaNpcT__Path__c.html#a7fd6a15605fc76bf6a814b7009eeb661", null ],
-    [ "~daNpcT_Path_c", "classdaNpcT__Path__c.html#a05c4d075886fc5a2c55490198c169ea1", null ],
     [ "chkClose", "classdaNpcT__Path__c.html#a26c5c8d3c381178f4598481e23b3c5c3", null ],
     [ "chkPassed1", "classdaNpcT__Path__c.html#a5584f2fc622e0b9742926aad0955baec", null ],
     [ "chkPassed2", "classdaNpcT__Path__c.html#aaa4f8b530c5ef82b564b04a3c302df6a", null ],
@@ -12,7 +11,6 @@ var classdaNpcT__Path__c =
     [ "getNumPnts", "classdaNpcT__Path__c.html#aa382b068261e62c157a85ff64be0dc5f", null ],
     [ "getPntPos", "classdaNpcT__Path__c.html#a02756d9536b89a23d9c9ecb20b805aa1", null ],
     [ "hermite", "classdaNpcT__Path__c.html#aaeffb8436c6ab3a08ac2430d7951a142", null ],
-    [ "initialize", "classdaNpcT__Path__c.html#a664c84b048d60ec53b53bb59109785d1", null ],
     [ "initialize", "classdaNpcT__Path__c.html#a664c84b048d60ec53b53bb59109785d1", null ],
     [ "initialize", "classdaNpcT__Path__c.html#a664c84b048d60ec53b53bb59109785d1", null ],
     [ "reverse", "classdaNpcT__Path__c.html#a6ccc6908510d019a6d8afa4667e1c961", null ],

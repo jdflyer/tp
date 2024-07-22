@@ -10,10 +10,10 @@ var classJAISoundID =
     [ "b1", "classJAISoundID.html#ad8090b693242908359f1b987ada56a6f", null ],
     [ "b2", "classJAISoundID.html#a2c1591401bada6e58f3a1bf6ae2d40c5", null ],
     [ "b3", "classJAISoundID.html#a7e997d3f4235cd999696ff96df5cb8c3", null ],
-    [ "mAdvancedId", "classJAISoundID.html#a1c831ae6080d99a009af29ca1ac3e8b7", null ],
-    [ "mBytes", "classJAISoundID.html#ace0a715390d37d464e702be62555c405", null ],
+    [ "mAdvancedId", "classJAISoundID.html#a1b613bc2e3744eee9ee3883b3392bb62", null ],
+    [ "mBytes", "classJAISoundID.html#aad340c484a0149293fa4f6a66c3d5910", null ],
     [ "mFullId", "classJAISoundID.html#abfd52935157640224e4f7f00233a42b4", null ],
-    [ "mId", "classJAISoundID.html#a0db3b687d737ae8a213b6c9afd6b005a", null ],
+    [ "mId", "classJAISoundID.html#a06cd3787fcf7ad8622bc8f2115a37d98", null ],
     [ "mShortId", "classJAISoundID.html#a75210bb9b79742da8e97a6f5a71474a5", null ],
     [ "mSoundType", "classJAISoundID.html#a0bd7c9219e0de290673ba752582fa8e8", null ]
 ];

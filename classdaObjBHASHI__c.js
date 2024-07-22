@@ -9,7 +9,6 @@ var classdaObjBHASHI__c =
     [ "initCcCylinder", "classdaObjBHASHI__c.html#ae77dae5705af73ed4df6d67d3e1a7489", null ],
     [ "Obj_Damage", "classdaObjBHASHI__c.html#a45b0ec587372dd2bfc9748b1c3808025", null ],
     [ "Obj_Damage", "classdaObjBHASHI__c.html#a5766c20fd83b00bcc5a2e15fc2c7ae5b", null ],
-    [ "Obj_Damage", "classdaObjBHASHI__c.html#a130013b2f96c11346b393a6ad8ba88b8", null ],
     [ "Rolling", "classdaObjBHASHI__c.html#a3adcd1721dae8d6fae2873f2ed175e57", null ],
     [ "Set_Hahen", "classdaObjBHASHI__c.html#a655c3a791e3b92e355b0cbb120d542fb", null ],
     [ "Set_Speed", "classdaObjBHASHI__c.html#a9fa12cdfe0a75fafe7257db46dcf934b", null ],

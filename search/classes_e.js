@@ -2,7 +2,7 @@ var searchData=
 [
   ['namedata_0',['nameData',['../structdStage__roomControl__c_1_1nameData.html',1,'dStage_roomControl_c']]],
   ['nest_5fhahen_5fs_1',['nest_hahen_s',['../structnest__hahen__s.html',1,'']]],
-  ['ni_5fclass_2',['ni_class',['../structni__class.html',1,'']]],
+  ['ni_5fclass_2',['ni_class',['../classni__class.html',1,'']]],
   ['node_5fclass_3',['node_class',['../structnode__class.html',1,'']]],
   ['node_5fcreate_5frequest_4',['node_create_request',['../structnode__create__request.html',1,'']]],
   ['node_5fcreate_5frequest_5fmethod_5fclass_5',['node_create_request_method_class',['../structnode__create__request__method__class.html',1,'']]],

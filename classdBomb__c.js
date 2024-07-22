@@ -25,7 +25,6 @@ var classdBomb__c =
     [ "checkExplodeNow", "classdBomb__c.html#a80e395eb03d0d6f7799ea79373fb5566", null ],
     [ "checkFlowerBombWait", "classdBomb__c.html#a60f07caba624d198b325b05cfb9d3867", null ],
     [ "checkInsectBombMove", "classdBomb__c.html#a67b9fc74bfd1d9bfec51b29202a4e48f", null ],
-    [ "checkInsectBombMove", "classdBomb__c.html#a2e81e91aa45fb008dd15856891f3c988", null ],
     [ "checkStateCarry", "classdBomb__c.html#a141cc5df0f8b314f2372ac16a70fa111", null ],
     [ "checkStateExplode", "classdBomb__c.html#a417d718bc4d55201385d0eca333ce0fd", null ],
     [ "checkWaterBomb", "classdBomb__c.html#a1aa881416ac87ee3fb24ebd78b1b685f", null ],

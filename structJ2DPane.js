@@ -19,7 +19,6 @@ var structJ2DPane =
     [ "drawSelf", "structJ2DPane.html#ae80e59ad84b54840f399ed1c47165374", null ],
     [ "getAlpha", "structJ2DPane.html#af76ea06762fa202755fe4cb78216b2fb", null ],
     [ "getBounds", "structJ2DPane.html#a23c98e69ab714b0882fcbe7e40f7b055", null ],
-    [ "getBounds", "structJ2DPane.html#a20485499b31dd731fe749de4b43c8259", null ],
     [ "getBounds", "structJ2DPane.html#a23c98e69ab714b0882fcbe7e40f7b055", null ],
     [ "getBounds", "structJ2DPane.html#a20485499b31dd731fe749de4b43c8259", null ],
     [ "getEndChild", "structJ2DPane.html#a6729f27f38290f0e706341e19cd88eea", null ],

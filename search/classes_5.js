@@ -83,8 +83,9 @@ var searchData=
   ['ep_5fclass_80',['ep_class',['../structep__class.html',1,'']]],
   ['ep_5fhahen_5fs_81',['ep_hahen_s',['../structep__hahen__s.html',1,'']]],
   ['event_5fbinary_5fdata_5fheader_82',['event_binary_data_header',['../structevent__binary__data__header.html',1,'']]],
-  ['exception_83',['exception',['../structexception.html',1,'']]],
-  ['exicontrol_84',['EXIControl',['../structEXIControl.html',1,'']]],
-  ['extended1_5fppc_5f6xx_5f7xx_85',['Extended1_PPC_6xx_7xx',['../structExtended1__PPC__6xx__7xx.html',1,'']]],
-  ['extended2_5fppc_5f6xx_5f7xx_86',['Extended2_PPC_6xx_7xx',['../structExtended2__PPC__6xx__7xx.html',1,'']]]
+  ['eventlistitem_83',['EventListItem',['../structEventListItem.html',1,'']]],
+  ['exception_84',['exception',['../structexception.html',1,'']]],
+  ['exicontrol_85',['EXIControl',['../structEXIControl.html',1,'']]],
+  ['extended1_5fppc_5f6xx_5f7xx_86',['Extended1_PPC_6xx_7xx',['../structExtended1__PPC__6xx__7xx.html',1,'']]],
+  ['extended2_5fppc_5f6xx_5f7xx_87',['Extended2_PPC_6xx_7xx',['../structExtended2__PPC__6xx__7xx.html',1,'']]]
 ];
